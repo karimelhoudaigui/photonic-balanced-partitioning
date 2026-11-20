@@ -63,7 +63,7 @@ def confinement(worktree,path):
     text+=f'(deny file-write* (subpath {quoted(worktree/"paper")}))\n'
     for directory in ['.ssh','.aws','.codex','.qwen']:
         text+=f'(deny file-read* (subpath {quoted(Path.home()/directory)}))\n'
-    text+='(deny network*)\n(allow network-outbound (remote ip "127.0.0.1:11435"))\n'
+    text+='(deny network*)\n(allow network-outbound (remote ip "localhost:11435"))\n'
     path.write_text(text)
     return ['sandbox-exec','-f',str(path)]
 
@@ -124,9 +124,17 @@ def main():
         before=paper_hashes(worktree)
         prefix=confinement(worktree,output/'sandbox.sb')
         # Execute a real OS-denial probe before giving tools to a local model.
-        guard="import pathlib; p=pathlib.Path('paper/__qwen_guard_probe__'); p.write_text('must fail')"
+        guard="""import pathlib,json,urllib.request
+p=pathlib.Path('reports/__qwen_allowed_probe__');p.write_text('allowed');p.unlink()
+try:pathlib.Path('paper/__qwen_guard_probe__').write_text('must fail')
+except PermissionError:pass
+else:raise RuntimeError('paper write allowed')
+urllib.request.urlopen('http://127.0.0.1:11435/api/version',timeout=5).close()
+print('CONFINEMENT_PASS')
+"""
         check=subprocess.run(prefix+[str(ROOT/'.venv/bin/python'),'-c',guard],cwd=worktree,env=env,capture_output=True,text=True)
-        if check.returncode==0:raise RuntimeError('Paper write confinement failed')
+        if check.returncode!=0 or 'CONFINEMENT_PASS' not in check.stdout:
+            raise RuntimeError('OS confinement preflight failed: '+check.stderr[-800:])
         record['paper_os_guard']='PASS'
         py=str(ROOT/'.venv/bin/python')
         prompts=[]

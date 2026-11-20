@@ -1,0 +1,122 @@
+{
+  "cycle": "20261120T235237Z-validation",
+  "mode": "validation",
+  "started_at": "2026-11-20T23:52:37.456693+00:00",
+  "base_commit": "a07a585d08a30930646130ea6499b38d0396133f",
+  "model": "qwen3.5:2b-q4_K_M",
+  "worktree": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261120T235237Z-validation",
+  "limits": {
+    "mode": "validation",
+    "max_experiments": 1,
+    "wall_time": 400,
+    "max_parallel_agents": 1,
+    "max_failed_retries": 1
+  },
+  "runs": [
+    {
+      "argv": [
+        "sandbox-exec",
+        "-f",
+        "/Users/karimelhoudaigui/Desktop/pasqal/results/qwen_cycles/20261120T235237Z-validation/sandbox.sb",
+        "qwen",
+        "--auth-type",
+        "openai",
+        "--model",
+        "qwen3.5:2b-q4_K_M",
+        "--output-format",
+        "stream-json",
+        "--approval-mode",
+        "auto-edit",
+        "--allowed-tools",
+        "read_file,run_shell_command,write_file",
+        "--core-tools",
+        "read_file,run_shell_command,write_file",
+        "--exclude-tools",
+        "agent,skill,tool_search,tool_call,team_create,team_delete,task_create,task_update,task_list,list_agents,send_message,request_shutdown,report_findings,team_plan_approval,get_goal,update_goal,enter_worktree,exit_worktree,record_artifact,task_stop",
+        "--max-session-turns",
+        "10",
+        "--max-tool-calls",
+        "10",
+        "--max-subagent-depth",
+        "1",
+        "--max-wall-time",
+        "300",
+        "--system-prompt",
+        "You are a bounded local research assistant supervised by Astra. Execute requested tools and report actual evidence. No paper edits, QPU, remote API, invented results or nested delegation. \n\nUse the scientific Python supplied by PASQAL_PYTHON. Record exact argv, fixed seeds, Git commit, source/output hashes, runtime and versions. Count every attempted shot including collisions and losses. Keep raw and processed outputs separate; never overwrite an existing run. Compute correctly scoped uncertainty. An unexecuted plan is not a result.\n\nFollow QWEN.md and AGENTS.md. Work only in the assigned Git worktree. Never edit paper/, raw historical data, credentials, QPU code or project gates. One experiment per cycle; no nested delegation. Preserve evidence and hand your conclusion to Astra for independent audit.\n",
+        "-p",
+        "Read AGENTS.md using read_file. Then run exactly: /Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python -m pytest tests/test_hom.py -q . Write reports/QWEN_SMOKE_REPORT.md recording the actual test result. Never edit paper/. Do these three actions now; no planning-only reply."
+      ],
+      "exit_code": 65,
+      "runtime_seconds": 0.12731695800903253,
+      "stdout": "results/qwen_cycles/20261120T235237Z-validation/00-experiment-runner.jsonl",
+      "stderr": "results/qwen_cycles/20261120T235237Z-validation/00-experiment-runner.stderr"
+    }
+  ],
+  "supervisor_verdict": "PENDING_ASTRA_REVIEW",
+  "status": "INCONCLUSIVE",
+  "no_qpu": true,
+  "model_metadata": {
+    "name": "qwen3.5:2b-q4_K_M",
+    "model": "qwen3.5:2b-q4_K_M",
+    "modified_at": "2026-11-21T00:43:58.254096324+01:00",
+    "size": 1945781358,
+    "digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "1.9B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2048
+    },
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking",
+      "vision"
+    ]
+  },
+  "paper_os_guard": "PASS",
+  "paper_hashes_before": {
+    "paper/FROZEN.md": "1e51505a68c2304663adba0f3d77ca2f868aaa98c0c70ee82677a5076a67abc5",
+    "paper/appendices/algorithms.tex": "57e1a0bed219332f704c74bd57b0b7a3f731a88200f284bd42d2c8664eca4604",
+    "paper/main.tex": "d9ac715750ece6d8e5e873c79f123f29ddcec5b245562984533fd97002b60938",
+    "paper/references.bib": "edaa359853f2b1a6f77202f7ff09a9dbbb8c99e20908c21277927c7a83c6b1aa",
+    "paper/sections/01_introduction.tex": "2d4b8b235f0e933f17d5983bc73d7f0dfd8fffaa37ac27016e939fa376802716",
+    "paper/sections/02_problem.tex": "83cae2af65b194a9a4fb798bd96bc24b4d4a25b17da000aa757768e580189396",
+    "paper/sections/03_penalty_baseline.tex": "48d9fcb46e789f717da23daea479277c06066f3a7c8f1d245d28783b95f32090",
+    "paper/sections/04_photonic_formulation.tex": "a234d9f3417bca4a2b00d2ae1ab3d4f7d7f1700f0d8f45d24056509954b6b49e",
+    "paper/sections/05_theory.tex": "c2ee6bc316189ff318865f5b262bdcfb7b54b9ae21a4814e2a4185f469f15ed2",
+    "paper/sections/06_methods.tex": "e1fcff1bbdd21d3c44d451abebe7791f0d994c5ee95ee26eb38f1a42564fb2e0",
+    "paper/sections/07_exact_results.tex": "94770c45bb6ba136480ceb2826d73ce5e318e8976730e62e8c5899ba9c004516",
+    "paper/sections/08_noisy_results.tex": "95250de8fd57d51ef9816d13a1c5fb1bbbfc813b90c91cbe8de9a3a9ae93a9c3",
+    "paper/sections/09_qpu_results.tex": "5ec6f743af649240e30d2869a684bb26991b23abd12bda2eb1e136a1b79045e3",
+    "paper/sections/10_hpc_case_study.tex": "6e48078f630cfa9af48aa2b9a2ce9c25ebd7b59486fdf7c91076c3e681494549",
+    "paper/sections/11_limitations.tex": "09fd760951bf3fdaa455ec53a0321a0b24d099348383a7ee92094047467314b9",
+    "paper/sections/12_conclusion.tex": "08ed812ab133da027a6da37d43361ab96e2aaf65193ecab00a763e45296e34d9"
+  },
+  "paper_hashes_after": {
+    "paper/FROZEN.md": "1e51505a68c2304663adba0f3d77ca2f868aaa98c0c70ee82677a5076a67abc5",
+    "paper/appendices/algorithms.tex": "57e1a0bed219332f704c74bd57b0b7a3f731a88200f284bd42d2c8664eca4604",
+    "paper/main.tex": "d9ac715750ece6d8e5e873c79f123f29ddcec5b245562984533fd97002b60938",
+    "paper/references.bib": "edaa359853f2b1a6f77202f7ff09a9dbbb8c99e20908c21277927c7a83c6b1aa",
+    "paper/sections/01_introduction.tex": "2d4b8b235f0e933f17d5983bc73d7f0dfd8fffaa37ac27016e939fa376802716",
+    "paper/sections/02_problem.tex": "83cae2af65b194a9a4fb798bd96bc24b4d4a25b17da000aa757768e580189396",
+    "paper/sections/03_penalty_baseline.tex": "48d9fcb46e789f717da23daea479277c06066f3a7c8f1d245d28783b95f32090",
+    "paper/sections/04_photonic_formulation.tex": "a234d9f3417bca4a2b00d2ae1ab3d4f7d7f1700f0d8f45d24056509954b6b49e",
+    "paper/sections/05_theory.tex": "c2ee6bc316189ff318865f5b262bdcfb7b54b9ae21a4814e2a4185f469f15ed2",
+    "paper/sections/06_methods.tex": "e1fcff1bbdd21d3c44d451abebe7791f0d994c5ee95ee26eb38f1a42564fb2e0",
+    "paper/sections/07_exact_results.tex": "94770c45bb6ba136480ceb2826d73ce5e318e8976730e62e8c5899ba9c004516",
+    "paper/sections/08_noisy_results.tex": "95250de8fd57d51ef9816d13a1c5fb1bbbfc813b90c91cbe8de9a3a9ae93a9c3",
+    "paper/sections/09_qpu_results.tex": "5ec6f743af649240e30d2869a684bb26991b23abd12bda2eb1e136a1b79045e3",
+    "paper/sections/10_hpc_case_study.tex": "6e48078f630cfa9af48aa2b9a2ce9c25ebd7b59486fdf7c91076c3e681494549",
+    "paper/sections/11_limitations.tex": "09fd760951bf3fdaa455ec53a0321a0b24d099348383a7ee92094047467314b9",
+    "paper/sections/12_conclusion.tex": "08ed812ab133da027a6da37d43361ab96e2aaf65193ecab00a763e45296e34d9"
+  },
+  "worktree_changes": [],
+  "runtime_seconds": 4.159818457992515
+}
