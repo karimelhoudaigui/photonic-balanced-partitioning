@@ -1,13 +1,8 @@
 name: photonic-balanced-partitioning
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.11
-  - numpy>=1.26
-  - scipy>=1.11
-  - matplotlib>=3.8
   - pip
   - pip:
-    - pytest>=8
-    - hypothesis>=6
+    - -e .[all]

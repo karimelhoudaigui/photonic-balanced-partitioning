@@ -1,5 +1,2 @@
-numpy>=1.26
-scipy>=1.11
-perceval>=0.0.1
-pyyaml>=6.0
-requests>=2.28
+# Local validation only; installing this does not authorize QPU calls.
+-e .[qpu]
