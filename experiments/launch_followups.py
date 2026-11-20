@@ -11,6 +11,7 @@ RECORDER=Path('/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remot
 TASKS={
     'E05b_exact_equal_budget': ('experiments/run_equal_budget.py',['summary.json','runs.jsonl']),
     'E08_coherence_certificate': ('experiments/run_coherence_check.py',['summary.json','counterexamples.json']),
+    'E09_label_control': ('experiments/run_label_control.py',['summary.json','runs.jsonl']),
 }
 
 
@@ -21,9 +22,11 @@ def main():
     artifacts=sorted(str(p.relative_to(ROOT)) for p in (ROOT/'src').rglob('*.py'))
     artifacts+=['experiments/run_research.py','experiments/launch_followups.py',script,'pyproject.toml']
     if name=='E08_coherence_certificate':artifacts+=['theory/near_collisionless_bound.md']
+    descriptions={'E05b_exact_equal_budget':'Equal actual ideal simulated attempt budgets including every training batch and first discovery',
+                  'E08_coherence_certificate':'Full Fock TV bounds and exact balanced-density counterexamples to collision-only approximation',
+                  'E09_label_control':'Shallow mesh versus full depth after relabeling the same graph; reachability obstruction'}
     contract=dict(claim_id=name,mathematics=dict(
-        assertion_tested=('Equal actual ideal simulated attempt budgets including every training batch and first discovery'
-                         if name.startswith('E05') else 'Full Fock TV bounds and exact balanced-density counterexamples to collision-only approximation'),
+        assertion_tested=descriptions[name],
         coefficient_domain='float64/complex128 with rational counterexample summaries',
         conventions='passive lossless, k distinct occupied inputs; no postselection renormalization; TV=half L1',
         inputs=[script,'fixed seeds and ranges hardcoded in the declared script'],bounds=dict(base_seed=20261120),
