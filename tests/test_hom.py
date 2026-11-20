@@ -97,3 +97,37 @@ def test_permanent_normalization():
     M = np.array([[0, 1], [1, 0]])
     perm = solver._permanent(M)
     assert np.isclose(perm, 1.0)
+
+
+def test_hom_complex_amplitudes_and_distinguishable_coincidence():
+    """Real BS convention: |11> -> (-|20>+|02>)/sqrt(2)."""
+    solver = FixedPhotonObliq(2, 2)
+    u = np.array([[1, -1], [1, 1]], dtype=complex) / np.sqrt(2)
+    states = solver._enumerate_all_fock_states()
+    psi = solver.output_state(u)
+    assert abs(psi[states.index((2, 0))] + 1 / np.sqrt(2)) < 1e-12
+    assert abs(psi[states.index((0, 2))] - 1 / np.sqrt(2)) < 1e-12
+    assert abs(psi[states.index((1, 1))]) < 1e-12
+    # Independent labeled-particle calculation has coincidence probability 1/2.
+    p_distinct = abs(u[0, 0] * u[1, 1]) ** 2 + abs(u[0, 1] * u[1, 0]) ** 2
+    assert abs(p_distinct - .5) < 1e-12
+
+
+def test_permutation_moves_all_input_photons():
+    solver = FixedPhotonObliq(6, 3)
+    permutation = [3, 5, 1, 0, 2, 4]
+    u = np.eye(6, dtype=complex)[:, permutation]
+    expected = tuple(int(j in permutation[:3]) for j in range(6))
+    psi = solver.output_state(u)
+    assert abs(psi[solver._fock_state_to_index(expected)] - 1) < 1e-12
+
+
+def test_single_photon_beamsplitter_and_phase():
+    solver = FixedPhotonObliq(2, 1)
+    theta = .37
+    phase = .29
+    u = np.array([[np.cos(theta), -np.sin(theta)], [np.sin(theta), np.cos(theta)]], dtype=complex)
+    u[0, :] *= np.exp(1j * phase)
+    psi = solver.output_state(u)
+    assert abs(psi[solver._fock_state_to_index((1, 0))] - np.cos(theta) * np.exp(1j * phase)) < 1e-12
+    assert abs(psi[solver._fock_state_to_index((0, 1))] - np.sin(theta)) < 1e-12

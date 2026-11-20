@@ -44,7 +44,7 @@ def test_input_state():
     psi = solver.input_state()
     
     assert psi.shape == (solver.full_dimension,)
-    assert psi[0] == 1.0
+    assert psi[solver._fock_state_to_index((1, 1, 0, 0))] == 1.0
     assert np.sum(np.abs(psi) ** 2) == 1.0
 
 
@@ -84,7 +84,7 @@ def test_sample():
     for sample in samples:
         assert isinstance(sample, FixedPhotonResult)
         assert sum(sample.occupation_numbers) == 2  # k photons
-        assert sample.is_balanced  # Always True for fixed-k
+        assert sample.is_balanced == sample.is_valid  # threshold bitstrings are balanced only without collisions
 
 
 def test_sample_probabilities():

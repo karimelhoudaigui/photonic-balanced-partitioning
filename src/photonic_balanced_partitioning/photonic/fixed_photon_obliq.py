@@ -1,349 +1,208 @@
-"""Fixed-k photon interferometer implementation based on ObliQ.
+"""Exact ideal passive linear optics, including every collisional Fock outcome.
 
-CORRECTED VERSION: Properly handles full Fock space vs collision-free subspace.
-
-Key correction: Fixed photon number (∑n_i = k) does NOT imply collision-free
-occupations (n_i ∈ {0,1}). We must simulate the full Fock space and measure
-collision probability separately.
+Rows of U label output modes and columns label input modes.  The default input
+has one photon in each of the first k modes.  No postselection or normalization
+is applied to calculated amplitudes.  The historical class name does not imply
+an implementation of the ObliQ binary encoding.
 """
-
 from __future__ import annotations
 
 import math
 from dataclasses import dataclass
-from itertools import combinations, product
+from functools import lru_cache
+from itertools import combinations
+from numbers import Integral
 from typing import Any
+
 import numpy as np
-from scipy.special import comb
+
+
+@lru_cache(maxsize=None)
+def _fock_states(m: int, k: int) -> tuple[tuple[int, ...], ...]:
+    """Weak compositions, in the previous lexicographic basis order."""
+    if m == 1:
+        return ((k,),)
+    return tuple((j,) + rest for j in range(k + 1)
+                 for rest in _fock_states(m - 1, k - j))
+
+
+@lru_cache(maxsize=None)
+def _ryser_subsets(k: int) -> tuple[np.ndarray, np.ndarray]:
+    masks = np.arange(1, 1 << k, dtype=np.int64)
+    bits = ((masks[:, None] >> np.arange(k)) & 1).astype(float)
+    signs = np.where((k - bits.sum(axis=1).astype(int)) % 2, -1., 1.)
+    return bits, signs
 
 
 @dataclass(frozen=True)
 class FixedPhotonResult:
-    """Result from a single photon sampling."""
-    occupation_numbers: tuple[int, ...]  # n_i for each mode
-    is_valid: bool  # True if collision-free (all n_i <= 1)
-    is_balanced: bool  # True if sum(n_i) = k (always True for fixed-k)
-    energy: float  # Cut weight of decoded partition (only valid if is_valid)
-    partition: tuple[int, ...] | None  # Vertices in V0 (only valid if is_valid)
-    probability: float  # Probability of this outcome
+    occupation_numbers: tuple[int, ...]
+    is_valid: bool
+    is_balanced: bool
+    energy: float
+    partition: tuple[int, ...] | None
+    probability: float
 
 
 class FixedPhotonObliq:
-    """Fixed-k photon interferometer for balanced graph partitioning.
-    
-    This implements the constraint-preserving approach where:
-    - n photons are injected into n modes
-    - A passive linear interferometer U is applied
-    - We measure collision-free probability separately
-    - Only collision-free outcomes correspond to balanced partitions
-    
-    CRITICAL: Fixed photon number does NOT guarantee collision-free outcomes.
-    """
-    
+    """Ideal k-photon simulation; balanced bitstrings require collision-free detection."""
+
     def __init__(self, n: int, k: int | None = None):
-        """Initialize the fixed-photon interferometer.
-        
-        Args:
-            n: Number of vertices/modes (must be even)
-            k: Number of photons (default: n/2 for bisection)
-        """
-        if n % 2 != 0:
-            raise ValueError(f"n must be even, got {n}")
-        self.n = n
-        self.k = k if k is not None else n // 2
-        
-        # Full Fock space dimension: C(n+k-1, k)
-        self._full_dimension = int(comb(self.n + self.k - 1, self.k, exact=True))
-        
-        # Collision-free dimension: C(n, k)
-        self._cf_dimension = int(comb(self.n, self.k, exact=True))
-    
+        if not isinstance(n, Integral) or n < 2 or n % 2:
+            raise ValueError("n must be a positive even integer (at least 2)")
+        k = n // 2 if k is None else k
+        if not isinstance(k, Integral) or not 0 <= k <= n:
+            raise ValueError("k must be an integer between 0 and n")
+        self.n, self.k = int(n), int(k)
+        self._full_dimension = math.comb(self.n + self.k - 1, self.k)
+        self._cf_dimension = math.comb(self.n, self.k)
+        self._default_input = (1,) * self.k + (0,) * (self.n - self.k)
+        self._all_states = _fock_states(self.n, self.k)
+        self._cf_states = tuple(tuple(int(i in selected) for i in range(self.n))
+                                for selected in combinations(range(self.n), self.k))
+        self._state_index = {state: j for j, state in enumerate(self._all_states)}
+        self._cf_indices = np.array([self._state_index[s] for s in self._cf_states])
+        self._rows = {}
+        self._norms = {}
+        for label, states in (("full", self._all_states), ("cf", self._cf_states)):
+            self._rows[label] = np.array([[i for i, count in enumerate(s) for _ in range(count)]
+                                         for s in states], dtype=int).reshape(len(states), self.k)
+            self._norms[label] = np.sqrt([math.prod(math.factorial(c) for c in s) for s in states])
+
     @property
     def full_dimension(self) -> int:
-        """Dimension of the full k-photon Fock space."""
         return self._full_dimension
-    
+
     @property
     def cf_dimension(self) -> int:
-        """Dimension of the collision-free subspace."""
         return self._cf_dimension
-    
+
     def random_interferometer(self, seed: int | None = None) -> np.ndarray:
-        """Generate a random unitary interferometer."""
+        """Haar unitary from complex Gaussian QR with diagonal phase correction."""
         rng = np.random.default_rng(seed)
-        Z = rng.standard_normal((self.n, self.n)) + 1j * rng.standard_normal((self.n, self.n))
-        Q, R = np.linalg.qr(Z)
-        Lambda = np.diag(np.diag(R) / np.abs(np.diag(R)))
-        return Q @ Lambda
-    
+        z = rng.standard_normal((self.n, self.n)) + 1j * rng.standard_normal((self.n, self.n))
+        q, r = np.linalg.qr(z)
+        d = np.diag(r)
+        return q @ np.diag(d / np.abs(d))
+
+    def _validate_unitary(self, U: np.ndarray) -> np.ndarray:
+        U = np.asarray(U, dtype=complex)
+        if U.shape != (self.n, self.n) or not np.all(np.isfinite(U)):
+            raise ValueError("U must be a finite n by n matrix")
+        if not np.allclose(U.conj().T @ U, np.eye(self.n), atol=1e-10, rtol=0):
+            raise ValueError("U must be unitary; loss requires a separate model")
+        return U
+
+    def _validate_occupation(self, occupation) -> tuple[int, ...]:
+        occupation = tuple(occupation)
+        if (len(occupation) != self.n or any(not isinstance(c, Integral) or c < 0 for c in occupation)
+                or sum(occupation) != self.k):
+            raise ValueError("occupation must have n nonnegative integer entries summing to k")
+        return occupation
+
     def input_state(self) -> np.ndarray:
-        """Return the input state vector in the full Fock space.
-        
-        Input is |1, 1, 0, ..., 0⟩ (first k modes have one photon each).
-        """
+        """Default input in the SAME basis as output_state (not basis index zero)."""
         psi = np.zeros(self.full_dimension, dtype=complex)
-        psi[0] = 1.0
+        psi[self._state_index[self._default_input]] = 1
         return psi
-    
+
     def _enumerate_all_fock_states(self) -> list[tuple[int, ...]]:
-        """Enumerate all Fock states with k photons in n modes.
-        
-        This includes collision states like |2,0,0,0⟩.
-        """
-        states = []
-        for combo in product(range(self.k + 1), repeat=self.n):
-            if sum(combo) == self.k:
-                states.append(combo)
-        return states
-    
+        return list(self._all_states)
+
     def _enumerate_cf_states(self) -> list[tuple[int, ...]]:
-        """Enumerate only collision-free Fock states (n_i ∈ {0,1})."""
-        # Each state is a tuple of occupation numbers (n_0, n_1, ..., n_{n-1})
-        # where exactly k of them are 1 and the rest are 0
-        states = []
-        for combo in combinations(range(self.n), self.k):
-            state = [0] * self.n
-            for i in combo:
-                state[i] = 1
-            states.append(tuple(state))
-        return states
-    
-    def _fock_state_to_index(self, state: tuple[int, ...], all_states: list[tuple[int, ...]]) -> int:
-        """Convert a Fock state to its index in the enumeration."""
-        return all_states.index(state)
-    
-    def _compute_amplitude(self, U: np.ndarray, input_state: tuple[int, ...], 
-                           output_state: tuple[int, ...]) -> complex:
-        """Compute the bosonic transition amplitude.
-        
-        For input occupation s and output occupation t:
-        A(s→t) = Per(U_{t,s}) / sqrt(∏s_i! ∏t_j!)
-        
-        where U_{t,s} is the submatrix with rows indexed by t and columns by s.
-        """
-        # Build the submatrix
-        # For each mode i with s_i photons in, we need s_i columns from U
-        # For each mode j with t_j photons out, we need t_j rows from U
-        
-        # Get row indices (with multiplicity)
-        rows = []
-        for j, tj in enumerate(output_state):
-            rows.extend([j] * tj)
-        
-        # Get column indices (with multiplicity)
-        cols = []
-        for i, si in enumerate(input_state):
-            cols.extend([i] * si)
-        
-        if not rows or not cols:
-            return 0.0
-        
-        U_sub = U[np.ix_(rows, cols)]
-        
-        # Permanent
-        perm = self._permanent(U_sub)
-        
-        # Normalization
-        norm = 1.0
-        for si in input_state:
-            norm *= math.sqrt(math.factorial(si))
-        for tj in output_state:
-            norm *= math.sqrt(math.factorial(tj))
-        
-        return perm / norm
-    
+        return list(self._cf_states)
+
+    def _enumerate_partitions(self) -> list[tuple[int, ...]]:
+        return [tuple(i for i, c in enumerate(s) if c) for s in self._cf_states]
+
+    def _fock_state_to_index(self, state, all_states=None) -> int:
+        return self._state_index[tuple(state)] if all_states is None else all_states.index(tuple(state))
+
     def _permanent(self, M: np.ndarray) -> complex:
-        """Compute the permanent using Ryser's formula."""
-        n = M.shape[0]
-        if n == 0:
-            return 1.0
-        if n == 1:
-            return M[0, 0]
-        
-        total = 0.0
-        for k in range(1, 2**n):
-            subset = [i for i in range(n) if (k >> i) & 1]
-            prod = 1.0
-            for i in range(n):
-                row_sum = sum(M[i, j] for j in subset)
-                prod *= row_sum
-            sign = (-1) ** (n - len(subset))
-            total += sign * prod
-        
-        return total * ((-1) ** n)
-    
-    def output_state(self, U: np.ndarray) -> np.ndarray:
-        """Compute the output state in the full Fock space."""
-        all_states = self._enumerate_all_fock_states()
-        psi_out = np.zeros(self.full_dimension, dtype=complex)
-        
-        # Input state: first k modes have 1 photon each
-        input_state = tuple([1] * self.k + [0] * (self.n - self.k))
-        
-        for j, output_state in enumerate(all_states):
-            amplitude = self._compute_amplitude(U, input_state, output_state)
-            psi_out[j] = amplitude
-        
-        # Normalize
-        norm = np.sqrt(np.sum(np.abs(psi_out) ** 2))
-        if norm > 0:
-            psi_out = psi_out / norm
-        
-        return psi_out
-    
-    def measure_collision_free_probability(self, U: np.ndarray) -> float:
-        """Measure the probability of collision-free detection."""
-        psi_out = self.output_state(U)
-        all_states = self._enumerate_all_fock_states()
-        cf_states = self._enumerate_cf_states()
-        
-        p_cf = 0.0
-        for j, state in enumerate(all_states):
-            if state in cf_states:
-                p_cf += np.abs(psi_out[j]) ** 2
-        
-        return float(p_cf)
-    
-    def sample(self, U: np.ndarray, num_shots: int, 
-               edges: list[tuple[int, int, float]] | None = None,
-               seed: int | None = None) -> list[FixedPhotonResult]:
-        """Sample from the output distribution in the full Fock space."""
+        """Ryser's formula, including correct phases for odd photon numbers."""
+        M = np.asarray(M)
+        if M.ndim != 2 or M.shape[0] != M.shape[1]:
+            raise ValueError("permanent requires a square matrix")
+        k = M.shape[0]
+        if k == 0:
+            return 1.0 + 0j
+        bits, signs = _ryser_subsets(k)
+        return complex(np.prod(M @ bits.T, axis=0) @ signs)
+
+    def _compute_amplitude(self, U, input_state, output_state) -> complex:
+        s = self._validate_occupation(input_state)
+        t = self._validate_occupation(output_state)
+        rows = [i for i, count in enumerate(t) for _ in range(count)]
+        cols = [i for i, count in enumerate(s) for _ in range(count)]
+        norm = math.sqrt(math.prod(math.factorial(c) for c in s + t))
+        return self._permanent(np.asarray(U)[np.ix_(rows, cols)]) / norm
+
+    def _amplitudes(self, U, label="full", input_occupation=None):
+        U = self._validate_unitary(U)
+        s = self._default_input if input_occupation is None else self._validate_occupation(input_occupation)
+        count = self.full_dimension if label == "full" else self.cf_dimension
+        if self.k == 0:
+            return np.ones(count, dtype=complex)
+        cols = np.array([i for i, c in enumerate(s) for _ in range(c)])
+        matrices = U[self._rows[label][:, :, None], cols[None, None, :]]
+        bits, signs = _ryser_subsets(self.k)
+        row_sums = matrices @ bits.T
+        permanents = np.prod(row_sums, axis=1) @ signs
+        input_norm = math.sqrt(math.prod(math.factorial(c) for c in s))
+        return permanents / (input_norm * self._norms[label])
+
+    def output_state(self, U, input_occupation=None) -> np.ndarray:
+        """Unrenormalized full Fock amplitudes. Reject a normalization failure."""
+        psi = self._amplitudes(U, "full", input_occupation)
+        if not np.isclose(np.vdot(psi, psi).real, 1., atol=1e-9, rtol=0):
+            raise ArithmeticError("full Fock distribution failed normalization")
+        return psi
+
+    def collision_free_probabilities(self, U) -> np.ndarray:
+        """Unconditioned CF probabilities in _enumerate_cf_states order."""
+        return np.abs(self._amplitudes(U, "cf")) ** 2
+
+    def measure_collision_free_probability(self, U) -> float:
+        return float(self.collision_free_probabilities(U).sum())
+
+    def sample(self, U, num_shots: int, edges=None, seed=None) -> list[FixedPhotonResult]:
+        if not isinstance(num_shots, Integral) or num_shots < 0:
+            raise ValueError("num_shots must be a nonnegative integer")
         rng = np.random.default_rng(seed)
-        
-        psi_out = self.output_state(U)
-        probabilities = np.abs(psi_out) ** 2
-        probabilities /= probabilities.sum()
-        
-        all_states = self._enumerate_all_fock_states()
-        cf_states = set(self._enumerate_cf_states())
-        
+        p = np.abs(self.output_state(U)) ** 2
+        # output_state has independently checked raw normalization; this division
+        # accommodates roundoff solely for numpy.random.choice's stricter check.
+        indices = rng.choice(len(p), size=num_shots, p=p / p.sum())
         results = []
-        for _ in range(num_shots):
-            idx = rng.choice(self.full_dimension, p=probabilities)
-            state = all_states[idx]
-            prob = probabilities[idx]
-            
-            is_valid = state in cf_states
-            is_balanced = sum(state) == self.k  # Always True for fixed-k
-            
-            # Compute energy only for valid (collision-free) states
-            energy = 0.0
-            partition = None
-            if is_valid:
-                partition = tuple(i for i, ni in enumerate(state) if ni == 1)
-                if edges is not None:
-                    v0 = set(partition)
-                    v1 = set(range(self.n)) - v0
-                    energy = sum(w for i, j, w in edges 
-                                if (i in v0 and j in v1) or (i in v1 and j in v0))
-            
-            result = FixedPhotonResult(
-                occupation_numbers=state,
-                is_valid=is_valid,
-                is_balanced=is_balanced,
-                energy=energy,
-                partition=partition,
-                probability=prob
-            )
-            results.append(result)
-        
+        for j in indices:
+            state = self._all_states[j]
+            valid = all(c <= 1 for c in state)
+            partition = tuple(i for i, c in enumerate(state) if c) if valid else None
+            energy = self._compute_cut_weight(partition, edges) if valid and edges is not None else float("nan")
+            results.append(FixedPhotonResult(state, valid, valid, energy, partition, float(p[j])))
         return results
-    
-    def compute_energy(self, U: np.ndarray, edges: list[tuple[int, int, float]]) -> float:
-        """Compute conditional expected cut energy E_valid = E[C|CF].
-        
-        This is the expected energy conditioned on collision-free detection.
-        Formula: E_valid = Σ p(s)C_G(s) / P_CF
-        """
-        psi_out = self.output_state(U)
-        probabilities = np.abs(psi_out) ** 2
-        probabilities /= probabilities.sum()
-        
-        all_states = self._enumerate_all_fock_states()
-        cf_states = set(self._enumerate_cf_states())
-        
-        # Compute P_CF
-        p_cf = sum(probabilities[j] for j, state in enumerate(all_states) if state in cf_states)
-        
-        if p_cf < 1e-10:
-            return float('inf')  # No valid solutions possible
-        
-        # Compute conditional expected energy
-        expected_energy = 0.0
-        for j, state in enumerate(all_states):
-            if state in cf_states:
-                partition = tuple(i for i, ni in enumerate(state) if ni == 1)
-                v0 = set(partition)
-                v1 = set(range(self.n)) - v0
-                energy = sum(w for i, j, w in edges 
-                            if (i in v0 and j in v1) or (i in v1 and j in v0))
-                expected_energy += probabilities[j] * energy
-        
-        return expected_energy / p_cf
-    
-    def compute_unconditional_energy(self, U: np.ndarray, edges: list[tuple[int, int, float]]) -> float:
-        """Compute unconditional expected cut energy.
-        
-        Formula: E_uncond = Σ p(s)C_G(s) over all states
-        """
-        psi_out = self.output_state(U)
-        probabilities = np.abs(psi_out) ** 2
-        probabilities /= probabilities.sum()
-        
-        all_states = self._enumerate_all_fock_states()
-        cf_states = set(self._enumerate_cf_states())
-        
-        expected_energy = 0.0
-        for j, state in enumerate(all_states):
-            if state in cf_states:
-                partition = tuple(i for i, ni in enumerate(state) if ni == 1)
-                v0 = set(partition)
-                v1 = set(range(self.n)) - v0
-                energy = sum(w for i, j, w in edges 
-                            if (i in v0 and j in v1) or (i in v1 and j in v0))
-                expected_energy += probabilities[j] * energy
-        
-        return expected_energy
-    
-    def compute_success_probability(self, U: np.ndarray, edges: list[tuple[int, int, float]], 
-                                    optimal_energy: float) -> float:
-        """Compute probability of finding optimal solution.
-        
-        P_success = Σ p(s) for s in CF with C_G(s) = C*
-        """
-        psi_out = self.output_state(U)
-        probabilities = np.abs(psi_out) ** 2
-        probabilities /= probabilities.sum()
-        
-        all_states = self._enumerate_all_fock_states()
-        cf_states = set(self._enumerate_cf_states())
-        
-        p_success = 0.0
-        for j, state in enumerate(all_states):
-            if state in cf_states:
-                partition = tuple(i for i, ni in enumerate(state) if ni == 1)
-                v0 = set(partition)
-                v1 = set(range(self.n)) - v0
-                energy = sum(w for i, j, w in edges 
-                            if (i in v0 and j in v1) or (i in v1 and j in v0))
-                if abs(energy - optimal_energy) < 1e-10:
-                    p_success += probabilities[j]
-        
-        return p_success
-    
-    def _compute_cut_weight(self, partition: tuple[int, ...], 
-                            edges: list[tuple[int, int, float]]) -> float:
-        """Compute cut weight for a partition."""
-        v0 = set(partition)
-        v1 = set(range(self.n)) - v0
-        
-        cut_weight = 0.0
-        for i, j, w in edges:
-            if (i in v0 and j in v1) or (i in v1 and j in v0):
-                cut_weight += w
-        
-        return cut_weight
-    
+
+    def _cf_energies(self, edges):
+        return np.array([self._compute_cut_weight(p, edges) for p in self._enumerate_partitions()])
+
+    def compute_energy(self, U, edges) -> float:
+        """Conditional expectation E[C|CF]; undefined/no-support is +infinity."""
+        p = self.collision_free_probabilities(U)
+        p_cf = float(p.sum())
+        return float(p @ self._cf_energies(edges) / p_cf) if p_cf > 1e-14 else float("inf")
+
+    def compute_unconditional_energy(self, U, edges) -> float:
+        """Diagnostic subnormalized CF moment, NOT a valid minimization objective."""
+        return float(self.collision_free_probabilities(U) @ self._cf_energies(edges))
+
+    def compute_success_probability(self, U, edges, optimal_energy) -> float:
+        p = self.collision_free_probabilities(U)
+        return float(p[np.isclose(self._cf_energies(edges), optimal_energy, atol=1e-10, rtol=0)].sum())
+
+    def _compute_cut_weight(self, partition, edges) -> float:
+        selected = set(partition)
+        return float(sum(w for i, j, w in edges if (i in selected) != (j in selected)))
+
     def optimize(self, edges: list[tuple[int, int, float]], 
                  num_iterations: int = 100, seed: int | None = None) -> dict[str, Any]:
         """Optimize the interferometer to minimize expected cut energy."""

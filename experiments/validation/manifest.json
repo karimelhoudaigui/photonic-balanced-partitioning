@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "claim_id": "PHYSICS_PERCEVAL_SMALL_IDEAL",
+  "repository": {
+    "commit": "847d7a0e05cdf7fa8ca50c68f51f8d7e03158508",
+    "dirty": true
+  },
+  "command": "MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/validation/run_physics_validation.py",
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Raw full Fock probabilities AND complex amplitudes equal local Perceval SLOS, with normalization.",
+    "coefficient_domain": "Complex IEEE binary64 amplitudes and real binary64 probabilities",
+    "conventions": "Output rows, input columns; Per(U[t,s])/sqrt(prod(s_i!) prod(t_j!)); no amplitude renormalization",
+    "inputs": [
+      "60 seeded Haar matrices; two Fock inputs per matrix",
+      "five named analytic input/circuit cases"
+    ],
+    "bounds": {
+      "modes": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "max_photons": 4,
+      "cases": 125,
+      "tolerance": 1e-10
+    },
+    "non_claims": [
+      "No hardware executed",
+      "No losses or partial distinguishability modeled",
+      "Finite floating-point validation, not an asymptotic theorem"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.default_rng PCG64 complex Gaussian QR",
+    "seed": "23000 + 100*m + j, j=0..9 for each (m,k) specified in script"
+  },
+  "run": {
+    "started_at": "2026-11-20T17:41:41.374351+00:00",
+    "runtime_seconds": 0.20809099997859448,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/validation/full_fock_distributions.json",
+      "sha256": "59c7c9559542bc20aa5137a75dd324268866c9f6bffa765a0ec0dda12300e6b7",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/validation/summary.json",
+      "sha256": "f1ee1b73ee25b9cab66a5bf783fd2b1055539745ad621d4ee378b3f0ca1a0356",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "All enumerated Fock outcomes including zeros",
+    "Raw normalization in both implementations",
+    "Complex amplitudes and probabilities; bunched and collision-free inputs",
+    "Source hashes identical before and after computation"
+  ],
+  "result": "PASS: max probability error 1.7763568394002505e-15; max amplitude error 2.1350154548329877e-15",
+  "residual_risks": [
+    "No hardware executed",
+    "No losses or partial distinguishability modeled",
+    "Finite floating-point validation, not an asymptotic theorem",
+    "No externally enforced process resource cap; measured runtime recorded"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/validation/run_physics_validation.py",
+      "sha256": "92d18ae5d4835ec431c39c59bb8321ca10f7c9c664da0a86096d95b4db52c844",
+      "sha256_after": "92d18ae5d4835ec431c39c59bb8321ca10f7c9c664da0a86096d95b4db52c844"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    }
+  ],
+  "declared_results": [
+    "experiments/validation/full_fock_distributions.json",
+    "experiments/validation/summary.json"
+  ]
+}

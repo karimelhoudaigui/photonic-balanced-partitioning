@@ -1,0 +1,79 @@
+{
+  "assertion_tested": "Raw full Fock probabilities AND complex amplitudes equal local Perceval SLOS, with normalization.",
+  "status": "PASS",
+  "started_utc": "2026-11-20T17:41:41.374351+00:00",
+  "ended_utc": "2026-11-20T17:41:41.582434+00:00",
+  "runtime_seconds": 0.20809099997859448,
+  "git_commit": "847d7a0e05cdf7fa8ca50c68f51f8d7e03158508",
+  "git_dirty": [
+    " M LAURENT_HANDOFF.md",
+    " M paper/FROZEN.md",
+    " M qpu/README_QPU.md",
+    " M qpu/check_backend.py",
+    " M qpu/run_qpu.py",
+    " M qpu/smoke_test.py",
+    " M src/photonic_balanced_partitioning/__pycache__/cli.cpython-311.pyc",
+    " M src/photonic_balanced_partitioning/classical/baselines.py",
+    " M src/photonic_balanced_partitioning/cli.py",
+    " M src/photonic_balanced_partitioning/photonic/__pycache__/collision_aware.cpython-311.pyc",
+    " M src/photonic_balanced_partitioning/photonic/__pycache__/cvar_fixed_photon.cpython-311.pyc",
+    " M src/photonic_balanced_partitioning/photonic/__pycache__/fixed_photon_obliq.cpython-311.pyc",
+    " M src/photonic_balanced_partitioning/photonic/__pycache__/penalty_obliq.cpython-311.pyc",
+    " M src/photonic_balanced_partitioning/photonic/collision_aware.py",
+    " M src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+    " M src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    " M src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+    " M src/photonic_balanced_partitioning/problems/__pycache__/min_bisection.cpython-311.pyc",
+    " M src/photonic_balanced_partitioning/problems/min_bisection.py",
+    " M tests/test_fixed_photon.py",
+    " M tests/test_hom.py",
+    "?? experiments/",
+    "?? reports/PERCEVAL_VALIDATION.md",
+    "?? src/photonic_balanced_partitioning/photonic/collision_aware.py.backup",
+    "?? src/photonic_balanced_partitioning/photonic/collision_aware.py.bak",
+    "?? src/photonic_balanced_partitioning/photonic/collision_aware.py.new",
+    "?? src/photonic_balanced_partitioning/photonic/comparison.py",
+    "?? src/photonic_balanced_partitioning/photonic/mesh.py",
+    "?? src/photonic_balanced_partitioning/photonic/objectives.py",
+    "?? tests/test_audit_regressions.py",
+    "?? tests/test_mesh_comparison.py",
+    "?? tests/test_objectives.py",
+    "?? tests/test_penalty.py",
+    "?? tests/test_perceval_cross_validation.py",
+    "?? tests/test_permanent_normalization.py",
+    "?? tests/test_qpu_gate.py"
+  ],
+  "input_hashes_before": {
+    "experiments/validation/run_physics_validation.py": "92d18ae5d4835ec431c39c59bb8321ca10f7c9c664da0a86096d95b4db52c844",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+  },
+  "input_hashes_after": {
+    "experiments/validation/run_physics_validation.py": "92d18ae5d4835ec431c39c59bb8321ca10f7c9c664da0a86096d95b4db52c844",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+  },
+  "output_hashes": {
+    "experiments/validation/full_fock_distributions.json": "59c7c9559542bc20aa5137a75dd324268866c9f6bffa765a0ec0dda12300e6b7"
+  },
+  "python": "3.11.15",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "perceval-quandela": "1.3.0",
+    "exqalibur": "1.4.2",
+    "pytest": "8.4.2"
+  },
+  "random_circuits": 60,
+  "input_circuit_cases": 125,
+  "fock_outcomes": 8464,
+  "max_probability_error": 1.7763568394002505e-15,
+  "max_complex_amplitude_error": 2.1350154548329877e-15,
+  "max_raw_norm_error": 4.218847493575595e-15,
+  "tolerance": 1e-10,
+  "argv": "MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/validation/run_physics_validation.py",
+  "non_claims": [
+    "No hardware executed",
+    "No losses or partial distinguishability modeled",
+    "Finite floating-point validation, not an asymptotic theorem"
+  ]
+}
