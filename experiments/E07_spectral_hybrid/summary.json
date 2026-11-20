@@ -1,0 +1,501 @@
+{
+  "experiment": "ideal optimizer diagnostics; oracle C* is available for success loss",
+  "uncertainty": "Pooled t intervals across the fixed family/instance/repeat grid are descriptive only; shared initial seeds and repeated path/cycle graphs preclude population-significance claims",
+  "comparisons_are_not_hardware_budget_claims": true,
+  "physical_shots": 0,
+  "total_evaluations": 50988,
+  "results": [
+    {
+      "n": 4,
+      "model": "bosonic",
+      "objective": "conditional",
+      "method": "COBYLA",
+      "depth": 4,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.9800005111755876,
+        "ci95": [
+          0.9635798444918985,
+          0.9964211778592768
+        ],
+        "median": 1.0,
+        "minimum": 0.8382915544201284,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.14666717784225428,
+        "ci95": [
+          0.03397657804617692,
+          0.2593577776383316
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.9217145796869229
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.45222273339780983,
+        "ci95": [
+          0.3630435681800747,
+          0.5414018986155449
+        ],
+        "median": 0.6275239565101282,
+        "minimum": 0.0,
+        "maximum": 0.6666666666666667
+      }
+    },
+    {
+      "n": 4,
+      "model": "bosonic",
+      "objective": "success",
+      "method": "COBYLA",
+      "depth": 4,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.9999943403750939,
+        "ci95": [
+          0.9999887530353331,
+          0.9999999277148548
+        ],
+        "median": 1.0,
+        "minimum": 0.9999409470303325,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.16666100704176062,
+        "ci95": [
+          0.03878057079721478,
+          0.2945414432863065
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.999991137470795
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.4722165625973162,
+        "ci95": [
+          0.38537546329745476,
+          0.5590576618971776
+        ],
+        "median": 0.6666622354020643,
+        "minimum": 0.0,
+        "maximum": 0.6666666666666667
+      }
+    },
+    {
+      "n": 4,
+      "model": "distinguishable",
+      "objective": "conditional",
+      "method": "COBYLA",
+      "depth": 4,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.9978421298379653,
+        "ci95": [
+          0.9953904407087267,
+          1.000293818967204
+        ],
+        "median": 1.0,
+        "minimum": 0.9741460715245417,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.16450879650463207,
+        "ci95": [
+          0.03826682105576515,
+          0.29075077195349897
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.999959486531043
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.47006435206018765,
+        "ci95": [
+          0.38278562069994765,
+          0.5573430834204276
+        ],
+        "median": 0.6666464099321883,
+        "minimum": 0.0,
+        "maximum": 0.6666666666666667
+      }
+    },
+    {
+      "n": 4,
+      "model": "distinguishable",
+      "objective": "success",
+      "method": "COBYLA",
+      "depth": 4,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.9999636923493651,
+        "ci95": [
+          0.9999239416562893,
+          1.000003443042441
+        ],
+        "median": 1.0,
+        "minimum": 0.9995797523705227,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.16663035901603165,
+        "ci95": [
+          0.03877343617169343,
+          0.2944872818603699
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.999984555821857
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.47218591457158726,
+        "ci95": [
+          0.38535453002653275,
+          0.5590172991166418
+        ],
+        "median": 0.666456542851928,
+        "minimum": 0.0,
+        "maximum": 0.6666666666666667
+      }
+    },
+    {
+      "n": 6,
+      "model": "bosonic",
+      "objective": "conditional",
+      "method": "COBYLA",
+      "depth": 6,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.7500000053200012,
+        "ci95": [
+          0.6014113228365012,
+          0.8985886878035012
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 5.320001303684321e-09,
+        "ci95": [
+          -6.715525295533234e-10,
+          1.1311555136921965e-08
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 6.322691506352256e-08
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.5750000053200013,
+        "ci95": [
+          0.4327371727494563,
+          0.7172628378905463
+        ],
+        "median": 0.8,
+        "minimum": -0.1,
+        "maximum": 0.9
+      }
+    },
+    {
+      "n": 6,
+      "model": "bosonic",
+      "objective": "success",
+      "method": "COBYLA",
+      "depth": 6,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.75,
+        "ci95": [
+          0.6014113143545321,
+          0.8985886856454679
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.5749999999999998,
+        "ci95": [
+          0.43273716445714383,
+          0.7172628355428559
+        ],
+        "median": 0.8,
+        "minimum": -0.1,
+        "maximum": 0.9
+      }
+    },
+    {
+      "n": 6,
+      "model": "distinguishable",
+      "objective": "conditional",
+      "method": "COBYLA",
+      "depth": 6,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.7499989791966871,
+        "ci95": [
+          0.6014104958095429,
+          0.8985874625838314
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": -1.0208033128075968e-06,
+        "ci95": [
+          -1.8040983526008864e-06,
+          -2.3750827301430712e-07
+        ],
+        "median": 0.0,
+        "minimum": -6.124974989640819e-06,
+        "maximum": 2.303313012547226e-10
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.5749989791966872,
+        "ci95": [
+          0.4327364182756448,
+          0.7172615401177296
+        ],
+        "median": 0.7999969375125051,
+        "minimum": -0.1,
+        "maximum": 0.9
+      }
+    },
+    {
+      "n": 6,
+      "model": "distinguishable",
+      "objective": "success",
+      "method": "COBYLA",
+      "depth": 6,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.75,
+        "ci95": [
+          0.6014113143545321,
+          0.8985886856454679
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0000000000000004
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 7.401486830834377e-17,
+        "ci95": [
+          1.722261790567338e-17,
+          1.3080711871101415e-16
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 4.440892098500626e-16
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.5749999999999998,
+        "ci95": [
+          0.43273716445714383,
+          0.7172628355428559
+        ],
+        "median": 0.8000000000000003,
+        "minimum": -0.1,
+        "maximum": 0.9
+      }
+    },
+    {
+      "n": 8,
+      "model": "bosonic",
+      "objective": "conditional",
+      "method": "COBYLA",
+      "depth": 8,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.7559084625296059,
+        "ci95": [
+          0.6297538793109256,
+          0.8820630457482861
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.08924179586293914,
+        "ci95": [
+          0.027930997447729214,
+          0.15055259427814904
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.6046370674067773
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.6963846530057963,
+        "ci95": [
+          0.5696582632530086,
+          0.823111042758584
+        ],
+        "median": 0.8999999999999999,
+        "minimum": -0.02857142857142857,
+        "maximum": 0.9714285714285714
+      }
+    },
+    {
+      "n": 8,
+      "model": "bosonic",
+      "objective": "success",
+      "method": "COBYLA",
+      "depth": 8,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.8321400136307832,
+        "ci95": [
+          0.7044337592914586,
+          0.9598462679701077
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.16547334696411647,
+        "ci95": [
+          0.0385027511770997,
+          0.2924439427511333
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.9971886940621413
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.7726162041069736,
+        "ci95": [
+          0.6469091366085075,
+          0.8983232716054398
+        ],
+        "median": 0.9285714285714286,
+        "minimum": -0.05714285714285714,
+        "maximum": 0.9714285714285714
+      }
+    },
+    {
+      "n": 8,
+      "model": "distinguishable",
+      "objective": "conditional",
+      "method": "COBYLA",
+      "depth": 8,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.8588647304238302,
+        "ci95": [
+          0.7614971245462325,
+          0.9562323363014278
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.1921980637571635,
+        "ci95": [
+          0.07605605669954087,
+          0.30834007081478615
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.9194313788406648
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.7993409209000206,
+        "ci95": [
+          0.7033803272933272,
+          0.895301514506714
+        ],
+        "median": 0.9025728322774753,
+        "minimum": -0.02857142857142857,
+        "maximum": 0.9714285714285714
+      }
+    },
+    {
+      "n": 8,
+      "model": "distinguishable",
+      "objective": "success",
+      "method": "COBYLA",
+      "depth": 8,
+      "runs": 36,
+      "after": {
+        "n": 36,
+        "mean": 0.8327506151132834,
+        "ci95": [
+          0.7049544869421878,
+          0.9605467432843791
+        ],
+        "median": 1.0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "improvement": {
+        "n": 36,
+        "mean": 0.16608394844661678,
+        "ci95": [
+          0.03864627090565406,
+          0.29352162598757947
+        ],
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.9970550732062291
+      },
+      "uniform_comparison": {
+        "n": 36,
+        "mean": 0.773226805589474,
+        "ci95": [
+          0.6474024813776588,
+          0.8990511298012892
+        ],
+        "median": 0.9285714285714286,
+        "minimum": -0.05714285714285714,
+        "maximum": 0.9714285714285714
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "schema_version": 2,
+  "claim_id": "E07_spectral_hybrid",
+  "repository": {
+    "commit": "5ce1dc127a95c092a433f6b5a4ea6ed7b8865f38",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/run_research.py",
+    "optimization",
+    "--anchor",
+    "--instances",
+    "2",
+    "--repeats",
+    "3",
+    "--budget",
+    "120",
+    "--models",
+    "bosonic",
+    "distinguishable",
+    "--objectives",
+    "success",
+    "conditional",
+    "--output",
+    "experiments/E07_spectral_hybrid"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Measure Haar loss, optimizer enrichment, model ablations or collision-moment bounds on the explicit finite command domain.",
+    "coefficient_domain": "complex128/float64; exact Fock enumeration, numerical optimization or ideal multinomial sampling",
+    "conventions": "lossless, first k=n/2 input modes each contain one photon; all collisions count as physical attempts; output order documented in code",
+    "inputs": [
+      "graph families path, cycle, regular (degree-preserving edge swaps, not uniform), Erdos-Renyi, weighted, planted; generator seeds in raw data"
+    ],
+    "bounds": {
+      "argv": [
+        "optimization",
+        "--anchor",
+        "--instances",
+        "2",
+        "--repeats",
+        "3",
+        "--budget",
+        "120",
+        "--models",
+        "bosonic",
+        "distinguishable",
+        "--objectives",
+        "success",
+        "conditional"
+      ],
+      "base_seed": 20261120
+    },
+    "non_claims": [
+      "Not a quantum advantage or hardware experiment",
+      "Oracle success training is a state-preparation diagnostic",
+      "Finite data do not prove scalable speedup",
+      "Product-Bernoulli penalty is classical, not genuine ObliQ dynamics"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng PCG64",
+    "seed": 20261120
+  },
+  "run": {
+    "started_at": "2026-11-20T17:51:20.124601+00:00",
+    "runtime_seconds": 32.451692,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 1800.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "src/photonic_balanced_partitioning/__init__.py",
+    "src/photonic_balanced_partitioning/classical/__init__.py",
+    "src/photonic_balanced_partitioning/classical/baselines.py",
+    "src/photonic_balanced_partitioning/cli.py",
+    "src/photonic_balanced_partitioning/photonic/__init__.py",
+    "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+    "src/photonic_balanced_partitioning/photonic/comparison.py",
+    "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/mesh.py",
+    "src/photonic_balanced_partitioning/photonic/objectives.py",
+    "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+    "src/photonic_balanced_partitioning/problems/min_bisection.py",
+    "experiments/run_research.py",
+    "experiments/launch.py",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "src/photonic_balanced_partitioning/__init__.py",
+      "sha256": "75ab1c22a43a9364a3ccda9a9b421ea965e158bef17987a9380826a70e579851",
+      "sha256_after": "75ab1c22a43a9364a3ccda9a9b421ea965e158bef17987a9380826a70e579851"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+      "sha256": "c5ebcc129a324bbf916aaa8a7561eb2f2793d7d4ed9c5e894af0142e73917f75",
+      "sha256_after": "c5ebcc129a324bbf916aaa8a7561eb2f2793d7d4ed9c5e894af0142e73917f75"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+      "sha256": "b9af026f1a660e325c56cb5df9ea3f873ba19efdc2177b8a6ff7a7249c23fcb9",
+      "sha256_after": "b9af026f1a660e325c56cb5df9ea3f873ba19efdc2177b8a6ff7a7249c23fcb9"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/cli.py",
+      "sha256": "6f95a274986f346b1294547807ada07b6573b66dee7a193624c5fd0889801a36",
+      "sha256_after": "6f95a274986f346b1294547807ada07b6573b66dee7a193624c5fd0889801a36"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+      "sha256": "66f72a4f3c0906902a51ab3103024feac261d29fbcf3e785b3e29b7c08fb7877",
+      "sha256_after": "66f72a4f3c0906902a51ab3103024feac261d29fbcf3e785b3e29b7c08fb7877"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+      "sha256": "687f3d52d22145e5c37aff7ee4afe046d13d8c5a6d75b6f9034fc4da341b467e",
+      "sha256_after": "687f3d52d22145e5c37aff7ee4afe046d13d8c5a6d75b6f9034fc4da341b467e"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+      "sha256": "4cbe9662c1d5629a2f320b90685c418a6ab5d2a97d9830fad285a196478b6f52",
+      "sha256_after": "4cbe9662c1d5629a2f320b90685c418a6ab5d2a97d9830fad285a196478b6f52"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+      "sha256": "1fd12d718d8cb404e55a290631469cecb934fe037f05bb90a9a6599558a0469d",
+      "sha256_after": "1fd12d718d8cb404e55a290631469cecb934fe037f05bb90a9a6599558a0469d"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+      "sha256": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9",
+      "sha256_after": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+      "sha256": "76baca319e50d731a2b925b8c266919513b3ecd02b9bb680b7481ad45887ca50",
+      "sha256_after": "76baca319e50d731a2b925b8c266919513b3ecd02b9bb680b7481ad45887ca50"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+      "sha256": "3c3cc7522e1e4d69f57e891ffcdc0fdae9055e6b1a2a61f619ea6b1e6a1ed678",
+      "sha256_after": "3c3cc7522e1e4d69f57e891ffcdc0fdae9055e6b1a2a61f619ea6b1e6a1ed678"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+      "sha256": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+      "sha256_after": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d"
+    },
+    {
+      "path": "experiments/run_research.py",
+      "sha256": "b80eb6be9f34ed25e8e04c2b74b7f5f11365c37784ea3842cbc1be081c48aeec",
+      "sha256_after": "b80eb6be9f34ed25e8e04c2b74b7f5f11365c37784ea3842cbc1be081c48aeec"
+    },
+    {
+      "path": "experiments/launch.py",
+      "sha256": "de233c0e4607a7eb1e5484e82850fe8c9b790e7aac79529c84d3135f82d7bc9b",
+      "sha256_after": "de233c0e4607a7eb1e5484e82850fe8c9b790e7aac79529c84d3135f82d7bc9b"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f",
+      "sha256_after": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f"
+    }
+  ],
+  "output_directory": "experiments/E07_spectral_hybrid",
+  "declared_results": [
+    "experiments/E07_spectral_hybrid/summary.json",
+    "experiments/E07_spectral_hybrid/runs.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/E07_spectral_hybrid/stdout.txt",
+      "sha256": "c751d701c2ff26bf8658185aa89e35baaecb5986040d0f1ddd5b8af5ce22b417",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/E07_spectral_hybrid/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/E07_spectral_hybrid/summary.json",
+      "sha256": "e1bd8b6c60dc84b728ca18d7ec9aaebe1e33361f654956bfe3a97832b4a184d8",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/E07_spectral_hybrid/runs.jsonl",
+      "sha256": "6b0ae3a3322135acdbf961d131a17f3d89d75da5298c2bfcb03505df92d217f1",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
