@@ -1,0 +1,13 @@
+ideal n=4 family=path instance=0 runs=27
+ideal n=4 family=path instance=1 runs=54
+ideal n=4 family=cycle instance=0 runs=81
+ideal n=4 family=cycle instance=1 runs=108
+ideal n=4 family=regular instance=0 runs=135
+ideal n=4 family=regular instance=1 runs=162
+ideal n=4 family=erdos_renyi instance=0 runs=189
+ideal n=4 family=erdos_renyi instance=1 runs=216
+ideal n=4 family=weighted instance=0 runs=243
+ideal n=4 family=weighted instance=1 runs=270
+ideal n=4 family=planted instance=0 runs=297
+ideal n=4 family=planted instance=1 runs=324
+Completed optimization in 24.058s
