@@ -1,0 +1,464 @@
+{
+  "experiment": "E05b exact ideal attempt budgets",
+  "seed": 20261120,
+  "n_evaluations": 120,
+  "training_shots": 30720,
+  "heldout_shots": 4096,
+  "total_shots_per_run": 34816,
+  "total_model_runs": 756,
+  "total_simulated_attempts": 26320896,
+  "physical_qpu_attempts": 0,
+  "common_fallback": "if COBYLA stops early, Gaussian proposals scale .1 around selected point until budget exhausted",
+  "training": "photonic: sampled E_CF+2*(1-P_CF); penalty: sampled QUBO energy; optimum never enters loss",
+  "uncertainty": "Wilson heldout fixed-circuit intervals; pooled t summaries descriptive only, not population significance",
+  "limitations": [
+    "Ideal simulated attempts omit emission/detection losses",
+    "Full probabilities enumerated exponentially to simulate shots; simulator wall time is not hardware time",
+    "Every lambda separate; selecting a winning lambda costs all its training",
+    "No genuine optical ObliQ baseline; no matched number of trainable parameters",
+    "Cut scoring and raw counts saved; successful batch count is not wall-clock time to solution"
+  ],
+  "results": [
+    {
+      "n": 4,
+      "model": "bosonic",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.652312978273295,
+        "ci95": [
+          0.5447927524493282,
+          0.7598332040972618
+        ],
+        "median": 0.7101467353676166,
+        "minimum": 0.0013821379705766259,
+        "maximum": 0.9968311290333565
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 2.0,
+      "mean_runtime_seconds": 0.05848368858520795
+    },
+    {
+      "n": 4,
+      "model": "distinguishable",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.7132846816723877,
+        "ci95": [
+          0.6229220994898135,
+          0.8036472638549619
+        ],
+        "median": 0.8628479323343963,
+        "minimum": 0.16847934549450144,
+        "maximum": 0.9961701588095009
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 2.0,
+      "mean_runtime_seconds": 0.056981314749767385
+    },
+    {
+      "n": 4,
+      "model": "multinomial",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.4206245979807527,
+        "ci95": [
+          0.3622924448002391,
+          0.4789567511612663
+        ],
+        "median": 0.46490756975783537,
+        "minimum": 0.16345904815724271,
+        "maximum": 0.7497396577983827
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 2.0,
+      "mean_runtime_seconds": 0.05665351272424838
+    },
+    {
+      "n": 4,
+      "model": "classical_penalty",
+      "lambda_value": 0.1,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.199029752121139,
+        "ci95": [
+          0.16765427080960876,
+          0.23040523343266922
+        ],
+        "median": 0.13943638745156783,
+        "minimum": 0.12000884122963135,
+        "maximum": 0.3811616475961288
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 7.0,
+      "mean_runtime_seconds": 0.028690342609479558
+    },
+    {
+      "n": 4,
+      "model": "classical_penalty",
+      "lambda_value": 1.0,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.2027729021610177,
+        "ci95": [
+          0.17093051539361895,
+          0.23461528892841646
+        ],
+        "median": 0.1538625503402144,
+        "minimum": 0.12048350595996976,
+        "maximum": 0.37840847659356786
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 7.0,
+      "mean_runtime_seconds": 0.025825304500661634
+    },
+    {
+      "n": 4,
+      "model": "classical_penalty",
+      "lambda_value": 10.0,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.19885748641101786,
+        "ci95": [
+          0.16642805828824236,
+          0.23128691453379335
+        ],
+        "median": 0.1303978202952727,
+        "minimum": 0.12041593864228842,
+        "maximum": 0.37855553755631277
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 7.0,
+      "mean_runtime_seconds": 0.03134182280417816
+    },
+    {
+      "n": 4,
+      "model": "random_balanced",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.5277777777777776,
+        "ci95": [
+          0.44093741070990444,
+          0.6146181448456507
+        ],
+        "median": 0.3333333333333333,
+        "minimum": 0.3333333333333333,
+        "maximum": 0.9999999999999999
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 1.0,
+      "mean_runtime_seconds": 0.004116204833230263
+    },
+    {
+      "n": 6,
+      "model": "bosonic",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.2795490911364673,
+        "ci95": [
+          0.1768664194485865,
+          0.3822317628243481
+        ],
+        "median": 0.14754459808849285,
+        "minimum": 4.7718434523794245e-05,
+        "maximum": 0.9227902379815308
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 15.5,
+      "mean_runtime_seconds": 0.07644222211173554
+    },
+    {
+      "n": 6,
+      "model": "distinguishable",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.5366140369597603,
+        "ci95": [
+          0.40697876893100393,
+          0.6662493049885166
+        ],
+        "median": 0.754954979861677,
+        "minimum": 0.00016973385499806964,
+        "maximum": 0.9752547800129143
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 11.0,
+      "mean_runtime_seconds": 0.07846754616588845
+    },
+    {
+      "n": 6,
+      "model": "multinomial",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.10995813516459946,
+        "ci95": [
+          0.08255137490685979,
+          0.13736489542233912
+        ],
+        "median": 0.06510365836852325,
+        "minimum": 0.005935893541731201,
+        "maximum": 0.29091068019946575
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 6.0,
+      "mean_runtime_seconds": 0.07536833213736019
+    },
+    {
+      "n": 6,
+      "model": "classical_penalty",
+      "lambda_value": 0.1,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.05671897820937869,
+        "ci95": [
+          0.04038569191369204,
+          0.07305226450506534
+        ],
+        "median": 0.03281652381115956,
+        "minimum": 0.028239085920549706,
+        "maximum": 0.2037992725570996
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 7.5,
+      "mean_runtime_seconds": 0.03844766894568844
+    },
+    {
+      "n": 6,
+      "model": "classical_penalty",
+      "lambda_value": 1.0,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.05609890800006126,
+        "ci95": [
+          0.04001092398470186,
+          0.07218689201542067
+        ],
+        "median": 0.033453251663038086,
+        "minimum": 0.02718786600444446,
+        "maximum": 0.19415958658317176
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 7.5,
+      "mean_runtime_seconds": 0.03634855900115023
+    },
+    {
+      "n": 6,
+      "model": "classical_penalty",
+      "lambda_value": 10.0,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.05613529600970271,
+        "ci95": [
+          0.04018911139225924,
+          0.07208148062714619
+        ],
+        "median": 0.03343164626345772,
+        "minimum": 0.02696391075222939,
+        "maximum": 0.19313470277867895
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 7.5,
+      "mean_runtime_seconds": 0.03556623830405038
+    },
+    {
+      "n": 6,
+      "model": "random_balanced",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.17499999999999996,
+        "ci95": [
+          0.12424730179374138,
+          0.22575269820625854
+        ],
+        "median": 0.1,
+        "minimum": 0.1,
+        "maximum": 0.6000000000000001
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 4.0,
+      "mean_runtime_seconds": 0.004379752330553149
+    },
+    {
+      "n": 8,
+      "model": "bosonic",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.06787276042279372,
+        "ci95": [
+          0.021472108759473862,
+          0.11427341208611358
+        ],
+        "median": 0.021238366719904353,
+        "minimum": 3.973214447599065e-05,
+        "maximum": 0.7258169121693832
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 89.0,
+      "mean_runtime_seconds": 0.09115110294482696
+    },
+    {
+      "n": 8,
+      "model": "distinguishable",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.13770712925418166,
+        "ci95": [
+          0.07152688154935172,
+          0.2038873769590116
+        ],
+        "median": 0.048106065218311664,
+        "minimum": 0.001830066480754,
+        "maximum": 0.7396704505611892
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 27.0,
+      "mean_runtime_seconds": 0.09437338077825391
+    },
+    {
+      "n": 8,
+      "model": "multinomial",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.025965592206172533,
+        "ci95": [
+          0.018722243179676877,
+          0.03320894123266819
+        ],
+        "median": 0.017568920723672138,
+        "minimum": 0.0036421719677508053,
+        "maximum": 0.08438913382194808
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 43.0,
+      "mean_runtime_seconds": 0.09205739352667781
+    },
+    {
+      "n": 8,
+      "model": "classical_penalty",
+      "lambda_value": 0.1,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.016517181009148802,
+        "ci95": [
+          0.013088424673069114,
+          0.01994593734522849
+        ],
+        "median": 0.013863529384656039,
+        "minimum": 0.0063277978154552515,
+        "maximum": 0.0371173680169115
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 38.0,
+      "mean_runtime_seconds": 0.04650834019169755
+    },
+    {
+      "n": 8,
+      "model": "classical_penalty",
+      "lambda_value": 1.0,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.016261049822788323,
+        "ci95": [
+          0.012909556891791888,
+          0.01961254275378476
+        ],
+        "median": 0.01343452489038062,
+        "minimum": 0.00680765767942618,
+        "maximum": 0.03711732475514613
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 38.0,
+      "mean_runtime_seconds": 0.04596250225101054
+    },
+    {
+      "n": 8,
+      "model": "classical_penalty",
+      "lambda_value": 10.0,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.016655972528333018,
+        "ci95": [
+          0.013203526148573971,
+          0.020108418908092063
+        ],
+        "median": 0.014612388368209665,
+        "minimum": 0.005987759833901029,
+        "maximum": 0.038610462815403736
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 38.0,
+      "mean_runtime_seconds": 0.04634192022462634
+    },
+    {
+      "n": 8,
+      "model": "random_balanced",
+      "lambda_value": null,
+      "runs": 36,
+      "final_p_success": {
+        "n": 36,
+        "mean": 0.05952380952380951,
+        "ci95": [
+          0.047214073400965874,
+          0.07183354564665315
+        ],
+        "median": 0.04285714285714286,
+        "minimum": 0.02857142857142857,
+        "maximum": 0.11428571428571428
+      },
+      "found_optimum_runs": 36,
+      "censored_runs": 0,
+      "median_first_attempt_given_found": 17.5,
+      "mean_runtime_seconds": 0.0048298391104455935
+    }
+  ]
+}
