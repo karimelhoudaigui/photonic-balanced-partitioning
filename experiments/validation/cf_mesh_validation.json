@@ -1,0 +1,534 @@
+{
+  "status": "PASS",
+  "source_hashes": {
+    "experiments/validation/audit_cf_mesh.py": "bc9d204f5578b09a2fc2c252acaba811e69ab6ed88638241ad63e0988ac3b0d6",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+    "src/photonic_balanced_partitioning/photonic/mesh.py": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9",
+    "src/photonic_balanced_partitioning/photonic/comparison.py": "4cbe9662c1d5629a2f320b90685c418a6ab5d2a97d9830fad285a196478b6f52"
+  },
+  "cases": [
+    {
+      "n": 4,
+      "seed": 0,
+      "model": "haar",
+      "max_probability_error": 2.0816681711721685e-17
+    },
+    {
+      "n": 4,
+      "seed": 0,
+      "model": "mesh",
+      "max_probability_error": 6.938893903907228e-17,
+      "perceval_mesh_unitary_error": 3.510833468576701e-16
+    },
+    {
+      "n": 4,
+      "seed": 1,
+      "model": "haar",
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 4,
+      "seed": 1,
+      "model": "mesh",
+      "max_probability_error": 1.1102230246251565e-16,
+      "perceval_mesh_unitary_error": 4.712321323804737e-16
+    },
+    {
+      "n": 4,
+      "seed": 2,
+      "model": "haar",
+      "max_probability_error": 5.551115123125783e-17
+    },
+    {
+      "n": 4,
+      "seed": 2,
+      "model": "mesh",
+      "max_probability_error": 1.1102230246251565e-16,
+      "perceval_mesh_unitary_error": 1.8875832159447664e-16
+    },
+    {
+      "n": 4,
+      "seed": 3,
+      "model": "haar",
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 4,
+      "seed": 3,
+      "model": "mesh",
+      "max_probability_error": 5.551115123125783e-17,
+      "perceval_mesh_unitary_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 4,
+      "seed": 4,
+      "model": "haar",
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 4,
+      "seed": 4,
+      "model": "mesh",
+      "max_probability_error": 1.1102230246251565e-16,
+      "perceval_mesh_unitary_error": 5.117875266520903e-16
+    },
+    {
+      "n": 4,
+      "seed": 5,
+      "model": "haar",
+      "max_probability_error": 5.551115123125783e-17
+    },
+    {
+      "n": 4,
+      "seed": 5,
+      "model": "mesh",
+      "max_probability_error": 2.7755575615628914e-17,
+      "perceval_mesh_unitary_error": 0.0
+    },
+    {
+      "n": 4,
+      "seed": 6,
+      "model": "haar",
+      "max_probability_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 4,
+      "seed": 6,
+      "model": "mesh",
+      "max_probability_error": 8.326672684688674e-17,
+      "perceval_mesh_unitary_error": 0.0
+    },
+    {
+      "n": 4,
+      "seed": 7,
+      "model": "haar",
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 4,
+      "seed": 7,
+      "model": "mesh",
+      "max_probability_error": 5.551115123125783e-17,
+      "perceval_mesh_unitary_error": 1.6653345369377348e-16
+    },
+    {
+      "n": 4,
+      "seed": 8,
+      "model": "haar",
+      "max_probability_error": 5.551115123125783e-17
+    },
+    {
+      "n": 4,
+      "seed": 8,
+      "model": "mesh",
+      "max_probability_error": 5.551115123125783e-17,
+      "perceval_mesh_unitary_error": 0.0
+    },
+    {
+      "n": 4,
+      "seed": 9,
+      "model": "haar",
+      "max_probability_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 4,
+      "seed": 9,
+      "model": "mesh",
+      "max_probability_error": 5.551115123125783e-17,
+      "perceval_mesh_unitary_error": 2.7755575615628914e-16
+    },
+    {
+      "n": 6,
+      "seed": 0,
+      "model": "haar",
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 6,
+      "seed": 0,
+      "model": "mesh",
+      "max_probability_error": 2.7755575615628914e-17,
+      "perceval_mesh_unitary_error": 3.608224830031759e-16
+    },
+    {
+      "n": 6,
+      "seed": 1,
+      "model": "haar",
+      "max_probability_error": 4.163336342344337e-17
+    },
+    {
+      "n": 6,
+      "seed": 1,
+      "model": "mesh",
+      "max_probability_error": 8.326672684688674e-17,
+      "perceval_mesh_unitary_error": 4.47545209131181e-16
+    },
+    {
+      "n": 6,
+      "seed": 2,
+      "model": "haar",
+      "max_probability_error": 4.163336342344337e-17
+    },
+    {
+      "n": 6,
+      "seed": 2,
+      "model": "mesh",
+      "max_probability_error": 2.6020852139652106e-17,
+      "perceval_mesh_unitary_error": 4.335559509131367e-16
+    },
+    {
+      "n": 6,
+      "seed": 3,
+      "model": "haar",
+      "max_probability_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 6,
+      "seed": 3,
+      "model": "mesh",
+      "max_probability_error": 6.938893903907228e-17,
+      "perceval_mesh_unitary_error": 4.0029660424867215e-16
+    },
+    {
+      "n": 6,
+      "seed": 4,
+      "model": "haar",
+      "max_probability_error": 1.734723475976807e-17
+    },
+    {
+      "n": 6,
+      "seed": 4,
+      "model": "mesh",
+      "max_probability_error": 2.7755575615628914e-17,
+      "perceval_mesh_unitary_error": 2.482534153247273e-16
+    },
+    {
+      "n": 6,
+      "seed": 5,
+      "model": "haar",
+      "max_probability_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 6,
+      "seed": 5,
+      "model": "mesh",
+      "max_probability_error": 5.551115123125783e-17,
+      "perceval_mesh_unitary_error": 4.0412728104402656e-16
+    },
+    {
+      "n": 6,
+      "seed": 6,
+      "model": "haar",
+      "max_probability_error": 1.0408340855860843e-17
+    },
+    {
+      "n": 6,
+      "seed": 6,
+      "model": "mesh",
+      "max_probability_error": 3.469446951953614e-17,
+      "perceval_mesh_unitary_error": 5.900916318210353e-16
+    },
+    {
+      "n": 6,
+      "seed": 7,
+      "model": "haar",
+      "max_probability_error": 4.163336342344337e-17
+    },
+    {
+      "n": 6,
+      "seed": 7,
+      "model": "mesh",
+      "max_probability_error": 2.0816681711721685e-17,
+      "perceval_mesh_unitary_error": 3.554447978966673e-16
+    },
+    {
+      "n": 6,
+      "seed": 8,
+      "model": "haar",
+      "max_probability_error": 1.3877787807814457e-17
+    },
+    {
+      "n": 6,
+      "seed": 8,
+      "model": "mesh",
+      "max_probability_error": 6.938893903907228e-17,
+      "perceval_mesh_unitary_error": 2.2591401799415137e-16
+    },
+    {
+      "n": 6,
+      "seed": 9,
+      "model": "haar",
+      "max_probability_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 6,
+      "seed": 9,
+      "model": "mesh",
+      "max_probability_error": 8.326672684688674e-17,
+      "perceval_mesh_unitary_error": 2.1544120232613906e-16
+    },
+    {
+      "n": 8,
+      "seed": 0,
+      "model": "haar",
+      "max_probability_error": 3.122502256758253e-17
+    },
+    {
+      "n": 8,
+      "seed": 0,
+      "model": "mesh",
+      "max_probability_error": 6.938893903907228e-18,
+      "perceval_mesh_unitary_error": 5.23691153334427e-16
+    },
+    {
+      "n": 8,
+      "seed": 1,
+      "model": "haar",
+      "max_probability_error": 9.540979117872439e-18
+    },
+    {
+      "n": 8,
+      "seed": 1,
+      "model": "mesh",
+      "max_probability_error": 1.3877787807814457e-17,
+      "perceval_mesh_unitary_error": 4.163336342344337e-16
+    },
+    {
+      "n": 8,
+      "seed": 2,
+      "model": "haar",
+      "max_probability_error": 2.42861286636753e-17
+    },
+    {
+      "n": 8,
+      "seed": 2,
+      "model": "mesh",
+      "max_probability_error": 1.5612511283791264e-17,
+      "perceval_mesh_unitary_error": 4.47545209131181e-16
+    },
+    {
+      "n": 8,
+      "seed": 3,
+      "model": "haar",
+      "max_probability_error": 1.5612511283791264e-17
+    },
+    {
+      "n": 8,
+      "seed": 3,
+      "model": "mesh",
+      "max_probability_error": 1.0408340855860843e-17,
+      "perceval_mesh_unitary_error": 2.7755575615628914e-16
+    },
+    {
+      "n": 8,
+      "seed": 4,
+      "model": "haar",
+      "max_probability_error": 1.6479873021779667e-17
+    },
+    {
+      "n": 8,
+      "seed": 4,
+      "model": "mesh",
+      "max_probability_error": 1.3877787807814457e-17,
+      "perceval_mesh_unitary_error": 4.47545209131181e-16
+    },
+    {
+      "n": 8,
+      "seed": 5,
+      "model": "haar",
+      "max_probability_error": 1.3877787807814457e-17
+    },
+    {
+      "n": 8,
+      "seed": 5,
+      "model": "mesh",
+      "max_probability_error": 2.42861286636753e-17,
+      "perceval_mesh_unitary_error": 4.710277376051326e-16
+    },
+    {
+      "n": 8,
+      "seed": 6,
+      "model": "haar",
+      "max_probability_error": 3.642919299551295e-17
+    },
+    {
+      "n": 8,
+      "seed": 6,
+      "model": "mesh",
+      "max_probability_error": 3.469446951953614e-17,
+      "perceval_mesh_unitary_error": 2.237726045655905e-16
+    },
+    {
+      "n": 8,
+      "seed": 7,
+      "model": "haar",
+      "max_probability_error": 1.9949319973733282e-17
+    },
+    {
+      "n": 8,
+      "seed": 7,
+      "model": "mesh",
+      "max_probability_error": 2.0816681711721685e-17,
+      "perceval_mesh_unitary_error": 2.9893669801409083e-16
+    },
+    {
+      "n": 8,
+      "seed": 8,
+      "model": "haar",
+      "max_probability_error": 1.9081958235744878e-17
+    },
+    {
+      "n": 8,
+      "seed": 8,
+      "model": "mesh",
+      "max_probability_error": 4.163336342344337e-17,
+      "perceval_mesh_unitary_error": 4.47545209131181e-16
+    },
+    {
+      "n": 8,
+      "seed": 9,
+      "model": "haar",
+      "max_probability_error": 1.214306433183765e-17
+    },
+    {
+      "n": 8,
+      "seed": 9,
+      "model": "mesh",
+      "max_probability_error": 3.469446951953614e-18,
+      "perceval_mesh_unitary_error": 2.7336071744532853e-16
+    },
+    {
+      "n": 10,
+      "seed": 0,
+      "model": "haar",
+      "max_probability_error": 8.673617379884035e-18
+    },
+    {
+      "n": 10,
+      "seed": 0,
+      "model": "mesh",
+      "max_probability_error": 5.5294310796760726e-18,
+      "perceval_mesh_unitary_error": 4.308824046522781e-16
+    },
+    {
+      "n": 10,
+      "seed": 1,
+      "model": "haar",
+      "max_probability_error": 6.613633252161577e-18
+    },
+    {
+      "n": 10,
+      "seed": 1,
+      "model": "mesh",
+      "max_probability_error": 7.806255641895632e-18,
+      "perceval_mesh_unitary_error": 5.551115123125783e-16
+    },
+    {
+      "n": 10,
+      "seed": 2,
+      "model": "haar",
+      "max_probability_error": 1.1709383462843448e-17
+    },
+    {
+      "n": 10,
+      "seed": 2,
+      "model": "mesh",
+      "max_probability_error": 2.2551405187698492e-17,
+      "perceval_mesh_unitary_error": 4.847302891456678e-16
+    },
+    {
+      "n": 10,
+      "seed": 3,
+      "model": "haar",
+      "max_probability_error": 1.1275702593849246e-17
+    },
+    {
+      "n": 10,
+      "seed": 3,
+      "model": "mesh",
+      "max_probability_error": 1.214306433183765e-17,
+      "perceval_mesh_unitary_error": 3.134813796900204e-16
+    },
+    {
+      "n": 10,
+      "seed": 4,
+      "model": "haar",
+      "max_probability_error": 8.673617379884035e-18
+    },
+    {
+      "n": 10,
+      "seed": 4,
+      "model": "mesh",
+      "max_probability_error": 9.540979117872439e-18,
+      "perceval_mesh_unitary_error": 6.473657049138937e-16
+    },
+    {
+      "n": 10,
+      "seed": 5,
+      "model": "haar",
+      "max_probability_error": 6.5052130349130266e-18
+    },
+    {
+      "n": 10,
+      "seed": 5,
+      "model": "mesh",
+      "max_probability_error": 1.6479873021779667e-17,
+      "perceval_mesh_unitary_error": 3.376611507232129e-16
+    },
+    {
+      "n": 10,
+      "seed": 6,
+      "model": "haar",
+      "max_probability_error": 6.938893903907228e-18
+    },
+    {
+      "n": 10,
+      "seed": 6,
+      "model": "mesh",
+      "max_probability_error": 2.5153490401663703e-17,
+      "perceval_mesh_unitary_error": 3.1401849173675503e-16
+    },
+    {
+      "n": 10,
+      "seed": 7,
+      "model": "haar",
+      "max_probability_error": 9.540979117872439e-18
+    },
+    {
+      "n": 10,
+      "seed": 7,
+      "model": "mesh",
+      "max_probability_error": 1.5178830414797062e-17,
+      "perceval_mesh_unitary_error": 4.965068306494546e-16
+    },
+    {
+      "n": 10,
+      "seed": 8,
+      "model": "haar",
+      "max_probability_error": 6.071532165918825e-18
+    },
+    {
+      "n": 10,
+      "seed": 8,
+      "model": "mesh",
+      "max_probability_error": 4.7704895589362195e-18,
+      "perceval_mesh_unitary_error": 5.978733960281817e-16
+    },
+    {
+      "n": 10,
+      "seed": 9,
+      "model": "haar",
+      "max_probability_error": 1.2576745200831851e-17
+    },
+    {
+      "n": 10,
+      "seed": 9,
+      "model": "mesh",
+      "max_probability_error": 2.42861286636753e-17,
+      "perceval_mesh_unitary_error": 2.7755575615628914e-16
+    }
+  ],
+  "max_probability_error": 1.1102230246251565e-16,
+  "max_mesh_unitary_error": 6.473657049138937e-16,
+  "command": "MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/validation/audit_cf_mesh.py"
+}
