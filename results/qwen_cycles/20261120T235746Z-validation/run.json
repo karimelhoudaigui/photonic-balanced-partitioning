@@ -1,0 +1,21 @@
+{
+  "cycle": "20261120T235746Z-validation",
+  "mode": "validation",
+  "started_at": "2026-11-20T23:57:46.080063+00:00",
+  "base_commit": "dffd52d1adcfcfc8f965d3fd14e9354d4d4dcd87",
+  "model": "pasqal-qwen-research",
+  "worktree": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261120T235746Z-validation",
+  "limits": {
+    "mode": "validation",
+    "max_experiments": 1,
+    "wall_time": 450,
+    "max_parallel_agents": 1,
+    "max_failed_retries": 1
+  },
+  "runs": [],
+  "supervisor_verdict": "PENDING_ASTRA_REVIEW",
+  "status": "FAILED",
+  "no_qpu": true,
+  "error": "RuntimeError: Selected local model absent; no automatic download/fallback",
+  "runtime_seconds": 0.2752870419935789
+}

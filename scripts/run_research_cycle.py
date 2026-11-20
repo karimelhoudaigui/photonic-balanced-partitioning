@@ -18,7 +18,7 @@ import urllib.request
 
 ROOT=Path(__file__).resolve().parents[1]
 STATE=ROOT/'.local/qwen'
-MODEL='pasqal-qwen-research'
+MODEL='pasqal-qwen-research:latest'
 URL='http://127.0.0.1:11435'
 BASE_TOOLS=['read_file','run_shell_command','write_file']
 CONTROL_TOOLS=['agent','skill','tool_search','tool_call','team_create','team_delete',

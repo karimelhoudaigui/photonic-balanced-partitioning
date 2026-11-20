@@ -6,7 +6,7 @@
     }
   },
   "model": {
-    "name": "pasqal-qwen-research",
+    "name": "pasqal-qwen-research:latest",
     "maxSessionTurns": 12,
     "maxWallTimeSeconds": 300,
     "maxToolCalls": 12,
@@ -15,7 +15,7 @@
   "modelProviders": {
     "openai": [
       {
-        "id": "pasqal-qwen-research",
+        "id": "pasqal-qwen-research:latest",
         "name": "Local Qwen3.5 2B Q4 (Ollama)",
         "envKey": "PASQAL_OLLAMA_API_KEY",
         "baseUrl": "http://127.0.0.1:11435/v1",
