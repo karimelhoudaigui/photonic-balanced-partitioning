@@ -1,0 +1,2 @@
+Structural checks: 120 Haar cases + 4 disjoint-support controls PASS
+Completed structure in 0.080s
