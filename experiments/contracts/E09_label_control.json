@@ -1,0 +1,58 @@
+{
+  "claim_id": "E09_label_control",
+  "mathematics": {
+    "assertion_tested": "Shallow mesh versus full depth after relabeling the same graph; reachability obstruction",
+    "coefficient_domain": "float64/complex128 with rational counterexample summaries",
+    "conventions": "passive lossless, k distinct occupied inputs; no postselection renormalization; TV=half L1",
+    "inputs": [
+      "experiments/run_label_control.py",
+      "fixed seeds and ranges hardcoded in the declared script"
+    ],
+    "bounds": {
+      "base_seed": 20261120
+    },
+    "non_claims": [
+      "Not QPU evidence or quantum advantage",
+      "Novelty open",
+      "Numerical tests not universal proof"
+    ]
+  },
+  "execution_artifacts": [
+    "src/photonic_balanced_partitioning/__init__.py",
+    "src/photonic_balanced_partitioning/classical/__init__.py",
+    "src/photonic_balanced_partitioning/classical/baselines.py",
+    "src/photonic_balanced_partitioning/cli.py",
+    "src/photonic_balanced_partitioning/photonic/__init__.py",
+    "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+    "src/photonic_balanced_partitioning/photonic/comparison.py",
+    "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/mesh.py",
+    "src/photonic_balanced_partitioning/photonic/objectives.py",
+    "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+    "src/photonic_balanced_partitioning/problems/min_bisection.py",
+    "experiments/run_research.py",
+    "experiments/launch_followups.py",
+    "experiments/run_label_control.py",
+    "pyproject.toml"
+  ],
+  "software": [
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng PCG64",
+    "seed": 20261120
+  }
+}

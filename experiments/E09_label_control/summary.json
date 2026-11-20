@@ -1,0 +1,78 @@
+{
+  "experiment": "E09 label/reachability falsification",
+  "n": 6,
+  "graph_slots": 12,
+  "labelings_per_slot": 5,
+  "optimizer": "COBYLA",
+  "objective": "success oracle diagnostic",
+  "budget": 120,
+  "physical_shots": 0,
+  "model_runs": 240,
+  "note": "Same underlying weighted graphs and same initial circuit across relabelings; descriptive fixed-grid comparison",
+  "results": [
+    {
+      "model": "bosonic",
+      "depth": 2,
+      "labeling": "original",
+      "runs": 12,
+      "mean_p_success": 0.8749975163698712,
+      "structurally_inaccessible_optimum_runs": 0
+    },
+    {
+      "model": "bosonic",
+      "depth": 2,
+      "labeling": "random_permutation",
+      "runs": 48,
+      "mean_p_success": 0.8020804543137775,
+      "structurally_inaccessible_optimum_runs": 5
+    },
+    {
+      "model": "bosonic",
+      "depth": 6,
+      "labeling": "original",
+      "runs": 12,
+      "mean_p_success": 0.8271231704436642,
+      "structurally_inaccessible_optimum_runs": 0
+    },
+    {
+      "model": "bosonic",
+      "depth": 6,
+      "labeling": "random_permutation",
+      "runs": 48,
+      "mean_p_success": 0.7838335644500569,
+      "structurally_inaccessible_optimum_runs": 0
+    },
+    {
+      "model": "distinguishable",
+      "depth": 2,
+      "labeling": "original",
+      "runs": 12,
+      "mean_p_success": 0.8541666544839241,
+      "structurally_inaccessible_optimum_runs": 0
+    },
+    {
+      "model": "distinguishable",
+      "depth": 2,
+      "labeling": "random_permutation",
+      "runs": 48,
+      "mean_p_success": 0.7864418859638241,
+      "structurally_inaccessible_optimum_runs": 5
+    },
+    {
+      "model": "distinguishable",
+      "depth": 6,
+      "labeling": "original",
+      "runs": 12,
+      "mean_p_success": 0.94646237074672,
+      "structurally_inaccessible_optimum_runs": 0
+    },
+    {
+      "model": "distinguishable",
+      "depth": 6,
+      "labeling": "random_permutation",
+      "runs": 48,
+      "mean_p_success": 0.9488563178000132,
+      "structurally_inaccessible_optimum_runs": 0
+    }
+  ]
+}

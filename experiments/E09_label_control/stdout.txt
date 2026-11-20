@@ -1,0 +1,6 @@
+label control path: 40 runs
+label control cycle: 80 runs
+label control regular: 120 runs
+label control erdos_renyi: 160 runs
+label control weighted: 200 runs
+label control planted: 240 runs
