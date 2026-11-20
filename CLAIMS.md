@@ -1,62 +1,36 @@
-# Scientific Claims Registry
+# Scientific claims registry
 
-Format:
-```
-CLAIM-XXX
-Statement:
-Status: conjecture | proven | simulated | qpu-validated | rejected
-Evidence:
-Files:
-Dependencies:
-Last reviewed:
-```
+Current checkpoint: 2026-11-20. Allowed statuses: OPEN, PROVEN,
+NUMERICALLY_SUPPORTED, HARDWARE_SUPPORTED, REJECTED. Proof does not imply novelty.
+No claim is HARDWARE_SUPPORTED. Manuscript claims are frozen, not evidence.
 
-## Current Claims
+| ID | Exact statement / scope | Status | Evidence and limits |
+|---|---|---|---|
+| CLAIM-001 | Passive lossless optics preserves total photon number. | PROVEN | Number-conserving mode transformation; known background, not contribution. |
+| CLAIM-002 | CF output of k photons decodes to weight-k bits. | PROVEN | Definition of CF; known background, not contribution. |
+| CLAIM-003 | Fixed photon number implies no collisions. | REJECTED | HOM and explicit double-occupation states; PHYSICS_VALIDATION.md. |
+| CLAIM-004 | Every fixed-k interferometer has P_CF=1. | REJECTED | HOM gives zero; full Perceval cross-validation. |
+| CLAIM-005 | Cardinality penalty always makes the final QUBO fully dense. | REJECTED | Each pair gets 2lambda, but graph coefficients can cancel it at lambda=w; test_penalty.py and PENALTY_BASELINE_AUDIT.md. Sparse-to-quadratic coupling growth is generic, not universal. |
+| CLAIM-006 | Fixed-particle encoding has a demonstrated resource benefit over real optical penalty methods. | OPEN | Optical ObliQ dynamics not implemented; classical penalty reference is explicitly labelled. No cross-hardware gate/depth equivalence. |
+| CLAIM-007 | Haar average P_CF=binom(m,k)/binom(m+k-1,k), for fixed normalized input independent of Haar U, lossless. | PROVEN | theory/proven_results.md T-Haar; known Arkhipov–Kuperberg result. |
+| CLAIM-008 | For even m, k=m/2, the Haar mean is asymptotic to sqrt(3)*(16/27)^(m/2). | PROVEN | T-Scaling, self-contained Stirling derivation; not a bound for every U. |
+| CLAIM-009 | E01 means agree with the known P_CF prediction within stated marginal intervals. | NUMERICALLY_SUPPORTED | 3250 Haar circuits, n4/6/8/10, fixed seeds and raw.csv. Not a theorem or simultaneous test. |
+| CLAIM-010 | A universal Pareto tradeoff forbids (P_CF,P_opt_given_CF)=(1,1). | REJECTED | Known-target mode permutation attains (1,1); T-Pareto. Discovery is classical. |
+| CLAIM-011 | With one photon per occupied input mode, P_CF=1 iff occupied-column output supports are disjoint; then independent distinguishable sampling is exact. | PROVEN | T-Pairs, collision moment proof and independent review; no ancillas, loss or non-Fock input. Novelty OPEN. |
+| CLAIM-012 | Full-distribution TV(p,d) <= min(1,(Per(B)-1)/2), B_ab=sum_i abs(U_ia U_ib). | PROVEN | theory/near_collisionless_bound.md N1; independent review and E08 finite checks. TV=half L1; spatial B. Novelty OPEN. |
+| CLAIM-013 | TV <= min(1,H_k(S)/2), H_k(S)=sum_{r=2}^k (!r/r!)*S^(r/2), S=norm(B-I)_F^2. | PROVEN | N2 cycle/closed-walk coefficient bound; independently reconstructed. Novelty OPEN. |
+| CLAIM-014 | S <= m*binom(k,2)*(1-P_CF); the induced TV bound is a fixed-size stability certificate. | PROVEN | N3 via Cauchy–Schwarz and pair moments. Not dimension-uniform or a hardness claim. |
+| CLAIM-015 | Small collision probability alone implies TV to distinguishable statistics vanishes uniformly at balanced density. | REJECTED | N4: m=2k, k even, delta=2/(k+2)->0 and TV=1/2. Exact rational cases plus full Fock checks. |
+| CLAIM-016 | The tested generic bosonic mesh supplies a computational benefit at equal ideal attempts. | REJECTED | E05b fixed family/seed grid: distinguishable final means higher and uniform feasible first discovery faster in aggregate. Rejection is scoped to this tested protocol, not a universal impossibility. |
+| CLAIM-017 | Broad graph-population significance or asymptotic algorithm advantage is established. | OPEN | Two instances/family and shared seeds; pooled intervals descriptive only. |
+| CLAIM-018 | New overlap certificate/counterexample is novel relative to all prior work. | OPEN | Close technique in Tichy; exact source/novelty audit incomplete. Correctness is independently reviewed. |
+| CLAIM-019 | Shallow success is invariant to vertex labels and all optima remain reachable. | REJECTED | E09 five of48 permuted n6 slots have structurally inaccessible optimal bisections at depth2. |
+| CLAIM-020 | Physical success equals P_CF*P_opt_given_CF. | PROVEN | Conditional probability identity, with zero-CF support treated separately; not an independent objective or scientific novelty. |
 
-### CLAIM-001
-Statement: A passive linear interferometer conserves total photon number: [U, N] = 0.
-Status: proven
-Evidence: Unitary transformation preserves number operator
-Files: theory/photon_number_theorems.tex
-Dependencies: None
-Last reviewed: 2026-11-20
+Dependencies: CLAIM-007 -> CLAIM-008/009; pair moment T-Pairs -> CLAIM-011/014;
+CLAIM-012 -> CLAIM-013 -> CLAIM-014; explicit orthogonal columns + spectators
+prove the rejection in CLAIM-015 independently of finite sampling.
 
-### CLAIM-002
-Statement: In the collision-free sector H_k^CF, all outcomes satisfy Σx_i = k exactly.
-Status: proven
-Evidence: By construction, H_k^CF only contains states with n_i ∈ {0,1} and Σn_i = k
-Files: theory/photon_number_theorems.tex
-Dependencies: CLAIM-001
-Last reviewed: 2026-11-20
-
-### CLAIM-003
-Statement: Fixed photon number (∑n_i = k) implies collision-free occupations (n_i ∈ {0,1}).
-Status: rejected
-Evidence: Counterexample: |2,0,0,0⟩ has k=2 photons but collision
-Files: reports/collision_bug_audit.md
-Dependencies: None
-Last reviewed: 2026-11-20
-
-### CLAIM-004
-Statement: P_CF = 1.0 for fixed-k photon interferometers.
-Status: rejected
-Evidence: P_CF < 1 for generic interferometers; must be measured
-Files: src/photonic/fixed_photon_obliq.py
-Dependencies: CLAIM-003
-Last reviewed: 2026-11-20
-
-### CLAIM-005
-Statement: Penalty-based QUBO transforms sparse graphs into dense QUBOs with O(n²) couplings.
-Status: conjecture
-Evidence: Mathematical derivation pending
-Files: theory/penalty_analysis.tex
-Dependencies: None
-Last reviewed: 2026-11-20
-
-### CLAIM-006
-Statement: The fixed-photon approach reduces the number of QUBO couplings compared to penalty-based methods.
-Status: conjecture
-Evidence: Pending comparison
-Files: reports/feasibility_n4.md
-Dependencies: CLAIM-001, CLAIM-002
-Last reviewed: 2026-11-20
+Review provenance: theorem files retain hypotheses and exact audited SHA256 in
+reports/THEORY_AUDIT.md and reports/NEAR_COLLISIONLESS_INDEPENDENT_REVIEW.md.
+All raw run provenance and output checks: reports/RESULTS_AUDIT.json.

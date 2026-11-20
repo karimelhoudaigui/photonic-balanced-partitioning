@@ -1,46 +1,37 @@
-# Project Status
+# Current research status — 2026-11-20
 
-## Current Phase: Implementation (Corrected)
+PAPER_READY = FALSE. QPU_GATE = CLOSED.
+NO-GO for claiming computational benefit from the tested generic bosonic mesh.
+The general research question remains OPEN. No QPU or noise experiment was run.
 
-### Completed
-- [x] Project structure created
-- [x] Core problem module (min_bisection.py)
-- [x] Fixed-photon interferometer implementation (CORRECTED)
-- [x] Collision-aware solver
-- [x] Penalty-based ObliQ
-- [x] CVaR solver
-- [x] Classical baselines
-- [x] Unit tests (35 passing)
-- [x] Documentation updated
+[Scientific checkpoint and figures](reports/RESEARCH_CYCLE_2026-11-20.md)
+are authoritative; older feasibility text is historical and superseded.
 
-### In Progress
-- [ ] Feasibility test (n=4, k=2) - CORRECTED
-- [ ] Exact solver validation
-- [ ] Photonic simulation validation
+Completed and actually executed:
 
-### Next Steps
-1. Run corrected feasibility test
-2. Measure P_CF for optimized interferometers
-3. Compare with baselines
-4. Create reports/feasibility_n4.md
+- Full Fock/HOM/phase/vacuum validation; Perceval PASS,8464 outcomes, max probability error1.776e-15.
+- Objectives, collision-aware solver, weighted conditional lower CVaR and full binary classical penalty repaired.
+- 142 tests pass in the pinned .venv.
+- E01:3250 Haar circuits, n4/6/8/10.
+- E02/E03/E04: optimization, objectives, depths, optimizers and distinguishability controls.
+- E05b:756 runs at exactly34816 ideal draws each;26,320,896 simulated attempts including training discovery.
+- E06b:pair-moment checks; original failed tolerance assertion preserved.
+- E07:spectral hybrid;27/36 graph slots already classically solved by the anchor.
+- E08:TV certificate and balanced counterexample;240 full-distribution checks,9rational cases, full Fock n4/8/12.
+- E09:240 relabeling/reachability runs.
+- Raw data, commands, commits, seeds, hashes, independent reviews and five PNG/PDF figures retained.
 
-## Key Metrics to Track
+Validated theoretical checkpoint: P_CF->1 does not force TV to distinguishable
+statistics to zero uniformly, even for k=m/2. Spatial-overlap TV certificates and
+a counterexample have independently checked proofs. Novelty is OPEN.
 
-- P_CF (collision-free probability) - MUST BE MEASURED
-- P_opt|CF (probability of optimal given collision-free)
-- Expected shots to optimum
-- Energy gap from optimal
+Still open / deferred:
 
-## Decision Point
+- Exact optical ObliQ dynamics and a physically comparable penalty encoding.
+- Literature novelty audit of the new mathematical notes.
+- Useful optimum-blind, label-invariant graph-informed search beating feasible classical discovery.
+- Hardware source/detection loss accounting and noise; deferred because ideal benefit is unestablished.
+- Optimized n10 studies, larger/harder preregistered populations and graph-cluster inference.
 
-**CONDITIONAL-GO**: The physics is corrected but collision probability must be measured and optimized.
-
-See `reports/feasibility_n4.md` for the decision criteria.
-
-## Physics Correction Applied
-
-The initial implementation incorrectly assumed P_CF = 1.0. This has been corrected:
-- Full Fock space simulation implemented
-- Collision states properly enumerated
-- P_CF must be measured, not assumed
-- Cardinality constraint is satisfied conditioned on CF
+Continuation contract: OPEN_QUESTIONS.md; decisions: DECISIONS.md;
+all scientific claims and statuses: CLAIMS.md. Manuscript remains frozen.

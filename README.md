@@ -1,64 +1,57 @@
-# Photonic Balanced Partitioning
+# Photonic Balanced Partitioning — research in progress
 
-**Constraint-Preserving Photonic Quantum Optimization for Balanced Graph Partitioning**
+Can collision-aware fixed-particle optics improve graph bisection at equal
+physical sampling and classical search cost? The tested generic-mesh route
+currently gives **NO-GO for a benefit claim**. The manuscript is frozen and
+hardware execution is disabled.
 
-> Can photon-number conservation replace penalty terms in constrained graph optimization?
+Read the [executed research checkpoint](reports/RESEARCH_CYCLE_2026-11-20.md),
+[claims registry](CLAIMS.md) and [continuation questions](OPEN_QUESTIONS.md).
 
-## Quick Start
+## Reproduce locally
 
-```bash
-python3.11 -m pip install -e '.[test]'
-pbp doctor
-pbp test
-pbp demo
+```sh
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -r requirements-research-lock.txt
+.venv/bin/python -m pip install -e '.[all]'
+PYTHONPATH=src .venv/bin/python -m pytest tests/ -q
 ```
 
-## Project Structure
+The pinned environment was actually tested with Python3.11.15, NumPy2.4.6,
+SciPy1.17.1, Perceval1.3.0 and exqalibur1.4.2. The Perceval distribution package
+is `perceval-quandela`. Installing it does not authorize any QPU access.
 
+Every main run has a manifest with exact command, source commit, seed formulas,
+source hashes and raw-output hashes. To replay a numerical run on another machine,
+use its manifest command with a local interpreter and a **new** output directory:
+
+```sh
+PYTHONPATH=src .venv/bin/python experiments/run_research.py haar --output /tmp/haar-replay
+PYTHONPATH=src .venv/bin/python experiments/run_equal_budget.py --output /tmp/budget-replay
+PYTHONPATH=src .venv/bin/python experiments/run_coherence_check.py --output /tmp/coherence-replay
+PYTHONPATH=src .venv/bin/python experiments/run_label_control.py --output /tmp/labels-replay
+PYTHONPATH=src .venv/bin/python experiments/audit_results.py
+MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/plot_results.py
 ```
-photonic-balanced-partitioning/
-├── src/photonic_balanced_partitioning/
-│   ├── problems/           # Graph problem definitions
-│   ├── photonic/           # Photonic quantum algorithms
-│   └── classical/          # Classical baseline solvers
-├── tests/                   # 35 passing unit tests
-├── theory/                  # Mathematical formulations
-├── experiments/             # Experiment scripts and results
-├── paper/                   # LaTeX manuscript
-├── qpu/                     # QPU experiment package
-├── reports/                 # Analysis reports
-└── LAURENT_HANDOFF.md       # QPU handoff document
-```
 
-## Key Components
+The optional launchers use an installed Mathbox recorder and its environment-specific
+path; direct numerical scripts are portable. Historical manifests verify against
+their exact Git revision when newer scripts have changed. Raw data are never
+silently replaced, including the failed E06 check and the superseded E05 protocol.
 
-### Problem Module (`problems/min_bisection.py`)
-- `BalancedGraphPartitioning` - Main problem class
-- Graph families: path, cycle, complete, bipartite, star, random, planted
-- Exact solver via enumeration (n ≤ 12)
+## Evidence and limitations
 
-### Photonic Module (`photonic/`)
-- `FixedPhotonObliq` - Constraint-preserving fixed-k photon interferometer
-- `CollisionAwareSolver` - Handles boson collisions explicitly
-- `PenaltyObliq` - Penalty-based approach for comparison
-- `CVaRFixedPhoton` - CVaR-based robust optimization
+- Physics and Perceval validation PASS:8464 output states, maximum probability error1.776e-15.
+- E01:3250 Haar circuits across n4/6/8/10 reproduce the known collision-free law.
+- E05b:756 runs with exactly34816 simulated ideal attempts each; all training draws counted.
+- A proved balanced-density counterexample has P_CF->1 but TV(bosonic,distinguishable)=1/2.
+- Novelty of the new overlap certificate/counterexample is OPEN; Haar scaling is known.
+- The full binary penalty baseline is explicitly classical. `PenaltyObliq` is a deprecated alias,
+  not an implementation of actual optical ObliQ dynamics.
+- The regular generator preserves degree through edge switches, but is not uniform.
+- Tiny exact-enumeration simulations, descriptive fixed-grid summaries and oracle-success
+  diagnostics cannot establish scalable advantage or hardware performance.
 
-### Important Physics Note
-
-**CRITICAL:** Fixed photon number (∑n_i = k) does NOT imply collision-free occupations (n_i ∈ {0,1}).
-
-For m modes and k photons:
-- Full Fock space dimension: C(m+k-1, k)
-- Collision-free dimension: C(m, k)
-
-Collision states like |2,0,0,0⟩ must be properly handled.
-
-## Research Questions
-
-1. Can we optimize interferometers to maximize P_CF × P_opt|CF?
-2. Does constraint-preserving optimization outperform penalty-based methods?
-3. What is the quantum advantage (if any) for balanced partitioning?
-
-## License
-
-MIT License
+Plots and their standalone PDF counterparts are in `reports/figures/`.
+No noise or hardware result is asserted. `LAURENT_HANDOFF.md` is withdrawn;
+`qpu/` entrypoints fail closed. Earlier manuscript text is not validated evidence.
