@@ -1,17 +1,14 @@
-"""Collision-aware photonic optimization solver."""
-
+"""Collision-aware photonic optimization with explicit physical rejection cost."""
 from __future__ import annotations
-
 from dataclasses import dataclass
 from typing import Any
 import numpy as np
-
 from .fixed_photon_obliq import FixedPhotonObliq
+from .objectives import distribution_metrics, objective_value
 
 
 @dataclass(frozen=True)
 class CollisionAwareResult:
-    """Result from collision-aware sampling."""
     occupation_numbers: tuple[int, ...]
     is_valid: bool
     is_balanced: bool
@@ -23,89 +20,54 @@ class CollisionAwareResult:
 
 
 class CollisionAwareSolver:
-    """Collision-aware solver that explicitly handles boson collisions."""
-    
     def __init__(self, n: int, k: int | None = None, mu: float = 1.0):
-        """Initialize collision-aware solver.
-        
-        Args:
-            n: Number of vertices/modes
-            k: Number of photons (default: n/2)
-            mu: Collision penalty coefficient
-        """
-        self.n = n
-        self.k = k if k is not None else n // 2
-        self.mu = mu
+        if not np.isfinite(mu) or mu < 0:
+            raise ValueError("mu must be finite and nonnegative")
         self._base_solver = FixedPhotonObliq(n, k)
-    
-    def sample(self, U: np.ndarray, num_shots: int, seed: int | None = None) -> list[CollisionAwareResult]:
-        """Sample with collision awareness."""
-        fp_results = self._base_solver.sample(U, num_shots, seed)
-        
-        results = []
-        for fp_result in fp_results:
-            result = CollisionAwareResult(
-                occupation_numbers=fp_result.occupation_numbers,
-                is_valid=fp_result.is_valid,
-                is_balanced=fp_result.is_balanced,
-                has_collision=False,
-                energy=fp_result.energy,
-                partition=fp_result.partition,
-                probability=fp_result.probability,
-                collision_penalty=0.0
-            )
-            results.append(result)
-        
-        return results
-    
+        self.n, self.k, self.mu = n, self._base_solver.k, mu
+
+    def sample(self, U: np.ndarray, num_shots: int, seed: int | None = None,
+               edges=None) -> list[CollisionAwareResult]:
+        fp_results = self._base_solver.sample(U, num_shots, edges=edges, seed=seed)
+        return [CollisionAwareResult(
+            occupation_numbers=r.occupation_numbers, is_valid=r.is_valid,
+            is_balanced=r.is_valid and r.is_balanced,
+            has_collision=any(count > 1 for count in r.occupation_numbers),
+            energy=r.energy, partition=r.partition, probability=r.probability,
+            collision_penalty=self.mu if not r.is_valid else 0.0,
+        ) for r in fp_results]
+
     def compute_collision_probability(self, U: np.ndarray) -> float:
-        """Estimate collision probability for a given interferometer."""
-        return 0.0  # In fixed-photon subspace, P_CF = 1
-    
-    def expected_objective(self, U: np.ndarray, edges: list[tuple[int, int, float]]) -> float:
-        """Compute the collision-aware expected objective."""
-        p_cf = 1.0
-        psi_out = self._base_solver.output_state(U)
-        probabilities = np.abs(psi_out) ** 2
-        probabilities /= probabilities.sum()
-        
-        partitions = self._base_solver._enumerate_partitions()
-        expected_energy = 0.0
-        
-        for idx, partition in enumerate(partitions):
-            energy = self._base_solver._compute_cut_weight(partition, edges)
-            expected_energy += probabilities[idx] * energy
-        
-        objective = expected_energy + self.mu * (1 - p_cf)
-        return objective
-    
-    def optimize(self, edges: list[tuple[int, int, float]], num_iterations: int = 100, seed: int | None = None) -> dict[str, Any]:
-        """Optimize using collision-aware objective."""
+        return float(np.clip(1.0 - self._base_solver.measure_collision_free_probability(U), 0.0, 1.0))
+
+    def expected_objective(self, U: np.ndarray, edges) -> float:
+        p = np.abs(self._base_solver.output_state(U))**2
+        metrics = distribution_metrics(p, self._base_solver._enumerate_all_fock_states(), edges)
+        return objective_value(metrics, "collision_aware", mu=self.mu)
+
+    def optimize(self, edges, num_iterations=100, seed=None) -> dict[str, Any]:
+        """Haar random-search baseline, *not* a variational algorithm.
+
+        Reports exactly num_iterations + 1 distribution evaluations and zero
+        physical shots. Exact distributions are not shot-based training data.
+        """
+        if num_iterations < 0:
+            raise ValueError("num_iterations must be nonnegative")
         rng = np.random.default_rng(seed)
-        
-        best_U = self._base_solver.random_interferometer(seed=seed)
-        best_objective = self.expected_objective(best_U, edges)
-        
-        objectives = [best_objective]
-        energies = []
-        
-        for i in range(num_iterations):
-            U = self._base_solver.random_interferometer(seed=rng.integers(0, 2**31))
-            obj = self.expected_objective(U, edges)
-            energy = self._base_solver.compute_energy(U, edges)
-            
-            if obj < best_objective:
-                best_objective = obj
-                best_U = U
-            
+        objectives, energies = [], []
+        best_objective, best_U = float("inf"), None
+        for _ in range(num_iterations + 1):
+            U = self._base_solver.random_interferometer(seed=int(rng.integers(2**31)))
+            p = np.abs(self._base_solver.output_state(U))**2
+            metrics = distribution_metrics(p, self._base_solver._enumerate_all_fock_states(), edges)
+            obj = objective_value(metrics, "collision_aware", mu=self.mu)
             objectives.append(obj)
-            energies.append(energy)
-        
-        return {
-            "best_objective": best_objective,
-            "best_energy": self._base_solver.compute_energy(best_U, edges),
-            "best_interferometer": best_U,
-            "objectives": objectives,
-            "energies": energies,
-            "iterations": num_iterations,
-        }
+            energies.append(metrics.conditional_energy)
+            if best_U is None or obj < best_objective:
+                best_objective, best_U = obj, U
+        return {"best_objective": best_objective,
+                "best_energy": energies[int(np.argmin(objectives))],
+                "best_interferometer": best_U, "objectives": objectives,
+                "energies": energies, "iterations": num_iterations,
+                "n_evaluations": num_iterations+1, "n_shots": 0,
+                "training_mode": "exact_distribution"}
