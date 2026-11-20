@@ -1,0 +1,847 @@
+{
+  "status": "PASS",
+  "provenance": [
+    {
+      "manifest": "experiments/E01_haar_collision_baseline/manifest.json",
+      "status": "completed",
+      "commit": "c7876adeffe7031f77e1ab71a14e3108c4f657cd",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "historical Git c7876adeffe7031f77e1ab71a14e3108c4f657cd"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "historical Git c7876adeffe7031f77e1ab71a14e3108c4f657cd"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E02_ideal_optimization/manifest.json",
+      "status": "completed",
+      "commit": "5ce1dc127a95c092a433f6b5a4ea6ed7b8865f38",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E03_objectives_pareto/manifest.json",
+      "status": "completed",
+      "commit": "5ce1dc127a95c092a433f6b5a4ea6ed7b8865f38",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E04_optimizers_depths/manifest.json",
+      "status": "completed",
+      "commit": "5ce1dc127a95c092a433f6b5a4ea6ed7b8865f38",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E05_equal_shots/manifest.json",
+      "status": "completed",
+      "commit": "5ce1dc127a95c092a433f6b5a4ea6ed7b8865f38",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E05b_exact_equal_budget/manifest.json",
+      "status": "completed",
+      "commit": "af0978455258bb44ef51d328e9ac977546eb2331",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch_followups.py",
+          "verified": "historical Git af0978455258bb44ef51d328e9ac977546eb2331"
+        },
+        {
+          "path": "experiments/run_equal_budget.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E06_structural_checks/manifest.json",
+      "status": "failed",
+      "commit": "c7876adeffe7031f77e1ab71a14e3108c4f657cd",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "historical Git c7876adeffe7031f77e1ab71a14e3108c4f657cd"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "historical Git c7876adeffe7031f77e1ab71a14e3108c4f657cd"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 2
+    },
+    {
+      "manifest": "experiments/E06b_structural_checks/manifest.json",
+      "status": "completed",
+      "commit": "5ce1dc127a95c092a433f6b5a4ea6ed7b8865f38",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 3
+    },
+    {
+      "manifest": "experiments/E07_spectral_hybrid/manifest.json",
+      "status": "completed",
+      "commit": "5ce1dc127a95c092a433f6b5a4ea6ed7b8865f38",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E08_coherence_certificate/manifest.json",
+      "status": "completed",
+      "commit": "72681fb2af275823de2b62d3a549168e826fecd7",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch_followups.py",
+          "verified": "historical Git 72681fb2af275823de2b62d3a549168e826fecd7"
+        },
+        {
+          "path": "experiments/run_coherence_check.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        },
+        {
+          "path": "theory/near_collisionless_bound.md",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/E09_label_control/manifest.json",
+      "status": "completed",
+      "commit": "37a4a5029fbba8c0e24d9347e3733dac82af6702",
+      "inputs": [
+        {
+          "path": "src/photonic_balanced_partitioning/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/cli.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_research.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/launch_followups.py",
+          "verified": "current source"
+        },
+        {
+          "path": "experiments/run_label_control.py",
+          "verified": "current source"
+        },
+        {
+          "path": "pyproject.toml",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 4
+    },
+    {
+      "manifest": "experiments/validation/manifest.json",
+      "status": "completed",
+      "commit": "847d7a0e05cdf7fa8ca50c68f51f8d7e03158508",
+      "inputs": [
+        {
+          "path": "experiments/validation/run_physics_validation.py",
+          "verified": "current source"
+        },
+        {
+          "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+          "verified": "current source"
+        }
+      ],
+      "outputs_verified": 2
+    }
+  ],
+  "scientific_checks": [
+    {
+      "experiment": "E05b",
+      "model_runs": 756,
+      "simulated_attempts": 26320896,
+      "all_model_runs_found_optimum_during_training": 756,
+      "exact_budget_and_trace_invariants": "PASS"
+    },
+    {
+      "ideal_trace_evaluations": 200625,
+      "oracle_monotonic_runs": 1188,
+      "probability_bounds_and_factorization": "PASS"
+    }
+  ],
+  "limitations": [
+    "Failed original E06 is retained as a failed run, not evidence of theorem failure",
+    "Hashes and finite consistency checks do not establish novelty or algorithm advantage"
+  ]
+}
