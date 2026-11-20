@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+"""Bounded, local-only Qwen cycles. No merges; Astra is the acceptance authority."""
+from __future__ import annotations
+import argparse
+import datetime as dt
+import fcntl
+import hashlib
+import json
+import os
+from pathlib import Path
+import platform
+import shutil
+import signal
+import subprocess
+import sys
+import time
+import urllib.request
+
+ROOT=Path(__file__).resolve().parents[1]
+STATE=ROOT/'.local/qwen'
+MODEL='qwen3.5:2b-q4_K_M'
+URL='http://127.0.0.1:11435'
+BASE_TOOLS=['read_file','run_shell_command','write_file']
+CONTROL_TOOLS=['agent','skill','tool_search','tool_call','team_create','team_delete',
+    'task_create','task_update','task_list','list_agents','send_message','request_shutdown',
+    'report_findings','team_plan_approval','get_goal','update_goal','enter_worktree',
+    'exit_worktree','record_artifact','task_stop']
+
+
+def post(endpoint,payload):
+    request=urllib.request.Request(URL+endpoint,data=json.dumps(payload).encode(),headers={'Content-Type':'application/json'})
+    with urllib.request.urlopen(request,timeout=15) as response:return json.load(response)
+
+
+def paper_hashes(root):
+    return {str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in sorted((root/'paper').rglob('*')) if p.is_file()}
+
+
+def environment():
+    # Never pass QPU/provider credentials or the caller's shell init to Qwen.
+    env={key:os.environ[key] for key in ['PATH','HOME','USER','LOGNAME','LANG','TMPDIR'] if key in os.environ}
+    env.update(PASQAL_PYTHON=str(ROOT/'.venv/bin/python'),PYTHONDONTWRITEBYTECODE='1',
+        PASQAL_OLLAMA_API_KEY='local-placeholder-not-a-credential',
+        QWEN_HOME=str(STATE/'home'),QWEN_RUNTIME_DIR=str(STATE/'home'),
+        QWEN_CODE_MODELS_DEV='off',QWEN_CODE_ENABLE_AGENT_TEAM='1',
+        OLLAMA_HOST='127.0.0.1:11435',OLLAMA_MODELS=str(ROOT/'.local/ollama/models'),
+        OLLAMA_NO_CLOUD='1',OLLAMA_NUM_PARALLEL='1',OLLAMA_MAX_LOADED_MODELS='1',
+        OLLAMA_CONTEXT_LENGTH='16384',OLLAMA_KEEP_ALIVE='60s',OLLAMA_FLASH_ATTENTION='1',
+        OLLAMA_KV_CACHE_TYPE='q8_0',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',
+        MPLCONFIGDIR=str(STATE/'matplotlib'))
+    return env
+
+
+def confinement(worktree,path):
+    if platform.system()!='Darwin' or not shutil.which('sandbox-exec'):
+        raise RuntimeError('This validated launcher requires macOS sandbox-exec; no unconfined fallback')
+    quoted=lambda p:json.dumps(str(p.resolve()))
+    text='(version 1)\n(allow default)\n(deny file-write*)\n'
+    for directory in [worktree,STATE,Path('/private/tmp'),Path(os.environ.get('TMPDIR','/private/tmp'))]:
+        text+=f'(allow file-write* (subpath {quoted(directory)}))\n'
+    text+='(allow file-write* (literal "/dev/null"))\n'
+    text+=f'(deny file-write* (subpath {quoted(worktree/"paper")}))\n'
+    for directory in ['.ssh','.aws','.codex','.qwen']:
+        text+=f'(deny file-read* (subpath {quoted(Path.home()/directory)}))\n'
+    text+='(deny network*)\n(allow network-outbound (remote ip "127.0.0.1:11435"))\n'
+    path.write_text(text)
+    return ['sandbox-exec','-f',str(path)]
+
+
+def execute(argv,cwd,env,output,timeout):
+    started=time.monotonic()
+    with output.with_suffix('.jsonl').open('w') as out,output.with_suffix('.stderr').open('w') as err:
+        proc=subprocess.Popen(argv,cwd=cwd,env=env,stdout=out,stderr=err,start_new_session=True)
+        try:code=proc.wait(timeout=timeout)
+        except subprocess.TimeoutExpired:
+            os.killpg(proc.pid,signal.SIGTERM)
+            try:proc.wait(timeout=5)
+            except subprocess.TimeoutExpired:os.killpg(proc.pid,signal.SIGKILL);proc.wait()
+            code=124
+    return dict(argv=argv,exit_code=code,runtime_seconds=time.monotonic()-started,
+                stdout=str(output.with_suffix('.jsonl').relative_to(ROOT)),
+                stderr=str(output.with_suffix('.stderr').relative_to(ROOT)))
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--mode',choices=['validation','cycle','subagent','team'],default='cycle')
+    parser.add_argument('--max-experiments',type=int,default=1,choices=[1])
+    parser.add_argument('--wall-time',type=int,default=600)
+    parser.add_argument('--max-parallel-agents',type=int,default=1,choices=[1])
+    parser.add_argument('--max-failed-retries',type=int,default=1,choices=[0,1])
+    args=parser.parse_args()
+    if not 30<=args.wall_time<=1800:parser.error('Wall time must be30..1800 seconds')
+    STATE.mkdir(parents=True,exist_ok=True)
+    lock=(STATE/'cycle.lock').open('w')
+    try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except BlockingIOError:raise SystemExit('Another controlled Qwen cycle is active')
+    if shutil.disk_usage(ROOT).free<2*1024**3:raise SystemExit('Less than2GiB free; refuse extra worktree/model load')
+    start=time.monotonic();env=environment();server=None
+    try:
+        urllib.request.urlopen(URL+'/api/version',timeout=3).close()
+    except OSError:
+        log=(STATE/'ollama.log').open('a')
+        server=subprocess.Popen(['ollama','serve'],env=env,stdout=log,stderr=log,start_new_session=True)
+        for _ in range(30):
+            try:urllib.request.urlopen(URL+'/api/version',timeout=1).close();break
+            except OSError:time.sleep(.5)
+        else:raise RuntimeError('Local Ollama did not start')
+    cycle=dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+args.mode
+    output=ROOT/'results/qwen_cycles'/cycle;output.mkdir(parents=True,exist_ok=False)
+    worktree=ROOT/'.qwen/worktrees'/cycle
+    commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+    record=dict(cycle=cycle,mode=args.mode,started_at=dt.datetime.now(dt.timezone.utc).isoformat(),
+        base_commit=commit,model=MODEL,worktree=str(worktree),limits=vars(args),runs=[],
+        supervisor_verdict='PENDING_ASTRA_REVIEW',status='RUNNING',no_qpu=True)
+    original=paper_hashes(ROOT)
+    try:
+        tags=json.load(urllib.request.urlopen(URL+'/api/tags',timeout=5))
+        if not any(m['name']==MODEL for m in tags['models']):raise RuntimeError('Selected local model absent; no automatic download/fallback')
+        record['model_metadata']=next(m for m in tags['models'] if m['name']==MODEL)
+        worktree.parent.mkdir(parents=True,exist_ok=True)
+        subprocess.run(['git','worktree','add','-b','qwen/'+cycle,str(worktree),commit],cwd=ROOT,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        before=paper_hashes(worktree)
+        prefix=confinement(worktree,output/'sandbox.sb')
+        # Execute a real OS-denial probe before giving tools to a local model.
+        guard="import pathlib; p=pathlib.Path('paper/__qwen_guard_probe__'); p.write_text('must fail')"
+        check=subprocess.run(prefix+[str(ROOT/'.venv/bin/python'),'-c',guard],cwd=worktree,env=env,capture_output=True,text=True)
+        if check.returncode==0:raise RuntimeError('Paper write confinement failed')
+        record['paper_os_guard']='PASS'
+        py=str(ROOT/'.venv/bin/python')
+        prompts=[]
+        if args.mode=='validation':
+            prompts=[('experiment-runner',f'Read AGENTS.md using read_file. Then run exactly: {py} -m pytest tests/test_hom.py -q . Write reports/QWEN_SMOKE_REPORT.md recording the actual test result. Never edit paper/. Do these three actions now; no planning-only reply.')]
+        elif args.mode=='subagent':
+            prompts=[('research-lead','Use the agent tool once to delegate to physics-auditor, foreground: read AGENTS.md and report the scientific rules. Wait for the result. Do not perform its task yourself; do not run parallel workers. Then report its returned evidence.')]
+        elif args.mode=='team':
+            prompts=[('research-lead','Test native Agent Team: create one team, create one task to read AGENTS.md, delegate it to exactly one read-only physics-auditor teammate using the agent tool with the team name. Wait for evidence, mark task complete and shut down the teammate and team. No shell or writes. One active worker only. Report what really worked.')]
+        else:
+            prompts=[('research-lead','Read STATUS.md and OPEN_QUESTIONS.md. State one falsifiable n4 question for the supplied scripts/qwen_n4_probe.py. Existing bugs were repaired. Do not edit code or paper. Keep the scope to one optimum-blind 3graph/3seed comparison and actual existing tests.'),
+                ('experiment-runner',f'Execute exactly these two shell commands now: {py} -m pytest tests/test_hom.py tests/test_objectives.py tests/test_perceval_cross_validation.py -q ; then {py} scripts/qwen_n4_probe.py --output results/qwen_n4_first_cycle . Read results/qwen_n4_first_cycle/raw.json in limited ranges. Write reports/QWEN_CYCLE_RESULT.md with actual commands, tests, output path and a scoped SUPPORTED/REJECTED/INCONCLUSIVE verdict. No edits to src/, tests/ or paper/ unless a new bug is demonstrated; report it first.'),
+                ('adversarial-reviewer','Read reports/QWEN_CYCLE_RESULT.md and relevant parts of results/qwen_n4_first_cycle/raw.json. Critique actual physics, objective and oracle/cost handling. Check whether distinguishable or feasible classical sampling explains the observations. Write reports/QWEN_ADVERSARIAL_REVIEW.md; no source edits, no paper, no novelty assertion.'),
+                ('experiment-runner',f'Replicate the same supplied n4 protocol to a fresh output: {py} scripts/qwen_n4_probe.py --output results/qwen_n4_replication . Record replication in reports/QWEN_REPLICATION.md with actual executed command and results. No original output overwritten. No new experiment family.')]
+        for index,(role,prompt) in enumerate(prompts):
+            remaining=args.wall_time-(time.monotonic()-start)
+            if remaining<10:raise TimeoutError('Cycle wall budget exhausted')
+            allowed=set(BASE_TOOLS)
+            if args.mode in ['subagent','team']:allowed.add('agent')
+            if args.mode=='team':allowed.update(['team_create','team_delete','task_create','task_update','task_list','send_message','request_shutdown','list_agents'])
+            excluded=[t for t in CONTROL_TOOLS if t not in allowed]
+            role_text=(worktree/'.qwen/agents'/f'{role}.md').read_text().split('---',2)[-1]
+            system='You are a bounded local research assistant supervised by Astra. Execute requested tools and report actual evidence. No paper edits, QPU, remote API, invented results or nested delegation. '+role_text
+            command=prefix+['qwen','--auth-type','openai','--model',MODEL,'--output-format','stream-json',
+                '--approval-mode','auto-edit','--allowed-tools',','.join(sorted(allowed)),
+                '--core-tools',','.join(sorted(allowed)), '--exclude-tools',','.join(excluded),
+                '--max-session-turns','10','--max-tool-calls','10','--max-subagent-depth','1',
+                '--max-wall-time',str(max(1,int(min(remaining,300)))),
+                '--system-prompt',system,'-p',prompt]
+            run=execute(command,worktree,env,output/f'{index:02d}-{role}',min(remaining,305))
+            record['runs'].append(run)
+            if run['exit_code']!=0:
+                record['status']='INCONCLUSIVE';break
+        else:record['status']='EXECUTED_PENDING_REVIEW'
+        if paper_hashes(worktree)!=before or paper_hashes(ROOT)!=original:
+            raise RuntimeError('Manuscript hashes changed')
+        record['paper_hashes_before']=before;record['paper_hashes_after']=paper_hashes(worktree)
+        record['worktree_changes']=subprocess.check_output(['git','status','--short'],cwd=worktree,text=True).splitlines()
+    except Exception as error:
+        record['status']='FAILED';record['error']=f'{type(error).__name__}: {error}'
+    finally:
+        record['runtime_seconds']=time.monotonic()-start
+        (output/'run.json').write_text(json.dumps(record,indent=2)+'\n')
+        try:post('/api/generate',{'model':MODEL,'keep_alive':0})
+        except OSError:pass
+        if server is not None:
+            os.killpg(server.pid,signal.SIGTERM);server.wait(timeout=10)
+        print(json.dumps({'record':str(output/'run.json'),'status':record['status'],'worktree':str(worktree)}))
+    return 0 if record['status']=='EXECUTED_PENDING_REVIEW' else 1
+
+
+if __name__=='__main__':raise SystemExit(main())

@@ -1,0 +1,69 @@
+{
+  "$version": 4,
+  "security": {
+    "auth": {
+      "selectedType": "openai"
+    }
+  },
+  "model": {
+    "name": "qwen3.5:2b-q4_K_M",
+    "maxSessionTurns": 12,
+    "maxWallTimeSeconds": 300,
+    "maxToolCalls": 12,
+    "maxSubagentDepth": 1
+  },
+  "modelProviders": {
+    "openai": [
+      {
+        "id": "qwen3.5:2b-q4_K_M",
+        "name": "Local Qwen3.5 2B Q4 (Ollama)",
+        "envKey": "PASQAL_OLLAMA_API_KEY",
+        "baseUrl": "http://127.0.0.1:11435/v1",
+        "generationConfig": {
+          "contextWindowSize": 16384,
+          "timeout": 180000,
+          "maxRetries": 0,
+          "samplingParams": {
+            "temperature": 0.2,
+            "max_tokens": 1024,
+            "reasoning_effort": "none"
+          },
+          "extra_body": {
+            "enable_thinking": false,
+            "think": false,
+            "reasoning_effort": "none"
+          }
+        }
+      }
+    ]
+  },
+  "experimental": {
+    "agentTeam": true,
+    "emitToolUseSummaries": false
+  },
+  "agents": {
+    "defaultBackground": false,
+    "crossSessionMessaging": false
+  },
+  "telemetry": {
+    "enabled": false
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write(reports/**)",
+      "Write(results/**)",
+      "Write(experiments/**)",
+      "Shell(python*)",
+      "Shell(.venv/bin/python*)"
+    ],
+    "deny": [
+      "Edit(paper/**)",
+      "Write(paper/**)",
+      "Shell(*qpu/run_qpu*)",
+      "Shell(*qpu/smoke_test*)",
+      "web_fetch",
+      "web_search"
+    ]
+  }
+}

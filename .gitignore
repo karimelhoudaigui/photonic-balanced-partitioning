@@ -50,3 +50,8 @@ htmlcov/
 results/qpu/*/raw_samples.json
 results/qpu/*/processed_results.json
 results/qpu/*/analysis.json
+
+.local/
+.qwen/worktrees/
+.qwen/debug/
+.qwen/tmp/
