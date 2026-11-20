@@ -1,0 +1,5 @@
+E01 n=4 samples=1000 mean P_CF=0.59849639 theory=0.60000000
+E01 n=6 samples=1000 mean P_CF=0.35844745 theory=0.35714286
+E01 n=8 samples=1000 mean P_CF=0.21211827 theory=0.21212121
+E01 n=10 samples=250 mean P_CF=0.12588199 theory=0.12587413
+Completed haar in 0.418s
