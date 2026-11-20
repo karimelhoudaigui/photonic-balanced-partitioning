@@ -1,3 +1,5 @@
+> HISTORICAL AUDIT: paths and line numbers below refer to the earlier defective implementation. Corrections and executed checks are documented in [PHYSICS_VALIDATION.md](PHYSICS_VALIDATION.md) and [RESEARCH_CYCLE_2026-11-20.md](RESEARCH_CYCLE_2026-11-20.md).
+
 # Collision Bug Audit Report
 
 ## Critical Physics Error Identified

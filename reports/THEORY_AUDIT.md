@@ -5,6 +5,16 @@ Reviewed 2026-11-20. Reviewer: theory/literature agent, same-agent adversarial
 self-review of its own proof text. A separate coordinator reconstruction is
 still required before claiming independent review.
 
+Supplementary independent review completed later in this cycle: the
+objectives/baselines agent reconstructed the twirl, conditional Haar symmetry,
+Stirling coefficient, pair-moment factor four, disjoint-support factorization
+and permutation counterexample from the source proof at SHA256
+`0daedc5400a211d8fd41eb76764283ca0c0e68c426a965d5f52af6ba64041b87`.
+No missing hypothesis was found. The coordinator separately checked the
+conditional expectation argument and the two-pair annihilation/creation terms.
+This supplements, rather than changes, the author self-review recorded above;
+novelty remains outside this correctness verdict.
+
 Primary verdict: **proved as written** for T-Haar, T-Scaling, T-Haar-Metrics,
 T-Pairs and T-Pareto under the exact hypotheses in `theory/proven_results.md`.
 This verdict neither authenticates novelty nor evaluates algorithm performance.

@@ -1,45 +1,25 @@
-# QPU Readiness Assessment
+# Hardware gates — CLOSED
 
-## Status: NOT READY FOR LAURENT
+PAPER_READY=FALSE. No QPU execution authorized or performed.
 
-## Reasons
+| Gate | Current evidence |
+|---|---|
+| Physics validation | PASS ideal cases; PHYSICS_VALIDATION.md |
+| Perceval cross-validation | PASS; PERCEVAL_VALIDATION.md |
+| Objective validation | PASS; OBJECTIVE_VALIDATION.md |
+| Serious comparable baselines | PARTIAL:classical full-cube, Haar, uniform feasible and distinguishable controls; authentic optical ObliQ OPEN |
+| Interesting ideal interference-dependent optimization signal | NO-GO for tested mesh; RESEARCH_CYCLE_2026-11-20.md |
+| Precise hardware scientific hypothesis | OPEN |
+| Final circuit and parameters frozen | NO |
+| No tuning after QPU | Not applicable; no hardware protocol approved |
+| Explicit authorization | NOT GIVEN |
 
-1. **Physics verification incomplete**: Need to verify HOM effect on actual QPU
-2. **Optimization objective incorrect**: Currently optimizing E_valid, should optimize P_success
-3. **Collision handling**: Raw collision outcomes must be preserved in QPU output
-4. **No optimized interferometer**: Random interferometer gives poor results
+The old connectivity and QPU scripts claimed local simulation as hardware evidence.
+They now return status2 without network calls or result creation. The old Laurent
+handoff is withdrawn. No token, backend connection or hardware preparation is
+needed to continue the ideal research program. Source/detection losses, impurity,
+detectors and phase noise have not been measured or modelled in this cycle.
 
-## Required Before QPU Access
-
-- [ ] Fix optimization objective to maximize P_success
-- [ ] Add HOM benchmark test
-- [ ] Verify collision state preservation in run_qpu.py
-- [ ] Implement success probability optimization
-- [ ] Measure P_CF for optimized circuits
-
-## The HOM Challenge
-
-For two photons in different modes:
-- 50:50 beam splitter → P_CF ≈ 0
-- This is the Hong-Ou-Mandel effect
-- Must be verified on actual hardware
-
-## Next Experiment
-
-Run the n=4 feasibility test with:
-1. Optimized interferometer (maximizing P_success)
-2. HOM benchmark verification
-3. Collision state preservation check
-
-## When Ready
-
-Update this file to:
-```
-READY
-```
-
-And ensure:
-- All physics tests pass
-- Optimization objective is correct
-- HOM effect verified
-- Collision states preserved in QPU output
+Do not reopen this gate merely because simulator tests pass or an optimum is
+prepared using its known bitstring. All scientific gates and explicit authorization
+are required before implementing/launching a real Perceval remote backend.

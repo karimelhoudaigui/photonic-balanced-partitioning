@@ -1,3 +1,5 @@
+> HISTORICAL / SUPERSEDED, 2026-11-20: the numerical trial below has no retained seed or raw distribution and is not authenticated evidence. Do not use its values or contradictory GO decisions. Current executed results: [research checkpoint](RESEARCH_CYCLE_2026-11-20.md). The historical text is preserved to expose the earlier claims.
+
 # Feasibility Report: n=4, k=2
 
 ## Executive Summary

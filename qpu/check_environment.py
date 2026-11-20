@@ -44,7 +44,7 @@ def main():
         print("QPU Token: NOT SET")
         print("  Set with: export QPU_TOKEN='your-token'")
     
-    print("\nEnvironment ready for QPU experiments.")
+    print("\nLocal dependencies checked. Hardware gates remain closed; this does not verify QPU access.")
     return 0
 
 
