@@ -231,6 +231,7 @@ def optimization(args):
                       improvement=mean_ci([r['after']['p_success']-r['before']['p_success'] for r in subset]),
                       uniform_comparison=mean_ci([r['after']['p_success']-r['uniform_balanced_success'] for r in subset])))
     save(out/"summary.json",dict(experiment="ideal optimizer diagnostics; oracle C* is available for success loss",
+         uncertainty="Pooled t intervals across the fixed family/instance/repeat grid are descriptive only; shared initial seeds and repeated path/cycle graphs preclude population-significance claims",
          comparisons_are_not_hardware_budget_claims=True,physical_shots=0,
          total_evaluations=sum(r['n_evaluations'] for r in rows),results=groups))
     return groups
@@ -306,7 +307,8 @@ def structure(args):
             Q=sum(float(np.sum(B[:,a]*B[:,b])) for a,b in combinations(range(n//2),2))
             collision=float(p[M>0].sum()); mean_pairs=float(p @ M)
             assert abs(mean_pairs-2*Q)<1e-10
-            assert 2*Q/math.comb(n//2,2) <= collision+1e-10 <= 2*Q+1e-10
+            assert 2*Q/math.comb(n//2,2) <= collision+1e-10
+            assert collision <= 2*Q+1e-10
             rows.append(dict(n=n,seed=seed,Q=Q,collision=collision,mean_collision_pairs=mean_pairs))
     # Disjoint two-mode supports: random nontrivial partitions, zero collisions.
     for n in [4,6,8,10]:

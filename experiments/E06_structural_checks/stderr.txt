@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Desktop/pasqal/experiments/run_research.py", line 360, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/Users/karimelhoudaigui/Desktop/pasqal/experiments/run_research.py", line 356, in main
+    {"haar":haar,"optimization":optimization,"shots":shot_benchmark,"structure":structure}[args.experiment](args)
+  File "/Users/karimelhoudaigui/Desktop/pasqal/experiments/run_research.py", line 309, in structure
+    assert 2*Q/math.comb(n//2,2) <= collision+1e-10 <= 2*Q+1e-10
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

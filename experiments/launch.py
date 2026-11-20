@@ -17,6 +17,7 @@ RUNS={
       '--models','bosonic','--methods','COBYLA','Nelder-Mead','SPSA','random','--depths','0','2'],
  'E05_equal_shots': ['shots','--instances','2','--repeats','3','--budget','120','--shots','256','--heldout','4096'],
  'E06_structural_checks': ['structure'],
+ 'E06b_structural_checks': ['structure'],
  'E07_spectral_hybrid': ['optimization','--anchor','--instances','2','--repeats','3','--budget','120',
       '--models','bosonic','distinguishable','--objectives','success','conditional'],
 }
