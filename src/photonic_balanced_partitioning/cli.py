@@ -67,13 +67,12 @@ def cmd_test(args: argparse.Namespace) -> int:
     # Test fixed-photon interferometer
     solver = FixedPhotonObliq(n, k)
     
-    np.random.seed(42)
-    U = solver.random_interferometer()
+    U = solver.random_interferometer(seed=42)
     
     p_cf = solver.measure_collision_free_probability(U)
     print(f"Collision-free probability: {p_cf:.4f}")
     
-    samples = solver.sample(U, num_shots=1000, edges=edges)
+    samples = solver.sample(U, num_shots=1000, edges=edges, seed=43)
     valid_count = sum(1 for s in samples if s.is_valid)
     print(f"Valid samples: {valid_count}/{len(samples)}")
     
@@ -110,7 +109,7 @@ def cmd_demo(args: argparse.Namespace) -> int:
     print("\n--- Comparing Solvers ---")
     
     solver = FixedPhotonObliq(n, k)
-    U = solver.random_interferometer()
+    U = solver.random_interferometer(seed=42)
     p_cf = solver.measure_collision_free_probability(U)
     print(f"Fixed-photon interferometer: P_CF = {p_cf:.4f}")
     
@@ -119,9 +118,9 @@ def cmd_demo(args: argparse.Namespace) -> int:
 
 def cmd_qpu(args: argparse.Namespace) -> int:
     """Run QPU experiment."""
-    print("QPU experiment runner")
-    print("Usage: pbp qpu --backend <backend> --config <config_file>")
-    return 0
+    print("REFUSED: hardware gate closed; no authorized QPU implementation exists.")
+    print("See reports/QPU_READINESS.md")
+    return 2
 
 
 def main(argv: list[str] | None = None) -> int:
