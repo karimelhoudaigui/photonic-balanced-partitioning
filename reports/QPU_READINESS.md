@@ -4,26 +4,32 @@
 
 ## Reasons
 
-1. **Physics tests incomplete**: Need to verify HOM behavior and bosonic normalization
-2. **P_CF measurement**: Must be validated against Perceval
+1. **Physics verification incomplete**: Need to verify HOM effect on actual QPU
+2. **Optimization objective incorrect**: Currently optimizing E_valid, should optimize P_success
 3. **Collision handling**: Raw collision outcomes must be preserved in QPU output
-4. **Optimization**: No optimized interferometer exists yet
+4. **No optimized interferometer**: Random interferometer gives poor results
 
 ## Required Before QPU Access
 
-- [ ] Add HOM test validation
-- [ ] Validate against Perceval for small circuits
+- [ ] Fix optimization objective to maximize P_success
+- [ ] Add HOM benchmark test
 - [ ] Verify collision state preservation in run_qpu.py
-- [ ] Implement interferometer optimization
+- [ ] Implement success probability optimization
 - [ ] Measure P_CF for optimized circuits
+
+## The HOM Challenge
+
+For two photons in different modes:
+- 50:50 beam splitter → P_CF ≈ 0
+- This is the Hong-Ou-Mandel effect
+- Must be verified on actual hardware
 
 ## Next Experiment
 
-Run the n=4 feasibility test with optimized interferometer and measure:
-- P_CF (collision-free probability)
-- P_opt|CF (probability of optimal given collision-free)
-- P_success = P_CF × P_opt|CF
-- Expected shots to optimum
+Run the n=4 feasibility test with:
+1. Optimized interferometer (maximizing P_success)
+2. HOM benchmark verification
+3. Collision state preservation check
 
 ## When Ready
 
@@ -32,4 +38,8 @@ Update this file to:
 READY
 ```
 
-And ensure all tests pass with correct physics.
+And ensure:
+- All physics tests pass
+- Optimization objective is correct
+- HOM effect verified
+- Collision states preserved in QPU output

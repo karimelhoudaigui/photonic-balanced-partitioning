@@ -250,7 +250,42 @@ class FixedPhotonObliq:
         return results
     
     def compute_energy(self, U: np.ndarray, edges: list[tuple[int, int, float]]) -> float:
-        """Compute expected cut energy."""
+        """Compute conditional expected cut energy E_valid = E[C|CF].
+        
+        This is the expected energy conditioned on collision-free detection.
+        Formula: E_valid = Σ p(s)C_G(s) / P_CF
+        """
+        psi_out = self.output_state(U)
+        probabilities = np.abs(psi_out) ** 2
+        probabilities /= probabilities.sum()
+        
+        all_states = self._enumerate_all_fock_states()
+        cf_states = set(self._enumerate_cf_states())
+        
+        # Compute P_CF
+        p_cf = sum(probabilities[j] for j, state in enumerate(all_states) if state in cf_states)
+        
+        if p_cf < 1e-10:
+            return float('inf')  # No valid solutions possible
+        
+        # Compute conditional expected energy
+        expected_energy = 0.0
+        for j, state in enumerate(all_states):
+            if state in cf_states:
+                partition = tuple(i for i, ni in enumerate(state) if ni == 1)
+                v0 = set(partition)
+                v1 = set(range(self.n)) - v0
+                energy = sum(w for i, j, w in edges 
+                            if (i in v0 and j in v1) or (i in v1 and j in v0))
+                expected_energy += probabilities[j] * energy
+        
+        return expected_energy / p_cf
+    
+    def compute_unconditional_energy(self, U: np.ndarray, edges: list[tuple[int, int, float]]) -> float:
+        """Compute unconditional expected cut energy.
+        
+        Formula: E_uncond = Σ p(s)C_G(s) over all states
+        """
         psi_out = self.output_state(U)
         probabilities = np.abs(psi_out) ** 2
         probabilities /= probabilities.sum()
@@ -269,6 +304,32 @@ class FixedPhotonObliq:
                 expected_energy += probabilities[j] * energy
         
         return expected_energy
+    
+    def compute_success_probability(self, U: np.ndarray, edges: list[tuple[int, int, float]], 
+                                    optimal_energy: float) -> float:
+        """Compute probability of finding optimal solution.
+        
+        P_success = Σ p(s) for s in CF with C_G(s) = C*
+        """
+        psi_out = self.output_state(U)
+        probabilities = np.abs(psi_out) ** 2
+        probabilities /= probabilities.sum()
+        
+        all_states = self._enumerate_all_fock_states()
+        cf_states = set(self._enumerate_cf_states())
+        
+        p_success = 0.0
+        for j, state in enumerate(all_states):
+            if state in cf_states:
+                partition = tuple(i for i, ni in enumerate(state) if ni == 1)
+                v0 = set(partition)
+                v1 = set(range(self.n)) - v0
+                energy = sum(w for i, j, w in edges 
+                            if (i in v0 and j in v1) or (i in v1 and j in v0))
+                if abs(energy - optimal_energy) < 1e-10:
+                    p_success += probabilities[j]
+        
+        return p_success
     
     def _compute_cut_weight(self, partition: tuple[int, ...], 
                             edges: list[tuple[int, int, float]]) -> float:

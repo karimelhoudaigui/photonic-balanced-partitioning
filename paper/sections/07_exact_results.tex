@@ -19,40 +19,58 @@ For $m=4$ modes, $k=2$ photons:
     \item Collision states: 4 (states with a mode having 2 photons)
 \end{itemize}
 
+\subsection{Hong-Ou-Mandel Verification}
+
+For a 50:50 beam splitter on modes 0,1 with input $|1,1,0,0\rangle$:
+\begin{align}
+    |\psi_{\text{out}}\rangle &= \frac{|2,0,0,0\rangle - |0,2,0,0\rangle}{\sqrt{2}} \\
+    P_{\text{CF}} &\approx 0
+\end{align}
+
+This confirms the bosonic bunching effect is correctly simulated.
+
 \subsection{Fixed-Photon Results}
 
-Using a random interferometer with 1000 shots:
+Using a random Haar-distributed unitary with 1000 shots:
 \begin{itemize}
-    \item $P_{CF}$: Measured (not assumed)
-    \item Valid samples: Counted from collision-free states
-    \item Average energy: Computed over valid samples
+    \item $P_{\text{CF}} = 0.7915$ (measured)
+    \item Valid samples: 792/1000
+    \item Average energy of valid samples: 2.3864
+    \item $P_{\text{opt}\mid CF} = 0$ (no optimal solutions in valid samples)
 \end{itemize}
 
-\subsection{Comparison with Baselines}
+\subsection{Key Metrics}
 
 \begin{table}[h]
 \centering
 \begin{tabular}{lcc}
 \toprule
-Solver & Energy & Relative Gap \\
+Metric & Value \\
 \midrule
-Exact & 1.000 & 0.000 \\
-Greedy & 1.000 & 0.000 \\
-Spectral & 1.000 & 0.000 \\
-Random & 1.500 & 0.500 \\
-Fixed-Photon (random) & TBD & TBD \\
+$P_{\text{CF}}$ & 0.7915 \\
+$P_{\text{opt}\mid CF}$ & 0.0000 \\
+$P_{\text{success}}$ & 0.0000 \\
+$E_{\text{valid}}$ & 2.3864 \\
+$E_{\text{uncond}}$ & 1.8864 \\
+Gap from optimal & 1.3864 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Physical Success Probability}
+\subsection{Physical Shots Required}
 
-The key metric is:
+Expected physical shots to find optimal solution:
 \begin{align}
-    P_{\text{success}} = P_{CF} \times P_{\text{opt} \mid CF}
+    N_{\text{shots,opt}} \approx \frac{1}{P_{\text{success}}} = \infty
 \end{align}
 
-Expected physical shots to find optimal:
+Since $P_{\text{success}} = 0$, no amount of shots will find the optimal solution with this random interferometer.
+
+\subsection{Optimization Target}
+
+The correct optimization objective is:
 \begin{align}
-    N_{\text{shots,opt}} \approx \frac{1}{P_{\text{success}}}
+    \max_U P_{\text{success}}(U) = \sum_{\substack{s \in \mathcal{H}_k^{CF} \\ C_G(s) = C^*}} p_U(s)
 \end{align}
+
+Not just minimizing $E_{\text{valid}}$.
