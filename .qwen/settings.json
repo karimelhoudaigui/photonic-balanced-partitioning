@@ -6,7 +6,7 @@
     }
   },
   "model": {
-    "name": "qwen3.5:2b-q4_K_M",
+    "name": "pasqal-qwen-research",
     "maxSessionTurns": 12,
     "maxWallTimeSeconds": 300,
     "maxToolCalls": 12,
@@ -15,7 +15,7 @@
   "modelProviders": {
     "openai": [
       {
-        "id": "qwen3.5:2b-q4_K_M",
+        "id": "pasqal-qwen-research",
         "name": "Local Qwen3.5 2B Q4 (Ollama)",
         "envKey": "PASQAL_OLLAMA_API_KEY",
         "baseUrl": "http://127.0.0.1:11435/v1",
@@ -25,12 +25,10 @@
           "maxRetries": 0,
           "samplingParams": {
             "temperature": 0.2,
-            "max_tokens": 1024,
+            "max_tokens": 1536,
             "reasoning_effort": "none"
           },
           "extra_body": {
-            "enable_thinking": false,
-            "think": false,
             "reasoning_effort": "none"
           }
         }

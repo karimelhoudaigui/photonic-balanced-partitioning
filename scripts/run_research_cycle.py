@@ -18,7 +18,7 @@ import urllib.request
 
 ROOT=Path(__file__).resolve().parents[1]
 STATE=ROOT/'.local/qwen'
-MODEL='qwen3.5:2b-q4_K_M'
+MODEL='pasqal-qwen-research'
 URL='http://127.0.0.1:11435'
 BASE_TOOLS=['read_file','run_shell_command','write_file']
 CONTROL_TOOLS=['agent','skill','tool_search','tool_call','team_create','team_delete',
@@ -68,16 +68,25 @@ def confinement(worktree,path):
     return ['sandbox-exec','-f',str(path)]
 
 
-def execute(argv,cwd,env,output,timeout):
+def execute(argv,cwd,env,output,timeout,max_failed_retries=1):
     started=time.monotonic()
     with output.with_suffix('.jsonl').open('w') as out,output.with_suffix('.stderr').open('w') as err:
         proc=subprocess.Popen(argv,cwd=cwd,env=env,stdout=out,stderr=err,start_new_session=True)
-        try:code=proc.wait(timeout=timeout)
-        except subprocess.TimeoutExpired:
+        forced=None
+        while proc.poll() is None:
+            time.sleep(.25)
+            err.flush()
+            retry_count=output.with_suffix('.stderr').read_text().count('Retrying provider attempt')
+            if retry_count>max_failed_retries:
+                forced=125;break
+            if time.monotonic()-started>timeout:
+                forced=124;break
+        if forced is not None:
             os.killpg(proc.pid,signal.SIGTERM)
             try:proc.wait(timeout=5)
             except subprocess.TimeoutExpired:os.killpg(proc.pid,signal.SIGKILL);proc.wait()
-            code=124
+            code=forced
+        else:code=proc.returncode
     return dict(argv=argv,exit_code=code,runtime_seconds=time.monotonic()-started,
                 stdout=str(output.with_suffix('.jsonl').relative_to(ROOT)),
                 stderr=str(output.with_suffix('.stderr').relative_to(ROOT)))
@@ -164,7 +173,7 @@ print('CONFINEMENT_PASS')
                 '--max-session-turns','10','--max-tool-calls','10','--max-subagent-depth','1',
                 '--max-wall-time',str(max(1,int(min(remaining,300)))),
                 '--system-prompt',system,'-p',prompt]
-            run=execute(command,worktree,env,output/f'{index:02d}-{role}',min(remaining,305))
+            run=execute(command,worktree,env,output/f'{index:02d}-{role}',min(remaining,305),args.max_failed_retries)
             record['runs'].append(run)
             if run['exit_code']!=0:
                 record['status']='INCONCLUSIVE';break
