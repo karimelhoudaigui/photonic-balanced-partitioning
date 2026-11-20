@@ -76,6 +76,7 @@ class PartitionResult:
     partition: tuple[int, ...]
     is_balanced: bool
     is_optimal: bool = False
+    n: int | None = None
     
     @property
     def v0(self) -> tuple[int, ...]:
@@ -83,6 +84,8 @@ class PartitionResult:
     
     @property
     def v1(self) -> tuple[int, ...]:
+        if self.n is None:
+            raise ValueError("Graph size is required to recover the complement")
         return tuple(i for i in range(self.n) if i not in self.partition)
 
 
@@ -193,30 +196,33 @@ class BalancedGraphPartitioning:
     def random_regular(cls, n: int, degree: int, seed: int = 0, weight_range: tuple[float, float] = (1.0, 1.0)) -> "BalancedGraphPartitioning":
         if n % 2 != 0:
             raise ValueError(f"Random regular graph requires even n, got {n}")
-        if degree >= n:
-            raise ValueError(f"Degree must be < n, got degree={degree}, n={n}")
+        if degree < 0 or degree >= n or (n * degree) % 2:
+            raise ValueError(f"Invalid degree={degree} for n={n}")
         
         rng = np.random.default_rng(seed)
-        edges = []
-        
-        stubs = list(range(n)) * degree
-        rng.shuffle(stubs)
-        
-        while len(stubs) >= 2:
-            i, j = stubs[0], stubs[1]
-            if i != j:
-                w = rng.uniform(*weight_range)
-                edges.append((min(i, j), max(i, j), w))
-            stubs = stubs[2:]
-        
-        unique_edges = []
-        seen = set()
-        for i, j, w in edges:
-            if i != j and (i, j) not in seen:
-                seen.add((i, j))
-                unique_edges.append((i, j, w))
-        
-        return cls(n, tuple(unique_edges))
+        # Degree-preserving edge switches from a circulant. This is reproducible
+        # and always regular; it is NOT a uniform random-regular graph sampler.
+        pairs = {tuple(sorted((i, (i + delta) % n)))
+                 for i in range(n) for delta in range(1, degree // 2 + 1)}
+        if degree % 2:
+            pairs.update((i, i + n // 2) for i in range(n // 2))
+        for _ in range(20 * n * max(degree, 1)):
+            ordered = sorted(pairs)
+            if len(ordered) < 2:
+                break
+            a, b = rng.choice(len(ordered), size=2, replace=False)
+            i, j = ordered[a]
+            u, v = ordered[b]
+            if len({i, j, u, v}) != 4:
+                continue
+            if rng.integers(2):
+                u, v = v, u
+            new = {tuple(sorted((i, u))), tuple(sorted((j, v)))}
+            if not (new & pairs):
+                pairs.difference_update((ordered[a], ordered[b]))
+                pairs.update(new)
+        return cls(n, tuple((i, j, float(rng.uniform(*weight_range)))
+                            for i, j in sorted(pairs)))
     
     @classmethod
     def erdos_renyi(cls, n: int, p: float, seed: int = 0, weight_range: tuple[float, float] = (1.0, 1.0)) -> "BalancedGraphPartitioning":
@@ -238,6 +244,8 @@ class BalancedGraphPartitioning:
     def planted_partition(cls, n: int, community_size: int, intra_weight: float = 1.0, inter_weight: float = 0.1, seed: int = 0) -> "BalancedGraphPartitioning":
         if n % 2 != 0:
             raise ValueError(f"Planted partition requires even n, got {n}")
+        if community_size != n // 2:
+            raise ValueError("This generator requires two equally sized communities")
         
         rng = np.random.default_rng(seed)
         edges = []
@@ -326,7 +334,8 @@ def solve_exact_min_bisection(n: int, edges: tuple[tuple[int, int, float], ...],
         energy=best_energy,
         partition=best_partition,
         is_balanced=True,
-        is_optimal=True
+        is_optimal=True,
+        n=n
     )
 
 
@@ -337,7 +346,10 @@ def solve_qubo_with_penalty(n: int, edges: tuple[tuple[int, int, float], ...], k
     best_energy = float("inf")
     best_partition = None
     
-    for partition in enumerate_balanced_partitions(n, k):
+    if n > 20:
+        raise ValueError("Penalty exact enumeration capped at n <= 20")
+    for bits in itertools.product((0, 1), repeat=n):
+        partition = tuple(i for i, bit in enumerate(bits) if bit)
         cut_weight = compute_cut_weight(n, edges, partition)
         penalty = lam * (len(partition) - k) ** 2
         total = cut_weight + penalty
@@ -349,8 +361,9 @@ def solve_qubo_with_penalty(n: int, edges: tuple[tuple[int, int, float], ...], k
     return PartitionResult(
         energy=compute_cut_weight(n, edges, best_partition),
         partition=best_partition,
-        is_balanced=True,
-        is_optimal=True
+        is_balanced=len(best_partition) == k,
+        is_optimal=len(best_partition) == k,
+        n=n
     )
 
 

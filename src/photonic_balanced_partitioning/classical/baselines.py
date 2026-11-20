@@ -70,18 +70,12 @@ def greedy_balanced(n: int, edges: list[tuple[int, int, float]], k: int | None =
         
         for i in v0:
             for j in v1:
-                gain = 0.0
-                for neighbor, w in adj[i].items():
-                    if neighbor in v0 and neighbor != i:
-                        gain -= w
-                    elif neighbor in v1:
-                        gain += w
-                
-                for neighbor, w in adj[j].items():
-                    if neighbor in v1 and neighbor != j:
-                        gain -= w
-                    elif neighbor in v0:
-                        gain += w
+                candidate = (v0 - {i}) | {j}
+                # Recompute the swap exactly: the old gain formula had its
+                # sign reversed and counted the swapped edge twice.
+                current = sum(w for a, b, w in edges if (a in v0) != (b in v0))
+                proposed = sum(w for a, b, w in edges if (a in candidate) != (b in candidate))
+                gain = proposed - current
                 
                 if gain < 0:
                     v0.remove(i)
