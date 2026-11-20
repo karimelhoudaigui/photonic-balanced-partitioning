@@ -1,0 +1,34 @@
+\section{Theoretical Analysis}
+
+\subsection{Photon Number Conservation}
+
+\textbf{Theorem T1:} For a passive linear interferometer $\hat{U}$, $[\hat{U}, \hat{N}] = 0$.
+
+\textbf{Proof:} A passive linear interferometer is implemented by beam splitters and phase shifters, represented by a unitary matrix $U$ acting on mode annihilation operators: $a_i \to \sum_j U_{ij} a_j$. The photon number operator $\hat{N} = \sum_i a_i^\dagger a_i$ commutes with any unitary transformation. $\square$
+
+\subsection{Collision-Free Probability}
+
+\textbf{Theorem T2:} In the collision-free sector $\mathcal{H}_k^{CF}$, all outcomes satisfy the cardinality constraint exactly.
+
+\textbf{Proof:} By construction, $\mathcal{H}_k^{CF}$ only contains states with $n_i \in \{0,1\}$ and $\sum_i n_i = k$. $\square$
+
+\textbf{Corollary:} $P(\text{cardinality violation} \mid CF, N=k) = 0$.
+
+\subsection{Collision Probability}
+
+For a generic interferometer, $P_{CF} < 1$. Collision states like $|2,0,0,0\rangle$ can occur.
+
+The collision-free probability must be measured:
+\begin{align}
+    P_{CF} = \sum_{\mathbf{n} \in \mathcal{H}_k^{CF}} P(\mathbf{n})
+\end{align}
+
+\subsection{Comparison with Penalty Approach}
+
+The penalty approach adds $\lambda(\sum_i x_i - k)^2$ to the objective, introducing $O(n^2)$ couplings. The fixed-photon approach has no additional couplings but requires collision management.
+
+\textbf{Trade-off:}
+\begin{itemize}
+    \item Penalty: Dense QUBO, allows infeasible exploration
+    \item Fixed-photon: Sparse evolution, requires postselection
+\end{itemize}

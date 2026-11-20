@@ -1,0 +1,44 @@
+\section{QPU Results}
+
+\subsection{Experiment Setup}
+
+Experiments designed for Quandela Belenos QPU:
+\begin{itemize}
+    \item n=4, k=2 path graph
+    \item 100 shots per run
+    \item 1000 shots for full experiment
+\end{itemize}
+
+\subsection{Raw Data Preservation}
+
+QPU runs produce raw Fock samples including collision states:
+\begin{itemize}
+    \item $|2,0,0,0\rangle$ and permutations
+    \item $|1,1,0,0\rangle$ and permutations
+    \item Other valid 2-photon states
+\end{itemize}
+
+\subsection{Analysis Pipeline}
+
+1. Parse raw samples
+2. Identify collision-free states
+3. Compute energies for valid samples
+4. Report $P_{CF}$ and $P_{\text{opt}\mid CF}$
+
+\subsection{Expected Results}
+
+Based on simulation:
+\begin{itemize}
+    \item $P_{CF}$ measured from data
+    \item Constraint satisfaction verified
+    \item Energy distribution analyzed
+\end{itemize}
+
+\subsection{Data Collection}
+
+Results saved to `results/qpu/<timestamp>_<run_id>/`:
+\begin{itemize}
+    \item `raw_samples.json` - All Fock states (including collisions)
+    \item `processed_results.json` - Analysis results
+    \item `analysis.json` - $P_{CF}$, $P_{\text{opt}\mid CF}$, etc.
+\end{itemize}

@@ -1,0 +1,15 @@
+\section{Introduction}
+
+Balanced graph partitioning is a fundamental combinatorial optimization problem with applications in:
+\begin{itemize}
+    \item Load balancing in distributed computing
+    \item Image segmentation
+    \item Quantum circuit design
+    \item HPC communication patterns
+\end{itemize}
+
+The Minimum Bisection problem seeks a partition of vertices into two equal-sized sets that minimizes the cut weight. Classical approaches use penalty-based QUBO formulations, but these introduce dense couplings and allow exploration of infeasible states.
+
+Recent work in photonic quantum optimization has explored constraint-preserving approaches using photon-number conservation. In a passive linear interferometer, the total photon number is conserved, which could potentially replace penalty terms in the optimization.
+
+This paper investigates whether photon-number conservation can provide a more natural constraint enforcement compared to penalty-based QUBO formulations. We develop a fixed-k photon interferometer approach, validate it on small instances, and compare with classical baselines.

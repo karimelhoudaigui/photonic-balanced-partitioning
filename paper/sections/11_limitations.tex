@@ -1,0 +1,37 @@
+\section{Limitations}
+
+\subsection{Scale}
+
+Current implementation limited to small graphs (n ≤ 12) due to:
+\begin{itemize}
+    \item Exponential dimension of fixed-photon subspace
+    \item Computational cost of permanent calculation
+    \item QPU shot budget
+\end{itemize}
+
+\subsection{Noise Sensitivity}
+
+Photonic hardware has:
+\begin{itemize}
+    \item Photon loss
+    \item Limited source brightness
+    \item Detector inefficiency
+\end{itemize}
+
+\subsection{Optimization}
+
+Random search optimization may not find global optimum:
+\begin{itemize}
+    \item Local minima possible
+    \item No gradient information
+    \item Parameter sensitivity
+\end{itemize}
+
+\subsection{Comparison Fairness}
+
+Comparing penalty vs constraint-preserving:
+\begin{itemize}
+    \item Same interferometer
+    \item Same shot budget
+    \item Same graph instances
+\end{itemize}

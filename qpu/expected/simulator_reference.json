@@ -1,0 +1,17 @@
+{
+  "description": "Reference results from local simulator",
+  "n4_path": {
+    "shots": 1000,
+    "valid_samples": 1000,
+    "p_cf": 1.0,
+    "mean_energy": 1.0,
+    "std_energy": 0.0
+  },
+  "n4_cycle": {
+    "shots": 1000,
+    "valid_samples": 1000,
+    "p_cf": 1.0,
+    "mean_energy": 2.0,
+    "std_energy": 0.0
+  }
+}

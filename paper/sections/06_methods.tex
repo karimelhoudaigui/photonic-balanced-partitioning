@@ -1,0 +1,35 @@
+\section{Methods}
+
+\subsection{Fixed-Photon ObliQ}
+
+We implement a fixed-$k$ photon interferometer where:
+\begin{itemize}
+    \item $n$ modes represent $n$ vertices
+    \item $k = n/2$ photons are injected
+    \item A random Haar-distributed unitary $U$ is applied
+    \item Only collision-free outcomes are sampled
+\end{itemize}
+
+The amplitude for output partition $P$ is proportional to the permanent of the submatrix $U[P, :k]$.
+
+\subsection{Optimization}
+
+We use random search to optimize the interferometer:
+\begin{enumerate}
+    \item Generate random unitary $U$
+    \item Compute expected energy $\mathbb{E}[C_G]$
+    \item Accept if improved
+    \item Repeat for $N$ iterations
+\end{enumerate}
+
+\subsection{Baselines}
+
+We compare against:
+\begin{itemize}
+    \item Exact enumeration
+    \item Greedy balanced
+    \item Spectral partitioning
+    \item Simulated annealing
+    \item Random balanced sampling
+    \item Penalty-based ObliQ
+\end{itemize}

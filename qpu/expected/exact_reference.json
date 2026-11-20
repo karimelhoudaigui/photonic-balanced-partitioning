@@ -1,0 +1,17 @@
+{
+  "n4_path": {
+    "edges": [[0, 1, 1.0], [1, 2, 1.0], [2, 3, 1.0]],
+    "optimal_energy": 1.0,
+    "optimal_partition": [0, 1]
+  },
+  "n4_cycle": {
+    "edges": [[0, 1, 1.0], [1, 2, 1.0], [2, 3, 1.0], [3, 0, 1.0]],
+    "optimal_energy": 2.0,
+    "optimal_partition": [0, 1]
+  },
+  "n6_path": {
+    "edges": [[0, 1, 1.0], [1, 2, 1.0], [2, 3, 1.0], [3, 4, 1.0], [4, 5, 1.0]],
+    "optimal_energy": 1.0,
+    "optimal_partition": [0, 1, 2]
+  }
+}

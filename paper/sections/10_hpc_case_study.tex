@@ -1,0 +1,32 @@
+\section{HPC Case Study}
+
+\subsection{Motivation}
+
+Graph partitioning is fundamental to HPC applications:
+\begin{itemize}
+    \item Domain decomposition
+    \item Load balancing
+    \item Communication minimization
+\end{itemize}
+
+\subsection{Methodology}
+
+We apply our approach to mesh partitioning:
+\begin{enumerate}
+    \item Generate coarse graph from mesh
+    \item Apply photonic solver
+    \item Refine partition
+\end{enumerate}
+
+\subsection{Comparison with METIS}
+
+For small meshes, our approach:
+\begin{itemize}
+    \item Provides constraint-preserving solutions
+    \item May offer quantum advantage for specific topologies
+    \item Requires further validation
+\end{itemize}
+
+\subsection{Future Work}
+
+Scale to larger meshes and compare with state-of-the-art partitioners.

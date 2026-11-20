@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it.
+title: Constraint-Preserving Photonic Quantum Optimization for Balanced Graph Partitioning
+version: 0.1.0
+date-released: 2026-11-20
+authors:
+  - family-names: Research Team
+    given-names: AI Research Lead
+    orcid: 0000-0000-0000-0000
+doi: 10.5281/zenodo.00000000
+url: https://github.com/your-repo/photonic-balanced-partitioning

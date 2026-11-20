@@ -1,0 +1,22 @@
+\section{Penalty Baseline}
+
+The standard approach adds a penalty term to the QUBO:
+
+\begin{align}
+    C_G(x) + \lambda \left(\sum_i x_i - k\right)^2
+\end{align}
+
+Expanding the penalty:
+
+\begin{align}
+    (1-2k)\sum_i x_i + 2\sum_{i<j} x_i x_j + k^2
+\end{align}
+
+This transforms a sparse graph with $O(|E|)$ interactions into a dense QUBO with $O(n^2)$ couplings. The penalty parameter $\lambda$ must be chosen carefully to balance constraint satisfaction against the original objective.
+
+\textbf{Drawbacks:}
+\begin{itemize}
+    \item Dense coupling matrix increases circuit depth
+    \item Non-zero penalty allows exploration of infeasible states
+    \item Parameter sensitivity to $\lambda$
+\end{itemize}

@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\section{Photon Number Conservation Theorems}
+
+\subsection{Theorem T1: Conservation}
+
+For a passive linear interferometer $\hat{U}$:
+\begin{align}
+    [\hat{U}, \hat{N}] &= 0
+\end{align}
+
+Therefore, if $|\psi_{\text{in}}\rangle \in \mathcal{H}_k$ (Fock space with exactly $k$ photons), then:
+\begin{align}
+    |\psi_{\text{out}}\rangle = \hat{U}|\psi_{\text{in}}\rangle \in \mathcal{H}_k
+\end{align}
+
+\subsection{Theorem T2: Feasibility in Collision-Free Sector}
+
+Define the collision-free subspace:
+\begin{align}
+    \mathcal{H}_k^{CF} = \text{span}\{|n_1, \ldots, n_n\rangle : n_i \in \{0,1\}, \sum_i n_i = k\}
+\end{align}
+
+For any state in $\mathcal{H}_k^{CF}$:
+\begin{align}
+    \sum_i x_i = k
+\end{align}
+where $x_i = n_i$ indicates mode occupation.
+
+\end{document}

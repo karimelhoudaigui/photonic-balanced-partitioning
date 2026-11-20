@@ -1,0 +1,37 @@
+\section{Photonic Formulation}
+
+In photonic quantum computing, we use $n$ modes to represent $n$ vertices. We inject exactly $k = n/2$ photons into the first $k$ modes.
+
+A passive linear interferometer $\hat{U}$ conserves the total photon number:
+
+\begin{align}
+    [\hat{U}, \hat{N}] = 0
+\end{align}
+
+where $\hat{N} = \sum_i a_i^\dagger a_i$ is the photon number operator.
+
+Therefore, if the input state has $k$ photons, the output state also has $k$ photons:
+
+\begin{align}
+    \sum_i n_i^{\text{out}} = k
+\end{align}
+
+\textbf{Critical distinction:} Fixed photon number does NOT imply collision-free occupations.
+
+The full $k$-photon Fock sector is:
+\begin{align}
+    \mathcal{H}_k = \text{span}\{|n_1,\ldots,n_n\rangle : \sum_i n_i = k\}
+\end{align}
+
+The collision-free subspace is:
+\begin{align}
+    \mathcal{H}_k^{CF} = \text{span}\{|n_1,\ldots,n_n\rangle : \sum_i n_i = k, n_i \in \{0,1\}\}
+\end{align}
+
+For $m$ modes and $k$ photons:
+\begin{align}
+    \dim(\mathcal{H}_k) &= \binom{m+k-1}{k} \\
+    \dim(\mathcal{H}_k^{CF}) &= \binom{m}{k}
+\end{align}
+
+\textbf{Key insight:} Collision-free outcomes map exactly to balanced partitions, but $P_{CF} < 1$ for generic interferometers.

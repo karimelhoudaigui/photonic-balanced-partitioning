@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\section{Problem Formulation}
+
+Consider a weighted graph $G = (V, E, w)$ with $|V| = n$ (even).
+
+We seek a partition $V = V_0 \cup V_1$ such that:
+\begin{align}
+    |V_0| &= |V_1| = \frac{n}{2} \\
+    \sum_{(i,j) \in E \cap (V_0 \times V_1)} w_{ij} &\text{ is minimized}
+\end{align}
+
+Using binary variables $x_i \in \{0, 1\}$:
+\begin{align}
+    C_G(x) &= \sum_{(i,j) \in E} w_{ij}(x_i + x_j - 2x_i x_j) \\
+    \text{s.t. } \sum_i x_i &= k = \frac{n}{2}
+\end{align}
+
+\end{document}

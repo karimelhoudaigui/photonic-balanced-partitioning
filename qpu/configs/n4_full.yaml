@@ -1,0 +1,8 @@
+# n=4 Full Configuration
+n: 4
+k: 2
+graph_family: cycle
+shots: 1000
+seed: 42
+backend: qpu:belenos
+description: "Full experiment for n=4 cycle graph"

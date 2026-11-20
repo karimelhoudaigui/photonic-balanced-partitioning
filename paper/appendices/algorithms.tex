@@ -1,0 +1,36 @@
+\appendix
+\section{Algorithms}
+
+\subsection{Fixed-Photon Sampling Algorithm}
+
+\begin{algorithmic}
+\State \textbf{Input:} Unitary $U \in \mathbb{C}^{n \times n}$, graph edges $E$
+\State \textbf{Output:} Sampled partition and energy
+\State Initialize input state $|\psi_{\text{in}}\rangle = |1, 1, 0, \ldots, 0\rangle$
+\State Compute output state $|\psi_{\text{out}}\rangle = \hat{U}|\psi_{\text{in}}\rangle$
+\State Enumerate all $k$-subsets $\{P_1, \ldots, P_d\}$
+\For{each partition $P_i$}
+    \State Compute amplitude $\alpha_i = \text{perm}(U[P_i, :k]) / \sqrt{k!}$
+\EndFor
+\State Normalize: $p_i = |\alpha_i|^2 / \sum_j |\alpha_j|^2$
+\State Sample index $j \sim \text{Categorical}(p_1, \ldots, p_d)$
+\State Return partition $P_j$ and energy $C_G(P_j)$
+\end{algorithmic}
+
+\subsection{Optimization Algorithm}
+
+\begin{algorithmic}
+\State \textbf{Input:} Graph $G$, iterations $N$
+\State \textbf{Output:} Optimized interferometer $U^*$
+\State Initialize $U \gets \text{RandomUnitary}(n)$
+\State $E_{\text{best}} \gets \text{ComputeEnergy}(U, G)$
+\For{$i = 1$ to $N$}
+    \State $U' \gets \text{RandomUnitary}(n)$
+    \State $E' \gets \text{ComputeEnergy}(U', G)$
+    \If{$E' < E_{\text{best}}$}
+        \State $U \gets U'$
+        \State $E_{\text{best}} \gets E'$
+    \EndIf
+\EndFor
+\State \textbf{Return:} $U$
+\end{algorithmic}

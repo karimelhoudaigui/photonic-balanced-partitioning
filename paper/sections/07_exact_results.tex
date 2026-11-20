@@ -1,0 +1,58 @@
+\section{Exact Results}
+
+\subsection{Test Instance: n=4 Path Graph}
+
+Graph: Path graph with 4 vertices, edges (0,1), (1,2), (2,3) with weight 1.0.
+
+\textbf{Optimal Solution:}
+\begin{itemize}
+    \item Energy: 1.0
+    \item Partition: $\{0, 1\} | \{2, 3\}$
+\end{itemize}
+
+\subsection{Fock Space Dimensions}
+
+For $m=4$ modes, $k=2$ photons:
+\begin{itemize}
+    \item Full Fock dimension: $\binom{5}{2} = 10$
+    \item Collision-free dimension: $\binom{4}{2} = 6$
+    \item Collision states: 4 (states with a mode having 2 photons)
+\end{itemize}
+
+\subsection{Fixed-Photon Results}
+
+Using a random interferometer with 1000 shots:
+\begin{itemize}
+    \item $P_{CF}$: Measured (not assumed)
+    \item Valid samples: Counted from collision-free states
+    \item Average energy: Computed over valid samples
+\end{itemize}
+
+\subsection{Comparison with Baselines}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Solver & Energy & Relative Gap \\
+\midrule
+Exact & 1.000 & 0.000 \\
+Greedy & 1.000 & 0.000 \\
+Spectral & 1.000 & 0.000 \\
+Random & 1.500 & 0.500 \\
+Fixed-Photon (random) & TBD & TBD \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Physical Success Probability}
+
+The key metric is:
+\begin{align}
+    P_{\text{success}} = P_{CF} \times P_{\text{opt} \mid CF}
+\end{align}
+
+Expected physical shots to find optimal:
+\begin{align}
+    N_{\text{shots,opt}} \approx \frac{1}{P_{\text{success}}}
+\end{align}

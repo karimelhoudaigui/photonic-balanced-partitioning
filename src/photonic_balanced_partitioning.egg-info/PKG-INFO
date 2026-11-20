@@ -1,0 +1,82 @@
+Metadata-Version: 2.4
+Name: photonic-balanced-partitioning
+Version: 0.1.0
+Summary: Constraint-Preserving Photonic Quantum Optimization for Balanced Graph Partitioning
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy>=1.11
+Provides-Extra: science
+Requires-Dist: matplotlib>=3.8; extra == "science"
+Provides-Extra: test
+Requires-Dist: pytest>=8; extra == "test"
+Requires-Dist: hypothesis>=6; extra == "test"
+Provides-Extra: qpu
+Requires-Dist: quandela-perceval>=0.0.1; extra == "qpu"
+Provides-Extra: all
+Requires-Dist: scipy>=1.11; extra == "all"
+Requires-Dist: matplotlib>=3.8; extra == "all"
+Requires-Dist: pytest>=8; extra == "all"
+Requires-Dist: hypothesis>=6; extra == "all"
+Requires-Dist: quandela-perceval>=0.0.1; extra == "all"
+
+# Photonic Balanced Partitioning
+
+**Constraint-Preserving Photonic Quantum Optimization for Balanced Graph Partitioning**
+
+> Can photon-number conservation replace penalty terms in constrained graph optimization?
+
+## Quick Start
+
+```bash
+python3.11 -m pip install -e '.[test]'
+pbp doctor
+pbp test
+pbp demo
+```
+
+## Project Structure
+
+```
+photonic-balanced-partitioning/
+├── src/photonic_balanced_partitioning/
+│   ├── problems/           # Graph problem definitions
+│   ├── photonic/           # Photonic quantum algorithms
+│   └── classical/          # Classical baseline solvers
+├── tests/                  # Unit tests
+├── theory/                 # Mathematical proofs and formulations
+├── experiments/            # Experiment scripts and results
+├── paper/                  # Manuscript in LaTeX
+├── qpu/                    # QPU experiment configuration
+└── reports/                # Analysis reports
+```
+
+## Key Components
+
+### Problem Module (`problems/min_bisection.py`)
+- `BalancedGraphPartitioning` - Main problem class
+- Graph families: path, cycle, complete, bipartite, star, random, planted
+- Exact solver via enumeration (n ≤ 12)
+
+### Photonic Module (`photonic/`)
+- `FixedPhotonObliq` - Constraint-preserving fixed-k photon interferometer
+- `CollisionAwareSolver` - Handles boson collisions explicitly
+- `PenaltyObliq` - Standard penalty-based approach for comparison
+- `CVaRFixedPhoton` - CVaR-based robust optimization
+
+### Classical Baselines (`classical/baselines.py`)
+- Exact enumeration
+- Greedy balanced
+- Spectral partitioning
+- Simulated annealing
+- Random balanced sampling
+
+## Research Questions
+
+1. Can a fixed-k photon interferometer maintain enough collision-free probability?
+2. Does constraint-preserving optimization outperform penalty-based approaches?
+3. What is the quantum advantage (if any) for balanced partitioning?
+
+## License
+
+[To be added]

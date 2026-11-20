@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photonic-balanced-partitioning"
+version = "0.1.0"
+description = "Constraint-Preserving Photonic Quantum Optimization for Balanced Graph Partitioning"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.11"]
+
+[project.optional-dependencies]
+science = ["matplotlib>=3.8"]
+test = ["pytest>=8", "hypothesis>=6"]
+qpu = ["quandela-perceval>=0.0.1"]
+all = ["scipy>=1.11", "matplotlib>=3.8", "pytest>=8", "hypothesis>=6", "quandela-perceval>=0.0.1"]
+
+[project.scripts]
+pbp = "photonic_balanced_partitioning.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/photonic_balanced_partitioning"]

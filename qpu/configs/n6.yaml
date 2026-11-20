@@ -1,0 +1,8 @@
+# n=6 Configuration
+n: 6
+k: 3
+graph_family: cycle
+shots: 1000
+seed: 42
+backend: qpu:belenos
+description: "n=6 cycle graph experiment"

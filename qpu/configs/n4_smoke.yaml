@@ -1,0 +1,8 @@
+# n=4 Smoke Test Configuration
+n: 4
+k: 2
+graph_family: path
+shots: 100
+seed: 42
+backend: qpu:belenos
+description: "Smallest physical smoke test for n=4 path graph"
