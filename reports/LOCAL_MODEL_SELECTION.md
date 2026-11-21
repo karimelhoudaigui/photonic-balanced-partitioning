@@ -57,3 +57,11 @@ configured service id;the source model/digest above remain authoritative.
 
 No paid token is used. The SDK's nonsecret localhost placeholder is injected
 only into the child environment. Qwen roles remain small supervised assistants.
+
+The final CLI configuration uses32,768 context tokens,still well below the
+model's native limit. A16K window caused Qwen Code's output-room clamp to send
+`max_tokens:1` for ordinary tool prompts;API traces identified the issue.
+The alias Modelfile sets num_ctx32768,num_predict1536,temperature0.2 andseed20261121.
+This changed only small metadata layers,not model weights. Managed background
+memory/dream/auto-skill jobs are disabled;each new worktree gets an explicit empty
+memory index so the2B model does not chase a nonexistent prior session.

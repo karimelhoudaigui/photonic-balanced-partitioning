@@ -42,6 +42,7 @@ def audit(directory):
     if raw.exists() and rep.exists():
         first=json.loads(raw.read_text());second=json.loads(rep.read_text())
         output['replication_rows_equal']=first['rows']==second['rows']
+        output['replication_uses_fresh_seeds']=not ({r['seed'] for r in first['rows']} & {r['seed'] for r in second['rows']})
         output['n4_runs']=len(first['rows'])
         output['n4_evaluations']=sum(r['n_evaluations'] for r in first['rows'])
     (directory/'supervisor_evidence_audit.json').write_text(json.dumps(output,indent=2)+'\n')

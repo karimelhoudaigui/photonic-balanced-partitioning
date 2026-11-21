@@ -110,6 +110,7 @@ def main():
     parser.add_argument('--wall-time',type=int,default=600)
     parser.add_argument('--max-parallel-agents',type=int,default=1,choices=[1])
     parser.add_argument('--max-failed-retries',type=int,default=1,choices=[0,1])
+    parser.add_argument('--mission-file',type=Path,help='Astra-authored next bounded research question; default is the initial n4 diagnostic')
     args=parser.parse_args()
     if not 30<=args.wall_time<=1800:parser.error('Wall time must be30..1800 seconds')
     STATE.mkdir(parents=True,exist_ok=True)
@@ -176,8 +177,16 @@ print('CONFINEMENT_PASS')
         else:
             prompts=[('research-lead','Read STATUS.md and OPEN_QUESTIONS.md. State one falsifiable n4 question for the supplied scripts/qwen_n4_probe.py. Existing bugs were repaired. Do not edit code or paper. Keep the scope to one optimum-blind 3graph/3seed comparison and actual existing tests.'),
                 ('experiment-runner',f'Execute exactly these two shell commands now: {py} -m pytest tests/test_hom.py tests/test_objectives.py tests/test_perceval_cross_validation.py -q ; then {py} scripts/qwen_n4_probe.py --output results/qwen_n4_first_cycle . Read results/qwen_n4_first_cycle/raw.json in limited ranges. Write reports/QWEN_CYCLE_RESULT.md with actual commands, tests, output path and a scoped SUPPORTED/REJECTED/INCONCLUSIVE verdict. No edits to src/, tests/ or paper/ unless a new bug is demonstrated; report it first.'),
-                ('adversarial-reviewer','Read reports/QWEN_CYCLE_RESULT.md and relevant parts of results/qwen_n4_first_cycle/raw.json. Critique actual physics, objective and oracle/cost handling. Check whether distinguishable or feasible classical sampling explains the observations. Write reports/QWEN_ADVERSARIAL_REVIEW.md; no source edits, no paper, no novelty assertion.'),
-                ('experiment-runner',f'Replicate the same supplied n4 protocol to a fresh output: {py} scripts/qwen_n4_probe.py --output results/qwen_n4_replication . Record replication in reports/QWEN_REPLICATION.md with actual executed command and results. No original output overwritten. No new experiment family.')]
+                ('adversarial-reviewer','Read reports/QWEN_CYCLE_RESULT.md, results/qwen_n4_first_cycle/summary.json and relevant limited parts of raw.json. Critique actual physics, objective and oracle/cost handling. Check whether distinguishable or feasible classical sampling explains the observations. Write reports/QWEN_ADVERSARIAL_REVIEW.md; no source edits, no paper, no novelty assertion.'),
+                ('experiment-runner',f'Replicate the supplied n4 protocol on NEW preregistered seeds with exactly: {py} scripts/qwen_n4_probe.py --seed-offset 100 --output results/qwen_n4_replication\nRecord replication in reports/QWEN_REPLICATION.md with actual executed command and results. No original output overwritten. No new experiment family.')]
+            if args.mission_file is not None:
+                mission=args.mission_file.resolve().read_text()
+                if len(mission)>8000:raise ValueError('Mission text exceeds8000characters; keep the question bounded')
+                record['mission_sha256']=hashlib.sha256(mission.encode()).hexdigest()
+                prompts=[('research-lead',f'Read RESEARCH_LOG.md, STATUS.md and OPEN_QUESTIONS.md. Astra assigns this mission: {mission}\nWrite reports/QWEN_CYCLE_PLAN.md:one QUESTION,HYPOTHESIS,DESIGN,IMPLEMENTATION plan,exact commands,seeds,resource limits and falsifier. No paper. Do not start another experiment family.'),
+                    ('experiment-runner',f'Read reports/QWEN_CYCLE_PLAN.md. Implement and execute its ONE bounded experiment using {py}. Retain raw data,argv,seeds,versions,source/output hashes. Write reports/QWEN_CYCLE_RESULT.md with actual outcomes;never invent completion.'),
+                    ('adversarial-reviewer','Read the plan,result,source changes and raw outputs. Attempt to refute the claim using classical,distinguishable,equal-budget and postselection controls. Write reports/QWEN_ADVERSARIAL_REVIEW.md. No source edits.'),
+                    ('experiment-runner',f'Read the plan and critique. Replicate the SAME experiment on fresh preregistered seeds with {py},preserving separate raw outputs. Write reports/QWEN_REPLICATION.md. Propose SUPPORTED/REJECTED/INCONCLUSIVE within the tested scope;Astra owns final acceptance.')]
         for index,(role,prompt) in enumerate(prompts):
             remaining=args.wall_time-(time.monotonic()-start)
             if remaining<10:raise TimeoutError('Cycle wall budget exhausted')

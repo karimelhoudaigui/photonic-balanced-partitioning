@@ -40,3 +40,9 @@ caller QPU/provider secrets,disables cloud inference,unloads the model after
 work,and terminates a server it started. Do not replace this confinement with
 unrestricted YOLO. The current launcher fails closed outside macOS;Docker/vLLM
 were not installed as a substitute.
+
+Large historical raw JSONL/Fock distribution files are sparse-excluded in worker
+checkouts to avoid duplicating hundreds of MB per cycle. Original data remain
+in the primary checkout and Git history. Newly generated cycle evidence is never
+sparse-excluded or discarded. Access to a historical raw file can be granted by
+Astra when needed;do not infer a scientific absence from a sparse worktree.
