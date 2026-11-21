@@ -1,0 +1,47 @@
+{
+  "cycle": "20261121T001427Z-subagent",
+  "mode": "subagent",
+  "started_at": "2026-11-21T00:14:27.867608+00:00",
+  "base_commit": "22c1309d8d125f08be29efe68a91c6211ee32766",
+  "model": "pasqal-qwen-research:latest",
+  "worktree": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261121T001427Z-subagent",
+  "limits": {
+    "mode": "subagent",
+    "max_experiments": 1,
+    "wall_time": 600,
+    "max_parallel_agents": 1,
+    "max_failed_retries": 1
+  },
+  "runs": [],
+  "supervisor_verdict": "PENDING_ASTRA_REVIEW",
+  "status": "FAILED",
+  "no_qpu": true,
+  "model_metadata": {
+    "name": "pasqal-qwen-research:latest",
+    "model": "pasqal-qwen-research:latest",
+    "modified_at": "2026-11-21T01:02:27.603222392+01:00",
+    "size": 1945781857,
+    "digest": "b4a6273f47563577d1d0b342e66bcc39bd5df8214fbe45f7299eb44e4118033f",
+    "details": {
+      "parent_model": "qwen3.5:2b-q4_K_M",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "1.9B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2048
+    },
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking",
+      "vision"
+    ]
+  },
+  "sparse_checkout": "Historical large raw files omitted from this worktree only; original main-repository data and Git blobs retained. Current-cycle raw outputs remain complete.",
+  "error": "RuntimeError: OS confinement preflight failed: Traceback (most recent call last):\n  File \"<string>\", line 2, in <module>\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py\", line 1078, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'reports/__qwen_allowed_probe__'\n",
+  "runtime_seconds": 0.5217990000091959
+}

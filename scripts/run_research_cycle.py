@@ -139,6 +139,9 @@ def main():
         subprocess.run(['git','sparse-checkout','set','--no-cone','/*',
             '!/experiments/*/runs.jsonl','!/experiments/validation/full_fock_distributions.json'],
             cwd=worktree,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        subprocess.run(['git','read-tree','-mu','HEAD'],cwd=worktree,check=True,
+                       stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        if not (worktree/'AGENTS.md').is_file():raise RuntimeError('Sparse worktree was not populated')
         record['sparse_checkout']='Historical large raw files omitted from this worktree only; original main-repository data and Git blobs retained. Current-cycle raw outputs remain complete.'
         memory=STATE/'home/projects'/re.sub(r'[^A-Za-z0-9_-]','-',str(worktree))/'memory'
         memory.mkdir(parents=True,exist_ok=True)
