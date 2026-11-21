@@ -20,7 +20,7 @@
         "envKey": "PASQAL_OLLAMA_API_KEY",
         "baseUrl": "http://127.0.0.1:11435/v1",
         "generationConfig": {
-          "contextWindowSize": 16384,
+          "contextWindowSize": 32768,
           "timeout": 180000,
           "maxRetries": 0,
           "samplingParams": {

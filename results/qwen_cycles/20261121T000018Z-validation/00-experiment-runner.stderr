@@ -1,0 +1,4 @@
+Warning: Loaded always-on context (QWEN.md context files + auto-memory) uses about 2,514 tokens, more than 15% of this model's 16,384 token context window. Consider trimming long always-loaded context or moving details into on-demand files.
+Retrying provider attempt (0 buffered tool call(s) discarded).
+Retrying provider attempt (0 buffered tool call(s) discarded).
+Operation cancelled.
