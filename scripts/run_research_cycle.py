@@ -102,6 +102,11 @@ def main():
     args=parser.parse_args()
     if not 30<=args.wall_time<=1800:parser.error('Wall time must be30..1800 seconds')
     STATE.mkdir(parents=True,exist_ok=True)
+    # The isolated runtime has its own user settings. This avoids silently
+    # discarding the localhost provider in a newly created, not-yet-trusted
+    # worktree; it never changes the user's ~/.qwen configuration.
+    (STATE/'home').mkdir(exist_ok=True)
+    shutil.copyfile(ROOT/'.qwen/settings.json',STATE/'home/settings.json')
     lock=(STATE/'cycle.lock').open('w')
     try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     except BlockingIOError:raise SystemExit('Another controlled Qwen cycle is active')
@@ -168,6 +173,8 @@ print('CONFINEMENT_PASS')
             role_text=(worktree/'.qwen/agents'/f'{role}.md').read_text().split('---',2)[-1]
             system='You are a bounded local research assistant supervised by Astra. Execute requested tools and report actual evidence. No paper edits, QPU, remote API, invented results or nested delegation. '+role_text
             command=prefix+['qwen','--auth-type','openai','--model',MODEL,'--output-format','stream-json',
+                '--openai-base-url',URL+'/v1','--openai-api-key','local-placeholder-not-a-credential',
+                '--openai-logging','--openai-logging-dir',str(STATE/'api-logs'),
                 '--approval-mode','auto-edit','--allowed-tools',','.join(sorted(allowed)),
                 '--core-tools',','.join(sorted(allowed)), '--exclude-tools',','.join(excluded),
                 '--max-session-turns','10','--max-tool-calls','10','--max-subagent-depth','1',
