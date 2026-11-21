@@ -1,0 +1,265 @@
+{
+  "schema_version": 2,
+  "claim_id": "P32_threshold_budget_audit",
+  "repository": {
+    "commit": "8edfca70f03555479ea62ef9c49d727a27cc1861",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "experiments/phase3_threshold_audit.py",
+    "--draft-root",
+    "experiments/P32_threshold_audit/audited_draft",
+    "--output",
+    "experiments/P32_threshold_audit/run/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact three-route uniform-loss click laws, criterion-specific photon optima, protocol ranking reversals and bounded independent circuit checks",
+    "coefficient_domain": "fractions.Fraction for counting and budget decisions; complex128/float64 for independent circuit checks",
+    "conventions": "Fixed N photons charged before uniform survival; k threshold clicks may include collisions/loss; theorem allows N>m but evaluator inputs distinct modes require N<=m",
+    "inputs": [
+      "Archived unmodified P2-A source/theory/tests",
+      "m1..6 N0..m+2 rational loss identity domain",
+      "even m4..40 lossless maxima and m4/6/8/10/12 operational grids",
+      "m4 N0..4 three fixed random U, bosonic/distinguishable direct occupation-thinning checks"
+    ],
+    "bounds": {
+      "exact_occupation_cases": 195,
+      "exact_click_values": 965,
+      "circuit_checks": 120,
+      "N_caps": "m and 4m",
+      "eta_grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "9/10",
+        "1"
+      ],
+      "circuit_seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "tolerance": 1e-10
+    },
+    "non_claims": [
+      "Not new Haar counting",
+      "No graph enrichment or optimization benefit from ensemble mean",
+      "No QPU or quantum advantage",
+      "No formula for fixed-U waiting time from inverse mean"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64 for fixed circuit seeds; exact arithmetic otherwise",
+    "seed": 20261121
+  },
+  "run": {
+    "started_at": "2026-11-21T10:29:28.278029+00:00",
+    "runtime_seconds": 5.64782,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "src/photonic_balanced_partitioning/__init__.py",
+    "src/photonic_balanced_partitioning/classical/__init__.py",
+    "src/photonic_balanced_partitioning/classical/baselines.py",
+    "src/photonic_balanced_partitioning/cli.py",
+    "src/photonic_balanced_partitioning/photonic/__init__.py",
+    "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+    "src/photonic_balanced_partitioning/photonic/comparison.py",
+    "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/mesh.py",
+    "src/photonic_balanced_partitioning/photonic/objectives.py",
+    "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+    "src/photonic_balanced_partitioning/problems/min_bisection.py",
+    "experiments/phase3_threshold_audit.py",
+    "research/phase3_threshold_contract.md",
+    "pyproject.toml",
+    "experiments/P32_threshold_audit/audited_draft/src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+    "experiments/P32_threshold_audit/audited_draft/tests/test_threshold_budget.py",
+    "experiments/P32_threshold_audit/audited_draft/theory/phase2_candidates.md",
+    "experiments/P32_threshold_audit/contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "src/photonic_balanced_partitioning/__init__.py",
+      "sha256": "75ab1c22a43a9364a3ccda9a9b421ea965e158bef17987a9380826a70e579851",
+      "sha256_after": "75ab1c22a43a9364a3ccda9a9b421ea965e158bef17987a9380826a70e579851"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/classical/__init__.py",
+      "sha256": "c5ebcc129a324bbf916aaa8a7561eb2f2793d7d4ed9c5e894af0142e73917f75",
+      "sha256_after": "c5ebcc129a324bbf916aaa8a7561eb2f2793d7d4ed9c5e894af0142e73917f75"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/classical/baselines.py",
+      "sha256": "b9af026f1a660e325c56cb5df9ea3f873ba19efdc2177b8a6ff7a7249c23fcb9",
+      "sha256_after": "b9af026f1a660e325c56cb5df9ea3f873ba19efdc2177b8a6ff7a7249c23fcb9"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/cli.py",
+      "sha256": "6f95a274986f346b1294547807ada07b6573b66dee7a193624c5fd0889801a36",
+      "sha256_after": "6f95a274986f346b1294547807ada07b6573b66dee7a193624c5fd0889801a36"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+      "sha256": "66f72a4f3c0906902a51ab3103024feac261d29fbcf3e785b3e29b7c08fb7877",
+      "sha256_after": "66f72a4f3c0906902a51ab3103024feac261d29fbcf3e785b3e29b7c08fb7877"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+      "sha256": "687f3d52d22145e5c37aff7ee4afe046d13d8c5a6d75b6f9034fc4da341b467e",
+      "sha256_after": "687f3d52d22145e5c37aff7ee4afe046d13d8c5a6d75b6f9034fc4da341b467e"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+      "sha256": "4cbe9662c1d5629a2f320b90685c418a6ab5d2a97d9830fad285a196478b6f52",
+      "sha256_after": "4cbe9662c1d5629a2f320b90685c418a6ab5d2a97d9830fad285a196478b6f52"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+      "sha256": "1fd12d718d8cb404e55a290631469cecb934fe037f05bb90a9a6599558a0469d",
+      "sha256_after": "1fd12d718d8cb404e55a290631469cecb934fe037f05bb90a9a6599558a0469d"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+      "sha256": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9",
+      "sha256_after": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+      "sha256": "76baca319e50d731a2b925b8c266919513b3ecd02b9bb680b7481ad45887ca50",
+      "sha256_after": "76baca319e50d731a2b925b8c266919513b3ecd02b9bb680b7481ad45887ca50"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+      "sha256": "3c3cc7522e1e4d69f57e891ffcdc0fdae9055e6b1a2a61f619ea6b1e6a1ed678",
+      "sha256_after": "3c3cc7522e1e4d69f57e891ffcdc0fdae9055e6b1a2a61f619ea6b1e6a1ed678"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+      "sha256": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+      "sha256_after": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d"
+    },
+    {
+      "path": "experiments/phase3_threshold_audit.py",
+      "sha256": "8287c57502cac023ef7a1fa590fa97cf26df3f19f23ff12506e3d7e428f4b997",
+      "sha256_after": "8287c57502cac023ef7a1fa590fa97cf26df3f19f23ff12506e3d7e428f4b997"
+    },
+    {
+      "path": "research/phase3_threshold_contract.md",
+      "sha256": "00ef816e77d1238590b8cddccde1eda3b0822620c2d6b4cbdd66879cf9dbddc9",
+      "sha256_after": "00ef816e77d1238590b8cddccde1eda3b0822620c2d6b4cbdd66879cf9dbddc9"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f",
+      "sha256_after": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f"
+    },
+    {
+      "path": "experiments/P32_threshold_audit/audited_draft/src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+      "sha256": "69891841598a25285a2fddb6586d6da4d3ad7035c2d10ee26cb25d646b842d47",
+      "sha256_after": "69891841598a25285a2fddb6586d6da4d3ad7035c2d10ee26cb25d646b842d47"
+    },
+    {
+      "path": "experiments/P32_threshold_audit/audited_draft/tests/test_threshold_budget.py",
+      "sha256": "34c2d6cc3c0c1174f3c604f5cce144c3bbaa7930c0953488a618467d83462b41",
+      "sha256_after": "34c2d6cc3c0c1174f3c604f5cce144c3bbaa7930c0953488a618467d83462b41"
+    },
+    {
+      "path": "experiments/P32_threshold_audit/audited_draft/theory/phase2_candidates.md",
+      "sha256": "b10a2c03c1c3239f80c8306c6e42607f210675e5e3b34c4bf3371fda3cb36888",
+      "sha256_after": "b10a2c03c1c3239f80c8306c6e42607f210675e5e3b34c4bf3371fda3cb36888"
+    },
+    {
+      "path": "experiments/P32_threshold_audit/contract.json",
+      "sha256": "5172955bb0eae5196aaebc6f4755759485eff78c638db1bbc5bae1983b4ab742",
+      "sha256_after": "5172955bb0eae5196aaebc6f4755759485eff78c638db1bbc5bae1983b4ab742"
+    }
+  ],
+  "output_directory": "experiments/P32_threshold_audit/run",
+  "declared_results": [
+    "experiments/P32_threshold_audit/run/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P32_threshold_audit/run/stdout.txt",
+      "sha256": "302a9482d19ef464b953b2a3d672ab272f7dcb54e2b3c4a99f7ab943cb93d99a",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P32_threshold_audit/run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P32_threshold_audit/run/raw.json",
+      "sha256": "2cdd17aaf3dcf0789064cdac097f9d58fb70b76794351ed9395bfa2ae48d872f",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

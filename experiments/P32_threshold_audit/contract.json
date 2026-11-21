@@ -1,0 +1,85 @@
+{
+  "claim_id": "P32_threshold_budget_audit",
+  "execution_artifacts": [
+    "src/photonic_balanced_partitioning/__init__.py",
+    "src/photonic_balanced_partitioning/classical/__init__.py",
+    "src/photonic_balanced_partitioning/classical/baselines.py",
+    "src/photonic_balanced_partitioning/cli.py",
+    "src/photonic_balanced_partitioning/photonic/__init__.py",
+    "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+    "src/photonic_balanced_partitioning/photonic/comparison.py",
+    "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/mesh.py",
+    "src/photonic_balanced_partitioning/photonic/objectives.py",
+    "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+    "src/photonic_balanced_partitioning/problems/min_bisection.py",
+    "experiments/phase3_threshold_audit.py",
+    "research/phase3_threshold_contract.md",
+    "pyproject.toml",
+    "experiments/P32_threshold_audit/audited_draft/src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+    "experiments/P32_threshold_audit/audited_draft/tests/test_threshold_budget.py",
+    "experiments/P32_threshold_audit/audited_draft/theory/phase2_candidates.md",
+    "experiments/P32_threshold_audit/contract.json"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact three-route uniform-loss click laws, criterion-specific photon optima, protocol ranking reversals and bounded independent circuit checks",
+    "coefficient_domain": "fractions.Fraction for counting and budget decisions; complex128/float64 for independent circuit checks",
+    "conventions": "Fixed N photons charged before uniform survival; k threshold clicks may include collisions/loss; theorem allows N>m but evaluator inputs distinct modes require N<=m",
+    "inputs": [
+      "Archived unmodified P2-A source/theory/tests",
+      "m1..6 N0..m+2 rational loss identity domain",
+      "even m4..40 lossless maxima and m4/6/8/10/12 operational grids",
+      "m4 N0..4 three fixed random U, bosonic/distinguishable direct occupation-thinning checks"
+    ],
+    "bounds": {
+      "exact_occupation_cases": 195,
+      "exact_click_values": 965,
+      "circuit_checks": 120,
+      "N_caps": "m and 4m",
+      "eta_grid": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "9/10",
+        "1"
+      ],
+      "circuit_seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "tolerance": 1e-10
+    },
+    "non_claims": [
+      "Not new Haar counting",
+      "No graph enrichment or optimization benefit from ensemble mean",
+      "No QPU or quantum advantage",
+      "No formula for fixed-U waiting time from inverse mean"
+    ]
+  },
+  "software": [
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64 for fixed circuit seeds; exact arithmetic otherwise",
+    "seed": 20261121
+  }
+}

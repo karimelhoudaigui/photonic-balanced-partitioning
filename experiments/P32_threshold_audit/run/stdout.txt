@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "output": "experiments/P32_threshold_audit/run/raw.json",
+  "sha256": "2cdd17aaf3dcf0789064cdac097f9d58fb70b76794351ed9395bfa2ae48d872f",
+  "runtime_seconds": 5.007960082992213
+}
