@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "exact_cases": 7,
+  "zero_CF_guards": 1,
+  "maximum_density": 0.5,
+  "smallest_M": "590295528883762495488/309485304969355801210650625",
+  "endpoint_conditional_tv": "2/3",
+  "physical_shots": 0,
+  "random_sampling": false
+}

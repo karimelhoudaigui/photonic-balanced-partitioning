@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "claim_id": "P33_density_success_scope",
+  "repository": {
+    "commit": "75e5831a34b7bbf82ae21bb88894a2c12d4a6d47",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "experiments/P33_density_success_scope/check_exact.py",
+    "--output",
+    "experiments/P33_density_success_scope/run/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact rational two-photon rare-success counterexample and conditional-TV scope checks for a density certificate",
+    "coefficient_domain": "fractions.Fraction; floating diagnostic only for inherited exp/sqrt envelope",
+    "conventions": "Same frame, distinct two-photon input, complete ten-outcome Fock laws with collisions, halved TV; condition only on positive acceptance",
+    "inputs": [
+      "m4 k2 path graph and fixed two-mode groups",
+      "t1/8,1/32,1/128,1/512,1/2048 Pythagorean rotations",
+      "zero and fully mixed endpoints",
+      "HOM zero-CF domain guard"
+    ],
+    "bounds": {
+      "exact_family_cases": 7,
+      "zero_CF_guards": 1,
+      "random_sampling": false,
+      "training_evaluations": 0
+    },
+    "non_claims": [
+      "No new circuit/graph sweep",
+      "No relative-error or inverse-success guarantee when success is O(epsilon)",
+      "No novelty/quantum advantage",
+      "Density certificate75e is inherited, not independently re-proved here"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "None: exact rational examples",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-21T20:45:24.233639+00:00",
+    "runtime_seconds": 0.077497,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "theory/phase3_density_success_scope.md",
+    "theory/phase3_density_certificate.md",
+    "theory/near_collisionless_bound.md",
+    "experiments/P33_density_success_scope/check_exact.py",
+    "experiments/P33_density_success_scope/contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "theory/phase3_density_success_scope.md",
+      "sha256": "76d4ac6ac3869d47df49427a3fd5a6c17418cb4fd3e1175893192a19e93b3b13",
+      "sha256_after": "76d4ac6ac3869d47df49427a3fd5a6c17418cb4fd3e1175893192a19e93b3b13"
+    },
+    {
+      "path": "theory/phase3_density_certificate.md",
+      "sha256": "7b2bee10ab5a738dfdcd16d657409be5eebdf7745b19a0bba91aace62a13e61c",
+      "sha256_after": "7b2bee10ab5a738dfdcd16d657409be5eebdf7745b19a0bba91aace62a13e61c"
+    },
+    {
+      "path": "theory/near_collisionless_bound.md",
+      "sha256": "30dc286d6a112c98a2be6c08d1a7223daad0ddb91eba6355966bbc31748ebbd3",
+      "sha256_after": "30dc286d6a112c98a2be6c08d1a7223daad0ddb91eba6355966bbc31748ebbd3"
+    },
+    {
+      "path": "experiments/P33_density_success_scope/check_exact.py",
+      "sha256": "8e8b58d89f6afb172c9bd89c90ee8c16165e4a8fe3ce3455c6b3422a70c1b3f1",
+      "sha256_after": "8e8b58d89f6afb172c9bd89c90ee8c16165e4a8fe3ce3455c6b3422a70c1b3f1"
+    },
+    {
+      "path": "experiments/P33_density_success_scope/contract.json",
+      "sha256": "71e257db97be3a83b1ab16d37bd138faa2b8699a644745bd13a12e43ea776c1c",
+      "sha256_after": "71e257db97be3a83b1ab16d37bd138faa2b8699a644745bd13a12e43ea776c1c"
+    }
+  ],
+  "output_directory": "experiments/P33_density_success_scope/run",
+  "declared_results": [
+    "experiments/P33_density_success_scope/run/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P33_density_success_scope/run/stdout.txt",
+      "sha256": "77be0d98cd58fe2a3935e5a384e0080622005fa4ca760e8ffa1905ff4621572c",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P33_density_success_scope/run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P33_density_success_scope/run/raw.json",
+      "sha256": "9c58d9780a7552203f0103f9057ee7e915457e2d4eb11baf7a94c8f880ef19da",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

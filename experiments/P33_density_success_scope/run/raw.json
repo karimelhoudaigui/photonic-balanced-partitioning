@@ -1,0 +1,1114 @@
+{
+  "status": "completed",
+  "domain": "Five declared rational rotations + two endpoints + one zero-CF guard; no sweep",
+  "exact_cases": 7,
+  "physical_shots": 0,
+  "training_evaluations": 0,
+  "random_sampling": false,
+  "assertions": [
+    "Two-photon permanent and distinguishable laws normalize exactly",
+    "M=TV and event/CF formulas hold exactly",
+    "Conditioning max-denominator bound and closed form agree",
+    "Zero-acceptance conditional is rejected",
+    "Supplied-group classical control has success one only for this constructed path"
+  ],
+  "limitations": [
+    "No independent validation or novelty audit of density certificate75e",
+    "Floating density envelope diagnostic is not interval-certified",
+    "Known source/graph alignment makes classical control favorable; no algorithmic benchmark"
+  ],
+  "rows": [
+    {
+      "name": "Pythagorean_t_1_over_8",
+      "scaled_frame": [
+        [
+          "63/65",
+          "-16/65"
+        ],
+        [
+          "63/65",
+          "-16/65"
+        ],
+        [
+          "16/65",
+          "63/65"
+        ],
+        [
+          "16/65",
+          "63/65"
+        ]
+      ],
+      "scale_squared": "1/2",
+      "densities": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "M": "2032128/17850625",
+      "raw_tv": "2032128/17850625",
+      "bosonic_success": "2032128/17850625",
+      "distinguishable_success": "1016064/17850625",
+      "relative_success_ratio": "2",
+      "bosonic_CF": "15818497/17850625",
+      "distinguishable_CF": "16834561/17850625",
+      "conditional_tv": "18137377440000/266297452674817",
+      "exact_conditional_bound": "2032128/16834561",
+      "conditional_bound_is_equality": false,
+      "bosonic_conditional_success": "2032128/15818497",
+      "distinguishable_conditional_success": "1016064/16834561",
+      "conditional_success_ratio": "33669122/15818497",
+      "expected_raw_attempts_bosonic": "17850625/2032128",
+      "expected_raw_attempts_distinguishable": "17850625/1016064",
+      "zero_success_waiting_time": "finite",
+      "classical_group_success": "1",
+      "classical_control_draws_to_success": "1",
+      "density_envelope_diagnostic": {
+        "refined_small_M_branch": true,
+        "delta_bound_float": 0.17530301164956485,
+        "rho_float": 1.0126870612936094,
+        "epsilon_float": 1.0,
+        "certified_interval_arithmetic": false
+      },
+      "complete_probabilities": [
+        {
+          "occupation": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "bosonic": "508032/17850625",
+          "distinguishable": "254016/17850625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "bosonic": "1016064/17850625",
+          "distinguishable": "508032/17850625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "bosonic": "508032/17850625",
+          "distinguishable": "254016/17850625"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "bosonic": "13786369/71402500",
+          "distinguishable": "15818497/71402500"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bosonic": "13786369/71402500",
+          "distinguishable": "15818497/71402500"
+        },
+        {
+          "occupation": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "bosonic": "508032/17850625",
+          "distinguishable": "254016/17850625"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bosonic": "13786369/71402500",
+          "distinguishable": "15818497/71402500"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "bosonic": "13786369/71402500",
+          "distinguishable": "15818497/71402500"
+        },
+        {
+          "occupation": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "bosonic": "1016064/17850625",
+          "distinguishable": "508032/17850625"
+        },
+        {
+          "occupation": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "bosonic": "508032/17850625",
+          "distinguishable": "254016/17850625"
+        }
+      ]
+    },
+    {
+      "name": "Pythagorean_t_1_over_32",
+      "scaled_frame": [
+        [
+          "1023/1025",
+          "-64/1025"
+        ],
+        [
+          "1023/1025",
+          "-64/1025"
+        ],
+        [
+          "64/1025",
+          "1023/1025"
+        ],
+        [
+          "64/1025",
+          "1023/1025"
+        ]
+      ],
+      "scale_squared": "1/2",
+      "densities": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "M": "8573165568/1103812890625",
+      "raw_tv": "8573165568/1103812890625",
+      "bosonic_success": "8573165568/1103812890625",
+      "distinguishable_success": "4286582784/1103812890625",
+      "relative_success_ratio": "2",
+      "bosonic_CF": "1095239725057/1103812890625",
+      "distinguishable_CF": "1099526307841/1103812890625",
+      "conditional_tv": "4731585333710400000000/1204244891092715183271937",
+      "exact_conditional_bound": "8573165568/1099526307841",
+      "conditional_bound_is_equality": false,
+      "bosonic_conditional_success": "8573165568/1095239725057",
+      "distinguishable_conditional_success": "4286582784/1099526307841",
+      "conditional_success_ratio": "2199052615682/1095239725057",
+      "expected_raw_attempts_bosonic": "1103812890625/8573165568",
+      "expected_raw_attempts_distinguishable": "1103812890625/4286582784",
+      "zero_success_waiting_time": "finite",
+      "classical_group_success": "1",
+      "classical_control_draws_to_success": "1",
+      "density_envelope_diagnostic": {
+        "refined_small_M_branch": true,
+        "delta_bound_float": 0.007891413694500145,
+        "rho_float": 0.18555867229326553,
+        "epsilon_float": 0.00994471322482841,
+        "certified_interval_arithmetic": false
+      },
+      "complete_probabilities": [
+        {
+          "occupation": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "bosonic": "2143291392/1103812890625",
+          "distinguishable": "1071645696/1103812890625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "bosonic": "4286582784/1103812890625",
+          "distinguishable": "2143291392/1103812890625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "bosonic": "2143291392/1103812890625",
+          "distinguishable": "1071645696/1103812890625"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "bosonic": "1086666559489/4415251562500",
+          "distinguishable": "1095239725057/4415251562500"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bosonic": "1086666559489/4415251562500",
+          "distinguishable": "1095239725057/4415251562500"
+        },
+        {
+          "occupation": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "bosonic": "2143291392/1103812890625",
+          "distinguishable": "1071645696/1103812890625"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bosonic": "1086666559489/4415251562500",
+          "distinguishable": "1095239725057/4415251562500"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "bosonic": "1086666559489/4415251562500",
+          "distinguishable": "1095239725057/4415251562500"
+        },
+        {
+          "occupation": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "bosonic": "4286582784/1103812890625",
+          "distinguishable": "2143291392/1103812890625"
+        },
+        {
+          "occupation": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "bosonic": "2143291392/1103812890625",
+          "distinguishable": "1071645696/1103812890625"
+        }
+      ]
+    },
+    {
+      "name": "Pythagorean_t_1_over_128",
+      "scaled_frame": [
+        [
+          "16383/16385",
+          "-256/16385"
+        ],
+        [
+          "16383/16385",
+          "-256/16385"
+        ],
+        [
+          "256/16385",
+          "16383/16385"
+        ],
+        [
+          "256/16385",
+          "16383/16385"
+        ]
+      ],
+      "scale_squared": "1/2",
+      "densities": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "M": "35180077252608/72075187834650625",
+      "raw_tv": "35180077252608/72075187834650625",
+      "bosonic_success": "35180077252608/72075187834650625",
+      "distinguishable_success": "17590038626304/72075187834650625",
+      "relative_success_ratio": "2",
+      "bosonic_CF": "72040007757398017/72075187834650625",
+      "distinguishable_CF": "72057597796024321/72075187834650625",
+      "conditional_tv": "1267805338009620652066775040000/5191029904205058337502638209171457",
+      "exact_conditional_bound": "35180077252608/72057597796024321",
+      "conditional_bound_is_equality": false,
+      "bosonic_conditional_success": "35180077252608/72040007757398017",
+      "distinguishable_conditional_success": "17590038626304/72057597796024321",
+      "conditional_success_ratio": "144115195592048642/72040007757398017",
+      "expected_raw_attempts_bosonic": "72075187834650625/35180077252608",
+      "expected_raw_attempts_distinguishable": "72075187834650625/17590038626304",
+      "zero_success_waiting_time": "finite",
+      "classical_group_success": "1",
+      "classical_control_draws_to_success": "1",
+      "density_envelope_diagnostic": {
+        "refined_small_M_branch": true,
+        "delta_bound_float": 0.0004885798912418399,
+        "rho_float": 0.04469626660936089,
+        "epsilon_float": 0.0005151036609660481,
+        "certified_interval_arithmetic": false
+      },
+      "complete_probabilities": [
+        {
+          "occupation": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "bosonic": "8795019313152/72075187834650625",
+          "distinguishable": "4397509656576/72075187834650625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "bosonic": "17590038626304/72075187834650625",
+          "distinguishable": "8795019313152/72075187834650625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "bosonic": "8795019313152/72075187834650625",
+          "distinguishable": "4397509656576/72075187834650625"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "bosonic": "72004827680145409/288300751338602500",
+          "distinguishable": "72040007757398017/288300751338602500"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bosonic": "72004827680145409/288300751338602500",
+          "distinguishable": "72040007757398017/288300751338602500"
+        },
+        {
+          "occupation": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "bosonic": "8795019313152/72075187834650625",
+          "distinguishable": "4397509656576/72075187834650625"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bosonic": "72004827680145409/288300751338602500",
+          "distinguishable": "72040007757398017/288300751338602500"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "bosonic": "72004827680145409/288300751338602500",
+          "distinguishable": "72040007757398017/288300751338602500"
+        },
+        {
+          "occupation": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "bosonic": "17590038626304/72075187834650625",
+          "distinguishable": "8795019313152/72075187834650625"
+        },
+        {
+          "occupation": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "bosonic": "8795019313152/72075187834650625",
+          "distinguishable": "4397509656576/72075187834650625"
+        }
+      ]
+    },
+    {
+      "name": "Pythagorean_t_1_over_512",
+      "scaled_frame": [
+        [
+          "262143/262145",
+          "-1024/262145"
+        ],
+        [
+          "262143/262145",
+          "-1024/262145"
+        ],
+        [
+          "1024/262145",
+          "262143/262145"
+        ],
+        [
+          "1024/262145",
+          "262143/262145"
+        ]
+      ],
+      "scale_squared": "1/2",
+      "densities": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "M": "144114088566325248/4722438540876001050625",
+      "raw_tv": "144114088566325248/4722438540876001050625",
+      "bosonic_success": "144114088566325248/4722438540876001050625",
+      "distinguishable_success": "72057044283162624/4722438540876001050625",
+      "relative_success_ratio": "2",
+      "bosonic_CF": "4722294426787434725377/4722438540876001050625",
+      "distinguishable_CF": "4722366483831717888001/4722438540876001050625",
+      "conditional_tv": "340284963064415895162111568621731840000/22300404927846295859837192468246205878501377",
+      "exact_conditional_bound": "144114088566325248/4722366483831717888001",
+      "conditional_bound_is_equality": false,
+      "bosonic_conditional_success": "144114088566325248/4722294426787434725377",
+      "distinguishable_conditional_success": "72057044283162624/4722366483831717888001",
+      "conditional_success_ratio": "9444732967663435776002/4722294426787434725377",
+      "expected_raw_attempts_bosonic": "4722438540876001050625/144114088566325248",
+      "expected_raw_attempts_distinguishable": "4722438540876001050625/72057044283162624",
+      "zero_success_waiting_time": "finite",
+      "classical_group_success": "1",
+      "classical_control_draws_to_success": "1",
+      "density_envelope_diagnostic": {
+        "refined_small_M_branch": true,
+        "delta_bound_float": 3.0518742428785525e-05,
+        "rho_float": 0.01107927295795653,
+        "epsilon_float": 3.091709244349792e-05,
+        "certified_interval_arithmetic": false
+      },
+      "complete_probabilities": [
+        {
+          "occupation": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "bosonic": "36028522141581312/4722438540876001050625",
+          "distinguishable": "18014261070790656/4722438540876001050625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "bosonic": "72057044283162624/4722438540876001050625",
+          "distinguishable": "36028522141581312/4722438540876001050625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "bosonic": "36028522141581312/4722438540876001050625",
+          "distinguishable": "18014261070790656/4722438540876001050625"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "bosonic": "4722150312698868400129/18889754163504004202500",
+          "distinguishable": "4722294426787434725377/18889754163504004202500"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bosonic": "4722150312698868400129/18889754163504004202500",
+          "distinguishable": "4722294426787434725377/18889754163504004202500"
+        },
+        {
+          "occupation": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "bosonic": "36028522141581312/4722438540876001050625",
+          "distinguishable": "18014261070790656/4722438540876001050625"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bosonic": "4722150312698868400129/18889754163504004202500",
+          "distinguishable": "4722294426787434725377/18889754163504004202500"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "bosonic": "4722150312698868400129/18889754163504004202500",
+          "distinguishable": "4722294426787434725377/18889754163504004202500"
+        },
+        {
+          "occupation": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "bosonic": "72057044283162624/4722438540876001050625",
+          "distinguishable": "36028522141581312/4722438540876001050625"
+        },
+        {
+          "occupation": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "bosonic": "36028522141581312/4722438540876001050625",
+          "distinguishable": "18014261070790656/4722438540876001050625"
+        }
+      ]
+    },
+    {
+      "name": "Pythagorean_t_1_over_2048",
+      "scaled_frame": [
+        [
+          "4194303/4194305",
+          "-4096/4194305"
+        ],
+        [
+          "4194303/4194305",
+          "-4096/4194305"
+        ],
+        [
+          "4096/4194305",
+          "4194303/4194305"
+        ],
+        [
+          "4096/4194305",
+          "4194303/4194305"
+        ]
+      ],
+      "scale_squared": "1/2",
+      "densities": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "M": "590295528883762495488/309485304969355801210650625",
+      "raw_tv": "590295528883762495488/309485304969355801210650625",
+      "bosonic_success": "590295528883762495488/309485304969355801210650625",
+      "distinguishable_success": "295147764441881247744/309485304969355801210650625",
+      "relative_success_ratio": "2",
+      "bosonic_CF": "309484714673826917448155137/309485304969355801210650625",
+      "distinguishable_CF": "309485009821591359329402881/309485304969355801210650625",
+      "conditional_tv": "91343895889319205966043330076799623957053440000/95780879960461723031426405083873385953432653262749697",
+      "exact_conditional_bound": "590295528883762495488/309485009821591359329402881",
+      "conditional_bound_is_equality": false,
+      "bosonic_conditional_success": "590295528883762495488/309484714673826917448155137",
+      "distinguishable_conditional_success": "295147764441881247744/309485009821591359329402881",
+      "conditional_success_ratio": "618970019643182718658805762/309484714673826917448155137",
+      "expected_raw_attempts_bosonic": "309485304969355801210650625/590295528883762495488",
+      "expected_raw_attempts_distinguishable": "309485304969355801210650625/295147764441881247744",
+      "zero_success_waiting_time": "finite",
+      "classical_group_success": "1",
+      "classical_control_draws_to_success": "1",
+      "density_envelope_diagnostic": {
+        "refined_small_M_branch": true,
+        "delta_bound_float": 1.9073531803227633e-06,
+        "rho_float": 0.0027640465099374647,
+        "epsilon_float": 1.913518782054925e-06,
+        "certified_interval_arithmetic": false
+      },
+      "complete_probabilities": [
+        {
+          "occupation": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "bosonic": "147573882220940623872/309485304969355801210650625",
+          "distinguishable": "73786941110470311936/309485304969355801210650625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "bosonic": "295147764441881247744/309485304969355801210650625",
+          "distinguishable": "147573882220940623872/309485304969355801210650625"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "bosonic": "147573882220940623872/309485304969355801210650625",
+          "distinguishable": "73786941110470311936/309485304969355801210650625"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "bosonic": "309484124378298033685659649/1237941219877423204842602500",
+          "distinguishable": "309484714673826917448155137/1237941219877423204842602500"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bosonic": "309484124378298033685659649/1237941219877423204842602500",
+          "distinguishable": "309484714673826917448155137/1237941219877423204842602500"
+        },
+        {
+          "occupation": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "bosonic": "147573882220940623872/309485304969355801210650625",
+          "distinguishable": "73786941110470311936/309485304969355801210650625"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bosonic": "309484124378298033685659649/1237941219877423204842602500",
+          "distinguishable": "309484714673826917448155137/1237941219877423204842602500"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "bosonic": "309484124378298033685659649/1237941219877423204842602500",
+          "distinguishable": "309484714673826917448155137/1237941219877423204842602500"
+        },
+        {
+          "occupation": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "bosonic": "295147764441881247744/309485304969355801210650625",
+          "distinguishable": "147573882220940623872/309485304969355801210650625"
+        },
+        {
+          "occupation": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "bosonic": "147573882220940623872/309485304969355801210650625",
+          "distinguishable": "73786941110470311936/309485304969355801210650625"
+        }
+      ]
+    },
+    {
+      "name": "zero_angle",
+      "scaled_frame": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "scale_squared": "1/2",
+      "densities": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "M": "0",
+      "raw_tv": "0",
+      "bosonic_success": "0",
+      "distinguishable_success": "0",
+      "relative_success_ratio": null,
+      "bosonic_CF": "1",
+      "distinguishable_CF": "1",
+      "conditional_tv": "0",
+      "exact_conditional_bound": "0",
+      "conditional_bound_is_equality": true,
+      "bosonic_conditional_success": "0",
+      "distinguishable_conditional_success": "0",
+      "conditional_success_ratio": null,
+      "expected_raw_attempts_bosonic": null,
+      "expected_raw_attempts_distinguishable": null,
+      "zero_success_waiting_time": "infinite",
+      "classical_group_success": "1",
+      "classical_control_draws_to_success": "1",
+      "density_envelope_diagnostic": {
+        "refined_small_M_branch": true,
+        "delta_bound_float": 0.0,
+        "rho_float": 0.0,
+        "epsilon_float": 0.0,
+        "certified_interval_arithmetic": false
+      },
+      "complete_probabilities": [
+        {
+          "occupation": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "bosonic": "0",
+          "distinguishable": "0"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "bosonic": "0",
+          "distinguishable": "0"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "bosonic": "0",
+          "distinguishable": "0"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "bosonic": "1/4",
+          "distinguishable": "1/4"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bosonic": "1/4",
+          "distinguishable": "1/4"
+        },
+        {
+          "occupation": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "bosonic": "0",
+          "distinguishable": "0"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bosonic": "1/4",
+          "distinguishable": "1/4"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "bosonic": "1/4",
+          "distinguishable": "1/4"
+        },
+        {
+          "occupation": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "bosonic": "0",
+          "distinguishable": "0"
+        },
+        {
+          "occupation": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "bosonic": "0",
+          "distinguishable": "0"
+        }
+      ]
+    },
+    {
+      "name": "fully_mixed_endpoint_rational_frame",
+      "scaled_frame": [
+        [
+          "1/2",
+          "-1/2"
+        ],
+        [
+          "1/2",
+          "-1/2"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      "scale_squared": "1",
+      "densities": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "M": "1/2",
+      "raw_tv": "1/2",
+      "bosonic_success": "1/2",
+      "distinguishable_success": "1/4",
+      "relative_success_ratio": "2",
+      "bosonic_CF": "1/2",
+      "distinguishable_CF": "3/4",
+      "conditional_tv": "2/3",
+      "exact_conditional_bound": "2/3",
+      "conditional_bound_is_equality": true,
+      "bosonic_conditional_success": "1",
+      "distinguishable_conditional_success": "1/3",
+      "conditional_success_ratio": "3",
+      "expected_raw_attempts_bosonic": "2",
+      "expected_raw_attempts_distinguishable": "4",
+      "zero_success_waiting_time": "finite",
+      "classical_group_success": "1",
+      "classical_control_draws_to_success": "1",
+      "density_envelope_diagnostic": {
+        "refined_small_M_branch": false,
+        "delta_bound_float": 1.0,
+        "rho_float": 3.0,
+        "epsilon_float": 1.0,
+        "certified_interval_arithmetic": false
+      },
+      "complete_probabilities": [
+        {
+          "occupation": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "bosonic": "1/8",
+          "distinguishable": "1/16"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "bosonic": "1/4",
+          "distinguishable": "1/8"
+        },
+        {
+          "occupation": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "bosonic": "1/8",
+          "distinguishable": "1/16"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "bosonic": "0",
+          "distinguishable": "1/8"
+        },
+        {
+          "occupation": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "bosonic": "0",
+          "distinguishable": "1/8"
+        },
+        {
+          "occupation": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "bosonic": "1/8",
+          "distinguishable": "1/16"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "bosonic": "0",
+          "distinguishable": "1/8"
+        },
+        {
+          "occupation": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "bosonic": "0",
+          "distinguishable": "1/8"
+        },
+        {
+          "occupation": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "bosonic": "1/4",
+          "distinguishable": "1/8"
+        },
+        {
+          "occupation": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "bosonic": "1/8",
+          "distinguishable": "1/16"
+        }
+      ]
+    }
+  ],
+  "zero_CF_guard": {
+    "case": "HOM_zero_CF",
+    "M": "1",
+    "bosonic_CF": "0",
+    "distinguishable_CF": "1/2",
+    "undefined_conditional_rejected": true
+  }
+}

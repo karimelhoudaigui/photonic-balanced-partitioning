@@ -1,0 +1,44 @@
+{
+  "claim_id": "P33_density_success_scope",
+  "execution_artifacts": [
+    "theory/phase3_density_success_scope.md",
+    "theory/phase3_density_certificate.md",
+    "theory/near_collisionless_bound.md",
+    "experiments/P33_density_success_scope/check_exact.py",
+    "experiments/P33_density_success_scope/contract.json"
+  ],
+  "mathematics": {
+    "assertion_tested": "Exact rational two-photon rare-success counterexample and conditional-TV scope checks for a density certificate",
+    "coefficient_domain": "fractions.Fraction; floating diagnostic only for inherited exp/sqrt envelope",
+    "conventions": "Same frame, distinct two-photon input, complete ten-outcome Fock laws with collisions, halved TV; condition only on positive acceptance",
+    "inputs": [
+      "m4 k2 path graph and fixed two-mode groups",
+      "t1/8,1/32,1/128,1/512,1/2048 Pythagorean rotations",
+      "zero and fully mixed endpoints",
+      "HOM zero-CF domain guard"
+    ],
+    "bounds": {
+      "exact_family_cases": 7,
+      "zero_CF_guards": 1,
+      "random_sampling": false,
+      "training_evaluations": 0
+    },
+    "non_claims": [
+      "No new circuit/graph sweep",
+      "No relative-error or inverse-success guarantee when success is O(epsilon)",
+      "No novelty/quantum advantage",
+      "Density certificate75e is inherited, not independently re-proved here"
+    ]
+  },
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "None: exact rational examples",
+    "seed": null
+  }
+}
