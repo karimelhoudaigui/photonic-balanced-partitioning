@@ -25,7 +25,7 @@ BASE_TOOLS=['read_file','run_shell_command','write_file']
 CONTROL_TOOLS=['agent','skill','tool_search','tool_call','team_create','team_delete',
     'task_create','task_update','task_list','list_agents','send_message','request_shutdown',
     'report_findings','team_plan_approval','get_goal','update_goal','enter_worktree',
-    'exit_worktree','record_artifact','task_stop']
+    'exit_worktree','record_artifact','task_stop','workflow']
 
 
 def post(endpoint,payload):
@@ -105,7 +105,8 @@ def execute(argv,cwd,env,output,timeout,max_failed_retries=1):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--mode',choices=['validation','cycle','subagent','team'],default='cycle')
+    parser.add_argument('--mode',choices=['validation','cycle','subagent','team','workflow'],default='cycle')
+    parser.add_argument('--workflow-name',default='research-relay-smoke',help='Saved official workflow to run in workflow mode')
     parser.add_argument('--max-experiments',type=int,default=1,choices=[1])
     parser.add_argument('--wall-time',type=int,default=1200)
     parser.add_argument('--max-parallel-agents',type=int,default=1,choices=[1])
@@ -113,6 +114,7 @@ def main():
     parser.add_argument('--mission-file',type=Path,help='Astra-authored next bounded research question; default is the initial n4 diagnostic')
     parser.add_argument('--resume-cycle',type=Path,help='Astra-authorized single recovery of an interrupted initial cycle; keeps its worktree and original data')
     args=parser.parse_args()
+    if not re.fullmatch(r'[a-z][a-z0-9-]{0,40}',args.workflow_name):parser.error('Invalid saved workflow name')
     prior=None
     if args.resume_cycle is not None:
         if args.mode!='cycle' or args.mission_file is not None:parser.error('Recovery supports only the initial cycle protocol')
@@ -136,6 +138,10 @@ def main():
     except BlockingIOError:raise SystemExit('Another controlled Qwen cycle is active')
     if shutil.disk_usage(ROOT).free<2*1024**3:raise SystemExit('Less than2GiB free; refuse extra worktree/model load')
     start=time.monotonic();env=environment();server=None
+    if args.mode=='workflow':
+        env.update(QWEN_CODE_ENABLE_WORKFLOWS='1',QWEN_CODE_MAX_WORKFLOW_CONCURRENCY='1',
+            QWEN_CODE_MAX_WORKFLOW_AGENTS='2',QWEN_CODE_MAX_WORKFLOW_SECONDS=str(args.wall_time),
+            QWEN_CODE_WORKFLOW_AGENT_MAX_TURNS='4',QWEN_CODE_WORKFLOW_AGENT_MAX_MINUTES='4')
     try:
         urllib.request.urlopen(URL+'/api/version',timeout=3).close()
     except OSError:
@@ -187,6 +193,11 @@ print('CONFINEMENT_PASS')
         prompts=[]
         if args.mode=='validation':
             prompts=[('experiment-runner',f'Read AGENTS.md using read_file. Then run exactly: {py} -m pytest tests/test_hom.py -q\nThen write reports/QWEN_SMOKE_REPORT.md recording the actual test result. Never edit paper/. Do these three actions now; no planning-only reply.')]
+        elif args.mode=='workflow':
+            workflow=worktree/'.qwen/workflows'/f'{args.workflow_name}.js'
+            if not workflow.is_file():raise RuntimeError('Saved workflow is absent from the committed worktree')
+            record['workflow_sha256']=hashlib.sha256(workflow.read_bytes()).hexdigest()
+            prompts=[('research-lead','/'+args.workflow_name)]
         elif args.mode=='subagent':
             prompts=[('research-lead','Call agent now with exactly these arguments: {"description":"Read project rules","subagent_type":"physics-auditor","prompt":"Read AGENTS.md with read_file. Return three project rules. Do not inspect any other file or perform a physics study.","run_in_background":false}. The description field is required. Wait for the returned result and summarize it. Do not use shell, write files or perform the worker task yourself.')]
         elif args.mode=='team':
@@ -214,6 +225,7 @@ print('CONFINEMENT_PASS')
             if remaining<10:raise TimeoutError('Cycle wall budget exhausted')
             allowed=set(BASE_TOOLS)
             if args.mode in ['subagent','team']:allowed.add('agent')
+            if args.mode=='workflow':allowed.add('workflow')
             if args.mode=='team':allowed.update(['team_create','team_delete','task_create','task_update','task_list','send_message','request_shutdown','list_agents'])
             excluded=[t for t in CONTROL_TOOLS if t not in allowed]
             initial_plan=args.mode=='cycle' and args.mission_file is None and role=='research-lead'
@@ -226,6 +238,8 @@ print('CONFINEMENT_PASS')
                 system='This is a native Agent Team infrastructure test. Use the team coordination tools and exactly one worker; do not perform the worker task yourself. No historical research routine or memory search. No paper edits or QPU calls. Report actual tool outcomes only.'
             if initial_plan:
                 system='State only the supplied initial scientific protocol in six short lines. Do not use tools,claim results or pursue any other research direction. Astra already chose this first smoke-cycle question.'
+            if args.mode=='workflow':
+                system='Execute only the explicitly requested saved workflow. The workflow owns native agent dispatch and passes evidence between roles. Do not perform the worker tasks yourself or create another plan. No paper, QPU or remote API.'
             if args.mode=='cycle' and args.mission_file is None and role=='adversarial-reviewer':
                 evidence=worktree/'results/qwen_n4_first_cycle/summary.json'
                 narrative=worktree/'reports/QWEN_CYCLE_RESULT.md'
