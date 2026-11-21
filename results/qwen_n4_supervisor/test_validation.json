@@ -1,0 +1,9 @@
+{
+  "command": "PYTHONPATH=src MPLCONFIGDIR=.local/qwen/matplotlib OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m pytest tests/ -q",
+  "observed_stdout": "192 passed in 28.03s",
+  "exit_status": 0,
+  "git_commit_at_execution": "2f8f5fc5d78c225d8d06fff753e82dfd1d8333b6",
+  "dirty": true,
+  "scope": "Complete working tree, including 42 pre-existing Phase2 draft tests outside scoped infrastructure commits; 142 historical scientific tests plus 8 infrastructure tests.",
+  "infrastructure_test_sha256": "4f68d40da123d41741023b7b2340ba881b32def80ae8262e77382d97b42c9305"
+}

@@ -1,0 +1,96 @@
+{
+  "status": "FINITE_ASSERTION_VERIFIED",
+  "hypothesis_decision": "INCONCLUSIVE",
+  "histories_checked": 1152,
+  "raw_runs": 36,
+  "objective_evaluations": 1152,
+  "best_bosonic_circuits_cross_validated_against_perceval": 18,
+  "maximum_metric_absolute_error": 5.684341886080802e-14,
+  "maximum_perceval_probability_error": 3.3306690738754696e-16,
+  "comparisons": [
+    {
+      "batch": 0,
+      "family": "path",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "bosonic_success_mean": 0.7960547809406407,
+      "distinguishable_success_mean": 0.9194373088860474,
+      "paired_bosonic_minus_distinguishable": -0.1233825279454066,
+      "uniform_feasible_success": 0.3333333333333333
+    },
+    {
+      "batch": 0,
+      "family": "cycle",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "bosonic_success_mean": 0.9883574885249771,
+      "distinguishable_success_mean": 0.9740141201252833,
+      "paired_bosonic_minus_distinguishable": 0.014343368399693746,
+      "uniform_feasible_success": 0.6666666666666666
+    },
+    {
+      "batch": 0,
+      "family": "weighted",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "bosonic_success_mean": 0.676179881894762,
+      "distinguishable_success_mean": 0.7286813885076585,
+      "paired_bosonic_minus_distinguishable": -0.05250150661289654,
+      "uniform_feasible_success": 0.3333333333333333
+    },
+    {
+      "batch": 1,
+      "family": "path",
+      "seeds": [
+        20261221,
+        20261222,
+        20261223
+      ],
+      "bosonic_success_mean": 0.864639593207138,
+      "distinguishable_success_mean": 0.6671577722085121,
+      "paired_bosonic_minus_distinguishable": 0.19748182099862588,
+      "uniform_feasible_success": 0.3333333333333333
+    },
+    {
+      "batch": 1,
+      "family": "cycle",
+      "seeds": [
+        20261221,
+        20261222,
+        20261223
+      ],
+      "bosonic_success_mean": 0.715279964128217,
+      "distinguishable_success_mean": 0.9848618006644988,
+      "paired_bosonic_minus_distinguishable": -0.26958183653628176,
+      "uniform_feasible_success": 0.6666666666666666
+    },
+    {
+      "batch": 1,
+      "family": "weighted",
+      "seeds": [
+        20261221,
+        20261222,
+        20261223
+      ],
+      "bosonic_success_mean": 0.7315453828911624,
+      "distinguishable_success_mean": 0.8968267615530511,
+      "paired_bosonic_minus_distinguishable": -0.16528137866188863,
+      "uniform_feasible_success": 0.3333333333333333
+    }
+  ],
+  "limitations": [
+    "Fixed three graphs and six seeds only; no population inference or intervals.",
+    "Equal exact objective-call budgets do not establish equal physical-shot or total classical cost.",
+    "n4 exact feasible enumeration costs only six cut evaluations.",
+    "No novelty, general no-go theorem, computational advantage, noise or hardware claim."
+  ]
+}

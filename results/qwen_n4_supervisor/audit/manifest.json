@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "claim_id": "QWEN-N4-DIAGNOSTIC",
+  "repository": {
+    "commit": "2f8f5fc5d78c225d8d06fff753e82dfd1d8333b6",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "scripts/audit_qwen_n4.py",
+    "--initial",
+    "results/qwen_n4_supervisor/initial/raw.json",
+    "--replication",
+    "results/qwen_n4_supervisor/replication/raw.json",
+    "--output",
+    "results/qwen_n4_supervisor/audit"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval",
+        "version": "1.3.0"
+      }
+    ],
+    "hardware": "Apple M2, 8GiB unified RAM, macOS arm64"
+  },
+  "mathematics": {
+    "assertion_tested": "Every recorded two-photon probability, loss and selected iterate is consistent with independent n4 formulas; best bosonic distributions match Perceval.",
+    "coefficient_domain": "complex128 and float64",
+    "conventions": "Input |1,1,0,0>; rows are output modes; all collision-free probabilities retain physical mass.",
+    "inputs": [
+      "results/qwen_n4_supervisor/initial/raw.json",
+      "results/qwen_n4_supervisor/replication/raw.json"
+    ],
+    "bounds": {
+      "n": 4,
+      "k": 2,
+      "graphs": 3,
+      "seeds": 6,
+      "models": 2,
+      "evaluations_per_run": 32
+    },
+    "non_claims": [
+      "Fixed three graphs and six seeds only; no population inference or intervals.",
+      "Equal exact objective-call budgets do not establish equal physical-shot or total classical cost.",
+      "n4 exact feasible enumeration costs only six cut evaluations.",
+      "No novelty, general no-go theorem, computational advantage, noise or hardware claim."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": [
+      20261121,
+      20261122,
+      20261123,
+      20261221,
+      20261222,
+      20261223
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-21T00:45:58.082773+00:00",
+    "runtime_seconds": 0.7081949159910437,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "results/qwen_n4_supervisor/audit/audit.json",
+      "sha256": "9dcb47a548e0672c85eb23170c13552377e6282ad6fdcc31273ca82df314e6f1",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "independent two-photon formulas",
+    "all 1152 recorded parameter evaluations",
+    "graph cuts and seed starts",
+    "best-loss selection",
+    "18 Perceval SLOS distributions",
+    "fresh disjoint seeds",
+    "unchanged input hashes"
+  ],
+  "result": "Finite recorded calculations verified; useful interference-dependent optimization remains INCONCLUSIVE.",
+  "residual_risks": [
+    "Fixed three graphs and six seeds only; no population inference or intervals.",
+    "Equal exact objective-call budgets do not establish equal physical-shot or total classical cost.",
+    "n4 exact feasible enumeration costs only six cut evaluations.",
+    "No novelty, general no-go theorem, computational advantage, noise or hardware claim."
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/audit_qwen_n4.py",
+      "sha256": "c1203240cbf4e5840e16cd786a37155102307072044f1119ff2539a243aa053f",
+      "sha256_after": "c1203240cbf4e5840e16cd786a37155102307072044f1119ff2539a243aa053f"
+    },
+    {
+      "path": "scripts/qwen_n4_probe.py",
+      "sha256": "7f9ea24b0e5229b8d791928a81348b906be99a5020fd91003085ebf417441230",
+      "sha256_after": "7f9ea24b0e5229b8d791928a81348b906be99a5020fd91003085ebf417441230"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+      "sha256": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9",
+      "sha256_after": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9"
+    },
+    {
+      "path": "results/qwen_n4_supervisor/initial/raw.json",
+      "sha256": "6da0b32ebc41a46dc386dbe728219b25b1721e2187dac994e3926ce5e1bdfa68",
+      "sha256_after": "6da0b32ebc41a46dc386dbe728219b25b1721e2187dac994e3926ce5e1bdfa68"
+    },
+    {
+      "path": "results/qwen_n4_supervisor/replication/raw.json",
+      "sha256": "96fe21113e5e02c0c59318bb62a5c56293bc215452bb98f50262d0b4b903f64d",
+      "sha256_after": "96fe21113e5e02c0c59318bb62a5c56293bc215452bb98f50262d0b4b903f64d"
+    }
+  ],
+  "declared_results": [
+    "results/qwen_n4_supervisor/audit/audit.json"
+  ]
+}

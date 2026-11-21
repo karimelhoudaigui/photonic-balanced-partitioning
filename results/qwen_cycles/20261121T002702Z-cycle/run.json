@@ -105,7 +105,7 @@
       "stderr": "results/qwen_cycles/20261121T002702Z-cycle/01-experiment-runner.stderr"
     }
   ],
-  "supervisor_verdict": "PENDING_ASTRA_REVIEW",
+  "supervisor_verdict": "ACCEPT_FINITE_RAW_DATA_ONLY_REJECT_NARRATIVE",
   "status": "INCONCLUSIVE",
   "no_qpu": true,
   "model_metadata": {
@@ -175,5 +175,6 @@
     "?? reports/QWEN_CYCLE_RESULT.md",
     "?? results/qwen_n4_first_cycle/"
   ],
-  "runtime_seconds": 352.59596345800674
+  "runtime_seconds": 352.59596345800674,
+  "supervisor_review": "reports/ASTRA_QWEN_FIRST_CYCLE_AUDIT.md"
 }

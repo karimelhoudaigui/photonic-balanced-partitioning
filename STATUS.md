@@ -35,3 +35,22 @@ Still open / deferred:
 
 Continuation contract: OPEN_QUESTIONS.md; decisions: DECISIONS.md;
 all scientific claims and statuses: CLAIMS.md. Manuscript remains frozen.
+
+## 2026-11-21 — supervised local Qwen infrastructure
+
+Qwen Code0.28.0 and Ollama0.32.0 are installed externally,with one Qwen3.5-1.9B
+Q4_K_M model on the measured M2/8GiB host. Seven roles and a bounded worktree
+launcher are versioned. Basic repo access,tool calls,Python tests and report
+creation PASS;native SUBAGENTS and AGENT TEAM probes FAIL. Do not call this a
+validated autonomous research team. No paid API or QPU was used.
+
+The first supplied n4 diagnostic and fresh-seed replication actually generated
+36 runs/1152 exact objective evaluations. Astra verified every recorded metric
+and18best bosonic circuits against Perceval. Qwen's prose report was rejected
+for invented uncertainty and mixed graph results;critic/report completion also
+failed its caps. A stable interference benefit was not established. Scientific
+decision:INCONCLUSIVE;no manuscript/QPU advancement. See
+reports/ASTRA_QWEN_FIRST_CYCLE_AUDIT.md and reports/QWEN_INFRASTRUCTURE_VALIDATION.md.
+The complete working tree passes192 tests,including42 earlier Phase2 draft tests
+outside the scoped infrastructure changes. The142-test scientific checkpoint
+above remains historical;the infrastructure adds8guardrail tests.

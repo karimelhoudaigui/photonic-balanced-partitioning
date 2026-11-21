@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "original": ".qwen/worktrees/20261121T002702Z-cycle/results/qwen_n4_first_cycle/raw.json",
+      "retained_copy": "results/qwen_n4_supervisor/initial/raw.json",
+      "sha256": "6da0b32ebc41a46dc386dbe728219b25b1721e2187dac994e3926ce5e1bdfa68"
+    },
+    {
+      "original": ".qwen/worktrees/20261121T002702Z-cycle/results/qwen_n4_first_cycle/summary.json",
+      "retained_copy": "results/qwen_n4_supervisor/initial/summary.json",
+      "sha256": "4c540fe4d32731bf8221ae6e1daefcd99a693a652c7908d7b3617cb886d8c969"
+    },
+    {
+      "original": ".qwen/worktrees/20261121T002702Z-cycle/results/qwen_n4_replication/raw.json",
+      "retained_copy": "results/qwen_n4_supervisor/replication/raw.json",
+      "sha256": "96fe21113e5e02c0c59318bb62a5c56293bc215452bb98f50262d0b4b903f64d"
+    },
+    {
+      "original": ".qwen/worktrees/20261121T002702Z-cycle/results/qwen_n4_replication/summary.json",
+      "retained_copy": "results/qwen_n4_supervisor/replication/summary.json",
+      "sha256": "7f3cff0b074859821704649b9f4fc5ff72fee3deffe9570d253407066c71d807"
+    }
+  ],
+  "narrative_status": "REJECTED: invented uncertainties, mislabeled graphs and wrong counts; retained unchanged",
+  "first_execution": "results/qwen_cycles/20261121T002702Z-cycle",
+  "critic_attempt": "results/qwen_cycles/20261121T003401Z-cycle-resume",
+  "replication_execution": "results/qwen_cycles/20261121T004103Z-supervised-replication",
+  "worker_result_commit": "3445475"
+}

@@ -1,0 +1,1 @@
+Superseded first independent audit output. Numerical checks succeeded, but the initial manifest used absolute paths. The canonical project-relative v2 manifest and re-executed checks are in ../qwen_n4_supervisor/audit/. Do not use this earlier manifest as an acceptance record.

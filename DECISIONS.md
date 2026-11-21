@@ -41,3 +41,20 @@
 Next authorized work is documented in OPEN_QUESTIONS.md:exact-source novelty audit,
 authentic optical penalty implementation, and a changed optimum-blind/label-invariant
 search hypothesis. No manuscript writing or hardware call is authorized by these records.
+
+## 2026-11-21 — Qwen secondary infrastructure under Astra supervision
+
+- Install official Qwen Code0.28.0 and Ollama0.32.0 outside the Python package.
+- Measured M2/8GiB and heavy swap require one Qwen3.5-1.9B Q4 model/request/role
+  at once. No paid provider,unbounded loop or automatic cloud/larger-model fallback.
+- Accept observed basic tool/Python/repo/report capability. Native subagent and
+  Agent Team probes FAIL. Do not certify experimental team flags as working delegation.
+- Preserve the actual n4 experiment and fresh-seed replication,including all
+  failed process outcomes. Astra independently validates numerical evidence.
+- Reject Qwen's invented uncertainties,mislabeled results and scientific narrative.
+  The local2B model cannot approve claims or research gates.
+- Keep QWEN-N4-001 as a finite diagnostic:36runs,1152calls,18Perceval checks.
+  The small initial cycle advantage reverses under fresh seeds. Useful mechanism
+  INCONCLUSIVE;no QPU or manuscript progression. This is not a universal no-go theorem.
+- Leave prior Phase2 draft research intact and outside the infrastructure change.
+  Continue only from a falsifiable changed mechanism after independent review.

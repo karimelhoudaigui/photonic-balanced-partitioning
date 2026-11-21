@@ -316,3 +316,60 @@ Decision: FOLLOW-UP
 ## Proof and review checkpoint
 
 Theorem proofs:theory/proven_results.md and theory/near_collisionless_bound.md. Independent reviews:reports/THEORY_AUDIT.md (supplementary independent reconstruction by objectives agent recorded in DECISIONS), reports/NEAR_COLLISIONLESS_INDEPENDENT_REVIEW.md; execution/protocol audit reports/EXPERIMENT_PROTOCOL_AUDIT.md; full output/source checks reports/RESULTS_AUDIT.json. Novelty OPEN. Current scientific decision:NO-GO tested benefit route, GO only for bounded mathematical/literature follow-up; PAPER_READY=FALSE; QPU closed.
+
+## Experiment QWEN-N4-001 — 2026-11-21
+
+Question: Does the existing collision-aware n4 training protocol establish a
+useful interference-dependent mechanism after accounting for collisions?
+
+Hypothesis: Any proposed benefit must survive reoptimized distinguishable
+controls,fresh seeds and serious feasible classical cost accounting.
+
+Protocol: Astra supplied three fixed graphs,two statistics,the same paired starts,
+32 exact COBYLA objective calls per run,and a fresh-seed replication. Loss is
+conditional cut+2*(1-P_CF);the optimum is diagnostic only. No physical shots.
+Qwen ran the commands in an isolated worktree. The critic failed to finish;
+Astra independently performed the adversarial/numerical audit. This is not
+recorded as a successfully completed autonomous Qwen research cycle.
+
+Code: scripts/qwen_n4_probe.py;independent checker scripts/audit_qwen_n4.py;
+bounded controller scripts/run_research_cycle.py.
+
+Seed(s): 20261121..20261123;replication20261221..20261223.
+
+Raw data: results/qwen_n4_supervisor/{initial,replication}/raw.json;original
+locations and hashes in provenance.json. Execution records:
+results/qwen_cycles/20261121T002702Z-cycle/,
+20261121T003401Z-cycle-resume/,20261121T004103Z-supervised-replication/.
+
+Timestamp/Git: first start2026-11-21T00:27:02.423071+00:00;
+scientific source base15b97653cb88beb65b77f7425846ad4a41541324.
+Canonical independent computation manifest:results/qwen_n4_supervisor/audit/manifest.json,
+status completed and validator PASS;source and raw hashes retained.
+
+Result: 36runs/1152evaluations independently checked;18best bosonic circuits
+agree with Perceval to3.33e-16. Initial cycle success .988357bosonic/.974014
+distinguishable reverses to .715280/.984862 on fresh seeds. Path also reverses
+ordering;weighted favors distinguishable in both batches. No population inference.
+
+Interpretation: INCONCLUSIVE for useful interference-dependent optimization;
+REJECT advancement to QPU/paper. Keep the finite calculations. Qwen's narrative
+invented uncertainty and mixed labels;it is preserved unchanged and rejected.
+
+Alternative explanation: ordinary finite-budget optimization in either model;
+n4 can be solved by six feasible classical cut evaluations. Equal exact loss-call
+counts do not establish equal physical-shot or total classical cost.
+
+Decision: KEEP raw evidence;REJECT narrative/advancement;FOLLOW-UP only a changed
+optimum-blind mechanism. Overall research goal remains open. Paper untouched.
+
+## Infrastructure checkpoint — 2026-11-21
+
+Machine audit,model selection,seven agent definitions and a bounded sequential
+worktree orchestrator are committed as external research infrastructure. Basic
+Qwen read/test/report smoke PASS. Native subagents/Agent Team FAIL;configuration
+flags are not execution evidence. No paid fallback or larger model download.
+Reports:AGENT_INFRASTRUCTURE.md,LOCAL_MODEL_SELECTION.md,
+QWEN_INFRASTRUCTURE_VALIDATION.md,ASTRA_QWEN_FIRST_CYCLE_AUDIT.md.
+Full current working-tree pytest:192passed;42tests belong to earlier Phase2
+drafts preserved outside the scoped infrastructure change. No scientific gate opened.

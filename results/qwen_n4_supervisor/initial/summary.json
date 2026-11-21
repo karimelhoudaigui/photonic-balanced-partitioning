@@ -1,0 +1,89 @@
+{
+  "question": "Does this bounded optimum-blind n4 protocol establish a useful interference-dependent mechanism?",
+  "scope": "3 fixed graphs x 3 seeds x 2 statistics; maximum32 exact objective calls each",
+  "hypothesis_verdict": "INCONCLUSIVE",
+  "physical_shots": 0,
+  "objective": "conditional energy + 2*(1-P_CF), no optimum in loss",
+  "hom_p_cf": 0.0,
+  "note": "Descriptive fixed-grid diagnostics, not population significance or evidence of a computational benefit.",
+  "results": [
+    {
+      "family": "path",
+      "model": "bosonic",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "mean_initial_success": 0.1344396757483297,
+      "mean_final_success": 0.7960547809406407,
+      "mean_final_p_cf": 0.98325824893731,
+      "uniform_feasible_success": 0.3333333333333333
+    },
+    {
+      "family": "path",
+      "model": "distinguishable",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "mean_initial_success": 0.273511391760902,
+      "mean_final_success": 0.9194373088860474,
+      "mean_final_p_cf": 0.9987487176722798,
+      "uniform_feasible_success": 0.3333333333333333
+    },
+    {
+      "family": "cycle",
+      "model": "bosonic",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "mean_initial_success": 0.29467443608934246,
+      "mean_final_success": 0.9883574885249771,
+      "mean_final_p_cf": 0.9950836637641048,
+      "uniform_feasible_success": 0.6666666666666666
+    },
+    {
+      "family": "cycle",
+      "model": "distinguishable",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "mean_initial_success": 0.4750684842749357,
+      "mean_final_success": 0.9740141201252833,
+      "mean_final_p_cf": 0.987121980116048,
+      "uniform_feasible_success": 0.6666666666666666
+    },
+    {
+      "family": "weighted",
+      "model": "bosonic",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "mean_initial_success": 0.1344396757483297,
+      "mean_final_success": 0.676179881894762,
+      "mean_final_p_cf": 0.8650259841341837,
+      "uniform_feasible_success": 0.3333333333333333
+    },
+    {
+      "family": "weighted",
+      "model": "distinguishable",
+      "seeds": [
+        20261121,
+        20261122,
+        20261123
+      ],
+      "mean_initial_success": 0.273511391760902,
+      "mean_final_success": 0.7286813885076585,
+      "mean_final_p_cf": 0.9971172652455845,
+      "uniform_feasible_success": 0.3333333333333333
+    }
+  ]
+}
