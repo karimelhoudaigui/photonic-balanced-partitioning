@@ -1,0 +1,20 @@
+{
+  "cycle": "20261121T004414Z-team",
+  "process_status": "INCONCLUSIVE",
+  "observed_tool_calls": 6,
+  "successful_AGENTS_reads": 0,
+  "observed_pytest_commands": [],
+  "pytest_success_evidence": 0,
+  "reports": [],
+  "manuscript_hashes_unchanged": true,
+  "delegations": [],
+  "team_tool_calls": [
+    "task_create",
+    "task_create",
+    "team_create"
+  ],
+  "automated_evidence_only": true,
+  "scientific_acceptance": "PENDING_ASTRA_REVIEW",
+  "native_subagent_dispatch_observed": false,
+  "native_team_lifecycle_observed": false
+}
