@@ -1,13 +1,13 @@
 # Local model selection — 2026-11-21
 
-Chosen initial candidate: **qwen3.5:2b-q4_K_M**,2B parameters,Q4_K_M;
+Installed candidate: **qwen3.5:2b-q4_K_M**, 2B advertised / 1.9B actual parameters, Q4_K_M;
 Ollama library reports1.9GB on disk. This is the largest conservative initial
 candidate under the measured8GiB RAM,heavy swap and6.06GB free disk.
 It is a supervised assistant for bounded coding/tests,not a mathematical oracle.
 A successful load alone will not certify research quality.
 
-Operational limits:one loaded model,one inference request,one agent role at once;
-initial context16,384 tokens versus advertised262,144;bounded output2,048 tokens;
+Final operational limits: one loaded model, one inference request, one agent role at once;
+32,768 context tokens versus advertised 262,144; bounded output 1,536 tokens;
 short keepalive and explicit unload after a cycle. Estimated runtime model+KV+
 scratch2.5–3.5GiB,plus Qwen Code/Node and OS;actual use/speed must be recorded.
 These are planning estimates,not measured memory requirements or throughput.
@@ -65,3 +65,15 @@ The alias Modelfile sets num_ctx32768,num_predict1536,temperature0.2 andseed2026
 This changed only small metadata layers,not model weights. Managed background
 memory/dream/auto-skill jobs are disabled;each new worktree gets an explicit empty
 memory index so the2B model does not chase a nonexistent prior session.
+
+## Quality observed after the controlled research test
+
+The model executed real Python tests and two bounded scientific batches. It also
+invented uncertainty in a prose report,misidentified graph results,failed to finish
+the critic/replication reports and failed native delegation/team probes. Native
+tool support and successful execution do not make it a reliable scientific reasoner.
+The installed2B model is accepted only as a supervised executor with independently
+checked outputs. Autonomous scientific reasoning/delegation remains unvalidated.
+Given8GiB unified memory and severe existing swap pressure,a larger model is not
+considered comfortable on the observed host. No larger download or paid fallback
+was attempted. See QWEN_INFRASTRUCTURE_VALIDATION.md and ASTRA_QWEN_FIRST_CYCLE_AUDIT.md.

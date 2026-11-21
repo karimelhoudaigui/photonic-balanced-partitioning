@@ -14,7 +14,7 @@ scripts/run_research_cycle.sh --mode team --wall-time 600
 scripts/run_research_cycle.sh --mode cycle --wall-time 900
 ```
 
-Defaults:one experiment family per cycle,600seconds,one active worker/inference,
+Defaults:one experiment family per cycle,1200seconds,one active worker/inference,
 at mostone failed provider retry. The1800second hard upper bound prevents an
 accidental unbounded job. Distinct roles share one local model sequentially.
 Every invocation acquires a lock and creates a separate Git branch/worktree.
@@ -40,6 +40,21 @@ caller QPU/provider secrets,disables cloud inference,unloads the model after
 work,and terminates a server it started. Do not replace this confinement with
 unrestricted YOLO. The current launcher fails closed outside macOS;Docker/vLLM
 were not installed as a substitute.
+
+Observed capability limits are in `reports/QWEN_INFRASTRUCTURE_VALIDATION.md`.
+Native subagent/team probes failed on this model;do not infer success from enabled
+flags or an exit0. The first scientific raw data and replication executed,but
+Qwen's report/critic stages failed quality or completion checks. Astra's separate
+audit is authoritative. Future prompts restrict metric transcription to generated
+JSON and give the critic a compact evidence bundle to reduce wandering. These
+prompt changes do not retroactively turn failed runs into successful cycles.
+
+An interrupted first n4 cycle can have at mostone explicitly requested recovery:
+`--resume-cycle results/qwen_cycles/<original-id>`. It retains its worktree,
+data and remaining budget. The historical one-off supervised replication script
+is retained in its run directory;it was not an automatic retry loop. Recovery
+cannot certify scientific conclusions. Do not resume a completed diagnostic or
+spend cycles until a favorable sign appears.
 
 Large historical raw JSONL/Fock distribution files are sparse-excluded in worker
 checkouts to avoid duplicating hundreds of MB per cycle. Original data remain

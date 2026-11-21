@@ -10,8 +10,13 @@ import re
 def audit(directory):
     record=json.loads((directory/'run.json').read_text())
     uses=[];results={}
-    log_directories=[directory]
-    if record.get('continued_from'):log_directories.insert(0,Path(record['continued_from']))
+    log_directories=[];seen=set();cursor=directory
+    while cursor is not None:
+        cursor=cursor.resolve()
+        if cursor in seen:raise ValueError('Cyclic continuation provenance')
+        seen.add(cursor);log_directories.insert(0,cursor)
+        previous=json.loads((cursor/'run.json').read_text()).get('continued_from')
+        cursor=Path(previous) if previous else None
     for path in sorted(p for directory_path in log_directories for p in directory_path.glob('*.jsonl')):
         for line in path.read_text().splitlines():
             event=json.loads(line)
@@ -24,7 +29,8 @@ def audit(directory):
         return bool(response) and not response.get('is_error',False)
     reads=[u for u in uses if u['name']=='read_file' and 'AGENTS.md' in json.dumps(u['input']) and successful(u)]
     tests=[u for u in uses if u['name']=='run_shell_command' and 'pytest' in u['input'].get('command','') and successful(u)]
-    passed=[u for u in tests if re.search(r'\d+ passed',str(results[u['id']].get('content','')))]
+    passed=[u for u in tests if re.search(r'\d+ passed',str(results[u['id']].get('content','')))
+            and not re.search(r'\d+ (?:failed|errors?)(?:\W|$)',str(results[u['id']].get('content','')))]
     worktree=Path(record['worktree'])
     paper={str(p.relative_to(worktree)):hashlib.sha256(p.read_bytes()).hexdigest()
            for p in (worktree/'paper').rglob('*') if p.is_file()} if worktree.exists() else None

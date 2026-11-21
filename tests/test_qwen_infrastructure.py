@@ -64,3 +64,50 @@ def test_sparse_worktree_has_code_but_does_not_duplicate_large_historical_raw(tm
     assert (target/'reports/check.md').is_file()
     assert not (target/'experiments/E01/runs.jsonl').exists()
     assert (repo/'experiments/E01/runs.jsonl').read_text()=='fixture'
+
+
+def evidence_auditor():
+    spec=importlib.util.spec_from_file_location('evidence_auditor',ROOT/'scripts/audit_qwen_cycle.py')
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    return module
+
+
+def test_evidence_audit_rejects_exit_zero_without_executed_tests(tmp_path):
+    worker=tmp_path/'worker';(worker/'paper').mkdir(parents=True)
+    (worker/'paper/frozen.tex').write_text('frozen');(worker/'reports').mkdir()
+    (worker/'reports/QWEN_SMOKE_REPORT.md').write_text('I claim PASS')
+    directory=tmp_path/'logs';directory.mkdir();hashes=runner.paper_hashes(worker)
+    (directory/'run.json').write_text(json.dumps(dict(cycle='fixture',mode='validation',
+        status='EXECUTED_PENDING_REVIEW',worktree=str(worker),paper_hashes_before=hashes,paper_hashes_after=hashes)))
+    result=evidence_auditor().audit(directory)
+    assert result['infrastructure_smoke_pass'] is False
+    assert result['native_subagent_dispatch_observed'] is False
+
+
+def test_evidence_audit_does_not_accept_partly_failing_pytest(tmp_path):
+    worker=tmp_path/'worker';worker.mkdir();directory=tmp_path/'logs';directory.mkdir()
+    (directory/'run.json').write_text(json.dumps(dict(cycle='fixture',mode='validation',
+        status='EXECUTED_PENDING_REVIEW',worktree=str(worker))))
+    events=[{'message':{'content':[{'type':'tool_use','id':'tests','name':'run_shell_command',
+        'input':{'command':'python -m pytest tests/'}}]}},
+        {'message':{'content':[{'type':'tool_result','tool_use_id':'tests','is_error':False,
+                               'content':'2 failed, 8 passed in 1.0s'}]}}]
+    (directory/'test.jsonl').write_text(''.join(json.dumps(e)+'\n' for e in events))
+    assert evidence_auditor().audit(directory)['pytest_success_evidence']==0
+
+
+def test_evidence_audit_resolves_all_continuations_and_rejects_cycles(tmp_path):
+    worker=tmp_path/'worker';worker.mkdir();directories=[tmp_path/str(i) for i in range(3)]
+    for index,directory in enumerate(directories):
+        directory.mkdir();record=dict(cycle=str(index),mode='cycle',worktree=str(worker),status='INCONCLUSIVE')
+        if index:record['continued_from']=str(directories[index-1])
+        (directory/'run.json').write_text(json.dumps(record))
+    events=[{'message':{'content':[{'type':'tool_use','id':'tests','name':'run_shell_command',
+        'input':{'command':'python -m pytest tests/'}}]}},
+        {'message':{'content':[{'type':'tool_result','tool_use_id':'tests','is_error':False,
+                               'content':'8 passed in 1.0s'}]}}]
+    (directories[0]/'test.jsonl').write_text(''.join(json.dumps(e)+'\n' for e in events))
+    assert evidence_auditor().audit(directories[2])['pytest_success_evidence']==1
+    first=json.loads((directories[0]/'run.json').read_text());first['continued_from']=str(directories[2])
+    (directories[0]/'run.json').write_text(json.dumps(first))
+    with pytest.raises(ValueError,match='Cyclic'):evidence_auditor().audit(directories[2])

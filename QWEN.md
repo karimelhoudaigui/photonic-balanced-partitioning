@@ -26,7 +26,7 @@ claim labels remain OPEN / PROVEN / NUMERICALLY_SUPPORTED / HARDWARE_SUPPORTED /
 REJECTED. No numerical proof or automatic novelty claim. Keep negative results.
 
 Hardware is M2/8GiB, already under memory pressure. One active model/request and
-one foreground worker at once. Max1 experiment,600s total,1 failed retry per
+one foreground worker at once. Max1 experiment,1200s default total (1800s hard cap),1 failed provider retry per
 cycle;subagent max8turns and no nesting. No unbounded loops, model downloads,
 paid/cloud fallback, packages or services launched by agents. All shell tools
 run under the orchestrator's OS confinement. Use PASQAL_PYTHON for pytest.
@@ -39,3 +39,11 @@ not an independent proof certificate. Count all training and rejected attempts,
 classical preprocessing and hyperparameter costs. Compare indistinguishable,
 distinguishable and serious classical feasible baselines. Optimum-known training
 is a state-preparation diagnostic, not evidence of computational benefit.
+
+2026-11-21 infrastructure checkpoint:Qwen Code0.28.0,Ollama0.32.0 and seven roles
+are installed. Basic read/test/report execution passes;native subagent and Agent
+Team probes FAIL. The initial n4 diagnostic and fresh-seed raw data are valid,
+but Qwen's narrative was rejected for invented uncertainty and mixed graph labels.
+Read reports/QWEN_INFRASTRUCTURE_VALIDATION.md and
+reports/ASTRA_QWEN_FIRST_CYCLE_AUDIT.md before relying on this model's conclusions.
+No autonomous acceptance,novelty or QPU gate promotion is permitted.
