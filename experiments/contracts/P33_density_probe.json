@@ -1,0 +1,65 @@
+{
+  "claim_id": "P33_DENSITY_CERTIFICATE",
+  "mathematics": {
+    "assertion_tested": "Candidate dominant-support/density TV bounds survive the fixed complete-Fock grid, balanced sharpness family and known dilute obstruction; large dimensions are certificate-only.",
+    "coefficient_domain": "complex128,float64; analytic formula for dilute active-block family",
+    "conventions": "Distinct singly occupied input orbitals; all collision outcomes retained; M is expected unordered collision pairs; complete physical probability laws.",
+    "inputs": [
+      "m4/6/8/10/12,k=m/2;three fixed seeds;five strengths;global-output and exactly flat-density fixed-projector frames",
+      "seven fixed balanced analytic sharpness cases",
+      "six balanced dilute factorizable counterexamples",
+      "m32/64/128 certificate-only grid; no full simulation"
+    ],
+    "bounds": {
+      "full_grid_cases": 150,
+      "sharpness_cases": 7,
+      "scalable_certificate_only_cases": 36,
+      "dilute_counterexamples": 6,
+      "full_fock_max_modes": 12,
+      "full_fock_max_photons": 6
+    },
+    "non_claims": [
+      "No independent proof/novelty certification by numerical checks",
+      "No optimization, noise, hardware or advantage result",
+      "No complete simulation at m32/64/128",
+      "No implication from collision probability alone"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/phase3_density_probe.py",
+    "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+    "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+    "src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "pyproject.toml",
+    ".qwen/support/run_experiment.py",
+    ".qwen/support/validate_manifest.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": "2026112100+100*m+repeat+offset; repeat0..2; primaryoffset0,replicationoffset100000"
+  }
+}
