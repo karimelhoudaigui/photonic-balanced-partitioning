@@ -41,3 +41,13 @@ def test_support_bound_is_invariant_under_output_labels():
 def test_nonorthogonal_frame_is_rejected():
     with pytest.raises(ValueError,match='orthonormal'):
         density_certificate(np.ones((4,2))/2)
+
+
+def test_small_angle_does_not_lose_collision_mass_by_subtraction():
+    angle=1e-10;c,s=np.cos(angle),np.sin(angle)
+    v=pair_frame(4)@np.array([[c,-s],[s,c]])
+    result=density_certificate(v);expected=2*c*c*s*s
+    assert result['expected_collision_pairs']==pytest.approx(expected,rel=1e-12,abs=0.)
+    assert result['dominant_support_leakage']==pytest.approx(2*s*s,rel=1e-12,abs=0.)
+    assert result['support_cycle_tv_bound']>=expected*(1-1e-12)
+    assert result['numerical_semantics']=='FLOAT64_ESTIMATE_NOT_INTERVAL_CERTIFIED'

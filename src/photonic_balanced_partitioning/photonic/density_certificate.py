@@ -15,6 +15,14 @@ def cycle_envelope(sigma):
         raise ValueError('Expected finite nonnegative sigma')
     if sigma >= 1:
         return 1.
+    if sigma < .1:
+        # Positive derangement series avoids cancellation of -s-log(1-s).
+        previous,older=0.,1.;total=0.
+        for degree in range(2,13):
+            current=((degree-1)*previous+older)/degree
+            total+=current*sigma**degree;older,previous=previous,current
+        total+=sigma**13/(1-sigma)  # !n/n!<=1 bounds the exact series tail.
+        return min(1.,float(.5*total))
     return min(1.,float(.5*np.expm1(-sigma-np.log1p(-sigma))))
 
 
@@ -35,7 +43,11 @@ def density_certificate(frame):
     raw_m=float(np.sum(intensities**2-np.sum(q*q,axis=1)))
     raw_delta=float(np.sum(intensities-np.max(q,axis=1)))
     if min(raw_m,raw_delta)<-1e-10:raise ArithmeticError('Negative physical certificate quantity')
-    pairs=max(0.,raw_m);delta=max(0.,raw_delta)
+    # Evaluate the same quantities as nonnegative sums at very small mixing.
+    suffix=np.cumsum(q[:,::-1],axis=1)[:,::-1]
+    pairs=float(2*np.sum(q[:,:-1]*suffix[:,1:]))
+    remainder=q.copy();remainder[np.arange(len(q)),np.argmax(q,axis=1)]=0.
+    delta=float(np.sum(remainder))
     c=float(np.min(intensities[intensities>0]))
     density_ratio=pairs/c
     if delta>density_ratio+1e-9:raise ArithmeticError('Density implication violated beyond roundoff')
@@ -58,4 +70,6 @@ def density_certificate(frame):
         refined_density_cycle_tv_bound=cycle_envelope(2*math.sqrt(refined_ratio)+refined_ratio),
         support_state_tv_bound=min(1.,math.sqrt(2*delta)+delta),
         zero_intensity_rows=int(np.sum(intensities==0)),
+        numerical_semantics='FLOAT64_ESTIMATE_NOT_INTERVAL_CERTIFIED',
+        input_orthonormality_residual=float(np.max(abs(v.conj().T@v-np.eye(v.shape[1])))),
         non_claim='Sufficient absolute-TV certificate only; not a success ratio, sampler speedup or hardness test.')
