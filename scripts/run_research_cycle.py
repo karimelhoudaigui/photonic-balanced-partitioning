@@ -157,7 +157,7 @@ print('CONFINEMENT_PASS')
         py=str(ROOT/'.venv/bin/python')
         prompts=[]
         if args.mode=='validation':
-            prompts=[('experiment-runner',f'Read AGENTS.md using read_file. Then run exactly: {py} -m pytest tests/test_hom.py -q . Write reports/QWEN_SMOKE_REPORT.md recording the actual test result. Never edit paper/. Do these three actions now; no planning-only reply.')]
+            prompts=[('experiment-runner',f'Read AGENTS.md using read_file. Then run exactly: {py} -m pytest tests/test_hom.py -q\nThen write reports/QWEN_SMOKE_REPORT.md recording the actual test result. Never edit paper/. Do these three actions now; no planning-only reply.')]
         elif args.mode=='subagent':
             prompts=[('research-lead','Use the agent tool once to delegate to physics-auditor, foreground: read AGENTS.md and report the scientific rules. Wait for the result. Do not perform its task yourself; do not run parallel workers. Then report its returned evidence.')]
         elif args.mode=='team':

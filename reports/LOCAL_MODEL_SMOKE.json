@@ -1,0 +1,40 @@
+{
+  "chosen_source_model": "qwen3.5:2b-q4_K_M",
+  "served_alias": "pasqal-qwen-research:latest",
+  "digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+  "details": {
+    "parent_model": "model.gguf",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+      "qwen35"
+    ],
+    "parameter_size": "1.9B",
+    "quantization_level": "Q4_K_M"
+  },
+  "capabilities": [
+    "completion",
+    "vision",
+    "tools",
+    "thinking"
+  ],
+  "tool_call": [
+    {
+      "id": "call_mwtlv1oh",
+      "function": {
+        "index": 0,
+        "name": "add",
+        "arguments": {
+          "a": 17,
+          "b": 25
+        }
+      }
+    }
+  ],
+  "eval_count": 37,
+  "eval_duration_ns": 1824895000,
+  "tokens_per_second_decode": 20.275139117593067,
+  "context_limit": 16384,
+  "observed_size_vram_bytes": 1692223404,
+  "raw_log_sha256": "f791d2f977bc925874d9887aed6ff29e0ec621d00cabf96aeffc68129927eb36"
+}

@@ -34,3 +34,19 @@ Ollama is suitable for Apple Silicon,subject to an actual load/tool smoke test.
 The current pressure rules out calling any large local model comfortable.
 Qwen installation,model operation,agent delegation and scientific validity are
 separate gates;see QWEN_INFRASTRUCTURE_VALIDATION.md for executed evidence.
+
+## Installed external tools
+
+- `qwen --version`:0.28.0 (official npm @qwen-code/qwen-code@latest).
+- `ollama` server `/api/version`:0.32.0 (Homebrew stable).
+- Homebrew installed its own Python3.14.6,MLX0.32.0 and mlx-c0.6.0, and upgraded
+  its OpenSSL/SQLite dependencies. The scientific .venv remains Python3.11.15.
+- No daemon was registered to start at login. The cycle launcher starts a
+  loopback-only server if needed;the validation server is temporary.
+- Model store:.local/ollama/models (git-ignored). Qwen state:.local/qwen/home;
+  the user's ~/.qwen provider settings and credentials are not overwritten.
+- Docker remains unnecessary/unstarted. All macOS worker processes inherit an
+  explicit sandbox-exec profile:write only in the assigned worktree/local runtime,
+  manuscript writes denied,network only localhost:11435. No unconfined fallback.
+- Initial native model tool-call probe passed. Full CLI/worker/team validation
+  is reported separately;installation alone is not a PASS for these capabilities.

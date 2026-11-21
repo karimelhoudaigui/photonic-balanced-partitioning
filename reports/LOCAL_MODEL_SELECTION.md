@@ -36,3 +36,24 @@ Official evidence inspected (2026-11-21):
 
 Selection is resource-constrained,not a claim that2B is the strongest scientific
 model in general. Astra independently audits every proposed conclusion.
+
+## Observed installation and first model probe
+
+Ollama0.32.0 installed via Homebrew;Qwen Code0.28.0 via official npm.
+The downloaded tag identifies1.9B actual parameters,Q4_K_M,GGUF;disk artifact
+1,945,781,358 bytes. Digest:
+`1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7`.
+Ollama reported1,692,223,404 bytes resident on Metal at16,384 context tokens.
+The37-token native tool-call generation took1.825s of decoding (~20.3tokens/s),
+but cold load plus prompt processing made the whole request52.4s. Large Qwen
+system/tool prompts are much slower to prefill;do not equate decode speed with
+end-to-end agent latency. These observations are a smoke test,not a benchmark.
+
+A local alias `pasqal-qwen-research:latest` references the exact same blobs
+(no second weight download). It avoids Qwen Code's hosted-Qwen-specific thinking
+parameter rewrite:Ollama's compatible route needs `reasoning_effort:none`.
+The first CLI attempt timed out,then the route was corrected. The alias is the
+configured service id;the source model/digest above remain authoritative.
+
+No paid token is used. The SDK's nonsecret localhost placeholder is injected
+only into the child environment. Qwen roles remain small supervised assistants.

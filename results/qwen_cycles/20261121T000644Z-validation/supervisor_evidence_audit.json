@@ -1,0 +1,19 @@
+{
+  "cycle": "20261121T000644Z-validation",
+  "process_status": "EXECUTED_PENDING_REVIEW",
+  "observed_tool_calls": 3,
+  "successful_AGENTS_reads": 1,
+  "observed_pytest_commands": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python -m pytest tests/test_hom.py -q . 2>&1 | tee /Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261121T000644Z-validation/reports/QWEN_SMOKE_REPORT.md"
+  ],
+  "pytest_success_evidence": 1,
+  "reports": [
+    "reports/QWEN_SMOKE_REPORT.md"
+  ],
+  "manuscript_hashes_unchanged": true,
+  "delegations": [],
+  "team_tool_calls": [],
+  "automated_evidence_only": true,
+  "scientific_acceptance": "PENDING_ASTRA_REVIEW",
+  "infrastructure_smoke_pass": true
+}
