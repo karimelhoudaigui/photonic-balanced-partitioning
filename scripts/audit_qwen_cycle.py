@@ -10,7 +10,9 @@ import re
 def audit(directory):
     record=json.loads((directory/'run.json').read_text())
     uses=[];results={}
-    for path in sorted(directory.glob('*.jsonl')):
+    log_directories=[directory]
+    if record.get('continued_from'):log_directories.insert(0,Path(record['continued_from']))
+    for path in sorted(p for directory_path in log_directories for p in directory_path.glob('*.jsonl')):
         for line in path.read_text().splitlines():
             event=json.loads(line)
             for part in event.get('message',{}).get('content',[]):

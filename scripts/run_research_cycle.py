@@ -111,7 +111,19 @@ def main():
     parser.add_argument('--max-parallel-agents',type=int,default=1,choices=[1])
     parser.add_argument('--max-failed-retries',type=int,default=1,choices=[0,1])
     parser.add_argument('--mission-file',type=Path,help='Astra-authored next bounded research question; default is the initial n4 diagnostic')
+    parser.add_argument('--resume-cycle',type=Path,help='Astra-authorized single recovery of an interrupted initial cycle; keeps its worktree and original data')
     args=parser.parse_args()
+    prior=None
+    if args.resume_cycle is not None:
+        if args.mode!='cycle' or args.mission_file is not None:parser.error('Recovery supports only the initial cycle protocol')
+        prior_dir=args.resume_cycle.resolve()
+        prior_dir.relative_to(ROOT/'results/qwen_cycles')
+        prior=json.loads((prior_dir/'run.json').read_text())
+        remaining=prior['limits']['wall_time']-prior['runtime_seconds']
+        if remaining<30:parser.error('Original cycle has no remaining wall budget')
+        args.wall_time=min(args.wall_time,int(remaining))
+        marker=prior_dir/'single_recovery.json'
+        with marker.open('x') as stream:json.dump({'authorized_at':dt.datetime.now(dt.timezone.utc).isoformat(),'remaining_seconds':args.wall_time},stream)
     if not 30<=args.wall_time<=1800:parser.error('Wall time must be30..1800 seconds')
     STATE.mkdir(parents=True,exist_ok=True)
     # The isolated runtime has its own user settings. This avoids silently
@@ -133,20 +145,25 @@ def main():
             try:urllib.request.urlopen(URL+'/api/version',timeout=1).close();break
             except OSError:time.sleep(.5)
         else:raise RuntimeError('Local Ollama did not start')
-    cycle=dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+args.mode
+    cycle=dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+args.mode+('-resume' if prior else '')
     output=ROOT/'results/qwen_cycles'/cycle;output.mkdir(parents=True,exist_ok=False)
     worktree=ROOT/'.qwen/worktrees'/cycle
+    if prior:worktree=Path(prior['worktree'])
     commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
     record=dict(cycle=cycle,mode=args.mode,started_at=dt.datetime.now(dt.timezone.utc).isoformat(),
-        base_commit=commit,model=MODEL,worktree=str(worktree),limits=vars(args),runs=[],
+        base_commit=prior['base_commit'] if prior else commit,controller_commit=commit,model=MODEL,worktree=str(worktree),limits={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()},runs=[],
         supervisor_verdict='PENDING_ASTRA_REVIEW',status='RUNNING',no_qpu=True)
+    if prior:record['continued_from']=str(prior_dir)
     original=paper_hashes(ROOT)
     try:
         tags=json.load(urllib.request.urlopen(URL+'/api/tags',timeout=5))
         if not any(m['name']==MODEL for m in tags['models']):raise RuntimeError('Selected local model absent; no automatic download/fallback')
         record['model_metadata']=next(m for m in tags['models'] if m['name']==MODEL)
+        if record['model_metadata'].get('size',0)>int(2.4*1024**3):
+            raise RuntimeError('The local alias exceeds the audited model-size budget; refuse implicit model upgrade')
         worktree.parent.mkdir(parents=True,exist_ok=True)
-        prepare_worktree(ROOT,worktree,'qwen/'+cycle,commit)
+        if not prior:prepare_worktree(ROOT,worktree,'qwen/'+cycle,commit)
+        elif not worktree.is_dir():raise RuntimeError('Original worktree is absent')
         record['sparse_checkout']='Historical large raw files omitted from this worktree only; original main-repository data and Git blobs retained. Current-cycle raw outputs remain complete.'
         memory=STATE/'home/projects'/re.sub(r'[^A-Za-z0-9_-]','-',str(worktree))/'memory'
         memory.mkdir(parents=True,exist_ok=True)
@@ -188,6 +205,11 @@ print('CONFINEMENT_PASS')
                     ('adversarial-reviewer','Read the plan,result,source changes and raw outputs. Attempt to refute the claim using classical,distinguishable,equal-budget and postselection controls. Write reports/QWEN_ADVERSARIAL_REVIEW.md. No source edits.'),
                     ('experiment-runner',f'Read the plan and critique. Replicate the SAME experiment on fresh preregistered seeds with {py},preserving separate raw outputs. Write reports/QWEN_REPLICATION.md. Propose SUPPORTED/REJECTED/INCONCLUSIVE within the tested scope;Astra owns final acceptance.')]
         for index,(role,prompt) in enumerate(prompts):
+            if prior:
+                ready=(worktree/'results/qwen_n4_first_cycle/raw.json').is_file() and (worktree/'reports/QWEN_CYCLE_RESULT.md').is_file()
+                if not ready:raise RuntimeError('Recovery requires original raw data and execution report verified by Astra')
+                if index<2:continue
+                if index==2 and (worktree/'reports/QWEN_ADVERSARIAL_REVIEW.md').is_file():continue
             remaining=args.wall_time-(time.monotonic()-start)
             if remaining<10:raise TimeoutError('Cycle wall budget exhausted')
             allowed=set(BASE_TOOLS)

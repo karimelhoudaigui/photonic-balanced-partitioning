@@ -1,0 +1,20 @@
+{
+  "cycle": "20261121T002702Z-cycle",
+  "process_status": "INCONCLUSIVE",
+  "observed_tool_calls": 5,
+  "successful_AGENTS_reads": 0,
+  "observed_pytest_commands": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python -m pytest tests/test_hom.py tests/test_objectives.py tests/test_perceval_cross_validation.py -q 2>&1 | head -50"
+  ],
+  "pytest_success_evidence": 1,
+  "reports": [
+    "reports/QWEN_CYCLE_RESULT.md"
+  ],
+  "manuscript_hashes_unchanged": true,
+  "delegations": [],
+  "team_tool_calls": [],
+  "automated_evidence_only": true,
+  "scientific_acceptance": "PENDING_ASTRA_REVIEW",
+  "native_subagent_dispatch_observed": false,
+  "native_team_lifecycle_observed": false
+}
