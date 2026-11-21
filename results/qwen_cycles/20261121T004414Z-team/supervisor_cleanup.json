@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-11-21T00:59:42.857031+00:00",
+  "purpose": "Stop the temporary server created for this installation; preserve failed team metadata.",
+  "team_member_count": 0,
+  "failed_team_metadata_archived_to": ".local/qwen/archived-teams/20261121t004414z-team-test-native-agent-team",
+  "loaded_models_before_stop": 0,
+  "owned_ollama_listener_pid": 10521,
+  "temporary_listener_stopped": true
+}

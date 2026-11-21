@@ -50,3 +50,7 @@ separate gates;see QWEN_INFRASTRUCTURE_VALIDATION.md for executed evidence.
   manuscript writes denied,network only localhost:11435. No unconfined fallback.
 - Initial native model tool-call probe passed. Full CLI/worker/team validation
   is reported separately;installation alone is not a PASS for these capabilities.
+
+After validation, the model was unloaded and the temporary listener stopped.
+No login service or unattended research loop remains. The bounded launcher
+can restart the local server using the retained, git-ignored model store.

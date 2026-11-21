@@ -72,3 +72,9 @@ The 8 GiB host and observed 2B-model instruction/report errors do not support a
 claim of reliable autonomous research. Larger local models were not downloaded
 to mask this limitation. No paid inference fallback was used.
 PAPER_READY remainsFALSE;QPU_GATE remainsCLOSED. No QPU request has been made.
+
+Cleanup: the model was unloaded and the temporary Ollama listener was stopped.
+The failed native team's empty metadata (zero members) was archived locally,
+not deleted. This was supervisor cleanup, not a successful native team shutdown.
+Evidence: `results/qwen_cycles/20261121T004414Z-team/supervisor_cleanup.json`.
+The launcher starts a new loopback-only server when the next bounded run needs it.
