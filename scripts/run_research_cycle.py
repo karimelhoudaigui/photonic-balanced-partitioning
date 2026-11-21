@@ -175,8 +175,8 @@ print('CONFINEMENT_PASS')
         elif args.mode=='team':
             prompts=[('research-lead','Test native Agent Team: create one team, create one task to read AGENTS.md, delegate it to exactly one read-only physics-auditor teammate using the agent tool with the team name. Wait for evidence, mark task complete and shut down the teammate and team. No shell or writes. One active worker only. Report what really worked.')]
         else:
-            prompts=[('research-lead','Read STATUS.md and OPEN_QUESTIONS.md. State one falsifiable n4 question for the supplied scripts/qwen_n4_probe.py. Existing bugs were repaired. Do not edit code or paper. Keep the scope to one optimum-blind 3graph/3seed comparison and actual existing tests.'),
-                ('experiment-runner',f'Execute exactly these two shell commands now: {py} -m pytest tests/test_hom.py tests/test_objectives.py tests/test_perceval_cross_validation.py -q ; then {py} scripts/qwen_n4_probe.py --output results/qwen_n4_first_cycle . Read results/qwen_n4_first_cycle/raw.json in limited ranges. Write reports/QWEN_CYCLE_RESULT.md with actual commands, tests, output path and a scoped SUPPORTED/REJECTED/INCONCLUSIVE verdict. No edits to src/, tests/ or paper/ unless a new bug is demonstrated; report it first.'),
+            prompts=[('research-lead','Astra fixes this initial diagnostic: Does the existing n4 collision-aware protocol show a useful mechanism beyond reoptimized distinguishable photons and uniform feasible sampling? Protocol:three supplied graphs,three fixed seeds,32 exact conditional-energy-plus-collision objective calls per model;HOM/Perceval/objective tests;fresh-seed replication. Reply in six lines with QUESTION,HYPOTHESIS,DESIGN,FALSIFIER,NON-CLAIM,DECISION RULE. No tools or edits. This is a protocol statement,not a result.'),
+                ('experiment-runner',f'Execute these exact commands with run_shell_command,one at a time:\n{py} -m pytest tests/test_hom.py tests/test_objectives.py tests/test_perceval_cross_validation.py -q\n{py} scripts/qwen_n4_probe.py --output results/qwen_n4_first_cycle\nThen read results/qwen_n4_first_cycle/summary.json and write reports/QWEN_CYCLE_RESULT.md with actual commands,tests,output path and a scoped SUPPORTED/REJECTED/INCONCLUSIVE verdict. Do not read historical logs or implement another experiment. No edits to src/,tests/ or paper/.'),
                 ('adversarial-reviewer','Read reports/QWEN_CYCLE_RESULT.md, results/qwen_n4_first_cycle/summary.json and relevant limited parts of raw.json. Critique actual physics, objective and oracle/cost handling. Check whether distinguishable or feasible classical sampling explains the observations. Write reports/QWEN_ADVERSARIAL_REVIEW.md; no source edits, no paper, no novelty assertion.'),
                 ('experiment-runner',f'Replicate the supplied n4 protocol on NEW preregistered seeds with exactly: {py} scripts/qwen_n4_probe.py --seed-offset 100 --output results/qwen_n4_replication\nRecord replication in reports/QWEN_REPLICATION.md with actual executed command and results. No original output overwritten. No new experiment family.')]
             if args.mission_file is not None:
@@ -194,12 +194,16 @@ print('CONFINEMENT_PASS')
             if args.mode in ['subagent','team']:allowed.add('agent')
             if args.mode=='team':allowed.update(['team_create','team_delete','task_create','task_update','task_list','send_message','request_shutdown','list_agents'])
             excluded=[t for t in CONTROL_TOOLS if t not in allowed]
+            initial_plan=args.mode=='cycle' and args.mission_file is None and role=='research-lead'
+            if initial_plan:excluded+=BASE_TOOLS
             role_text=(worktree/'.qwen/agents'/f'{role}.md').read_text().split('---',2)[-1]
             system='You are a bounded local research assistant supervised by Astra. Execute requested tools and report actual evidence. No paper edits, QPU, remote API, invented results or nested delegation. '+role_text
             if args.mode=='subagent':
                 system='This is a delegation-only infrastructure test. Your FIRST and ONLY tool must be agent, using exactly the JSON arguments in the user message. You must not read AGENTS.md yourself or use shell/write tools. The physics-auditor child performs that read. Historical research routines and memory lookups are out of scope. Wait for the child result. Do not invent completion.'
             if args.mode=='team':
                 system='This is a native Agent Team infrastructure test. Use the team coordination tools and exactly one worker; do not perform the worker task yourself. No historical research routine or memory search. No paper edits or QPU calls. Report actual tool outcomes only.'
+            if initial_plan:
+                system='State only the supplied initial scientific protocol in six short lines. Do not use tools,claim results or pursue any other research direction. Astra already chose this first smoke-cycle question.'
             command=prefix+['qwen','--auth-type','openai','--model',MODEL,'--output-format','stream-json',
                 '--openai-base-url',URL+'/v1','--openai-api-key','local-placeholder-not-a-credential',
                 '--openai-logging','--openai-logging-dir',str(STATE/'api-logs'),

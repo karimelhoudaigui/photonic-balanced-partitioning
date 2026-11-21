@@ -36,6 +36,10 @@ def audit(directory):
             'delegations':[u['input'] for u in uses if u['name']=='agent'],
             'team_tool_calls':[u['name'] for u in uses if u['name'] in ['team_create','task_create','task_update','team_delete','send_message','request_shutdown']],
             'automated_evidence_only':True,'scientific_acceptance':'PENDING_ASTRA_REVIEW'}
+    native=[u for u in uses if u['name']=='agent' and successful(u)]
+    team_names={u['name'] for u in uses if successful(u)}
+    output['native_subagent_dispatch_observed']=bool(native)
+    output['native_team_lifecycle_observed']=bool(native and {'team_create','task_create','task_update','team_delete'}<=team_names)
     if record['mode']=='validation':
         output['infrastructure_smoke_pass']=bool(reads and passed and report_files and unchanged)
     raw=worktree/'results/qwen_n4_first_cycle/raw.json';rep=worktree/'results/qwen_n4_replication/raw.json'
@@ -45,6 +49,10 @@ def audit(directory):
         output['replication_uses_fresh_seeds']=not ({r['seed'] for r in first['rows']} & {r['seed'] for r in second['rows']})
         output['n4_runs']=len(first['rows'])
         output['n4_evaluations']=sum(r['n_evaluations'] for r in first['rows'])
+        output['cycle_evidence_complete']=bool(passed and unchanged and
+            output['replication_uses_fresh_seeds'] and len(first['rows'])==len(second['rows'])==18
+            and (worktree/'reports/QWEN_ADVERSARIAL_REVIEW.md').is_file()
+            and (worktree/'reports/QWEN_REPLICATION.md').is_file())
     (directory/'supervisor_evidence_audit.json').write_text(json.dumps(output,indent=2)+'\n')
     return output
 
