@@ -63,5 +63,13 @@
       "web_fetch",
       "web_search"
     ]
+  },
+  "memory": {
+    "enableManagedAutoMemory": false,
+    "enableManagedAutoDream": false,
+    "enableAutoSkill": false,
+    "enableTeamMemory": false,
+    "enableTeamMemorySync": false,
+    "enableStructuredRecall": false
   }
 }

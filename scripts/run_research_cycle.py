@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import platform
+import re
 import shutil
 import signal
 import subprocess
@@ -135,6 +136,9 @@ def main():
         record['model_metadata']=next(m for m in tags['models'] if m['name']==MODEL)
         worktree.parent.mkdir(parents=True,exist_ok=True)
         subprocess.run(['git','worktree','add','-b','qwen/'+cycle,str(worktree),commit],cwd=ROOT,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        memory=STATE/'home/projects'/re.sub(r'[^A-Za-z0-9_-]','-',str(worktree))/'memory'
+        memory.mkdir(parents=True,exist_ok=True)
+        (memory/'MEMORY.md').write_text('No earlier session memory exists for this fresh worktree. Do not inspect chats or other projects. Execute the current assigned task now. Canonical instructions are AGENTS.md and QWEN.md in this worktree.\n')
         before=paper_hashes(worktree)
         prefix=confinement(worktree,output/'sandbox.sb')
         # Execute a real OS-denial probe before giving tools to a local model.
