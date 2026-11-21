@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "claim_id": "P21_classical_search",
+  "repository": {
+    "commit": "99f82e367ef079e4d52f763d615476698727b739",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/phase2_classical_search.py",
+    "--output",
+    "experiments/P21_classical_search"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite optimum-blind balanced search, exact reference, phase-invariance and Jacobian rank probes on declared domain",
+    "coefficient_domain": "float64/complex128",
+    "conventions": "One score query evaluates one feasible balanced partition; no optimum or stopping oracle in training",
+    "inputs": [
+      "n=4,6,8,10,12; path/cycle/nonuniform random regular/Erdos-Renyi/weighted/planted; original and seeded labels"
+    ],
+    "bounds": {
+      "instances": 4,
+      "repeats": 4,
+      "budget": 120,
+      "seed": 20261120
+    },
+    "non_claims": [
+      "No quantum hardware or advantage",
+      "Cut queries are not optical objective evaluations",
+      "Finite-grid rates are not iid population inference",
+      "Jacobian ranks are numerical local observations"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64",
+    "seed": 20261120
+  },
+  "run": {
+    "started_at": "2026-11-20T18:15:15.363563+00:00",
+    "runtime_seconds": 4.903545332985232,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P21_classical_search/runs.jsonl",
+      "sha256": "7acff262669acb07ba577f8eb930ea779bc1d65b88c88d1811c47bd3df357277",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P21_classical_search/graphs.json",
+      "sha256": "5ed113e68466dc5e1ce3ba8228734602a9c6bdd1ac9620962b791621f5b81a8a",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P21_classical_search/landscape_probes.json",
+      "sha256": "4642ab7549f21a00bcb41c373815d13e28f016fe4ba1247b9e72f50901a52a1a",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P21_classical_search/summary.json",
+      "sha256": "5eb1ea62cd5ea7b9903d1763983ec5dabbc01aa1ee3f1b0e5b22265b024cd084",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "all searches use declared query count and cannot beat exact reference",
+      "passed": true
+    }
+  ],
+  "result": "Finite assertion verified in declared domain",
+  "residual_risks": [
+    "Manual v2 recorder; no process-wide timeout or memory cap applied",
+    "Thread environment cap may be ignored by numerical libraries",
+    "Graph slots repeat isomorphic graphs and share seed streams"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase2_classical_search.py",
+      "sha256": "d0a63418024bff99526bff2eee82bf7550f37a083f171b7fdb569369f55c6915",
+      "sha256_after": "d0a63418024bff99526bff2eee82bf7550f37a083f171b7fdb569369f55c6915"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f",
+      "sha256_after": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/__init__.py",
+      "sha256": "75ab1c22a43a9364a3ccda9a9b421ea965e158bef17987a9380826a70e579851",
+      "sha256_after": "75ab1c22a43a9364a3ccda9a9b421ea965e158bef17987a9380826a70e579851"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+      "sha256": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+      "sha256_after": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/__init__.py",
+      "sha256": "66f72a4f3c0906902a51ab3103024feac261d29fbcf3e785b3e29b7c08fb7877",
+      "sha256_after": "66f72a4f3c0906902a51ab3103024feac261d29fbcf3e785b3e29b7c08fb7877"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/comparison.py",
+      "sha256": "4cbe9662c1d5629a2f320b90685c418a6ab5d2a97d9830fad285a196478b6f52",
+      "sha256_after": "4cbe9662c1d5629a2f320b90685c418a6ab5d2a97d9830fad285a196478b6f52"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/mesh.py",
+      "sha256": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9",
+      "sha256_after": "6313fa4d021762c8bcbaee340d1106d9f36154cb85b3451fc4ea5a47683472d9"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+      "sha256": "687f3d52d22145e5c37aff7ee4afe046d13d8c5a6d75b6f9034fc4da341b467e",
+      "sha256_after": "687f3d52d22145e5c37aff7ee4afe046d13d8c5a6d75b6f9034fc4da341b467e"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+      "sha256": "1fd12d718d8cb404e55a290631469cecb934fe037f05bb90a9a6599558a0469d",
+      "sha256_after": "1fd12d718d8cb404e55a290631469cecb934fe037f05bb90a9a6599558a0469d"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+      "sha256": "3c3cc7522e1e4d69f57e891ffcdc0fdae9055e6b1a2a61f619ea6b1e6a1ed678",
+      "sha256_after": "3c3cc7522e1e4d69f57e891ffcdc0fdae9055e6b1a2a61f619ea6b1e6a1ed678"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/objectives.py",
+      "sha256": "76baca319e50d731a2b925b8c266919513b3ecd02b9bb680b7481ad45887ca50",
+      "sha256_after": "76baca319e50d731a2b925b8c266919513b3ecd02b9bb680b7481ad45887ca50"
+    }
+  ],
+  "declared_results": [
+    "experiments/P21_classical_search/runs.jsonl",
+    "experiments/P21_classical_search/graphs.json",
+    "experiments/P21_classical_search/landscape_probes.json",
+    "experiments/P21_classical_search/summary.json"
+  ]
+}

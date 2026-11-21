@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "claim_id": "P21_supplementary_blocks_and_comparison",
+  "repository": {
+    "commit": "99f82e367ef079e4d52f763d615476698727b739",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/P21_classical_search/supplementary_checks.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Block-product sampler equals complete bosonic Fock distribution for two fixed block sizes; classical/phase1 matched-instance cost audit",
+    "coefficient_domain": "complex128/float64",
+    "conventions": "Full Fock probabilities unconditioned on CF; input photons in first k global modes",
+    "inputs": [
+      "two 4-mode 2-photon blocks",
+      "two 6-mode 3-photon blocks",
+      "matched E05b/P21 instances n4/6/8"
+    ],
+    "bounds": {
+      "block_sizes": [
+        4,
+        6
+      ],
+      "shots_per_sampler": 10000
+    },
+    "non_claims": [
+      "Classical cut queries and optical shots are different cost units",
+      "No physical or quantum advantage conclusion from small blocks",
+      "Table enumeration is efficient only for bounded block size"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64",
+    "seed": 20261120
+  },
+  "run": {
+    "started_at": "2026-11-20T18:17:49.596077+00:00",
+    "runtime_seconds": 1.3674807079951279,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P21_classical_search/smallblock_and_comparison.json",
+      "sha256": "94c459a1d646f5d4a3c5e51d351b38b9fea2352bdd26f3e94edc98c968029b90",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "full distribution equals product table within 1e-12",
+      "passed": true
+    }
+  ],
+  "result": "Finite assertion verified",
+  "residual_risks": [
+    "Manual v2 recorder without hard memory/time caps",
+    "No iid population inference"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/P21_classical_search/supplementary_checks.py",
+      "sha256": "7f7c8e6df17227084848c780039ecb64af8dc91b269eb424acfe3007a2bd8d99",
+      "sha256_after": "7f7c8e6df17227084848c780039ecb64af8dc91b269eb424acfe3007a2bd8d99"
+    },
+    {
+      "path": "experiments/P21_classical_search/runs.jsonl",
+      "sha256": "7acff262669acb07ba577f8eb930ea779bc1d65b88c88d1811c47bd3df357277",
+      "sha256_after": "7acff262669acb07ba577f8eb930ea779bc1d65b88c88d1811c47bd3df357277"
+    },
+    {
+      "path": "experiments/P21_classical_search/graphs.json",
+      "sha256": "5ed113e68466dc5e1ce3ba8228734602a9c6bdd1ac9620962b791621f5b81a8a",
+      "sha256_after": "5ed113e68466dc5e1ce3ba8228734602a9c6bdd1ac9620962b791621f5b81a8a"
+    },
+    {
+      "path": "experiments/E05b_exact_equal_budget/runs.jsonl",
+      "sha256": "1945b7bda0fab51ab07f91501d6fb1f3b682dc49d7e1d73113ac8a033f3beb44",
+      "sha256_after": "1945b7bda0fab51ab07f91501d6fb1f3b682dc49d7e1d73113ac8a033f3beb44"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    }
+  ],
+  "declared_results": [
+    "experiments/P21_classical_search/smallblock_and_comparison.json"
+  ]
+}
