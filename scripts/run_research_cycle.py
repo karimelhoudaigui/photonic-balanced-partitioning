@@ -197,7 +197,7 @@ print('CONFINEMENT_PASS')
             workflow=worktree/'.qwen/workflows'/f'{args.workflow_name}.js'
             if not workflow.is_file():raise RuntimeError('Saved workflow is absent from the committed worktree')
             record['workflow_sha256']=hashlib.sha256(workflow.read_bytes()).hexdigest()
-            prompts=[('research-lead','/'+args.workflow_name)]
+            prompts=[('research-lead','Call workflow now with exactly this JSON: '+json.dumps({'name':args.workflow_name})+'. Wait for the actual returned result. Do not use another tool or perform either worker task yourself.')]
         elif args.mode=='subagent':
             prompts=[('research-lead','Call agent now with exactly these arguments: {"description":"Read project rules","subagent_type":"physics-auditor","prompt":"Read AGENTS.md with read_file. Return three project rules. Do not inspect any other file or perform a physics study.","run_in_background":false}. The description field is required. Wait for the returned result and summarize it. Do not use shell, write files or perform the worker task yourself.')]
         elif args.mode=='team':
@@ -253,15 +253,16 @@ print('CONFINEMENT_PASS')
                         '</summary>\n<untrusted_narrative>'+narrative.read_text()[:8000]+'</untrusted_narrative>')
                     excluded+=['read_file','run_shell_command']
                     system='You are an adversarial reviewer supervised by Astra. Check only supplied evidence;write the requested report. Do not browse files,memory or tools other than write_file. Never invent numerical uncertainty or scientific support.'
+            phase_cap=900 if args.mode=='workflow' else 300
             command=prefix+['qwen','--auth-type','openai','--model',MODEL,'--output-format','stream-json',
                 '--openai-base-url',URL+'/v1','--openai-api-key','local-placeholder-not-a-credential',
                 '--openai-logging','--openai-logging-dir',str(STATE/'api-logs'),
                 '--approval-mode','auto-edit','--allowed-tools',','.join(sorted(allowed)),
                 '--core-tools',','.join(sorted(allowed)), '--exclude-tools',','.join(excluded),
                 '--max-session-turns','10','--max-tool-calls','10','--max-subagent-depth','1',
-                '--max-wall-time',str(max(1,int(min(remaining,300)))),
+                '--max-wall-time',str(max(1,int(min(remaining,phase_cap)))),
                 '--system-prompt',system,'-p',prompt]
-            run=execute(command,worktree,env,output/f'{index:02d}-{role}',min(remaining,305),args.max_failed_retries)
+            run=execute(command,worktree,env,output/f'{index:02d}-{role}',min(remaining,phase_cap+5),args.max_failed_retries)
             record['runs'].append(run)
             if run['exit_code']!=0:
                 record['status']='INCONCLUSIVE';break

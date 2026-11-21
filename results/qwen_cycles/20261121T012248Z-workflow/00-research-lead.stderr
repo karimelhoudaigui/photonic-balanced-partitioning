@@ -1,0 +1,3 @@
+Warning: tools.workflowsEnabled in workspace settings (/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261121T012248Z-workflow/.qwen/settings.json) is ignored. This setting is only honored from User, System, or SystemDefaults scope settings.
+Warning: tools.workflowsEnabled in workspace settings (/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261121T012248Z-workflow/.qwen/settings.json) is ignored. This setting is only honored from User, System, or SystemDefaults scope settings.
+Run aborted: wall-clock budget of 300s exceeded (--max-wall-time).
