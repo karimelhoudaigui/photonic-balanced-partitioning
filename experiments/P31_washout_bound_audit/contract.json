@@ -1,0 +1,33 @@
+{
+  "claim_id": "P31_FIXED_INPUT_PENALTY_WASHOUT",
+  "mathematics": {
+    "assertion_tested": "Finite checks of explicit unitary, symmetric-tensor, and measurement bounds, and exact matching-generator identities for a decoder-gap counterexample",
+    "coefficient_domain": "complex128/float64 for finite simulations; exact SymPy algebra for matching identities",
+    "conventions": "U[output,input]; Perceval Rx diagonal cos(beta/2), offdiagonal i sin(beta/2); left gate multiplication; full unconditioned Fock states; TV is half L1; variant 1 literal archive and variant 2 corrected physics",
+    "inputs": [
+      "m=4,6,8; alternating weighted cycle, seeded random sparse graph, and empty graph",
+      "pair orders lex, reverse, and this runtime's serialized list(set(combinations))",
+      "R=1,2,10; variants 1,2; lambda=16,64,256,1024,4096,16384",
+      "972 unitary cases; 36 full-Fock comparisons at m=N=4; 36 limit gap cases",
+      "exact m=4 matching generator identities and corrected R=1 matrix identity; identity and two-photon HOM controls"
+    ],
+    "bounds": {"m_max": 8, "N_full_comparison": 4, "seed": 20261121, "absolute_tolerance": 1e-10},
+    "non_claims": [
+      "Finite checks are not a universal proof or a performance benchmark",
+      "Random graph family is a single disclosed sample per m, not an ensemble claim",
+      "Irregular graphs are an explicitly labeled extension of ObliQ's constant-diagonal problem class",
+      "No asymptotic lower bound on state distance, solver runtime, classical hardness, or quantum advantage",
+      "No QPU, loss, adaptive source, variational stage, or graph-aware decoder is simulated"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/phase3_washout_bound_audit.py",
+    "experiments/P31_washout_bound_audit/requirements.txt"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "NumPy", "version": "2.4.6"},
+    {"name": "SymPy", "version": "1.14.0"}
+  ],
+  "randomness": {"used": true, "generator": "numpy.default_rng/PCG64", "seed": 20261121}
+}

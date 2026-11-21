@@ -1,0 +1,145 @@
+{
+  "schema_version": 2,
+  "claim_id": "P31_FIXED_INPUT_PENALTY_WASHOUT",
+  "repository": {
+    "commit": "8edfca70f03555479ea62ef9c49d727a27cc1861",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/phase3_washout_bound_audit.py",
+    "--output",
+    "experiments/P31_washout_bound_audit/run_001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite checks of explicit unitary, symmetric-tensor, and measurement bounds, and exact matching-generator identities for a decoder-gap counterexample",
+    "coefficient_domain": "complex128/float64 for finite simulations; exact SymPy algebra for matching identities",
+    "conventions": "U[output,input]; Perceval Rx diagonal cos(beta/2), offdiagonal i sin(beta/2); left gate multiplication; full unconditioned Fock states; TV is half L1; variant 1 literal archive and variant 2 corrected physics",
+    "inputs": [
+      "m=4,6,8; alternating weighted cycle, seeded random sparse graph, and empty graph",
+      "pair orders lex, reverse, and this runtime's serialized list(set(combinations))",
+      "R=1,2,10; variants 1,2; lambda=16,64,256,1024,4096,16384",
+      "972 unitary cases; 36 full-Fock comparisons at m=N=4; 36 limit gap cases",
+      "exact m=4 matching generator identities and corrected R=1 matrix identity; identity and two-photon HOM controls"
+    ],
+    "bounds": {
+      "m_max": 8,
+      "N_full_comparison": 4,
+      "seed": 20261121,
+      "absolute_tolerance": 1e-10
+    },
+    "non_claims": [
+      "Finite checks are not a universal proof or a performance benchmark",
+      "Random graph family is a single disclosed sample per m, not an ensemble claim",
+      "Irregular graphs are an explicitly labeled extension of ObliQ's constant-diagonal problem class",
+      "No asymptotic lower bound on state distance, solver runtime, classical hardness, or quantum advantage",
+      "No QPU, loss, adaptive source, variational stage, or graph-aware decoder is simulated"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": 20261121
+  },
+  "run": {
+    "started_at": "2026-11-21T10:25:38.258389+00:00",
+    "runtime_seconds": 1.311233,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_washout_bound_audit.py",
+    "experiments/P31_washout_bound_audit/requirements.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_washout_bound_audit.py",
+      "sha256": "442f8cf77a17ab6e61891d2ee1be334906426761b121c3271cb5ccc6c6f60b7f",
+      "sha256_after": "442f8cf77a17ab6e61891d2ee1be334906426761b121c3271cb5ccc6c6f60b7f"
+    },
+    {
+      "path": "experiments/P31_washout_bound_audit/requirements.txt",
+      "sha256": "3441097c63b36ad27e92508822491b38de14de61b6261d322e0035b512e44cb3",
+      "sha256_after": "3441097c63b36ad27e92508822491b38de14de61b6261d322e0035b512e44cb3"
+    }
+  ],
+  "output_directory": "experiments/P31_washout_bound_audit/run_001",
+  "declared_results": [
+    "experiments/P31_washout_bound_audit/run_001/raw.json",
+    "experiments/P31_washout_bound_audit/run_001/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P31_washout_bound_audit/run_001/stdout.txt",
+      "sha256": "0284c936bbbe3f747b3c8bd6100156bb18ddcf5c630ea6d3c8a4830c7a31b70a",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P31_washout_bound_audit/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P31_washout_bound_audit/run_001/raw.json",
+      "sha256": "8d49973baf0df4cebdcc35f3b8550eb8e117fd9cd455f3a230dcb8ea4fc9a4a8",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P31_washout_bound_audit/run_001/summary.json",
+      "sha256": "0284c936bbbe3f747b3c8bd6100156bb18ddcf5c630ea6d3c8a4830c7a31b70a",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
