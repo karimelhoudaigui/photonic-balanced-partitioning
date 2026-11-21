@@ -38,6 +38,16 @@ def paper_hashes(root):
             for p in sorted((root/'paper').rglob('*')) if p.is_file()}
 
 
+def prepare_worktree(repo,worktree,branch,commit):
+    subprocess.run(['git','worktree','add','--no-checkout','-b',branch,str(worktree),commit],cwd=repo,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    subprocess.run(['git','sparse-checkout','set','--no-cone','/*',
+        '!/experiments/*/runs.jsonl','!/experiments/validation/full_fock_distributions.json'],
+        cwd=worktree,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    subprocess.run(['git','read-tree','-mu','HEAD'],cwd=worktree,check=True,
+                   stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    if not (worktree/'AGENTS.md').is_file():raise RuntimeError('Sparse worktree was not populated')
+
+
 def environment():
     # Never pass QPU/provider credentials or the caller's shell init to Qwen.
     env={key:os.environ[key] for key in ['PATH','HOME','USER','LOGNAME','LANG','TMPDIR'] if key in os.environ}
@@ -135,13 +145,7 @@ def main():
         if not any(m['name']==MODEL for m in tags['models']):raise RuntimeError('Selected local model absent; no automatic download/fallback')
         record['model_metadata']=next(m for m in tags['models'] if m['name']==MODEL)
         worktree.parent.mkdir(parents=True,exist_ok=True)
-        subprocess.run(['git','worktree','add','--no-checkout','-b','qwen/'+cycle,str(worktree),commit],cwd=ROOT,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-        subprocess.run(['git','sparse-checkout','set','--no-cone','/*',
-            '!/experiments/*/runs.jsonl','!/experiments/validation/full_fock_distributions.json'],
-            cwd=worktree,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-        subprocess.run(['git','read-tree','-mu','HEAD'],cwd=worktree,check=True,
-                       stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-        if not (worktree/'AGENTS.md').is_file():raise RuntimeError('Sparse worktree was not populated')
+        prepare_worktree(ROOT,worktree,'qwen/'+cycle,commit)
         record['sparse_checkout']='Historical large raw files omitted from this worktree only; original main-repository data and Git blobs retained. Current-cycle raw outputs remain complete.'
         memory=STATE/'home/projects'/re.sub(r'[^A-Za-z0-9_-]','-',str(worktree))/'memory'
         memory.mkdir(parents=True,exist_ok=True)
@@ -183,6 +187,10 @@ print('CONFINEMENT_PASS')
             excluded=[t for t in CONTROL_TOOLS if t not in allowed]
             role_text=(worktree/'.qwen/agents'/f'{role}.md').read_text().split('---',2)[-1]
             system='You are a bounded local research assistant supervised by Astra. Execute requested tools and report actual evidence. No paper edits, QPU, remote API, invented results or nested delegation. '+role_text
+            if args.mode=='subagent':
+                system='This is a delegation-only infrastructure test. Your FIRST and ONLY tool must be agent, using exactly the JSON arguments in the user message. You must not read AGENTS.md yourself or use shell/write tools. The physics-auditor child performs that read. Historical research routines and memory lookups are out of scope. Wait for the child result. Do not invent completion.'
+            if args.mode=='team':
+                system='This is a native Agent Team infrastructure test. Use the team coordination tools and exactly one worker; do not perform the worker task yourself. No historical research routine or memory search. No paper edits or QPU calls. Report actual tool outcomes only.'
             command=prefix+['qwen','--auth-type','openai','--model',MODEL,'--output-format','stream-json',
                 '--openai-base-url',URL+'/v1','--openai-api-key','local-placeholder-not-a-credential',
                 '--openai-logging','--openai-logging-dir',str(STATE/'api-logs'),

@@ -1,6 +1,7 @@
 """Guardrails for an external local-agent runtime, without requiring inference."""
 import importlib.util
 import json
+import subprocess
 from pathlib import Path
 import pytest
 
@@ -46,3 +47,20 @@ def test_paper_hashes_detect_change_without_touching_real_manuscript(tmp_path):
     (tmp_path/'paper').mkdir();p=tmp_path/'paper/example.tex';p.write_text('original')
     before=runner.paper_hashes(tmp_path);p.write_text('changed')
     assert runner.paper_hashes(tmp_path)!=before
+
+
+def test_sparse_worktree_has_code_but_does_not_duplicate_large_historical_raw(tmp_path):
+    repo=tmp_path/'repo';repo.mkdir()
+    def git(*args):
+        return subprocess.run(['git',*args],cwd=repo,check=True,capture_output=True,text=True)
+    git('init');git('config','user.email','test@example.invalid');git('config','user.name','Infrastructure test')
+    for path in ['AGENTS.md','reports/check.md','src/model.py','paper/frozen.tex','experiments/E01/runs.jsonl']:
+        target=repo/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_text('fixture')
+    git('add','.');git('commit','-m','fixture')
+    target=tmp_path/'worker'
+    runner.prepare_worktree(repo,target,'worker-test','HEAD')
+    assert (target/'AGENTS.md').read_text()=='fixture'
+    assert (target/'src/model.py').is_file() and (target/'paper/frozen.tex').is_file()
+    assert (target/'reports/check.md').is_file()
+    assert not (target/'experiments/E01/runs.jsonl').exists()
+    assert (repo/'experiments/E01/runs.jsonl').read_text()=='fixture'
