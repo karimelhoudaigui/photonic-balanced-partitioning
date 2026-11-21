@@ -17,6 +17,7 @@ def test_runtime_environment_does_not_inherit_provider_or_qpu_credentials(monkey
     assert env['OLLAMA_NO_CLOUD']=='1'
     assert env['OLLAMA_NUM_PARALLEL']=='1'
     assert env['OLLAMA_MAX_LOADED_MODELS']=='1'
+    assert env['PYTHONPATH']=='src'
 
 
 def test_project_configuration_is_local_and_teams_are_opted_in():

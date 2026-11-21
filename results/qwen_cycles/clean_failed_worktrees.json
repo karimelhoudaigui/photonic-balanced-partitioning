@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261120T235237Z-validation",
+    "base_commit": "a07a585d08a30930646130ea6499b38d0396133f",
+    "reason": "clean failed infrastructure-only worktree; branch, source commit and raw controller logs retained"
+  },
+  {
+    "path": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261120T235326Z-validation",
+    "base_commit": "7e9e4414caf88f22dd054a00eb699221f6ea95d3",
+    "reason": "clean failed infrastructure-only worktree; branch, source commit and raw controller logs retained"
+  },
+  {
+    "path": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261120T235808Z-validation",
+    "base_commit": "984e97ebf0454408d46a07bb2c40ddfda99319ee",
+    "reason": "clean failed infrastructure-only worktree; branch, source commit and raw controller logs retained"
+  },
+  {
+    "path": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261121T000018Z-validation",
+    "base_commit": "73ffef779279673afbe47676a44580579c7ae0de",
+    "reason": "clean failed infrastructure-only worktree; branch, source commit and raw controller logs retained"
+  },
+  {
+    "path": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261121T000228Z-validation",
+    "base_commit": "4586892c455cbb6ba8a240906e16d0badfffc44e",
+    "reason": "clean failed infrastructure-only worktree; branch, source commit and raw controller logs retained"
+  }
+]

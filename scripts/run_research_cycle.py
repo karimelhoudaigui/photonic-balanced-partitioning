@@ -41,7 +41,7 @@ def paper_hashes(root):
 def environment():
     # Never pass QPU/provider credentials or the caller's shell init to Qwen.
     env={key:os.environ[key] for key in ['PATH','HOME','USER','LOGNAME','LANG','TMPDIR'] if key in os.environ}
-    env.update(PASQAL_PYTHON=str(ROOT/'.venv/bin/python'),PYTHONDONTWRITEBYTECODE='1',
+    env.update(PASQAL_PYTHON=str(ROOT/'.venv/bin/python'),PYTHONDONTWRITEBYTECODE='1',PYTHONPATH='src',
         PASQAL_OLLAMA_API_KEY='local-placeholder-not-a-credential',
         QWEN_HOME=str(STATE/'home'),QWEN_RUNTIME_DIR=str(STATE/'home'),
         QWEN_CODE_MODELS_DEV='off',QWEN_CODE_ENABLE_AGENT_TEAM='1',
@@ -135,7 +135,11 @@ def main():
         if not any(m['name']==MODEL for m in tags['models']):raise RuntimeError('Selected local model absent; no automatic download/fallback')
         record['model_metadata']=next(m for m in tags['models'] if m['name']==MODEL)
         worktree.parent.mkdir(parents=True,exist_ok=True)
-        subprocess.run(['git','worktree','add','-b','qwen/'+cycle,str(worktree),commit],cwd=ROOT,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        subprocess.run(['git','worktree','add','--no-checkout','-b','qwen/'+cycle,str(worktree),commit],cwd=ROOT,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        subprocess.run(['git','sparse-checkout','set','--no-cone','/*',
+            '!/experiments/*/runs.jsonl','!/experiments/validation/full_fock_distributions.json'],
+            cwd=worktree,check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+        record['sparse_checkout']='Historical large raw files omitted from this worktree only; original main-repository data and Git blobs retained. Current-cycle raw outputs remain complete.'
         memory=STATE/'home/projects'/re.sub(r'[^A-Za-z0-9_-]','-',str(worktree))/'memory'
         memory.mkdir(parents=True,exist_ok=True)
         (memory/'MEMORY.md').write_text('No earlier session memory exists for this fresh worktree. Do not inspect chats or other projects. Execute the current assigned task now. Canonical instructions are AGENTS.md and QWEN.md in this worktree.\n')
@@ -159,7 +163,7 @@ print('CONFINEMENT_PASS')
         if args.mode=='validation':
             prompts=[('experiment-runner',f'Read AGENTS.md using read_file. Then run exactly: {py} -m pytest tests/test_hom.py -q\nThen write reports/QWEN_SMOKE_REPORT.md recording the actual test result. Never edit paper/. Do these three actions now; no planning-only reply.')]
         elif args.mode=='subagent':
-            prompts=[('research-lead','Use the agent tool once to delegate to physics-auditor, foreground: read AGENTS.md and report the scientific rules. Wait for the result. Do not perform its task yourself; do not run parallel workers. Then report its returned evidence.')]
+            prompts=[('research-lead','Call agent now with exactly these arguments: {"description":"Read project rules","subagent_type":"physics-auditor","prompt":"Read AGENTS.md with read_file. Return three project rules. Do not inspect any other file or perform a physics study.","run_in_background":false}. The description field is required. Wait for the returned result and summarize it. Do not use shell, write files or perform the worker task yourself.')]
         elif args.mode=='team':
             prompts=[('research-lead','Test native Agent Team: create one team, create one task to read AGENTS.md, delegate it to exactly one read-only physics-auditor teammate using the agent tool with the team name. Wait for evidence, mark task complete and shut down the teammate and team. No shell or writes. One active worker only. Report what really worked.')]
         else:
