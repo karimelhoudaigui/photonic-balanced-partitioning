@@ -73,7 +73,6 @@
     "enableStructuredRecall": false
   },
   "tools": {
-    "workflowsEnabled": true,
     "workflowNameOnly": true
   }
 }

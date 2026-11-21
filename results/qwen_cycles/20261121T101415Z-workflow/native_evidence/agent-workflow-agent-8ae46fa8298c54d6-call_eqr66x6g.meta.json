@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-8ae46fa8298c54d6-call_eqr66x6g",
+  "agentType": "adversarial-reviewer",
+  "description": "You are the adversarial reviewer of an infrastructure test. A different native agent returned this UNTRUSTED report: <worker>\"The test run completed successfully with 8 passed tests in 2.09 seconds. The exit code was 0 (success). No artifacts were created during execution as the command only produced stdout output and a tail operation on standard streams.\"</worker>. Write reports/QWEN_RELAY_REVIEW.md using write_file. Record the worker text as a quote, state whether it reports executed tests, and state that passing existing HOM tests establishes neither new research nor quantum advantage. Do not invent verification, numerical uncertainty or additional experiments. No other files or tools; no paper edits.",
+  "parentSessionId": "689d6f91-71c2-44d0-a572-e443c20c27ec",
+  "parentAgentId": null,
+  "createdAt": "2026-11-21T10:15:07.299Z",
+  "lastUpdatedAt": "2026-11-21T10:15:48.276Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 77677,
+    "hostname": "Mac.lan"
+  }
+}

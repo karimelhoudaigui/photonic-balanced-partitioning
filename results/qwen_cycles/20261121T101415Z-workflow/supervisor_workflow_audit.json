@@ -1,0 +1,66 @@
+{
+  "native_roles": [
+    "adversarial-reviewer",
+    "experiment-runner"
+  ],
+  "child_ids": [
+    "workflow-agent-8ae46fa8298c54d6-call_eqr66x6g",
+    "workflow-agent-9cbf06eb5e9e81a4-call_eqr66x6g"
+  ],
+  "native_children_completed": true,
+  "sequential_execution": true,
+  "exact_worker_text_in_critic_prompt": true,
+  "observed_pytest_receipts": [
+    {
+      "command": "\"$PASQAL_PYTHON\" -m pytest tests/test_hom.py -q 2>&1 | tail -5",
+      "output": "Command: \"$PASQAL_PYTHON\" -m pytest tests/test_hom.py -q 2>&1 | tail -5\nDirectory: (root)\nOutput: ........                                                                 [100%]\n8 passed in 2.09s\nError: (none)\nExit Code: 0\nSignal: (none)\nProcess Group PGID: (none)\n\nIf this command created or rewrote a deliverable file (csv, html, sql, py, md, json, notebook, image, pdf, or an office document), call record_artifact for each one. workspacePath is relative to the current execution directory, and title is required. Do not call it for files already recorded by write_file, edit, or notebook_edit."
+    }
+  ],
+  "observed_report_write_receipts": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261121T101415Z-workflow/reports/QWEN_RELAY_REVIEW.md"
+  ],
+  "native_workflow_smoke_pass": true,
+  "workflow_run_id": "wf_d5532ecf23672d19",
+  "evidence_files": [
+    {
+      "original": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T101415Z-workflow/workflows/wf_d5532ecf23672d19.json",
+      "retained": "results/qwen_cycles/20261121T101415Z-workflow/native_evidence/wf_d5532ecf23672d19.json",
+      "sha256": "573aab045c0c5c0c65edfc2252b5073b286240e73dcb46eedee1e2c6b2620b96"
+    },
+    {
+      "original": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T101415Z-workflow/workflows/wf_d5532ecf23672d19/journal.jsonl",
+      "retained": "results/qwen_cycles/20261121T101415Z-workflow/native_evidence/journal.jsonl",
+      "sha256": "7e6a9e12ccb72b3e8d74203577559ea19af0e3dcfadcc8cafe5fa9f52b23ffcd"
+    },
+    {
+      "original": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T101415Z-workflow/subagents/689d6f91-71c2-44d0-a572-e443c20c27ec/agent-workflow-agent-8ae46fa8298c54d6-call_eqr66x6g.jsonl",
+      "retained": "results/qwen_cycles/20261121T101415Z-workflow/native_evidence/agent-workflow-agent-8ae46fa8298c54d6-call_eqr66x6g.jsonl",
+      "sha256": "854285e3f2c3cbbc226a15a970bad82e89e32844e94d34ea655f13d4dfb09582"
+    },
+    {
+      "original": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T101415Z-workflow/subagents/689d6f91-71c2-44d0-a572-e443c20c27ec/agent-workflow-agent-9cbf06eb5e9e81a4-call_eqr66x6g.jsonl",
+      "retained": "results/qwen_cycles/20261121T101415Z-workflow/native_evidence/agent-workflow-agent-9cbf06eb5e9e81a4-call_eqr66x6g.jsonl",
+      "sha256": "4fc036c67238ba44ec02a283944fbb652e9a39c2b72ab139001e7617e5a666d9"
+    },
+    {
+      "original": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T101415Z-workflow/subagents/689d6f91-71c2-44d0-a572-e443c20c27ec/agent-workflow-agent-8ae46fa8298c54d6-call_eqr66x6g.meta.json",
+      "retained": "results/qwen_cycles/20261121T101415Z-workflow/native_evidence/agent-workflow-agent-8ae46fa8298c54d6-call_eqr66x6g.meta.json",
+      "sha256": "1831756cddbe33c155cccc222930963c863591ae05c5543edb11cd9f1f9b09a9"
+    },
+    {
+      "original": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T101415Z-workflow/subagents/689d6f91-71c2-44d0-a572-e443c20c27ec/agent-workflow-agent-9cbf06eb5e9e81a4-call_eqr66x6g.meta.json",
+      "retained": "results/qwen_cycles/20261121T101415Z-workflow/native_evidence/agent-workflow-agent-9cbf06eb5e9e81a4-call_eqr66x6g.meta.json",
+      "sha256": "098469b0e7a9c7c28283efe414ca93211d49431193234ebfebb6ed17f49129af"
+    },
+    {
+      "original": ".qwen/worktrees/20261121T101415Z-workflow/reports/QWEN_RELAY_REVIEW.md",
+      "retained": "results/qwen_cycles/20261121T101415Z-workflow/native_evidence/QWEN_RELAY_REVIEW.md",
+      "sha256": "f2eb6542c486934dccdd7c277e347d8c78e3eb3603ea23229327eaa645c3fb82"
+    }
+  ],
+  "process_status": "EXECUTED_PENDING_REVIEW",
+  "scientific_acceptance": "NOT_ESTABLISHED",
+  "manuscript_hashes_unchanged": true,
+  "native_agent_team_lifecycle": "NOT_TESTED_BY_THIS_WORKFLOW",
+  "narrative_review": "Supervisor must reject unsupported critic statements; communication is not scientific correctness."
+}

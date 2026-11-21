@@ -107,6 +107,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--mode',choices=['validation','cycle','subagent','team','workflow'],default='cycle')
     parser.add_argument('--workflow-name',default='research-relay-smoke',help='Saved official workflow to run in workflow mode')
+    parser.add_argument('--workflow-agents',type=int,default=2,choices=range(1,11),help='Hard native workflow dispatch cap; roles remain sequential')
     parser.add_argument('--max-experiments',type=int,default=1,choices=[1])
     parser.add_argument('--wall-time',type=int,default=1200)
     parser.add_argument('--max-parallel-agents',type=int,default=1,choices=[1])
@@ -140,8 +141,10 @@ def main():
     start=time.monotonic();env=environment();server=None
     if args.mode=='workflow':
         env.update(QWEN_CODE_ENABLE_WORKFLOWS='1',QWEN_CODE_MAX_WORKFLOW_CONCURRENCY='1',
-            QWEN_CODE_MAX_WORKFLOW_AGENTS='2',QWEN_CODE_MAX_WORKFLOW_SECONDS=str(args.wall_time),
-            QWEN_CODE_WORKFLOW_AGENT_MAX_TURNS='4',QWEN_CODE_WORKFLOW_AGENT_MAX_MINUTES='4')
+            QWEN_CODE_MAX_WORKFLOW_AGENTS=str(args.workflow_agents),QWEN_CODE_MAX_WORKFLOW_SECONDS=str(args.wall_time),
+            QWEN_CODE_MAX_TOKENS_PER_WORKFLOW='16384',
+            QWEN_CODE_WORKFLOW_STALL_SECONDS='0',
+            QWEN_CODE_WORKFLOW_AGENT_MAX_TURNS='4',QWEN_CODE_WORKFLOW_AGENT_MAX_MINUTES='6')
     try:
         urllib.request.urlopen(URL+'/api/version',timeout=3).close()
     except OSError:
@@ -253,13 +256,13 @@ print('CONFINEMENT_PASS')
                         '</summary>\n<untrusted_narrative>'+narrative.read_text()[:8000]+'</untrusted_narrative>')
                     excluded+=['read_file','run_shell_command']
                     system='You are an adversarial reviewer supervised by Astra. Check only supplied evidence;write the requested report. Do not browse files,memory or tools other than write_file. Never invent numerical uncertainty or scientific support.'
-            phase_cap=900 if args.mode=='workflow' else 300
+            phase_cap=1500 if args.mode=='workflow' else 300
             command=prefix+['qwen','--auth-type','openai','--model',MODEL,'--output-format','stream-json',
                 '--openai-base-url',URL+'/v1','--openai-api-key','local-placeholder-not-a-credential',
                 '--openai-logging','--openai-logging-dir',str(STATE/'api-logs'),
                 '--approval-mode','auto-edit','--allowed-tools',','.join(sorted(allowed)),
                 '--core-tools',','.join(sorted(allowed)), '--exclude-tools',','.join(excluded),
-                '--max-session-turns','10','--max-tool-calls','10','--max-subagent-depth','1',
+                '--max-session-turns','10','--max-tool-calls',str(2+4*args.workflow_agents if args.mode=='workflow' else 10),'--max-subagent-depth','1',
                 '--max-wall-time',str(max(1,int(min(remaining,phase_cap)))),
                 '--system-prompt',system,'-p',prompt]
             run=execute(command,worktree,env,output/f'{index:02d}-{role}',min(remaining,phase_cap+5),args.max_failed_retries)

@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-9cbf06eb5e9e81a4-call_eqr66x6g",
+  "agentType": "experiment-runner",
+  "description": "Infrastructure validation only. Call run_shell_command once with exactly: \"$PASQAL_PYTHON\" -m pytest tests/test_hom.py -q. Then return the actual test count and exit result in at most three sentences. Do not read logs or memory, edit files, do research, access a QPU or write the paper.",
+  "parentSessionId": "689d6f91-71c2-44d0-a572-e443c20c27ec",
+  "parentAgentId": null,
+  "createdAt": "2026-11-21T10:14:51.348Z",
+  "lastUpdatedAt": "2026-11-21T10:15:07.284Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 77677,
+    "hostname": "Mac.lan"
+  }
+}

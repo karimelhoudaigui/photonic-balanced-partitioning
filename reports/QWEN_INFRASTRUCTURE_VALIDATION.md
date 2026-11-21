@@ -10,7 +10,7 @@ These are observed outcomes of the completed bounded validation campaign.
 | LOCAL MODEL | PASS | Ollama 0.32.0; actual Metal load of Qwen3.5-1.9B Q4_K_M, native tool-call response and recorded model digest |
 | TOOL CALLING | PASS | Actual read_file,run_shell_command and report creation in isolated validation worktree |
 | PYTHON EXECUTION | PASS | Qwen invoked pytest tests/test_hom.py; raw tool output: 8 passed |
-| SUBAGENTS | FAIL | Malformed dispatches were rejected; other sessions read the file themselves. The final tool-isolation probe still omitted required description. No successful native dispatch was observed. |
+| SUBAGENTS | PASS via saved Workflow | Two distinct native child contexts executed sequentially, with actual pytest/write receipts and exact worker-to-critic text transfer. Direct model-generated agent calls remain unreliable. |
 | AGENT TEAM | FAIL | Bounded 240-second native test called task_create/team_create but never dispatched a teammate or completed the lifecycle. |
 | REPO ACCESS | PASS | Observed AGENTS.md read and reports/QWEN_SMOKE_REPORT.md creation |
 
@@ -48,8 +48,9 @@ tools alone makes this model a reliable delegating supervisor.
 The native Agent Team probe is
 `results/qwen_cycles/20261121T004414Z-team/`;its independent audit records zero
 delegations. A task list entry is not a running agent. No parallel ensemble was
-launched. Native subagent/team validation remainsFAIL;this is not a fully
-validated autonomous multi-agent research platform.
+launched. That direct agent-tool/team route remains FAIL; it is distinct from
+the later successful native Workflow route below. Autonomous research quality
+is not certified by either a feature flag or a successful dispatch.
 
 First scientific execution and fresh-seed replication produced 36 optimizations
 and 1152 exact objective evaluations. Qwen really ran the commands, but the first
@@ -78,3 +79,33 @@ The failed native team's empty metadata (zero members) was archived locally,
 not deleted. This was supervisor cleanup, not a successful native team shutdown.
 Evidence: `results/qwen_cycles/20261121T004414Z-team/supervisor_cleanup.json`.
 The launcher starts a new loopback-only server when the next bounded run needs it.
+
+## Native Workflow checkpoint, 2026-11-21 10:16 UTC
+
+`results/qwen_cycles/20261121T101415Z-workflow/` supersedes the earlier
+SUBAGENTS failure for the supported saved-Workflow path. An explicit workflow
+tool call with a committed name avoids asking the small model to generate
+native agent-dispatch arguments. Headless slash invocation had stalled and
+is retained separately as an unsuccessful probe.
+
+Astra retained both native child transcripts, their metadata, the runtime
+journal and the written report. `supervisor_workflow_audit.json` verifies two
+distinct completed child IDs, the experiment-runner's actual eight-test receipt,
+the subsequent critic's successful write, and the exact worker text in the
+critic's prompt. Timestamps show sequential execution. Manuscript hashes match.
+This is observed native delegation and communication, not the main model
+performing both tasks itself. The separate native Agent Team lifecycle remains FAIL.
+
+Scientific interpretation remains supervised. The critic incorrectly alleged
+that pytest must create deliverable files and that an all-pass result violates
+negative-result documentation. The parent misattributed the critic's text to
+Astra. These statements are rejected; successful communication does not validate
+their content. The seven-role density workflow now adds a bounded scientific
+execution and fresh-seed replication, whose outcome requires a separate audit.
+
+The current root tree passes 217 tests. New native-workflow evidence tests reject
+missing child receipts, overlapping workers and absent result handoff. Workflow
+concurrency is one, stall retries are disabled, dispatch/turn/time caps are
+explicit, and named workflows are the only permitted workflow source. The local
+runner is a hashed project copy of the trusted computation-audit tooling, so
+Qwen never needs access to the credential-protected ~/.codex directory.

@@ -1,0 +1,15 @@
+{
+  "origin": "Installed Mathbox computation-audit 4.0.0; pinned project-local tooling copy for credential-denying Qwen sandbox",
+  "files": [
+    {
+      "file": "run_experiment.py",
+      "source": "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/run_experiment.py",
+      "sha256": "06b28f46a55327414ebbc202cd4434b22d6b3a2390979ac7ad65f2eae1a2284a"
+    },
+    {
+      "file": "validate_manifest.py",
+      "source": "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+      "sha256": "fda9d340735b02a649038cc9c023da33d049ee1ae69d9c6ab06dd93b4d683e4e"
+    }
+  ]
+}
