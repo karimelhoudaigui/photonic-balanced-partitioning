@@ -1,0 +1,7 @@
+{
+  "output": "experiments/P30_optical_component/raw.json",
+  "sha256": "28b2b1655f52352256f288d9d376daeae46b3fc04531d48c751f967485a65172",
+  "local_cases": 10,
+  "convergence_cases": 48,
+  "archive_cases": 9
+}

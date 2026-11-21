@@ -1,0 +1,42 @@
+{
+  "source_sha256": "62fc56996132754187d581f6dd3003a7e8f74c951ac241c55b5cd801ecb4919f",
+  "checks": [
+    {
+      "m": 3,
+      "source": [
+        1,
+        1,
+        1
+      ],
+      "full_fock_outcomes": 10,
+      "max_independent_probability_error": 4.163336342344337e-17,
+      "raw_norm": 1.0
+    },
+    {
+      "m": 3,
+      "source": [
+        2,
+        0,
+        2
+      ],
+      "full_fock_outcomes": 15,
+      "max_independent_probability_error": 6.661338147750939e-16,
+      "raw_norm": 1.0000000000000002
+    },
+    {
+      "m": 4,
+      "source": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "full_fock_outcomes": 56,
+      "max_independent_probability_error": 5.551115123125783e-16,
+      "raw_norm": 1.0000000000000004
+    }
+  ],
+  "method": "Explicit repeated-column/row permutation permanent, including factorials; independent of creation recurrence.",
+  "seeds": "683100+m+sum(source)",
+  "status": "PASS"
+}

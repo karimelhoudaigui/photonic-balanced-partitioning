@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "claim_id": "P30_AUTHENTIC_STATIC_OPTICAL_COMPONENT",
+  "repository": {
+    "commit": "8edfca70f03555479ea62ef9c49d727a27cc1861",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-m",
+    "photonic_balanced_partitioning.photonic.optical_penalty",
+    "--validate-archive",
+    ".local/references/pasqal_obliq_primary.zip",
+    "--output",
+    "experiments/P30_optical_component/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Literal archive static builder agrees with local independent unitary/full Fock construction; two-photon API coincidence differs from paper identity; one weighted-regular graph converges to graph-blind limit.",
+    "coefficient_domain": "complex128, float64",
+    "conventions": "Rx API half-angle; input N=m one photon per mode; explicit serialized pair order; original QUBO objective",
+    "inputs": [
+      "Authenticated ObliQ.zip SHA256 8e5afe41c4d19c92b6a6aa1797b5b8391061cf6978216c9f9affad5e755fb948",
+      "a in {0,.25,.5,.75,1}; R1/2/10, fixed weighted-regular graph m4",
+      "seeds1901,1902,1903 for independent symmetric QUBOs"
+    ],
+    "bounds": {
+      "m": 4,
+      "local_coincidence_cases": 10,
+      "archive_builder_cases": 9,
+      "convergence_cases": 48
+    },
+    "non_claims": [
+      "Not full ObliQ optimizer or prefix decoder",
+      "No novelty, optimization advantage, noise or hardware claim",
+      "One convergence graph does not establish an asymptotic theorem"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": [
+      1901,
+      1902,
+      1903
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-21T10:20:39.753834+00:00",
+    "runtime_seconds": 2.338168,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 180.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+    "pyproject.toml",
+    ".local/references/pasqal_obliq_primary.zip"
+  ],
+  "input_artifacts": [
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+      "sha256": "62fc56996132754187d581f6dd3003a7e8f74c951ac241c55b5cd801ecb4919f",
+      "sha256_after": "62fc56996132754187d581f6dd3003a7e8f74c951ac241c55b5cd801ecb4919f"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f",
+      "sha256_after": "c53fa16cb3c76ff79e04b17636dbe4fd3436203154e1c2ed85fd53e6395e458f"
+    },
+    {
+      "path": ".local/references/pasqal_obliq_primary.zip",
+      "sha256": "8e5afe41c4d19c92b6a6aa1797b5b8391061cf6978216c9f9affad5e755fb948",
+      "sha256_after": "8e5afe41c4d19c92b6a6aa1797b5b8391061cf6978216c9f9affad5e755fb948"
+    }
+  ],
+  "output_directory": "experiments/P30_optical_component",
+  "declared_results": [
+    "experiments/P30_optical_component/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P30_optical_component/stdout.txt",
+      "sha256": "e9821636ff64b4354ca2d613898f884fcd9f6b2a1314c61fa0b8725955755365",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P30_optical_component/stderr.txt",
+      "sha256": "44ca955c4bae4b12ea8bd69d3f153cd9d3301a197ac04f119ad8b4a5445030fe",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P30_optical_component/raw.json",
+      "sha256": "28b2b1655f52352256f288d9d376daeae46b3fc04531d48c751f967485a65172",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
