@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-11-21T20:48:48.426139+00:00",
+  "action": "Historical tracked checkout copies only; primary data and Git preserved",
+  "status": "PARTIAL",
+  "reason": "Stopped when phase3-theory index mmap timed out; no deletion or retry loop",
+  "observed_patterns": [
+    {
+      "worktree": "20261121T000644Z-validation",
+      "observed_sparse_patterns": [
+        "/*",
+        "!/experiments/*/runs.jsonl",
+        "!/experiments/validation/full_fock_distributions.json"
+      ]
+    },
+    {
+      "worktree": "20261121T000949Z-subagent",
+      "observed_sparse_patterns": [
+        "/*",
+        "!/experiments/*/runs.jsonl",
+        "!/experiments/validation/full_fock_distributions.json"
+      ]
+    },
+    {
+      "worktree": "phase3-physics",
+      "observed_sparse_patterns": [
+        "/*",
+        "!/experiments/*/runs.jsonl",
+        "!/experiments/validation/full_fock_distributions.json"
+      ]
+    },
+    {
+      "worktree": "phase3-theory",
+      "observed_sparse_patterns": null
+    },
+    {
+      "worktree": "phase3-threshold",
+      "observed_sparse_patterns": null
+    },
+    {
+      "worktree": "phase3-literature",
+      "observed_sparse_patterns": null
+    },
+    {
+      "worktree": "phase3-lowrank-theory",
+      "observed_sparse_patterns": null
+    }
+  ]
+}

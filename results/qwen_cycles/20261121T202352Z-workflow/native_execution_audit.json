@@ -1,0 +1,173 @@
+{
+  "workflow_run_id": "wf_020e2488091ab9f8",
+  "process_status": "EXECUTED_PENDING_REVIEW",
+  "workflow_semantic_status": "INCONCLUSIVE",
+  "native_child_count": 8,
+  "native_roles": [
+    "adversarial-reviewer",
+    "algorithm-designer",
+    "experiment-runner",
+    "literature-reviewer",
+    "mathematical-researcher",
+    "physics-auditor",
+    "research-lead"
+  ],
+  "all_seven_roles_observed": true,
+  "native_children": [
+    {
+      "id": "workflow-agent-9d07527808f6793a-call_ipif5n2b",
+      "role": "research-lead",
+      "status": "completed",
+      "started": "2026-11-21T20:24:31.404Z",
+      "finished": "2026-11-21T20:24:44.021Z"
+    },
+    {
+      "id": "workflow-agent-d515ccd180045118-call_ipif5n2b",
+      "role": "literature-reviewer",
+      "status": "completed",
+      "started": "2026-11-21T20:24:44.061Z",
+      "finished": "2026-11-21T20:24:51.735Z"
+    },
+    {
+      "id": "workflow-agent-ff9a9dafb5724f2a-call_ipif5n2b",
+      "role": "physics-auditor",
+      "status": "completed",
+      "started": "2026-11-21T20:24:51.763Z",
+      "finished": "2026-11-21T20:25:20.665Z"
+    },
+    {
+      "id": "workflow-agent-8cfba476d96b48f4-call_ipif5n2b",
+      "role": "mathematical-researcher",
+      "status": "completed",
+      "started": "2026-11-21T20:25:20.842Z",
+      "finished": "2026-11-21T20:25:37.186Z"
+    },
+    {
+      "id": "workflow-agent-885fdf95c5264672-call_ipif5n2b",
+      "role": "algorithm-designer",
+      "status": "completed",
+      "started": "2026-11-21T20:25:45.384Z",
+      "finished": "2026-11-21T20:26:35.091Z"
+    },
+    {
+      "id": "workflow-agent-cc8b4f692c636ae0-call_ipif5n2b",
+      "role": "experiment-runner",
+      "status": "completed",
+      "started": "2026-11-21T20:26:35.682Z",
+      "finished": "2026-11-21T20:28:02.862Z"
+    },
+    {
+      "id": "workflow-agent-e898cbf7b388e640-call_ipif5n2b",
+      "role": "adversarial-reviewer",
+      "status": "completed",
+      "started": "2026-11-21T20:28:02.986Z",
+      "finished": "2026-11-21T20:28:35.355Z"
+    },
+    {
+      "id": "workflow-agent-491248c700927b27-call_ipif5n2b",
+      "role": "experiment-runner",
+      "status": "failed",
+      "started": "2026-11-21T20:28:35.410Z",
+      "finished": "2026-11-21T20:29:36.256Z"
+    }
+  ],
+  "sequential_execution": true,
+  "scientific_command_statuses": {
+    "primary": "completed",
+    "replication": "failed"
+  },
+  "complete_execution_observed": false,
+  "scientific_acceptance": "PENDING_INDEPENDENT_ASTRA_REVIEW",
+  "evidence": [
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/workflows/wf_020e2488091ab9f8.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/wf_020e2488091ab9f8.json",
+      "sha256": "a0473d02f41bc3c4f61b8aa69e273b497b1140245433d3fc4e9d54d18e24cecd"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/workflows/wf_020e2488091ab9f8/journal.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/journal.jsonl",
+      "sha256": "419e755163b1238b70f8f23c6574c1fefb2f0c6a85d810b65917374161665afa"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-491248c700927b27-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-491248c700927b27-call_ipif5n2b.jsonl",
+      "sha256": "53398803fc7817c323cc6cd58c366a32d778369e113b655823ef1a5f5322f90e"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-491248c700927b27-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-491248c700927b27-call_ipif5n2b.meta.json",
+      "sha256": "ba996039b514c7775895e00f54d83a8b090c466bfc097c16d505640577551d70"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-885fdf95c5264672-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-885fdf95c5264672-call_ipif5n2b.jsonl",
+      "sha256": "94de7e52d91a714eade58d2da7dfd6e322457394d72e00fefa229861902cfffb"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-885fdf95c5264672-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-885fdf95c5264672-call_ipif5n2b.meta.json",
+      "sha256": "6764e2cbe98181140c83cd5ca305183ff5380a8a99fc11d52a43b684ce1f3322"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-8cfba476d96b48f4-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-8cfba476d96b48f4-call_ipif5n2b.jsonl",
+      "sha256": "23a1072d0470bd7d2b863ca5da2efd64be7fd27ba6c4c64a8fbd86446777a2c5"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-8cfba476d96b48f4-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-8cfba476d96b48f4-call_ipif5n2b.meta.json",
+      "sha256": "647e6dcb2886337be88f11a81955b132ba1c2b3a6e8882a8ab95ed7d282c1949"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-9d07527808f6793a-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-9d07527808f6793a-call_ipif5n2b.jsonl",
+      "sha256": "6939e81b6b438bbb70762e36fe70439f021ce3a548976401eae0fbdff3ed4ed5"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-9d07527808f6793a-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-9d07527808f6793a-call_ipif5n2b.meta.json",
+      "sha256": "058fbad85105d33d17842a916a52265ff71bf8554589f011eabdbc300a08a4fb"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-cc8b4f692c636ae0-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-cc8b4f692c636ae0-call_ipif5n2b.jsonl",
+      "sha256": "7e903164392ed302da6cd7dd1810a481d218d82d8a31f8a49bac40bd27fbbe33"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-cc8b4f692c636ae0-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-cc8b4f692c636ae0-call_ipif5n2b.meta.json",
+      "sha256": "510f3a342d77caa2884f354af534a4f3fdaeeb5dc802f3eaa2d10b10c8cf9bef"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-d515ccd180045118-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-d515ccd180045118-call_ipif5n2b.jsonl",
+      "sha256": "f6bb25fedfbfd828b09ea391a499dbadc637a2858a3bec6f5021f8a43ceadac5"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-d515ccd180045118-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-d515ccd180045118-call_ipif5n2b.meta.json",
+      "sha256": "cafaf1bb88383de72c0780840d20e8f111f0864f3da33af3f8eafb25a81d004b"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-e898cbf7b388e640-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-e898cbf7b388e640-call_ipif5n2b.jsonl",
+      "sha256": "a2c627dbdac8e085a2503f676cfd685d5718c2ac9936f769b9371091ddedd3e0"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-e898cbf7b388e640-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-e898cbf7b388e640-call_ipif5n2b.meta.json",
+      "sha256": "8d12dba6977886f314d66a4fe0105248c20b5b3492e58443b9ee2929cbda5a0e"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-ff9a9dafb5724f2a-call_ipif5n2b.jsonl",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-ff9a9dafb5724f2a-call_ipif5n2b.jsonl",
+      "sha256": "4038bb1cd9b5d3ef112795e4a231d1d26e63271ebd44648ca4257b19648cc8ef"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261121T202352Z-workflow/subagents/e16859ba-7e44-417a-a8d2-bf4ef6b06f4a/agent-workflow-agent-ff9a9dafb5724f2a-call_ipif5n2b.meta.json",
+      "copy": "results/qwen_cycles/20261121T202352Z-workflow/native_evidence/agent-workflow-agent-ff9a9dafb5724f2a-call_ipif5n2b.meta.json",
+      "sha256": "38d61676cfc15687609048a5e64ef694e48360ae97ef119bf4d91fdc26d83a98"
+    }
+  ]
+}

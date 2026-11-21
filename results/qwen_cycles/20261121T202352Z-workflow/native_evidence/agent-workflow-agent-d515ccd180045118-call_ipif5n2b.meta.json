@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-d515ccd180045118-call_ipif5n2b",
+  "agentType": "literature-reviewer",
+  "description": "Read only the Prior-work boundary of theory/near_collisionless_bound.md. This is an OFFLINE source-inventory check, not a new literature search. State what the cited internal-state Gram result does NOT automatically prove about the supplied spatial-density extension. Novelty remains OPEN; do not claim to have searched sources. At most 100 words.",
+  "parentSessionId": "e16859ba-7e44-417a-a8d2-bf4ef6b06f4a",
+  "parentAgentId": null,
+  "createdAt": "2026-11-21T20:24:44.061Z",
+  "lastUpdatedAt": "2026-11-21T20:24:51.735Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 2412,
+    "hostname": "Mac.lan"
+  }
+}

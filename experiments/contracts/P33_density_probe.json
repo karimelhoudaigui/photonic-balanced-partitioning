@@ -33,7 +33,8 @@
     "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
     "pyproject.toml",
     ".qwen/support/run_experiment.py",
-    ".qwen/support/validate_manifest.py"
+    ".qwen/support/validate_manifest.py",
+    "scripts/qwen_density_job.py"
   ],
   "software": [
     {

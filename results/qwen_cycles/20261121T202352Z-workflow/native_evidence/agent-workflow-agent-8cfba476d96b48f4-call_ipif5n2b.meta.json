@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-8cfba476d96b48f4-call_ipif5n2b",
+  "agentType": "mathematical-researcher",
+  "description": "Read theory/phase3_density_certificate.md. Attempt one concrete refutation of its dominant-support inequality or the small-M refinement. Distinguish an actual counterexample from missing independent review. At most 150 words; no proof or novelty certification.",
+  "parentSessionId": "e16859ba-7e44-417a-a8d2-bf4ef6b06f4a",
+  "parentAgentId": null,
+  "createdAt": "2026-11-21T20:25:20.842Z",
+  "lastUpdatedAt": "2026-11-21T20:25:37.186Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 2412,
+    "hostname": "Mac.lan"
+  }
+}

@@ -66,9 +66,9 @@ def audit(directory):
     for event in events:
         for part in event.get('message',{}).get('content',[]):
             if isinstance(part,dict) and part.get('type')=='tool_result' and not part.get('is_error'):
-                match=re.search(r'```json\s*(.*?)\s*```',str(part.get('content','')),re.S)
+                match=re.search(r'```json\s*',str(part.get('content','')))
                 if match:
-                    value=json.loads(match.group(1))
+                    value,_=json.JSONDecoder().raw_decode(str(part['content'])[match.end():].lstrip())
                     if 'runId' in value:workflow_results.append(value)
     if len(workflow_results)!=1:raise ValueError('Expected one observed saved-workflow result')
     workflow=workflow_results[0];runid=workflow['runId']

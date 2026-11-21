@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-cc8b4f692c636ae0-call_ipif5n2b",
+  "agentType": "experiment-runner",
+  "description": "Execute this exact command now, preserving every option and space: \"$PASQAL_PYTHON\" .qwen/support/run_experiment.py --root . --contract experiments/contracts/P33_density_probe.json --input experiments/phase3_density_probe.py --input src/photonic_balanced_partitioning/photonic/density_certificate.py --input src/photonic_balanced_partitioning/photonic/optical_penalty.py --input src/photonic_balanced_partitioning/photonic/threshold_budget.py --input src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py --input pyproject.toml --input .qwen/support/run_experiment.py --input .qwen/support/validate_manifest.py --output results/P33_density_primary --result results/P33_density_primary/data/raw.json --result results/P33_density_primary/data/summary.json --result results/P33_density_primary/data/progress.jsonl --timeout 300 --max-threads 1 --max-output-bytes 1048576 -- \"$PASQAL_PYTHON\" experiments/phase3_density_probe.py --seed-offset 0 --output results/P33_density_primary/dataThen read results/P33_density_primary/data/summary.json using read_file. Return actual observed outcome, not predictions. No other commands or file edits.",
+  "parentSessionId": "e16859ba-7e44-417a-a8d2-bf4ef6b06f4a",
+  "parentAgentId": null,
+  "createdAt": "2026-11-21T20:26:35.682Z",
+  "lastUpdatedAt": "2026-11-21T20:28:02.862Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 2412,
+    "hostname": "Mac.lan"
+  }
+}
