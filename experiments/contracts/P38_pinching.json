@@ -1,0 +1,14 @@
+{
+  "claim_id": "P38_STRONG_PINCHED_STATE_DISCRIMINATOR",
+  "mathematics": {
+    "assertion_tested": "Check a new stronger trace-distance lemma on36 declared rational physical frames, preserving complete measured laws and6 Perceval checks; certify any candidate with exact Rayleigh lower witnesses.",
+    "coefficient_domain": "Exact Gaussian-rational frames/orthogonality/delta; complex128 eigensolvers with1e-9 candidate tolerance; exact witness stage if triggered",
+    "conventions": "Three distinct photons, dominant-output grouping, all output occupations and no conditioning. Strong-lemma refutation does not refute measured-TV conjecture.",
+    "inputs": ["m3/6/9; seeds20261201..03; strengths1/40,1/5,1/2,1", "Nonflat disjoint starts then all row-pair rational Givens", "Two identity and three sharp two-photon controls"],
+    "bounds": {"physical_frames":36,"max_fock_states":165,"sectors_per_three_photon_frame":27,"perceval_checks":6},
+    "non_claims": ["No universal proof from finite absence", "No interval certification of eigensolvers", "No graph optimization or novelty", "No QPU or physical samples"]
+  },
+  "execution_artifacts": ["experiments/phase3_pinching_probe.py","research/P38_PINCHING_CONTRACT.md","theory/phase3_pinching_dual.md","src/photonic_balanced_partitioning/photonic/threshold_marginals.py","pyproject.toml"],
+  "software": [{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"perceval-quandela","version":"1.3.0"},{"name":"exqalibur","version":"1.4.2"}],
+  "randomness": {"used":true,"generator":"Python random.Random/MT19937","seed":"20261201,20261202,20261203"}
+}
