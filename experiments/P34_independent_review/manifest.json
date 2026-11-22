@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "claim_id": "P34-independent-adaptive-finite-check",
+  "repository": {
+    "commit": "e201f1c337cb780225bdcdd0a806cfd7d20d2fe2",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/P34_independent_review/check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit arm64"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact rational three-step adaptive same-policy comparison including random bit and absorbing stopping; all complete two-photon Fock outcomes",
+    "coefficient_domain": "exact rational numbers (Fraction)",
+    "conventions": "Halved TV; all ten Fock outcomes; a policy random bit is part of the transcript; stopped histories absorb",
+    "inputs": [
+      "theory/phase3_adaptive_replacement.md",
+      "experiments/P34_independent_review/check.py"
+    ],
+    "bounds": {
+      "T": 3,
+      "m": 4,
+      "k": 2,
+      "transcript_states": 1640
+    },
+    "non_claims": [
+      "No universal theorem follows from finite checks",
+      "No timing or hardware advantage",
+      "No QPU"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Exact enumeration of policy bit",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T02:11:38.453597+00:00",
+    "runtime_seconds": 0.10985270800301805,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": 1,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P34_independent_review/receipt.json",
+      "sha256": "ec8ac930aaec9530de57c5c29a47ebf4dc520a288e4ce18bd8de05101049a558",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P34_independent_review/transcripts.json",
+      "sha256": "b45db3993bae5d9fd40ef3a14a2eed90ba623d95d5c042d195249314155ce9e4",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "Normalized exact laws",
+    "Equal-prefix submeasure dominated by B",
+    "Product and E_B bounds",
+    "Stopping success event",
+    "Initial-only control",
+    "Missing e_t domain counterexample"
+  ],
+  "result": "All restricted finite implications passed; literal missing-range counterexample retained",
+  "residual_risks": [
+    "Finite check is not proof; source and coupling audit are separate"
+  ],
+  "input_artifacts": [
+    {
+      "path": "theory/phase3_adaptive_replacement.md",
+      "sha256": "0f19135853b61494210067a4d10a5f6bcec1c40172797cc939f7117dd01453ef",
+      "sha256_after": "0f19135853b61494210067a4d10a5f6bcec1c40172797cc939f7117dd01453ef"
+    },
+    {
+      "path": "experiments/P34_independent_review/check.py",
+      "sha256": "5fa30ae63a2a30c0916d5e422fec60f3cd71f327bbc77213ca52966334788d75",
+      "sha256_after": "5fa30ae63a2a30c0916d5e422fec60f3cd71f327bbc77213ca52966334788d75"
+    }
+  ],
+  "declared_results": [
+    "experiments/P34_independent_review/receipt.json",
+    "experiments/P34_independent_review/transcripts.json"
+  ]
+}
