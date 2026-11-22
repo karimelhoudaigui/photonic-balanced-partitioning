@@ -41,6 +41,30 @@ Accepted Phase3 checkpoints:
   retained family has a factor-two ratio while both expected waiting times
   diverge, and a disclosed correlated classical control solves the toy case.
   See [success scope](theory/phase3_density_success_scope.md), 385293e.
+- P34: corrected adaptive replacement b3b0219 passed independent review3c43eda.
+  Uniform conditional majorants lie in [0,1]; the original missing-range defect
+  is retained. Standard coupling does not control rare-event ratios or erase cost.
+- P35: known rank1/2 threshold DP now has exact-rational code. Six physical
+  rational frames match full-Fock arithmetic exactly;12 Perceval comparisons
+  pass, max energy error7.11e-15. This is a classical mean-objective control,
+  not a novel algorithm or sampler/training equivalence. Report: P35_THRESHOLD_BASELINE.md.
+- P36: sharp two-photon TV<=delta-delta²/2 has a complete coordinator proof.
+  General TV<=min(1,delta) remains OPEN after256 circuits and17856 search calls.
+  An exact physical witness refutes a positive-Gram shortcut, not the conjecture.
+- P37: Haar-loss source maxima reduce to two choices per attempt and four per
+  photon, with ordered unique transitions. Proof/boundary scaling passed fresh
+  independent review7729b91. All1610 probabilities and36 rational root
+  brackets pass a separate exact implementation. No large Fock simulation or
+  graph-quality gain. See reports/P37_LOSS_SOURCE_SELECTION.md.
+- P38: phase-preserving pinching/variational/cone reductions have a complete
+  coordinator derivation. All36 new rational circuits and a direct tensor-state
+  audit pass; six Perceval checks max1.11e-16. General pinched linear bound OPEN.
+  Compact-effect searches total10790 calls, no converged solver or certified
+  refutation. Do not call these global optimization certificates.
+- P39: exact auxiliary counterexample at delta18/25 refutes the curved pinched
+  envelope: D_pinched>24493/50000>288/625. Two rational proof paths and one
+  full-law Perceval check pass. Actual measured TV≈.265153 remains below the
+  curve, so the measured conjecture is not refuted. No novelty/gain claim.
 
 Novelty: spatial-Gram N1 is a formal corollary of earlier boson-sampling analysis;
 N2 follows from known permanent/cycle machinery. Low-rank threshold expectation
@@ -57,28 +81,43 @@ is connected; a nine-dispatch/seven-role cycle completed with real primary/repli
 inference or larger automatic download is enabled. Reports and raw receipts,
 not model prose, determine acceptance.
 
-Current working-tree tests: 264 passed, six Perceval cache-permission warnings;
-includes 16 tests in preserved untracked Phase2 drafts. SymPy1.14.0 is pinned
-in an optional theory extra. Historical manifests are validated at their
+Current working-tree tests: 287 passed, six Perceval cache-permission warnings;
+P20 sources/16 tests integrated; P35 has23 focused tests after its resource
+guard repairb5d2888. Separate review56a34d0 verifies190 exact marginals and
+retains the pre-fix NaN defect. SymPy1.14.0 and mpmath1.3.0
+are pinned in the optional theory extra. Historical manifests are validated at their
 recorded input revisions, not against later metadata changes.
 
-Next: continue exact novelty/operational interpretation checks, obtain fresh
-review of the adaptive consequence, and require a changed mechanism before any
+Next: continue exact novelty/operational interpretation checks, attack the
+remaining P36 phase-cancellation gap, and require a changed mechanism before any
 broader optimization sweep. Full authentic ObliQ
 training/hybrid input/decoder and a useful optimum-blind algorithmic advantage
 remain unresolved. Details: OPEN_QUESTIONS.md, CLAIMS.md and RESEARCH_LOG.md.
 
 
-Latest accepted execution: b8b04ac, original worker fe7d616. All300 complete-grid
+Latest accepted native Qwen execution: b8b04ac, original worker fe7d616. All300 complete-grid
 cases and886440 outcome probability pairs retained, plus14 sharpness cases,
 12 factorized dilute controls and72 certificate-only cases. Twelve additional
 independent Perceval/labelled-DP comparisons differ by at most6.67e-16. Full-law
 checks stop at m12. Figures and portable supervisor audit are in
 results/P33_density_supervised/20261122T014822Z/.
 
-P34,42d9eff: standard sequential coupling composed with the density criterion,
-with an exact rational enumeration of five adaptive protocols. The derivation
-is self-reviewed; fresh proof review remains pending. The primary coupling
-source is now extracted and verified in research/phase3_adaptive_replacement_route.md.
-The cross-field novelty pass identifies the row-impurity ingredients as known;
-only attribution of the complete photonic composition remains unresolved.
+P20 archives5dbdbc3 and reviewa4d4745 reject the tested fixed proposal mechanism:
+selected interaction is zero. These are fixed-anchor IID probes, not executed
+adaptive searches or equal-total-resource proofs. Original drivers overwrite
+fixed paths: heed experiments/P20_structured_probe/ARCHIVE_NOTE.md.
+
+P33 numeric review9e8bd82 retains subnormal/roundoff limits; its original manual
+manifest is not valid v2 evidence. Separate coordinator rational underflow runs
+have valid failed/completed records. Matrix-geometry review715143f identifies
+row-max rounding and its norm step as known. Full composition attribution OPEN.
+
+Late-2026 source audit538e67b authenticates fixed-loss Haar-typical simulation
+theorems and the near-full reference/error constants. They do not cover every
+trained U or eta=1-lambda/m; their finite bound can be trivial at m64,eta=.9.
+See research/LATE2026_LOSS_SOURCE_AUDIT.md for exact dependencies and limits.
+
+Current full handoff: reports/RESEARCH_CHECKPOINT_P39.md. Reviewers delivered
+real P35/P37/loss packets before another quota interruption; partial P36 files
+are preserved with original hashes. Astra completed P38/P39; no interrupted
+review is relabeled complete. Paper and QPU remain closed.

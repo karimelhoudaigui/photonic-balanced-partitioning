@@ -99,3 +99,39 @@ Identical seeded COBYLA protocols give different trajectories under SciPy1.13.1 
   transcript TV. Initial-only certification cannot justify adaptive replacement.
 - Cross-field source checking rejects novelty for standalone row Bayes/Gini
   inequalities. Exact composition attribution remains OPEN, not disproved.
+
+## P34/P36 proof failures and resource limits — 2026-11-22
+
+P34's original product bound omitted e_t in [0,1]; e1=e2=3 makes its RHS
+negative. Correctedb3b0219 adds the range and passes independent review;
+the defect does not refute the corrected theorem.
+
+P36's tempting per(B)-1<=2delta shortcut is physically false: an exact
+three-mode rank-one witness has excess265/9826. Its actual full-law TV
+still lies below delta. This refutes the proof route, not the TV conjecture.
+No counterexample in the bounded fixed/targeted searches is no universal proof.
+
+P20 archived campaigns select zero interaction. Retain the small bosonic
+enrichment over the matched distinguishable product, the stronger classical
+correlated control and unequal total training costs. No algorithmic gain.
+
+P37 improves Haar resource accounting only: accepted ensemble subsets remain
+uniform. Higher feasibility alone supplies no graph-quality signal or paper gate.
+
+P35 review56a34d0 found NaN state/transition caps disabled the old guard.
+Archived scientific calls used finite integer defaults and are unaffected.
+Repairb5d2888 validates integer inputs at both entry points;287 tests pass.
+The failed guard probe remains in the frozen pre-fix review data.
+
+P38b/c: all four compact-effect SLSQP cells fail convergence at the declared
+caps/line-search condition, even after a targeted warm-start refinement. Keep
+10790 calls and exact repaired lower witnesses; none proves a global bound.
+
+At delta0 the proposed finite-dual-witness subgoal is unattainable: each
+nonzero sector has true cost0 but strictly positive cost for every finite
+dual witness. Use a direct endpoint proof or an infimum/limit, not `min`.
+
+P39 exact counterexample rejects only extending the k2 curved bound to the
+larger pinched metric at k3: D_pinched>.48986 while the curve is.4608.
+Measured TV≈.265153, so neither measured linear/curved hypothesis is refuted.
+This is a post-hoc auxiliary obstruction, not evidence of graph advantage.

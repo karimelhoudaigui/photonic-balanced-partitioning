@@ -504,3 +504,183 @@ DOI10.3390/e25070978, equations3/5/75/76, authenticated and translated with the
 weight distinction explicit. Row inequalities are prior-art consequences, not
 new discoveries. Full photonic composition attribution remains OPEN; no global
 novelty inference from absent hits. See research/phase3_density_crossfield_novelty.md.
+
+
+## Fresh reviews and integration — 2026-11-22
+
+P34 fresh review3c43eda found the original missing e_t range; correctedb3b0219
+now has an explicit independent proved-as-written addendum. Both verdicts are
+retained. Reproductionde77a14 has identical exact data hash to the initial run,
+with the corrected proof pinned separately; old manifests are not rewritten.
+
+P33 numeric review9e8bd82 documents finite roundoff/subnormal limits. Its original
+manual manifest has an empty declared-results list and is NOT valid v2 evidence.
+Its report/source/outputs remain inspectable; the separate coordinator rational
+underflow run64ad463 has valid failed/completed records. Literature review715143f
+finds row-max nonnegative-Stiefel rounding and the Gram perturbation step known;
+full photonic composition attribution stays OPEN. Optional theory dependencies
+now pin mpmath1.3.0 as well as SymPy1.14.0; historical pyproject input hashes are
+validated at their frozen revisions, not silently replaced by later metadata.
+
+P20: both historical archives validate against unchanged sources. Fresh review
+8cb20c2 (maina4d4745) checked labels/metrics/frozen parameters and32 count spot
+checks without rerunning the campaigns. Initial16 focused tests pass. Archives
+and original sources are integrated5dbdbc3. Both campaigns choose zero interaction;
+no tested quantum optimization signal. Source drivers overwrite fixed outputs:
+ARCHIVE_NOTE.md warns against in-place replay. Budgets and bootstrap are scoped
+in the independent report; equality of replacement counts is constructed.
+
+## P35 executable classical threshold baseline — 2026-11-22
+
+QUESTION: can the known rank1/2 vacuum DP match full physical threshold moments
+and original QUBO means without computing its own full outcome law? Source678f79d;
+raw/reportc6c1807. Exact Gaussian-rational coefficient arithmetic, physical frame
+validation by default; binary encoding explicitly carries no physical guarantee.
+Twelve seeds20261122..33, six exact physical frames and six encoded QR frames,
+including N=m. All six rational full-Fock comparisons are exact equalities;
+12Perceval comparisons give mean/pair error5.56e-16 and energy error7.11e-15.
+Manifest experiments/P35_threshold_marginal/run/manifest.json completed/valid.
+Whole repository271tests pass. KEEP as a known classical control, not novelty,
+full training reproduction or hardware benefit. No physical shots.
+
+## P36 stronger leakage conjecture — 2026-11-22
+
+QUESTION: can TV<=min(1,delta) replace the looser proved P33 envelope? Protocol
+bfa5a22 retains all256 full occupation circuits. Initial run failed before math
+on an output-directory conflict; fresh run_002 completed in1.834s with no
+counterexample. Twelve fresh Perceval and16 collective closed-form checks pass,
+max Perceval error4.44e-16. Exact algebra closes the sharp k2 case and refutes
+per(B)-1<=2delta with a physical k3 witness, without refuting the TV conjecture.
+All records/proof/source draft retained224327c; general k>=3 remains OPEN.
+The literature review was quota interrupted before commit; its retained draft
+is explicitly marked. Physics messages were reconstructed, not called a final
+independent review.
+
+P36b: frozen phase-sensitive search3f7f7b3 completed17856 calls under bounded
+single-thread budgets. No falsifier; all8 cells and all16 stored winners audited,
+Perceval max error8.89e-16. All traces retained. This changes the attack to
+nongeneric phase-sensitive frames but does not prove the conjecture. Its missing
+phase-cancellation implication remains open; no unchanged rerun is justified.
+Paper remains frozen; QPU_GATE=CLOSED; original optimization benefit unestablished.
+
+## P37 loss-aware Haar source phase diagram — 2026-11-22
+
+QUESTION: how do uniform losses change threshold feasibility per attempt and
+per injected photon? HYPOTHESIS: two/four source candidates suffice. PROTOCOL:
+research/P37_LOSS_SOURCE_CONTRACT.md, source/proof frozen1d65279. CODE:
+experiments/phase3_loss_source_probe.py. No random seeds: exact Fraction sums.
+RAW: experiments/P37_loss_source/run/data/, completed valid v2 manifest;
+retainedd402374. All112 cells,1610 source probabilities and36 root brackets
+pass; independent positive-sum formulas coincide. Runtime0.397s, zero full
+Fock simulations and zero physical shots, including large m.
+
+ADVERSARIAL CHECK: separate coordinator implementation uses a normalized Polya
+urn, de Casteljau transform and recurrent endpoint weights. Every value, cost,
+maximizer, sign and trace matches exactly; runtime0.478s. Valid completed record:
+experiments/P37_loss_source/review/manifest.json. This is self-review, not a
+fresh agent. Proof self-review checks endpoint ties, size bias, root order and
+peak-normalized tails. At m128 critical scaled losses are .992156 and
+.953327/1.953726/2.938557 versus self-reviewed limits1 and1/2/3.
+
+RESULT: finite phase theorem and boundary limit survive self-review.
+INTERPRETATION: exact resource corollary of known Haar counting, not graph
+enrichment. Waiting cost requires refreshed Haar draws. ALTERNATIVE EXPLANATION:
+known counting and elementary signs suffice; novelty unassessed. DECISION:
+SUPPORTED finite assertions; KEEP resource audit, FOLLOW-UP fresh proof/source
+review. Original optimization goal OPEN; paper/QPU closed.
+
+P37 fresh review: after quotas reset, /root/physics independently reconstructed
+the frozen proof without reading coordinator verdict/numeric probe. Verdict
+proved as written; commit94b5099 integrated7729b91. Ratios, size-bias indices,
+global maxima, ordered roots and peak-normalized asymptotic checked. Independent
+m8 polynomials, endpoints and40-step rational brackets pass;0.582s CPU. Valid
+manifest experiments/P37_independent_review/manifest.json; source proof unchanged.
+This supersedes the pending-proof-review state, not the open novelty/gain gates.
+
+## P35 separate review and guard correction — 2026-11-22
+
+Reviewer6258cd5, integrated56a34d0, derives the Gaussian-rational DP invariant
+and extraction separately. All190 one/two-output marginals on12 archived frames
+match an independent exact Gram/Ryser reference. Seven original tests pass;
+three manifests valid against the pre-fix worktree. Reviewer proposed the API
+earlier but did not implement the component: independence limit explicit.
+An invalid NaN cap silently bypassed limits; retained in original audit data.
+Coordinator fixb5d2888 requires integer finite caps, rejecting bool/float/NaN,
+with23 focused and287 total tests passing, six cache warnings. Old-source
+manifests remain frozen; no scientific numbers were rewritten or campaign rerun.
+
+## Late-2026 source audit — 2026-11-22
+
+Source reviewer4981832, integrated538e67b, checks exact primary versions of
+Angrisani–Mhiri2611.08444v1 and Lim2611.01434v1. Fixed-loss Haar approximate
+sampling statements and near-full weighted-L2/reference constants are extracted,
+with key local proof/dependency passages checked and unaudited leaves explicit.
+No full source theorem independently reproved or sampler implemented. Pure-loss
+reference exactly matches the known binomial/Haar mixture. Fixed trained U and
+eta=1-lambda/m do not follow. Finite constants can already be trivial at m64;
+no blanket numerical QPU NO-GO. PDF/text hashes retained in ignored worker cache;
+only the source report is versioned. KEEP as a scoped source-dependent audit.
+
+P35 post-fix review13aa5de integrated5375202:50 invalid-input checks pass before
+frame access. Separate operational receipt preserves its initial overly tight
+fixture failure; original pre-fix scientific records are unchanged.
+
+## P38 phase-preserving pinching route — 2026-11-22
+
+QUESTION: does retaining internal group states give a sharper provable upper
+bound for measured TV at k3? HYPOTHESIS: D_pinched<=delta might be sufficient.
+PROTOCOL/code/proof frozen197af80. Physics proposed the finite cone reduction
+before quota; Astra reconstructed its proof and implemented the pending run.
+SEEDS20261201..03, rational strengths1/40,1/5,1/2,1, all36 frames retained.
+RAW: experiments/P38_pinching_probe/run/, completed valid v2 record,0.501s.
+Twenty-one cases have delta<5/6; six Perceval checks max1.11e-16. Zero shots.
+
+SEPARATE CHECK: explicit ordered-tensor density blocks, no Gram square roots,
+on all36 cases; runtime16.876s, pinching error9.50e-14, probability error2.23e-16.
+Three exact Rayleigh controls equal the sharp rational k2 targets. Manifest
+experiments/P38_pinching_probe/review/manifest.json valid/completed. Self-review,
+not a fresh agent. Worker15-frame diagnostic and exact family drafts retained
+with original hashes under experiments/P36_interrupted_phase_attempt/; original
+worker manifest validates. Literature draft is explicitly interrupted, with its
+complex-k3 cone caveat corrected in the prefix rather than silently overwritten.
+
+RESULT: no finite refutation; exact structural/variational reductions and cone
+proof. INTERPRETATION: stronger upper metric, not the observed law. DECISION:
+KEEP reduction/checks; general pinched and measured inequalities OPEN.
+
+## P38b/c compact-effect falsification — 2026-11-22
+
+QUESTION: does the new three-effect domain yield a counterexample? Two target
+deltas1/5,3/5 and seeds20261210/11, four cells. Frozen22b0a74;2076 calls,2.183s,
+all solvers stop at25 iterations. Follow-up dfbd99f changes that bottleneck:
+warm-start all four recorded points,120 iterations, smaller difference step.
+8714 additional calls,6.019s; three iteration caps and one line-search failure.
+Total10790 calls, none hidden; no certified refutation. RAW: experiments/
+P38_effect_search/{run,refinement}/, both completed valid v2 manifests.
+Each refinement best point has exact repaired PSD/dominance/sum-I checks and
+Rayleigh lower witnesses. These are not upper certificates or global optima.
+DECISION: INCONCLUSIVE. No unchanged SLSQP rerun; zero shots or new Fock trials.
+
+Self-review also refutes a finite-witness subgoal at delta0: the correct dual
+infimum0 cannot be attained by finite witnesses. Keep direct endpoint reasoning
+and limiting witnesses distinct; see theory/phase3_pinching_dual_boundary.md.
+
+## P39 exact auxiliary-envelope counterexample — 2026-11-22
+
+QUESTION (post hoc): can the sharp k2 curve upper-bound the k3 pinched metric?
+HYPOTHESIS/contract frozen2b22cd4 with d19/25,e3/25. Complete exact27-sector
+Rayleigh enumeration gives lower0.490108163... above curve288/625=.4608 at
+delta18/25. Exact numerator/denominator retained. Physical9mode/3photon frame
+has one full-law Perceval comparison, maxerror2.78e-17 over165 outcomes; measured
+TV≈.265153. Completion seed20261220, no graph/parameter selection from that seed.
+RAW: experiments/P39_pinched_envelope/run/, completed valid v2 manifest,0.041s.
+
+DIFFERENT ANALYTIC CHECK: monotone scalar eigenvalue equations give the simpler
+strict lower24493/50000, with exact positive residuals at43/400 and7/50. Gap
+to curve1453/50000>0. All27 weight classes checked without eigensolvers or
+Rayleigh code;0.003s, valid completed review manifest. Proof/raw33328e4 and
+theory/phase3_pinched_envelope_counterexample.md. Both arguments are by Astra;
+fresh independent review is unavailable after the new agent quota interruption.
+RESULT: REJECT only the curved pinched-state extension. Neither measured
+linear/curved inequality nor the linear pinched lemma is refuted. No novelty,
+graph benefit, manuscript writing or QPU progression. KEEP the exact obstruction.

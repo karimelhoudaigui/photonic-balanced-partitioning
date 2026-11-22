@@ -65,3 +65,25 @@ Full Fock simulation stops at m12; m32/64/128 are certificate calculations only.
 The typed local MCP scientific actions supply fixed arguments and pinned Python.
 Their mechanically generated reports are finite checks, not independent proofs.
 STATUS.md lists current evidence and remaining gates. Paper and QPU stay closed.
+
+Latest continuation: corrected P34 independently reviewed; e_t in [0,1].
+P35 threshold_marginals.py is known exact rank1/2 mean evaluation, not a novel
+sampler or complete ObliQ training. P36 general linear-TV conjecture is OPEN,
+its positive-Gram shortcut false; k2 has a coordinator proof. Completed searches
+need no unchanged rerun. P37 exact Haar-loss resource phases and boundary limit
+passed independent proof review7729b91; no graph enrichment follows. P20 source
+drivers overwrite fixed paths; never rerun in place. Quota-blocked reviews
+are not completed reviews; different role labels do not ensure independence.
+
+P35 resource caps now require actual integers; NaN/Inf and other nonintegers
+fail closed at both entry points, repairb5d2888. Archived pre-fix audit records
+remain unchanged. Source audit538e67b distinguishes fixed-loss Haar simulation
+guarantees from trained circuits and the order-one-loss P37 boundary regime.
+
+P38 pinching is an upper metric retaining internal quantum states, not grouped
+classical TV. Its linear bound remains OPEN. All36 frame checks pass;10790
+compact-domain queries did not settle it and all solvers failed convergence.
+P39 refutes only the stronger curved pinched bound, with an exact physical
+example. Measured TV is smaller; never call this a P36 refutation. Delta0
+finite dual attainment is false; use infimum/endpoint reasoning. Read the
+current handoff reports/RESEARCH_CHECKPOINT_P39.md before another cycle.

@@ -97,3 +97,35 @@ search hypothesis. No manuscript writing or hardware call is authorized by these
   statistical translation. Complete photonic composition attribution staysOPEN.
 - No positive original optimization signal or hardware gate follows. Manuscript
   remains frozen; QPU closed. Unattributed raw directories remain preserved/excluded.
+
+## 2026-11-22 — corrected and new checkpoints
+
+- ACCEPT corrected P34 proofb3b0219 after independent review3c43eda. Retain
+  the original missing e_t range defect, verdict and data.
+- KEEP P35 as known exact classical threshold-mean control, not a novel
+  algorithm or full sampled training: six exact physical cases,12 Perceval
+  comparisons and271 repository tests pass.
+- KEEP P36 k2 proof; general linear leakage remains OPEN after256 circuits
+  and17856 targeted calls. REJECT per(B)-1<=2delta as a proof bridge.
+- INTEGRATE P20 archives/review without overwriting raw data. Zero-interference
+  fixed-anchor IID probes are not an adaptive or equal-total-resource test.
+- KEEP P37 as a self-reviewed resource corollary:1610 exact values and36
+  brackets pass separate arithmetic. Fresh proof/attribution pending.
+- PAPER_READY=FALSE; QPU_GATE=CLOSED. No device or paid inference.
+
+Subsequent independent P37 review7729b91 proves the frozen source phases and
+boundary argument as written; attribution remains OPEN. P35 review56a34d0
+verifies190 exact marginals but finds invalid NaN resource caps. Guard repair
+b5d2888 rejects them before work, with287 tests passing. Keep both source
+versions/receipts distinct. Source audit538e67b does not turn fixed-loss
+Haar simulation theorems into a fixed trained-circuit or finite-QPU NO-GO.
+
+P38/P39: KEEP exact pinching, variational and complex-k3 cone reductions;
+the general linear claims remain OPEN. ACCEPT only finite assertions from36
+rational frames/six Perceval checks/direct tensor review. Preserve all10790
+matrix-search calls and nonconvergence statuses. REJECT finite dual attainment
+at delta0 and the post-hoc universal curved pinched envelope at k3; do not
+transfer either obstruction to measured TV or graph-optimization benefit.
+P39 exact proof has two rational paths and a physical sanity check, no fresh
+author-blind audit after quota. Preserve partial worker files with provenance.
+PAPER_READY=FALSE; QPU_GATE=CLOSED; source/core tests remain287PASS.

@@ -54,9 +54,28 @@ density implications. It does not imply CLAIM-016 or hardware readiness.
 
 | ID | Exact statement / scope | Status | Evidence and limits |
 |---|---|---|---|
-| CLAIM-029 | Fresh-input classical adaptive protocols with uniformly bounded conditional TV admit the stated absolute transcript/success replacement bound. | OPEN | Derivation42d9eff is self-reviewed; standard maximal-coupling leaf independently sourced, exact five-policy P34 checks pass. Fresh proof review pending. No novelty or rare-event ratio claim. |
+| CLAIM-029 | Fresh-input classical adaptive protocols with conditional TV bounds and uniform majorants e_t in [0,1] admit the stated absolute transcript/success replacement bound. | PROVEN | Corrected proofb3b0219 passed independent review3c43eda; original missing-range defect retained. Exact coordinator and1640-transcript independent checks. Standard coupling, no novelty or rare-event ratio claim. |
 
 2026-11-22 attribution refinement: research/phase3_density_crossfield_novelty.md
 identifies the density row inequalities with known Bayes-error/quadratic-impurity
 relations. No standalone novelty is claimed for those ingredients. Complete
 photonic composition attribution remains OPEN.
+
+
+## Latest bounded results — 2026-11-22
+
+| ID | Exact statement / scope | Status | Evidence and limits |
+|---|---|---|---|
+| CLAIM-030 | For two occupied orthonormal input columns, full-law TV<=delta-delta²/2, sharp for every delta in [0,1]. | PROVEN | theory/phase3_linear_leakage_attempt.md,224327c: complete Cauchy/N1 derivation and exact sharp family. Physics proposal reconstructed by coordinator, no author-blind audit or novelty claim. |
+| CLAIM-031 | The same-frame full-law TV<=min(1,delta) for every photon count. | OPEN | 256 fixed circuits and17856 targeted calls found no refutation; k2 proved, k>=3 unresolved. Positive-permanent shortcut explicitly false. Reports/P36 files retain all data and limits. |
+| CLAIM-032 | The known rank1/2 marginal DP implementation reproduces the original threshold-QUBO mean on the fixed validation inputs. | NUMERICALLY_SUPPORTED | c6c1807: six exactly rational physical circuits match explicit Fock arithmetic exactly;12 Perceval comparisons, max energy error7.11e-15. No novel algorithm, full sampler or finite-shot training equivalence. |
+| CLAIM-033 | For even m>=8,k=m/2,k<=N<=m and 0<eta<1 uniform independent loss, Haar-mean source maxima lie in {m-1,m} per attempt and {m-3,m-2,m-1,m} per photon, with ordered unique transitions. | PROVEN | Exact proof1d65279 passed fresh independent reconstruction7729b91. Exact1610-value/36-bracket check plus separate Polya check; reviewer has independent m8 polynomial checks. Known-law resource corollary, no novelty or graph-quality claim. |
+| CLAIM-034 | P37 critical scaled losses tend to1 for attempt efficiency and1,2,3 for successive photon-efficiency transitions as even m grows. | PROVEN | Same proof independently reviewed7729b91: fixed-lambda, fixed-deficit moment/tail expansion and root sandwich. Values through m128 are finite checks only. Not fixed-loss or fixed-device complexity. |
+| CLAIM-035 | Fine occupation TV is bounded by the stated internal-state-preserving pinched distance; its sector variational formula uses an infimum. Complex k3 dominant effects admit rank-one refinements with at most27 rows. | PROVEN | theory/phase3_pinching_dual.md,197af80, coordinator reconstruction/self-review, not blind audit. Source channel structure known. Boundary nonattainment handled separately in phase3_pinching_dual_boundary.md. |
+| CLAIM-036 | For every physical three-column frame, D_pinched<=delta on the dominant partition. | OPEN | P38:36 circuits and explicit-state audit pass;10790 matrix queries have no certified refutation but no converged solver. Finite tests are not proof. Stronger than CLAIM-031. |
+| CLAIM-037 | The exact k2 curve delta-delta²/2 also bounds every k3 pinched-state distance. | REJECTED | Post-hoc auxiliary hypothesis, not original P36. P39 explicit d19/25,e3/25 physical frame gives exact D_pinched>24493/50000>288/625, two rational arguments plus Perceval check. No refutation of the corresponding measured-TV statement. |
+
+P20 archives and their independent review are integrated5dbdbc3/a4d4745.
+They reject only the tested fixed-size proposal construction: selected kernels
+have zero interference and match the product control. They are fixed-anchor
+IID probes, not executed adaptive optimizers or equal-total-resource proofs.

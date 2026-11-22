@@ -58,4 +58,5 @@ root-counting method. No full external source text is committed.
 
 Remaining obligations: audit the exact new loss theorem relevant to any
 proposed QPU regime; search photon-source allocation/click-resource literature
-with exact quantities; independently review P37. Keep manuscript and QPU closed.
+with exact quantities. P37 subsequently passed fresh independent proof review
+7729b91; this does not resolve attribution. Keep manuscript and QPU closed.

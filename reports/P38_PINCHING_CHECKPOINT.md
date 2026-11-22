@@ -68,3 +68,9 @@ unchanged measured-TV grid. The constant dual witness only recovers5/6;
 it does not solve delta<5/6. A refutation of the stronger pinched bound alone
 would not refute the actual measured-TV conjecture. No graph advantage,
 novelty, manuscript readiness or QPU gate follows.
+
+Subsequent compact searches and their changed-cap refinement are recorded in
+reports/P38_EFFECT_SEARCH_RESULTS.md:10790 calls, no converged solver or
+certified refutation. P39 separately refutes the stronger curved pinched bound
+with an exact example; see theory/phase3_pinched_envelope_counterexample.md.
+The finite dual-witness delta0 subgoal is corrected by the boundary note.

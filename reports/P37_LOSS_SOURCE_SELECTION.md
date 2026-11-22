@@ -21,11 +21,13 @@ transition and ->1,2,3 for the successive photon-cost transitions. Its error
 expansion holds for eta=1-lambda/m, fixed lambda and fixed source deficit;
 no fixed-loss rate theorem follows from that expansion.
 
-This proof is **self-reviewed by Astra**. Fresh independent proof review
-remains pending because the three Codex reviewers report usage limits. The
-separate arithmetic verifier is a distinct implementation by the same author,
-not a fresh reviewer. Neither finite agreement nor a second actor label is a
-substitute for a proof audit.
+After the initial Astra self-review, reviewer /root/physics independently
+reconstructed the argument without reading the coordinator verdict or numeric
+probe. Verdict: **proved as written**, commit94b5099 integrated7729b91; exact
+target SHA and separate m8 rational/symbolic checks are in
+reports/P37_INDEPENDENT_PROOF_REVIEW.md. That manifest validates. The author's
+separate arithmetic verifier remains self-review. Neither review supplies a
+novelty or optimization-benefit certificate.
 
 ## Executed validation
 
