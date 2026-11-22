@@ -1,0 +1,1 @@
+{"exact_runs": 4, "control_runs": 1, "all_bounds_passed": true, "initial_zero_certificate_does_not_control_adaptive_transcript": true, "physical_shots": 0}
