@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "claim_id": "P38_EFFECT_SEARCH_CAPPED_RUN_REFINEMENT",
+  "repository": {
+    "commit": "dfbd99f55bbac8a19ec7e1f7099e9bce7322834c",
+    "dirty": true
+  },
+  "command": [
+    "/usr/bin/env",
+    "PYTHONPATH=src",
+    ".venv/bin/python",
+    "experiments/refine_effect_search.py",
+    "--previous",
+    "experiments/P38_effect_search/run/data/raw.json",
+    "--output",
+    "experiments/P38_effect_search/refinement/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Resume all four iteration-capped compact-effect searches with120 iterations and a smaller finite-difference step; exactly repair/check every best point, retaining previous costs.",
+    "coefficient_domain": "complex128 constrained optimization; exact Gaussian-rational PSD/dominance/Rayleigh best-point checks",
+    "conventions": "Same stronger pinched-state lemma/domain as P38b; exact actual delta after repair drives certification.",
+    "inputs": [
+      "All four stored best points of P38b, without seed or cell selection"
+    ],
+    "bounds": {
+      "cells": 4,
+      "max_iterations_per_cell": 120,
+      "max_new_objective_calls": 12000
+    },
+    "non_claims": [
+      "No global proof",
+      "No physical circuit or QPU execution",
+      "No algorithmic advantage"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T19:46:23.188542+00:00",
+    "runtime_seconds": 6.695206,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/refine_effect_search.py",
+    "experiments/phase3_effect_search.py",
+    "experiments/P38_effect_search/run/data/raw.json",
+    "research/P38_EFFECT_REFINEMENT_CONTRACT.md",
+    "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/refine_effect_search.py",
+      "sha256": "886eec1bf2c7f26d90361a53ee16b214265147a84e42a4ef55119f678bec3167",
+      "sha256_after": "886eec1bf2c7f26d90361a53ee16b214265147a84e42a4ef55119f678bec3167"
+    },
+    {
+      "path": "experiments/phase3_effect_search.py",
+      "sha256": "c62d13d5951bd79fc0c81c462542e39bc739b8cae38558de5aa98d8b69a73830",
+      "sha256_after": "c62d13d5951bd79fc0c81c462542e39bc739b8cae38558de5aa98d8b69a73830"
+    },
+    {
+      "path": "experiments/P38_effect_search/run/data/raw.json",
+      "sha256": "94bee41d1b241e4ceea19d161fec769a88960d253629930e996b747a62039ab7",
+      "sha256_after": "94bee41d1b241e4ceea19d161fec769a88960d253629930e996b747a62039ab7"
+    },
+    {
+      "path": "research/P38_EFFECT_REFINEMENT_CONTRACT.md",
+      "sha256": "703daa974276dce4b3e215069b87477c05f9ae3b3f327bb1d7c56679922a1824",
+      "sha256_after": "703daa974276dce4b3e215069b87477c05f9ae3b3f327bb1d7c56679922a1824"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+      "sha256": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05",
+      "sha256_after": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P38_effect_search/refinement",
+  "declared_results": [
+    "experiments/P38_effect_search/refinement/data/raw.json",
+    "experiments/P38_effect_search/refinement/data/summary.json",
+    "experiments/P38_effect_search/refinement/data/evaluations.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P38_effect_search/refinement/stdout.txt",
+      "sha256": "1d181e0e6460739e1548ca5249952304f1b0cc0067e9554b889921b0cc689453",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P38_effect_search/refinement/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P38_effect_search/refinement/data/raw.json",
+      "sha256": "89cb79959d04dc398c951b0ff461c72551f16269f5f6ad5b0af01cda7fe1c338",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P38_effect_search/refinement/data/summary.json",
+      "sha256": "ace0607a934ab61736e1aef08f81ed787f9dd7b9e3ab20cb18f8b42cbcfe15ff",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P38_effect_search/refinement/data/evaluations.jsonl",
+      "sha256": "cf2f0b11c8927f55aaa4c7f78dea8748ace568f32d872633ba3e97a1e24e2229",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
