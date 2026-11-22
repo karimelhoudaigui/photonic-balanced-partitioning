@@ -1,0 +1,14 @@
+{
+  "claim_id": "P37_HAAR_LOSS_SOURCE_PHASE_DIAGRAM",
+  "mathematics": {
+    "assertion_tested": "All declared source maxima obey the two/four candidate phase reduction; two exact positive-sum formulas coincide; ordered transition roots have exact rational sign brackets.",
+    "coefficient_domain": "fractions.Fraction and arbitrary precision Python integers; no floating decision",
+    "conventions": "Even m>=8,k=m/2,k<=N<=m; independent uniform survival; exactly k threshold clicks; all attempts count; Haar-averaged marginal only.",
+    "inputs": ["m8,10,12,16,24,32,48,64; eta1/4,1/2,3/4,9/10,99/100,1", "eta=1-lambda/m with lambda1/4,3/4,5/4,7/4,9/4,11/4,13/4,15/4", "Four critical roots at each declared m plus m128"],
+    "bounds": {"grid_cells": 112, "probability_crosschecks": 1610, "transition_brackets": 36, "bisections": 40, "full_fock_simulations": 0},
+    "non_claims": ["No finite proof of general theorem or asymptotic", "No graph optimization or quantum advantage", "No global novelty or fixed-loss complexity claim", "No fixed-device inverse-probability averaging"]
+  },
+  "execution_artifacts": ["experiments/phase3_loss_source_probe.py", "research/P37_LOSS_SOURCE_CONTRACT.md", "theory/phase3_loss_source_selection.md", "pyproject.toml"],
+  "software": [{"name": "Python", "version": "3.11.15"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}
