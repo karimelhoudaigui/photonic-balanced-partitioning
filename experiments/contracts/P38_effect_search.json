@@ -1,0 +1,14 @@
+{
+  "claim_id":"P38_COMPACT_EFFECT_COUNTEREXAMPLE_SEARCH",
+  "mathematics":{
+    "assertion_tested":"Bounded constrained search for D_pinched>delta on the compact three-effect domain, with exact PSD/dominance/Rayleigh repair for each cell's best candidate.",
+    "coefficient_domain":"complex128 SLSQP/eigensolvers; exact Gaussian-rational post-checks and one rational control",
+    "conventions":"Three effects sum to I by parameterization; strong pinched inequality is distinct from measured-TV conjecture; every infeasible optimizer query is retained.",
+    "inputs":["delta targets1/5,3/5; seeds20261210,20261211; four cells"],
+    "bounds":{"cells":4,"max_iterations_per_cell":25,"max_objective_calls":4000,"perceval_calls":0},
+    "non_claims":["No global proof or solver certificate","No physical circuits executed from effect realizations","No measured-TV or graph-advantage conclusion"]
+  },
+  "execution_artifacts":["experiments/phase3_effect_search.py","research/P38_EFFECT_SEARCH_CONTRACT.md","theory/phase3_pinching_dual.md","src/photonic_balanced_partitioning/photonic/threshold_marginals.py","pyproject.toml"],
+  "software":[{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"}],
+  "randomness":{"used":true,"generator":"numpy.default_rng/PCG64","seed":"20261210,20261211"}
+}
