@@ -1,0 +1,41 @@
+{
+  "claim_id": "P33_FLOAT_SEMANTICS_REVIEW",
+  "mathematics": {
+    "assertion_tested": "Exact rational two-photon witness distinguishes floating estimates from rigorous upper bounds; inspect eight scalar envelope roundoff cases.",
+    "coefficient_domain": "Fraction exact integers; complex128/float64; Decimal90 for scalar diagnostics",
+    "conventions": "m4 k2 exact rational rotation on first two rows, two zero rows; full bosonic vs independent distinguishable occupations, TV=2cos\u00b2sin\u00b2",
+    "inputs": [
+      "rational rotation t=2^-600",
+      "eight fixed sigma values"
+    ],
+    "bounds": {
+      "exact_witnesses": 1,
+      "scalar_roundoff_cases": 8
+    },
+    "non_claims": [
+      "No theorem counterexample",
+      "No complete new optimization experiment",
+      "No rigorous interval certification or independent review"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/phase3_density_float_review.py",
+    "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+    "pyproject.toml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  }
+}

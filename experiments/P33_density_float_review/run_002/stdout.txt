@@ -1,0 +1,1 @@
+{"underflow_witness_verified": true, "exact_tv_positive": true, "returned_estimate": 0, "theorem_refuted": false, "physical_shots": 0}

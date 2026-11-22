@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "claim_id": "P33_FLOAT_SEMANTICS_REVIEW",
+  "repository": {
+    "commit": "85b341415c16d3e8757110abb368ec29aee333b6",
+    "dirty": true
+  },
+  "command": [
+    ".venv/bin/python",
+    "experiments/phase3_density_float_review.py",
+    "--output",
+    "experiments/P33_density_float_review/run/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact rational two-photon witness distinguishes floating estimates from rigorous upper bounds; inspect eight scalar envelope roundoff cases.",
+    "coefficient_domain": "Fraction exact integers; complex128/float64; Decimal90 for scalar diagnostics",
+    "conventions": "m4 k2 exact rational rotation on first two rows, two zero rows; full bosonic vs independent distinguishable occupations, TV=2cos²sin²",
+    "inputs": [
+      "rational rotation t=2^-600",
+      "eight fixed sigma values"
+    ],
+    "bounds": {
+      "exact_witnesses": 1,
+      "scalar_roundoff_cases": 8
+    },
+    "non_claims": [
+      "No theorem counterexample",
+      "No complete new optimization experiment",
+      "No rigorous interval certification or independent review"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T01:47:06.198017+00:00",
+    "runtime_seconds": 0.250293,
+    "exit_status": 1,
+    "status": "failed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [
+      "experiments/P33_density_float_review/run/raw.json"
+    ],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_density_float_review.py",
+    "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_density_float_review.py",
+      "sha256": "9b30dffd94e76270fda91c0eb367178e1fbcaafa109717de9437aabc79ff2842",
+      "sha256_after": "9b30dffd94e76270fda91c0eb367178e1fbcaafa109717de9437aabc79ff2842"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+      "sha256": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461",
+      "sha256_after": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c",
+      "sha256_after": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c"
+    }
+  ],
+  "output_directory": "experiments/P33_density_float_review/run",
+  "declared_results": [
+    "experiments/P33_density_float_review/run/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P33_density_float_review/run/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P33_density_float_review/run/stderr.txt",
+      "sha256": "2fe633171eebd68517e7610aadd47c0c9238d0d7a2e356b3957e1ce56a7d3190",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": false
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": false
+    }
+  ],
+  "result": "Run failed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "Declared results were not produced: experiments/P33_density_float_review/run/raw.json"
+  ]
+}
