@@ -1,0 +1,168 @@
+{
+  "schema_version": 2,
+  "claim_id": "P35_EXACT_THRESHOLD_CLASSICAL_BASELINE",
+  "repository": {
+    "commit": "678f79dcfa62ecbb891db25c6cfdd9280008c357",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/phase3_threshold_marginal_probe.py",
+    "--output",
+    "experiments/P35_threshold_marginal/run/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Known exact rank1/2 vacuum DP reproduces all threshold moments and original QUBO means in12fixed circuits, six exact rational physical frames and six explicitly unvalidated binary encodings.",
+    "coefficient_domain": "Gaussian rationals and integer coefficient DP; Perceval reference complex128",
+    "conventions": "Distinct singly occupied input columns; full threshold moments, all collisions, no conditioning; symmetric original Q.",
+    "inputs": [
+      "12seeds20261122..20261133; dimensions fixed by script",
+      "six exact rational full Fock comparisons",
+      "12 Perceval complete-law moment comparisons"
+    ],
+    "bounds": {
+      "circuits": 12,
+      "exact_rational_circuits": 6,
+      "max_modes": 8,
+      "max_photons": 4,
+      "max_fock_outcomes": 330
+    },
+    "non_claims": [
+      "No new permanent algorithm",
+      "No optimization/quantum benefit",
+      "No complete sampler or finite-shot training reproduction",
+      "No physical-input guarantee for binary encodings"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "random.Random for exact rational gates; numpy.default_rng/PCG64 for encoded unitary QR",
+    "seed": "20261122..20261133"
+  },
+  "run": {
+    "started_at": "2026-11-22T11:51:50.410641+00:00",
+    "runtime_seconds": 2.204437,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_threshold_marginal_probe.py",
+    "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+    "research/P35_THRESHOLD_BASELINE_CONTRACT.md",
+    "theory/phase3_threshold_lowrank.md",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_threshold_marginal_probe.py",
+      "sha256": "7d17d7b9ff14c6e179c12efc6754e74261d22055c2f874d6874421f7b7a23df8",
+      "sha256_after": "7d17d7b9ff14c6e179c12efc6754e74261d22055c2f874d6874421f7b7a23df8"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+      "sha256": "3a780d09389d80fe5156a86a062c56210378d0ee64ed97d0f1faa994faa5b515",
+      "sha256_after": "3a780d09389d80fe5156a86a062c56210378d0ee64ed97d0f1faa994faa5b515"
+    },
+    {
+      "path": "research/P35_THRESHOLD_BASELINE_CONTRACT.md",
+      "sha256": "0df944235bd6d7353cb427090c217a0bc26e01284f7ea79f01ca3a9075e1ae38",
+      "sha256_after": "0df944235bd6d7353cb427090c217a0bc26e01284f7ea79f01ca3a9075e1ae38"
+    },
+    {
+      "path": "theory/phase3_threshold_lowrank.md",
+      "sha256": "21b9a82a638f399e80f61fdb449a61002be9c625029628a7e4340bed2f4cae0b",
+      "sha256_after": "21b9a82a638f399e80f61fdb449a61002be9c625029628a7e4340bed2f4cae0b"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P35_threshold_marginal/run",
+  "declared_results": [
+    "experiments/P35_threshold_marginal/run/data/raw.json",
+    "experiments/P35_threshold_marginal/run/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P35_threshold_marginal/run/stdout.txt",
+      "sha256": "aee06ae3348640443960718440d87dba0d66924235d8d076a6bf78d8e1481b69",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P35_threshold_marginal/run/stderr.txt",
+      "sha256": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P35_threshold_marginal/run/data/raw.json",
+      "sha256": "7528278ed144671c67a09a2a7cc3a83995248e609a6f7b9dd605ff0b2e69f706",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P35_threshold_marginal/run/data/summary.json",
+      "sha256": "ff3a9f3b0ed7d4743ea0cbc47aa3c07774e7851ee3fac9a2dcfd9dfaa4eac390",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
