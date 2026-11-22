@@ -1,0 +1,47 @@
+{
+  "claim_id": "P36_PHASE_SENSITIVE_COUNTEREXAMPLE_SEARCH",
+  "mathematics": {
+    "assertion_tested": "Seek TV>min(1,delta) with bounded adversarial phase-sensitive three- and six-mode searches, retaining every evaluation.",
+    "coefficient_domain": "complex128,float64",
+    "conventions": "Three distinct input photons, full output occupations, explicit coherent routing versus incoherent path squares.",
+    "inputs": [
+      "three-mode CKM angles/phase and six-mode general QR frames",
+      "seeds20261140/20261141, targets0.25/0.75"
+    ],
+    "bounds": {
+      "max_evaluations": 18000,
+      "max_modes": 6,
+      "photons": 3,
+      "search_cells": 8
+    },
+    "non_claims": [
+      "No proof from no refutation",
+      "No graph optimization advantage",
+      "No hardware or exact numerical certification"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/phase3_linear_leakage_adversarial.py",
+    "research/P36_ADVERSARIAL_SEARCH_CONTRACT.md",
+    "pyproject.toml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64 and scipy differential evolution",
+    "seed": "20261140,20261141"
+  }
+}
