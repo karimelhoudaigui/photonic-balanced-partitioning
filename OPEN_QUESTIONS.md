@@ -57,3 +57,36 @@ until an ideal interference-dependent signal survives classical baselines.
 QPU requires every scientific gate plus a frozen circuit/parameters and explicit
 authorization. Authentic optical penalty comparison is currently OPEN, so no
 hardware handoff should be prepared. Manuscript criteria are not satisfied.
+
+
+## Continuation checkpoint — 2026-11-22, source b1ff914
+
+R1 now has an additional exact obstruction: for the proposed nonnegative
+quadratic occupation objective the bosonic mean cannot improve on the same-frame
+distinguishable mean. This closes that mean-based mechanism, not all tail-based
+or nonquadratic search. Any new experiment must identify what changes this
+bottleneck and charge serious classical correlated/feasible controls. Full
+ObliQ training, hybrid source selection and prefix decoding remain unimplemented;
+P30 validates only its static kernel. P21 supplies charged classical discovery.
+
+R2 exact density refinement is proved and independently reviewed at75e5831:
+for minimum positive intensity c fixed, small expected collision pairs M imply
+small full-law TV with a sharp refined leading envelope M/(2c). It overcomes
+only the missing density hypothesis, not the known dilute counterexample.
+Next executable steps: complete native primary/replication and independently
+inspect all raw probabilities; audit tiny-angle numerical semantics; perform
+cross-field attribution search (Bayes error/Gini/Hellinger/frame bounds).
+The saved-workflow role protocol is research/P33_DENSITY_CONTRACT.md.
+N1/N2 alone and the fixed-rank threshold DP no longer support novelty claims.
+
+R4 operational consequence, OPEN: formulate adaptive classical replacement
+at equal attempts from uniform conditional TV bounds. Fresh Fock inputs and
+classical histories are essential; no quantum memory or rare-event ratio claim.
+Ordinary sequential coupling is known, so any contribution must be scoped to
+the photonic condition and cannot be labeled a new coupling theorem.
+
+Resource status: the three additional Codex agents reached their usage quota
+on this continuation; their requested second-pass packages did not execute.
+Those reviews remain deferred, not falsely marked complete. Qwen local native
+workflows and coordinator verification continue with bounded individual jobs.
+The same scientific/hardware gate conditions remain in force.

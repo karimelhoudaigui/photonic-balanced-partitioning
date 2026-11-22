@@ -1,56 +1,69 @@
-# Current research status — 2026-11-20
+# Current research status — 2026-11-22
 
-PAPER_READY = FALSE. QPU_GATE = CLOSED.
-NO-GO for claiming computational benefit from the tested generic bosonic mesh.
-The general research question remains OPEN. No QPU or noise experiment was run.
+PAPER_READY = FALSE. QPU_GATE = CLOSED. Original optimization goal remains OPEN.
+The tested generic bosonic mesh remains NO-GO as computational-benefit evidence.
+No hardware request or noise campaign was executed. The manuscript is frozen.
 
-[Scientific checkpoint and figures](reports/RESEARCH_CYCLE_2026-11-20.md)
-are authoritative; older feasibility text is historical and superseded.
+The [2026-11-20 scientific checkpoint](reports/RESEARCH_CYCLE_2026-11-20.md)
+retains the full historical E01–E09 evidence. Subsequent checkpoints below add
+results; they do not turn earlier negative experiments into positive evidence.
 
-Completed and actually executed:
+Accepted Phase3 checkpoints:
 
-- Full Fock/HOM/phase/vacuum validation; Perceval PASS,8464 outcomes, max probability error1.776e-15.
-- Objectives, collision-aware solver, weighted conditional lower CVaR and full binary classical penalty repaired.
-- 142 tests pass in the pinned .venv.
-- E01:3250 Haar circuits, n4/6/8/10.
-- E02/E03/E04: optimization, objectives, depths, optimizers and distinguishability controls.
-- E05b:756 runs at exactly34816 ideal draws each;26,320,896 simulated attempts including training discovery.
-- E06b:pair-moment checks; original failed tolerance assertion preserved.
-- E07:spectral hybrid;27/36 graph slots already classically solved by the anchor.
-- E08:TV certificate and balanced counterexample;240 full-distribution checks,9rational cases, full Fock n4/8/12.
-- E09:240 relabeling/reachability runs.
-- Raw data, commands, commits, seeds, hashes, independent reviews and five PNG/PDF figures retained.
+- P30: the authenticated static ObliQ optical kernel agrees with its archive,
+  explicit Fock calculations and Perceval. Its known Rx angle discrepancy is
+  retained as separate literal/corrected variants. This is a component, not the
+  complete original training/source-selection/prefix-decoder algorithm.
+  See [optical audit](reports/PHASE3_OPTICAL_PENALTY.md), c3b83ef.
+- P31: fixed-input, fixed-order static penalty washout has a restricted exact
+  proof and independent reconstruction, with 972 unitary and 36 Fock checks.
+  It bounds distinguishability of optical states, not optimization time or
+  information already supplied to the classical graph-aware decoder.
+  See [independent review](reports/PHASE3_WASHOUT_INDEPENDENT_REVIEW.md), 6fcfc94.
+- P32: exact threshold/photon-budget checks show that per-attempt, per-photon,
+  finite-budget and all-photons-detected criteria can select different sources.
+  195 rational cases and 120 circuit checks pass. Haar feasibility is not graph
+  optimization. See [threshold audit](reports/PHASE3_THRESHOLD_AUDIT.md), 2ed2e7d.
+- Occupation objective: exact low-order mean costs are classically polynomial
+  to evaluate. For nonnegative weights and collision penalty mu>=0, the bosonic
+  mean is at least the distinguishable mean on every identical occupied frame.
+  This does not order success tails; a retained small example reverses those.
+  See [derivation](theory/phase3_occupation_dominance.md), 98e4ecc.
+- P33: the exact density/expected-collision theorem at75e5831 passed a fresh
+  independent proof audit, integrated4420e17. A positive intensity floor c,
+  expected collision-pair count M, and dominant-support leakage give sufficient
+  absolute-TV bounds; the refined leading coefficient M/(2c) is sharp in a
+  balanced two-photon family. Collision probability alone is insufficient.
+  See [proof review](reports/PHASE3_DENSITY_INDEPENDENT_REVIEW.md).
+  The improved floating implementation77a8588 is explicitly not interval
+  certified. The corrected native primary/replication cycle is still pending.
+- Absolute-TV control need not remove a rare-event success ratio: the exact
+  retained family has a factor-two ratio while both expected waiting times
+  diverge, and a disclosed correlated classical control solves the toy case.
+  See [success scope](theory/phase3_density_success_scope.md), 385293e.
 
-Validated theoretical checkpoint: P_CF->1 does not force TV to distinguishable
-statistics to zero uniformly, even for k=m/2. Spatial-overlap TV certificates and
-a counterexample have independently checked proofs. Novelty is OPEN.
+Novelty: spatial-Gram N1 is a formal corollary of earlier boson-sampling analysis;
+N2 follows from known permanent/cycle machinery. Low-rank threshold expectation
+DP is already in primary literature. The exact dominant-support/density
+composition and restricted optical-kernel specialization retain unresolved
+attribution, not a novelty certificate. See research/phase3_density_novelty.md,
+research/phase3_lowrank_sources.md and research/phase3_washout_novelty.md.
 
-Still open / deferred:
+Infrastructure: official Qwen Code0.28.0, Ollama0.32.0 and one local Qwen3.5-1.9B
+Q4 model are installed on the measured M2/8GiB host. Native saved Workflows
+have demonstrated distinct sequential subagents and real handoff. The separate
+native Agent Team lifecycle remains FAIL. A typed local stdio scientific bridge
+is connected; its full scientific workflow remains under verification. No paid
+inference or larger automatic download is enabled. Reports and raw receipts,
+not model prose, determine acceptance.
 
-- Exact optical ObliQ dynamics and a physically comparable penalty encoding.
-- Literature novelty audit of the new mathematical notes.
-- Useful optimum-blind, label-invariant graph-informed search beating feasible classical discovery.
-- Hardware source/detection loss accounting and noise; deferred because ideal benefit is unestablished.
-- Optimized n10 studies, larger/harder preregistered populations and graph-cluster inference.
+Current working-tree tests: 264 passed, nine Perceval cache-permission warnings;
+includes 16 tests in preserved untracked Phase2 drafts. SymPy1.14.0 is pinned
+in an optional theory extra. Historical manifests are validated at their
+recorded input revisions, not against later metadata changes.
 
-Continuation contract: OPEN_QUESTIONS.md; decisions: DECISIONS.md;
-all scientific claims and statuses: CLAIMS.md. Manuscript remains frozen.
-
-## 2026-11-21 — supervised local Qwen infrastructure
-
-Qwen Code0.28.0 and Ollama0.32.0 are installed externally,with one Qwen3.5-1.9B
-Q4_K_M model on the measured M2/8GiB host. Seven roles and a bounded worktree
-launcher are versioned. Basic repo access,tool calls,Python tests and report
-creation PASS;native SUBAGENTS and AGENT TEAM probes FAIL. Do not call this a
-validated autonomous research team. No paid API or QPU was used.
-
-The first supplied n4 diagnostic and fresh-seed replication actually generated
-36 runs/1152 exact objective evaluations. Astra verified every recorded metric
-and18best bosonic circuits against Perceval. Qwen's prose report was rejected
-for invented uncertainty and mixed graph results;critic/report completion also
-failed its caps. A stable interference benefit was not established. Scientific
-decision:INCONCLUSIVE;no manuscript/QPU advancement. See
-reports/ASTRA_QWEN_FIRST_CYCLE_AUDIT.md and reports/QWEN_INFRASTRUCTURE_VALIDATION.md.
-The complete working tree passes192 tests,including42 earlier Phase2 draft tests
-outside the scoped infrastructure changes. The142-test scientific checkpoint
-above remains historical;the infrastructure adds8guardrail tests.
+Next: finish and independently inspect the bounded native primary/replication
+cycle; continue exact novelty/operational interpretation checks; require a
+changed mechanism before any broader optimization sweep. Full authentic ObliQ
+training/hybrid input/decoder and a useful optimum-blind algorithmic advantage
+remain unresolved. Details: OPEN_QUESTIONS.md, CLAIMS.md and RESEARCH_LOG.md.

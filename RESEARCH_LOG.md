@@ -373,3 +373,79 @@ Reports:AGENT_INFRASTRUCTURE.md,LOCAL_MODEL_SELECTION.md,
 QWEN_INFRASTRUCTURE_VALIDATION.md,ASTRA_QWEN_FIRST_CYCLE_AUDIT.md.
 Full current working-tree pytest:192passed;42tests belong to earlier Phase2
 drafts preserved outside the scoped infrastructure change. No scientific gate opened.
+
+
+## Phase3 audited checkpoint — 2026-11-22
+
+Scope: improve the scientific basis, not the manuscript. Zero physical shots.
+Fixed scientific seed20261121 where stochastic, explicit source conventions.
+
+- P30, authentic static optical component: archive SHA8e5afe41c4d19c92b6a6aa1797b5b8391061cf6978216c9f9affad5e755fb948;
+  10 coincidence checks, 48 convergence checks and nine archive-unitary checks,
+  plus a separate81-occupation reconstruction. Literal/corrected angle variants
+  remain distinct. KEEP finite component validation; full ObliQ algorithm OPEN.
+  Commitc3b83ef; experiments/P30_optical_component/manifest.json;
+  reports/PHASE3_OPTICAL_PENALTY.md.
+- P31, penalty washout: 972 unitary,36 Fock and36 limit-gap checks. Exact
+  fixed-input/order proof independently reconstructed, including an exact
+  decoder-limit tie obstruction. KEEP restricted theorem; REJECT interpretation
+  as an optimization lower bound or universal two-candidate decoder.
+  Commiteda41e9 plus review6fcfc94;
+  experiments/P31_washout_bound_audit/run_001/manifest.json;
+  reports/PHASE3_WASHOUT_INDEPENDENT_REVIEW.md. Generic washout is known;
+  exact-kernel attribution remains OPEN.
+- P32, resource accounting: 195 rational cases,965 click values,120 circuits.
+  KEEP corrected operational distinctions; REJECT inferring graph benefit or
+  a universal photon optimum from Haar feasibility. Commit2ed2e7d;
+  experiments/P32_threshold_audit/run/manifest.json;
+  reports/PHASE3_THRESHOLD_AUDIT.md. Original draft loss formulas were retained
+  after independent agreement; counterexamples concern unqualified extensions.
+- Occupation objective: 32 complete-distribution circuits, eight Perceval
+  comparisons; exact moment and nonnegative same-frame mean-gap identities.
+  KEEP theorem; REJECT expecting a bosonic mean-energy improvement for this
+  nonnegative quadratic occupation objective. Success-tail ordering does not
+  follow. Commit98e4ecc; experiments/occupation_objective_validation/run/manifest.json;
+  theory/phase3_occupation_dominance.md.
+- P33 success scope: seven exact rational cases plus a zero-CF guard. KEEP
+  conditional-TV bound with max acceptance denominator; REJECT vanishing-TV
+  implies vanishing rare-success ratio. The factor-two toy has an explicitly
+  stronger correlated classical control. Commit385293e;
+  experiments/P33_density_success_scope/run/manifest.json.
+- P33 exact density theorem: independent review at75e5831 proves the stated
+  dominant-support/density implication and sharp leading refined coefficient.
+  Review4420e17 includes five rational cases/50 occupations and found a genuine
+  floating cancellation witness. Fix77a8588 replaces subtraction by positive
+  sums and a stable series; estimates remain NOT interval certified. KEEP exact
+  proof, no automatic novelty or hardware inference. Attribution report66141f5
+  identifies N1/N2 as prior-art consequences; new composition attribution OPEN.
+- Low-rank threshold expectation route: primary sources already contain the
+  proposed permanent DP. REJECT novelty; preserve proof/source dictionary at
+  28f096c. Cheap evaluation does not imply easy optimization or quantum benefit.
+- P21 classical search control integrated2996904:2880 searches,120 scored queries
+  each,345600 charged queries; spectral setup is charged. The original untracked
+  P20 drafts remain separate pending review.
+
+Each manifest retains its own observed timestamp, actual argv, recorded base
+commit and before/after/output hashes; historical inputs are checked at those
+revisions. No original raw result was rewritten to match a later checkpoint.
+
+## Qwen native scientific-cycle failures and changed interface — 2026-11-22
+
+First density native cycle20261121T202352Z: all seven roles were observed but
+replication failed because the model omitted --output. Primary data and the
+failed replication manifest remain at branch272c3fd; not accepted as a completed
+cycle. Second20261121T205203Z (77a8588): only six roles; the runner used Bash
+for a Python file and then an unavailable interpreter. No scientific command
+completed. KEEP failures; distinguish parent exit0 from workflow INCONCLUSIVE.
+
+Changed bottleneck: b1ff914 introduces four local parameterless MCP actions that
+construct fixed argv under a pinned Python, preserve data, enforce time limits
+and prohibit transport replay of scientific writes. Basic bridge protocol and
+all264 current working-tree tests pass. Native action smoke and then the full
+nine-dispatch/seven-role workflow are under verification. Qwen's generated
+narrative is never sufficient scientific evidence. Native saved-Workflow
+subagents have passed earlier independent two-child handoff validation;
+experimental Agent Team lifecycle remains FAIL. Paper/QPU gates remain closed.
+
+Two untracked root P33 directories with unresolved provenance are preserved and
+excluded from accepted evidence, per reports/P33_UNATTRIBUTED_ROOT_DATA.md.

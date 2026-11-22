@@ -58,3 +58,27 @@ search hypothesis. No manuscript writing or hardware call is authorized by these
   INCONCLUSIVE;no QPU or manuscript progression. This is not a universal no-go theorem.
 - Leave prior Phase2 draft research intact and outside the infrastructure change.
   Continue only from a falsifiable changed mechanism after independent review.
+
+
+## 2026-11-22 — audited Phase3 continuation
+
+- Supersede the old claim that no authentic optical dynamics exist: P30 validates
+  the static archive kernel only. Full ObliQ training/source/decoder remains OPEN.
+- KEEP independently reviewed restricted washout and density theorems, while
+  separating optical-state bounds from graph-aware algorithm performance.
+- REJECT novelty for N1/N2 and the low-rank threshold DP as currently phrased.
+  Dominant-support/density composition attribution remains OPEN, not certified.
+- REJECT a mean-energy bosonic benefit for the nonnegative quadratic occupation
+  objective. Its exact covariance gap is positive semidefinite. Do not extend
+  that ordering to success tails or infer advantage from a toy tail reversal.
+- Keep Haar feasibility/resource criteria distinct: per attempt, photons,
+  finite total budget, and number-resolved all-detected acceptance can disagree.
+- Numerical density bounds remain float estimates despite cancellation fixes;
+  no outward-rounded certification or experimental confidence claim is made.
+- Supersede native SUBAGENTS FAIL only for the observed saved-Workflow route.
+  Separate Agent Team lifecycle remains FAIL. Retain both failed density cycles.
+  Use typed, local, bounded scientific actions to remove shell-transcription
+  errors. Astra accepts raw data and proofs independently of Qwen narrative.
+- Preserve unattributed root P33 data, exclude it from accepted evidence, and
+  require fresh isolated provenance. Preserve untracked P20 drafts/backups.
+- PAPER_READY=FALSE; QPU_GATE=CLOSED; original optimization goal remains OPEN.
