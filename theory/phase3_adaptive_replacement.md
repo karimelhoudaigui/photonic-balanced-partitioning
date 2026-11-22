@@ -22,10 +22,15 @@ absorbing symbol up to T; both kernels agree at an absorbed history.
 Let b_t(.|h),d_t(.|h) be the conditional outcome laws at the SAME history.
 Assume TV(b_t(.|h),d_t(.|h))<=epsilon_t(h), for every eligible history, with
 0<=epsilon_t(h)<=1. A sampled collection of visited circuits does not prove
-this uniform hypothesis. If deterministic bounds e_t dominate these epsilons,
+this uniform hypothesis. If deterministic bounds e_t in [0,1] dominate these epsilons,
 the complete transcript laws satisfy
 
     TV(B_1:T,D_1:T) <= 1-product_(t=1)^T(1-e_t) <= sum_t e_t.
+
+If supplied nonnegative upper bounds exceed one, replace each by min(1,e_t)
+BEFORE forming the product. Without the [0,1] restriction the product statement
+is false: T=2,e_1=e_2=3 gives a negative right side. This explicit restriction
+corrects the overbroad wording in42d9eff, identified by the fresh physics review.
 
 The bounds include the policy's classical actions, state and final output,
 because shared postprocessing cannot increase TV. Every success event A,
