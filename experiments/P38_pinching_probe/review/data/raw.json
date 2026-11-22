@@ -1,0 +1,365 @@
+{
+  "summary": {
+    "status": "DIRECT_TENSOR_STATE_REVIEW_PASS",
+    "review_provenance": "ASTRA_SELF_REVIEW_DISTINCT_IMPLEMENTATION",
+    "circuits": 36,
+    "exact_rayleigh_controls": 3,
+    "new_perceval_calls": 0,
+    "physical_shots": 0,
+    "max_probability_error": 2.220446049250313e-16,
+    "max_pinched_distance_error": 9.49379463932587e-14,
+    "max_trace_residual": 1.700029006457271e-16,
+    "runtime_seconds": 16.87621141600539,
+    "non_claims": [
+      "No universal proof",
+      "No fresh independent reviewer",
+      "Float eigensolvers are not interval certificates"
+    ]
+  },
+  "records": [
+    {
+      "m": 3,
+      "seed": 20261201,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.003401743244543658,
+      "fine_tv": 0.003401743244543585,
+      "max_probability_error": 2.220446049250313e-16,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261201,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.17243890303045814,
+      "fine_tv": 0.17243890303045822,
+      "max_probability_error": 1.1102230246251565e-16,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261201,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.4507646421528523,
+      "fine_tv": 0.4507646421528522,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261201,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.4123568834624414,
+      "fine_tv": 0.4123568834624415,
+      "max_probability_error": 8.326672684688674e-17,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261202,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.003370410538385429,
+      "fine_tv": 0.003370410538385484,
+      "max_probability_error": 2.220446049250313e-16,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261202,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.16205201592113588,
+      "fine_tv": 0.1620520159211359,
+      "max_probability_error": 2.7755575615628914e-17,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261202,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.36750755246872197,
+      "fine_tv": 0.3675075524687219,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261202,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.4054472814313957,
+      "fine_tv": 0.40544728143139575,
+      "max_probability_error": 8.326672684688674e-17,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261203,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.002801486096975568,
+      "fine_tv": 0.0028014860969754387,
+      "max_probability_error": 2.220446049250313e-16,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261203,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.15177963650016824,
+      "fine_tv": 0.15177963650016826,
+      "max_probability_error": 2.220446049250313e-16,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261203,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.4517437027157129,
+      "fine_tv": 0.45174370271571307,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 3,
+      "seed": 20261203,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.4324739369066404,
+      "fine_tv": 0.4324739369066402,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 1
+    },
+    {
+      "m": 6,
+      "seed": 20261201,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.004996388069966616,
+      "fine_tv": 0.003998790905953568,
+      "max_probability_error": 1.1102230246251565e-16,
+      "largest_tensor_sector_dimension": 8
+    },
+    {
+      "m": 6,
+      "seed": 20261201,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.26669242670279614,
+      "fine_tv": 0.18517575623604465,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 8
+    },
+    {
+      "m": 6,
+      "seed": 20261201,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.37902102727204484,
+      "fine_tv": 0.28596776205632357,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 6,
+      "seed": 20261201,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.6843991824847083,
+      "fine_tv": 0.34263249104920124,
+      "max_probability_error": 1.3877787807814457e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 6,
+      "seed": 20261202,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.003339477758425136,
+      "fine_tv": 0.002728966313713873,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 8
+    },
+    {
+      "m": 6,
+      "seed": 20261202,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.1883168693829411,
+      "fine_tv": 0.1442477845930003,
+      "max_probability_error": 1.1102230246251565e-16,
+      "largest_tensor_sector_dimension": 8
+    },
+    {
+      "m": 6,
+      "seed": 20261202,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.5396649495064472,
+      "fine_tv": 0.37306709828788076,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 6,
+      "seed": 20261202,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.42096883443651223,
+      "fine_tv": 0.24445582869925217,
+      "max_probability_error": 2.7755575615628914e-17,
+      "largest_tensor_sector_dimension": 8
+    },
+    {
+      "m": 6,
+      "seed": 20261203,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.0023541852351357645,
+      "fine_tv": 0.0016604110568665582,
+      "max_probability_error": 1.1102230246251565e-16,
+      "largest_tensor_sector_dimension": 8
+    },
+    {
+      "m": 6,
+      "seed": 20261203,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.13623087531543168,
+      "fine_tv": 0.0831369500202164,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 8
+    },
+    {
+      "m": 6,
+      "seed": 20261203,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.39904516812788365,
+      "fine_tv": 0.26087170944935356,
+      "max_probability_error": 4.163336342344337e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 6,
+      "seed": 20261203,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.6234827506142073,
+      "fine_tv": 0.35106147942403554,
+      "max_probability_error": 2.0816681711721685e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261201,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.003991078198122915,
+      "fine_tv": 0.002762072564416803,
+      "max_probability_error": 4.163336342344337e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261201,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.23640109026322204,
+      "fine_tv": 0.1657479517588,
+      "max_probability_error": 2.7755575615628914e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261201,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.7237532590576655,
+      "fine_tv": 0.36665504609038335,
+      "max_probability_error": 6.938893903907228e-18,
+      "largest_tensor_sector_dimension": 64
+    },
+    {
+      "m": 9,
+      "seed": 20261201,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.6106815797334504,
+      "fine_tv": 0.34124110026738164,
+      "max_probability_error": 6.938893903907228e-18,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261202,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.0053995631587045135,
+      "fine_tv": 0.003228402164027021,
+      "max_probability_error": 5.551115123125783e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261202,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.2793359869972379,
+      "fine_tv": 0.16213362596039838,
+      "max_probability_error": 2.7755575615628914e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261202,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.6832666220641354,
+      "fine_tv": 0.34740673427714824,
+      "max_probability_error": 2.7755575615628914e-17,
+      "largest_tensor_sector_dimension": 64
+    },
+    {
+      "m": 9,
+      "seed": 20261202,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.5822858409900147,
+      "fine_tv": 0.33485978156299895,
+      "max_probability_error": 1.3877787807814457e-17,
+      "largest_tensor_sector_dimension": 64
+    },
+    {
+      "m": 9,
+      "seed": 20261203,
+      "strength": "1/40",
+      "direct_pinched_trace_distance": 0.005492845755055622,
+      "fine_tv": 0.004021121708834148,
+      "max_probability_error": 4.163336342344337e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261203,
+      "strength": "1/5",
+      "direct_pinched_trace_distance": 0.2930972075309362,
+      "fine_tv": 0.19130047792672902,
+      "max_probability_error": 2.7755575615628914e-17,
+      "largest_tensor_sector_dimension": 27
+    },
+    {
+      "m": 9,
+      "seed": 20261203,
+      "strength": "1/2",
+      "direct_pinched_trace_distance": 0.6004301349283212,
+      "fine_tv": 0.3218560328487746,
+      "max_probability_error": 1.734723475976807e-17,
+      "largest_tensor_sector_dimension": 64
+    },
+    {
+      "m": 9,
+      "seed": 20261203,
+      "strength": "1",
+      "direct_pinched_trace_distance": 0.628200498181864,
+      "fine_tv": 0.30459186586653564,
+      "max_probability_error": 1.0408340855860843e-17,
+      "largest_tensor_sector_dimension": 64
+    }
+  ],
+  "rayleigh_controls": [
+    {
+      "t": "1/10",
+      "target": "7840800/104060401",
+      "exact_lower": "7840800/104060401",
+      "gap": "0"
+    },
+    {
+      "t": "1/5",
+      "target": "7200/28561",
+      "exact_lower": "7200/28561",
+      "gap": "0"
+    },
+    {
+      "t": "1/3",
+      "target": "288/625",
+      "exact_lower": "288/625",
+      "gap": "0"
+    }
+  ]
+}

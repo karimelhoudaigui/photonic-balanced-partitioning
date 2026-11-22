@@ -1,0 +1,39 @@
+{
+  "preserved_at": "2026-11-22T19:37:15.671806+00:00",
+  "status": "INTERRUPTED_AGENT_DRAFTS_WITH_REAL_RETAINED_FILES",
+  "original_physics_base": "de77a1404cbab6f98d3187bad4ab42b772789f29",
+  "original_physics_manifest_validation": "PASS in original worker root; completed bounded record; coordinator read source/receipt; no unchanged rerun",
+  "scope": "No final independent proof review or source-review completion claimed. Original manifest paths remain worker-relative; relocation is not a new execution.",
+  "files": [
+    {
+      "original": ".qwen/worktrees/phase3-linear-leakage-attempt/theory/phase3_linear_leakage_attempt.md",
+      "original_sha256": "119829a3fc5f457a480e209dd7155c8f8478f8f5e34a75af125e17c9e3aba40e",
+      "preserved": "research/P36_PHASE_ANALYTIC_INTERRUPTED.md",
+      "preserved_sha256": "3a7e6fde8f0570bbb6e91417c8e69bc0acfae48e573ab984842ec0486b34a589"
+    },
+    {
+      "original": ".qwen/worktrees/late2026-loss-review/research/P36_PRODUCT_MEASUREMENT_SOURCES.md",
+      "original_sha256": "269a7e353ecd0be9c2935c4051a3c056355b6779cc971242518d9f08db7a6576",
+      "preserved": "research/P36_PRODUCT_MEASUREMENT_SOURCES.md",
+      "preserved_sha256": "3938353e7f73f553d6b2cda03b8e1a1279621009fd6050b06dcbb2f6a7dee596"
+    },
+    {
+      "original": ".qwen/worktrees/phase3-linear-leakage-attempt/experiments/P36_analytic_attempt/check.py",
+      "original_sha256": "1b4ff375c912b164f6b791bb52b82cb66be6263279c0a5c0e341ebf02e3d1127",
+      "preserved": "experiments/P36_interrupted_phase_attempt/check.py",
+      "preserved_sha256": "1b4ff375c912b164f6b791bb52b82cb66be6263279c0a5c0e341ebf02e3d1127"
+    },
+    {
+      "original": ".qwen/worktrees/phase3-linear-leakage-attempt/experiments/P36_analytic_attempt/receipt.json",
+      "original_sha256": "ff519e5ce674b829f03193e7ba746cc57241e4a82c1aac8b9d1d6f6d92f84d48",
+      "preserved": "experiments/P36_interrupted_phase_attempt/receipt.json",
+      "preserved_sha256": "ff519e5ce674b829f03193e7ba746cc57241e4a82c1aac8b9d1d6f6d92f84d48"
+    },
+    {
+      "original": ".qwen/worktrees/phase3-linear-leakage-attempt/experiments/P36_analytic_attempt/manifest.json",
+      "original_sha256": "1c9779cc70415af354c913da137d2c6fd7e6f26c163631964406ecec8978a39d",
+      "preserved": "experiments/P36_interrupted_phase_attempt/manifest.json",
+      "preserved_sha256": "1c9779cc70415af354c913da137d2c6fd7e6f26c163631964406ecec8978a39d"
+    }
+  ]
+}

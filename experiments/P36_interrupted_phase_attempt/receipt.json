@@ -1,0 +1,1479 @@
+{
+  "base_commit": "de77a1404cbab6f98d3187bad4ab42b772789f29",
+  "exact_algebra": {
+    "chain_signed_table": {
+      "000": "5*x**3*(x - 1)**2",
+      "001": "-x**2*(x - 1)*(15*x**2 - 20*x + 6)",
+      "002": "-x*(x - 1)*(6*x**2 - 6*x + 1)",
+      "011": "x*(x - 1)**2*(15*x**2 - 10*x + 1)",
+      "012": "4*x*(x - 1)*(3*x**2 - 3*x + 1)",
+      "022": "x*(x - 1)**2",
+      "111": "-5*x**2*(x - 1)**3",
+      "112": "-x*(x - 1)*(6*x**2 - 6*x + 1)",
+      "122": "-x**2*(x - 1)",
+      "222": "0"
+    },
+    "chain_delta_minus_TV": [
+      "3*x**2*(4*x**2 - 8*x + 5)",
+      "x*(15*x**4 - 28*x**3 + 12*x**2 + 3*x + 1)",
+      "x*(15*x**4 - 40*x**3 + 36*x**2 - 11*x + 3)"
+    ],
+    "tritter_signed_table": {
+      "000": "20*(x - 1)**2*(4*x + 5)/729",
+      "001": "-2*(x - 1)*(20*x**2 + 14*x - 7)/243",
+      "002": "-2*(x - 1)*(20*x**2 + 14*x - 7)/243",
+      "011": "-2*(x - 1)*(20*x**2 + 14*x - 7)/243",
+      "012": "4*(x - 1)*(5*x + 4)*(8*x + 1)/243",
+      "022": "-2*(x - 1)*(20*x**2 + 14*x - 7)/243",
+      "111": "20*(x - 1)**2*(4*x + 5)/729",
+      "112": "-2*(x - 1)*(20*x**2 + 14*x - 7)/243",
+      "122": "-2*(x - 1)*(20*x**2 + 14*x - 7)/243",
+      "222": "20*(x - 1)**2*(4*x + 5)/729"
+    },
+    "tritter_small_delta_TV": "delta*(2*delta - 3)*(5*delta - 12)/36",
+    "gram_obstruction": "(28*t**3 + 3*t**2 + 36*t - 40)/(t**2 + 2)**3"
+  },
+  "assertion_tested": "Exact identities for two fixed connected families and Gram obstruction; finite trace-distance pinching discriminator on 15 specified frames, not a universal bound",
+  "diagnostics": [
+    {
+      "m": 6,
+      "delta": 0.019933422158758374,
+      "pinched_trace_distance": 0.019734751499278724,
+      "fine_occupation_TV": 0.01973475149927867,
+      "pinched_minus_delta": -0.00019867065947964946,
+      "phase_identity_error": 1.3877787807814457e-17,
+      "orthogonality_residual": 5.20740757162067e-16,
+      "pinched_trace_residual": -1.0408340855860843e-17,
+      "minimum_gram_eigenvalue": -1.3537498062817877e-20,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.004933687874819679
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.009867375749639364
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.004933687874819679
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 0,
+      "angle": 0.1
+    },
+    {
+      "m": 6,
+      "delta": 0.3032932906528346,
+      "pinched_trace_distance": 0.25729988057532205,
+      "fine_occupation_TV": 0.2572998805753221,
+      "pinched_minus_delta": -0.045993410077512564,
+      "phase_identity_error": 6.938893903907228e-18,
+      "orthogonality_residual": 3.6821932062951477e-16,
+      "pinched_trace_residual": -3.3306690738754696e-16,
+      "minimum_gram_eigenvalue": 0.0,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.06432497014383047
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.1286499402876611
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.0643249701438305
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 0,
+      "angle": 0.4
+    },
+    {
+      "m": 6,
+      "delta": 0.9708004776987114,
+      "pinched_trace_distance": 0.499573693948688,
+      "fine_occupation_TV": 0.49957369394868834,
+      "pinched_minus_delta": -0.47122678375002336,
+      "phase_identity_error": 0.0,
+      "orthogonality_residual": 2.7194799110210365e-16,
+      "pinched_trace_residual": 1.1102230246251565e-16,
+      "minimum_gram_eigenvalue": -9.923024547625889e-17,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.12489342348717203
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.24978684697434395
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.12489342348717203
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 0,
+      "angle": 0.8
+    },
+    {
+      "m": 6,
+      "delta": 0.019933422158758374,
+      "pinched_trace_distance": 0.01973475149927872,
+      "fine_occupation_TV": 0.019734751499278697,
+      "pinched_minus_delta": -0.00019867065947965293,
+      "phase_identity_error": 1.3877787807814457e-17,
+      "orthogonality_residual": 5.20740757162067e-16,
+      "pinched_trace_residual": 0.0,
+      "minimum_gram_eigenvalue": 0.0,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.004933687874819681
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.009867375749639359
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.004933687874819681
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 1,
+      "angle": 0.1
+    },
+    {
+      "m": 6,
+      "delta": 0.30329329065283467,
+      "pinched_trace_distance": 0.25729988057532205,
+      "fine_occupation_TV": 0.2572998805753221,
+      "pinched_minus_delta": -0.04599341007751262,
+      "phase_identity_error": 1.3877787807814457e-17,
+      "orthogonality_residual": 2.7194799110210365e-16,
+      "pinched_trace_residual": -6.245004513516506e-17,
+      "minimum_gram_eigenvalue": -1.8491947297924003e-32,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.06432497014383048
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.12864994028766108
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.06432497014383048
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 1,
+      "angle": 0.4
+    },
+    {
+      "m": 6,
+      "delta": 0.9708004776987114,
+      "pinched_trace_distance": 0.49957369394868806,
+      "fine_occupation_TV": 0.49957369394868834,
+      "pinched_minus_delta": -0.4712267837500233,
+      "phase_identity_error": 1.3877787807814457e-17,
+      "orthogonality_residual": 2.7194799110210365e-16,
+      "pinched_trace_residual": 0.0,
+      "minimum_gram_eigenvalue": 0.0,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.12489342348717203
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.249786846974344
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.12489342348717203
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 1,
+      "angle": 0.8
+    },
+    {
+      "m": 6,
+      "delta": 0.02990013323813756,
+      "pinched_trace_distance": 0.015781236092901166,
+      "fine_occupation_TV": 0.014801063624459043,
+      "pinched_minus_delta": -0.014118897145236394,
+      "phase_identity_error": 5.082197683525802e-21,
+      "orthogonality_residual": 5.769104128977648e-16,
+      "pinched_trace_residual": -6.52554182564713e-18,
+      "minimum_gram_eigenvalue": -1.0120857256662584e-33,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.004884515233215512
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 4.917264160416404e-05
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 4.917264160416408e-05
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.0009801724684421337
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.004884515233215515
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.004884515233215512
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 4.917264160416408e-05
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 2,
+      "angle": 0.1
+    },
+    {
+      "m": 6,
+      "delta": 0.454939935979252,
+      "pinched_trace_distance": 0.23911881956109837,
+      "fine_occupation_TV": 0.1929749104314917,
+      "pinched_minus_delta": -0.2158211164181536,
+      "phase_identity_error": 1.3877787807814457e-17,
+      "orthogonality_residual": 1.94923216681121e-16,
+      "pinched_trace_residual": 0.0,
+      "minimum_gram_eigenvalue": 0.0,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.05457030421079667
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.009754665933033854
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.009754665933033854
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.046143909129606794
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.05457030421079667
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.05457030421079667
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.009754665933033854
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 2,
+      "angle": 0.4
+    },
+    {
+      "m": 6,
+      "delta": 1.456200716548067,
+      "pinched_trace_distance": 0.49952043977277705,
+      "fine_occupation_TV": 0.374680270461516,
+      "pinched_minus_delta": -0.95668027677529,
+      "phase_identity_error": 6.938893903907228e-18,
+      "orthogonality_residual": 1.9241048689273918e-16,
+      "pinched_trace_residual": 0.0,
+      "minimum_gram_eigenvalue": -6.452522236518463e-33,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.06062329759138703
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.06427012589578499
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.06427012589578499
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.12484016931126102
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.06062329759138703
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.06062329759138703
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.06427012589578499
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 2,
+      "angle": 0.8
+    },
+    {
+      "m": 6,
+      "delta": 0.007743996990000087,
+      "pinched_trace_distance": 0.006560830836598396,
+      "fine_occupation_TV": 0.004708972670596143,
+      "pinched_minus_delta": -0.001183166153401691,
+      "phase_identity_error": 4.445228921592241e-17,
+      "orthogonality_residual": 3.5137035581599734e-16,
+      "pinched_trace_residual": -1.9481757786848908e-20,
+      "minimum_gram_eigenvalue": -3.5997140313853183e-20,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 1.657691839646949e-06
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.0006716639292130499
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.0004705574884456747
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.0007532548910450844
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.0026918794693254634
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0013418167725636294
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 1.909216579431657e-06
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.0002933853163109985
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.0003325763925491654
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 2.1296687262511973e-06
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 3,
+      "angle": 0.1
+    },
+    {
+      "m": 6,
+      "delta": 0.12243741182469131,
+      "pinched_trace_distance": 0.09866407936630395,
+      "fine_occupation_TV": 0.06959439805463592,
+      "pinched_minus_delta": -0.023773332458387364,
+      "phase_identity_error": 7.45931094699819e-17,
+      "orthogonality_residual": 3.1863239120432873e-16,
+      "pinched_trace_residual": -3.729655473350135e-17,
+      "minimum_gram_eigenvalue": -6.898772928396995e-19,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.00045993775924149335
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.00944354970433197
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.009537398185372995
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.010444400890071879
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.038385895693222455
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.01833504937402053
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0004241635888149729
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.004816657148031051
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.006256864627064965
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0005601623961316254
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 3,
+      "angle": 0.4
+    },
+    {
+      "m": 6,
+      "delta": 0.454383558358208,
+      "pinched_trace_distance": 0.31774596079565626,
+      "fine_occupation_TV": 0.21126517383800206,
+      "pinched_minus_delta": -0.13663759756255173,
+      "phase_identity_error": 2.08166842107204e-17,
+      "orthogonality_residual": 5.92554725730964e-16,
+      "pinched_trace_residual": -4.85722573273506e-17,
+      "minimum_gram_eigenvalue": -4.243201244765377e-18,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.006591465187141394
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.029718355953481237
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.04158240022543094
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.02646894465220799
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.10399015705781228
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.055385986814920796
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.004544344386648084
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.019246422616970564
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.023080081473918736
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.007137802427124244
+        }
+      ],
+      "construction": "six_mode_generator",
+      "generator": 3,
+      "angle": 0.8
+    },
+    {
+      "m": 9,
+      "delta": 0.060000000000000026,
+      "pinched_trace_distance": 0.047001644937560955,
+      "fine_occupation_TV": 0.026514599550487947,
+      "pinched_minus_delta": -0.012998355062439071,
+      "phase_identity_error": 1.908195823579835e-17,
+      "orthogonality_residual": 4.0048755702331494e-16,
+      "pinched_trace_residual": -2.6291902682773483e-18,
+      "minimum_gram_eigenvalue": 0.0,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 8.16666666666667e-05
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.004994319902748133
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.004994319902748141
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.004994319902748138
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.016790725521072136
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.004994319902748138
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 8.166666666666674e-05
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.0049943199027481355
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.00499431990274813
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 8.166666666666679e-05
+        }
+      ],
+      "construction": "diagonal_effects_flat_fourier",
+      "epsilon": 0.01
+    },
+    {
+      "m": 9,
+      "delta": 0.30000000000000004,
+      "pinched_trace_distance": 0.22599355971841703,
+      "fine_occupation_TV": 0.12372752524608392,
+      "pinched_minus_delta": -0.07400644028158301,
+      "phase_identity_error": 8.673617379884035e-18,
+      "orthogonality_residual": 5.935127892877795e-16,
+      "pinched_trace_residual": -6.136584296267955e-17,
+      "minimum_gram_eigenvalue": 0.0,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.001875000000000002
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.024413083709734752
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.02441308370973472
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.02441308370973478
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.07389005746000864
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.02441308370973473
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.0018750000000000014
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.02441308370973471
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.024413083709734752
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.0018749999999999986
+        }
+      ],
+      "construction": "diagonal_effects_flat_fourier",
+      "epsilon": 0.05
+    },
+    {
+      "m": 9,
+      "delta": 0.7200000000000002,
+      "pinched_trace_distance": 0.4901082883383691,
+      "fine_occupation_TV": 0.2651530736956744,
+      "pinched_minus_delta": -0.22989171166163108,
+      "phase_identity_error": 9.976133037133736e-18,
+      "orthogonality_residual": 4.606626241690768e-16,
+      "pinched_trace_residual": 1.4224732503009818e-16,
+      "minimum_gram_eigenvalue": 0.0,
+      "sectors": [
+        {
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "contribution": 0.00912
+        },
+        {
+          "groups": [
+            0,
+            0,
+            1
+          ],
+          "contribution": 0.05378626860597688
+        },
+        {
+          "groups": [
+            0,
+            0,
+            2
+          ],
+          "contribution": 0.053786268605976836
+        },
+        {
+          "groups": [
+            0,
+            1,
+            1
+          ],
+          "contribution": 0.053786268605976885
+        },
+        {
+          "groups": [
+            0,
+            1,
+            2
+          ],
+          "contribution": 0.14003067670250802
+        },
+        {
+          "groups": [
+            0,
+            2,
+            2
+          ],
+          "contribution": 0.0537862686059768
+        },
+        {
+          "groups": [
+            1,
+            1,
+            1
+          ],
+          "contribution": 0.00912
+        },
+        {
+          "groups": [
+            1,
+            1,
+            2
+          ],
+          "contribution": 0.053786268605976864
+        },
+        {
+          "groups": [
+            1,
+            2,
+            2
+          ],
+          "contribution": 0.05378626860597678
+        },
+        {
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "contribution": 0.009120000000000003
+        }
+      ],
+      "construction": "diagonal_effects_flat_fourier",
+      "epsilon": 0.12
+    }
+  ],
+  "maximum_pinched_minus_delta": -0.00019867065947964946,
+  "cpu_seconds": 0.28788800000000003,
+  "numerical_semantics": "FLOAT64_DIAGNOSTIC_NOT_INTERVAL_CERTIFIED"
+}

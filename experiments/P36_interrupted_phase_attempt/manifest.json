@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "claim_id": "P36-phase-aware-analytic-attempt",
+  "repository": {
+    "commit": "de77a1404cbab6f98d3187bad4ab42b772789f29",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/P36_analytic_attempt/check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit arm64"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact identities for two fixed connected families and Gram obstruction; finite trace-distance pinching discriminator on 15 specified frames, not a universal bound",
+    "coefficient_domain": "Exact rational symbolic algebra and float64 diagnostics",
+    "conventions": "Full Fock occupations, halved TV, no postselection",
+    "inputs": [
+      "experiments/P36_analytic_attempt/check.py"
+    ],
+    "bounds": {
+      "k": 3,
+      "m_max": 9,
+      "specified_frames": 15
+    },
+    "non_claims": [
+      "No universal pinched-state inequality proved by this finite test",
+      "No general conjecture verdict from data",
+      "No novelty or QPU claim"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64 for one fixed dense Hermitian generator",
+    "seed": 1729
+  },
+  "run": {
+    "started_at": "2026-11-22T12:50:42.507486+00:00",
+    "runtime_seconds": 0.3498175000131596,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": 1,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P36_analytic_attempt/receipt.json",
+      "sha256": "ff519e5ce674b829f03193e7ba746cc57241e4a82c1aac8b9d1d6f6d92f84d48",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "Exact family polynomials normalize in difference",
+    "Exact positive-Gram counterexample",
+    "Phase-aware signed convolution agrees with direct Fock expansion",
+    "Fine TV <= pinched trace distance on specified frames"
+  ],
+  "result": "Partial exact results; remaining pinched inequality only finitely tested",
+  "residual_risks": [
+    "Float eigensolver with tiny negative eigenvalues clipped after recording",
+    "Finite frames do not establish universal inequality"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/P36_analytic_attempt/check.py",
+      "sha256": "1b4ff375c912b164f6b791bb52b82cb66be6263279c0a5c0e341ebf02e3d1127",
+      "sha256_after": "1b4ff375c912b164f6b791bb52b82cb66be6263279c0a5c0e341ebf02e3d1127"
+    }
+  ],
+  "declared_results": [
+    "experiments/P36_analytic_attempt/receipt.json"
+  ]
+}
