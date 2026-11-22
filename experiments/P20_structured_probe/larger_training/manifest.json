@@ -1,0 +1,162 @@
+{
+  "schema_version": 2,
+  "claim_id": "P20_LOCAL_BLOCK_REPLICATION",
+  "repository": {
+    "commit": "99f82e367ef079e4d52f763d615476698727b739",
+    "dirty": true
+  },
+  "command": "MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/P20_structured_probe/run_larger_training.py",
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite local-proposal comparison, actual collision mass, accepted cut gains, and exact classical replacement.",
+    "coefficient_domain": "Complex128 amplitudes and Float64 graph costs/probabilities",
+    "conventions": "One photon per active occupied mode; full local Fock outputs; collisions fail an attempt; no global optimum labels.",
+    "inputs": [
+      "Predeclared six graph families, random labels, two classical anchor regimes, r=2/3 block photons"
+    ],
+    "bounds": {
+      "n": [
+        8,
+        12,
+        16,
+        24
+      ],
+      "train_graphs": 480,
+      "test_graphs": 480,
+      "train_blocks": 1920,
+      "test_blocks": 1920,
+      "shots_per_method_case": 64
+    },
+    "non_claims": [
+      "No QPU or noise result",
+      "No complexity advantage of fixed-size interacting blocks",
+      "No universal graph-family claim",
+      "Exact-moment tuning is simulation work, not zero-cost hardware optimization"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.default_rng PCG64",
+    "seed": "Train graph0..19; test200..219; label,anchor,block,shot formulas pinned in source"
+  },
+  "run": {
+    "started_at": "2026-11-20T18:17:59.712334+00:00",
+    "runtime_seconds": 2.920467458985513,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P20_structured_probe/larger_training/contract.json",
+      "sha256": "ecd293ec68069795b6729c85e17d2d85769a4545f05460889686f1c1c40dfd8a",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/frozen_parameters.json",
+      "sha256": "ecc43276f87d7af4a3fb995b6acb2a5cb08ed4e0e487ea490810675be166e347",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/test_metrics.csv",
+      "sha256": "1d09a49c9929f90d965276151f0cfdf59986a119615e966748a8a70bdf0b097b",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/training_scores.json",
+      "sha256": "568ff590d34370a4d996fff825fce3583629692c1950e9a5099ea48198a16cdd",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/instances.json",
+      "sha256": "487b4d79b78cd619bc9ff93f195654ba2506d1761d1a440c5462215095160419",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/blocks.json",
+      "sha256": "662cf6039d383065249a1b815e5bc840c03d4a99ce3a3878c36f493848688f4f",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/summary.json",
+      "sha256": "260af3614713eb9d92fe5406f5ec512223c47c4b026c7ddd36a32a839d63bc01",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "Source hashes stable before/after",
+    "Parameters persisted before test labels",
+    "Disjoint train/test seeds",
+    "Collision mass retained",
+    "Independent exact classical replacement matched every local kernel"
+  ],
+  "result": "Actual metrics and frozen parameter selections are reported in summary.json; no universal performance claim.",
+  "residual_risks": [
+    "No QPU or noise result",
+    "No complexity advantage of fixed-size interacting blocks",
+    "No universal graph-family claim",
+    "Exact-moment tuning is simulation work, not zero-cost hardware optimization",
+    "Repeated path/cycle seeds change labels and anchor randomness, not graph topology"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase2_structured_probe.py",
+      "sha256": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188",
+      "sha256_after": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/structured_search.py",
+      "sha256": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c",
+      "sha256_after": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+      "sha256": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+      "sha256_after": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d"
+    },
+    {
+      "path": "experiments/P20_structured_probe/run_larger_training.py",
+      "sha256": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b",
+      "sha256_after": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b"
+    }
+  ],
+  "declared_results": [
+    "experiments/P20_structured_probe/larger_training/contract.json",
+    "experiments/P20_structured_probe/larger_training/frozen_parameters.json",
+    "experiments/P20_structured_probe/larger_training/test_metrics.csv",
+    "experiments/P20_structured_probe/larger_training/training_scores.json",
+    "experiments/P20_structured_probe/larger_training/instances.json",
+    "experiments/P20_structured_probe/larger_training/blocks.json",
+    "experiments/P20_structured_probe/larger_training/summary.json"
+  ]
+}

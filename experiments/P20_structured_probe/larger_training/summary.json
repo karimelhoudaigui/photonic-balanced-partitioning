@@ -1,0 +1,821 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-20T18:17:59.712334+00:00",
+  "ended_utc": "2026-11-20T18:18:02.632776+00:00",
+  "runtime_seconds": 2.920467458985513,
+  "command": "MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/P20_structured_probe/run_larger_training.py",
+  "source_hashes_before": {
+    "experiments/phase2_structured_probe.py": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188",
+    "src/photonic_balanced_partitioning/photonic/structured_search.py": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+    "src/photonic_balanced_partitioning/problems/min_bisection.py": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+    "experiments/P20_structured_probe/run_larger_training.py": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b"
+  },
+  "source_hashes_after": {
+    "experiments/phase2_structured_probe.py": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188",
+    "src/photonic_balanced_partitioning/photonic/structured_search.py": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+    "src/photonic_balanced_partitioning/problems/min_bisection.py": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+    "experiments/P20_structured_probe/run_larger_training.py": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b"
+  },
+  "git_commit": "99f82e367ef079e4d52f763d615476698727b739",
+  "git_dirty": [
+    "?? experiments/P20_structured_probe/",
+    "?? experiments/P21_classical_search/",
+    "?? experiments/phase2_classical_search.py",
+    "?? experiments/phase2_structured_probe.py",
+    "?? research/optical_penalty_spec.md",
+    "?? src/photonic_balanced_partitioning/photonic/collision_aware.py.backup",
+    "?? src/photonic_balanced_partitioning/photonic/collision_aware.py.bak",
+    "?? src/photonic_balanced_partitioning/photonic/collision_aware.py.new",
+    "?? src/photonic_balanced_partitioning/photonic/structured_search.py",
+    "?? src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+    "?? tests/test_phase2_classical.py",
+    "?? tests/test_structured_search.py",
+    "?? tests/test_threshold_budget.py"
+  ],
+  "python": "3.11.15",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "perceval-quandela": "1.3.0"
+  },
+  "frozen_parameters": [
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "bosonic",
+      "pair_angle": 1.5707963267948966,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "distinguishable",
+      "pair_angle": 1.5707963267948966,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "pair",
+      "pair_angle": 1.5707963267948966,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "bosonic",
+      "pair_angle": 1.5707963267948966,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "distinguishable",
+      "pair_angle": 1.5707963267948966,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "pair",
+      "pair_angle": 1.5707963267948966,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "bosonic",
+      "pair_angle": 1.1780972450961724,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "distinguishable",
+      "pair_angle": 1.1780972450961724,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "pair",
+      "pair_angle": 1.1780972450961724,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "bosonic",
+      "pair_angle": 0.7853981633974483,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "distinguishable",
+      "pair_angle": 0.7853981633974483,
+      "interaction_angle": 0.0
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "pair",
+      "pair_angle": 0.7853981633974483,
+      "interaction_angle": 0.0
+    }
+  ],
+  "frozen_parameters_sha256": "ecc43276f87d7af4a3fb995b6acb2a5cb08ed4e0e487ea490810675be166e347",
+  "training_graph_label_instances": 480,
+  "test_graph_label_instances": 480,
+  "training_blocks": 1920,
+  "test_blocks": 1920,
+  "exact_training_objective_evaluations": 86400,
+  "training_local_cut_labels": 24960,
+  "evaluation_only_test_local_cut_labels": 24960,
+  "training_anchor_swap_deltas_scored": 213700,
+  "test_anchor_swap_deltas_scored": 215512,
+  "total_test_synthetic_attempts": 983040,
+  "real_qpu_shots": 0,
+  "max_exact_classical_replacement_error": 6.661338147750939e-16,
+  "aggregates": [
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "bosonic_fixed",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.2,
+      "mean_normalized_gain": 0.01919599676054948,
+      "mean_observed_best_gain": 0.9111386571774484
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "classical_best_local",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.3645833333333333,
+      "mean_normalized_gain": 0.03226412373276892,
+      "mean_observed_best_gain": 1.309284045612131
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "classical_exact_replacement",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.2,
+      "mean_normalized_gain": 0.01919599676054948,
+      "mean_observed_best_gain": 0.9111386571774484
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "correlated_batch",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.1,
+      "mean_normalized_gain": 0.00959799838027474,
+      "mean_observed_best_gain": 0.9111386571774484
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "distinguishable_fixed",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.2,
+      "mean_normalized_gain": 0.01919599676054948,
+      "mean_observed_best_gain": 0.9111386571774484
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "distinguishable_same_circuit",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.2,
+      "mean_normalized_gain": 0.01919599676054948,
+      "mean_observed_best_gain": 0.9111386571774484
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "pair_product_fixed",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.2,
+      "mean_normalized_gain": 0.01919599676054948,
+      "mean_observed_best_gain": 0.9111386571774484
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "model": "uniform_feasible",
+      "cases": 480,
+      "improvement_possible": 175,
+      "mean_p_cf": 0.9999999999999999,
+      "mean_p_improve": 0.17291666666666664,
+      "mean_normalized_gain": 0.011247710715560568,
+      "mean_observed_best_gain": 1.309284045612131
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "bosonic_fixed",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.014583333333333334,
+      "mean_normalized_gain": 0.0013073320923503427,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "classical_best_local",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.014583333333333334,
+      "mean_normalized_gain": 0.0013073320923503427,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "classical_exact_replacement",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.014583333333333334,
+      "mean_normalized_gain": 0.0013073320923503427,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "correlated_batch",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.007291666666666667,
+      "mean_normalized_gain": 0.0006536660461751713,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "distinguishable_fixed",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.014583333333333334,
+      "mean_normalized_gain": 0.0013073320923503427,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "distinguishable_same_circuit",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.014583333333333334,
+      "mean_normalized_gain": 0.0013073320923503427,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "pair_product_fixed",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.014583333333333334,
+      "mean_normalized_gain": 0.0013073320923503427,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "model": "uniform_feasible",
+      "cases": 480,
+      "improvement_possible": 7,
+      "mean_p_cf": 0.9999999999999999,
+      "mean_p_improve": 0.002430555555555555,
+      "mean_normalized_gain": 0.0002178886820583904,
+      "mean_observed_best_gain": 0.021649300645389436
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "bosonic_fixed",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0000000000000002,
+      "mean_p_improve": 0.12603380809902856,
+      "mean_normalized_gain": 0.012136860000119633,
+      "mean_observed_best_gain": 1.4625014223824169
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "classical_best_local",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.41458333333333336,
+      "mean_normalized_gain": 0.04127933769059478,
+      "mean_observed_best_gain": 1.635484423631724
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "classical_exact_replacement",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0000000000000002,
+      "mean_p_improve": 0.12603380809902856,
+      "mean_normalized_gain": 0.012136860000119633,
+      "mean_observed_best_gain": 1.4625014223824169
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "correlated_batch",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.052083333333333336,
+      "mean_normalized_gain": 0.005888846796342666,
+      "mean_observed_best_gain": 0.6918261523907966
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "distinguishable_fixed",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0000000000000002,
+      "mean_p_improve": 0.12603380809902856,
+      "mean_normalized_gain": 0.012136860000119633,
+      "mean_observed_best_gain": 1.4416144176584693
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "distinguishable_same_circuit",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0000000000000002,
+      "mean_p_improve": 0.12603380809902856,
+      "mean_normalized_gain": 0.012136860000119633,
+      "mean_observed_best_gain": 1.4525426430194448
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "pair_product_fixed",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0000000000000002,
+      "mean_p_improve": 0.12603380809902856,
+      "mean_normalized_gain": 0.012136860000119633,
+      "mean_observed_best_gain": 1.4976969268981069
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "model": "uniform_feasible",
+      "cases": 480,
+      "improvement_possible": 199,
+      "mean_p_cf": 1.0000000000000002,
+      "mean_p_improve": 0.13083333333333336,
+      "mean_normalized_gain": 0.008690820874027524,
+      "mean_observed_best_gain": 1.6272411557231756
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "bosonic_fixed",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.0070312499999999984,
+      "mean_normalized_gain": 0.0005814589649866797,
+      "mean_observed_best_gain": 0.08604210313730877
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "classical_best_local",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.07916666666666666,
+      "mean_normalized_gain": 0.007113054223022423,
+      "mean_observed_best_gain": 0.14214768199086325
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "classical_exact_replacement",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.0070312499999999984,
+      "mean_normalized_gain": 0.0005814589649866797,
+      "mean_observed_best_gain": 0.08604210313730877
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "correlated_batch",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.0010416666666666667,
+      "mean_normalized_gain": 1.9176674789190176e-05,
+      "mean_observed_best_gain": 0.004520017791892764
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "distinguishable_fixed",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.0070312499999999984,
+      "mean_normalized_gain": 0.0005814589649866797,
+      "mean_observed_best_gain": 0.08604210313730877
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "distinguishable_same_circuit",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.0070312499999999984,
+      "mean_normalized_gain": 0.0005814589649866797,
+      "mean_observed_best_gain": 0.08604210313730877
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "pair_product_fixed",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0,
+      "mean_p_improve": 0.0070312499999999984,
+      "mean_normalized_gain": 0.0005814589649866797,
+      "mean_observed_best_gain": 0.08604210313730877
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "model": "uniform_feasible",
+      "cases": 480,
+      "improvement_possible": 38,
+      "mean_p_cf": 1.0000000000000002,
+      "mean_p_improve": 0.005729166666666666,
+      "mean_normalized_gain": 0.00048336531360830575,
+      "mean_observed_best_gain": 0.13610408729278253
+    }
+  ],
+  "paired_differences": [
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "control": "distinguishable_same_circuit",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "control": "distinguishable_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "control": "pair_product_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "control": "uniform_feasible",
+      "cases": 480,
+      "mean_delta_p_improve": 0.027083333333333348,
+      "ci95_low": 0.00902777777777779,
+      "ci95_high": 0.04583333333333335,
+      "positive_cases": 96,
+      "negative_cases": 79
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "control": "correlated_batch",
+      "cases": 480,
+      "mean_delta_p_improve": 0.1,
+      "ci95_low": 0.08229166666666667,
+      "ci95_high": 0.11875,
+      "positive_cases": 96,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "control": "classical_exact_replacement",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "two_swaps",
+      "control": "classical_best_local",
+      "cases": 480,
+      "mean_delta_p_improve": -0.16458333333333333,
+      "ci95_low": -0.2,
+      "ci95_high": -0.1332812500000003,
+      "positive_cases": 0,
+      "negative_cases": 79
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "control": "distinguishable_same_circuit",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "control": "distinguishable_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "control": "pair_product_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "control": "uniform_feasible",
+      "cases": 480,
+      "mean_delta_p_improve": 0.01215277777777778,
+      "ci95_low": 0.0034722222222222225,
+      "ci95_high": 0.022569444444444444,
+      "positive_cases": 7,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "control": "correlated_batch",
+      "cases": 480,
+      "mean_delta_p_improve": 0.007291666666666667,
+      "ci95_low": 0.0020833333333333333,
+      "ci95_high": 0.013541666666666667,
+      "positive_cases": 7,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "control": "classical_exact_replacement",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 2,
+      "regime": "single_swap_local_minimum",
+      "control": "classical_best_local",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "control": "distinguishable_same_circuit",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "control": "distinguishable_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "control": "pair_product_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "control": "uniform_feasible",
+      "cases": 480,
+      "mean_delta_p_improve": -0.0047995252343047785,
+      "ci95_low": -0.01315269430756751,
+      "ci95_high": 0.00322421535352501,
+      "positive_cases": 67,
+      "negative_cases": 132
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "control": "correlated_batch",
+      "cases": 480,
+      "mean_delta_p_improve": 0.07395047476569525,
+      "ci95_low": 0.061815143124162655,
+      "ci95_high": 0.08697623235591356,
+      "positive_cases": 189,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "control": "classical_exact_replacement",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "two_swaps",
+      "control": "classical_best_local",
+      "cases": 480,
+      "mean_delta_p_improve": -0.28854952523430477,
+      "ci95_low": -0.32620997788725037,
+      "ci95_high": -0.2523324526367382,
+      "positive_cases": 0,
+      "negative_cases": 199
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "control": "distinguishable_same_circuit",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "control": "distinguishable_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "control": "pair_product_fixed",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "control": "uniform_feasible",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0013020833333333315,
+      "ci95_low": -0.0001041666666666685,
+      "ci95_high": 0.0028645833333333305,
+      "positive_cases": 21,
+      "negative_cases": 17
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "control": "correlated_batch",
+      "cases": 480,
+      "mean_delta_p_improve": 0.005989583333333331,
+      "ci95_low": 0.0036458333333333317,
+      "ci95_high": 0.008593749999999995,
+      "positive_cases": 24,
+      "negative_cases": 1
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "control": "classical_exact_replacement",
+      "cases": 480,
+      "mean_delta_p_improve": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "positive_cases": 0,
+      "negative_cases": 0
+    },
+    {
+      "r": 3,
+      "regime": "single_swap_local_minimum",
+      "control": "classical_best_local",
+      "cases": 480,
+      "mean_delta_p_improve": -0.07213541666666666,
+      "ci95_low": -0.09401041666666667,
+      "ci95_high": -0.05103515625000003,
+      "positive_cases": 0,
+      "negative_cases": 38
+    }
+  ],
+  "non_claims": [
+    "No QPU or noise result",
+    "No complexity advantage of fixed-size interacting blocks",
+    "No universal graph-family claim",
+    "Exact-moment tuning is simulation work, not zero-cost hardware optimization"
+  ],
+  "output_hashes": {
+    "experiments/P20_structured_probe/larger_training/contract.json": "ecd293ec68069795b6729c85e17d2d85769a4545f05460889686f1c1c40dfd8a",
+    "experiments/P20_structured_probe/larger_training/frozen_parameters.json": "ecc43276f87d7af4a3fb995b6acb2a5cb08ed4e0e487ea490810675be166e347",
+    "experiments/P20_structured_probe/larger_training/test_metrics.csv": "1d09a49c9929f90d965276151f0cfdf59986a119615e966748a8a70bdf0b097b",
+    "experiments/P20_structured_probe/larger_training/training_scores.json": "568ff590d34370a4d996fff825fce3583629692c1950e9a5099ea48198a16cdd",
+    "experiments/P20_structured_probe/larger_training/instances.json": "487b4d79b78cd619bc9ff93f195654ba2506d1761d1a440c5462215095160419",
+    "experiments/P20_structured_probe/larger_training/blocks.json": "662cf6039d383065249a1b815e5bc840c03d4a99ce3a3878c36f493848688f4f"
+  }
+}

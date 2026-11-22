@@ -1,0 +1,82 @@
+{
+  "question": "At a classically prepared partition, do fixed local bosonic proposal kernels enrich strictly improving moves per physical attempt over serious feasible controls?",
+  "train_sizes": [
+    8,
+    12,
+    16
+  ],
+  "test_sizes": [
+    8,
+    12,
+    16,
+    24
+  ],
+  "train_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "test_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111
+  ],
+  "families": [
+    "path",
+    "cycle",
+    "regular",
+    "er",
+    "weighted",
+    "planted"
+  ],
+  "regimes": {
+    "two_swaps": 2,
+    "single_swap_local_minimum": null
+  },
+  "interacting_photons": [
+    2,
+    3
+  ],
+  "angles": [
+    0.0,
+    0.39269908169872414,
+    0.7853981633974483,
+    1.1780972450961724,
+    1.5707963267948966
+  ],
+  "interaction_angles": [
+    0.0,
+    0.39269908169872414,
+    0.7853981633974483,
+    1.5707963267948966
+  ],
+  "shots_per_test_kernel": 64,
+  "target": "Strict cut reduction from anchor; global optimum is never used.",
+  "training_objective": "Mean positive accepted cut gain divided by total graph weight; exact ideal objective on training cases only.",
+  "controls": [
+    "same-circuit distinguishable",
+    "separately trained distinguishable",
+    "disjoint-pair product",
+    "uniform feasible block",
+    "correlated batch swap",
+    "exact classical block replacement",
+    "best of all feasible block states"
+  ],
+  "non_claims": [
+    "No hardware evidence",
+    "No global optimum success comparison",
+    "No quantum speedup from fixed-size interacting blocks",
+    "Exact-moment training is not hardware shot-based tuning",
+    "Bootstrap intervals describe this predeclared graph/label/anchor ensemble; no universal graph claim"
+  ]
+}

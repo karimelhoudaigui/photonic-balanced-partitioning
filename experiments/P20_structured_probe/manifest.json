@@ -1,0 +1,181 @@
+{
+  "schema_version": 2,
+  "claim_id": "P20_INITIAL_LOCAL_BLOCK_PROBE",
+  "repository": {
+    "commit": "99f82e367ef079e4d52f763d615476698727b739",
+    "dirty": true
+  },
+  "command": "MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/phase2_structured_probe.py",
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite held-out comparison of strict local cut-improvement per unconditioned attempt and exact classical interacting-block replacement.",
+    "coefficient_domain": "Complex128 local Fock amplitudes, Float64 graph costs/probabilities",
+    "conventions": "r=2/3 photons in 2r modes, spectator photons deterministic, collisions count as failed attempts, optimum never used.",
+    "inputs": [
+      "Six graph families with randomized labels and classical anchors; distinct train/test graph seeds"
+    ],
+    "bounds": {
+      "train_sizes": [
+        8,
+        12,
+        16
+      ],
+      "test_sizes": [
+        8,
+        12,
+        16,
+        24
+      ],
+      "train_seeds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "test_seeds": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "train_blocks": 288,
+      "test_blocks": 1152,
+      "shots_per_method_case": 64
+    },
+    "non_claims": [
+      "No hardware evidence",
+      "No global optimum success comparison",
+      "No quantum speedup from fixed-size interacting blocks",
+      "Exact-moment training is not hardware shot-based tuning",
+      "Bootstrap intervals describe this predeclared graph/label/anchor ensemble; no universal graph claim"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.default_rng PCG64",
+    "seed": "Graph train0..3,test100..111; label/anchor/block/shot formulas pinned in source"
+  },
+  "run": {
+    "started_at": "2026-11-20T18:15:47.902263+00:00",
+    "runtime_seconds": 1.1171452499984298,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P20_structured_probe/contract.json",
+      "sha256": "716adf282dfd0d0397a1284390d844e00f596b93ceadc7fd2264a716643b0068",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/frozen_parameters.json",
+      "sha256": "5a6cfb5690612ab3a82d385adb1d1b8f52c6bf18e2e4a849a51c993b614b6336",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/test_metrics.csv",
+      "sha256": "206f0d4b7758b0e558458bf5d5c20516d5e78e88180323cf47972866dacf9950",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/training_scores.json",
+      "sha256": "589f855fde51ebe488fcacd7b3122a965ca1d9381f85c78b7ccce813790433e3",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/instances.json",
+      "sha256": "896dd1f1d9dcbc22cc4bd0f8556a4734d36566a25e9b79251e850fe0a3059b98",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/blocks.json",
+      "sha256": "df259c353459138d8b1cb6066c4188922fb7237d7a90bbb23bd2cf7478cd7329",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P20_structured_probe/summary.json",
+      "sha256": "07be97a265791bfd62861c516a4962f0b90bcdd0704f10a5b930b8b3af0b0ffd",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "All recorded source hashes identical before/after",
+    "All candidate local kernels agree with independent classical routing enumeration",
+    "Parameters frozen before test labels",
+    "Negative results retained"
+  ],
+  "result": "All selected interaction angles zero; performance equals classical disjoint pair controls in each held-out case. See summary.json.",
+  "residual_risks": [
+    "No hardware evidence",
+    "No global optimum success comparison",
+    "No quantum speedup from fixed-size interacting blocks",
+    "Exact-moment training is not hardware shot-based tuning",
+    "Bootstrap intervals describe this predeclared graph/label/anchor ensemble; no universal graph claim",
+    "r=2 local-minimum training blocks had no improving moves; larger-training continuation recorded separately"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase2_structured_probe.py",
+      "sha256": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188",
+      "sha256_after": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/structured_search.py",
+      "sha256": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c",
+      "sha256_after": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+      "sha256": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+      "sha256_after": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d"
+    }
+  ],
+  "declared_results": [
+    "experiments/P20_structured_probe/contract.json",
+    "experiments/P20_structured_probe/frozen_parameters.json",
+    "experiments/P20_structured_probe/test_metrics.csv",
+    "experiments/P20_structured_probe/training_scores.json",
+    "experiments/P20_structured_probe/instances.json",
+    "experiments/P20_structured_probe/blocks.json",
+    "experiments/P20_structured_probe/summary.json"
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "r": 2,
+    "regime": "two_swaps",
+    "model": "bosonic",
+    "pair_angle": 1.5707963267948966,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 2,
+    "regime": "two_swaps",
+    "model": "distinguishable",
+    "pair_angle": 1.5707963267948966,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 2,
+    "regime": "two_swaps",
+    "model": "pair",
+    "pair_angle": 1.5707963267948966,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 2,
+    "regime": "single_swap_local_minimum",
+    "model": "bosonic",
+    "pair_angle": 0.0,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 2,
+    "regime": "single_swap_local_minimum",
+    "model": "distinguishable",
+    "pair_angle": 0.0,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 2,
+    "regime": "single_swap_local_minimum",
+    "model": "pair",
+    "pair_angle": 0.0,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 3,
+    "regime": "two_swaps",
+    "model": "bosonic",
+    "pair_angle": 0.7853981633974483,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 3,
+    "regime": "two_swaps",
+    "model": "distinguishable",
+    "pair_angle": 0.7853981633974483,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 3,
+    "regime": "two_swaps",
+    "model": "pair",
+    "pair_angle": 0.7853981633974483,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 3,
+    "regime": "single_swap_local_minimum",
+    "model": "bosonic",
+    "pair_angle": 0.7853981633974483,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 3,
+    "regime": "single_swap_local_minimum",
+    "model": "distinguishable",
+    "pair_angle": 0.7853981633974483,
+    "interaction_angle": 0.0
+  },
+  {
+    "r": 3,
+    "regime": "single_swap_local_minimum",
+    "model": "pair",
+    "pair_angle": 0.7853981633974483,
+    "interaction_angle": 0.0
+  }
+]
