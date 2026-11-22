@@ -1,0 +1,101 @@
+{
+  "scalar_case_count": 588,
+  "scalar_underestimate_count": 395,
+  "scalar_descents": [
+    {
+      "left": {
+        "sigma": 0.09999999999999999,
+        "value": 0.0026874544644571023,
+        "reference": "0.00268745446442198462617015568973323352025",
+        "signed_error": "3.511763732141676833185956724821925927898e-14",
+        "below_reference": false
+      },
+      "right": {
+        "sigma": 0.1,
+        "value": 0.0026874544644219863,
+        "reference": "0.002687454464421985401302358657248814014245",
+        "signed_error": "8.548650152948040984859760050269445905558e-19",
+        "below_reference": false
+      }
+    }
+  ],
+  "physical_family_case_count": 174,
+  "family_cases_with_underestimate": 146,
+  "first_family_underestimate": {
+    "theta": 1e-16,
+    "physical_family_TV": "1.999999999999999916391146896138388454503e-32",
+    "physical_family_delta": "1.999999999999999916391146896138408454503e-32",
+    "result": {
+      "m": 4,
+      "k": 2,
+      "minimum_positive_intensity": 0.4999999999999999,
+      "expected_collision_pairs": 1.999999999999999e-32,
+      "expected_collision_pairs_raw": 0.0,
+      "dominant_support_leakage": 1.9999999999999996e-32,
+      "dominant_support_leakage_raw": 0.0,
+      "density_ratio": 3.999999999999999e-32,
+      "spatial_gram_sigma": 2.8284271247461897e-16,
+      "refined_density_leakage_upper": 1.9999999999999996e-32,
+      "support_sigma_upper": 2.8284271247461897e-16,
+      "direct_gram_tv_bound": 1.9999999999999998e-32,
+      "support_cycle_tv_bound": 1.9999999999999998e-32,
+      "density_cycle_tv_bound": 4.000000000000001e-32,
+      "refined_density_cycle_tv_bound": 1.9999999999999998e-32,
+      "support_state_tv_bound": 2e-16,
+      "zero_intensity_rows": 0,
+      "numerical_semantics": "FLOAT64_ESTIMATE_NOT_INTERVAL_CERTIFIED",
+      "input_orthonormality_residual": 2.220446049250313e-16,
+      "non_claim": "Sufficient absolute-TV certificate only; not a success ratio, sampler speedup or hardness test."
+    },
+    "bound_minus_physical_TV": {
+      "direct_gram_tv_bound": "-7.814763325709541875038928179444743314535e-49",
+      "support_cycle_tv_bound": "-7.814763325709541875038928179444743314535e-49",
+      "density_cycle_tv_bound": "2.000000000000000854860305635710887612888e-32",
+      "refined_density_cycle_tv_bound": "-7.814763325709541875038928179444743314535e-49",
+      "support_state_tv_bound": "1.999999999999999758195573448069215484568e-16"
+    },
+    "underestimates": [
+      "direct_gram_tv_bound",
+      "support_cycle_tv_bound",
+      "refined_density_cycle_tv_bound"
+    ]
+  },
+  "theta_1e_10": {
+    "theta": 1e-10,
+    "physical_family_TV": "2.00000000000000014570212259532430230072e-20",
+    "physical_family_delta": "2.000000000000000145722122595324302303634e-20",
+    "result": {
+      "m": 4,
+      "k": 2,
+      "minimum_positive_intensity": 0.4999999999999999,
+      "expected_collision_pairs": 1.9999999999999996e-20,
+      "expected_collision_pairs_raw": 0.0,
+      "dominant_support_leakage": 2e-20,
+      "dominant_support_leakage_raw": 0.0,
+      "density_ratio": 4e-20,
+      "spatial_gram_sigma": 2.82842712474619e-10,
+      "refined_density_leakage_upper": 2e-20,
+      "support_sigma_upper": 2.82842712494619e-10,
+      "direct_gram_tv_bound": 2.0000000003771235e-20,
+      "support_cycle_tv_bound": 2.000000000659966e-20,
+      "density_cycle_tv_bound": 4.0000000018666677e-20,
+      "refined_density_cycle_tv_bound": 2.000000000659966e-20,
+      "support_state_tv_bound": 2.0000000002000002e-10,
+      "zero_intensity_rows": 0,
+      "numerical_semantics": "FLOAT64_ESTIMATE_NOT_INTERVAL_CERTIFIED",
+      "input_orthonormality_residual": 2.220446049250313e-16,
+      "non_claim": "Sufficient absolute-TV certificate only; not a success ratio, sampler speedup or hardness test."
+    },
+    "bound_minus_physical_TV": {
+      "direct_gram_tv_bound": "3.771233092521764176161810035942814756058e-30",
+      "support_cycle_tv_bound": "6.599659827379934960071860042354109593961e-30",
+      "density_cycle_tv_bound": "2.000000001866667511203188585349021647504e-20",
+      "refined_density_cycle_tv_bound": "6.599659827379934960071860042354109593961e-30",
+      "support_state_tv_bound": "0.0000000002000000000000000195764469835615202846726"
+    },
+    "underestimates": []
+  },
+  "receipt_sha256": "014b4e38244393c8c7c0e50f160651c3b746b91a3c9a2e8810ef81180818dab9",
+  "wall_seconds": 1.6196314580156468,
+  "cpu_seconds": 1.282181
+}

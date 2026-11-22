@@ -1,0 +1,104 @@
+{
+  "schema_version": 2,
+  "claim_id": "P33-density-float-independent-review",
+  "repository": {
+    "commit": "77a858821710192791b8f23a0b15218e2223f13a",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/P33_density_float_review/check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "mpmath",
+        "version": "1.3.0"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit arm64"
+  },
+  "mathematics": {
+    "assertion_tested": "Compare deterministic scalar envelope grid and two-photon rotation family to 800-digit reference; preserve all observed underestimates",
+    "coefficient_domain": "float64 versus 800-decimal-digit mpmath",
+    "conventions": "Halved TV, all Fock outcomes; ideal physical rotation parameter equals exact binary64 theta",
+    "inputs": [
+      "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+      "experiments/P33_density_float_review/check.py"
+    ],
+    "bounds": {
+      "cpu_seconds": 120,
+      "m": 4,
+      "k": 2,
+      "scalar_cases": 588,
+      "family_cases": 174
+    },
+    "non_claims": [
+      "No interval certification",
+      "No universal numerical error bound",
+      "No large-N probabilities",
+      "No novelty or QPU claim"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-21T21:12:54.985161+00:00",
+    "runtime_seconds": 1.679473500000313,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 120,
+      "max_cores": 1,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P33_density_float_review/receipt.json",
+      "sha256": "014b4e38244393c8c7c0e50f160651c3b746b91a3c9a2e8810ef81180818dab9",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P33_density_float_review/summary.json",
+      "sha256": "e54a081902dfce998de256ddc605e795a4934dc7b2625711746edefe4f64d59a",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "Invalid scalar rejection",
+    "Every family result carries explicit non-interval semantics",
+    "Production source hashes unchanged before/after"
+  ],
+  "result": "Finite numerical limitations reproduced; see summary and report",
+  "residual_risks": [
+    "800 digits are high precision, not interval arithmetic",
+    "Floating frame approximates ideal normalized family",
+    "Finite grid is not exhaustive"
+  ],
+  "input_artifacts": [
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+      "sha256": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461",
+      "sha256_after": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461"
+    },
+    {
+      "path": "experiments/P33_density_float_review/check.py",
+      "sha256": "4f7ff3813eff12e7fb3b12c159a7bbe50064e28eefc50a44277b5dc49e841285",
+      "sha256_after": "4f7ff3813eff12e7fb3b12c159a7bbe50064e28eefc50a44277b5dc49e841285"
+    }
+  ],
+  "declared_results": []
+}
