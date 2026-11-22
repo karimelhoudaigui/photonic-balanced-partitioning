@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-22T12:45:53.342723+00:00",
+  "checks": [
+    {
+      "command": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+        "-B",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p35-baseline-review/experiments/P35_threshold_marginal/run/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p35-baseline-review"
+      ],
+      "manifest_sha256": "e181acfa45c229548d62c2f86c8e755258e6ca74c57d19b6e5797b3b53b75e09",
+      "exit_status": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+        "-B",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p35-baseline-review/experiments/P35_component_review/run/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p35-baseline-review"
+      ],
+      "manifest_sha256": "51d8939e34b77fd9a4e0a0f91012cce1b67b5e1ae2f2b421737164346e264918",
+      "exit_status": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+        "-B",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p35-baseline-review/experiments/P35_component_review/pytest/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p35-baseline-review"
+      ],
+      "manifest_sha256": "24127b08e14816c89a729648a725ea9038354d82901ec4c7abcbe855c65c5be7",
+      "exit_status": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ]
+}

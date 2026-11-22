@@ -1,0 +1,66 @@
+{
+  "status": "EXACT_CHECKS_PASS_WITH_RESOURCE_GUARD_DEFECT",
+  "raw_records_audited": 12,
+  "exact_physical_records": 6,
+  "gram_ryser_marginals_compared": 190,
+  "max_exact_probability_difference": {
+    "numerator": "0",
+    "denominator": "1"
+  },
+  "formal_controls": [
+    {
+      "rank": 1,
+      "value": {
+        "numerator": "84989",
+        "denominator": "158760"
+      }
+    },
+    {
+      "rank": 2,
+      "value": {
+        "numerator": "21855250843",
+        "denominator": "70013160000"
+      }
+    },
+    {
+      "rank": 2,
+      "value": {
+        "numerator": "21855250843",
+        "denominator": "70013160000"
+      }
+    }
+  ],
+  "hom_vacuum_single": {
+    "numerator": "1",
+    "denominator": "2"
+  },
+  "hom_vacuum_both": {
+    "numerator": "0",
+    "denominator": "1"
+  },
+  "resource_guard_probes": [
+    {
+      "keyword": "max_states",
+      "nan_rejected": false,
+      "result": {
+        "numerator": "5",
+        "denominator": "8"
+      },
+      "transitions": 3,
+      "peak_states": 3
+    },
+    {
+      "keyword": "max_transitions",
+      "nan_rejected": false,
+      "result": {
+        "numerator": "5",
+        "denominator": "8"
+      },
+      "transitions": 3,
+      "peak_states": 3
+    }
+  ],
+  "new_circuits_generated": 0,
+  "physical_shots": 0,
+  "runtime_seconds": 0.19189133300096728
+}

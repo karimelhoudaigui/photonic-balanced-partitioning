@@ -1,0 +1,14 @@
+{
+ "claim_id":"P35_REVIEW_TARGETED_EXISTING_TESTS",
+ "mathematics":{
+  "assertion_tested":"Existing tests/test_threshold_marginals.py passes in the isolated review worktree with its local src on PYTHONPATH.",
+  "coefficient_domain":"Fractions/Gaussian rationals for tested exact controls",
+  "conventions":"Targeted existing code tests only, separate from independent Gram/Ryser audit",
+  "inputs":["Existing HOM, rational full-Fock, vacuum/unary, encoding and shape/resource tests"],
+  "bounds":{"test_file":"tests/test_threshold_marginals.py","expected_tests":7,"timeout_seconds":60},
+  "non_claims":["No full repository suite rerun","Tests are not universal mathematical proof"]
+ },
+ "execution_artifacts":["tests/test_threshold_marginals.py","src/photonic_balanced_partitioning/photonic/threshold_marginals.py","pyproject.toml"],
+ "software":[{"name":"Python","version":"3.11.15"},{"name":"pytest","version":"8.4.2"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"}],
+ "randomness":{"used":false,"generator":"","seed":null}
+}

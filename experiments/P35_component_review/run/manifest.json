@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "claim_id": "P35_COMPONENT_INDEPENDENT_GRAM_RYSER_REVIEW",
+  "repository": {
+    "commit": "d402374b21a812de1d1b5658fac37d294a20a035",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "experiments/P35_component_review/audit.py",
+    "--output",
+    "experiments/P35_component_review/run/audit.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "All rank-one/rank-two vacuum marginals in the existing 12 archived P35 frames agree exactly with an independent Gaussian-rational Gram permanent evaluated by Ryser; archived moments, symmetric QUBO energies and cost-state bounds are consistent. Adversarial API guard probes are retained, including accepted NaN limits.",
+    "coefficient_domain": "Gaussian rationals implemented independently as Fraction pairs for the reference; arbitrary-precision integers in the reviewed DP",
+    "conventions": "Distinct single-photon inputs; unconditioned vacuum/threshold observables. Six exactly physical frames and six formal binary encodings are kept separate. No new circuits or full-law campaign.",
+    "inputs": [
+      "All archived P35 records seeds20261122..20261133",
+      "Three deterministic formal row controls, existing HOM/vacuum/unary analytic controls",
+      "Nonphysical exact frame and NaN resource-limit probes"
+    ],
+    "bounds": {
+      "archived_records": 12,
+      "max_modes": 8,
+      "max_photons": 4,
+      "max_selected_output_rows": 2,
+      "new_circuits": 0,
+      "max_seconds": 60
+    },
+    "non_claims": [
+      "No new permanent algorithm or quantum advantage",
+      "No independent fresh Perceval campaign",
+      "No optimizer, sampling or relative-error/certified-input claim",
+      "Not independent of original API proposal or surrounding project"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T12:42:09.757397+00:00",
+    "runtime_seconds": 0.289259,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/P35_component_review/audit.py",
+    "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+    "experiments/P35_threshold_marginal/run/data/raw.json",
+    "experiments/P35_threshold_marginal/run/data/summary.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/P35_component_review/audit.py",
+      "sha256": "1bad70d6bcb95b1a9f7fa3533b4082a5dfaf9c2f76ab8a60f1c5f8b54117d083",
+      "sha256_after": "1bad70d6bcb95b1a9f7fa3533b4082a5dfaf9c2f76ab8a60f1c5f8b54117d083"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+      "sha256": "3a780d09389d80fe5156a86a062c56210378d0ee64ed97d0f1faa994faa5b515",
+      "sha256_after": "3a780d09389d80fe5156a86a062c56210378d0ee64ed97d0f1faa994faa5b515"
+    },
+    {
+      "path": "experiments/P35_threshold_marginal/run/data/raw.json",
+      "sha256": "7528278ed144671c67a09a2a7cc3a83995248e609a6f7b9dd605ff0b2e69f706",
+      "sha256_after": "7528278ed144671c67a09a2a7cc3a83995248e609a6f7b9dd605ff0b2e69f706"
+    },
+    {
+      "path": "experiments/P35_threshold_marginal/run/data/summary.json",
+      "sha256": "ff3a9f3b0ed7d4743ea0cbc47aa3c07774e7851ee3fac9a2dcfd9dfaa4eac390",
+      "sha256_after": "ff3a9f3b0ed7d4743ea0cbc47aa3c07774e7851ee3fac9a2dcfd9dfaa4eac390"
+    }
+  ],
+  "output_directory": "experiments/P35_component_review/run",
+  "declared_results": [
+    "experiments/P35_component_review/run/audit.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P35_component_review/run/stdout.txt",
+      "sha256": "aa3a91987bcba130dcc37692b5bdc957355e437916154bf24ad8824d2d3db8fd",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P35_component_review/run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P35_component_review/run/audit.json",
+      "sha256": "286dc1cf51431a58f755b4fa45097536becec2b22c9881861c30f4f803726311",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

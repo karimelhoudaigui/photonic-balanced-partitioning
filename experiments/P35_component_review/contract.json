@@ -1,0 +1,19 @@
+{
+  "claim_id":"P35_COMPONENT_INDEPENDENT_GRAM_RYSER_REVIEW",
+  "mathematics":{
+    "assertion_tested":"All rank-one/rank-two vacuum marginals in the existing 12 archived P35 frames agree exactly with an independent Gaussian-rational Gram permanent evaluated by Ryser; archived moments, symmetric QUBO energies and cost-state bounds are consistent. Adversarial API guard probes are retained, including accepted NaN limits.",
+    "coefficient_domain":"Gaussian rationals implemented independently as Fraction pairs for the reference; arbitrary-precision integers in the reviewed DP",
+    "conventions":"Distinct single-photon inputs; unconditioned vacuum/threshold observables. Six exactly physical frames and six formal binary encodings are kept separate. No new circuits or full-law campaign.",
+    "inputs":["All archived P35 records seeds20261122..20261133", "Three deterministic formal row controls, existing HOM/vacuum/unary analytic controls", "Nonphysical exact frame and NaN resource-limit probes"],
+    "bounds":{"archived_records":12,"max_modes":8,"max_photons":4,"max_selected_output_rows":2,"new_circuits":0,"max_seconds":60},
+    "non_claims":["No new permanent algorithm or quantum advantage", "No independent fresh Perceval campaign", "No optimizer, sampling or relative-error/certified-input claim", "Not independent of original API proposal or surrounding project"]
+  },
+  "execution_artifacts":[
+    "experiments/P35_component_review/audit.py",
+    "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+    "experiments/P35_threshold_marginal/run/data/raw.json",
+    "experiments/P35_threshold_marginal/run/data/summary.json"
+  ],
+  "software":[{"name":"Python","version":"3.11.15"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}
