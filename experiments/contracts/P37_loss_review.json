@@ -1,0 +1,14 @@
+{
+  "claim_id": "P37_SEPARATE_ARITHMETIC_REVIEW",
+  "mathematics": {
+    "assertion_tested": "Reconstruct every source probability by a normalized Polya urn and de Casteljau transform, and every transition bracket using recurrent binomial weights.",
+    "coefficient_domain": "exact Python integers and fractions.Fraction",
+    "conventions": "Same all-attempt Haar threshold law and source cap as P37; separate implementation is a self-review, not fresh agent review.",
+    "inputs": ["All112 recorded grid cells,1610 source probabilities,36 transition brackets,complete progress trace"],
+    "bounds": {"max_modes": 128, "full_fock_simulations": 0},
+    "non_claims": ["No new proof or independent-agent certificate", "No novelty or optimization advantage", "Float display values do not drive decisions"]
+  },
+  "execution_artifacts": ["experiments/check_loss_source.py", "experiments/P37_loss_source/run/data/raw.json", "experiments/P37_loss_source/run/data/progress.jsonl", "pyproject.toml"],
+  "software": [{"name": "Python", "version": "3.11.15"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

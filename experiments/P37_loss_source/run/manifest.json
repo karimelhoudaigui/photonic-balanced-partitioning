@@ -1,0 +1,152 @@
+{
+  "schema_version": 2,
+  "claim_id": "P37_HAAR_LOSS_SOURCE_PHASE_DIAGRAM",
+  "repository": {
+    "commit": "1d65279811ab9b987ea42c24e84fae322f3df48b",
+    "dirty": true
+  },
+  "command": [
+    ".venv/bin/python",
+    "experiments/phase3_loss_source_probe.py",
+    "--output",
+    "experiments/P37_loss_source/run/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "All declared source maxima obey the two/four candidate phase reduction; two exact positive-sum formulas coincide; ordered transition roots have exact rational sign brackets.",
+    "coefficient_domain": "fractions.Fraction and arbitrary precision Python integers; no floating decision",
+    "conventions": "Even m>=8,k=m/2,k<=N<=m; independent uniform survival; exactly k threshold clicks; all attempts count; Haar-averaged marginal only.",
+    "inputs": [
+      "m8,10,12,16,24,32,48,64; eta1/4,1/2,3/4,9/10,99/100,1",
+      "eta=1-lambda/m with lambda1/4,3/4,5/4,7/4,9/4,11/4,13/4,15/4",
+      "Four critical roots at each declared m plus m128"
+    ],
+    "bounds": {
+      "grid_cells": 112,
+      "probability_crosschecks": 1610,
+      "transition_brackets": 36,
+      "bisections": 40,
+      "full_fock_simulations": 0
+    },
+    "non_claims": [
+      "No finite proof of general theorem or asymptotic",
+      "No graph optimization or quantum advantage",
+      "No global novelty or fixed-loss complexity claim",
+      "No fixed-device inverse-probability averaging"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T12:26:29.412720+00:00",
+    "runtime_seconds": 0.499319,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_loss_source_probe.py",
+    "research/P37_LOSS_SOURCE_CONTRACT.md",
+    "theory/phase3_loss_source_selection.md",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_loss_source_probe.py",
+      "sha256": "a8dc0c280c779150732b6e441e451fdcfff9673036ca5671a223eeaa29955277",
+      "sha256_after": "a8dc0c280c779150732b6e441e451fdcfff9673036ca5671a223eeaa29955277"
+    },
+    {
+      "path": "research/P37_LOSS_SOURCE_CONTRACT.md",
+      "sha256": "96da7789605d899548f78f16bc795db607910bde9e4d031d93188bcc59df79c4",
+      "sha256_after": "96da7789605d899548f78f16bc795db607910bde9e4d031d93188bcc59df79c4"
+    },
+    {
+      "path": "theory/phase3_loss_source_selection.md",
+      "sha256": "fda5160d1d4eb232f67eae09cfcfabf3024822ea1e0720ef639267374a642807",
+      "sha256_after": "fda5160d1d4eb232f67eae09cfcfabf3024822ea1e0720ef639267374a642807"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P37_loss_source/run",
+  "declared_results": [
+    "experiments/P37_loss_source/run/data/raw.json",
+    "experiments/P37_loss_source/run/data/summary.json",
+    "experiments/P37_loss_source/run/data/progress.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P37_loss_source/run/stdout.txt",
+      "sha256": "d3993542619e9b4c66bc7a59f304add88cd96ac4f1fb699088ff4d64b21367ec",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P37_loss_source/run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P37_loss_source/run/data/raw.json",
+      "sha256": "0c17993d4994a3b27688979d41b9626f1e9285541142cb49a4b2f75cce28a208",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P37_loss_source/run/data/summary.json",
+      "sha256": "d509d1a8944a7cb88b748d8575fece7b6649513616c0f1d6490c086617cf50de",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P37_loss_source/run/data/progress.jsonl",
+      "sha256": "2311ab3b6db53039a966c38d5be026c7ff1f557f07b94d889e574cc859ddefea",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
