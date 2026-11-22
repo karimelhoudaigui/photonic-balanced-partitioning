@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "claim_id": "P38_STRONG_PINCHED_STATE_DISCRIMINATOR",
+  "repository": {
+    "commit": "197af80d333fa7c158bff336aac6d2e65de87e62",
+    "dirty": true
+  },
+  "command": [
+    "/usr/bin/env",
+    "PYTHONPATH=src",
+    ".venv/bin/python",
+    "experiments/phase3_pinching_probe.py",
+    "--output",
+    "experiments/P38_pinching_probe/run/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Check a new stronger trace-distance lemma on36 declared rational physical frames, preserving complete measured laws and6 Perceval checks; certify any candidate with exact Rayleigh lower witnesses.",
+    "coefficient_domain": "Exact Gaussian-rational frames/orthogonality/delta; complex128 eigensolvers with1e-9 candidate tolerance; exact witness stage if triggered",
+    "conventions": "Three distinct photons, dominant-output grouping, all output occupations and no conditioning. Strong-lemma refutation does not refute measured-TV conjecture.",
+    "inputs": [
+      "m3/6/9; seeds20261201..03; strengths1/40,1/5,1/2,1",
+      "Nonflat disjoint starts then all row-pair rational Givens",
+      "Two identity and three sharp two-photon controls"
+    ],
+    "bounds": {
+      "physical_frames": 36,
+      "max_fock_states": 165,
+      "sectors_per_three_photon_frame": 27,
+      "perceval_checks": 6
+    },
+    "non_claims": [
+      "No universal proof from finite absence",
+      "No interval certification of eigensolvers",
+      "No graph optimization or novelty",
+      "No QPU or physical samples"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random/MT19937",
+    "seed": "20261201,20261202,20261203"
+  },
+  "run": {
+    "started_at": "2026-11-22T19:34:21.273185+00:00",
+    "runtime_seconds": 18.005608,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_pinching_probe.py",
+    "research/P38_PINCHING_CONTRACT.md",
+    "theory/phase3_pinching_dual.md",
+    "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_pinching_probe.py",
+      "sha256": "8d0d71f6380c867fbc49eaff608c6fb16368510588f073c02d8c4ecadb84b843",
+      "sha256_after": "8d0d71f6380c867fbc49eaff608c6fb16368510588f073c02d8c4ecadb84b843"
+    },
+    {
+      "path": "research/P38_PINCHING_CONTRACT.md",
+      "sha256": "6eab136203c75b074842cbf5594068577edecd00a1447e1b8afde0f15635f31f",
+      "sha256_after": "6eab136203c75b074842cbf5594068577edecd00a1447e1b8afde0f15635f31f"
+    },
+    {
+      "path": "theory/phase3_pinching_dual.md",
+      "sha256": "74652636979832b79c853577439249e03d91fd667d34e88393d7401a17c54b5a",
+      "sha256_after": "74652636979832b79c853577439249e03d91fd667d34e88393d7401a17c54b5a"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+      "sha256": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05",
+      "sha256_after": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P38_pinching_probe/run",
+  "declared_results": [
+    "experiments/P38_pinching_probe/run/data/raw.json",
+    "experiments/P38_pinching_probe/run/data/summary.json",
+    "experiments/P38_pinching_probe/run/data/progress.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P38_pinching_probe/run/stdout.txt",
+      "sha256": "4be285ff1de42c0f06c7d332dcd67fd0d970b65a5f99394717c1648b6d62c887",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P38_pinching_probe/run/stderr.txt",
+      "sha256": "5dac40eb32215556df79d6012b38ff274659d4cf29d1a90dc093d6d9f4006299",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P38_pinching_probe/run/data/raw.json",
+      "sha256": "039b4d60a0227444d0abe44572fc9d5e9ae3de31716890569f551f45d452f943",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P38_pinching_probe/run/data/summary.json",
+      "sha256": "d6108bbca0c2c0fb26147e811e044f36e254d204b33988f420d92744e8899714",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P38_pinching_probe/run/data/progress.jsonl",
+      "sha256": "57de388c098fb11457f118804cea67f7820e066d053c2c1fd63520d183db1101",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

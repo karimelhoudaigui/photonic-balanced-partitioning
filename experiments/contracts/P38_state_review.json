@@ -1,0 +1,14 @@
+{
+  "claim_id":"P38_DIRECT_TENSOR_STATE_REVIEW",
+  "mathematics":{
+    "assertion_tested":"Reconstruct all36 pinched distances from explicit tensor-sector density matrices without Gram square roots, all ordered-path outcome probabilities, and exercise exact Rayleigh witnesses on3 sharp k2 controls.",
+    "coefficient_domain":"Independent Fraction pair arithmetic for frames/delta; complex128 tensor matrices; exact Gaussian-rational Rayleigh controls",
+    "conventions":"All ordered particle outputs are reaggregated into occupations; all collisions included. This is coordinator self-review, not independent-agent review.",
+    "inputs":["All36 primary P38 frames and full raw trace;3 exact sharp-family controls"],
+    "bounds":{"frames":36,"max_modes":9,"max_ordered_outputs_per_frame":729,"new_perceval_calls":0},
+    "non_claims":["No universal inequality or novelty","No float interval certification","No physical shots or graph-optimization claim"]
+  },
+  "execution_artifacts":["experiments/check_pinching_states.py","experiments/phase3_pinching_probe.py","experiments/P38_pinching_probe/run/data/raw.json","experiments/P38_pinching_probe/run/data/progress.jsonl","src/photonic_balanced_partitioning/photonic/threshold_marginals.py","pyproject.toml"],
+  "software":[{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"perceval-quandela","version":"1.3.0"},{"name":"exqalibur","version":"1.4.2"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}
