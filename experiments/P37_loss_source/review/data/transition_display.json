@@ -1,0 +1,254 @@
+[
+  {
+    "m": 8,
+    "source": 7,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.8918971853877338,
+    "scaled_loss_midpoint_for_display": 0.8648225168981298
+  },
+  {
+    "m": 8,
+    "source": 5,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9676496163860975,
+    "scaled_loss_midpoint_for_display": 0.2588030689112202
+  },
+  {
+    "m": 8,
+    "source": 6,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.8271736763713307,
+    "scaled_loss_midpoint_for_display": 1.3826105890293547
+  },
+  {
+    "m": 8,
+    "source": 7,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.718945171771793,
+    "scaled_loss_midpoint_for_display": 2.2484386258256563
+  },
+  {
+    "m": 10,
+    "source": 9,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.9106285592893073,
+    "scaled_loss_midpoint_for_display": 0.893714407106927
+  },
+  {
+    "m": 10,
+    "source": 7,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9588973537997845,
+    "scaled_loss_midpoint_for_display": 0.4110264620021553
+  },
+  {
+    "m": 10,
+    "source": 8,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.8513657850630807,
+    "scaled_loss_midpoint_for_display": 1.486342149369193
+  },
+  {
+    "m": 10,
+    "source": 9,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.7639447317501435,
+    "scaled_loss_midpoint_for_display": 2.3605526824985645
+  },
+  {
+    "m": 12,
+    "source": 11,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.9239634824775749,
+    "scaled_loss_midpoint_for_display": 0.9124382102691015
+  },
+  {
+    "m": 12,
+    "source": 9,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9574743317157299,
+    "scaled_loss_midpoint_for_display": 0.5103080194112408
+  },
+  {
+    "m": 12,
+    "source": 10,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.8699246376104384,
+    "scaled_loss_midpoint_for_display": 1.5609043486747396
+  },
+  {
+    "m": 12,
+    "source": 11,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.7961942703718705,
+    "scaled_loss_midpoint_for_display": 2.445668755537554
+  },
+  {
+    "m": 16,
+    "source": 15,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.9415483208590558,
+    "scaled_loss_midpoint_for_display": 0.9352268662551069
+  },
+  {
+    "m": 16,
+    "source": 13,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9604556320250595,
+    "scaled_loss_midpoint_for_display": 0.6327098875990487
+  },
+  {
+    "m": 16,
+    "source": 14,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.8962422311428782,
+    "scaled_loss_midpoint_for_display": 1.6601243017139495
+  },
+  {
+    "m": 16,
+    "source": 15,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.8397516482832543,
+    "scaled_loss_midpoint_for_display": 2.563973627467931
+  },
+  {
+    "m": 24,
+    "source": 23,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.9601095274979343,
+    "scaled_loss_midpoint_for_display": 0.9573713400495762
+  },
+  {
+    "m": 24,
+    "source": 21,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9685711380666362,
+    "scaled_loss_midpoint_for_display": 0.7542926864007313
+  },
+  {
+    "m": 24,
+    "source": 22,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9264125838794826,
+    "scaled_loss_midpoint_for_display": 1.7660979868924187
+  },
+  {
+    "m": 24,
+    "source": 23,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.8876838761075305,
+    "scaled_loss_midpoint_for_display": 2.6955869734192675
+  },
+  {
+    "m": 32,
+    "source": 31,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.969743050240595,
+    "scaled_loss_midpoint_for_display": 0.9682223923009587
+  },
+  {
+    "m": 32,
+    "source": 29,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9745262029659898,
+    "scaled_loss_midpoint_for_display": 0.8151615050883265
+  },
+  {
+    "m": 32,
+    "source": 30,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9430714683935548,
+    "scaled_loss_midpoint_for_display": 1.8217130114062456
+  },
+  {
+    "m": 32,
+    "source": 31,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9135487985690816,
+    "scaled_loss_midpoint_for_display": 2.7664384457893902
+  },
+  {
+    "m": 48,
+    "source": 47,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.9796054561188612,
+    "scaled_loss_midpoint_for_display": 0.9789381062946632
+  },
+  {
+    "m": 48,
+    "source": 45,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9817438815084643,
+    "scaled_loss_midpoint_for_display": 0.8762936875937157
+  },
+  {
+    "m": 48,
+    "source": 46,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9608506086674424,
+    "scaled_loss_midpoint_for_display": 1.8791707839627634
+  },
+  {
+    "m": 48,
+    "source": 47,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9408182184856742,
+    "scaled_loss_midpoint_for_display": 2.8407255126876407
+  },
+  {
+    "m": 64,
+    "source": 63,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.9846211237068019,
+    "scaled_loss_midpoint_for_display": 0.9842480827646796
+  },
+  {
+    "m": 64,
+    "source": 61,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9858279826362377,
+    "scaled_loss_midpoint_for_display": 0.9070091112807859
+  },
+  {
+    "m": 64,
+    "source": 62,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9701778328494584,
+    "scaled_loss_midpoint_for_display": 1.9086186976346653
+  },
+  {
+    "m": 64,
+    "source": 63,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9550127418201555,
+    "scaled_loss_midpoint_for_display": 2.879184523510048
+  },
+  {
+    "m": 128,
+    "source": 127,
+    "criterion": "per_attempt",
+    "eta_midpoint_for_display": 0.992248778271005,
+    "scaled_loss_midpoint_for_display": 0.9921563813113607
+  },
+  {
+    "m": 128,
+    "source": 125,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9925521355967248,
+    "scaled_loss_midpoint_for_display": 0.9533266436192207
+  },
+  {
+    "m": 128,
+    "source": 126,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.9847365153241299,
+    "scaled_loss_midpoint_for_display": 1.9537260385113768
+  },
+  {
+    "m": 128,
+    "source": 127,
+    "criterion": "per_photon",
+    "eta_midpoint_for_display": 0.977042525642446,
+    "scaled_loss_midpoint_for_display": 2.9385567177669145
+  }
+]

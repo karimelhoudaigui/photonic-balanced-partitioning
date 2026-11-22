@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-11-22T12:36:09.287074+00:00",
+  "raw_path": "experiments/P37_loss_source/run/data/raw.json",
+  "raw_sha256": "0c17993d4994a3b27688979d41b9626f1e9285541142cb49a4b2f75cce28a208",
+  "script_sha256": "088a6231c9a53f6eb34924c4e25e4e40c54f5cb822ae38a69aed1316512d531a",
+  "matplotlib_version": "3.11.2",
+  "outputs": [
+    {
+      "path": "experiments/P37_loss_source/figures_final/loss_source_phase.png",
+      "sha256": "bb71113916ee3b653c5fb92fbf3f33b267595af7ecdd9d44f51e53ecbfa9519e"
+    },
+    {
+      "path": "experiments/P37_loss_source/figures_final/loss_source_phase.pdf",
+      "sha256": "24bcea4996318a53f7b652b8d65404873bb6ca1ef5a5b14a37bbb36909ff182a"
+    }
+  ],
+  "caveats": [
+    "Phase curves follow the self-reviewed finite theorem and exact root brackets, not new simulations.",
+    "At eta=1 per-attempt N=m-2 also ties; at each interior threshold adjacent choices tie.",
+    "No graph-quality or quantum-advantage inference."
+  ]
+}

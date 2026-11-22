@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "claim_id": "P37_SEPARATE_ARITHMETIC_REVIEW",
+  "repository": {
+    "commit": "d402374b21a812de1d1b5658fac37d294a20a035",
+    "dirty": true
+  },
+  "command": [
+    ".venv/bin/python",
+    "experiments/check_loss_source.py",
+    "--raw",
+    "experiments/P37_loss_source/run/data/raw.json",
+    "--output",
+    "experiments/P37_loss_source/review/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Reconstruct every source probability by a normalized Polya urn and de Casteljau transform, and every transition bracket using recurrent binomial weights.",
+    "coefficient_domain": "exact Python integers and fractions.Fraction",
+    "conventions": "Same all-attempt Haar threshold law and source cap as P37; separate implementation is a self-review, not fresh agent review.",
+    "inputs": [
+      "All112 recorded grid cells,1610 source probabilities,36 transition brackets,complete progress trace"
+    ],
+    "bounds": {
+      "max_modes": 128,
+      "full_fock_simulations": 0
+    },
+    "non_claims": [
+      "No new proof or independent-agent certificate",
+      "No novelty or optimization advantage",
+      "Float display values do not drive decisions"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T12:28:26.768153+00:00",
+    "runtime_seconds": 0.560219,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/check_loss_source.py",
+    "experiments/P37_loss_source/run/data/raw.json",
+    "experiments/P37_loss_source/run/data/progress.jsonl",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/check_loss_source.py",
+      "sha256": "d9327b61229ddd736d51b1e04620541dae300e6ce958d40764c2bcc631573086",
+      "sha256_after": "d9327b61229ddd736d51b1e04620541dae300e6ce958d40764c2bcc631573086"
+    },
+    {
+      "path": "experiments/P37_loss_source/run/data/raw.json",
+      "sha256": "0c17993d4994a3b27688979d41b9626f1e9285541142cb49a4b2f75cce28a208",
+      "sha256_after": "0c17993d4994a3b27688979d41b9626f1e9285541142cb49a4b2f75cce28a208"
+    },
+    {
+      "path": "experiments/P37_loss_source/run/data/progress.jsonl",
+      "sha256": "2311ab3b6db53039a966c38d5be026c7ff1f557f07b94d889e574cc859ddefea",
+      "sha256_after": "2311ab3b6db53039a966c38d5be026c7ff1f557f07b94d889e574cc859ddefea"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P37_loss_source/review",
+  "declared_results": [
+    "experiments/P37_loss_source/review/data/summary.json",
+    "experiments/P37_loss_source/review/data/transition_display.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P37_loss_source/review/stdout.txt",
+      "sha256": "43138eecb662d0af96da5d2d7632b870e30eb104a8052ef2509f3b2ed56ba91a",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P37_loss_source/review/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P37_loss_source/review/data/summary.json",
+      "sha256": "dafa76aa4a262a9fb14cb81002ad1bbe63bae9f5143e32cf9535c84ac20034ef",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P37_loss_source/review/data/transition_display.json",
+      "sha256": "bc7d79fee23166a24dff769269fcbcce90e0851375b598caf83b63d40ec4343c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

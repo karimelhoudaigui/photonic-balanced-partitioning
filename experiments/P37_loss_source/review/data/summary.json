@@ -1,0 +1,16 @@
+{
+  "status": "EXACT_FINITE_REVIEW_PASS",
+  "review_provenance": "ASTRA_SELF_REVIEW_SEPARATE_IMPLEMENTATION",
+  "grid_cells": 112,
+  "all_source_values_checked": 1610,
+  "root_sign_brackets_checked": 36,
+  "orthogonal_invariant": "Polya urn normalized at every photon count; de Casteljau binomial transform",
+  "new_full_fock_simulations": 0,
+  "physical_shots": 0,
+  "runtime_seconds": 0.47848675001296215,
+  "limitations": [
+    "No fresh agent proof review",
+    "No novelty audit completed",
+    "No asymptotic proved by finite numbers"
+  ]
+}
