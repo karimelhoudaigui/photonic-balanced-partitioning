@@ -86,3 +86,13 @@ def test_rejects_unsupported_shapes_and_respects_resource_caps():
     e=ThresholdMarginals([[1],[0]])
     with pytest.raises(ValueError):e.vacuum((0,0))
     with pytest.raises(ValueError):e.qubo_expectation([[1,2],[3,4]])
+
+
+@pytest.mark.parametrize('name',['max_states','max_transitions'])
+@pytest.mark.parametrize('invalid',[float('nan'),float('inf'),float('-inf'),1.0,F(1,2),'4',None,True])
+def test_resource_limits_reject_noninteger_values_before_computation(name,invalid):
+    options={name:invalid}
+    with pytest.raises(ValueError,match=name):
+        vacuum_probability([[F(1,2),F(1,2)]],**options)
+    with pytest.raises(ValueError,match=name):
+        ThresholdMarginals([[1],[0]],**options)

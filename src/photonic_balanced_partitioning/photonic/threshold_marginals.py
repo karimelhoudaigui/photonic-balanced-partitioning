@@ -75,17 +75,25 @@ class MarginalStats:
     max_integer_bits: int = 0
 
 
+def _resource_limit(value, name, minimum):
+    if isinstance(value,bool) or not isinstance(value,Integral) or value<minimum:
+        raise ValueError(f'{name} must be an integer >= {minimum}')
+    return int(value)
+
+
 def vacuum_probability(rows,*,stats=None,max_states=100000,max_transitions=10000000):
     """Evaluate per(I-V*V) for 0,1,2 selected rows via a known coefficient DP.
 
     Integer coefficients have a common denominator at each stage. No clipping
     or float cancellation occurs. The rows alone do not establish that a full
     physical frame exists; ThresholdMarginals validates the complete frame.
+    Resource limits must be integers; nonfinite/fractional values fail closed.
     """
+    max_states=_resource_limit(max_states,'max_states',1)
+    max_transitions=_resource_limit(max_transitions,'max_transitions',0)
     v=[[_gaussian(x) for x in row] for row in rows];r=len(v)
     if r>2:raise ValueError('This implementation supports at most two output rows')
     if r and any(len(row)!=len(v[0]) for row in v):raise ValueError('Ragged rows')
-    if max_states<1 or max_transitions<0:raise ValueError('Nonnegative resource limits required')
     counter=stats if stats is not None else MarginalStats();counter.calls+=1
     n=len(v[0]) if r else 0
     if r==0 or n==0:return Fraction(1)
@@ -135,6 +143,8 @@ class ThresholdMarginals:
     mode carries no physical-probability or numerical-input error guarantee.
     """
     def __init__(self,frame,*,check_orthonormal=True,max_states=100000,max_transitions=10000000):
+        max_states=_resource_limit(max_states,'max_states',1)
+        max_transitions=_resource_limit(max_transitions,'max_transitions',0)
         self.frame=tuple(tuple(_gaussian(z) for z in row) for row in frame)
         self.m=len(self.frame);self.n=len(self.frame[0]) if self.m else 0
         if any(len(row)!=self.n for row in self.frame) or self.n>self.m:
