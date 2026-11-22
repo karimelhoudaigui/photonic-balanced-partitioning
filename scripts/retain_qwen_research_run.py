@@ -28,8 +28,12 @@ def main(directory):
         # A killed parent may never emit a tool result. Retain the sole native
         # checkpoint without pretending its still-running metadata is a return.
         checkpoints=list((runtime/'workflows').glob('*/checkpoint.json'))
-        if len(checkpoints)!=1:raise ValueError('No unique native checkpoint for interrupted run')
-        result={'runId':checkpoints[0].parent.name,'result':{'status':'NO_RETURN_OBSERVED'}}
+        persisted=[p for p in (runtime/'workflows').glob('*.json')
+                   if json.loads(p.read_text()).get('parentSessionId')==session]
+        if len(checkpoints)==1:runid=checkpoints[0].parent.name
+        elif len(persisted)==1:runid=persisted[0].stem
+        else:raise ValueError('No unique native state for interrupted parent session')
+        result={'runId':runid,'result':{'status':'NO_RETURN_OBSERVED'}}
     runid=result['runId'];target=directory/'native_evidence';target.mkdir(exist_ok=True)
     files=[runtime/'workflows'/f'{runid}.json',runtime/'workflows'/runid/'journal.jsonl',
            runtime/'workflows'/runid/'checkpoint.json',

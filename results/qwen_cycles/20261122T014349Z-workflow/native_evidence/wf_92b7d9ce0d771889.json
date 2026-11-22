@@ -1,0 +1,72 @@
+{
+  "runId": "wf_92b7d9ce0d771889",
+  "workflowCalls": [],
+  "toolUseId": "call_36f7pc7g",
+  "parentSessionId": "a3a0b5e6-750e-41ad-b39b-66896b226f3d",
+  "description": "wf_92b7d9ce0d771889",
+  "workflowName": "research-actions-smoke",
+  "args": "{\"name\": \"smoke-test\", \"args\": {\"action_type\": \"density_primary\"}}",
+  "argsRecorded": true,
+  "meta": {
+    "name": "Local typed-action smoke test",
+    "description": "One native agent calls only the local read-only health action."
+  },
+  "status": "cancelled",
+  "script": "export const meta={name:'Local typed-action smoke test',description:'One native agent calls only the local read-only health action.'};\nconst result=await agent('First call mcp__research__health exactly once with empty arguments {}. Then finish by calling structured_output with {\"observed\":\"the actual response text\"}. No further tool calls or scientific experiment.',\n  {agentType:'experiment-runner',label:'typed-action-health',tools:['mcp__research__health','structured_output'],stallMs:0,\n   schema:{type:'object',properties:{observed:{type:'string'}},required:['observed'],additionalProperties:false}});\nreturn {status:result===null?'INCONCLUSIVE':'EXECUTED_PENDING_ASTRA_REVIEW',result};\n",
+  "scriptPath": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261122T014349Z-workflow/.qwen/workflows/research-actions-smoke.js",
+  "phases": [],
+  "phaseVisits": [],
+  "dispatches": [
+    {
+      "id": "dispatch-1",
+      "phaseVisitId": null,
+      "label": "typed-action-health",
+      "prompt": "First call mcp__research__health exactly once with empty arguments {}. Then finish by calling structured_output with {\"observed\":\"the actual response text\"}. No further tool calls or scientific experiment.",
+      "status": "cancelled",
+      "dependsOn": [],
+      "queuedAt": 1795311861342,
+      "startedAt": 1795311861343,
+      "subagentId": "workflow-agent-0c5f913c3f3d3256-call_36f7pc7g",
+      "endedAt": 1795312069891
+    }
+  ],
+  "agentsDispatched": 1,
+  "agentsCompleted": 1,
+  "agentsRespawned": 0,
+  "tokensSpent": 18,
+  "tokenBudgetTotal": 16384,
+  "perPhaseTokens": [
+    [
+      null,
+      18
+    ]
+  ],
+  "recentLogs": [],
+  "events": [
+    {
+      "id": "event-1",
+      "type": "dispatch-queued",
+      "at": 1795311861342,
+      "dispatchId": "dispatch-1"
+    },
+    {
+      "id": "event-2",
+      "type": "dispatch-started",
+      "at": 1795311861343,
+      "dispatchId": "dispatch-1"
+    },
+    {
+      "id": "event-3",
+      "type": "dispatch-cancelled",
+      "at": 1795312069891,
+      "dispatchId": "dispatch-1"
+    },
+    {
+      "id": "event-4",
+      "type": "workflow-cancelled",
+      "at": 1795312069920
+    }
+  ],
+  "startTime": 1795311861276,
+  "endTime": 1795312069920
+}
