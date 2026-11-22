@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Desktop/pasqal/experiments/phase3_density_probe.py", line 12, in <module>
+    from photonic_balanced_partitioning.photonic.density_certificate import density_certificate
+ModuleNotFoundError: No module named 'photonic_balanced_partitioning'
