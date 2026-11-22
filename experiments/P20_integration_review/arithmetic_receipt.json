@@ -1,0 +1,293 @@
+{
+  "status": "completed",
+  "input_hashes_before": {
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/phase2_structured_probe.py": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188",
+    "/Users/karimelhoudaigui/Desktop/pasqal/src/photonic_balanced_partitioning/photonic/structured_search.py": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c",
+    "/Users/karimelhoudaigui/Desktop/pasqal/src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+    "/Users/karimelhoudaigui/Desktop/pasqal/src/photonic_balanced_partitioning/problems/min_bisection.py": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/run_larger_training.py": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b",
+    "/Users/karimelhoudaigui/Desktop/pasqal/tests/test_structured_search.py": "d5a2bf75834a4edce50a925fc5471b7795a82032c2d88ee6e83c63da71713391",
+    "/Users/karimelhoudaigui/Desktop/pasqal/reports/PHASE2_STRUCTURED_PROBE.md": "5a6b9bead894e39c532599f75c0ba4fa034fb0580973350b8530ba18c0f1f2c9",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/manifest.json": "a7422650d65dba399ed54879b305bb951720c660d02228fbb076e728776fca8a",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/summary.json": "07be97a265791bfd62861c516a4962f0b90bcdd0704f10a5b930b8b3af0b0ffd",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/frozen_parameters.json": "5a6cfb5690612ab3a82d385adb1d1b8f52c6bf18e2e4a849a51c993b614b6336",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/training_scores.json": "589f855fde51ebe488fcacd7b3122a965ca1d9381f85c78b7ccce813790433e3",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/instances.json": "896dd1f1d9dcbc22cc4bd0f8556a4734d36566a25e9b79251e850fe0a3059b98",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/blocks.json": "df259c353459138d8b1cb6066c4188922fb7237d7a90bbb23bd2cf7478cd7329",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/test_metrics.csv": "206f0d4b7758b0e558458bf5d5c20516d5e78e88180323cf47972866dacf9950",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/contract.json": "716adf282dfd0d0397a1284390d844e00f596b93ceadc7fd2264a716643b0068",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/manifest.json": "6330df5b3425551cf5c2916d6a2cb25f02763da0a9b2a6d8305ad49bda488718",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/summary.json": "260af3614713eb9d92fe5406f5ec512223c47c4b026c7ddd36a32a839d63bc01",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/frozen_parameters.json": "ecc43276f87d7af4a3fb995b6acb2a5cb08ed4e0e487ea490810675be166e347",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/training_scores.json": "568ff590d34370a4d996fff825fce3583629692c1950e9a5099ea48198a16cdd",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/instances.json": "487b4d79b78cd619bc9ff93f195654ba2506d1761d1a440c5462215095160419",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/blocks.json": "662cf6039d383065249a1b815e5bc840c03d4a99ce3a3878c36f493848688f4f",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/test_metrics.csv": "1d09a49c9929f90d965276151f0cfdf59986a119615e966748a8a70bdf0b097b",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/contract.json": "ecd293ec68069795b6729c85e17d2d85769a4545f05460889686f1c1c40dfd8a"
+  },
+  "local_kernel_max_replacement_error": 6.661338147750939e-16,
+  "runs": [
+    {
+      "run": "experiments/P20_structured_probe",
+      "train_instances": 72,
+      "test_instances": 288,
+      "train_blocks": 288,
+      "test_blocks": 1152,
+      "metric_rows": 9216,
+      "attempts": 589824,
+      "training_parameters": [
+        {
+          "r": 2,
+          "regime": "two_swaps",
+          "model": "bosonic",
+          "index": 16,
+          "score": 0.009423614583711444,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "two_swaps",
+          "model": "distinguishable",
+          "index": 16,
+          "score": 0.009423614583711444,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "two_swaps",
+          "model": "pair",
+          "index": 4,
+          "score": 0.009423614583711444,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "single_swap_local_minimum",
+          "model": "bosonic",
+          "index": 0,
+          "score": 0.0,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "single_swap_local_minimum",
+          "model": "distinguishable",
+          "index": 0,
+          "score": 0.0,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "single_swap_local_minimum",
+          "model": "pair",
+          "index": 0,
+          "score": 0.0,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "two_swaps",
+          "model": "bosonic",
+          "index": 8,
+          "score": 0.004606482088843614,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "two_swaps",
+          "model": "distinguishable",
+          "index": 8,
+          "score": 0.004606482088843614,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "two_swaps",
+          "model": "pair",
+          "index": 2,
+          "score": 0.004606482088843614,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "single_swap_local_minimum",
+          "model": "bosonic",
+          "index": 8,
+          "score": 0.0007350584482148274,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "single_swap_local_minimum",
+          "model": "distinguishable",
+          "index": 8,
+          "score": 0.0007350584482148274,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "single_swap_local_minimum",
+          "model": "pair",
+          "index": 2,
+          "score": 0.0007350584482148274,
+          "interaction_angle": 0.0
+        }
+      ],
+      "max_saved_label_error": 4.973799150320701e-14,
+      "max_anchor_error": 2.842170943040401e-14,
+      "max_recomputed_training_score_error": 9.835749681771156e-18,
+      "max_recomputed_metric_error": 4.263256414560601e-14,
+      "max_bosonic_product_expected_metric_difference": 0.0,
+      "count_spot_replays": 16,
+      "all_selected_interactions_zero": true,
+      "global_optimum_used": false
+    },
+    {
+      "run": "experiments/P20_structured_probe/larger_training",
+      "train_instances": 480,
+      "test_instances": 480,
+      "train_blocks": 1920,
+      "test_blocks": 1920,
+      "metric_rows": 15360,
+      "attempts": 983040,
+      "training_parameters": [
+        {
+          "r": 2,
+          "regime": "two_swaps",
+          "model": "bosonic",
+          "index": 16,
+          "score": 0.02033785596104399,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "two_swaps",
+          "model": "distinguishable",
+          "index": 16,
+          "score": 0.02033785596104399,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "two_swaps",
+          "model": "pair",
+          "index": 4,
+          "score": 0.02033785596104399,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "single_swap_local_minimum",
+          "model": "bosonic",
+          "index": 16,
+          "score": 0.0012915139606455713,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "single_swap_local_minimum",
+          "model": "distinguishable",
+          "index": 16,
+          "score": 0.0012915139606455713,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 2,
+          "regime": "single_swap_local_minimum",
+          "model": "pair",
+          "index": 4,
+          "score": 0.0012915139606455713,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "two_swaps",
+          "model": "bosonic",
+          "index": 12,
+          "score": 0.011993037579782189,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "two_swaps",
+          "model": "distinguishable",
+          "index": 12,
+          "score": 0.011993037579782189,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "two_swaps",
+          "model": "pair",
+          "index": 3,
+          "score": 0.011993037579782189,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "single_swap_local_minimum",
+          "model": "bosonic",
+          "index": 8,
+          "score": 0.0007255913989473769,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "single_swap_local_minimum",
+          "model": "distinguishable",
+          "index": 8,
+          "score": 0.0007255913989473769,
+          "interaction_angle": 0.0
+        },
+        {
+          "r": 3,
+          "regime": "single_swap_local_minimum",
+          "model": "pair",
+          "index": 2,
+          "score": 0.0007255913989473769,
+          "interaction_angle": 0.0
+        }
+      ],
+      "max_saved_label_error": 4.973799150320701e-14,
+      "max_anchor_error": 4.263256414560601e-14,
+      "max_recomputed_training_score_error": 6.3769271537866395e-18,
+      "max_recomputed_metric_error": 5.684341886080802e-14,
+      "max_bosonic_product_expected_metric_difference": 0.0,
+      "count_spot_replays": 16,
+      "all_selected_interactions_zero": true,
+      "global_optimum_used": false
+    }
+  ],
+  "input_hashes_after": {
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/phase2_structured_probe.py": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188",
+    "/Users/karimelhoudaigui/Desktop/pasqal/src/photonic_balanced_partitioning/photonic/structured_search.py": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c",
+    "/Users/karimelhoudaigui/Desktop/pasqal/src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+    "/Users/karimelhoudaigui/Desktop/pasqal/src/photonic_balanced_partitioning/problems/min_bisection.py": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/run_larger_training.py": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b",
+    "/Users/karimelhoudaigui/Desktop/pasqal/tests/test_structured_search.py": "d5a2bf75834a4edce50a925fc5471b7795a82032c2d88ee6e83c63da71713391",
+    "/Users/karimelhoudaigui/Desktop/pasqal/reports/PHASE2_STRUCTURED_PROBE.md": "5a6b9bead894e39c532599f75c0ba4fa034fb0580973350b8530ba18c0f1f2c9",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/manifest.json": "a7422650d65dba399ed54879b305bb951720c660d02228fbb076e728776fca8a",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/summary.json": "07be97a265791bfd62861c516a4962f0b90bcdd0704f10a5b930b8b3af0b0ffd",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/frozen_parameters.json": "5a6cfb5690612ab3a82d385adb1d1b8f52c6bf18e2e4a849a51c993b614b6336",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/training_scores.json": "589f855fde51ebe488fcacd7b3122a965ca1d9381f85c78b7ccce813790433e3",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/instances.json": "896dd1f1d9dcbc22cc4bd0f8556a4734d36566a25e9b79251e850fe0a3059b98",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/blocks.json": "df259c353459138d8b1cb6066c4188922fb7237d7a90bbb23bd2cf7478cd7329",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/test_metrics.csv": "206f0d4b7758b0e558458bf5d5c20516d5e78e88180323cf47972866dacf9950",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/contract.json": "716adf282dfd0d0397a1284390d844e00f596b93ceadc7fd2264a716643b0068",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/manifest.json": "6330df5b3425551cf5c2916d6a2cb25f02763da0a9b2a6d8305ad49bda488718",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/summary.json": "260af3614713eb9d92fe5406f5ec512223c47c4b026c7ddd36a32a839d63bc01",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/frozen_parameters.json": "ecc43276f87d7af4a3fb995b6acb2a5cb08ed4e0e487ea490810675be166e347",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/training_scores.json": "568ff590d34370a4d996fff825fce3583629692c1950e9a5099ea48198a16cdd",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/instances.json": "487b4d79b78cd619bc9ff93f195654ba2506d1761d1a440c5462215095160419",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/blocks.json": "662cf6039d383065249a1b815e5bc840c03d4a99ce3a3878c36f493848688f4f",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/test_metrics.csv": "1d09a49c9929f90d965276151f0cfdf59986a119615e966748a8a70bdf0b097b",
+    "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/contract.json": "ecd293ec68069795b6729c85e17d2d85769a4545f05460889686f1c1c40dfd8a"
+  },
+  "wall_seconds": 2.0570140839845408,
+  "cpu_seconds": 1.715684,
+  "hardware": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "no_campaign_rerun": true,
+  "only_two_stored_test_cases_per_run_resampled": true
+}

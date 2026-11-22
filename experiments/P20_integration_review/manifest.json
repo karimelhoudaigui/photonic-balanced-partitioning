@@ -1,0 +1,240 @@
+{
+  "schema_version": 2,
+  "claim_id": "P20-independent-archived-arithmetic-review",
+  "repository": {
+    "commit": "e201f1c337cb780225bdcdd0a806cfd7d20d2fe2",
+    "dirty": true
+  },
+  "command": "Original full argv not retained. Bounded checker check_archived_outputs.py wrote arithmetic_receipt.json; safe reproduction command is in reports/P20_INTEGRATION_REVIEW.md.",
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Archived labels, training aggregation and frozen selection, expected metrics and logical cost counts match sources; 32 stored count spot replays match; no campaign rerun.",
+    "coefficient_domain": "IEEE binary64, integer counts; no exact-arithmetic claim",
+    "conventions": "Positive accepted cut gain per raw synthetic attempt; all collision outcomes consume attempts. Fixed anchors, not adaptive trajectories.",
+    "inputs": [
+      "experiments/phase2_structured_probe.py",
+      "src/photonic_balanced_partitioning/photonic/structured_search.py",
+      "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "src/photonic_balanced_partitioning/problems/min_bisection.py",
+      "experiments/P20_structured_probe/run_larger_training.py",
+      "tests/test_structured_search.py",
+      "reports/PHASE2_STRUCTURED_PROBE.md",
+      "experiments/P20_structured_probe/manifest.json",
+      "experiments/P20_structured_probe/summary.json",
+      "experiments/P20_structured_probe/frozen_parameters.json",
+      "experiments/P20_structured_probe/training_scores.json",
+      "experiments/P20_structured_probe/instances.json",
+      "experiments/P20_structured_probe/blocks.json",
+      "experiments/P20_structured_probe/test_metrics.csv",
+      "experiments/P20_structured_probe/contract.json",
+      "experiments/P20_structured_probe/larger_training/manifest.json",
+      "experiments/P20_structured_probe/larger_training/summary.json",
+      "experiments/P20_structured_probe/larger_training/frozen_parameters.json",
+      "experiments/P20_structured_probe/larger_training/training_scores.json",
+      "experiments/P20_structured_probe/larger_training/instances.json",
+      "experiments/P20_structured_probe/larger_training/blocks.json",
+      "experiments/P20_structured_probe/larger_training/test_metrics.csv",
+      "experiments/P20_structured_probe/larger_training/contract.json"
+    ],
+    "bounds": {
+      "r": [
+        2,
+        3
+      ],
+      "train_blocks": [
+        288,
+        1920
+      ],
+      "test_blocks": [
+        1152,
+        1920
+      ],
+      "count_spot_replays": 32,
+      "cpu_limit_seconds": 55
+    },
+    "non_claims": [
+      "No independent full campaign repetition",
+      "No quantum advantage, global optimization or total-resource superiority",
+      "No exact equality inferred from floating probability comparison",
+      "No external preregistration attestation"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64 multinomial; archived seed formula",
+    "seed": "1200000 + case_index*101 + offset; only first/last stored case each run; replacement offset0"
+  },
+  "run": {
+    "started_at": "Unavailable: outside-runner checker did not record its start timestamp; receipt observed on 2026-11-22.",
+    "runtime_seconds": 2.0570140839845408,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "cpu_seconds": 55,
+      "memory_bytes": null,
+      "max_cores": null,
+      "max_threads": null
+    }
+  },
+  "outputs": [
+    {
+      "path": ".qwen/worktrees/p20-integration-review/experiments/P20_integration_review/arithmetic_receipt.json",
+      "sha256": "c9bfaf776647a5bd678579f5b0e5da9c78c001cbed81a2d6804e45eba7f6976b",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "23 primary inputs observed with unchanged before/after hashes",
+    "All archived local labels independently reconstructed",
+    "All saved training scores, selected angles and expected CSV fields rechecked",
+    "32 finite-count spot replays matched",
+    "Fixed block bank compared to independent routing"
+  ],
+  "result": "Finite archived arithmetic verified conditional on the stated floating tolerances; scope and interpretation are documented in the review.",
+  "residual_risks": [
+    "Exact original checker argv and start timestamp were not retained",
+    "Execution source hash was first recorded after execution; no synthetic before hash is asserted",
+    "Current absolute primary checkout is needed for read-only inputs",
+    "Manifest output paths include isolated worktree prefix and are location-specific",
+    "Focused tests have their separate receipt and are not included in this arithmetic run"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase2_structured_probe.py",
+      "sha256": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188",
+      "sha256_after": "4324a2915f4d1079fb720e6d99c69a603d00d40dd85f3aa32ec44973bd080188"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/structured_search.py",
+      "sha256": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c",
+      "sha256_after": "7be43d9547a6a3e67fda6d3fd54d0de484d8840afa8d3497ee00a74af950827c"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/problems/min_bisection.py",
+      "sha256": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d",
+      "sha256_after": "a774952065bb8996b194a6b8e7f882004693a2f8c1470d306813e1ddc126f31d"
+    },
+    {
+      "path": "experiments/P20_structured_probe/run_larger_training.py",
+      "sha256": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b",
+      "sha256_after": "8016bc4cc166b83a634f71e9ead92896c4bebb8506e328e891b155480820c49b"
+    },
+    {
+      "path": "tests/test_structured_search.py",
+      "sha256": "d5a2bf75834a4edce50a925fc5471b7795a82032c2d88ee6e83c63da71713391",
+      "sha256_after": "d5a2bf75834a4edce50a925fc5471b7795a82032c2d88ee6e83c63da71713391"
+    },
+    {
+      "path": "reports/PHASE2_STRUCTURED_PROBE.md",
+      "sha256": "5a6b9bead894e39c532599f75c0ba4fa034fb0580973350b8530ba18c0f1f2c9",
+      "sha256_after": "5a6b9bead894e39c532599f75c0ba4fa034fb0580973350b8530ba18c0f1f2c9"
+    },
+    {
+      "path": "experiments/P20_structured_probe/manifest.json",
+      "sha256": "a7422650d65dba399ed54879b305bb951720c660d02228fbb076e728776fca8a",
+      "sha256_after": "a7422650d65dba399ed54879b305bb951720c660d02228fbb076e728776fca8a"
+    },
+    {
+      "path": "experiments/P20_structured_probe/summary.json",
+      "sha256": "07be97a265791bfd62861c516a4962f0b90bcdd0704f10a5b930b8b3af0b0ffd",
+      "sha256_after": "07be97a265791bfd62861c516a4962f0b90bcdd0704f10a5b930b8b3af0b0ffd"
+    },
+    {
+      "path": "experiments/P20_structured_probe/frozen_parameters.json",
+      "sha256": "5a6cfb5690612ab3a82d385adb1d1b8f52c6bf18e2e4a849a51c993b614b6336",
+      "sha256_after": "5a6cfb5690612ab3a82d385adb1d1b8f52c6bf18e2e4a849a51c993b614b6336"
+    },
+    {
+      "path": "experiments/P20_structured_probe/training_scores.json",
+      "sha256": "589f855fde51ebe488fcacd7b3122a965ca1d9381f85c78b7ccce813790433e3",
+      "sha256_after": "589f855fde51ebe488fcacd7b3122a965ca1d9381f85c78b7ccce813790433e3"
+    },
+    {
+      "path": "experiments/P20_structured_probe/instances.json",
+      "sha256": "896dd1f1d9dcbc22cc4bd0f8556a4734d36566a25e9b79251e850fe0a3059b98",
+      "sha256_after": "896dd1f1d9dcbc22cc4bd0f8556a4734d36566a25e9b79251e850fe0a3059b98"
+    },
+    {
+      "path": "experiments/P20_structured_probe/blocks.json",
+      "sha256": "df259c353459138d8b1cb6066c4188922fb7237d7a90bbb23bd2cf7478cd7329",
+      "sha256_after": "df259c353459138d8b1cb6066c4188922fb7237d7a90bbb23bd2cf7478cd7329"
+    },
+    {
+      "path": "experiments/P20_structured_probe/test_metrics.csv",
+      "sha256": "206f0d4b7758b0e558458bf5d5c20516d5e78e88180323cf47972866dacf9950",
+      "sha256_after": "206f0d4b7758b0e558458bf5d5c20516d5e78e88180323cf47972866dacf9950"
+    },
+    {
+      "path": "experiments/P20_structured_probe/contract.json",
+      "sha256": "716adf282dfd0d0397a1284390d844e00f596b93ceadc7fd2264a716643b0068",
+      "sha256_after": "716adf282dfd0d0397a1284390d844e00f596b93ceadc7fd2264a716643b0068"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/manifest.json",
+      "sha256": "6330df5b3425551cf5c2916d6a2cb25f02763da0a9b2a6d8305ad49bda488718",
+      "sha256_after": "6330df5b3425551cf5c2916d6a2cb25f02763da0a9b2a6d8305ad49bda488718"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/summary.json",
+      "sha256": "260af3614713eb9d92fe5406f5ec512223c47c4b026c7ddd36a32a839d63bc01",
+      "sha256_after": "260af3614713eb9d92fe5406f5ec512223c47c4b026c7ddd36a32a839d63bc01"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/frozen_parameters.json",
+      "sha256": "ecc43276f87d7af4a3fb995b6acb2a5cb08ed4e0e487ea490810675be166e347",
+      "sha256_after": "ecc43276f87d7af4a3fb995b6acb2a5cb08ed4e0e487ea490810675be166e347"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/training_scores.json",
+      "sha256": "568ff590d34370a4d996fff825fce3583629692c1950e9a5099ea48198a16cdd",
+      "sha256_after": "568ff590d34370a4d996fff825fce3583629692c1950e9a5099ea48198a16cdd"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/instances.json",
+      "sha256": "487b4d79b78cd619bc9ff93f195654ba2506d1761d1a440c5462215095160419",
+      "sha256_after": "487b4d79b78cd619bc9ff93f195654ba2506d1761d1a440c5462215095160419"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/blocks.json",
+      "sha256": "662cf6039d383065249a1b815e5bc840c03d4a99ce3a3878c36f493848688f4f",
+      "sha256_after": "662cf6039d383065249a1b815e5bc840c03d4a99ce3a3878c36f493848688f4f"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/test_metrics.csv",
+      "sha256": "1d09a49c9929f90d965276151f0cfdf59986a119615e966748a8a70bdf0b097b",
+      "sha256_after": "1d09a49c9929f90d965276151f0cfdf59986a119615e966748a8a70bdf0b097b"
+    },
+    {
+      "path": "experiments/P20_structured_probe/larger_training/contract.json",
+      "sha256": "ecd293ec68069795b6729c85e17d2d85769a4545f05460889686f1c1c40dfd8a",
+      "sha256_after": "ecd293ec68069795b6729c85e17d2d85769a4545f05460889686f1c1c40dfd8a"
+    }
+  ],
+  "declared_results": [
+    ".qwen/worktrees/p20-integration-review/experiments/P20_integration_review/arithmetic_receipt.json"
+  ],
+  "execution_source_observation": {
+    "when": "After completed run; no before-run observation retained",
+    "sha256": {
+      ".qwen/worktrees/p20-integration-review/experiments/P20_integration_review/check_archived_outputs.py": "db2c29bfcdd93020f3b3366788956c4ab62a9567cc84f8ea39eb0eb4d0834983",
+      ".qwen/worktrees/p20-integration-review/experiments/P20_integration_review/run_focused_tests.py": "6a911efa79fdb21cdc16a2d6f049d027f068b0e218cfcd5738c0dc06cb4ffb3d"
+    }
+  }
+}

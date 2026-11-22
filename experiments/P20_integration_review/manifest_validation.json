@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-22T02:22:24.294935+00:00",
+  "checks": [
+    {
+      "command": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+        "-B",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "manifest_sha256": "a7422650d65dba399ed54879b305bb951720c660d02228fbb076e728776fca8a",
+      "exit_status": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+        "-B",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "/Users/karimelhoudaigui/Desktop/pasqal/experiments/P20_structured_probe/larger_training/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "manifest_sha256": "6330df5b3425551cf5c2916d6a2cb25f02763da0a9b2a6d8305ad49bda488718",
+      "exit_status": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+        "-B",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p20-integration-review/experiments/P20_integration_review/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "manifest_sha256": "87b85b5c04fa4e17bb7112fb60e2243f82a488b066840f2d4cd5cc718cac0124",
+      "exit_status": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ]
+}

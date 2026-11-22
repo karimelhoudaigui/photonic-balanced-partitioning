@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "/Users/karimelhoudaigui/Desktop/pasqal/tests/test_structured_search.py",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "cwd": "/Users/karimelhoudaigui/Desktop/pasqal",
+  "exit_status": 0,
+  "wall_seconds": 17.695467082987307,
+  "child_cpu_seconds": 16.056139,
+  "child_cpu_limit_seconds": 30,
+  "existing_campaigns_rerun": false
+}
