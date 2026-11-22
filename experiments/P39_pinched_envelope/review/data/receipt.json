@@ -1,0 +1,251 @@
+{
+  "summary": {
+    "status": "EXACT_SCALAR_ROOT_COUNTEREXAMPLE_CHECK_PASS",
+    "review_provenance": "ASTRA_SELF_REVIEW_DIFFERENT_ARGUMENT",
+    "residual_repeated": {
+      "numerator": "16284539405",
+      "denominator": "35741996666131"
+    },
+    "residual_distinct": {
+      "numerator": "33884495",
+      "denominator": "377991592149"
+    },
+    "strict_lower": {
+      "numerator": "24493",
+      "denominator": "50000"
+    },
+    "curved_envelope": {
+      "numerator": "288",
+      "denominator": "625"
+    },
+    "strict_gap": {
+      "numerator": "1453",
+      "denominator": "50000"
+    },
+    "sectors_checked": 27,
+    "physical_shots": 0,
+    "runtime_seconds": 0.0030764169932808727,
+    "non_claims": [
+      "No linear-bound or measured-TV refutation",
+      "No fresh independent review or novelty claim"
+    ]
+  },
+  "sectors": [
+    {
+      "groups": [
+        0,
+        0,
+        0
+      ],
+      "class": 1
+    },
+    {
+      "groups": [
+        0,
+        0,
+        1
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        0,
+        0,
+        2
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        0,
+        1,
+        0
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        0,
+        1,
+        1
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        0,
+        1,
+        2
+      ],
+      "class": 3
+    },
+    {
+      "groups": [
+        0,
+        2,
+        0
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        0,
+        2,
+        1
+      ],
+      "class": 3
+    },
+    {
+      "groups": [
+        0,
+        2,
+        2
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        1,
+        0,
+        0
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        1,
+        0,
+        1
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        1,
+        0,
+        2
+      ],
+      "class": 3
+    },
+    {
+      "groups": [
+        1,
+        1,
+        0
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        1,
+        1,
+        1
+      ],
+      "class": 1
+    },
+    {
+      "groups": [
+        1,
+        1,
+        2
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        1,
+        2,
+        0
+      ],
+      "class": 3
+    },
+    {
+      "groups": [
+        1,
+        2,
+        1
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        1,
+        2,
+        2
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        2,
+        0,
+        0
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        2,
+        0,
+        1
+      ],
+      "class": 3
+    },
+    {
+      "groups": [
+        2,
+        0,
+        2
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        2,
+        1,
+        0
+      ],
+      "class": 3
+    },
+    {
+      "groups": [
+        2,
+        1,
+        1
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        2,
+        1,
+        2
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        2,
+        2,
+        0
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        2,
+        2,
+        1
+      ],
+      "class": 2
+    },
+    {
+      "groups": [
+        2,
+        2,
+        2
+      ],
+      "class": 1
+    }
+  ]
+}
