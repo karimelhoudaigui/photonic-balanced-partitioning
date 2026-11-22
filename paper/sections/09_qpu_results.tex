@@ -1,44 +1,177 @@
-\section{QPU Results}
+\section{QPU Experimental Protocol and Simulated Results}
+\label{sec:qpu}
 
-\subsection{Experiment Setup}
+This section specifies the complete experimental protocol for execution on a Quandela Belenos (or equivalent) photonic QPU. The protocol is designed to be executed by Laurent and the Quandela team; simulated results are provided for reference. \textbf{All QPU results in this version are simulated; experimental data will be inserted upon QPU execution.}
 
-Experiments designed for Quandela Belenos QPU:
+\subsection{Hardware Requirements}
+
 \begin{itemize}
-    \item n=4, k=2 path graph
-    \item 100 shots per run
-    \item 1000 shots for full experiment
+\item \textbf{QPU:} Quandela Belenos (12-mode universal linear optical processor) or equivalent.
+\item \textbf{Modes:} $n=4,6,8$ (start with $n=4$).
+\item \textbf{Photons:} $k=n/2$ indistinguishable photons from a heralded single-photon source.
+\item \textbf{Input state:} $|1^k 0^{n-k}\rangle$ (first $k$ modes occupied).
+\item \textbf{Detection:} Photon-number-resolving (PNR) detectors on all $n$ modes.
+\item \textbf{Shots:} 10,000--100,000 per circuit configuration.
 \end{itemize}
 
-\subsection{Raw Data Preservation}
+\subsection{Calibration Phase (Mandatory)}
 
-QPU runs produce raw Fock samples including collision states:
+Before any optimization, the following calibrations must be performed and recorded:
+
+\begin{enumerate}
+\item \textbf{HOM calibration:} Prepare $|1,1,0,0\rangle$ on modes 0,1; apply 50:50 beamsplitter; measure $P_{\mathrm{CF}}$. Target: $P_{\mathrm{CF}} < 0.01$. Records indistinguishability and PNR calibration.
+\item \textbf{Loss characterization:} Measure per-mode transmission $\eta_i$ using coherent state probes.
+\item \textbf{Dark count rate:} Measure with vacuum input.
+\item \textbf{Phase stability:} Measure phase drift over typical experiment duration.
+\end{enumerate}
+
+\subsection{Phase A: Haar Baseline}
+
+For each $n \in \{4,6,8\}$:
+\begin{enumerate}
+\item Generate 100 Haar-random unitaries (seeded for reproducibility).
+\item For each unitary:
+  \begin{itemize}
+  \item Compile to Clements mesh parameters.
+  \item Upload to QPU.
+  \item Prepare $|1^k 0^{n-k}\rangle$.
+  \item Measure 1,000 shots.
+  \item Record: $P_{\mathrm{CF}}$, $P_{\mathrm{success}}$, $P_{\mathrm{opt|CF}}$.
+  \end{itemize}
+\item Compute mean/std of $P_{\mathrm{CF}}$, $P_{\mathrm{success}}$.
+\item Compare to theoretical Haar prediction $\mathbb{E}[P_{\mathrm{CF}}] = \binom{n}{k}/\binom{n+k-1}{k}$.
+\end{enumerate}
+
+\subsection{Phase B: Variational Optimization}
+
+For each graph family $\times$ $n$:
+\begin{enumerate}
+\item \textbf{Graph instances:} Path, cycle, complete, bipartite, star, ER($p=0.5$), RR($d=3$), planted partition.
+\item \textbf{Optimization:}
+  \begin{itemize}
+  \item Parametrize Clements mesh (depth $n$).
+  \item Objective: Maximize $P_{\mathrm{success}}$ (exact distribution, no shots).
+  \item Optimizer: COBYLA, 200 iterations (201 distribution evaluations).
+  \item Seeds: 3 random restarts (seeds 42, 43, 44).
+  \item Optional: Graph-informed initialization from spectral partitioning.
+  \end{itemize}
+\item \textbf{Validation:} Evaluate optimized circuit with 10,000 shots.
+\item \textbf{Record:} $P_{\mathrm{CF}}$, $P_{\mathrm{success}}$, $P_{\mathrm{opt|CF}}$, expected shots, circuit parameters.
+\end{enumerate}
+
+\subsection{Phase C: Baseline Comparisons}
+
+For each optimized circuit:
+\begin{enumerate}
+\item \textbf{Penalty baseline:} Same graph, $\lambda=10$, 200 random logit evaluations, 10,000 shots each.
+\item \textbf{Distinguishable control:} Same optimized unitary, distinguishable photons (temporal delay $> \tau_c$ or spectral distinguishability).
+\item \textbf{Uniform feasible:} Random balanced partitions (classical).
+\end{enumerate}
+
+\subsection{Phase D: Data Collection and Metrics}
+
+For each experiment, record:
 \begin{itemize}
-    \item $|2,0,0,0\rangle$ and permutations
-    \item $|1,1,0,0\rangle$ and permutations
-    \item Other valid 2-photon states
+\item Raw shot data (occupation numbers per shot) in CSV format.
+\item Circuit parameters (mesh angles) in JSON.
+\item Summary metrics with Wilson 95\% CI:
+  \begin{itemize}
+  \item $P_{\mathrm{CF}}$, $P_{\mathrm{success}}$, $P_{\mathrm{opt|CF}}$
+  \item Expected shots $N_{\mathrm{shots}} = 1/P_{\mathrm{success}}$ with CI
+  \item Conditional energy $\mathbb{E}[C|\mathrm{CF}]$
+  \end{itemize}
 \end{itemize}
 
-\subsection{Analysis Pipeline}
+\subsection{Simulated QPU Results (Reference)}
 
-1. Parse raw samples
-2. Identify collision-free states
-3. Compute energies for valid samples
-4. Report $P_{CF}$ and $P_{\text{opt}\mid CF}$
+The following tables show simulated results for the protocol, assuming ideal hardware ($\eta=1$, $\xi=1$). These will be replaced with experimental data.
 
-\subsection{Expected Results}
+\begin{table}[ht]
+\centering
+\caption{Simulated QPU results for $n=4$ (10,000 shots per circuit).}
+\label{tab:qpu_n4}
+\begin{tabular}{lccccc}
+\toprule
+Graph & $P_{\mathrm{CF}}$ & $P_{\mathrm{success}}$ & $P_{\mathrm{opt|CF}}$ & $N_{\mathrm{shots}}$ & Speedup vs Penalty \\
+\midrule
+path & 1.000 & 1.000 & 1.000 & 1.0 & 6.0$\times$ \\
+cycle & 1.000 & 0.999 & 0.999 & 1.0 & 3.5$\times$ \\
+complete & 1.000 & 1.000 & 1.000 & 1.0 & 2.5$\times$ \\
+bipartite & 1.000 & 1.000 & 1.000 & 1.0 & 4.4$\times$ \\
+star & 1.000 & 1.000 & 1.000 & 1.0 & 2.5$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-Based on simulation:
-\begin{itemize}
-    \item $P_{CF}$ measured from data
-    \item Constraint satisfaction verified
-    \item Energy distribution analyzed
-\end{itemize}
+\begin{table}[ht]
+\centering
+\caption{Simulated QPU results for $n=6$ (10,000 shots per circuit).}
+\label{tab:qpu_n6}
+\begin{tabular}{lccccc}
+\toprule
+Graph & $P_{\mathrm{CF}}$ & $P_{\mathrm{success}}$ & $P_{\mathrm{opt|CF}}$ & $N_{\mathrm{shots}}$ & Speedup vs Penalty \\
+\midrule
+path & 0.993 & 0.982 & 0.989 & 1.0 & 5.0$\times$ \\
+cycle & 0.333 & 0.290 & 0.870 & 3.5 & 3.7$\times$ \\
+complete & 0.992 & 0.992 & 1.000 & 1.0 & 2.9$\times$ \\
+bipartite & 0.984 & 0.976 & 0.992 & 1.0 & 3.1$\times$ \\
+star & 0.992 & 0.992 & 1.000 & 1.0 & 2.9$\times$ \\
+ER & 1.000 & 0.987 & 0.987 & 1.0 & 32.9$\times$ \\
+RR & 0.998 & 0.982 & 0.984 & 1.0 & 70.1$\times$ \\
+planted & 0.994 & 0.988 & 0.995 & 1.0 & 29.1$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\subsection{Data Collection}
+\begin{table}[ht]
+\centering
+\caption{Simulated QPU results for $n=8$ (10,000 shots per circuit).}
+\label{tab:qpu_n8}
+\begin{tabular}{lccccc}
+\toprule
+Graph & $P_{\mathrm{CF}}$ & $P_{\mathrm{success}}$ & $P_{\mathrm{opt|CF}}$ & $N_{\mathrm{shots}}$ & Speedup vs Penalty \\
+\midrule
+path & 0.733 & 0.537 & 0.732 & 1.9 & 6.6$\times$ \\
+cycle & 0.322 & 0.209 & 0.651 & 4.8 & 1.6$\times$ \\
+complete & 0.852 & 0.852 & 1.000 & 1.2 & 3.0$\times$ \\
+bipartite & 0.909 & 0.831 & 0.915 & 1.2 & 6.9$\times$ \\
+star & 0.852 & 0.852 & 1.000 & 1.2 & 3.0$\times$ \\
+ER & 0.087 & 0.060 & 0.687 & 16.8 & 15.0$\times$ \\
+RR & 0.810 & 0.581 & 0.717 & 1.7 & 6.1$\times$ \\
+planted & 0.733 & 0.537 & 0.732 & 1.9 & 6.6$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-Results saved to `results/qpu/<timestamp>_<run_id>/`:
-\begin{itemize}
-    \item `raw_samples.json` - All Fock states (including collisions)
-    \item `processed_results.json` - Analysis results
-    \item `analysis.json` - $P_{CF}$, $P_{\text{opt}\mid CF}$, etc.
-\end{itemize}
+\subsection{Resource Estimate}
+
+\begin{table}[ht]
+\centering
+\caption{QPU resource estimate.}
+\label{tab:qpu_resources}
+\begin{tabular}{lcccc}
+\toprule
+Phase & Circuits & Shots/Circuit & Total Shots & Time (est.) \\
+\midrule
+Calibration & 1 & 10,000 & 10,000 & 1 hr \\
+Haar baseline & 300 & 1,000 & 300,000 & 6 hrs \\
+Variational & 24 & 10,000 & 240,000 & 8 hrs \\
+Penalty baseline & 24 & 10,000 & 240,000 & 8 hrs \\
+Distinguishable & 24 & 10,000 & 240,000 & 8 hrs \\
+\midrule
+Total & 597 & & 1,030,000 & $\sim$31 hrs \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Success Criteria}
+
+The QPU experiment is considered successful if:
+\begin{enumerate}
+\item HOM calibration yields $P_{\mathrm{CF}} < 0.01$.
+\item Measured $P_{\mathrm{success}}$ for variational circuits exceeds Haar baseline by $>5\%$ (absolute) for $n=4,6$.
+\item Measured $P_{\mathrm{success}}$ for variational circuits exceeds penalty baseline by $>2\times$ for $n=4,6$.
+\item Bosonic advantage ($P_{\mathrm{success}}^{\mathrm{boson}} > P_{\mathrm{success}}^{\mathrm{dist}}$) observed for $n=8$ on at least one structured graph (RR or planted).
+\end{enumerate}
+
+If these criteria are not met, the results will be reported as a negative result with full data transparency.

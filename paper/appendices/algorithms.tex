@@ -1,36 +1,54 @@
 \appendix
-\section{Algorithms}
+\section{Algorithmic Details}
+\label{app:algorithms}
 
-\subsection{Fixed-Photon Sampling Algorithm}
+\subsection{Permanent Calculation: Ryser's Formula}
 
-\begin{algorithmic}
-\State \textbf{Input:} Unitary $U \in \mathbb{C}^{n \times n}$, graph edges $E$
-\State \textbf{Output:} Sampled partition and energy
-\State Initialize input state $|\psi_{\text{in}}\rangle = |1, 1, 0, \ldots, 0\rangle$
-\State Compute output state $|\psi_{\text{out}}\rangle = \hat{U}|\psi_{\text{in}}\rangle$
-\State Enumerate all $k$-subsets $\{P_1, \ldots, P_d\}$
-\For{each partition $P_i$}
-    \State Compute amplitude $\alpha_i = \text{perm}(U[P_i, :k]) / \sqrt{k!}$
-\EndFor
-\State Normalize: $p_i = |\alpha_i|^2 / \sum_j |\alpha_j|^2$
-\State Sample index $j \sim \text{Categorical}(p_1, \ldots, p_d)$
-\State Return partition $P_j$ and energy $C_G(P_j)$
-\end{algorithmic}
+The permanent of a $k \times k$ matrix $M$ is computed using Ryser's formula:
+\begin{equation}
+\mathrm{Per}(M) = \sum_{S \subseteq \{1,\dots,k\}} (-1)^{k-|S|} \prod_{i=1}^k \sum_{j \in S} M_{ij}.
+\end{equation}
+Our implementation uses a vectorized version with precomputed subset masks and signs for efficiency.
 
-\subsection{Optimization Algorithm}
+\subsection{Fock State Enumeration}
 
-\begin{algorithmic}
-\State \textbf{Input:} Graph $G$, iterations $N$
-\State \textbf{Output:} Optimized interferometer $U^*$
-\State Initialize $U \gets \text{RandomUnitary}(n)$
-\State $E_{\text{best}} \gets \text{ComputeEnergy}(U, G)$
-\For{$i = 1$ to $N$}
-    \State $U' \gets \text{RandomUnitary}(n)$
-    \State $E' \gets \text{ComputeEnergy}(U', G)$
-    \If{$E' < E_{\text{best}}$}
-        \State $U \gets U'$
-        \State $E_{\text{best}} \gets E'$
-    \EndIf
-\EndFor
-\State \textbf{Return:} $U$
-\end{algorithmic}
+The weak compositions of $k$ into $n$ parts are generated recursively:
+\begin{verbatim}
+def fock_states(m, k):
+    if m == 1: return [(k,)]
+    return [(j,) + rest for j in range(k+1) 
+            for rest in fock_states(m-1, k-j)]
+\end{verbatim}
+The states are cached for each $(n,k)$ pair.
+
+\subsection{Exact Distribution Evaluation}
+
+For a given unitary $U$ and input occupation $\mathbf{s}$, the output probabilities are:
+\begin{verbatim}
+def output_distribution(U, s):
+    for each output occupation t:
+        rows = repeat indices according to t
+        cols = repeat indices according to s
+        M = U[rows, cols]
+        amp = permanent(M) / sqrt(prod(s_i!) * prod(t_j!))
+        p[t] = |amp|^2
+\end{verbatim}
+The full distribution is computed in $O(D \cdot k \cdot 2^k)$ time where $D = \binom{n+k-1}{k}$.
+
+\subsection{COBYLA Optimization}
+
+We use SciPy's COBYLA implementation with:
+\begin{itemize}
+\item Maximum iterations: 200
+\item Tolerance: $10^{-6}$
+\item Random restarts: 3 seeds (42, 43, 44)
+\item Initial parameters: $\mathcal{N}(0, 1)$
+\end{itemize}
+
+\subsection{Wilson Confidence Interval}
+
+For binomial proportion $p = s/N$, the Wilson 95\% CI is:
+\begin{equation}
+\frac{\hat{p} + \frac{z^2}{2N} \pm z \sqrt{\frac{\hat{p}(1-\hat{p})}{N} + \frac{z^2}{4N^2}}}{1 + \frac{z^2}{N}}
+\end{equation}
+with $z = 1.96$. The expected shots interval is the reciprocal of the success probability interval.

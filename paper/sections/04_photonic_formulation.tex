@@ -1,37 +1,70 @@
-\section{Photonic Formulation}
+\section{Photonic Physics: Full Fock Space, Collisions, and Haar Statistics}
+\label{sec:photonic}
 
-In photonic quantum computing, we use $n$ modes to represent $n$ vertices. We inject exactly $k = n/2$ photons into the first $k$ modes.
+\subsection{Passive Linear Optics and the $k$-Photon Representation}
 
-A passive linear interferometer $\hat{U}$ conserves the total photon number:
+An $n$-mode passive linear optical interferometer is described by a unitary matrix $U \in \mathrm{U}(n)$ acting on the mode annihilation operators:
+\begin{equation}
+\hat{a}_j^\dagger \mapsto \sum_{i=1}^n U_{ji} \hat{a}_i^\dagger.
+\end{equation}
+The $k$-photon subspace $\mathcal{H}_k = \mathrm{Sym}^k(\mathbb{C}^n)$ carries the representation $\hat{\Gamma}_k(U)$ with matrix elements given by Eq.~\eqref{eq:bosonic_amplitude}. The input state with one photon in each of the first $k$ modes is
+\begin{equation}
+|\psi_{\mathrm{in}}\rangle = |1,\dots,1,0,\dots,0\rangle \quad (k \text{ ones}).
+\end{equation}
+The output state is $|\psi_{\mathrm{out}}\rangle = \hat{\Gamma}_k(U) |\psi_{\mathrm{in}}\rangle = \sum_{\mathbf{n}} \psi_{\mathbf{n}} |\mathbf{n}\rangle$ with $\psi_{\mathbf{n}} = \langle \mathbf{n} | \hat{\Gamma}_k(U) | \psi_{\mathrm{in}} \rangle$.
 
+\subsection{Full Fock Space vs. Collision-Free Subspace}
+
+The full output distribution includes all weak compositions of $k$ into $n$ parts:
+\begin{equation}
+\mathcal{H}_k = \mathrm{span}\{ |\mathbf{n}\rangle : n_i \in \mathbb{N}_0,\; \sum_i n_i = k \}, \quad \dim \mathcal{H}_k = \binom{n+k-1}{k}.
+\end{equation}
+The collision-free subspace is
+\begin{equation}
+\mathcal{H}_k^{\mathrm{CF}} = \mathrm{span}\{ |\mathbf{n}\rangle : n_i \in \{0,1\},\; \sum_i n_i = k \}, \quad \dim \mathcal{H}_k^{\mathrm{CF}} = \binom{n}{k}.
+\end{equation}
+\textbf{Conservation of total photon number does not imply collision-free evolution.} For $n=4, k=2$, the full space has 10 states while the collision-free subspace has only 6. The 4 collision states are $|2,0,0,0\rangle$, $|0,2,0,0\rangle$, $|0,0,2,0\rangle$, $|0,0,0,2\rangle$.
+
+\subsection{Hong-Ou-Mandel Effect and Bosonic Bunching}
+
+The Hong-Ou-Mandel (HOM) effect~\cite{hong1987measurement} demonstrates that indistinguishable photons bunch. For a 50:50 beamsplitter $U = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$ with input $|1,1\rangle$:
+\begin{equation}
+|\psi_{\mathrm{out}}\rangle = \frac{|2,0\rangle - |0,2\rangle}{\sqrt{2}}.
+\end{equation}
+The collision-free probability is $P_{\mathrm{CF}} = 0$; all probability is in collision states. This is a fundamental feature of bosonic interference, not a defect. For distinguishable photons, the coincidence probability is $1/2$.
+
+Our simulator reproduces this exactly: $P_{\mathrm{CF}} < 10^{-10}$ for the HOM beamsplitter, with amplitudes matching Perceval to $< 10^{-15}$ error.
+
+\subsection{Haar-Random Interferometers: Exact Collision-Free Statistics}
+
+For a Haar-random $U \in \mathrm{U}(n)$, the average collision-free probability is known exactly~\cite{arkhipov2012bosonic}:
+\begin{equation}
+\label{eq:haar_pcf}
+\mathbb{E}_U[P_{\mathrm{CF}}(U)] = \frac{\binom{n}{k}}{\binom{n+k-1}{k}} = \frac{d}{D}.
+\end{equation}
+This follows from Haar-averaging $\hat{\Gamma}_k(U) \rho \hat{\Gamma}_k(U)^\dagger$ giving the maximally mixed state on $\mathcal{H}_k$, whose trace against the CF projector is $d/D$.
+
+For balanced partitioning ($k=n/2$), the asymptotic scaling is
+\begin{equation}
+\label{eq:haar_asymptotic}
+\mathbb{E}[P_{\mathrm{CF}}] \sim \sqrt{3} \left(\frac{16}{27}\right)^{n/2} \approx \sqrt{3} \, e^{-0.2616 n}.
+\end{equation}
+This exponential decay is a fundamental limit for Haar-random circuits.
+
+Moreover, for any fixed subset $A$ of collision-free outcomes with $|A|=M$, and any cost function $C$ on those outcomes:
 \begin{align}
-    [\hat{U}, \hat{N}] = 0
+\mathbb{E}[P_A] &= \frac{M}{D}, \\
+\mathbb{E}[P_{A|\mathrm{CF}}] &= \frac{M}{d}, \\
+\mathbb{E}[\mathbb{E}[C|\mathrm{CF}]] &= \frac{1}{d}\sum_{x: |x|=k} C(x).
 \end{align}
+Haar-random circuits provide \textbf{no enrichment} over uniform sampling of balanced partitions.
 
-where $\hat{N} = \sum_i a_i^\dagger a_i$ is the photon number operator.
+\subsection{Perceval Cross-Validation}
 
-Therefore, if the input state has $k$ photons, the output state also has $k$ photons:
-
-\begin{align}
-    \sum_i n_i^{\text{out}} = k
-\end{align}
-
-\textbf{Critical distinction:} Fixed photon number does NOT imply collision-free occupations.
-
-The full $k$-photon Fock sector is:
-\begin{align}
-    \mathcal{H}_k = \text{span}\{|n_1,\ldots,n_n\rangle : \sum_i n_i = k\}
-\end{align}
-
-The collision-free subspace is:
-\begin{align}
-    \mathcal{H}_k^{CF} = \text{span}\{|n_1,\ldots,n_n\rangle : \sum_i n_i = k, n_i \in \{0,1\}\}
-\end{align}
-
-For $m$ modes and $k$ photons:
-\begin{align}
-    \dim(\mathcal{H}_k) &= \binom{m+k-1}{k} \\
-    \dim(\mathcal{H}_k^{CF}) &= \binom{m}{k}
-\end{align}
-
-\textbf{Key insight:} Collision-free outcomes map exactly to balanced partitions, but $P_{CF} < 1$ for generic interferometers.
+We validated our full Fock space simulator against Perceval's SLOS backend~\cite{perceval2023} across 125 input/circuit cases (60 Haar circuits at $(n,k)=(2,1),(2,2),(4,2),(4,3),(6,3),(8,4)$ plus identity, permutation, phase, HOM, and vacuum), covering 8464 Fock outcomes. Maximum errors:
+\begin{itemize}
+\item Probability: $1.78 \times 10^{-15}$
+\item Complex amplitude: $2.14 \times 10^{-15}$
+\item Normalization: $4.22 \times 10^{-15}$
+\end{itemize}
+All well below the $10^{-10}$ tolerance. The simulator correctly handles factorial normalization for collisions, odd photon numbers, and vacuum amplitudes.

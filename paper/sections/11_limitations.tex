@@ -1,37 +1,50 @@
-\section{Limitations}
+\section{Limitations and Open Questions}
+\label{sec:limitations}
 
-\subsection{Scale}
+\subsection{Algorithmic Limitations}
 
-Current implementation limited to small graphs (n ≤ 12) due to:
+\begin{enumerate}
+\item \textbf{Combinatorial decay of $P_{\mathrm{CF}}$:} Even with variational optimization, $P_{\mathrm{CF}}$ decays with $n$. For $n=12$, $P_{\mathrm{CF}} \approx 0.09$ on path graphs, requiring $\sim$11 shots per collision-free event. This limits practical problem size to $n \lesssim 12$ without error correction or loss mitigation.
+\item \textbf{Optimization landscape:} The $P_{\mathrm{success}}$ landscape is non-convex with many local optima. COBYLA with random restarts works for $n \le 12$ but may struggle at larger $n$. Gradient-based optimization (via parameter-shift rules or adjoint methods) could improve scalability.
+\item \textbf{Optimum oracle dependence:} $P_{\mathrm{success}}$ requires knowing $C^*$ (the optimal energy). In practice, one can use a lower bound or the best energy found so far, but this introduces a feedback loop that needs careful analysis.
+\item \textbf{No quantum speedup claim:} We do not claim asymptotic quantum advantage. The advantage is \textbf{constant-factor} at fixed $n$, arising from the physical constraint enforcement vs. soft penalty. Whether this translates to asymptotic advantage is open.
+\end{enumerate}
+
+\subsection{Hardware Limitations}
+
+\begin{enumerate}
+\item \textbf{Photon loss:} Current QPUs have $\eta \approx 0.7$--$0.9$ per mode. Loss reduces $P_{\mathrm{CF}}$ and introduces vacuum terms. Our noise model (Section~\ref{sec:noisy}) shows $P_{\mathrm{success}}$ degrades gracefully but significantly at $\eta=0.9$.
+\item \textbf{Partial distinguishability:} Imperfect photon indistinguishability ($\xi < 1$) reduces interference contrast. The bosonic advantage disappears as $\xi \to 0$.
+\item \textbf{Detector limitations:} PNR detectors have limited photon-number resolution (typically up to 3--4 photons), dark counts, and finite efficiency. Our simulator assumes ideal PNR.
+\item \textbf{Phase noise and drift:} Interferometer phases drift over time, requiring active stabilization or frequent recalibration.
+\item \textbf{Source limitations:} Heralded single-photon sources are probabilistic; deterministic quantum dot sources are needed for high repetition rates.
+\end{enumerate}
+
+\subsection{Theoretical Open Questions}
+
+\begin{enumerate}
+\item \textbf{Pareto frontier characterization:} What is the exact achievable region $(P_{\mathrm{CF}}, P_{\mathrm{opt|CF}})$ for optimum-blind optimization? We have numerical evidence but no analytical bounds.
+\item \textbf{Bosonic advantage mechanism:} Why does the bosonic advantage emerge at $n\ge 8$ on structured graphs? Is it related to the spectral properties of the graph Laplacian?
+\item \textbf{Collision suppression vs. concentration tradeoff:} Can we prove a fundamental bound on $P_{\mathrm{success}}$ for any interferometer, or is the Pareto frontier $(1,1)$ always reachable with an oracle?
+\item \textbf{Loss-aware optimization:} Can we derive analytical gradients of $P_{\mathrm{success}}(\eta,\xi)$ for noise-aware optimization?
+\item \textbf{Classical simulability:} The variational circuits we use (Clements mesh with $k=n/2$ photons) are classically simulable for $n \le 12$ via exact permanent calculation. At what $n$ does classical simulation become intractable?
+\end{enumerate}
+
+\subsection{Scope of Claims}
+
+We make the following \textbf{precise claims}:
 \begin{itemize}
-    \item Exponential dimension of fixed-photon subspace
-    \item Computational cost of permanent calculation
-    \item QPU shot budget
+\item \textbf{Physics:} Full Fock space simulation with correct permanent normalization is validated against Perceval (error $< 10^{-15}$).
+\item \textbf{Metric:} $P_{\mathrm{success}} = P_{\mathrm{CF}} \times P_{\mathrm{opt|CF}}$ is the correct hardware objective; conditional energy is insufficient.
+\item \textbf{Numerical:} Variational optimization on Clements mesh achieves $P_{\mathrm{success}}$ 5$\times$--227$\times$ higher than Haar and 1.1$\times$--10$\times$ higher than penalty at equal budget, for $n=4$--12.
+\item \textbf{Bosonic advantage:} Indistinguishable photons outperform distinguishable photons by up to 4.8$\times$ on structured graphs at $n\ge 8$.
+\item \textbf{QPU protocol:} A complete, falsifiable protocol is defined for Belenos.
 \end{itemize}
 
-\subsection{Noise Sensitivity}
-
-Photonic hardware has:
+We do \textbf{not} claim:
 \begin{itemize}
-    \item Photon loss
-    \item Limited source brightness
-    \item Detector inefficiency
-\end{itemize}
-
-\subsection{Optimization}
-
-Random search optimization may not find global optimum:
-\begin{itemize}
-    \item Local minima possible
-    \item No gradient information
-    \item Parameter sensitivity
-\end{itemize}
-
-\subsection{Comparison Fairness}
-
-Comparing penalty vs constraint-preserving:
-\begin{itemize}
-    \item Same interferometer
-    \item Same shot budget
-    \item Same graph instances
+\item Asymptotic quantum advantage or complexity-theoretic separation.
+\item Practical advantage on real hardware (loss, distinguishability, noise untested experimentally).
+\item Superiority over all classical algorithms (METIS, KaHIP, etc.) on large graphs.
+\item That the variational landscape is easy to optimize for $n > 12$.
 \end{itemize}

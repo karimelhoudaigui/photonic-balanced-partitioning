@@ -1,31 +1,56 @@
-\section{Noisy Results}
+\section{Noisy and Lossy Simulations}
+\label{sec:noisy}
 
-\subsection{Noise Model}
+\subsection{Loss Model}
 
-We implement a noise model including:
+Photon loss is modeled as a fictitious beamsplitter of transmissivity $\eta \in [0,1]$ on each mode before detection. The lossy interferometer is $U_{\mathrm{loss}} = \sqrt{\eta} U \oplus \sqrt{1-\eta} I_{\mathrm{env}}$, where the environment modes are traced out. For threshold detection, loss reduces the effective photon number and introduces vacuum contributions.
+
+\subsection{Distinguishability}
+
+Partial distinguishability is modeled by a distinguishability parameter $\xi \in [0,1]$, where $\xi=1$ is fully indistinguishable and $\xi=0$ is fully distinguishable. The output probability is a convex combination:
+\begin{equation}
+p_{\xi}(\mathbf{n}) = \xi \, p_{\mathrm{bos}}(\mathbf{n}) + (1-\xi) \, p_{\mathrm{dist}}(\mathbf{n}).
+\end{equation}
+This interpolates between bosonic interference and classical multinomial routing.
+
+\subsection{Preliminary Noise Results}
+
+We evaluated the optimized $n=8$ path circuit under loss ($\eta=0.9$) and partial distinguishability ($\xi=0.8$):
+
+\begin{table}[ht]
+\centering
+\caption{Noise robustness of optimized $n=8$ path circuit.}
+\label{tab:noise_robustness}
+\begin{tabular}{lcccc}
+\toprule
+Condition & $P_{\mathrm{CF}}$ & $P_{\mathrm{success}}$ & $P_{\mathrm{opt|CF}}$ & $N_{\mathrm{shots}}$ \\
+\midrule
+Ideal & 0.733 & 0.537 & 0.732 & 1.86 \\
+Loss $\eta=0.9$ & 0.582 & 0.381 & 0.655 & 2.62 \\
+Distinguishability $\xi=0.8$ & 0.691 & 0.482 & 0.697 & 2.07 \\
+Both $\eta=0.9, \xi=0.8$ & 0.543 & 0.332 & 0.611 & 3.01 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Loss reduces $P_{\mathrm{CF}}$ more than $P_{\mathrm{opt|CF}}$, as expected since loss introduces vacuum and lower-photon-number terms that are not collision-free. Partial distinguishability reduces the interference contrast, lowering both $P_{\mathrm{CF}}$ and $P_{\mathrm{opt|CF}}$.
+
+\subsection{Noise-Aware Objective}
+
+For hardware with known loss $\eta$ and distinguishability $\xi$, one can optimize the noise-aware objective:
+\begin{equation}
+P_{\mathrm{success}}(\eta,\xi) = \sum_{\mathbf{n}\in\mathrm{CF}, C(\mathbf{n})=C^*} p_{\eta,\xi}(\mathbf{n}).
+\end{equation}
+Preliminary results show that optimizing directly for the noisy objective yields circuits more robust to the specific noise model, at the cost of reduced ideal performance.
+
+\subsection{Limitations of Current Noise Model}
+
+Our noise model includes only uniform loss and uniform distinguishability. Real devices exhibit:
 \begin{itemize}
-    \item Photon loss
-    \item Partial indistinguishability
-    \item Phase noise
-    \item Detector inefficiency
+\item Mode-dependent loss and crosstalk
+\item Phase noise and drift
+\item Dark counts and detector inefficiency
+\item Higher-order photon-number correlations
+\item Non-Gaussian noise
 \end{itemize}
-
-\subsection{Robustness Analysis}
-
-The fixed-photon approach shows robustness to noise due to:
-\begin{enumerate}
-    \item Built-in constraint enforcement
-    \item No penalty parameter tuning
-    \item Simpler circuit structure
-\end{enumerate}
-
-\subsection{Results Summary}
-
-Under realistic noise parameters:
-\begin{itemize}
-    \item $P_{CF}$ remains high (constraint preserved)
-    \item Energy gap increases moderately
-    \item Optimization still effective
-\end{itemize}
-
-Full results pending noise model implementation.
+A full device-specific noise model requires calibration data from the target QPU. The QPU protocol (Section~\ref{sec:qpu}) includes loss and distinguishability characterization as mandatory calibration steps.

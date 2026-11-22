@@ -1,56 +1,47 @@
-\documentclass[12pt]{article}
-\usepackage{amsmath, amssymb, amsthm}
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
-\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{siunitx}
+\usepackage{float}
 
-\title{Constraint-Preserving Photonic Quantum Optimization for Balanced Graph Partitioning}
-\author{Research Team}
+\title{Variational Collision-Aware Photonic Quantum Optimization\\ for Balanced Graph Partitioning}
+\author{
+  [Author Names]\\
+  [Affiliations]\\
+  \texttt{[emails]}
+}
 \date{\today}
 
 \begin{document}
+
 \maketitle
 
 \begin{abstract}
-We investigate whether photon-number conservation can replace penalty terms in constrained graph optimization. We study the Minimum Bisection problem and compare penalty-based QUBO formulations with constraint-preserving photonic approaches.
+We develop a variational collision-aware photonic quantum optimizer for the Minimum Bisection / Balanced Graph Partitioning problem. A critical error in prior work is corrected: fixed photon number does \textbf{not} imply collision-free evolution. The full Fock space has dimension $\binom{n+k-1}{k}$, while the collision-free subspace has dimension $\binom{n}{k}$; for $n=8, k=4$ this is 330 vs. 70 states. Hong-Ou-Mandel bunching forces generic interferometers to produce collisions. We identify $P_{\mathrm{success}} = P_{\mathrm{CF}} \times P_{\mathrm{opt|CF}}$ as the correct hardware metric---the probability per physical shot of obtaining an optimal collision-free solution. A Clements mesh interferometer is variationally optimized via COBYLA on the exact output distribution to maximize $P_{\mathrm{success}}$. Across $n=4,6,8,10,12$ and 8 graph families, variational optimization achieves $P_{\mathrm{success}}$ \textbf{5$\times$--227$\times$ higher than Haar-random interferometers} and \textbf{1.1$\times$--10$\times$ higher than penalty-based QUBO} at equal classical evaluation budget. For $n\ge 8$ on structured graphs, indistinguishable photons outperform distinguishable photons by up to $4.8\times$, demonstrating genuine multi-photon interference benefit. A complete QPU protocol for Quandela Belenos is defined. The fixed-particle-number photonic approach enforces the cardinality constraint physically rather than softly via penalties, fundamentally changing the optimization landscape.
 \end{abstract}
 
-\section{Introduction}
 \input{sections/01_introduction}
-
-\section{Problem Formulation}
 \input{sections/02_problem}
-
-\section{Penalty Baseline}
 \input{sections/03_penalty_baseline}
-
-\section{Photonic Formulation}
 \input{sections/04_photonic_formulation}
-
-\section{Theoretical Analysis}
 \input{sections/05_theory}
-
-\section{Methods}
 \input{sections/06_methods}
-
-\section{Exact Results}
 \input{sections/07_exact_results}
-
-\section{Noisy Results}
 \input{sections/08_noisy_results}
-
-\section{QPU Results}
 \input{sections/09_qpu_results}
-
-\section{HPC Case Study}
 \input{sections/10_hpc_case_study}
-
-\section{Limitations}
 \input{sections/11_limitations}
-
-\section{Conclusion}
 \input{sections/12_conclusion}
 
-\bibliographystyle{unsrt}
+\bibliographystyle{plain}
 \bibliography{references}
+
+\appendix
+\input{appendices/algorithms}
 
 \end{document}

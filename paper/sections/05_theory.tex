@@ -1,34 +1,110 @@
-\section{Theoretical Analysis}
+\section{Theoretical Results: Haar Statistics, Pareto Frontiers, and Collision Bounds}
+\label{sec:theory}
 
-\subsection{Photon Number Conservation}
+\subsection{Haar-Averaged Collision-Free Probability}
 
-\textbf{Theorem T1:} For a passive linear interferometer $\hat{U}$, $[\hat{U}, \hat{N}] = 0$.
+\begin{theorem}[Haar CF Expectation]
+\label{thm:haar_cf}
+Let $n \ge 1$, $0 \le k \le n$, and $\rho$ any fixed trace-one density operator on $\mathcal{H}_k = \mathrm{Sym}^k(\mathbb{C}^n)$, chosen independently of $U$. For Haar $U \in \mathrm{U}(n)$,
+\begin{equation}
+\mathbb{E}_U[P_{\mathrm{CF}}(U)] = \frac{\binom{n}{k}}{\binom{n+k-1}{k}}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Haar averaging $\hat{\Gamma}_k(U) \rho \hat{\Gamma}_k(U)^\dagger$ gives an operator $T$ commuting with all mode unitaries. Commutation with diagonal phases makes $T$ diagonal in the occupation basis. Commutation with generators $a_i^\dagger a_j$ forces all diagonal entries connected by single-photon moves to coincide. Every weak composition of $k$ is connected to every other by such moves, so $T = c I$. Trace one gives $c = 1/D$ with $D = \binom{n+k-1}{k}$. The CF projector has rank $d = \binom{n}{k}$, giving the result. \qed
+\end{proof}
 
-\textbf{Proof:} A passive linear interferometer is implemented by beam splitters and phase shifters, represented by a unitary matrix $U$ acting on mode annihilation operators: $a_i \to \sum_j U_{ij} a_j$. The photon number operator $\hat{N} = \sum_i a_i^\dagger a_i$ commutes with any unitary transformation. $\square$
+This result is contained in Arkhipov and Kuperberg~\cite{arkhipov2012bosonic} (Proposition 1, Corollary 2). It is an ensemble expectation, not a bound for every $U$, and does not imply an optimization benefit.
 
-\subsection{Collision-Free Probability}
+\subsection{Balanced-Density Asymptotic}
 
-\textbf{Theorem T2:} In the collision-free sector $\mathcal{H}_k^{CF}$, all outcomes satisfy the cardinality constraint exactly.
+\begin{corollary}[Balanced Asymptotic]
+\label{cor:balanced_asymptotic}
+For $n=2r$, $k=r$,
+\begin{equation}
+\mathbb{E}[P_{\mathrm{CF}}] = \frac{(2r)!(2r-1)!}{r!(3r-1)!} \sim \sqrt{3} \left(\frac{16}{27}\right)^r = \sqrt{3} \left(\frac{4}{3\sqrt{3}}\right)^n.
+\end{equation}
+The exponential decay rate is $-\frac{1}{2}\log(27/16) \approx -0.2616$ per mode.
+\end{corollary}
+\begin{proof}
+Apply Stirling's formula $\log n! = (n+\frac{1}{2})\log n - n + \frac{1}{2}\log(2\pi) + \frac{1}{12n} + O(n^{-3})$ to the exact expression. \qed
+\end{proof}
 
-\textbf{Proof:} By construction, $\mathcal{H}_k^{CF}$ only contains states with $n_i \in \{0,1\}$ and $\sum_i n_i = k$. $\square$
+This dense regime ($k \sim n/2$) does not satisfy the sparse birthday approximation $k = o(n^{3/4})$; substituting $k=n/2$ into $e^{-k^2/n}$ is invalid.
 
-\textbf{Corollary:} $P(\text{cardinality violation} \mid CF, N=k) = 0$.
+\subsection{Haar Metrics: What Haar Can and Cannot Enrich}
 
-\subsection{Collision Probability}
-
-For a generic interferometer, $P_{CF} < 1$. Collision states like $|2,0,0,0\rangle$ can occur.
-
-The collision-free probability must be measured:
+\begin{theorem}[Haar Enrichment Limits]
+\label{thm:haar_enrichment}
+Let $A$ be any fixed subset of weight-$k$ bitstrings with $|A|=M$, and $C$ any fixed cost function. For Haar $U$,
 \begin{align}
-    P_{CF} = \sum_{\mathbf{n} \in \mathcal{H}_k^{CF}} P(\mathbf{n})
+\mathbb{E}[P_A] &= \frac{M}{D}, \\
+\mathbb{E}[P_{A|\mathrm{CF}}] &= \frac{M}{d}, \\
+\mathbb{E}[\mathbb{E}[C|\mathrm{CF}]] &= \frac{1}{d}\sum_{x:|x|=k} C(x).
 \end{align}
+\end{theorem}
+\begin{proof}
+Output mode permutations preserve Haar measure, preserve $P_{\mathrm{CF}}$, and act transitively on CF outcomes. Therefore every ratio $p_U(x)/P_{\mathrm{CF}}(U)$ has the same expectation; summing gives $1/d$. \qed
+\end{proof}
 
-\subsection{Comparison with Penalty Approach}
+\textbf{Implication:} Haar-random circuits provide \textbf{no enrichment} over uniform sampling of balanced partitions. Any optimization benefit must come from structured interferometers.
 
-The penalty approach adds $\lambda(\sum_i x_i - k)^2$ to the objective, introducing $O(n^2)$ couplings. The fixed-photon approach has no additional couplings but requires collision management.
+\subsection{Pareto Frontier: Collision-Free Probability vs. Optimal Concentration}
 
-\textbf{Trade-off:}
-\begin{itemize}
-    \item Penalty: Dense QUBO, allows infeasible exploration
-    \item Fixed-photon: Sparse evolution, requires postselection
-\end{itemize}
+The variational optimization navigates a tradeoff between $P_{\mathrm{CF}}$ and $P_{\mathrm{opt|CF}}$. We characterize the achievable region:
+
+\begin{definition}[Pareto Frontier]
+The Pareto frontier $\mathcal{P}$ is the set of achievable pairs $(P_{\mathrm{CF}}, P_{\mathrm{opt|CF}})$ such that no other circuit achieves both higher $P_{\mathrm{CF}}$ and higher $P_{\mathrm{opt|CF}}$.
+\end{definition}
+
+\begin{proposition}[Trivial Bounds]
+\label{prop:trivial_bounds}
+For any $U$,
+\begin{align}
+P_{\mathrm{CF}} &\in [0,1], \\
+P_{\mathrm{opt|CF}} &\in [0,1], \\
+P_{\mathrm{success}} &= P_{\mathrm{CF}} \cdot P_{\mathrm{opt|CF}} \le \min(P_{\mathrm{CF}}, P_{\mathrm{opt|CF}}).
+\end{align}
+\end{proposition}
+
+\begin{proposition}[Permutation Achieves Extremes]
+\label{prop:permutation_extremes}
+For any target balanced partition $x^*$, there exists a permutation matrix $U$ such that $P_{\mathrm{CF}}=1$ and $P_{\mathrm{opt|CF}}=1$ (hence $P_{\mathrm{success}}=1$). Conversely, identity gives $P_{\mathrm{CF}}=1$, $P_{\mathrm{opt|CF}}=1/\binom{n}{k}$.
+\end{proposition}
+
+Thus the unrestricted Pareto frontier includes $(1,1)$, but reaching it requires knowing the optimum---a classical oracle. The meaningful question is whether \textbf{optimum-blind} optimization can approach this frontier.
+
+\subsection{Collision-Aware Objectives and Their Properties}
+
+We analyze the objectives from Section~\ref{sec:methods}:
+
+\begin{proposition}[Objective Properties]
+\label{prop:objective_properties}
+For a distribution with $P_{\mathrm{CF}} > 0$:
+\begin{enumerate}
+\item \textbf{Conditional energy} $\mathbb{E}[C|\mathrm{CF}]$: invariant to scaling $P_{\mathrm{CF}}$; can be low while $P_{\mathrm{success}}\to 0$.
+\item \textbf{Physical success} $P_{\mathrm{success}}$: directly maximizes hardware metric; factorizes as $P_{\mathrm{CF}} \cdot P_{\mathrm{opt|CF}}$.
+\item \textbf{Collision-aware} $\mathbb{E}[C|\mathrm{CF}] + \mu(1-P_{\mathrm{CF}})$: penalizes low $P_{\mathrm{CF}}$; $\mu$ controls tradeoff.
+\item \textbf{Log barrier} $\mathbb{E}[C|\mathrm{CF}] - \gamma \log(P_{\mathrm{CF}}+\epsilon)$: diverges as $P_{\mathrm{CF}}\to 0$; $\gamma$ controls tradeoff.
+\item \textbf{Conditional CVaR}: focuses on lower tail of conditional energy; does not guarantee $P_{\mathrm{success}}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proposition}[Equivalence of Success and Factorized]
+\label{prop:success_factorized}
+$P_{\mathrm{success}} = P_{\mathrm{CF}} \cdot P_{\mathrm{opt|CF}}$ exactly. Maximizing either is equivalent.
+\end{proposition}
+
+\subsection{Collision Moment Bounds}
+
+Let $\mathbf{n}$ be the output occupation vector. The expected number of unordered collision pairs is
+\begin{equation}
+M = \mathbb{E}\left[ \sum_{i=1}^n \binom{n_i}{2} \right] = \frac{1}{2} \left( \sum_i \mathbb{E}[n_i^2] - k \right).
+\end{equation}
+For any interferometer, the total variation distance between bosonic and distinguishable distributions satisfies
+\begin{equation}
+\mathrm{TV}(p_{\mathrm{bos}}, p_{\mathrm{dist}}) \le \min\left(1, \frac{\mathrm{Per}(B)-1}{2}\right),
+\end{equation}
+where $B_{ij} = \sum_a |U_{ia}|^2 |U_{ja}|^2$ is the Gram matrix of output intensities. This bound is tight for the dilute counterexample (two active photons spread over $k+2$ modes with $k-2$ deterministic spectators), where $\mathrm{TV} = 1/2$ while $M \to 0$ as $k$ grows.
+
+These bounds show that low collision probability alone does not guarantee a classical approximation; the spatial structure of interference matters.
