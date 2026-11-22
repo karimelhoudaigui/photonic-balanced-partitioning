@@ -44,6 +44,25 @@ gate from loading definitions. The small host runs role sessions sequentially.
 See `scripts/QWEN_RESEARCH.md` for the bounded worktree/audit protocol and
 `reports/QWEN_INFRASTRUCTURE_VALIDATION.md` for observed PASS/FAIL outcomes.
 
+Validated seven-role execution path (2026-11-22):
+
+```sh
+scripts/run_research_cycle.sh --mode workflow --workflow-name density-research-cycle \
+  --workflow-agents 9 --wall-time 1500 --max-failed-retries 0
+```
+
+The saved Workflow owns sequential dispatch. Four parameterless local MCP
+actions supply fixed scientific argv and the pinned Python; they preserve
+separate primary/replication data and generate factual finite-check reports.
+The launcher approves only that reviewed stdio server inside its isolated
+runtime. Scientific writes are non-idempotent and refuse overwrites. Agents
+finish in plain text; their raw receipts and native contexts remain available
+for independent review. Experimental Agent Team lifecycle remains FAIL.
+This path produced300 complete grid simulations and fresh replication, audited
+by Astra. The model's incorrect scientific explanations were rejected. See
+`reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md`; installed/executing agents do not
+constitute autonomous scientific acceptance, novelty or an advantage result.
+
 After the initial diagnostic, Astra can supply another small mission:
 
 ```sh

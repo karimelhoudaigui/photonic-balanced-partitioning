@@ -81,3 +81,21 @@ Decision: REJECT hypothesis. The example itself is easy to sample classically.
 ## Penalty version sensitivity
 
 Identical seeded COBYLA protocols give different trajectories under SciPy1.13.1 and1.17.1. Both datasets are retained in experiments/validation/objective_penalty_audit*.json; only the pinned .venv run is canonical. High feasibility can coexist with no observed optimum (see PENALTY_BASELINE_AUDIT.md).
+
+
+## 2026-11-22 retained obstructions and failed execution
+
+- Native schema/action probes20261122T013524Z/014132Z/014349Z failed completion;
+  the actual local health call passed but synthetic structured_output was absent
+  in observed model tool schemas. Failed/cancelled contexts are preserved.
+- The successful seven-role cycle20261122T014822Z still produced false prose
+  (mean intensity1 instead of1/2, incorrect inequality and scope descriptions).
+  Reject that reasoning; accept only independently checked raw calculations.
+- Float-positive-sum fixes do not prevent all underflow: the exact rational
+  rotation t=2^-600 has positive TV while rounded estimates are0. The model is
+  explicitly not interval certified. See64ad463; the initial missing-PYTHONPATH
+  audit failure is retained alongside the corrected completed run.
+- P34's initial-identity control has first-circuit TV0 and positive later
+  transcript TV. Initial-only certification cannot justify adaptive replacement.
+- Cross-field source checking rejects novelty for standalone row Bayes/Gini
+  inequalities. Exact composition attribution remains OPEN, not disproved.

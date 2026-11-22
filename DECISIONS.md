@@ -82,3 +82,18 @@ search hypothesis. No manuscript writing or hardware call is authorized by these
 - Preserve unattributed root P33 data, exclude it from accepted evidence, and
   require fresh isolated provenance. Preserve untracked P20 drafts/backups.
 - PAPER_READY=FALSE; QPU_GATE=CLOSED; original optimization goal remains OPEN.
+
+
+## 2026-11-22 — accepted native execution; claims kept separate
+
+- ACCEPT the complete saved-Workflow execution85b3414/fe7d616 and independently
+  audited data b8b04ac. Nine sequential native contexts, seven roles, real actions,
+  exact handoffs and fresh seeds are observed. Agent Team lifecycle remainsFAIL.
+- REJECT erroneous model mathematical/narrative conclusions despite successful
+  execution. Finite checks, exact proofs and novelty are separate evidence.
+- KEEP the standard adaptive replacement consequence42d9eff as self-reviewed
+  theory with exact finite checks; request fresh proof audit when available.
+- Narrow density novelty further: row impurity inequalities are known after
+  statistical translation. Complete photonic composition attribution staysOPEN.
+- No positive original optimization signal or hardware gate follows. Manuscript
+  remains frozen; QPU closed. Unattributed raw directories remain preserved/excluded.

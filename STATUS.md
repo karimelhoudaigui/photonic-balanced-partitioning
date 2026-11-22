@@ -36,7 +36,7 @@ Accepted Phase3 checkpoints:
   balanced two-photon family. Collision probability alone is insufficient.
   See [proof review](reports/PHASE3_DENSITY_INDEPENDENT_REVIEW.md).
   The improved floating implementation77a8588 is explicitly not interval
-  certified. The corrected native primary/replication cycle is still pending.
+  certified. The corrected native primary/replication cycle passed its separate finite audit (300 grid circuits); see reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md.
 - Absolute-TV control need not remove a rare-event success ratio: the exact
   retained family has a factor-two ratio while both expected waiting times
   diverge, and a disclosed correlated classical control solves the toy case.
@@ -53,17 +53,32 @@ Infrastructure: official Qwen Code0.28.0, Ollama0.32.0 and one local Qwen3.5-1.9
 Q4 model are installed on the measured M2/8GiB host. Native saved Workflows
 have demonstrated distinct sequential subagents and real handoff. The separate
 native Agent Team lifecycle remains FAIL. A typed local stdio scientific bridge
-is connected; its full scientific workflow remains under verification. No paid
+is connected; a nine-dispatch/seven-role cycle completed with real primary/replication and three exact handoffs. Model scientific prose remains unreliable and was rejected. No paid
 inference or larger automatic download is enabled. Reports and raw receipts,
 not model prose, determine acceptance.
 
-Current working-tree tests: 264 passed, nine Perceval cache-permission warnings;
+Current working-tree tests: 264 passed, six Perceval cache-permission warnings;
 includes 16 tests in preserved untracked Phase2 drafts. SymPy1.14.0 is pinned
 in an optional theory extra. Historical manifests are validated at their
 recorded input revisions, not against later metadata changes.
 
-Next: finish and independently inspect the bounded native primary/replication
-cycle; continue exact novelty/operational interpretation checks; require a
-changed mechanism before any broader optimization sweep. Full authentic ObliQ
+Next: continue exact novelty/operational interpretation checks, obtain fresh
+review of the adaptive consequence, and require a changed mechanism before any
+broader optimization sweep. Full authentic ObliQ
 training/hybrid input/decoder and a useful optimum-blind algorithmic advantage
 remain unresolved. Details: OPEN_QUESTIONS.md, CLAIMS.md and RESEARCH_LOG.md.
+
+
+Latest accepted execution: b8b04ac, original worker fe7d616. All300 complete-grid
+cases and886440 outcome probability pairs retained, plus14 sharpness cases,
+12 factorized dilute controls and72 certificate-only cases. Twelve additional
+independent Perceval/labelled-DP comparisons differ by at most6.67e-16. Full-law
+checks stop at m12. Figures and portable supervisor audit are in
+results/P33_density_supervised/20261122T014822Z/.
+
+P34,42d9eff: standard sequential coupling composed with the density criterion,
+with an exact rational enumeration of five adaptive protocols. The derivation
+is self-reviewed; fresh proof review remains pending. The primary coupling
+source is now extracted and verified in research/phase3_adaptive_replacement_route.md.
+The cross-field novelty pass identifies the row-impurity ingredients as known;
+only attribution of the complete photonic composition remains unresolved.

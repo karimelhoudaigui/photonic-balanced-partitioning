@@ -47,7 +47,16 @@ All raw run provenance and output checks: reports/RESULTS_AUDIT.json.
 | CLAIM-025 | With distinct singly occupied inputs and every positive row intensity at least c>0, expected collision pairs M bound full-law TV by the stated density envelope, with refined leading M/(2c) at fixed c. | PROVEN | Exact theorem75e5831, fresh independent review4420e17. Sharp balanced family. Novelty OPEN. Floating API77a8588 is not interval certified. |
 | CLAIM-026 | A vanishing absolute-TV certificate implies every rare-event relative success ratio tends to one. | REJECTED | theory/phase3_density_success_scope.md; exact ratio-two family and divergent waiting times,385293e. |
 | CLAIM-027 | Fixed-rank threshold objective polynomial evaluation is a new algorithmic contribution. | REJECTED | theory/phase3_threshold_lowrank.md; AA1011.3245 and Ivanov–Gurvits1904.06069 already give the relevant polynomial method. |
-| CLAIM-028 | A fully completed native seven-role Qwen scientific cycle has passed independent audit. | OPEN | Workflow subagent smoke passes; previous density cycles failed execution/replication. Typed-action cycle under validation. Agent Team lifecycle remains FAIL. |
+| CLAIM-028 | A native seven-role workflow completed execution/replication and passed the independent finite-data audit. | NUMERICALLY_SUPPORTED | b8b04ac, nine completed contexts, four real typed actions and three exact handoffs; 300 grid cases,12 extra physical crosschecks. Model reasoning remains unreliable and rejected. Separate Agent Team lifecycle FAIL. |
 
 CLAIM-025 depends on CLAIM-012/013 and the explicitly proved dominant-row and
 density implications. It does not imply CLAIM-016 or hardware readiness.
+
+| ID | Exact statement / scope | Status | Evidence and limits |
+|---|---|---|---|
+| CLAIM-029 | Fresh-input classical adaptive protocols with uniformly bounded conditional TV admit the stated absolute transcript/success replacement bound. | OPEN | Derivation42d9eff is self-reviewed; standard maximal-coupling leaf independently sourced, exact five-policy P34 checks pass. Fresh proof review pending. No novelty or rare-event ratio claim. |
+
+2026-11-22 attribution refinement: research/phase3_density_crossfield_novelty.md
+identifies the density row inequalities with known Bayes-error/quadratic-impurity
+relations. No standalone novelty is claimed for those ingredients. Complete
+photonic composition attribution remains OPEN.

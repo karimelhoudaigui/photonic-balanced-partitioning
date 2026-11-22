@@ -1,7 +1,8 @@
 # Open scientific questions — current continuation contract
 
 Base research restart:847d7a0e05cdf7fa8ca50c68f51f8d7e03158508.
-Current evidence and stopping decision: reports/RESEARCH_CYCLE_2026-11-20.md.
+Current evidence: reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md (b8b04ac);
+historical optimization stopping decision: reports/RESEARCH_CYCLE_2026-11-20.md.
 
 Target: can collision-aware fixed-particle optics improve cardinality-constrained
 optimization at equal physical-attempt and classical-search budgets? This remains
@@ -90,3 +91,20 @@ on this continuation; their requested second-pass packages did not execute.
 Those reviews remain deferred, not falsely marked complete. Qwen local native
 workflows and coordinator verification continue with bounded individual jobs.
 The same scientific/hardware gate conditions remain in force.
+
+
+## Updated executable checkpoint — b8b04ac, 2026-11-22
+
+The corrected P33 native primary/replication is now complete and independently
+accepted for finite assertions. Do not rerun it unchanged merely to obtain a
+more favorable result. The next R2 obligation is full-composition attribution,
+including the newly checked statistical row-impurity overlap.
+R4 is no longer an unexecuted suggestion: proof and five exact finite policies
+are at42d9eff. Request fresh review of theory/phase3_adaptive_replacement.md;
+then test any proposed optimizer's TOTAL-error hypothesis rather than just its
+initial or a few visited circuits. No rare-event ratio follows.
+R1 still needs an actual changed mechanism and serious charged classical
+controls. Full original ObliQ training/source/decoder remains incomplete.
+Current handoff report: reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md. Paper/QPU
+criteria remain unmet. Additional Codex reviewers were quota-blocked; do not
+record their requested second-pass work as executed without a real return.

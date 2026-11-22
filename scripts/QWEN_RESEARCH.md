@@ -49,6 +49,30 @@ audit is authoritative. Future prompts restrict metric transcription to generate
 JSON and give the critic a compact evidence bundle to reduce wandering. These
 prompt changes do not retroactively turn failed runs into successful cycles.
 
+That paragraph describes the initial direct-agent/team probes. The later
+validated native path is a saved Workflow:
+
+```sh
+scripts/run_research_cycle.sh --mode workflow --workflow-name density-research-cycle \
+  --workflow-agents 9 --wall-time 1500 --max-failed-retries 0
+```
+
+Nine sequential child contexts cover seven roles, with four typed local MCP
+scientific actions. The bridge builds fixed argv, uses PASQAL_PYTHON and
+separates primary/replication outputs. No shell command transcription is needed
+for these actions. Their reports are mechanically generated finite checks,
+explicitly separate from proof/novelty acceptance. The launcher approves only
+the reviewed research server in its isolated runtime. It marks science writes
+non-idempotent and refuses evidence overwrites. Plain completion is the observed
+working route; native synthetic-schema probes remain failed evidence.
+
+After a run, retain contexts with scripts/retain_qwen_research_run.py and verify
+the actual MCP responses, complete raw grids and exact result handoffs. Read
+reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md for the completed20261122T014822Z
+cycle, accepted finite calculations and rejected model explanations. Distinct
+native workers and real communication do not make those explanations correct.
+The separate native Agent Team lifecycle still has no passing validation.
+
 An interrupted first n4 cycle can have at mostone explicitly requested recovery:
 `--resume-cycle results/qwen_cycles/<original-id>`. It retains its worktree,
 data and remaining budget. The historical one-off supervised replication script

@@ -25,7 +25,7 @@ prevention and continuation provenance. The complete working repository passed
 192 tests in 28.03 seconds with the scientific Python 3.11 environment, including
 42 earlier Phase2 draft tests outside the scoped infrastructure changes.
 
-The successful basic execution does **not** certify autonomous native delegation
+The successful basic execution alone does **not** certify native delegation
 or reliable scientific reasoning by this small model. Seven official-frontmatter
 roles are loaded by Qwen Code and versioned. The bounded external orchestrator
 runs roles sequentially on the same local model in an isolated worktree;this is
@@ -109,3 +109,35 @@ concurrency is one, stall retries are disabled, dispatch/turn/time caps are
 explicit, and named workflows are the only permitted workflow source. The local
 runner is a hashed project copy of the trusted computation-audit tooling, so
 Qwen never needs access to the credential-protected ~/.codex directory.
+
+## Completed seven-role scientific cycle — 2026-11-22
+
+`results/qwen_cycles/20261122T014822Z-workflow/` now demonstrates nine completed
+native child contexts across all seven roles. Timestamps establish sequential
+execution. Full transcript prompts establish three exact prior-result handoffs.
+Four actual parameterless MCP actions have successful receipts: primary,
+adversarial finite-data audit, fresh-seed replication and paired-data audit.
+Both scientific manifests validate; all300 grid circuits retained. Astra's
+separate audit adds12 Perceval/independent labelled-DP checks, max error6.67e-16.
+The scientific worktree passes248 tests. Manuscript OS denial and hashes PASS.
+
+The local stdio MCP bridge is versioned in scripts/research_actions_mcp.py;
+it supplies fixed argv and pinned Python, prohibits arbitrary arguments, caps
+runtime, refuses evidence overwrites and marks scientific writes non-idempotent
+to prevent transparent transport replay. The launcher approves only this reviewed
+server inside its isolated runtime. Earlier structured-output attempts failed;
+their model requests lacked the promised synthetic tool. The successful path
+uses plain completion and independently audited raw tool responses.
+
+Observed gates: QWEN INSTALLED PASS; LOCAL MODEL PASS; TOOL CALLING PASS;
+PYTHON EXECUTION PASS; SUBAGENTS PASS via saved Workflow; REPO ACCESS PASS;
+AGENT TEAM remains FAIL for its distinct lifecycle. A functioning saved Workflow
+is not reported as a functioning Agent Team. Reliable autonomous scientific
+reasoning remains unestablished: multiple mathematical/report statements were
+wrong and rejected, even though native execution/communication succeeded.
+
+The accepted data, source commitfe7d616 and rejected narrative are detailed in
+reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md. Native process exit0 is still not an
+acceptance rule. The original optimization goal remains OPEN; novelty remains
+OPEN; PAPER_READY=FALSE; QPU_GATE=CLOSED. The temporary local model was unloaded
+and the launcher-owned server stopped after the bounded287.93-second cycle.

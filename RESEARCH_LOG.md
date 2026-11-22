@@ -449,3 +449,58 @@ experimental Agent Team lifecycle remains FAIL. Paper/QPU gates remain closed.
 
 Two untracked root P33 directories with unresolved provenance are preserved and
 excluded from accepted evidence, per reports/P33_UNATTRIBUTED_ROOT_DATA.md.
+
+
+## P33 completed native replication — 2026-11-22
+
+QUESTION: does the fixed density/collision certificate survive both complete-law
+grids and the declared obstructions? Same fixed contract, numerical correction
+77a8588; no optimizer or paper writing. Source/controller85b3414, start
+2026-11-22T01:48:22.554784Z. Seven Qwen roles, nine distinct sequential contexts,
+four real typed MCP actions. Both manifests completed; runtime287.93sec total.
+Primary/replication seed offsets0/100000, no overlap. All300 full-grid circuits
+m4..12,14 sharpness cases,12 factorized dilute controls and72 certificate-only
+cases retained. No full Fock simulation beyondm12. Physical shots0.
+
+Astra independently checks every basis, raw normalization, TV, CF mass and
+pair moment, plus12 selected circuits with spectral-frame reconstruction,
+Perceval and a separate labelled DP. Maximum new crosscheck error6.67e-16.
+Finite bound checks use1e-9 tolerance; positive excess2.23e-16 is retained,
+not called an interval certificate. No sampling confidence intervals invented.
+The worker tree passes248 tests; current root264 includes16 untracked drafts.
+
+Raw origin commitfe7d616; root preserved/hash-mapped evidence, audit and figures
+commitb8b04ac. Canonical computation manifest:
+results/P33_density_supervised/20261122T014822Z/audit/manifest.json, completed.
+Native raw receipts, exact handoffs and supervisor_decision.json:
+results/qwen_cycles/20261122T014822Z-workflow/.
+
+DECISION: SUPPORTED finite assertions within tolerance; KEEP execution/data;
+REJECT Qwen narrative that changed k/m to1, misstated c>=M, confused large
+certificate-only cases with full simulation, or introduced nonexistent training.
+Complete audit: reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md. Exact theorem
+independently reviewed4420e17, novelty OPEN; original algorithm benefit OPEN;
+paper/QPU closed. This is a successful supervised execution cycle, not proof
+of reliable autonomous scientific reasoning.
+
+## P34 adaptive replacement consequence — 2026-11-22
+
+QUESTION: can a per-circuit absolute-TV condition control a finite classically
+adaptive fresh-input transcript at equal attempts? Coordinator derives ordinary
+sequential coupling product and history-sensitive bounds, with charged
+classical reference costs. Primary source Levin–Peres §4.2/Prop4.7 extracted.
+Four exact rational policies and an initial-identity control preserve all Fock
+outcomes and histories; bounds pass. T3 TV0.02900506 versus product0.16186482
+and expected-budget0.03149941. Initial TV0 does not control later adaptive steps.
+Code/proof/raw42d9eff, experiments/P34_adaptive_replacement/run/manifest.json,
+completed. No random draws, noise or physical shots. KEEP conditional consequence;
+fresh independent proof review deferred by quota; no new coupling novelty.
+
+## Cross-field attribution refinement — 2026-11-22
+
+A second coordinator search strategy links row leakage to MAP/Bayes error and
+physical pair moments to a differently weighted quadratic impurity. Rioul2023,
+DOI10.3390/e25070978, equations3/5/75/76, authenticated and translated with the
+weight distinction explicit. Row inequalities are prior-art consequences, not
+new discoveries. Full photonic composition attribution remains OPEN; no global
+novelty inference from absent hits. See research/phase3_density_crossfield_novelty.md.
