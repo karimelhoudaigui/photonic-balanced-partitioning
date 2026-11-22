@@ -1,0 +1,60 @@
+{
+  "claim_id": "P36_LINEAR_LEAKAGE_CONJECTURE",
+  "mathematics": {
+    "assertion_tested": "Search for full-law numerical counterexamples to TV<=min(1,delta) on a fixed256-circuit grid, retaining all cases.",
+    "coefficient_domain": "complex128,float64; falsifier tolerance1e-9",
+    "conventions": "Distinct singly occupied inputs, all collisions retained; delta from row maxima, no conditioning.",
+    "inputs": [
+      "full occupation m=k3/4/6/8",
+      "balanced m2k4/6/8/10",
+      "five seeds,four strengths,coordinate and eligible paired starts",
+      "16 deterministic collective rank-one cases"
+    ],
+    "bounds": {
+      "circuits": 256,
+      "max_fock_states": 30000,
+      "max_photons": 8,
+      "max_modes": 10
+    },
+    "non_claims": [
+      "No proof from absent counterexamples",
+      "No optimization, advantage or physical shots",
+      "No interval certificate"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/phase3_linear_leakage_probe.py",
+    "research/P36_LINEAR_LEAKAGE_CONTRACT.md",
+    "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+    "pyproject.toml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": "2026112200+100*m+repeat; repeat0..4; rank-one cases deterministic"
+  }
+}
