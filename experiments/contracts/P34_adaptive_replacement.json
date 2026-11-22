@@ -1,0 +1,39 @@
+{
+  "claim_id": "P34_ADAPTIVE_REPLACEMENT_FINITE_CHECK",
+  "mathematics": {
+    "assertion_tested": "Exact rational full-history TV obeys sequential product and history-sensitive coupling bounds in four bounded adaptive protocols; a two-step control refutes initial-circuit-only reasoning.",
+    "coefficient_domain": "fractions.Fraction exact rational",
+    "conventions": "m4,k2 pair-supported rational rotations; next strength depends only on previous collision; absorbing stop after success; complete outcomes.",
+    "inputs": [
+      "T1/2/3 adaptive policies",
+      "T3 stop-on-first-success",
+      "T2 initial identity then adaptive mixing"
+    ],
+    "bounds": {
+      "max_steps": 3,
+      "max_full_histories": 1331,
+      "protocols": 5
+    },
+    "non_claims": [
+      "No optimization improvement",
+      "No new coupling theorem",
+      "No independent proof audit"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/phase3_adaptive_replacement_probe.py",
+    "theory/phase3_adaptive_replacement.md",
+    "pyproject.toml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  }
+}

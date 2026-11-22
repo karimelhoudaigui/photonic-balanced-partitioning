@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "claim_id": "P34_ADAPTIVE_REPLACEMENT_FINITE_CHECK",
+  "repository": {
+    "commit": "03b92ea7120b9a65b9f8169b3ea73c458dcec0e7",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/phase3_adaptive_replacement_probe.py",
+    "--output",
+    "experiments/P34_adaptive_replacement/run/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact rational full-history TV obeys sequential product and history-sensitive coupling bounds in four bounded adaptive protocols; a two-step control refutes initial-circuit-only reasoning.",
+    "coefficient_domain": "fractions.Fraction exact rational",
+    "conventions": "m4,k2 pair-supported rational rotations; next strength depends only on previous collision; absorbing stop after success; complete outcomes.",
+    "inputs": [
+      "T1/2/3 adaptive policies",
+      "T3 stop-on-first-success",
+      "T2 initial identity then adaptive mixing"
+    ],
+    "bounds": {
+      "max_steps": 3,
+      "max_full_histories": 1331,
+      "protocols": 5
+    },
+    "non_claims": [
+      "No optimization improvement",
+      "No new coupling theorem",
+      "No independent proof audit"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T01:59:22.839763+00:00",
+    "runtime_seconds": 0.138528,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_adaptive_replacement_probe.py",
+    "theory/phase3_adaptive_replacement.md",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_adaptive_replacement_probe.py",
+      "sha256": "1a81faea90321d125f626eb8c0d14909ba450c05daf7a4df26dc04bc9c86200a",
+      "sha256_after": "1a81faea90321d125f626eb8c0d14909ba450c05daf7a4df26dc04bc9c86200a"
+    },
+    {
+      "path": "theory/phase3_adaptive_replacement.md",
+      "sha256": "0f19135853b61494210067a4d10a5f6bcec1c40172797cc939f7117dd01453ef",
+      "sha256_after": "0f19135853b61494210067a4d10a5f6bcec1c40172797cc939f7117dd01453ef"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c",
+      "sha256_after": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c"
+    }
+  ],
+  "output_directory": "experiments/P34_adaptive_replacement/run",
+  "declared_results": [
+    "experiments/P34_adaptive_replacement/run/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P34_adaptive_replacement/run/stdout.txt",
+      "sha256": "416283316f3ece31551c24e598830d1360932c724ae5a5b7af1622f91cbf72cc",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P34_adaptive_replacement/run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P34_adaptive_replacement/run/raw.json",
+      "sha256": "9f7a9fac4bfebc86f298cbeaf8c161b9c88aa558c849eb0c51dc73ff10b86dd0",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
