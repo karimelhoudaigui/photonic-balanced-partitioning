@@ -22,11 +22,17 @@ def main(directory):
                 if match:
                     candidate,_=json.JSONDecoder().raw_decode(str(part['content'])[match.end():].lstrip())
                     if isinstance(candidate,dict) and 'runId' in candidate:result=candidate
-    if result is None:raise ValueError('No observed workflow result; do not invent native completion')
     worktree=Path(record['worktree']);project=re.sub(r'[^A-Za-z0-9_-]','-',str(worktree))
     runtime=ROOT/'.local/qwen/home/projects'/project
+    if result is None:
+        # A killed parent may never emit a tool result. Retain the sole native
+        # checkpoint without pretending its still-running metadata is a return.
+        checkpoints=list((runtime/'workflows').glob('*/checkpoint.json'))
+        if len(checkpoints)!=1:raise ValueError('No unique native checkpoint for interrupted run')
+        result={'runId':checkpoints[0].parent.name,'result':{'status':'NO_RETURN_OBSERVED'}}
     runid=result['runId'];target=directory/'native_evidence';target.mkdir(exist_ok=True)
     files=[runtime/'workflows'/f'{runid}.json',runtime/'workflows'/runid/'journal.jsonl',
+           runtime/'workflows'/runid/'checkpoint.json',
            *sorted((runtime/'subagents'/session).glob('*')),
            *sorted((worktree/'reports').glob('QWEN_P33*.md'))]
     retained=[]

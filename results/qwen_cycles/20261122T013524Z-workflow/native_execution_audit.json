@@ -1,0 +1,53 @@
+{
+  "workflow_run_id": "wf_660aa416ded8f561",
+  "process_status": "INCONCLUSIVE",
+  "workflow_semantic_status": "NO_RETURN_OBSERVED",
+  "native_child_count": 1,
+  "native_roles": [
+    "experiment-runner"
+  ],
+  "all_seven_roles_observed": false,
+  "native_children": [
+    {
+      "id": "workflow-agent-9938abed5dc59374-call_bywm5pt3",
+      "role": "experiment-runner",
+      "status": "running",
+      "started": "2026-11-22T01:36:05.742Z",
+      "finished": "2026-11-22T01:36:05.742Z"
+    }
+  ],
+  "sequential_execution": true,
+  "scientific_command_statuses": {
+    "primary": "NOT_OBSERVED",
+    "replication": "NOT_OBSERVED"
+  },
+  "complete_execution_observed": false,
+  "scientific_acceptance": "PENDING_INDEPENDENT_ASTRA_REVIEW",
+  "evidence": [
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T013524Z-workflow/workflows/wf_660aa416ded8f561/journal.jsonl",
+      "copy": "results/qwen_cycles/20261122T013524Z-workflow/native_evidence/journal.jsonl",
+      "sha256": "73874f836dc9e1a0f677474a00b8c603c17338a4e473db8b96b3e27667908006"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T013524Z-workflow/workflows/wf_660aa416ded8f561/checkpoint.json",
+      "copy": "results/qwen_cycles/20261122T013524Z-workflow/native_evidence/checkpoint.json",
+      "sha256": "4eb0e21f111711edaca8765bb615605e93e0468aa3fe48612616de32557e960c"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T013524Z-workflow/subagents/308552c1-8f2c-4310-8d79-c59afe9e18ec/agent-workflow-agent-9938abed5dc59374-call_bywm5pt3.jsonl",
+      "copy": "results/qwen_cycles/20261122T013524Z-workflow/native_evidence/agent-workflow-agent-9938abed5dc59374-call_bywm5pt3.jsonl",
+      "sha256": "63a584e779e790760b69644f68a37fb03e4a36c512912d4a01c2931d4a333395"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T013524Z-workflow/subagents/308552c1-8f2c-4310-8d79-c59afe9e18ec/agent-workflow-agent-9938abed5dc59374-call_bywm5pt3.jsonl.stream",
+      "copy": "results/qwen_cycles/20261122T013524Z-workflow/native_evidence/agent-workflow-agent-9938abed5dc59374-call_bywm5pt3.jsonl.stream",
+      "sha256": "433240b183aded264237b2820fbc78b5d5025eeecb081cb39d096194aa278cfd"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T013524Z-workflow/subagents/308552c1-8f2c-4310-8d79-c59afe9e18ec/agent-workflow-agent-9938abed5dc59374-call_bywm5pt3.meta.json",
+      "copy": "results/qwen_cycles/20261122T013524Z-workflow/native_evidence/agent-workflow-agent-9938abed5dc59374-call_bywm5pt3.meta.json",
+      "sha256": "d958605f13a8d7ef3339a0ad736cdf87fc8e5f04761f63aa3f8bb27cc1fbbc92"
+    }
+  ]
+}

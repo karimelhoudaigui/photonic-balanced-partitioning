@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-9938abed5dc59374-call_bywm5pt3",
+  "agentType": "experiment-runner",
+  "description": "Call mcp__research__health exactly once with empty arguments {}. Return only its actual response. Do not run a scientific experiment.",
+  "parentSessionId": "308552c1-8f2c-4310-8d79-c59afe9e18ec",
+  "parentAgentId": null,
+  "createdAt": "2026-11-22T01:36:05.742Z",
+  "lastUpdatedAt": "2026-11-22T01:36:05.742Z",
+  "status": "running",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 37577,
+    "hostname": "Mac.lan"
+  }
+}
