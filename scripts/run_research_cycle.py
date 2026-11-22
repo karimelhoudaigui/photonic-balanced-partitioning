@@ -244,7 +244,7 @@ print('CONFINEMENT_PASS')
             if remaining<10:raise TimeoutError('Cycle wall budget exhausted')
             allowed=set(BASE_TOOLS)
             if args.mode in ['subagent','team']:allowed.add('agent')
-            if args.mode=='workflow':allowed.update(['workflow',*RESEARCH_ACTIONS])
+            if args.mode=='workflow':allowed.update(['workflow','structured_output',*RESEARCH_ACTIONS])
             if args.mode=='team':allowed.update(['team_create','team_delete','task_create','task_update','task_list','send_message','request_shutdown','list_agents'])
             excluded=[t for t in CONTROL_TOOLS if t not in allowed]
             initial_plan=args.mode=='cycle' and args.mission_file is None and role=='research-lead'

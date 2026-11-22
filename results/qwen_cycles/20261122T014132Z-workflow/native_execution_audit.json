@@ -1,0 +1,48 @@
+{
+  "workflow_run_id": "wf_249ce64166129d67",
+  "process_status": "EXECUTED_PENDING_REVIEW",
+  "workflow_semantic_status": "INCONCLUSIVE",
+  "native_child_count": 1,
+  "native_roles": [
+    "experiment-runner"
+  ],
+  "all_seven_roles_observed": false,
+  "native_children": [
+    {
+      "id": "workflow-agent-cc960189207ba848-call_vm153i2r",
+      "role": "experiment-runner",
+      "status": "failed",
+      "started": "2026-11-22T01:42:25.970Z",
+      "finished": "2026-11-22T01:42:42.071Z"
+    }
+  ],
+  "sequential_execution": true,
+  "scientific_command_statuses": {
+    "primary": "NOT_OBSERVED",
+    "replication": "NOT_OBSERVED"
+  },
+  "complete_execution_observed": false,
+  "scientific_acceptance": "PENDING_INDEPENDENT_ASTRA_REVIEW",
+  "evidence": [
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T014132Z-workflow/workflows/wf_249ce64166129d67.json",
+      "copy": "results/qwen_cycles/20261122T014132Z-workflow/native_evidence/wf_249ce64166129d67.json",
+      "sha256": "43d9dcfd257dfcb99a74daa74c382e761f801096741511add6c804b201db535f"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T014132Z-workflow/workflows/wf_249ce64166129d67/journal.jsonl",
+      "copy": "results/qwen_cycles/20261122T014132Z-workflow/native_evidence/journal.jsonl",
+      "sha256": "b1fd0cd5e965847e8ebcdadbeb27265a673a5c6ff227aafe64fb0711caa93ed2"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T014132Z-workflow/subagents/fd49bcb8-9d26-4c9e-86b5-e76efec59d56/agent-workflow-agent-cc960189207ba848-call_vm153i2r.jsonl",
+      "copy": "results/qwen_cycles/20261122T014132Z-workflow/native_evidence/agent-workflow-agent-cc960189207ba848-call_vm153i2r.jsonl",
+      "sha256": "cbd81854e3776f38df3ebb79a89f4685bfba3cc93418a820aeb2c2c7fb9cea99"
+    },
+    {
+      "source": ".local/qwen/home/projects/-Users-karimelhoudaigui-Desktop-pasqal--qwen-worktrees-20261122T014132Z-workflow/subagents/fd49bcb8-9d26-4c9e-86b5-e76efec59d56/agent-workflow-agent-cc960189207ba848-call_vm153i2r.meta.json",
+      "copy": "results/qwen_cycles/20261122T014132Z-workflow/native_evidence/agent-workflow-agent-cc960189207ba848-call_vm153i2r.meta.json",
+      "sha256": "d00ba53c3243779b7dd5f5a00f7e68c9b78df3ecf436ad6211ea779061b801ba"
+    }
+  ]
+}

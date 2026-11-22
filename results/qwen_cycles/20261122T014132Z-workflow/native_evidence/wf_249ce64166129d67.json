@@ -1,0 +1,83 @@
+{
+  "runId": "wf_249ce64166129d67",
+  "workflowCalls": [],
+  "toolUseId": "call_vm153i2r",
+  "parentSessionId": "fd49bcb8-9d26-4c9e-86b5-e76efec59d56",
+  "description": "Local typed-action smoke test",
+  "workflowName": "research-actions-smoke",
+  "args": "{\"name\": \"smoke-test\", \"args\": {\"action_type\": \"run_density_primary\"}}",
+  "argsRecorded": true,
+  "meta": {
+    "name": "Local typed-action smoke test",
+    "description": "One native agent calls only the local read-only health action."
+  },
+  "status": "completed",
+  "script": "export const meta={name:'Local typed-action smoke test',description:'One native agent calls only the local read-only health action.'};\nconst result=await agent('First call mcp__research__health exactly once with empty arguments {}. Then finish by calling structured_output with {\"observed\":\"the actual response text\"}. No further tool calls or scientific experiment.',\n  {agentType:'experiment-runner',label:'typed-action-health',tools:['mcp__research__health'],stallMs:0,\n   schema:{type:'object',properties:{observed:{type:'string'}},required:['observed'],additionalProperties:false}});\nreturn {status:result===null?'INCONCLUSIVE':'EXECUTED_PENDING_ASTRA_REVIEW',result};\n",
+  "scriptPath": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/20261122T014132Z-workflow/.qwen/workflows/research-actions-smoke.js",
+  "phases": [],
+  "phaseVisits": [],
+  "dispatches": [
+    {
+      "id": "dispatch-1",
+      "phaseVisitId": null,
+      "label": "typed-action-health",
+      "prompt": "First call mcp__research__health exactly once with empty arguments {}. Then finish by calling structured_output with {\"observed\":\"the actual response text\"}. No further tool calls or scientific experiment.",
+      "status": "failed",
+      "dependsOn": [],
+      "queuedAt": 1795311745891,
+      "startedAt": 1795311745892,
+      "subagentId": "workflow-agent-cc960189207ba848-call_vm153i2r",
+      "endedAt": 1795311762071,
+      "error": "Workflow subagent workflow-agent-cc960189207ba848-call_vm153i2r did not complete (terminate mode: MAX_TURNS)."
+    }
+  ],
+  "agentsDispatched": 1,
+  "agentsCompleted": 1,
+  "agentsRespawned": 0,
+  "tokensSpent": 156,
+  "tokenBudgetTotal": 16384,
+  "perPhaseTokens": [
+    [
+      null,
+      156
+    ]
+  ],
+  "recentLogs": [],
+  "events": [
+    {
+      "id": "event-1",
+      "type": "dispatch-queued",
+      "at": 1795311745891,
+      "dispatchId": "dispatch-1"
+    },
+    {
+      "id": "event-2",
+      "type": "dispatch-started",
+      "at": 1795311745892,
+      "dispatchId": "dispatch-1"
+    },
+    {
+      "id": "event-3",
+      "type": "dispatch-failed",
+      "at": 1795311762071,
+      "dispatchId": "dispatch-1",
+      "error": "Workflow subagent workflow-agent-cc960189207ba848-call_vm153i2r did not complete (terminate mode: MAX_TURNS)."
+    },
+    {
+      "id": "event-4",
+      "type": "workflow-completed",
+      "at": 1795311762074
+    }
+  ],
+  "startTime": 1795311745837,
+  "endTime": 1795311762074,
+  "result": {
+    "status": "INCONCLUSIVE",
+    "result": null
+  },
+  "resultPreview": {
+    "text": "{\n  \"status\": \"INCONCLUSIVE\",\n  \"result\": null\n}",
+    "truncated": false,
+    "reportedFailures": []
+  }
+}

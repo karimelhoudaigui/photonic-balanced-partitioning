@@ -6,6 +6,7 @@ approvalMode: auto-edit
 background: false
 maxTurns: 8
 tools:
+  - structured_output
   - read_file
   - grep_search
   - glob

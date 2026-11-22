@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-cc960189207ba848-call_vm153i2r",
+  "agentType": "experiment-runner",
+  "description": "First call mcp__research__health exactly once with empty arguments {}. Then finish by calling structured_output with {\"observed\":\"the actual response text\"}. No further tool calls or scientific experiment.",
+  "parentSessionId": "fd49bcb8-9d26-4c9e-86b5-e76efec59d56",
+  "parentAgentId": null,
+  "createdAt": "2026-11-22T01:42:25.970Z",
+  "lastUpdatedAt": "2026-11-22T01:42:42.071Z",
+  "status": "failed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 42809,
+    "hostname": "Mac.lan"
+  }
+}
