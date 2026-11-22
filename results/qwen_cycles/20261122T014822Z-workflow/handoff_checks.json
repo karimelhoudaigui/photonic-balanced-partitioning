@@ -1,0 +1,23 @@
+{
+  "native_handoff_verified": true,
+  "checks": [
+    {
+      "recipient": "workflow-agent-8276dc320c8b744e-call_z1skd72q",
+      "exact_prior_result_handoff": true,
+      "prompt_sha256": "8a7388fd387c42b0ba2b745344faa58417e70756c3ed8a08c2426b7e2025490c",
+      "prompt_source": "full native transcript; metadata description can be truncated"
+    },
+    {
+      "recipient": "workflow-agent-c4fbccca50b80381-call_z1skd72q",
+      "exact_prior_result_handoff": true,
+      "prompt_sha256": "8b9b4e31f53592294dce0cafffa899786ae7cece9b0d40bd463fcb5d2d1fca7a",
+      "prompt_source": "full native transcript; metadata description can be truncated"
+    },
+    {
+      "recipient": "workflow-agent-a25be215bec0b758-call_z1skd72q",
+      "exact_prior_result_handoff": true,
+      "prompt_sha256": "965e2e169b187d562e791de5d44351f9761f520320a032f4c0a9bb33815d0ab9",
+      "prompt_source": "full native transcript; metadata description can be truncated"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-38b48d013f43ee98-call_z1skd72q",
+  "agentType": "algorithm-designer",
+  "description": "Astra supplies the actual committed data schema: every full record contains seed,strength,family,full probability arrays; each large-frame record contains seed,strength,unitary hash and full_distribution_executed=false. Full distributions stop at m12, whereas m32/64/128 calculate certificates only. Propose one necessary scope check and one implementation risk. Do not allege seeds are missing; they are explicitly present. This is schema interpretation, not an independent code audit. At most 100 words.",
+  "parentSessionId": "5647f50a-0384-4877-8d56-9c2df770f822",
+  "parentAgentId": null,
+  "createdAt": "2026-11-22T01:50:40.189Z",
+  "lastUpdatedAt": "2026-11-22T01:51:00.398Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 50647,
+    "hostname": "Mac.lan"
+  }
+}

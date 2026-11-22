@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-b22d2a12ea74e0c9-call_z1skd72q",
+  "agentType": "physics-auditor",
+  "description": "Run exactly \"$PASQAL_PYTHON\" -m pytest tests/test_density_certificate.py -q using run_shell_command. Return the actual test receipt in at most80words. Do not add a pipeline, rewrite a file, search memory or access a QPU.",
+  "parentSessionId": "5647f50a-0384-4877-8d56-9c2df770f822",
+  "parentAgentId": null,
+  "createdAt": "2026-11-22T01:49:12.666Z",
+  "lastUpdatedAt": "2026-11-22T01:49:28.923Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 50647,
+    "hostname": "Mac.lan"
+  }
+}

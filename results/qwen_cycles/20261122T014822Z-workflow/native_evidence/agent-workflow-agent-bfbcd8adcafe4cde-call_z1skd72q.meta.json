@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-bfbcd8adcafe4cde-call_z1skd72q",
+  "agentType": "experiment-runner",
+  "description": "Call mcp__research__run_density_primary exactly once with empty arguments {}. After its response, finish with one plain sentence reporting the actual exit code. No JSON and no more tool calls. The local action supplies every scientific argument. Do not use shell or invent completion.",
+  "parentSessionId": "5647f50a-0384-4877-8d56-9c2df770f822",
+  "parentAgentId": null,
+  "createdAt": "2026-11-22T01:51:00.454Z",
+  "lastUpdatedAt": "2026-11-22T01:51:26.809Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 50647,
+    "hostname": "Mac.lan"
+  }
+}

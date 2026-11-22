@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-22T01:57:50.355206+00:00",
+  "git_commit": "03b92ea7120b9a65b9f8169b3ea73c458dcec0e7",
+  "render_source_sha256": "a69c3c5917a9c9ee5203767ee22e7b689df0eca06cb4c40be6815c73da3be379",
+  "inputs": [
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/data/raw.json",
+      "sha256": "17624e07e5acc5e12297e3f40c1aa635a5f3052b481beb36e65b818c68c9d3f9"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/data/raw.json",
+      "sha256": "924ca1c1bec5435ac7da6018a7d44287636b75e0a6cf8a5bccc917c51cf7d66c"
+    }
+  ],
+  "plotted_full_grid_cases": 240,
+  "unplotted_zero_strength_grid_cases": 60,
+  "large_cases_certificate_only": 72,
+  "non_claim": "Float estimates, not interval bounds. No full-law data beyond m12. No optimizer or advantage."
+}

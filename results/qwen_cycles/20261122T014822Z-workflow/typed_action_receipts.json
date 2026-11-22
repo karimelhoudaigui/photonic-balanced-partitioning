@@ -1,0 +1,51 @@
+{
+  "calls": [
+    {
+      "role": "adversarial-reviewer",
+      "id": "call_hv0zdak2",
+      "name": "mcp__research__audit_density_primary",
+      "args": {}
+    },
+    {
+      "role": "research-lead",
+      "id": "call_mt14ldxo",
+      "name": "mcp__research__audit_density_pair",
+      "args": {}
+    },
+    {
+      "role": "experiment-runner",
+      "id": "call_me84f22v",
+      "name": "mcp__research__run_density_replication",
+      "args": {}
+    },
+    {
+      "role": "experiment-runner",
+      "id": "call_4k1c1u3m",
+      "name": "mcp__research__run_density_primary",
+      "args": {}
+    }
+  ],
+  "responses": [
+    {
+      "id": "call_hv0zdak2",
+      "action": "audit_density_primary",
+      "exit_code": 0
+    },
+    {
+      "id": "call_mt14ldxo",
+      "action": "audit_density_pair",
+      "exit_code": 0
+    },
+    {
+      "id": "call_me84f22v",
+      "action": "run_density_replication",
+      "exit_code": 0
+    },
+    {
+      "id": "call_4k1c1u3m",
+      "action": "run_density_primary",
+      "exit_code": 0
+    }
+  ],
+  "observed_all_four_actions_once": true
+}

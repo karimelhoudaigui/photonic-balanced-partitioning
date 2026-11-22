@@ -1,0 +1,150 @@
+{
+  "verdict": "IMPLEMENTATION_AND_FINITE_ASSERTION_VERIFIED_WITHIN_STATED_FLOAT_TOLERANCES",
+  "review_provenance": "COORDINATOR_INDEPENDENT_CODE_PATHS; not a fresh-agent or interval audit",
+  "batches": [
+    {
+      "mode": "primary",
+      "full_grid_cases": 150,
+      "complete_outcome_pairs": 443220,
+      "maxima": {
+        "normalization": 2.842170943040401e-14,
+        "tv_recalculation": 0.0,
+        "bosonic_pair_moment": 1.1102230246251565e-16,
+        "distinguishable_pair_moment": 3.320304101106508e-14,
+        "collision_free_mass": 0.0,
+        "bound_excess": 2.220446049250313e-16
+      },
+      "raw_sha256": "17624e07e5acc5e12297e3f40c1aa635a5f3052b481beb36e65b818c68c9d3f9"
+    },
+    {
+      "mode": "replication",
+      "full_grid_cases": 150,
+      "complete_outcome_pairs": 443220,
+      "maxima": {
+        "normalization": 2.4202861936828413e-14,
+        "tv_recalculation": 0.0,
+        "bosonic_pair_moment": 1.3877787807814457e-16,
+        "distinguishable_pair_moment": 2.6760779464791995e-14,
+        "collision_free_mass": 0.0,
+        "bound_excess": 2.220446049250313e-16
+      },
+      "raw_sha256": "924ca1c1bec5435ac7da6018a7d44287636b75e0a6cf8a5bccc917c51cf7d66c"
+    }
+  ],
+  "fresh_perceval_and_labelled_dp_checks": [
+    {
+      "mode": "primary",
+      "m": 4,
+      "seed": 2026112502,
+      "strength": 0.1414213562373095,
+      "family": "global_output_mix",
+      "perceval_error": 6.661338147750939e-16,
+      "independent_labelled_dp_error": 6.661338147750939e-16
+    },
+    {
+      "mode": "primary",
+      "m": 4,
+      "seed": 2026112502,
+      "strength": 0.1414213562373095,
+      "family": "flat_fixed_projector",
+      "perceval_error": 5.551115123125783e-17,
+      "independent_labelled_dp_error": 2.7755575615628914e-17
+    },
+    {
+      "mode": "primary",
+      "m": 6,
+      "seed": 2026112702,
+      "strength": 0.11547005383792516,
+      "family": "global_output_mix",
+      "perceval_error": 3.885780586188048e-16,
+      "independent_labelled_dp_error": 3.469446951953614e-16
+    },
+    {
+      "mode": "primary",
+      "m": 6,
+      "seed": 2026112702,
+      "strength": 0.11547005383792516,
+      "family": "flat_fixed_projector",
+      "perceval_error": 4.163336342344337e-16,
+      "independent_labelled_dp_error": 4.718447854656915e-16
+    },
+    {
+      "mode": "primary",
+      "m": 8,
+      "seed": 2026112902,
+      "strength": 0.1,
+      "family": "global_output_mix",
+      "perceval_error": 3.7470027081099033e-16,
+      "independent_labelled_dp_error": 3.400058012914542e-16
+    },
+    {
+      "mode": "primary",
+      "m": 8,
+      "seed": 2026112902,
+      "strength": 0.1,
+      "family": "flat_fixed_projector",
+      "perceval_error": 1.1102230246251565e-16,
+      "independent_labelled_dp_error": 1.457167719820518e-16
+    },
+    {
+      "mode": "replication",
+      "m": 4,
+      "seed": 2026212502,
+      "strength": 0.1414213562373095,
+      "family": "global_output_mix",
+      "perceval_error": 3.608224830031759e-16,
+      "independent_labelled_dp_error": 5.273559366969494e-16
+    },
+    {
+      "mode": "replication",
+      "m": 4,
+      "seed": 2026212502,
+      "strength": 0.1414213562373095,
+      "family": "flat_fixed_projector",
+      "perceval_error": 1.1102230246251565e-16,
+      "independent_labelled_dp_error": 2.7755575615628914e-17
+    },
+    {
+      "mode": "replication",
+      "m": 6,
+      "seed": 2026212702,
+      "strength": 0.11547005383792516,
+      "family": "global_output_mix",
+      "perceval_error": 2.7755575615628914e-16,
+      "independent_labelled_dp_error": 3.3306690738754696e-16
+    },
+    {
+      "mode": "replication",
+      "m": 6,
+      "seed": 2026212702,
+      "strength": 0.11547005383792516,
+      "family": "flat_fixed_projector",
+      "perceval_error": 4.163336342344337e-17,
+      "independent_labelled_dp_error": 1.6653345369377348e-16
+    },
+    {
+      "mode": "replication",
+      "m": 8,
+      "seed": 2026212902,
+      "strength": 0.1,
+      "family": "global_output_mix",
+      "perceval_error": 2.7755575615628914e-16,
+      "independent_labelled_dp_error": 2.2898349882893854e-16
+    },
+    {
+      "mode": "replication",
+      "m": 8,
+      "seed": 2026212902,
+      "strength": 0.1,
+      "family": "flat_fixed_projector",
+      "perceval_error": 3.469446951953614e-18,
+      "independent_labelled_dp_error": 1.8495811436244902e-17
+    }
+  ],
+  "source_reconstruction": "eigh spectral rotation, independent of production scipy.expm",
+  "all_collisions_retained": true,
+  "physical_shots": 0,
+  "novelty": "OPEN",
+  "PAPER_READY": false,
+  "QPU_GATE": "CLOSED"
+}

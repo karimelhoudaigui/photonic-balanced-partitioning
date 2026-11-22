@@ -1,0 +1,66 @@
+{
+  "claim_id": "P33_SUPERVISOR_FINITE_AUDIT",
+  "mathematics": {
+    "assertion_tested": "Audit all300 complete-Fock grid records, raw moments/TV/CF masses, full bases, fresh seeds, preserved hashes and12 extra Perceval/labelled-DP checks with independently reconstructed spectral rotations.",
+    "coefficient_domain": "complex128,float64; validation tolerance1e-9, selected crosscheck1e-10",
+    "conventions": "Complete occupation laws including collisions; no renormalization, clipping or discarded outcomes. Large dimensions certificate-only.",
+    "inputs": [
+      "two batches of150 full grid cases plus7 sharpness cases each",
+      "m4/6/8; two families; repeat2; scale0.2 in each batch, fixed before independent check execution"
+    ],
+    "bounds": {
+      "full_grid_cases": 300,
+      "extra_cross_checks": 12,
+      "full_fock_max_modes": 12
+    },
+    "non_claims": [
+      "No interval certification",
+      "No new proof/novelty acceptance",
+      "No optimization or hardware improvement"
+    ]
+  },
+  "execution_artifacts": [
+    "scripts/audit_density_cycle.py",
+    "pyproject.toml",
+    "results/P33_density_supervised/20261122T014822Z/preservation.json",
+    "results/P33_density_supervised/20261122T014822Z/primary/stdout.txt",
+    "results/P33_density_supervised/20261122T014822Z/primary/stderr.txt",
+    "results/P33_density_supervised/20261122T014822Z/primary/manifest.json",
+    "results/P33_density_supervised/20261122T014822Z/primary/data/summary.json",
+    "results/P33_density_supervised/20261122T014822Z/primary/data/progress.jsonl",
+    "results/P33_density_supervised/20261122T014822Z/primary/data/raw.json",
+    "results/P33_density_supervised/20261122T014822Z/replication/stdout.txt",
+    "results/P33_density_supervised/20261122T014822Z/replication/stderr.txt",
+    "results/P33_density_supervised/20261122T014822Z/replication/manifest.json",
+    "results/P33_density_supervised/20261122T014822Z/replication/data/summary.json",
+    "results/P33_density_supervised/20261122T014822Z/replication/data/progress.jsonl",
+    "results/P33_density_supervised/20261122T014822Z/replication/data/raw.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64; recorded input seeds only",
+    "seed": "selected existing repeat2 seeds; no fresh random search"
+  }
+}

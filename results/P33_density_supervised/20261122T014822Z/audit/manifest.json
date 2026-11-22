@@ -1,0 +1,220 @@
+{
+  "schema_version": 2,
+  "claim_id": "P33_SUPERVISOR_FINITE_AUDIT",
+  "repository": {
+    "commit": "03b92ea7120b9a65b9f8169b3ea73c458dcec0e7",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "scripts/audit_density_cycle.py",
+    "--evidence-root",
+    "results/P33_density_supervised/20261122T014822Z",
+    "--output",
+    "results/P33_density_supervised/20261122T014822Z/audit/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Audit all300 complete-Fock grid records, raw moments/TV/CF masses, full bases, fresh seeds, preserved hashes and12 extra Perceval/labelled-DP checks with independently reconstructed spectral rotations.",
+    "coefficient_domain": "complex128,float64; validation tolerance1e-9, selected crosscheck1e-10",
+    "conventions": "Complete occupation laws including collisions; no renormalization, clipping or discarded outcomes. Large dimensions certificate-only.",
+    "inputs": [
+      "two batches of150 full grid cases plus7 sharpness cases each",
+      "m4/6/8; two families; repeat2; scale0.2 in each batch, fixed before independent check execution"
+    ],
+    "bounds": {
+      "full_grid_cases": 300,
+      "extra_cross_checks": 12,
+      "full_fock_max_modes": 12
+    },
+    "non_claims": [
+      "No interval certification",
+      "No new proof/novelty acceptance",
+      "No optimization or hardware improvement"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64; recorded input seeds only",
+    "seed": "selected existing repeat2 seeds; no fresh random search"
+  },
+  "run": {
+    "started_at": "2026-11-22T01:55:25.618015+00:00",
+    "runtime_seconds": 18.74723,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/audit_density_cycle.py",
+    "pyproject.toml",
+    "results/P33_density_supervised/20261122T014822Z/preservation.json",
+    "results/P33_density_supervised/20261122T014822Z/primary/stdout.txt",
+    "results/P33_density_supervised/20261122T014822Z/primary/stderr.txt",
+    "results/P33_density_supervised/20261122T014822Z/primary/manifest.json",
+    "results/P33_density_supervised/20261122T014822Z/primary/data/summary.json",
+    "results/P33_density_supervised/20261122T014822Z/primary/data/progress.jsonl",
+    "results/P33_density_supervised/20261122T014822Z/primary/data/raw.json",
+    "results/P33_density_supervised/20261122T014822Z/replication/stdout.txt",
+    "results/P33_density_supervised/20261122T014822Z/replication/stderr.txt",
+    "results/P33_density_supervised/20261122T014822Z/replication/manifest.json",
+    "results/P33_density_supervised/20261122T014822Z/replication/data/summary.json",
+    "results/P33_density_supervised/20261122T014822Z/replication/data/progress.jsonl",
+    "results/P33_density_supervised/20261122T014822Z/replication/data/raw.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/audit_density_cycle.py",
+      "sha256": "ba2db5c03c1f3dc583587dc3aded988bd382acbf99a1b461d90d2fd61d14b8f1",
+      "sha256_after": "ba2db5c03c1f3dc583587dc3aded988bd382acbf99a1b461d90d2fd61d14b8f1"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c",
+      "sha256_after": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/preservation.json",
+      "sha256": "bfdfd203b06815c75d38011a6ae02459027c3e2a040733ee21c9b9443227a618",
+      "sha256_after": "bfdfd203b06815c75d38011a6ae02459027c3e2a040733ee21c9b9443227a618"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/stdout.txt",
+      "sha256": "4fbd08009f6cbefaf583985b1ca4b9c333b90e2a777169defc12a1a6d9745e72",
+      "sha256_after": "4fbd08009f6cbefaf583985b1ca4b9c333b90e2a777169defc12a1a6d9745e72"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/stderr.txt",
+      "sha256": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93",
+      "sha256_after": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/manifest.json",
+      "sha256": "f938b51e0acf018504f91223b71924e54c6cffee928e2e67153ce0cad57e0b54",
+      "sha256_after": "f938b51e0acf018504f91223b71924e54c6cffee928e2e67153ce0cad57e0b54"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/data/summary.json",
+      "sha256": "a1a70b057cabef73de5582c2cd93b4d64a3733891f3c4480e7fc7576bf8d8709",
+      "sha256_after": "a1a70b057cabef73de5582c2cd93b4d64a3733891f3c4480e7fc7576bf8d8709"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/data/progress.jsonl",
+      "sha256": "4c7851a82efb10c3cc1b0b759ca7e7e545099dd2ec59d878220bb42d06c868fa",
+      "sha256_after": "4c7851a82efb10c3cc1b0b759ca7e7e545099dd2ec59d878220bb42d06c868fa"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/data/raw.json",
+      "sha256": "17624e07e5acc5e12297e3f40c1aa635a5f3052b481beb36e65b818c68c9d3f9",
+      "sha256_after": "17624e07e5acc5e12297e3f40c1aa635a5f3052b481beb36e65b818c68c9d3f9"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/stdout.txt",
+      "sha256": "acfbe8a0486eea6a4150fd84b64eb13ad9e02aa4f9d2fc82305ea400659d12e2",
+      "sha256_after": "acfbe8a0486eea6a4150fd84b64eb13ad9e02aa4f9d2fc82305ea400659d12e2"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/stderr.txt",
+      "sha256": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93",
+      "sha256_after": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/manifest.json",
+      "sha256": "b9229e32b80199b9b7f2bac4eae87bf8bf376c7ae441c61aaae5800b8791a450",
+      "sha256_after": "b9229e32b80199b9b7f2bac4eae87bf8bf376c7ae441c61aaae5800b8791a450"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/data/summary.json",
+      "sha256": "afec2dec34c0c1706dab36f4fff8cb954bceac853ea2291c8130164c7aa6db21",
+      "sha256_after": "afec2dec34c0c1706dab36f4fff8cb954bceac853ea2291c8130164c7aa6db21"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/data/progress.jsonl",
+      "sha256": "0cd5bf869ba496c9f6275fe3c332ade2a3b6f2c3f9379f8ad825ff6a1fe0ca07",
+      "sha256_after": "0cd5bf869ba496c9f6275fe3c332ade2a3b6f2c3f9379f8ad825ff6a1fe0ca07"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/data/raw.json",
+      "sha256": "924ca1c1bec5435ac7da6018a7d44287636b75e0a6cf8a5bccc917c51cf7d66c",
+      "sha256_after": "924ca1c1bec5435ac7da6018a7d44287636b75e0a6cf8a5bccc917c51cf7d66c"
+    }
+  ],
+  "output_directory": "results/P33_density_supervised/20261122T014822Z/audit",
+  "declared_results": [
+    "results/P33_density_supervised/20261122T014822Z/audit/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/audit/stdout.txt",
+      "sha256": "cd6d9750b46fb967df38e586423de396f23dd148742f5f531bdc8e911317f73a",
+      "kind": "log"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/audit/stderr.txt",
+      "sha256": "ee180bd42eaa24e0c22ad82112d1f190163efcc431fdf4fcd7bd8806c381581d",
+      "kind": "log"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/audit/raw.json",
+      "sha256": "3be30b305c6daa8158fecbe2329d0a8275ebc22c7a89c76bc12f7ecf16dbc8ad",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

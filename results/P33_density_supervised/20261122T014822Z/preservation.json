@@ -1,0 +1,69 @@
+{
+  "origin_worktree": ".qwen/worktrees/20261122T014822Z-workflow",
+  "origin_commit": "fe7d616eca483157de08985b1bd84a0e8b9863eb",
+  "base_commit": "85b3414",
+  "native_run": "results/qwen_cycles/20261122T014822Z-workflow",
+  "files": [
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_primary/stdout.txt",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/primary/stdout.txt",
+      "sha256": "4fbd08009f6cbefaf583985b1ca4b9c333b90e2a777169defc12a1a6d9745e72"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_primary/stderr.txt",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/primary/stderr.txt",
+      "sha256": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_primary/manifest.json",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/primary/manifest.json",
+      "sha256": "f938b51e0acf018504f91223b71924e54c6cffee928e2e67153ce0cad57e0b54"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_primary/data/summary.json",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/primary/data/summary.json",
+      "sha256": "a1a70b057cabef73de5582c2cd93b4d64a3733891f3c4480e7fc7576bf8d8709"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_primary/data/progress.jsonl",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/primary/data/progress.jsonl",
+      "sha256": "4c7851a82efb10c3cc1b0b759ca7e7e545099dd2ec59d878220bb42d06c868fa"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_primary/data/raw.json",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/primary/data/raw.json",
+      "sha256": "17624e07e5acc5e12297e3f40c1aa635a5f3052b481beb36e65b818c68c9d3f9"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_replication/stdout.txt",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/replication/stdout.txt",
+      "sha256": "acfbe8a0486eea6a4150fd84b64eb13ad9e02aa4f9d2fc82305ea400659d12e2"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_replication/stderr.txt",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/replication/stderr.txt",
+      "sha256": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_replication/manifest.json",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/replication/manifest.json",
+      "sha256": "b9229e32b80199b9b7f2bac4eae87bf8bf376c7ae441c61aaae5800b8791a450"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_replication/data/summary.json",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/replication/data/summary.json",
+      "sha256": "afec2dec34c0c1706dab36f4fff8cb954bceac853ea2291c8130164c7aa6db21"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_replication/data/progress.jsonl",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/replication/data/progress.jsonl",
+      "sha256": "0cd5bf869ba496c9f6275fe3c332ade2a3b6f2c3f9379f8ad825ff6a1fe0ca07"
+    },
+    {
+      "original": ".qwen/worktrees/20261122T014822Z-workflow/results/P33_density_replication/data/raw.json",
+      "preserved": "results/P33_density_supervised/20261122T014822Z/replication/data/raw.json",
+      "sha256": "924ca1c1bec5435ac7da6018a7d44287636b75e0a6cf8a5bccc917c51cf7d66c"
+    }
+  ],
+  "manifest_scope": "Original manifests retain original relative paths. Validate them against the frozen origin worktree. The supervisor audit separately pins these preserved copies."
+}

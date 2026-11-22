@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-11-22T02:02:10.613241+00:00",
+  "verdict": "ACCEPT_NATIVE_EXECUTION_AND_FINITE_DATA_REJECT_MODEL_NARRATIVE",
+  "finite_hypothesis": "SUPPORTED_WITHIN_STATED_FLOAT_TOLERANCES",
+  "native_workflow_complete": true,
+  "native_agent_team_lifecycle": "FAIL_SEPARATE_GATE",
+  "source_branch_commit": "fe7d616eca483157de08985b1bd84a0e8b9863eb",
+  "scientific_audit": "results/P33_density_supervised/20261122T014822Z/audit/manifest.json",
+  "report": "reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md",
+  "novelty": "OPEN",
+  "original_optimization_benefit": "UNESTABLISHED",
+  "PAPER_READY": false,
+  "QPU_GATE": "CLOSED",
+  "physical_shots": 0,
+  "report_sha256": "09455cd3cc886599b1b75a444cc50a3ac38928d1aa3eb4feef37db09ed87325c"
+}

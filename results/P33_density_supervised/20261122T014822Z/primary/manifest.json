@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "claim_id": "P33_DENSITY_CERTIFICATE",
+  "repository": {
+    "commit": "85b341415c16d3e8757110abb368ec29aee333b6",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/phase3_density_probe.py",
+    "--seed-offset",
+    "0",
+    "--output",
+    "results/P33_density_primary/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Candidate dominant-support/density TV bounds survive the fixed complete-Fock grid, balanced sharpness family and known dilute obstruction; large dimensions are certificate-only.",
+    "coefficient_domain": "complex128,float64; analytic formula for dilute active-block family",
+    "conventions": "Distinct singly occupied input orbitals; all collision outcomes retained; M is expected unordered collision pairs; complete physical probability laws.",
+    "inputs": [
+      "m4/6/8/10/12,k=m/2;three fixed seeds;five strengths;global-output and exactly flat-density fixed-projector frames",
+      "seven fixed balanced analytic sharpness cases",
+      "six balanced dilute factorizable counterexamples",
+      "m32/64/128 certificate-only grid; no full simulation"
+    ],
+    "bounds": {
+      "full_grid_cases": 150,
+      "sharpness_cases": 7,
+      "scalable_certificate_only_cases": 36,
+      "dilute_counterexamples": 6,
+      "full_fock_max_modes": 12,
+      "full_fock_max_photons": 6
+    },
+    "non_claims": [
+      "No independent proof/novelty certification by numerical checks",
+      "No optimization, noise, hardware or advantage result",
+      "No complete simulation at m32/64/128",
+      "No implication from collision probability alone"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": "2026112100+100*m+repeat+offset; repeat0..2; primaryoffset0,replicationoffset100000"
+  },
+  "run": {
+    "started_at": "2026-11-22T01:51:11.206180+00:00",
+    "runtime_seconds": 11.108871,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 300.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_density_probe.py",
+    "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+    "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+    "src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "pyproject.toml",
+    ".qwen/support/run_experiment.py",
+    ".qwen/support/validate_manifest.py",
+    "scripts/qwen_density_job.py",
+    "scripts/research_actions_mcp.py",
+    "scripts/qwen_density_job.sh"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_density_probe.py",
+      "sha256": "44a290fb0d68cb4bc62ded06a60820eb68161ce1aae188e032913d712a84f084",
+      "sha256_after": "44a290fb0d68cb4bc62ded06a60820eb68161ce1aae188e032913d712a84f084"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+      "sha256": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461",
+      "sha256_after": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+      "sha256": "62fc56996132754187d581f6dd3003a7e8f74c951ac241c55b5cd801ecb4919f",
+      "sha256_after": "62fc56996132754187d581f6dd3003a7e8f74c951ac241c55b5cd801ecb4919f"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+      "sha256": "69891841598a25285a2fddb6586d6da4d3ad7035c2d10ee26cb25d646b842d47",
+      "sha256_after": "69891841598a25285a2fddb6586d6da4d3ad7035c2d10ee26cb25d646b842d47"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c",
+      "sha256_after": "07209b12cc20bbef33b07588251445cd64a355a504c3849dc90c63184dff4c4c"
+    },
+    {
+      "path": ".qwen/support/run_experiment.py",
+      "sha256": "06b28f46a55327414ebbc202cd4434b22d6b3a2390979ac7ad65f2eae1a2284a",
+      "sha256_after": "06b28f46a55327414ebbc202cd4434b22d6b3a2390979ac7ad65f2eae1a2284a"
+    },
+    {
+      "path": ".qwen/support/validate_manifest.py",
+      "sha256": "fda9d340735b02a649038cc9c023da33d049ee1ae69d9c6ab06dd93b4d683e4e",
+      "sha256_after": "fda9d340735b02a649038cc9c023da33d049ee1ae69d9c6ab06dd93b4d683e4e"
+    },
+    {
+      "path": "scripts/qwen_density_job.py",
+      "sha256": "15ec9d9dbf7a99e7b406e733e345c3656b66709c42575f8d24d9a868bc6fc046",
+      "sha256_after": "15ec9d9dbf7a99e7b406e733e345c3656b66709c42575f8d24d9a868bc6fc046"
+    },
+    {
+      "path": "scripts/research_actions_mcp.py",
+      "sha256": "c884f2c26c887237adefad4747b1ff5bbf00a0516b089c74872cb896d2b2d679",
+      "sha256_after": "c884f2c26c887237adefad4747b1ff5bbf00a0516b089c74872cb896d2b2d679"
+    },
+    {
+      "path": "scripts/qwen_density_job.sh",
+      "sha256": "a8dba921ebead972b697e7a789d0bccf4386263808f3eb690a7cc7778a34a677",
+      "sha256_after": "a8dba921ebead972b697e7a789d0bccf4386263808f3eb690a7cc7778a34a677"
+    }
+  ],
+  "output_directory": "results/P33_density_primary",
+  "declared_results": [
+    "results/P33_density_primary/data/raw.json",
+    "results/P33_density_primary/data/summary.json",
+    "results/P33_density_primary/data/progress.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "results/P33_density_primary/stdout.txt",
+      "sha256": "4fbd08009f6cbefaf583985b1ca4b9c333b90e2a777169defc12a1a6d9745e72",
+      "kind": "log"
+    },
+    {
+      "path": "results/P33_density_primary/stderr.txt",
+      "sha256": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93",
+      "kind": "log"
+    },
+    {
+      "path": "results/P33_density_primary/data/raw.json",
+      "sha256": "17624e07e5acc5e12297e3f40c1aa635a5f3052b481beb36e65b818c68c9d3f9",
+      "kind": "result"
+    },
+    {
+      "path": "results/P33_density_primary/data/summary.json",
+      "sha256": "a1a70b057cabef73de5582c2cd93b4d64a3733891f3c4480e7fc7576bf8d8709",
+      "kind": "result"
+    },
+    {
+      "path": "results/P33_density_primary/data/progress.jsonl",
+      "sha256": "4c7851a82efb10c3cc1b0b759ca7e7e545099dd2ec59d878220bb42d06c868fa",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

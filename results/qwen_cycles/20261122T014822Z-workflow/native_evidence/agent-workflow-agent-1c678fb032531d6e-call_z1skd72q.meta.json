@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-1c678fb032531d6e-call_z1skd72q",
+  "agentType": "literature-reviewer",
+  "description": "OFFLINE inventory supplied by Astra: the spatial Gram triangle bound is a formal corollary of Deshpande1703.05332v3 after normalization; the cycle envelope uses MacMahon; the dominant-support/density composition has unresolved attribution. Explain which novelty claim is unsupported by this inventory. Do not claim to have searched papers. At most 100 words.",
+  "parentSessionId": "5647f50a-0384-4877-8d56-9c2df770f822",
+  "parentAgentId": null,
+  "createdAt": "2026-11-22T01:49:02.633Z",
+  "lastUpdatedAt": "2026-11-22T01:49:12.636Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 50647,
+    "hostname": "Mac.lan"
+  }
+}
