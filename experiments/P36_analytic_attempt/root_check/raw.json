@@ -1,0 +1,157 @@
+{
+  "review_provenance": "Physics proposed witness; coordinator supplied and checked complete exact reconstruction. Not an independent proof audit.",
+  "gram_shortcut": {
+    "delta": {
+      "numerator": "1",
+      "denominator": "17"
+    },
+    "off_diagonal_gram": {
+      "numerator": "7",
+      "denominator": "34"
+    },
+    "positive_permanent_excess_over_2delta": {
+      "numerator": "265",
+      "denominator": "9826"
+    },
+    "actual_tv": {
+      "numerator": "9751",
+      "denominator": "176868"
+    },
+    "bosonic_group_probabilities": [
+      {
+        "numerator": "25",
+        "denominator": "44217"
+      },
+      {
+        "numerator": "363",
+        "denominator": "19652"
+      },
+      {
+        "numerator": "26161",
+        "denominator": "29478"
+      }
+    ],
+    "distinguishable_group_probabilities": [
+      {
+        "numerator": "25",
+        "denominator": "265302"
+      },
+      {
+        "numerator": "3367",
+        "denominator": "353736"
+      },
+      {
+        "numerator": "166717",
+        "denominator": "176868"
+      }
+    ],
+    "multiplicities": [
+      3,
+      6,
+      1
+    ],
+    "conclusion": "REFUTES_PERMANENT_SHORTCUT_NOT_LINEAR_TV_CONJECTURE"
+  },
+  "sharp_two_photon_family": [
+    {
+      "rotation_parameter": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "delta": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "tv": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    {
+      "rotation_parameter": {
+        "numerator": "1",
+        "denominator": "100"
+      },
+      "delta": {
+        "numerator": "80000",
+        "denominator": "100020001"
+      },
+      "tv": {
+        "numerator": "7998400080000",
+        "denominator": "10004000600040001"
+      }
+    },
+    {
+      "rotation_parameter": {
+        "numerator": "1",
+        "denominator": "20"
+      },
+      "delta": {
+        "numerator": "3200",
+        "denominator": "160801"
+      },
+      "tv": {
+        "numerator": "509443200",
+        "denominator": "25856961601"
+      }
+    },
+    {
+      "rotation_parameter": {
+        "numerator": "1",
+        "denominator": "10"
+      },
+      "delta": {
+        "numerator": "800",
+        "denominator": "10201"
+      },
+      "tv": {
+        "numerator": "7840800",
+        "denominator": "104060401"
+      }
+    },
+    {
+      "rotation_parameter": {
+        "numerator": "1",
+        "denominator": "4"
+      },
+      "delta": {
+        "numerator": "128",
+        "denominator": "289"
+      },
+      "tv": {
+        "numerator": "28800",
+        "denominator": "83521"
+      }
+    },
+    {
+      "rotation_parameter": {
+        "numerator": "1",
+        "denominator": "3"
+      },
+      "delta": {
+        "numerator": "18",
+        "denominator": "25"
+      },
+      "tv": {
+        "numerator": "288",
+        "denominator": "625"
+      }
+    },
+    {
+      "rotation_parameter": {
+        "numerator": "2",
+        "denominator": "5"
+      },
+      "delta": {
+        "numerator": "800",
+        "denominator": "841"
+      },
+      "tv": {
+        "numerator": "352800",
+        "denominator": "707281"
+      }
+    }
+  ],
+  "general_linear_bound": "CONJECTURAL_FOR_K_GE_3",
+  "physical_shots": 0
+}

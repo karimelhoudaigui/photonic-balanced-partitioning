@@ -1,0 +1,1 @@
+{"gram_shortcut_refuted": true, "actual_tv": 0.05513151050500938, "delta": 0.058823529411764705, "two_photon_exact_sharp_cases": 7, "general_conjecture_proved": false}

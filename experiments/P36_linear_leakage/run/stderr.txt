@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Desktop/pasqal/experiments/phase3_linear_leakage_probe.py", line 77, in <module>
+    main(parser.parse_args().output)
+  File "/Users/karimelhoudaigui/Desktop/pasqal/experiments/phase3_linear_leakage_probe.py", line 42, in main
+    output.mkdir(parents=True,exist_ok=False);started=time.monotonic();records=[];bases={}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: 'experiments/P36_linear_leakage/run'

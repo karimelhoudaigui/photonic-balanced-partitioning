@@ -1,0 +1,1 @@
+{"status": "FINITE_GRID_ONLY_NO_REFUTATION", "candidate_counterexample_indices": [], "physical_shots": 0, "runtime_seconds": 1.8335991660133004, "cases": 256, "max_linear_bound_excess": -1.4825688140324665e-07, "max_normalization_error": 8.992806499463768e-15}

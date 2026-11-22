@@ -1,0 +1,208 @@
+{
+  "status": "FINITE_GRID_PHYSICS_CHECKS_PASS_GENERAL_CONJECTURE_OPEN",
+  "raw_sha256": "18237ee1087264486ffa5e2d9c9e9857c3a90eb851ab4c118f6554d0d65be06c",
+  "cases": 256,
+  "raw_checks": {
+    "normalization": 8.992806499463768e-15,
+    "tv_recompute": 0.0,
+    "delta_recompute": 0.0
+  },
+  "perceval_checks": [
+    {
+      "m": 3,
+      "k": 3,
+      "family": "collective_rank_one",
+      "seed": null,
+      "strength": 0.5,
+      "perceval_error": 2.0816681711721685e-17
+    },
+    {
+      "m": 4,
+      "k": 4,
+      "family": "collective_rank_one",
+      "seed": null,
+      "strength": 0.5,
+      "perceval_error": 2.220446049250313e-16
+    },
+    {
+      "m": 6,
+      "k": 6,
+      "family": "collective_rank_one",
+      "seed": null,
+      "strength": 0.5,
+      "perceval_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 8,
+      "k": 8,
+      "family": "collective_rank_one",
+      "seed": null,
+      "strength": 0.5,
+      "perceval_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 4,
+      "k": 2,
+      "family": "coordinate_random",
+      "seed": 2026112604,
+      "strength": 0.15,
+      "perceval_error": 2.220446049250313e-16
+    },
+    {
+      "m": 4,
+      "k": 2,
+      "family": "paired_random",
+      "seed": 2026112604,
+      "strength": 0.15,
+      "perceval_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 6,
+      "k": 3,
+      "family": "coordinate_random",
+      "seed": 2026112804,
+      "strength": 0.15,
+      "perceval_error": 2.220446049250313e-16
+    },
+    {
+      "m": 6,
+      "k": 3,
+      "family": "paired_random",
+      "seed": 2026112804,
+      "strength": 0.15,
+      "perceval_error": 6.938893903907228e-17
+    },
+    {
+      "m": 8,
+      "k": 4,
+      "family": "coordinate_random",
+      "seed": 2026113004,
+      "strength": 0.15,
+      "perceval_error": 1.734723475976807e-18
+    },
+    {
+      "m": 8,
+      "k": 4,
+      "family": "paired_random",
+      "seed": 2026113004,
+      "strength": 0.15,
+      "perceval_error": 3.469446951953614e-17
+    },
+    {
+      "m": 10,
+      "k": 5,
+      "family": "coordinate_random",
+      "seed": 2026113204,
+      "strength": 0.15,
+      "perceval_error": 4.440892098500626e-16
+    },
+    {
+      "m": 10,
+      "k": 5,
+      "family": "paired_random",
+      "seed": 2026113204,
+      "strength": 0.15,
+      "perceval_error": 2.0816681711721685e-17
+    }
+  ],
+  "collective_closed_formula_checks": [
+    {
+      "m": 3,
+      "strength": 0.03,
+      "bosonic_cf_error": 3.3306690738754696e-16,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 3,
+      "strength": 0.15,
+      "bosonic_cf_error": 2.220446049250313e-16,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 3,
+      "strength": 0.5,
+      "bosonic_cf_error": 0.0,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 3,
+      "strength": 1.0,
+      "bosonic_cf_error": 1.1102230246251565e-16,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 4,
+      "strength": 0.03,
+      "bosonic_cf_error": 8.881784197001252e-16,
+      "distinguishable_cf_error": 3.3306690738754696e-16
+    },
+    {
+      "m": 4,
+      "strength": 0.15,
+      "bosonic_cf_error": 4.440892098500626e-16,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 4,
+      "strength": 0.5,
+      "bosonic_cf_error": 4.440892098500626e-16,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 4,
+      "strength": 1.0,
+      "bosonic_cf_error": 1.1102230246251565e-16,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 6,
+      "strength": 0.03,
+      "bosonic_cf_error": 2.220446049250313e-16,
+      "distinguishable_cf_error": 3.3306690738754696e-16
+    },
+    {
+      "m": 6,
+      "strength": 0.15,
+      "bosonic_cf_error": 4.440892098500626e-16,
+      "distinguishable_cf_error": 1.1102230246251565e-16
+    },
+    {
+      "m": 6,
+      "strength": 0.5,
+      "bosonic_cf_error": 5.551115123125783e-16,
+      "distinguishable_cf_error": 0.0
+    },
+    {
+      "m": 6,
+      "strength": 1.0,
+      "bosonic_cf_error": 3.885780586188048e-16,
+      "distinguishable_cf_error": 2.220446049250313e-16
+    },
+    {
+      "m": 8,
+      "strength": 0.03,
+      "bosonic_cf_error": 4.440892098500626e-16,
+      "distinguishable_cf_error": 2.220446049250313e-16
+    },
+    {
+      "m": 8,
+      "strength": 0.15,
+      "bosonic_cf_error": 1.3322676295501878e-15,
+      "distinguishable_cf_error": 6.661338147750939e-16
+    },
+    {
+      "m": 8,
+      "strength": 0.5,
+      "bosonic_cf_error": 3.3306690738754696e-16,
+      "distinguishable_cf_error": 5.551115123125783e-16
+    },
+    {
+      "m": 8,
+      "strength": 1.0,
+      "bosonic_cf_error": 0.0,
+      "distinguishable_cf_error": 2.7755575615628914e-16
+    }
+  ],
+  "physical_shots": 0,
+  "non_claim": "No proof of TV<=delta, no independent fresh-agent audit, no interval or advantage result."
+}

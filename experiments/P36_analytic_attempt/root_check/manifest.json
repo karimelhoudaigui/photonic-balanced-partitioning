@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "claim_id": "P36_EXACT_ANALYTIC_OBSTRUCTION",
+  "repository": {
+    "commit": "a4d4745a9ead921ed65f9e2ab1bfb103de9c4619",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/check_linear_leakage_algebra.py",
+    "--output",
+    "experiments/P36_analytic_attempt/root_check/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact rational physical three-photon witness refutes per(B)-1<=2delta while TV<=delta; seven rational two-photon sharpness checks.",
+    "coefficient_domain": "fractions.Fraction exact rational",
+    "conventions": "Complete occupations with output factorials; rank-one unitary z has Re(z)=65/68.",
+    "inputs": [
+      "one three-photon witness",
+      "seven rational two-photon rotation parameters"
+    ],
+    "bounds": {
+      "witnesses": 1,
+      "sharp_cases": 7
+    },
+    "non_claims": [
+      "No refutation or proof of general linear TV conjecture",
+      "No fresh independent proof audit",
+      "No optimization advantage"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T11:41:54.769599+00:00",
+    "runtime_seconds": 0.214109,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/check_linear_leakage_algebra.py",
+    "theory/phase3_linear_leakage_attempt.md",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/check_linear_leakage_algebra.py",
+      "sha256": "0185d4afaa04295c30a745ade34cb645efc9a5ee9fe47b6358c60d751025d316",
+      "sha256_after": "0185d4afaa04295c30a745ade34cb645efc9a5ee9fe47b6358c60d751025d316"
+    },
+    {
+      "path": "theory/phase3_linear_leakage_attempt.md",
+      "sha256": "dc69f027bdca4505cfdd0be1f253a7d0c1ff1feaac2f6ddd580a2865d57dd7d8",
+      "sha256_after": "dc69f027bdca4505cfdd0be1f253a7d0c1ff1feaac2f6ddd580a2865d57dd7d8"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P36_analytic_attempt/root_check",
+  "declared_results": [
+    "experiments/P36_analytic_attempt/root_check/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P36_analytic_attempt/root_check/stdout.txt",
+      "sha256": "b3f7fe6427cd4b4cd73028d2c2ea4087cfb3a25cad15659412ede2eb6e323ac3",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P36_analytic_attempt/root_check/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P36_analytic_attempt/root_check/raw.json",
+      "sha256": "7516f057213d6383f2e4f23f8ae56bc4ae6fdf20ebad7b7c3c8c5f7e657fd270",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

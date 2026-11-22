@@ -1,0 +1,1 @@
+{"status": "FINITE_GRID_PHYSICS_CHECKS_PASS_GENERAL_CONJECTURE_OPEN", "perceval_circuits": 12, "collective_checks": 16, "max_perceval_error": 4.440892098500626e-16}

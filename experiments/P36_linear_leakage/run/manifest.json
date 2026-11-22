@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "claim_id": "P36_LINEAR_LEAKAGE_CONJECTURE",
+  "repository": {
+    "commit": "bfa5a224b9afcd3783237c730d52bc5997253515",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/phase3_linear_leakage_probe.py",
+    "--output",
+    "experiments/P36_linear_leakage/run"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Search for full-law numerical counterexamples to TV<=min(1,delta) on a fixed256-circuit grid, retaining all cases.",
+    "coefficient_domain": "complex128,float64; falsifier tolerance1e-9",
+    "conventions": "Distinct singly occupied inputs, all collisions retained; delta from row maxima, no conditioning.",
+    "inputs": [
+      "full occupation m=k3/4/6/8",
+      "balanced m2k4/6/8/10",
+      "five seeds,four strengths,coordinate and eligible paired starts",
+      "16 deterministic collective rank-one cases"
+    ],
+    "bounds": {
+      "circuits": 256,
+      "max_fock_states": 30000,
+      "max_photons": 8,
+      "max_modes": 10
+    },
+    "non_claims": [
+      "No proof from absent counterexamples",
+      "No optimization, advantage or physical shots",
+      "No interval certificate"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": "2026112200+100*m+repeat; repeat0..4; rank-one cases deterministic"
+  },
+  "run": {
+    "started_at": "2026-11-22T02:22:37.696021+00:00",
+    "runtime_seconds": 0.669774,
+    "exit_status": 1,
+    "status": "failed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [
+      "experiments/P36_linear_leakage/run/raw.json",
+      "experiments/P36_linear_leakage/run/summary.json"
+    ],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_linear_leakage_probe.py",
+    "research/P36_LINEAR_LEAKAGE_CONTRACT.md",
+    "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_linear_leakage_probe.py",
+      "sha256": "eb68d3ddb92bcad6a9974c83ff5d86c17e19fe11880ef374ff15c336ab5f6524",
+      "sha256_after": "eb68d3ddb92bcad6a9974c83ff5d86c17e19fe11880ef374ff15c336ab5f6524"
+    },
+    {
+      "path": "research/P36_LINEAR_LEAKAGE_CONTRACT.md",
+      "sha256": "8bc6acdbde6e19831befe5b9e194db61f67b5a2667fb41f84d664332ed732d2f",
+      "sha256_after": "8bc6acdbde6e19831befe5b9e194db61f67b5a2667fb41f84d664332ed732d2f"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+      "sha256": "62fc56996132754187d581f6dd3003a7e8f74c951ac241c55b5cd801ecb4919f",
+      "sha256_after": "62fc56996132754187d581f6dd3003a7e8f74c951ac241c55b5cd801ecb4919f"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+      "sha256": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461",
+      "sha256_after": "6705d826b72dbf3883d0a4e123af191b41c22ab478878dce6a23395596f5d461"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P36_linear_leakage/run",
+  "declared_results": [
+    "experiments/P36_linear_leakage/run/raw.json",
+    "experiments/P36_linear_leakage/run/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P36_linear_leakage/run/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P36_linear_leakage/run/stderr.txt",
+      "sha256": "9bb9e4d0147b1200a983f6a4bd792caa0e197cb6577ba025cfbfc6f7a1f8b77c",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": false
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": false
+    }
+  ],
+  "result": "Run failed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "Declared results were not produced: experiments/P36_linear_leakage/run/raw.json, experiments/P36_linear_leakage/run/summary.json"
+  ]
+}

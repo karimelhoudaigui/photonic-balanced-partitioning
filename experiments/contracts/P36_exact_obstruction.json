@@ -1,0 +1,37 @@
+{
+  "claim_id": "P36_EXACT_ANALYTIC_OBSTRUCTION",
+  "mathematics": {
+    "assertion_tested": "Exact rational physical three-photon witness refutes per(B)-1<=2delta while TV<=delta; seven rational two-photon sharpness checks.",
+    "coefficient_domain": "fractions.Fraction exact rational",
+    "conventions": "Complete occupations with output factorials; rank-one unitary z has Re(z)=65/68.",
+    "inputs": [
+      "one three-photon witness",
+      "seven rational two-photon rotation parameters"
+    ],
+    "bounds": {
+      "witnesses": 1,
+      "sharp_cases": 7
+    },
+    "non_claims": [
+      "No refutation or proof of general linear TV conjecture",
+      "No fresh independent proof audit",
+      "No optimization advantage"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/check_linear_leakage_algebra.py",
+    "theory/phase3_linear_leakage_attempt.md",
+    "pyproject.toml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  }
+}
