@@ -1,0 +1,169 @@
+{
+  "status": "SEARCH_TRACE_AND_WINNER_PHYSICS_VERIFIED_GENERAL_CONJECTURE_OPEN",
+  "evaluations": 17856,
+  "all_search_cells": 8,
+  "winner_checks": [
+    {
+      "family": "three_mode",
+      "seed": 20261140,
+      "target": 0.25,
+      "winner": "best_excess",
+      "delta": 0.010272936662141609,
+      "tv": 0.010194570690375878,
+      "perceval_error": 2.220446049250313e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "three_mode",
+      "seed": 20261140,
+      "target": 0.25,
+      "winner": "best_penalized_score",
+      "delta": 0.23843012803994443,
+      "tv": 0.20998881547181,
+      "perceval_error": 4.996003610813204e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "three_mode",
+      "seed": 20261140,
+      "target": 0.75,
+      "winner": "best_excess",
+      "delta": 0.01043865882797007,
+      "tv": 0.010334444832722754,
+      "perceval_error": 8.881784197001252e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "three_mode",
+      "seed": 20261140,
+      "target": 0.75,
+      "winner": "best_penalized_score",
+      "delta": 0.69788904432531,
+      "tv": 0.47321312138213184,
+      "perceval_error": 1.942890293094024e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "three_mode",
+      "seed": 20261141,
+      "target": 0.25,
+      "winner": "best_excess",
+      "delta": 0.0010834134637897532,
+      "tv": 0.0010828206912780014,
+      "perceval_error": 4.440892098500626e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "three_mode",
+      "seed": 20261141,
+      "target": 0.25,
+      "winner": "best_penalized_score",
+      "delta": 0.23825092948243004,
+      "tv": 0.20986766023950626,
+      "perceval_error": 4.440892098500626e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "three_mode",
+      "seed": 20261141,
+      "target": 0.75,
+      "winner": "best_excess",
+      "delta": 0.001645026107013412,
+      "tv": 0.0016428770393656937,
+      "perceval_error": 2.220446049250313e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "three_mode",
+      "seed": 20261141,
+      "target": 0.75,
+      "winner": "best_penalized_score",
+      "delta": 0.7096680934173728,
+      "tv": 0.4576962098359407,
+      "perceval_error": 3.3306690738754696e-16,
+      "perceval_outcome_count": 10
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261140,
+      "target": 0.25,
+      "winner": "best_excess",
+      "delta": 0.22143614292359842,
+      "tv": 0.19158574701814918,
+      "perceval_error": 1.1102230246251565e-16,
+      "perceval_outcome_count": 56
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261140,
+      "target": 0.25,
+      "winner": "best_penalized_score",
+      "delta": 0.23769486432044046,
+      "tv": 0.20748962877124705,
+      "perceval_error": 1.1102230246251565e-16,
+      "perceval_outcome_count": 56
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261140,
+      "target": 0.75,
+      "winner": "best_excess",
+      "delta": 0.15653550667805774,
+      "tv": 0.08214440903529067,
+      "perceval_error": 1.8041124150158794e-16,
+      "perceval_outcome_count": 56
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261140,
+      "target": 0.75,
+      "winner": "best_penalized_score",
+      "delta": 0.7196925027508294,
+      "tv": 0.440046553729521,
+      "perceval_error": 4.163336342344337e-17,
+      "perceval_outcome_count": 56
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261141,
+      "target": 0.25,
+      "winner": "best_excess",
+      "delta": 0.23366732632850162,
+      "tv": 0.20264810565522856,
+      "perceval_error": 3.885780586188048e-16,
+      "perceval_outcome_count": 56
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261141,
+      "target": 0.25,
+      "winner": "best_penalized_score",
+      "delta": 0.2372080416995513,
+      "tv": 0.20533608255479324,
+      "perceval_error": 5.551115123125783e-17,
+      "perceval_outcome_count": 56
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261141,
+      "target": 0.75,
+      "winner": "best_excess",
+      "delta": 0.08577801507641025,
+      "tv": 0.046111403193132554,
+      "perceval_error": 8.326672684688674e-17,
+      "perceval_outcome_count": 56
+    },
+    {
+      "family": "six_mode",
+      "seed": 20261141,
+      "target": 0.75,
+      "winner": "best_penalized_score",
+      "delta": 0.7175326925510752,
+      "tv": 0.41920041537938413,
+      "perceval_error": 2.7755575615628914e-16,
+      "perceval_outcome_count": 56
+    }
+  ],
+  "physical_shots": 0,
+  "non_claim": "Post-run audit of all stored winners; no universal theorem or statistical guarantee."
+}

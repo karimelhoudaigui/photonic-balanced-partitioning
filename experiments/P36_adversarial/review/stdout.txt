@@ -1,0 +1,1 @@
+{"status": "SEARCH_TRACE_AND_WINNER_PHYSICS_VERIFIED_GENERAL_CONJECTURE_OPEN", "evaluations": 17856, "perceval_checks": 16, "max_perceval_error": 8.881784197001252e-16}

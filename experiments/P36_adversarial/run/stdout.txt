@@ -1,0 +1,1 @@
+{"status": "BOUNDED_SEARCH_NO_REFUTATION", "total_evaluations": 17856, "runtime_seconds": 1.285868458013283, "physical_shots": 0, "candidate_count": 0, "largest_excess": -5.927725117518302e-07}

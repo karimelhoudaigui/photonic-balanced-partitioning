@@ -1,0 +1,57 @@
+{
+  "claim_id": "P36_ADVERSARIAL_TRACE_REVIEW",
+  "mathematics": {
+    "assertion_tested": "Audit all17856 saved search scores/caps and independently verify every stored winner with16 Perceval circuits.",
+    "coefficient_domain": "complex128,float64",
+    "conventions": "Three distinct input photons, full output occupations, explicit coherent routing versus incoherent path squares.",
+    "inputs": [
+      "three-mode CKM angles/phase and six-mode general QR frames",
+      "seeds20261140/20261141, targets0.25/0.75"
+    ],
+    "bounds": {
+      "max_evaluations": 18000,
+      "max_modes": 6,
+      "photons": 3,
+      "search_cells": 8
+    },
+    "non_claims": [
+      "No proof from no refutation",
+      "No graph optimization advantage",
+      "No hardware or exact numerical certification"
+    ]
+  },
+  "execution_artifacts": [
+    "experiments/check_linear_leakage_search.py",
+    "experiments/phase3_linear_leakage_adversarial.py",
+    "experiments/P36_adversarial/run/data/raw.json",
+    "experiments/P36_adversarial/run/data/evaluations.jsonl",
+    "pyproject.toml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "none; recorded parameters",
+    "seed": null
+  }
+}

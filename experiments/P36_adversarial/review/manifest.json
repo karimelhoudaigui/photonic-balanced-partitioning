@@ -1,0 +1,161 @@
+{
+  "schema_version": 2,
+  "claim_id": "P36_ADVERSARIAL_TRACE_REVIEW",
+  "repository": {
+    "commit": "3f7f7b302475ef92632f31e5640326eb64df7cef",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/check_linear_leakage_search.py",
+    "--source",
+    "experiments/P36_adversarial/run/data",
+    "--output",
+    "experiments/P36_adversarial/review/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Audit all17856 saved search scores/caps and independently verify every stored winner with16 Perceval circuits.",
+    "coefficient_domain": "complex128,float64",
+    "conventions": "Three distinct input photons, full output occupations, explicit coherent routing versus incoherent path squares.",
+    "inputs": [
+      "three-mode CKM angles/phase and six-mode general QR frames",
+      "seeds20261140/20261141, targets0.25/0.75"
+    ],
+    "bounds": {
+      "max_evaluations": 18000,
+      "max_modes": 6,
+      "photons": 3,
+      "search_cells": 8
+    },
+    "non_claims": [
+      "No proof from no refutation",
+      "No graph optimization advantage",
+      "No hardware or exact numerical certification"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none; recorded parameters",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T12:04:44.195098+00:00",
+    "runtime_seconds": 2.599165,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/check_linear_leakage_search.py",
+    "experiments/phase3_linear_leakage_adversarial.py",
+    "experiments/P36_adversarial/run/data/raw.json",
+    "experiments/P36_adversarial/run/data/evaluations.jsonl",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/check_linear_leakage_search.py",
+      "sha256": "857279a2b097cde550ad7a3f7184401b105657e0278f8b11d0ae3cc5aa8ad19a",
+      "sha256_after": "857279a2b097cde550ad7a3f7184401b105657e0278f8b11d0ae3cc5aa8ad19a"
+    },
+    {
+      "path": "experiments/phase3_linear_leakage_adversarial.py",
+      "sha256": "ba2d727248ba54d5377d1b009c92396383e1acb81f3256d77bae6dd7757772e5",
+      "sha256_after": "ba2d727248ba54d5377d1b009c92396383e1acb81f3256d77bae6dd7757772e5"
+    },
+    {
+      "path": "experiments/P36_adversarial/run/data/raw.json",
+      "sha256": "da3b3efcee6665dfa418e1e13d61011d0ae8bbd8393b771ba30d827d4f5d3059",
+      "sha256_after": "da3b3efcee6665dfa418e1e13d61011d0ae8bbd8393b771ba30d827d4f5d3059"
+    },
+    {
+      "path": "experiments/P36_adversarial/run/data/evaluations.jsonl",
+      "sha256": "0bc2cb1e55a6d799b8df5bf5e1e332d0fd7e4e64cfd1c2e962de107f9d7a165b",
+      "sha256_after": "0bc2cb1e55a6d799b8df5bf5e1e332d0fd7e4e64cfd1c2e962de107f9d7a165b"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P36_adversarial/review",
+  "declared_results": [
+    "experiments/P36_adversarial/review/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P36_adversarial/review/stdout.txt",
+      "sha256": "123334e0b27af8988c77b2bb4ed6ff4cf00335e54df2e8075538f964e74acb42",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P36_adversarial/review/stderr.txt",
+      "sha256": "ed3d67de70b2814fd2680f1b19a74a142840b40fe2abd7877d9911a7dfea1d93",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P36_adversarial/review/raw.json",
+      "sha256": "9217ad9bc93b9f759328f1e57f053f3eb8324645f920ce0b37357eb525335c6d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
