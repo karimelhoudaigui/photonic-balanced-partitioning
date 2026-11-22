@@ -1,0 +1,17 @@
+{
+  "status": "AUDIT_FIXTURE_FAILED",
+  "original_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "experiments/P35_postfix_review/check_resource_fix.py"
+  ],
+  "exit_status": 1,
+  "error_type": "RuntimeError",
+  "error_message": "Exact marginal state budget exceeded",
+  "failed_fixture": "ThresholdMarginals([[1],[0]], max_states=1, max_transitions=1).click_means()",
+  "interpretation": "The occupied unary row retains a constant and degree-one coefficient, requiring two transient DP states. The review fixture cap was too small; this is expected guard behavior, not a production defect.",
+  "preserved_script": "check_resource_fix_attempt1.py",
+  "preserved_script_sha256": "e7752edd221045ee4c848b14d8d179d470e0bb5bbcf225fca5ecbd43afcd396f",
+  "timestamp": "Not retained for this first short outside-runner attempt; tool output recorded the failure.",
+  "scientific_campaign_rerun": false
+}

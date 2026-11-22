@@ -1,0 +1,325 @@
+{
+  "status": "POSTFIX_RESOURCE_API_CHECKS_PASS",
+  "started_at": "2026-11-22T12:51:40.702287+00:00",
+  "runtime_seconds": 0.030071584013057873,
+  "reviewed_commit": "b5d2888f8b7f8cac32e3b5f2cc23ba0d3aa7a547",
+  "executed_absolute_module": "/Users/karimelhoudaigui/Desktop/pasqal/src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+  "sha256_before": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05",
+  "sha256_after": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05",
+  "committed_blob_sha256": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05",
+  "python": "3.11.15",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/p35-baseline-review/experiments/P35_postfix_review/check_resource_fix.py"
+  ],
+  "cpu_limit_seconds": 10,
+  "invalid_guard_checks": [
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "NaN",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "NaN",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "+infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "+infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "-infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "-infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "float 1.0",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "float 1.0",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "Fraction 1/2",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "Fraction 1/2",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "Fraction 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "Fraction 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "string 4",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "string 4",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "None",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "None",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "bool true",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "bool true",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "bool false",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "bool false",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "complex 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "complex 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "NaN",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "NaN",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "+infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "+infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "-infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "-infinity",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "float 1.0",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "float 1.0",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "Fraction 1/2",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "Fraction 1/2",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "Fraction 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "Fraction 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "string 4",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "string 4",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "None",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "None",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "bool true",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "bool true",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "bool false",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "bool false",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "complex 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "complex 1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "0",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "0",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_states",
+      "value": "-1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_states",
+      "value": "-1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "vacuum_probability",
+      "argument": "max_transitions",
+      "value": "-1",
+      "rejected_before_frame_read": true
+    },
+    {
+      "endpoint": "ThresholdMarginals",
+      "argument": "max_transitions",
+      "value": "-1",
+      "rejected_before_frame_read": true
+    }
+  ],
+  "invalid_guard_check_count": 50,
+  "integer_default_boundary_checks_pass": true,
+  "script_sha256": "02fa2766349fd56d373cd87ddfab77ce21a9da39fa8c73cf9f0d70127e298b80",
+  "scientific_campaign_rerun": false,
+  "pytest_rerun": false,
+  "physical_shots": 0
+}
