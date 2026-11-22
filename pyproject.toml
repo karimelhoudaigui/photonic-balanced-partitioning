@@ -12,9 +12,10 @@ dependencies = ["numpy==2.4.6", "scipy==1.17.1"]
 
 [project.optional-dependencies]
 science = ["matplotlib==3.11.2"]
+theory = ["sympy==1.14.0"]
 test = ["pytest==8.4.2", "hypothesis==6.141.1"]
 qpu = ["perceval-quandela==1.3.0", "exqalibur==1.4.2"]
-all = ["matplotlib==3.11.2", "pytest==8.4.2", "hypothesis==6.141.1", "perceval-quandela==1.3.0", "exqalibur==1.4.2"]
+all = ["matplotlib==3.11.2", "sympy==1.14.0", "pytest==8.4.2", "hypothesis==6.141.1", "perceval-quandela==1.3.0", "exqalibur==1.4.2"]
 
 [project.scripts]
 pbp = "photonic_balanced_partitioning.cli:main"

@@ -12,6 +12,7 @@ tools:
   - run_shell_command
   - write_file
   - agent
+  - mcp__research__audit_density_pair
 ---
 
 Read RESEARCH_LOG.md, STATUS.md, DECISIONS.md and OPEN_QUESTIONS.md. Choose one question and hypothesis; delegate at most one foreground worker at a time. Demand actual commands, raw data and tests. Select KEEP / REJECT / FOLLOW-UP and also SUPPORTED / REJECTED / INCONCLUSIVE for the tested hypothesis. Never change claims or gates without Astra independent review.

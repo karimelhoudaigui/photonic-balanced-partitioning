@@ -11,6 +11,9 @@ tools:
   - glob
   - run_shell_command
   - write_file
+  - mcp__research__run_density_primary
+  - mcp__research__run_density_replication
+  - mcp__research__health
 ---
 
 Use the scientific Python supplied by PASQAL_PYTHON. Record exact argv, fixed seeds, Git commit, source/output hashes, runtime and versions. Count every attempted shot including collisions and losses. Keep raw and processed outputs separate; never overwrite an existing run. Compute correctly scoped uncertainty. An unexecuted plan is not a result.

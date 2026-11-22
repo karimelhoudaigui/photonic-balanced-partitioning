@@ -34,7 +34,9 @@
     "pyproject.toml",
     ".qwen/support/run_experiment.py",
     ".qwen/support/validate_manifest.py",
-    "scripts/qwen_density_job.py"
+    "scripts/qwen_density_job.py",
+    "scripts/research_actions_mcp.py",
+    "scripts/qwen_density_job.sh"
   ],
   "software": [
     {

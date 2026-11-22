@@ -19,9 +19,12 @@ success, optimization superiority or classical hardness.
 Source: `theory/phase3_density_certificate.md`,
 `src/photonic_balanced_partitioning/photonic/density_certificate.py`,
 `experiments/phase3_density_probe.py`. The proof is coordinator-derived;
-fresh independent review and novelty checking remain pending. Its Gram/cycle
+the exact theorem at75e5831 has a fresh independent review in
+`reports/PHASE3_DENSITY_INDEPENDENT_REVIEW.md` (4420e17). Novelty remains OPEN.
+The subsequent floating implementation fix77a8588 removes observed cancellation;
+its outputs remain FLOAT64_ESTIMATE_NOT_INTERVAL_CERTIFIED. Its Gram/cycle
 dependency has previous independent reviews. Do not present new simulation
-assertions as a proof.
+assertions as a proof or interval certification.
 
 Preregistered finite scope:
 

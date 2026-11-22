@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-446404bdbf1650a6-call_0x48jwp2",
+  "agentType": "experiment-runner",
+  "description": "Execute one fixed scientific job. The script supplies and records every argument. Return the actual observed JSON, not predictions. Do not type the long internal command or edit files. Exact command: \"$PASQAL_PYTHON\" scripts/qwen_density_job.py primary",
+  "parentSessionId": "91bd0a65-372b-455d-8c70-be583175f585",
+  "parentAgentId": null,
+  "createdAt": "2026-11-21T20:53:46.976Z",
+  "lastUpdatedAt": "2026-11-21T20:54:25.473Z",
+  "status": "failed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 20788,
+    "hostname": "Mac.lan"
+  }
+}

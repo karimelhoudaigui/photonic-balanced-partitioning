@@ -73,6 +73,36 @@
     "enableStructuredRecall": false
   },
   "tools": {
-    "workflowNameOnly": true
+    "workflowNameOnly": true,
+    "visible": [
+      "mcp__research__run_density_primary",
+      "mcp__research__run_density_replication",
+      "mcp__research__audit_density_primary",
+      "mcp__research__audit_density_pair",
+      "mcp__research__health"
+    ]
+  },
+  "mcpServers": {
+    "research": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "scripts/research_actions_mcp.py"
+      ],
+      "cwd": ".",
+      "timeout": 360000,
+      "trust": true,
+      "env": {
+        "PASQAL_PYTHON": "${PASQAL_PYTHON}",
+        "PYTHONPATH": "src",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      }
+    }
+  },
+  "mcp": {
+    "allowed": [
+      "research"
+    ]
   }
 }

@@ -26,6 +26,9 @@ CONTROL_TOOLS=['agent','skill','tool_search','tool_call','team_create','team_del
     'task_create','task_update','task_list','list_agents','send_message','request_shutdown',
     'report_findings','team_plan_approval','get_goal','update_goal','enter_worktree',
     'exit_worktree','record_artifact','task_stop','workflow']
+RESEARCH_ACTIONS=['mcp__research__'+name for name in ['run_density_primary','run_density_replication',
+    'audit_density_primary','audit_density_pair','health']]
+CONTROL_TOOLS+=RESEARCH_ACTIONS
 
 
 def post(endpoint,payload):
@@ -192,6 +195,19 @@ print('CONFINEMENT_PASS')
         if check.returncode!=0 or 'CONFINEMENT_PASS' not in check.stdout:
             raise RuntimeError('OS confinement preflight failed: '+check.stderr[-800:])
         record['paper_os_guard']='PASS'
+        if args.mode=='workflow':
+            # Authorize only our reviewed local stdio server in this isolated
+            # runtime/worktree. Do not use blanket approval or YOLO mode.
+            approved=subprocess.run(prefix+['qwen','mcp','approve','research'],
+                cwd=worktree,env=env,capture_output=True,text=True,timeout=30)
+            discovered=subprocess.run(prefix+['qwen','mcp','list'],
+                cwd=worktree,env=env,capture_output=True,text=True,timeout=30)
+            record['mcp_preflight']={'approval_exit_code':approved.returncode,
+                'approval_stdout':approved.stdout,'approval_stderr':approved.stderr,
+                'discovery_exit_code':discovered.returncode,
+                'discovery_stdout':discovered.stdout,'discovery_stderr':discovered.stderr}
+            if approved.returncode or discovered.returncode or 'Connected' not in discovered.stdout:
+                raise RuntimeError('Reviewed local scientific MCP server did not connect')
         py=str(ROOT/'.venv/bin/python')
         prompts=[]
         if args.mode=='validation':
@@ -228,7 +244,7 @@ print('CONFINEMENT_PASS')
             if remaining<10:raise TimeoutError('Cycle wall budget exhausted')
             allowed=set(BASE_TOOLS)
             if args.mode in ['subagent','team']:allowed.add('agent')
-            if args.mode=='workflow':allowed.add('workflow')
+            if args.mode=='workflow':allowed.update(['workflow',*RESEARCH_ACTIONS])
             if args.mode=='team':allowed.update(['team_create','team_delete','task_create','task_update','task_list','send_message','request_shutdown','list_agents'])
             excluded=[t for t in CONTROL_TOOLS if t not in allowed]
             initial_plan=args.mode=='cycle' and args.mission_file is None and role=='research-lead'
@@ -261,7 +277,7 @@ print('CONFINEMENT_PASS')
                 '--openai-base-url',URL+'/v1','--openai-api-key','local-placeholder-not-a-credential',
                 '--openai-logging','--openai-logging-dir',str(STATE/'api-logs'),
                 '--approval-mode','auto-edit','--allowed-tools',','.join(sorted(allowed)),
-                '--core-tools',','.join(sorted(allowed)), '--exclude-tools',','.join(excluded),
+                '--core-tools',','.join(sorted(allowed-set(RESEARCH_ACTIONS))), '--exclude-tools',','.join(excluded),
                 '--max-session-turns','10','--max-tool-calls',str(2+4*args.workflow_agents if args.mode=='workflow' else 10),'--max-subagent-depth','1',
                 '--max-wall-time',str(max(1,int(min(remaining,phase_cap)))),
                 '--system-prompt',system,'-p',prompt]

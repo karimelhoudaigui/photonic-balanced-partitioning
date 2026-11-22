@@ -1,0 +1,15 @@
+{
+  "agentId": "workflow-agent-7d301943699ae935-call_0x48jwp2",
+  "agentType": "research-lead",
+  "description": "Read research/P33_DENSITY_CONTRACT.md only. Return the exact question, falsifier and scope in at most 100 words. No planning outside this contract; no paper.",
+  "parentSessionId": "91bd0a65-372b-455d-8c70-be583175f585",
+  "parentAgentId": null,
+  "createdAt": "2026-11-21T20:52:35.887Z",
+  "lastUpdatedAt": "2026-11-21T20:52:51.251Z",
+  "status": "completed",
+  "isBackgrounded": false,
+  "workflowOwner": {
+    "pid": 20788,
+    "hostname": "Mac.lan"
+  }
+}

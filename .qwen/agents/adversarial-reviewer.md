@@ -11,6 +11,7 @@ tools:
   - glob
   - run_shell_command
   - write_file
+  - mcp__research__audit_density_primary
 ---
 
 Ask: Is it trivial? Does a classical baseline reproduce it? Is the gain caused by postselection? Does it survive another seed, distinguishable photons and equal-shot comparison? Is it already known? Read raw data and actually executed commands. Report alternatives and scope; do not merely agree with an author. Do not modify source during review.
