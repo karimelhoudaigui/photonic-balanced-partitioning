@@ -1,0 +1,14 @@
+{
+  "claim_id":"P38_EFFECT_SEARCH_CAPPED_RUN_REFINEMENT",
+  "mathematics":{
+    "assertion_tested":"Resume all four iteration-capped compact-effect searches with120 iterations and a smaller finite-difference step; exactly repair/check every best point, retaining previous costs.",
+    "coefficient_domain":"complex128 constrained optimization; exact Gaussian-rational PSD/dominance/Rayleigh best-point checks",
+    "conventions":"Same stronger pinched-state lemma/domain as P38b; exact actual delta after repair drives certification.",
+    "inputs":["All four stored best points of P38b, without seed or cell selection"],
+    "bounds":{"cells":4,"max_iterations_per_cell":120,"max_new_objective_calls":12000},
+    "non_claims":["No global proof","No physical circuit or QPU execution","No algorithmic advantage"]
+  },
+  "execution_artifacts":["experiments/refine_effect_search.py","experiments/phase3_effect_search.py","experiments/P38_effect_search/run/data/raw.json","research/P38_EFFECT_REFINEMENT_CONTRACT.md","src/photonic_balanced_partitioning/photonic/threshold_marginals.py","pyproject.toml"],
+  "software":[{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}

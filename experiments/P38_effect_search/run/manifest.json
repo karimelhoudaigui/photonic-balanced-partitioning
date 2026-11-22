@@ -1,0 +1,164 @@
+{
+  "schema_version": 2,
+  "claim_id": "P38_COMPACT_EFFECT_COUNTEREXAMPLE_SEARCH",
+  "repository": {
+    "commit": "22b0a743d49c07c57d69919d01fea410bcc86245",
+    "dirty": true
+  },
+  "command": [
+    "/usr/bin/env",
+    "PYTHONPATH=src",
+    ".venv/bin/python",
+    "experiments/phase3_effect_search.py",
+    "--output",
+    "experiments/P38_effect_search/run/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Bounded constrained search for D_pinched>delta on the compact three-effect domain, with exact PSD/dominance/Rayleigh repair for each cell's best candidate.",
+    "coefficient_domain": "complex128 SLSQP/eigensolvers; exact Gaussian-rational post-checks and one rational control",
+    "conventions": "Three effects sum to I by parameterization; strong pinched inequality is distinct from measured-TV conjecture; every infeasible optimizer query is retained.",
+    "inputs": [
+      "delta targets1/5,3/5; seeds20261210,20261211; four cells"
+    ],
+    "bounds": {
+      "cells": 4,
+      "max_iterations_per_cell": 25,
+      "max_objective_calls": 4000,
+      "perceval_calls": 0
+    },
+    "non_claims": [
+      "No global proof or solver certificate",
+      "No physical circuits executed from effect realizations",
+      "No measured-TV or graph-advantage conclusion"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.default_rng/PCG64",
+    "seed": "20261210,20261211"
+  },
+  "run": {
+    "started_at": "2026-11-22T19:43:07.691211+00:00",
+    "runtime_seconds": 3.040955,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/phase3_effect_search.py",
+    "research/P38_EFFECT_SEARCH_CONTRACT.md",
+    "theory/phase3_pinching_dual.md",
+    "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/phase3_effect_search.py",
+      "sha256": "c62d13d5951bd79fc0c81c462542e39bc739b8cae38558de5aa98d8b69a73830",
+      "sha256_after": "c62d13d5951bd79fc0c81c462542e39bc739b8cae38558de5aa98d8b69a73830"
+    },
+    {
+      "path": "research/P38_EFFECT_SEARCH_CONTRACT.md",
+      "sha256": "b1e476bc1c1b31943f39c81a0e0cfa8942da9dcdf86ffb6f27f5cbfd78d50579",
+      "sha256_after": "b1e476bc1c1b31943f39c81a0e0cfa8942da9dcdf86ffb6f27f5cbfd78d50579"
+    },
+    {
+      "path": "theory/phase3_pinching_dual.md",
+      "sha256": "74652636979832b79c853577439249e03d91fd667d34e88393d7401a17c54b5a",
+      "sha256_after": "74652636979832b79c853577439249e03d91fd667d34e88393d7401a17c54b5a"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+      "sha256": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05",
+      "sha256_after": "99a827e8057d8dde30b673deec9cbdc89d41e9fbcfd17d05ec16ad0065163f05"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "experiments/P38_effect_search/run",
+  "declared_results": [
+    "experiments/P38_effect_search/run/data/raw.json",
+    "experiments/P38_effect_search/run/data/summary.json",
+    "experiments/P38_effect_search/run/data/evaluations.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P38_effect_search/run/stdout.txt",
+      "sha256": "258f35fe38f4e59a7a0546b9e2ece144c0eb4c684793c948825258503c84acad",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P38_effect_search/run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P38_effect_search/run/data/raw.json",
+      "sha256": "94bee41d1b241e4ceea19d161fec769a88960d253629930e996b747a62039ab7",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P38_effect_search/run/data/summary.json",
+      "sha256": "15acfd67945caa87d497a856f035e29daeee149c0278395f1bdae0471dd6e5ea",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P38_effect_search/run/data/evaluations.jsonl",
+      "sha256": "0565287098048dd59b0e412ec697a20f4e0759b8ae15330a71f4a8cd8ad04e03",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}
