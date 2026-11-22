@@ -1,0 +1,14 @@
+{
+  "claim_id":"P39_EXACT_SCALAR_EIGENVALUE_REVIEW",
+  "mathematics":{
+    "assertion_tested":"Verify all27 diagonal Gram weight classes and two strict rational scalar-root inequalities implying D_pinched>24493/50000>288/625, without eigensolvers or Rayleigh code.",
+    "coefficient_domain":"Python Fraction only; no floating decisions",
+    "conventions":"Self-review by a different analytic argument, not a fresh agent or actual measured-TV counterexample.",
+    "inputs":["Fixed d19/25,e3/25,rA43/400,rB7/50 and all27 stored sectors"],
+    "bounds":{"sectors":27,"root_inequalities":2},
+    "non_claims":["No linear or measured-TV refutation","No novelty or algorithmic advantage"]
+  },
+  "execution_artifacts":["experiments/check_pinched_scalar_roots.py","experiments/P39_pinched_envelope/run/data/raw.json","theory/phase3_pinched_envelope_counterexample.md","pyproject.toml"],
+  "software":[{"name":"Python","version":"3.11.15"}],
+  "randomness":{"used":false,"generator":"","seed":null}
+}
