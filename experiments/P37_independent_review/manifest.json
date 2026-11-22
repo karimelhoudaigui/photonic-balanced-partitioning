@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "claim_id": "P37-independent-small-check",
+  "repository": {
+    "commit": "d402374b21a812de1d1b5658fac37d294a20a035",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "experiments/P37_independent_review/check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "SymPy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit arm64"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact m8 endpoint candidates and disjoint root brackets; symbolic h/g ratios and lambda0 first coefficients; not an asymptotic proof",
+    "coefficient_domain": "rational polynomials; symbolic limits",
+    "conventions": "m8,k4,source cap N<=8; all physical attempts charged",
+    "inputs": [
+      "theory/phase3_loss_source_selection.md",
+      "experiments/P37_independent_review/check.py"
+    ],
+    "bounds": {
+      "m": 8,
+      "root_bracket_bisections": 40
+    },
+    "non_claims": [
+      "Finite checks are not proofs of uniqueness or asymptotic limits",
+      "No graph enrichment, novelty or advantage claim"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-22T12:40:10.274114+00:00",
+    "runtime_seconds": 0.6868396250065416,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": 1,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "experiments/P37_independent_review/receipt.json",
+      "sha256": "bdeb9944df466d35989a324ad6f0647c7b91b0e68e92d220023a9f588fb7788c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "m8 endpoints",
+    "Adjacent root order",
+    "Lossless ratio identities",
+    "lambda0 coefficients"
+  ],
+  "result": "All exact finite checks passed",
+  "residual_risks": [
+    "Universal proof audit is recorded separately"
+  ],
+  "input_artifacts": [
+    {
+      "path": "theory/phase3_loss_source_selection.md",
+      "sha256": "fda5160d1d4eb232f67eae09cfcfabf3024822ea1e0720ef639267374a642807",
+      "sha256_after": "fda5160d1d4eb232f67eae09cfcfabf3024822ea1e0720ef639267374a642807"
+    },
+    {
+      "path": "experiments/P37_independent_review/check.py",
+      "sha256": "538d5c22a4d87f1e25c3482d10c2b29a25cefa3c5c90b8f5ee44cbf9c6c6ae5f",
+      "sha256_after": "538d5c22a4d87f1e25c3482d10c2b29a25cefa3c5c90b8f5ee44cbf9c6c6ae5f"
+    }
+  ],
+  "declared_results": [
+    "experiments/P37_independent_review/receipt.json"
+  ]
+}
