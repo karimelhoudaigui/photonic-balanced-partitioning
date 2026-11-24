@@ -1,0 +1,441 @@
+{
+  "seeds": [
+    2026112471,
+    2026112472
+  ],
+  "random_unitary_dimensions": [
+    2,
+    3,
+    4
+  ],
+  "etas": [
+    0,
+    0.1,
+    0.5,
+    1
+  ],
+  "thread_variables": [
+    "OMP_NUM_THREADS",
+    "OPENBLAS_NUM_THREADS",
+    "MKL_NUM_THREADS",
+    "NUMEXPR_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS",
+    "BLIS_NUM_THREADS"
+  ],
+  "cases": [
+    {
+      "id": "C001",
+      "occupation": [
+        0,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "identity"
+    },
+    {
+      "id": "C002",
+      "occupation": [
+        0,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C003",
+      "occupation": [
+        0,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C004",
+      "occupation": [
+        1,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "identity"
+    },
+    {
+      "id": "C005",
+      "occupation": [
+        1,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "balanced_first_two"
+    },
+    {
+      "id": "C006",
+      "occupation": [
+        1,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C007",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "equal",
+      "unitary": "identity"
+    },
+    {
+      "id": "C008",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "equal",
+      "unitary": "balanced_first_two"
+    },
+    {
+      "id": "C009",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C010",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C011",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "orthogonal",
+      "unitary": "identity"
+    },
+    {
+      "id": "C012",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "orthogonal",
+      "unitary": "balanced_first_two"
+    },
+    {
+      "id": "C013",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C014",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C015",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "partial_complex",
+      "unitary": "identity"
+    },
+    {
+      "id": "C016",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "partial_complex",
+      "unitary": "balanced_first_two"
+    },
+    {
+      "id": "C017",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C018",
+      "occupation": [
+        1,
+        1
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C019",
+      "occupation": [
+        2,
+        0,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C020",
+      "occupation": [
+        2,
+        0,
+        0
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C021",
+      "occupation": [
+        2,
+        0,
+        0
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C022",
+      "occupation": [
+        1,
+        1,
+        1
+      ],
+      "internal": "equal",
+      "unitary": "identity"
+    },
+    {
+      "id": "C023",
+      "occupation": [
+        1,
+        1,
+        1
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C024",
+      "occupation": [
+        1,
+        1,
+        1
+      ],
+      "internal": "orthogonal",
+      "unitary": "identity"
+    },
+    {
+      "id": "C025",
+      "occupation": [
+        1,
+        1,
+        1
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C026",
+      "occupation": [
+        1,
+        1,
+        1
+      ],
+      "internal": "partial_complex",
+      "unitary": "identity"
+    },
+    {
+      "id": "C027",
+      "occupation": [
+        1,
+        1,
+        1
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C028",
+      "occupation": [
+        2,
+        1,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C029",
+      "occupation": [
+        2,
+        1,
+        0
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C030",
+      "occupation": [
+        2,
+        1,
+        0
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C031",
+      "occupation": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C032",
+      "occupation": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C033",
+      "occupation": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C034",
+      "occupation": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C035",
+      "occupation": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C036",
+      "occupation": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112472"
+    },
+    {
+      "id": "C037",
+      "occupation": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "balanced_first_two"
+    },
+    {
+      "id": "C038",
+      "occupation": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "internal": "equal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C039",
+      "occupation": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "internal": "orthogonal",
+      "unitary": "balanced_first_two"
+    },
+    {
+      "id": "C040",
+      "occupation": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "internal": "orthogonal",
+      "unitary": "qr_2026112471"
+    },
+    {
+      "id": "C041",
+      "occupation": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "internal": "partial_complex",
+      "unitary": "balanced_first_two"
+    },
+    {
+      "id": "C042",
+      "occupation": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "internal": "partial_complex",
+      "unitary": "qr_2026112471"
+    }
+  ]
+}
