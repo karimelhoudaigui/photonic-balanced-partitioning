@@ -1,0 +1,166 @@
+{
+  "schema_version": 2,
+  "claim_id": "P44-independent-nonuniform-dilation",
+  "repository": {
+    "commit": "068791232198ea576fa0bee4f0a3b3a36bb77bd8",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "experiments/P44_replication/dilation_replication.py",
+    "--cases",
+    "experiments/P44_replication/cases.json",
+    "--output",
+    "experiments/P44_replication/run_001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "child Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "For190frozen CF physical sources through explicit nonuniform passive dilations, compare full-tensor moments/events to distinct/repeated permanent identities and spectral envelopes; independently validate robust routing bounds for product and correlated internal states.",
+    "coefficient_domain": "complex128/float64 numerical estimates; exact finite permutation/count enumeration",
+    "conventions": "Global normalized bosonic pure source, explicit vacuum environment, W system+environment unitary; apply W tensorpower N axiswise with identity on internal states, then trace internal factors. Keep every global occupation and environment count, including zero probabilities; marginalize to system only after retaining full law. No clipping or postselection normalization. One first-k-click candidate per detector outcome.",
+    "inputs": [
+      "Complete190case list experiments/P44_replication/cases.json",
+      "FreshPCG64seeds2026112483/2026112484, dimensions2then3, QRleftthenright",
+      "Systemm2/3,N0..3,d1..3, with singletN2 and cyclicentangledN3 internal fixtures",
+      "Zero/unit/uniformquarter controls and declared nonuniform singular-intensity profiles"
+    ],
+    "bounds": {
+      "m_max": 3,
+      "N_max": 3,
+      "internal_dimension_max": 3,
+      "physical_modes_max": 6,
+      "cases": 190,
+      "support_rows_including_empty": 1240,
+      "tolerance": 1e-10,
+      "max_array_bytes": 67108864,
+      "max_output_bytes": 33554432,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "max_threads": 1
+    },
+    "non_claims": [
+      "No universal proof from finite cases",
+      "Not a thermal sampler or whole-law thermal domination",
+      "No Lucy calibration or hardware/advantage/novelty verdict",
+      "No unknown-internal constant1 bound",
+      "No sampling optimization or graph selection",
+      "No run before contract+code+case commit"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.Generator(PCG64)",
+    "seed": [
+      2026112483,
+      2026112484
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-24T21:41:56.985974+00:00",
+    "runtime_seconds": 0.617558,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P44_replication_contract.md",
+    "research/P44_replication_contract.json",
+    "experiments/P44_replication/cases.json",
+    "experiments/P44_replication/dilation_replication.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P44_replication_contract.md",
+      "sha256": "827be0764f9e0d024e8d1c19f2b077ad55b2986e19f5375e1f74c468f05b091b",
+      "sha256_after": "827be0764f9e0d024e8d1c19f2b077ad55b2986e19f5375e1f74c468f05b091b"
+    },
+    {
+      "path": "research/P44_replication_contract.json",
+      "sha256": "8aa2837c212785dfeb5a1b6ebc33a90fb7952f4b3970bf6bbd9086dac79653ba",
+      "sha256_after": "8aa2837c212785dfeb5a1b6ebc33a90fb7952f4b3970bf6bbd9086dac79653ba"
+    },
+    {
+      "path": "experiments/P44_replication/cases.json",
+      "sha256": "a59496755416f2b5ee1dd391a18cb616b183efc20c2aa3470a0600a71d462b4c",
+      "sha256_after": "a59496755416f2b5ee1dd391a18cb616b183efc20c2aa3470a0600a71d462b4c"
+    },
+    {
+      "path": "experiments/P44_replication/dilation_replication.py",
+      "sha256": "60a6bbbeeb3aaf410f448d428aad4f4afcbc582bf2d73d3d792831dced50b7ba",
+      "sha256_after": "60a6bbbeeb3aaf410f448d428aad4f4afcbc582bf2d73d3d792831dced50b7ba"
+    }
+  ],
+  "output_directory": "experiments/P44_replication/run_001",
+  "declared_results": [
+    "experiments/P44_replication/run_001/full_laws.jsonl",
+    "experiments/P44_replication/run_001/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P44_replication/run_001/stdout.txt",
+      "sha256": "02e5571ebe0bac749e2156e17eb1ff2438f5ee4a69ece1fcac7bfbcdaac09714",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P44_replication/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P44_replication/run_001/full_laws.jsonl",
+      "sha256": "8647c0d1de318d13ba884142a00ceb26939686820955578031f180164e2498ae",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P44_replication/run_001/summary.json",
+      "sha256": "02e5571ebe0bac749e2156e17eb1ff2438f5ee4a69ece1fcac7bfbcdaac09714",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
