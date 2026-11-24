@@ -1,0 +1,170 @@
+{
+  "schema_version": 2,
+  "claim_id": "P41_R1_CHIRAL_PROXY",
+  "repository": {
+    "commit": "e66419179ab797f888060bcb69fd1ccb839a9dd2",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P41_adaptive_probe.py",
+    "--output",
+    "research/P41_adaptive_runs/run001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Graph-dependent chiral passive proposals have the stated cubic exchange coefficient; a positive feasible classical proxy matches repaired bosonic kernels to the explicit fourth-order TV bound on all declared frames/times, with independent sparse-Fock evolution and Ryser amplitudes.",
+    "coefficient_domain": "complex128/float64 numerical estimates, no interval certification",
+    "conventions": "U=exp(-itH); rows outputs; k single occupied inputs; collisions retain initial S; full raw physical law retained; no postselection",
+    "inputs": [
+      "m=8,k=4 and m=10,k=5",
+      "two fixed weighted complete graph seeds per size:2026112401,2026112402",
+      "graph-feature phases phi=0 and pi/3",
+      "t=0 and signed 0.005,0.01,0.02,0.04",
+      "one explicit Hermitian four-mode triangle control",
+      "one fixed relabeling per frame, conjugation and time reversal"
+    ],
+    "bounds": {
+      "base_graph_frames": 8,
+      "time_cells": 72,
+      "max_full_dimension": 2002,
+      "t_abs_max": 0.04,
+      "operator_norm_h": 1,
+      "numerical_tolerance": 1e-10,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "planned_max_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No optimization benchmark or positive quantum advantage",
+      "No comparison of independently optimized variational families",
+      "No global passive-optics impossibility",
+      "No global novelty claim",
+      "No physical QPU or loss model"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.Generator(PCG64)",
+    "seed": 2026112401
+  },
+  "run": {
+    "started_at": "2026-11-24T20:07:30.608833+00:00",
+    "runtime_seconds": 2.911532,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P41_adaptive_probe.py",
+    "research/P41_adaptive_contract.json",
+    "theory/P41_adaptive_chiral_proxy.md",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P41_adaptive_probe.py",
+      "sha256": "95efe0be846b1da3c64957bd53355bf532fc89229079d07d74b385a9cd237fbb",
+      "sha256_after": "95efe0be846b1da3c64957bd53355bf532fc89229079d07d74b385a9cd237fbb"
+    },
+    {
+      "path": "research/P41_adaptive_contract.json",
+      "sha256": "1d939ba2a2598a0f1278908ee97b2b90d11a4afdc59ae17b45077fe0efa79fa5",
+      "sha256_after": "1d939ba2a2598a0f1278908ee97b2b90d11a4afdc59ae17b45077fe0efa79fa5"
+    },
+    {
+      "path": "theory/P41_adaptive_chiral_proxy.md",
+      "sha256": "a7dc8c0d01a8922c4ee2fbd7d2c1b8e2cef6ad0a62ddfb5ab6d59f54188bd9e6",
+      "sha256_after": "a7dc8c0d01a8922c4ee2fbd7d2c1b8e2cef6ad0a62ddfb5ab6d59f54188bd9e6"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    }
+  ],
+  "output_directory": "research/P41_adaptive_runs/run001",
+  "declared_results": [
+    "research/P41_adaptive_runs/run001/data/raw.jsonl",
+    "research/P41_adaptive_runs/run001/data/frames.json",
+    "research/P41_adaptive_runs/run001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P41_adaptive_runs/run001/stdout.txt",
+      "sha256": "dbb578cbc5f3e425f0decec16d800f03d9d45eeb3a29759f46f38d29b3eaf5f2",
+      "kind": "log"
+    },
+    {
+      "path": "research/P41_adaptive_runs/run001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P41_adaptive_runs/run001/data/raw.jsonl",
+      "sha256": "e928aea3428987d0767dc18c35d007dce7a8acd2214441cc69900cb50a26b58a",
+      "kind": "result"
+    },
+    {
+      "path": "research/P41_adaptive_runs/run001/data/frames.json",
+      "sha256": "1b6bd537127eb4981d34c028a4af2fdb3dab466c0f3ef93516ddbe47eeb25d20",
+      "kind": "result"
+    },
+    {
+      "path": "research/P41_adaptive_runs/run001/data/summary.json",
+      "sha256": "57d61a293a2c700e862c0d489f36b6e01586ddc54958a560cafca0bd6795b316",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
