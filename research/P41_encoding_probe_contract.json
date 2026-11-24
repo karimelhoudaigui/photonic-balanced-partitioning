@@ -1,0 +1,54 @@
+{
+  "claim_id": "P41_GROUPED_OUTPUT_DOMINATION",
+  "mathematics": {
+    "assertion_tested": "On all 16 preregistered exact Gaussian-rational frames, all accepted grouped outcomes satisfy bosonic <= rejecting signed-wave <= always-feasible signed-wave; both classical laws are normalized with an explicit failure outcome; full Fock probabilities agree with independent permutation enumeration. Two local Perceval SLOS distributions must match within 1e-10. Exact two-qubit frontier and two relabelings are checked. The unstratified all-CF extension must fail normalization with mass 913/625.",
+    "coefficient_domain": "Exact Q(i) represented by pairs of Fraction for primary assertions; float64 only for two Perceval cross-checks and a 2048-attempt classical sampler execution",
+    "conventions": "Rows are output modes; occupied input columns are the first k; one photon per distinct input. Groups are disjoint and exactly one detected photon per group is accepted. All other occupations and losses are failures. Per-output probability is |per|^2 divided by output occupation factorials; no postselection renormalization.",
+    "inputs": [
+      "16 cases frozen by research/P41_encoding_probe.py: k=1,2,3,4 with m<=8",
+      "Hand controls: product rails, Walsh Bell readout and two rational sharp-frontier frames",
+      "Rational rotation seeds 2026112401 through 2026112409; two fixed row relabelings",
+      "Variable groups, singleton herald with vacuum remainder, and row-attenuated contraction",
+      "Classical sampler seed 2026112411, 2048 attempts on the fixed Walsh control"
+    ],
+    "bounds": {
+      "cases": 16,
+      "max_k": 4,
+      "max_m": 8,
+      "full_fock_dimension_max": 330,
+      "all_signs_enumerated_max": 16,
+      "perceval_cases": 2,
+      "perceval_error_tolerance": 1e-10,
+      "planned_array_bytes_max": 268435456,
+      "result_bytes_max": 33554432
+    },
+    "non_claims": [
+      "Finite checks are not a proof for arbitrary k",
+      "No graph-optimization training or held-out benchmark is performed",
+      "No independent proof review or novelty conclusion follows",
+      "Attempt dominance does not give a universal adaptive-training or realized-query-cost no-go",
+      "Arbitrary collision-free k-of-m decoding is outside the normalized grouping theorem",
+      "No QPU acquisition, hardware authorization or manuscript change"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P41_encoding_probe.py",
+    "theory/P41_encoding_grouped_domination.md",
+    "research/P41_encoding_sources.md",
+    "src/photonic_balanced_partitioning/hardware/offline.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {"name": "computation Python", "version": "3.11.15"},
+    {"name": "numpy", "version": "2.4.6"},
+    {"name": "perceval-quandela", "version": "1.3.0"},
+    {"name": "exqalibur", "version": "1.4.2"}
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random for frozen rational gates, NumPy default_rng for the classical sampler",
+    "seed": [2026112401, 2026112402, 2026112403, 2026112404, 2026112405, 2026112406, 2026112407, 2026112408, 2026112409, 2026112411]
+  }
+}
