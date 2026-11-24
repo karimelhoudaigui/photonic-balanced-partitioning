@@ -165,3 +165,55 @@ for this audit. The parity, AM-GM and source-amplitude steps were reconstructed
 directly. Compare the author's pinned revision only after this file is frozen;
 record any mismatch separately. The full research target remains open beyond
 the exact grouped, fixed-history result and its stated consequences.
+
+## Comparison with the author's frozen derivation
+
+Independent reconstruction was committed as fb1d7c3 BEFORE reading the author's
+file. The author revision subsequently examined is
+`4f499b487855cab05009a0c66e066950ac7167ad`,
+theory/P41_encoding_grouped_domination.md. Its base is f09c7ec; its status was
+pending independent review when read. No finite probe output is used here as
+a substitute for a proof.
+The reviewed file SHA256 is
+`33457bb46d139557096fc3f67bd61c248dea4c6cfbb1f424b8a2a9eab6489df9`.
+
+**Normalized verdict for the author's main pointwise claim: proved as written.**
+Its scope includes contractions, not just isometries. Its q first accepts with
+probability w=product_g I_g and then samples one output per group; that law has
+q(x)=E|F_x|^2. My independent construction directly samples normalized groups
+on every attempt and proves the stronger r(x)>=q(x)>=p_B(x). The author also
+records this always-feasible variant. Both constructions are valid, including
+zero-intensity groups, unequal groups, and unused output modes.
+
+The author's distinctions about score queries, frozen inference versus
+training, and adaptive histories are correct and essential. In particular its
+text does NOT claim general adaptive hitting-time dominance. My abstract
+three-state counterexample above explains why that exclusion cannot simply
+be removed. Its all-CF counterexample also checks by hand: the squared row
+intensities(.36,.64,.36,.64) give pair-product total913/625. Dividing by that
+number shrinks the positive physical cross-pair outcomes and loses domination.
+
+Additional section4 claims were reconstructed after reading their raw
+statements (so their review is independent verification, not blind discovery):
+
+* The separable cover Sigma=E|chi_s><chi_s| dominates |T><T| by variance of
+  every scalar projection. Its trace is E w<=1. The operator claim and local
+  product-readout consequence are proved as written. This does not give an
+  efficient sampler for an arbitrary global entangled measurement.
+* With robustness explicitly DEFINED by minimum trace of a separable PSD cover
+  minus one, dividing Sigma by p immediately proves p(1+R)<=1. Matching this
+  definition to an external named entanglement measure is a source obligation,
+  not needed to the stated internal inequality.
+* For two dual-rail groups, both rejected terms are xy+z and
+  (1-x)(1-y)+z. The determinant factorization of the accepted2x2 matrix gives
+  pC=2sqrt[(xy-z)((1-x)(1-y)-z)], and AM-GM gives pC<=1-p. In the supplied
+  one-parameter family z=0, x+y=1, so equality holds and C spans[0,1]. Thus
+  the claimed sharp p<=1/(1+C) frontier is correct under the paragraph's
+  lossless/no-extra-mode/two-photon assumptions. It is a coincidence-selected
+  state, not a deterministic or ancillary-heralded Bell-pair preparation claim.
+
+No correctness gap was found in these exact scopes. Novelty of the complete
+composition is NOT verified by this audit. Random-sign permanent estimation,
+AM-GM, covariance PSD, and concurrence/determinant ingredients must retain
+their attribution and should not be repackaged as novel standalone results.
+No numerical computation or QPU call was executed in this review.
