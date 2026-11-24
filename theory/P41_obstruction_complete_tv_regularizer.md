@@ -109,6 +109,12 @@ discard-reward bug. Future noisy objectives must explicitly assign failures
 to events with fewer than k detections, or prove a different extension; no
 postselection normalization may erase their resource cost.
 
+The training objective must use E[R_k(n)], not R_k(E[n]). For m=2k the
+uniform mean vector n_i=1/2 gives R_k(E[n])=-k^2, even for a distribution
+supported entirely on valid binary occupations, where E[R_k(n)]=0. Jensen's
+inequality is not an equality and does not turn fractional mean occupations
+into a valid collision certificate.
+
 For any fixed total k,
 
     F_G(n)=sum_i d_i n_i-2sum_edges w_ij min(n_i,n_j),
