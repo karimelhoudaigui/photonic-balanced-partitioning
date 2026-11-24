@@ -1,0 +1,124 @@
+{
+  "started_at": "2026-11-24T21:04:26.487538+00:00",
+  "finished_at": "2026-11-24T21:04:50.427823+00:00",
+  "repository_commit": "bc75c741fdedadf2d101d59490c593f77b2665d3",
+  "checks": [
+    {
+      "check": "pytest",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "-m",
+        "pytest",
+        "tests/",
+        "-q"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 23.570872500014957,
+      "stdout": "reports/P42_validation/pytest_stdout.txt",
+      "stderr": "reports/P42_validation/pytest_stderr.txt"
+    },
+    {
+      "check": "publication",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "scripts/build_publication.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.11730729101691395,
+      "stdout": "reports/P42_validation/publication_stdout.txt",
+      "stderr": "reports/P42_validation/publication_stderr.txt"
+    },
+    {
+      "check": "paper_diff",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "27443954fb7491a293399f0417d05185009f5c9a",
+        "--",
+        "paper/"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.016965749964583665,
+      "stdout": "reports/P42_validation/paper_diff_stdout.txt",
+      "stderr": "reports/P42_validation/paper_diff_stderr.txt"
+    },
+    {
+      "check": "p41_adaptive",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "research/P41_adaptive_runs/run001/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.04069458297453821,
+      "stdout": "reports/P42_validation/p41_adaptive_stdout.txt",
+      "stderr": "reports/P42_validation/p41_adaptive_stderr.txt"
+    },
+    {
+      "check": "p41_encoding",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "experiments/P41_encoding/run_001/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.0419151249807328,
+      "stdout": "reports/P42_validation/p41_encoding_stdout.txt",
+      "stderr": "reports/P42_validation/p41_encoding_stderr.txt"
+    },
+    {
+      "check": "p41_l1",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "experiments/P41_obstruction_l1/run/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.038400040997657925,
+      "stdout": "reports/P42_validation/p41_l1_stdout.txt",
+      "stderr": "reports/P42_validation/p41_l1_stderr.txt"
+    },
+    {
+      "check": "p42_primary",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "experiments/P42_loss_spectrum/run_001/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.046937292034272105,
+      "stdout": "reports/P42_validation/p42_primary_stdout.txt",
+      "stderr": "reports/P42_validation/p42_primary_stderr.txt"
+    },
+    {
+      "check": "p42_replication",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "experiments/P42_replication/run_001/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.039442457957193255,
+      "stdout": "reports/P42_validation/p42_replication_stdout.txt",
+      "stderr": "reports/P42_validation/p42_replication_stderr.txt"
+    }
+  ],
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "paper_diff_against": "27443954fb7491a293399f0417d05185009f5c9a",
+  "all_passed": true,
+  "qpu_calls": 0,
+  "historical_preservation_receipt": "reports/P42_validation/archive_preservation.json",
+  "note": "Test/check receipt; no new physical experiment. Original pre-existing modified .DS_Store excluded from commits."
+}

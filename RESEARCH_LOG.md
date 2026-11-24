@@ -700,3 +700,43 @@ Primary thesis chosen: density-qualified replacement plus resource accounting, f
 
 
 Release verification:484PASS in a freshly installed37-pin Python environment;16-page compiled PDF and three source-review perspectives delivered. Portable P40 replay on the integration branch reproduces all45 laws;602 historical scientific files remain unchanged. Detailed commands, hashes, review limits and unresolved publication/QPU gates: reports/RECOVERY_EXECUTION_REPORT.md.
+
+## 2026-11-24 — P41 discovery and P42 loss-spectrum obstruction
+
+QUESTION: can a new optimum-blind mechanism escape E05b, or can a materially
+broader approach class be ruled out? Contract f09c7ec, base2744395. Three
+isolated lanes explored chiral exchange, grouped encodings and new objectives.
+
+P41/R1: a positive classical proposal reproduces the genuine cubic exchange
+current with a TV remainder.72 declared cells pass sparse-Fock/Ryser checks;
+favorable B-versus-D cells do not beat the proxy. P41/R2: random-wave feasible
+sampling dominates grouped physical subprobabilities, independently derived
+and reviewed.1260 Fock outcomes/two Perceval comparisons retained. The core
+phase-twirl/Glynn ingredients are known; adaptive-history and matched-realized-
+score extensions are not inferred. P41/R3: a connected L1 example refutes an
+overbroad convex extension of the old quadratic mean ordering.384 exact
+identities/64 graph cases pass. The fixed-k collision gap is not an optimizer.
+
+P42 ANALYSIS: a loss-mixture spectrum and support-projector rank bound every
+permitted graph/history-dependent passive controller. With cap b,
+L=ceil(nQ/nC), L*binom(2k,k)*b<=1 implies uniform feasible search stochastically
+dominates best newly measured cost. Source/internal-state proofs frozen525e254
+pass exact-hash independent reconstruction/audit. No Haar assumption or oracle.
+
+EXECUTION:462 exact table rows,2375 source-partition rows,80 optical checks,
+CPU3.550s. Independent freeze c4a178d before execution; separate normalized
+spatial/internal source and partial trace, no primary/production imports, fresh
+seeds2026112471/72:42 configurations/168 laws/2880 support checks, CPU0.368s.
+All finite assertions pass at1e-10; maximum residual1.4433e-15. Original
+completed v2 manifests, commands, source hashes and immutable raw are versioned.
+
+FALSIFICATION: bunched input, partial internal species and nonmonotone N refute
+naive extensions. The corrected ordered block-trace bound is retained. The N8
+species counterexample has an analytic derivation, not an independent N8 run.
+
+DECISION: KEEP scoped P42 theorem/replication; REJECT identified extensions and
+leading/grouped advantage arguments. Positive optimizer target/novelty OPEN.
+P43 investigates global finite-angle statistics and local L1 evaluation.
+No paper edit/QPU call.521PASS; five manifests valid;602 historical files and
+paper unchanged. Full evidence: reports/P42_DISCOVERY_CHECKPOINT.md and
+reports/P42_validation/verification.json.

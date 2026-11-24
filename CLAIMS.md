@@ -86,3 +86,16 @@ IID probes, not executed adaptive optimizers or equal-total-resource proofs.
 The unsupported cf49741/6154b46 superiority and ready flags are withdrawn. Current accepted claims are the exact P33 density-qualified absolute-TV certificate (known ingredients, complete originality OPEN), P37 criterion-dependent Haar-loss source theorem, and the restricted negative E05b benchmark. Per-state/graph constants and source domains are corrected in the rebuilt manuscript. Current evidence: reports/SCIENTIFIC_INTEGRITY_AUDIT.md, NUMERICAL_RECONCILIATION.md and PUBLICATION_THESIS.md.
 
 A new optimum-blind training API rejects optimal-mask objectives; old oracle diagnostics remain archived. New noise code is a bounded theoretical pure-internal-state/loss simulator, not a hardware calibration. The local pilot works; actual backend compatibility/authorization remain false. PDF/tests do not change novelty or advantage status.
+
+## P41/P42 discovery restart — 2026-11-24
+
+These are research results, not manuscript additions. Audited hashes, commits,
+commands and data: reports/P42_DISCOVERY_CHECKPOINT.md. Proof does not imply novelty.
+
+| ID | Exact statement / scope | Status | Evidence and limits |
+|---|---|---|---|
+| CLAIM-038 | For disjoint one-photon output groups and a fixed passive frame, an efficient classical random-wave feasible law pointwise dominates the unconditioned grouped probabilities. | PROVEN | P41_encoding_grouped_domination.md and independent reconstruction/audit. Known phase-twirl/Glynn ingredients; no automatic adaptive-history or equal-realized-score-budget extension. |
+| CLAIM-039 | Fresh distinct identical-photon inputs, uniform internal-blind loss and complete direct-support readout obey the P42 per-string cap; L*binom(2k,k)*b<=1 with L=ceil(nQ/nC) implies uniform feasible search stochastically dominates adaptive best newly measured cost. | PROVEN | Frozen525e254; independent exact-hash adaptive/physics verdicts. No Haar assumption; eta<=1/5 suffices at equal counts. Source, loss, frontend and guaranteed cost hypotheses essential. No measured QPU efficiency. |
+| CLAIM-040 | The general fixed-Fock/unknown-internal-state support bound is the sum of the largest projector-rank number of loss block traces, with ordered surjection ranks for arbitrary internals. | PROVEN | P42_general_fock_loss_extension.md, independent ordered partial-trace reconstruction in P42_replication_report.md.42 configurations/168 laws check a finite implementation; no superposition/herald/nonuniform-loss claim. |
+| CLAIM-041 | The complete P42 adaptive optimization obstruction is globally new. | OPEN | Known loss/spectral/first-hit ingredients identified. Bounded source comparison does not establish absence from prior literature. |
+| CLAIM-042 | A new optimum-blind interference optimizer passes independent D, strong feasible classical controls, fresh seeds, labels, held-out graphs and full costs. | OPEN | No such result yet. P41 is diagnostic; P42 is an obstruction. Positive replication/QPU gate remain closed. |

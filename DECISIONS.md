@@ -140,3 +140,24 @@ The user's explicit recovery request authorizes rebuilding paper/ and supersedes
 Integrate disjoint mathematical/numerical/physical/hardware work via Git worktrees. Add a bounded physical noise module and seven local non-submitting QPU commands. OFFLINE_PILOT_READY=TRUE after supervisor reproduction; QPU_GATE remains CLOSED. Never equate public product/software documentation with verified account/backend capabilities.
 
 No further broad optimization sweep without a changed registered mechanism. No actual QPU, paid inference, article submission or message to Laurent. Publication and hardware gates remain separately documented.
+
+## 2026-11-24 — research restart and P42 acceptance
+
+- The newest request restores the manuscript freeze until a positive optimizer
+  result is independently replicated and hardware tested. Preserve release,
+  P33/P37 and every E05b run.
+- ACCEPT the exact-hash P42 identical-source proof after independent adaptive
+  review and both source/internal-state caps after independent physics review.
+  ACCEPT registered finite assertions from two different physical calculations;
+  they are not floating universal proofs or calibrated device models.
+- RETAIN original pre-run worker commits, raw laws, commands, manifests and
+  failed extensions. Integrate inspected isolated commits only. The original
+  user .DS_Store remains uncommitted.
+- Interpret P42 conditionally on source/loss/readout/frontend/guaranteed-cost
+  hypotheses. Ideal high-transmission algorithms and changed decoders remain
+  outside this obstruction; full-composition novelty is separately OPEN.
+- Do not repeat P41 weak-angle/grouped pilots unchanged. A local nonlinear mean
+  is insufficient. A new global/tail mechanism must face reoptimized D,
+  correlated feasible samplers and serious classical search at full costs.
+- Checkpoint: reports/P42_DISCOVERY_CHECKPOINT.md. Positive target OPEN;
+  PAPER_READY=FALSE; QPU_GATE=CLOSED.

@@ -146,3 +146,25 @@ Every E05b run is retained. Bosonic final means .6523129783/.2795490911/.0678727
 Only9/9/10 unique labeled weighted graphs arise from twelve nominal slots per size. Graph-cluster intervals are descriptive; exact within-batch first-hit order is missing. P21 classical controls use scored cut queries, not equal physical attempts. Authentic ObliQ training/source/decoding remains incomplete. Oracle-preparation gains cannot support autonomous search.
 
 The unsupported n10/12 and4.8× advantage tables, K4 Haar0.2, K2,2 optimum4, identity-uniform claim and noisy.381 value are withdrawn. Original versions remain in Git6154b46. Full claim dispositions: reports/SCIENTIFIC_INTEGRITY_AUDIT.md. First TeX cache/missing-table setup failures are build failures, not scientific negative experiments.
+
+## P41/P42 falsification — 2026-11-24
+
+- Weak-angle chiral exchange has a real interference term, but a positive
+  classical feasible proxy reproduces its leading current.72 finite cells
+  support the calculation, not a new optimizer advantage.
+- Grouped feasible probabilities have a classical random-wave cover. A naive
+  all-CF extension fails normalization (exact mass913/625); pointwise dominance
+  alone also fails for divergent adaptive histories. Both failures are retained.
+- The old quadratic mean obstruction does not extend to every convex cost:
+  the connected L1 example has bosonic mean lower by3/16. A failed proof
+  shortcut does not establish computational benefit.
+- The distinct-input P42 cap fails for a bunched input: two-click probability
+  2167/80000>1/100 at eta0.1. Independent physical replication retains it.
+- Partial distinguishability need not reduce each useful probability: the
+  DFT6-plus-spectators two-species construction violates the naive identical
+  envelope. The corrected general bound uses ordered ranks and block traces.
+- The source cap is nonmonotone: b_(5,3)>b_(6,3) for0<eta<1/3. Checking only
+  Nmax would be invalid.
+
+No positive new graph benchmark, hardware efficiency or guaranteed device cost
+is fabricated. Immutable runs and interpretation: reports/P42_DISCOVERY_CHECKPOINT.md.

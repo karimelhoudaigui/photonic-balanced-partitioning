@@ -1,5 +1,22 @@
 # Research status — 24 November 2026
 
+Active discovery branch: research/p41-discovery, restarted from published
+2744395. The current task is new optimum-blind mechanism research. P41's chiral
+and grouped proposals have explicit classical countercontrols. P42 now has
+independently reviewed loss-spectrum/adaptive best-cost obstruction proofs and
+an independent ordered-state replication (42 configurations,168 laws). These
+are scoped obstructions, not an optimizer advantage or calibrated QPU verdict.
+Complete-composition novelty is OPEN. P43 examines a changed global observable
+and the classical evaluation of local L1 means. Read the
+[active checkpoint](reports/P42_DISCOVERY_CHECKPOINT.md).
+
+Current integrated checks:521 tests PASS; five P41/P42 manifests validate;
+602 historical scientific files unchanged; publication inputs/outputs and every
+paper/ byte match the delivered snapshot. Commands and logs are in
+reports/P42_validation/verification.json. The newest user gate requires a
+positive independently replicated optimizer result before new QPU preparation
+or manuscript revision. That gate remains CLOSED; the original target is OPEN.
+
 MANUSCRIPT_REBUILT=TRUE describes the delivered artifact. PAPER_READY=FALSE for submission; originality/significance still require assessment. OFFLINE_PILOT_READY=TRUE; HARDWARE_COMPATIBILITY_VERIFIED=FALSE; QPU_GATE=CLOSED. No hardware attempt, credit, submission or message was used.
 
 The original optimum-blind optimization-benefit objective remains OPEN. All756 E05b runs were reaggregated: distinguishable final mean success exceeds bosonic at n4/6/8, and every run already finds an optimum during training. Missing within-batch shot order prevents an independently reconstructed exact first-hit curve. Source/graph duplicates and differing classical resource units are disclosed.

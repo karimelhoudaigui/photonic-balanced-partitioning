@@ -1,5 +1,15 @@
 # Open scientific questions — current continuation contract
 
+Live discovery checkpoint: reports/P42_DISCOVERY_CHECKPOINT.md, with acceptance
+contract research/P41_DISCOVERY_CONTRACT.md, restarted from2744395. P42's
+direct-support high-loss obstruction is proved in its specified model; the
+unrestricted ideal optimizer target and full-composition novelty remain OPEN.
+Do not rerun P41 weak-angle/grouped pilots unchanged. The next mechanism must
+evade an identified bottleneck: finite-angle global improvement statistics or
+a genuinely different decoder, with charged classical controls. P43 checks
+that a nonlinear but two-mode-additive mean is not mistaken for a hard or
+uniquely quantum objective. No held-out positive result or QPU gate is claimed.
+
 Base research restart:847d7a0e05cdf7fa8ca50c68f51f8d7e03158508.
 Current live evidence: STATUS.md, reports/RECOVERY_EXECUTION_REPORT.md, the P39 checkpoint and the P40 records. Earlier routes below retain their historical context; accepted native
 cycle: reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md (b8b04ac);
