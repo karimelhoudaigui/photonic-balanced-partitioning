@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "claim_id": "P41_R3_L1_EXACT_DISCRIMINATOR",
+  "repository": {
+    "commit": "fe02f170411d7aab8aee4c5b67ad62bfbfc1985b",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "experiments/P41_obstruction_l1/check_exact.py",
+    "--output",
+    "experiments/P41_obstruction_l1/run/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "All 384 fixed graph/frame/penalty cases satisfy the complete-law L1 difference formula exactly; all 64 simple graphs obey the zero-sum adjacency/complete-multipartite equivalence; the connected weighted witness has a proper CF ground encoding and bosonic mean gap -3/16.",
+    "coefficient_domain": "Q, exact Python Fraction arithmetic",
+    "conventions": "Rows are outputs, columns inputs; input occupations 1,1,0,0; both labelled-particle and bosonic full laws include all 10 Fock outputs without conditioning.",
+    "inputs": [
+      "all 64 simple labelled four-vertex graphs in fixed edge-bit order",
+      "Walsh and embedded rational Householder frames",
+      "mu=0,1,3",
+      "weighted connected matching-plus-bridge epsilon=1/4,mu=1"
+    ],
+    "bounds": {
+      "m": 4,
+      "k": 2,
+      "graphs": 64,
+      "frames": 2,
+      "mu_values": 3,
+      "rows": 384
+    },
+    "non_claims": [
+      "novelty",
+      "quantum optimization advantage",
+      "independent replication",
+      "all photon numbers",
+      "hardware validation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-24T20:17:50.339420+00:00",
+    "runtime_seconds": 0.142664,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 10,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/P41_obstruction_l1/check_exact.py",
+    "research/P41_obstruction_contract.md",
+    "theory/P41_obstruction_l1_escape.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/P41_obstruction_l1/check_exact.py",
+      "sha256": "46e8ab87e0caff7306bda8f7d606f2f4597fbfe50de5f468058918c717d3d3b3",
+      "sha256_after": "46e8ab87e0caff7306bda8f7d606f2f4597fbfe50de5f468058918c717d3d3b3"
+    },
+    {
+      "path": "research/P41_obstruction_contract.md",
+      "sha256": "978e28c68bf340902e286c8348242fa8a4f5f77ea6510a38526cb78ebc361c19",
+      "sha256_after": "978e28c68bf340902e286c8348242fa8a4f5f77ea6510a38526cb78ebc361c19"
+    },
+    {
+      "path": "theory/P41_obstruction_l1_escape.md",
+      "sha256": "37bd481aed224dcbcb850f13d74d43e6c2dce0b5c1a4d7ee2811945fadcbdeed",
+      "sha256_after": "37bd481aed224dcbcb850f13d74d43e6c2dce0b5c1a4d7ee2811945fadcbdeed"
+    }
+  ],
+  "output_directory": "experiments/P41_obstruction_l1/run",
+  "declared_results": [
+    "experiments/P41_obstruction_l1/run/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P41_obstruction_l1/run/stdout.txt",
+      "sha256": "a9bf463b162cbc9844328a9346a3bec59df02228dd8b8c88bba2d73c6a49d886",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P41_obstruction_l1/run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P41_obstruction_l1/run/raw.json",
+      "sha256": "ec263aa4d3e875d0823c513cb557b52a22d4d38e234658f68400cc1fb4164881",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
