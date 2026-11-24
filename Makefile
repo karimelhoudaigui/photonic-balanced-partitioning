@@ -1,28 +1,20 @@
-.PHONY: test exact ideal noisy figures paper clean install
-
+PYTHON ?= .venv/bin/python
+TECTONIC ?= tectonic
+.PHONY: test figures paper check install clean offline-pilot
 install:
-	pip install -e '.[all]'
-
+	$(PYTHON) -m pip install -e '.[all]'
 test:
-	pytest tests/ -v
-
-exact:
-	python -c "from tests.run_exact import main; main()"
-
-ideal:
-	python -c "from experiments.ideal.run_ideal import main; main()"
-
-noisy:
-	python -c "from experiments.noisy.run_noisy import main; main()"
-
+	OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 $(PYTHON) -m pytest tests/ -q
 figures:
-	python -c "from analysis.generate_figures import main; main()"
-
-paper:
-	cd paper && pdflatex main.tex
-
+	$(PYTHON) scripts/build_publication.py
+check:
+	$(PYTHON) scripts/build_publication.py --check
+paper: check
+	$(TECTONIC) --untrusted --keep-logs paper/main.tex
+	$(PYTHON) scripts/verify_manuscript.py
+# The destination must be new; provide OUT=/absolute/new/directory.
+offline-pilot:
+	@test -n "$(OUT)" || (echo 'Set OUT to a new directory'; exit 2)
+	PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 $(PYTHON) qpu/offline_pilot_20261124_v1/reproduce.py --output "$(OUT)"
 clean:
-	rm -rf __pycache__ */__pycache__ */*/__pycache__
-	rm -rf .pytest_cache
-	rm -rf *.pyc
-	rm -rf results/*.json
+	$(PYTHON) scripts/clean_build.py

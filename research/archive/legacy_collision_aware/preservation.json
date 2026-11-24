@@ -1,0 +1,22 @@
+{
+  "source_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+  "identical_backups": [
+    {
+      "original_path": "src/photonic_balanced_partitioning/photonic/collision_aware.py.bak",
+      "sha256": "d13e6e39ea400fb285105bf72c8f9686537f68c23d8252b9ef960fb5de362b8f",
+      "bytes": 3983
+    },
+    {
+      "original_path": "src/photonic_balanced_partitioning/photonic/collision_aware.py.backup",
+      "sha256": "d13e6e39ea400fb285105bf72c8f9686537f68c23d8252b9ef960fb5de362b8f",
+      "bytes": 3983
+    },
+    {
+      "original_path": "src/photonic_balanced_partitioning/photonic/collision_aware.py.new",
+      "sha256": "d13e6e39ea400fb285105bf72c8f9686537f68c23d8252b9ef960fb5de362b8f",
+      "bytes": 3983
+    }
+  ],
+  "archived_as": "research/archive/legacy_collision_aware/collision_aware.py.txt",
+  "note": "Three identical tracked temporary files. Historical experiment status lists mention these paths but no source input manifest depends on them. Git and this copy retain original bytes. This is not the recovered production implementation."
+}

@@ -55,3 +55,11 @@ results/qpu/*/analysis.json
 .qwen/worktrees/
 .qwen/debug/
 .qwen/tmp/
+
+# TeX auxiliaries (the manuscript PDF and generated figure PDFs are versioned)
+paper/*.aux
+paper/*.blg
+paper/*.bbl
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
