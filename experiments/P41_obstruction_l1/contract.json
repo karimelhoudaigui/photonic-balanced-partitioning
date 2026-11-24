@@ -1,0 +1,23 @@
+{
+  "claim_id": "P41_R3_L1_EXACT_DISCRIMINATOR",
+  "mathematics": {
+    "assertion_tested": "All 384 fixed graph/frame/penalty cases satisfy the complete-law L1 difference formula exactly; all 64 simple graphs obey the zero-sum adjacency/complete-multipartite equivalence; the connected weighted witness has a proper CF ground encoding and bosonic mean gap -3/16.",
+    "coefficient_domain": "Q, exact Python Fraction arithmetic",
+    "conventions": "Rows are outputs, columns inputs; input occupations 1,1,0,0; both labelled-particle and bosonic full laws include all 10 Fock outputs without conditioning.",
+    "inputs": [
+      "all 64 simple labelled four-vertex graphs in fixed edge-bit order",
+      "Walsh and embedded rational Householder frames",
+      "mu=0,1,3",
+      "weighted connected matching-plus-bridge epsilon=1/4,mu=1"
+    ],
+    "bounds": {"m": 4, "k": 2, "graphs": 64, "frames": 2, "mu_values": 3, "rows": 384},
+    "non_claims": ["novelty", "quantum optimization advantage", "independent replication", "all photon numbers", "hardware validation"]
+  },
+  "execution_artifacts": [
+    "experiments/P41_obstruction_l1/check_exact.py",
+    "research/P41_obstruction_contract.md",
+    "theory/P41_obstruction_l1_escape.md"
+  ],
+  "software": [{"name": "computation Python", "version": "3.11.15"}],
+  "randomness": {"used": false, "generator": "none", "seed": null}
+}
