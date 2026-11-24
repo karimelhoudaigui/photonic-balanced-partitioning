@@ -24,6 +24,7 @@ pluggy==1.7.0
 protobuf==7.34.1
 Pygments==2.21.0
 pyparsing==3.3.3
+pypdf==6.4.0
 pytest==8.4.2
 python-dateutil==4.0.0
 requests==2.34.2

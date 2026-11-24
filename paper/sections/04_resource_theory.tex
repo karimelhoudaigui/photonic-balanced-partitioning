@@ -1,0 +1,52 @@
+\section{Uniform loss and the resource-dependent source optimum}\label{sec:loss}
+For the direct $N=k$ encoding, uniform independent transmission $\eta$ retains all photons with probability $\eta^k$. If validity requires all $k$ photons, a fixed ideal success probability obeys
+\begin{equation}
+ \succp(\eta)=\eta^k\succp(1).\label{eq:all_detected}
+\end{equation}
+The illustrative inputs $k=4$, $\eta=0.9$, $\succp(1)=0.537$ give $0.3523257$, not $0.381$. This is an arithmetic model check, not an experimental datum or a reproduced optimized-circuit result.
+
+A different source protocol accepts exactly $k=m/2$ \emph{threshold clicks}, allowing $N\ge k$ injected photons and output collisions or losses. It must not be conflated with direct $N=k$ collision-free encoding. For $\ell$ surviving photons and a Haar mode unitary, the known averaged acceptance law~\cite[Lemma 1, Eq.~(6), v2]{bouland2023} is
+\begin{equation}
+ h(\ell)=\frac{\binom{m}{k}\binom{\ell-1}{k-1}}{\binom{m+\ell-1}{\ell}}\quad(\ell\ge k),\qquad h(\ell)=0\quad(\ell<k).\label{eq:haar_click}
+\end{equation}
+For clarity, Haar averaging is uniform on Fock compositions; it is not a claim that a fixed interferometer has this law. With distinct single-photon inputs and uniform loss, survival sectors commute through the interferometer. Thus, for $L\sim\mathrm{Bin}(N,\eta)$,
+\begin{equation}
+ S_N(\eta)=\E h(L),\qquad b_N(\eta)=S_N(\eta)/N.\label{eq:source}
+\end{equation}
+All attempts, including vacuum, count in $S_N$.
+
+\begin{theorem}[Two resource objectives, different source choices]\label{thm:source}
+Let $m\ge8$ be even, $k=m/2$, $k\le N\le m$, and $0<\eta<1$.
+\begin{enumerate}
+\item The maximizer of $S_N$ lies in $\{m-1,m\}$. A unique $a_m\in(0,1)$ satisfies $S_m(a_m)=S_{m-1}(a_m)$. The optimum is $m$ below $a_m$ and $m-1$ above it.
+\item The maximizer of $b_N$ lies in $\{m-3,m-2,m-1,m\}$. The adjacent crossings $b_{j+1}(\tau_j)=b_j(\tau_j)$ are unique and obey
+\begin{equation}
+ 0<\tau_{m-1}<\tau_{m-2}<\tau_{m-3}<1.
+\end{equation}
+As $\eta$ decreases, the unique optimum is successively $m-3,m-2,m-1,m$. Only adjacent candidates tie at each crossing.
+\end{enumerate}
+At $\eta=1$, $S_N$ is maximized by both $m-2,m-1$ and $b_N$ uniquely by $m-3$.
+\end{theorem}
+\begin{proof}[Proof strategy]
+The exact ratios are
+\begin{equation}
+ \frac{h(\ell+1)}{h(\ell)}=\frac{\ell(\ell+1)}{(\ell-k+1)(m+\ell)},\qquad
+ \frac{g(\ell+1)}{g(\ell)}=\frac{\ell^2}{(\ell-k+1)(m+\ell)},\quad g(\ell)=h(\ell)/\ell.
+\end{equation}
+Their adjacent differences change sign once. Adding one independent Bernoulli survivor gives $S_{N+1}-S_N=\eta\E\Delta h(L)$, $L\sim\mathrm{Bin}(N,\eta)$. Size bias gives $b_{N+1}-b_N=\eta^2\E\Delta g(R+1)$, $R\sim\mathrm{Bin}(N-1,\eta)$. The one-crossing lemma in \cref{app:source} proves uniqueness and orders the crossings, excluding nonadjacent hidden maxima. That appendix supplies the complete argument.
+\end{proof}
+
+For fixed $\lambda\ge0$, $\eta=1-\lambda/m$ and fixed $s\ge1$, the boundary expansions are
+\begin{equation}
+ \frac{S_{m-s+1}}{S_{m-s}}-1=\frac{s+\lambda-2}{2m}+O(m^{-2}),\quad
+ \frac{b_{m-s+1}}{b_{m-s}}-1=\frac{s+\lambda-4}{2m}+O(m^{-2}).\label{eq:boundary}
+\end{equation}
+Accordingly $m(1-a_m)\to1$, while the three per-photon crossing losses tend to $1,2,3$ in the corresponding order. These statements concern losses of order one photon; they are not fixed-transmission asymptotics. The proof and tail control are in \cref{app:source}. Exact rational finite checks verify \SourceProbabilityCount{} values and \SourceBracketCount{} root brackets; the checks do not prove the all-$m$ statement.
+
+\begin{figure}[tb]
+ \centering\includegraphics[width=\linewidth]{figures/fig_loss_source.pdf}
+ \caption{Resource-dependent source transitions from the archived exact rational brackets. Lines display bracket midpoints; their widths are numerical root enclosures, not statistical uncertainty. The sequences approach the boundary limits proved in the text. The finite diagram counts all attempts and concerns Haar-averaged feasibility only.}\label{fig:loss}
+\end{figure}
+\input{tables/table_losses}
+
+Accepted Haar-averaged click subsets are uniform by mode symmetry, so improving $S_N$ does not preferentially produce good graph cuts. Moreover $N/S_N$ is a first-success photon cost only if Haar draws are independently refreshed between attempts. Drawing a Haar unitary once and fixing it instead involves $\E_U[N/p_U]$, which need not equal $N/\E_U p_U$ and can diverge. Neither expression includes programming, source preparation or classical optimization costs. Fixed total photon-budget allocation is a separate problem.

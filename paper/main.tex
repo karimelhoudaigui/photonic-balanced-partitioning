@@ -1,47 +1,45 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\usepackage{hyperref}
-\usepackage{cleveref}
-\usepackage{siunitx}
-\usepackage{float}
-
-\title{Variational Collision-Aware Photonic Quantum Optimization\\ for Balanced Graph Partitioning}
-\author{
-  [Author Names]\\
-  [Affiliations]\\
-  \texttt{[emails]}
-}
-\date{\today}
-
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx,booktabs,array,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\DeclareMathOperator{\TV}{TV}
+\DeclareMathOperator{\per}{per}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\off}{off}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prb}{\mathbb P}
+\newcommand{\CF}{\mathrm{CF}}
+\newcommand{\opt}{\mathrm{opt}}
+\newcommand{\succp}{P_{\mathrm{succ}}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\input{tables/validated_numbers}
+\title{Collision-Aware Certification and Resource Accounting\\for Photonic Graph Bisection}
+\author{}
+\date{24 November 2026}
 \begin{document}
-
 \maketitle
-
 \begin{abstract}
-We develop a variational collision-aware photonic quantum optimizer for the Minimum Bisection / Balanced Graph Partitioning problem. A critical error in prior work is corrected: fixed photon number does \textbf{not} imply collision-free evolution. The full Fock space has dimension $\binom{n+k-1}{k}$, while the collision-free subspace has dimension $\binom{n}{k}$; for $n=8, k=4$ this is 330 vs. 70 states. Hong-Ou-Mandel bunching forces generic interferometers to produce collisions. We identify $P_{\mathrm{success}} = P_{\mathrm{CF}} \times P_{\mathrm{opt|CF}}$ as the correct hardware metric---the probability per physical shot of obtaining an optimal collision-free solution. A Clements mesh interferometer is variationally optimized via COBYLA on the exact output distribution to maximize $P_{\mathrm{success}}$. Across $n=4,6,8,10,12$ and 8 graph families, variational optimization achieves $P_{\mathrm{success}}$ \textbf{5$\times$--227$\times$ higher than Haar-random interferometers} and \textbf{1.1$\times$--10$\times$ higher than penalty-based QUBO} at equal classical evaluation budget. For $n\ge 8$ on structured graphs, indistinguishable photons outperform distinguishable photons by up to $4.8\times$, demonstrating genuine multi-photon interference benefit. A complete QPU protocol for Quandela Belenos is defined. The fixed-particle-number photonic approach enforces the cardinality constraint physically rather than softly via penalties, fundamentally changing the optimization landscape.
+A passive interferometer preserves photon number, but its outputs need not encode valid balanced graph partitions. We study when collision information permits a quantitative replacement of its full bosonic output law by independent distinguishable particles, and what this permits one to claim about photonic optimization. For orthonormal occupied orbitals, a positive floor $c$ on every nonzero output intensity and an expected collision-pair count $M<c^2/2$ imply an explicit total-variation bound with leading upper envelope $M/(2c)$ at fixed $c$. A balanced two-photon family makes this coefficient sharp at $c=1/2$; a growing balanced spectator family shows why collision probability alone is insufficient. We give a complete proof while identifying its established permanent, cycle and rounding ingredients. We also prove a finite source-selection phase diagram under uniform loss: Haar-averaged threshold feasibility has two candidate source sizes per attempt and four per injected photon. These are feasibility results, not graph-quality enrichment. Finally, a reconciliation of all \ErunCount{} archived equal-budget runs at $n=4,6,8$ finds lower mean final success for the bosonic model than for its independently trained distinguishable control at each size. The recorded data establish no optimization advantage. A locally tested, explicitly offline Perceval pilot specifies the measurements needed for a future hardware comparison; no QPU data are reported. Originality of the complete density composition remains an open attribution question.
 \end{abstract}
-
 \input{sections/01_introduction}
-\input{sections/02_problem}
-\input{sections/03_penalty_baseline}
-\input{sections/04_photonic_formulation}
-\input{sections/05_theory}
-\input{sections/06_methods}
-\input{sections/07_exact_results}
-\input{sections/08_noisy_results}
-\input{sections/09_qpu_results}
-\input{sections/10_hpc_case_study}
-\input{sections/11_limitations}
-\input{sections/12_conclusion}
-
+\input{sections/02_model}
+\input{sections/03_certificate}
+\input{sections/04_resource_theory}
+\input{sections/05_experiments}
+\input{sections/06_pilot}
+\input{sections/07_discussion}
 \bibliographystyle{plain}
 \bibliography{references}
-
 \appendix
-\input{appendices/algorithms}
-
+\input{appendices/proofs}
+\input{appendices/reproducibility}
 \end{document}

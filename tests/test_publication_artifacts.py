@@ -42,7 +42,7 @@ def test_counts_and_seven_method_table_are_derived(published_copy):
     summary=json.loads((root/f'{m.VALIDATED}/summary.json').read_text())
     loss=json.loads((root/f'{m.LOSS}/data/raw.json').read_text())
     with (root/f'{m.VALIDATED}/benchmark.csv').open() as f:count=sum(1 for _ in csv.DictReader(f))
-    expected=dict(ErunCount=count,SourceProbabilityCount=sum(len(c['values']) for c in loss['grid']),SourceBracketCount=len(loss['transitions']))
+    expected=dict(ErunCount=count,SourceProbabilityCount=sum(len(c['values']) for c in loss['grid']),SourceBracketCount=len(loss['transitions']),CalibrationCellCount=json.loads((root/f'{m.CALIBRATION}/summary.json').read_text())['cells'])
     assert manifest['counts']==expected
     macros=(root/m.OUTPUTS[0]).read_text()
     for key,value in expected.items():assert rf'\providecommand{{\{key}}}{{{value}}}' in macros
@@ -66,7 +66,7 @@ def test_fraction_selection_preserves_ties_and_tiny_differences():
     assert all(r['per_attempt']==[7] and r['per_photon']==[6,7] for r in chosen)
 
 
-@pytest.mark.parametrize('logical',[m.GENERATOR,*m.OUTPUTS,*(f'{m.VALIDATED}/{name}' for name in ('summary.json','benchmark.csv','campaigns.json','source_hashes.json')),f'{m.LOSS}/data/raw.json',f'{m.DENSITY}/primary/data/raw.json'])
+@pytest.mark.parametrize('logical',[m.GENERATOR,*m.OUTPUTS,*(f'{m.VALIDATED}/{name}' for name in ('summary.json','benchmark.csv','campaigns.json','source_hashes.json')),f'{m.LOSS}/data/raw.json',f'{m.DENSITY}/primary/data/raw.json',f'{m.CALIBRATION}/raw.jsonl',f'{m.CALIBRATION}/summary.json'])
 def test_check_detects_changed_generator_inputs_tables_and_figures(published_copy,logical):
     root,_=published_copy;path=root/logical;original=path.read_bytes()
     try:
