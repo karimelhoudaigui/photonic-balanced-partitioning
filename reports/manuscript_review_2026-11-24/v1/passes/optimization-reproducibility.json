@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "pass_id": "optimization-reproducibility",
+  "reviewer": "optimization-reproducibility",
+  "manuscript_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+  "source_files_sha256": "6dc10cc04c021258f1b3904a9446a9952ff91f70f54f837d989cd4ce25001726",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "issues": [
+    {
+      "id": "OR-F001",
+      "lane": "exposition",
+      "title": "Identify the E05b fitted objective, optimizer and exact-versus-heldout reported metric",
+      "severity": "moderate",
+      "type": "over-compressed",
+      "confidence": 0.99,
+      "location": "paper/sections/05_experiments.tex:13; sec:experiments, Exactly recorded query and attempt budgets",
+      "quote": "Each optimized trajectory records $120$ objective evaluations, $256$ ideal sampled attempts per evaluation, and a final $4096$-attempt batch: $120\\times256+4096=34816$ attempts.",
+      "analysis": "The budget is correct, but the full manuscript never identifies COBYLA or says which of its earlier example losses produced E05b. Eq.(train) presents several alternatives without fixing mu. The pinned historical driver at af0978455258bb44ef51d328e9ac977546eb2331 uses a sampled conditional-cut loss plus 2 times the rejected fraction for photonic/iid models, full binary penalized energy for the Bernoulli model, COBYLA with rhobeg=.35 and tol=1e-7, minimum-observed-loss selection, and Gaussian scale .1 completion when COBYLA stops early. It also computes final_p_success by summing the selected ideal distribution and records a distinct 4096-draw heldout count/rate. The table says ideal final success but does not explicitly identify which of these two reported quantities is plotted. This is missing experimental-method information, not a numerical contradiction or evidence of C* leakage.",
+      "suggested_fix": "Add a compact E05b protocol paragraph specifying the loss and mu=2, zero-feasible W+3 fallback, penalty objective, optimizer/hyperparameters, exact-call completion and selection rule. Explicitly name final_p_success as the exact ideal selected-circuit probability used for table points and graph-cluster intervals, and distinguish heldout count rates/Wilson intervals. Give a stable locator for the historical driver and seed/initialization rules.",
+      "unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+      "reviewer": "optimization-reproducibility"
+    },
+    {
+      "id": "OR-F002",
+      "lane": "exposition",
+      "title": "Specify the multiplicity-weighted graph bootstrap and interval construction",
+      "severity": "moderate",
+      "type": "over-compressed",
+      "confidence": 0.99,
+      "location": "paper/sections/05_experiments.tex:18; caption of fig:e05b",
+      "quote": "Descriptive intervals resample unique fixed-graph units after averaging training seeds; they are not a population confidence claim for random graph ensembles.",
+      "analysis": "The stated graph unit and non-population caveat are appropriate. However, neither this caption nor the table/methods identifies the 2.5/97.5 percentile level, 2000 bootstrap replicates, seed rule, or the ratio estimator actually used. scripts/reconcile_experiments.py:cluster_interval forms cluster totals t_g and counts n_g, resamples G unique graph clusters with replacement, then uses sum(t_g)/sum(n_g). n_g is unequal: the n4/n6 groups have three clusters of six records and six of three, while n8 has two of six and eight of three. Averaging seed means and then averaging graph means without multiplicity weights would produce a different statistic: for n4 bosons that mean is .5972652189994163 instead of the retained nominal .6523129782732949. The published numbers are consistent with the code; the missing weighting/percentile specification makes the prose insufficient to reconstruct the intervals unambiguously.",
+      "suggested_fix": "State that cluster means retain their nominal record multiplicity inside each resampled ratio: sum_g n_g*pbar_g / sum_g n_g. State 2000 replicates and empirical 2.5th/97.5th percentiles, with the fixed PCG64 seed rule or a precise code locator. Retain the explicit descriptive, fixed-family, duplicate-graph and non-population qualifications.",
+      "unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+      "reviewer": "optimization-reproducibility"
+    },
+    {
+      "id": "OR-F003",
+      "lane": "exposition",
+      "title": "Loss figure caption refers to limit guides absent from the sealed graphic",
+      "severity": "minor",
+      "type": "other",
+      "confidence": 1.0,
+      "location": "paper/sections/04_resource_theory.tex:48; caption of fig:loss",
+      "quote": "Dotted lines show the proved boundary limits.",
+      "analysis": "The v1 publication manifest seals fig_loss_source.pdf with SHA256 02d3a2f15f64425bab1d76122c0495fed7d9b69828b3fa6e38ec0e9f0a47ac0b. Its first panel contains four solid finite-m bracket series, and its second panel an m=128 step diagram. The exact matching v1 generator draws errorbar and step series and no limit-guide axhline. Fresh pypdf inspection found no nonempty PDF line-dash pattern in this sealed graphic. Thus the quoted caption describes a visual element that is absent, although the theorem and archived brackets are not contradicted.",
+      "suggested_fix": "Remove the sentence about dotted limits, or deliberately add the appropriate theorem-limit guides and regenerate/reseal the figure. Describe the two actual panels and retain the distinction between exact root brackets and display midpoints.",
+      "unit_id": "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+      "reviewer": "optimization-reproducibility"
+    }
+  ],
+  "checks": [
+    {
+      "id": "OR-C001",
+      "kind": "scope-and-source-authentication",
+      "method": "Read the referee protocol and claims/exposition/adversarial lane contracts; read the complete 50211-byte full-source, all prepared units through the expanded source, supplemental bibliography, scope metadata and publication manifest. Read the experiments unit separately after terminal display truncation.",
+      "reviewed_unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "result": "Full source hash and all twelve prepared unit content hashes match the preparation manifest; full-source SHA is the assigned snapshot. Bibliography and publication-manifest hashes match scope_metadata. No source text was edited."
+    },
+    {
+      "id": "OR-C002",
+      "kind": "headline-calibration",
+      "reviewed_unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1"
+      ],
+      "method": "Compared abstract/introduction/discussion with exact stated restrictions and empirical results.",
+      "result": "The headline says a sufficient absolute-TV certificate, conditional intensity floor, fixed-c sharp coefficient at c=1/2, Haar feasibility rather than graph enrichment, negative E05b means and no QPU data. It does not infer a relative rare-event or general optimizer advantage. No critical or major headline/statistical overclaim was demonstrated in this pass."
+    },
+    {
+      "id": "OR-C003",
+      "kind": "numerical-table-reaggregation",
+      "method": "Read-only inline Python csv/json/statistics grouping of accepted benchmark.csv; no driver or optimizer rerun.",
+      "inputs": [
+        "results/validated/recovery_2026-11-24/benchmark.csv",
+        "results/validated/recovery_2026-11-24/summary.json"
+      ],
+      "result": {
+        "runs": 756,
+        "groups": 21,
+        "all_group_means_reaggregated": true,
+        "all_group_run_counts": 36,
+        "unique_graph_counts_by_n": [
+          9,
+          9,
+          10
+        ],
+        "all_runs_training_optimal_count_positive": true,
+        "all_recorded_training_plus_heldout_totals_match": true,
+        "latex_mean_interval_cells": 21,
+        "main_claim": "Bosonic mean is below independently trained distinguishable mean at each recorded n; this is a finite-grid comparison, not a population rejection."
+      }
+    },
+    {
+      "id": "OR-C004",
+      "kind": "input-output-pin-check",
+      "method": "SHA256 comparison against the immutable v1 publication_manifest. Thirteen accepted input pins and seven output pins were checked; original root files matched during the first check. The own-worktree v1 generator and all seven output bytes were rechecked after the coordinator announced subsequent root revisions.",
+      "result": "All v1 input/output pins checked match. Own-worktree generator SHA is 088aa478c28cfd956a813a597a63113d60dbc2cdb5e04366116ac36f6638906c, exactly the v1 pin. Current root generator later changed for P40 and is not substituted for this v1 source."
+    },
+    {
+      "id": "OR-C005",
+      "kind": "graph-source-and-macro-conventions",
+      "method": "Compared frozen tables/macros with validated counts and exact P37 grid; cross-checked complementary-bitstring graph counts against the computed graph table.",
+      "result": "Macros are756 runs,1610 P37 source probabilities and36 brackets. K4 has C*=4,g=6; K22 has C*=2,g=4; all five graph denominators are10. P37 m8 choices match exact rational raw sets: eta3/4 gives8/7,9/10 gives7/6,99/100 gives7/5,1 gives{6,7}/5. Haar g/D is identified as an ensemble mean. These are inherited producer computations with fresh value/pin checks, not an independent replication of every physics law."
+    },
+    {
+      "id": "OR-C006",
+      "kind": "anti-oracle-and-resource-flow",
+      "method": "Read git show af0978455258bb44ef51d328e9ac977546eb2331:experiments/run_equal_budget.py, including train and the explicit main call with mu2; read current safe optimization/objectives.py and test_anti_oracle_training.py.",
+      "result": "Historical loss is determined from observed counts/costs before retrospective C* hits; best-parameter selection and fixed-call completion use loss, not hits. Heldout RNG is separately seeded. Public safe API rejects optimum objectives and has no optimum argument. Manuscript distinguishes oracle E02, full reference-simulation cost, P21 cut-query budgets, separate lambdas and non-authentic product Bernoulli versus incomplete authentic ObliQ reproduction. No fresh training or test execution was required for this source-flow review."
+    },
+    {
+      "id": "OR-C007",
+      "kind": "discovery-and-denominators",
+      "method": "Compared manuscript statements with benchmark first_training_success_batch fields, recorded first-hit limitation, and source/evaluation definitions.",
+      "result": "All756 training count traces have positive optimum counts in the reconciled evidence. Manuscript correctly refuses to reconstruct exact within-batch shot order, distinguishes final p from problem-solving utility, requires an attempt denominator for attempt success, and does not equate conditional valid-event rates with emission/injection success."
+    },
+    {
+      "id": "OR-C008",
+      "kind": "figure-caption-adversarial-check",
+      "method": "Fresh pypdf extraction of sealed loss/density PDFs and inspection of their line-dash drawing operators; read the exact v1 generator from the own worktree.",
+      "result": "Confirmed OR-F003. A separate possible concern about the density sharpness caption was not filed: although the dedicated balanced_sharpness list is not drawn separately, m4/k2 flat_fixed_projector full-grid rows already contain c≈1/2, M≈TV sharp-family members. The density figure uses accepted supervised data, with no root P33 substitution or large-size full-Fock claim."
+    },
+    {
+      "id": "OR-C009",
+      "kind": "hardware-and-noise-claims",
+      "method": "Read the complete pilot section, observation conventions and supervisor offline-pilot receipt; no remote object or device job was invoked.",
+      "inputs": [
+        "reports/recovery_2026-11-24/supervisor_offline_pilot_receipt.json"
+      ],
+      "result": "Available receipt identifies offline_synthetic_reproduction, physical_shots0 and credits_consumed0. Manuscript keeps hardware availability, gate set, detector resolution, filters, credit cost and calibration unverified; marginal Wilson intervals are not advertised as simultaneous fit tests. The noise formulas and internal-state physics were read for scope but not independently re-proved here."
+    },
+    {
+      "id": "OR-C010",
+      "kind": "reproduction-and-failure-retention",
+      "method": "Read reproduction appendix, CLI destination guards and accepted campaign/source-hash index.",
+      "result": "Source package includes tracked E01/E05b/P33-supervised/P37 raw inputs. Reconciliation refuses existing destinations and historical overwrite targets; source pins are evaluated at recorded Git revisions rather than forced to equal current HEAD. The appendix provides table/figure check and test commands but only reconciliation --help, not a complete fresh-destination reconciliation invocation; supplying one is a useful optional reproducibility improvement, not counted as a demonstrated result error."
+    },
+    {
+      "id": "OR-C011",
+      "kind": "specialist-obligations-and-unreviewed-leaves",
+      "reviewed_unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "result": "No new proof audit, literature search or mathematical experiment was launched. External theorem content/novelty, the complete source-phase and density proofs, hardware compilation/runtime behavior, and P40 exported circuit/law records are not independently verified by this pass. The v1 scope metadata placed P40 in a separate physics worktree; the coordinator later announced b997182 integration for the next revision. That announcement is not retroactive execution evidence for this pass. Verify the exact P40 input/contract/45-cell receipt links during v2/final synthesis."
+    }
+  ],
+  "coverage": [
+    {
+      "pass_id": "optimization-reproducibility",
+      "lanes": [
+        "claims",
+        "exposition"
+      ],
+      "scope": "Whole SOURCE v1, every paragraph, front matter, all sections, appendices and supplemental bibliography; statistics/optimization/resource and reproducibility cross-checks.",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "context": [
+        "manifest.json",
+        "scope_metadata.json",
+        "bibliography.bib",
+        "publication_manifest.json",
+        "accepted validated data and v1-matching generator/output bytes"
+      ],
+      "executor": "/root/objectives_baselines",
+      "method": "Sequential source review with arithmetic/hash/source-flow checks; data/generated-asset self-review disclosed",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "optimization-reproducibility",
+      "lanes": [
+        "adversarial"
+      ],
+      "scope": "Statistical estimand, exact-versus-heldout metrics, resource denominators, first-hit ordering, C* information flow and figure-caption consistency; not a complete mathematical adversarial proof audit.",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "context": [
+        "historical E05b driver",
+        "current safe API/tests",
+        "sealed PDF vector content"
+      ],
+      "executor": "/root/objectives_baselines",
+      "method": "Bounded sequential cross-check",
+      "status": "partial",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    }
+  ],
+  "provenance": {
+    "executor": "/root/objectives_baselines",
+    "manuscript_narrative_author": false,
+    "prior_roles": [
+      "Author of reconciliation script and accepted derived numerical data",
+      "Author of publication generator, numerical tables, figures and generated table captions",
+      "Earlier objective/baseline contributor"
+    ],
+    "independence": "Not independent of the data, implementation, generated assets or generated captions. Manuscript narrative/proofs were written by the coordinator and were newly read in this pass. No blind external or fresh-model independence is claimed.",
+    "model_assignment": {
+      "assignment_source": null,
+      "requested_model": null,
+      "requested_reasoning": null,
+      "actual_model": null,
+      "actual_reasoning": null,
+      "fallback_reason": null
+    },
+    "model_note": "No override prescribed; actual model/reasoning settings were not exposed and remain null.",
+    "snapshot_scope": {
+      "source_revision": "8546e058030a9db67f5980d7c4ed3dd45372a475",
+      "working_source_changes": true,
+      "prepared_source_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+      "review_scope": "Source manuscript; figures and bibliography explicitly authenticated as supplemental artifacts; PDF not part of v1 review",
+      "supplemental_sha256": {
+        "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+        "publication_manifest.json": "a5d3b74eb5ec58501da4973cc77396a2f44cdaeb6a13da301d16d15f7578cd90"
+      },
+      "notes": [
+        "P40 contract committed before experiment in separate physics worktree; manuscript states predictions and fixed design, not hardware data.",
+        "A first PDF build completed15pages but has a9.52pt overfull path; layout will be repaired before final release.",
+        "No model override prescribed or requested; native inherited host settings, actual model/reasoning not exposed."
+      ]
+    },
+    "reviewed_hashes": {
+      "full-source.tex": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+      "manifest.json": "382e5d3474875149d1bc413152055c4a242e94c38547b74618b610c4239c6c92",
+      "scope_metadata.json": "79301c547296fb1b963c33a6ee3e76b1ebe68f9510ba55a10243e9088281232e",
+      "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+      "publication_manifest.json": "a5d3b74eb5ec58501da4973cc77396a2f44cdaeb6a13da301d16d15f7578cd90"
+    }
+  },
+  "limits": [
+    "Source review only; no main compiled-PDF pagination/layout audit. Three sealed figure files were inspected as supplemental publication artifacts, with fresh vector/text inspection of loss and density PDFs.",
+    "Proof statements and appendix arguments were read for headline/quantifier consistency; full theorem correctness is delegated to the mathematical/physics passes.",
+    "Citation records were read and authenticated as supplied bytes; external papers and originality were not reauthenticated.",
+    "No historic experiment, optimizer, bootstrap campaign, simulator, full test suite or hardware workflow was rerun; current numeric checks reaggregate accepted records only.",
+    "Coordinator changes after the immutable v1 snapshot, including a new P40-pinning generator, are excluded and require the requested v2 review."
+  ],
+  "overall_scope_assessment": "The negative empirical thesis, no-advantage/no-hardware framing and uncertainty limitations are supported in scope. Two localized methods/statistical exposition gaps and one minor caption mismatch need correction; no critical or major optimization/statistics claim failure was demonstrated."
+}
