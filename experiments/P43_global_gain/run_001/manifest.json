@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "claim_id": "P43-FINITE-ANGLE-GLOBAL-GAIN-DEV-VETO",
+  "repository": {
+    "commit": "c062f2fcf48a83f301742900e53a8e8759a29d3e",
+    "dirty": true
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P43_global_gain_probe.py",
+    "--spec",
+    "research/P43_execution_spec.json",
+    "--output",
+    "experiments/P43_global_gain/run_001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Development-only fixed-anchor full-photon global-improvement screen with independently selected distinguishable, phase-field and species4 controls; classical feasible searches; graph relabels and fresh seeds. No accepted advantage.",
+    "coefficient_domain": "float64 unitary matrices and integer graph scores; actual seeded local samples, not full Fock enumeration",
+    "conventions": "Ideal lossless k photons, all collisions retained and charged, CF gain max(0,C0-cut). One common charged best-swap anchor per graph; all tuning discoveries credited.8 settings include2 pairs of identical gamma0 laws, intentionally retained. Four unique development graphs, no held-out graphs.",
+    "inputs": [
+      "Four graphs and all parameters in P43_execution_spec.json",
+      "2 tuning seeds,8 settings,14 draws each",
+      "2 preselected relabeled graphs,2 fresh seeds,32 draws each at independently chosen parameters",
+      "Each of5 classical feasible controls112 training scores/32 probe scores per case, plus common charged anchor"
+    ],
+    "bounds": {
+      "models": 4,
+      "unique_graphs": 4,
+      "maximum_modes": 20,
+      "maximum_photons": 10,
+      "sample_cap_per_model": 1024,
+      "common_anchor_max_full_scans": 8,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "Not a positive discovery, held-out result or independent optimizer replication",
+      "Not exact float64 certification or an inference of sample-law hardness",
+      "Simulation CPU is not QPU latency; query/attempt/photon budgets are different",
+      "No known optimum, optimal mask or exact graph solver enters training",
+      "No device/client calls, hardware job, paper edit or Laurent handoff"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "PCG64+networkx seeded topology+serial local exqalibur; all seed namespaces/derivations in spec and code",
+    "seed": [
+      4301601,
+      4301602,
+      4302001,
+      4302002
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-24T21:31:48.452374+00:00",
+    "runtime_seconds": 17.533394,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P43_global_gain_probe.py",
+    "research/P43_execution_spec.json",
+    "research/P43_execution_contract.json",
+    "research/P43_adaptive_contract.json",
+    "theory/P43_adaptive_phase_gradient_echo.md",
+    "theory/P43_adaptive_echo_symmetry.md",
+    "tests/test_p43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P43_execution_spec.json",
+      "sha256": "c05d4df9ba9a70c7ffc68da0497a10cdf50ed684bcb65c93d0331e2ec975039f",
+      "sha256_after": "c05d4df9ba9a70c7ffc68da0497a10cdf50ed684bcb65c93d0331e2ec975039f"
+    },
+    {
+      "path": "research/P43_execution_contract.json",
+      "sha256": "a11db2f3d53acf08bc45fe7e83a9d7c3da55ba4cd74a21ca0c53d03aee47159b",
+      "sha256_after": "a11db2f3d53acf08bc45fe7e83a9d7c3da55ba4cd74a21ca0c53d03aee47159b"
+    },
+    {
+      "path": "research/P43_adaptive_contract.json",
+      "sha256": "cae81ef3f36a0101ee2933c514ce4ff481f62fa14120080ef8f9d11b5acd0c42",
+      "sha256_after": "cae81ef3f36a0101ee2933c514ce4ff481f62fa14120080ef8f9d11b5acd0c42"
+    },
+    {
+      "path": "theory/P43_adaptive_phase_gradient_echo.md",
+      "sha256": "7feba0aa6c2c9f7be48ed1cdff1eb9f0178293e50c3223b7e3c3b4fc57bd7f99",
+      "sha256_after": "7feba0aa6c2c9f7be48ed1cdff1eb9f0178293e50c3223b7e3c3b4fc57bd7f99"
+    },
+    {
+      "path": "theory/P43_adaptive_echo_symmetry.md",
+      "sha256": "f9ee8c2898fb17954ee5c689554527943dc446c934f9b49cddff465756281039",
+      "sha256_after": "f9ee8c2898fb17954ee5c689554527943dc446c934f9b49cddff465756281039"
+    },
+    {
+      "path": "tests/test_p43_global_gain_probe.py",
+      "sha256": "84670d3e44c8e96ec6e3109e190b06fb3c8f4d6ed6ba97bed29473a998baeec4",
+      "sha256_after": "84670d3e44c8e96ec6e3109e190b06fb3c8f4d6ed6ba97bed29473a998baeec4"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P43_global_gain/run_001",
+  "declared_results": [
+    "experiments/P43_global_gain/run_001/raw.jsonl",
+    "experiments/P43_global_gain/run_001/summary.json",
+    "experiments/P43_global_gain/run_001/contexts.json",
+    "experiments/P43_global_gain/run_001/selection.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P43_global_gain/run_001/stdout.txt",
+      "sha256": "515e6f073d24369627825ea2ac28d591165b19718ff03ac58f2ba25d8676c7a8",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P43_global_gain/run_001/stderr.txt",
+      "sha256": "78ae505678b7f4635e60f33bad550356f90bbfc50fb52db31ca5c116c021e216",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P43_global_gain/run_001/raw.jsonl",
+      "sha256": "17a6fb9097807220b38ccf499967f61d020cd413d78fc43713bcfb8037ba41e9",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P43_global_gain/run_001/summary.json",
+      "sha256": "4b41413754fd2a5c3de6ccd644408a104cbc3aa4c95b0b4707f5b4311769d763",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P43_global_gain/run_001/contexts.json",
+      "sha256": "84916466ec252023c52e5cc1de8a232c64032219f025f6363cc3f87214b19773",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P43_global_gain/run_001/selection.json",
+      "sha256": "f75daeae2d198dba42f8321d7582d673f3d3a5f66f657da6ec5f5d2f9dc579dc",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

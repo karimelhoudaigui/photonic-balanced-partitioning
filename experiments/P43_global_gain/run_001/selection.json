@@ -1,0 +1,54 @@
+{
+  "selected_theta_independently": {
+    "bosonic": null,
+    "distinguishable": null,
+    "phase_field": null,
+    "species4": null
+  },
+  "development_total_means": {
+    "bosonic": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "distinguishable": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "phase_field": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "species4": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "development_raw_prefix_sha256": "6bdba10c217eab5f6bc6d46abedce6ee316f6e2c512d9860a2db00794de842b3",
+  "code_sha256_before_probe": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+  "spec_sha256_before_probe": "c05d4df9ba9a70c7ffc68da0497a10cdf50ed684bcb65c93d0331e2ec975039f",
+  "held_out_graphs_opened": false
+}
