@@ -38,8 +38,13 @@ marginals. There is an explicit O(m^2 K^4) arithmetic upper bound below,
 with O(K^3) temporary coefficient memory per pair. Exact BIT computation
 additionally requires controlled rational/algebraic input representations;
 an ordinary floating-point output is not an exact certificate. Alternatively,
-a simple bounded random-sign estimator gives inverse-polynomial additive
-accuracy in polynomial time without constructing the entire Fock law.
+a bounded random-sign estimator gives inverse-polynomial additive accuracy
+in polynomial time for the normalized objective J_G/(AK) when AK>0, where
+A=sum_(i<j)(w_ij+lambda), or for the unnormalized objective when A is bounded by
+a polynomial in input size. Its unnormalized runtime is polynomial in the
+VALUE A/delta, not in log A. The exact rational DP remains polynomial in
+the input bit length even for large weights encoded compactly. Neither
+method constructs the entire Fock law.
 
 Neither conclusion minimizes the graph cost, reproduces the full joint
 occupation law, computes a conditioned CF tail, or proves a measured
@@ -271,3 +276,13 @@ sum_(i<j)(w_ij+lambda)=0, yet J(1,1,0,0)=0 and J(1,0,1,0)=6. That exact
 counterexample invalidates the unrestricted A=0 wording, not the marginal
 DP. The current explicit domain and separate vacuum branch correct it. The
 earlier source version remains in Git history; no numerical run was used.
+
+A subsequent editorial qualification applies to the summary in Section 1.
+The intermediate file SHA-256 was
+`fc87dfe1ca034a121536abb6fa19bb115c2a96e0bfac786ff7514e1f1c525897`.
+Its blanket polynomial-time additive wording omitted the scale A present
+in(L10). The summary now restricts that randomized guarantee to normalized
+objectives or polynomially bounded A; an absolute error for exponentially
+large weights is not supplied in time polynomial in their encoding length
+by(L10). The exact rational DP's polynomial bit guarantee is unchanged.
+Both earlier versions remain in Git history; no new run was performed.
