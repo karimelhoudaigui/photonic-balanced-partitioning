@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "pass_id": "physics-noise",
+  "issue_prefix": "PN-F",
+  "manuscript_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+  "source_files_sha256": "6dc10cc04c021258f1b3904a9446a9952ff91f70f54f837d989cd4ce25001726",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "snapshot_source_revision": "8546e058030a9db67f5980d7c4ed3dd45372a475",
+  "working_source_changes": true,
+  "reviewed_snapshot": "reports/manuscript_review_2026-11-24/v1",
+  "snapshot_files_sha256": {
+    "manifest.json": "382e5d3474875149d1bc413152055c4a242e94c38547b74618b610c4239c6c92",
+    "full-source.tex": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+    "context.json": "b13b663fef6b711f7ef1b4aa97e9db423fdf51daa85bba0e70bc997ad10ac645",
+    "scope_metadata.json": "79301c547296fb1b963c33a6ee3e76b1ebe68f9510ba55a10243e9088281232e",
+    "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+    "publication_manifest.json": "a5d3b74eb5ec58501da4973cc77396a2f44cdaeb6a13da301d16d15f7578cd90"
+  },
+  "verdict": "No critical or major physics defect identified in the reviewed v1 source. Two local probability-denominator/label clarifications are returned; this is not a whole-paper correctness or novelty certificate.",
+  "provenance": {
+    "executor": "/root/physics",
+    "method": "Independent comparative review of manuscript TEX not authored by this reviewer, with explicit self-authorship and reused-proof limitations",
+    "disclosures": [
+      "Reviewer authored the new physical noise module and its tests at d36e2d2bba77bc64c1d8c6914fa5d4331d068cd3. Rechecking that implementation is not independent third-party validation.",
+      "Reviewer authored the P40 contract/run/tests/docs at efd1718a6a8b8e8ffac1ad84360566bf4346648a and2da32b69dc33abd389f365af44ad44a789e07a59. The present new checks verify integrated-byte identity and scalar manuscript compatibility, not a new optical replication.",
+      "Reviewer previously reviewed P33 and P37; those exact proof-review contexts are reused and compared against the new manuscript statements/arguments. This does not create another independent proof review.",
+      "The coordinator current working paper and other reviewer passes were not read. Review is restricted to immutable v1 source; current root git status filenames were incidentally listed, not current paper content."
+    ],
+    "model_assignment": {
+      "assignment_source": "User/coordinator physics-noise reviewer3 assignment",
+      "requested_model": null,
+      "requested_reasoning": null,
+      "actual_model": null,
+      "actual_reasoning": null,
+      "fallback_reason": null
+    },
+    "execution_settings_note": "Native inherited session; actual model and reasoning settings are not exposed. No provider runtime, credential file or remote call was used."
+  },
+  "coverage": [
+    {
+      "pass_id": "physics-noise",
+      "lanes": [
+        "correctness",
+        "notation",
+        "claims"
+      ],
+      "scope": "Whole-source physics/noise/measurement and denominator consistency, including front matter and appendices",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "context": [
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1"
+      ],
+      "executor": "/root/physics",
+      "method": "Complete expanded-source reading plus comparative physical derivations; prior P33/P37 proof contexts disclosed",
+      "status": "complete"
+    }
+  ],
+  "issues": [
+    {
+      "id": "PN-F001",
+      "lane": "notation",
+      "title": "The graph-control table uses an unintroduced optimal-probability symbol",
+      "severity": "minor",
+      "type": "undefined-symbol",
+      "confidence": 0.99,
+      "location": "paper/tables/table_graphs.tex:5, expanded in the Reconciled computations unit; compare paper/sections/02_model.tex:15-20",
+      "quote": "Graph & $C^*$ & Optimal strings $g$ & Haar $\\mathbb{E}[P_{\\rm opt}]$ \\\\",
+      "analysis": "The full text defines unconditional success as \\succp=p(O_G) and conditional success as P_{\\opt\\mid F}; the only P_{\\rm opt} occurrence is this table header. The actual entries g*/D are unconditioned injected-attempt probabilities, not conditional optimal fractions. For K4 the displayed6/10 is correct unconditionally, whereas P_{\\opt\\mid F}=1. The nearby prose resolves the numbers, so this is a local labeling issue and does not refute the physics. Definition quoted verbatim:  P_F=p(F)=P_{\\CF},\\quad P_{\\opt\\mid F}=p(O_G)/p(F),\\quad\n \\succp=p(O_G)=P_F P_{\\opt\\mid F}.\\label{eq:success}",
+      "suggested_fix": "Replace the header by Haar E[P_succ] (or E[p_b(O_G)]) and name it unconditioned injected-attempt success in the caption. Keep the numerical entries.",
+      "unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+      "reviewer": "physics-noise",
+      "evidence_status": "presentation"
+    },
+    {
+      "id": "PN-F002",
+      "lane": "notation",
+      "title": "Distinguish a classical sampler from a classically selected optical control",
+      "severity": "moderate",
+      "type": "convention-drift",
+      "confidence": 0.93,
+      "location": "paper/sections/06_pilot.tex:24; compare paper/sections/05_experiments.tex:11,23 and paper/sections/02_model.tex:20",
+      "quote": "This family can display a same-circuit twofold success ratio, yet the classical uniform feasible control has success $\\eta^2/3$ and a known-optimum identity control has success $\\eta^2$.",
+      "analysis": "The eta^2/3 value is correct for the P40 control in which a uniformly chosen feasible string is optically prepared and undergoes the same two-photon loss channel. A classical sampler alone has two optimal strings among six and succeeds with1/3 per classical draw, independently of detector transmission. At eta=1/2 these are respectively1/12 per optically encoded injected trial and1/3 per classical draw. Section05 also calls the uniform balanced sampler a classical feasibility baseline; quote: The uniform balanced sampler is a relevant feasibility baseline; Bernoulli penalties are a different, weaker control and their three strengths are reported separately. The current pilot wording does not explicitly identify the additional optical preparation/readout charge, so it can make an attenuated optical control look like a loss-degraded classical algorithm. This is a denominator/label clarification, not a failed P40 identity and not an allegation of an advantage claim; the same paragraph explicitly denies optimization benefit.",
+      "suggested_fix": "Call this the classically selected feasible-state optical control under the common loss/readout channel. State separately that the standalone classical sampler has success1/3 per classical draw and that its computational resource comparison is different. Preserve the predeclared P40 eta^2/3 prediction.",
+      "unit_id": "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+      "reviewer": "physics-noise",
+      "evidence_status": "presentation"
+    }
+  ],
+  "checks": [
+    {
+      "id": "PN-C01",
+      "status": "performed",
+      "kind": "snapshot-and-context",
+      "inputs": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/manifest.json",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/full-source.tex",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/context.json",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/scope_metadata.json",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/bibliography.bib",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/publication_manifest.json"
+      ],
+      "commands": [
+        "cat review-protocol.md and references/reviewers/{correctness,notation,claims}.md at the installed referee skill",
+        "sed -n 1,180p /Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/full-source.tex",
+        "sed -n 181,330p /Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/full-source.tex",
+        "sed -n 331,427p /Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1/full-source.tex",
+        "Read manifest.json, context.json, scope_metadata.json, bibliography.bib, publication_manifest.json and the bibliography unit; verify all prepared-unit byte hashes"
+      ],
+      "result": "All427 expanded-source lines read, all complete prepared unit spans covered, and all12 unit hashes match preparation. Source SHA70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3 matches target. Preparation limits are retained; no arbitrary TeX macro execution or PDF review was performed."
+    },
+    {
+      "id": "PN-C02",
+      "status": "performed",
+      "kind": "physical-derivation",
+      "unit_ids": [
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1"
+      ],
+      "derivation": "Reconstructed normalized distinct-orbital creation product, repeated-output factorials, and p_d as independent labeled routing forgotten to occupations. Two annihilations give E_b n_i(n_i-1)=4 sum_(a<b)q_ia q_ib, hence bosonic pair moment M and distinguishable M/2. Checked full-output spatial B_ab=sum_i sqrt(q_ia q_ib), its unit diagonal and the halved-TV normalization. Followed dominant-support norms, the quadratic small-branch condition and fixed-c leading asymptotic in the new TEX against prior reviewed claims.",
+      "result": "No new physical factor or internal/spatial Gram confusion found. The current TEX carries the expected positive-density, source and numerical qualifications. Formal P33 proof context is reused, not counted as new third-party validation."
+    },
+    {
+      "id": "PN-C03",
+      "status": "performed",
+      "kind": "loss-source-and-resource-contract",
+      "unit_ids": [
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "derivation": "Uniform internal-insensitive loss gives full N-detected law eta^N times the lossless law. Lower sectors retain vacuum. Valid F requires both photon number k and no collision; threshold exactlyk clicks with N>=k is a different acceptance map. Rechecked .537*.9^4=.3523257. Compared ideal indistinguishable Haar uniform-Fock and independent-source assumptions, the binomial survivor mixture, eta=1 ties, and independently refreshed Haar versus fixed-U first-hit denominator. Compared theorem domains with the noise section; no extension to arbitrary internal Gram is inferred.",
+      "result": "Physics/resource assumptions in v1 are consistent in their ideal-source scope. P37 formal argument is a comparative transfer of the prior review, not a new independent proof audit."
+    },
+    {
+      "id": "PN-C04",
+      "status": "performed",
+      "kind": "partial-distinguishability",
+      "unit_ids": [
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1"
+      ],
+      "derivation": "Squared norm of the internally labeled amplitude sum gives product_j S[tau(j),sigma(j)]. Diagonal-one PSD Hermitian S models independent pure internal vectors. The all-ones/identity limits and HOM (1-|S12|^2)/2 follow. Higher cycles preserve internal phases; a single global mixture is not the general k>=3 model.",
+      "result": "Equation partial, the internal/spatial Gram distinction and the restricted source claims agree with the implemented conventions. This is manuscript comparison by the noise-code author, not independent code validation."
+    },
+    {
+      "id": "PN-C05",
+      "status": "performed",
+      "kind": "integrated-P40-export-and-scalar-recheck",
+      "unit_ids": [
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1"
+      ],
+      "inputs": {
+        "root_output": "results/validated/P40_sharpness_pilot_2026-11-24",
+        "sha256": {
+          "raw.jsonl": "b3189ac6143c31654d97d06209a94494281b25c43b37c5cd33782014bd277658",
+          "circuits.json": "f945154043ff220ca18d105a9528a9a404664a992da107707ab9c0927036e598",
+          "summary.json": "852a43b4ff28d855c3822f13e7060e7c773f445b74eb3b4d9d48e6878d285e53",
+          "manifest.json": "d29fd7a401d6415e18ddd49cf070bbd7ac3e5f1072182d74abba8b2c5bc68b84"
+        },
+        "docs_DENSITY_PILOT_sha256": "6780970f47e6f9616db6873c447c25e79eda528d52a66e98a74ae1201e46d0e0"
+      },
+      "command_description": "Read-only Python using json, Fraction, math.fsum and NumPy; read all45 stored laws, recompute their TV/collision/path metrics and exact-rational predictions, and check the five exported U^dagger U matrices. No optical function, Perceval backend, sampler or optimization was called in this review.",
+      "observed": {
+        "cells_read": 45,
+        "unique_cells": 45,
+        "max_recomputed_metric_error": 9.71445146547012e-17,
+        "max_full_law_normalization_error": 2.220446049250313e-16,
+        "max_exported_unitarity_residual": 1.1102230246251565e-16
+      },
+      "derivation": "For k2, pair interference is linear in x. Within each flat group, equal splitting sends half of same-group two-photon mass to collisions and half to the distinct-mode path optimum. Uniform loss contributes eta^2 to that sector; one-photon law eta(1-eta)(q_i1+q_i2) and vacuum are x-independent. This gives all three calibration identities. Rx4atan(r), permutation[0,2,1,3] and splitRxpi/2 give the sharp occupied columns up to probability-irrelevant output/input phases.",
+      "result": "Integrated raw/circuit/summary/manifest hashes and docs match the authored frozen run. All45 stored cells agree with the manuscript predictions, including r0. This is scalar/export reconciliation, not a new independent replication of the authored P40 calculation."
+    },
+    {
+      "id": "PN-C06",
+      "status": "performed",
+      "kind": "detector-and-advantage-scope",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "derivation": "A threshold single click cannot distinguish occupation(2,0,0,0) from(1,0,0,0). Complete Fock TV and collision-versus-loss require suitable resolution/model assumptions; selected two-click success from a two-photon source is a narrower observable. Emission, injected, triggered and postselected denominators were compared throughout. Verified no QPU data or backend availability are asserted and no same-U interference ratio is promoted to algorithmic advantage.",
+      "result": "No major hardware/advantage overclaim identified. PN-F002 isolates the remaining optical-control versus classical-draw naming ambiguity."
+    }
+  ],
+  "partial_coverage": [
+    "Source-only v1 review: compiled PDF, layout and visual figure rendering were not reviewed. Source figure captions and table contents were read; supplemental bibliography/publication manifest hashes were checked.",
+    "No fresh reproduction of E05b training trajectories, P33 registered grids, P37 source sweep, P39 construction or the offline hardware command pipeline was performed. Their provenance, statistical and hardware claims were read, but those computations remain assigned to the numerical/reproducibility reviewers.",
+    "No novelty verdict or complete external bibliography/content verification. Previously reviewed exact Tichy/Haar/physical conventions are comparison context; no new independent literature certification is claimed.",
+    "The noise/P40 author rechecks do not establish new third-party code validation. PNR availability, source calibration and remote backend behavior remain unverified, as the manuscript itself states."
+  ]
+}
