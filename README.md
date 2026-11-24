@@ -13,6 +13,7 @@ Start with the [rebuilt article PDF](paper/main.pdf), [scientific overview](docs
 | Résultats, preuves et reproductions | [Catalogue des résultats](results/README.md), [état scientifique](STATUS.md) |
 | **Laurent : accès Lucy via TGCC** | **[docs/LUCY_TGCC.md](docs/LUCY_TGCC.md)** — environnement, plan local, specs, lancement autorisé et analyse |
 | Contrat scientifique et counts | [Dossier technique détaillé](docs/LAURENT_HANDOFF.md) |
+| Archives PDF, LaTeX et dossier Lucy | [Téléchargements et empreintes](deliverables/README.md) |
 | Reprendre dans VS Code | Ouvrir ce dossier ; `Terminal → Run Task` : tests, vérification de l'article, pilote local, plan Lucy |
 
 Le PDF livré et ses sources sont préservés. La partie QPU du manuscrit décrit
@@ -63,3 +64,5 @@ Historical manifests refer to their recorded source commits or frozen snapshots,
 The original algorithmic goal remains open. Tests, PDF compilation, local circuit export and novelty are different standards of evidence.
 
 Current delivery validation: **505 tests pass in the pinned Python venv**, including21 Lucy adapter tests with a mock transport; [commands and receipts](reports/LUCY_TGCC_DELIVERY.md). The [portable P40 replay](docs/P40_REPRODUCTION.md) also reproduces all45 physical-model cells. The [original recovery report](reports/RECOVERY_EXECUTION_REPORT.md) preserves the earlier484-test snapshot and its scientific/hardware limitations.
+
+[GitHub Linux verification](https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45400833067) passed tests, archive checks and a fresh TeX/PDF build of the delivery commit. The separately extracted Laurent v2 packet passed46 local tests. No QPU client was used by either validation.

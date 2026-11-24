@@ -1,7 +1,7 @@
 # QPU readiness — 24 November 2026
 
 **OFFLINE_PILOT_READY=TRUE. HARDWARE_COMPATIBILITY_VERIFIED=FALSE. QPU_GATE=CLOSED.**
-No real QPU job, hardware credit or external transmission has occurred.
+No real QPU job or hardware credit has been consumed; no QPU service was contacted.
 
 Mise à jour livraison Lucy/TGCC : un [adaptateur distinct](../docs/LUCY_TGCC.md)
 implémente la route officielle CEA et est testé localement avec un transport

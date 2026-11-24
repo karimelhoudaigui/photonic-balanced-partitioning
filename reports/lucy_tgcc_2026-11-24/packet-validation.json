@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_hardware_offline.py",
+    "tests/test_lucy_tgcc.py",
+    "-q"
+  ],
+  "cwd": "/private/tmp/pbp-laurent-lucy-packet-validation",
+  "pythonpath": "/private/tmp/pbp-laurent-lucy-packet-validation/src",
+  "exit_code": 0,
+  "archive_sha256": "54a240a8ac389a68f6108fc3051017364c46ae29191774c53ee2b40b023a93ee",
+  "scope": "Fresh extracted packet, shared previously verified pinned venv; no new dependency install",
+  "qpu_submission": false
+}

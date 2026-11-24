@@ -65,3 +65,11 @@ distinguish offline planning, a read-only live-spec query and an explicitly
 authorized single QPU acquisition. These remote operations were not run here.
 The CI now fetches full history; archived worker refs still require the
 preserved bundle when inspecting their original commits.
+
+The [actual GitHub Linux run for c8b6161](https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45400833067)
+now passes pinned installation, the suite, archive checks and TeX/PDF compilation.
+Its [status snapshot](../reports/lucy_tgcc_2026-11-24/github_ci_c8b6161.json) is
+preserved. The older recovery description above records the state before that
+first remote run. The source archive and Laurent packet are indexed in
+[deliverables/README.md](../deliverables/README.md); the extracted packet passed
+its46 selected tests with the previously installed pinned environment.

@@ -37,6 +37,8 @@ du source testé identifie précisément le code validé.
 | Manifestes de l'article | Sept sorties vérifiées, données sources intactes |
 | PDF déjà construit | 16 pages, 14 clés citées, aucun renvoi indéfini ni input périmé |
 | CLI Lucy local | Versions et trois plans identity/HOM/pair_mixing produits, sans client distant |
+| GitHub Actions Linux, commit c8b6161 | PASS : installation épinglée, tests, archives, compilation et vérification du PDF |
+| Dossier Laurent v2 extrait hors dépôt | 46 tests PASS, environnement Python épinglé partagé, aucun historique Git requis pour ces tests |
 | Compte TGCC, specs live et compilation native | NON TESTÉS |
 | Soumission matérielle / crédits | AUCUNE / ZÉRO |
 
@@ -82,6 +84,12 @@ Les exports historiques v1 et le premier ZIP Laurent restent intacts. Les
 autorisations locales et acquisitions futures sont ignorées par Git ; les
 agents Qwen ont une interdiction explicite du chemin de soumission.
 La CI n'utilise que calculs et compilation locaux, jamais cet accès matériel.
+
+La [CI distante réellement exécutée](https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45400833067)
+est verte. Son [snapshot de statut](lucy_tgcc_2026-11-24/github_ci_c8b6161.json)
+enregistre le commit et les étapes. Le PDF original livré n'a pas été remplacé
+par la recompilation Linux. Le [test du paquet extrait](lucy_tgcc_2026-11-24/packet-validation.json)
+et les [archives PDF/LaTeX/Lucy](../deliverables/README.md) sont conservés séparément.
 
 L'objectif scientifique initial demeure ouvert. Les gates matériels et de
 soumission académique restent ceux de [QPU_READINESS](QPU_READINESS.md) et
