@@ -1,0 +1,12 @@
+{
+  "schema": "pbp.offline.v1",
+  "n": 4,
+  "k": 2,
+  "seed": 20261124,
+  "graphs": ["path", "K4", "K2_2"],
+  "circuits": ["identity", "hom", "pair_mixing"],
+  "input_occupation": [1, 1, 0, 0],
+  "max_physical_attempts": 1000,
+  "detector_required": "pnr",
+  "filtering": {"kind": "none"}
+}
