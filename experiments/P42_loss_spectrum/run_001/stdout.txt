@@ -1,0 +1,1 @@
+{"result": "REGISTERED_FINITE_ASSERTIONS_PASS", "exact_grid_rows": 462, "arbitrary_source_rows": 2375, "optical_rows": 80, "cpu_seconds": 3.5497199999999998, "qpu_calls": 0, "actual_hardware_efficiency_inferred": false, "mathematical_scope": "Stated source/loss/rank and finite-cost model; no ideal universal no-go"}

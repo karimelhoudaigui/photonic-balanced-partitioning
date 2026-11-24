@@ -1,0 +1,190 @@
+{
+  "schema_version": 2,
+  "claim_id": "P42_LOSS_SPECTRUM_ADAPTIVE_THRESHOLD",
+  "repository": {
+    "commit": "525e2549907a478623df7c0e49190c423e5e8291",
+    "dirty": true
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P42_loss_spectrum_probe.py",
+    "--output",
+    "experiments/P42_loss_spectrum/run_001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact finite source/loss/rank and integer-budget certificates agree with independent formulas; full lossless Fock evolution followed by all-sector loss matches loss before U and obeys the source-spectrum support bounds; invalid bunched/partial-distinguishability generalizations are refuted explicitly.",
+    "coefficient_domain": "Exact Fraction integer budget/certificate arithmetic; optical laws complex128/float64 with declared1e-10 tolerance",
+    "conventions": "Rows outputs, source fixed Fock occupations, uniform fresh independent survival, terminal complete support detection; threshold includes every surviving sector and collisions, PNR-only keeps exact k photons. No postselected renormalization.",
+    "inputs": [
+      "k=2..12, N=k..12, m=2k",
+      "eta in {0,1/50,1/10,1/5,1/4,1/2,1}",
+      "every integer source partition of N=2..12 at eta1/50, k=2..N",
+      "eight unitaries: four source patterns times two fixed QR seeds2026112451/52",
+      "four optical eta values and all k=2..min(N,m)",
+      "explicit bunched and partially distinguishable scope counterexamples"
+    ],
+    "bounds": {
+      "exact_grid_rows": 462,
+      "general_source_rows": 2375,
+      "optical_rows": 80,
+      "source_photons_max": 12,
+      "source_remainders_max": 4096,
+      "max_optical_modes": 6,
+      "max_optical_photons": 4,
+      "optical_tolerance": 1e-10,
+      "wall_seconds": 90,
+      "cpu_seconds": 60,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No new photonic optimization advantage",
+      "No empirical Lucy calibration or QPU call",
+      "No universal impossibility for all encodings or quantum memories",
+      "No novelty theorem from a finite calculation",
+      "No mean-latency-to-guaranteed-cost substitution",
+      "A valid finite certificate remains conditional on the physical source/loss/detection/frontend model"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.Generator(PCG64)",
+    "seed": 2026112451
+  },
+  "run": {
+    "started_at": "2026-11-24T20:47:38.447319+00:00",
+    "runtime_seconds": 4.059496,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P42_loss_spectrum_probe.py",
+    "research/P42_loss_spectrum_contract.json",
+    "theory/P42_threshold_loss_obstruction.md",
+    "theory/P42_general_fock_loss_extension.md",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/noise/physical.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P42_loss_spectrum_probe.py",
+      "sha256": "5f1fc5905b2c131ecc5b3ae1f4c1e3c7cd8e9b357a7a3b846923100da8193c70",
+      "sha256_after": "5f1fc5905b2c131ecc5b3ae1f4c1e3c7cd8e9b357a7a3b846923100da8193c70"
+    },
+    {
+      "path": "research/P42_loss_spectrum_contract.json",
+      "sha256": "cfcdab1aa923142b7606f4adf2e2fd9503537b9d0f0f5eec69cb4ca879766188",
+      "sha256_after": "cfcdab1aa923142b7606f4adf2e2fd9503537b9d0f0f5eec69cb4ca879766188"
+    },
+    {
+      "path": "theory/P42_threshold_loss_obstruction.md",
+      "sha256": "01f98f59e975e783bfbb95bf2003fab435732797141bdb5196222dbd460aac4d",
+      "sha256_after": "01f98f59e975e783bfbb95bf2003fab435732797141bdb5196222dbd460aac4d"
+    },
+    {
+      "path": "theory/P42_general_fock_loss_extension.md",
+      "sha256": "c2bae66e8a69d194b3224741093afb84cdab0cbc4341a3e0674db561421736d0",
+      "sha256_after": "c2bae66e8a69d194b3224741093afb84cdab0cbc4341a3e0674db561421736d0"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/noise/physical.py",
+      "sha256": "2023e469e0eb0d4d4900def41f93fbfcc4fa5e91f63aebb6ec6d61dc0c382cb3",
+      "sha256_after": "2023e469e0eb0d4d4900def41f93fbfcc4fa5e91f63aebb6ec6d61dc0c382cb3"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P42_loss_spectrum/run_001",
+  "declared_results": [
+    "experiments/P42_loss_spectrum/run_001/raw.json",
+    "experiments/P42_loss_spectrum/run_001/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P42_loss_spectrum/run_001/stdout.txt",
+      "sha256": "0025c4b993203f684cd453af4fc513ca9c040bf9c2190fa34edb81108d0a35e2",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P42_loss_spectrum/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P42_loss_spectrum/run_001/raw.json",
+      "sha256": "9a96107b6c57f4f3d8799a64de67cb056eb782eae3faae41f446386bb12952ca",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P42_loss_spectrum/run_001/summary.json",
+      "sha256": "6bfb879c5f22d4c135f39b93c07cbcebcd1da1f084a318e3a5312b27d5be0c36",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
