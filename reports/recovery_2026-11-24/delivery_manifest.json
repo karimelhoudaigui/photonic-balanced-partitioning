@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-24T11:27:04.206877+00:00",
+  "branch": "scientific-recovery-publication",
+  "starting_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+  "delivered_content_commit": "d6446c49d4ae621b3fdd574025729d35ce06650a",
+  "commits": [
+    {
+      "commit": "d6446c49d4ae621b3fdd574025729d35ce06650a",
+      "subject": "audit: reconcile scientific claims and deliver reviewed Laurent handoff"
+    },
+    {
+      "commit": "18ceacc00e742ae4b30422975a295019bbf75c6d",
+      "subject": "paper: rebuild certificate and resource-accounting manuscript with verified PDF"
+    },
+    {
+      "commit": "eb7c0f987b70c0fe9e3dcf65239098f7a6c235cb",
+      "subject": "Add portable P40 replay with immutable reproduction evidence"
+    },
+    {
+      "commit": "79116d7f7b3841f3c29eb6afece9931e5b4717bf",
+      "subject": "cleanup: preserve legacy sources and keep generated metadata out of Git"
+    },
+    {
+      "commit": "e7b2dfb89d99f33868461e3300d9e14ab9df97f3",
+      "subject": "review(v2): recheck physics source and retain local denominator findings"
+    },
+    {
+      "commit": "fd36261418dbb8e21641b891046a6538696629c7",
+      "subject": "Confirm v2 manuscript optimization and statistical revisions"
+    },
+    {
+      "commit": "3e49fc54f4a95903aaea26ff9eac5f446a8da25c",
+      "subject": "Record v2 mathematical context reuse and fresh whole-paper claim review"
+    },
+    {
+      "commit": "97f3faf6ea54ff1ebb650d5959fe1c13bd297a1b",
+      "subject": "review(v1): independently check manuscript physics and probability denominators"
+    },
+    {
+      "commit": "4572a76520be3a199cd315416ec52dfcf76c4637",
+      "subject": "Review v1 manuscript optimization statistics and reproducibility claims"
+    },
+    {
+      "commit": "1ae26cf24e544bedaa70cf62eadc4b806e46a244",
+      "subject": "Record fresh source mathematical and adversarial manuscript review v1"
+    },
+    {
+      "commit": "b9971825727aee02eb53ad41ca1ba4eb052b06e9",
+      "subject": "research(P40): validate all frozen sharpness pilot cells and preserve full laws"
+    },
+    {
+      "commit": "f740501854e488d108bfb46a27312eeaf20027e5",
+      "subject": "research(P40): freeze sharpness pilot population predictions and limits"
+    },
+    {
+      "commit": "8546e058030a9db67f5980d7c4ed3dd45372a475",
+      "subject": "Generate publication artifacts from validated evidence with hash checks"
+    },
+    {
+      "commit": "3392103e9ea291998f8a3cc4a9e6d33e2c457f61",
+      "subject": "Add verified offline n4 QPU pilot and Laurent technical handoff"
+    },
+    {
+      "commit": "bb09283db27faf20aa2c4eb2820ca2ea63c93ae4",
+      "subject": "Reconcile historical numerical evidence and preserve negative equal-budget results"
+    },
+    {
+      "commit": "52e983f7bed7603687d96306a655112dbeb03208",
+      "subject": "physics: add bounded internal-Gram interference and full-sector loss model"
+    },
+    {
+      "commit": "1fd4aefc23d130519651d22534600ea6f33ce665",
+      "subject": "recovery: preserve inputs, validate bisections and isolate oracle-free losses"
+    }
+  ],
+  "isolated_worker_integration": [
+    {
+      "original_commit": "d36e2d2bba77bc64c1d8c6914fa5d4331d068cd3",
+      "integrated_commit": "52e983f7bed7603687d96306a655112dbeb03208"
+    },
+    {
+      "original_commit": "18ba18ba337497dc568dcaa2254492c77c9f96e9",
+      "integrated_commit": "bb09283db27faf20aa2c4eb2820ca2ea63c93ae4"
+    },
+    {
+      "original_commit": "9e75b5391c5b05ce353cc829ef52004688fb3ad3",
+      "integrated_commit": "3392103e9ea291998f8a3cc4a9e6d33e2c457f61"
+    },
+    {
+      "original_commit": "4f814152d74772982c89c8501ff4c9ba5771c62b",
+      "integrated_commit": "8546e058030a9db67f5980d7c4ed3dd45372a475"
+    },
+    {
+      "original_commit": "efd1718a6a8b8e8ffac1ad84360566bf4346648a",
+      "integrated_commit": "f740501854e488d108bfb46a27312eeaf20027e5"
+    },
+    {
+      "original_commit": "2da32b69dc33abd389f365af44ad44a789e07a59",
+      "integrated_commit": "b9971825727aee02eb53ad41ca1ba4eb052b06e9"
+    },
+    {
+      "original_commit": "3524bcbfee94066690c5000db96e3da2e8cf9687",
+      "integrated_commit": "1ae26cf24e544bedaa70cf62eadc4b806e46a244"
+    },
+    {
+      "original_commit": "189479e68b5f086d52cce5192ac689d43628314d",
+      "integrated_commit": "4572a76520be3a199cd315416ec52dfcf76c4637"
+    },
+    {
+      "original_commit": "0bbf16188d5d0a04c5a9b6d298b922f4e445ace8",
+      "integrated_commit": "97f3faf6ea54ff1ebb650d5959fe1c13bd297a1b"
+    },
+    {
+      "original_commit": "d9f735746ddc3fd2605d20b8499002c2b9829b0b",
+      "integrated_commit": "3e49fc54f4a95903aaea26ff9eac5f446a8da25c"
+    },
+    {
+      "original_commit": "1f85deeb31cba629de061f85348098b07752a405",
+      "integrated_commit": "fd36261418dbb8e21641b891046a6538696629c7"
+    },
+    {
+      "original_commit": "ab119952c06160d2ecf433e405257d2f21e1542c",
+      "integrated_commit": "e7b2dfb89d99f33868461e3300d9e14ab9df97f3"
+    },
+    {
+      "original_commit": "8c1c39caffb4a57783b2279d9b33b22a39b2dcf8",
+      "integrated_commit": "eb7c0f987b70c0fe9e3dcf65239098f7a6c235cb"
+    }
+  ],
+  "deliverable_sha256": {
+    "paper/main.pdf": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+    "paper/main.tex": "01c70098e1dca6e288e558707116a0b962449392c9823e48307ca6aa63c6cd5d",
+    "paper/references.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+    "paper/publication_manifest.json": "6b7373eddbf80838afdde4d7bd212812e73325c3665d407a6d1a5dfe033e2b9e",
+    "reports/SCIENTIFIC_INTEGRITY_AUDIT.md": "b25a8a8291080b3b34dacd61358b884d78c1a2122b7f5aee2fe0de4babc3e637",
+    "reports/PUBLICATION_THESIS.md": "4842d3be6abc09cb8d59b5e781bfeee017ff65672c687e370b13ab7b19b8640d",
+    "reports/PUBLICATION_READINESS.md": "e1be25098f8f96e67660969ae81577965bef9810354213b25ea647c858db6f21",
+    "reports/QPU_READINESS.md": "4b1b65b02e2fb37451f245434c7e3a5dfe94b9ed196afe2a852bbef3fd88125c",
+    "reports/RECOVERY_EXECUTION_REPORT.md": "aec4b57cfc23585edb369eba234783b2e01240a81889973c9e2923c620105f44",
+    "docs/LAURENT_HANDOFF.md": "b10725c2fa2aa8cdc09c6890867851e6d63f41a7e6e6ca5d530c3580ed6dd092",
+    "docs/QPU_COMPATIBILITY.md": "75b00c38903dbdd9505f74fc8536f64802a9d8c54775338e66995a12ed85d4ce",
+    "docs/P40_REPRODUCTION.md": "3f6dfb4c29e5931b276963f00823aeb1f498c7a069996a25fc7070a228940962",
+    "qpu/README.md": "a6164ec624858da00f5f733df754a26ec67c7e474228521bd5e5441c0a3821c7",
+    "results/validated/recovery_2026-11-24/summary.json": "82cd870c819767de8693d7b8adce866ace1aa1af2adcc218f9b5b5c17fe79d39",
+    "results/validated/recovery_2026-11-24/benchmark.csv": "5fc61e7f0e5467f60ebfb3b9d87ca839c04ca0860606697c75656ab9f5d2da4b",
+    "results/validated/P40_sharpness_pilot_2026-11-24/manifest.json": "d29fd7a401d6415e18ddd49cf070bbd7ac3e5f1072182d74abba8b2c5bc68b84",
+    "results/validated/P40_replay_supervisor_2026-11-24/manifest.json": "3e31be5de85c1283beff8c57db3487c284b5ab2f11467aa022872d589fdf5a3d",
+    "reports/manuscript_review_2026-11-24/v3/report.md": "6973188ccd0243c6d88595f8c3b74e45b3cac341ed5e377f8ecaf11f4ee2ddca",
+    "reports/manuscript_review_2026-11-24/v3/reconciliation.json": "9a15726f40936ebc60b61ec2a02f630589c9589504855db6b148eafb143438f9",
+    "reports/recovery_2026-11-24/clean_install_receipt.json": "9b74cbd3cfb3be2c900cef094c3757d8538163d97f0a34302e8ecb8ae1e795ea",
+    "reports/recovery_2026-11-24/release_clean_pytest_receipt.json": "d80d4b0f0b93b1b55d9f52d98074472745f82fd0f58d535e2720a478901acf0f",
+    "reports/recovery_2026-11-24/archive_preservation.json": "1b116cad0621132ea1e955e460032cd4e0c3974d409779c8d599967cd8672f18",
+    "reports/recovery_2026-11-24/isolated-worker-history.bundle": "be317c13002452512c2e46aa1166cf88cb46f9d08a1e23c05740589b7d44a0c4"
+  },
+  "release_tests": {
+    "count": 484,
+    "status": "PASS",
+    "new_venv": true,
+    "tested_python_sources_still_match": true
+  },
+  "manuscript": {
+    "pages": 16,
+    "source_snapshot_sha256": "98bf647e4f180cd2a1628106f5c621fa5d02ceebf33036317fb8e5cec4e27b7e",
+    "pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+    "citation_keys": 14,
+    "significant_build_failures": []
+  },
+  "gates": {
+    "manuscript_delivered": true,
+    "submission_ready": false,
+    "full_composition_originality_verified": false,
+    "optimization_advantage_demonstrated": false,
+    "offline_pilot_ready": true,
+    "actual_hardware_compatibility_verified": false,
+    "qpu_execution_authorized": false,
+    "qpu_jobs_submitted": 0,
+    "hardware_credits_consumed": 0
+  },
+  "notes": [
+    "The content commit contains the delivered sources/evidence; this receipt is a subsequent commit to avoid self-referential hashes.",
+    "Original worker commits are retained in the local verified Git bundle;6154b46 is its prerequisite.",
+    "The only pre-existing unstaged working-tree change is .DS_Store; it is excluded from commits."
+  ]
+}
