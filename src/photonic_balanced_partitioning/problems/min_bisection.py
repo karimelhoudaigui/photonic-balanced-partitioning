@@ -6,8 +6,31 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any
 import itertools
+import math
+from numbers import Integral, Real
 import numpy as np
 from scipy import sparse
+
+
+def _validate_graph(n, edges):
+    """Simple undirected graph with finite nonnegative real edge weights."""
+    if isinstance(n, bool) or not isinstance(n, Integral) or n < 1:
+        raise ValueError('n must be a positive integer')
+    seen = set()
+    for edge in edges:
+        if len(edge) != 3:
+            raise ValueError('Each edge must contain two vertices and one weight')
+        i, j, weight = edge
+        if any(isinstance(v, bool) or not isinstance(v, Integral) or not 0 <= v < n for v in (i, j)):
+            raise ValueError('Edge vertex is outside the graph')
+        if i == j:
+            raise ValueError('Self loops are excluded from a simple graph')
+        key = tuple(sorted((i, j)))
+        if key in seen:
+            raise ValueError('Duplicate undirected edge; aggregate weights explicitly')
+        seen.add(key)
+        if not isinstance(weight, Real) or not math.isfinite(weight) or weight < 0:
+            raise ValueError('Edge weights must be finite nonnegative real numbers')
 
 
 class GraphFamily(str, Enum):
@@ -29,6 +52,9 @@ class GraphInstance:
     edges: tuple[tuple[int, int, float], ...]
     family: GraphFamily | None = None
     metadata: dict[str, Any] | None = None
+
+    def __post_init__(self):
+        _validate_graph(self.n, self.edges)
     
     @property
     def adjacency_matrix(self) -> np.ndarray:
@@ -98,11 +124,12 @@ class BalancedGraphPartitioning:
     k: int | None = None
     
     def __post_init__(self):
+        _validate_graph(self.n, self.edges)
         if self.n % 2 != 0:
             raise ValueError(f"Number of vertices must be even, got {self.n}")
         if self.k is None:
             object.__setattr__(self, "k", self.n // 2)
-        if self.k != self.n // 2:
+        if isinstance(self.k, bool) or not isinstance(self.k, Integral) or self.k != self.n // 2:
             raise ValueError(f"k must equal n/2 for bisection, got k={self.k}, n={self.n}")
     
     @property
@@ -148,6 +175,13 @@ class BalancedGraphPartitioning:
     
     @classmethod
     def from_adjacency(cls, A: np.ndarray, k: int | None = None) -> "BalancedGraphPartitioning":
+        A = np.asarray(A, dtype=float)
+        if A.ndim != 2 or A.shape[0] != A.shape[1]:
+            raise ValueError('Adjacency must be square')
+        if not np.all(np.isfinite(A)) or np.any(A < 0):
+            raise ValueError('Adjacency weights must be finite and nonnegative')
+        if np.any(np.diag(A) != 0) or not np.allclose(A, A.T, atol=1e-12, rtol=0):
+            raise ValueError('Adjacency must be symmetric with zero diagonal')
         n = A.shape[0]
         edges = []
         for i in range(n):
@@ -165,6 +199,8 @@ class BalancedGraphPartitioning:
     
     @classmethod
     def cycle_graph(cls, n: int, weight: float = 1.0) -> "BalancedGraphPartitioning":
+        if n < 4:
+            raise ValueError('A simple even cycle requires n>=4')
         if n % 2 != 0:
             raise ValueError(f"Cycle graph requires even n, got {n}")
         edges = [(i, (i + 1) % n, weight) for i in range(n)]
@@ -299,6 +335,12 @@ class BalancedGraphPartitioning:
 
 
 def compute_cut_weight(n: int, edges: tuple[tuple[int, int, float], ...], partition: tuple[int, ...]) -> float:
+    _validate_graph(n, edges)
+    partition = tuple(partition)
+    if len(set(partition)) != len(partition) or any(
+        isinstance(v, bool) or not isinstance(v, Integral) or not 0 <= v < n for v in partition
+    ):
+        raise ValueError('Partition vertices must be distinct and inside the graph')
     v0 = set(partition)
     v1 = set(range(n)) - v0
     
@@ -311,10 +353,14 @@ def compute_cut_weight(n: int, edges: tuple[tuple[int, int, float], ...], partit
 
 
 def enumerate_balanced_partitions(n: int, k: int) -> list[tuple[int, ...]]:
+    if any(isinstance(v, bool) or not isinstance(v, Integral) for v in (n, k)) or not 0 <= k <= n:
+        raise ValueError('Require integer 0<=k<=n')
     return [tuple(combo) for combo in itertools.combinations(range(n), k)]
 
 
 def solve_exact_min_bisection(n: int, edges: tuple[tuple[int, int, float], ...], k: int | None = None) -> PartitionResult:
+    problem = BalancedGraphPartitioning(n, edges, k)
+    k = problem.k
     if k is None:
         k = n // 2
     

@@ -4,7 +4,8 @@ from dataclasses import dataclass
 from typing import Any
 import numpy as np
 from .fixed_photon_obliq import FixedPhotonObliq
-from .objectives import distribution_metrics, objective_value
+from .objectives import cut_energies
+from ..optimization.objectives import training_loss
 
 
 @dataclass(frozen=True)
@@ -42,8 +43,9 @@ class CollisionAwareSolver:
 
     def expected_objective(self, U: np.ndarray, edges) -> float:
         p = np.abs(self._base_solver.output_state(U))**2
-        metrics = distribution_metrics(p, self._base_solver._enumerate_all_fock_states(), edges)
-        return objective_value(metrics, "collision_aware", mu=self.mu)
+        states = np.asarray(self._base_solver._enumerate_all_fock_states())
+        feasible = np.all((states == 0) | (states == 1), axis=1)
+        return training_loss(p, cut_energies(states, edges), feasible, mu=self.mu)
 
     def optimize(self, edges, num_iterations=100, seed=None) -> dict[str, Any]:
         """Haar random-search baseline, *not* a variational algorithm.
@@ -56,13 +58,15 @@ class CollisionAwareSolver:
         rng = np.random.default_rng(seed)
         objectives, energies = [], []
         best_objective, best_U = float("inf"), None
+        states = np.asarray(self._base_solver._enumerate_all_fock_states())
+        feasible = np.all((states == 0) | (states == 1), axis=1)
+        costs = cut_energies(states, edges)
         for _ in range(num_iterations + 1):
             U = self._base_solver.random_interferometer(seed=int(rng.integers(2**31)))
             p = np.abs(self._base_solver.output_state(U))**2
-            metrics = distribution_metrics(p, self._base_solver._enumerate_all_fock_states(), edges)
-            obj = objective_value(metrics, "collision_aware", mu=self.mu)
+            obj = training_loss(p, costs, feasible, mu=self.mu)
             objectives.append(obj)
-            energies.append(metrics.conditional_energy)
+            energies.append(training_loss(p, costs, feasible, "conditional_energy"))
             if best_U is None or obj < best_objective:
                 best_objective, best_U = obj, U
         return {"best_objective": best_objective,
@@ -70,4 +74,5 @@ class CollisionAwareSolver:
                 "best_interferometer": best_U, "objectives": objectives,
                 "energies": energies, "iterations": num_iterations,
                 "n_evaluations": num_iterations+1, "n_shots": 0,
-                "training_mode": "exact_distribution"}
+                "training_mode": "exact_distribution", "uses_optimum_oracle": False,
+                "reference_state_count": len(states)}
