@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "pass_id": "math-adversarial",
+  "issue_prefix": "MA-F",
+  "manuscript_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+  "source_files_sha256": "6dc10cc04c021258f1b3904a9446a9952ff91f70f54f837d989cd4ce25001726",
+  "global_context_sha256": "20a96ecdea8b3c91be3eb59bf6c38696e26e5511da6df20a9bae3b9b8db9d43f",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "source_revision": "8546e058030a9db67f5980d7c4ed3dd45372a475",
+  "snapshot_root": "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v1",
+  "review_scope": "Fresh derivation of source mathematics/physics and whole-source claim comparison; source v1 only, not PDF or empirical implementation review.",
+  "lanes": [
+    "correctness",
+    "adversarial",
+    "claims"
+  ],
+  "issues": [],
+  "finding_summary": "No consequential mathematical defect or demonstrated headline overclaim was found in the reviewed source scope. Empty issues is not a certificate of whole-project correctness or originality.",
+  "reviewer_provenance": {
+    "executor": "/root/theory_literature",
+    "method": "fresh source derivation with one bounded independent exact arithmetic sanity check",
+    "previous_role": "Prior project work included literature and adjacent-theory discussions/audits; not author of this manuscript or P33/P37 statements/proofs. Author of the offline hardware CLI and handoff delivered in 9e75b5391c5b05ce353cc829ef52004688fb3ad3.",
+    "independence": "No old proof verdict or previous review artifact was read during this pass. Historical project context cannot be erased; independence is limited on the hardware implementation I authored. This pass supplies no independent hardware implementation validation.",
+    "delegation": "No subagents, external review runtime, account API or QPU used.",
+    "model_assignment": {
+      "assignment_source": null,
+      "requested_model": null,
+      "requested_reasoning": null,
+      "actual_model": null,
+      "actual_reasoning": null,
+      "fallback_reason": null
+    },
+    "execution_settings_note": "Native inherited host settings; actual model/reasoning identifiers not exposed."
+  },
+  "covered_units": [
+    {
+      "unit_id": "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+      "title": "Front matter",
+      "file": "sections/001-front-matter.tex",
+      "sha256": "efff6de0bdcfcd23d256a1d1dea1c78b4d38ac6eada0c10c8e0603c59e3a61ea",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+      "title": "Question and scope",
+      "file": "sections/002-question-and-scope.tex",
+      "sha256": "2d2a4a0ea245d170da43d8dc8a8d64bd7a33ff5f78689afdf8110534b6dc72e7",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+      "title": "Physical and optimization model",
+      "file": "sections/003-physical-and-optimization-model.tex",
+      "sha256": "6df702968fbc601f555891ef0d2d260c848608de3682e4411ad9a8610a25f6ee",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+      "title": "A density-qualified certificate for independent particles",
+      "file": "sections/004-a-density-qualified-certificate-for-independent-particles.tex",
+      "sha256": "3642991bc7ea14165a9c9fc578824ac8110880ffbd8598972d4769baba1a1676",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+      "title": "Uniform loss and the resource-dependent source optimum",
+      "file": "sections/005-uniform-loss-and-the-resource-dependent-source-optimum.tex",
+      "sha256": "381036b58cb96b71da724f8a08a5a38ded9ba0cf291f0751430630845fa3057b",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+      "title": "Reconciled computations and negative optimization result",
+      "file": "sections/006-reconciled-computations-and-negative-optimization-result.tex",
+      "sha256": "8246430c8689ff5d06609c6192281da13912c48cb5b0c4682199146ea34922ca",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+      "title": "Noise model and a prospective hardware pilot",
+      "file": "sections/007-noise-model-and-a-prospective-hardware-pilot.tex",
+      "sha256": "c2969c85c2c4d3e8802e0217b43efbdd715408025143869da29ba6e450eedd91",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+      "title": "Discussion and conclusion",
+      "file": "sections/008-discussion-and-conclusion.tex",
+      "sha256": "a8ac7d4a0f2eb736bb74b4f6d8c4e6e8073a72fed2f1f1dee762fce6cd192f67",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+      "title": "Bibliography",
+      "file": "sections/009-bibliography.tex",
+      "sha256": "a94cc40b38038f1050102489a49407ec9b6107da42e316012e7e303aab2e6d17",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+      "title": "Full-output permanent and cycle bounds",
+      "file": "sections/010-full-output-permanent-and-cycle-bounds.tex",
+      "sha256": "c331093b45f5bd9fb3add1ff74ba527c597cda6782e903c2dde4f1621e2bf6db",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+      "title": "Source crossings and the boundary expansion",
+      "file": "sections/011-source-crossings-and-the-boundary-expansion.tex",
+      "sha256": "1bb2c3688c9f138643c2971a8bd41311024564c744b6ca9a7f51f95c347ebde0",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    },
+    {
+      "unit_id": "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1",
+      "title": "Reproduction, evidence and measurement conventions",
+      "file": "sections/012-reproduction-evidence-and-measurement-conventions.tex",
+      "sha256": "8bdc24066d9193ff50947a5ffcd1c0c1cd8cc390f31081a8d9862d6364e2bc16",
+      "status": "complete",
+      "scope": "entire unit read; source-only mathematical/claim scope, with unreviewed implementation/source-attribution leaves recorded in checks"
+    }
+  ],
+  "checks": [
+    {
+      "id": "MA-C001",
+      "kind": "snapshot-and-contract",
+      "result": "pass",
+      "inputs": [
+        "manifest.json",
+        "full-source.tex",
+        "context.json",
+        "scope_metadata.json",
+        "bibliography.bib",
+        "publication_manifest.json"
+      ],
+      "method": "Read the referee skill, shared protocol, correctness/adversarial/claims lane contracts and output contract. Read full-source.tex lines 1-427, then all 12 section files in their entirety; bibliography and publication manifest read separately.",
+      "actual_checks": "Recomputed SHA-256 of full-source.tex, every prepared unit and both supplemental artifacts. All equal their manifest values. Source SHA-256 is the assigned 70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3.",
+      "prior_verdicts_read": false,
+      "limitations": "Preparation is lexical; the PDF is expressly outside v1. Publication figure hashes were read but figure bytes/layout were not inspected."
+    },
+    {
+      "id": "MA-C002",
+      "kind": "independent-derivation",
+      "result": "no-defect-found",
+      "unit_ids": [
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1"
+      ],
+      "locations": [
+        "full-source.tex:55-60",
+        "full-source.tex:79-85",
+        "full-source.tex:349-357"
+      ],
+      "derivation": [
+        "Distinct occupied inputs have input factorial one. In the output creation expansion, identical output rows produce the denominator t! in both the squared permanent and the distinguishable assignment sum. For a repeated two-photon output i=i this gives p_b=2 q_i1 q_i2 and p_d=q_i1 q_i2, agreeing with normalization and the HOM convention.",
+        "For arbitrary k, the number of ordered output lists for t is k!/t!. Multiplying the interference triangle bound by this multiplicity converts sum_t F(y(t))/t! to (1/k!) sum_y F(y). Summing each output position gives B_sigma(j),tau(j); each relative permutation occurs k! times. Hence 2 TV <= per B - 1, with no postselection and no missing output factorial.",
+        "Two annihilations give E_b[t_i(t_i-1)]=4 sum_(a<b) q_ia q_ib. Therefore M=sum_i(a_i^2-sum_a q_ia^2)=E_b sum_i binom(t_i,2), while the distinguishable moment is M/2. The indicator-to-moment comparison uses 1 <= sum_i binom(t_i,2) <= binom(k,2) on collisional outputs."
+      ]
+    },
+    {
+      "id": "MA-C003",
+      "kind": "independent-derivation",
+      "result": "no-defect-found",
+      "unit_ids": [
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1"
+      ],
+      "locations": [
+        "full-source.tex:115-140",
+        "full-source.tex:359-374"
+      ],
+      "derivation": [
+        "A=B-I is real symmetric, entrywise nonnegative and zero-diagonal. Directed simple cycles are counted up to rotation; a length-two cycle is counted once. In exp(sum C_l z^l), every collection of distinct disjoint cycles has coefficient one; all overlapping/repeated collections add nonnegative coefficients. tr(A^l)/l contains every simple cycle with its correct weight and adds nonnegative closed walks.",
+        "For l>=2, tr(A^l)>=0 follows from closed walks, including odd l. Real symmetry and monotonicity of finite vector p-norms give tr(A^l)<=sum |lambda_j|^l <= ||A||_F^l. Thus every coefficient through degree k is bounded by (!r/r!) sigma^r. Evaluating only the finite polynomial requires no sigma<1; using the infinite envelope does.",
+        "For the dominant partition, C_ga^2=sum_(i in S_g) q_ia, so every column has norm one and ||off C||_F^2=delta. Groupwise Cauchy-Schwarz gives B_ab <= (C^T C)_ab with equal diagonals. With C=D+E, ||D||op<=1, ||E||_F=sqrt(delta), ||E^T E||_F<=||E||_F^2, yielding sigma<=2 sqrt(delta)+delta even if a dominant group is empty or rows tie.",
+        "Writing d_i=a_i-max_a q_ia gives M>=sum a_i d_i>=c delta. Bounding the off-maximum squared masses by d_i^2 gives M>=2c delta-2 sum d_i^2>=2delta(c-delta). Under M<c^2/2 the independent coarse inequality forces delta<c/2; this selects the increasing branch and justifies d_c(M), rather than inverting a quadratic without branch control.",
+        "f is increasing because f′(s)=s exp(-s)/(2(1-s)^2)>=0. Its expansion f(s)=s^2/4+O(s^3), together with rho(x)=2sqrt(x)+x and fixed c, gives Phi(d_c(M))=M/(2c)+O(M^(3/2)). The cap and rho>=1 branch remain valid trivial bounds."
+      ],
+      "boundary_cases_checked": [
+        "exact zero rows",
+        "ties in row maximization",
+        "empty assigned groups",
+        "M=delta=0",
+        "sigma=0",
+        "sigma>=1 and finite-polynomial interpretation",
+        "M=c^2/2 excluded from the refined branch",
+        "c tending to zero excluded from the fixed-c asymptotic"
+      ],
+      "non_claim": "This is a fresh source derivation, not a certified floating-point implementation or a bit-complexity audit."
+    },
+    {
+      "id": "MA-C004",
+      "kind": "adversarial-example-derivation",
+      "result": "no-defect-found",
+      "unit_ids": [
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1"
+      ],
+      "locations": [
+        "full-source.tex:142-156"
+      ],
+      "derivation": [
+        "The two rotated occupied columns are orthonormal. All four intensities are 1/2, leakage is 2 sin^2(theta), and M=2 cos^2(theta) sin^2(theta). The three group-total probabilities are (2u,1-4u,2u) for bosons and (u,1-2u,u) for distinguishable particles. Their conditional splitting laws coincide in each group sector, so full-output TV=2u=M. This proves the stated leading sharp coefficient at c=1/2, not sharpness at every floor c.",
+        "For the flat +/- pair on even L, diagonal output probability differences sum to 1/L and same-sign distinct output differences sum to (L-2)/(2L); the positive part totals 1/2. Opposite-sign events supply the negative part 1/2. Bosonic collision probability is 2/L. Adding deterministic photons on disjoint spectator modes tensors both laws with the same point mass and preserves TV. Taking L=k+2 and k-2 spectators gives m=2k and floor 2/(k+2), as claimed.",
+        "The spectator family is physical because its occupied columns are orthonormal and can be completed to a unitary. It refutes a collision-only independent-particle certificate at balanced average density; it establishes no sampling hardness."
+      ]
+    },
+    {
+      "id": "MA-C005",
+      "kind": "independent-derivation",
+      "result": "no-defect-found",
+      "unit_ids": [
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1"
+      ],
+      "locations": [
+        "full-source.tex:163-199",
+        "full-source.tex:376-396"
+      ],
+      "derivation": [
+        "Haar-averaging a fixed l-photon bosonic density matrix commutes with all passive mode transformations. Diagonal mode phases force the averaged operator to be diagonal in the occupation basis; commutation with mode-mixing generators a_i^dagger a_j equates adjacent occupation diagonal entries, since the composition graph is connected. Unit trace then gives uniform weight 1/binom(m+l-1,l). There are binom(m,k) binom(l-1,k-1) compositions with exactly k occupied modes. This independently reconstructs h(l); it is not an independent authentication of the cited source/version.",
+        "Uniform independent loss produces Bin(N,eta) survivors and commutes through a passive interferometer. Conditioning on any surviving distinct-input subset, the same Haar average applies. Thus S_N=E h(L), with vacuum and all failures counted.",
+        "The exact h ratio minus one has numerator k(m-2-l); birth at l=k-1 is positive, the difference at m-2 is zero and the one at m-1 negative. Coupling one Bernoulli survivor gives S_(N+1)-S_N=eta E Delta h(Bin(N,eta)). This is strictly positive for N<=m-2 and has one crossing for N=m-1. At eta=1 the maximum h(m-2)=h(m-1) gives exactly the stated endpoint tie.",
+        "Binomial size bias gives b_N=eta E g(Bin(N-1,eta)+1); one additional Bernoulli trial gives the eta^2 adjacent-difference identity. The g-ratio numerator is [m(m-2)-(m+2)l]/2, with zero m-4+8/(m+2) strictly between m-4 and m-3 for m>=8. This yields the four possible source sizes and the endpoint optimum m-3.",
+        "For the sign-change lemma, division by t^a leaves positive terms with negative exponents and negative terms with nonnegative exponents, making a strictly decreasing function from positive infinity to a negative limit. For successive binomial orders, the mass likelihood ratio (1-eta)(n+1)/(n+1-r) is strictly increasing in r; centering it at the coefficient sign boundary makes the new expectation negative at the old root. Thus tau_(m-1)<tau_(m-2)<tau_(m-3). Ordered adjacent differences exclude nonadjacent global ties."
+      ],
+      "boundary_cases_checked": [
+        "eta=1 as a separate endpoint",
+        "eta=0 explicitly outside the theorem",
+        "m=8 minimum admitted size",
+        "m=6 excluded, where the g zero becomes integer and the endpoint would change",
+        "N=k and N=m",
+        "root uniqueness versus nonadjacent ties",
+        "Haar mean versus fixed-unitary waiting time"
+      ]
+    },
+    {
+      "id": "MA-C006",
+      "kind": "asymptotic-rederivation",
+      "result": "no-defect-found",
+      "unit_ids": [
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1"
+      ],
+      "locations": [
+        "full-source.tex:201-206",
+        "full-source.tex:398-403"
+      ],
+      "derivation": [
+        "With N=m-s and T the number lost, l=m-s-T. Expanding the exact ratios on l>=3m/4 gives Delta h/h=(s+T-2)/(2m)+O((1+s+T)^2/m^2) and Delta g/g=(s+T-4)/(2m)+O((1+s+T)^2/m^2). After size bias, T is Bin(m-s-1,lambda/m), so l remains m-s-T: there is no missing shift by one.",
+        "Peak-relative values differ from one by O((1+s+T)^2/m), and are bounded. All fixed moments and a positive exponential moment of T are uniformly bounded at fixed lambda. Multiplying the ratio errors by peak-relative errors therefore contributes O(m^-2) in expectation. Markov applied to exp(T) gives an exponentially small tail beyond m/4-s; functions and adjacent differences divided by their peaks are bounded there. Division by the mean preserves the stated expansion.",
+        "The explicit index dictionary is m(1-a_m)->1, m(1-tau_(m-3))->1, m(1-tau_(m-2))->2, and m(1-tau_(m-1))->3. The per-photon losses 1,2,3 are in the order of the optimum transitions m-3 to m-2 to m-1 to m as eta decreases, rather than ascending eta-root order. Fixed-lambda sign bracketing and unique crossings suffice to establish these limits.",
+        "The argument is pointwise in fixed s and lambda and is not a fixed-transmission or uniform growing-lambda assertion. The manuscript expressly maintains this distinction."
+      ]
+    },
+    {
+      "id": "MA-C007",
+      "kind": "physics-source-derivation",
+      "result": "no-defect-found-in-formulas",
+      "unit_ids": [
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1"
+      ],
+      "locations": [
+        "full-source.tex:303-324"
+      ],
+      "derivation": [
+        "The internal-state overlap factor is S_(tau(j),sigma(j)): it follows by taking the internal norm of the amplitude vector sum_sigma product_j V_(y_j,sigma(j)) tensor_j phi_(sigma(j)). This gives the stated conjugation convention and the p_b and p_d endpoints.",
+        "For two photons, only identity and transposition interference occur, so x=|S_12|^2 gives p_x=x p_b+(1-x)p_d. With uniform loss the zero- and one-photon detected sectors have the same spatial distribution for every x. Hence detected full-space TV to x=0 is eta^2 x M0.",
+        "For the sharp family, the two same-group sectors have probabilities (1+x)u each. Half of each sector bunches and half gives the corresponding valid optimum path string. Therefore P_collision=P_success_path=eta^2(1+x)u=eta^2(1+x)M0/2. This uses all occupations and does not condition on detection.",
+        "The rotation parametrization theta=2 arctan(r) agrees with BS.Rx(4 arctan(r)), whose convention uses a half angle. Routing and group splitters implement the sharp family up to output phases and input-column phases; fixed distinct-input Fock probabilities are invariant under those phases. The claim is about displayed occupation laws, not exact phase-identical matrices.",
+        "For k>=3, transposition overlap factors and longer-cycle products need not share a single mixture coefficient. The global-mixture warning is consistent with the stated product pure internal-state model."
+      ],
+      "independence_limit": "I authored the offline hardware CLI and its handoff documents in commit 9e75b5391c5b05ce353cc829ef52004688fb3ad3. This pass does not provide an independent implementation audit of that component or of its supplied counts. P40 formulas were derived from the snapshot; no P40 implementation, receipt or 45-cell campaign was loaded."
+    },
+    {
+      "id": "MA-C008",
+      "kind": "bounded-exact-computation",
+      "result": "pass",
+      "runtime_seconds": 0.001669249963015318,
+      "interpreter": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+      "arithmetic": "Python fractions.Fraction, math.comb; no random sampling, external packages or network",
+      "inputs": {
+        "source_m": 8,
+        "source_eta": [
+          "3/4",
+          "9/10",
+          "99/100",
+          "1"
+        ],
+        "ratio_m": [
+          8,
+          10,
+          12
+        ],
+        "sharp_r": "1/10",
+        "overlap_x": [
+          "0",
+          "1/2",
+          "1"
+        ],
+        "transmission_eta": [
+          "1",
+          "9/10",
+          "1/2"
+        ]
+      },
+      "algorithm": [
+        "Compute h(m,l)=comb(m,m/2)*comb(l-1,m/2-1)/comb(m+l-1,l) as a Fraction, zero below m/2. Sum the exact binomial mixture for every N in [m/2,m]. Enumerate all maximizing N for S_N and S_N/N.",
+        "For m=8,10,12 and l=m/2,...,m-1, compare h(m,l+1)/h(m,l) exactly to l(l+1)/((l-m/2+1)(m+l)).",
+        "For r=1/10 use c=(1-r^2)/(1+r^2), s=2r/(1+r^2), A=((c,-s),(c,-s),(s,c),(s,c)) so V=A/sqrt(2). Enumerate all ten ordered-index pairs i<=j. Compute p_b=(A_i0*A_j1+A_i1*A_j0)^2/(8 if i=j else 4) and p_d=(A_i0^2*A_j1^2+A_i1^2*A_j0^2)/(8 if i=j else 4). Verify normalization, TV=M, collision mass=M and optimal-path mass=M.",
+        "For each of the nine x/eta combinations, interpolate p_x=x p_b+(1-x)p_d and verify eta^2 TV(p_x,p_d)=eta^2 x M and both collision/path masses eta^2(1+x)M/2. Equality of lower loss sectors was derived analytically in MA-C007, not inferred from a zero-shot experiment."
+      ],
+      "outputs": {
+        "source_choices": [
+          {
+            "eta": "3/4",
+            "attempt": [
+              8
+            ],
+            "photon": [
+              7
+            ]
+          },
+          {
+            "eta": "9/10",
+            "attempt": [
+              7
+            ],
+            "photon": [
+              6
+            ]
+          },
+          {
+            "eta": "99/100",
+            "attempt": [
+              7
+            ],
+            "photon": [
+              5
+            ]
+          },
+          {
+            "eta": "1",
+            "attempt": [
+              6,
+              7
+            ],
+            "photon": [
+              5
+            ]
+          }
+        ],
+        "sharp_M_and_TV": "7840800/104060401",
+        "all_assertions": "passed"
+      },
+      "scope_limit": "This tiny exact sanity check is not the archived P33/P37/P40 campaign, not a proof by enumeration, and not a new general computation campaign. No scientific output or raw file was changed."
+    },
+    {
+      "id": "MA-C009",
+      "kind": "whole-paper-claims-comparison",
+      "result": "no-consequential-mismatch-found",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1"
+      ],
+      "checked_comparisons": [
+        "Abstract and discussion explicitly require a floor on every positive row; they distinguish expected collision pairs from collision probability, fixed-c upper envelopes from circuitwise asymptotic equivalence, and average density from a row floor.",
+        "The sharp coefficient is claimed only at c=1/2. The spectator family is claimed as an obstruction to a specific independent-particle approximation, not as computational hardness.",
+        "Same-circuit absolute TV control is explicitly separated from rare-event ratios, retrained-model comparisons, and graph-optimization benefit.",
+        "The loss theorem is explicitly Haar-averaged threshold feasibility, with different resource normalizations and no graph-quality enrichment. The text distinguishes refreshed-Haar N/E[p] from the fixed-U expectation E[N/p].",
+        "The optimization grid arithmetic is internally consistent: 3*6*2*3*7=756 runs, 36 runs per method/size, and 120*256+4096=34816 ideal attempts. The displayed bosonic means are lower than the distinguishable means at all sizes. Descriptive intervals, duplicate graph seeds, oracle-assisted historical runs and unknown within-batch first-hit order are disclosed.",
+        "The lower-priority mean-objective and pinched-state results are not presented as full samplers or proofs of the open measured TV<=delta bound. Static ObliQ reproduction is not presented as full original training/decoding reproduction.",
+        "The source explicitly labels all pilot demonstration counts local_synthetic, denies QPU measurements and device access validation, and separates local phase-global circuit equivalence from backend compilation.",
+        "Novelty of the complete density composition remains explicitly open. Bibliography metadata and cited source locators were read; this pass neither establishes nor refutes any global originality claim."
+      ],
+      "unreviewed_leaves": [
+        "external primary-source authentication and comprehensive novelty attribution",
+        "archive raw-data reconciliation, bootstrap implementation and historical optimization source matching",
+        "P33/P37/P40 campaign scripts and receipts",
+        "PDF, figures, typesetting and venue/author metadata",
+        "independent hardware implementation, backend access, detectors, calibration and remote submission"
+      ]
+    }
+  ],
+  "specialist_obligations": [],
+  "remaining_questions": [
+    {
+      "kind": "external-source-and-attribution",
+      "question": "Does independent exact-source review support the named prior-art relationships and identify the smallest originality claim for the complete density composition? This pass leaves that open and reports no novelty defect from absent evidence."
+    },
+    {
+      "kind": "artifact-validation",
+      "question": "Do independent computation and reproducibility reviewers confirm all archived/generated numerical claims and the publication manifest inputs? This pass checked source consistency and tiny exact examples, not the raw campaigns."
+    }
+  ],
+  "limitations": [
+    "No universal theorem is inferred from the finite exact checks. The general claims were checked by the written derivations above.",
+    "The source snapshot and unit hashes were authenticated; underlying historical source files and figure bytes were not reauthenticated here.",
+    "No prior verdict, manuscript source, archived raw data, main worktree state or hardware output was edited. Only this assigned pass file is written.",
+    "The protocol asks the coordinator to arrange fresh specialist confirmation if it retains a serious finding; this pass raised none."
+  ]
+}
