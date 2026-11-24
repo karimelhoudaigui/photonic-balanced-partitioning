@@ -1,0 +1,20 @@
+{
+  "source_revision": "4572a76520be3a199cd315416ec52dfcf76c4637",
+  "working_source_changes": true,
+  "prepared_source_sha256": "6ecf7fd1834d8e734f2859e34decd21a8e5f20516ac08376fafacfb9058ff1af",
+  "supplemental_sha256": {
+    "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+    "publication_manifest.json": "6b7373eddbf80838afdde4d7bd212812e73325c3665d407a6d1a5dfe033e2b9e"
+  },
+  "changes_since_v1": [
+    "Explicit E05b loss,mu,COBYLA,fallback and exact final versus heldout metric",
+    "Exact trained parameter counts and rejection-bucket limitation",
+    "2000 cluster bootstrap ratio,2.5/97.5 percentiles and nominal multiplicities",
+    "Corrected loss/density figure captions and Haar-success table symbol",
+    "Publication P40 input pins/macro; noise output-mode limitation; readable table font",
+    "Typesetting fixes for long paths and inline parameter list"
+  ],
+  "mathematical_core_changed": false,
+  "pdf_pages_observed": 16,
+  "build_evidence": "reports/recovery_2026-11-24/build_v4.json"
+}

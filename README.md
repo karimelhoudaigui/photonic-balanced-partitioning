@@ -1,57 +1,48 @@
-# Photonic Balanced Partitioning — research in progress
+# Photonic balanced partitioning
 
-Can collision-aware fixed-particle optics improve graph bisection at equal
-physical sampling and classical search cost? The tested generic-mesh route
-currently gives **NO-GO for a benefit claim**. The manuscript is frozen and
-hardware execution is disabled.
+This repository studies collision-aware photonic graph bisection, sufficient classical-replacement certificates and physical resource accounting. The tested generic bosonic optimizer **has not demonstrated the sought benefit** over distinguishable and serious classical controls. No QPU measurement is reported.
 
-Read the [executed research checkpoint](reports/RESEARCH_CYCLE_2026-11-20.md),
-[claims registry](CLAIMS.md) and [continuation questions](OPEN_QUESTIONS.md).
+Start with the [rebuilt article PDF](paper/main.pdf), [scientific overview](docs/SCIENTIFIC_OVERVIEW.md), [integrity audit](reports/SCIENTIFIC_INTEGRITY_AUDIT.md) and [publication assessment](reports/PUBLICATION_READINESS.md). The single primary thesis is the density-qualified certificate, supported by a loss/source theorem and an honest negative benchmark. Originality of the full certificate composition remains unresolved.
 
 ## Reproduce locally
+
+Python3.11 is the tested series; numerical, test, Perceval and publication dependencies are pinned in pyproject.toml. The recorded environment is Python3.11.15, NumPy2.4.6, SciPy1.17.1, Perceval1.3.0 and exqalibur1.4.2.
 
 ```sh
 python3.11 -m venv .venv
 .venv/bin/python -m pip install -r requirements-research-lock.txt
 .venv/bin/python -m pip install -e '.[all]'
-PYTHONPATH=src .venv/bin/python -m pytest tests/ -q
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m pytest tests/ -q
+.venv/bin/python scripts/build_publication.py --check
 ```
 
-The pinned environment was actually tested with Python3.11.15, NumPy2.4.6,
-SciPy1.17.1, Perceval1.3.0 and exqalibur1.4.2. The Perceval distribution package
-is `perceval-quandela`. Installing it does not authorize any QPU access.
+The accepted data and generated figures are tracked. Regenerate paper artifacts with `make figures`; compile with `make paper TECTONIC=/path/to/tectonic`. Tectonic0.16.9 was used locally. The first TeX build may download composition packages; no device service is used. [Reproducibility](docs/REPRODUCIBILITY.md) explains fresh-output analysis, archive integrity and build checks.
 
-Every main run has a manifest with exact command, source commit, seed formulas,
-source hashes and raw-output hashes. To replay a numerical run on another machine,
-use its manifest command with a local interpreter and a **new** output directory:
+## Reproduce the offline hardware pilot
 
 ```sh
-PYTHONPATH=src .venv/bin/python experiments/run_research.py haar --output /tmp/haar-replay
-PYTHONPATH=src .venv/bin/python experiments/run_equal_budget.py --output /tmp/budget-replay
-PYTHONPATH=src .venv/bin/python experiments/run_coherence_check.py --output /tmp/coherence-replay
-PYTHONPATH=src .venv/bin/python experiments/run_label_control.py --output /tmp/labels-replay
-PYTHONPATH=src .venv/bin/python experiments/audit_results.py
-MPLCONFIGDIR=/tmp/pasqal-matplotlib PYTHONPATH=src .venv/bin/python experiments/plot_results.py
+PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+  .venv/bin/python qpu/offline_pilot_20261124_v1/reproduce.py \
+  --output /tmp/pbp-offline-pilot-new
 ```
 
-The optional launchers use an installed Mathbox recorder and its environment-specific
-path; direct numerical scripts are portable. Historical manifests verify against
-their exact Git revision when newer scripts have changed. Raw data are never
-silently replaced, including the failed E06 check and the superseded E05 protocol.
+Use a new output directory. This executes all seven local preparation/analysis commands and creates explicitly synthetic counts. [Laurent's dossier](docs/LAURENT_HANDOFF.md), [commands](qpu/README.md), [compatibility matrix](docs/QPU_COMPATIBILITY.md) and [readiness gates](reports/QPU_READINESS.md) distinguish verified local compilation from unknown actual backend compatibility. Hardware execution requires separate explicit authorization; no submitting adapter is included.
 
-## Evidence and limitations
+## Evidence and layout
 
-- Physics and Perceval validation PASS:8464 output states, maximum probability error1.776e-15.
-- E01:3250 Haar circuits across n4/6/8/10 reproduce the known collision-free law.
-- E05b:756 runs with exactly34816 simulated ideal attempts each; all training draws counted.
-- A proved balanced-density counterexample has P_CF->1 but TV(bosonic,distinguishable)=1/2.
-- Novelty of the new overlap certificate/counterexample is OPEN; Haar scaling is known.
-- The full binary penalty baseline is explicitly classical. `PenaltyObliq` is a deprecated alias,
-  not an implementation of actual optical ObliQ dynamics.
-- The regular generator preserves degree through edge switches, but is not uniform.
-- Tiny exact-enumeration simulations, descriptive fixed-grid summaries and oracle-success
-  diagnostics cannot establish scalable advantage or hardware performance.
+- `src/.../problems`: validated weighted simple graphs and exact small bisections.
+- `photonic` and `classical`: full Fock laws, mesh/threshold models and explicit classical controls.
+- `optimization`: optimum-blind loss interface; success-to-known-optimum belongs to retrospective evaluation.
+- `noise`: bounded internal-state Gram interference and full loss sectors, with numerical diagnostics.
+- `hardware`: offline circuit/reference/export/count-analysis pipeline.
+- `results/validated/recovery_2026-11-24/`: the single publication dataset; all756 E05b runs reconstructed, with source hashes and documented provenance gaps.
+- `experiments/`, prior `results/`, `theory/`, `research/`: unchanged historical captures, proofs, contracts, counterexamples and source audits.
+- `paper/`: new LaTeX, generated tables/figures and PDF; historical unsupported article is retained in Git6154b46.
+- `reports/` and root registers: execution evidence, negative results, reviews, decisions and open obligations.
+- `.qwen/`: versioned local worker roles and bounded research infrastructure; tiny-model prose is not accepted as scientific evidence.
 
-Plots and their standalone PDF counterparts are in `reports/figures/`.
-No noise or hardware result is asserted. `LAURENT_HANDOFF.md` is withdrawn;
-`qpu/` entrypoints fail closed. Earlier manuscript text is not validated evidence.
+Historical manifests refer to their recorded source commits or frozen snapshots, not today's changing status text. Some older drivers overwrite fixed paths: inspect their contracts before any replay and always choose a fresh destination. The [numerical census](reports/NUMERICAL_RECONCILIATION.md) separates verified output integrity from new experiment replication. No raw data have been silently rewritten.
+
+The original algorithmic goal remains open. Tests, PDF compilation, local circuit export and novelty are different standards of evidence.
+
+Release validation: **484 tests pass in a newly installed pinned Python venv**. The [portable P40 replay](docs/P40_REPRODUCTION.md) also reproduces all45 physical-model cells. The [execution report](reports/RECOVERY_EXECUTION_REPORT.md) distinguishes local validation, original captures, reviews and remaining publication/hardware gates.

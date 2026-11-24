@@ -1,0 +1,17 @@
+{
+  "executor": "/root/theory_literature",
+  "method": "Native agent message confirming local v3 repairs; recorded by coordinator, not a separately agent-written pass",
+  "manuscript_sha256": "98bf647e4f180cd2a1628106f5c621fa5d02ceebf33036317fb8e5cec4e27b7e",
+  "scope": "MA2-F001 and MA2-F002 repairs; unchanged model/certificate/proof bytes; pilot resource distinction diff",
+  "confirmed": [
+    "k>=3 qualification and bosonic k2 identity M=1-P_CF",
+    "one backslash before Phi",
+    "model, certificate and both proof appendices byte-identical to v2",
+    "standalone classical1/3 versus optical eta^2/3 distinction coherent"
+  ],
+  "limitations": [
+    "Not a new computation or full fresh v3 proof pass",
+    "No new source/figure/novelty authentication"
+  ],
+  "native_agent_commit_before_confirmation": "d9f735746ddc3fd2605d20b8499002c2b9829b0b"
+}

@@ -684,3 +684,19 @@ fresh independent review is unavailable after the new agent quota interruption.
 RESULT: REJECT only the curved pinched-state extension. Neither measured
 linear/curved inequality nor the linear pinched lemma is refuted. No novelty,
 graph benefit, manuscript writing or QPU progression. KEEP the exact obstruction.
+
+
+## 2026-11-24 — scientific recovery and concrete publication/pilot deliverables
+
+Request: restore rigorous science, rebuild the article and prepare a real offline Laurent dossier without QPU execution or external transmission. Branch scientific-recovery-publication; starting6154b46. Initial803-file hashes and supplied audit copy preserved before edits;356-test baseline executed. Focused independent graph/anti-oracle tests pass.
+
+Three real isolated worker lanes delivered physics/noise (d36e2d2, integrated52e983f), numerical reconciliation (18ba18b, integratedbb09283), and offline Quandela/Perceval engineering (9e75b53, integrated3392103). Review, raw evidence and command receipts were inspected before integration. A source-hash census distinguishes43 verified completed outputs,2 source gaps,3 failed captures and2 excluded root P33 copies.
+
+E05b756 runs/90,720 objective batches/26,320,896 ideal attempts reconstruct. No trained bosonic advantage over distinguishable means; all find optimum in training; shot order within batches unavailable. New public training losses accept no optimum, and exact-reference setup remains charged classical information. No historical optimizer campaign rerun or archived raw rewrite.
+
+New physical noise model retains all sectors/vacuum and pure internal Gram phases. Seven-command offline pipeline independently reproduced by supervisor to results/validated/offline_pilot_2026-11-24_supervisor/. It uses explicit local_synthetic counts, known/unknown attempt cases and source hashes, zero credits and zero hardware shots. Integrated code suite at this stage455PASS; final publication-inclusive count/build/referee outcomes are recorded in reports/RECOVERY_EXECUTION_REPORT.md.
+
+Primary thesis chosen: density-qualified replacement plus resource accounting, full exact proofs, known-ingredient attribution and open complete novelty. Article rewritten under the user's explicit authorization; old unsupported figures/claims withdrawn and retained in Git. Mathematical/physical/statistical reviews, final generated artifacts and build receipts are separate evidence. See reports/PUBLICATION_READINESS.md. Original useful-search objective and actual QPU compatibility remain open.
+
+
+Release verification:484PASS in a freshly installed37-pin Python environment;16-page compiled PDF and three source-review perspectives delivered. Portable P40 replay on the integration branch reproduces all45 laws;602 historical scientific files remain unchanged. Detailed commands, hashes, review limits and unresolved publication/QPU gates: reports/RECOVERY_EXECUTION_REPORT.md.

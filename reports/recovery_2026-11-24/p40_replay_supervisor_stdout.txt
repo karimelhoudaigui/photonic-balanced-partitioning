@@ -1,0 +1,20 @@
+{
+  "result": "REPLAY_MATCH",
+  "cells": 45,
+  "circuits": 5,
+  "maximum_errors": {
+    "partial_archive": 0.0,
+    "distinguishable_archive": 0.0,
+    "metric_archive": 0.0,
+    "formula": 9.71445146547012e-17,
+    "normalization": 2.220446049250313e-16,
+    "unitarity": 1.1102230246251565e-16,
+    "unitary_archive": 0.0,
+    "slos_archive": 4.163336342344337e-17,
+    "slos_recomputed_ideal": 4.163336342344337e-17
+  },
+  "cpu_seconds": 1.122414,
+  "wall_seconds": 2.691921290999744,
+  "output": "/Users/karimelhoudaigui/Desktop/pasqal/results/validated/P40_replay_supervisor_2026-11-24",
+  "exception": null
+}

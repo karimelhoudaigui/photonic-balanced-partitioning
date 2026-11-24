@@ -1,0 +1,16 @@
+{
+  "executor": "/root/physics",
+  "method": "Native agent confirmation, recorded by coordinator; not an independently agent-written full v3 pass",
+  "manuscript_sha256": "98bf647e4f180cd2a1628106f5c621fa5d02ceebf33036317fb8e5cec4e27b7e",
+  "scope": "PN-F003/004/005 local repairs only",
+  "confirmed": [
+    "Optically prepared eta^2/3 control distinguished from standalone classical1/3 draw with explicit resource units",
+    "Bosonic k2 exception M=1-P_CF; generic rejection-bucket insufficiency limited to k>=3",
+    "Single backslash Phi in density caption"
+  ],
+  "limitations": [
+    "No new global review or computation",
+    "Noise and P40 code author; prior P33/P37 reviewer, as disclosed in raw passes"
+  ],
+  "raw_v2_agent_commit": "ab119952c06160d2ecf433e405257d2f21e1542c"
+}

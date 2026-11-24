@@ -1,0 +1,22 @@
+\section{Reproduction, evidence and measurement conventions}\label{app:repro}
+\paragraph{Single data source.}
+The accepted recovery directory is \path{results/validated/} with dated subdirectory \path{recovery_2026-11-24/}. It contains \path{summary.json}, per-run \path{benchmark.csv}, campaign inventory and source hashes. The publication generator reads these and the pinned P33/P37 raw records, emits every numerical table, figure and macro used here, and writes \path{paper/publication_manifest.json}. Its check mode rejects stale sources or divergent generated tables. Constants in graph and analytic model tables are independently computed from their definitions. No hand-entered performance table is used.
+
+\paragraph{Commands.}
+With the pinned project extras installed, run the following from the repository root:
+\begin{verbatim}
+python scripts/reconcile_experiments.py --help
+python scripts/build_publication.py
+python scripts/build_publication.py --check
+python -m pytest tests/ -q
+tectonic --untrusted --keep-logs paper/main.tex
+python -m photonic_balanced_partitioning.hardware --help
+\end{verbatim}
+The reconciliation help lists the exact destination rules; existing archived raw files are never targets. The source package pins numerical and Perceval dependencies. Tectonic is external build infrastructure. The execution report records the actually observed compiler, commands, test counts and source revision. No remote QPU is needed for this sequence.
+
+\paragraph{Evidence boundaries.}
+P33 and P37 have prior independent proof reviews of exact hashed statements; the revised paper is additionally reviewed across physics, optimization and reproducibility scopes. Finite tests, reviewers' agreement and compilation are not proofs of originality. Historical manuscripts and unsupported gain tables remain recoverable in Git, but are withdrawn from the current article. Some archive manifests have incomplete source snapshots; these limitations are explicit in the campaign inventory. No unavailable campaign is treated as newly replicated.
+
+\paragraph{Observables.}
+An emission attempt may fail before injection. A successfully injected $N$-photon trial may lose photons before detection. A detected occupation is a PNR vector, or a threshold click vector under a specified detector map. A collision-free occupation satisfies $t_i\le1$; a direct valid graph encoding additionally has $|t|=k$. An optimal event is valid and has cost $C^*$, used retrospectively on these exactly solvable small graphs. Conditional valid-event and attempt-normalized probabilities have distinct denominators. Raw hardware records, if later acquired, must be immutable; preprocessing, excluded events and denominator provenance belong in separate derived files.
+

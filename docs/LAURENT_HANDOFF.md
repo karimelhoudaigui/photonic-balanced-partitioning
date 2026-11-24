@@ -147,3 +147,11 @@ n'est validé par les fichiers locaux, et aucun crédit ne sera engagé par ce C
 Les diagnostics numériques traitent un support inférieur à 10⁻¹⁴ comme nul
 pour les conditionnelles de référence. Les probabilités Fock calculées restent
 conservées, notamment le résidu HOM d'arrondi voisin de 5×10⁻³².
+
+## Contrôle de calibration lié au théorème
+
+Le dossier complémentaire [DENSITY_PILOT.md](DENSITY_PILOT.md) fournit cinq circuits de la famille plate du théorème et45 scénarios locaux de pertes/recouvrement, tous conservés. Les unitaires, angles, sérialisations et distributions complètes sont dans results/validated/P40_sharpness_pilot_2026-11-24/. Ce pilote relie une prédiction quantitative d'interférence au futur travail matériel ; il ne montre pas un avantage d'optimisation.
+
+Ces exports forment une étude locale séparée. La chaîne de sept commandes validée ci-dessus reste limitée à ses trois circuits fixes ; elle ne soumet ni n'ingère automatiquement ces cinq nouveaux circuits. Leur intégration à un adaptateur matériel, le plan statistique, le compteur physique et les calibrations nécessitent une revue avant toute exécution autorisée.
+
+Pour les contrôles P40, η²/3 décrit une occupation faisable choisie uniformément puis effectivement préparée et transmise optiquement. Le sampler classique pur réussit avec1/3 par tir classique et ne subit aucune perte optique ; ces unités de coût sont distinctes.

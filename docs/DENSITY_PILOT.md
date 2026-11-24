@@ -67,8 +67,11 @@ separate justified noise argument; the present identities were derived directly.
 
 ## Countercontrols and interpretation
 
-Uniform feasible sampling has two optimal outcomes among six, hence success
-eta^2/3 with the same two-photon survival charge. Identity with the already
+A uniformly chosen feasible Fock string has two optimal outcomes among six.
+After optical preparation and the common two-photon loss channel, this
+classically selected optical control has success eta^2/3. A standalone
+classical uniform balanced sampler instead has success1/3 per classical draw
+and incurs no optical loss. The resource units must not be identified. Identity with the already
 known optimal input chain succeeds with eta^2. The latter is a diagnostic
 that uses known optimal structure, not a discovery procedure. Both controls
 are exported as complete laws.
@@ -163,3 +166,6 @@ execution at a later revision.
 | circuits.json | `f945154043ff220ca18d105a9528a9a404664a992da107707ab9c0927036e598` |
 | summary.json | `852a43b4ff28d855c3822f13e7060e7c773f445b74eb3b4d9d48e6878d285e53` |
 | manifest.json | `d29fd7a401d6415e18ddd49cf070bbd7ac3e5f1072182d74abba8b2c5bc68b84` |
+
+
+For a fresh rerun on an integration checkout, use [the portable reproduction driver](P40_REPRODUCTION.md). The original command above is the recorded historical execution and intentionally refuses overwriting or changed ancestry. Its raw files and source pins remain unchanged.

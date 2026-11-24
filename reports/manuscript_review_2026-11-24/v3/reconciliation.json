@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "manuscript_sha256": "98bf647e4f180cd2a1628106f5c621fa5d02ceebf33036317fb8e5cec4e27b7e",
+  "source_files_sha256": "ac60bbdcf722994a4792aaf6b8651c126d5167ed78f9c6616a805dd762036d7e",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "executor": "/root",
+  "method": "final self-review and reconciliation with explicit independent confirmations",
+  "model_assignment": {
+    "assignment_source": null,
+    "requested_model": null,
+    "requested_reasoning": null,
+    "actual_model": null,
+    "actual_reasoning": null,
+    "fallback_reason": null
+  },
+  "entries": [
+    {
+      "finding_id": "OR-F001",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. E05b methods now specify sampled loss/mu, no-valid fallback, COBYLA/completion, parameter dimensions and exact final versus heldout metric.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "OR-F002",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The text now specifies2000 graph-cluster percentile replicates, ratio weighting,2.5/97.5 percentiles and repeated-slot treatment.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "OR-F003",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The loss figure caption no longer claims absent dotted lines.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "PN-F001",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The generated graph table now labels unconditional Haar E[P_succ].",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "PN-F002",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. P40 control is explicitly an optically prepared uniform feasible mixture; standalone classical1/3 is stated separately.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "MA2-F001",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The rejection-count statement is restricted to k>=3 and the k2 bosonic identity is explicit.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "MA2-F002",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The density caption uses the single-backslash Phi macro.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "OR2-F001",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The density caption uses the single-backslash Phi macro.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "PN-F003",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. P40 control is explicitly an optically prepared uniform feasible mixture; standalone classical1/3 is stated separately.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "PN-F004",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The rejection-count statement is restricted to k>=3 and the k2 bosonic identity is explicit.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    },
+    {
+      "finding_id": "PN-F005",
+      "disposition": "dismissed",
+      "reason": "Valid in the old snapshot, repaired and no longer a current defect. The density caption uses the single-backslash Phi macro.",
+      "checked_locations": [
+        "paper/sections/05_experiments.tex",
+        "paper/sections/06_pilot.tex",
+        "paper/sections/04_resource_theory.tex",
+        "paper/tables/table_graphs.tex"
+      ],
+      "specialist_artifacts": [
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "final_concern_id": null
+    }
+  ],
+  "concerns": [
+    {
+      "id": "R1",
+      "title": "Originality and significance remain to be assessed",
+      "lane": "claims",
+      "severity": "major",
+      "confidence": 1.0,
+      "evidence_status": "question",
+      "location": "paper/main.tex abstract and paper/sections/07_discussion.tex",
+      "quote": "Originality of the complete density composition remains an open attribution question.",
+      "analysis": "The source correctly discloses this uncertainty. Correctness and finite tests cannot settle external attribution or venue-level significance. This is a submission limitation, not a demonstrated false theorem.",
+      "suggested_fix": "Obtain an independent exact-source and significance assessment before strong novelty claims/submission.",
+      "finding_ids": [],
+      "provenance": {
+        "executor": "/root",
+        "method": "whole-source claim comparison with the bounded primary-source audit",
+        "checked_artifacts": [
+          "research/phase3_density_novelty.md",
+          "research/phase3_density_crossfield_novelty.md"
+        ]
+      }
+    }
+  ],
+  "distinct_repaired_issue_count": 7
+}

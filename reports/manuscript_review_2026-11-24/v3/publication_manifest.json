@@ -1,0 +1,138 @@
+{
+  "counts": {
+    "CalibrationCellCount": 45,
+    "ErunCount": 756,
+    "SourceBracketCount": 36,
+    "SourceProbabilityCount": 1610
+  },
+  "generator": {
+    "path": "scripts/build_publication.py",
+    "sha256": "56b615abc71cbf33d29a75936b111c14c448c5f489ce0b31a115d43c881153b0"
+  },
+  "inputs": [
+    {
+      "path": "experiments/P37_loss_source/run/data/raw.json",
+      "sha256": "0c17993d4994a3b27688979d41b9626f1e9285541142cb49a4b2f75cce28a208"
+    },
+    {
+      "path": "experiments/P37_loss_source/run/manifest.json",
+      "sha256": "28309325bd9a92f11748a187aa76f62d869225f2b5709f231a47769d395d8301"
+    },
+    {
+      "path": "experiments/scripts/validate_sharpness_pilot.py",
+      "sha256": "2e9dba7c14beafd37901dc1917f59a7354a84dbfa0d45ccdfee09adb4d0c01d0"
+    },
+    {
+      "path": "research/P40_SHARPNESS_PILOT_CONTRACT.md",
+      "sha256": "30dbbdae5aa2d0c89eb936f7700e5808cde49f215c5118011f10f8fd2e70c4a2"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/audit/manifest.json",
+      "sha256": "f0f44303ae4b12adda03a787cc7442630427edbbc10d8ba726183e38790f5a8f"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/audit/raw.json",
+      "sha256": "3be30b305c6daa8158fecbe2329d0a8275ebc22c7a89c76bc12f7ecf16dbc8ad"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/data/raw.json",
+      "sha256": "17624e07e5acc5e12297e3f40c1aa635a5f3052b481beb36e65b818c68c9d3f9"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/manifest.json",
+      "sha256": "f938b51e0acf018504f91223b71924e54c6cffee928e2e67153ce0cad57e0b54"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/data/raw.json",
+      "sha256": "924ca1c1bec5435ac7da6018a7d44287636b75e0a6cf8a5bccc917c51cf7d66c"
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/manifest.json",
+      "sha256": "b9229e32b80199b9b7f2bac4eae87bf8bf376c7ae441c61aaae5800b8791a450"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/circuits.json",
+      "sha256": "f945154043ff220ca18d105a9528a9a404664a992da107707ab9c0927036e598"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/manifest.json",
+      "sha256": "d29fd7a401d6415e18ddd49cf070bbd7ac3e5f1072182d74abba8b2c5bc68b84"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/raw.jsonl",
+      "sha256": "b3189ac6143c31654d97d06209a94494281b25c43b37c5cd33782014bd277658"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/summary.json",
+      "sha256": "852a43b4ff28d855c3822f13e7060e7c773f445b74eb3b4d9d48e6878d285e53"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/benchmark.csv",
+      "sha256": "5fc61e7f0e5467f60ebfb3b9d87ca839c04ca0860606697c75656ab9f5d2da4b"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/campaigns.json",
+      "sha256": "be430f7bad0ba543b9414cc4f50c320fa02c2ae6f3b6c47b0fd52e75ecdc3b6f"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/manifest.json",
+      "sha256": "583dcaa7acde70305a49e40cca073bdf83b984be2b451ecc3d44944d02b8cf91"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/source_hashes.json",
+      "sha256": "f17f81205aa123a6581a6f6031450683982214d0a7a2022bc625e1af1a5169e7"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/summary.json",
+      "sha256": "82cd870c819767de8693d7b8adce866ace1aa1af2adcc218f9b5b5c17fe79d39"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/tables/validated_numbers.tex",
+      "sha256": "df7c78d113d5ad552cd2e500e3520385c0374dcaf146fc060fa1ace3a71948f9"
+    },
+    {
+      "path": "paper/tables/table_graphs.tex",
+      "sha256": "b127e99be6fdf9b976e4a690edd21d0bcfeb50480abee5dc20ddbb5e3fad4843"
+    },
+    {
+      "path": "paper/tables/table_e05b.tex",
+      "sha256": "fbc882ed1547115e7f7a647b229c96e279c96b5530cc75b69e3b6ab1f7266525"
+    },
+    {
+      "path": "paper/tables/table_losses.tex",
+      "sha256": "e9a94941926a3d16ead688047c8d3cfed99a838088ad0f04689661a7a065774f"
+    },
+    {
+      "path": "paper/figures/fig_e05b.pdf",
+      "sha256": "b42b6a4780ead0e82bb64d4d643c6f072f816ebf67791644618c3e9136da43f9"
+    },
+    {
+      "path": "paper/figures/fig_density.pdf",
+      "sha256": "ad82a8a8f810fc27e777194cddd4bd2be977d9b14b299fc74e701ccc52cf362e"
+    },
+    {
+      "path": "paper/figures/fig_loss_source.pdf",
+      "sha256": "02d3a2f15f64425bab1d76122c0495fed7d9b69828b3fa6e38ec0e9f0a47ac0b"
+    }
+  ],
+  "pdf_metadata": {
+    "CreationDate": "2000-01-01T00:00:00+00:00",
+    "ModDate": "2000-01-01T00:00:00+00:00",
+    "font_family": "DejaVu Sans",
+    "fonttype": 42
+  },
+  "schema_version": 1,
+  "semantics": [
+    "No manually supplied performance values",
+    "Exact rational source selection and computed four-vertex graph controls",
+    "E05b intervals are descriptive graph-cluster intervals; same graphs trained and evaluated",
+    "Only supervised preserved P33 captures; no root P33 data",
+    "Artifact generation reruns no experiment; P40 is a registered local prediction check, never hardware"
+  ],
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.6"
+  }
+}

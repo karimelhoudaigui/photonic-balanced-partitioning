@@ -1,8 +1,8 @@
 # Scientific claims registry
 
-Current checkpoint: 2026-11-22. Allowed statuses: OPEN, PROVEN,
+Current checkpoint: 2026-11-24. Allowed statuses: OPEN, PROVEN,
 NUMERICALLY_SUPPORTED, HARDWARE_SUPPORTED, REJECTED. Proof does not imply novelty.
-No claim is HARDWARE_SUPPORTED. Manuscript claims are frozen, not evidence.
+No claim is HARDWARE_SUPPORTED. The user-authorized rebuilt manuscript reports the evidence below; manuscript wording alone is not evidence. Submission readiness and full-composition novelty remain open; see reports/PUBLICATION_READINESS.md.
 
 | ID | Exact statement / scope | Status | Evidence and limits |
 |---|---|---|---|
@@ -12,7 +12,7 @@ No claim is HARDWARE_SUPPORTED. Manuscript claims are frozen, not evidence.
 | CLAIM-004 | Every fixed-k interferometer has P_CF=1. | REJECTED | HOM gives zero; full Perceval cross-validation. |
 | CLAIM-005 | Cardinality penalty always makes the final QUBO fully dense. | REJECTED | Each pair gets 2lambda, but graph coefficients can cancel it at lambda=w; test_penalty.py and PENALTY_BASELINE_AUDIT.md. Sparse-to-quadratic coupling growth is generic, not universal. |
 | CLAIM-006 | Fixed-particle encoding has a demonstrated resource benefit over real optical penalty methods. | OPEN | P30 authentic static optical component validated; full ObliQ training/source selection/decoder remains incomplete; classical penalty reference is explicitly labelled. No cross-hardware gate/depth equivalence. |
-| CLAIM-007 | Haar average P_CF=binom(m,k)/binom(m+k-1,k), for fixed normalized input independent of Haar U, lossless. | PROVEN | theory/proven_results.md T-Haar; known Arkhipov–Kuperberg result. |
+| CLAIM-007 | Haar average P_CF=binom(m,k)/binom(m+k-1,k), for a fixed normalized state in the indistinguishable k-photon Fock space, independent of Haar U, lossless. | PROVEN | theory/proven_results.md T-Haar; known Arkhipov–Kuperberg result. |
 | CLAIM-008 | For even m, k=m/2, the Haar mean is asymptotic to sqrt(3)*(16/27)^(m/2). | PROVEN | T-Scaling, self-contained Stirling derivation; not a bound for every U. |
 | CLAIM-009 | E01 means agree with the known P_CF prediction within stated marginal intervals. | NUMERICALLY_SUPPORTED | 3250 Haar circuits, n4/6/8/10, fixed seeds and raw.csv. Not a theorem or simultaneous test. |
 | CLAIM-010 | A universal Pareto tradeoff forbids (P_CF,P_opt_given_CF)=(1,1). | REJECTED | Known-target mode permutation attains (1,1); T-Pareto. Discovery is classical. |
@@ -21,11 +21,11 @@ No claim is HARDWARE_SUPPORTED. Manuscript claims are frozen, not evidence.
 | CLAIM-013 | TV <= min(1,H_k(S)/2), H_k(S)=sum_{r=2}^k (!r/r!)*S^(r/2), S=norm(B-I)_F^2. | PROVEN | N2 cycle/closed-walk coefficient bound; independently reconstructed. Known permanent/cycle machinery; research/phase3_density_novelty.md. |
 | CLAIM-014 | S <= m*binom(k,2)*(1-P_CF); the induced TV bound is a fixed-size stability certificate. | PROVEN | N3 via Cauchy–Schwarz and pair moments. Not dimension-uniform or a hardness claim. |
 | CLAIM-015 | Small collision probability alone implies TV to distinguishable statistics vanishes uniformly at balanced density. | REJECTED | N4: m=2k, k even, delta=2/(k+2)->0 and TV=1/2. Exact rational cases plus full Fock checks. |
-| CLAIM-016 | The tested generic bosonic mesh supplies a computational benefit at equal ideal attempts. | REJECTED | E05b fixed family/seed grid: distinguishable final means higher and uniform feasible first discovery faster in aggregate. Rejection is scoped to this tested protocol, not a universal impossibility. |
-| CLAIM-017 | Broad graph-population significance or asymptotic algorithm advantage is established. | OPEN | Two instances/family and shared seeds; pooled intervals descriptive only. |
+| CLAIM-016 | The tested generic bosonic mesh supplies a computational benefit at equal ideal attempts. | REJECTED | E05b fixed family/seed grid: distinguishable final means higher at n4/6/8; retrospective first-hit diagnostics favor uniform feasible sampling, but within-batch shot order is not independently reconstructible. Rejection is scoped to this tested protocol, not a universal impossibility. |
+| CLAIM-017 | Broad graph-population significance or asymptotic algorithm advantage is established. | OPEN | Two nominal instances/family with shared seeds; only9/9/10 unique labeled graphs at n4/6/8. Graph-cluster intervals are descriptive only. |
 | CLAIM-018 | New overlap certificate/counterexample is novel relative to all prior work. | OPEN | N1/N2 overlap is established; density composition and balanced obstruction attribution remain unresolved. Correctness alone supplies no novelty. |
 | CLAIM-019 | Shallow success is invariant to vertex labels and all optima remain reachable. | REJECTED | E09 five of48 permuted n6 slots have structurally inaccessible optimal bisections at depth2. |
-| CLAIM-020 | Physical success equals P_CF*P_opt_given_CF. | PROVEN | Conditional probability identity, with zero-CF support treated separately; not an independent objective or scientific novelty. |
+| CLAIM-020 | In the ideal fixed-k direct encoding, success equals P_CF*P_opt_given_CF; with loss use the full-k valid event F. | PROVEN | Conditional probability identity, with zero-CF support treated separately; not an independent objective or scientific novelty. |
 
 Dependencies: CLAIM-007 -> CLAIM-008/009; pair moment T-Pairs -> CLAIM-011/014;
 CLAIM-012 -> CLAIM-013 -> CLAIM-014; explicit orthogonal columns + spectators
@@ -79,3 +79,10 @@ P20 archives and their independent review are integrated5dbdbc3/a4d4745.
 They reject only the tested fixed-size proposal construction: selected kernels
 have zero interference and match the product control. They are fixed-anchor
 IID probes, not executed adaptive optimizers or equal-total-resource proofs.
+
+
+## Recovery disposition — 2026-11-24
+
+The unsupported cf49741/6154b46 superiority and ready flags are withdrawn. Current accepted claims are the exact P33 density-qualified absolute-TV certificate (known ingredients, complete originality OPEN), P37 criterion-dependent Haar-loss source theorem, and the restricted negative E05b benchmark. Per-state/graph constants and source domains are corrected in the rebuilt manuscript. Current evidence: reports/SCIENTIFIC_INTEGRITY_AUDIT.md, NUMERICAL_RECONCILIATION.md and PUBLICATION_THESIS.md.
+
+A new optimum-blind training API rejects optimal-mask objectives; old oracle diagnostics remain archived. New noise code is a bounded theoretical pure-internal-state/loss simulator, not a hardware calibration. The local pilot works; actual backend compatibility/authorization remain false. PDF/tests do not change novelty or advantage status.

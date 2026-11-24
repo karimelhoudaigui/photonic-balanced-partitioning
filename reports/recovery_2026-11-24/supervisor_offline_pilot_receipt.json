@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "qpu/offline_pilot_20261124_v1/reproduce.py",
+    "--output",
+    "results/validated/offline_pilot_2026-11-24_supervisor"
+  ],
+  "started_utc": "2026-11-24T10:19:51.115114+00:00",
+  "elapsed_seconds": 17.850169791956432,
+  "returncode": 0,
+  "physical_shots": 0,
+  "credits_consumed": 0,
+  "kind": "offline_synthetic_reproduction",
+  "source_sha256": "653909bbad8cd707f8b346ce88a22f930b1063c64c787721af526a590b219e24",
+  "source_git_commit": "3392103e9ea291998f8a3cc4a9e6d33e2c457f61",
+  "working_tree_dirty": true,
+  "outputs": "results/validated/offline_pilot_2026-11-24_supervisor"
+}

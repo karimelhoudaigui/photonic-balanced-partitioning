@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "pdf_sha256": "07a4d159a6a812b3070e545ddb1729da8bac583705ed3e06cc96ff511164cc43",
+  "pdf_pages": 16,
+  "pdf_extracted_characters": 48618,
+  "source_sha256": {
+    "paper/appendices/proofs.tex": "ca47881ba428e27506b5bb14c2f46e7a3f01c04dd54059ec6f4607872de8c654",
+    "paper/appendices/reproducibility.tex": "c7892e95168a0836dffb317232ada8dead5158db2cacdeada723193a8876acec",
+    "paper/main.tex": "01c70098e1dca6e288e558707116a0b962449392c9823e48307ca6aa63c6cd5d",
+    "paper/sections/01_introduction.tex": "be0d33e48b413be60e59d6bdbe0e76be90992183263cb43e80bec28156944790",
+    "paper/sections/02_model.tex": "b2eaec249c32bdbb499c50e12b8bc33a7ccef9347f9681c637b04ef88eaf6745",
+    "paper/sections/03_certificate.tex": "19f531a90f880fea29b5ce8434ac96ff0b0cb251c98824b48cf04c21e60aa3bd",
+    "paper/sections/04_resource_theory.tex": "0f78b50e390409f5c8a6a57db5713cea5580711de0cae9e60591accd3cd08256",
+    "paper/sections/05_experiments.tex": "429bfd2e7cf0458ea712702cbfb7c4bd1b42a21918693bb2ae8c966b45cbcea0",
+    "paper/sections/06_pilot.tex": "c432b8dfa961bed33f4d31b9513965468ecaced5574571e0204560f96ce9d806",
+    "paper/sections/07_discussion.tex": "0612c295ac0065c3d8d91e040598cd0b98c06675e782f0c40ba8337eaa716ad2",
+    "paper/tables/table_e05b.tex": "fbc882ed1547115e7f7a647b229c96e279c96b5530cc75b69e3b6ab1f7266525",
+    "paper/tables/table_graphs.tex": "b127e99be6fdf9b976e4a690edd21d0bcfeb50480abee5dc20ddbb5e3fad4843",
+    "paper/tables/table_losses.tex": "e9a94941926a3d16ead688047c8d3cfed99a838088ad0f04689661a7a065774f",
+    "paper/tables/validated_numbers.tex": "df7c78d113d5ad552cd2e500e3520385c0374dcaf146fc060fa1ace3a71948f9",
+    "paper/references.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c"
+  },
+  "log_sha256": "711bbebe2c088b759ea1c81cfc0b98981a4c89762cab09e9e1b8b139839e1b06",
+  "bibliography_keys_cited": [
+    "aaronson2013",
+    "arkhipov2012",
+    "bouland2023",
+    "deshpande2018",
+    "etingof2006",
+    "heurtel2023",
+    "hom1987",
+    "ivanov2020",
+    "jiang2019",
+    "monbroussou2026",
+    "ranjan2025",
+    "rioul2023",
+    "shchesnovich2021",
+    "tichy2015"
+  ],
+  "overfull_box_points": [],
+  "failures": [],
+  "scope": "Build and reference checks, not mathematical correctness or publication readiness"
+}

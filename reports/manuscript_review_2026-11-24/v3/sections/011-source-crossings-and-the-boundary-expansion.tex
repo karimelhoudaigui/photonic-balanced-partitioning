@@ -1,0 +1,29 @@
+\section{Source crossings and the boundary expansion}\label{app:source}
+\begin{lemma}[Single sign change under a binomial mixture]\label{lem:crossing}
+Let $c_0,\ldots,c_n$ have positive entries followed by negative entries, allowing zeros, with both signs present. If the last nonzero coefficient is negative, $\E c_R$, $R\sim\mathrm{Bin}(n,\eta)$, has exactly one zero in $0<\eta<1$, crossing from positive to negative.
+\end{lemma}
+\begin{proof}
+Set $t=\eta/(1-\eta)$. Remove the positive factor $(1-\eta)^n$ and let $a$ be the first negative coefficient index in $Q(t)=\sum_r\binom nr c_rt^r$. Then $Q(t)/t^a$ is strictly decreasing: positive terms have negative powers and negative terms have nonnegative powers. Its limit at zero is positive infinity and its limit at infinity is strictly negative or negative infinity. This proves existence, uniqueness and sign orientation.
+
+For a fixed sign-pattern sequence, increasing $n$ strictly decreases the root when newly included coefficients are negative. For $0\le r\le n$, the ratio of binomial masses for $n+1$ and $n$ is $(1-\eta)(n+1)/(n+1-r)$, strictly increasing in $r$. At a zero of the old expectation, subtract its value at the sign boundary times that zero. Products of the remaining ratio differences with $c_r$ are nonpositive and at least one is strictly negative. The new $r=n+1$ contribution is negative. Hence the new expectation is negative at the old root; its own unique root is smaller.
+\end{proof}
+
+For \cref{thm:source}, $d(\ell)=h(\ell+1)-h(\ell)$ is zero below $k-1$, positive for $k-1\le\ell\le m-3$, zero at $m-2$, and negative at $m-1$. This follows by subtracting one from the exact ratio:
+\begin{equation}
+ \frac{h(\ell+1)}{h(\ell)}-1=\frac{k(m-2-\ell)}{(\ell-k+1)(m+\ell)}\quad(\ell\ge k).
+\end{equation}
+Coupling the extra Bernoulli survival shows $S_{N+1}-S_N=\eta\E d(L)$, $L\sim\mathrm{Bin}(N,\eta)$. For $N\le m-2$, every term is nonnegative and some positive term has nonzero mass. For $N=m-1$, \cref{lem:crossing} supplies the unique $a_m$. At $\eta=1$, the lossless peak $h(m-2)=h(m-1)$ restores the stated endpoint tie.
+
+Set $g(0)=0$, $g(\ell)=h(\ell)/\ell$ for $\ell\ge1$. Binomial size bias gives
+\begin{equation}
+ b_N=\eta\E g(R+1),\qquad b_{N+1}-b_N=\eta^2\E[g(R+2)-g(R+1)],\quad R\sim\mathrm{Bin}(N-1,\eta).
+\end{equation}
+For $\ell\ge k$, subtracting the denominator from the numerator of $g(\ell+1)/g(\ell)$ gives $[m(m-2)-(m+2)\ell]/2$, whose zero $m-4+8/(m+2)$ lies strictly between $m-4$ and $m-3$ for $m\ge8$. Thus $\Delta g(\ell)$ is zero below $k-1$, positive through $m-4$ and negative from $m-3$ through $m-1$. It follows that $b_N$ strictly increases through $N=m-3$. Applying the lemma to $c_r=\Delta g(r+1)$ proves each of the three remaining unique roots; its root-order argument gives $\tau_{m-1}<\tau_{m-2}<\tau_{m-3}$. These ordered adjacent signs make the candidate sequence strictly increase and then decrease. Nonadjacent candidates cannot create a missed global maximum. At $\eta=1$, $g$ has its unique integer maximum at $m-3$.
+
+For the boundary scaling let $N=m-s$, $\eta=1-\lambda/m$, with $s,\lambda$ fixed and $m$ even tending to infinity. The loss count $T$ is $\mathrm{Bin}(m-s,\lambda/m)$ for the $h$ identity, or $\mathrm{Bin}(m-s-1,\lambda/m)$ after size bias for $g$. Its fixed moments are uniformly bounded, $\E T=\lambda+O(m^{-1})$, and each fixed positive exponential moment is bounded uniformly in $m$. On $\ell=m-s-T\ge3m/4$, the exact ratios yield
+\begin{align}
+ \Delta h(\ell)/h(\ell)&=(s+T-2)/(2m)+O((1+s+T)^2/m^2),\\
+ \Delta g(\ell)/g(\ell)&=(s+T-4)/(2m)+O((1+s+T)^2/m^2).
+\end{align}
+Summing adjacent relative differences from the lossless peaks also gives $h(\ell)/h(m-1)=1+O((1+s+T)^2/m)$ and $g(\ell)/g(m-3)=1+O((1+s+T)^2/m)$. Peak-normalized values are bounded; the bounded number of indices above the $g$ peak causes no difficulty. The event $T>m/4-s$ has exponentially small probability by the exponential-moment bound. Functions and adjacent differences are bounded by constant multiples of their peaks, so this tail contributes $o(m^{-2})$ after normalization. Take expectations in the coupling identities and divide by their corresponding means to obtain \cref{eq:boundary}. Evaluating signs at $\lambda$ just above and below each proposed limit, then using unique crossings, gives the four scaled-root limits. This reasoning keeps $s,\lambda$ fixed and supplies no fixed-loss asymptotic.
+

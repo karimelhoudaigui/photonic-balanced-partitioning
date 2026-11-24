@@ -1,5 +1,7 @@
 # Negative Results Log
 
+Current disposition (2026-11-24): the tested bosonic optimization benefit is not demonstrated. Read reports/NUMERICAL_RECONCILIATION.md and the recovery section below. Early entries are historical working notes, not automatically verified evidence. In particular Entry2 is explicitly withdrawn: fixed photon number does NOT imply collision-free output; HOM and full-Fock validation refute it. Its original text is preserved to expose the earlier error, not endorse it.
+
 Format:
 - Hypothesis
 - Protocol
@@ -16,7 +18,7 @@ Format:
 - Likely reason: Random unitary explores full energy landscape
 - Decision: Need optimization, not random sampling
 
-### Entry 2
+### Entry 2 — WITHDRAWN physical claim
 - Hypothesis: Fixed-photon subspace has P_CF = 1
 - Protocol: Measure collision probability
 - Result: Confirmed - no collisions in fixed-photon subspace
@@ -135,3 +137,12 @@ P39 exact counterexample rejects only extending the k2 curved bound to the
 larger pinched metric at k3: D_pinched>.48986 while the curve is.4608.
 Measured TV≈.265153, so neither measured linear/curved hypothesis is refuted.
 This is a post-hoc auxiliary obstruction, not evidence of graph advantage.
+
+
+## Recovery reconciliation — 2026-11-24
+
+Every E05b run is retained. Bosonic final means .6523129783/.2795490911/.0678727604 are below distinguishable .7132846817/.5366140370/.1377071293 at n4/6/8. All756 runs discover an optimum during training. The no-benefit conclusion is restricted to the measured grid/budgets, not all photonic algorithms.
+
+Only9/9/10 unique labeled weighted graphs arise from twelve nominal slots per size. Graph-cluster intervals are descriptive; exact within-batch first-hit order is missing. P21 classical controls use scored cut queries, not equal physical attempts. Authentic ObliQ training/source/decoding remains incomplete. Oracle-preparation gains cannot support autonomous search.
+
+The unsupported n10/12 and4.8× advantage tables, K4 Haar0.2, K2,2 optimum4, identity-uniform claim and noisy.381 value are withdrawn. Original versions remain in Git6154b46. Full claim dispositions: reports/SCIENTIFIC_INTEGRITY_AUDIT.md. First TeX cache/missing-table setup failures are build failures, not scientific negative experiments.

@@ -1,0 +1,34 @@
+\section{Noise model and a prospective hardware pilot}\label{sec:pilot}
+\subsection{Physical noise scenarios}
+The recovered simulator retains all loss sectors, including vacuum, under uniform independent survival. It can equivalently average over independently surviving input subsets before applying the passive unitary. Uniform loss gives \cref{eq:all_detected} for a direct valid event; unequal mode losses, dark counts and detector saturation require additional models. A direct-sum matrix $\sqrt\eta U\oplus\sqrt{1-\eta}I$ is not a unitary dilation and is not used.
+
+Partial distinguishability is specified by normalized pure internal states $|\phi_a\rangle$ with Hermitian positive-semidefinite Gram matrix $S_{ab}=\langle\phi_a|\phi_b\rangle$, $S_{aa}=1$. For distinct occupied inputs the double-permutation expression is
+\begin{equation}
+ p_S(t)=\frac1{t!}\sum_{\sigma,\tau\in S_k}
+ \prod_{j=1}^k V_{y_j,\sigma(j)}\overline{V_{y_j,\tau(j)}}
+ S_{\tau(j),\sigma(j)}.\label{eq:partial}
+\end{equation}
+This convention yields $p_b$ for $S_{ab}=1$ and $p_d$ for $S=I_k$, and retains multiphoton phases~\cite{tichy2015}. A single global mixture $\xi p_b+(1-\xi)p_d$ is not its general $k\ge3$ form. For a balanced two-port coupler, the coincidence probability is $(1-|S_{12}|^2)/2$. Pair overlaps alone do not determine every higher-order internal phase. The implemented small-system model assumes product pure internal states and distinct inputs; it is not a calibration of a particular device. Tests include independent internal-mode creation calculations and local Perceval controls. No broad noise-optimization campaign is asserted.
+
+\subsection{A calibration prediction tied to the certificate}
+The sharp family in \cref{eq:sharp} provides a second-stage target beyond identity and HOM. Let $M_0=2\cos^2\theta\sin^2\theta$, let $x=|S_{12}|^2$ and let $\eta$ be uniform transmission. Its complete detected law $p_{x,\eta}$ obeys
+\begin{equation}
+ \TV(p_{x,\eta},p_{0,\eta})=\eta^2 xM_0,\qquad
+ P_{\rm collision}(x,\eta)=\succp^{\rm path}(x,\eta)
+ =\frac{\eta^2(1+x)M_0}{2}.\label{eq:calibration}
+\end{equation}
+Here the natural path has vertices $0$--$1$--$2$--$3$, and its two optimal strings put both photons in one of the two mode groups. The two-photon law interpolates linearly in $x$, while its zero- and one-photon loss sectors are identical for all $x$. These facts and \cref{eq:sharp} prove \cref{eq:calibration}; this two-photon interpolation is not a general multiphoton noise ansatz.
+
+The registered P40 local check fixes five rational rotation parameters $r=0,1/20,1/10,1/5,1/3$, with $\cos\theta=(1-r^2)/(1+r^2)$, $\sin\theta=2r/(1+r^2)$; three transmissions $1,0.9,0.5$; and three overlaps $0,1/2,1$. All 45 cells are retained without fitting, sampling or optimization. Its exported circuit first mixes the occupied inputs by $\mathrm{BS.Rx}(4\arctan r)$, permutes modes $(0,2,1,3)$, and splits each mode group by $\mathrm{BS.Rx}(\pi/2)$. Output phases do not affect the displayed laws. The script, complete loss-sector laws, unitary/circuit exports, advance contract and execution receipt are supplied separately.
+
+This family can display a same-circuit twofold success ratio, yet the classical uniform feasible control has success $\eta^2/3$ and a known-optimum identity control has success $\eta^2$. The latter is a state-preparation diagnostic, not an unknown-optimum search. A measurable interference effect therefore does not establish optimization benefit. Under loss, the fixed-$k$ theorem must not be applied directly to uncorrected lower-sector moments. The proposed device test needs independently supported uniform-loss/internal-overlap assumptions and actual detector/attempt calibration.
+
+\subsection{A falsifiable four-mode measurement}
+The proposed initial device question is modest: can a calibrated processor reproduce a predicted two-photon occupation law and the resulting change in valid-cut probability under controlled overlap? Identity, a balanced Hong--Ou--Mandel circuit, and a fixed pair-mixing circuit form a four-mode/two-photon pilot. Paths, $K_4$ and $K_{2,2}$ separate graph decoding from optical interference. The $K_4$ control is deliberately uninformative about quality enrichment because every balanced cut is optimal.
+
+The offline pipeline performs graph validation, generates full complex unitaries and parameters, constructs serializable Perceval circuits, checks local compilation and reference distributions, prepares a non-submitting job bundle and analyzes supplied counts. Circuit equivalence is checked up to global phase with mode ordering retained. It does not imply acceptance by a remote backend's gate set. The manifest seals circuit, reference, graph, convention and software hashes. Synthetic demonstration counts are explicitly labeled \texttt{local\_synthetic}; they are never called QPU data.
+
+To estimate success per injected attempt, retain a trustworthy number of attempts together with all recorded occupancies and filter metadata. PNR data can separate bunching from loss directly under a calibrated model. Threshold data cannot generally reconstruct an arbitrary number distribution; the observable and event definition must match the detector. If only postselected counts are supplied, the analysis reports conditional probabilities and leaves attempt-normalized success unidentified. Per-event Wilson intervals are marginal binomial intervals, not a simultaneous goodness-of-fit test. Finite-shot density certification additionally needs controlled uncertainty in $M$, $c$ and model assumptions; the offline pilot does not solve that inference problem.
+
+The handoff includes commands, fixed inputs, local references, expected schemas and explicit questions for the hardware operator. Public documentation and a local Perceval version do not establish this account's backend availability, mode count, native Clements mesh, detector resolution, shot API, calibration or credit cost. These remain verification items. No remote processor was instantiated, no device job was submitted, and no hardware measurements enter this paper.
+

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "command": [
+    "git",
+    "bundle",
+    "verify",
+    "reports/recovery_2026-11-24/isolated-worker-history.bundle"
+  ],
+  "returncode": 0,
+  "stdout": "The bundle contains these 3 refs:\n1f85deeb31cba629de061f85348098b07752a405 refs/heads/recovery/numeric-20261124\n8c1c39caffb4a57783b2279d9b33b22a39b2dcf8 refs/heads/recovery/physics-20261124\nd9f735746ddc3fd2605d20b8499002c2b9829b0b refs/heads/recovery/qpu-20261124\nThe bundle requires this ref:\n6154b460e1c8b37cf2a7023fcbfff35d31a7220c \nThe bundle uses this hash algorithm: sha1\n",
+  "stderr": "reports/recovery_2026-11-24/isolated-worker-history.bundle is okay\n",
+  "sha256": "be317c13002452512c2e46aa1166cf88cb46f9d08a1e23c05740589b7d44a0c4",
+  "bytes": 416672,
+  "prerequisite_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+  "purpose": "Original isolated worker Git refs/commits, including pre-execution contract; later integration uses cherry-picks."
+}

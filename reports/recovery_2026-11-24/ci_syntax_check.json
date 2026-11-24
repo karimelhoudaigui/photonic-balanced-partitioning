@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "command": [
+    "ruby",
+    "-e",
+    "require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML syntax PASS\"",
+    ".github/workflows/research.yml"
+  ],
+  "observed_stdout": "YAML syntax PASS",
+  "remote_ci_executed": false
+}

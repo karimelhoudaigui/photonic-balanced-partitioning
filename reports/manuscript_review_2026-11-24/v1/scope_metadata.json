@@ -1,0 +1,15 @@
+{
+  "source_revision": "8546e058030a9db67f5980d7c4ed3dd45372a475",
+  "working_source_changes": true,
+  "prepared_source_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+  "review_scope": "Source manuscript; figures and bibliography explicitly authenticated as supplemental artifacts; PDF not part of v1 review",
+  "supplemental_sha256": {
+    "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+    "publication_manifest.json": "a5d3b74eb5ec58501da4973cc77396a2f44cdaeb6a13da301d16d15f7578cd90"
+  },
+  "notes": [
+    "P40 contract committed before experiment in separate physics worktree; manuscript states predictions and fixed design, not hardware data.",
+    "A first PDF build completed15pages but has a9.52pt overfull path; layout will be repaired before final release.",
+    "No model override prescribed or requested; native inherited host settings, actual model/reasoning not exposed."
+  ]
+}

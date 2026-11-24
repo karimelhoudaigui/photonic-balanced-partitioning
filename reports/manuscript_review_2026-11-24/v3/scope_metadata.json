@@ -1,0 +1,16 @@
+{
+  "source_revision": "4572a76520be3a199cd315416ec52dfcf76c4637",
+  "working_source_changes": true,
+  "prepared_source_sha256": "98bf647e4f180cd2a1628106f5c621fa5d02ceebf33036317fb8e5cec4e27b7e",
+  "supplemental_sha256": {
+    "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+    "publication_manifest.json": "6b7373eddbf80838afdde4d7bd212812e73325c3665d407a6d1a5dfe033e2b9e"
+  },
+  "changes_since_v2": [
+    "Specify E05b rejection bucket does determine bosonic M at k2, but generally not k>=3",
+    "Correct double backslash before Phi in figure caption",
+    "Distinguish optically prepared uniform feasible control eta^2/3 from standalone classical sampler1/3 per classical draw"
+  ],
+  "mathematical_theorems_and_proofs_changed": false,
+  "review_plan": "Root fresh whole-paper notation/claims/exposition and final reconciliation; independently confirm local repairs with existing reviewers, reuse unchanged math only after dependencies checked"
+}

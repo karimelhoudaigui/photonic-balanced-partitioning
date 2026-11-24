@@ -129,3 +129,14 @@ transfer either obstruction to measured TV or graph-optimization benefit.
 P39 exact proof has two rational paths and a physical sanity check, no fresh
 author-blind audit after quota. Preserve partial worker files with provenance.
 PAPER_READY=FALSE; QPU_GATE=CLOSED; source/core tests remain287PASS.
+
+
+## 2026-11-24 — scientific recovery and publication branch
+
+On scientific-recovery-publication, preserve the original803-file inventory and user-supplied audit draft before source edits. Withdraw unsupported FINAL/SUMMARY/protocol claims from cf49741/6154b46. Reconstruct all E05b runs without rewriting archive data. Treat C*-trained E02 as state-preparation diagnostics only.
+
+The user's explicit recovery request authorizes rebuilding paper/ and supersedes the earlier manuscript freeze for the coordinator. Choose direction B: density-qualified classical replacement and resource accounting, with the negative optimization experiment and a prospective physical pilot. Full-composition novelty remains open; do not call a compiling draft submission-ready.
+
+Integrate disjoint mathematical/numerical/physical/hardware work via Git worktrees. Add a bounded physical noise module and seven local non-submitting QPU commands. OFFLINE_PILOT_READY=TRUE after supervisor reproduction; QPU_GATE remains CLOSED. Never equate public product/software documentation with verified account/backend capabilities.
+
+No further broad optimization sweep without a changed registered mechanism. No actual QPU, paid inference, article submission or message to Laurent. Publication and hardware gates remain separately documented.

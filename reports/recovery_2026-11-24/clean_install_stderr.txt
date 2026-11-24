@@ -1,0 +1,3 @@
+
+[notice] A new release of pip is available: 26.0.1 -> 26.3
+[notice] To update, run: /private/tmp/pbp-clean-venv-20261124/bin/python -m pip install --upgrade pip

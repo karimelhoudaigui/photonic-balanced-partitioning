@@ -1,0 +1,27 @@
+\section{Full-output permanent and cycle bounds}\label{app:gram}
+For a fixed ordered output list $y$ put $a_\sigma(y)=\prod_jV_{y_j,\sigma(j)}$ and $F(y)=\sum_{\sigma\ne\tau}|a_\sigma(y)a_\tau(y)|$. Subtract the diagonal terms of \cref{eq:laws}, then apply the triangle inequality. There are $k!/t!$ ordered lists with occupation $t$, and $F$ is invariant under their permutations. Therefore
+\begin{align}
+ 2\TV(p_b,p_d)&\le\sum_t\frac{F(y(t))}{t!}
+ =\frac1{k!}\sum_{y\in[m]^k}\sum_{\sigma\ne\tau}|a_\sigma(y)a_\tau(y)|\nonumber\\
+ &=\frac1{k!}\sum_{\sigma\ne\tau}\prod_j B_{\sigma(j),\tau(j)}
+ =\sum_{\pi\ne\mathrm{id}}\prod_a B_{a,\pi(a)}=\per B-1.
+\end{align}
+Each relative permutation occurs $k!$ times; repeated output rows are included. This proves the first bound with the halved-TV convention.
+
+For $A=B-I_k$, the coefficient of $z^r$ in $\per(I_k+zA)$ counts weighted permutations moving $r$ indices. Such a permutation is a disjoint collection of directed simple cycles of length at least two. Allowing cycles to overlap or repeat only increases coefficients, since all entries are nonnegative. If $C_\ell$ is the total weight of simple cycles of length $\ell$, counted up to cyclic rotation,
+\begin{equation}
+ \per(I_k+zA)\preceq\exp\left(\sum_{\ell=2}^k C_\ell z^\ell\right)
+ \preceq\exp\left(\sum_{\ell=2}^\infty\frac{\operatorname{tr}(A^\ell)}\ell z^\ell\right).
+\end{equation}
+The relation is coefficientwise: every disjoint collection appears with coefficient one in the exponential, and all extra closed walks have nonnegative weights. Real symmetry gives
+\begin{equation}
+ 0\le\operatorname{tr}(A^\ell)\le\sum_j|\lambda_j(A)|^\ell
+ \le\left(\sum_j\lambda_j(A)^2\right)^{\ell/2}=\sigma^\ell\quad(\ell\ge2).
+\end{equation}
+The first inequality also holds for odd powers by the closed-walk expansion. Since
+\begin{equation}
+ \exp\left(\sum_{\ell\ge2}\frac{x^\ell}{\ell}\right)
+ =\frac{e^{-x}}{1-x}=\sum_{r\ge0}\frac{!r}{r!}x^r,
+\end{equation}
+comparison through degree $k$ gives the finite polynomial bound for every $\sigma\ge0$. Summing the infinite envelope requires $\sigma<1$. These steps prove \cref{lem:gram} without an external theorem dependency. Computing $B$ costs $O(mk^2)$ arithmetic operations, and the finite bound another $O(k)$ once derangements are available. The comparator draws $k$ independent categorical outcomes and forgets labels after $O(mk)$ table preparation. This computational sufficiency does not extend the theorem to finite experimental uncertainty.
+

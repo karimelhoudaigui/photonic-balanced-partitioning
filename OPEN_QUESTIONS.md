@@ -1,7 +1,7 @@
 # Open scientific questions — current continuation contract
 
 Base research restart:847d7a0e05cdf7fa8ca50c68f51f8d7e03158508.
-Current live evidence: STATUS.md and the P35/P36/P37 reports; accepted native
+Current live evidence: STATUS.md, reports/RECOVERY_EXECUTION_REPORT.md, the P39 checkpoint and the P40 records. Earlier routes below retain their historical context; accepted native
 cycle: reports/ASTRA_P33_COMPLETED_CYCLE_REVIEW.md (b8b04ac);
 historical optimization stopping decision: reports/RESEARCH_CYCLE_2026-11-20.md.
 
@@ -154,3 +154,15 @@ bound. Source/novelty and the graph-search benefit remain separate unresolved
 obligations. Full handoff: reports/RESEARCH_CHECKPOINT_P39.md. New agent quota
 failures leave the latest partial literature/physics drafts incomplete, not
 reviewed by agreement. No paper or QPU gate has opened.
+
+
+## Priority after recovery — 2026-11-24
+
+1. Does the complete P33 density/dominant-support/TV composition have a substantive, properly attributed contribution beyond its known permanent/cycle/rounding ingredients? Seek an independent cross-field source comparison and significance assessment, not phrase-search absence as novelty.
+2. How can finite noisy data rigorously bound M and the minimum positive intensity c, including unseen small rows? The current float API is not interval certification and the local pilot does not solve this inference problem.
+3. Can a changed optimum-blind search mechanism beat balanced random/exchange/spectral/classical controls under a prospectively fixed total-cost metric and unseen graph labels? Current E05b does not; no positive rerun is manufactured.
+4. Does the general measured TV≤delta hold? P39's stronger auxiliary curved-envelope refutation is not a counterexample to this question.
+5. Can authentic ObliQ training/source/prefix decoding be reproduced with all classical work charged and literal/corrected conventions separated?
+6. What actual backend modes/input routing/native compilation/detection/filter/attempt-count semantics are available, and what calibration is needed? The local n4k2 dossier is prepared; actual device access and authorized credit cap are absent.
+
+The manuscript and local pipeline are concrete deliverables; the missing novelty/benefit/hardware evidence is not hidden by readiness flags. See reports/PUBLICATION_READINESS.md and QPU_READINESS.md.

@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "preparation_version": 1,
+  "main": "paper/main.tex",
+  "source_sha256": "6ecf7fd1834d8e734f2859e34decd21a8e5f20516ac08376fafacfb9058ff1af",
+  "global_context_sha256": "b0020395b07f7d166de06a3d4b92bfd3d021acbf1503336c5252541f53545f6f",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "contract_files": {
+    "SKILL.md": "aabaf34132e9b92c0456897128b29bf4dae1c0bc8d11c1d39da60a1face44802",
+    "scripts/prepare_manuscript.py": "ac86d124803dce10f892fa07f8a0860905c0d9f70c8333a2930e5ba8b3630355",
+    "references/final-referee.md": "d0fdf800f7dbf077141a381aac65cdd43583b596ff612366e3e309addb4a6fbc",
+    "references/model-assignments.md": "30211143f779431c7f9da4d1d9179e253ee2fe614bd44027b2b868bef7458d13",
+    "references/output-contract.md": "b28619a165ac58215a3fe4d3dd44dafd6be7e8dd33481859e28d7d10fbc239b8",
+    "references/preparation.md": "c68421fff405be70cc14918b50c89a6548ef4b5ea97fe352e47854f9229a9496",
+    "references/review-protocol.md": "a9ea88eba2049d8c944711d7f777a2874343c3a3edf2663e9e36443976fa6def",
+    "references/reviewers/adversarial.md": "fa07c0c35a6a3c4606e3cad08241195b85d6c53ae4131173386fda8c2e17ed47",
+    "references/reviewers/claims.md": "525767b1fa6cc0cdc709cdf21f55827bcc798ab4762d168afe4b14fe4b855671",
+    "references/reviewers/correctness.md": "1de34877fcf90ae05fac943bdad3e16814f806a774d33e7b24e807019284c66f",
+    "references/reviewers/exposition.md": "cd1eb9d1e9a5057357d21a6afb5ffc51eaa9b896bd7d3d1bcaa1fbae176fc832",
+    "references/reviewers/notation.md": "e7333b5f91872b73610366f8e5cb179811c1d1317831db5d6ad56d1479356f8a"
+  },
+  "source_files_sha256": "d859601bca5b14b4099b9ef62c1a37cd695a1b74d6ff9bf9ea5056ae93251fd5",
+  "sources": [
+    {
+      "path": "paper/appendices/proofs.tex",
+      "sha256": "ca47881ba428e27506b5bb14c2f46e7a3f01c04dd54059ec6f4607872de8c654",
+      "bytes": 6934
+    },
+    {
+      "path": "paper/appendices/reproducibility.tex",
+      "sha256": "c7892e95168a0836dffb317232ada8dead5158db2cacdeada723193a8876acec",
+      "bytes": 2758
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "01c70098e1dca6e288e558707116a0b962449392c9823e48307ca6aa63c6cd5d",
+      "bytes": 2965
+    },
+    {
+      "path": "paper/sections/01_introduction.tex",
+      "sha256": "be0d33e48b413be60e59d6bdbe0e76be90992183263cb43e80bec28156944790",
+      "bytes": 2936
+    },
+    {
+      "path": "paper/sections/02_model.tex",
+      "sha256": "b2eaec249c32bdbb499c50e12b8bc33a7ccef9347f9681c637b04ef88eaf6745",
+      "bytes": 3639
+    },
+    {
+      "path": "paper/sections/03_certificate.tex",
+      "sha256": "19f531a90f880fea29b5ce8434ac96ff0b0cb251c98824b48cf04c21e60aa3bd",
+      "bytes": 7184
+    },
+    {
+      "path": "paper/sections/04_resource_theory.tex",
+      "sha256": "0f78b50e390409f5c8a6a57db5713cea5580711de0cae9e60591accd3cd08256",
+      "bytes": 4632
+    },
+    {
+      "path": "paper/sections/05_experiments.tex",
+      "sha256": "429bfd2e7cf0458ea712702cbfb7c4bd1b42a21918693bb2ae8c966b45cbcea0",
+      "bytes": 9252
+    },
+    {
+      "path": "paper/sections/06_pilot.tex",
+      "sha256": "c432b8dfa961bed33f4d31b9513965468ecaced5574571e0204560f96ce9d806",
+      "bytes": 6298
+    },
+    {
+      "path": "paper/sections/07_discussion.tex",
+      "sha256": "0612c295ac0065c3d8d91e040598cd0b98c06675e782f0c40ba8337eaa716ad2",
+      "bytes": 2803
+    },
+    {
+      "path": "paper/tables/table_e05b.tex",
+      "sha256": "fbc882ed1547115e7f7a647b229c96e279c96b5530cc75b69e3b6ab1f7266525",
+      "bytes": 1707
+    },
+    {
+      "path": "paper/tables/table_graphs.tex",
+      "sha256": "b127e99be6fdf9b976e4a690edd21d0bcfeb50480abee5dc20ddbb5e3fad4843",
+      "bytes": 577
+    },
+    {
+      "path": "paper/tables/table_losses.tex",
+      "sha256": "e9a94941926a3d16ead688047c8d3cfed99a838088ad0f04689661a7a065774f",
+      "bytes": 672
+    },
+    {
+      "path": "paper/tables/validated_numbers.tex",
+      "sha256": "df7c78d113d5ad552cd2e500e3520385c0374dcaf146fc060fa1ace3a71948f9",
+      "bytes": 255
+    }
+  ],
+  "source_map": [
+    {
+      "expanded_start": 0,
+      "expanded_end": 835,
+      "path": "paper/main.tex",
+      "source_start": 0,
+      "source_end": 835,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 835,
+      "expanded_end": 1090,
+      "path": "paper/tables/validated_numbers.tex",
+      "source_start": 0,
+      "source_end": 255,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 1090,
+      "expanded_end": 2834,
+      "path": "paper/main.tex",
+      "source_start": 867,
+      "source_end": 2611,
+      "source_line": 24
+    },
+    {
+      "expanded_start": 2834,
+      "expanded_end": 5770,
+      "path": "paper/sections/01_introduction.tex",
+      "source_start": 0,
+      "source_end": 2936,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 5770,
+      "expanded_end": 5771,
+      "path": "paper/main.tex",
+      "source_start": 2643,
+      "source_end": 2644,
+      "source_line": 33
+    },
+    {
+      "expanded_start": 5771,
+      "expanded_end": 9410,
+      "path": "paper/sections/02_model.tex",
+      "source_start": 0,
+      "source_end": 3639,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 9410,
+      "expanded_end": 9411,
+      "path": "paper/main.tex",
+      "source_start": 2669,
+      "source_end": 2670,
+      "source_line": 34
+    },
+    {
+      "expanded_start": 9411,
+      "expanded_end": 16595,
+      "path": "paper/sections/03_certificate.tex",
+      "source_start": 0,
+      "source_end": 7184,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 16595,
+      "expanded_end": 16596,
+      "path": "paper/main.tex",
+      "source_start": 2701,
+      "source_end": 2702,
+      "source_line": 35
+    },
+    {
+      "expanded_start": 16596,
+      "expanded_end": 20673,
+      "path": "paper/sections/04_resource_theory.tex",
+      "source_start": 0,
+      "source_end": 4077,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 20673,
+      "expanded_end": 21345,
+      "path": "paper/tables/table_losses.tex",
+      "source_start": 0,
+      "source_end": 672,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 21345,
+      "expanded_end": 21873,
+      "path": "paper/sections/04_resource_theory.tex",
+      "source_start": 4104,
+      "source_end": 4632,
+      "source_line": 50
+    },
+    {
+      "expanded_start": 21873,
+      "expanded_end": 21874,
+      "path": "paper/main.tex",
+      "source_start": 2737,
+      "source_end": 2738,
+      "source_line": 36
+    },
+    {
+      "expanded_start": 21874,
+      "expanded_end": 23268,
+      "path": "paper/sections/05_experiments.tex",
+      "source_start": 0,
+      "source_end": 1394,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 23268,
+      "expanded_end": 23845,
+      "path": "paper/tables/table_graphs.tex",
+      "source_start": 0,
+      "source_end": 577,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 23845,
+      "expanded_end": 27335,
+      "path": "paper/sections/05_experiments.tex",
+      "source_start": 1421,
+      "source_end": 4911,
+      "source_line": 6
+    },
+    {
+      "expanded_start": 27335,
+      "expanded_end": 29042,
+      "path": "paper/tables/table_e05b.tex",
+      "source_start": 0,
+      "source_end": 1707,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 29042,
+      "expanded_end": 33358,
+      "path": "paper/sections/05_experiments.tex",
+      "source_start": 4936,
+      "source_end": 9252,
+      "source_line": 17
+    },
+    {
+      "expanded_start": 33358,
+      "expanded_end": 33359,
+      "path": "paper/main.tex",
+      "source_start": 2769,
+      "source_end": 2770,
+      "source_line": 37
+    },
+    {
+      "expanded_start": 33359,
+      "expanded_end": 39657,
+      "path": "paper/sections/06_pilot.tex",
+      "source_start": 0,
+      "source_end": 6298,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 39657,
+      "expanded_end": 39658,
+      "path": "paper/main.tex",
+      "source_start": 2795,
+      "source_end": 2796,
+      "source_line": 38
+    },
+    {
+      "expanded_start": 39658,
+      "expanded_end": 42461,
+      "path": "paper/sections/07_discussion.tex",
+      "source_start": 0,
+      "source_end": 2803,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 42461,
+      "expanded_end": 42524,
+      "path": "paper/main.tex",
+      "source_start": 2826,
+      "source_end": 2889,
+      "source_line": 39
+    },
+    {
+      "expanded_start": 42524,
+      "expanded_end": 49458,
+      "path": "paper/appendices/proofs.tex",
+      "source_start": 0,
+      "source_end": 6934,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 49458,
+      "expanded_end": 49459,
+      "path": "paper/main.tex",
+      "source_start": 2914,
+      "source_end": 2915,
+      "source_line": 43
+    },
+    {
+      "expanded_start": 49459,
+      "expanded_end": 52217,
+      "path": "paper/appendices/reproducibility.tex",
+      "source_start": 0,
+      "source_end": 2758,
+      "source_line": 1
+    },
+    {
+      "expanded_start": 52217,
+      "expanded_end": 52232,
+      "path": "paper/main.tex",
+      "source_start": 2949,
+      "source_end": 2964,
+      "source_line": 44
+    },
+    {
+      "expanded_start": 52232,
+      "expanded_end": 52233,
+      "path": "paper/main.tex",
+      "source_start": 2964,
+      "source_end": 2965,
+      "source_line": 45
+    }
+  ],
+  "units": [
+    {
+      "id": "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+      "sha256": "efff6de0bdcfcd23d256a1d1dea1c78b4d38ac6eada0c10c8e0603c59e3a61ea",
+      "identity_sha256": "5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735",
+      "title": "Front matter",
+      "kind": "front-matter",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/001-front-matter.tex",
+      "expanded_start": 1233,
+      "expanded_end": 2834,
+      "location": {
+        "path": "paper/main.tex",
+        "line": 28
+      }
+    },
+    {
+      "id": "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+      "sha256": "2d2a4a0ea245d170da43d8dc8a8d64bd7a33ff5f78689afdf8110534b6dc72e7",
+      "identity_sha256": "1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c",
+      "title": "Question and scope",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/002-question-and-scope.tex",
+      "expanded_start": 2834,
+      "expanded_end": 5771,
+      "location": {
+        "path": "paper/sections/01_introduction.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+      "sha256": "6df702968fbc601f555891ef0d2d260c848608de3682e4411ad9a8610a25f6ee",
+      "identity_sha256": "5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254",
+      "title": "Physical and optimization model",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/003-physical-and-optimization-model.tex",
+      "expanded_start": 5771,
+      "expanded_end": 9411,
+      "location": {
+        "path": "paper/sections/02_model.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+      "sha256": "3642991bc7ea14165a9c9fc578824ac8110880ffbd8598972d4769baba1a1676",
+      "identity_sha256": "1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c",
+      "title": "A density-qualified certificate for independent particles",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/004-a-density-qualified-certificate-for-independent-particles.tex",
+      "expanded_start": 9411,
+      "expanded_end": 16596,
+      "location": {
+        "path": "paper/sections/03_certificate.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+      "sha256": "c457410486c7fe600efdc3d932686938c23c832c82d09a0599de7f1ddd6056d4",
+      "identity_sha256": "0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64",
+      "title": "Uniform loss and the resource-dependent source optimum",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/005-uniform-loss-and-the-resource-dependent-source-optimum.tex",
+      "expanded_start": 16596,
+      "expanded_end": 21874,
+      "location": {
+        "path": "paper/sections/04_resource_theory.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "sha256": "a0e79f8ca5796cb8f6e5d7574f58312ad599e4d506bc9ac4f66978524e03b3e7",
+      "identity_sha256": "1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328",
+      "title": "Reconciled computations and negative optimization result",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/006-reconciled-computations-and-negative-optimization-result.tex",
+      "expanded_start": 21874,
+      "expanded_end": 33359,
+      "location": {
+        "path": "paper/sections/05_experiments.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+      "sha256": "e0255a8e9b1fea7db708437e51673966e4c22d982f8438598f215e387c93b4ee",
+      "identity_sha256": "42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa",
+      "title": "Noise model and a prospective hardware pilot",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/007-noise-model-and-a-prospective-hardware-pilot.tex",
+      "expanded_start": 33359,
+      "expanded_end": 39658,
+      "location": {
+        "path": "paper/sections/06_pilot.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+      "sha256": "a8ac7d4a0f2eb736bb74b4f6d8c4e6e8073a72fed2f1f1dee762fce6cd192f67",
+      "identity_sha256": "a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af",
+      "title": "Discussion and conclusion",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/008-discussion-and-conclusion.tex",
+      "expanded_start": 39658,
+      "expanded_end": 42488,
+      "location": {
+        "path": "paper/sections/07_discussion.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+      "sha256": "a94cc40b38038f1050102489a49407ec9b6107da42e316012e7e303aab2e6d17",
+      "identity_sha256": "137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc",
+      "title": "Bibliography",
+      "kind": "bibliography",
+      "reviewable": false,
+      "skip_reason": "Bibliography material",
+      "file": "sections/009-bibliography.tex",
+      "expanded_start": 42488,
+      "expanded_end": 42524,
+      "location": {
+        "path": "paper/main.tex",
+        "line": 41
+      }
+    },
+    {
+      "id": "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+      "sha256": "c331093b45f5bd9fb3add1ff74ba527c597cda6782e903c2dde4f1621e2bf6db",
+      "identity_sha256": "c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342",
+      "title": "Full-output permanent and cycle bounds",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/010-full-output-permanent-and-cycle-bounds.tex",
+      "expanded_start": 42524,
+      "expanded_end": 45023,
+      "location": {
+        "path": "paper/appendices/proofs.tex",
+        "line": 1
+      }
+    },
+    {
+      "id": "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+      "sha256": "1bb2c3688c9f138643c2971a8bd41311024564c744b6ca9a7f51f95c347ebde0",
+      "identity_sha256": "bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e",
+      "title": "Source crossings and the boundary expansion",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/011-source-crossings-and-the-boundary-expansion.tex",
+      "expanded_start": 45023,
+      "expanded_end": 49459,
+      "location": {
+        "path": "paper/appendices/proofs.tex",
+        "line": 28
+      }
+    },
+    {
+      "id": "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1",
+      "sha256": "72c2af11aa9b011d928c70b4aa626a315fbd387806b98042de702996dd53a5da",
+      "identity_sha256": "93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235",
+      "title": "Reproduction, evidence and measurement conventions",
+      "kind": "section",
+      "reviewable": true,
+      "skip_reason": null,
+      "file": "sections/012-reproduction-evidence-and-measurement-conventions.tex",
+      "expanded_start": 49459,
+      "expanded_end": 52218,
+      "location": {
+        "path": "paper/appendices/reproducibility.tex",
+        "line": 1
+      }
+    }
+  ],
+  "limitations": [
+    "Lexical preparation only: no TeX execution or arbitrary macro expansion.",
+    "Conditionals, catcode changes, includeonly, TEXINPUTS or import-package paths and custom input/section macros need manual inspection.",
+    "Literal masking covers verb/lstinline and common verbatim/listing/comment environments, not every package.",
+    "Bibliography files, graphics and package inputs are not loaded or authenticated.",
+    "Context is an extraction index; its order is not manuscript theorem numbering.",
+    "Hash comparison identifies text candidates, not dependency freshness or completed reviews."
+  ],
+  "comparison": {
+    "previous_source_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+    "previous_main": "paper/main.tex",
+    "main_changed": false,
+    "candidate_unchanged": [
+      "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+      "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+      "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+      "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+      "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+      "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+      "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+      "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1"
+    ],
+    "added": [
+      "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+      "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+      "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+    ],
+    "removed": [
+      "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+      "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+      "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1",
+      "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1"
+    ],
+    "ambiguous": [],
+    "contract_changed": false,
+    "contract_files_changed": [],
+    "global_context_changed": true,
+    "whole_paper_invalidated": true,
+    "reuse_requires_context_check": true
+  }
+}

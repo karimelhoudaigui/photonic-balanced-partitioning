@@ -1,25 +1,23 @@
-# Hardware gates — CLOSED
+# QPU readiness — 24 November 2026
 
-PAPER_READY=FALSE. No QPU execution authorized or performed.
+**OFFLINE_PILOT_READY=TRUE. HARDWARE_COMPATIBILITY_VERIFIED=FALSE. QPU_GATE=CLOSED.**
+No real QPU job, hardware credit or external transmission has occurred.
 
-| Gate | Current evidence |
-|---|---|
-| Physics validation | PASS ideal cases; PHYSICS_VALIDATION.md |
-| Perceval cross-validation | PASS; PERCEVAL_VALIDATION.md |
-| Objective validation | PASS; OBJECTIVE_VALIDATION.md |
-| Serious comparable baselines | PARTIAL:classical full-cube, Haar, uniform feasible and distinguishable controls; authentic optical ObliQ OPEN |
-| Interesting ideal interference-dependent optimization signal | NO-GO for tested mesh; RESEARCH_CYCLE_2026-11-20.md |
-| Precise hardware scientific hypothesis | OPEN |
-| Final circuit and parameters frozen | NO |
-| No tuning after QPU | Not applicable; no hardware protocol approved |
-| Explicit authorization | NOT GIVEN |
+| Gate | Status | Evidence / missing element |
+| --- | --- | --- |
+| Graph/physics definitions | PASS locally | n4k2 full Fock identity/HOM/pair mixing; K4 optimum4 and K2,2 optimum2 |
+| Independent local references | PASS | analytic two-photon formula, project Ryser and Perceval SLOS |
+| Circuit export and compilation | PASS locally | BS/PERM reconstruction and serialization round-trip, global-phase comparison; no native backend compilation claim |
+| Reproducible preparation pipeline | PASS | seven commands; qpu/offline_pilot_20261124_v1/ and separate supervisor reproduction |
+| Immutable synthetic result handling | PASS | full occupation counts, known/unknown attempt denominator tests, separate output and SHA records |
+| Hardware result ingestion | Implemented bounded schema, unverified export | PNR internal schema works; actual provider export and anomalies must be validated |
+| Actual backend/account availability | UNKNOWN | official docs do not inspect this account; no network/account call |
+| Native routing, source and detector | UNKNOWN | supported inputs/modes, PNR versus threshold, recycling/filter/attempt semantics and compilation need confirmation |
+| Hardware loss/overlap calibration | UNKNOWN | no invented Belenos noise parameters; theoretical simulator only |
+| Optimization benefit gate | NO-GO for tested route | E05b and stronger classical controls do not demonstrate desired benefit |
+| Execution authorization and credits | NOT GIVEN / ZERO CONSUMED | explicit future authorization required before any submission |
+| Publication hardware claim | ABSENT | offline/synthetic evidence clearly labeled; no QPU data in paper |
 
-The old connectivity and QPU scripts claimed local simulation as hardware evidence.
-They now return status2 without network calls or result creation. The old Laurent
-handoff is withdrawn. No token, backend connection or hardware preparation is
-needed to continue the ideal research program. Source/detection losses, impurity,
-detectors and phase noise have not been measured or modelled in this cycle.
+The ready local deliverable is [the Laurent dossier](../docs/LAURENT_HANDOFF.md). It is meaningful preparation for a feasibility/calibration pilot, not readiness to submit a job or validate a quantum speedup. The original scripts under qpu/ remain closed; the new hardware module has no submission code.
 
-Do not reopen this gate merely because simulator tests pass or an optimum is
-prepared using its known bitstring. All scientific gates and explicit authorization
-are required before implementing/launching a real Perceval remote backend.
+Supervision receipt: recovery_2026-11-24/supervisor_offline_pilot_receipt.json. Future submission additionally needs a reviewed provider adapter and authorized concrete job. No authorization is inferred from asking for a QPU section.

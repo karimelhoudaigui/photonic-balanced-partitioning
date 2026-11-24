@@ -1,0 +1,30 @@
+\section{Physical and optimization model}\label{sec:model}
+Let $G=([n],E,w)$ be a simple undirected graph with even $n$, finite nonnegative edge weights and no self-loops. A balanced binary partition $x$ obeys $\sum_i x_i=n/2$ and has cost
+\begin{equation}
+ C_G(x)=\sum_{\{i,j\}\in E}w_{ij}|x_i-x_j|.\label{eq:cut}
+\end{equation}
+The strings $x$ and $1-x$ have the same cost but are distinct detection events. Exact enumeration uses both strings consistently when computing success probabilities. Symmetry reduction for classical search must not divide physical event counts by two.
+
+For the direct encoding set $m=n$ modes and $k=n/2$ injected single photons in distinct inputs. More generally let $V\in\mathbb C^{m\times k}$ be the occupied columns of a passive lossless unitary, so $V^\dagger V=I_k$. The normalized bosonic input after the interferometer is $\prod_{a=1}^k(\sum_iV_{ia}a_i^\dagger)|0\rangle$. An output is a Fock occupation $t\in\mathbb N^m$ with $|t|=k$. Choose any list $y=(y_1,\ldots,y_k)$ with these multiplicities and write $t!=\prod_i t_i!$. The full laws for indistinguishable bosons and independent distinguishable particles with labels forgotten are
+\begin{equation}
+ p_b(t)=\frac{\left|\sum_{\sigma\in S_k}\prod_jV_{y_j,\sigma(j)}\right|^2}{t!},\qquad
+ p_d(t)=\frac{\sum_{\sigma\in S_k}\prod_j|V_{y_j,\sigma(j)}|^2}{t!}.\label{eq:laws}
+\end{equation}
+Repeated output rows and their factorials are retained. The full Fock space has dimension $\binom{m+k-1}{k}$, whereas the collision-free sector has $\binom{m}{k}$ occupations. At $m=8,k=4$ these are $330$ and $70$. Photon-number conservation does not restrict the law to the latter sector; Hong--Ou--Mandel bunching gives the elementary counterexample~\cite{hom1987}.
+
+Let $F=\{t:|t|=k,\ t_i\le1\}$ denote valid direct encodings, and let $O_G\subset F$ be the set with minimum cut cost $C^*$. For an ideal injected attempt,
+\begin{equation}
+ P_F=p(F)=P_{\CF},\quad P_{\opt\mid F}=p(O_G)/p(F),\quad
+ \succp=p(O_G)=P_F P_{\opt\mid F}.\label{eq:success}
+\end{equation}
+The conditional probability is undefined if $P_F=0$. Under loss, having no collision does not imply having $k$ photons: vacuum and one-photon outcomes are also collision-free. Then $F$ must retain the condition $|t|=k$. In experiments, the denominator must specify emission attempts, successful injection, triggered acquisitions, or postselected detections. Without a measured attempt count, success per emission attempt is unidentified.
+
+Conditional energy $\E[C_G\mid F]$ is a valid accessible training statistic, but its acceptance cost must be reported. The subnormalized moment $\sum_{t\in F}p(t)C_G(t)$ alone can reward rejecting costly states. Examples of optimum-blind losses are
+\begin{equation}
+ L_\mu=\E[C_G\mid F]+\mu(1-P_F),\qquad
+ L_\gamma=\E[C_G\mid F]-\gamma\log P_F,\label{eq:train}
+\end{equation}
+and conditional lower-tail CVaR. An unconditional alternative assigns every rejected event an explicit cost $R\ge\max_{t\in F}C_G(t)$; $R=\sum_Ew_{ij}$ is available without solving the graph. With finite shots, normalization and no-valid-event handling require an explicit estimator. Our safe API accepts costs and feasibility but no $C^*$ or optimal-state mask. It does not make exact distribution access free.
+
+By contrast, optimizing $p(O_G)$ requires knowledge of $C^*$. Such runs diagnose oracle-assisted state preparation. Once an optimal string is known, a permutation of occupied modes prepares it deterministically and gives $p(O_G)=1$. Identity gives $P_F=1$ and $P_{\opt\mid F}\in\{0,1\}$ according to whether its particular string is optimal, not a uniform average.
+

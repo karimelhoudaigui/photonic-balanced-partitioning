@@ -1,0 +1,14 @@
+{
+  "mode": "self-review",
+  "scope": "All rewritten manuscript sources and generated-table changes; final v3 context",
+  "mathematical_token_changes_in_mechanical_pass": [],
+  "note": "The k2 scientific restriction and physical-control clarification are substantive review repairs, not attributed to mechanical proofreading. New theory/calibration statements were separately derived and reviewed.",
+  "validation": "reports/recovery_2026-11-24/build_final.json",
+  "unresolved": "Originality/significance and future finite-data/hardware inference are substantive open obligations, not proofreading errors.",
+  "prior_editorial_repairs_inspected": [
+    "Corrected path/inline-formula layout",
+    "Unified unconditional success symbol and figure captions",
+    "Clarified classical/optical denominators and k2 scope"
+  ],
+  "routine_edits": "None introduced in the final v3 mechanical self-review."
+}

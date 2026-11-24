@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "manuscript_sha256": "98bf647e4f180cd2a1628106f5c621fa5d02ceebf33036317fb8e5cec4e27b7e",
+  "source_files_sha256": "ac60bbdcf722994a4792aaf6b8651c126d5167ed78f9c6616a805dd762036d7e",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "coverage": [
+    {
+      "pass_id": "math-adversarial",
+      "lanes": [
+        "correctness",
+        "adversarial",
+        "claims"
+      ],
+      "scope": "v1 whole-source reader scope; original source hashes and exclusions retained in raw pass",
+      "unit_ids": [],
+      "context": [
+        "reports/manuscript_review_2026-11-24/v1/passes/math-adversarial.json"
+      ],
+      "executor": "/root/theory_literature",
+      "method": "reused with source/context comparisons and v3 local repair confirmation",
+      "status": "reused",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "optimization-reproducibility",
+      "lanes": [
+        "claims",
+        "exposition",
+        "adversarial"
+      ],
+      "scope": "v1 whole-source reader scope; original source hashes and exclusions retained in raw pass",
+      "unit_ids": [],
+      "context": [
+        "reports/manuscript_review_2026-11-24/v1/passes/optimization-reproducibility.json"
+      ],
+      "executor": "/root/objectives_baselines",
+      "method": "reused with source/context comparisons and v3 local repair confirmation",
+      "status": "reused",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "physics-noise",
+      "lanes": [
+        "correctness",
+        "notation",
+        "claims"
+      ],
+      "scope": "v1 whole-source reader scope; original source hashes and exclusions retained in raw pass",
+      "unit_ids": [],
+      "context": [
+        "reports/manuscript_review_2026-11-24/v1/passes/physics-noise.json"
+      ],
+      "executor": "/root/physics",
+      "method": "reused with source/context comparisons and v3 local repair confirmation",
+      "status": "reused",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "math-adversarial-final",
+      "lanes": [
+        "correctness",
+        "adversarial",
+        "claims",
+        "notation"
+      ],
+      "scope": "v2 whole-source reader scope; original source hashes and exclusions retained in raw pass",
+      "unit_ids": [],
+      "context": [
+        "reports/manuscript_review_2026-11-24/v2/passes/math-adversarial-final.json"
+      ],
+      "executor": "/root/theory_literature",
+      "method": "reused with source/context comparisons and v3 local repair confirmation",
+      "status": "reused",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "optimization-reproducibility-final",
+      "lanes": [
+        "claims",
+        "exposition",
+        "adversarial"
+      ],
+      "scope": "v2 whole-source reader scope; original source hashes and exclusions retained in raw pass",
+      "unit_ids": [],
+      "context": [
+        "reports/manuscript_review_2026-11-24/v2/passes/optimization-reproducibility-final.json"
+      ],
+      "executor": "/root/objectives_baselines",
+      "method": "reused with source/context comparisons and v3 local repair confirmation",
+      "status": "reused",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "physics-noise-final",
+      "lanes": [
+        "correctness",
+        "notation",
+        "claims"
+      ],
+      "scope": "v2 whole-source reader scope; original source hashes and exclusions retained in raw pass",
+      "unit_ids": [],
+      "context": [
+        "reports/manuscript_review_2026-11-24/v2/passes/physics-noise-final.json"
+      ],
+      "executor": "/root/physics",
+      "method": "reused with source/context comparisons and v3 local repair confirmation",
+      "status": "reused",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "coordinator-final-v3",
+      "lanes": [
+        "correctness",
+        "adversarial",
+        "exposition",
+        "notation",
+        "claims"
+      ],
+      "scope": "Whole manuscript synthesis; fresh whole-paper exposition/notation/claims, unchanged proof-dependency comparison and local correction confirmation",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:295c277112a6c541ea1780c506d1b1b2c4146e012a492def1021321ac7682344:1",
+        "sha256:3b1b308aad4a95550a711ca295edd40663cea7cc069a9cd79df55f19291ca2dc:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "context": [
+        "full-source.tex",
+        "scope_metadata.json",
+        "publication_manifest.json",
+        "bibliography.bib",
+        "passes/math-local-confirmation.json",
+        "passes/physics-local-confirmation.json"
+      ],
+      "executor": "/root",
+      "method": "self-review and final synthesis; native independent returns retained separately",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "OR-F001",
+      "lane": "exposition",
+      "title": "Identify the E05b fitted objective, optimizer and exact-versus-heldout reported metric",
+      "severity": "moderate",
+      "type": "over-compressed",
+      "confidence": 0.99,
+      "location": "paper/sections/05_experiments.tex:13; sec:experiments, Exactly recorded query and attempt budgets",
+      "quote": "Each optimized trajectory records $120$ objective evaluations, $256$ ideal sampled attempts per evaluation, and a final $4096$-attempt batch: $120\\times256+4096=34816$ attempts.",
+      "analysis": "The budget is correct, but the full manuscript never identifies COBYLA or says which of its earlier example losses produced E05b. Eq.(train) presents several alternatives without fixing mu. The pinned historical driver at af0978455258bb44ef51d328e9ac977546eb2331 uses a sampled conditional-cut loss plus 2 times the rejected fraction for photonic/iid models, full binary penalized energy for the Bernoulli model, COBYLA with rhobeg=.35 and tol=1e-7, minimum-observed-loss selection, and Gaussian scale .1 completion when COBYLA stops early. It also computes final_p_success by summing the selected ideal distribution and records a distinct 4096-draw heldout count/rate. The table says ideal final success but does not explicitly identify which of these two reported quantities is plotted. This is missing experimental-method information, not a numerical contradiction or evidence of C* leakage.",
+      "suggested_fix": "Add a compact E05b protocol paragraph specifying the loss and mu=2, zero-feasible W+3 fallback, penalty objective, optimizer/hyperparameters, exact-call completion and selection rule. Explicitly name final_p_success as the exact ideal selected-circuit probability used for table points and graph-cluster intervals, and distinguish heldout count rates/Wilson intervals. Give a stable locator for the historical driver and seed/initialization rules.",
+      "unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+      "reviewer": "optimization-reproducibility"
+    },
+    {
+      "id": "OR-F002",
+      "lane": "exposition",
+      "title": "Specify the multiplicity-weighted graph bootstrap and interval construction",
+      "severity": "moderate",
+      "type": "over-compressed",
+      "confidence": 0.99,
+      "location": "paper/sections/05_experiments.tex:18; caption of fig:e05b",
+      "quote": "Descriptive intervals resample unique fixed-graph units after averaging training seeds; they are not a population confidence claim for random graph ensembles.",
+      "analysis": "The stated graph unit and non-population caveat are appropriate. However, neither this caption nor the table/methods identifies the 2.5/97.5 percentile level, 2000 bootstrap replicates, seed rule, or the ratio estimator actually used. scripts/reconcile_experiments.py:cluster_interval forms cluster totals t_g and counts n_g, resamples G unique graph clusters with replacement, then uses sum(t_g)/sum(n_g). n_g is unequal: the n4/n6 groups have three clusters of six records and six of three, while n8 has two of six and eight of three. Averaging seed means and then averaging graph means without multiplicity weights would produce a different statistic: for n4 bosons that mean is .5972652189994163 instead of the retained nominal .6523129782732949. The published numbers are consistent with the code; the missing weighting/percentile specification makes the prose insufficient to reconstruct the intervals unambiguously.",
+      "suggested_fix": "State that cluster means retain their nominal record multiplicity inside each resampled ratio: sum_g n_g*pbar_g / sum_g n_g. State 2000 replicates and empirical 2.5th/97.5th percentiles, with the fixed PCG64 seed rule or a precise code locator. Retain the explicit descriptive, fixed-family, duplicate-graph and non-population qualifications.",
+      "unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+      "reviewer": "optimization-reproducibility"
+    },
+    {
+      "id": "OR-F003",
+      "lane": "exposition",
+      "title": "Loss figure caption refers to limit guides absent from the sealed graphic",
+      "severity": "minor",
+      "type": "other",
+      "confidence": 1.0,
+      "location": "paper/sections/04_resource_theory.tex:48; caption of fig:loss",
+      "quote": "Dotted lines show the proved boundary limits.",
+      "analysis": "The v1 publication manifest seals fig_loss_source.pdf with SHA256 02d3a2f15f64425bab1d76122c0495fed7d9b69828b3fa6e38ec0e9f0a47ac0b. Its first panel contains four solid finite-m bracket series, and its second panel an m=128 step diagram. The exact matching v1 generator draws errorbar and step series and no limit-guide axhline. Fresh pypdf inspection found no nonempty PDF line-dash pattern in this sealed graphic. Thus the quoted caption describes a visual element that is absent, although the theorem and archived brackets are not contradicted.",
+      "suggested_fix": "Remove the sentence about dotted limits, or deliberately add the appropriate theorem-limit guides and regenerate/reseal the figure. Describe the two actual panels and retain the distinction between exact root brackets and display midpoints.",
+      "unit_id": "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+      "reviewer": "optimization-reproducibility"
+    },
+    {
+      "id": "PN-F001",
+      "lane": "notation",
+      "title": "The graph-control table uses an unintroduced optimal-probability symbol",
+      "severity": "minor",
+      "type": "undefined-symbol",
+      "confidence": 0.99,
+      "location": "paper/tables/table_graphs.tex:5, expanded in the Reconciled computations unit; compare paper/sections/02_model.tex:15-20",
+      "quote": "Graph & $C^*$ & Optimal strings $g$ & Haar $\\mathbb{E}[P_{\\rm opt}]$ \\\\",
+      "analysis": "The full text defines unconditional success as \\succp=p(O_G) and conditional success as P_{\\opt\\mid F}; the only P_{\\rm opt} occurrence is this table header. The actual entries g*/D are unconditioned injected-attempt probabilities, not conditional optimal fractions. For K4 the displayed6/10 is correct unconditionally, whereas P_{\\opt\\mid F}=1. The nearby prose resolves the numbers, so this is a local labeling issue and does not refute the physics. Definition quoted verbatim:  P_F=p(F)=P_{\\CF},\\quad P_{\\opt\\mid F}=p(O_G)/p(F),\\quad\n \\succp=p(O_G)=P_F P_{\\opt\\mid F}.\\label{eq:success}",
+      "suggested_fix": "Replace the header by Haar E[P_succ] (or E[p_b(O_G)]) and name it unconditioned injected-attempt success in the caption. Keep the numerical entries.",
+      "unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+      "reviewer": "physics-noise",
+      "evidence_status": "presentation"
+    },
+    {
+      "id": "PN-F002",
+      "lane": "notation",
+      "title": "Distinguish a classical sampler from a classically selected optical control",
+      "severity": "moderate",
+      "type": "convention-drift",
+      "confidence": 0.93,
+      "location": "paper/sections/06_pilot.tex:24; compare paper/sections/05_experiments.tex:11,23 and paper/sections/02_model.tex:20",
+      "quote": "This family can display a same-circuit twofold success ratio, yet the classical uniform feasible control has success $\\eta^2/3$ and a known-optimum identity control has success $\\eta^2$.",
+      "analysis": "The eta^2/3 value is correct for the P40 control in which a uniformly chosen feasible string is optically prepared and undergoes the same two-photon loss channel. A classical sampler alone has two optimal strings among six and succeeds with1/3 per classical draw, independently of detector transmission. At eta=1/2 these are respectively1/12 per optically encoded injected trial and1/3 per classical draw. Section05 also calls the uniform balanced sampler a classical feasibility baseline; quote: The uniform balanced sampler is a relevant feasibility baseline; Bernoulli penalties are a different, weaker control and their three strengths are reported separately. The current pilot wording does not explicitly identify the additional optical preparation/readout charge, so it can make an attenuated optical control look like a loss-degraded classical algorithm. This is a denominator/label clarification, not a failed P40 identity and not an allegation of an advantage claim; the same paragraph explicitly denies optimization benefit.",
+      "suggested_fix": "Call this the classically selected feasible-state optical control under the common loss/readout channel. State separately that the standalone classical sampler has success1/3 per classical draw and that its computational resource comparison is different. Preserve the predeclared P40 eta^2/3 prediction.",
+      "unit_id": "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+      "reviewer": "physics-noise",
+      "evidence_status": "presentation"
+    },
+    {
+      "id": "MA2-F001",
+      "lane": "adversarial",
+      "title": "The two-photon E05b rejection bucket does determine M",
+      "severity": "moderate",
+      "type": "degenerate-case",
+      "confidence": 1.0,
+      "location": "paper/sections/05_experiments.tex, paragraph beginning At sizes n=4,6,8; v2/full-source.tex:262; prepared unit sections/006-reconciled-computations-and-negative-optimization-result.tex:31",
+      "quote": "The simulator retains the total non-CF mass as an explicit rejection category, without resolving its internal collision histogram; the E05b traces therefore cannot estimate the pair moment $M$.",
+      "analysis": "The stated E05b grid includes the lossless bosonic arm n=4,k=2. Every two-photon occupation is either two distinct unit occupations (CF, pair count zero) or one occupation two (non-CF, pair count one). Thus sum_i binom(t_i,2)=1_{non-CF} for every outcome, and M=1-P_CF exactly for that arm. The rejection category, or its finite-shot frequency, therefore determines or estimates M without a collision histogram. The source itself defines M as this pair expectation at v2/full-source.tex:80-86. For k>=3, unresolved non-CF mass does not generally determine the pair moment, so the intended limitation is valid there. This is a local exception in the empirical-observability statement, not a defect in either theorem.",
+      "suggested_fix": "Restrict the non-identifiability claim to k>=3 (n>=6) and state that in the two-photon bosonic arm M=1-P_CF exactly. Preserve the caveat that this does not by itself certify the intensity floor c or finite-data uncertainty.",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "reviewer": "math-adversarial-final"
+    },
+    {
+      "id": "MA2-F002",
+      "lane": "notation",
+      "title": "Density caption contains a doubled control backslash before Phi",
+      "severity": "minor",
+      "type": "other",
+      "confidence": 1.0,
+      "location": "Figure labelled fig:density, paper/sections/05_experiments.tex; v2/full-source.tex:299; prepared unit sections/006-reconciled-computations-and-negative-optimization-result.tex:68",
+      "quote": "$\\\\Phi(M/c)$",
+      "analysis": "The exact source has two consecutive U+005C characters before the letters Phi, rather than the single-backslash Phi control sequence used in the envelope definition and coarse bound at v2/full-source.tex:92 and :99. Under TeX tokenization this starts the double-backslash command and then the letters Phi; it is not the defined envelope symbol. This observation is source-only: no PDF rendering or compilation failure is asserted. The mathematical caption plainly intends the already defined coarse envelope.",
+      "suggested_fix": "Replace $\\\\Phi(M/c)$ by $\\Phi(M/c)$ in the caption source, leaving the theorem and data unchanged.",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "reviewer": "math-adversarial-final"
+    },
+    {
+      "id": "OR2-F001",
+      "lane": "exposition",
+      "title": "Extra TeX backslash before Phi in density caption",
+      "severity": "minor",
+      "type": "other",
+      "confidence": 1.0,
+      "quote": "Left: 300 complete-law grid checks against the coarse density envelope $\\\\Phi(M/c)$ from the accepted supervised primary/replication archive.",
+      "location": "paper/sections/05_experiments.tex:33",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "analysis": "The immutable v2 source literally has two backslash characters before Phi (the three preceding code points are dollar36, backslash92, backslash92). This invokes the line-break command followed by letters Phi, rather than the intended Greek macro used in eq:envelope. The numerical plot/data and the density theorem are unaffected. This source-level observation does not assert a failed compilation; the main compiled PDF was not reviewed here.",
+      "suggested_fix": "Replace the doubled backslash before Phi by a single backslash in this caption, leaving the sealed numerical figure and underlying data unchanged.",
+      "reviewer": "optimization-reproducibility-final"
+    },
+    {
+      "id": "PN-F003",
+      "lane": "notation",
+      "title": "The classical-draw and optical-control denominators remain distinct",
+      "severity": "moderate",
+      "type": "convention-drift",
+      "confidence": 0.93,
+      "location": "paper/sections/06_pilot.tex:29; compare paper/sections/05_experiments.tex:11,25 and paper/sections/02_model.tex:20",
+      "quote": "This family can display a same-circuit twofold success ratio, yet the classical uniform feasible control has success $\\eta^2/3$ and a known-optimum identity control has success $\\eta^2$.",
+      "analysis": "This is the unresolved local naming/denominator issue PN-F002 from v1, now rechecked in the fresh v2 context. Eta^2/3 is correct for uniform feasible strings prepared as two-photon optical states and sent through the same survival/readout model, as in P40. The standalone classical balanced sampler succeeds with2/6=1/3 per classical draw independently of optical transmission. At eta=1/2 these are1/12 per optical injected attempt versus1/3 per classical draw. The benchmark section uses the classical uniform sampler as an algorithmic feasibility baseline, so the pilot sentence should explicitly identify its added optical preparation and loss stage. No P40 identity is rejected and no algorithmic-advantage claim is alleged.",
+      "suggested_fix": "Name the eta^2/3 comparator a classically selected feasible-state optical control under the common loss/readout channel, and separately state1/3 per draw for the standalone classical sampler. Keep the frozen P40 optical prediction.",
+      "unit_id": "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+      "reviewer": "physics-noise-final",
+      "evidence_status": "presentation",
+      "previous_finding_id": "PN-F002"
+    },
+    {
+      "id": "PN-F004",
+      "lane": "correctness",
+      "title": "The rejection bucket does determine the bosonic pair moment at k=2",
+      "severity": "moderate",
+      "type": "hidden-hypothesis",
+      "confidence": 1.0,
+      "location": "paper/sections/05_experiments.tex:15; compare paper/sections/03_certificate.tex:eq:moment and the n4,k2 benchmark domain",
+      "quote": "The simulator retains the total non-CF mass as an explicit rejection category, without resolving its internal collision histogram; the E05b traces therefore cannot estimate the pair moment $M$.",
+      "analysis": "The blanket cannot-estimate statement includes n=4,k=n/2=2. For every fixed two-photon occupation t, sum_i binom(t_i,2)=1_{t not in CF}: each non-CF event has exactly one doubled mode, while every CF event has zero pairs. Consequently the bosonic M=1-P_CF is estimable from that rejection bucket alone in the n4 arms; no internal collision histogram is needed. A bounded exact check of all ten m4,k2 occupations confirmed the pathwise identity. In contrast, k3 occupations(3,0,0,0) and(2,1,0,0) both fall in the bucket but carry3 and1 pairs. Thus the insufficiency is real in general for k>=3, not for the full stated size grid. This does not make finite-shot density certification automatic: the density floor and uncertainties remain separate.",
+      "suggested_fix": "Restrict the insufficiency to the general k>=3 case (the n6,n8 optical arms), and note that at n4,k2 the rejected fraction estimates the bosonic pair moment directly. Do not extend the Fock-moment statement to Bernoulli penalty arms.",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "reviewer": "physics-noise-final",
+      "evidence_status": "refuted"
+    },
+    {
+      "id": "PN-F005",
+      "lane": "notation",
+      "title": "The new density caption double-escapes the envelope macro",
+      "severity": "minor",
+      "type": "convention-drift",
+      "confidence": 1.0,
+      "location": "paper/sections/05_experiments.tex:33, caption of fig:density; compare eq:envelope in paper/sections/03_certificate.tex",
+      "quote": " \\caption{Left: 300 complete-law grid checks against the coarse density envelope $\\\\Phi(M/c)$ from the accepted supervised primary/replication archive.",
+      "analysis": "The immutable v2 source contains bytes92,92,80,104,105 before the caption envelope argument: two backslashes followed by Phi. The defined mathematical envelope is the single-backslash command Phi. The doubled sequence is a TeX line-break command followed by letters, not the intended envelope macro. This is a source-level caption slip only; no PDF rendering or failed build is asserted. Ref/cref in the newly added method paragraph were separately checked and have the correct single slash.",
+      "suggested_fix": "Use one backslash before Phi in the fig:density math expression. Leave the coarse quantity M/c and its mathematical meaning unchanged.",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "reviewer": "physics-noise-final",
+      "evidence_status": "presentation"
+    }
+  ],
+  "notes": [
+    "Raw findings refer to v1/v2 and are not silently relabeled as v3 findings.",
+    "Bibliography/graphics were supplemental inputs; no exhaustive external novelty review.",
+    "Model/reasoning actual settings unexposed; no provider or model override requested."
+  ]
+}

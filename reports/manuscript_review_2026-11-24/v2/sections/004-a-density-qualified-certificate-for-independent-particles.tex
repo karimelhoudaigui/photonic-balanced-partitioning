@@ -1,0 +1,85 @@
+\section{A density-qualified certificate for independent particles}\label{sec:certificate}
+Define $q_{ia}=|V_{ia}|^2$, row intensity $a_i=\sum_aq_{ia}$, dominant-support leakage $\delta$, and the bosonic collision-pair moment $M$ by
+\begin{equation}
+ \delta=\sum_i(a_i-\max_aq_{ia}),\qquad
+ M=\sum_i\left(a_i^2-\sum_aq_{ia}^2\right)
+   =\E_b\sum_i\binom{t_i}{2}.\label{eq:moment}
+\end{equation}
+The last identity follows by applying two annihilation operators to the occupied single-photon state: $\E_b[t_i(t_i-1)]=4\sum_{a<b}q_{ia}q_{ib}$. For distinguishable particles the pair moment is $M/2$. In general $M$ is not the probability of at least one collision. If $k\ge2$, then $1-P_{\CF}\le M\le\binom{k}{2}(1-P_{\CF})$ in the bosonic law.
+
+For $0\le s<1$ and $x\ge0$ put
+\begin{equation}
+ f(s)=\frac12\left(\frac{e^{-s}}{1-s}-1\right),\quad
+ \rho(x)=2\sqrt{x}+x,\quad
+ \Phi(x)=\begin{cases}\min\{1,f(\rho(x))\},&\rho(x)<1,\\1,&\rho(x)\ge1.\end{cases}\label{eq:envelope}
+\end{equation}
+Throughout, $\TV(p,d)=\tfrac12\sum_t|p(t)-d(t)|$ on the complete unconditioned output space.
+
+\begin{theorem}[Density and expected-collision certificate]\label{thm:density}
+Let $V^\dagger V=I_k$, with one identical photon in each distinct occupied input. Suppose $c>0$ satisfies $a_i\ge c$ for every $a_i>0$. Then
+\begin{equation}
+ \delta\le M/c,\qquad \TV(p_b,p_d)\le\Phi(\delta)\le\Phi(M/c).\label{eq:coarse}
+\end{equation}
+If $M<c^2/2$, define
+\begin{equation}
+ d_c(M)=\frac{c-\sqrt{c^2-2M}}2
+       =\frac{M}{c+\sqrt{c^2-2M}}.
+\end{equation}
+Then $\delta\le d_c(M)$ and $\TV(p_b,p_d)\le\Phi(d_c(M))$. At fixed $c>0$, the latter upper envelope is $M/(2c)+O(M^{3/2})$ as $M\to0$.
+\end{theorem}
+The floor applies to every positive row, including tiny ones. Average density $k/m$ is not a substitute. Exact zero rows may be removed. The asymptotic is an upper-envelope expansion, not an equivalence for every circuit or a uniform statement as $c\to0$.
+
+\subsection{Proof of the certificate}
+The spatial magnitude Gram matrix and its Frobenius deviation are
+\begin{equation}
+ B_{ab}=\sum_i\sqrt{q_{ia}q_{ib}},\qquad \sigma=\norm{B-I_k}_F.\label{eq:gram}
+\end{equation}
+This $B$ is not the internal-state distinguishability Gram matrix. In particular $B_{aa}=1$, and it generally has nonzero off-diagonal entries even for perfectly identical photons. We first record the permanent and cycle bounds; their complete elementary derivations are in \cref{app:gram}.
+\begin{lemma}[Spatial overlap bounds]\label{lem:gram}
+For the full laws in \cref{eq:laws},
+\begin{equation}
+ \TV(p_b,p_d)\le\min\{1,(\per B-1)/2\}.
+\end{equation}
+For real symmetric nonnegative $A=B-I_k$ and $\sigma=\norm A_F<1$,
+\begin{equation}
+ \per(I_k+A)-1\le e^{-\sigma}/(1-\sigma)-1.
+\end{equation}
+Without $\sigma<1$, the finite bound $\per(I_k+A)-1\le\sum_{r=2}^k(!r/r!)\sigma^r$ remains valid, where $!r$ counts derangements.
+\end{lemma}
+
+Assign each row to one maximizer $g(i)$ of $q_{ia}$, using any fixed tie rule, and let $S_g$ be the resulting partition. Define $C_{ga}=\sqrt{\sum_{i\in S_g}q_{ia}}$. Each column of $C$ has norm one. Write $C=D+E$ with $D$ diagonal and $E$ zero-diagonal. The discarded mass is $\norm E_F^2=\delta$, and $\norm D_{\mathrm{op}}\le1$. Groupwise Cauchy--Schwarz gives $B_{ab}\le(C^TC)_{ab}$ with equal diagonals. Consequently
+\begin{align}
+ \sigma&\le\norm{\off(C^TC)}_F\nonumber\\
+ &\le\norm{DE}_F+\norm{E^TD}_F+\norm{\off(E^TE)}_F
+ \le2\sqrt\delta+\delta.\label{eq:support}
+\end{align}
+The last step uses $\norm{E^TE}_F\le\norm E_F^2$. No dimension factor is introduced. Since $f$ is increasing on $[0,1)$, \cref{lem:gram} gives $\TV\le\Phi(\delta)$, with the trivial cap used when the majorant does not converge.
+
+For each row put $h_i=\max_aq_{ia}$ and $d_i=a_i-h_i$. Then $\sum_aq_{ia}^2\le h_ia_i$, so $M\ge\sum_i a_id_i\ge c\delta$. For the refinement the off-maximum squared sum is at most $d_i^2$, whence
+\begin{equation}
+ M\ge\sum_i2d_i(a_i-d_i)\ge2c\delta-2\sum_i d_i^2
+ \ge2c\delta-2\delta^2.\label{eq:quadratic}
+\end{equation}
+This quadratic alone does not select its small branch. The independent coarse bound and $M<c^2/2$ imply $\delta<c/2$, where $2\delta(c-\delta)$ is increasing. Inversion gives $\delta\le d_c(M)$. Finally $f(s)=s^2/4+O(s^3)$, $\Phi(x)=x+O(x^{3/2})$ near zero, and $d_c(M)=M/(2c)+O(M^2)$ at fixed $c$. This proves \cref{thm:density}.
+
+\subsection{Sharpness and the need for a density hypothesis}
+Let $m=4,k=2$, $w_1=(1,1,0,0)^T/\sqrt2$, $w_2=(0,0,1,1)^T/\sqrt2$, and take occupied columns $v_1=\cos\theta\,w_1+\sin\theta\,w_2$, $v_2=-\sin\theta\,w_1+\cos\theta\,w_2$, with $0\le\theta<\pi/4$. Direct enumeration of all ten Fock occupations gives
+\begin{equation}
+ a_i=1/2,\quad\delta=2\sin^2\theta,\quad
+ M=\TV(p_b,p_d)=2\cos^2\theta\sin^2\theta
+ =\delta(1-\delta/2).\label{eq:sharp}
+\end{equation}
+For example, the probabilities of photon totals $(2,0),(1,1),(0,2)$ in the two disjoint mode groups are $(2u,(1-2\epsilon)^2,2u)$ for bosons and $(u,(1-\epsilon)^2+\epsilon^2,u)$ for distinguishable particles, where $\epsilon=\sin^2\theta$ and $u=\epsilon(1-\epsilon)$. Within each grouped outcome the physical splitting laws agree. Their positive probability differences sum to $2u$, proving the full-law identity. Thus the leading coefficient $1/(2c)=1$ at $c=1/2$ cannot be reduced uniformly. This family has an elementary classical sampler.
+
+Now take two flat occupied columns on even $L$ modes, one with all entries $1/\sqrt L$ and the other with half $+1/\sqrt L$ and half $-1/\sqrt L$. They are orthonormal. Their bosonic collision probability is $2/L$, but $\TV(p_b,p_d)=1/2$: same-sign distinct outputs have twice the distinguishable probability, and opposite-sign outputs are suppressed. For even $k$ choose $L=k+2$ and add $k-2$ deterministic spectator photons on isolated modes, yielding $m=2k$. Then
+\begin{equation}
+ 1-P_{\CF}=M=2/(k+2)\longrightarrow0,\qquad
+ \TV(p_b,p_d)=1/2.\label{eq:spectator}
+\end{equation}
+Here $c=2/(k+2)$ also tends to zero. Balanced average density alone therefore does not rescue a collision-only certificate. This is a counterexample to a particular independent-particle approximation, not evidence of classical hardness.
+
+\subsection{Operational and numerical scope}
+For any fixed event $E$, including optimal valid bisections, $|p_b(E)-p_d(E)|\le\TV(p_b,p_d)$. This compares the \emph{same} interferometer. It does not order separately optimized models or bound relative gains when both event probabilities vanish. An exact toy family with a twofold rare-event ratio and diverging waiting times is retained in the archive; a disclosed correlated classical control solves that toy case.
+
+The quantities $a_i$ and $M$ are low-order number moments; inferring the minimum positive intensity with finite data is difficult without structural assumptions. Certifying the absence of tiny unobserved rows is an additional statistical problem. Current floating implementations are numerical diagnostics, not outward-rounded certificates: a retained tiny-angle cancellation witness refutes a literal exact-upper-bound interpretation of their returned floats. The exact theorem is independent of this numerical limitation.
+
