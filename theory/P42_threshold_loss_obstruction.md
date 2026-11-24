@@ -87,7 +87,22 @@ score evaluations are distinct. One classical draw consumes one feasible
 score; any smaller binding query cap must be reflected in nC. Equation(2),
 not equal names for incompatible units, is the actual cost certificate.
 
-## A uniform analytic low-loss regime
+## Uniform analytic low-loss regimes
+
+The independently reconstructed simpler bound drops only
+(1-eta)^(N-ell)<=1 before extending the sum:
+
+    b_N,k <= sum_(ell=k)^infinity binom(ell-1,k-1)eta^ell
+           = [eta/(1-eta)]^k,  0<=eta<1.
+
+Thus equal proposal budgets are certified for EVERY k>=2 and allowed N>=k
+whenever eta<=1/5. More generally it suffices that
+L binom(2k,k)[eta/(1-eta)]^k<=1. This improvement was independently derived
+by the adaptive reviewer before reading this author note; its reconstruction
+is frozen at bbeb0cd. Exact finite source bounds remain stronger in many cases.
+
+The first root derivation below is also valid but gives a weaker universal
+constant; it is retained to document the distinction between the two estimates.
 
 Dropping the minimum in(1), and for eta<1/2 extending the positive sum to
 infinity, gives
@@ -101,7 +116,7 @@ Since binom(2k,k)<=4^k, equal proposal budgets L=1 are certified whenever
 
     0<=eta<=(3-sqrt(5))/4 approximately0.190983.
 
-This is a sufficient dimension-uniform range, not a sharp efficiency threshold.
+These are sufficient dimension-uniform ranges, not sharp efficiency thresholds.
 Finite Nmax and exact rational arithmetic in(1)-(2) can strengthen it. PNR
 total=k has the simpler sufficient eta<=1/4. These are source/detection model
 statements, not an inference of the effective efficiency of any QPU account.

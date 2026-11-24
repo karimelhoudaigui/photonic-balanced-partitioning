@@ -1,0 +1,15 @@
+{
+  "claim_id": "P42_LOSS_SPECTRUM_ADAPTIVE_THRESHOLD",
+  "mathematics": {
+    "assertion_tested": "Exact finite source/loss/rank and integer-budget certificates agree with independent formulas; full lossless Fock evolution followed by all-sector loss matches loss before U and obeys the source-spectrum support bounds; invalid bunched/partial-distinguishability generalizations are refuted explicitly.",
+    "coefficient_domain": "Exact Fraction integer budget/certificate arithmetic; optical laws complex128/float64 with declared1e-10 tolerance",
+    "conventions": "Rows outputs, source fixed Fock occupations, uniform fresh independent survival, terminal complete support detection; threshold includes every surviving sector and collisions, PNR-only keeps exact k photons. No postselected renormalization.",
+    "inputs": ["k=2..12, N=k..12, m=2k", "eta in {0,1/50,1/10,1/5,1/4,1/2,1}", "every integer source partition of N=2..12 at eta1/50, k=2..N", "eight unitaries: four source patterns times two fixed QR seeds2026112451/52", "four optical eta values and all k=2..min(N,m)", "explicit bunched and partially distinguishable scope counterexamples"],
+    "bounds": {"exact_grid_rows":462,"general_source_rows":2375,"optical_rows":80,"source_photons_max":12,"source_remainders_max":4096,"max_optical_modes":6,"max_optical_photons":4,"optical_tolerance":1e-10,"wall_seconds":90,"cpu_seconds":60,"max_new_output_bytes":33554432},
+    "non_claims": ["No new photonic optimization advantage", "No empirical Lucy calibration or QPU call", "No universal impossibility for all encodings or quantum memories", "No novelty theorem from a finite calculation", "No mean-latency-to-guaranteed-cost substitution", "A valid finite certificate remains conditional on the physical source/loss/detection/frontend model"]
+  },
+  "execution_artifacts": ["research/P42_loss_spectrum_probe.py","research/P42_loss_spectrum_contract.json","theory/P42_threshold_loss_obstruction.md","theory/P42_general_fock_loss_extension.md","src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py","src/photonic_balanced_partitioning/noise/physical.py","pyproject.toml","requirements-research-lock.txt"],
+  "software": [{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"}],
+  "randomness": {"used":true,"generator":"numpy.random.Generator(PCG64)","seed":2026112451},
+  "execution_note": "Coordinator-only numerical slot. Pure exact tables and bounded small Fock audits. One conventional BLAS/OpenMP thread. No RLIMIT_AS or unsupported macOS affinity claim; N<=12 bounds source combinatorics and optical N<=4 bounds arrays. All eta values are hypothetical model inputs, not device observations."
+}
