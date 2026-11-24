@@ -51,7 +51,7 @@ survival and elementary sampling ingredients are established and unoriginal.
 
 ## Exact finite budgets, and a rational sufficient condition
 
-If full primitive costs satisfy c_Q>0,c_C>0, let n_Q=floor(T/c_Q),
+If fixed full primitive costs satisfy c_Q>0,c_C>0, let n_Q=floor(T/c_Q),
 n_C=floor(T/c_C). Ignore quantum training costs only to make its upper bound
 more favorable. Using (1)-(2), the classical lower bound dominates whenever
 
@@ -64,6 +64,8 @@ For0<=a<1 a completely rational sufficient condition is
 because x<=-log(1-x)<=x/(1-x). This avoids uncertified floating logarithms.
 At a=0 the optical component cannot succeed. At a=1 these certificates give
 no useful obstruction. The p_0=1 case is only the excluded trivial k=1 graph.
+Deterministic cost bounds (upper for classical, lower for optical) suffice;
+sample-average timings alone do not certify the finite-floor comparison.
 
 The asymptotic failure-rate condition is
 

@@ -45,7 +45,7 @@ comparison reconstruct a quantum-dependent adaptive classical front end.
 
 ## B. Matched costs and exact floors
 
-Given positive measured primitive costs cC,cQ and remaining budget T, put
+Given positive fixed primitive costs cC,cQ and remaining budget T, put
 nC=floor(T/cC), nQ=floor(T/cQ). If nC>=1, set L=ceil(nQ/nC). Then the fully
 rational condition
 
@@ -55,6 +55,11 @@ is sufficient for the lower bound (A3) to dominate the upper bound (A2).
 Indeed (1-a)^L>=1-La>=1-p0 by Bernoulli's inequality, hence
 
     (1-a)^nQ >= (1-a)^(L nC) >= (1-p0)^nC.
+
+The same guarantee holds if cC is a deterministic upper bound on the cost of
+each classical draw and cQ a deterministic lower bound on each optical trial.
+Observed average wall times alone do not establish these bounds; random-time
+budgets need their own concentration or stopping argument.
 
 No logarithmic approximation or ignored floor is needed. If nQ=0 domination
 is immediate. If nC=0<nQ, no such certificate is asserted. The sharper exact
@@ -86,7 +91,8 @@ threshold or an approximation theorem for the full output distribution.
 
 ## D. Capped source overhead and exponential cost ratios
 
-Suppose Nmax<=alpha k for fixed alpha>=1 and eta<1/alpha. For alpha>1 define
+If eta=0, then a=0 and domination is immediate without logarithms. Otherwise
+suppose Nmax<=alpha k for fixed alpha>=1 and0<eta<1/alpha. For alpha>1 define
 
     I(alpha,eta)=alpha D_Ber(1/alpha || eta)
       =-log(eta)-(alpha-1)log(1-eta)
