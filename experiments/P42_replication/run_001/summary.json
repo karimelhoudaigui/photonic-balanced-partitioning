@@ -1,0 +1,53 @@
+{
+  "result": "FINITE_CHECK_PASS",
+  "case_count": 42,
+  "eta_count": 4,
+  "full_law_count": 168,
+  "maximum_errors": {
+    "unitarity": 6.661338147750939e-16,
+    "source_normalization": 5.551115123125783e-16,
+    "block_trace": 9.992007221626409e-16,
+    "off_occupation_block": 0.0,
+    "density_trace": 9.992007221626409e-16,
+    "density_hermiticity": 0.0,
+    "density_negative_eigenvalue": 4.1572301896365023e-16,
+    "identical_symmetric_mass": 2.220446049250313e-16,
+    "output_trace": 1.4432899320127035e-15,
+    "negative_probability": 0.0,
+    "sector_binomial": 1.1102230246251565e-16,
+    "loss_law_normalization": 1.2212453270876722e-15,
+    "all_photons_detected": 1.2212453270876722e-15,
+    "bosonic_symmetry": 1.3877787807814457e-17,
+    "hom_overlap": 3.3306690738754696e-16,
+    "bunched_witness_formula": 2.706168622523819e-16
+  },
+  "minimum_cap_margins": {
+    "ordered": -1.1102230246251565e-16,
+    "identical": -1.1102230246251565e-16
+  },
+  "bunched_scope_falsifier": {
+    "case_id": "C037",
+    "eta": 0.1,
+    "two_click_probability": 0.027087499999999994,
+    "prediction": 0.027087500000000264,
+    "invalid_distinct_input_cap": 0.01,
+    "distinct_input_scope_refuted": true
+  },
+  "tolerance": 1e-10,
+  "largest_joint_source_array_bytes": 1048576,
+  "cpu_seconds_child": 0.36766999999999994,
+  "wall_seconds_child": 0.4121581250219606,
+  "max_rss_platform_units": 43810816,
+  "software": {
+    "python": "3.11.15",
+    "numpy": "2.4.6"
+  },
+  "numerical_semantics": "FLOAT64_ESTIMATE_NOT_INTERVAL_CERTIFIED",
+  "primary_code_or_raw_read": false,
+  "non_claims": [
+    "Not a universal proof",
+    "No advantage or hardware inference",
+    "No novelty claim",
+    "No general validation of partial-distinguishability shortcuts"
+  ]
+}
