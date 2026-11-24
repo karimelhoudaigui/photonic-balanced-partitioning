@@ -1,0 +1,31 @@
+{
+  "time_utc": "2026-11-24T21:49:32.567238+00:00",
+  "source_refs_before_receipt_commit": {
+    "research/p41-discovery": "da7750d3a6aab2bdac2a8baf5ccade1985eb678e",
+    "research/p41-adaptive": "924b81402caf541e592eabc5061368478f1ae9c0",
+    "research/p41-encoding": "231e76e0f95563be072f26850a72bb769a731900",
+    "research/p41-obstruction": "bcf052b0355bd7dadf7ddb902a8e1ed2cd47d391",
+    "research/p42-replication": "58850769d4c8ef508c7a1d1cc9bb6b7f6bcf7198"
+  },
+  "base_prerequisite": "27443954fb7491a293399f0417d05185009f5c9a",
+  "bundle_relative_path": ".local/provenance/p41-p44-20261124.bundle",
+  "bundle_sha256": "2f5ed2a58a1f160901477b72e2c7bf983e375585421d16b841a9ee57b8b887ca",
+  "bundle_bytes": 3144826,
+  "create_command": [
+    "git",
+    "bundle",
+    "create",
+    "/Users/karimelhoudaigui/Desktop/pasqal/.local/provenance/p41-p44-20261124.bundle",
+    "research/p41-discovery",
+    "research/p41-adaptive",
+    "research/p41-encoding",
+    "research/p41-obstruction",
+    "research/p42-replication",
+    "^27443954fb7491a293399f0417d05185009f5c9a"
+  ],
+  "verify_exit_code": 0,
+  "verify_stdout": "The bundle contains these 5 refs:\nda7750d3a6aab2bdac2a8baf5ccade1985eb678e refs/heads/research/p41-discovery\n924b81402caf541e592eabc5061368478f1ae9c0 refs/heads/research/p41-adaptive\n231e76e0f95563be072f26850a72bb769a731900 refs/heads/research/p41-encoding\nbcf052b0355bd7dadf7ddb902a8e1ed2cd47d391 refs/heads/research/p41-obstruction\n58850769d4c8ef508c7a1d1cc9bb6b7f6bcf7198 refs/heads/research/p42-replication\nThe bundle requires this ref:\n27443954fb7491a293399f0417d05185009f5c9a \nThe bundle uses this hash algorithm: sha1\n",
+  "verify_stderr": "/Users/karimelhoudaigui/Desktop/pasqal/.local/provenance/p41-p44-20261124.bundle is okay\n",
+  "scope": "All new integration and original isolated worker history since published2744395. Local bundle is ignored; remote branch preservation supplies portable source commits. Receipt commit itself necessarily postdates the bundle.",
+  "github_push_recorded": false
+}
