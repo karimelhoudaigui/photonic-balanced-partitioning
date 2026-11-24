@@ -1,0 +1,64 @@
+{
+  "accepted_outcomes_checked": 116,
+  "arbitrary_collision_free_naive_mass": {
+    "denominator": "625",
+    "numerator": "913"
+  },
+  "cases": 16,
+  "full_fock_comparisons": 1260,
+  "heldout_advantage_claim": false,
+  "independent_proof_review": false,
+  "non_claims": [
+    "No universal adaptive-training no-go",
+    "No equality of realized objective-query costs",
+    "No general k-of-m CF normalization",
+    "No novelty assertion",
+    "No hardware advantage"
+  ],
+  "optimization_training": false,
+  "perceval_checks": [
+    {
+      "case": "walsh_bell_readout",
+      "max_full_fock_error": 0.0,
+      "occupations_compared": 10
+    },
+    {
+      "case": "random_k3_complex1",
+      "max_full_fock_error": 8.326672684688674e-17,
+      "occupations_compared": 56
+    }
+  ],
+  "qpu_calls": 0,
+  "result": "EXACT_FINITE_ASSERTIONS_PASS",
+  "sampler_attempts": 2048,
+  "sampler_counts": {
+    "0,2": 990,
+    "1,3": 1058
+  },
+  "sampler_counts_are": "local classical simulation; not QPU",
+  "sampler_seed": 2026112411,
+  "sampler_wall_seconds": 0.05062812502728775,
+  "sharp_walsh_same_circuit_diagnostic": {
+    "bosonic": {
+      "denominator": "2",
+      "numerator": "1"
+    },
+    "classical_always_feasible": {
+      "denominator": "1",
+      "numerator": "1"
+    },
+    "classical_rejecting": {
+      "denominator": "1",
+      "numerator": "1"
+    },
+    "distinguishable": {
+      "denominator": "4",
+      "numerator": "1"
+    }
+  },
+  "software": {
+    "exqalibur": "1.4.2",
+    "numpy": "2.4.6",
+    "perceval-quandela": "1.3.0"
+  }
+}
