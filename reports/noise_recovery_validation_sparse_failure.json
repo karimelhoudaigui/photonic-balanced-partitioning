@@ -1,0 +1,32 @@
+{
+  "base_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+  "started_utc": "2026-11-24T10:07:48.642913+00:00",
+  "argv": [
+    "pytest",
+    "tests/",
+    "-q"
+  ],
+  "exit_status": 1,
+  "wall_seconds": 5.7705908750067465,
+  "cpu_seconds": 2.862523,
+  "cpu_limit_seconds": 85,
+  "threads": 1,
+  "python": "3.11.15",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pytest": "8.4.2",
+    "perceval-quandela": "1.3.0",
+    "exqalibur": "1.4.2"
+  },
+  "input_sha256_before": {
+    "src/photonic_balanced_partitioning/noise/__init__.py": "9142f60bd4e8596af9acfb6e9ae4dd66fa2abf62cbfb73591e0db79dde708e52",
+    "src/photonic_balanced_partitioning/noise/physical.py": "2023e469e0eb0d4d4900def41f93fbfcc4fa5e91f63aebb6ec6d61dc0c382cb3",
+    "tests/test_noise_physical.py": "065362d0c7a6e5269fd9b9117dddad46ed953feb2d90a72d7abcce9f92fc083a"
+  },
+  "input_sha256_after": {
+    "src/photonic_balanced_partitioning/noise/__init__.py": "9142f60bd4e8596af9acfb6e9ae4dd66fa2abf62cbfb73591e0db79dde708e52",
+    "src/photonic_balanced_partitioning/noise/physical.py": "2023e469e0eb0d4d4900def41f93fbfcc4fa5e91f63aebb6ec6d61dc0c382cb3",
+    "tests/test_noise_physical.py": "065362d0c7a6e5269fd9b9117dddad46ed953feb2d90a72d7abcce9f92fc083a"
+  }
+}
