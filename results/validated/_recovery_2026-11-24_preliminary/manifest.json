@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "claim_id": "RECOVERY_2026_11_24_HISTORICAL_NUMERICAL_RECONCILIATION",
+  "repository": {
+    "commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "scripts/reconcile_experiments.py",
+    "--archive-root",
+    "/Users/karimelhoudaigui/Desktop/pasqal",
+    "--output",
+    "results/validated/recovery_2026-11-24",
+    "--runner-created-directory"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Reconstruct the complete E05b756-run declared grid from archived counts and traces; verify ideal draw budgets, sampled nonoracle loss, selection, best-valid costs, earliest-winning-batch consistency and heldout counts. Recompute Haar circuit means. Inventory E01-E09/P20/P21/P30-P39 provenance, preserving failures and excluding root P33 as performance evidence.",
+    "coefficient_domain": "Integer counts; binary64 weighted graph costs and descriptive statistics; SHA256 artifact identity",
+    "conventions": "Historical files read-only. First-shot order within a batch is not reconstructed from counts. Optimizer repeats remain in the same unique labeled weighted graph cluster. No driver or old experiment is rerun.",
+    "inputs": [
+      "--archive-root/experiments historical manifests/raw files",
+      "--archive-root/results selected P33 historical captures",
+      "Historical source blobs at manifest repository commits"
+    ],
+    "bounds": {
+      "E05b_runs": 756,
+      "E05b_sizes": [
+        4,
+        6,
+        8
+      ],
+      "Haar_sizes": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "bootstrap_resamples": 2000,
+      "physical_shots": 0
+    },
+    "non_claims": [
+      "No quantum advantage or QPU evidence",
+      "No true population confidence from the finite graph grid",
+      "Hash integrity does not independently prove all campaign scientific claims",
+      "No complete experiment repetition or current-source-equals-historical requirement"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng PCG64, graph-cluster descriptive bootstrap only",
+    "seed": 20261124
+  },
+  "run": {
+    "started_at": "2026-11-24T10:07:19.302072+00:00",
+    "runtime_seconds": 20.450629,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 180.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 120,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/reconcile_experiments.py",
+    "research/NUMERICAL_RECONCILIATION_CONTRACT.json",
+    "pyproject.toml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/reconcile_experiments.py",
+      "sha256": "c80ea11256cb26b1b34df2a02245fc400d705c2da97f8a8186c34e3f2dcc4a3d",
+      "sha256_after": "c80ea11256cb26b1b34df2a02245fc400d705c2da97f8a8186c34e3f2dcc4a3d"
+    },
+    {
+      "path": "research/NUMERICAL_RECONCILIATION_CONTRACT.json",
+      "sha256": "66308af0657797b23af3010599b9206e437bb4254da97c9cfddc62fe1ff7d321",
+      "sha256_after": "66308af0657797b23af3010599b9206e437bb4254da97c9cfddc62fe1ff7d321"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986",
+      "sha256_after": "3de81b417907f8f89222313f6d391f0df68bae7a99e51db3d39b3c103995e986"
+    }
+  ],
+  "output_directory": "results/validated/recovery_2026-11-24",
+  "declared_results": [
+    "results/validated/recovery_2026-11-24/summary.json",
+    "results/validated/recovery_2026-11-24/campaigns.json",
+    "results/validated/recovery_2026-11-24/source_hashes.json",
+    "results/validated/recovery_2026-11-24/benchmark.csv"
+  ],
+  "outputs": [
+    {
+      "path": "results/validated/recovery_2026-11-24/stdout.txt",
+      "sha256": "f4f654e92f70efbe730b3ac3006efb6139dfb80f5a843c11645fa0e442b2925a",
+      "kind": "log"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/summary.json",
+      "sha256": "ed85e1b5d5319dec46910822734ccb5bbbe4d390bac6bf2e432a05bcba409ec3",
+      "kind": "result"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/campaigns.json",
+      "sha256": "d1952fae69ee8f063ba8a3925d1870e2b0550c6281c775eebcb85cefda7d580d",
+      "kind": "result"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/source_hashes.json",
+      "sha256": "68eef6ef21bb16cebdd993d16d01a8b6f4a9713b17438d76b4e56e519c9dc63c",
+      "kind": "result"
+    },
+    {
+      "path": "results/validated/recovery_2026-11-24/benchmark.csv",
+      "sha256": "5fc61e7f0e5467f60ebfb3b9d87ca839c04ca0860606697c75656ab9f5d2da4b",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

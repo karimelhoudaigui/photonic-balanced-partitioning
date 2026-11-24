@@ -1,0 +1,19 @@
+.....F...                                                                [100%]
+=================================== FAILURES ===================================
+______________ test_optimizer_repeats_are_not_independent_graphs _______________
+
+    def test_optimizer_repeats_are_not_independent_graphs():
+        rows=[dict(graph_hash='a',value=.2),dict(graph_hash='b',value=.8)]
+        original,count=m.cluster_interval(rows,'value',seed=7,resamples=200)
+        repeated,count2=m.cluster_interval(rows*10,'value',seed=7,resamples=200)
+>       assert count==count2==2;assert repeated==original
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       assert [0.1999999999...9999999999999] == [0.2, 0.8]
+E         
+E         At index 0 diff: 0.19999999999999998 != 0.2
+E         Use -v to get more diff
+
+tests/test_reconciled_evidence.py:44: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_reconciled_evidence.py::test_optimizer_repeats_are_not_independent_graphs
+1 failed, 8 passed in 1.48s

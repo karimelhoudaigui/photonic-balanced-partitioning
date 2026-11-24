@@ -1,0 +1,8 @@
+{
+  "reason": "Preliminary successful reconciliation preserved before adding raw-case metadata and exact row locators for reported oracle numbers. Not the publication data source.",
+  "original_output_directory": "results/validated/recovery_2026-11-24",
+  "preserved_output_directory": "results/validated/_recovery_2026-11-24_preliminary",
+  "executed_script_sha256": "c80ea11256cb26b1b34df2a02245fc400d705c2da97f8a8186c34e3f2dcc4a3d",
+  "old_manifest_preserved_unchanged": true,
+  "relocation_note": "Original manifest paths refer to the original location; consult this preservation map for this preliminary capture."
+}

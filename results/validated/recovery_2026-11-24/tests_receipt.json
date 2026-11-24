@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-11-24T10:12:09.309575+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "tests/test_reconciled_evidence.py",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "exit_status": 0,
+  "runtime_seconds": 10.670371709042229,
+  "test_file_sha256": "07ad5af2c14668dbfd181f8b3aff980e979138ef0f8efc7c0c10a34f8e3297dd",
+  "full_suite_rerun": false
+}

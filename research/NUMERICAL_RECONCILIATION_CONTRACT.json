@@ -1,0 +1,14 @@
+{
+ "claim_id":"RECOVERY_2026_11_24_HISTORICAL_NUMERICAL_RECONCILIATION",
+ "mathematics":{
+  "assertion_tested":"Reconstruct the complete E05b756-run declared grid from archived counts and traces; verify ideal draw budgets, sampled nonoracle loss, selection, best-valid costs, earliest-winning-batch consistency and heldout counts. Recompute Haar circuit means. Inventory E01-E09/P20/P21/P30-P39 provenance, preserving failures and excluding root P33 as performance evidence.",
+  "coefficient_domain":"Integer counts; binary64 weighted graph costs and descriptive statistics; SHA256 artifact identity",
+  "conventions":"Historical files read-only. First-shot order within a batch is not reconstructed from counts. Optimizer repeats remain in the same unique labeled weighted graph cluster. No driver or old experiment is rerun.",
+  "inputs":["--archive-root/experiments historical manifests/raw files", "--archive-root/results selected P33 historical captures", "Historical source blobs at manifest repository commits"],
+  "bounds":{"E05b_runs":756,"E05b_sizes":[4,6,8],"Haar_sizes":[4,6,8,10],"bootstrap_resamples":2000,"physical_shots":0},
+  "non_claims":["No quantum advantage or QPU evidence", "No true population confidence from the finite graph grid", "Hash integrity does not independently prove all campaign scientific claims", "No complete experiment repetition or current-source-equals-historical requirement"]
+ },
+ "execution_artifacts":["scripts/reconcile_experiments.py","research/NUMERICAL_RECONCILIATION_CONTRACT.json","pyproject.toml"],
+ "software":[{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"}],
+ "randomness":{"used":true,"generator":"NumPy default_rng PCG64, graph-cluster descriptive bootstrap only","seed":20261124}
+}

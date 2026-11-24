@@ -1,0 +1,1 @@
+{"status": "RECONCILED_WITH_EXPLICIT_LIMITATIONS", "e05b_runs": 756, "haar_circuits": 3250, "campaign_manifests": 50, "historical_inputs": 311, "runtime_seconds": 15.709795165981632, "output": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/recovery-numeric-20261124/results/validated/recovery_2026-11-24"}
