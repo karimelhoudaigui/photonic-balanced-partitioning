@@ -1,0 +1,1 @@
+{"network_used": false, "plan": "/Users/karimelhoudaigui/Desktop/pasqal/reports/lucy_tgcc_2026-11-24/validation/hom-plan/plan.json", "submission": false}

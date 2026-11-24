@@ -1,0 +1,18 @@
+{
+  "schema": "pbp.lucy-authorization.v1",
+  "authorized": false,
+  "target": "Lucy/TGCC",
+  "expected_provider_name": "REPLACE_FROM_LIVE_SPECS_PROVIDER_NAME",
+  "plan_sha256": "REPLACE_WITH_SHA256_OF_PLAN_JSON",
+  "max_jobs": 1,
+  "max_shots": 1000,
+  "max_samples": 1000,
+  "operator": "REPLACE_WITH_AUTHORIZED_OPERATOR",
+  "approval_reference": "REPLACE_WITH_EXPLICIT_APPROVAL_REFERENCE",
+  "capability_evidence": "REPLACE_WITH_REVIEWED_SPECS_CALIBRATION_AND_ROUTING_REFERENCES",
+  "calibration_reviewed": false,
+  "pnr_confirmed": false,
+  "routing_reviewed": false,
+  "filtering_and_recycling_reviewed": false,
+  "no_unreported_output_filtering": false
+}

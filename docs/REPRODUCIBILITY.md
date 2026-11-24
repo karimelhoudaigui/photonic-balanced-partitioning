@@ -55,3 +55,13 @@ P40's original driver is an immutable historical entry point with fixed-path/anc
 The original isolated worker commits are preserved in reports/recovery_2026-11-24/isolated-worker-history.bundle. It has a6154b46 base prerequisite and three original branch refs. In a full checkout containing that base, `git bundle verify reports/recovery_2026-11-24/isolated-worker-history.bundle` checks the bundle without contacting a remote. This preserves original pre-execution contract/source identifiers across later cherry-picks. A shallow checkout may need the base history first.
 
 Remote CI is configured but was not triggered here. Local YAML syntax, full tests, archive/data checks, compilation and PDF verification ran successfully; this does not claim a tested Linux CI execution.
+
+## Subsequent Lucy/TGCC delivery
+
+The [separate delivery receipt](../reports/LUCY_TGCC_DELIVERY.md) records505
+passing tests after adding21 mock-transport tests. The scientific paper and
+historical raw evidence remain byte-identical. [Lucy/TGCC instructions](LUCY_TGCC.md)
+distinguish offline planning, a read-only live-spec query and an explicitly
+authorized single QPU acquisition. These remote operations were not run here.
+The CI now fetches full history; archived worker refs still require the
+preserved bundle when inspecting their original commits.

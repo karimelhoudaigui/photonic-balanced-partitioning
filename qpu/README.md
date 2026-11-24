@@ -1,4 +1,10 @@
-# Pilote QPU : préparation et analyse hors ligne
+# Lucy/TGCC et pilote QPU hors ligne
+
+**Pour Laurent : [guide Lucy via TGCC](../docs/LUCY_TGCC.md).**
+Le module distinct `photonic_balanced_partitioning.hardware.lucy_tgcc` prépare
+un plan local et peut soumettre un seul job après autorisation explicite.
+Ses tests utilisent un transport simulé. Les commandes ci-dessous gardent leur
+fonctionnement hors ligne et leurs exports v1 inchangés.
 
 Le nouveau CLI produit des circuits et références locaux. Il ne consulte pas
 les credentials, n'interroge aucun compte et ne soumet aucun job. Les anciens

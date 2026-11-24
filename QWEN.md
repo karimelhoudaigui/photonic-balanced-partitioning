@@ -4,6 +4,9 @@ STOP WRITING THE PAPER. DO RESEARCH UNTIL THERE IS SOMETHING WORTH WRITING ABOUT
 Astra is META RESEARCH SUPERVISOR. Qwen proposes and executes bounded tasks;
 Astra independently reads changes, raw data, commands and tests before acceptance.
 Installation is not scientific completion. paper/ remains frozen; no QPU calls.
+The separate Lucy/TGCC adapter is operator-only. Never invoke lucy_tgcc,
+QuandelaQPU, --execute-qpu, or create/edit an authorization JSON. Preparing a
+manuscript or an offline research result never grants hardware authorization.
 
 For a new general investigation read AGENTS.md, CLAIMS.md, STATUS.md, NEGATIVE_RESULTS.md, RESEARCH_LOG.md,
 DECISIONS.md and OPEN_QUESTIONS.md. Then read relevant reports/, theory/, src/

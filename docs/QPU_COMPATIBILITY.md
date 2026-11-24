@@ -1,6 +1,17 @@
 # Compatibilité Quandela / Perceval — contrôle officiel du 24 novembre 2026
 
-**Outil local opérationnel ; exécution distante non implémentée et non vérifiée.**
+**Outil local opérationnel ; adaptateur Lucy/TGCC implémenté, testé avec transport
+simulé ; accès distant et compatibilité effective non vérifiés.**
+
+La cible confirmée par l'utilisateur est **Lucy au TGCC**, pas un backend
+Belenos Cloud. Voir [LUCY_TGCC.md](LUCY_TGCC.md) et la
+[documentation officielle CEA](https://www-hpc.cea.fr/tgcc-public/en/html/toc/QuantumSoftwareStack.html#using-lucy).
+La route est `ccc-quantum` sur Irène, `qlmaas.qpus.QuandelaQPU` et
+`perceval_interop.MyQLMHelper`. Les mentions Belenos ci-dessous sont des
+comparaisons documentaires antérieures ; elles ne décrivent pas une allocation
+Lucy et ne modifient pas les exports v1 figés. Les lignes « non implémenté »
+du tableau décrivent ce pilote v1 ; le nouveau module séparé est documenté
+dans le guide Lucy. Aucun test réel TGCC n'a été effectué ici.
 Ce document remplace les hypothèses techniques du protocole ancien pour ce
 pilote. Il n'atteste aucun accès au compte, créneau, crédit ou étalonnage.
 Aucune connexion à un service de compte n'a été effectuée.

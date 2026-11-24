@@ -1,0 +1,172 @@
+{
+  "created_utc": "2026-11-24T13:08:30.208327+00:00",
+  "git_commit": "84833cb82b8a1d78bcba9ebbffebfd1786fac61b",
+  "source_before": {
+    "src/photonic_balanced_partitioning/hardware/lucy_tgcc.py": "4eb8f58524266ccfd9a012524d76669dfd992d796703bf0c32ed5cb1948f341d",
+    "src/photonic_balanced_partitioning/hardware/offline.py": "0b5333737bd4be9b2d90799478ebb548b5f8c3108cc30548155be80f73b1f0a3",
+    "tests/test_lucy_tgcc.py": "dc254f8fc3813fea620b01d1a910eb9718b8c6768eeb6e6342d0902e83f1e925",
+    "paper/main.pdf": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+    "paper/appendices/proofs.tex": "ca47881ba428e27506b5bb14c2f46e7a3f01c04dd54059ec6f4607872de8c654",
+    "paper/appendices/reproducibility.tex": "c7892e95168a0836dffb317232ada8dead5158db2cacdeada723193a8876acec",
+    "paper/main.tex": "01c70098e1dca6e288e558707116a0b962449392c9823e48307ca6aa63c6cd5d",
+    "paper/sections/01_introduction.tex": "be0d33e48b413be60e59d6bdbe0e76be90992183263cb43e80bec28156944790",
+    "paper/sections/02_model.tex": "b2eaec249c32bdbb499c50e12b8bc33a7ccef9347f9681c637b04ef88eaf6745",
+    "paper/sections/03_certificate.tex": "19f531a90f880fea29b5ce8434ac96ff0b0cb251c98824b48cf04c21e60aa3bd",
+    "paper/sections/04_resource_theory.tex": "0f78b50e390409f5c8a6a57db5713cea5580711de0cae9e60591accd3cd08256",
+    "paper/sections/05_experiments.tex": "fb8f162dedddb1a8265d15dcaa6cc6e475395d6f3423415ba4d743089dcdd44f",
+    "paper/sections/06_pilot.tex": "423292292cdb9c08cc32f4e8fc2bc9d078dca0a6c143c211e485d4f3da54611a",
+    "paper/sections/07_discussion.tex": "0612c295ac0065c3d8d91e040598cd0b98c06675e782f0c40ba8337eaa716ad2",
+    "paper/tables/table_e05b.tex": "fbc882ed1547115e7f7a647b229c96e279c96b5530cc75b69e3b6ab1f7266525",
+    "paper/tables/table_graphs.tex": "b127e99be6fdf9b976e4a690edd21d0bcfeb50480abee5dc20ddbb5e3fad4843",
+    "paper/tables/table_losses.tex": "e9a94941926a3d16ead688047c8d3cfed99a838088ad0f04689661a7a065774f",
+    "paper/tables/validated_numbers.tex": "df7c78d113d5ad552cd2e500e3520385c0374dcaf146fc060fa1ace3a71948f9"
+  },
+  "source_after": {
+    "src/photonic_balanced_partitioning/hardware/lucy_tgcc.py": "4eb8f58524266ccfd9a012524d76669dfd992d796703bf0c32ed5cb1948f341d",
+    "src/photonic_balanced_partitioning/hardware/offline.py": "0b5333737bd4be9b2d90799478ebb548b5f8c3108cc30548155be80f73b1f0a3",
+    "tests/test_lucy_tgcc.py": "dc254f8fc3813fea620b01d1a910eb9718b8c6768eeb6e6342d0902e83f1e925",
+    "paper/main.pdf": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+    "paper/appendices/proofs.tex": "ca47881ba428e27506b5bb14c2f46e7a3f01c04dd54059ec6f4607872de8c654",
+    "paper/appendices/reproducibility.tex": "c7892e95168a0836dffb317232ada8dead5158db2cacdeada723193a8876acec",
+    "paper/main.tex": "01c70098e1dca6e288e558707116a0b962449392c9823e48307ca6aa63c6cd5d",
+    "paper/sections/01_introduction.tex": "be0d33e48b413be60e59d6bdbe0e76be90992183263cb43e80bec28156944790",
+    "paper/sections/02_model.tex": "b2eaec249c32bdbb499c50e12b8bc33a7ccef9347f9681c637b04ef88eaf6745",
+    "paper/sections/03_certificate.tex": "19f531a90f880fea29b5ce8434ac96ff0b0cb251c98824b48cf04c21e60aa3bd",
+    "paper/sections/04_resource_theory.tex": "0f78b50e390409f5c8a6a57db5713cea5580711de0cae9e60591accd3cd08256",
+    "paper/sections/05_experiments.tex": "fb8f162dedddb1a8265d15dcaa6cc6e475395d6f3423415ba4d743089dcdd44f",
+    "paper/sections/06_pilot.tex": "423292292cdb9c08cc32f4e8fc2bc9d078dca0a6c143c211e485d4f3da54611a",
+    "paper/sections/07_discussion.tex": "0612c295ac0065c3d8d91e040598cd0b98c06675e782f0c40ba8337eaa716ad2",
+    "paper/tables/table_e05b.tex": "fbc882ed1547115e7f7a647b229c96e279c96b5530cc75b69e3b6ab1f7266525",
+    "paper/tables/table_graphs.tex": "b127e99be6fdf9b976e4a690edd21d0bcfeb50480abee5dc20ddbb5e3fad4843",
+    "paper/tables/table_losses.tex": "e9a94941926a3d16ead688047c8d3cfed99a838088ad0f04689661a7a065774f",
+    "paper/tables/validated_numbers.tex": "df7c78d113d5ad552cd2e500e3520385c0374dcaf146fc060fa1ace3a71948f9"
+  },
+  "sources_unchanged": true,
+  "commands": [
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "-m",
+        "pytest",
+        "tests/",
+        "-q"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 14.273392124974634,
+      "stdout": "command-0.stdout.txt",
+      "stderr": "command-0.stderr.txt",
+      "stdout_sha256": "0b3680f39f24de9090a85f53f0d472781065c6982ca7ec5b0c5e247314bc7cba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "scripts/check_archive_preservation.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.218873750010971,
+      "stdout": "command-1.stdout.txt",
+      "stderr": "command-1.stderr.txt",
+      "stdout_sha256": "3343a23ed6f6376f378e1a330fb9b96c4963a2bf96f1a3adb6ed393dabccff29",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "scripts/build_publication.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.23499995796009898,
+      "stdout": "command-2.stdout.txt",
+      "stderr": "command-2.stderr.txt",
+      "stdout_sha256": "aa3eda884cad04179f17f073e6ca3756e13bba17492e28233eda86dca6086fa8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "scripts/verify_manuscript.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.45926624996354803,
+      "stdout": "command-3.stdout.txt",
+      "stderr": "command-3.stderr.txt",
+      "stdout_sha256": "450fa02756b024e8ae97c7bd97f240062e076ecb0e6a4e5ec4b880354cec7630",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "-m",
+        "photonic_balanced_partitioning.hardware.lucy_tgcc",
+        "environment"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.2043679159833118,
+      "stdout": "command-4.stdout.txt",
+      "stderr": "command-4.stderr.txt",
+      "stdout_sha256": "541f5fca6e5182209637852450eb347d9c9e32b2a5fd86ecd6d385d1ea57b5f9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "-m",
+        "photonic_balanced_partitioning.hardware.lucy_tgcc",
+        "plan",
+        "--circuit",
+        "identity",
+        "--output",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/lucy_tgcc_2026-11-24/validation/identity-plan"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.237337332975585,
+      "stdout": "command-5.stdout.txt",
+      "stderr": "command-5.stderr.txt",
+      "stdout_sha256": "1fcba81484a1dd2a6b8e9f5c2ac03279d0f0ad2d96d41bbb17e9beb5e580bb45",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "-m",
+        "photonic_balanced_partitioning.hardware.lucy_tgcc",
+        "plan",
+        "--circuit",
+        "hom",
+        "--output",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/lucy_tgcc_2026-11-24/validation/hom-plan"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.658923415991012,
+      "stdout": "command-6.stdout.txt",
+      "stderr": "command-6.stderr.txt",
+      "stdout_sha256": "2fe05fd082c95351cda3baa5a32f7e05fb0d89051bf322e3d87d90a58a7ff20e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "-m",
+        "photonic_balanced_partitioning.hardware.lucy_tgcc",
+        "plan",
+        "--circuit",
+        "pair_mixing",
+        "--output",
+        "/Users/karimelhoudaigui/Desktop/pasqal/reports/lucy_tgcc_2026-11-24/validation/pair_mixing-plan"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.4503171659889631,
+      "stdout": "command-7.stdout.txt",
+      "stderr": "command-7.stderr.txt",
+      "stdout_sha256": "71f0627a2c6ec8ff99c92d9130ef44342cc455f755c70a969f173ce5f3ef6f1c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Local tests, archive/publication checks and offline Lucy plans only",
+  "tgcc_account_connection": false,
+  "qpu_submission": false,
+  "hardware_credits_consumed": 0
+}

@@ -1,0 +1,1 @@
+{"status": "CHECK_PASS", "outputs": 7, "counts": {"CalibrationCellCount": 45, "ErunCount": 756, "SourceBracketCount": 36, "SourceProbabilityCount": 1610}}

@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Recherche: tests complets",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["-m", "pytest", "tests/", "-q"],
+      "options": {"cwd": "${workspaceFolder}", "env": {"OPENBLAS_NUM_THREADS": "1", "OMP_NUM_THREADS": "1"}},
+      "group": {"kind": "test", "isDefault": true},
+      "problemMatcher": []
+    },
+    {
+      "label": "Article: verifier les donnees et figures",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["scripts/build_publication.py", "--check"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "QPU: reproduire le pilote HORS LIGNE",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["qpu/offline_pilot_20261124_v1/reproduce.py", "--output", "${input:freshOutput}"],
+      "options": {"cwd": "${workspaceFolder}", "env": {"PYTHONPATH": "src", "OPENBLAS_NUM_THREADS": "1", "OMP_NUM_THREADS": "1"}},
+      "problemMatcher": []
+    },
+    {
+      "label": "Lucy: preparer un plan HORS LIGNE",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["-m", "photonic_balanced_partitioning.hardware.lucy_tgcc", "plan", "--circuit", "identity", "--output", "${input:freshOutput}"],
+      "options": {"cwd": "${workspaceFolder}", "env": {"PYTHONPATH": "src"}},
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {"id": "freshOutput", "type": "promptString", "description": "Nouveau repertoire absolu de sortie (ne doit pas exister)", "default": "/tmp/pbp-new-run"}
+  ]
+}

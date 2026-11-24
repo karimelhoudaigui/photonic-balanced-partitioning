@@ -1,0 +1,31 @@
+{
+  "source_audit_only": true,
+  "installed_into_scientific_environment": false,
+  "hardware_client_instantiated": false,
+  "hardware_submission": false,
+  "purpose": "Inspect documented bridge parameter placement, Result dump and async semantics",
+  "sources": [
+    "https://www-hpc.cea.fr/tgcc-public/en/html/toc/QuantumSoftwareStack.html#using-lucy",
+    "https://perceval.quandela.net/interopdocs/v1.3/reference/myqlm.html",
+    "https://myqlm.github.io/04_api_reference/module_qat/module_core/result.html",
+    "https://perceval.quandela.net/docs/v1.3/notebooks/Remote_Computation_Tutorial.html"
+  ],
+  "public_packages_read": [
+    {
+      "filename": "perceval_interop-1.3.0-py3-none-any.whl",
+      "size": 45904,
+      "sha256": "398015bdb1ea79787be141f27cc7b2fe60d02aa0a9fa16d72d3a64fdfc38be59"
+    },
+    {
+      "filename": "qlmaas-1.14.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "size": 2466259,
+      "sha256": "23d47f3d7233b7c7fa5f5fe8a11c182068630f5f8f5e3e8a393dd2f76a76332d"
+    }
+  ],
+  "findings": [
+    "MyQLMHelper.make_job forwards params to PayloadGenerator.generate_payload",
+    "Experiment.set_parameter is not an API in pinned Perceval1.3.0",
+    "Result.dump preserves native .res; async join is documented by CEA",
+    "No verified TGCC public API for reconstructing AsyncResult from ID was found"
+  ]
+}

@@ -4,6 +4,23 @@ This repository studies collision-aware photonic graph bisection, sufficient cla
 
 Start with the [rebuilt article PDF](paper/main.pdf), [scientific overview](docs/SCIENTIFIC_OVERVIEW.md), [integrity audit](reports/SCIENTIFIC_INTEGRITY_AUDIT.md) and [publication assessment](reports/PUBLICATION_READINESS.md). The single primary thesis is the density-qualified certificate, supported by a loss/source theorem and an honest negative benchmark. Originality of the full certificate composition remains unresolved.
 
+## Accès rapide — article, résultats et Laurent
+
+| Besoin | Point d'entrée |
+| --- | --- |
+| **Dernier article PDF** | **[paper/main.pdf](paper/main.pdf)** — 16 pages, version du 24 novembre 2026 |
+| **Sources LaTeX complètes** | **[paper/main.tex](paper/main.tex)** et [guide de construction](paper/README.md) |
+| Résultats, preuves et reproductions | [Catalogue des résultats](results/README.md), [état scientifique](STATUS.md) |
+| **Laurent : accès Lucy via TGCC** | **[docs/LUCY_TGCC.md](docs/LUCY_TGCC.md)** — environnement, plan local, specs, lancement autorisé et analyse |
+| Contrat scientifique et counts | [Dossier technique détaillé](docs/LAURENT_HANDOFF.md) |
+| Reprendre dans VS Code | Ouvrir ce dossier ; `Terminal → Run Task` : tests, vérification de l'article, pilote local, plan Lucy |
+
+Le PDF livré et ses sources sont préservés. La partie QPU du manuscrit décrit
+une expérience à réaliser ; aucun résultat Lucy n'est revendiqué. Le nouveau
+lanceur emploie la passerelle officielle CEA et nécessite une autorisation
+explicite pour un plan précis. Sa validation locale utilise un transport simulé ;
+l'accès réel au compte TGCC et les capacités PNR restent à vérifier.
+
 ## Reproduce locally
 
 Python3.11 is the tested series; numerical, test, Perceval and publication dependencies are pinned in pyproject.toml. The recorded environment is Python3.11.15, NumPy2.4.6, SciPy1.17.1, Perceval1.3.0 and exqalibur1.4.2.
@@ -26,7 +43,7 @@ PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   --output /tmp/pbp-offline-pilot-new
 ```
 
-Use a new output directory. This executes all seven local preparation/analysis commands and creates explicitly synthetic counts. [Laurent's dossier](docs/LAURENT_HANDOFF.md), [commands](qpu/README.md), [compatibility matrix](docs/QPU_COMPATIBILITY.md) and [readiness gates](reports/QPU_READINESS.md) distinguish verified local compilation from unknown actual backend compatibility. Hardware execution requires separate explicit authorization; no submitting adapter is included.
+Use a new output directory. This executes all seven local preparation/analysis commands and creates explicitly synthetic counts. [Laurent's dossier](docs/LAURENT_HANDOFF.md), [commands](qpu/README.md), [compatibility matrix](docs/QPU_COMPATIBILITY.md) and [readiness gates](reports/QPU_READINESS.md) distinguish verified local compilation from unknown actual backend compatibility. The separate [Lucy/TGCC adapter](docs/LUCY_TGCC.md) supports one explicitly authorized job; it is never used by the offline pipeline or CI.
 
 ## Evidence and layout
 
@@ -34,7 +51,7 @@ Use a new output directory. This executes all seven local preparation/analysis c
 - `photonic` and `classical`: full Fock laws, mesh/threshold models and explicit classical controls.
 - `optimization`: optimum-blind loss interface; success-to-known-optimum belongs to retrospective evaluation.
 - `noise`: bounded internal-state Gram interference and full loss sectors, with numerical diagnostics.
-- `hardware`: offline circuit/reference/export/count-analysis pipeline.
+- `hardware`: offline circuit/reference/export/count-analysis pipeline and separately guarded Lucy/TGCC adapter.
 - `results/validated/recovery_2026-11-24/`: the single publication dataset; all756 E05b runs reconstructed, with source hashes and documented provenance gaps.
 - `experiments/`, prior `results/`, `theory/`, `research/`: unchanged historical captures, proofs, contracts, counterexamples and source audits.
 - `paper/`: new LaTeX, generated tables/figures and PDF; historical unsupported article is retained in Git6154b46.
@@ -45,4 +62,4 @@ Historical manifests refer to their recorded source commits or frozen snapshots,
 
 The original algorithmic goal remains open. Tests, PDF compilation, local circuit export and novelty are different standards of evidence.
 
-Release validation: **484 tests pass in a newly installed pinned Python venv**. The [portable P40 replay](docs/P40_REPRODUCTION.md) also reproduces all45 physical-model cells. The [execution report](reports/RECOVERY_EXECUTION_REPORT.md) distinguishes local validation, original captures, reviews and remaining publication/hardware gates.
+Current delivery validation: **505 tests pass in the pinned Python venv**, including21 Lucy adapter tests with a mock transport; [commands and receipts](reports/LUCY_TGCC_DELIVERY.md). The [portable P40 replay](docs/P40_REPRODUCTION.md) also reproduces all45 physical-model cells. The [original recovery report](reports/RECOVERY_EXECUTION_REPORT.md) preserves the earlier484-test snapshot and its scientific/hardware limitations.

@@ -10,7 +10,7 @@ The former cf49741/6154b46 completion and superiority reports are withdrawn. The
 
 New tested software includes validated graph inputs, optimum-blind training losses, bounded internal-state Gram interference/full-sector losses, and seven offline hardware commands. Independent worker contributions were isolated in three Git worktrees, inspected and integrated; none wrote historical raw data.
 
-The current local pipeline is [docs/LAURENT_HANDOFF.md](docs/LAURENT_HANDOFF.md). Local graph→unitary→Perceval→compilation→non-submitting job→synthetic analysis works; actual backend/source/detector/calibration/attempt counting and explicit execution authorization remain missing. No submitting adapter is provided.
+The current local pipeline is [docs/LAURENT_HANDOFF.md](docs/LAURENT_HANDOFF.md). Local graph→unitary→Perceval→compilation→non-submitting job→synthetic analysis works. A separate [Lucy/TGCC adapter](docs/LUCY_TGCC.md) now provides a guarded single-job submission path, tested with a mock transport. Actual backend/source/detector/calibration/attempt counting and explicit execution authorization remain missing; no hardware acquisition is claimed.
 
 Read [integrity audit](reports/SCIENTIFIC_INTEGRITY_AUDIT.md), [numerical census](reports/NUMERICAL_RECONCILIATION.md), [primary thesis](reports/PUBLICATION_THESIS.md), [execution report](reports/RECOVERY_EXECUTION_REPORT.md), and [hardware readiness](reports/QPU_READINESS.md).
 

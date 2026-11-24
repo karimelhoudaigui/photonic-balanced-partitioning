@@ -1,4 +1,10 @@
-# Dossier Laurent — pilote n=4, deux photons, entièrement hors ligne
+# Dossier Laurent — contrat scientifique du pilote n=4, deux photons
+
+**Accès matériel ciblé : [Lucy via TGCC — guide de lancement](LUCY_TGCC.md).**
+Un adaptateur distinct a été ajouté après le gel du pilote local v1. Il est
+testé avec un transport simulé ; aucune connexion au compte ni acquisition
+matérielle n'est revendiquée. Le guide précise les confirmations techniques
+et l'autorisation opérateur nécessaires. Les exports v1 restent inchangés.
 
 Version du 24 novembre 2026. **Aucune soumission, aucun crédit consommé,
 autorisation false.** Le livrable est un outil local fonctionnel de préparation
@@ -48,7 +54,8 @@ ni authentification n'est nécessaire pour exécuter ces commandes.
    contre U à une seule phase globale près, tolérance 10⁻¹⁰.
 6. `prepare_qpu_job` écrit un **brouillon interne**, avec trois circuits et un
    plafond demandé de 1000 tentatives par circuit, 3000 au total. Ce plafond
-   n'est ni autorisé ni consommé. Aucune syntaxe de soumission n'est fournie.
+   n'est ni autorisé ni consommé. Le nouveau plan Lucy a sa propre syntaxe et
+   son plafond en shots fournisseur, qui ne vaut pas tentatives d'émission.
 7. `analyze_qpu_results` lit les counts et crée un nouveau rapport séparé.
 
 Les imports Perceval se font avec un stockage persistant temporaire neuf ;

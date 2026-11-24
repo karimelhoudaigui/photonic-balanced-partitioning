@@ -1,0 +1,138 @@
+{
+  "authorization": false,
+  "circuit": {
+    "circuit_id": "pair_mixing",
+    "gates": [
+      {
+        "kind": "PERM",
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "BS_Rx",
+        "mode": 0,
+        "theta": 1.5707963267948966
+      },
+      {
+        "kind": "BS_Rx",
+        "mode": 2,
+        "theta": 1.5707963267948966
+      },
+      {
+        "kind": "PERM",
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      }
+    ],
+    "input_occupation": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "local_compile_max_error_up_to_global_phase": 0.0,
+    "perceval_serialized": ":PCVL:zip:eJyzCnAO87FydM4sSi7NLLFydQzMdM5wdE1Oj/R2cnR0dgz0zfSvcHSOzEoOdg7MjvQJDQrVrvQwDajI93IOdIQDz/RsLwTPsRCoFsFz8URVm2Xg6ZhBZTPT8wOdPDzdndOBgumuLgB4kz+x",
+    "unitary": [
+      [
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.7071067811865475
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.7071067811865475
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.7071067811865475
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.7071067811865475
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7071067811865476,
+          0.0
+        ]
+      ]
+    ]
+  },
+  "circuit_id": "pair_mixing",
+  "circuits_artifact_sha256": "e083c0cd3ec8df6e3820fd7db558caaa89feb52bd41dbc888aeedc6b4d71bbf0",
+  "command": "sample_count",
+  "evidence_kind": "local_plan",
+  "max_jobs": 1,
+  "max_samples": 1000,
+  "max_shots": 1000,
+  "network_used": false,
+  "parameters": {
+    "final_mode_number": 4,
+    "min_detected_photons": 1,
+    "use_photon_recycling": false
+  },
+  "physical_attempts": null,
+  "reference_artifact_sha256": "a2a71dbf9ee678a87419cb66b1d274eb18954cf6da0221c380b15b3ab010f2c4",
+  "route": "qlmaas.qpus.QuandelaQPU",
+  "schema": "pbp.lucy-plan.v1",
+  "shot_unit": "provider nonempty detection event; not an emission attempt",
+  "target": "Lucy/TGCC",
+  "wall_seconds": 600
+}

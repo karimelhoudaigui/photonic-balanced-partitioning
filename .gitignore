@@ -29,6 +29,11 @@ env/
 # IDE
 .idea/
 .vscode/
+!.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
 *.swp
 *.swo
 *~
@@ -50,6 +55,11 @@ htmlcov/
 results/qpu/*/raw_samples.json
 results/qpu/*/processed_results.json
 results/qpu/*/analysis.json
+# Native hardware captures and operator approvals are local until reviewed.
+results/qpu/
+!results/qpu/README.md
+qpu/authorization.local.json
+qpu/lucy-tgcc-*.local.json
 
 .local/
 .qwen/worktrees/
