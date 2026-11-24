@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccc}
+\hline
+Method & $n=4$ & $n=6$ & $n=8$ \\
+\hline
+Bosonic & \shortstack{0.652\\{[0.464, 0.804]}} & \shortstack{0.280\\{[0.178, 0.423]}} & \shortstack{0.068\\{[0.033, 0.107]}} \\
+Distinguishable & \shortstack{0.713\\{[0.590, 0.835]}} & \shortstack{0.537\\{[0.389, 0.646]}} & \shortstack{0.138\\{[0.075, 0.197]}} \\
+Classical iid multinomial & \shortstack{0.421\\{[0.310, 0.532]}} & \shortstack{0.110\\{[0.063, 0.158]}} & \shortstack{0.026\\{[0.016, 0.036]}} \\
+Product Bernoulli penalty ($\lambda=0.1$) & \shortstack{0.199\\{[0.135, 0.268]}} & \shortstack{0.057\\{[0.033, 0.089]}} & \shortstack{0.017\\{[0.010, 0.023]}} \\
+Product Bernoulli penalty ($\lambda=1$) & \shortstack{0.203\\{[0.141, 0.271]}} & \shortstack{0.056\\{[0.032, 0.088]}} & \shortstack{0.016\\{[0.010, 0.023]}} \\
+Product Bernoulli penalty ($\lambda=10$) & \shortstack{0.199\\{[0.127, 0.270]}} & \shortstack{0.056\\{[0.032, 0.092]}} & \shortstack{0.017\\{[0.010, 0.023]}} \\
+Uniform feasible & \shortstack{0.528\\{[0.333, 0.718]}} & \shortstack{0.175\\{[0.100, 0.277]}} & \shortstack{0.060\\{[0.036, 0.086]}} \\
+\hline
+\end{tabular}
+\caption{Ideal final success means over 36 runs per method and size, with descriptive graph-cluster percentile intervals. There are 12 nominal graph slots per size but $G=9,9,10$ unique labeled weighted graphs, respectively. Every run uses 120 calls of 256 training draws plus 4096 heldout draws (34816 ideal attempts). Optimizer repeats stay in the same graph cluster; these are not population significance intervals. Each penalty parameter is a separate fully charged run. No hardware shots.}
+\label{tab:e05b}
+\end{table}
