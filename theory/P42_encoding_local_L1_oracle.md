@@ -9,7 +9,8 @@ a claim of a new simulation theorem. Independent review is required.
 ## 1. Model and exact consequence
 
 Write K for the project's photon count k, to distinguish it from a monomial
-degree or an irrep index. Let V be the m-by-K occupied-input column matrix
+degree or an irrep index. Unless treating the trivial vacuum branch below,
+assume 1<=K<=m. Let V be the m-by-K occupied-input column matrix
 of a passive interferometer, V*V=I_K. The source is one perfectly identical
 photon in each of K distinct spatial inputs. There is no loss, intermediate
 measurement, feedforward or nonlinear optical gate in this model.
@@ -20,7 +21,12 @@ For a terminal occupation n, define
     R_K(n)=sum_(i<j) |n_i-n_j|-K(m-K),
     J_G(n)=F_G(n)+lambda R_K(n).
 
-Here absent edges have w_ij=0. The graph, lambda and an arbitrary circuit V
+The intended project domain has w_ij>=0 and lambda>=0, with absent edges
+having w_ij=0. The exact marginal DP and linear combination also work for
+signed coefficients; the weighted probability sampler in Section 5 has
+the explicit nonnegativity restrictions stated there. If K=0, the only
+occupation is vacuum, F_G=R_0=J_G=0, and no Fourier sampling is necessary.
+The graph, lambda and an arbitrary circuit V
 are supplied classically; no optimal cost, optimal masks or optimal partition
 is needed. The proposed certificate choice lambda=(C0+epsilon)/(2(K-1))
 is included when K>=2 and C0 is a scored feasible incumbent. Its construction
@@ -151,7 +157,8 @@ a constant-degree observable, even though its two-mode locality is fixed.
 ## 5. An explicit additive estimator using phase shifts
 
 The known random-sign permanent identity also gives an alternative that
-avoids high-degree moment inversion. Let L=2K+1 and theta_l=2pi l/L. The
+avoids high-degree moment inversion. In this section K>=1; the K=0 case
+is the deterministic vacuum branch of Section 1. Let L=2K+1 and theta_l=2pi l/L. The
 function h(d)=|d| on integers -K,...,K has discrete Fourier coefficients
 
     c_l=(1/L) sum_(d=-K..K) |d| exp(-i theta_l d),
@@ -186,15 +193,20 @@ Since the negative Fourier coefficients sum to -c0, sample l!=0 with mass
     Y_ij=c0[1-Re X_l(sigma)]
 
 is a NONNEGATIVE unbiased estimator of E|n_i-n_j| in[0,2c0]. For the weighted
-mean of J, let v_ij=w_ij+lambda and A=sum_(i<j)v_ij. Draw a pair with mass
+mean of J, assume v_ij=w_ij+lambda>=0 for every pair, as guaranteed by the
+project domain w_ij>=0, lambda>=0. Let A=sum_(i<j)v_ij. When A>0, draw a pair with mass
 v_ij/A, use A Y_ij, and finally subtract lambda K(m-K). Its mean is E J and
 its pre-subtraction range is[0,2Ac0]. Hoeffding therefore gives additive
 error delta with failure probability zeta after
 
     O((A K/delta)^2 log(1/zeta))                           (L10)
 
-draws, plus preprocessing and matrix construction. Degenerate A=0 means
-the objective is already constant. No exact optimal partition is used.
+draws, plus preprocessing and matrix construction. Under these
+NONNEGATIVITY hypotheses, A=0 forces every v_ij=0, so J is the known
+constant -lambda K(m-K) and needs no draw. For signed coefficients,
+sum v_ij=0 does NOT imply a constant objective. The exact DP still applies
+to that case; the probability sampler just described does not. No exact
+optimal partition is used.
 
 The dependence on delta is additive, and weights/lambda rescalings change
 A correspondingly. Multiplicative error for a tiny value or precision
@@ -248,3 +260,14 @@ summation argument. The additive construction applies the known random-sign
 identity and passive phase expectation reduction. Its source comparison is
 recorded in research/P42_encoding_Monbroussou_L1_audit.md. No novelty claim,
 finite calculation or accepted independent proof review is recorded here.
+
+### Qualification correction after physics review
+
+The previous file SHA-256
+`4b6bc6ee4bd5e9ae739264da37e0ebb3d6bb6a2b0fad7e16267738c14a3a638a`
+omitted the weighted sampler's nonnegativity hypothesis and the K=0 branch.
+The physics reviewer supplied m=4,K=2,w_01=6, other weights zero, lambda=-1:
+sum_(i<j)(w_ij+lambda)=0, yet J(1,1,0,0)=0 and J(1,0,1,0)=6. That exact
+counterexample invalidates the unrestricted A=0 wording, not the marginal
+DP. The current explicit domain and separate vacuum branch correct it. The
+earlier source version remains in Git history; no numerical run was used.
