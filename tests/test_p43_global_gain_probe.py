@@ -79,3 +79,20 @@ def test_common_anchor_charges_every_scan_and_retains_the_no_gain_case():
     assert receipt['candidate_scores_including_initial'] == 5
     assert receipt['one_swap_local_minimum_certified']
     assert len(stream.getvalue().splitlines()) == 4
+
+
+def test_generic_three_photon_clifford_samples_match_independent_full_fock_law():
+    from collections import Counter
+    from photonic_balanced_partitioning.photonic.fixed_photon_obliq import FixedPhotonObliq
+    rng = np.random.default_rng(4307)
+    q,r = np.linalg.qr(rng.normal(size=(4,4))+1j*rng.normal(size=(4,4)))
+    u = q@np.diag(np.diag(r)/abs(np.diag(r)))
+    model = FixedPhotonObliq(4,3)
+    states = model._enumerate_all_fock_states()
+    exact = dict(zip(states,abs(model.output_state(u,(1,1,1,0)))**2))
+    sample,_ = p43.make_optical_sampler(u,[0,1,2],'bosonic',4308)
+    counts = Counter(tuple(sample()[0]) for _ in range(4096))
+    assert set(counts) <= set(exact)
+    # Fixed before execution: Hoeffding union bound over20 cells <9e-5
+    # if the primitive is correct. No postselection or probability fitting.
+    assert max(abs(counts[state]/4096-prob) for state,prob in exact.items()) < .04
