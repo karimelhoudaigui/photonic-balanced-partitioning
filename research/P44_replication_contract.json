@@ -1,0 +1,77 @@
+{
+  "claim_id": "P44-independent-nonuniform-dilation",
+  "mathematics": {
+    "assertion_tested": "For190frozen CF physical sources through explicit nonuniform passive dilations, compare full-tensor moments/events to distinct/repeated permanent identities and spectral envelopes; independently validate robust routing bounds for product and correlated internal states.",
+    "coefficient_domain": "complex128/float64 numerical estimates; exact finite permutation/count enumeration",
+    "conventions": "Global normalized bosonic pure source, explicit vacuum environment, W system+environment unitary; apply W tensorpower N axiswise with identity on internal states, then trace internal factors. Keep every global occupation and environment count, including zero probabilities; marginalize to system only after retaining full law. No clipping or postselection normalization. One first-k-click candidate per detector outcome.",
+    "inputs": [
+      "Complete190case list experiments/P44_replication/cases.json",
+      "FreshPCG64seeds2026112483/2026112484, dimensions2then3, QRleftthenright",
+      "Systemm2/3,N0..3,d1..3, with singletN2 and cyclicentangledN3 internal fixtures",
+      "Zero/unit/uniformquarter controls and declared nonuniform singular-intensity profiles"
+    ],
+    "bounds": {
+      "m_max": 3,
+      "N_max": 3,
+      "internal_dimension_max": 3,
+      "physical_modes_max": 6,
+      "cases": 190,
+      "support_rows_including_empty": 1240,
+      "tolerance": 1e-10,
+      "max_array_bytes": 67108864,
+      "max_output_bytes": 33554432,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "max_threads": 1
+    },
+    "non_claims": [
+      "No universal proof from finite cases",
+      "Not a thermal sampler or whole-law thermal domination",
+      "No Lucy calibration or hardware/advantage/novelty verdict",
+      "No unknown-internal constant1 bound",
+      "No sampling optimization or graph selection",
+      "No run before contract+code+case commit"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P44_replication_contract.md",
+    "research/P44_replication_contract.json",
+    "experiments/P44_replication/cases.json",
+    "experiments/P44_replication/dilation_replication.py"
+  ],
+  "software": [
+    {
+      "name": "child Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.4.6"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.Generator(PCG64)",
+    "seed": [
+      2026112483,
+      2026112484
+    ]
+  },
+  "runner": {
+    "path": "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/run_experiment.py",
+    "sha256": "06b28f46a55327414ebbc202cd4434b22d6b3a2390979ac7ad65f2eae1a2284a"
+  },
+  "proof_target": {
+    "reported_commit": "b87e677",
+    "path": "theory/P44_nonuniform_loss_moment_obstruction.md",
+    "sha256": "5407871a6afe5f6d7eb478792c88b73c964918bd593dbd19ef6d56e82204730b",
+    "analytic_review_commit": "9b240c3f722d5a7ac4d3483886f5308bf34ad365"
+  },
+  "independence": {
+    "independent_derivation_frozen_before_author_proof": true,
+    "author_proof_read_before_numerical_code": true,
+    "primary_numerical_code_or_raw_read": false,
+    "project_imports": []
+  },
+  "resource_note": "No unsupported Darwin CPU affinity/64MiB virtual-address claim; one sequential child with six numerical thread variables1. Hard CPU60/wall90, individual arrays<=64MiB, expected largest explicit array216x216complex=746496bytes. Report actual RSS and output bytes."
+}

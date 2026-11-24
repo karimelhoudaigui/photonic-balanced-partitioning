@@ -1,0 +1,2940 @@
+{
+  "seeds": [
+    2026112483,
+    2026112484
+  ],
+  "dimensions": [
+    2,
+    3
+  ],
+  "thread_variables": [
+    "OMP_NUM_THREADS",
+    "OPENBLAS_NUM_THREADS",
+    "MKL_NUM_THREADS",
+    "NUMEXPR_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS",
+    "BLIS_NUM_THREADS"
+  ],
+  "cases": [
+    {
+      "id": "D001",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D002",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D003",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D004",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D005",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D006",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D007",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D008",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D009",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D010",
+      "m": 2,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D011",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D012",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D013",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D014",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D015",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D016",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D017",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D018",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D019",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D020",
+      "m": 2,
+      "occupied_inputs": [
+        0
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D021",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D022",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D023",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D024",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D025",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D026",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D027",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D028",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D029",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D030",
+      "m": 2,
+      "occupied_inputs": [
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D031",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D032",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D033",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D034",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D035",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D036",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D037",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D038",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D039",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D040",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D041",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D042",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D043",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D044",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D045",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D046",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D047",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D048",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D049",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D050",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D051",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D052",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D053",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D054",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D055",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D056",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D057",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D058",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D059",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D060",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D061",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D062",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D063",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D064",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D065",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D066",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D067",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D068",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.1,
+        0.4
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D069",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D070",
+      "m": 2,
+      "occupied_inputs": [
+        0,
+        1
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_extreme",
+      "intensity_singular_values": [
+        0,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D071",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D072",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D073",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D074",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D075",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D076",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D077",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D078",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D079",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D080",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D081",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D082",
+      "m": 3,
+      "occupied_inputs": [],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D083",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D084",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D085",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D086",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D087",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D088",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D089",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D090",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D091",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D092",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D093",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D094",
+      "m": 3,
+      "occupied_inputs": [
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D095",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D096",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D097",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D098",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D099",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D100",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D101",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D102",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D103",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D104",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D105",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D106",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D107",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D108",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D109",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D110",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D111",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D112",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D113",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D114",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D115",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D116",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D117",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D118",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D119",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D120",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D121",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D122",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D123",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D124",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D125",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D126",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D127",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D128",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D129",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D130",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D131",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D132",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D133",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D134",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D135",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D136",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D137",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D138",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D139",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D140",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D141",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D142",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        2
+      ],
+      "internal": "singlet",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D143",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D144",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D145",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D146",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D147",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D148",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D149",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D150",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D151",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D152",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D153",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D154",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "equal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D155",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D156",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D157",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D158",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D159",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D160",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D161",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D162",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D163",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D164",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D165",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D166",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "orthogonal",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D167",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D168",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D169",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D170",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D171",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D172",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D173",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D174",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D175",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D176",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D177",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D178",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "partial_complex",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D179",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D180",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "zero",
+      "intensity_singular_values": [
+        0,
+        0,
+        0
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D181",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D182",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "unit",
+      "intensity_singular_values": [
+        1,
+        1,
+        1
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D183",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D184",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "uniform_quarter",
+      "intensity_singular_values": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D185",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D186",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "nonuniform_soft",
+      "intensity_singular_values": [
+        0.05,
+        0.2,
+        0.45
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D187",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D188",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "nonuniform_hard",
+      "intensity_singular_values": [
+        0,
+        0.3,
+        0.8
+      ],
+      "seed": 2026112484
+    },
+    {
+      "id": "D189",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112483
+    },
+    {
+      "id": "D190",
+      "m": 3,
+      "occupied_inputs": [
+        0,
+        1,
+        2
+      ],
+      "internal": "cyclic_entangled",
+      "profile": "nonuniform_rank_one",
+      "intensity_singular_values": [
+        0,
+        0,
+        0.6
+      ],
+      "seed": 2026112484
+    }
+  ]
+}
