@@ -161,3 +161,21 @@ No further broad optimization sweep without a changed registered mechanism. No a
   correlated feasible samplers and serious classical search at full costs.
 - Checkpoint: reports/P42_DISCOVERY_CHECKPOINT.md. Positive target OPEN;
   PAPER_READY=FALSE; QPU_GATE=CLOSED.
+
+## P43/P44 disposition — 2026-11-24
+
+- REJECT the tested finite-angle global-gain echo after its complete frozen run
+  and independent raw-data reconstruction. Preserve all failures; no replacement
+  graphs, favorable new seeds or unchanged wider sweep. Optical probes N/A.
+- ACCEPT root P44 proofb87e677 at exact reviewed SHA5407871a... after independent
+  reconstruction2d15012 and review9b240c3. ACCEPT only finite numerical assertions
+  of190 preregistered dilation cases, not a universal proof from floating data.
+- Attribute established factorial-moment, permanent Cauchy–Binet and operator-norm
+  ingredients. The composed adaptive application has novelty OPEN, with no
+  literature-absence claim. The oracle for local L1 means is a known application.
+- P44 is a substantial conditional obstruction, not an impossibility for all
+  ideal photonic optimization. Device spectral transmission/guaranteed costs
+  remain uncalibrated; unknown internals use the separate k! criterion.
+- Preserve paper/ and all validated P33/P37/E05b material. No QPU, hardware
+  circuit freeze or Laurent message without the latest positive-replication gate.
+  Original optimizer target remains OPEN outside the theorem's declared class.

@@ -1,19 +1,30 @@
 # Research status — 24 November 2026
 
 Active discovery branch: research/p41-discovery, restarted from published
-2744395. The current task is new optimum-blind mechanism research. P41's chiral
-and grouped proposals have explicit classical countercontrols. P42 now has
-independently reviewed loss-spectrum/adaptive best-cost obstruction proofs and
-an independent ordered-state replication (42 configurations,168 laws). These
-are scoped obstructions, not an optimizer advantage or calibrated QPU verdict.
-Complete-composition novelty is OPEN. P43 examines a changed global observable
-and the classical evaluation of local L1 means. Read the
-[active checkpoint](reports/P42_DISCOVERY_CHECKPOINT.md).
+2744395. The current task is new optimum-blind mechanism research. P44 now
+provides an independently reconstructed/reviewed moment obstruction for general
+nonuniform passive loss and click-contained candidate decoders: per-target
+probability <= eta0^k for identical CF inputs, eta0 a spectral transmission
+upper bound. The exact cost certificate gives adaptive best-cost domination
+by uniform feasible search; eta0<=1/4 suffices at equal proposal counts. Unknown
+internal states require the separate k! bound.190 independent dilation cases
+and1240 support checks pass. No device value or global novelty is inferred.
 
-Current integrated checks:521 tests PASS; five P41/P42 manifests validate;
+The new P43 finite-angle global-gain mechanism failed its frozen pilot:896 B
+draws,373 CF,523 collisions,zero improvement; strong classical controls improve
+both20-mode anchors. Independent raw reconstruction agrees. Optical fresh-label
+probes were canceled after identity selection, not passed. Read the
+[active discovery state](research/ACTIVE_DISCOVERY_STATE.md), with source and
+scope links. Positive optimizer objective and complete-composition novelty OPEN.
+
+Current code checks:529 tests PASS before P43 execution; all7 P41–P44 manifests validate;
 602 historical scientific files unchanged; publication inputs/outputs and every
 paper/ byte match the delivered snapshot. Commands and logs are in
-reports/P42_validation/verification.json. The newest user gate requires a
+reports/P42_validation/verification.json and reports/P43_validation/final_preflight.json.
+P44 adds a separately frozen finite physical validation, not a whole-law sampler.
+Final archive/publication/manifest checks are in reports/P44_validation/verification.json;
+the tested production, test and P43 code is unchanged since the full529-test run.
+The newest user gate requires a
 positive independently replicated optimizer result before new QPU preparation
 or manuscript revision. That gate remains CLOSED; the original target is OPEN.
 

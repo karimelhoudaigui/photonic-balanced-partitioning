@@ -740,3 +740,38 @@ P43 investigates global finite-angle statistics and local L1 evaluation.
 No paper edit/QPU call.521PASS; five manifests valid;602 historical files and
 paper unchanged. Full evidence: reports/P42_DISCOVERY_CHECKPOINT.md and
 reports/P42_validation/verification.json.
+
+## 2026-11-24 — P43 new mechanism rejected; P44 broader obstruction
+
+P43 QUESTION: can a graph-dependent finite-angle phase-gradient echo exploit
+global incumbent improvement beyond the known local-mean oracle? Design1811ad7,
+code7794798, corrected strong spectral control1db2038, pre-run529PASS. Actual
+sourcec062f2f, bounded runner CPU60/wall90/threads1; completed17.533394s.
+Four unique weighted ER/RR graphs at16/20 modes,8/10 identical photons,8 settings,
+2 seeds,896 B attempts. Gains were ZERO for B,D,phase-field andspecies4, with
+CF counts373/531/896/463. All selected identity, so optical relabel draws were
+NOT executed. All5 classical searches completed896+128 scores each. Anneal/
+spectral find156->135 and45->37 on the20-mode graph anchors. No optimum computed.
+Independent stdlib audit924b814 reconstructs all9952 raw rows, costs, anchor
+scans, hashes, seeds and choices. DECISION: REJECT this family/budget, no heldout
+opening, no unchanged rerun or hardware preparation. Full P43 result/raw retained.
+
+P44 HYPOTHESIS: CF Fock normal-ordered moments are bounded by their auxiliary
+thermal/permanental envelope, then by a transfer spectral norm. Rootproofb87e677:
+Pr(all targetk modes click)<=E product n_i<=||T[:,A]||^(2k), including nonuniform
+passive loss. Card-only physics reconstruction2d15012 predates reading the author;
+exact-hash review9b240c3 proves the source as written. Any single candidate drawn
+only from real clicks inherits the cap; additional/outside clicks are harmless.
+Arbitrary internals under commonT use separate k! cap. P42's fixed-target budget
+argument yields domination when L*binom(2k,k)*b<=1, hence identical eta0<=1/4
+suffices at equal counts. Mean transmission is NOT a spectral norm calibration.
+
+FRESH FINITE VALIDATION: isolated prereg0687912,190 explicit passive-dilation
+configurations/1240 support rows, new seeds2026112483/84, stdlib+NumPy only.
+All system/environment occupations, losses/vacuum and product/correlated internal
+states retained. FINITE_CHECK_PASS at1e-10, max residual1.333e-15, CPU0.355s,
+runnerwall0.618s. These are float checks, not interval proofs or device data.
+Source audit identifies known moment/Cauchy–Binet/norm ingredients and leaves
+complete adaptive-application novelty OPEN. KEEP the scoped mathematical
+obstruction; positive unrestricted optimization target OPEN. Paper/P33/P37/E05b
+unchanged, zero QPU calls. Resume from research/ACTIVE_DISCOVERY_STATE.md.

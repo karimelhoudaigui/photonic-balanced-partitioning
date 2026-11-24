@@ -1,14 +1,17 @@
 # Open scientific questions — current continuation contract
 
-Live discovery checkpoint: reports/P42_DISCOVERY_CHECKPOINT.md, with acceptance
-contract research/P41_DISCOVERY_CONTRACT.md, restarted from2744395. P42's
-direct-support high-loss obstruction is proved in its specified model; the
-unrestricted ideal optimizer target and full-composition novelty remain OPEN.
-Do not rerun P41 weak-angle/grouped pilots unchanged. The next mechanism must
-evade an identified bottleneck: finite-angle global improvement statistics or
-a genuinely different decoder, with charged classical controls. P43 checks
-that a nonlinear but two-mode-additive mean is not mistaken for a hard or
-uniquely quantum objective. No held-out positive result or QPU gate is claimed.
+Live discovery state: research/ACTIVE_DISCOVERY_STATE.md, acceptance contract
+research/P41_DISCOVERY_CONTRACT.md, restart2744395. P44's spectral click-moment
+obstruction is proved for the specified CF source/passive-loss/click-contained
+decoder and guaranteed-cost model. Calibrating its spectral transmission and
+cost premises is unresolved; no Lucy verdict follows. Complete novelty is OPEN.
+P43's changed finite-angle global-payoff pilot is now a preserved negative,
+independently reconstructed from all raw rows. Do not repeat its grid unchanged
+or open held-out graphs to find a favorable case. New candidates must change
+an identified bottleneck (high-transmission global mechanisms, credited
+completion of partial detections, or physically specified richer resources).
+Neither local-mean simulation nor this low-transmission theorem resolves the
+unrestricted ideal target. No positive replication or QPU gate is claimed.
 
 Base research restart:847d7a0e05cdf7fa8ca50c68f51f8d7e03158508.
 Current live evidence: STATUS.md, reports/RECOVERY_EXECUTION_REPORT.md, the P39 checkpoint and the P40 records. Earlier routes below retain their historical context; accepted native

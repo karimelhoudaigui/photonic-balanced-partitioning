@@ -2,6 +2,12 @@
 
 This repository studies collision-aware photonic graph bisection, sufficient classical-replacement certificates and physical resource accounting. The tested generic bosonic optimizer **has not demonstrated the sought benefit** over distinguishable and serious classical controls. No QPU measurement is reported.
 
+New discovery work on research/p41-discovery is indexed in
+[ACTIVE_DISCOVERY_STATE](research/ACTIVE_DISCOVERY_STATE.md): P44 gives a scoped
+nonuniform-loss optimization obstruction; the changed P43 finite-angle mechanism
+has a preserved negative pilot on16/20 modes. This research is not yet integrated
+into the frozen article. No positive optimizer replication or QPU gate is claimed.
+
 Start with the [rebuilt article PDF](paper/main.pdf), [scientific overview](docs/SCIENTIFIC_OVERVIEW.md), [integrity audit](reports/SCIENTIFIC_INTEGRITY_AUDIT.md) and [publication assessment](reports/PUBLICATION_READINESS.md). The single primary thesis is the density-qualified certificate, supported by a loss/source theorem and an honest negative benchmark. Originality of the full certificate composition remains unresolved.
 
 ## Accès rapide — article, résultats et Laurent

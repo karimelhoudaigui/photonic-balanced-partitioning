@@ -168,3 +168,19 @@ The unsupported n10/12 and4.8× advantage tables, K4 Haar0.2, K2,2 optimum4, ide
 
 No positive new graph benchmark, hardware efficiency or guaranteed device cost
 is fabricated. Immutable runs and interpretation: reports/P42_DISCOVERY_CHECKPOINT.md.
+
+## P43 finite-angle global objective — 2026-11-24
+
+The new full8/10-photon echo does not improve its charged common anchors in896
+B attempts (373 CF/523 collisions), nor do independently selected D/field/b4
+settings. Anneal/spectral controls improve both20-mode anchors at their frozen
+score budgets. No C* is required to exhibit these lower-cost classical candidates.
+The all-zero selection cancels optical probes; do not call their absence a passed
+relabel or fresh-seed test. Independent full raw audit agrees. Preserve all four
+graphs and the negative; reject only this family and budget. No held-out fishing.
+
+The P44 cap has distinct hypotheses: bunched spatial inputs, falsely identifying
+mean/column transmission with the spectral norm, or reusing the identical cap
+for arbitrary internal states are invalid extensions. The prior DFT6 example
+physically violates eta^k under partial distinguishability at small eta. The
+corrected k! bound and declared CF source preserve those scope distinctions.

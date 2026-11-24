@@ -1,0 +1,87 @@
+{
+  "commit": "22b3662998e3d585d0a8b0dec79cbad1dab022e4",
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "archive",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "scripts/check_archive_preservation.py",
+        "--receipt",
+        "reports/P44_validation/archive_preservation.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.812282541999593
+    },
+    {
+      "check": "publication",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "scripts/build_publication.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.17767887498484924
+    },
+    {
+      "check": "paper_unchanged",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "2744395",
+        "--",
+        "paper/"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.01608987501822412
+    },
+    {
+      "check": "tested_code_unchanged",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "57cafa5",
+        "--",
+        "src/",
+        "tests/",
+        "pyproject.toml",
+        "requirements-research-lock.txt",
+        "research/P43_global_gain_probe.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.014108332979958504
+    },
+    {
+      "check": "p43",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "experiments/P43_global_gain/run_001/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.08351525000762194
+    },
+    {
+      "check": "p44",
+      "command": [
+        "/private/tmp/pbp-clean-venv-20261124/bin/python",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "experiments/P44_replication/run_001/manifest.json",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.052681249973829836
+    }
+  ],
+  "full_pytest_receipt": "reports/P43_validation/final_preflight.json",
+  "pytest_tests": 529,
+  "pytest_code_unchanged_since": "57cafa5",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "qpu_calls": 0,
+  "note": "Post-integration integrity/manifest checks. No physical experiment rerun or extra full pytest run. New P44 standalone code has its own frozen completed validation."
+}
