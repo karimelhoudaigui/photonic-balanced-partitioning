@@ -1,0 +1,1 @@
+{"result": "EXACT_FINITE_ASSERTIONS_PASS", "cases": 16, "full_fock_comparisons": 1260, "accepted_outcomes_checked": 116, "qpu_calls": 0}

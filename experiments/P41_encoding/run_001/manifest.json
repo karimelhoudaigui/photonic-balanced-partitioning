@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "claim_id": "P41_GROUPED_OUTPUT_DOMINATION",
+  "repository": {
+    "commit": "4f499b487855cab05009a0c66e066950ac7167ad",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P41_encoding_probe.py",
+    "--output",
+    "experiments/P41_encoding/run_001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "On all 16 preregistered exact Gaussian-rational frames, all accepted grouped outcomes satisfy bosonic <= rejecting signed-wave <= always-feasible signed-wave; both classical laws are normalized with an explicit failure outcome; full Fock probabilities agree with independent permutation enumeration. Two local Perceval SLOS distributions must match within 1e-10. Exact two-qubit frontier and two relabelings are checked. The unstratified all-CF extension must fail normalization with mass 913/625.",
+    "coefficient_domain": "Exact Q(i) represented by pairs of Fraction for primary assertions; float64 only for two Perceval cross-checks and a 2048-attempt classical sampler execution",
+    "conventions": "Rows are output modes; occupied input columns are the first k; one photon per distinct input. Groups are disjoint and exactly one detected photon per group is accepted. All other occupations and losses are failures. Per-output probability is |per|^2 divided by output occupation factorials; no postselection renormalization.",
+    "inputs": [
+      "16 cases frozen by research/P41_encoding_probe.py: k=1,2,3,4 with m<=8",
+      "Hand controls: product rails, Walsh Bell readout and two rational sharp-frontier frames",
+      "Rational rotation seeds 2026112401 through 2026112409; two fixed row relabelings",
+      "Variable groups, singleton herald with vacuum remainder, and row-attenuated contraction",
+      "Classical sampler seed 2026112411, 2048 attempts on the fixed Walsh control"
+    ],
+    "bounds": {
+      "cases": 16,
+      "max_k": 4,
+      "max_m": 8,
+      "full_fock_dimension_max": 330,
+      "all_signs_enumerated_max": 16,
+      "perceval_cases": 2,
+      "perceval_error_tolerance": 1e-10,
+      "planned_array_bytes_max": 268435456,
+      "result_bytes_max": 33554432
+    },
+    "non_claims": [
+      "Finite checks are not a proof for arbitrary k",
+      "No graph-optimization training or held-out benchmark is performed",
+      "No independent proof review or novelty conclusion follows",
+      "Attempt dominance does not give a universal adaptive-training or realized-query-cost no-go",
+      "Arbitrary collision-free k-of-m decoding is outside the normalized grouping theorem",
+      "No QPU acquisition, hardware authorization or manuscript change"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random for frozen rational gates, NumPy default_rng for the classical sampler",
+    "seed": [
+      2026112401,
+      2026112402,
+      2026112403,
+      2026112404,
+      2026112405,
+      2026112406,
+      2026112407,
+      2026112408,
+      2026112409,
+      2026112411
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-24T20:16:15.201289+00:00",
+    "runtime_seconds": 19.853602,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P41_encoding_probe.py",
+    "theory/P41_encoding_grouped_domination.md",
+    "research/P41_encoding_sources.md",
+    "src/photonic_balanced_partitioning/hardware/offline.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P41_encoding_probe.py",
+      "sha256": "572653b038cf29bc5e24666682a85339afe2ac5cec7448514e44774ddb51182e",
+      "sha256_after": "572653b038cf29bc5e24666682a85339afe2ac5cec7448514e44774ddb51182e"
+    },
+    {
+      "path": "theory/P41_encoding_grouped_domination.md",
+      "sha256": "33457bb46d139557096fc3f67bd61c248dea4c6cfbb1f424b8a2a9eab6489df9",
+      "sha256_after": "33457bb46d139557096fc3f67bd61c248dea4c6cfbb1f424b8a2a9eab6489df9"
+    },
+    {
+      "path": "research/P41_encoding_sources.md",
+      "sha256": "cb9d5ea1e0e3390737682283fbb13e25abe3dd807ae900159dc25b8aedcdb934",
+      "sha256_after": "cb9d5ea1e0e3390737682283fbb13e25abe3dd807ae900159dc25b8aedcdb934"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/hardware/offline.py",
+      "sha256": "0b5333737bd4be9b2d90799478ebb548b5f8c3108cc30548155be80f73b1f0a3",
+      "sha256_after": "0b5333737bd4be9b2d90799478ebb548b5f8c3108cc30548155be80f73b1f0a3"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P41_encoding/run_001",
+  "declared_results": [
+    "experiments/P41_encoding/run_001/raw.jsonl",
+    "experiments/P41_encoding/run_001/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P41_encoding/run_001/stdout.txt",
+      "sha256": "ca77f279974335ed45b5051b8401309c8a879e236bafd2fc3f655833e80b82a5",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P41_encoding/run_001/stderr.txt",
+      "sha256": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P41_encoding/run_001/raw.jsonl",
+      "sha256": "cc267767d1674af01a6d656ca271c163eb88dd09aa9dc9caa25d8be5ad2d3cd3",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P41_encoding/run_001/summary.json",
+      "sha256": "1c503cfedf3ba66501a49f48de8f2632a928f1293b3d87a379819cf11a0bb901",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
