@@ -4,11 +4,11 @@ Le nouveau CLI produit des circuits et références locaux. Il ne consulte pas
 les credentials, n'interroge aucun compte et ne soumet aucun job. Les anciens
 `run_qpu.py`, `check_backend.py` et `smoke_test.py` restent désactivés.
 
-Depuis le worktree autorisé :
+Depuis la racine de la branche scientific-recovery-publication, avec la venv installée selon README.md :
 
 ```sh
-export PBP_WORKTREE=/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/recovery-qpu-20261124
-export PBP_PYTHON=/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python
+export PBP_WORKTREE="$PWD"
+export PBP_PYTHON="$PBP_WORKTREE/.venv/bin/python"
 export PYTHONPATH="$PBP_WORKTREE/src"
 cd "$PBP_WORKTREE"
 export PBP_RUN=/tmp/pbp-laurent-new-run
