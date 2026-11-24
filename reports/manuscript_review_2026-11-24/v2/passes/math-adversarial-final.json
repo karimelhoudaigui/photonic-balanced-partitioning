@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "pass_id": "math-adversarial-final",
+  "issue_prefix": "MA2-F",
+  "manuscript_sha256": "6ecf7fd1834d8e734f2859e34decd21a8e5f20516ac08376fafacfb9058ff1af",
+  "source_files_sha256": "d859601bca5b14b4099b9ef62c1a37cd695a1b74d6ff9bf9ea5056ae93251fd5",
+  "global_context_sha256": "b0020395b07f7d166de06a3d4b92bfd3d021acbf1503336c5252541f53545f6f",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "snapshot_root": "/Users/karimelhoudaigui/Desktop/pasqal/reports/manuscript_review_2026-11-24/v2",
+  "source_revision": "4572a76520be3a199cd315416ec52dfcf76c4637",
+  "review_scope": "Targeted v2 mathematical context/reuse audit and fresh whole-paper source claim comparison; incidental source notation finding. No manuscript edits or new campaign.",
+  "lanes": [
+    "correctness",
+    "adversarial",
+    "claims",
+    "notation"
+  ],
+  "issues": [
+    {
+      "id": "MA2-F001",
+      "lane": "adversarial",
+      "title": "The two-photon E05b rejection bucket does determine M",
+      "severity": "moderate",
+      "type": "degenerate-case",
+      "confidence": 1.0,
+      "location": "paper/sections/05_experiments.tex, paragraph beginning At sizes n=4,6,8; v2/full-source.tex:262; prepared unit sections/006-reconciled-computations-and-negative-optimization-result.tex:31",
+      "quote": "The simulator retains the total non-CF mass as an explicit rejection category, without resolving its internal collision histogram; the E05b traces therefore cannot estimate the pair moment $M$.",
+      "analysis": "The stated E05b grid includes the lossless bosonic arm n=4,k=2. Every two-photon occupation is either two distinct unit occupations (CF, pair count zero) or one occupation two (non-CF, pair count one). Thus sum_i binom(t_i,2)=1_{non-CF} for every outcome, and M=1-P_CF exactly for that arm. The rejection category, or its finite-shot frequency, therefore determines or estimates M without a collision histogram. The source itself defines M as this pair expectation at v2/full-source.tex:80-86. For k>=3, unresolved non-CF mass does not generally determine the pair moment, so the intended limitation is valid there. This is a local exception in the empirical-observability statement, not a defect in either theorem.",
+      "suggested_fix": "Restrict the non-identifiability claim to k>=3 (n>=6) and state that in the two-photon bosonic arm M=1-P_CF exactly. Preserve the caveat that this does not by itself certify the intensity floor c or finite-data uncertainty.",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "reviewer": "math-adversarial-final"
+    },
+    {
+      "id": "MA2-F002",
+      "lane": "notation",
+      "title": "Density caption contains a doubled control backslash before Phi",
+      "severity": "minor",
+      "type": "other",
+      "confidence": 1.0,
+      "location": "Figure labelled fig:density, paper/sections/05_experiments.tex; v2/full-source.tex:299; prepared unit sections/006-reconciled-computations-and-negative-optimization-result.tex:68",
+      "quote": "$\\\\Phi(M/c)$",
+      "analysis": "The exact source has two consecutive U+005C characters before the letters Phi, rather than the single-backslash Phi control sequence used in the envelope definition and coarse bound at v2/full-source.tex:92 and :99. Under TeX tokenization this starts the double-backslash command and then the letters Phi; it is not the defined envelope symbol. This observation is source-only: no PDF rendering or compilation failure is asserted. The mathematical caption plainly intends the already defined coarse envelope.",
+      "suggested_fix": "Replace $\\\\Phi(M/c)$ by $\\Phi(M/c)$ in the caption source, leaving the theorem and data unchanged.",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "reviewer": "math-adversarial-final"
+    }
+  ],
+  "finding_summary": "No new defect found in the mathematical core. Two localized v2 findings: the unrestricted rejection-bucket statement misses the k=2 exception; the new density caption doubles the backslash before Phi.",
+  "reviewer_provenance": {
+    "executor": "/root/theory_literature",
+    "method": "Source comparison and dependency/notation recheck, explicit reuse of authenticated local v1 derivations, fresh complete v2 claim reading.",
+    "previous_role": "Author of the offline hardware CLI and handoff (9e75b5391c5b05ce353cc829ef52004688fb3ad3); previous literature/adjacent-theory project work. Not author of the manuscript or P33/P37 statements/proofs.",
+    "independence": "This is not a fresh independent re-proof of unchanged v1 mathematics. Prior checks are explicitly reused after the actual bytes and context were checked. The whole-v2 claim pass is a fresh reading by the same reviewer; independence is limited on the hardware implementation I authored.",
+    "model_assignment": {
+      "assignment_source": null,
+      "requested_model": null,
+      "requested_reasoning": null,
+      "actual_model": null,
+      "actual_reasoning": null,
+      "fallback_reason": null
+    },
+    "execution_settings_note": "Native inherited host settings, actual model/reasoning identifiers not exposed. No subagents, external review runtime, QPU or account API.",
+    "prior_reused_pass": {
+      "path": "reports/manuscript_review_2026-11-24/v1/passes/math-adversarial.json",
+      "commit": "3524bcbfee94066690c5000db96e3da2e8cf9687",
+      "sha256": "b6bc7fd4c76b3bc764459eaf407104fefefbd5b6f4500750d7a01cef2767883d",
+      "manuscript_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3"
+    }
+  },
+  "comparison": {
+    "manifest_comparison_location": "manifest.json:comparison; no standalone comparison.json exists in the snapshot",
+    "previous_manuscript_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+    "current_manuscript_sha256": "6ecf7fd1834d8e734f2859e34decd21a8e5f20516ac08376fafacfb9058ff1af",
+    "contract_bytes_hash_equal": true,
+    "contract_files_equal": true,
+    "global_context_changed": true,
+    "whole_paper_claims_reused": false,
+    "actual_unit_comparisons": [
+      {
+        "title": "Front matter",
+        "old_unit_id": "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "new_unit_id": "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "old_sha256": "efff6de0bdcfcd23d256a1d1dea1c78b4d38ac6eada0c10c8e0603c59e3a61ea",
+        "new_sha256": "efff6de0bdcfcd23d256a1d1dea1c78b4d38ac6eada0c10c8e0603c59e3a61ea",
+        "bytes_equal": true
+      },
+      {
+        "title": "Question and scope",
+        "old_unit_id": "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "new_unit_id": "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "old_sha256": "2d2a4a0ea245d170da43d8dc8a8d64bd7a33ff5f78689afdf8110534b6dc72e7",
+        "new_sha256": "2d2a4a0ea245d170da43d8dc8a8d64bd7a33ff5f78689afdf8110534b6dc72e7",
+        "bytes_equal": true
+      },
+      {
+        "title": "Physical and optimization model",
+        "old_unit_id": "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "new_unit_id": "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "old_sha256": "6df702968fbc601f555891ef0d2d260c848608de3682e4411ad9a8610a25f6ee",
+        "new_sha256": "6df702968fbc601f555891ef0d2d260c848608de3682e4411ad9a8610a25f6ee",
+        "bytes_equal": true
+      },
+      {
+        "title": "A density-qualified certificate for independent particles",
+        "old_unit_id": "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "new_unit_id": "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "old_sha256": "3642991bc7ea14165a9c9fc578824ac8110880ffbd8598972d4769baba1a1676",
+        "new_sha256": "3642991bc7ea14165a9c9fc578824ac8110880ffbd8598972d4769baba1a1676",
+        "bytes_equal": true
+      },
+      {
+        "title": "Uniform loss and the resource-dependent source optimum",
+        "old_unit_id": "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "new_unit_id": "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "old_sha256": "381036b58cb96b71da724f8a08a5a38ded9ba0cf291f0751430630845fa3057b",
+        "new_sha256": "c457410486c7fe600efdc3d932686938c23c832c82d09a0599de7f1ddd6056d4",
+        "bytes_equal": false
+      },
+      {
+        "title": "Reconciled computations and negative optimization result",
+        "old_unit_id": "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1",
+        "new_unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "old_sha256": "8246430c8689ff5d06609c6192281da13912c48cb5b0c4682199146ea34922ca",
+        "new_sha256": "a0e79f8ca5796cb8f6e5d7574f58312ad599e4d506bc9ac4f66978524e03b3e7",
+        "bytes_equal": false
+      },
+      {
+        "title": "Noise model and a prospective hardware pilot",
+        "old_unit_id": "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "new_unit_id": "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "old_sha256": "c2969c85c2c4d3e8802e0217b43efbdd715408025143869da29ba6e450eedd91",
+        "new_sha256": "e0255a8e9b1fea7db708437e51673966e4c22d982f8438598f215e387c93b4ee",
+        "bytes_equal": false
+      },
+      {
+        "title": "Discussion and conclusion",
+        "old_unit_id": "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "new_unit_id": "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "old_sha256": "a8ac7d4a0f2eb736bb74b4f6d8c4e6e8073a72fed2f1f1dee762fce6cd192f67",
+        "new_sha256": "a8ac7d4a0f2eb736bb74b4f6d8c4e6e8073a72fed2f1f1dee762fce6cd192f67",
+        "bytes_equal": true
+      },
+      {
+        "title": "Bibliography",
+        "old_unit_id": "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "new_unit_id": "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "old_sha256": "a94cc40b38038f1050102489a49407ec9b6107da42e316012e7e303aab2e6d17",
+        "new_sha256": "a94cc40b38038f1050102489a49407ec9b6107da42e316012e7e303aab2e6d17",
+        "bytes_equal": true
+      },
+      {
+        "title": "Full-output permanent and cycle bounds",
+        "old_unit_id": "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "new_unit_id": "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "old_sha256": "c331093b45f5bd9fb3add1ff74ba527c597cda6782e903c2dde4f1621e2bf6db",
+        "new_sha256": "c331093b45f5bd9fb3add1ff74ba527c597cda6782e903c2dde4f1621e2bf6db",
+        "bytes_equal": true
+      },
+      {
+        "title": "Source crossings and the boundary expansion",
+        "old_unit_id": "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "new_unit_id": "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "old_sha256": "1bb2c3688c9f138643c2971a8bd41311024564c744b6ca9a7f51f95c347ebde0",
+        "new_sha256": "1bb2c3688c9f138643c2971a8bd41311024564c744b6ca9a7f51f95c347ebde0",
+        "bytes_equal": true
+      },
+      {
+        "title": "Reproduction, evidence and measurement conventions",
+        "old_unit_id": "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1",
+        "new_unit_id": "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1",
+        "old_sha256": "8bdc24066d9193ff50947a5ffcd1c0c1cd8cc390f31081a8d9862d6364e2bc16",
+        "new_sha256": "72c2af11aa9b011d928c70b4aa626a315fbd387806b98042de702996dd53a5da",
+        "bytes_equal": false
+      }
+    ],
+    "reuse_rule": "Candidate-unchanged flags were treated as an index only. Source bytes, current definitions, macros, hypotheses, statement text, dependencies, contract hashes and the actual v1 pass were checked before reuse."
+  },
+  "mathematical_reuse": [
+    {
+      "title": "Physical and optimization model",
+      "previous_unit_id": "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+      "previous_unit_sha256": "6df702968fbc601f555891ef0d2d260c848608de3682e4411ad9a8610a25f6ee",
+      "current_unit_id": "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+      "current_unit_sha256": "6df702968fbc601f555891ef0d2d260c848608de3682e4411ad9a8610a25f6ee",
+      "entire_unit_bytes_equal": true,
+      "status": "reused",
+      "prior_check_ids": [
+        "MA-C002"
+      ],
+      "reused_scope": "Full-output Fock conventions, input normalization, event and attempt definitions unchanged byte-for-byte.",
+      "context_rechecked": "Current full-source and theorem/lemma statements read; no change to the relevant input photons, full-law factorials, TV normalization, B versus S distinction, row floor, uniform-loss assumption, resource denominator, k=m/2, m>=8 or fixed-s/lambda quantifiers."
+    },
+    {
+      "title": "A density-qualified certificate for independent particles",
+      "previous_unit_id": "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+      "previous_unit_sha256": "3642991bc7ea14165a9c9fc578824ac8110880ffbd8598972d4769baba1a1676",
+      "current_unit_id": "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+      "current_unit_sha256": "3642991bc7ea14165a9c9fc578824ac8110880ffbd8598972d4769baba1a1676",
+      "entire_unit_bytes_equal": true,
+      "status": "reused",
+      "prior_check_ids": [
+        "MA-C002",
+        "MA-C003",
+        "MA-C004"
+      ],
+      "reused_scope": "Entire theorem/proof, floor, quadratic branch, sharp and spectator examples unchanged byte-for-byte.",
+      "context_rechecked": "Current full-source and theorem/lemma statements read; no change to the relevant input photons, full-law factorials, TV normalization, B versus S distinction, row floor, uniform-loss assumption, resource denominator, k=m/2, m>=8 or fixed-s/lambda quantifiers."
+    },
+    {
+      "title": "Full-output permanent and cycle bounds",
+      "previous_unit_id": "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+      "previous_unit_sha256": "c331093b45f5bd9fb3add1ff74ba527c597cda6782e903c2dde4f1621e2bf6db",
+      "current_unit_id": "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+      "current_unit_sha256": "c331093b45f5bd9fb3add1ff74ba527c597cda6782e903c2dde4f1621e2bf6db",
+      "entire_unit_bytes_equal": true,
+      "status": "reused",
+      "prior_check_ids": [
+        "MA-C002",
+        "MA-C003"
+      ],
+      "reused_scope": "Entire appendix unchanged byte-for-byte; same nonnegative symmetric zero-diagonal A and halved-TV convention.",
+      "context_rechecked": "Current full-source and theorem/lemma statements read; no change to the relevant input photons, full-law factorials, TV normalization, B versus S distinction, row floor, uniform-loss assumption, resource denominator, k=m/2, m>=8 or fixed-s/lambda quantifiers."
+    },
+    {
+      "title": "Source crossings and the boundary expansion",
+      "previous_unit_id": "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+      "previous_unit_sha256": "1bb2c3688c9f138643c2971a8bd41311024564c744b6ca9a7f51f95c347ebde0",
+      "current_unit_id": "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+      "current_unit_sha256": "1bb2c3688c9f138643c2971a8bd41311024564c744b6ca9a7f51f95c347ebde0",
+      "entire_unit_bytes_equal": true,
+      "status": "reused",
+      "prior_check_ids": [
+        "MA-C005",
+        "MA-C006"
+      ],
+      "reused_scope": "Entire appendix unchanged byte-for-byte; same finite m>=8 domain, binomial mixture and fixed-s/lambda asymptotic.",
+      "context_rechecked": "Current full-source and theorem/lemma statements read; no change to the relevant input photons, full-law factorials, TV normalization, B versus S distinction, row floor, uniform-loss assumption, resource denominator, k=m/2, m>=8 or fixed-s/lambda quantifiers."
+    },
+    {
+      "title": "Uniform loss and the resource-dependent source optimum",
+      "previous_unit_id": "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+      "previous_unit_sha256": "381036b58cb96b71da724f8a08a5a38ded9ba0cf291f0751430630845fa3057b",
+      "current_unit_id": "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+      "current_unit_sha256": "c457410486c7fe600efdc3d932686938c23c832c82d09a0599de7f1ddd6056d4",
+      "entire_unit_bytes_equal": false,
+      "status": "reused",
+      "prior_check_ids": [
+        "MA-C005",
+        "MA-C006"
+      ],
+      "reused_scope": "Whole unit changed only in the figure caption: the dotted-line assertion was removed. Exact h/g laws, theorem statement, proof strategy, boundary expansions, endpoint and waiting-time qualifiers are unchanged.",
+      "context_rechecked": "Current full-source and theorem/lemma statements read; no change to the relevant input photons, full-law factorials, TV normalization, B versus S distinction, row floor, uniform-loss assumption, resource denominator, k=m/2, m>=8 or fixed-s/lambda quantifiers."
+    },
+    {
+      "title": "Noise model and a prospective hardware pilot",
+      "previous_unit_id": "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+      "previous_unit_sha256": "c2969c85c2c4d3e8802e0217b43efbdd715408025143869da29ba6e450eedd91",
+      "current_unit_id": "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+      "current_unit_sha256": "e0255a8e9b1fea7db708437e51673966e4c22d982f8438598f215e387c93b4ee",
+      "entire_unit_bytes_equal": false,
+      "status": "reused",
+      "prior_check_ids": [
+        "MA-C007"
+      ],
+      "reused_scope": "Only the unchanged partial-internal-state and two-photon calibration formulas are reused. New output-mode-loss sentence and P40 macro/formatting were read freshly; no whole-unit hardware implementation verdict is reused.",
+      "context_rechecked": "Current full-source and theorem/lemma statements read; no change to the relevant input photons, full-law factorials, TV normalization, B versus S distinction, row floor, uniform-loss assumption, resource denominator, k=m/2, m>=8 or fixed-s/lambda quantifiers."
+    }
+  ],
+  "covered_units": [
+    {
+      "unit_id": "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+      "title": "Front matter",
+      "file": "sections/001-front-matter.tex",
+      "sha256": "efff6de0bdcfcd23d256a1d1dea1c78b4d38ac6eada0c10c8e0603c59e3a61ea",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+      "title": "Question and scope",
+      "file": "sections/002-question-and-scope.tex",
+      "sha256": "2d2a4a0ea245d170da43d8dc8a8d64bd7a33ff5f78689afdf8110534b6dc72e7",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+      "title": "Physical and optimization model",
+      "file": "sections/003-physical-and-optimization-model.tex",
+      "sha256": "6df702968fbc601f555891ef0d2d260c848608de3682e4411ad9a8610a25f6ee",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+      "title": "A density-qualified certificate for independent particles",
+      "file": "sections/004-a-density-qualified-certificate-for-independent-particles.tex",
+      "sha256": "3642991bc7ea14165a9c9fc578824ac8110880ffbd8598972d4769baba1a1676",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+      "title": "Uniform loss and the resource-dependent source optimum",
+      "file": "sections/005-uniform-loss-and-the-resource-dependent-source-optimum.tex",
+      "sha256": "c457410486c7fe600efdc3d932686938c23c832c82d09a0599de7f1ddd6056d4",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "title": "Reconciled computations and negative optimization result",
+      "file": "sections/006-reconciled-computations-and-negative-optimization-result.tex",
+      "sha256": "a0e79f8ca5796cb8f6e5d7574f58312ad599e4d506bc9ac4f66978524e03b3e7",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+      "title": "Noise model and a prospective hardware pilot",
+      "file": "sections/007-noise-model-and-a-prospective-hardware-pilot.tex",
+      "sha256": "e0255a8e9b1fea7db708437e51673966e4c22d982f8438598f215e387c93b4ee",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+      "title": "Discussion and conclusion",
+      "file": "sections/008-discussion-and-conclusion.tex",
+      "sha256": "a8ac7d4a0f2eb736bb74b4f6d8c4e6e8073a72fed2f1f1dee762fce6cd192f67",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+      "title": "Bibliography",
+      "file": "sections/009-bibliography.tex",
+      "sha256": "a94cc40b38038f1050102489a49407ec9b6107da42e316012e7e303aab2e6d17",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+      "title": "Full-output permanent and cycle bounds",
+      "file": "sections/010-full-output-permanent-and-cycle-bounds.tex",
+      "sha256": "c331093b45f5bd9fb3add1ff74ba527c597cda6782e903c2dde4f1621e2bf6db",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+      "title": "Source crossings and the boundary expansion",
+      "file": "sections/011-source-crossings-and-the-boundary-expansion.tex",
+      "sha256": "1bb2c3688c9f138643c2971a8bd41311024564c744b6ca9a7f51f95c347ebde0",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    },
+    {
+      "unit_id": "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1",
+      "title": "Reproduction, evidence and measurement conventions",
+      "file": "sections/012-reproduction-evidence-and-measurement-conventions.tex",
+      "sha256": "72c2af11aa9b011d928c70b4aa626a315fbd387806b98042de702996dd53a5da",
+      "status": "complete",
+      "scope": "fresh whole-paper source claims reading; mathematics is either explicitly reused with dependency recheck or examined as changed source"
+    }
+  ],
+  "checks": [
+    {
+      "id": "MA2-C001",
+      "kind": "authentication-and-comparison",
+      "result": "pass",
+      "actual_inputs": [
+        "v2/manifest.json including comparison",
+        "v2/context.json",
+        "v2/scope_metadata.json",
+        "v2/full-source.tex lines 1-435",
+        "all current prepared unit bytes",
+        "v1 manifest, context and unit bytes",
+        "authenticated local v1 math-adversarial pass",
+        "v2 bibliography.bib",
+        "v2 publication_manifest.json"
+      ],
+      "method": "Recomputed full-source and every unit SHA-256 in both snapshots; recomputed both v2 supplemental hashes. Computed unified text diffs of every changed unit. Read all of the v2 full source, including all front matter, appendices and captions; changed unit details additionally read with local line numbers.",
+      "result_details": "All hashes matched. Eight units are byte-identical. Four changed units are loss (caption only), experiments (methods/captions/notation), pilot (output-mode loss clarification and P40 formatting/macro), and reproducibility (path layout). The theorem/lemma statement list is identical after source-offset normalization. The full extracted preamble is identical after removing only providecommand CalibrationCellCount=45.",
+      "limitations": "No TeX build, figure inspection, raw data or campaign code reading. The immutable v2 source is authoritative for the two findings, even if later repaired elsewhere."
+    },
+    {
+      "id": "MA2-C002",
+      "kind": "reuse-context-recheck",
+      "result": "reuse-justified-for-listed-local-scopes",
+      "prior_check_ids": [
+        "MA-C002",
+        "MA-C003",
+        "MA-C004",
+        "MA-C005",
+        "MA-C006",
+        "MA-C007"
+      ],
+      "checked_context": [
+        "V remains an orthonormal occupied frame with one identical photon in each distinct input; p_b and p_d are full unconditioned Fock laws with output factorial t!, not CF-renormalized laws.",
+        "M remains the expected bosonic pair count, delta the dominant-support leakage, and c a lower bound on every positive row intensity. The coarse bound selects the small quadratic branch only under M<c^2/2. No new average-density substitution or noisy-moment theorem application appears.",
+        "B is still a spatial magnitude Gram matrix, distinct from the internal-state Gram S. Cycle coefficient positivity, symmetry and sigma<1 for the infinite majorant are unchanged; the finite polynomial statement is unchanged.",
+        "Haar threshold source selection still assumes m even >=8, k=m/2, distinct injected photons, uniform independent loss, and k<=N<=m. eta=1 remains a separate endpoint. Root-order and fixed-s/lambda boundary calculations retain their old definitions.",
+        "The new output-mode-loss sentence explicitly says such loss cannot generally be commuted through the interferometer. It neither changes the uniform-loss theorem nor extends the lossless density certificate to uncorrected observed moments.",
+        "Calibration x=|S_12|^2 and the two-photon formulas are unchanged. The only new macro is 45=5*3*3 calibration cells; it does not redefine any theorem symbol or hypothesis."
+      ],
+      "reuse_limit": "The earlier tiny exact Fraction check MA-C008 remains historical finite evidence only; it was not rerun or presented as a new campaign. Whole-paper claims MA-C009 are not reused."
+    },
+    {
+      "id": "MA2-C003",
+      "kind": "fresh-whole-paper-claims",
+      "result": "two-localized-findings-no-headline-expansion",
+      "fresh_comparisons": [
+        "The abstract, introduction and discussion still keep the positive row floor, fixed-c upper-envelope asymptotic, leading sharpness only at c=1/2, and collision-only spectator obstruction within their stated scope.",
+        "Same-circuit absolute event error remains separate from independently trained-model ordering and rare-event ratios. The negative archived benchmark is not generalized to all optical optimizers or to a wall-clock advantage claim.",
+        "The new E05b training description uses conditional cut plus 2(1-P_F), with an optimum-blind no-valid-event fallback sum w+3; since nonnegative costs are at most sum w, this fallback is worse than every ordinary value bounded by sum w+2. The retrospective optimum is expressly reserved for evaluation; E02 remains labeled oracle-assisted. This is source logic, not a new code audit.",
+        "Call and draw arithmetic remains 120*256+4096=34816; the new parameter counts n(n-1)=12,30,56 and n=4,6,8 are arithmetically correct. The source discloses differing dimensions, and input-column phases indeed contribute only one overall phase for a fixed-input Fock state.",
+        "Table/figure metrics are newly and explicitly identified as exact final probabilities after finite-shot training, rather than the noisy heldout success frequencies. Graph-cluster resampling now retains optimizer repeats and nominal multiplicities, and is explicitly descriptive rather than population-significance evidence. This clarifies interpretation; bootstrap correctness was not checked against data.",
+        "The new rejection-bucket limitation is overbroad at k=2, as MA2-F001 demonstrates. At k>=3 the missing collision multiplicities do generally obstruct identification of M.",
+        "P40 remains a 45-cell local prediction check with no fitting, sampling or optimization. Its new input pins and macro are visible in the publication manifest. These pins are not treated as independently validated execution receipts in this pass.",
+        "NoQPU status remains explicit: local serialization/compilation does not certify remote native support, synthetic counts are labeled local_synthetic, and detector/access/calibration/credit questions remain unverified. Finite-shot inference of c and M remains an open obligation.",
+        "Originality of the complete density composition remains OPEN. The source does not infer novelty from missing hits; authentic end-to-end ObliQ reproduction and strong submission conditions remain open. Bibliography bytes are unchanged."
+      ],
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "scope_limit": "Fresh source comparison only, not independent evidence that archived runs, count traces, code, figures or literature attributions are correct."
+    },
+    {
+      "id": "MA2-C004",
+      "kind": "minimal-exact-boundary-check",
+      "result": "pass-supports-MA2-F001",
+      "interpreter": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+      "method": "Enumerated combinations_with_replacement(range(4),2), converted each of the ten pairs into a four-mode occupation, and asserted sum_i t_i(t_i-1)//2 == int(max_i t_i>1). All ten assertions passed.",
+      "analytic_obligation": "The enumeration is only a sanity check: the exhaustive structural proof is that an occupation of total two is either 1+1 or 2. Taking expectation proves M=1-P_CF for every full two-photon law.",
+      "limit": "No new campaign, no random draws, no raw file or other module was read or changed."
+    },
+    {
+      "id": "MA2-C005",
+      "kind": "verbatim-source-check",
+      "result": "pass-supports-both-findings",
+      "method": "Both issue quotations were checked as literal substrings of the current experiment unit. The caption codepoints before Phi were checked to be [92,92,80,104,105], confirming two U+005C backslashes rather than a display escaping artifact.",
+      "limit": "The caption finding does not assert any particular compiler failure or PDF rendering, which was not inspected."
+    }
+  ],
+  "specialist_obligations": [
+    {
+      "finding_id": "MA2-F001",
+      "obligation": "Confirm the k=2 structural identity and restrict the rejection-bucket non-identifiability statement accordingly. No main theorem repair is needed."
+    },
+    {
+      "finding_id": "MA2-F002",
+      "obligation": "Check the literal caption token and replace the doubled backslash; no data or mathematical formula change is needed."
+    }
+  ],
+  "limitations": [
+    "Local mathematical derivations are reused from the explicitly authenticated v1 pass after current byte/context rechecks; they are not falsely counted as a second independent proof review.",
+    "Whole-paper claim reading is fresh for v2; it is not reused from v1 merely because front matter/discussion are unchanged.",
+    "Primary-source attribution and novelty are not reaudited; no originality conclusion is drawn. Bibliography/source metadata authentication does not prove theorem contents.",
+    "Figures, PDF, archive raw data, bootstrap implementation, P40 scripts/receipts and hardware execution were not inspected or rerun.",
+    "Hardware implementation independence is unavailable because this reviewer authored the offline pilot. No device/backend claim is validated here.",
+    "Only this new assigned JSON file is written. No snapshot, paper, module, campaign, main state or raw data is modified."
+  ]
+}
