@@ -1,0 +1,2002 @@
+[
+  {
+    "r": "0",
+    "c_exact": "1",
+    "s_exact": "0",
+    "M_ideal_exact": "0",
+    "delta_ideal_exact": "0",
+    "angles": {
+      "mix_Rx": 0.0,
+      "split_Rx": 1.5707963267948966
+    },
+    "input_modes": [
+      0,
+      1
+    ],
+    "output_groups": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "gate_list": [
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 0.0
+      },
+      {
+        "kind": "PERM",
+        "modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 1.5707963267948966
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          2,
+          3
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "canonical_gate_serialization": "[{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":0.0},{\"kind\":\"PERM\",\"modes\":[0,1,2,3],\"permutation\":[0,2,1,3]},{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":1.5707963267948966},{\"kind\":\"BS.Rx\",\"modes\":[2,3],\"theta\":1.5707963267948966}]",
+    "perceval_serialization": ":PCVL:ACircuit:EAQiOxACYjcSCQkAAAAAAAAAABoJCQAAAAAAAAAAIgkJAAAAAAAAAAAqCQkAAAAAAAAAADIJCQAAAAAAAAAAIgoQBHIGCgQAAgEDIjsQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAACI9CAIQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAAA==",
+    "unitary_real": [
+      [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.0
+      ],
+      [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ]
+    ],
+    "unitary_imag": [
+      [
+        0.0,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ]
+    ],
+    "unitarity_error": 0.0,
+    "independent_builder_error": 1.1102230246251565e-16,
+    "serialization_roundtrip_error": 0.0,
+    "ideal_bosonic_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.2499999999999999
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.25
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.25
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.2500000000000001
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.0
+      }
+    ],
+    "perceval_slos_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.2499999999999999
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.25
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.25
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.2500000000000001
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.0
+      }
+    ],
+    "ideal_distinguishable_pair_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.2499999999999999
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.25
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.25
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.2500000000000001
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.0
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.0
+      }
+    ],
+    "perceval_error": 0.0
+  },
+  {
+    "r": "1/20",
+    "c_exact": "399/401",
+    "s_exact": "40/401",
+    "M_ideal_exact": "509443200/25856961601",
+    "delta_ideal_exact": "3200/160801",
+    "angles": {
+      "mix_Rx": 0.19983358288777106,
+      "split_Rx": 1.5707963267948966
+    },
+    "input_modes": [
+      0,
+      1
+    ],
+    "output_groups": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "gate_list": [
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 0.19983358288777106
+      },
+      {
+        "kind": "PERM",
+        "modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 1.5707963267948966
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          2,
+          3
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "canonical_gate_serialization": "[{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":0.19983358288777106},{\"kind\":\"PERM\",\"modes\":[0,1,2,3],\"permutation\":[0,2,1,3]},{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":1.5707963267948966},{\"kind\":\"BS.Rx\",\"modes\":[2,3],\"theta\":1.5707963267948966}]",
+    "perceval_serialization": ":PCVL:ACircuit:EAQiOxACYjcSCQknn5KXJZTJPxoJCQAAAAAAAAAAIgkJAAAAAAAAAAAqCQkAAAAAAAAAADIJCQAAAAAAAAAAIgoQBHIGCgQAAgEDIjsQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAACI9CAIQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAAA==",
+    "unitary_real": [
+      [
+        0.7035800640733977,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.07053434226299726,
+        0.7071067811865476,
+        0.0
+      ],
+      [
+        0.0,
+        0.7035800640733977,
+        0.0,
+        0.0
+      ],
+      [
+        -0.07053434226299726,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ]
+    ],
+    "unitary_imag": [
+      [
+        0.0,
+        0.07053434226299726,
+        0.7071067811865475,
+        0.0
+      ],
+      [
+        0.7035800640733976,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.07053434226299726,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      [
+        0.0,
+        0.7035800640733976,
+        0.0,
+        0.0
+      ]
+    ],
+    "unitarity_error": 1.1102230246251565e-16,
+    "independent_builder_error": 1.1102230246251565e-16,
+    "serialization_roundtrip_error": 0.0,
+    "ideal_bosonic_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.004925590329030554
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.00985118065806111
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.004925590329030555
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.24014881934193877
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.24014881934193882
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.004925590329030554
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.24014881934193882
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.24014881934193888
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.00985118065806111
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.004925590329030555
+      }
+    ],
+    "perceval_slos_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.004925590329030554
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.009851180658061108
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.004925590329030555
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.2401488193419388
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.24014881934193885
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.004925590329030554
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.24014881934193885
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.2401488193419389
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.009851180658061108
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.004925590329030555
+      }
+    ],
+    "ideal_distinguishable_pair_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.002462795164515277
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.004925590329030555
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.0024627951645152775
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.24507440967096933
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.24507440967096938
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.002462795164515277
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.24507440967096938
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.24507440967096944
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.004925590329030555
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.0024627951645152775
+      }
+    ],
+    "perceval_error": 2.7755575615628914e-17
+  },
+  {
+    "r": "1/10",
+    "c_exact": "99/101",
+    "s_exact": "20/101",
+    "M_ideal_exact": "7840800/104060401",
+    "delta_ideal_exact": "800/10201",
+    "angles": {
+      "mix_Rx": 0.39867460996464815,
+      "split_Rx": 1.5707963267948966
+    },
+    "input_modes": [
+      0,
+      1
+    ],
+    "output_groups": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "gate_list": [
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 0.39867460996464815
+      },
+      {
+        "kind": "PERM",
+        "modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 1.5707963267948966
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          2,
+          3
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "canonical_gate_serialization": "[{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":0.39867460996464815},{\"kind\":\"PERM\",\"modes\":[0,1,2,3],\"permutation\":[0,2,1,3]},{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":1.5707963267948966},{\"kind\":\"BS.Rx\",\"modes\":[2,3],\"theta\":1.5707963267948966}]",
+    "perceval_serialization": ":PCVL:ACircuit:EAQiOxACYjcSCQlNzOKC4oPZPxoJCQAAAAAAAAAAIgkJAAAAAAAAAAAqCQkAAAAAAAAAADIJCQAAAAAAAAAAIgoQBHIGCgQAAgEDIjsQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAACI9CAIQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAAA==",
+    "unitary_real": [
+      [
+        0.6931046667076061,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.14002114478941535,
+        0.7071067811865476,
+        0.0
+      ],
+      [
+        0.0,
+        0.6931046667076061,
+        0.0,
+        0.0
+      ],
+      [
+        -0.14002114478941535,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ]
+    ],
+    "unitary_imag": [
+      [
+        0.0,
+        0.14002114478941538,
+        0.7071067811865475,
+        0.0
+      ],
+      [
+        0.693104666707606,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.14002114478941538,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      [
+        0.0,
+        0.693104666707606,
+        0.0,
+        0.0
+      ]
+    ],
+    "unitarity_error": 1.3877787807814457e-17,
+    "independent_builder_error": 1.1102230246251565e-16,
+    "serialization_roundtrip_error": 0.0,
+    "ideal_bosonic_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.01883713671255216
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.03767427342510434
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.018837136712552178
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.21232572657489562
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.21232572657489568
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.01883713671255216
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.21232572657489568
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.2123257265748958
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.03767427342510434
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.018837136712552178
+      }
+    ],
+    "perceval_slos_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.01883713671255216
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.03767427342510434
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.018837136712552178
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.21232572657489565
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.2123257265748957
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.01883713671255216
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.2123257265748957
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.2123257265748958
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.03767427342510434
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.018837136712552178
+      }
+    ],
+    "ideal_distinguishable_pair_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.009418568356276082
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.018837136712552167
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.009418568356276089
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.23116286328744778
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.23116286328744787
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.009418568356276082
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.23116286328744787
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.23116286328744795
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.018837136712552167
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.009418568356276089
+      }
+    ],
+    "perceval_error": 2.7755575615628914e-17
+  },
+  {
+    "r": "1/5",
+    "c_exact": "12/13",
+    "s_exact": "5/13",
+    "M_ideal_exact": "7200/28561",
+    "delta_ideal_exact": "50/169",
+    "angles": {
+      "mix_Rx": 0.7895822393995231,
+      "split_Rx": 1.5707963267948966
+    },
+    "input_modes": [
+      0,
+      1
+    ],
+    "output_groups": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "gate_list": [
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 0.7895822393995231
+      },
+      {
+        "kind": "PERM",
+        "modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 1.5707963267948966
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          2,
+          3
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "canonical_gate_serialization": "[{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":0.7895822393995231},{\"kind\":\"PERM\",\"modes\":[0,1,2,3],\"permutation\":[0,2,1,3]},{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":1.5707963267948966},{\"kind\":\"BS.Rx\",\"modes\":[2,3],\"theta\":1.5707963267948966}]",
+    "perceval_serialization": ":PCVL:ACircuit:EAQiOxACYjcSCQkMJvf4QUTpPxoJCQAAAAAAAAAAIgkJAAAAAAAAAAAqCQkAAAAAAAAAADIJCQAAAAAAAAAAIgoQBHIGCgQAAgEDIjsQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAACI9CAIQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAAA==",
+    "unitary_real": [
+      [
+        0.6527139518645054,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.27196414661021057,
+        0.7071067811865476,
+        0.0
+      ],
+      [
+        0.0,
+        0.6527139518645054,
+        0.0,
+        0.0
+      ],
+      [
+        -0.27196414661021057,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ]
+    ],
+    "unitary_imag": [
+      [
+        0.0,
+        0.2719641466102106,
+        0.7071067811865475,
+        0.0
+      ],
+      [
+        0.6527139518645053,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.2719641466102106,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      [
+        0.0,
+        0.6527139518645053,
+        0.0,
+        0.0
+      ]
+    ],
+    "unitarity_error": 1.1102230246251565e-16,
+    "independent_builder_error": 1.1102230246251565e-16,
+    "serialization_roundtrip_error": 0.0,
+    "ideal_bosonic_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.0630230033962396
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.12604600679247924
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.06302300339623965
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.12395399320752068
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.12395399320752071
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.0630230033962396
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.12395399320752071
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.12395399320752072
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.12604600679247924
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.06302300339623965
+      }
+    ],
+    "perceval_slos_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.0630230033962396
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.12604600679247924
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.06302300339623965
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.12395399320752068
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.12395399320752072
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.0630230033962396
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.12395399320752072
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.12395399320752076
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.12604600679247924
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.06302300339623965
+      }
+    ],
+    "ideal_distinguishable_pair_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.0315115016981198
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.06302300339623962
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.03151150169811982
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.1869769966037603
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.18697699660376033
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.0315115016981198
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.18697699660376033
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.18697699660376038
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.06302300339623962
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.03151150169811982
+      }
+    ],
+    "perceval_error": 4.163336342344337e-17
+  },
+  {
+    "r": "1/3",
+    "c_exact": "4/5",
+    "s_exact": "3/5",
+    "M_ideal_exact": "288/625",
+    "delta_ideal_exact": "18/25",
+    "angles": {
+      "mix_Rx": 1.2870022175865687,
+      "split_Rx": 1.5707963267948966
+    },
+    "input_modes": [
+      0,
+      1
+    ],
+    "output_groups": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "gate_list": [
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 1.2870022175865687
+      },
+      {
+        "kind": "PERM",
+        "modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          0,
+          1
+        ],
+        "theta": 1.5707963267948966
+      },
+      {
+        "kind": "BS.Rx",
+        "modes": [
+          2,
+          3
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "canonical_gate_serialization": "[{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":1.2870022175865687},{\"kind\":\"PERM\",\"modes\":[0,1,2,3],\"permutation\":[0,2,1,3]},{\"kind\":\"BS.Rx\",\"modes\":[0,1],\"theta\":1.5707963267948966},{\"kind\":\"BS.Rx\",\"modes\":[2,3],\"theta\":1.5707963267948966}]",
+    "perceval_serialization": ":PCVL:ACircuit:EAQiOxACYjcSCQnhniajj5f0PxoJCQAAAAAAAAAAIgkJAAAAAAAAAAAqCQkAAAAAAAAAADIJCQAAAAAAAAAAIgoQBHIGCgQAAgEDIjsQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAACI9CAIQAmI3EgkJGC1EVPsh+T8aCQkAAAAAAAAAACIJCQAAAAAAAAAAKgkJAAAAAAAAAAAyCQkAAAAAAAAAAA==",
+    "unitary_real": [
+      [
+        0.5656854249492381,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.42426406871192845,
+        0.7071067811865476,
+        0.0
+      ],
+      [
+        0.0,
+        0.5656854249492381,
+        0.0,
+        0.0
+      ],
+      [
+        -0.42426406871192845,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ]
+    ],
+    "unitary_imag": [
+      [
+        0.0,
+        0.4242640687119285,
+        0.7071067811865475,
+        0.0
+      ],
+      [
+        0.565685424949238,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.4242640687119285,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      [
+        0.0,
+        0.565685424949238,
+        0.0,
+        0.0
+      ]
+    ],
+    "unitarity_error": 4.031757538055407e-18,
+    "independent_builder_error": 1.1102230246251565e-16,
+    "serialization_roundtrip_error": 0.0,
+    "ideal_bosonic_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.11519999999999997
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.23040000000000002
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.11520000000000004
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.019600000000000013
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.019600000000000034
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.11519999999999997
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.019600000000000034
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.019600000000000034
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.23040000000000002
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.11520000000000004
+      }
+    ],
+    "perceval_slos_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.11519999999999997
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.2304
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.11520000000000004
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.01960000000000002
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.019600000000000027
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.11519999999999997
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.019600000000000027
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.019600000000000034
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.2304
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.11520000000000004
+      }
+    ],
+    "ideal_distinguishable_pair_law": [
+      {
+        "occupation": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "probability": 0.057599999999999985
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "probability": 0.1152
+      },
+      {
+        "occupation": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "probability": 0.05760000000000002
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "probability": 0.13479999999999998
+      },
+      {
+        "occupation": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "probability": 0.13480000000000003
+      },
+      {
+        "occupation": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "probability": 0.057599999999999985
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "probability": 0.13480000000000003
+      },
+      {
+        "occupation": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "probability": 0.1348000000000001
+      },
+      {
+        "occupation": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "probability": 0.1152
+      },
+      {
+        "occupation": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "probability": 0.05760000000000002
+      }
+    ],
+    "perceval_error": 2.7755575615628914e-17
+  }
+]
