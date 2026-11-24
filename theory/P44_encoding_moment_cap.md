@@ -153,8 +153,11 @@ for every k, since D<=4^k. The exact finite criterion is stronger.
 The dominator is history-independent. For any FIXED good support set H,
 an adaptive algorithm choosing T_t,A_t,N_t from classical history has
 conditional first-hit probability at most |H| eta_bound^k if every history
-obeys eta_(A_t)<=eta_bound. Let its raw-attempt ceiling be n_Q and the
-classical uniform-draw ceiling n_C>=1. With L=max(1,ceil(n_Q/n_C)),
+obeys eta_(A_t)<=eta_bound. Fix integers n_Q>=0 and n_C>=1. The optical
+algorithm executes AT MOST n_Q raw attempts; the classical control executes
+AT LEAST n_C independent uniform feasible draws, or exactly that preassigned
+number. A capacity to execute up to n_C draws is not sufficient. With
+L=max(1,ceil(n_Q/n_C)),
 
     L D eta_bound^k<=1                                   (M5)
 
@@ -164,16 +167,19 @@ and optical no-hit probability is at least
 
     (1-p/L)^n_Q >= (1-p/L)^(L n_C) >= (1-p)^n_C.
 
-The last expression is uniform classical no-hit probability. This argument
-does not simulate the optical history. A fixed shared decoder can be pushed
-forward using the cardinality of the good-set preimage; unrestricted
+The last expression is the no-hit probability for exactly n_C independent
+uniform classical draws; executing at least n_C can only decrease it. This
+argument does not simulate the optical history. A fixed shared decoder can
+be pushed forward using the cardinality of the good-set preimage; unrestricted
 history-dependent many-to-one repairs are not silently included.
 
 This is not equal realized objective-query or wall-time domination. Optical
 failures can avoid graph scoring while a uniform feasible candidate costs a
 score. A common classical frontend, all its extra evaluated candidates,
 training overhead, loss/heralding attempts and source photons must be
-accounted for. Measured cost ceilings are required to instantiate(M5).
+accounted for. A measured resource model must justify the optical upper
+count AND the classical guaranteed count actually performed within budget
+to instantiate(M5); a classical upper-count ceiling alone cannot do so.
 No hardware calibration or total-time inequality is asserted here.
 
 ## 7. Internal states: separated general bound and counterexample
@@ -253,3 +259,20 @@ explicit nonuniform-loss bridge. Gaussian moment attribution is established;
 neither Gaussian-law domination nor global novelty follows. The adaptive
 graph-search application is conditional on its stated physical/resource
 contract. The broader discovery objective remains open outside that class.
+
+### Qualification after review: classical draws are a guaranteed count
+
+The prior proof file SHA-256
+`c8d56b08bb02f684f776369aa6d2c4c2cc35b67a8dc9c07f709915a7c34153c6`
+incorrectly called n_C a classical uniform-draw ceiling. Section 6 now
+requires a fixed guaranteed lower count (or that fixed number executed),
+while n_Q remains an optical upper count. The no-hit comparison is unchanged
+for those correct hypotheses. The earlier version remains in Git history.
+
+A search of the local P42/P44 notes also found the historical P42 Section 8
+heading referring broadly to different attempt ceilings. Its mathematical
+body specifies a classical search with n_C draws, so its comparison is
+valid for that executed count, not a mere classical upper bound. Those
+sealed files and historical source records were not edited. This current
+qualification records the semantic distinction explicitly; no new run
+or change to the moment-cap proof was made.
