@@ -1,0 +1,115 @@
+{
+  "design_contract": "research/P43_adaptive_contract.json",
+  "cases": [
+    {
+      "id": "dev16_er",
+      "label": "dev16_er",
+      "m": 16,
+      "k": 8,
+      "family": "ER",
+      "p": 0.35,
+      "seed": 4301601
+    },
+    {
+      "id": "dev16_rr",
+      "label": "dev16_rr",
+      "m": 16,
+      "k": 8,
+      "family": "RR",
+      "degree": 4,
+      "seed": 4301602
+    },
+    {
+      "id": "dev20_er",
+      "label": "dev20_er",
+      "m": 20,
+      "k": 10,
+      "family": "ER",
+      "p": 0.35,
+      "seed": 4302001
+    },
+    {
+      "id": "dev20_rr",
+      "label": "dev20_rr",
+      "m": 20,
+      "k": 10,
+      "family": "RR",
+      "degree": 4,
+      "seed": 4302002
+    }
+  ],
+  "theta_grid": [
+    [
+      -1.5707963267948966,
+      0.7853981633974483,
+      0.0
+    ],
+    [
+      -1.5707963267948966,
+      0.7853981633974483,
+      1.5707963267948966
+    ],
+    [
+      -1.5707963267948966,
+      1.5707963267948966,
+      0.0
+    ],
+    [
+      -1.5707963267948966,
+      1.5707963267948966,
+      1.5707963267948966
+    ],
+    [
+      1.5707963267948966,
+      0.7853981633974483,
+      0.0
+    ],
+    [
+      1.5707963267948966,
+      0.7853981633974483,
+      1.5707963267948966
+    ],
+    [
+      1.5707963267948966,
+      1.5707963267948966,
+      0.0
+    ],
+    [
+      1.5707963267948966,
+      1.5707963267948966,
+      1.5707963267948966
+    ]
+  ],
+  "trial_seeds": [
+    0,
+    1
+  ],
+  "probe_seeds": [
+    2,
+    3
+  ],
+  "draws_per_theta": 14,
+  "probe_draws": 32,
+  "relabel_case_ids": [
+    "dev16_er",
+    "dev20_rr"
+  ],
+  "anchor_max_scans": 8,
+  "anchor_ties": "strict best swap, then removed vertex, then added vertex lexicographic; at most8 complete scans",
+  "rng": "PCG64 except topology networkx fixed seed and local exqalibur fixed seed; seed_for SHA256 first4bytes little-endian",
+  "seed_namespaces": {
+    "anchor": 430010,
+    "species_order": 430011,
+    "training": 430100,
+    "relabel": 430150,
+    "probe": 430200
+  },
+  "controls": [
+    "uniform",
+    "two_swap",
+    "swap_descent",
+    "anneal",
+    "spectral_swap"
+  ],
+  "control_schedules": "See frozen P43_global_gain_probe.py. Every proposed cut/delta evaluated consumes one score; shared anchor is added once per graph to every algorithm. Circuit/features/compilation/selection and simulation times are separate. No hardware-time or full-cost advantage accepted."
+}

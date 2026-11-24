@@ -1,0 +1,82 @@
+{
+  "claim_id": "P43-FINITE-ANGLE-GLOBAL-GAIN-DEV-VETO",
+  "mathematics": {
+    "assertion_tested": "Development-only fixed-anchor full-photon global-improvement screen with independently selected distinguishable, phase-field and species4 controls; classical feasible searches; graph relabels and fresh seeds. No accepted advantage.",
+    "coefficient_domain": "float64 unitary matrices and integer graph scores; actual seeded local samples, not full Fock enumeration",
+    "conventions": "Ideal lossless k photons, all collisions retained and charged, CF gain max(0,C0-cut). One common charged best-swap anchor per graph; all tuning discoveries credited.8 settings include2 pairs of identical gamma0 laws, intentionally retained. Four unique development graphs, no held-out graphs.",
+    "inputs": [
+      "Four graphs and all parameters in P43_execution_spec.json",
+      "2 tuning seeds,8 settings,14 draws each",
+      "2 preselected relabeled graphs,2 fresh seeds,32 draws each at independently chosen parameters",
+      "Each of5 classical feasible controls112 training scores/32 probe scores per case, plus common charged anchor"
+    ],
+    "bounds": {
+      "models": 4,
+      "unique_graphs": 4,
+      "maximum_modes": 20,
+      "maximum_photons": 10,
+      "sample_cap_per_model": 1024,
+      "common_anchor_max_full_scans": 8,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "Not a positive discovery, held-out result or independent optimizer replication",
+      "Not exact float64 certification or an inference of sample-law hardness",
+      "Simulation CPU is not QPU latency; query/attempt/photon budgets are different",
+      "No known optimum, optimal mask or exact graph solver enters training",
+      "No device/client calls, hardware job, paper edit or Laurent handoff"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P43_global_gain_probe.py",
+    "research/P43_execution_spec.json",
+    "research/P43_execution_contract.json",
+    "research/P43_adaptive_contract.json",
+    "theory/P43_adaptive_phase_gradient_echo.md",
+    "theory/P43_adaptive_echo_symmetry.md",
+    "tests/test_p43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "PCG64+networkx seeded topology+serial local exqalibur; all seed namespaces/derivations in spec and code",
+    "seed": [
+      4301601,
+      4301602,
+      4302001,
+      4302002
+    ]
+  },
+  "resource_note": "One numerical worker; serial sample() only; one numerical thread; no unsupported macOS affinity or address-space cap. Partial output on resource failure is retained and classified INCONCLUSIVE."
+}
