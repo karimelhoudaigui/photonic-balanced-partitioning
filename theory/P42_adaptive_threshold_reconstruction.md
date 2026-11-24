@@ -19,7 +19,8 @@ environment/which-loss information made available to choose the interferometer
 of that same attempt. U may depend arbitrarily on the graph and the complete
 PRIOR classical history. Uniform loss may be commuted before U. All survivor
 output modes are observed; acceptance requires vacuum everywhere outside the
-clicked support. There are no dark clicks, number fabrication, mitigation,+quantum memory, free retry, or classical completion from a shorter string.
+clicked support. There are no dark clicks, number fabrication, mitigation,
+quantum memory, free retry, or classical completion from a shorter string.
 
 This source/channel condition is stronger than knowing an average optical
 transmission, or merely knowing the distribution of total survivor number.
@@ -92,6 +93,13 @@ probability. Always cap probability upper bounds by1 where appropriate.
 
 For bounded allowed N use b=max_N b_(N,k), which can improve (4). The maximum
 cannot silently be assumed to occur at Nmax without proving monotonicity.
+In fact monotonicity is false. For k3,m6,
+
+    b_(5,3)=eta^3[1+eta(1-eta)],
+    b_(6,3)=eta^3[1+3eta^2(1-eta)].
+
+Their difference is eta^4(1-eta)(1-3eta)>0 for0<eta<1/3. These expressions
+follow directly from the finite rank cap, without executing a computation.
 
 ## 4. Uniform feasible search and all adaptive best-cost thresholds
 
