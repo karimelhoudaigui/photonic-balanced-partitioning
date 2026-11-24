@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "pass_id": "optimization-reproducibility-final",
+  "reviewer": "optimization-reproducibility-final",
+  "manuscript_sha256": "6ecf7fd1834d8e734f2859e34decd21a8e5f20516ac08376fafacfb9058ff1af",
+  "source_files_sha256": "d859601bca5b14b4099b9ef62c1a37cd695a1b74d6ff9bf9ea5056ae93251fd5",
+  "contract_sha256": "032dbef2b0536e14e9ca610bc8796bff98d99980dc3cedd99647085636bac78e",
+  "issues": [
+    {
+      "id": "OR2-F001",
+      "lane": "exposition",
+      "title": "Extra TeX backslash before Phi in density caption",
+      "severity": "minor",
+      "type": "other",
+      "confidence": 1.0,
+      "quote": "Left: 300 complete-law grid checks against the coarse density envelope $\\\\Phi(M/c)$ from the accepted supervised primary/replication archive.",
+      "location": "paper/sections/05_experiments.tex:33",
+      "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+      "analysis": "The immutable v2 source literally has two backslash characters before Phi (the three preceding code points are dollar36, backslash92, backslash92). This invokes the line-break command followed by letters Phi, rather than the intended Greek macro used in eq:envelope. The numerical plot/data and the density theorem are unaffected. This source-level observation does not assert a failed compilation; the main compiled PDF was not reviewed here.",
+      "suggested_fix": "Replace the doubled backslash before Phi by a single backslash in this caption, leaving the sealed numerical figure and underlying data unchanged.",
+      "reviewer": "optimization-reproducibility-final"
+    }
+  ],
+  "checks": [
+    {
+      "id": "OR2-C001",
+      "kind": "whole-source-and-comparison",
+      "method": "Read manifest including its v1 comparison, scope_metadata and every paragraph of v2 through preamble and all12 section units. Reread remaining pilot/discussion/appendices in smaller untruncated tool outputs; read supplemental bibliography and publication manifest.",
+      "reviewed_unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "result": "Assigned source SHA, all12 unit hashes and supplemental hashes match. Contract is unchanged, while global context changes invalidate automatic whole-paper reuse; this pass newly reread the full manuscript rather than treating eight candidate-unchanged units as completed review."
+    },
+    {
+      "id": "OR2-C002",
+      "kind": "prior-obligation-confirmation",
+      "prior_pass": "reports/manuscript_review_2026-11-24/v1/passes/optimization-reproducibility.json",
+      "prior_pass_sha256": "d465d9efc0bf587fea8bcaf46fba67d7b972a013361a314bf692f7b2a7425530",
+      "result": [
+        {
+          "prior_issue_id": "OR-F001",
+          "disposition": "resolved",
+          "evidence": [
+            {
+              "quote": "For the bosonic, distinguishable and iid multinomial arms, training minimizes the sampled conditional cut plus $2(1-\\widehat P_F)$.",
+              "location": "paper/sections/05_experiments.tex:13",
+              "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+            },
+            {
+              "quote": "A batch with no valid outcome receives the fixed value $\\sum_E w_{ij}+3$.",
+              "location": "paper/sections/05_experiments.tex:13",
+              "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+            },
+            {
+              "quote": "COBYLA uses a 120-call cap, initial radius $0.35$ and tolerance $10^{-7}$; any unspent calls follow a fixed Gaussian local-proposal completion rule of standard deviation $0.1$.",
+              "location": "paper/sections/05_experiments.tex:13",
+              "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+            },
+            {
+              "quote": "Table~\\ref{tab:e05b} and \\cref{fig:e05b} show the exact final distribution probabilities after finite-shot training, rather than the noisy success rates in the independent 4096-draw heldout batches.",
+              "location": "paper/sections/05_experiments.tex:15",
+              "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+            }
+          ],
+          "analysis": "The selected loss/mu2, W+3 no-valid fallback, penalty sampled energy, COBYLA settings and exact-call completion now agree with the recorded historical driver. The table/figure metric is explicitly the exact selected ideal distribution probability; heldout rates are separate. Fresh read-only parsing of all756 historical records confirms fitted vector lengths12/30/56 versus4/6/8 logits and zero uniform parameters. Photonic count vectors have7/21/71 categories, consistent with CF occupations plus one rejection bucket; the manuscript now expressly says that these traces do not resolve the pair moment M."
+        },
+        {
+          "prior_issue_id": "OR-F002",
+          "disposition": "resolved",
+          "evidence": [
+            {
+              "quote": "Intervals use 2000 deterministic percentile bootstrap replicates with the $2.5$th and $97.5$th percentiles: a resampled graph cluster contributes all its optimizer repeats and nominal slots, and the replicate mean is the ratio of their summed probabilities to their record count.",
+              "location": "paper/sections/05_experiments.tex:11",
+              "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+            },
+            {
+              "quote": "Descriptive intervals resample whole graph clusters, retaining optimizer repeats and nominal-slot multiplicities; they are not a population confidence claim for random graph ensembles.",
+              "location": "paper/sections/05_experiments.tex:20",
+              "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+            }
+          ],
+          "analysis": "The stated ratio, whole-cluster resampling, percentile level and2000 replicates now match scripts/reconcile_experiments.py:cluster_interval. Nominal weighting is preserved while duplicate graph slots and optimizer repetitions remain inside their unique graph cluster. Counts12 nominal slots versus9/9/10 unique weighted labeled graphs are unchanged. Seed implementation remains reproducible from the pinned code; no population or asymptotic significance claim is added."
+        },
+        {
+          "prior_issue_id": "OR-F003",
+          "disposition": "resolved",
+          "evidence": [
+            {
+              "quote": "The sequences approach the boundary limits proved in the text.",
+              "location": "paper/sections/04_resource_theory.tex:48",
+              "unit_id": "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1"
+            }
+          ],
+          "analysis": "The false statement that the figure contains dotted limit guides has been removed. The sealed loss PDF is unchanged (SHA25602d3a2f15f64425bab1d76122c0495fed7d9b69828b3fa6e38ec0e9f0a47ac0b), so the correction is purely the caption. Midpoint display and non-statistical root-enclosure interpretation are retained; the existence of boundary limits remains a theorem/proof obligation outside this statistical pass."
+        }
+      ]
+    },
+    {
+      "id": "OR2-C003",
+      "kind": "publication-pin-verification",
+      "method": "Read-only hashlib comparisons against snapshot publication_manifest.json; independent invocation of current build_publication.py --root /Users/karimelhoudaigui/Desktop/pasqal --check.",
+      "command": [
+        "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+        "-B",
+        "/Users/karimelhoudaigui/Desktop/pasqal/scripts/build_publication.py",
+        "--root",
+        "/Users/karimelhoudaigui/Desktop/pasqal",
+        "--check"
+      ],
+      "result": {
+        "status": "CHECK_PASS",
+        "input_pins": 19,
+        "output_pins": 7,
+        "all_sha_match": true,
+        "generator_sha256": "56b615abc71cbf33d29a75936b111c14c448c5f489ce0b31a115d43c881153b0",
+        "counts": {
+          "CalibrationCellCount": 45,
+          "ErunCount": 756,
+          "SourceBracketCount": 36,
+          "SourceProbabilityCount": 1610
+        }
+      },
+      "note": "This check hashes existing assets and does not render or rerun a physical experiment. The seven figures/tables are those sealed for v2; the three PDFs retain their v1 bytes."
+    },
+    {
+      "id": "OR2-C004",
+      "kind": "accepted-E05b-data-and-training-dimensions",
+      "method": "Fresh read-only csv/statistics reaggregation and parsing of all756 historical JSONL records; inspect recorded parameter/count lengths, not a new optimization run.",
+      "inputs": [
+        "results/validated/recovery_2026-11-24/benchmark.csv",
+        "results/validated/recovery_2026-11-24/summary.json",
+        "experiments/E05b_exact_equal_budget/runs.jsonl",
+        "scripts/reconcile_experiments.py",
+        "historical af0978455258bb44ef51d328e9ac977546eb2331:experiments/run_equal_budget.py"
+      ],
+      "result": {
+        "runs": 756,
+        "total_simulated_attempts": 26320896,
+        "points": [
+          {
+            "n": 4,
+            "model": "bosonic",
+            "runs": 36,
+            "mean": 0.6523129782732949,
+            "unique_graphs": 9
+          },
+          {
+            "n": 4,
+            "model": "distinguishable",
+            "runs": 36,
+            "mean": 0.7132846816723877,
+            "unique_graphs": 9
+          },
+          {
+            "n": 6,
+            "model": "bosonic",
+            "runs": 36,
+            "mean": 0.2795490911364673,
+            "unique_graphs": 9
+          },
+          {
+            "n": 6,
+            "model": "distinguishable",
+            "runs": 36,
+            "mean": 0.5366140369597603,
+            "unique_graphs": 9
+          },
+          {
+            "n": 8,
+            "model": "bosonic",
+            "runs": 36,
+            "mean": 0.06787276042279372,
+            "unique_graphs": 10
+          },
+          {
+            "n": 8,
+            "model": "distinguishable",
+            "runs": 36,
+            "mean": 0.1377071292541817,
+            "unique_graphs": 10
+          }
+        ],
+        "mesh_iid_parameter_lengths": [
+          12,
+          30,
+          56
+        ],
+        "bernoulli_parameter_lengths": [
+          4,
+          6,
+          8
+        ],
+        "uniform_parameter_length": 0,
+        "bosonic_category_lengths": [
+          7,
+          21,
+          71
+        ],
+        "e05b_input_hashes_unchanged_from_v1": true
+      },
+      "note": "The underlying E05b data and21 group means are unchanged. Aggregate rejection categories cannot recover complete collision histograms or M. No original driver was launched and no first-shot order was imputed."
+    },
+    {
+      "id": "OR2-C005",
+      "kind": "statistical-and-resource-scope",
+      "reviewed_unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "result": "The whole-paper reading retains exact selected-distribution versus heldout separation, descriptive fixed-graph intervals, first-winning-batch limits, C* evaluation rather than blind training, separately charged penalty strengths, differing P21 query budgets, and incomplete authentic ObliQ reproduction. No new population, waiting-time, asymptotic optimizer or hardware superiority claim was found. Haar refresh-versus-fixed-unitary and attempts-versus-photons distinctions remain explicit."
+    },
+    {
+      "id": "OR2-C006",
+      "kind": "P40-evidence-closure",
+      "method": "Read the pinned advance contract, summary and manifest; parsed the45 raw JSONL cells and checked the exact5x3x3 Cartesian key set against the announced rational rotations, transmissions and overlaps. No P40 computation was rerun.",
+      "inputs": [
+        "research/P40_SHARPNESS_PILOT_CONTRACT.md",
+        "results/validated/P40_sharpness_pilot_2026-11-24/raw.jsonl",
+        "results/validated/P40_sharpness_pilot_2026-11-24/summary.json",
+        "results/validated/P40_sharpness_pilot_2026-11-24/manifest.json"
+      ],
+      "result": {
+        "raw_cells": 45,
+        "unique_cells": 45,
+        "cell_status_counts": {
+          "PASS": 45
+        },
+        "recorded_summary_result": "PASS",
+        "recorded_circuits": 5,
+        "contract_commit": "efd1718a6a8b8e8ffac1ad84360566bf4346648a",
+        "recorded_run_status": "completed",
+        "CalibrationCellCount": 45
+      },
+      "limits": "This closes the evidence-locator/counting gap noted in v1. Physics laws, circuit serialization equivalence and the historical SLOS execution are supported by their archived record and the physics reviewer, not freshly re-executed here. P40 is a known-model local prediction check, not new optimization evidence or QPU data."
+    },
+    {
+      "id": "OR2-C007",
+      "kind": "headline-and-exposition-full-reread",
+      "reviewed_unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "result": "Abstract/introduction/conclusion still match the restricted density certificate, fixed-c sharp family, Haar feasibility source selection and negative small-grid benchmark. Originality/significance remains open, and calibration/statistical certification limitations remain unsolved rather than silently upgraded. Bibliography metadata are byte-authenticated but external theorem content is not reauthenticated by this pass. No critical, major or moderate new claim/statistical defect was demonstrated."
+    },
+    {
+      "id": "OR2-C008",
+      "kind": "source-level-caption-check",
+      "method": "Located literal TeX characters in the immutable v2 full-source and mapped through source_map/unit IDs.",
+      "result": "OR2-F001 is the sole new issue: a forced local formatting repair, with no changed data or substantive conclusion."
+    }
+  ],
+  "prior_obligations": [
+    {
+      "prior_issue_id": "OR-F001",
+      "disposition": "resolved",
+      "evidence": [
+        {
+          "quote": "For the bosonic, distinguishable and iid multinomial arms, training minimizes the sampled conditional cut plus $2(1-\\widehat P_F)$.",
+          "location": "paper/sections/05_experiments.tex:13",
+          "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+        },
+        {
+          "quote": "A batch with no valid outcome receives the fixed value $\\sum_E w_{ij}+3$.",
+          "location": "paper/sections/05_experiments.tex:13",
+          "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+        },
+        {
+          "quote": "COBYLA uses a 120-call cap, initial radius $0.35$ and tolerance $10^{-7}$; any unspent calls follow a fixed Gaussian local-proposal completion rule of standard deviation $0.1$.",
+          "location": "paper/sections/05_experiments.tex:13",
+          "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+        },
+        {
+          "quote": "Table~\\ref{tab:e05b} and \\cref{fig:e05b} show the exact final distribution probabilities after finite-shot training, rather than the noisy success rates in the independent 4096-draw heldout batches.",
+          "location": "paper/sections/05_experiments.tex:15",
+          "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+        }
+      ],
+      "analysis": "The selected loss/mu2, W+3 no-valid fallback, penalty sampled energy, COBYLA settings and exact-call completion now agree with the recorded historical driver. The table/figure metric is explicitly the exact selected ideal distribution probability; heldout rates are separate. Fresh read-only parsing of all756 historical records confirms fitted vector lengths12/30/56 versus4/6/8 logits and zero uniform parameters. Photonic count vectors have7/21/71 categories, consistent with CF occupations plus one rejection bucket; the manuscript now expressly says that these traces do not resolve the pair moment M."
+    },
+    {
+      "prior_issue_id": "OR-F002",
+      "disposition": "resolved",
+      "evidence": [
+        {
+          "quote": "Intervals use 2000 deterministic percentile bootstrap replicates with the $2.5$th and $97.5$th percentiles: a resampled graph cluster contributes all its optimizer repeats and nominal slots, and the replicate mean is the ratio of their summed probabilities to their record count.",
+          "location": "paper/sections/05_experiments.tex:11",
+          "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+        },
+        {
+          "quote": "Descriptive intervals resample whole graph clusters, retaining optimizer repeats and nominal-slot multiplicities; they are not a population confidence claim for random graph ensembles.",
+          "location": "paper/sections/05_experiments.tex:20",
+          "unit_id": "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1"
+        }
+      ],
+      "analysis": "The stated ratio, whole-cluster resampling, percentile level and2000 replicates now match scripts/reconcile_experiments.py:cluster_interval. Nominal weighting is preserved while duplicate graph slots and optimizer repetitions remain inside their unique graph cluster. Counts12 nominal slots versus9/9/10 unique weighted labeled graphs are unchanged. Seed implementation remains reproducible from the pinned code; no population or asymptotic significance claim is added."
+    },
+    {
+      "prior_issue_id": "OR-F003",
+      "disposition": "resolved",
+      "evidence": [
+        {
+          "quote": "The sequences approach the boundary limits proved in the text.",
+          "location": "paper/sections/04_resource_theory.tex:48",
+          "unit_id": "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1"
+        }
+      ],
+      "analysis": "The false statement that the figure contains dotted limit guides has been removed. The sealed loss PDF is unchanged (SHA25602d3a2f15f64425bab1d76122c0495fed7d9b69828b3fa6e38ec0e9f0a47ac0b), so the correction is purely the caption. Midpoint display and non-statistical root-enclosure interpretation are retained; the existence of boundary limits remains a theorem/proof obligation outside this statistical pass."
+    }
+  ],
+  "coverage": [
+    {
+      "pass_id": "optimization-reproducibility-final",
+      "lanes": [
+        "claims",
+        "exposition"
+      ],
+      "scope": "Whole SOURCE v2; every paragraph, front matter, all substantive sections, both proof appendices, reproduction appendix and supplemental bibliography read for framing/statistics/resource coherence.",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "context": [
+        "v2 manifest/comparison/scope metadata",
+        "v2 publication manifest and current matching input/output bytes",
+        "v1 raw pass for precisely targeted confirmation",
+        "accepted E05b and P40 records"
+      ],
+      "executor": "/root/objectives_baselines",
+      "method": "Fresh sequential whole-source review plus read-only provenance/arithmetic checks; producer overlap disclosed",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "pass_id": "optimization-reproducibility-final",
+      "lanes": [
+        "adversarial"
+      ],
+      "scope": "Optimization/statistical estimands, information flow, resource denominators, finite-range/hardware claims and new caption escape; not a complete proof correctness review.",
+      "unit_ids": [
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "context": [
+        "historical E05b driver",
+        "current reconciling code",
+        "P40 preserved contract/records"
+      ],
+      "executor": "/root/objectives_baselines",
+      "method": "Bounded sequential cross-check",
+      "status": "partial",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": null
+      }
+    }
+  ],
+  "provenance": {
+    "executor": "/root/objectives_baselines",
+    "manuscript_narrative_author": false,
+    "prior_roles": [
+      "Author of reconciliation script and accepted derived data",
+      "Author of initial publication generator, numerical tables, figures and generated table captions",
+      "v1 reviewer whose feedback informed coordinator revisions"
+    ],
+    "independence": "Not independent of data, generated assets, initial generated captions, or v1 suggestions. Narrative/proof authorship remains with the coordinator. This is a newly read v2 manuscript confirmation, not blind external or independent-model validation.",
+    "model_assignment": {
+      "assignment_source": null,
+      "requested_model": null,
+      "requested_reasoning": null,
+      "actual_model": null,
+      "actual_reasoning": null,
+      "fallback_reason": null
+    },
+    "model_note": "No override was prescribed. Actual model/reasoning settings were not exposed and are recorded null.",
+    "snapshot_scope": {
+      "source_revision": "4572a76520be3a199cd315416ec52dfcf76c4637",
+      "working_source_changes": true,
+      "prepared_source_sha256": "6ecf7fd1834d8e734f2859e34decd21a8e5f20516ac08376fafacfb9058ff1af",
+      "supplemental_sha256": {
+        "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c",
+        "publication_manifest.json": "6b7373eddbf80838afdde4d7bd212812e73325c3665d407a6d1a5dfe033e2b9e"
+      },
+      "changes_since_v1": [
+        "Explicit E05b loss,mu,COBYLA,fallback and exact final versus heldout metric",
+        "Exact trained parameter counts and rejection-bucket limitation",
+        "2000 cluster bootstrap ratio,2.5/97.5 percentiles and nominal multiplicities",
+        "Corrected loss/density figure captions and Haar-success table symbol",
+        "Publication P40 input pins/macro; noise output-mode limitation; readable table font",
+        "Typesetting fixes for long paths and inline parameter list"
+      ],
+      "mathematical_core_changed": false,
+      "pdf_pages_observed": 16,
+      "build_evidence": "reports/recovery_2026-11-24/build_v4.json"
+    },
+    "comparison": {
+      "previous_source_sha256": "70bb9000b067ce3684afb56e8207e676de6d08182bf0f6497ac40182c19075e3",
+      "previous_main": "paper/main.tex",
+      "main_changed": false,
+      "candidate_unchanged": [
+        "sha256:1361e02592de7db7060d0cc7100a02533a87d48569d58470a3f70b7dd216263c:1",
+        "sha256:137875dc0434842b521a86f64bb0e3df242e11921e1940f5412d07c20b45dafc:1",
+        "sha256:1f5a7da1b281c0f3e306eb5c9712acb5b19837ec16915fe85fe5b1e7845abf0c:1",
+        "sha256:5ddc67f7cc4a12045d9985436a228c2263f45d837a983c4fc02e5a3efc087735:1",
+        "sha256:5ead16dc2aef848b5b7442fc167ffedd0fd2abcf73141df22dd585577c406254:1",
+        "sha256:a4948ef4d41ebbef69628ad9b88352db171cd169bc20a3dd8a34a7b3bf3f69af:1",
+        "sha256:bdf627bbe33ef14cd72918cb30497f0d4d0574928672210be703b302b0a5a48e:1",
+        "sha256:c81ddc034004969d1d64c5ad43a7315e5f641b3f797e10b3a64892c216d26342:1"
+      ],
+      "added": [
+        "sha256:0188d57e2bbdecfbd9b12080ff67a3abf047806bb2e60a3ba03b98dff31b4b64:1",
+        "sha256:1c1e392c64eb5c823c0f408e126908990db8eb590944a003cb1e30993d27a328:1",
+        "sha256:42a118409c27972d9988e566126fcc1a5a399680dc8d7b15030de16871e68faa:1",
+        "sha256:93d0f4ef32ccbc43491b9290342b6bc1dab35a116759b3dbf1b5a3a27da03235:1"
+      ],
+      "removed": [
+        "sha256:394bdeb699359d1c4eb944278e1408cd8ccd8e03052b006dd22005593bdb0825:1",
+        "sha256:7835885c6328ef0ddea96f3bfe22e9af2ab5ae618e2c2d145261bbcc58b5d5d7:1",
+        "sha256:d5cf9b4b6e15d61832e82a21acb6516dfa53756a874004c0f0e41fff99b74708:1",
+        "sha256:da24ea472a0e7c2d84cf594858f0b79c2a3b651a162df9da600a85df544c223b:1"
+      ],
+      "ambiguous": [],
+      "contract_changed": false,
+      "contract_files_changed": [],
+      "global_context_changed": true,
+      "whole_paper_invalidated": true,
+      "reuse_requires_context_check": true
+    },
+    "reviewed_hashes": {
+      "full-source.tex": "6ecf7fd1834d8e734f2859e34decd21a8e5f20516ac08376fafacfb9058ff1af",
+      "manifest.json": "8160742e3161cc36cf51ea29b859a2549b9e9d4a5f7e1d33cba00a486d5b3ccc",
+      "scope_metadata.json": "ea55f63313a0769b0633580ce804093fae8ae2f7d9b1aef27cb4ed35f296f107",
+      "publication_manifest.json": "6b7373eddbf80838afdde4d7bd212812e73325c3665d407a6d1a5dfe033e2b9e",
+      "bibliography.bib": "1f989e62c93be4928c5e4fe312989a9c091bfe7773b6f480005c8c949318df8c"
+    }
+  },
+  "limits": [
+    "No compiled-main-PDF pagination/layout audit or new compiler run. The new doubled-backslash finding is source-level only.",
+    "All theorem/proof paragraphs were reread for headline/hypothesis scope, but full density/source/noise proof correctness is outside this optimization/statistics confirmation.",
+    "No citation content or originality claim was independently reauthenticated. Unchanged bibliography bytes do not prove an external theorem.",
+    "No historical optimizer, scientific campaign, bootstrap recomputation, SLOS calculation, full test suite, remote processor or hardware job was run. Existing records and exact counters were inspected.",
+    "A first read-only metadata helper tried to decode a P40 Python input as JSON and stopped after completing hashes; a corrected typed-data inspection completed all45-cell checks. This was not a failed scientific experiment.",
+    "Subsequent coordinator source edits do not mutate this v2 snapshot; the single minor TeX repair must be dispositioned against a later source hash if applied."
+  ],
+  "overall_scope_assessment": "All three v1 optimization/statistics/reproducibility obligations are resolved for v2. The negative finite-grid conclusion and no-hardware/no-general-advantage framing remain supported. One minor new caption escape requires local correction; no substantive optimization/statistics blocker remains in the reviewed scope."
+}
