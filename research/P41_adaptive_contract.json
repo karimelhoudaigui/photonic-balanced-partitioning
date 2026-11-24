@@ -1,0 +1,15 @@
+{
+  "claim_id": "P41_R1_CHIRAL_PROXY",
+  "mathematics": {
+    "assertion_tested": "Graph-dependent chiral passive proposals have the stated cubic exchange coefficient; a positive feasible classical proxy matches repaired bosonic kernels to the explicit fourth-order TV bound on all declared frames/times, with independent sparse-Fock evolution and Ryser amplitudes.",
+    "coefficient_domain": "complex128/float64 numerical estimates, no interval certification",
+    "conventions": "U=exp(-itH); rows outputs; k single occupied inputs; collisions retain initial S; full raw physical law retained; no postselection",
+    "inputs": ["m=8,k=4 and m=10,k=5", "two fixed weighted complete graph seeds per size:2026112401,2026112402", "graph-feature phases phi=0 and pi/3", "t=0 and signed 0.005,0.01,0.02,0.04", "one explicit Hermitian four-mode triangle control", "one fixed relabeling per frame, conjugation and time reversal"],
+    "bounds": {"base_graph_frames":8,"time_cells":72,"max_full_dimension":2002,"t_abs_max":0.04,"operator_norm_h":1,"numerical_tolerance":1e-10,"cpu_seconds":60,"wall_seconds":90,"planned_max_arrays_bytes":268435456,"max_new_output_bytes":33554432},
+    "non_claims": ["No optimization benchmark or positive quantum advantage", "No comparison of independently optimized variational families", "No global passive-optics impossibility", "No global novelty claim", "No physical QPU or loss model"]
+  },
+  "execution_artifacts": ["research/P41_adaptive_probe.py", "research/P41_adaptive_contract.json", "theory/P41_adaptive_chiral_proxy.md", "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py"],
+  "software": [{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"}],
+  "randomness": {"used":true,"generator":"numpy.random.Generator(PCG64)","seed":2026112401},
+  "execution_note": "One globally coordinated numerical worker. CPU affinity is unavailable on macOS, so only one process and BLAS/OpenMP threads=1 are used; no unsupported affinity enforcement is claimed."
+}
