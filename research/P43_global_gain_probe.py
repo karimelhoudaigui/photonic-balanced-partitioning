@@ -207,6 +207,8 @@ def classical_search(a, source, model, seed, budget, stream, tag):
     setup_seconds = time.perf_counter()-start
     start = time.perf_counter()
     pending_swaps = []
+    spectral_best = math.inf
+    spectral_source = None
     for step in range(budget):
         if model == "uniform" or (model == "anneal" and step == budget//2):
             proposal = set(rng.choice(m, k, replace=False).tolist())
@@ -240,9 +242,19 @@ def classical_search(a, source, model, seed, budget, stream, tag):
         if accept:
             current, current_cost = proposal, proposed_cost
             pending_swaps = []
+        spectral_restart = None
+        if model == "spectral_swap" and step < min(16,budget):
+            if proposed_cost < spectral_best:
+                spectral_best,spectral_source = proposed_cost,set(proposal)
+            if step == min(16,budget)-1:
+                # Refine the spectral basin even if the common anchor is better.
+                current,current_cost = set(spectral_source),spectral_best
+                pending_swaps = []
+                spectral_restart = sorted(current)
         best = min(best, proposed_cost)
         stream.write(json.dumps(dict(tag, model=model, step=step, seed=seed,
-            subset=sorted(proposal), cut=proposed_cost, accepted=bool(accept), best_cut=best))+'\n')
+            subset=sorted(proposal), cut=proposed_cost, accepted=bool(accept), best_cut=best,
+            spectral_restart=spectral_restart,current_cut=current_cost))+'\n')
     return {"model":model, "candidate_scores":calls, "initial_cut":initial,
         "best_cut":best, "setup_seconds":setup_seconds,
         "search_and_scoring_seconds":time.perf_counter()-start}
@@ -329,8 +341,10 @@ def main():
                         spec["draws_per_theta"]*len(theta_grid), stream, tag)
                     records.append(dict(tag,**row))
         # Freeze all choices before generating or scoring any relabeled outcome.
+        selection_start = time.perf_counter()
         chosen = {model:int(np.argmax(totals[model])) if np.max(totals[model]) > 0 else None
                   for model in MODELS}
+        selection_seconds = time.perf_counter()-selection_start
         stream.flush()
         with (args.output/'selection.json').open('x') as f:
             json.dump({"selected_theta_independently":chosen,
@@ -360,16 +374,19 @@ def main():
                             "sum_gain":0,"improving_draws":0})
                         continue
                     # This algebraic covariance check has no graph-score query.
+                    covariance_start = time.perf_counter()
                     old = echo(a,source,theta_grid[index])
                     new = echo(relabeled,new_source,theta_grid[index])
                     error = float(abs(new-old[np.ix_(permutation,permutation)]).max())
                     if error > 1e-11:
                         raise ArithmeticError("Architecture is not relabel-covariant")
+                    covariance_seconds = time.perf_counter()-covariance_start
                     tag = {"stage":"fresh_relabel", "case":key, "theta":index}
                     model_source = inverse[context["species_order"]].tolist() if model == "species4" else new_source
                     row = optical_batch(relabeled,model_source,theta_grid[index],model,
                         seed_for(430200,key,model),spec["probe_draws"],stream,tag)
-                    records.append(dict(tag, covariance_error=error,**row))
+                    records.append(dict(tag, covariance_error=error,
+                                        covariance_check_seconds=covariance_seconds,**row))
                 for model in CLASSICAL:
                     tag = {"stage":"fresh_relabel", "case":key}
                     row = classical_search(relabeled,new_source,model,seed_for(key,model,"probe"),
@@ -377,6 +394,7 @@ def main():
                     records.append(dict(tag,**row))
     summary = {"result":"EXPLORATORY_DEVELOPMENT_ONLY", "records":records,
         "selected_theta_independently":chosen, "cpu_seconds":time.process_time()-cpu_start,
+        "model_selection_wall_seconds":selection_seconds,
         "training_uses_optimum":False, "held_out_graphs_opened":False,
         "qpu_calls":0, "simulation_time_is_hardware_time":False,
         "positive_advantage_accepted":False,
