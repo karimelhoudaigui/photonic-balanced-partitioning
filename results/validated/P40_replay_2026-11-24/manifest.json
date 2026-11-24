@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "artifact_type": "P40_REPLAY",
+  "claim_id": "P40-portable-reproduction",
+  "repository": {
+    "commit": "ab119952c06160d2ecf433e405257d2f21e1542c",
+    "dirty": true
+  },
+  "repository_context": {
+    "project_root": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/recovery-physics-20261124",
+    "invocation_cwd": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/recovery-physics-20261124",
+    "worktree_root": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/recovery-physics-20261124",
+    "commit": "ab119952c06160d2ecf433e405257d2f21e1542c",
+    "branch": "recovery/physics-20261124",
+    "git_common_directory": "/Users/karimelhoudaigui/Desktop/pasqal/.git",
+    "dirty": true,
+    "historical_ancestry_required": false,
+    "historical_gitlog_required": false
+  },
+  "evidence_root": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/recovery-physics-20261124",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "scripts/replay_sharpness_pilot.py",
+    "--output",
+    "results/validated/P40_replay_2026-11-24/"
+  ],
+  "original_run": {
+    "archive_path": "/Users/karimelhoudaigui/Desktop/pasqal/.qwen/worktrees/recovery-physics-20261124/results/validated/P40_sharpness_pilot_2026-11-24",
+    "authenticated_hashes": {
+      "research/P40_SHARPNESS_PILOT_CONTRACT.md": "30dbbdae5aa2d0c89eb936f7700e5808cde49f215c5118011f10f8fd2e70c4a2",
+      "experiments/scripts/validate_sharpness_pilot.py": "2e9dba7c14beafd37901dc1917f59a7354a84dbfa0d45ccdfee09adb4d0c01d0",
+      "results/validated/P40_sharpness_pilot_2026-11-24/raw.jsonl": "b3189ac6143c31654d97d06209a94494281b25c43b37c5cd33782014bd277658",
+      "results/validated/P40_sharpness_pilot_2026-11-24/circuits.json": "f945154043ff220ca18d105a9528a9a404664a992da107707ab9c0927036e598",
+      "results/validated/P40_sharpness_pilot_2026-11-24/summary.json": "852a43b4ff28d855c3822f13e7060e7c773f445b74eb3b4d9d48e6878d285e53",
+      "results/validated/P40_sharpness_pilot_2026-11-24/manifest.json": "d29fd7a401d6415e18ddd49cf070bbd7ac3e5f1072182d74abba8b2c5bc68b84"
+    },
+    "original_contract_commit_reference": "efd1718a6a8b8e8ffac1ad84360566bf4346648a",
+    "chronology_reproduced": false
+  },
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit arm64",
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "mathematics": {
+    "assertion_tested": "Replay the unchanged45cell P40 calibration calculation and five SLOS controls; compare all recomputed complete laws to the authenticated archive",
+    "coefficient_domain": "complex float64 with rational fixed parameters",
+    "conventions": "Full Fock/loss sectors, halved TV, distinct inputs; original math contract unchanged",
+    "inputs": [
+      "research/P40_SHARPNESS_PILOT_CONTRACT.md",
+      "experiments/scripts/validate_sharpness_pilot.py",
+      "results/validated/P40_sharpness_pilot_2026-11-24/raw.jsonl",
+      "results/validated/P40_sharpness_pilot_2026-11-24/circuits.json",
+      "results/validated/P40_sharpness_pilot_2026-11-24/summary.json",
+      "results/validated/P40_sharpness_pilot_2026-11-24/manifest.json",
+      "scripts/replay_sharpness_pilot.py",
+      "src/photonic_balanced_partitioning/noise/__init__.py",
+      "src/photonic_balanced_partitioning/noise/physical.py"
+    ],
+    "bounds": {
+      "m": 4,
+      "k": 2,
+      "cells": 45,
+      "circuits": 5,
+      "tolerance": 1e-10
+    },
+    "non_claims": [
+      "Not the original execution chronology",
+      "No new scientific campaign",
+      "No physical calibration or QPU result",
+      "No advantage or novelty claim"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-24T11:11:41.645077+00:00",
+    "runtime_seconds": 2.2976859160116874,
+    "cpu_seconds": 1.009944,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "max_cores": 1,
+      "max_threads": 1
+    }
+  },
+  "outputs": [
+    {
+      "path": "results/validated/P40_replay_2026-11-24/raw.jsonl",
+      "sha256": "e0936677c3d3f94ad94534bac322825119298106a2a57e1b02a45414bd33db41",
+      "kind": "result"
+    },
+    {
+      "path": "results/validated/P40_replay_2026-11-24/circuits.json",
+      "sha256": "2ce9c3a6bf954a10e568ed25e5c95741a92a8afc65b6c3192115f7464563bbc6",
+      "kind": "result"
+    },
+    {
+      "path": "results/validated/P40_replay_2026-11-24/summary.json",
+      "sha256": "db36a1e6debe33f6b1cd4a5eda6e20cb8fca9ae0fde3978257e18cc720fa0ee8",
+      "kind": "result"
+    }
+  ],
+  "declared_results": [
+    "results/validated/P40_replay_2026-11-24/raw.jsonl",
+    "results/validated/P40_replay_2026-11-24/circuits.json",
+    "results/validated/P40_replay_2026-11-24/summary.json"
+  ],
+  "checks": [
+    "Original contract/driver/archive authenticated before reading",
+    "Fresh destination checked before physics",
+    "45 noise laws and five SLOS controls recomputed",
+    "Every full law compared to archived laws",
+    "Historical bytes unchanged before/after"
+  ],
+  "result": "REPLAY_MATCH",
+  "residual_risks": [
+    "Float64 estimates, not interval certification",
+    "Same mathematical/source-model assumptions as original P40",
+    "No new independent validation of authored noise code"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P40_SHARPNESS_PILOT_CONTRACT.md",
+      "sha256": "30dbbdae5aa2d0c89eb936f7700e5808cde49f215c5118011f10f8fd2e70c4a2",
+      "sha256_after": "30dbbdae5aa2d0c89eb936f7700e5808cde49f215c5118011f10f8fd2e70c4a2"
+    },
+    {
+      "path": "experiments/scripts/validate_sharpness_pilot.py",
+      "sha256": "2e9dba7c14beafd37901dc1917f59a7354a84dbfa0d45ccdfee09adb4d0c01d0",
+      "sha256_after": "2e9dba7c14beafd37901dc1917f59a7354a84dbfa0d45ccdfee09adb4d0c01d0"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/raw.jsonl",
+      "sha256": "b3189ac6143c31654d97d06209a94494281b25c43b37c5cd33782014bd277658",
+      "sha256_after": "b3189ac6143c31654d97d06209a94494281b25c43b37c5cd33782014bd277658"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/circuits.json",
+      "sha256": "f945154043ff220ca18d105a9528a9a404664a992da107707ab9c0927036e598",
+      "sha256_after": "f945154043ff220ca18d105a9528a9a404664a992da107707ab9c0927036e598"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/summary.json",
+      "sha256": "852a43b4ff28d855c3822f13e7060e7c773f445b74eb3b4d9d48e6878d285e53",
+      "sha256_after": "852a43b4ff28d855c3822f13e7060e7c773f445b74eb3b4d9d48e6878d285e53"
+    },
+    {
+      "path": "results/validated/P40_sharpness_pilot_2026-11-24/manifest.json",
+      "sha256": "d29fd7a401d6415e18ddd49cf070bbd7ac3e5f1072182d74abba8b2c5bc68b84",
+      "sha256_after": "d29fd7a401d6415e18ddd49cf070bbd7ac3e5f1072182d74abba8b2c5bc68b84"
+    },
+    {
+      "path": "scripts/replay_sharpness_pilot.py",
+      "sha256": "d62123881ef77c29424fd0401a3c6f10c103d61578868d4f7a3cd622563d2496",
+      "sha256_after": "d62123881ef77c29424fd0401a3c6f10c103d61578868d4f7a3cd622563d2496"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/noise/__init__.py",
+      "sha256": "9142f60bd4e8596af9acfb6e9ae4dd66fa2abf62cbfb73591e0db79dde708e52",
+      "sha256_after": "9142f60bd4e8596af9acfb6e9ae4dd66fa2abf62cbfb73591e0db79dde708e52"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/noise/physical.py",
+      "sha256": "2023e469e0eb0d4d4900def41f93fbfcc4fa5e91f63aebb6ec6d61dc0c382cb3",
+      "sha256_after": "2023e469e0eb0d4d4900def41f93fbfcc4fa5e91f63aebb6ec6d61dc0c382cb3"
+    }
+  ]
+}

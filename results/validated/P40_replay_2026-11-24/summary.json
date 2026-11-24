@@ -1,0 +1,23 @@
+{
+  "artifact_type": "P40_REPLAY",
+  "result": "REPLAY_MATCH",
+  "cells": 45,
+  "circuits": 5,
+  "matching_cells": 45,
+  "maximum_errors": {
+    "partial_archive": 0.0,
+    "distinguishable_archive": 0.0,
+    "metric_archive": 0.0,
+    "formula": 9.71445146547012e-17,
+    "normalization": 2.220446049250313e-16,
+    "unitarity": 1.1102230246251565e-16,
+    "unitary_archive": 0.0,
+    "slos_archive": 4.163336342344337e-17,
+    "slos_recomputed_ideal": 4.163336342344337e-17
+  },
+  "tolerance": 1e-10,
+  "exception": null,
+  "original_chronology_reproduced": false,
+  "new_scientific_campaign": false,
+  "interpretation": "Reproduction of the frozen P40 model calculation only; no new calibration, discovery, hardware evidence or advantage claim"
+}
