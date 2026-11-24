@@ -1,0 +1,71 @@
+{
+  "claim_id": "P42-independent-ordered-replication",
+  "mathematics": {
+    "assertion_tested": "For42frozen small first-quantized physical source/unitary cases and four uniform survival probabilities, verify block traces, sector weights, output ranks and measured full-Fock support probabilities against independently measured sorted-block caps; retain bunched-source scope falsifier.",
+    "coefficient_domain": "complex128/float64 approximate arithmetic with integer subset and word enumeration",
+    "conventions": "Pure physical bosonic source sum over all N! permutations of one-particle spatial/internal factors, numerically normalized; tensor axes spatial0,internal0,...; trace all internal and N-r lost factors; no probability clipping or renormalization; full vacuum and collision sectors; threshold exactsupport vs PNR total exactlysupportsize.",
+    "inputs": [
+      "42complete cases in experiments/P42_replication/cases.json",
+      "PCG64seeds2026112471/2026112472",
+      "eta0,0.1,0.5,1",
+      "all output supports, includingempty, for every declaredcase"
+    ],
+    "bounds": {
+      "m_max": 4,
+      "N_max": 4,
+      "internal_dimension_max": 4,
+      "cases": 42,
+      "laws": 168,
+      "tolerance": 1e-10,
+      "max_array_bytes": 67108864,
+      "max_output_bytes": 33554432,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "max_threads": 1
+    },
+    "non_claims": [
+      "Finite float64 check, not universal proof or interval certificate",
+      "No novelty, advantage, physical calibration or QPU claim",
+      "No validation of arbitrary nonuniform or internal-dependent loss",
+      "No reading/importing primary P42 computation or data before execution",
+      "No exact cross-check of the N8DFT partial-distinguishability counterexample",
+      "No claim all source patterns or unitaries covered"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P42_replication_contract.md",
+    "research/P42_replication_contract.json",
+    "experiments/P42_replication/cases.json",
+    "experiments/P42_replication/ordered_replication.py"
+  ],
+  "software": [
+    {
+      "name": "child Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.4.6"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "numpy.random.Generator(PCG64)",
+    "seed": [
+      2026112471,
+      2026112472
+    ]
+  },
+  "runner": {
+    "path": "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/run_experiment.py",
+    "sha256": "06b28f46a55327414ebbc202cd4434b22d6b3a2390979ac7ad65f2eae1a2284a"
+  },
+  "independence": {
+    "author_proofs_read_before_code": true,
+    "independent_derivation_frozen_before_author_proofs": true,
+    "primary_code_read": false,
+    "primary_raw_read": false,
+    "project_production_imports": []
+  },
+  "resource_note": "Darwin has no sched_setaffinity; do not pass unsupported max-cores. One sequential child, six numerical thread environment variables1, CPU60/wall90 bounded by runner.64MiB applies to individual arrays, not total interpreter RSS."
+}
