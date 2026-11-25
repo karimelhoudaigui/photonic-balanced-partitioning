@@ -1,0 +1,41 @@
+{
+  "replication": "EXACT_COMPLETE_MATCH",
+  "old_witness_separates106": true,
+  "target_signed_mean": {
+    "numerator": -767,
+    "denominator": 327680
+  },
+  "old71_gap": {
+    "numerator": 767,
+    "denominator": 327680
+  },
+  "minimum_new_signed_gap": {
+    "numerator": 2953,
+    "denominator": 1310720
+  },
+  "minimum_new_normalized_graph_gap": {
+    "numerator": 2953,
+    "denominator": 18350080
+  },
+  "production_permanent_calls": 23100,
+  "production_permanent_terms": 554400,
+  "toy_permanent_calls": 3,
+  "Gram_Fock_tie_guards_passed": true,
+  "new_groups": 70,
+  "new_splits": 35,
+  "all_occupations_per_split": 6435,
+  "new_LP_dual_audited": false,
+  "posthoc_not_blind": true,
+  "physical8source_reconstructed": false,
+  "inputs": {
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+    "experiments/P53c_same_phase/run_001/data/certificate.json.gz": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065"
+  },
+  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "source_sha256": "7732244aa1c8a4251b701c628522e7decb895d0e5f228391a48394fa1696eab8",
+  "CPU_seconds": 1.009318,
+  "wall_seconds": 1.0350688339676708,
+  "max_RSS_native_units": 48742400,
+  "RSS_unit": "bytes on Darwin; KiB on Linux",
+  "replica_sha256": "5a95e28294081ef34f32094fde49a7228971f62639e17c0cbef2761fe2e2be2b"
+}
