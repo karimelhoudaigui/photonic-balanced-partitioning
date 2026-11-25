@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-25T21:01:29.726921+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; status=pytest.main([\"tests/\",\"-q\"]); assert xq.Config.compute_max_thread_count==1; raise SystemExit(status)"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 43.02462179199938,
+  "commit": "397e241a9e86ae563c0ea25427ed73c6cbeb13b0",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "timeout_seconds": 90,
+  "scope": "All current P65 primary and independent-audit branch tests, no new DEV graph/native10 simulation or QPU action"
+}
