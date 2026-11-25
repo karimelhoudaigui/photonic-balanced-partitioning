@@ -1,7 +1,8 @@
 # P48-B: fixed marked spectral source basis — prospective DEV veto
 
-Owner encoding,25-Nov-2026. ROOT claim card **e30f75ced16e61fbb69ebe2f6d9509f90a7aa4ae**
-is authoritative. Earlier heat/Haar card **42572d4** is preserved and NOT
+Owner encoding,25-Nov-2026. ROOT claim card **bfdff40926ad395a14f64260513b6ef21a1257f5**
+(original B e30f75c plus pre-execution preparation amendment) is authoritative.
+Earlier heat/Haar card **42572d4** is preserved and NOT
 implemented: a Haar input basis would admit a spherical-coherent explanation
 of averaged raw counts. P48 changes the occupied source basis and output
 subspace, not the frozen negative P47 grid. All P33/P37/E05b/P45/P46/P47 evidence
@@ -74,6 +75,13 @@ to construct V. The source ports remain0,...,r-1, irrespective of the anchor.
 
 Before proposals, score both top-K and bottom-K rounding of EACH of the
 r+1 lowest marked-Laplacian eigenvectors. Ties use the same vertex priority.
+For EACH encoder also score/share top-K and bottom-K of mu and of EVERY
+column q[:,a]. Score one labelled maximum-product distinct-destination
+assignment with cost -log(max(q,1e-300)), in carried-priority row order.
+The floor, number of affected entries, assignment and construction time are
+recorded. This maximizes one labelled intensity product, not the permanent
+sum or exact D probability of a support. These classical preparation
+discoveries belong to Cref, including their sorting, matrix and scoring costs.
 Also score zero-field q=ceil(K/2), pure greedy q=0, and all-zero-count
 midpoint-PIT counterfactuals for all five discrete models, both encoders,
 both lambdas. Every inspected marginal and final feasible cut is charged.
@@ -173,12 +181,13 @@ happens to be an optimum; no exact solver or optimum is consulted.
 
 Source/helper/spec/contracts/tests are committed before any P48 experiment.
 Root/physics review exact hashes before CPU authorization. Planned preflight:
-22 integration cases plus26 helper cases. It independently enumerates small
+24 integration cases plus26 helper cases. It independently enumerates small
 Fock permanents/labeled particles, species4+1, covariance, all small phase
 assignments, source-basis versus vacuum rotations, carried labels/marks,
 zero-graph mu0/mu1, occupied/boundary/vacuum degeneracies, explicit repairs,
 PIT/Gaussian factor variance, decoder/rounding budgets, retained numerical
-failure and one local Clifford call. No DEV outcome appears in those fixtures.
+failure, direct intensity roundings, labelled assignment optimum and one
+local Clifford call. No DEV outcome appears in those fixtures.
 
 One unique main only after PASS and explicit coordinator slot. CPU60/wall90,
 one thread/worker, output32MiB, planned arrays256MiB. Runner enforces process

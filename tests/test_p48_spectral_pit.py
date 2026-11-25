@@ -247,3 +247,34 @@ def test_production_coherent_generator_and_analytic_pit_interface(model):
         assert all(-.5<=value<=.5 for value in field)
         reconstructed=p48.pit(counts,tables[model],np.asarray(metadata["pit_jitter"]))-.5
         assert field==pytest.approx(reconstructed,abs=1e-15)
+
+
+def test_direct_preparation_roundings_and_labelled_assignment_optimum():
+    _,_,priority,_,context=example()
+    candidates=list(p48.preparation_candidates(context,priority,3))
+    assert len(candidates)==2*(3+1)+1
+    assert sum(label=="mu" for label,_,_ in candidates)==2
+    assert sum(label=="source_column_intensity" for label,_,_ in candidates)==6
+    label,subset,metadata=candidates[-1]
+    assert label=="labelled_max_product_assignment" and len(set(subset))==3
+    q=context["probabilities"]
+    optimum=min(sum(-math.log(max(float(q[row,column]),1e-300)) for column,row in enumerate(rows))
+                for rows in itertools.permutations(range(6),3))
+    assert metadata["assignment_negative_log_product"]==pytest.approx(optimum,abs=1e-12)
+    assert metadata["optimizes_exact_D_support_probability"] is False
+
+
+def test_zero_intensity_assignment_and_carried_tie_priority():
+    context=p48.build_network(np.eye(6,3,dtype=complex),"fixture")
+    label,subset,metadata=list(p48.preparation_candidates(context,[3,1,5,0,2,4],3))[-1]
+    assert label=="labelled_max_product_assignment" and subset==[0,1,2]
+    assert metadata["assignment_negative_log_product"]==0
+    assert metadata["assignment_floor_entries"]==15
+    blind=p48.build_network(p48.fourier_basis(6,3,[2,0,4,1,5,3]),"fixture")
+    priority=[3,1,5,0,2,4]; permutation=np.asarray([3,0,5,1,4,2])
+    relabeled_v=np.zeros_like(blind["v"]); relabeled_v[permutation]=blind["v"]
+    relabeled=p48.build_network(relabeled_v,"fixture")
+    before=list(p48.preparation_candidates(blind,priority,3))
+    after=list(p48.preparation_candidates(relabeled,permutation[priority].tolist(),3))
+    for (label,subset,_),(new_label,new_subset,_) in zip(before,after):
+        assert label==new_label and sorted(permutation[subset].tolist())==new_subset

@@ -1,7 +1,7 @@
 {
   "claim_id": "P48-B-INDEPENDENT-INTEGRATION-PREFLIGHT",
   "mathematics": {
-    "assertion_tested": "Twenty-two integration fixtures: independent Fock/labeled marginals and covariance, exact small phase assignments, species4+1, vacuum/source-basis rotations, carried spectral marks/labels, mu0/mu1, occupied/boundary/vacuum gap cases, explicit probability repairs, PIT/Gaussian factor variance, decoder/rounding budgets, retained numerical case local Clifford call and continuous phase/sphere production interfaces; rerun26 already independently qualified coherent helper fixtures.",
+    "assertion_tested": "Twenty-four integration fixtures: independent Fock/labeled marginals and covariance, exact small phase assignments, species4+1, vacuum/source-basis rotations, carried spectral marks/labels, mu0/mu1, occupied/boundary/vacuum gap cases, explicit probability repairs, PIT/Gaussian factor variance, decoder/rounding budgets, retained numerical case local Clifford call and continuous phase/sphere production interfaces; rerun26 already independently qualified coherent helper fixtures.",
     "coefficient_domain": "Complex128/float64 isometries and vacuum completion; exact Fraction representation/explicit tiny row-mass repairs; Decimal80 marginal arithmetic; integer graph cuts",
     "conventions": "No DEV graph outcomes or optimization performance estimates. Every finite graph, root assignment and expected physics law is fixed in test sources. Root/physics static review must precede sole-slot execution. Full repository checks still required before integration.",
     "inputs": [
@@ -14,7 +14,7 @@
       "maximum_enumerated_modes": 10,
       "maximum_phase_assignments": 64,
       "maximum_decoder_modes": 34,
-      "planned_tests": 48,
+      "planned_tests": 50,
       "cpu_seconds": 60,
       "wall_seconds": 90,
       "threads": 1,
