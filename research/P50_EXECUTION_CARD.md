@@ -19,8 +19,12 @@ No positive result is accepted on this DEV panel.
 Four NEW DEV weighted simple graphs, generated only by the reviewed script:
 N50/r13 ER seed5005001, N50/r13 RR seed5005002;
 N100/r17 ER seed5010001, N100/r17 RR seed5010002. K=N/2.
-ER p=8/(N-1); RR degree8; positive integer weights uniform1..5 via the
-existing deterministic graph helper, with its exact convention saved.
+ER p=8/(N-1); RR degree8; positive integer weights uniform1..5. Implement
+these parameters in a NEW P50 generator: pinned networkx with case seed,
+iterate sorted edges, PCG64(seed_for(case_seed,"weights")), integers(1,6).
+Reuse the old helper's deterministic convention ONLY: its actual generator
+hard-codes ER .35/RR4/weights1..9 and MUST NOT be called as the P50 generator.
+Save this explicit difference; never edit the old helper or old graph data.
 No graph is omitted or replaced based on spectral gaps, output or runtime.
 Numerical/resource failure is preserved and prevents a complete-panel claim.
 
