@@ -130,7 +130,7 @@ def contract_scalar(first, second, matrix):
     cosine = (laurent[12],)+tuple(2*laurent[12+k] for k in range(1, 13))
     return {"laurent_numerators": laurent, "cosine_numerators": cosine,
             "denominator": SCALAR_DEN, "bilinear_numerators": bilinear.tolist(),
-            "shorter_bank_multiplied_first": swapped,
+            "banks_swapped_to_multiply_shorter_first": swapped,
             "first_column_L1": first_l1, "second_column_L1": second_l1,
             "all_integer_product_and_fold_bounds_passed": True}
 
