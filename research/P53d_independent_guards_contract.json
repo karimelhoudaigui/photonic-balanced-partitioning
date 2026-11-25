@@ -1,0 +1,89 @@
+{
+  "claim_id": "P53D-INDEPENDENT-CHECKER-SYNTHETIC-GUARDS",
+  "mathematics": {
+    "assertion_tested": "13smallguardsonly: standaloneAST/noimports/@,independentoccupationcoverage,4handpermanent/Focknormalizations,integerphotonrejection,known70subsetties,BEFORE-castL1guard,2einsumvsindependentPythoncontraction/worst13fold,exactanchors/triangleandfloat/opaqueJSON/inflationguards. No archivedproofdecoded,nofull70or35replay.",
+    "coefficient_domain": "Python integer24-term monomial permanents divided EXACTLY by output factorial; all70-subset uniform-max decoder; pre-cast L1 guarded np.int64 TWO explicit einsums; Python-int anti-diagonal folds and exact Fraction triangles/anchors. Historical LP decimals opaque, never proof numbers.",
+    "conventions": "POSTHOC NONBLIND fixed N8 Bpi3,w=(X04-X15)/2,oldgraph. All70groups/330Fockstates,all6435decoderstates,all35spectra/105anchors. Independently enumerate output slots,never production creationDP/ties/@/imports. Only TRIANGLE stage replayed,no unused Bernstein or phase optimizer. Scope b4(4+4),not7+1/6+2/5+3,genuineorder8,allclassicalmodels,fulllaw/tails,algorithmicadvantageorhardware.",
+    "inputs": [
+      "PinnedP53d candidate44df171e/originalv2manifest91923621 at raw312a22d; all35producerdecisions usedtriangle",
+      "Pinned old exactP53 source/library,canonicalP53b w/normalizedgraph andP53c pi3anchors; sourcefiles hash-only,not imported; oldBpoint explicitly conditional on validated source",
+      "Permanents include ALL24 input assignments with repeated output rows then divide prod(n!); true per-species probability prod(n!)*|C|^2/4096 and no extra final-occupation factorial"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_new_output_bytes": 4194304,
+      "maximum_scientific_output_bytes": 4194304,
+      "planned_logical_scientific_workspace_bytes": 67108864,
+      "maximum_old_input_inflated_bytes": 16777216,
+      "maximum_candidate_inflated_bytes": 4194304,
+      "maximum_LP_calls": 0,
+      "random_draws": 0,
+      "maximum_harmonic": 12,
+      "per_column_L1_max_before_cast": 4096,
+      "first_integer_product_bound": 1720320,
+      "second_integer_product_bound": 7046430720,
+      "fold_bound": 91603599360,
+      "cosine_numerator_strict_bound": 274877906944,
+      "explicit_two_einsum_operations_estimate": 39502650,
+      "planned_tests": 13,
+      "hand_permanent_outputs": 4,
+      "guard_full_group_replay": 0,
+      "guard_archived_proof_decoding": 0
+    },
+    "non_claims": [
+      "No blind replication: author knows the candidate sign/bound and previously reviewed production; algorithmic reconstruction is independent,not its problem statement",
+      "No production module imports,full8photon permanent target rebuild,LP,RNG,phase search,Bernstein branch,new controlfamilyorcalibration",
+      "Old Bphysicalpoint is derivedfrompinnedpreviouslyvalidatedexactsource,not newly revalidated by this checker",
+      "No optimizerbenefit,full-law/tailclaim,otherarchitecture,7+1/6+2/5+3,genuineorder8,allclassicalmodels,heldout,QPUorpaperchange",
+      "Any first mismatch/time/resource/output failure stays CHECK_FAILED/inconclusive,with retained evidence and no automatic retry,newprecision,alternatealgorithmorcapincrease"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P53d_independent_check.py",
+    "research/P53d_independent_check_contract.md",
+    "research/P53d_independent_check_execution_contract.json",
+    "research/P53d_independent_guards_contract.json",
+    "tests/test_p53d_independent_check.py",
+    "experiments/P53d_all_b4_phases/run_001/data/certificate.json.gz",
+    "experiments/P53d_all_b4_phases/run_001/manifest.json",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+    "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+    "research/P53d_fixed_w_all_phase.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53c_same_phase_controls.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic synthetic guards;noRNG,archivephysicaldataorMC"
+  },
+  "resource_note": "Code-only until ROOTfullreview/exclusivequalification; mainseparateauthorization. CPU20/wall30/thread1/log4MiB/scientific4MiB/planned64MiBscientificworkspace,not hardDarwinRSS/affinity. TWO explicitly typed einsums avoid565M-termnaive3operandcontraction. No runtimecalibration,newphaseorLP. Immutablearchivessequentiallyreadwithcaps; preservefirstfailure/no retry.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p53d_independent_check.py",
+    "--junitxml=research/P53d_independent_guards/run_001/junit.xml"
+  ]
+}
