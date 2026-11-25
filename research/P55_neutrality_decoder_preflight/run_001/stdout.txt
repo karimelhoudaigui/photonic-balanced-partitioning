@@ -1,0 +1,3 @@
+.............................                                            [100%]
+- generated xml file: /Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/encoding/research/P55_neutrality_decoder_preflight/run_001/junit.xml -
+29 passed in 0.31s
