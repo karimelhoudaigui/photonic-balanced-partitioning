@@ -1,11 +1,14 @@
 # P55 independent recorded-data checker: static preparation contract
 
-Status: **NOT EXECUTABLE YET**. The plan is frozen in6a5db45 before reading
-the MAIN outcome. This source preparation is also made without opening any
-P55 MAIN output. No actual input manifest, data pins or execution slot has
-yet been supplied. Those must be frozen in a following explicit contract
-revision before one run; this document is not authorization to improvise
-input hashes or run while the primary owns the worker.
+Status: **FROZEN FOR ROOT REVIEW; NOT EXECUTED**. The plan was frozen
+in6a5db45 and checker first committed in3f6ebc6 before opening any P55 MAIN
+output or learning its outcome. ROOT subsequently supplied the sealed
+commit8049fa37a872442242613ad54562c09bb75ab6a5. Its run directory was
+extracted byte-identically with `git archive`, and hashes computed without
+opening the raw, summary, selection, contexts, failure or stdout. Subsequent
+static changes assert the declared NumPy/NetworkX versions, universal zero
+QPU/positive flags and consistency of the duplicated selection clocks.
+No execution slot has been granted; no import or recalculation occurred.
 
 Entrypoint: `research/P55_independent_raw_checker.py`, no primary/helper
 imports. The checker expands sparse prefix generating polynomials and
@@ -13,10 +16,12 @@ inverts the saved rank independently of the dense production DP/unranking.
 It replays only the fixed graph/group recipes with pinned NumPy/NetworkX;
 all observation, cut, selection, clock and status checks use stdlib.
 
-Required data closure, when supplied: primary `raw.jsonl.gz`, `summary.json`,
-`failure.json`, both available context files, and `selection.json` if
-present. The sealed primary runner manifest must also be retained as
-provenance, with its exact hash, not treated as a mathematical oracle.
+Actual data closure: primary `raw.jsonl.gz`, `summary.json`, `failure.json`,
+both context files and `selection.json`. All six outputs exist, but their
+meaning/outcome remains unread at freeze. Their hashes are listed in
+`research/P55_raw_audit_pins.json`. The sibling primary runner manifest
+SHA256 is `2d14cd05fe14a8ab3136e6063ac3bbe74e3cbbc156d02def9cae8b383248d5ed`;
+it is retained as provenance, not treated as a mathematical oracle.
 A JSON dictionary maps every consumed data-relative filename to its
 SHA256; the checker verifies all entries before checking mathematics.
 Absent files after a failed primary are not fabricated. The actual
@@ -26,7 +31,7 @@ including checker, frozen plan, this contract and the pins dictionary.
 Planned command, with actual paths filled and frozen before execution:
 
 ```text
-/private/tmp/pbp-clean-venv-20261124/bin/python research/P55_independent_raw_checker.py --input <sealed-copy-data> --pins <frozen-pins.json> --output experiments/P55_independent_raw_audit/run_001/data
+/private/tmp/pbp-clean-venv-20261124/bin/python research/P55_independent_raw_checker.py --input experiments/P55_finite_neutrality/run_001/data --pins research/P55_raw_audit_pins.json --output experiments/P55_independent_raw_audit/run_001/data
 ```
 
 One fresh run via Mathbox runner v2: CPU20 seconds, wall30 seconds,
