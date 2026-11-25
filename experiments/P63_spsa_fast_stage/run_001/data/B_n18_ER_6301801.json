@@ -1,0 +1,814 @@
+{
+  "case": "n18_ER_6301801",
+  "B_paid_best": 81,
+  "B_paid_best_record": {
+    "cut": 81,
+    "subset": [
+      0,
+      3,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12,
+      16
+    ],
+    "physical_subset": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      10,
+      13,
+      16
+    ],
+    "stage": "training",
+    "step": 0,
+    "sign": "minus",
+    "trial": 0,
+    "shot": 0
+  },
+  "B_fresh_normalized_mean": "55/104",
+  "trajectory": [
+    {
+      "step": 0,
+      "theta_before": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "delta": [
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "plus_loss": "401/728",
+      "minus_loss": "363/728",
+      "gradient": [
+        "-19/182",
+        "-19/182",
+        "-19/182",
+        "19/182",
+        "19/182",
+        "-19/182",
+        "-19/182",
+        "19/182",
+        "-19/182",
+        "-19/182"
+      ],
+      "theta_after": [
+        "19/364",
+        "19/364",
+        "19/364",
+        "-19/364",
+        "-19/364",
+        "19/364",
+        "19/364",
+        "-19/364",
+        "19/364",
+        "19/364"
+      ],
+      "compute": {
+        "wall_seconds": 0.00010900000052060932,
+        "cpu_seconds": 0.00010900000000013677
+      }
+    },
+    {
+      "step": 1,
+      "theta_before": [
+        "19/364",
+        "19/364",
+        "19/364",
+        "-19/364",
+        "-19/364",
+        "19/364",
+        "19/364",
+        "-19/364",
+        "19/364",
+        "19/364"
+      ],
+      "delta": [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "plus_loss": "407/728",
+      "minus_loss": "187/364",
+      "gradient": [
+        "-33/364",
+        "33/364",
+        "33/364",
+        "33/364",
+        "-33/364",
+        "-33/364",
+        "33/364",
+        "33/364",
+        "33/364",
+        "33/364"
+      ],
+      "theta_after": [
+        "71/728",
+        "5/728",
+        "5/728",
+        "-71/728",
+        "-5/728",
+        "71/728",
+        "5/728",
+        "-71/728",
+        "5/728",
+        "5/728"
+      ],
+      "compute": {
+        "wall_seconds": 0.00010270900020259432,
+        "cpu_seconds": 0.0001020000000000465
+      }
+    },
+    {
+      "step": 2,
+      "theta_before": [
+        "71/728",
+        "5/728",
+        "5/728",
+        "-71/728",
+        "-5/728",
+        "71/728",
+        "5/728",
+        "-71/728",
+        "5/728",
+        "5/728"
+      ],
+      "delta": [
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "plus_loss": "54/91",
+      "minus_loss": "393/728",
+      "gradient": [
+        "-3/28",
+        "-3/28",
+        "-3/28",
+        "3/28",
+        "-3/28",
+        "-3/28",
+        "-3/28",
+        "-3/28",
+        "3/28",
+        "3/28"
+      ],
+      "theta_after": [
+        "55/364",
+        "11/182",
+        "11/182",
+        "-55/364",
+        "17/364",
+        "55/364",
+        "11/182",
+        "-4/91",
+        "-17/364",
+        "-17/364"
+      ],
+      "compute": {
+        "wall_seconds": 9.820800005400088e-05,
+        "cpu_seconds": 9.799999999993148e-05
+      }
+    }
+  ],
+  "theta_final": [
+    "55/364",
+    "11/182",
+    "11/182",
+    "-55/364",
+    "17/364",
+    "55/364",
+    "11/182",
+    "-4/91",
+    "-17/364",
+    "-17/364"
+  ],
+  "records": [
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "training",
+      "step": 0,
+      "sign": "plus",
+      "trial": 0,
+      "theta": [
+        "-1/4",
+        "-1/4",
+        "-1/4",
+        "1/4",
+        "1/4",
+        "-1/4",
+        "-1/4",
+        "1/4",
+        "-1/4",
+        "-1/4"
+      ],
+      "network_id": 0,
+      "seed_roles": {
+        "master": 1862341999,
+        "observation": 920414302,
+        "priority/0": 2090794353,
+        "priority/1": 3213677792,
+        "priority/2": 1951082717,
+        "priority/3": 2995414436
+      },
+      "proposals": 4,
+      "cuts": [
+        96,
+        106,
+        98,
+        101
+      ],
+      "normalized_mean": "401/728",
+      "setup": {
+        "wall_seconds": 0.0033680840006127255,
+        "cpu_seconds": 0.0013620000000000854
+      },
+      "factory_total": {
+        "wall_seconds": 0.0010039579992735526,
+        "cpu_seconds": 0.00037599999999993194
+      },
+      "setup_accounting": {
+        "classical_wall": 0.0002045010005531367,
+        "total_setup_cpu": 0.0013620000000000854,
+        "factory_total_cpu": 0.00037599999999993194,
+        "backend_wall": 0.0009802500007936032,
+        "diagnostic_wall": 0.0021833329992659856,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.17324812500010012,
+        "cpu_seconds": 0.17125900000000005
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.0022859169985167682,
+        "cpu_seconds": 0.0009099999999999664
+      },
+      "postprocessing": {
+        "wall_seconds": 0.0002602079985081218,
+        "cpu_seconds": 0.000260000000000149
+      },
+      "aggregation": {
+        "wall_seconds": 8.916998922359198e-06,
+        "cpu_seconds": 9.000000000147779e-06
+      }
+    },
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "training",
+      "step": 0,
+      "sign": "minus",
+      "trial": 0,
+      "theta": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "-1/4",
+        "-1/4",
+        "1/4",
+        "1/4",
+        "-1/4",
+        "1/4",
+        "1/4"
+      ],
+      "network_id": 1,
+      "seed_roles": {
+        "master": 2226620966,
+        "observation": 2201506012,
+        "priority/0": 103956080,
+        "priority/1": 1105343167,
+        "priority/2": 4076483292,
+        "priority/3": 2627053205
+      },
+      "proposals": 4,
+      "cuts": [
+        81,
+        88,
+        93,
+        101
+      ],
+      "normalized_mean": "363/728",
+      "setup": {
+        "wall_seconds": 0.0004301250010030344,
+        "cpu_seconds": 0.00043099999999984817
+      },
+      "factory_total": {
+        "wall_seconds": 0.0001440840005670907,
+        "cpu_seconds": 0.00014399999999992197
+      },
+      "setup_accounting": {
+        "classical_wall": 0.00019283300207462162,
+        "total_setup_cpu": 0.00043099999999984817,
+        "factory_total_cpu": 0.00014399999999992197,
+        "backend_wall": 0.00012649999916902743,
+        "diagnostic_wall": 0.00011079199975938536,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.16778854100084573,
+        "cpu_seconds": 0.1677689999999996
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.0001960420013347175,
+        "cpu_seconds": 0.00019700000000022477
+      },
+      "postprocessing": {
+        "wall_seconds": 0.00016724900342524052,
+        "cpu_seconds": 0.0001660000000001105
+      },
+      "aggregation": {
+        "wall_seconds": 8.75000114319846e-06,
+        "cpu_seconds": 8.999999999925734e-06
+      }
+    },
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "training",
+      "step": 1,
+      "sign": "plus",
+      "trial": 0,
+      "theta": [
+        "-18/91",
+        "55/182",
+        "55/182",
+        "18/91",
+        "-55/182",
+        "-18/91",
+        "55/182",
+        "18/91",
+        "55/182",
+        "55/182"
+      ],
+      "network_id": 2,
+      "seed_roles": {
+        "master": 3176587467,
+        "observation": 2607487721,
+        "priority/0": 4164959389,
+        "priority/1": 3359036471,
+        "priority/2": 3989254320,
+        "priority/3": 1234517198
+      },
+      "proposals": 4,
+      "cuts": [
+        113,
+        96,
+        99,
+        99
+      ],
+      "normalized_mean": "407/728",
+      "setup": {
+        "wall_seconds": 0.00042624999878171366,
+        "cpu_seconds": 0.0004269999999999552
+      },
+      "factory_total": {
+        "wall_seconds": 0.0001685839997662697,
+        "cpu_seconds": 0.00016800000000016801
+      },
+      "setup_accounting": {
+        "classical_wall": 0.00018141699911211617,
+        "total_setup_cpu": 0.0004269999999999552,
+        "factory_total_cpu": 0.00016800000000016801,
+        "backend_wall": 0.0001523749997431878,
+        "diagnostic_wall": 9.245799992640968e-05,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.169951668000067,
+        "cpu_seconds": 0.16994999999999982
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.00016954100101429503,
+        "cpu_seconds": 0.00016999999999978144
+      },
+      "postprocessing": {
+        "wall_seconds": 0.00015841599815757945,
+        "cpu_seconds": 0.00015999999999971593
+      },
+      "aggregation": {
+        "wall_seconds": 6.50000038149301e-06,
+        "cpu_seconds": 6.999999999868223e-06
+      }
+    },
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "training",
+      "step": 1,
+      "sign": "minus",
+      "trial": 0,
+      "theta": [
+        "55/182",
+        "-18/91",
+        "-18/91",
+        "-55/182",
+        "18/91",
+        "55/182",
+        "-18/91",
+        "-55/182",
+        "-18/91",
+        "-18/91"
+      ],
+      "network_id": 3,
+      "seed_roles": {
+        "master": 4066466261,
+        "observation": 1257309316,
+        "priority/0": 3402855969,
+        "priority/1": 2518905639,
+        "priority/2": 3707731822,
+        "priority/3": 2182632755
+      },
+      "proposals": 4,
+      "cuts": [
+        96,
+        93,
+        83,
+        102
+      ],
+      "normalized_mean": "187/364",
+      "setup": {
+        "wall_seconds": 0.0004166670005361084,
+        "cpu_seconds": 0.0004179999999998074
+      },
+      "factory_total": {
+        "wall_seconds": 0.0001579590007168008,
+        "cpu_seconds": 0.0001580000000001025
+      },
+      "setup_accounting": {
+        "classical_wall": 0.0001822499998525018,
+        "total_setup_cpu": 0.0004179999999998074,
+        "factory_total_cpu": 0.0001580000000001025,
+        "backend_wall": 0.00014208399989001919,
+        "diagnostic_wall": 9.233300079358742e-05,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.1688261670005886,
+        "cpu_seconds": 0.16882700000000006
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.00015908199929981492,
+        "cpu_seconds": 0.00015700000000018477
+      },
+      "postprocessing": {
+        "wall_seconds": 0.00014008400103193708,
+        "cpu_seconds": 0.0001410000000003908
+      },
+      "aggregation": {
+        "wall_seconds": 6.666999979643151e-06,
+        "cpu_seconds": 7.000000000090267e-06
+      }
+    },
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "training",
+      "step": 2,
+      "sign": "plus",
+      "trial": 0,
+      "theta": [
+        "-111/728",
+        "-177/728",
+        "-177/728",
+        "111/728",
+        "-187/728",
+        "-111/728",
+        "-177/728",
+        "-253/728",
+        "187/728",
+        "187/728"
+      ],
+      "network_id": 4,
+      "seed_roles": {
+        "master": 3499596128,
+        "observation": 873352901,
+        "priority/0": 2259155922,
+        "priority/1": 3559482995,
+        "priority/2": 2700059543,
+        "priority/3": 3769184069
+      },
+      "proposals": 4,
+      "cuts": [
+        109,
+        126,
+        102,
+        95
+      ],
+      "normalized_mean": "54/91",
+      "setup": {
+        "wall_seconds": 0.00040187500053434633,
+        "cpu_seconds": 0.0004029999999999312
+      },
+      "factory_total": {
+        "wall_seconds": 0.0001446249989385251,
+        "cpu_seconds": 0.00014500000000006175
+      },
+      "setup_accounting": {
+        "classical_wall": 0.0001786680004443042,
+        "total_setup_cpu": 0.0004029999999999312,
+        "factory_total_cpu": 0.00014500000000006175,
+        "backend_wall": 0.00013066599967714865,
+        "diagnostic_wall": 9.254100041289348e-05,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.1695167500001844,
+        "cpu_seconds": 0.16951700000000014
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.0001530820009065792,
+        "cpu_seconds": 0.00015200000000037406
+      },
+      "postprocessing": {
+        "wall_seconds": 0.000118334000944742,
+        "cpu_seconds": 0.00011999999999967592
+      },
+      "aggregation": {
+        "wall_seconds": 4.541001544566825e-06,
+        "cpu_seconds": 4.000000000115023e-06
+      }
+    },
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "training",
+      "step": 2,
+      "sign": "minus",
+      "trial": 0,
+      "theta": [
+        "253/728",
+        "187/728",
+        "187/728",
+        "-253/728",
+        "177/728",
+        "253/728",
+        "187/728",
+        "111/728",
+        "-177/728",
+        "-177/728"
+      ],
+      "network_id": 5,
+      "seed_roles": {
+        "master": 1947516303,
+        "observation": 1911280742,
+        "priority/0": 1692233379,
+        "priority/1": 876837489,
+        "priority/2": 4088950809,
+        "priority/3": 2538963139
+      },
+      "proposals": 4,
+      "cuts": [
+        99,
+        84,
+        102,
+        108
+      ],
+      "normalized_mean": "393/728",
+      "setup": {
+        "wall_seconds": 0.0003507090004859492,
+        "cpu_seconds": 0.00035100000000021225
+      },
+      "factory_total": {
+        "wall_seconds": 0.00011575000098673627,
+        "cpu_seconds": 0.00011600000000022703
+      },
+      "setup_accounting": {
+        "classical_wall": 0.00017250100063392892,
+        "total_setup_cpu": 0.00035100000000021225,
+        "factory_total_cpu": 0.00011600000000022703,
+        "backend_wall": 0.00010333299906051252,
+        "diagnostic_wall": 7.487500079150777e-05,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.1683030410003994,
+        "cpu_seconds": 0.1683030000000003
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.00013529200077755377,
+        "cpu_seconds": 0.00013600000000080215
+      },
+      "postprocessing": {
+        "wall_seconds": 0.00011770699893531855,
+        "cpu_seconds": 0.00011999999999989797
+      },
+      "aggregation": {
+        "wall_seconds": 5.917001544730738e-06,
+        "cpu_seconds": 5.999999999950489e-06
+      }
+    },
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "evaluation",
+      "step": 3,
+      "sign": "final",
+      "trial": 0,
+      "theta": [
+        "55/364",
+        "11/182",
+        "11/182",
+        "-55/364",
+        "17/364",
+        "55/364",
+        "11/182",
+        "-4/91",
+        "-17/364",
+        "-17/364"
+      ],
+      "network_id": 6,
+      "seed_roles": {
+        "master": 364580705,
+        "observation": 3208172405,
+        "priority/0": 2083930357,
+        "priority/1": 1615164440,
+        "priority/2": 3105292780,
+        "priority/3": 2754128559,
+        "priority/4": 678805200,
+        "priority/5": 447342766,
+        "priority/6": 1159093824,
+        "priority/7": 2384470729
+      },
+      "proposals": 8,
+      "cuts": [
+        114,
+        90,
+        93,
+        95,
+        101,
+        97,
+        96,
+        85
+      ],
+      "normalized_mean": "771/1456",
+      "setup": {
+        "wall_seconds": 0.00036162600008537993,
+        "cpu_seconds": 0.00036199999999997345
+      },
+      "factory_total": {
+        "wall_seconds": 0.00011533399992913473,
+        "cpu_seconds": 0.00011500000000008725
+      },
+      "setup_accounting": {
+        "classical_wall": 0.00017400099932274316,
+        "total_setup_cpu": 0.00036199999999997345,
+        "factory_total_cpu": 0.00011500000000008725,
+        "backend_wall": 0.00010262500109092798,
+        "diagnostic_wall": 8.499999967170879e-05,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.3321560860022146,
+        "cpu_seconds": 0.33215800000000106
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.00019795799744315445,
+        "cpu_seconds": 0.00020100000000011775
+      },
+      "postprocessing": {
+        "wall_seconds": 0.00021412400565168355,
+        "cpu_seconds": 0.00021599999999954989
+      },
+      "aggregation": {
+        "wall_seconds": 5.083000360173173e-06,
+        "cpu_seconds": 4.999999999810711e-06
+      }
+    },
+    {
+      "case": "n18_ER_6301801",
+      "arm": "bosonic",
+      "stage": "evaluation",
+      "step": 3,
+      "sign": "final",
+      "trial": 1,
+      "theta": [
+        "55/364",
+        "11/182",
+        "11/182",
+        "-55/364",
+        "17/364",
+        "55/364",
+        "11/182",
+        "-4/91",
+        "-17/364",
+        "-17/364"
+      ],
+      "network_id": 6,
+      "seed_roles": {
+        "master": 3713040924,
+        "observation": 2351058019,
+        "priority/0": 2566338215,
+        "priority/1": 2900461175,
+        "priority/2": 2001231576,
+        "priority/3": 3449780497,
+        "priority/4": 839755043,
+        "priority/5": 1739063121,
+        "priority/6": 4088452318,
+        "priority/7": 1013769343
+      },
+      "proposals": 8,
+      "cuts": [
+        90,
+        101,
+        100,
+        90,
+        100,
+        105,
+        92,
+        91
+      ],
+      "normalized_mean": "769/1456",
+      "setup": {
+        "wall_seconds": 0.00015258299936249387,
+        "cpu_seconds": 0.00015199999999948588
+      },
+      "factory_total": {
+        "wall_seconds": 0.00011683299999276642,
+        "cpu_seconds": 0.00011699999999992272
+      },
+      "setup_accounting": {
+        "classical_wall": 4.7124000047915615e-05,
+        "total_setup_cpu": 0.00015199999999948588,
+        "factory_total_cpu": 0.00011699999999992272,
+        "backend_wall": 0.00010545899931457825,
+        "diagnostic_wall": 0.0,
+        "backend_cpu": null,
+        "classical_cpu": null,
+        "CPU_split_available": false
+      },
+      "count_generation": {
+        "wall_seconds": 0.33872245700149506,
+        "cpu_seconds": 0.33870100000000036
+      },
+      "physics_diagnostics": {
+        "wall_seconds": 0.00014712499796587508,
+        "cpu_seconds": 0.00014700000000056335
+      },
+      "postprocessing": {
+        "wall_seconds": 0.0002836250041582389,
+        "cpu_seconds": 0.0002880000000016203
+      },
+      "aggregation": {
+        "wall_seconds": 6.2080016505206e-06,
+        "cpu_seconds": 5.999999999950489e-06
+      }
+    }
+  ],
+  "completed_shots": 40,
+  "FAST": {},
+  "B_classical_wall": 0.0049416885176469805,
+  "final_aggregation": {
+    "wall_seconds": 9.249999493476935e-06,
+    "cpu_seconds": 8.999999999925734e-06
+  },
+  "B_global_mean_aggregation_share": 3.208499947504606e-06
+}
