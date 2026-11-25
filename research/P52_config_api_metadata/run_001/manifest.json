@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "claim_id": "P52-EXQALIBUR-CONFIG-READONLY-METADATA",
+  "repository": {
+    "commit": "7286e9ed57a5f4c897ed50d2b738c9fd3bc6e69e",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P52_config_api_metadata.py",
+    "--output",
+    "research/P52_config_api_metadata/run_001/data/api.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "No mathematical computation: read Config class documentation/dir and only thread/cpu member descriptors for an official prospective setter/readback interface.",
+    "coefficient_domain": "none; JSON metadata strings only",
+    "conventions": "Import exqalibur only; no Config instance, setter, getter, permanent, Fock or Perceval call; no scientific arrays, sampling or QPU.",
+    "inputs": [
+      "Installed exqalibur1.4.2 class metadata; actual binary hashes recorded"
+    ],
+    "bounds": {
+      "CPU_seconds": 5,
+      "wall_seconds": 10,
+      "threads_requested": 1,
+      "max_new_output_bytes": 1048576
+    },
+    "non_claims": [
+      "Class documentation does not qualify a setter/readback",
+      "No native thread limit established; no production run"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": []
+  },
+  "run": {
+    "started_at": "2026-11-25T11:39:35.632052+00:00",
+    "runtime_seconds": 0.131706,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 10.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 5,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P52_config_api_metadata.py",
+    "research/P52_config_api_metadata_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P52_config_api_metadata.py",
+      "sha256": "bb303d906e8255acbc5959f2a118a2aea8ca1ceac652a64df86564c17f80c355",
+      "sha256_after": "bb303d906e8255acbc5959f2a118a2aea8ca1ceac652a64df86564c17f80c355"
+    },
+    {
+      "path": "research/P52_config_api_metadata_contract.json",
+      "sha256": "434e46e283235fd0759fb088554ad5ba3a26f3d816e7abee3c61779bf3273f18",
+      "sha256_after": "434e46e283235fd0759fb088554ad5ba3a26f3d816e7abee3c61779bf3273f18"
+    }
+  ],
+  "output_directory": "research/P52_config_api_metadata/run_001",
+  "declared_results": [
+    "research/P52_config_api_metadata/run_001/data/api.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P52_config_api_metadata/run_001/stdout.txt",
+      "sha256": "8d382d3501ce5c5aa6264067da50d1866e1cbc8b7a1f784552a9d45892e17392",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_config_api_metadata/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_config_api_metadata/run_001/data/api.json",
+      "sha256": "8d382d3501ce5c5aa6264067da50d1866e1cbc8b7a1f784552a9d45892e17392",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
