@@ -1,0 +1,102 @@
+{
+  "claim_id": "P47-DIRECTED-BULK-PIT-DEV-VETO",
+  "mathematics": {
+    "assertion_tested": "On four new DEV graphs at prime K13/17, test a finite cost-directed real polar step for the shared routing proxy, followed by all-count randomized marginal PIT/identical completion, against independently selected D, small species, Gaussian, IID, conditional phase and four strong feasible searches. Positive acceptance forbidden.",
+    "coefficient_domain": "Complex128/float64 passive network; Decimal80 marginal coefficient arithmetic on numerical probabilities; integer weighted graph cuts; independently calibrated empirical phase PMFs",
+    "conventions": "Ideal eta1; K source photons and K vacuum modes; Delta inside rows/outside columns, C=JDeltaJ/opnorm, G=C*F elementwise, W=polar(F-epsilon G), epsilon=1/(4 max(opnormG,maxabsC)) for guided1, else0; p=.25/.5; q=ceil(K/2), lambda0/1; Cref credits every scored frontend discovery; no oracle, filtering, heldout or hardware.",
+    "inputs": [
+      "P47_directed_pit_spec.json fixed n26/34 weighted ER/RR seeds4702601,4702602,4703401,4703402",
+      "Six models with independent DEV selection over8 settings;2 trials*4 draws per setting/graph",
+      "4096 independent global unconditional phase-calibration draws per network, analytic old Bernoulli PMF",
+      "Four feasible baselines with3200/5536 actual queries per graph/trial and observed time prefixes"
+    ],
+    "bounds": {
+      "graphs": 4,
+      "networks_per_graph": 4,
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "B_attempts": 256,
+      "proposals_per_other_primary_model": 256,
+      "phase_calibration_draws": 65536,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "Certified direction of a classically solvable assignment proxy is not an optical optimization advantage",
+      "No accepted positive, quantum advantage, novelty, heldout or QPU gate",
+      "PIT does not match arbitrary bivariate copulas; numerical PMFs are not interval-certified",
+      "Phase calibration is approximate; DKW and TV marginal bounds do not certify a joint copula",
+      "No hardware loss/throughput/preparation validation; observed simulator time is not QPU latency",
+      "A completed runner is not a physics or optimization proof",
+      "Resource truncation or implementation failure is inconclusive and retained"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P47_directed_pit_probe.py",
+    "research/P47_directed_pit_spec.json",
+    "research/P47_directed_pit_contract.md",
+    "research/P47_directed_pit_execution_contract.json",
+    "tests/test_p47_directed_pit.py",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "research/P46_bulk_pit_contract.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "NumPy PCG64, seeded networkx and serial exqalibur; role-separated SHA256 first4bytes little-endian; separate calibration, optical counts, phase components, jitters and continuous fields",
+    "seed": [
+      4702601,
+      4702602,
+      4703401,
+      4703402,
+      471010,
+      471020,
+      471030,
+      471040,
+      471050,
+      471060,
+      471100,
+      471200
+    ]
+  },
+  "resource_note": "Execution requires coordinator's single numerical slot and targeted preflight PASS. Bounded runner enforces1 thread/CPU60/wall90/log32MiB; script checks scientific output32MiB after every graph and before accepting summary, planned arrays256MiB. No Darwin affinity/memory hardcap assumed. No automatic retries or overwritten outputs.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P47_directed_pit_probe.py",
+    "--spec",
+    "research/P47_directed_pit_spec.json",
+    "--output",
+    "experiments/P47_directed_pit/run_001/data"
+  ]
+}

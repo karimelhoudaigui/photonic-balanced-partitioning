@@ -1,0 +1,96 @@
+{
+  "phase": "P47_DIRECTED_BULK_PIT_DEV_VETO",
+  "positive_acceptance_allowed": false,
+  "ideal_transmission_eta": 1.0,
+  "cases": [
+    {
+      "id": "n26_ER_4702601",
+      "m": 26,
+      "k": 13,
+      "family": "ER",
+      "seed": 4702601
+    },
+    {
+      "id": "n26_RR_4702602",
+      "m": 26,
+      "k": 13,
+      "family": "RR",
+      "seed": 4702602
+    },
+    {
+      "id": "n34_ER_4703401",
+      "m": 34,
+      "k": 17,
+      "family": "ER",
+      "seed": 4703401
+    },
+    {
+      "id": "n34_RR_4703402",
+      "m": 34,
+      "k": 17,
+      "family": "RR",
+      "seed": 4703402
+    }
+  ],
+  "models": [
+    "bosonic",
+    "distinguishable",
+    "species4",
+    "gaussian_Bcov",
+    "iid_uniform",
+    "conditional_phase"
+  ],
+  "baseline_models": [
+    "anneal",
+    "spectral_swap",
+    "KL_collective",
+    "block_matching"
+  ],
+  "decoder_lambda": [
+    0,
+    1
+  ],
+  "decoder_q": "ceil(k/2)",
+  "trial_seeds": [
+    0,
+    1
+  ],
+  "draws_per_tuple": 4,
+  "anchor_max_scans": 8,
+  "phase_calibration_samples": 4096,
+  "phase_DKW_failure_per_mode": 0.0001838235294117647,
+  "seed_namespaces": {
+    "anchor": 471010,
+    "inside_order": 471020,
+    "outside_order": 471030,
+    "vertex_priority": 471040,
+    "species_order": 471050,
+    "phase_calibration": 471060,
+    "production": 471100,
+    "feasible_baselines": 471200
+  },
+  "maximum_planned_arrays_bytes": 268435456,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_new_output_bytes": 33554432,
+  "outcomes": "All settings and all failed or negative outcomes retained; resource truncation inconclusive; no automatic retry or graph substitution",
+  "network_grid_p_guided": [
+    [
+      0.25,
+      0
+    ],
+    [
+      0.25,
+      1
+    ],
+    [
+      0.5,
+      0
+    ],
+    [
+      0.5,
+      1
+    ]
+  ]
+}
