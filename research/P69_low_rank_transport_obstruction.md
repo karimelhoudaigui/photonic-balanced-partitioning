@@ -245,8 +245,9 @@ reachable from the L/L source. This proves the exact finite statement.
 
 Apply the bound to the P66 original or connected four-clique family, whose
 four bad whole-clique states have L distinct occupied vertices per block.
-The only better feasible states are the two full-block targets, while all
-other states cost at least C_bad+g, g=2M(L-1)-2Lh>0.
+The only better feasible states are the two full-block targets. Every feasible
+subset outside those targets and the four bad states costs at least
+C_bad+g, g=2M(L-1)-2Lh>0; the other bad states have equal cost.
 
 If every realized unitary has cross rank at most r, the bound is uniform
 after every still-bad history, including arbitrary marked outcomes, labels,
