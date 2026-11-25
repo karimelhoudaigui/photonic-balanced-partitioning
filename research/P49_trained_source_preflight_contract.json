@@ -1,0 +1,93 @@
+{
+  "claim_id": "P49-PHYSICS-CALLER-RESOURCE-PREFLIGHT",
+  "mathematics": {
+    "assertion_tested": "27 new finite fixtures for source-unitary/HOM complex coherence, q-dependent recomputation and mask, gauge/relabel, exact ALL-shot/equal-graph Fraction loss/ties, fresh evaluation isolation, nonredundant allocations/contiguous groups, separated clocks, paid private incumbents and correct FAST deadline/rank/allowance; rerun15 independently qualified FAST tests.",
+    "coefficient_domain": "Complex128/float64 passive matrices, immutable Decimal80/Fraction marginal helpers; integer cuts, exact Fraction objective/selection; observed wall/CPU deadlines",
+    "conventions": "Four source bases and lambda0/1; model-specific nonredundant sphere/IID grids; contiguous b4; shared Cref frozen before training;128 train+128 fresh eval per arm; loss uses ALL balanced cuts/total weight, equal four-graph mean; no optimum/mask/filter/heldout/QPU. FAST gets CPU from measured B classical wall, optical latency0, only deadline-eligible prefix.",
+    "inputs": [
+      "tests/test_p49_trained_source.py explicit small graphs/isometries and mocks; no DEV graph generation",
+      "theta/phi identity and complex HOMphi.37 fixtures, Rprime-size matrix invariants",
+      "tests/test_p49_fast_classical.py 15 independent incremental-cut/deadline fixtures"
+    ],
+    "bounds": {
+      "planned_tests": 42,
+      "maximum_full_fock_photons": 3,
+      "maximum_full_fock_modes": 6,
+      "maximum_rotation_modes": 17,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No DEV objective result, statistical positive or sampler certification from one local sample",
+      "Mocks test cost/selection isolation, not benchmark timings",
+      "No full-suite integration gate claimed by targeted preflight alone"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P49_trained_source_probe.py",
+    "research/P49_trained_source_spec.json",
+    "research/P49_trained_source_contract.md",
+    "research/P49_trained_source_execution_contract.json",
+    "research/P49_trained_source_preflight_contract.json",
+    "tests/test_p49_trained_source.py",
+    "research/P49_fast_classical.py",
+    "tests/test_p49_fast_classical.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Fixed fixture seeds; FAST fixed tests; no actual DEV generation",
+    "seed": [
+      490080,
+      490081,
+      490082
+    ]
+  },
+  "resource_note": "One exclusive numerical worker after physics/caller review and PASS preflight. Actual runner CPU60/wall90/thread1/log32MiB; script output cap32MiB. Four marginal contexts/FAST projected within caps before outcomes. No imports/tests/DEV before source+contracts frozen and coordinator slot.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p49_trained_source.py",
+    "tests/test_p49_fast_classical.py",
+    "--junitxml=research/P49_trained_source_preflight/run_001/junit.xml"
+  ]
+}

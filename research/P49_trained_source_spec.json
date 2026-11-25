@@ -1,0 +1,390 @@
+{
+  "phase": "P49_TRAINED_SPECTRAL_SOURCE_DEV",
+  "positive_acceptance_allowed": false,
+  "ideal_transmission_eta": 1.0,
+  "cases": [
+    {
+      "id": "n26_ER_4902601",
+      "m": 26,
+      "k": 13,
+      "r": 13,
+      "family": "ER",
+      "seed": 4902601
+    },
+    {
+      "id": "n26_RR_4902602",
+      "m": 26,
+      "k": 13,
+      "r": 13,
+      "family": "RR",
+      "seed": 4902602
+    },
+    {
+      "id": "n34_ER_4903401",
+      "m": 34,
+      "k": 17,
+      "r": 17,
+      "family": "ER",
+      "seed": 4903401
+    },
+    {
+      "id": "n34_RR_4903402",
+      "m": 34,
+      "k": 17,
+      "r": 17,
+      "family": "RR",
+      "seed": 4903402
+    }
+  ],
+  "models": [
+    "bosonic",
+    "distinguishable",
+    "species4",
+    "gaussian_Bcov",
+    "continuous_phase",
+    "spherical_coherent",
+    "iid_uniform"
+  ],
+  "bases": [
+    "Fourier_blind",
+    "spectral_E",
+    "spectral_R_phi0",
+    "spectral_R_phi90"
+  ],
+  "legacy_baselines": [
+    "anneal",
+    "spectral_swap",
+    "KL_collective",
+    "block_matching",
+    "spectral_coherent_rounding"
+  ],
+  "policy_grids": {
+    "bosonic": [
+      {
+        "id": 0,
+        "basis": 0,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "basis": 1,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "basis": 1,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "basis": 2,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "basis": 2,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 6,
+        "basis": 3,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 7,
+        "basis": 3,
+        "lambda": 1,
+        "training_draws": 4
+      }
+    ],
+    "distinguishable": [
+      {
+        "id": 0,
+        "basis": 0,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "basis": 1,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "basis": 1,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "basis": 2,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "basis": 2,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 6,
+        "basis": 3,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 7,
+        "basis": 3,
+        "lambda": 1,
+        "training_draws": 4
+      }
+    ],
+    "species4": [
+      {
+        "id": 0,
+        "basis": 0,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "basis": 1,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "basis": 1,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "basis": 2,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "basis": 2,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 6,
+        "basis": 3,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 7,
+        "basis": 3,
+        "lambda": 1,
+        "training_draws": 4
+      }
+    ],
+    "gaussian_Bcov": [
+      {
+        "id": 0,
+        "basis": 0,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "basis": 1,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "basis": 1,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "basis": 2,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "basis": 2,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 6,
+        "basis": 3,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 7,
+        "basis": 3,
+        "lambda": 1,
+        "training_draws": 4
+      }
+    ],
+    "continuous_phase": [
+      {
+        "id": 0,
+        "basis": 0,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "basis": 1,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "basis": 1,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "basis": 2,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "basis": 2,
+        "lambda": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 6,
+        "basis": 3,
+        "lambda": 0,
+        "training_draws": 4
+      },
+      {
+        "id": 7,
+        "basis": 3,
+        "lambda": 1,
+        "training_draws": 4
+      }
+    ],
+    "spherical_coherent": [
+      {
+        "id": 0,
+        "basis": 0,
+        "lambda": 0,
+        "training_draws": 8
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "lambda": 1,
+        "training_draws": 8
+      },
+      {
+        "id": 2,
+        "basis": 1,
+        "lambda": 0,
+        "training_draws": 8
+      },
+      {
+        "id": 3,
+        "basis": 1,
+        "lambda": 1,
+        "training_draws": 8
+      }
+    ],
+    "iid_uniform": [
+      {
+        "id": 0,
+        "basis": null,
+        "lambda": 0,
+        "training_draws": 16
+      },
+      {
+        "id": 1,
+        "basis": null,
+        "lambda": 1,
+        "training_draws": 16
+      }
+    ]
+  },
+  "anchor_max_scans": 8,
+  "gap_tolerance": 1e-12,
+  "residual_tolerance": 3e-12,
+  "marker_coefficient": 0.001,
+  "assignment_probability_floor": 1e-300,
+  "b4_groups": "contiguous_source_ports_at_most4",
+  "training_trial": 0,
+  "evaluation_trials": [
+    0,
+    1
+  ],
+  "evaluation_draws_per_trial": 16,
+  "legacy_trials": [
+    0,
+    1
+  ],
+  "fast_max_proposals": 100000000,
+  "FAST_cpu_from_B_classical_wall": true,
+  "FAST_optical_setup_and_count_latency_grant": 0.0,
+  "FAST_wall_budget_seconds": null,
+  "seed_namespaces": {
+    "anchor": 491010,
+    "marks": 491020,
+    "fourier_vertex_order": 491030,
+    "vertex_priority": 491040,
+    "training": 491100,
+    "evaluation": 491200,
+    "legacy_baselines": 491300,
+    "FAST": 491400
+  },
+  "maximum_planned_arrays_bytes": 268435456,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_new_output_bytes": 33554432,
+  "outcomes": "All shots in loss, all graphs/data/failures retained, no evaluation reselection or successful-subpopulation acceptance",
+  "coherent_phase_law": "continuous_uniform"
+}
