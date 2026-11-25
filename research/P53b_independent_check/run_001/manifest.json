@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "claim_id": "P53B-INDEPENDENT-STDLIB-EXACT-CERTIFICATE-CHECK",
+  "repository": {
+    "commit": "018641ebfe410bc92fb974d0c333f0329be40bb0",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P53b_independent_checker.py",
+    "--output",
+    "research/P53b_independent_check/run_001/data/check.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Recompute one exact target by direct sum coefficient_j*(1/4)^j, independent of production Horner; check all71 fixed kernels, exact primal29 equalities/nonnegativity, binary rational dual/L1/all71 strict margins, nonnegative graph shift/normalized gap and winning solver-status gates, with no simultaneous exact primal/dual.",
+    "coefficient_domain": "stdlib arbitrary integers and Fraction; no NumPy/SciPy/production imports or native calls",
+    "conventions": "Posthoc, not blind: ROOT disclosed the accepted dual result before code. Source and library are independently read from byte-pinned P53 algebraic artifacts; this does not independently reconstruct their optical source. All28 coordinates/all71 vertices checked. Synthetic corruption guards only, no fresh point/LP/graph or optimization.",
+    "inputs": [
+      "P53 exact source2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0",
+      "P53 exact librarycb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "P53b sealed certificatebd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe copied byte-identically froma2cf5d9"
+    ],
+    "bounds": {
+      "CPU_seconds": 5,
+      "wall_seconds": 10,
+      "threads": 1,
+      "max_new_output_bytes": 1048576,
+      "max_inflated_input_bytes_per_file": 16777216,
+      "native_LP_calls": 0,
+      "photonic_samples": 0
+    },
+    "non_claims": [
+      "No new blind/physical source reconstruction or independent replication of optical probabilities",
+      "No fresh target, LP, continuous-b4 optimization, heldout/algorithm advantage, novelty or hardware claim",
+      "Implementation only until ROOT source review and exclusive slot; preserve failure without automatic retry"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": []
+  },
+  "run": {
+    "started_at": "2026-11-25T12:28:08.354719+00:00",
+    "runtime_seconds": 0.16657,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 10.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 5,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P53b_independent_checker.py",
+    "research/P53b_independent_checker_contract.json",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P53b_independent_checker.py",
+      "sha256": "1ffc267914f4489d2dac6f602c4aff7328543b9934f874d554703cb97b6450ac",
+      "sha256_after": "1ffc267914f4489d2dac6f602c4aff7328543b9934f874d554703cb97b6450ac"
+    },
+    {
+      "path": "research/P53b_independent_checker_contract.json",
+      "sha256": "b9d0d30141e7788446b1507ea395330a2af10a6e3bbc46b5328f2ed01702753f",
+      "sha256_after": "b9d0d30141e7788446b1507ea395330a2af10a6e3bbc46b5328f2ed01702753f"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+      "sha256": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0",
+      "sha256_after": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+      "sha256": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "sha256_after": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+      "sha256": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+      "sha256_after": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe"
+    }
+  ],
+  "output_directory": "research/P53b_independent_check/run_001",
+  "declared_results": [
+    "research/P53b_independent_check/run_001/data/check.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P53b_independent_check/run_001/stdout.txt",
+      "sha256": "5ee1f07f5b1209a5e1f12c6e9825f141594fc8d10116ee72b9afa37a0065cb4d",
+      "kind": "log"
+    },
+    {
+      "path": "research/P53b_independent_check/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P53b_independent_check/run_001/data/check.json",
+      "sha256": "f01da81d04f914bdaeac239f249b96b9dbb14cb771c0d9c84ddf8ed30b8f6116",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
