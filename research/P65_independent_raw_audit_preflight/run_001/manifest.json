@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "claim_id": "P65-INDEPENDENT-CHECKER-SYNTHETIC-FIXTURES",
+  "repository": {
+    "commit": "0d7224feeba89307b13c7be33e99db3aff9c1a19",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p65_independent_raw_audit.py",
+    "--junitxml=research/P65_independent_raw_audit_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Nine authored independent checker fixtures for integer cuts/K10 packed padding, collision self-loops, required CF coins at probability1, rejected/current and changing-current chains, exact fitness ties, spectral Cayley weighted normalization, fixed-mode/failure gate and820metadata roles",
+    "coefficient_domain": "Exact integers/Fraction, small deterministic complex128 matrices, metadata hashes only",
+    "conventions": "UNEXECUTED code-only fixtures. No P65 data or production module/native backend imported; no DEV topology/start/physical count generated. Loading only this independent checker is deferred to a separately authorized qualification.",
+    "inputs": [
+      "Nine small hardcoded fixture functions; no recorded primary outputs"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "max_new_log_bytes": 4194304,
+      "max_new_scientific_bytes": 4194304,
+      "planned_logical_workspace_bytes": 67108864,
+      "max_matrix_fixture_modes": 4,
+      "metadata_roles": 820,
+      "native_draws": 0,
+      "DEV_graphs_generated": 0,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No data audit, physical sampling verification, optimizer result, main authorization or QPU call"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic tiny fixtures and metadata SHA256; no RNG draws in fixture suite",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T20:59:21.297917+00:00",
+    "runtime_seconds": 0.827565,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P65_independent_raw_audit.py",
+    "research/P65_independent_raw_audit_contract.md",
+    "research/P65_independent_raw_audit_execution_contract.json",
+    "research/P65_independent_raw_audit_preflight_contract.json",
+    "tests/test_p65_independent_raw_audit.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P65_independent_raw_audit.py",
+      "sha256": "71ae8141c8a73fe23cd16d2a45d5c74ab2254a5b4d1e2b6bf56ca5206d875ef6",
+      "sha256_after": "71ae8141c8a73fe23cd16d2a45d5c74ab2254a5b4d1e2b6bf56ca5206d875ef6"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_contract.md",
+      "sha256": "8d4abe84cc8a4763849b2ac9795d19bf614afb624840ee8343abb3ea4652e8ce",
+      "sha256_after": "8d4abe84cc8a4763849b2ac9795d19bf614afb624840ee8343abb3ea4652e8ce"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_execution_contract.json",
+      "sha256": "8609facd845abe8580dc5e8b1109f6b9d218fc374951c700475401dd0b58d13a",
+      "sha256_after": "8609facd845abe8580dc5e8b1109f6b9d218fc374951c700475401dd0b58d13a"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_preflight_contract.json",
+      "sha256": "c890b9c3938fb4c1555ff602097e3dc25cadf0183aed509126023c212e2baf82",
+      "sha256_after": "c890b9c3938fb4c1555ff602097e3dc25cadf0183aed509126023c212e2baf82"
+    },
+    {
+      "path": "tests/test_p65_independent_raw_audit.py",
+      "sha256": "9f67916b7410eee6bbd911e0d1f196b9a04f9914494357c2451bde5f64f66eda",
+      "sha256_after": "9f67916b7410eee6bbd911e0d1f196b9a04f9914494357c2451bde5f64f66eda"
+    }
+  ],
+  "output_directory": "research/P65_independent_raw_audit_preflight/run_001",
+  "declared_results": [
+    "research/P65_independent_raw_audit_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P65_independent_raw_audit_preflight/run_001/stdout.txt",
+      "sha256": "4545896a32dfc531f9ed82dac6f42a27a264036164a27d67d762cbe4bd9068da",
+      "kind": "log"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_preflight/run_001/junit.xml",
+      "sha256": "2be60f5bf0083aa1b59413ad88d9761f9b7663061e1aefce26af240905ef1e5c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
