@@ -1,0 +1,28 @@
+{
+  "phase": "P46_BULK_PIT_DEV_VETO",
+  "positive_acceptance_allowed": false,
+  "ideal_transmission_eta": 1.0,
+  "cases": [
+    {"id":"n24_ER_4602401","m":24,"k":12,"family":"ER","seed":4602401},
+    {"id":"n24_RR_4602402","m":24,"k":12,"family":"RR","seed":4602402},
+    {"id":"n28_ER_4602801","m":28,"k":14,"family":"ER","seed":4602801},
+    {"id":"n28_RR_4602802","m":28,"k":14,"family":"RR","seed":4602802}
+  ],
+  "models": ["bosonic","distinguishable","species4","gaussian_Bcov","iid_uniform","conditional_phase"],
+  "baseline_models": ["anneal","spectral_swap","KL_collective","block_matching"],
+  "network_grid_p_zeta": [[0.25,0.0],[0.25,0.25],[0.5,0.0],[0.5,0.25]],
+  "decoder_lambda": [0,1],
+  "decoder_q": "ceil(k/2)",
+  "trial_seeds": [0,1],
+  "draws_per_tuple": 4,
+  "anchor_max_scans": 8,
+  "phase_calibration_samples": 4096,
+  "phase_DKW_failure_per_mode": 0.00022321428571428573,
+  "seed_namespaces": {"anchor":461010,"inside_order":461020,"outside_order":461030,"vertex_priority":461040,"species_order":461050,"phase_calibration":461060,"production":461100,"feasible_baselines":461200},
+  "maximum_planned_arrays_bytes": 268435456,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_new_output_bytes": 33554432,
+  "outcomes": "All settings and all failed or negative outcomes retained; resource truncation inconclusive; no automatic retry or graph substitution"
+}
