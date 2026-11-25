@@ -1,0 +1,188 @@
+{
+  "schema_version": 2,
+  "claim_id": "P47_CLOSED_POSTHOC_HEADROOM_QUARANTINE",
+  "repository": {
+    "commit": "b394a0d4e801887b85ec08d1756102e30b45e4b8",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "experiments/P47_headroom_quarantine/solve.py",
+    "--output",
+    "experiments/P47_headroom_quarantine/run_001/data",
+    "--execute-posthoc-p47-only"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Post-hoc FLOAT64 MILP lower-bound/incumbent estimates on exactly the four CLOSED P47 graphs, compared only with archived observed costs; no partitions exported and no P48/training use.",
+    "coefficient_domain": "Integer graph data; binary vertices, continuous edge epigraphs; SciPy/HiGHS float64 solving, not exact or interval-certified bounds",
+    "conventions": "Undirected positive edges i<j counted once; sum x=N/2,x0=1; z>=plus/minus(xi-xj); min sum wij*z. Gap fields are to estimated solver lower bounds, not known distances from optimum.",
+    "inputs": [
+      "Closed P47 contexts n26_ER_4702601,n26_RR_4702602,n34_ER_4703401,n34_RR_4703402",
+      "Frozen summary and primary manifest copies pinned by exact SHA256; no P48 graph or primary raw changed"
+    ],
+    "bounds": {
+      "cases": 4,
+      "maximum_vertices": 34,
+      "case_HiGHS_time_limit_seconds": 5,
+      "global_cpu_seconds": 25,
+      "global_wall_seconds": 40,
+      "threads": 1,
+      "maximum_new_output_bytes": 1048576
+    },
+    "non_claims": [
+      "No exact/interval optimality certificate",
+      "No quantum advantage, new guide, positive acceptance or held-out result",
+      "No solver partition, mask, assignment or partition hash exported",
+      "No use of scalars for P48 or future training/selection",
+      "A gap to an estimated lower bound is not a proved distance from optimum"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "No instance or sampling RNG; HiGHS deterministic single-thread configuration with fixed solver random_seed",
+    "seed": 47047
+  },
+  "run": {
+    "started_at": "2026-11-25T04:44:29.345240+00:00",
+    "runtime_seconds": 6.353376,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 40.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 25,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "experiments/P47_headroom_quarantine/solve.py",
+    "experiments/P47_headroom_quarantine/contract.json",
+    "research/P47_HEADROOM_POSTHOC_CONTRACT.md",
+    "experiments/P47_headroom_quarantine/inputs/primary_manifest.json",
+    "experiments/P47_headroom_quarantine/inputs/summary.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n26_ER_4702601.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n26_RR_4702602.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n34_ER_4703401.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n34_RR_4703402.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "experiments/P47_headroom_quarantine/solve.py",
+      "sha256": "4d72248d224da423097f85829618e90d61f0cc0bcb05d7cca6da9cbc47542680",
+      "sha256_after": "4d72248d224da423097f85829618e90d61f0cc0bcb05d7cca6da9cbc47542680"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/contract.json",
+      "sha256": "c7996561cfca5a1f854cd5e571a701333980734b00c45cd5ecabc2d571224c68",
+      "sha256_after": "c7996561cfca5a1f854cd5e571a701333980734b00c45cd5ecabc2d571224c68"
+    },
+    {
+      "path": "research/P47_HEADROOM_POSTHOC_CONTRACT.md",
+      "sha256": "3b43dd2d90e0661525fb0c16a6f38ed50ceae1161acbc6fe0a111f5cc771f36f",
+      "sha256_after": "3b43dd2d90e0661525fb0c16a6f38ed50ceae1161acbc6fe0a111f5cc771f36f"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/inputs/primary_manifest.json",
+      "sha256": "991b561e6186fbd27ace880e4ee503b0aa75766d362ce5fc1f04f4127853be8a",
+      "sha256_after": "991b561e6186fbd27ace880e4ee503b0aa75766d362ce5fc1f04f4127853be8a"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/inputs/summary.json",
+      "sha256": "e2187b5c2a2c3abd79bc8d02076e0fe0e0b1a0a071c8520589e0705df66dad2e",
+      "sha256_after": "e2187b5c2a2c3abd79bc8d02076e0fe0e0b1a0a071c8520589e0705df66dad2e"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/inputs/context_n26_ER_4702601.json",
+      "sha256": "3aba076a05be1553ffdf2be02666affd6f035477d01b523425f17789d3f88318",
+      "sha256_after": "3aba076a05be1553ffdf2be02666affd6f035477d01b523425f17789d3f88318"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/inputs/context_n26_RR_4702602.json",
+      "sha256": "d0b09872f11865c9803fee342d259cc97896177dcb50ff592049794ea66cdf53",
+      "sha256_after": "d0b09872f11865c9803fee342d259cc97896177dcb50ff592049794ea66cdf53"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/inputs/context_n34_ER_4703401.json",
+      "sha256": "7af0a793f084e2ec0fb4bd5a9a86bb349ef5ab70dc851a876ae098654c503b3d",
+      "sha256_after": "7af0a793f084e2ec0fb4bd5a9a86bb349ef5ab70dc851a876ae098654c503b3d"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/inputs/context_n34_RR_4703402.json",
+      "sha256": "97f6de5ec542386b8e6cf43ae50030598bab9c473503baedd730215a3765623b",
+      "sha256_after": "97f6de5ec542386b8e6cf43ae50030598bab9c473503baedd730215a3765623b"
+    }
+  ],
+  "output_directory": "experiments/P47_headroom_quarantine/run_001",
+  "declared_results": [
+    "experiments/P47_headroom_quarantine/run_001/data/records.jsonl",
+    "experiments/P47_headroom_quarantine/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P47_headroom_quarantine/run_001/stdout.txt",
+      "sha256": "7e9a59692d02f0793b774eddd30f730eae1aa8b4609ce1fc665fcf193871d26c",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/run_001/data/records.jsonl",
+      "sha256": "7ecb1f288287eaed95336ae92a9c47032d4766a9e3cb4fbefc958a30c4610a15",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P47_headroom_quarantine/run_001/data/summary.json",
+      "sha256": "3d0de84d63c5fe9851f4134dac82ea6a7755198b0960d50e88818388b0791e57",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

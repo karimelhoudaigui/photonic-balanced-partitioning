@@ -1,0 +1,189 @@
+{
+  "status": "POSTHOC_FLOAT64_DIAGNOSTIC_ONLY",
+  "utc_finished": "2026-11-25T04:44:35.644088+00:00",
+  "source_commit": "b394a0d4e801887b85ec08d1756102e30b45e4b8",
+  "input_sha256_before_after": {
+    "primary_manifest.json": "991b561e6186fbd27ace880e4ee503b0aa75766d362ce5fc1f04f4127853be8a",
+    "summary.json": "e2187b5c2a2c3abd79bc8d02076e0fe0e0b1a0a071c8520589e0705df66dad2e",
+    "context_n26_ER_4702601.json": "3aba076a05be1553ffdf2be02666affd6f035477d01b523425f17789d3f88318",
+    "context_n26_RR_4702602.json": "d0b09872f11865c9803fee342d259cc97896177dcb50ff592049794ea66cdf53",
+    "context_n34_ER_4703401.json": "7af0a793f084e2ec0fb4bd5a9a86bb349ef5ab70dc851a876ae098654c503b3d",
+    "context_n34_RR_4703402.json": "97f6de5ec542386b8e6cf43ae50030598bab9c473503baedd730215a3765623b"
+  },
+  "script_sha256": "4d72248d224da423097f85829618e90d61f0cc0bcb05d7cca6da9cbc47542680",
+  "rows": [
+    {
+      "case": "n26_ER_4702601",
+      "frozen_Cref": 154,
+      "observed_best_by_method": {
+        "bosonic": 146,
+        "distinguishable": 154,
+        "species4": 150,
+        "gaussian_Bcov": 152,
+        "iid_uniform": 148,
+        "conditional_phase": 148,
+        "anneal": 146,
+        "spectral_swap": 150,
+        "KL_collective": 146,
+        "block_matching": 148
+      },
+      "observed_best_all": 146,
+      "observed_best_classical": 146,
+      "status_code": 0,
+      "solver_reports_optimal_float64": true,
+      "solver_dual_bound_float64_estimate": 146.0,
+      "solver_incumbent_cost_scalar_only": 146,
+      "incumbent_integer_cut_checked_in_memory": true,
+      "solver_relative_gap_float64": 0.0,
+      "solver_node_count": 36,
+      "elapsed_solver_wall_seconds": 0.38745558401569724,
+      "vertices": 26,
+      "positive_edges": 96,
+      "csc_indices_dtype": "int32",
+      "csc_indptr_dtype": "int32",
+      "scipy_forwarding_warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'parallel'}. These will be passed to HiGHS verbatim."
+      ],
+      "partition_exported": false,
+      "observed_best_minus_solver_bound_estimate": 0.0,
+      "classical_best_minus_solver_bound_estimate": 0.0,
+      "interpretation": "FLOAT64_SOLVER_OPTIMAL_NOT_EXACT_CERTIFICATE",
+      "posthoc_only": true
+    },
+    {
+      "case": "n26_RR_4702602",
+      "frozen_Cref": 37,
+      "observed_best_by_method": {
+        "bosonic": 35,
+        "distinguishable": 37,
+        "species4": 35,
+        "gaussian_Bcov": 37,
+        "iid_uniform": 35,
+        "conditional_phase": 35,
+        "anneal": 35,
+        "spectral_swap": 37,
+        "KL_collective": 35,
+        "block_matching": 37
+      },
+      "observed_best_all": 35,
+      "observed_best_classical": 35,
+      "status_code": 0,
+      "solver_reports_optimal_float64": true,
+      "solver_dual_bound_float64_estimate": 34.99999999999995,
+      "solver_incumbent_cost_scalar_only": 35,
+      "incumbent_integer_cut_checked_in_memory": true,
+      "solver_relative_gap_float64": 0.0,
+      "solver_node_count": 10,
+      "elapsed_solver_wall_seconds": 0.13137529202504084,
+      "vertices": 26,
+      "positive_edges": 52,
+      "csc_indices_dtype": "int32",
+      "csc_indptr_dtype": "int32",
+      "scipy_forwarding_warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'parallel'}. These will be passed to HiGHS verbatim."
+      ],
+      "partition_exported": false,
+      "observed_best_minus_solver_bound_estimate": 4.973799150320701e-14,
+      "classical_best_minus_solver_bound_estimate": 4.973799150320701e-14,
+      "interpretation": "FLOAT64_SOLVER_OPTIMAL_NOT_EXACT_CERTIFICATE",
+      "posthoc_only": true
+    },
+    {
+      "case": "n34_ER_4703401",
+      "frozen_Cref": 359,
+      "observed_best_by_method": {
+        "bosonic": 359,
+        "distinguishable": 359,
+        "species4": 359,
+        "gaussian_Bcov": 359,
+        "iid_uniform": 359,
+        "conditional_phase": 359,
+        "anneal": 359,
+        "spectral_swap": 351,
+        "KL_collective": 357,
+        "block_matching": 359
+      },
+      "observed_best_all": 351,
+      "observed_best_classical": 351,
+      "status_code": 1,
+      "solver_reports_optimal_float64": false,
+      "solver_dual_bound_float64_estimate": 297.0,
+      "solver_incumbent_cost_scalar_only": 351,
+      "incumbent_integer_cut_checked_in_memory": true,
+      "solver_relative_gap_float64": 0.15384615384615385,
+      "solver_node_count": 1866,
+      "elapsed_solver_wall_seconds": 5.005427916999906,
+      "vertices": 34,
+      "positive_edges": 204,
+      "csc_indices_dtype": "int32",
+      "csc_indptr_dtype": "int32",
+      "scipy_forwarding_warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'parallel'}. These will be passed to HiGHS verbatim."
+      ],
+      "partition_exported": false,
+      "observed_best_minus_solver_bound_estimate": 54.0,
+      "classical_best_minus_solver_bound_estimate": 54.0,
+      "interpretation": "BOUNDED_OR_UNRESOLVED_FLOAT64_DIAGNOSTIC",
+      "posthoc_only": true
+    },
+    {
+      "case": "n34_RR_4703402",
+      "frozen_Cref": 66,
+      "observed_best_by_method": {
+        "bosonic": 66,
+        "distinguishable": 66,
+        "species4": 66,
+        "gaussian_Bcov": 66,
+        "iid_uniform": 63,
+        "conditional_phase": 66,
+        "anneal": 49,
+        "spectral_swap": 49,
+        "KL_collective": 57,
+        "block_matching": 66
+      },
+      "observed_best_all": 49,
+      "observed_best_classical": 49,
+      "status_code": 0,
+      "solver_reports_optimal_float64": true,
+      "solver_dual_bound_float64_estimate": 48.99999999999994,
+      "solver_incumbent_cost_scalar_only": 49,
+      "incumbent_integer_cut_checked_in_memory": true,
+      "solver_relative_gap_float64": 0.0,
+      "solver_node_count": 9,
+      "elapsed_solver_wall_seconds": 0.14097545796539634,
+      "vertices": 34,
+      "positive_edges": 68,
+      "csc_indices_dtype": "int32",
+      "csc_indptr_dtype": "int32",
+      "scipy_forwarding_warnings": [
+        "Unrecognized options detected: {'random_seed', 'threads', 'parallel'}. These will be passed to HiGHS verbatim."
+      ],
+      "partition_exported": false,
+      "observed_best_minus_solver_bound_estimate": 5.684341886080802e-14,
+      "classical_best_minus_solver_bound_estimate": 5.684341886080802e-14,
+      "interpretation": "FLOAT64_SOLVER_OPTIMAL_NOT_EXACT_CERTIFICATE",
+      "posthoc_only": true
+    }
+  ],
+  "actual_QPU_calls": 0,
+  "P48_inputs_opened": false,
+  "partitions_exported": false,
+  "optimum_used_for_training": false,
+  "cpu_seconds_after_environment_guard": 5.630822,
+  "wall_seconds_after_environment_guard": 5.701847084041219,
+  "software": {
+    "Python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "native_HiGHS_options_readback": {
+    "threads": 1,
+    "parallel": "off"
+  },
+  "non_claims": [
+    "No exact/interval certificate",
+    "No new encoder, guide, held-out evaluation or advantage",
+    "A gap to an estimated lower bound is not a proved distance from optimum",
+    "No partitions, masks or solver assignments exported"
+  ]
+}
