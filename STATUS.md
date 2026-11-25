@@ -28,9 +28,23 @@ not beat every B minimum. Full751 tests PASS. Raw data remain immutable; a
 separate post-hoc independent-code audit041a206 passes53205 checks/2560events,
 not blind or physical replication. See research/P50_minimal_count_field_result.md.
 P51 invariance/loss lemmas have a separate same-team proof reconstruction;
-P52 now investigates a global eight-photon phase family at fixed low moments.
-Its prospective card6df6e1c/bec2097 authorizes implementation/review only, no
-P52 numerical result or graph benchmark exists yet.
+P52's global eight-photon phase family has completed its finite discriminator:
+all4 complete6435-state laws show a real phase-dependent cut-mean response,
+but all4 mean kernels admit verified numerical convex replacements by regrouped
+b4 controls and uniform balanced search (maximum residual1.56e-15). One main
+run completed2.107155s, with11 unchanged inputs, all1,048,576 classical phase
+draws and8 successful LP calls; this is a mechanism negative, not an optimizer
+benchmark or exact continuum proof. Root796 tests PASS on revisiona78f91a.
+See research/P52_collective_phase_result.md. Independent Perceval Naive full-law
+validation is in progress: preserved qualifications001/002 failed on
+administrative/reporting issues;003 passed7 guards/11 checks;004 passed8 guards/
+11 checks with official native maximum1 configured/read back. Full25740
+permanent comparison has a separate execution gate.
+P53 now seeks an exact continuous-phase mean replacement over a fixed71-vertex
+library. Integer/Fraction source and certificate code have separate ROOT,
+encoding and physics static reviews;18 targeted tests and the actual exact
+certificate remain pending. Neither code review nor a numerical hull fit is
+counted as a proof or a positive optimization result.
 No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,

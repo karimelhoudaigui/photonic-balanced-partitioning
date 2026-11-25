@@ -838,3 +838,36 @@ H4 fourth-order rank response (b710d21) survives fixed low moments, but decoded
 law has an exact O(1) classical mixture (4c5b071), and b4 is exact. No positive
 goal achieved. P51 invariant/loss extension is analytical only and unresolved;
 no graph/experiment opened. Paper/P33/P37/E05b unchanged; QPU gate CLOSED.
+
+## 2026-11-25 — P52 collective phase is real but its tested means are replaced
+
+Prospective6df6e1c/bec2097/0b79400, independently reviewed source67db4a1 with
+conservative solved-status correctiond7f8e2f, qualification45PASS2e57ccd.
+ONE main on clean2e57ccd completed2.107155runnerwall/1.287146CPU,
+11 unchanged inputs and12 regular results/2,393,180 bytes. All4 complete
+6435-occupation laws, all35 b4 regroupings/cell,1,048,576 classical phase draws
+and8 LP calls completed. No graph, known optimum, training or postselection.
+Full low moments through3 are invariant, but both the fourth-order witness
+and the28 cut-edge means change with phase. All4 mean kernels have verified
+numerical convex replacements using endpoint b4 kernels plus uniform70;
+max residual1.56e-15, all actual optional MC weights0. KEEP physical phase
+response; REJECT this finite mean mechanism as an optimization positive.
+No full-law/tail/continuous-theta or runtime-dominance theorem is inferred.
+Original data762877a/root8934725, report8845ae6/roote08a218.
+Root796PASS at a78f91a,602 historical files/PDF unchanged.
+
+Independent Perceval Naive validation has preserved administrative failures
+001/002, then actual API qualification003 (7 guards/11 checks PASS, native
+limit unverified). Read-only official Config metadata enabled a documented
+native maximum1 with before/after readbacks; qualification004 now passes
+8 guards/11 checks (max error2.01e-16). The full25740 comparison remains a
+separately gated run, not assumed from these small checks.
+
+P51 flat-unitary/loss proofs have ROOT's separate same-team reconstruction;
+bounded primary-source comparison leaves novelty OPEN. P53 is a new exact
+continuous-phase replacement question, card87abe69/APIef476a4, sourcea8f93a0,
+support-only adversarial test deltae8fe48d. Three static reviews precede18
+targeted tests and any main construction. Exact rational proof data, not a
+small floating residual, will be required. No actual certificate exists yet.
+Positive optimizer, held-out confirmation and QPU gates remain unfulfilled;
+paper/P33/P37/E05b unchanged. Continue new falsifiable research routes.

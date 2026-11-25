@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "tests/",
+    "-q"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 22.881793208012823,
+  "commit": "a78f91af0a789f7660f3fdac218adf4197513713",
+  "scope": "Full existing suite including P52 qualified corrected status and physical/kernel fixtures; no new production calibration",
+  "native_threads": 1
+}

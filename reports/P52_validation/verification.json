@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-11-25T11:51:12.872304+00:00",
+  "inspection_head": "dc727d52385f0229b2ef9a1da8500be2dd3d51da",
+  "manifests": [
+    {
+      "path": "experiments/P52_collective_phase/run_001/manifest.json",
+      "sha256": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "research/P52_collective_phase_preflight/run_001/manifest.json",
+      "sha256": "ae8104c725cf94c671a2c940e0165e1c446a5c5be7404ea2df56ab981b4a0a1d",
+      "root_v2_validation": "PASS"
+    }
+  ],
+  "full_test_receipt": "reports/P52_validation/pytest.json",
+  "full_test_result": "796 PASS at a78f91a; not a claim that later added qualification code has already passed the full suite",
+  "historical_preservation": "reports/P52_validation/archive_preservation.json",
+  "paper_diff_against_main": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "accepted_positive_optimizer": false,
+  "scope": "Finite P52 mean response and numerical b4 convex closure only. Naive full validation and P53 exact certificate independently pending; no manuscript or hardware claim."
+}

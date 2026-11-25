@@ -266,7 +266,7 @@ Finite-strength real cost-phase interactions and global high-order extensions
 remain open with their classical/resource gates; do not tensor a small known
 classical block and call it an advantage. The original positive target is OPEN.
 
-## Active finite mechanism discriminator: P52
+## Completed finite mechanism discriminator: P52
 
 ROOT6df6e1c/bec2097, research/P52_COLLECTIVE_PHASE_CARD.md, fixes a global
 eight-photon full-input flat phase family U8, four phase cells (fourth is an
@@ -276,8 +276,52 @@ simultaneous absolute Hoeffding bound. Exact uniform tie top4, no graph, no
 training, no C* or postselection, no optimizer/QPU positive allowed. The first
 question is whether graph-cut MEAN kernels already admit a classical convex
 replacement, not whether a toy finite law is hard. N8 feasible enumeration is
-trivial and explicitly blocks any runtime-advantage claim. Implementation only
-pending frozen source, independent reviews, projection, preflight and slot.
+trivial and explicitly blocks any runtime-advantage claim.
+
+Primary67db4a1 and conservative solver-status correctiond7f8e2f preceded the
+45PASS qualification2e57ccd. ONE main completed2.107155s/1.287146CPU,
+11 unchanged inputs,12 results/2,393,180 bytes, no failed fit/retry/exclusion.
+All four phase laws and all35 regroupings/cell were retained, together with
+1,048,576 classical phase draws. Low moments through3 remain fixed; the
+quartic witness and decoded edge means vary. Nevertheless all4 deterministic
+edge-MEAN kernels are convex matched, max residual1.56e-15, using only endpoint
+b4 controls and uniform70. Actual MC weights are0 in all optional fits.
+This is numerical finite mean replacement, not full-law/tail/continuous-phase
+or total-cost dominance. Original data762877a, root8934725, manifestSHA
+d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7.
+Read research/P52_collective_phase_result.md. Root796PASS atclean a78f91a;
+602 historical files and all paper bytes unchanged, reports/P52_validation/.
+
+Independent scalar-U/multiset enumeration plus Perceval Naive permanents is
+separately qualified. Failed001 (sandbox ps EPERM) and002 (foreign scalar JSON)
+are preserved, not physical disagreements. Qualification003 passed7 guards/
+11 checks but native thread setting was unverified. The documented static
+exqalibur.Config.compute_max_thread_count is now configured/read back1 before
+and after work; fresh004 passes8 guards/11 checks, max error2.01e-16.
+This records API control, not OS scheduling. Full25740 permanent comparison
+has a separate ROOT gate and remains pending at this checkpoint. All raw
+failures and their original source revisions remain in Git.
+
+## Active exact mathematical discriminator: P53
+
+ROOT87abe69 and APIef476a4 freeze the source wave F(A)F_z(B)/8^4,
+z=exp(2i theta), with Python integer occupation coefficients/Fock factorials,
+exact420 tie weights and rational edge polynomials. The fixed71 controls are
+all35 b4 regroupings at0/pi2 plus uniform70. Seek nonnegative rational
+Bernstein control-point mixtures at degree6, then predeclared12 only if needed,
+at most20 bounded native LP support proposals. Float LP values supply supports
+only; exact RREF, nonnegativity, sum1, all28 coordinates and an independent
+power-basis reconstruction must establish the certificate. Failed proposals
+or sufficient certificates are inconclusive, never outside-hull evidence.
+
+Primarya8f93a0 and test-only deltae8fe48d have ROOT and separate encoding/
+physics static reviews (845932e/49e2e01). All414 source lines and18 prepared
+cases were read; no actual certificate or qualification outcome exists yet.
+No source/library floating probability table is used as a proof input.
+A successful result would cover continuous-phase cut MEANS for this N8 family,
+not tails, arbitraryN, loss, budgets, optimizer advantage or novelty. The
+original positive target remains OPEN. Numerical work is sequential; consult
+the current explicit worker-slot messages, not an old checkpoint sentence.
 
 Acceptance plan research/P48_review_future_acceptance.md now includes efficient
 CPU controls, independent count implementation and reserved graph panels,
