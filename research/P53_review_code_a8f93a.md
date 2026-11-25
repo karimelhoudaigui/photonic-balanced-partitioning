@@ -151,3 +151,17 @@ The F/Fock/certificate implications were reconstructed from their definitions;
 external/blinded independence is not claimed. No code, tests or data owned by
 the implementer were edited. Scope reviewed: all414 source lines, all17
 prepared test cases, spec, MD and both JSON contracts at the exact revision.
+
+## Final test-only delta review: e8fe48d
+
+Read the complete four-file delta
+`e8fe48dd790d974c0d20df4b24db1cd2f3665b45`, including the API addendum, MD,
+preflight JSON and new18th fixture. The program is unchanged at SHAaedbc561...
+The mock explicitly reports status0/success with NO_VERIFIED_TOLERANCE_MATCH
+and raw used weights(.5,.5), while RREF supplies(2/3,1/3) for target1/3 and
+the complete degree6 driver verifies its power identity. This correctly
+qualifies the ROOT support-only clarification; it changes no mathematical
+criterion, library, solver, source, circuit, degree/cap or native call count.
+The preflight count is now18. **PASS STATIC FINAL** of this delta, still
+conditional on actual qualification/execution and independently checked output.
+No import, test or computation was run by this reviewer.
