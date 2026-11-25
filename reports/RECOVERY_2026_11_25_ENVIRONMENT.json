@@ -1,0 +1,208 @@
+{
+  "checked_utc": "2026-11-25T19:40:54.546644+00:00",
+  "git_head": "6c07e00f14f15ab6c16abfa560e161aca67f0184",
+  "missing_previous_temporary_interpreter": true,
+  "persistent_interpreter": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "dependencies": [
+    {
+      "name": "attrs",
+      "expected": "26.1.0",
+      "observed": "26.1.0"
+    },
+    {
+      "name": "certifi",
+      "expected": "2026.10.23",
+      "observed": "2026.10.23"
+    },
+    {
+      "name": "charset-normalizer",
+      "expected": "3.5.2",
+      "observed": "3.5.2"
+    },
+    {
+      "name": "contourpy",
+      "expected": "1.3.3",
+      "observed": "1.3.3"
+    },
+    {
+      "name": "cycler",
+      "expected": "0.12.1",
+      "observed": "0.12.1"
+    },
+    {
+      "name": "drawsvg",
+      "expected": "2.5.1",
+      "observed": "2.5.1"
+    },
+    {
+      "name": "exqalibur",
+      "expected": "1.4.2",
+      "observed": "1.4.2"
+    },
+    {
+      "name": "fonttools",
+      "expected": "4.68.0",
+      "observed": "4.68.0"
+    },
+    {
+      "name": "hypothesis",
+      "expected": "6.141.1",
+      "observed": "6.141.1"
+    },
+    {
+      "name": "idna",
+      "expected": "3.20",
+      "observed": "3.20"
+    },
+    {
+      "name": "iniconfig",
+      "expected": "2.3.1",
+      "observed": "2.3.1"
+    },
+    {
+      "name": "kiwisolver",
+      "expected": "1.5.1",
+      "observed": "1.5.1"
+    },
+    {
+      "name": "latexcodec",
+      "expected": "3.0.1",
+      "observed": "3.0.1"
+    },
+    {
+      "name": "matplotlib",
+      "expected": "3.11.2",
+      "observed": "3.11.2"
+    },
+    {
+      "name": "mpmath",
+      "expected": "1.3.0",
+      "observed": "1.3.0"
+    },
+    {
+      "name": "multipledispatch",
+      "expected": "1.0.0",
+      "observed": "1.0.0"
+    },
+    {
+      "name": "networkx",
+      "expected": "3.6.1",
+      "observed": "3.6.1"
+    },
+    {
+      "name": "numpy",
+      "expected": "2.4.6",
+      "observed": "2.4.6"
+    },
+    {
+      "name": "packaging",
+      "expected": "26.3",
+      "observed": "26.3"
+    },
+    {
+      "name": "perceval-quandela",
+      "expected": "1.3.0",
+      "observed": "1.3.0"
+    },
+    {
+      "name": "pillow",
+      "expected": "13.0.0",
+      "observed": "13.0.0"
+    },
+    {
+      "name": "platformdirs",
+      "expected": "4.14.8",
+      "observed": "4.14.8"
+    },
+    {
+      "name": "pluggy",
+      "expected": "1.7.0",
+      "observed": "1.7.0"
+    },
+    {
+      "name": "protobuf",
+      "expected": "7.34.1",
+      "observed": "7.34.1"
+    },
+    {
+      "name": "Pygments",
+      "expected": "2.21.0",
+      "observed": "2.21.0"
+    },
+    {
+      "name": "pyparsing",
+      "expected": "3.3.3",
+      "observed": "3.3.3"
+    },
+    {
+      "name": "pypdf",
+      "expected": "6.4.0",
+      "observed": "6.4.0"
+    },
+    {
+      "name": "pytest",
+      "expected": "8.4.2",
+      "observed": "8.4.2"
+    },
+    {
+      "name": "python-dateutil",
+      "expected": "4.0.0",
+      "observed": "4.0.0"
+    },
+    {
+      "name": "requests",
+      "expected": "2.34.2",
+      "observed": "2.34.2"
+    },
+    {
+      "name": "scipy",
+      "expected": "1.17.1",
+      "observed": "1.17.1"
+    },
+    {
+      "name": "sortedcontainers",
+      "expected": "2.4.0",
+      "observed": "2.4.0"
+    },
+    {
+      "name": "sympy",
+      "expected": "1.14.0",
+      "observed": "1.14.0"
+    },
+    {
+      "name": "tabulate",
+      "expected": "0.10.0",
+      "observed": "0.10.0"
+    },
+    {
+      "name": "tqdm",
+      "expected": "4.70.1",
+      "observed": "4.70.1"
+    },
+    {
+      "name": "tzdata",
+      "expected": "2026.6",
+      "observed": "2026.6"
+    },
+    {
+      "name": "urllib3",
+      "expected": "2.8.0",
+      "observed": "2.8.0"
+    }
+  ],
+  "dependency_mismatches": 0,
+  "archive_preservation": {
+    "status": "PASS",
+    "snapshot_sha256": "9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474",
+    "snapshot_base_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+    "historical_files_checked": 602,
+    "changed_or_missing": [],
+    "scope": "Pre-existing experiments/results/theory/research; active reports/manuscript/code may change"
+  },
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "paper_diff_against_release": "",
+  "scientific_simulations_executed_in_this_check": 0,
+  "existing_raw_data_modified": false
+}
