@@ -1,0 +1,50 @@
+{
+  "claim_id": "P49-FAST-CLASSICAL-INTEGER-PREFIX-QUALIFICATION",
+  "mathematics": {
+    "assertion_tested": "Efficient balanced search uses exact cached integer cuts, correct incremental swap deltas and vectorized cross-pair scans; compact completed-checkpoint prefixes reconstruct valid cuts and cannot credit a late batch. Fixed-count trajectories reproduce from seeds, including carried-priority relabeling.",
+    "coefficient_domain": "Bounded NumPy int64 graph/cut/delta arithmetic; independent Python integer edge sums; float64 temperatures and monotone clock observations",
+    "conventions": "Graph N6/N10 fixtures are newly generated test inputs, not DEV graphs or held-out graphs. No optimum is computed or input. Given-free common incumbent is verified. CPU/wall include validation, setup, search and compact traces, exclude JSON conversion and disk writes. Proposal cap is not a resource-equivalence assertion; early cap/wall stop prevents accepting a positive.",
+    "inputs": [
+      "All balanced subsets and all cross-swaps of fixed seeded N6/N10 integer test graphs, checked against independent scalar edge sums",
+      "100-swap sequences per N6/N10, fixed-count repeated searches, carried-priority relabeling and all compact trace cuts",
+      "Synthetic/virtual-clock deadline-prefix checks; invalid graph/source/Cref/overflow cases; zero-weight N2/N6 boundaries"
+    ],
+    "bounds": {
+      "maximum_test_vertices": 10,
+      "maximum_proposals_per_fixed_count_test": 3000,
+      "CPU_seconds": 30,
+      "wall_seconds": 50,
+      "threads": 1,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No DEV or confirmation graph generated or searched",
+      "No new photonic result, positive advantage or QPU validation",
+      "No optimality guarantee for the classical heuristic",
+      "No speed claim from test elapsed time or score-unit resource equivalence",
+      "No change to any prior pilot/helper/raw archive/manuscript"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P49_fast_classical.py",
+    "tests/test_p49_fast_classical.py",
+    "research/P49_fast_classical_contract.json"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "NumPy", "version": "2.4.6"},
+    {"name": "pytest", "version": "8.4.2"}
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng/PCG64, fixed-count trajectories independent of clock",
+    "seeds": [490006, 490010, 491006, 491010, 492006, 492010, 493000, 493001, 494000, 495000, 495001, 496000, 497000],
+    "graph_population_selection": "N6/N10 predetermined fixture seeds; all balanced states retained, no favorable instance selection"
+  },
+  "resource_note": "Freeze source before qualification. Wait for coordinator numerical-slot authorization. Run once via Mathbox bounded runner CPU30/wall50/thread1/log4MiB, exactly the three listed input paths, fresh output directory; retain any first failure without automatic retry.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python", "-m", "pytest", "-q",
+    "tests/test_p49_fast_classical.py",
+    "--junitxml=research/P49_fast_classical_qualification/run_001/data/junit.xml"
+  ]
+}
