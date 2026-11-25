@@ -1,0 +1,60 @@
+{
+  "claim_id": "P50-POSTHOC-INDEPENDENT-RAW-CONSISTENCY",
+  "mathematics": {
+    "assertion_tested": "Read sealed P50 data without importing primary/helper code; independently recompute every raw scalar cut and anchored bucket decision, all-shot Fraction selections/evaluation/private minima, own-cost ledgers and every FAST mask/cut/eligible online-prefix relation. Check vectorized source/H/actual-factor geometry and independent single-mode PGF binomial-moment identities.",
+    "coefficient_domain": "Independent Python integer edge sums and Fraction objective; float64/complex128 vectorized geometry/field/PGF moments; exact recorded hash/seed and integer bucket conventions",
+    "conventions": "POSTHOC consistency: the auditor received a negative-sign P50 summary before this source freeze, but has not opened result files during authoring. Plan came from frozen card/schema and was communicated before that message. This is not blinded/preregistered evidence, independent physical replication, a new resource budget or a positivity test. No RNG redraw, graph generation, primary import or source-data write.",
+    "inputs": [
+      "Sealed encoding run P50_minimal_count_field/run_001, data commit fb5a36ec0746c3465dc7ee3a3c6b88a86b490e7d; main source commit5310257, primary SHA6d0229c923c80ea4b29aa2075641540ddf6e983248dbadb76af0e1513c05d8cf",
+      "Four supplied adjacencies/ten arm contexts,2560 decoded raw events,summary and eight separate from-raw FAST traces",
+      "Main v2 manifest provenance plus all14 declared immutable data files"
+    ],
+    "bounds": {
+      "graphs": 4,
+      "models": 10,
+      "expected_primary_events": 2560,
+      "maximum_modes": 100,
+      "maximum_photons": 17,
+      "geometry_absolute_tolerance": 1e-10,
+      "field_absolute_tolerance": 1e-10,
+      "PGF_binomial_moment_absolute_tolerance": 1e-10,
+      "factor_covariance_absolute_tolerance": 2e-9,
+      "timing_sum_absolute_tolerance": 1e-8,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "max_new_output_bytes": 4194304,
+      "maximum_failure_examples": 64
+    },
+    "non_claims": [
+      "No new graph/sample/tuning/hypothesis test/heldout/physical replication/QPU call",
+      "No timing authenticity or RNG-trajectory replay certificate",
+      "No exact/interval/relative-tail PGF or global sampler validation",
+      "No every-proposal replay from compact FAST traces; only recorded best masks/cuts/prefix identities",
+      "No outcome-dependent repricing, positive acceptance, novelty or universal obstruction"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P50_minimal_count_field_raw_audit.py",
+    "research/P50_minimal_count_field_raw_audit_contract.json",
+    "experiments/P50_minimal_count_field/run_001/manifest.json",
+    "experiments/P50_minimal_count_field/run_001/data/summary.json",
+    "experiments/P50_minimal_count_field/run_001/data/raw.jsonl.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n50_ER_5005001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n50_RR_5005002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n100_ER_5010001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n100_RR_5010002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n50_ER_5005001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n50_ER_5005001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n50_RR_5005002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n50_RR_5005002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n100_ER_5010001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n100_ER_5010001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n100_RR_5010002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n100_RR_5010002.json.gz"
+  ],
+  "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}],
+  "randomness": {"used": false, "generator": "No RNG invoked; only recorded seeded observations and deterministic identities", "seed": null},
+  "resource_note": "Freeze audit source/contract, obtain root review and exclusive numerical slot before execution. CPU20/wall30/thread1/log4MiB; report capped4MiB, first64 failures retained, preserve first failure without automatic retry. Vectorized dense identities are bounded at N100; no O(N^3) Python complex loops or full Fock enumeration. Data are read-only. This contract is prospective for the audit run, not prospective for scientific outcomes.",
+  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "research/P50_minimal_count_field_raw_audit.py", "--data", "experiments/P50_minimal_count_field/run_001/data", "--output", "research/P50_minimal_count_field_raw_audit/run_001/data/audit.json"]
+}
