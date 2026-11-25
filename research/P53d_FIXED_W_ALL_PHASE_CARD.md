@@ -6,6 +6,9 @@ for every real phi and every one of35 complementary groupings? B, decoder,
 old graph and w remain fixed; no optimizer training or replacement graph.
 This card introduces no code, imports, evaluated controls or polynomials.
 P55's new mechanism keeps numerical priority.
+P52 already includes35 b4 controls at pi/4 and3pi/4: they are potential
+falsifiers, not excluded comparisons. The all-phi statement must cover them;
+P53c's endpoint-plus-pi/3 result cannot substitute for this check.
 
 ## Exact scalar construction and resource check
 
@@ -27,11 +30,16 @@ are contractions A[G]^T M A[Gc], folded by k+l, with denominator840*8^8.
 There is NO need to construct6435 occupation laws times25 Fourier entries.
 Keep all35 groupings and zero coefficients; no favorable phase/group filter.
 
-Cauchy bounds |A[u,k]|<=A[u,0], sum_u A[u,0]=4096, hence every column L1
-<=4096. Verify those bounds using Python integers BEFORE int64 conversion.
+Cauchy bounds |A[u,k]|<=A[u,0]. More explicitly, extend C[u,j] by zero:
+weighted Cauchy on (u,j), with weights prod(u_i!), bounds sum_u |A[u,k]|
+by sum_(u,j) prod(u_i!)*C[u,j]^2. Unitarity for every phi and Parseval make
+this latter sum EXACTLY4096. This is the bound for EACH fixed Laurent
+column k, NOT the L1 sum over all columns. Verify every column bound with
+Python integers BEFORE int64 conversion.
 Then |M A|<=1,720,320 and every bilinear entry<=7,046,430,720 in absolute
-value, including partial sums. Folding at most13 terms and multiplying
-offzero harmonics by2 stays below2^38. Both operands of each matrix product
+value, including partial sums. Folding at most13 pairs into ONE harmonic
+is bounded by91,603,599,360; doubling offzero harmonics is bounded by
+183,207,198,720<2^38. Both operands of each matrix product
 must be int64; cast outputs to Python integers before Chebyshev/Fraction work.
 Thus these matrix products are exact integer operations, not floating proofs.
 
