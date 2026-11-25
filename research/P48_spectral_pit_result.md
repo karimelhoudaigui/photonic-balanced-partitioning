@@ -18,7 +18,7 @@ The map never uses S0, Cref, optimal masks or a known partition.
 
 Source history is retained: e87035a first unexecuted snapshot,4a199f8 adds
 shared intensity/assignment preparation discoveries,5e06e8f fixes a Gaussian
-deterministic-row risk identified STATISTICALLY BEFORE EXECUTION (not an
+deterministic-row risk identified STATICALLY BEFORE EXECUTION (not an
 observed DEV bug). The exact structural mask and its injected-leakage fixture
 received independent physics review. The coherent helper remains unchanged:
 source6c980d3f684ef32295eeb394272f6218fbbc2402, SHA256
