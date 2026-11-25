@@ -871,3 +871,29 @@ targeted tests and any main construction. Exact rational proof data, not a
 small floating residual, will be required. No actual certificate exists yet.
 Positive optimizer, held-out confirmation and QPU gates remain unfulfilled;
 paper/P33/P37/E05b unchanged. Continue new falsifiable research routes.
+
+## 2026-11-25 — independent P52 probabilities pass; P53 remains inconclusive
+
+Full Perceval Naive run on clean d7f49f5 completed2.872489s/1.841588CPU,
+11 unchanged inputs, all25740 complex amplitudes, no collision/zero filtering,
+renormalization or phase alignment. All4 cells pass; max amplitude difference
+9.8121e-17, max probability9.5410e-18. Data3cde959/root3e348a1 and
+research/P52_NAIVE_COMPLETE_REPLICATION_REVIEW.md supersede the prior PENDING
+state. This independent-engine/matrix-enumeration check knew P52's reported
+sign and is not blind, external, held-out or optimizer replication.
+
+P53 qualification18PASS e6283dc preceded ONE bounded main:1.746802runnerwall,
+0.975028CPU,12 unchanged inputs, all4 exact source/library/attempt/summary
+outputs retained. All20 LPs solved status0, but only extreme Bernstein
+controls exactified. INCONCLUSIVE_BERNSTEIN_OR_SUPPORT: no continuous convex
+identity, no proof of curve nonmembership, no positive inferred. Preserve
+data bce6e2d/root111be95, including every failed support. New questions require
+separate mathematical design, not an automatic favorable rescan.
+
+Root full822PASS24.89s, official native maximum1, four newly integrated
+manifests v2PASS;602 historical files and every paper byte unchanged.
+reports/P53_validation/ records exact commands and checks. P54 ROOT proof
+4d6826d falsifies the LEADING weak full-input sqrt(weight) graph-hopping
+mechanism: topK favors crossing weighted edges and increases expected cut,
+with a cheap classical mixture at that order. Separate reconstruction pending;
+not a general no-go, finite-angle result or completion of the positive target.

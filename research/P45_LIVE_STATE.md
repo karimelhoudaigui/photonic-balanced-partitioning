@@ -299,8 +299,13 @@ are preserved, not physical disagreements. Qualification003 passed7 guards/
 exqalibur.Config.compute_max_thread_count is now configured/read back1 before
 and after work; fresh004 passes8 guards/11 checks, max error2.01e-16.
 This records API control, not OS scheduling. Full25740 permanent comparison
-has a separate ROOT gate and remains pending at this checkpoint. All raw
-failures and their original source revisions remain in Git.
+was separately authorized and completed2.872489s/1.841588CPU on clean d7f49f5,
+with11 unchanged inputs. All6435 occupations/cell agree: maximum amplitude
+error9.8121e-17, probability9.5410e-18, half-L1 residual2.9054e-16. Original
+data3cde959/root3e348a1; see research/P52_NAIVE_COMPLETE_REPLICATION_REVIEW.md.
+This is independent-engine/enumeration verification, not blind held-out
+optimizer replication or exact interval proof. All raw failures and their
+original source revisions remain in Git.
 
 ## Active exact mathematical discriminator: P53
 
@@ -316,11 +321,27 @@ or sufficient certificates are inconclusive, never outside-hull evidence.
 
 Primarya8f93a0 and test-only deltae8fe48d have ROOT and separate encoding/
 physics static reviews (845932e/49e2e01). All414 source lines and18 prepared
-cases were read; no actual certificate or qualification outcome exists yet.
+cases were read; the subsequent targeted preflight18PASS was sealed e6283dc.
 No source/library floating probability table is used as a proof input.
 A successful result would cover continuous-phase cut MEANS for this N8 family,
 not tails, arbitraryN, loss, budgets, optimizer advantage or novelty. The
-original positive target remains OPEN. Numerical work is sequential; consult
+original positive target remains OPEN. ONE main on clean e6283dc completed
+1.746802s/0.975028CPU, all12 inputs unchanged,4 results retained. All20 LP
+proposals solved, but exactification accepted only the two extreme controls
+at each degree. INCONCLUSIVE_BERNSTEIN_OR_SUPPORT, not curve nonmembership;
+no automatic subdivision/degree increase/retry followed. Data bce6e2d/root
+111be95, research/P53_exact_phase_main_receipt.md. Root822PASS24.89s and all
+new manifests/602 historical files/paper preservation PASS, reports/P53_validation/.
+The next mathematical discriminator is under independent static assessment;
+its graph/cost/control scope must be fixed before additional computation.
+
+ROOT separately derived P54 weak full-input graph hopping: for real
+H_ij=sqrt(w_ij), U=exp(itH), all N photons and uniform topN/2 tie decoding,
+the leading decoded tilt is TOWARD higher cut, proportional to Var_uniform(C).
+Its enhanced bosonic rate also has an elementary classical rare-hop mixture.
+See theory/P54_full_input_small_hop_obstruction.md; separate reconstruction
+is pending, no finite-strength/general-ansatz conclusion or positive claimed.
+Numerical work is sequential; consult
 the current explicit worker-slot messages, not an old checkpoint sentence.
 
 Acceptance plan research/P48_review_future_acceptance.md now includes efficient

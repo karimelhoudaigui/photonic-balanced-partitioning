@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-25T11:58:11.118502+00:00",
+  "inspection_head": "111be956d78136cf9282648571051df1cb0bade7",
+  "manifests": [
+    {
+      "path": "research/P52_naive_qualification/run_004/manifest.json",
+      "sha256": "1e7a66ff7f08f83625a4e3ae7f5d47756113d23cc6c0da5f5b5f3f78abc31cfc",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "experiments/P52_naive_validation/run_001/manifest.json",
+      "sha256": "356d7f487b0a09b8250084c9f1202b73570cb63199b024ea704603f6053dc8e7",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "research/P53_exact_phase_preflight/run_001/manifest.json",
+      "sha256": "735d01b92664fd6665b62dafe2b979c6528a134e0fa5f1f2056772acfdf15bca",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/manifest.json",
+      "sha256": "dbed64c514d35022f10dd7ea48428cdf13cabd362cc2be5e21a010001f51ccd3",
+      "root_v2_validation": "PASS"
+    }
+  ],
+  "full_test_receipt": "reports/P53_validation/pytest.json",
+  "full_test_result": "822 PASS / 24.89s pytest; 25.694068s total; tested source0c5c782 unchanged by subsequent theory/raw additions",
+  "historical_preservation": "reports/P53_validation/archive_preservation.json",
+  "paper_diff_against_main": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "accepted_positive_optimizer": false,
+  "P52_independent_permanent_replication": "FINITE_FLOAT64_AGREEMENT 25740 amplitudes, no heldout optimizer replication",
+  "P53_outcome": "INCONCLUSIVE_BERNSTEIN_OR_SUPPORT; no continuous certificate or nonmembership inference"
+}

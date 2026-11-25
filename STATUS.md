@@ -36,15 +36,22 @@ run completed2.107155s, with11 unchanged inputs, all1,048,576 classical phase
 draws and8 successful LP calls; this is a mechanism negative, not an optimizer
 benchmark or exact continuum proof. Root796 tests PASS on revisiona78f91a.
 See research/P52_collective_phase_result.md. Independent Perceval Naive full-law
-validation is in progress: preserved qualifications001/002 failed on
+validation has completed: preserved qualifications001/002 failed on
 administrative/reporting issues;003 passed7 guards/11 checks;004 passed8 guards/
-11 checks with official native maximum1 configured/read back. Full25740
-permanent comparison has a separate execution gate.
+11 checks with official native maximum1 configured/read back. The separately
+authorized full25740 permanent comparison agrees at all4 phases, maximum
+probability error9.54e-18; see research/P52_NAIVE_COMPLETE_REPLICATION_REVIEW.md.
 P53 now seeks an exact continuous-phase mean replacement over a fixed71-vertex
 library. Integer/Fraction source and certificate code have separate ROOT,
-encoding and physics static reviews;18 targeted tests and the actual exact
-certificate remain pending. Neither code review nor a numerical hull fit is
-counted as a proof or a positive optimization result.
+encoding and physics static reviews, followed by18 actual targeted tests PASS.
+ONE main completed1.746802s, all12 inputs unchanged:20 LP proposals solved,
+but internal Bernstein controls were not exactly certified at either degree.
+Outcome INCONCLUSIVE; neither curve nonmembership nor continuous replacement
+was established. See research/P53_exact_phase_main_receipt.md. Full regression
+suite now822 PASS; source unchanged by later raw/theory-only additions.
+P54's proposed full-input weak graph hopping has a ROOT analytical falsification
+awaiting separate reconstruction. No such scoped obstruction completes the
+user's positive optimizer target.
 No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,

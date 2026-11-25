@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; import pytest; raise SystemExit(pytest.main([\"tests/\",\"-q\"]))"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 25.694068249955308,
+  "commit": "0c5c782f4e4a43dca7570ec4218780b102c6d646",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "scope": "One full regression suite after P53 exact qualification and native-resource source changes; not a new optimizer experiment"
+}
