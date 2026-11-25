@@ -1,0 +1,108 @@
+{
+  "claim_id": "P55-FINITE-NEUTRALITY-SYNTHETIC-PREFLIGHT",
+  "mathematics": {
+    "assertion_tested": "Exact source/policy/caller/resource fixtures without opening a DEV graph: normalized sqrt-weight matrix functions, both Gram/row-mass guards, r20 Decimal80 PGF versus independent Fraction identity/uniform/Stirling-ramp coefficients, full-source CTMC direct horizon/cap/failure payload, variable-M decoder and integer guards, all-shot policy Fraction/fresh seeds, narrowly bracketed setup/B-only allowance, online nullable FAST first-scan/veto logic, mocked first-failure JSON preservation.",
+    "coefficient_domain": "Python int/Fraction independent expected values, Decimal80 immutable helper, float64/complex128 synthetic small matrices, mocked interfaces/clocks/paths; no actual optical draw or native API calibration",
+    "conventions": "FullCF N=r20,K10,eta1,H_ij=sqrt(w_ij)/normop,all counts to qualified exact neutral minimizer DP; independent Fraction policy means across two graphs, all THAT-policy cuts, freeze before fresh; B80/total480; D sqrt2t, b4 two input groupings, full-count continuous-phase multinomial, variable-M B-product PMFs, direct CTMC horizon_tau; raw_mu both sides3e-12/no deficit renormalization; one fixed FAST dominating both vetoes, paid-init prefix can refute, first scan required for followup; no accepted positive",
+    "inputs": [
+      "Hand-built ring/zero/relabelled N4 and N8 graph fixtures plus non-DEV NetworkX seed550012 atN10",
+      "Exact r20 identity/uniform/mixed q_i=i/210 PGF fixtures; independent unsigned-Stirling source of mixed coefficients",
+      "Synthetic fullCF CTMC one-hop/no-hop/direct-time/cap routes; rank/API/count/FAST/native-Config mocks; N20/M400 synthetic decoder maximum; no DEV seed generator or true phase/optical draw"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "maximum_new_output_bytes": 33554432,
+      "planned_logical_workspace_bytes": 268435456,
+      "planned_pytest_items": 43,
+      "maximum_graph_generator_modes": 10,
+      "maximum_true_optical_draws": 0,
+      "maximum_true_phase_draws": 0,
+      "maximum_exact_PGF_order": 20,
+      "maximum_synthetic_DP_total": 400,
+      "maximum_synthetic_DP_cells": 92631
+    },
+    "non_claims": [
+      "No accepted positive, population inference, novelty clearance, independent physical replication, held-out opening, hardware feasibility or QPU authorization",
+      "N20/two DEV graphs and finite control grids can veto this family or motivate a new design, never prove optimized or scalable advantage",
+      "Small-time gain is classical: D sqrt2 retiming and inclusion tau=tB^2 are mandatory known nulls; all-collision feasible output is not itself a benefit",
+      "Decimal80/float Gram, mass, PMF/CDF and clock guards are not intervals, relative precision guarantees, native RSS/OS thread measurements or hardware runtime",
+      "B-only classical WALL converted to FAST CPU excludes all optional control preparation/IO/simulationbackend and assumes zero optical latency; this is an implementation envelope, not a universal no-go",
+      "Missing/failing cases remain INCONCLUSIVE with first evidence and no retry, graph replacement, larger cap, precision change or truncated-chain decoding",
+      "Preflight tests wrapper/mathematical/cost behavior; it is not a new independent Perceval physical replication or a live N20 sampler benchmark"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P55_finite_neutrality_probe.py",
+    "research/P55_finite_neutrality_spec.json",
+    "research/P55_finite_neutrality_contract.md",
+    "research/P55_finite_neutrality_execution_contract.json",
+    "research/P55_finite_neutrality_preflight_contract.json",
+    "research/P55_FINITE_DEV_PILOT_PROPOSAL.md",
+    "research/P55_PRE_DATA_AMENDMENT.md",
+    "research/P55_neutrality_decoder.py",
+    "research/P55_NEUTRAL_DEFECT_DECODER_CARD.md",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "tests/test_p55_finite_neutrality.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Fixed synthetic/non-DEV fixture PCG64 seeds and Python exact-rank seeds; controlled mock CTMC/optical/native/FAST interfaces; no DEV graph, actual optical sample or phase draw",
+    "seed": [
+      550012,
+      550019,
+      550020,
+      550021,
+      550022,
+      1
+    ]
+  },
+  "resource_note": "Qualification only after exact-source/root+physics review and exclusive slot.43prospective items. CPU60/wall90/thread1/output32MiB/plannedlogical256MiB, no hardware affinity/RSS claim. Optical/Config/FAST interfaces mocked; actual native maximum setter/readbacks occur only in separately authorized main using the already validated P52 API. One fresh preflight run, retain first failure, no retry or automatic main.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p55_finite_neutrality.py",
+    "--junitxml=research/P55_finite_neutrality_preflight/run_001/junit.xml"
+  ]
+}
