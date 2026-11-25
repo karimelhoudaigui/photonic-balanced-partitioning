@@ -1,0 +1,1 @@
+{"status": "FINITE_FLOAT64_AGREEMENT", "output": "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/experiments/P52_naive_validation/run_001/data"}
