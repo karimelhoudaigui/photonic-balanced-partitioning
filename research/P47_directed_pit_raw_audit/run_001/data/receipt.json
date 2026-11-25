@@ -1,0 +1,187 @@
+{
+  "status": "PASS_READ_ONLY_RAW_CONSISTENCY",
+  "new_scientific_experiment": false,
+  "source_run": "experiments/P47_directed_pit/run_001",
+  "primary_results_sha256_before_and_after": {
+    "experiments/P47_directed_pit/run_001/data/summary.json": "e2187b5c2a2c3abd79bc8d02076e0fe0e0b1a0a071c8520589e0705df66dad2e",
+    "experiments/P47_directed_pit/run_001/data/raw.jsonl.gz": "aa1386b93104ba1941ebc9d0cdde8488278f86a9bfeb7cd6f0632a83b359d562",
+    "experiments/P47_directed_pit/run_001/data/context_n26_ER_4702601.json": "3aba076a05be1553ffdf2be02666affd6f035477d01b523425f17789d3f88318",
+    "experiments/P47_directed_pit/run_001/data/context_n26_RR_4702602.json": "d0b09872f11865c9803fee342d259cc97896177dcb50ff592049794ea66cdf53",
+    "experiments/P47_directed_pit/run_001/data/context_n34_ER_4703401.json": "7af0a793f084e2ec0fb4bd5a9a86bb349ef5ab70dc851a876ae098654c503b3d",
+    "experiments/P47_directed_pit/run_001/data/context_n34_RR_4703402.json": "97f6de5ec542386b8e6cf43ae50030598bab9c473503baedd730215a3765623b"
+  },
+  "all_inputs_unchanged": true,
+  "all_feasible_cuts_independently_recomputed": 147811,
+  "distinct_cut_cache_entries": 60509,
+  "stage_counts": {
+    "common_anchor": 5447,
+    "common_swap": 916,
+    "frontend_decoder": 136,
+    "development": 1536,
+    "classical_search": 139776
+  },
+  "sample_counts": {
+    "bosonic": 256,
+    "distinguishable": 256,
+    "species4": 256,
+    "gaussian_Bcov": 256,
+    "iid_uniform": 256,
+    "conditional_phase": 256
+  },
+  "all_settings_total_gain": {
+    "bosonic": 22,
+    "distinguishable": 0,
+    "species4": 9,
+    "gaussian_Bcov": 2,
+    "iid_uniform": 14,
+    "conditional_phase": 9
+  },
+  "positive_improvement_events": {
+    "bosonic": 5,
+    "distinguishable": 0,
+    "species4": 4,
+    "gaussian_Bcov": 1,
+    "iid_uniform": 4,
+    "conditional_phase": 3
+  },
+  "collision_samples": {
+    "bosonic": 189,
+    "distinguishable": 142,
+    "species4": 144,
+    "conditional_phase": 180
+  },
+  "saved_PIT_count_fields_reconstructed": 1024,
+  "saved_Gaussian_factor_PIT_fields_reconstructed": 256,
+  "full_decoders_independently_reconstructed": 1536,
+  "all_classical_query_counts_and_time_frontiers_match": true,
+  "common_incumbents_match": true,
+  "routing_proxy_diagnostics": {
+    "n26_RR_4702602": [
+      {
+        "p": 0.25,
+        "guided": 0,
+        "normalized_proxy_change": -5.48172618408671e-16,
+        "W_minus_F_frobenius_squared": 2.3340104254785863e-29,
+        "proxy_tangent_frobenius_squared": 0.11723062782056473
+      },
+      {
+        "p": 0.25,
+        "guided": 1,
+        "normalized_proxy_change": -0.06309059227959979,
+        "W_minus_F_frobenius_squared": 0.009233065898009873,
+        "proxy_tangent_frobenius_squared": 0.11723062782056473
+      },
+      {
+        "p": 0.5,
+        "guided": 0,
+        "normalized_proxy_change": -5.48172618408671e-16,
+        "W_minus_F_frobenius_squared": 2.3340104254785863e-29,
+        "proxy_tangent_frobenius_squared": 0.11723062782056473
+      },
+      {
+        "p": 0.5,
+        "guided": 1,
+        "normalized_proxy_change": -0.06309059227959979,
+        "W_minus_F_frobenius_squared": 0.009233065898009873,
+        "proxy_tangent_frobenius_squared": 0.11723062782056473
+      }
+    ],
+    "n26_ER_4702601": [
+      {
+        "p": 0.25,
+        "guided": 0,
+        "normalized_proxy_change": -3.2959746043559335e-17,
+        "W_minus_F_frobenius_squared": 2.3340104254785863e-29,
+        "proxy_tangent_frobenius_squared": 0.12984625813772968
+      },
+      {
+        "p": 0.25,
+        "guided": 1,
+        "normalized_proxy_change": -0.13226424812890886,
+        "W_minus_F_frobenius_squared": 0.03677280427240815,
+        "proxy_tangent_frobenius_squared": 0.12984625813772968
+      },
+      {
+        "p": 0.5,
+        "guided": 0,
+        "normalized_proxy_change": -3.2959746043559335e-17,
+        "W_minus_F_frobenius_squared": 2.3340104254785863e-29,
+        "proxy_tangent_frobenius_squared": 0.12984625813772968
+      },
+      {
+        "p": 0.5,
+        "guided": 1,
+        "normalized_proxy_change": -0.13226424812890886,
+        "W_minus_F_frobenius_squared": 0.03677280427240815,
+        "proxy_tangent_frobenius_squared": 0.12984625813772968
+      }
+    ],
+    "n34_RR_4703402": [
+      {
+        "p": 0.25,
+        "guided": 0,
+        "normalized_proxy_change": 1.734723475976807e-16,
+        "W_minus_F_frobenius_squared": 9.51087318359915e-29,
+        "proxy_tangent_frobenius_squared": 0.11561627187617479
+      },
+      {
+        "p": 0.25,
+        "guided": 1,
+        "normalized_proxy_change": -0.060630154196852123,
+        "W_minus_F_frobenius_squared": 0.008664328708096754,
+        "proxy_tangent_frobenius_squared": 0.11561627187617479
+      },
+      {
+        "p": 0.5,
+        "guided": 0,
+        "normalized_proxy_change": 1.734723475976807e-16,
+        "W_minus_F_frobenius_squared": 9.51087318359915e-29,
+        "proxy_tangent_frobenius_squared": 0.11561627187617479
+      },
+      {
+        "p": 0.5,
+        "guided": 1,
+        "normalized_proxy_change": -0.060630154196852123,
+        "W_minus_F_frobenius_squared": 0.008664328708096754,
+        "proxy_tangent_frobenius_squared": 0.11561627187617479
+      }
+    ],
+    "n34_ER_4703401": [
+      {
+        "p": 0.25,
+        "guided": 0,
+        "normalized_proxy_change": -2.463307335887066e-16,
+        "W_minus_F_frobenius_squared": 9.51087318359915e-29,
+        "proxy_tangent_frobenius_squared": 0.13248017716359523
+      },
+      {
+        "p": 0.25,
+        "guided": 1,
+        "normalized_proxy_change": -0.16274974231075512,
+        "W_minus_F_frobenius_squared": 0.05408338773406051,
+        "proxy_tangent_frobenius_squared": 0.13248017716359523
+      },
+      {
+        "p": 0.5,
+        "guided": 0,
+        "normalized_proxy_change": -2.463307335887066e-16,
+        "W_minus_F_frobenius_squared": 9.51087318359915e-29,
+        "proxy_tangent_frobenius_squared": 0.13248017716359523
+      },
+      {
+        "p": 0.5,
+        "guided": 1,
+        "normalized_proxy_change": -0.16274974231075512,
+        "W_minus_F_frobenius_squared": 0.05408338773406051,
+        "proxy_tangent_frobenius_squared": 0.13248017716359523
+      }
+    ]
+  },
+  "wall_seconds": 2.4251662499736995,
+  "non_claims": [
+    "No resampling or independent distribution replication",
+    "No theorem or statistical positive acceptance",
+    "Score units count informative evaluations; known initial cuts can be recomputed inside measured wall time",
+    "No numerical interval or joint empirical-PIT certificate"
+  ]
+}

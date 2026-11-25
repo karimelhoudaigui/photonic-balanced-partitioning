@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "claim_id": "P47-POSTHOC-RAW-CONSISTENCY",
+  "repository": {
+    "commit": "6bbaed9d2fe672d90c5d2bb6c50239ea0c1f989a",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P47_directed_pit_raw_audit.py",
+    "--output",
+    "research/P47_directed_pit_raw_audit/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Read-only consistency check of EVERY P47 raw row: independently recompute integer cuts and full decoder decisions, saved randomized count/Gaussian PIT, all gain totals, common incumbents, baseline informative-query counts and observed-time frontiers, physical routing proxy and declared output hashes. No new sampling.",
+    "coefficient_domain": "Integer adjacency/cuts, Python stdlib float/complex-independent intensity arithmetic and math.erfc; declared numerical tolerances only",
+    "conventions": "Post-hoc audit of the one already completed run, not a preregistered discovery or independent distribution replication. Every raw row inspected, no graph filter or score oracle beyond saved adjacency.",
+    "inputs": [
+      "P47 primary manifest and all six declared immutable results",
+      "Fixed complete raw JSONL stream, every primary and baseline query",
+      "Saved marginal tables, phase histograms and Gaussian actual factor variances"
+    ],
+    "bounds": {
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "maximum_raw_rows": 200000,
+      "cpu_seconds": 20,
+      "wall_seconds": 90,
+      "threads": 1
+    },
+    "non_claims": [
+      "No resampling, quantum advantage, new theorem or statistical gate",
+      "No interval accuracy or joint empirical-copula certificate",
+      "Informative score counts need not equal every repeated function invocation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T04:24:23.650164+00:00",
+    "runtime_seconds": 2.494086,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P47_directed_pit_raw_audit.py",
+    "research/P47_directed_pit_raw_audit_contract.json",
+    "experiments/P47_directed_pit/run_001/manifest.json",
+    "experiments/P47_directed_pit/run_001/data/summary.json",
+    "experiments/P47_directed_pit/run_001/data/raw.jsonl.gz",
+    "experiments/P47_directed_pit/run_001/data/context_n26_ER_4702601.json",
+    "experiments/P47_directed_pit/run_001/data/context_n26_RR_4702602.json",
+    "experiments/P47_directed_pit/run_001/data/context_n34_ER_4703401.json",
+    "experiments/P47_directed_pit/run_001/data/context_n34_RR_4703402.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P47_directed_pit_raw_audit.py",
+      "sha256": "4450c07e3cedc21411f144d12983e26a3046bd13b84c426dc319ee7c0920f036",
+      "sha256_after": "4450c07e3cedc21411f144d12983e26a3046bd13b84c426dc319ee7c0920f036"
+    },
+    {
+      "path": "research/P47_directed_pit_raw_audit_contract.json",
+      "sha256": "fc28587b85fefe32baadfba0e59146974ba38a58125e8891898dcca1d0693cfb",
+      "sha256_after": "fc28587b85fefe32baadfba0e59146974ba38a58125e8891898dcca1d0693cfb"
+    },
+    {
+      "path": "experiments/P47_directed_pit/run_001/manifest.json",
+      "sha256": "991b561e6186fbd27ace880e4ee503b0aa75766d362ce5fc1f04f4127853be8a",
+      "sha256_after": "991b561e6186fbd27ace880e4ee503b0aa75766d362ce5fc1f04f4127853be8a"
+    },
+    {
+      "path": "experiments/P47_directed_pit/run_001/data/summary.json",
+      "sha256": "e2187b5c2a2c3abd79bc8d02076e0fe0e0b1a0a071c8520589e0705df66dad2e",
+      "sha256_after": "e2187b5c2a2c3abd79bc8d02076e0fe0e0b1a0a071c8520589e0705df66dad2e"
+    },
+    {
+      "path": "experiments/P47_directed_pit/run_001/data/raw.jsonl.gz",
+      "sha256": "aa1386b93104ba1941ebc9d0cdde8488278f86a9bfeb7cd6f0632a83b359d562",
+      "sha256_after": "aa1386b93104ba1941ebc9d0cdde8488278f86a9bfeb7cd6f0632a83b359d562"
+    },
+    {
+      "path": "experiments/P47_directed_pit/run_001/data/context_n26_ER_4702601.json",
+      "sha256": "3aba076a05be1553ffdf2be02666affd6f035477d01b523425f17789d3f88318",
+      "sha256_after": "3aba076a05be1553ffdf2be02666affd6f035477d01b523425f17789d3f88318"
+    },
+    {
+      "path": "experiments/P47_directed_pit/run_001/data/context_n26_RR_4702602.json",
+      "sha256": "d0b09872f11865c9803fee342d259cc97896177dcb50ff592049794ea66cdf53",
+      "sha256_after": "d0b09872f11865c9803fee342d259cc97896177dcb50ff592049794ea66cdf53"
+    },
+    {
+      "path": "experiments/P47_directed_pit/run_001/data/context_n34_ER_4703401.json",
+      "sha256": "7af0a793f084e2ec0fb4bd5a9a86bb349ef5ab70dc851a876ae098654c503b3d",
+      "sha256_after": "7af0a793f084e2ec0fb4bd5a9a86bb349ef5ab70dc851a876ae098654c503b3d"
+    },
+    {
+      "path": "experiments/P47_directed_pit/run_001/data/context_n34_RR_4703402.json",
+      "sha256": "97f6de5ec542386b8e6cf43ae50030598bab9c473503baedd730215a3765623b",
+      "sha256_after": "97f6de5ec542386b8e6cf43ae50030598bab9c473503baedd730215a3765623b"
+    }
+  ],
+  "output_directory": "research/P47_directed_pit_raw_audit/run_001",
+  "declared_results": [
+    "research/P47_directed_pit_raw_audit/run_001/data/receipt.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P47_directed_pit_raw_audit/run_001/stdout.txt",
+      "sha256": "a1aed57936d1f022c2be3656a42fe4b0cbb216e70f6dd236b8a09c30c6607216",
+      "kind": "log"
+    },
+    {
+      "path": "research/P47_directed_pit_raw_audit/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P47_directed_pit_raw_audit/run_001/data/receipt.json",
+      "sha256": "3996222045c08d53c74e38a43e6dec3408fe122601037df5dedab1f329803218",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
