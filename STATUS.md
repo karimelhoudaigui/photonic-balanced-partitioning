@@ -6,9 +6,12 @@ P45-A (256 B draws) and P45-B (800 B draws, all collisions decoded) are complete
 DEV negatives, preserved with raw data and bounded manifests. P44 remains valid
 background, not the finish. P46 hollow-transfer/PIT is also a completed DEV
 negative: B total gain21 versus Gaussian32, with a graph-blind B setting chosen.
-P47 tests a mathematically directed graph map at prime photon counts; its
-preflight is authorized after independent static review, with no DEV outcome
-or positive claim yet. Current owner,
+P47's directed graph map also fails the full gate: B gains22 versus D0, but
+one fixed annealing baseline equals or beats its best cuts on all four graphs.
+P48-B now tests a graph spectral occupied subspace, after an analytic classical
+explanation stopped its first random-basis variant before simulation. No
+positive accepted result or held-out graph exists. Integrated tests583 PASS.
+Current owner,
 evidence and numerical-slot state: research/P45_LIVE_STATE.md.
 
 Active discovery branch: research/p41-discovery, restarted from published

@@ -65,7 +65,7 @@ reproduce all best B cut values; no single baseline is claimed to dominate
 every graph. See research/P46_bulk_pit_result.md and immutable
 experiments/P46_bulk_pit/. These four DEV graphs are not held-out validation.
 
-## Active changed bottleneck: P47
+## Completed changed bottleneck: P47
 
 The prospective graph map now uses a real cost-directed polar step,
 W=polar(F-epsilon*(C elementwise F)), C=J Delta J/opnorm(J Delta J),
@@ -84,15 +84,61 @@ network/decoder/accounting code. Adaptive separately reconstructed the finite
 bound, prime implication and graph witness before reading the author proof.
 Encoding froze695b5d2 before any numerical execution: new DEV graphs n26/34,
 ER/RR seeds4702601/02,4703401/02; guide on/off, p=.25/.5, lambda0/1;
-all six primary controls and four feasible searches remain. Physics is
-independently auditing this exact implementation before preflight/main.
+All six primary controls and four feasible searches remained. Physics audited
+the exact implementation20384ee before execution;13 preflight tests passed,
+then the main ran once on original source7a4cd49.
 
 Separately, adaptive froze427d984 for an analytic one-mode conditional-phase
 control, with a positive-coefficient dynamic program and Fraction-based
 independent small fixtures. It models continuous phases or (active_count+1)
 roots, not the four-root calibrated control in P46/P47. Qualification is
-authorized in the sole numerical slot. It does not change either frozen pilot
-or supply an optimization result. At this record no P47 DEV outcomes exist.
+completed:24 exact fixtures and12 synthetic N13/17 cases at80/120 digits
+passed. Maximum precision difference3.24e-80. This does not change either
+frozen pilot or supply an optimization result.
+
+P47 is now a completed DEV negative against the full positive gate. Total
+gains B22,D0,b4=9,Gaussian2,IID14,phase9; independently chosen setting gains
+B10,D0,b4=4,Gaussian2,IID6,phase6. B best cuts146/35/359/66 against common
+Cref154/37/359/66. A SINGLE fixed annealing control achieves146/35/359/49 at
+its stated score ceiling: it equals or beats B on all four graphs. The B-D
+separation is exploratory and unconfirmed, not a quantum or total-cost gain.
+Guided proxies decrease as proved; their squared Frobenius response remains
+small, .0368/.00923/.0541/.00866. Raw SHA
+aa1386b93104ba1941ebc9d0cdde8488278f86a9bfeb7cd6f0632a83b359d562.
+Author audit reconstructs147811 cuts and1536 decoders; this is not independent
+resampling. See research/P47_directed_pit_result.md. Integrated suite583 PASS,
+reports/P47_validation/; all602 historical scientific files still match.
+
+## Active changed bottleneck: P48-B
+
+P48 moves the occupied subspace over ALL output vertices: its projection Gram
+need not be diagonal on a separate new block. The first heat/Gaussian-frame
+card is preserved unchanged at42572d4, but not implemented: conditional on
+the subspace its input basis is Haar, making averaged raw counts exactly a
+classical spherical-coherent mixture. Own-model PIT prevents extending that
+objection to the entire pipeline, yet supplies no compelling mechanism by
+itself. See theory/P48_heat_frame_and_classical_controls_review.md.
+
+The NEW graph basis is first K eigenvectors of normalized Laplacian plus fixed
+1e-3 diagonal random marks, with a graph-blind Fourier ablation. Source ports
+are fixed and do not encode the frontend's incumbent. Marks/order are shared
+and carried under labels; gaps/residuals and zero-row cases remain explicit.
+This breaks the Haar-basis symmetry, but guarantees no useful cut distribution.
+Seven controls include analytic continuous-phase and spherical-coherent
+multinomials; five strong feasible searches include direct coherent spectral
+rounding. All frontend discoveries/costs are shared before gain is measured.
+
+Active prospective contract: research/P48_SPECTRAL_BASIS_CLAIM_CARD.md,
+originale30f75c plus pre-code continuous-phase clarification. NEW DEV seeds
+4802601/02 and4803401/02 atN26/34,K13/17, four settings,256 proposals per arm.
+Encoding owns new code; adaptive owns new subunit-row coherent-marginal helper
+and exact fixtures; physics owns independent card/code audit. No P48 numerical
+outcome or held-out graph exists. Never normalize isometry row mass mu_i to1.
+
+Root full-suite slot is released; only one numerical worker may run after
+coordinator grant. Physics may prepare a quarantined POST-HOC P47 headroom
+diagnosis, never P48 optima or partitions for training. Source/card freezes,
+resource limits, failure preservation and full positive gates remain.
 
 Do not rerun a rejected grid unchanged, publish a positive claim, modify the
 paper or use QPU credentials. No total-hardware-cost or novelty clearance is

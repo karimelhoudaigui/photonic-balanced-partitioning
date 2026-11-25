@@ -1,0 +1,110 @@
+{
+  "validated_on_utc": "2026-11-25 04:36:22 UTC",
+  "scope": "Current integrated input/output hashes; completed status does not certify mathematical interpretation. Historical corrected preflight P46/run_001 is intentionally excluded because it belongs to its earlier frozen source.",
+  "results": [
+    {
+      "manifest": "experiments/P45_encoding/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "70abc8",
+          "wall_time_seconds": 0.000009917,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "experiments/P45_adaptive/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "ce3f13",
+          "wall_time_seconds": 0.000495334,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "experiments/P46_bulk_pit/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "4b964e",
+          "wall_time_seconds": 0.000006875,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "experiments/P47_directed_pit/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "3fba24",
+          "wall_time_seconds": 0.000198584,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "research/P47_directed_pit_preflight/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "219f1c",
+          "wall_time_seconds": 0.000032208,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "research/P47_directed_pit_raw_audit/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "6e3f22",
+          "wall_time_seconds": 0.00004025,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "research/P47_conditional_phase_qualification/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "a443be",
+          "wall_time_seconds": 0.000014292,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "research/P47_conditional_phase_resource/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "a2bf6e",
+          "wall_time_seconds": 0.000014667,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    }
+  ]
+}

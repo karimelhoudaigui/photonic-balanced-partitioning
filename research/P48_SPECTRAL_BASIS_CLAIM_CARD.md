@@ -97,3 +97,11 @@ static review followed by targeted physics/decoder tests before unique main.
 All negative/partial/failure outputs survive; no automatic retry. A finite
 DEV signal can only trigger FOLLOW-UP; held-out and independent resampling
 with matched total costs are still mandatory before paper/hardware steps.
+
+Pre-code clarification after independent physics reading: production phase
+coefficients are CONTINUOUS uniform angles, including the coherent-rounding
+baseline. An r+1-root grid integrates the multinomial count law exactly but
+need not preserve column-phase invariance of the nonpolynomial top-K rounding
+rule; it is used only for finite marginal fixtures. A zero graph may have a
+diagonal projector. No universal nonzero offdiagonal or lower bound on mu_i
+is imposed. No code or DEV outcome preceded this clarification.
