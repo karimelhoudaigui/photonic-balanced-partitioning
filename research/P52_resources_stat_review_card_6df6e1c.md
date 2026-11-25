@@ -2,7 +2,8 @@
 
 **Verdict: CONDITIONAL PASS of the card/projection, before primary source
 freeze.** Read ROOT card `6df6e1cef4410c83e7122b7f9cce15c981b5147a` in full,
-its pre-data symmetry clarification, and the referenced H4 analytic checkpoint.
+its pre-data symmetry clarification at
+`bec20972668d80fcf9ba4c3c65ded6c0aaa149b6`, and the referenced H4 checkpoint.
 No P52 import, numerical fixture, sample, graph, LP or outcome was executed/read.
 This review is not the independent physics/P51-lemma proof audit, nor a primary
 code PASS: those still require the frozen implementation and qualification.
