@@ -88,3 +88,8 @@ It draws NO full-source DEV count and opens neither5502001 nor5502002. The
 decoder's separate29-test archive stays unchanged. No automatic main follows
 qualification PASS. No QPU, provider credential, paper edit or positive is
 authorized by these files; true PNR/full20-photon provider capability is UNKNOWN.
+
+The44th prospective fixture verifies GLOBAL uniqueness of596 seed hashes
+before data:72 training batches,108 possible evaluation batches over ALL
+policies, observation/rank/phase roles, group and FAST seeds. This strengthens
+the primary's within-batch role check without changing any source/seed/grid.

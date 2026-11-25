@@ -44,6 +44,36 @@ def test_exact_spec_grids_retuned_nulls_and_equal_training_effort():
     assert len(p55.policies("species4")) == 6
 
 
+def test_GLOBAL_seed_freshness_for_ALL_training_and_ALL_possible_fresh_policies_before_data():
+    """Metadata only: fixed hashes, no graph, RNG construction, count or phase draw."""
+    owners = {}
+    def unique(label, value):
+        assert type(value) is int and 0 <= value < 2**32
+        assert value not in owners, (owners.get(value), label, value)
+        owners[value] = label
+    for case in p55.expected_spec()["cases"]:
+        case_id = case["id"]
+        for group in (0, 1):
+            unique((case_id, "group", group), p55.base.seed_for(p55.NAMESPACES[f"group{group}"], case_id))
+        for mode in p55.FAST_MODES:
+            unique((case_id, "FAST", mode), p55.base.seed_for(p55.NAMESPACES["FAST"], case_id, mode))
+        for model in p55.MODELS:
+            for policy in p55.policies(model):
+                for stage in ("training", "evaluation"):
+                    trials = range(policy["training_draws"]//4) if stage == "training" else (0, 1)
+                    for trial in trials:
+                        label = (case_id, model, policy["id"], stage, trial)
+                        master = p55.base.seed_for(p55.NAMESPACES[stage], case_id, model, policy["id"], trial)
+                        unique(label + ("master",), master)
+                        observation = p55.base.seed_for(master, "observation")
+                        unique(label + ("observation",), observation)
+                        unique(label + ("neutral_rank",), p55.base.seed_for(master, "neutral_rank"))
+                        if model == "continuous_phase":
+                            for role in ("coherent_coefficients", "coherent_multinomial"):
+                                unique(label + (role,), p55.base.seed_for(observation, role))
+    assert len(owners) == 596
+
+
 @pytest.mark.parametrize("bad", ["float", "odd", "asymmetric", "negative", "loop", "overflow"])
 def test_integer_graph_guards_do_not_round_or_silently_overflow(bad):
     a = graph()

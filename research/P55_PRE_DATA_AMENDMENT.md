@@ -53,3 +53,13 @@ design is needed before any further experiment, replication or QPU step.
 All80 B draws,480 total draws, the two graph seeds, policy time grids,
 attempt/photon accounting, all-count exact decoder and frozen output/cost
 caps are unchanged. Other models' work never funds B's FAST allowance.
+
+Pre-qualification delta requested after ROOT's full source review: add ONE
+metadata-only seed freshness fixture (44 prospective pytest items in total).
+It covers all72 training batches and all108 POSSIBLE evaluation batches,
+including every policy rather than the unknown future selected one. Check
+all master/observation/exact-rank/continuous-phase subrole seeds plus group
+and FAST seeds for GLOBAL uniqueness (596 hashes). No graph/RNG/Perceval
+construction or draw is needed. Any collision is a pre-data qualification
+failure; it never authorizes changing a fixed seed. Primary source, graph
+seeds, model grids and scientific budgets remain byte-identical to e95bc0f.
