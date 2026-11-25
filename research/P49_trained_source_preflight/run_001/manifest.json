@@ -1,0 +1,247 @@
+{
+  "schema_version": 2,
+  "claim_id": "P49-PHYSICS-CALLER-RESOURCE-PREFLIGHT",
+  "repository": {
+    "commit": "3d6a1f2e2333f8c7bee39bfe6753a0423b2e3c18",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p49_trained_source.py",
+    "tests/test_p49_fast_classical.py",
+    "--junitxml=research/P49_trained_source_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "27 new finite fixtures for source-unitary/HOM complex coherence, q-dependent recomputation and mask, gauge/relabel, exact ALL-shot/equal-graph Fraction loss/ties, fresh evaluation isolation, nonredundant allocations/contiguous groups, separated clocks, paid private incumbents and correct FAST deadline/rank/allowance; rerun15 independently qualified FAST tests. Explicit setup fixture verifies total7=backend5+classical2, with classical2 charged to FAST while count generation/backend/JSON are excluded.",
+    "coefficient_domain": "Complex128/float64 passive matrices, immutable Decimal80/Fraction marginal helpers; integer cuts, exact Fraction objective/selection; observed wall/CPU deadlines",
+    "conventions": "Four source bases and lambda0/1; model-specific nonredundant sphere/IID grids; contiguous b4; shared Cref frozen before training;128 train+128 fresh eval per arm; loss uses ALL balanced cuts/total weight, equal four-graph mean; no optimum/mask/filter/heldout/QPU. FAST gets CPU from measured B classical wall, optical latency0, only deadline-eligible prefix.",
+    "inputs": [
+      "tests/test_p49_trained_source.py explicit small graphs/isometries and mocks; no DEV graph generation",
+      "theta/phi identity and complex HOMphi.37 fixtures, Rprime-size matrix invariants",
+      "tests/test_p49_fast_classical.py 15 independent incremental-cut/deadline fixtures"
+    ],
+    "bounds": {
+      "planned_tests": 42,
+      "maximum_full_fock_photons": 3,
+      "maximum_full_fock_modes": 6,
+      "maximum_rotation_modes": 17,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No DEV objective result, statistical positive or sampler certification from one local sample",
+      "Mocks test cost/selection isolation, not benchmark timings",
+      "No full-suite integration gate claimed by targeted preflight alone"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Fixed fixture seeds; FAST fixed tests; no actual DEV generation",
+    "seed": [
+      490080,
+      490081,
+      490082,
+      490006,
+      490010,
+      491006,
+      491010,
+      492006,
+      492010,
+      493000,
+      493001,
+      494000,
+      495000,
+      495001,
+      496000,
+      497000
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T05:57:53.914940+00:00",
+    "runtime_seconds": 16.329912,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P49_trained_source_probe.py",
+    "research/P49_trained_source_spec.json",
+    "research/P49_trained_source_contract.md",
+    "research/P49_trained_source_execution_contract.json",
+    "research/P49_trained_source_preflight_contract.json",
+    "tests/test_p49_trained_source.py",
+    "research/P49_fast_classical.py",
+    "tests/test_p49_fast_classical.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P49_trained_source_probe.py",
+      "sha256": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5",
+      "sha256_after": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5"
+    },
+    {
+      "path": "research/P49_trained_source_spec.json",
+      "sha256": "275bb9bcae40e0f4d7ba7ee8945c40435b617c89134f83e8e598ab7437387a42",
+      "sha256_after": "275bb9bcae40e0f4d7ba7ee8945c40435b617c89134f83e8e598ab7437387a42"
+    },
+    {
+      "path": "research/P49_trained_source_contract.md",
+      "sha256": "b68430fdf6d7d97a2f8dff6c73ee56c5b820fd1b260ad0975be23e6d1c24401d",
+      "sha256_after": "b68430fdf6d7d97a2f8dff6c73ee56c5b820fd1b260ad0975be23e6d1c24401d"
+    },
+    {
+      "path": "research/P49_trained_source_execution_contract.json",
+      "sha256": "ab145c57f48a8e197f116e593de94ee7681b9531a9ef4ba6d426617bfc99b363",
+      "sha256_after": "ab145c57f48a8e197f116e593de94ee7681b9531a9ef4ba6d426617bfc99b363"
+    },
+    {
+      "path": "research/P49_trained_source_preflight_contract.json",
+      "sha256": "420a348aa24d722e2d0b79f7ba2a3c8eb70d6956b49f81da5cce90606363d8b0",
+      "sha256_after": "420a348aa24d722e2d0b79f7ba2a3c8eb70d6956b49f81da5cce90606363d8b0"
+    },
+    {
+      "path": "tests/test_p49_trained_source.py",
+      "sha256": "1baeb2e478417e1cd1dcb9f456ee65c8a506e5a1401046b63fbb23dc691e03af",
+      "sha256_after": "1baeb2e478417e1cd1dcb9f456ee65c8a506e5a1401046b63fbb23dc691e03af"
+    },
+    {
+      "path": "research/P49_fast_classical.py",
+      "sha256": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff",
+      "sha256_after": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff"
+    },
+    {
+      "path": "tests/test_p49_fast_classical.py",
+      "sha256": "50bb0c50234934260ccd88cf065dd9752b959a7f447f81fda1a63c132f437621",
+      "sha256_after": "50bb0c50234934260ccd88cf065dd9752b959a7f447f81fda1a63c132f437621"
+    },
+    {
+      "path": "research/P48_spectral_pit_probe.py",
+      "sha256": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca",
+      "sha256_after": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca"
+    },
+    {
+      "path": "research/P48_coherent_marginals.py",
+      "sha256": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac",
+      "sha256_after": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P45_adaptive_probe.py",
+      "sha256": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92",
+      "sha256_after": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P49_trained_source_preflight/run_001",
+  "declared_results": [
+    "research/P49_trained_source_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P49_trained_source_preflight/run_001/stdout.txt",
+      "sha256": "01054e97e4a41c7c1b2422837c4d3426ec51a08833091d1e004a76028a8e815c",
+      "kind": "log"
+    },
+    {
+      "path": "research/P49_trained_source_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P49_trained_source_preflight/run_001/junit.xml",
+      "sha256": "31c975a0b620dc8dd960a950a7ef8b8d3ca32e6cd94309e27c70b2a74e6f31fb",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
