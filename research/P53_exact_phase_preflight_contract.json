@@ -1,0 +1,90 @@
+{
+  "claim_id": "P53-EXACT-ALGEBRA-PREFLIGHT",
+  "mathematics": {
+    "assertion_tested": "Seventeen finite exact cases: independent four/eight-column integer DP and parity, Fock factorial/normalization/quartic, admissible420 ties, Gaussian-integer probability controls, exact Chebyshev/Bernstein/elevation and internal-face obstruction, rational RREF/support fallback/corruption, mocked successful/inconclusive solver gate. No true P53 hull fit or sample.",
+    "coefficient_domain": "Python arbitrary integers and Fraction proof data, Gaussian-integer source polynomials, exact420 tie weights; float64 only inside immutable qualified P52 LP support provider.",
+    "conventions": "Post-P52 mathematical follow-up, no prediction/heldout claim. All6435 source rows,70 endpoint b4 occupation laws and71 fixed vertices retained. Probability multiplies prod n!/8^8. Degree6 then predeclared12 if6 fails;<=20 native fits1s. Support>1e-10 then allstrictpositive, exact first-nonzero RREF/free0/29equations, no source/target float rationalization. Timeout/failure gate inconclusive even if an exact witness is retained.",
+    "inputs": [
+      "Integer Walsh signs, closed F(A)F_z(B), all degree8 compositions and exact normalization polynomial",
+      "All35 complementary4+4 splits at both fixed endpoints, Gaussian-integer four-photon creation and probability convolution",
+      "Exact Chebyshev and Bernstein6/12; fixed rational support/identity checker; immutable P52 convex_fit SHA56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "source_states": 6435,
+      "source_phase_degree": 6,
+      "quartic_monomials": 90,
+      "maximum_source_products": 8100,
+      "tie_denominator": 420,
+      "control_vertices": 71,
+      "maximum_fits": 20,
+      "LP_seconds_per_fit": 1,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432,
+      "planned_tests": 17,
+      "maximum_qualification_native_LP_calls": 0
+    },
+    "non_claims": [
+      "No graph,C*,known partition,training,photonic/MC sample,Perceval or QPU",
+      "No full-rank-law/tail/loss/arbitrary-size/runtime dominance or novelty claim",
+      "Failure of global Bernstein/support exactification does NOT prove curve nonmembership",
+      "No P52 numerical probability/kernel input or floating value rounded into proof",
+      "No automatic retry,degree/cap increase,alternative solver,paper update or positive-goal completion"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P53_exact_continuous_phase.py",
+    "research/P53_exact_phase_spec.json",
+    "research/P53_exact_phase_contract.md",
+    "research/P53_exact_phase_execution_contract.json",
+    "research/P53_EXACT_CONTINUOUS_PHASE_CARD.md",
+    "research/P53_EXACT_PHASE_API_CARD.md",
+    "theory/P53_exact_phase_derivation.md",
+    "tests/test_p53_exact_phase.py",
+    "research/P52_collective_phase_probe.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P53_exact_phase_preflight_contract.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Pure exact fixed fixtures and mocked support provider; no RNG or native LP solve",
+    "seed": null
+  },
+  "resource_note": "Implementation/source freeze before imports/tests. Parent+encoding exact-arithmetic and physics normalization reviews, targetedPASS and explicit exclusive numerical slot required. Caps CPU60/wall90/thread1/log32MiB/output32MiB,planned256MiB; projected<96MiB symbolic data,not hardDarwinmemory/affinity. Preserve first failure without retry. Numerical LP proposal never substitutes for exact proof checks.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p53_exact_phase.py",
+    "--junitxml=research/P53_exact_phase_preflight/run_001/junit.xml"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "degrees": [6, 12],
+  "support_threshold": 1e-10,
+  "maximum_fits": 20,
+  "LP_seconds_per_fit": 1,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_planned_arrays_bytes": 268435456,
+  "maximum_new_output_bytes": 33554432,
+  "positive_optimizer_accepted": false
+}
