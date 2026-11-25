@@ -74,8 +74,8 @@ def test_integer_contraction_matches_independent_python_sum_and_swapped_banks():
     expected = python_contraction(first, second, matrix)
     forward, backward = p.contract_scalar(first, second, matrix), p.contract_scalar(second, first, matrix)
     assert forward["laurent_numerators"] == backward["laurent_numerators"] == expected
-    assert forward["shorter_bank_multiplied_first"] is True
-    assert backward["shorter_bank_multiplied_first"] is False
+    assert forward["banks_swapped_to_multiply_shorter_first"] is True
+    assert backward["banks_swapped_to_multiply_shorter_first"] is False
     assert forward["cosine_numerators"] == (expected[12],)+tuple(2*expected[12+k] for k in range(1, 13))
 
 
