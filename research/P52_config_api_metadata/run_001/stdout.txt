@@ -1,0 +1,57 @@
+{
+  "Config_dir": [
+    "__class__",
+    "__delattr__",
+    "__dir__",
+    "__doc__",
+    "__eq__",
+    "__format__",
+    "__ge__",
+    "__getattribute__",
+    "__getstate__",
+    "__gt__",
+    "__hash__",
+    "__init__",
+    "__init_subclass__",
+    "__le__",
+    "__lt__",
+    "__module__",
+    "__ne__",
+    "__new__",
+    "__reduce__",
+    "__reduce_ex__",
+    "__repr__",
+    "__setattr__",
+    "__sizeof__",
+    "__str__",
+    "__subclasshook__",
+    "_pybind11_conduit_v1_",
+    "compute_max_thread_count",
+    "unitary_check_precision",
+    "use_single_precision"
+  ],
+  "Config_doc": "Exqalibur global configuration\n\nAll its members are statically accessed and there is no need to create an instance of this class.\n\nStatic properties:\n\n* ``compute_max_thread_count`` - Maximum number of CPU threads to use for parallel algorithms.\n\n    By default, `exqalibur` uses as many CPU cores as possible.\n\n    Current parallel algorithms are:\n\n    * CircuitOptimizer\n    * Clifford & Clifford sampling back-end\n    * Permanent computation\n    * Permanent estimate with Gurvits method\n    * Noisy Sampling Simulator\n* ``use_single_precision`` - Switch between single and double precision for algorithms which supports it (currently, only Clifford & Clifford back-end).\n    When `True` set the floating point precision to 32 bits (64 bits per complex value), 64 bits otherwise (128 bits per complex value)\n* ``unitary_check_precision`` - Precision to use when testing whether a matrix is unitary or not. It might be required to increase this value for larger matrices.\n    Default is the same value as in numpy (1e-6).\n\nUsage example:\n\n>>> import exqalibur as xq\n>>> xq.Config.unitary_check_precision = 1e-4\n",
+  "cpu_seconds": 0.011748000000000001,
+  "exqalibur_version": "1.4.2",
+  "files": {
+    "exqalibur": {
+      "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/__init__.py",
+      "sha256": "6a6ac3b31ef4ebc06ef95c2fa0aed19516e9c72bbe4e59b05aea1f2055686690"
+    },
+    "exqalibur.exqalibur": {
+      "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+      "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+    }
+  },
+  "maxrss_native": 32768000,
+  "perceval_imported": false,
+  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "scope": "read-only Config class docs/dir and thread/cpu member descriptors; no instance/setter/getter/permanent/Fock/Perceval call",
+  "thread_cpu_members": {
+    "compute_max_thread_count": {
+      "doc": "int([x]) -> integer\nint(x, base=10) -> integer\n\nConvert a number or string to an integer, or return 0 if no arguments\nare given.  If x is a number, return x.__int__().  For floating point\nnumbers, this truncates towards zero.\n\nIf x is not a number or if base is given, then x must be a string,\nbytes, or bytearray instance representing an integer literal in the\ngiven base.  The literal can be preceded by '+' or '-' and be surrounded\nby whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.\nBase 0 means to interpret the base from the string as an integer literal.\n>>> int('0b100', base=0)\n4",
+      "type": "int"
+    }
+  },
+  "wall_seconds": 0.025657249963842332
+}
