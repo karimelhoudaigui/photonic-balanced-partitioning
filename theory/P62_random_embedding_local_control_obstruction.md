@@ -29,8 +29,13 @@ Decode by the k highest counts, breaking threshold ties uniformly. Equivalently
 give each mode a fresh independent continuous priority, and rank pairs
 (count,priority) lexicographically. Count magnitudes do not otherwise enter
 the graph-dependent decoder. The reported candidates come from this decoder;
-additional classically discovered candidates must also be credited to the
-classical comparison. There is no postselection or omitted failed attempt.
+additional classically discovered candidates are outside this theorem's
+decoded-best definition and must be accounted for separately. A common
+graph-only initial incumbent independent of Pi can be included in both bests.
+An arbitrary Pi-dependent frontend cannot be inserted without a new argument:
+its success indicator can correlate with the conditional frontier failure
+probability, invalidating the unweighted Jensen step below. There is no
+postselection or omitted failed attempt.
 
 Define a PURELY CLASSICAL trial:
 
