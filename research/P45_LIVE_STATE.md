@@ -34,7 +34,7 @@ and author scalar raw checks. Author checks are not fresh independent physical
 replication. Root read code/closure/raw summaries and validated both manifests
 after integration. No held-out graph was opened. These are DEV negatives.
 
-## Active changed bottleneck: P46
+## Completed changed bottleneck: P46
 
 Physics derived a spectrum-flat hollow Hamiltonian H=[[0,W],[W*,0]]: H²=I,
 U=sqrt(1-p)I-i sqrt(p)H transfers Binomial(K,p) photons exactly, for every W.
@@ -53,14 +53,48 @@ zero-variance branch, iid is uniform. A conditional classical phase sampler
 must reproduce the exact old Bernoulli/transfer-subset structure; calibration
 of its empirical CDF is approximate and fully charged, not an exact PIT claim.
 
-Encoding owns code/spec/new pre-run closure, physics owns invariants/PMF scope,
-adaptive independently reconstructed PIT before reading author code/proof
-(ed5b1e5). Planned fresh DEV graphs24/28 vertices,12/14 photons, ER/RR,
-seeds4602401/02 and4602801/02. These are NOT held-out confirmation graphs.
-Root will read the frozen code and independent review before granting the
-one numerical slot. At this record no P46 numerical result exists.
+P46 is now completed and preserved at original source642d9f7; its Gaussian
+variance correction b1535f8 preceded all DEV outcomes. Two preflights and
+independent exact-code static review b7b64c6 are retained. Main manifest is
+completed19.968032s,9 unchanged inputs, all1536 proposals, with256 per model.
+Root revalidated that manifest after integration on25-Nov-2026. Total gains
+B21,D14,b4=20,Gaussian32,IID19,conditional phase21; independent DEV setting
+selection gives B7,D9,Gaussian8. Selected B guide is the graph-blind Fourier
+ablation. There is no positive accepted result. Strong baselines and Gaussian
+reproduce all best B cut values; no single baseline is claimed to dominate
+every graph. See research/P46_bulk_pit_result.md and immutable
+experiments/P46_bulk_pit/. These four DEV graphs are not held-out validation.
 
-Do not rerun either P45 grid unchanged, publish a positive claim, modify the
+## Active changed bottleneck: P47
+
+The prospective graph map now uses a real cost-directed polar step,
+W=polar(F-epsilon*(C elementwise F)), C=J Delta J/opnorm(J Delta J),
+epsilon=1/(4 max(opnorm(C elementwise F),maxabs(C))). A direct finite-step
+proof guarantees nonincrease of the single-swap routing proxy. This is a
+classically solvable assignment proxy, not the actual collective cut or an
+interference advantage. A realizable strict-local-minimum graph at K4 stalls
+exactly despite a better two-swap partition; that counterexample is preserved.
+Prime Fourier dimensions K13/17 remove nonzero centered stationary directions
+in exact arithmetic, with explicit known Fourier-defect attribution. Weak
+signals under the declared numerical threshold are retained as zero branches.
+
+Physics proofs are integrated as theory/P47_cost_directed_polar_step.md and
+theory/P47_prime_Fourier_stationarity_review.md. Root read them and the new
+network/decoder/accounting code. Adaptive separately reconstructed the finite
+bound, prime implication and graph witness before reading the author proof.
+Encoding froze695b5d2 before any numerical execution: new DEV graphs n26/34,
+ER/RR seeds4702601/02,4703401/02; guide on/off, p=.25/.5, lambda0/1;
+all six primary controls and four feasible searches remain. Physics is
+independently auditing this exact implementation before preflight/main.
+
+Separately, adaptive froze427d984 for an analytic one-mode conditional-phase
+control, with a positive-coefficient dynamic program and Fraction-based
+independent small fixtures. It models continuous phases or (active_count+1)
+roots, not the four-root calibrated control in P46/P47. Qualification is
+authorized in the sole numerical slot. It does not change either frozen pilot
+or supply an optimization result. At this record no P47 DEV outcomes exist.
+
+Do not rerun a rejected grid unchanged, publish a positive claim, modify the
 paper or use QPU credentials. No total-hardware-cost or novelty clearance is
 implied by a development observation. Keep all original worker refs; manifests
 name pre-run worker commits, not root cherry-picks. Existing602 historical
