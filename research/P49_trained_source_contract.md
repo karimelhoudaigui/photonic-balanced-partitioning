@@ -115,6 +115,14 @@ For EACH graph grant CPU seconds equal to the measured B classical WALL:
     common bracketed compute + B train/eval PIT/decoder/fitness bookkeeping
     + one-quarter B global selection wall.
 
+Only the make_optical_sampler/cold-import interval is classified as backend
+setup. Hashes, role seeds, jitter/noise RNGs, closures and all other constructor
+work are measured as TOTAL setup MINUS backend, in both wall and CPU. This
+classical setup is recorded and included in the FAST grant. A nested-clock
+guard prevents an invalid negative remainder. The constructor/setup totals and
+their backend/classical components are subtotals, never additional charges.
+The preflight explicitly checks total7=backend5+classical2.
+
 Optical backend setup and count-generation time receive ZERO grant. This
 generously assigns optical sampling zero latency. Raw/context/trace JSON and
 list serialization are outside these clocks; legacy per-query JSON cannot
@@ -162,6 +170,10 @@ loss and ties, evaluation leakage/missing cases, meaningful grids/fresh roles,
 contiguous b4, setup/count versus post/JSON clocks, own paid incumbents,
 FAST rank/allowance/deadline/cap behavior, immutable anchor equivalence and
 fresh four-context recomputation. No DEV outcome is in these fixtures.
+
+Snapshot927448a is preserved. The constructor timing correction above was
+identified independently by ROOT/adaptive before ANY P49 execution; it changes
+only cost accounting/tests, no seed, policy, source family or loss.
 
 Source/helper/spec/contracts/tests are committed before numerical work;
 distinct physics and caller/resource reviews precede targeted preflight,
