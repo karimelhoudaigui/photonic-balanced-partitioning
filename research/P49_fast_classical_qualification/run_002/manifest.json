@@ -1,0 +1,177 @@
+{
+  "schema_version": 2,
+  "claim_id": "P49-FAST-CLASSICAL-INTEGER-PREFIX-QUALIFICATION",
+  "repository": {
+    "commit": "82de1cba1662e6bbb2a42039d5b61cedf880f5c4",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p49_fast_classical.py",
+    "--junitxml=research/P49_fast_classical_qualification/run_002/data/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Efficient balanced search uses exact cached integer cuts, correct incremental swap deltas and vectorized cross-pair scans; compact completed-checkpoint prefixes reconstruct valid cuts and cannot credit a late batch. Fixed-count trajectories reproduce from seeds, including carried-priority relabeling.",
+    "coefficient_domain": "Bounded NumPy int64 graph/cut/delta arithmetic; independent Python integer edge sums; float64 temperatures and monotone clock observations",
+    "conventions": "Graph N6/N10 fixtures are newly generated test inputs, not DEV graphs or held-out graphs. No optimum is computed or input. Given-free common incumbent is verified. CPU/wall include validation, setup, search and compact traces, exclude JSON conversion and disk writes. Proposal cap is not a resource-equivalence assertion; early cap/wall stop prevents accepting a positive.",
+    "inputs": [
+      "All balanced subsets and all cross-swaps of fixed seeded N6/N10 integer test graphs, checked against independent scalar edge sums",
+      "100-swap sequences per N6/N10, fixed-count repeated searches, carried-priority relabeling and all compact trace cuts",
+      "Synthetic/virtual-clock deadline-prefix checks; invalid graph/source/Cref/overflow cases; zero-weight N2/N6 boundaries"
+    ],
+    "bounds": {
+      "maximum_test_vertices": 10,
+      "maximum_proposals_per_fixed_count_test": 3000,
+      "CPU_seconds": 30,
+      "wall_seconds": 50,
+      "threads": 1,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No DEV or confirmation graph generated or searched",
+      "No new photonic result, positive advantage or QPU validation",
+      "No optimality guarantee for the classical heuristic",
+      "No speed claim from test elapsed time or score-unit resource equivalence",
+      "No change to any prior pilot/helper/raw archive/manuscript"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng/PCG64, fixed-count trajectories independent of clock",
+    "seed": [
+      490006,
+      490010,
+      491006,
+      491010,
+      492006,
+      492010,
+      493000,
+      493001,
+      494000,
+      495000,
+      495001,
+      496000,
+      497000
+    ],
+    "seeds": [
+      490006,
+      490010,
+      491006,
+      491010,
+      492006,
+      492010,
+      493000,
+      493001,
+      494000,
+      495000,
+      495001,
+      496000,
+      497000
+    ],
+    "graph_population_selection": "N6/N10 predetermined fixture seeds; all balanced states retained, no favorable instance selection"
+  },
+  "run": {
+    "started_at": "2026-11-25T05:26:46.283148+00:00",
+    "runtime_seconds": 0.680146,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 50.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P49_fast_classical.py",
+    "tests/test_p49_fast_classical.py",
+    "research/P49_fast_classical_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P49_fast_classical.py",
+      "sha256": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff",
+      "sha256_after": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff"
+    },
+    {
+      "path": "tests/test_p49_fast_classical.py",
+      "sha256": "50bb0c50234934260ccd88cf065dd9752b959a7f447f81fda1a63c132f437621",
+      "sha256_after": "50bb0c50234934260ccd88cf065dd9752b959a7f447f81fda1a63c132f437621"
+    },
+    {
+      "path": "research/P49_fast_classical_contract.json",
+      "sha256": "5f5e670e512c891945c83fd4e46419fcde4527330b31bb6bd9a21a92dbce1021",
+      "sha256_after": "5f5e670e512c891945c83fd4e46419fcde4527330b31bb6bd9a21a92dbce1021"
+    }
+  ],
+  "output_directory": "research/P49_fast_classical_qualification/run_002",
+  "declared_results": [
+    "research/P49_fast_classical_qualification/run_002/data/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P49_fast_classical_qualification/run_002/stdout.txt",
+      "sha256": "19615c54457c7d11e2c37b0392fb507a69ad224def41e0bb09c412b47b680dde",
+      "kind": "log"
+    },
+    {
+      "path": "research/P49_fast_classical_qualification/run_002/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P49_fast_classical_qualification/run_002/data/junit.xml",
+      "sha256": "e6d4f42ebb2242394cc4f4ef762e7586dcc86d3b44f32e8fdb35c83370b590f7",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
