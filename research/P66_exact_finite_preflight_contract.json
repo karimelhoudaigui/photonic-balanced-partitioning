@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "binding_state": "CODE_ONLY_NOT_EXECUTED",
+  "claim_id": "P66-EXACT-FINITE-TINY-QUALIFICATION",
+  "mathematics": {
+    "assertion_tested": "Nine authored tiny fixture functions validate exact complex rational arithmetic, first-nonzero-pivot inverse, ordered products/adjoints, independent four-mode permutation-sum permanent reference, both normalized Fock factorials, d2 single-bright PGF, four-mode scalar cuts/dark projector, serialization/exclusive output and five fixed native two-mode/two-photon HOM probabilities. No P66 main-family graph or grid is generated.",
+    "coefficient_domain": "Exact Fraction pairs Q(i); binary64 only for five local native HOM point amplitudes",
+    "conventions": "UNEXECUTED prospective fixtures. Matrices have at most4modes, native2photons/2modes. No production helper imports, sampler, random seed/draw, graph generator, K4/K6 point, full Fock law or optimizer. Both JUnit properties are written before native tolerance assertions, including completed observations on a query exception.",
+    "inputs": [
+      "Hardcoded matrices of dimension at most4, two-mode normalized Fock counts and d2 PGF only",
+      "HOM queries: input11->output11/20/02 and input20->output20/11; five numerical probabilities, no samples",
+      "Persistent root .venv Python3.11.15; native packages checked before calls; loaded module paths/hashes archived in JUnit"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "workers": 1,
+      "max_new_log_bytes": 4194304,
+      "max_new_scientific_bytes": 29360128,
+      "max_combined_log_scientific_bytes": 33554432,
+      "planned_logical_workspace_bytes": 268435456,
+      "planned_pytest_items": 9,
+      "max_fixture_modes": 4,
+      "native_fixture_modes": 2,
+      "native_fixture_photons": 2,
+      "native_point_queries": 5,
+      "main_family_graphs": 0,
+      "native_random_draws": 0,
+      "optimizer_steps": 0,
+      "failed_retries": 0,
+      "absolute_tolerance": 1e-12,
+      "relative_tolerance": 1e-7
+    },
+    "non_claims": [
+      "Qualification does not test any P66 main-family matrix/probability or establish its universal theorem",
+      "No QPU, DEV panel, random graph/count, native K4/K6 query, calibration or automatic main authorization",
+      "Tolerance agreement does not certify relative accuracy for absolute-dominated points or native physical sampling",
+      "Logical256MiB is a workspace plan, not a hard Darwin RSS or native import footprint guarantee",
+      "First failure stops qualification; resource/output/import failure is retained as inconclusive with zero retries"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "theory/P66_independent_bright_dark_audit.md",
+    "research/P67_exact_covariance_symmetry_obstruction.md",
+    "research/P66_exact_finite_check.py",
+    "tests/test_p66_exact_finite_check.py",
+    "research/P66_EXACT_FINITE_CHECK_CONTRACT.md",
+    "research/P66_exact_finite_preflight_contract.json",
+    "research/P66_exact_finite_execution_contract.json"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "numpy", "version": "2.4.6"},
+    {"name": "scipy", "version": "1.17.1"},
+    {"name": "perceval-quandela", "version": "1.3.0"},
+    {"name": "exqalibur", "version": "1.4.2"},
+    {"name": "pytest", "version": "8.4.2"}
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "All fixtures are literal deterministic tiny matrices/counts; no RNG, seed or draw",
+    "seed": null
+  },
+  "resource_note": "CODE ONLY. ROOT full static review plus exclusive slot precedes one qualification. CPU60/wall90/env+native1/log4MiB/scientific28MiB/combined32MiB/logical256MiB; no timing calibration, hidden retry, cap increase or main-family query. Native cold import is inside the same paid process boundary. External installed dependencies are locked by package versions; loaded native module files and interpreter path/hash are observed in JUnit and rehashed before success.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-x",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_p66_exact_finite_check.py",
+    "--junitxml=research/P66_exact_finite_preflight/run_001/junit.xml"
+  ],
+  "declared_results": [
+    "research/P66_exact_finite_preflight/run_001/junit.xml"
+  ]
+}

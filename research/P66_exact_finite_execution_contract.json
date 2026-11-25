@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "binding_state": "CODE_ONLY_NOT_EXECUTED",
+  "claim_id": "P66-EXACT-FINITE-BRIGHT-DARK-DIAGNOSTIC",
+  "mathematics": {
+    "assertion_tested": "32 exact rational Cayley matrices satisfy both inverse identities, unitarity/symmetry, separate dark commutation and rank-at-most-one uniform cross blocks; all256 raw CF bosonic points and256 distinguishable points obey exact point and128union bounds; every1988balancedcut obeys the cost landscape; seven L2..8 single-bright PGFs have exact mass/positivity/mean/tail and source all-bright mass; all32 frozen native point probabilities agree with exact values in mixed tolerance.",
+    "coefficient_domain": "Q(i) as independent stdlib Fraction pairs; exact rational Gray-code Ryser permanents K4/K6; binary64 complex for32 local Naive reference points only",
+    "conventions": "L2/3,N4L,K2L,ports A1,A2,B1,B2 with L each,M3,h1,offset matchings; w0 or1/(2L). D=max weighted adjacency row sum+lambda*(N-1), H=(A+lambda*(J-I))/D, U=(I+i*t*H)*(I-i*t*H)^-1. Rows output/columns input. Every source and target CF: both Fock factorials1. Raw target events are never renormalized by CF probability. Zero/tiny points and repeated symmetry-related combinations are retained.",
+    "inputs": [
+      "t=[0,1/4,1,2] and lambda=[0,1/4], both L values and both graph families:32 exact matrices",
+      "For every matrix, all4bad whole-clique sources Ax union By and2good whole-block targets CA/CB:256 B+256 D points,128unions",
+      "All balanced subsets including complements:2*(70+924)=1988 exact scalar cuts",
+      "For L2..8,d2L: target PGF sum_m(d)_m/d^m*(z-1)^m and source PGF sum_m(L)_m/d^m*(z-1)^m",
+      "Native32 points only at t1,lambda1/4:2Lvalues*2families*4sources*2targets; no canary or calibration"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "workers": 1,
+      "max_new_log_bytes": 4194304,
+      "max_new_scientific_bytes": 29360128,
+      "max_combined_log_scientific_bytes": 33554432,
+      "max_records_bytes": 28311552,
+      "planned_logical_workspace_bytes": 268435456,
+      "max_inverse_dimension": 12,
+      "max_permanent_dimension": 6,
+      "max_bright_PGF_modes": 16,
+      "matrices": 32,
+      "bosonic_points": 256,
+      "distinguishable_points": 256,
+      "unions": 128,
+      "balanced_cuts": 1988,
+      "bright_PGF_pairs": 7,
+      "native_point_queries": 32,
+      "native_random_draws": 0,
+      "full_multimode_PNR_enumerations": 0,
+      "optimizer_steps": 0,
+      "QPU_calls": 0,
+      "failed_retries": 0,
+      "absolute_tolerance": 1e-12,
+      "relative_tolerance": 1e-7
+    },
+    "non_claims": [
+      "Finite grid consistency does not replace the universal proof or test P67's whole graph-covariant class",
+      "No positive optimizer result, B-versus-D ordering, novelty certificate, independent physical sampling or hardware/runtime advantage",
+      "32 predetermined native probabilities are a tolerance-conditional point reference, not a complete PNR law or global TV bound",
+      "Mixed tolerance is1e-12+1e-7*max(p_native,float(p_exact)); absolute-dominated points establish no relative accuracy",
+      "No random draw, seed, source selection, graph selection, DEV, optimizer, heldout, sampler, Processor or QPU",
+      "Output/resource/import failure and incomplete populations remain inconclusive; no missing row is zero and zero retries apply",
+      "Logical256MiB is planned workspace, not hard Darwin RSS/affinity or native import footprint enforcement",
+      "Observed loaded-module hashes and locked packages do not authenticate OS libraries, unloaded files or software installation provenance"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "theory/P66_independent_bright_dark_audit.md",
+    "research/P67_exact_covariance_symmetry_obstruction.md",
+    "research/P66_exact_finite_check.py",
+    "tests/test_p66_exact_finite_check.py",
+    "research/P66_EXACT_FINITE_CHECK_CONTRACT.md",
+    "research/P66_exact_finite_preflight_contract.json",
+    "research/P66_exact_finite_execution_contract.json"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "numpy", "version": "2.4.6"},
+    {"name": "scipy", "version": "1.17.1"},
+    {"name": "perceval-quandela", "version": "1.3.0"},
+    {"name": "exqalibur", "version": "1.4.2"}
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Entire finite domains and native points frozen before execution; exact deterministic arithmetic; no RNG/seed/draw",
+    "seed": null
+  },
+  "resource_note": "CODE ONLY, not authorization. ROOT must review complete final source/fixtures/proofs/contracts, freeze exact hashes, allocate an exclusive slot, authorize one qualification, then separately one main. New v2 runner CPU60/wall90/env+native1/log4MiB/scientific28MiB/combined32MiB/logical256MiB, zero retries. No cost calibration or scope/cap/tolerance amendment after starting. Runner hashes all10 project inputs before/after; native loader records persistent interpreter plus actual loaded package-module paths/hashes, checks versions/thread configuration and rehashes observed native inputs after queries. Complete count gate precedes PASS; failure prefixes remain inconclusive.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P66_exact_finite_check.py",
+    "--output",
+    "research/P66_exact_finite_main/run_001/data"
+  ],
+  "declared_results": [
+    "research/P66_exact_finite_main/run_001/data/records.jsonl",
+    "research/P66_exact_finite_main/run_001/data/failure.json",
+    "research/P66_exact_finite_main/run_001/data/summary.json"
+  ]
+}
