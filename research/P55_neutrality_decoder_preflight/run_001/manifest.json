@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "claim_id": "P55-NEUTRALITY-DP-COUNT-AND-UNRANK-PREFLIGHT",
+  "repository": {
+    "commit": "4812e881a3aee34443f0f6d2811d170a61827639",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p55_neutrality_decoder.py",
+    "--junitxml=research/P55_neutrality_decoder_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "For synthetic nonnegative integer counts, exact DP counts and global-rank backward unranking give a bijection onto ALL balanced subsets minimizing absolute photon imbalance. Every exact rank is checked on every count composition with N=2,4,6 and M=0..N; one mocked arbitrary-integer oracle call selects that rank without photon rejection. Independent brute-force combinations supply the expected minimizer sets. No graph or physical sampler is evaluated.",
+    "coefficient_domain": "Python arbitrary-precision integers for multiplicities, DP counts and ranks; no floating point, NumPy, optical simulator or numerical optimizer",
+    "conventions": "Even N, K=N/2, M=sum(counts), error=abs(2*sum_selected_counts-M); all minimum-error targets weighted by their exact DP counts, one global uniform rank. Injected oracle must be uniform on arbitrary-size integer ranges. Law relabeling, not same-rank relabeling coupling. Out-of-domain or invalid-oracle failure is retained, never an instruction to resample a physical shot.",
+    "inputs": [
+      "ALL compositions at N2/4/6 with total M0..N: exactly 1000 synthetic vectors, fewer than 20000 internal exact-rank/mock-oracle routes, not 20000 pytest items",
+      "Vacuum, one photon, all bunching and all-one counts; doublon/hole same-side condition; odd M without exact neutrality; M>N product-marginal-compatible inputs",
+      "Complement/relabeling law equality; N70/M0 arbitrary-integer ways above 2^64; input/DP-cell/rank guards before allocation or resampling"
+    ],
+    "bounds": {
+      "planned_pytest_items": 29,
+      "exhaustive_synthetic_count_vectors": 1000,
+      "internal_mock_rank_routes_upper_bound": 20000,
+      "maximum_actually_allocated_table_cells_in_fixtures": 2556,
+      "maximum_actually_allocated_vertices_in_fixtures": 70,
+      "prototype_even_N_max": 128,
+      "prototype_M_max": 4096,
+      "prototype_DP_cell_max_before_allocation": 2000000,
+      "planned_logical_memory_bytes": 134217728,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No photonic optimization benefit, graph family, quantum advantage, full physical benchmark, held-out test, hardware compatibility or QPU validation",
+      "Prototype resource bounds are engineering failure limits, not postselection or a claim that the mathematical decoder fails outside this domain",
+      "Exact mock-rank enumeration establishes the combinatorial sampling map on the tested range, not the statistical quality or runtime of an external random-number generator",
+      "The DP and random-bit generation are classical work and must be charged in any future optimization comparison",
+      "No graph or photon sampler pilot follows this qualification without a separate frozen card, review and exclusive numerical slot; no automatic retry or budget increase"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Every admissible small exact rank is enumerated via a deterministic mock oracle; no random bits, graph seeds, phases or physical samples are drawn"
+  },
+  "run": {
+    "started_at": "2026-11-25T12:22:33.853002+00:00",
+    "runtime_seconds": 0.553372,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P55_neutrality_decoder.py",
+    "tests/test_p55_neutrality_decoder.py",
+    "research/P55_NEUTRAL_DEFECT_DECODER_CARD.md",
+    "research/P55_neutrality_decoder_preflight_contract.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P55_neutrality_decoder.py",
+      "sha256": "59d157f19e20f628e7955abb8c52defc9260f9d77ee36eb055a53e9adef70762",
+      "sha256_after": "59d157f19e20f628e7955abb8c52defc9260f9d77ee36eb055a53e9adef70762"
+    },
+    {
+      "path": "tests/test_p55_neutrality_decoder.py",
+      "sha256": "e0550401c09cdcadd8676b22f114627a57204765846124e82e90b9ff9147dae8",
+      "sha256_after": "e0550401c09cdcadd8676b22f114627a57204765846124e82e90b9ff9147dae8"
+    },
+    {
+      "path": "research/P55_NEUTRAL_DEFECT_DECODER_CARD.md",
+      "sha256": "5bb6337b2cf19f38d707a2a7135807fac2b513a5176fbe7c2932a013b9ddd162",
+      "sha256_after": "5bb6337b2cf19f38d707a2a7135807fac2b513a5176fbe7c2932a013b9ddd162"
+    },
+    {
+      "path": "research/P55_neutrality_decoder_preflight_contract.json",
+      "sha256": "5078c9e36c1ab3d4eb2260701d96da463b12fa209dd3f255662b0349f509d40c",
+      "sha256_after": "5078c9e36c1ab3d4eb2260701d96da463b12fa209dd3f255662b0349f509d40c"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P55_neutrality_decoder_preflight/run_001",
+  "declared_results": [
+    "research/P55_neutrality_decoder_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P55_neutrality_decoder_preflight/run_001/stdout.txt",
+      "sha256": "5267259f63cf198e0ace2e4dbdbb617328a84e416005b15ac35292d613fcfe27",
+      "kind": "log"
+    },
+    {
+      "path": "research/P55_neutrality_decoder_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P55_neutrality_decoder_preflight/run_001/junit.xml",
+      "sha256": "aa1ac464ae86b8404b5b174f7ec40bb4a8cc01985c03e0403ac7f4f8eb7acbb4",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
