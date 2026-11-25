@@ -1,0 +1,207 @@
+{
+  "schema_version": 2,
+  "claim_id": "P52-INDEPENDENT-NAIVE-API-QUALIFICATION",
+  "repository": {
+    "commit": "8a8ffefb4e08ed150afbef9a120732c323a6fb13",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P52_naive_replication.py",
+    "--mode",
+    "qualify",
+    "--output",
+    "research/P52_naive_qualification/run_004/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Eight administrative/analytic guards (including mocked native maximum setter/readbacks/JSON, optional observations and foreign scalars) and eleven declared small API/normalization checks with documented Config maximum1 set/read back before any permanent and read again after work.",
+    "coefficient_domain": "complex128/float64 finite estimates, not interval certificates",
+    "conventions": "Local NaiveBackend normalized permanent amplitudes; source single photons, output factorial collisions retained; vacuum tested separately. No production U8 permanent, pruning, sampling or primary project import.",
+    "inputs": [
+      "Frozen six reference hashes checked without opening arrays",
+      "HOM, phi=.37 complex 2x2, identity8 single CF amplitude, vacuum, known complex permanent, four scalar-unitary residuals"
+    ],
+    "bounds": {
+      "pytest_guards": 8,
+      "small_numeric_checks": 11,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads_requested": 1,
+      "max_array_bytes": 67108864,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "Qualification does not authorize full run",
+      "No observed thread sample or environment setting proves native single threading",
+      "No optimization, graph, QPU, novelty or interval certification"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": []
+  },
+  "run": {
+    "started_at": "2026-11-25T11:49:21.319981+00:00",
+    "runtime_seconds": 2.129659,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P52_naive_replication.py",
+    "tests/test_p52_naive_replication.py",
+    "research/P52_naive_validation_contract.md",
+    "research/P52_naive_qualification_contract.json",
+    "research/P52_naive_full_contract.json",
+    "experiments/P52_collective_phase/run_001/manifest.json",
+    "experiments/P52_collective_phase/run_001/data/geometry.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_0.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_1.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_2.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_3.npz"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P52_naive_replication.py",
+      "sha256": "2d590822218df9300457923d6fc9f619d15666eae522b96b91aafebd88b5a55e",
+      "sha256_after": "2d590822218df9300457923d6fc9f619d15666eae522b96b91aafebd88b5a55e"
+    },
+    {
+      "path": "tests/test_p52_naive_replication.py",
+      "sha256": "c9cfed60bd07213bb909f4e5078f7842d1b5d2461fe14f8e1caa44f425e8eb87",
+      "sha256_after": "c9cfed60bd07213bb909f4e5078f7842d1b5d2461fe14f8e1caa44f425e8eb87"
+    },
+    {
+      "path": "research/P52_naive_validation_contract.md",
+      "sha256": "9c31883c595f980962ccc4396a7007da21a8d51c810833baec2b027f902bfc27",
+      "sha256_after": "9c31883c595f980962ccc4396a7007da21a8d51c810833baec2b027f902bfc27"
+    },
+    {
+      "path": "research/P52_naive_qualification_contract.json",
+      "sha256": "e182fd651e51f42de22b5fd9b69ef8a59b9cc11ebc889ac9bf434bd241b47f6a",
+      "sha256_after": "e182fd651e51f42de22b5fd9b69ef8a59b9cc11ebc889ac9bf434bd241b47f6a"
+    },
+    {
+      "path": "research/P52_naive_full_contract.json",
+      "sha256": "f7c073faf567abfc589c609d1b70aa1715f9e230516c4e4b4d63579f89b6ae0a",
+      "sha256_after": "f7c073faf567abfc589c609d1b70aa1715f9e230516c4e4b4d63579f89b6ae0a"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/manifest.json",
+      "sha256": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7",
+      "sha256_after": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/geometry.npz",
+      "sha256": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715",
+      "sha256_after": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_0.npz",
+      "sha256": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542",
+      "sha256_after": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_1.npz",
+      "sha256": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07",
+      "sha256_after": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_2.npz",
+      "sha256": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8",
+      "sha256_after": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_3.npz",
+      "sha256": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154",
+      "sha256_after": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154"
+    }
+  ],
+  "output_directory": "research/P52_naive_qualification/run_004",
+  "declared_results": [
+    "research/P52_naive_qualification/run_004/data/report.json",
+    "research/P52_naive_qualification/run_004/data/guard_junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P52_naive_qualification/run_004/stdout.txt",
+      "sha256": "6d56c8102dc711edc5d6122bd2f8c10b7b6ff01093966824d826f688ddca7d90",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_naive_qualification/run_004/stderr.txt",
+      "sha256": "f6b8d749925516cd93ff94e5a2a2dbbfa298d03e6f7e97babf6434cda66b3025",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_naive_qualification/run_004/data/report.json",
+      "sha256": "7a7000be95b74921c6642746ba660e8ac0e11a34325c93d537c64f20d1e2f3bb",
+      "kind": "result"
+    },
+    {
+      "path": "research/P52_naive_qualification/run_004/data/guard_junit.xml",
+      "sha256": "1c918fb3e7076e23f877c56d1ec98d1b37527d6caac3ed220e6c08435c28fe6d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
