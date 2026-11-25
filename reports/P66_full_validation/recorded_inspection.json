@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-25T21:35:53.044895+00:00",
+  "method": "Read-only stdlib recorded-output inspection: exact Cartesian coverage, serialized scalar cuts and B/D union sums; no permanent or matrix recomputation, no new source query",
+  "producer_commit": "a5ea2b9c9232834e9d999ec02912c9ef190ced85",
+  "manifest_sha256": "2e9474d6d3642cc36566f5259bb9561baed08d1a0c615c50787bd8651f6157ee",
+  "records_sha256": "976b7a4d2915857d60fddf96ff55b2390bc9fbdea5432eb9e87fdd30f66540c6",
+  "record_counts": {
+    "cut": 1988,
+    "matrix": 32,
+    "probability": 256,
+    "union": 128,
+    "bright_pgf": 7,
+    "native_runtime": 1,
+    "native_setup": 4,
+    "native_point": 32
+  },
+  "expected_population_verified": true,
+  "serialized_cuts_verified": 1988,
+  "serialized_target_points": 256,
+  "serialized_unions_verified": 128,
+  "exact_B_zero_points": 112,
+  "exact_D_zero_points": 112,
+  "native_max_absolute_error": 2.439454888092385e-19,
+  "native_max_relative_error_observed_only": 7.0889748913592685e-15,
+  "native_tolerance_dominance": {
+    "relative": 16,
+    "absolute": 16
+  },
+  "native_exact_zero_count": 0,
+  "native_tiny_positive_count": 0,
+  "science_bytes": 960409,
+  "log_bytes": 2445,
+  "interpretation": "Finite exact consistency plus tolerance-conditional point reference; no universal computation certificate, optimizer or QPU"
+}
