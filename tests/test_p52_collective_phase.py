@@ -297,3 +297,21 @@ def test_solver_status_alone_does_not_create_a_mean_match(monkeypatch):
     result=p52.convex_fit(np.zeros((1,28)),np.ones(28))
     assert result["solver_success"] is True and result["status"]=="NO_VERIFIED_TOLERANCE_MATCH"
     assert result["verification"]["verified_Linfty_residual"]==1.
+
+
+@pytest.mark.parametrize("solver_status,success",[(1,False),(4,False),(0,False)])
+@pytest.mark.parametrize("mc_start",[None,0])
+def test_timeout_or_failure_keeps_good_candidate_but_is_not_a_solved_fit(monkeypatch,solver_status,success,mc_start):
+    monkeypatch.setattr(p52,"native_single_thread_check",lambda:{"threads":1})
+    class FakeResult:
+        x=np.asarray([1.,0.]);status=solver_status;message='bounded mock';fun=0.
+    fake=FakeResult();fake.success=success
+    monkeypatch.setattr(p52,"linprog",lambda *args,**kwargs:fake)
+    result=p52.convex_fit(np.zeros((1,28)),np.zeros(28),mc_start,epsilon=.01)
+    assert result["status"]==("INCONCLUSIVE_SOLVER_LIMIT" if solver_status==1 else "INCONCLUSIVE_SOLVER_FAILURE")
+    assert result["solver_fit_solved"] is False
+    assert result["verified_candidate_available"] is True
+    assert result["candidate_within_match_tolerance"] is True
+    assert result["verification"]["verified_Linfty_residual"]==0.
+    assert result["verification"]["used_coefficients"]==[1.]
+    assert result["verification"]["MC_uniform_bound_term"]==(.01 if mc_start==0 else 0.)
