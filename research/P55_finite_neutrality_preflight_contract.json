@@ -1,7 +1,7 @@
 {
   "claim_id": "P55-FINITE-NEUTRALITY-SYNTHETIC-PREFLIGHT",
   "mathematics": {
-    "assertion_tested": "Exact source/policy/caller/resource fixtures without opening a DEV graph: normalized sqrt-weight matrix functions, both Gram/row-mass guards, r20 Decimal80 PGF versus independent Fraction identity/uniform/Stirling-ramp coefficients, full-source CTMC direct horizon/cap/failure payload, variable-M decoder and integer guards, all-shot policy Fraction/fresh seeds, narrowly bracketed setup/B-only allowance, online nullable FAST first-scan/veto logic, mocked first-failure JSON preservation.",
+    "assertion_tested": "Exact source/policy/caller/resource fixtures without opening a DEV graph: normalized sqrt-weight matrix functions, both Gram/row-mass guards, r20 Decimal80 PGF versus independent Fraction identity/uniform/Stirling-ramp coefficients, full-source CTMC direct horizon/cap/failure payload, variable-M decoder and integer guards, all-shot policy Fraction/fresh seeds, narrowly bracketed setup/B-only allowance, online nullable FAST first-scan/veto logic, mocked first-failure JSON preservation. Global uniqueness of596 seeds covers ALL72 training and108 possible evaluation batches, all observation/rank/phase roles plus group/FAST before data; no seed replacement after collision.",
     "coefficient_domain": "Python int/Fraction independent expected values, Decimal80 immutable helper, float64/complex128 synthetic small matrices, mocked interfaces/clocks/paths; no actual optical draw or native API calibration",
     "conventions": "FullCF N=r20,K10,eta1,H_ij=sqrt(w_ij)/normop,all counts to qualified exact neutral minimizer DP; independent Fraction policy means across two graphs, all THAT-policy cuts, freeze before fresh; B80/total480; D sqrt2t, b4 two input groupings, full-count continuous-phase multinomial, variable-M B-product PMFs, direct CTMC horizon_tau; raw_mu both sides3e-12/no deficit renormalization; one fixed FAST dominating both vetoes, paid-init prefix can refute, first scan required for followup; no accepted positive",
     "inputs": [
@@ -15,7 +15,10 @@
       "threads": 1,
       "maximum_new_output_bytes": 33554432,
       "planned_logical_workspace_bytes": 268435456,
-      "planned_pytest_items": 43,
+      "planned_pytest_items": 44,
+      "globally_checked_seed_hashes": 596,
+      "training_batch_master_seeds": 72,
+      "possible_evaluation_batch_master_seeds": 108,
       "maximum_graph_generator_modes": 10,
       "maximum_true_optical_draws": 0,
       "maximum_true_phase_draws": 0,
@@ -96,7 +99,7 @@
       1
     ]
   },
-  "resource_note": "Qualification only after exact-source/root+physics review and exclusive slot.43prospective items. CPU60/wall90/thread1/output32MiB/plannedlogical256MiB, no hardware affinity/RSS claim. Optical/Config/FAST interfaces mocked; actual native maximum setter/readbacks occur only in separately authorized main using the already validated P52 API. One fresh preflight run, retain first failure, no retry or automatic main.",
+  "resource_note": "Qualification only after exact-source/root+physics review and exclusive slot.44prospective items, including one metadata-only global596-seed freshness check over all possible selected policies. CPU60/wall90/thread1/output32MiB/plannedlogical256MiB, no hardware affinity/RSS claim. Optical/Config/FAST interfaces mocked; actual native maximum setter/readbacks occur only in separately authorized main using the already validated P52 API. One fresh preflight run, retain first failure, no retry or automatic main.",
   "planned_command": [
     "/private/tmp/pbp-clean-venv-20261124/bin/python",
     "-m",
