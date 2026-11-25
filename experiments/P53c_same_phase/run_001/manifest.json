@@ -1,0 +1,242 @@
+{
+  "schema_version": 2,
+  "claim_id": "P53C-SAME-PHASE-EXPANDED106-MEAN",
+  "repository": {
+    "commit": "e8ccbaa32779e124cac03fc80f7fb0c003cc499f",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P53c_same_phase_controls.py",
+    "--spec",
+    "research/P53c_same_phase_spec.json",
+    "--output",
+    "experiments/P53c_same_phase/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "At the SAME physical x=1/4 theta=pi/3, append all35 exact same-phase4+4 species controls to unchanged ENDPOINT71; seek exact membership or strict rational separation against all106 means. Separately diagnose the SAVED P53b signed functional and nonnegative normalized graph on35 new controls without replacing that graph.",
+    "coefficient_domain": "Z[xi]/(xi^2-xi+1) with xi=exp(i*pi/3), Python integer pairs and canonical Fraction proof fields. Norm a²+ab+b², probabilities prod n!*norm/8^4, 4+4 probability convolution denominator8^8 and ties420. Float only proposes LP supports/dual coordinates, never physical kernels.",
+    "conventions": "Post-P53b falsification, no blinded or optimizer claim. All70 group laws,35 same-phase complementary partitions,6435 occupations and106 labeled mean vertices retained. Exactly at most one primal and one dual fit with immutable options/readback; exact29equation RREF and signed-binary Fraction.from_float/L1/all106 gaps. Status0/successTrue AND witness required; contradictory witnesses fail.",
+    "inputs": [
+      "ROOT-approved P53c card28e0fc5; physical target and old71 hashes remain the original P53 exact artifacts",
+      "P53b immutable source66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908 and checkpoint bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe; original P53/P52 helpers immutable",
+      "Same U8 entry s_ia*xi^((i mod4)*1[a>=4])/sqrt8, four DISTINCT input ports per group; no Cstar, optimum mask, known partition or training"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "old_vertices": 71,
+      "new_vertices": 35,
+      "all_vertices": 106,
+      "group_laws": 70,
+      "group_states": 330,
+      "output_states": 6435,
+      "maximum_convolution_pairs": 3811500,
+      "maximum_native_LP_calls": 2,
+      "LP_seconds_per_call": 1,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_arrays_bytes": 67108864,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No all-theta or fully reoptimized-b4/full-law/tail/loss/arbitrary-size theorem",
+      "No new replacement graph benchmark from an expanded-library dual; the saved P53b graph is fixed",
+      "No optimizer positive, strong classical search/runtime advantage, heldout/replication or QPU validation",
+      "No physical coefficient/kernel rationalized from float, extra point/group selection/retry/solver/cap/paper change"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Only fixed seeded HiGHS support/vector proposals; exact ring construction has no randomness or physical/MC sample",
+    "seed": 5201001
+  },
+  "run": {
+    "started_at": "2026-11-25T12:40:49.698758+00:00",
+    "runtime_seconds": 1.4834,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P53c_same_phase_controls.py",
+    "research/P53c_same_phase_spec.json",
+    "research/P53c_same_phase_contract.md",
+    "research/P53c_same_phase_execution_contract.json",
+    "research/P53c_SAME_PHASE_CONTROL_CARD.md",
+    "tests/test_p53c_same_phase.py",
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P52_collective_phase_probe.py",
+    "research/P43_global_gain_probe.py",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P53c_same_phase_controls.py",
+      "sha256": "737d6743f184661c4352d93c40410679bec5b5e739aa2cd964a63b919eaa53e2",
+      "sha256_after": "737d6743f184661c4352d93c40410679bec5b5e739aa2cd964a63b919eaa53e2"
+    },
+    {
+      "path": "research/P53c_same_phase_spec.json",
+      "sha256": "3f78b8bd71fa7948a17603da816b067866a0221148388f19672b428f4fcc3191",
+      "sha256_after": "3f78b8bd71fa7948a17603da816b067866a0221148388f19672b428f4fcc3191"
+    },
+    {
+      "path": "research/P53c_same_phase_contract.md",
+      "sha256": "5a3d9596df2d90dc65021ade0e07a43f66e25feb70be914a8f87798b2c43c7a7",
+      "sha256_after": "5a3d9596df2d90dc65021ade0e07a43f66e25feb70be914a8f87798b2c43c7a7"
+    },
+    {
+      "path": "research/P53c_same_phase_execution_contract.json",
+      "sha256": "cab9a67805379cf071ddb78ac7670265beced7c1071a44847fae3d1674a3e137",
+      "sha256_after": "cab9a67805379cf071ddb78ac7670265beced7c1071a44847fae3d1674a3e137"
+    },
+    {
+      "path": "research/P53c_SAME_PHASE_CONTROL_CARD.md",
+      "sha256": "e84b04dec9f5a6b4e40af778ad075b0e62a14e9ce53bf9d5cfd2228979222985",
+      "sha256_after": "e84b04dec9f5a6b4e40af778ad075b0e62a14e9ce53bf9d5cfd2228979222985"
+    },
+    {
+      "path": "tests/test_p53c_same_phase.py",
+      "sha256": "5a39505fe47a32d56501368f450a6fa09496f4e2762719828c279c41824d322d",
+      "sha256_after": "5a39505fe47a32d56501368f450a6fa09496f4e2762719828c279c41824d322d"
+    },
+    {
+      "path": "research/P53b_fixed_point_discriminator.py",
+      "sha256": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908",
+      "sha256_after": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908"
+    },
+    {
+      "path": "research/P53_exact_continuous_phase.py",
+      "sha256": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692",
+      "sha256_after": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692"
+    },
+    {
+      "path": "research/P52_collective_phase_probe.py",
+      "sha256": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+      "sha256_after": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+      "sha256": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0",
+      "sha256_after": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+      "sha256": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "sha256_after": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+      "sha256": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+      "sha256_after": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P53c_same_phase/run_001",
+  "declared_results": [
+    "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+    "experiments/P53c_same_phase/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P53c_same_phase/run_001/stdout.txt",
+      "sha256": "15901a380d2efdd5458cb6f1e98d511a140b929b25c0be6357220aea66dba364",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53c_same_phase/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+      "sha256": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P53c_same_phase/run_001/data/summary.json",
+      "sha256": "e96c5b7691bcddab3c20bbec59d26d8587fe44315841ff1b9cecada35ad15827",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
