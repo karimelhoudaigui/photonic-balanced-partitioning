@@ -1263,3 +1263,42 @@ One primary Knill profile and six local source hashes support the static
 2/27 instrument statement; no numerical gate or hardware experiment ran.
 reports/P74_ROOT_RESOURCE_CHECKPOINT.md records exact limits and OPEN weak-
 phase/recovery/joint-block escapes. No equal-clock or all-QAOA result follows.
+
+## 2026-11-25 — finite P75b no-hit, source regression and weak-filter obstruction
+
+P75b source5b2b52d/SHAb86f2c69 had full ROOT/independent243line source
+review before any execution. One nine-item tiny qualification rawaa16e2d
+passed, then separate authorization allowed ONE main atclean00256fc2.
+Raw4a5254c sealed first;1033 evaluations/6terminations, no trigger/certificate,
+global best only the analytic three-pair baseline. Three seeds returned
+ZERO optimizer iterations under the raw-probability absolute gtol. The
+remaining three exhausted300 calls. This is a materially weak no-hit,
+not strong numerical support for a universal Gaussian cap. No B rerun,
+posthoc seed selection, precision change or suppressed failure occurred.
+Root recorded-row audit validates counts/fields/inputs without recomputing
+probabilities. Main runner1.227817s/bodyCPU0.79351s/3277339scientificbytes;
+both v2 records validate in the matching producer and integrated root.
+
+Integrated root0672098 passes1164 tests/42.91s pytest/44.308535667total,
+environment/nativecfg1.602 protected files unchanged, paper bytes match
+main2744395, PDF remains271946c9. reports/P75b_integration_validation/ and
+P75b_ROOT_FINITE_CHECKPOINT.md preserve actual checks and limitations.
+A separate P75c logarithmic-loss source is prospectively being prepared
+to address the observed scale failure with fresh seeds; no qualification
+or main is authorized by this checkpoint.
+
+P76 changes to weak nonlinear projected filters. Source357lines/bd1d73a6
+and before-author independent301line proof/f1242c16 were fully read by ROOT;
+247line exact review29f71877 agrees. The independent original index failed
+mapping and was preserved; its exact bytes were centrally frozen75e579f
+BEFORE author access, with no invented original commit. Final reviewa44f8b7.
+The vacuum-flag physical shortcut fails, and the abstract protected diagonal
+model has a classical latent record construction. Uniform feasible draws
+also dominate raw proposal counts from the stipulated uniform source.
+Actual total costs/nonmonomial mixing/changed sources remain OPEN.
+
+P77 is a new static finite-strength positive-hafnian control and range
+certificate, frozen851a0cc while independent reconstruction is underway.
+It does not assume the global P75 cap. No P76/P77 numerical experiment,
+held-out opening, paper/main revision or QPU call occurred. The original
+positive optimum-blind optimizer objective remains OPEN.
