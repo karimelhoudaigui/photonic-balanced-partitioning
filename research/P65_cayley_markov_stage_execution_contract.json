@@ -1,0 +1,99 @@
+{
+  "claim_id": "P65-CAYLEY-MARKOV-B80-FAST-DEV-VETO",
+  "binding_state": "CODE_ONLY_NOT_EXECUTED_REQUIRES_SEPARATE_ROOT_AUTHORIZATION_AFTER_QUALIFICATION",
+  "mathematics": {
+    "assertion_tested": "Does the prospectively frozen optimum-blind Cayley Markov B80 pilot survive each fixed from-raw FAST control on BOTH new DEV graphs? Stage1 executes only80 B attempts and4 FAST calls, with all collisions/source/setup/score work retained under the explicit favorable B cost envelope. No optional arm or accepted positive result.",
+    "coefficient_domain": "Float64/complex128 graph-dependent Cayley matrices and acceptance; exact Python integer counts/cuts/seeds and Fraction training/fresh statistics; observed CPU/WALL clocks",
+    "conventions": "N20/K10 current feasible source; weighted row sums normalize H=(A+lambda*(J-I))/D;8lex(t,lambda) choices;2current-state training attempts each and3fresh8-step chains; repeated independent starts retained; CF proposals use fresh coins, collisions are paid self-loops. Fresh metric mean3final-chain-bests includes each own start, distinct from all-paid best. B-only classical WALL minus actual adapterCPU funds each separately costed fixed FAST mode; same-mode two-case veto, no free portfolio or optional-model grant.",
+    "inputs": [
+      "Unopened ER N20 seed6502001,p6/19; RR N20 seed6502002,degree6; canonical sorted-edge PCG64 integer weights1..5",
+      "Frozen card/spec022962e, proof43dd873, independent physics review18d344b and explicit pre-data start/weighted-degree amendment",
+      "All5 arm/common-start/count/coin/FAST seed namespaces fixed before B observations; only bosonic is executed"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_logical_workspace_bytes": 268435456,
+      "max_new_log_bytes": 33554432,
+      "max_new_scientific_bytes": 33554432,
+      "failure_reserve_bytes": 1048576,
+      "graphs": 2,
+      "modes": 20,
+      "photons_per_attempt": 10,
+      "B_attempts": 80,
+      "simulated_injected_B_photons": 800,
+      "native_factories": 80,
+      "candidate_matrices_per_case": 8,
+      "initial_cut_calls_per_case": 4,
+      "poststep_current_cut_calls_per_case": 40,
+      "CF_proposal_cut_calls_per_case_maximum": 40,
+      "FAST_calls": 4,
+      "FAST_max_proposals_per_call": 10000,
+      "FAST_max_stored_checkpoints_per_call": 20002,
+      "optional_model_draws": 0,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No accepted positive, heldout confirmation, independent replication, quantum advantage, novelty or hardware readiness",
+      "No full-state kernel, optimum/C*, known optimal partition, rejected-collision postselection or hidden N20 canary",
+      "Three fresh chain-best observations per case are not24 iid shots",
+      "Favorable zero-optical-latency accounting is not practical QPU timing or a matched-total-resource advantage",
+      "Only immutable returned backend WALL is excluded; earlier RNG/source-validation prefix remains paid and CPU subdivision is unknown",
+      "First failure/resource exhaustion is retained inconclusive, not permission for retry/new graph/cap change or automatic optional run"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P65_cayley_markov_stage.py",
+    "research/P65_cayley_markov_dev_spec.json",
+    "research/P65_CAYLEY_MARKOV_DEV_CARD.md",
+    "research/P65_PRE_DATA_AMENDMENT.md",
+    "research/P65_CARD_INDEPENDENT_PHYSICS_REVIEW.md",
+    "research/P65_cayley_markov_stage_contract.md",
+    "research/P65_cayley_markov_stage_preflight_contract.json",
+    "research/P65_cayley_markov_stage_execution_contract.json",
+    "theory/P65_collision_counted_photonic_markov_kernel.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "tests/test_p65_cayley_markov_stage.py"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "numpy", "version": "2.4.6"},
+    {"name": "scipy", "version": "1.17.1"},
+    {"name": "networkx", "version": "3.6.1"},
+    {"name": "perceval-quandela", "version": "1.3.0"},
+    {"name": "exqalibur", "version": "1.4.2"}
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "P43 SHA256 first4 little-endian role seeds; explicit PCG64 graph weights/common start/coin RNG; local Perceval/exqalibur independently reseeded per CURRENT-source attempt",
+    "seed": [6502001, 6502002, 65100000, 65200000, 65300000, 65400000, 65500000]
+  },
+  "resource_note": "CODE ONLY, not run. Requires ROOT complete source/qualification review, sealed passing preflight and a separate exclusive main slot. CPU60/wall90/envthreads1/nativeConfig1readbeforeafter, logs32MiB/scientific32MiB/logical256MiB. No hard Darwin RSS/affinity guarantee. No calibration/canary, no retries or automatic following run.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P65_cayley_markov_stage.py",
+    "--spec", "research/P65_cayley_markov_dev_spec.json",
+    "--output", "experiments/P65_cayley_markov_stage/run_001/data"
+  ],
+  "declared_results": [
+    "experiments/P65_cayley_markov_stage/run_001/data/raw.jsonl.gz",
+    "experiments/P65_cayley_markov_stage/run_001/data/seed_namespaces.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/context_n20_ER_6502001.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/context_n20_RR_6502002.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/B_n20_ER_6502001.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/B_n20_RR_6502002.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_random.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_spectral.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_random.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_spectral.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/failure.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/summary.json"
+  ]
+}
