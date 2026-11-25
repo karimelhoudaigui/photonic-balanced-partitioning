@@ -1,0 +1,1077 @@
+{
+  "audit_status": "COMPLETED_RAW_RECONSTRUCTION_NO_PHYSICS_RERUN",
+  "auditor_code_sha256": "33d1c1b9b12991ff24eff715b19c866086e515edb4f6f683f394b321de6cafe5",
+  "raw_sha256": "5f7e88026c4fa05043d49717b0d537163fd0aa5afa132ebd3c03d4b743876193",
+  "manifest_sha256": "7523df391e41aeb9cc3cea1f8694e9c6bf30123d712b2106ba27f9361d4d5d60",
+  "source_revision": "19a9902f6570592e7e7f7ca528da8014ea657408",
+  "all_manifest_hashes_match": true,
+  "raw_lines": 45292,
+  "totals": {
+    "bosonic": {
+      "proposals": 256,
+      "sum_gain": 0,
+      "score_units": 13952,
+      "CF_counts": 62,
+      "collisional_counts": 194,
+      "improving_candidates": 0
+    },
+    "distinguishable": {
+      "proposals": 256,
+      "sum_gain": 12,
+      "score_units": 13952,
+      "CF_counts": 107,
+      "collisional_counts": 149,
+      "improving_candidates": 3
+    },
+    "phase_multinomial": {
+      "proposals": 256,
+      "sum_gain": 52,
+      "score_units": 13952,
+      "CF_counts": 0,
+      "collisional_counts": 256,
+      "improving_candidates": 11
+    },
+    "moment_hybrid": {
+      "proposals": 256,
+      "sum_gain": 22,
+      "score_units": 13952,
+      "CF_counts": 91,
+      "collisional_counts": 165,
+      "improving_candidates": 8
+    },
+    "gaussian_Bcov": {
+      "proposals": 256,
+      "sum_gain": 37,
+      "score_units": 13952,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 7
+    },
+    "iid_variance": {
+      "proposals": 256,
+      "sum_gain": 73,
+      "score_units": 13952,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 14
+    },
+    "species4": {
+      "proposals": 256,
+      "sum_gain": 2,
+      "score_units": 13952,
+      "CF_counts": 74,
+      "collisional_counts": 182,
+      "improving_candidates": 1
+    },
+    "bosonic_permuted": {
+      "proposals": 256,
+      "sum_gain": 74,
+      "score_units": 13952,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 16
+    }
+  },
+  "selected": {
+    "bosonic": null,
+    "distinguishable": 4,
+    "phase_multinomial": 5,
+    "moment_hybrid": 3,
+    "gaussian_Bcov": 0,
+    "iid_variance": 2,
+    "species4": 3,
+    "bosonic_permuted": 7
+  },
+  "setting_gains": {
+    "bosonic": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "distinguishable": [
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      2,
+      0
+    ],
+    "phase_multinomial": [
+      11,
+      2,
+      10,
+      6,
+      0,
+      16,
+      0,
+      7
+    ],
+    "moment_hybrid": [
+      2,
+      0,
+      2,
+      9,
+      2,
+      1,
+      4,
+      2
+    ],
+    "gaussian_Bcov": [
+      12,
+      2,
+      0,
+      0,
+      4,
+      7,
+      6,
+      6
+    ],
+    "iid_variance": [
+      7,
+      10,
+      25,
+      3,
+      15,
+      11,
+      2,
+      0
+    ],
+    "species4": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "bosonic_permuted": [
+      6,
+      4,
+      7,
+      6,
+      14,
+      8,
+      13,
+      16
+    ]
+  },
+  "per_case": [
+    {
+      "case": "p45a16_er:0",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 10,
+      "collisional_counts": 22,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 18,
+      "collisional_counts": 14,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 20,
+      "collisional_counts": 12,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 13,
+      "collisional_counts": 19,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 13,
+      "collisional_counts": 19,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 17,
+      "collisional_counts": 15,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 14,
+      "collisional_counts": 18,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 78,
+      "CF_counts": 16,
+      "collisional_counts": 16,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 4,
+      "collisional_counts": 28,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 11,
+      "collisional_counts": 21,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 6,
+      "collisional_counts": 26,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 9,
+      "collisional_counts": 23,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 2,
+      "collisional_counts": 30,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 7,
+      "collisional_counts": 25,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 4,
+      "collisional_counts": 28,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 1376,
+      "best_cut": 28,
+      "CF_counts": 6,
+      "collisional_counts": 26,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 9,
+      "collisional_counts": 23,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 4,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 2
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 17,
+      "collisional_counts": 15,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 4,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 2
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 6,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 15,
+      "collisional_counts": 17,
+      "improving_candidates": 3
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 9,
+      "collisional_counts": 23,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 11,
+      "collisional_counts": 21,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 2,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 1
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 17,
+      "collisional_counts": 15,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 2,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 1
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 2,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 1
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 2,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 14,
+      "collisional_counts": 18,
+      "improving_candidates": 1
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 2,
+      "score_units": 2112,
+      "best_cut": 94,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 1
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 96,
+      "CF_counts": 10,
+      "collisional_counts": 22,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 39,
+      "CF_counts": 4,
+      "collisional_counts": 28,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 38,
+      "score_units": 2112,
+      "best_cut": 32,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 8
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 8,
+      "score_units": 2112,
+      "best_cut": 33,
+      "CF_counts": 10,
+      "collisional_counts": 22,
+      "improving_candidates": 2
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 21,
+      "score_units": 2112,
+      "best_cut": 32,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 4
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 56,
+      "score_units": 2112,
+      "best_cut": 29,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 9
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 11,
+      "score_units": 2112,
+      "best_cut": 32,
+      "CF_counts": 5,
+      "collisional_counts": 27,
+      "improving_candidates": 2
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 18,
+      "score_units": 2112,
+      "best_cut": 32,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 3
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 2,
+      "score_units": 2112,
+      "best_cut": 37,
+      "CF_counts": 4,
+      "collisional_counts": 28,
+      "improving_candidates": 1
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "bosonic",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 39,
+      "CF_counts": 9,
+      "collisional_counts": 23,
+      "improving_candidates": 0
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "bosonic_permuted",
+      "proposals": 32,
+      "sum_gain": 30,
+      "score_units": 2112,
+      "best_cut": 29,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 5
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "distinguishable",
+      "proposals": 32,
+      "sum_gain": 4,
+      "score_units": 2112,
+      "best_cut": 35,
+      "CF_counts": 10,
+      "collisional_counts": 22,
+      "improving_candidates": 1
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "gaussian_Bcov",
+      "proposals": 32,
+      "sum_gain": 14,
+      "score_units": 2112,
+      "best_cut": 29,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 2
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "iid_variance",
+      "proposals": 32,
+      "sum_gain": 11,
+      "score_units": 2112,
+      "best_cut": 29,
+      "CF_counts": 0,
+      "collisional_counts": 0,
+      "improving_candidates": 2
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "moment_hybrid",
+      "proposals": 32,
+      "sum_gain": 3,
+      "score_units": 2112,
+      "best_cut": 37,
+      "CF_counts": 13,
+      "collisional_counts": 19,
+      "improving_candidates": 2
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "phase_multinomial",
+      "proposals": 32,
+      "sum_gain": 32,
+      "score_units": 2112,
+      "best_cut": 32,
+      "CF_counts": 0,
+      "collisional_counts": 32,
+      "improving_candidates": 7
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "species4",
+      "proposals": 32,
+      "sum_gain": 0,
+      "score_units": 2112,
+      "best_cut": 39,
+      "CF_counts": 7,
+      "collisional_counts": 25,
+      "improving_candidates": 0
+    }
+  ],
+  "classical": [
+    {
+      "case": "p45a16_er:0",
+      "model": "KL_collective",
+      "scores": 1376,
+      "best_cut": 78
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "anneal",
+      "scores": 1376,
+      "best_cut": 78
+    },
+    {
+      "case": "p45a16_er:0",
+      "model": "spectral_swap",
+      "scores": 1376,
+      "best_cut": 78
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "KL_collective",
+      "scores": 1376,
+      "best_cut": 78
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "anneal",
+      "scores": 1376,
+      "best_cut": 78
+    },
+    {
+      "case": "p45a16_er:1",
+      "model": "spectral_swap",
+      "scores": 1376,
+      "best_cut": 78
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "KL_collective",
+      "scores": 1376,
+      "best_cut": 28
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "anneal",
+      "scores": 1376,
+      "best_cut": 28
+    },
+    {
+      "case": "p45a16_rr:0",
+      "model": "spectral_swap",
+      "scores": 1376,
+      "best_cut": 28
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "KL_collective",
+      "scores": 1376,
+      "best_cut": 28
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "anneal",
+      "scores": 1376,
+      "best_cut": 28
+    },
+    {
+      "case": "p45a16_rr:1",
+      "model": "spectral_swap",
+      "scores": 1376,
+      "best_cut": 28
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "KL_collective",
+      "scores": 2112,
+      "best_cut": 94
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "anneal",
+      "scores": 2112,
+      "best_cut": 94
+    },
+    {
+      "case": "p45a20_er:0",
+      "model": "spectral_swap",
+      "scores": 2112,
+      "best_cut": 96
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "KL_collective",
+      "scores": 2112,
+      "best_cut": 94
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "anneal",
+      "scores": 2112,
+      "best_cut": 94
+    },
+    {
+      "case": "p45a20_er:1",
+      "model": "spectral_swap",
+      "scores": 2112,
+      "best_cut": 96
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "KL_collective",
+      "scores": 2112,
+      "best_cut": 29
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "anneal",
+      "scores": 2112,
+      "best_cut": 33
+    },
+    {
+      "case": "p45a20_rr:0",
+      "model": "spectral_swap",
+      "scores": 2112,
+      "best_cut": 29
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "KL_collective",
+      "scores": 2112,
+      "best_cut": 29
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "anneal",
+      "scores": 2112,
+      "best_cut": 29
+    },
+    {
+      "case": "p45a20_rr:1",
+      "model": "spectral_swap",
+      "scores": 2112,
+      "best_cut": 29
+    }
+  ],
+  "frontend": [
+    {
+      "case": "p45a16_er",
+      "source_cut": 78,
+      "Cref": 78,
+      "units": 681,
+      "best_frontend_labels": [
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum"
+      ]
+    },
+    {
+      "case": "p45a16_rr",
+      "source_cut": 28,
+      "Cref": 28,
+      "units": 745,
+      "best_frontend_labels": [
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum"
+      ]
+    },
+    {
+      "case": "p45a20_er",
+      "source_cut": 100,
+      "Cref": 96,
+      "units": 1251,
+      "best_frontend_labels": [
+        "zero"
+      ]
+    },
+    {
+      "case": "p45a20_rr",
+      "source_cut": 39,
+      "Cref": 39,
+      "units": 1151,
+      "best_frontend_labels": [
+        "vacuum",
+        "vacuum",
+        "vacuum",
+        "vacuum"
+      ]
+    }
+  ],
+  "decision": "REJECT_P45A_FROZEN_FAMILY_B_ZERO_GAIN",
+  "positive_accepted": false,
+  "scope": "four development graphs, fixed source/network/decoder; unrestricted target remains open"
+}
