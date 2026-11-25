@@ -1,0 +1,340 @@
+{
+  "schema_version": 2,
+  "claim_id": "P63-B-FAST-STAGE1-DEV-VETO",
+  "repository": {
+    "commit": "fad8a05874687dad51c385a28e75a836947da65f",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P63_spsa_fast_stage.py",
+    "--spec",
+    "research/P63_spsa_fast_stage_spec.json",
+    "--output",
+    "experiments/P63_spsa_fast_stage/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Can the fixed B ten-phase SPSA pilot survive one fixed paid from-raw FAST algorithm on both prospectively frozen DEV graphs? This stage executes only B80 and four independent FAST calls; no optional control, accepted positive or automatic followup.",
+    "coefficient_domain": "Complex128/float64 Fourier/circuit matrices; exact Python integer counts/cuts/mappings/seeds and Fraction losses/angles; measured CPU/WALL clocks",
+    "conventions": "FullCF18,eta1,N18=3x6,K9; V[[3,-4],[4,3]]/5 on output0,6; ten exact rational phases b1/2,i1..5. Three paired SPSA steps with ONE shared Delta_t across signs, iid directions across steps/arms; four complete PNR cuts/sign, a=1/2,c=1/4; finalTheta3 only then2x8 fresh. Uniform fresh carried top9 priority permutation then fixed independent physical mapping. All40 own attempts/graph fund paid best. C6 sum_i iM_i=0 mod6, collision-free1^18 impossible; no postselection. B-only classical WALL funds each of two separate immutable raw-graph FAST calls minus actual adapter CPU; first timely scan and no early guard required to survive, eligible initialization can veto.",
+    "inputs": [
+      "Unopened ER N18 seed6301801,p=6/17 and RR N18 seed6301802,degree6; sorted-edge PCG64 integer weights1..5",
+      "One independently seeded uniform physical embedding per case, carried for every stage; no C*, optimum mask or known partition",
+      "All seven model seed namespaces frozen before B data; only B is implemented/executed in stage1"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "maximum_new_log_bytes": 33554432,
+      "maximum_new_scientific_bytes": 33554432,
+      "planned_logical_workspace_bytes": 268435456,
+      "graphs": 2,
+      "modes": 18,
+      "parameters": 10,
+      "B_draws": 80,
+      "B_simulated_injected_photons": 1440,
+      "native_B_batches": 16,
+      "maximum_unique_networks": 14,
+      "FAST_calls": 4,
+      "FAST_max_proposals_per_call": 10000,
+      "FAST_total_guarded_work": 40000,
+      "maximum_FAST_checkpoints_per_call": 10000,
+      "failed_retries": 0,
+      "optional_model_draws": 0
+    },
+    "non_claims": [
+      "No accepted positive, N18 response proof, population inference, novelty, hardware runtime, independent physical replication, held-out opening, paper or QPU authorization",
+      "The only stage-one rejection is one fixed eligible FAST mode no worse than B all-paid minimum on both cases; surviving complete eligible FAST comparisons leaves all six optical/classical optional controls untested",
+      "Zero ideal optical latency is an explicitly favorable implementation envelope: simulator imports, setup/count generation, diagnostics, graph generation and evidence IO do not enlarge B-only classical WALL",
+      "Only immutable factory returned backend WALL is excluded from setup; its RNG/source-validation pre-clock prefix remains paid; internal CPU splits are unknown",
+      "Numerical Gram/q/C6 guards are absolute tolerances, not intervals, a worst-case relative-probability certificate, hardware timing, hard RSS enforcement or an advantage result",
+      "Any first failure, resource cap, missing case or invalid guard is retained and inconclusive with zero retries or replacements; early FAST guards prevent a favorable interpretation but cannot erase a valid fixed-mode veto"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "P43 SHA256 first-four-byte little-endian role seeds; explicit PCG64 graph weights/embedding/directions/priorities, locally seeded Perceval/exqalibur B backend per batch; all later seven-arm master/subrole recipes frozen",
+    "seed": [
+      6301801,
+      6301802,
+      6318000,
+      6320000,
+      6330000,
+      6340000
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T19:46:52.081420+00:00",
+    "runtime_seconds": 19.495067,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P63_spsa_fast_stage.py",
+    "research/P63_spsa_fast_stage_spec.json",
+    "research/P63_STAGE1_PRE_DATA_AMENDMENT.md",
+    "research/P63_spsa_fast_stage_contract.md",
+    "research/P63_spsa_fast_stage_preflight_contract.json",
+    "research/P63_spsa_fast_stage_execution_contract.json",
+    "research/P63_EXTENSIVE_PHASE_ARCHITECTURE_CARD.md",
+    "theory/P63_extensive_phase_structural_checks.md",
+    "research/P63_INDEPENDENT_STATIC_PHYSICS_REVIEW.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "research/P55_PRE_DATA_AMENDMENT.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "tests/test_p63_spsa_fast_stage.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "research/P63_spsa_fast_stage.py",
+      "sha256": "7f60cb437a9936323851d926ca18f16c7899b16a8d5353c69df88cf21a03d5d6",
+      "sha256_after": "7f60cb437a9936323851d926ca18f16c7899b16a8d5353c69df88cf21a03d5d6"
+    },
+    {
+      "path": "research/P63_spsa_fast_stage_spec.json",
+      "sha256": "5eea4f4c46789effa5102f6f1d5f71bb9de6d2c8b050c3cb3920bef2a67877dd",
+      "sha256_after": "5eea4f4c46789effa5102f6f1d5f71bb9de6d2c8b050c3cb3920bef2a67877dd"
+    },
+    {
+      "path": "research/P63_STAGE1_PRE_DATA_AMENDMENT.md",
+      "sha256": "08214cc0c05760359ffc637318fac60f7deb1cf683675e637008c1f63b1e53b4",
+      "sha256_after": "08214cc0c05760359ffc637318fac60f7deb1cf683675e637008c1f63b1e53b4"
+    },
+    {
+      "path": "research/P63_spsa_fast_stage_contract.md",
+      "sha256": "74262584762abda98b6e9e627b332817b2fa8aa11c210e75b9f65dd2737604e3",
+      "sha256_after": "74262584762abda98b6e9e627b332817b2fa8aa11c210e75b9f65dd2737604e3"
+    },
+    {
+      "path": "research/P63_spsa_fast_stage_preflight_contract.json",
+      "sha256": "9fa288deeb562e31516fac0b8d2f1ba331c25c9dad448dbe44a2f80f0683dea6",
+      "sha256_after": "9fa288deeb562e31516fac0b8d2f1ba331c25c9dad448dbe44a2f80f0683dea6"
+    },
+    {
+      "path": "research/P63_spsa_fast_stage_execution_contract.json",
+      "sha256": "5232bf44880b092cce603b242391882b0ec3a63f0c0577fd2dde98697d343482",
+      "sha256_after": "5232bf44880b092cce603b242391882b0ec3a63f0c0577fd2dde98697d343482"
+    },
+    {
+      "path": "research/P63_EXTENSIVE_PHASE_ARCHITECTURE_CARD.md",
+      "sha256": "965885a17fae0221ee28ef1016a292ea9aab10696ed37c518f3db17eff50f92b",
+      "sha256_after": "965885a17fae0221ee28ef1016a292ea9aab10696ed37c518f3db17eff50f92b"
+    },
+    {
+      "path": "theory/P63_extensive_phase_structural_checks.md",
+      "sha256": "56801fcf5d538ae816d3fc7a03304737e8f960146489e146af8c5dc6debe6d9e",
+      "sha256_after": "56801fcf5d538ae816d3fc7a03304737e8f960146489e146af8c5dc6debe6d9e"
+    },
+    {
+      "path": "research/P63_INDEPENDENT_STATIC_PHYSICS_REVIEW.md",
+      "sha256": "0a42896b625ebe152af8d6be664a9bf5d3d58abb1d8b4a8521a3d805de2829ac",
+      "sha256_after": "0a42896b625ebe152af8d6be664a9bf5d3d58abb1d8b4a8521a3d805de2829ac"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "research/P50_fast_from_scratch_contract.json",
+      "sha256": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a",
+      "sha256_after": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a"
+    },
+    {
+      "path": "research/P55_PRE_DATA_AMENDMENT.md",
+      "sha256": "e10753db7bba5d0f48cd5832cc2d0b477608ff76efd19e60b157f687ac908bf4",
+      "sha256_after": "e10753db7bba5d0f48cd5832cc2d0b477608ff76efd19e60b157f687ac908bf4"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "tests/test_p63_spsa_fast_stage.py",
+      "sha256": "1bf5baac5740e75a37096dd841c10d4b5486691811259062bd15a569f7d2bd9b",
+      "sha256_after": "1bf5baac5740e75a37096dd841c10d4b5486691811259062bd15a569f7d2bd9b"
+    }
+  ],
+  "output_directory": "experiments/P63_spsa_fast_stage/run_001",
+  "declared_results": [
+    "experiments/P63_spsa_fast_stage/run_001/data/raw.jsonl.gz",
+    "experiments/P63_spsa_fast_stage/run_001/data/seed_namespaces.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/context_n18_ER_6301801.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/context_n18_RR_6301802.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/B_n18_ER_6301801.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/B_n18_RR_6301802.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_ER_6301801_random.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_ER_6301801_spectral.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_RR_6301802_random.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_RR_6301802_spectral.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/failure.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/stdout.txt",
+      "sha256": "be67d67cab239ec0122dbd4d0cf41e38652d18ad4801f50029279b257e070fc1",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/stderr.txt",
+      "sha256": "be89df838f07246c1208244271cdfeb9a49975b290ede5c020327e686614234d",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/raw.jsonl.gz",
+      "sha256": "2526d5740351c2346646651cdb13a2df450913cd893db3ff579889cb7472192d",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/seed_namespaces.json",
+      "sha256": "4216554386c1bee5b4b8da2f1aad30e4d89aa32b8cb8762c6c329ccef303a049",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/context_n18_ER_6301801.json",
+      "sha256": "ea7f23f589115ed3d2f0be0aad094bb61527081f6a2c56b2f2b404226a5947e4",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/context_n18_RR_6301802.json",
+      "sha256": "661b8f969597a419f00b8ff5d33ac17b3e5a93a12574f41f74932c1e7c40b0b1",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/B_n18_ER_6301801.json",
+      "sha256": "6e2e37d41d971c319c3688bfe81e69353dbcc876945c719c7959980ea9fed43c",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/B_n18_RR_6301802.json",
+      "sha256": "64b112ca161ced33c73d9437dd6d6e0fcd382164499cdba09a02a0a185c42548",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_ER_6301801_random.json",
+      "sha256": "f5cdf4516c203a29477ead4d79a161ca517cd24d413c2d3a33cc0c0a95b25529",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_ER_6301801_spectral.json",
+      "sha256": "e29bb78b7cd47fa76c6c94ac9ac6a93857b1d01f2b35f20b1a610b25f19237af",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_RR_6301802_random.json",
+      "sha256": "a07d38e884ada6989ba5bea9acafde3201b232e40748b8b5b8bdbdda4783a964",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_RR_6301802_spectral.json",
+      "sha256": "2a4c29629eb531ace2863fa3bdef72c7b7fe6b77787dfcb93cfdbd91f6c5c686",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/failure.json",
+      "sha256": "a28394685657eec13bc361c913dcec75e9a9bd3e7916b3dfebf2dbbf4f1ccb27",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/data/summary.json",
+      "sha256": "fe4c4e77a3084732f22a4291eec3f799a853e294878cccfbeecf808d398b5976",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
