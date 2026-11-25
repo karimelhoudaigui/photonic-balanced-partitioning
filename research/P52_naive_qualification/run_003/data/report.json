@@ -1,0 +1,249 @@
+{
+  "amplitude_probability_absolute_tolerance": 5e-10,
+  "checks": [
+    {
+      "absolute_error": 0.0,
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "name": "HOM_collision_free",
+      "observed": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 1.1102230246251565e-16,
+      "expected": [
+        0.0,
+        0.7071067811865475
+      ],
+      "name": "HOM_bunched_factorial",
+      "observed": [
+        0.0,
+        0.7071067811865474
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 1.1102230246251565e-16,
+      "expected": [
+        -0.501289080547918,
+        -0.4577218125930018
+      ],
+      "name": "complex_input_output_orientation",
+      "observed": [
+        -0.5012890805479179,
+        -0.4577218125930018
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 1.6711069443220838e-16,
+      "expected": [
+        -0.26105165676968967,
+        -0.10125232095018936
+      ],
+      "name": "complex_permanent_CF",
+      "observed": [
+        -0.26105165676968983,
+        -0.10125232095018938
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 0.0,
+      "expected": [
+        1.0,
+        0.0
+      ],
+      "name": "identity_8_CF",
+      "observed": [
+        1.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 0.0,
+      "expected": [
+        1.0,
+        0.0
+      ],
+      "name": "vacuum",
+      "observed": [
+        1.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 0.0,
+      "expected": [
+        5.0,
+        9.0
+      ],
+      "name": "native_known_complex_permanent",
+      "observed": [
+        5.0,
+        9.0
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 1.1102230246251565e-16,
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "name": "independent_unitary_0",
+      "observed": [
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 1.1102230246251565e-16,
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "name": "independent_unitary_1",
+      "observed": [
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 1.1102230246251565e-16,
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "name": "independent_unitary_2",
+      "observed": [
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "absolute_error": 1.1102230246251565e-16,
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "name": "independent_unitary_3",
+      "observed": [
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "pass": true
+    }
+  ],
+  "guard_pytest_exit_code": 0,
+  "independence": "scalar U and multiset enumeration independently implemented; archival geometry used only for tuple alignment; no primary project import",
+  "input_hashes_after": {
+    "experiments/P52_collective_phase/run_001/data/geometry.npz": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715",
+    "experiments/P52_collective_phase/run_001/data/theta_0.npz": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542",
+    "experiments/P52_collective_phase/run_001/data/theta_1.npz": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07",
+    "experiments/P52_collective_phase/run_001/data/theta_2.npz": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8",
+    "experiments/P52_collective_phase/run_001/data/theta_3.npz": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154",
+    "experiments/P52_collective_phase/run_001/manifest.json": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7"
+  },
+  "input_hashes_before": {
+    "experiments/P52_collective_phase/run_001/data/geometry.npz": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715",
+    "experiments/P52_collective_phase/run_001/data/theta_0.npz": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542",
+    "experiments/P52_collective_phase/run_001/data/theta_1.npz": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07",
+    "experiments/P52_collective_phase/run_001/data/theta_2.npz": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8",
+    "experiments/P52_collective_phase/run_001/data/theta_3.npz": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154",
+    "experiments/P52_collective_phase/run_001/manifest.json": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7"
+  },
+  "matplotlib_cache": {
+    "interpretation": "persistent configuration/cache only; no warm/cold performance claim",
+    "path": "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/.local/mplconfig",
+    "preexisting": false,
+    "set_by_validator": true
+  },
+  "matrix_tolerance": 5e-12,
+  "mode": "qualify",
+  "outputs": {
+    "guard_junit.xml": {
+      "bytes": 1083,
+      "sha256": "3417ecbf044e483c661eaac33073c7d45b60828c00db0c452afadd0b08c26301"
+    }
+  },
+  "reference_data_commit": "762877a65125e5411e10906ccdb7f64ff280d840",
+  "resources": {
+    "max_rss_native_units": 166264832,
+    "process_cpu_seconds": 1.442988,
+    "rss_unit": "bytes on Darwin; KiB on Linux",
+    "wall_seconds": 17.818172959028743
+  },
+  "software": {
+    "backend": "local NaiveBackend.prob_amplitude; no masks/iterator/pruning/remote processor",
+    "files": {
+      "NaiveBackend": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/backends/_naive.py",
+        "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+      },
+      "Unitary": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/components/unitary_components.py",
+        "sha256": "2f4bacd1d3d5c919b32eaaf28d1881a5f49be608ffca4be2ee53886a149786df"
+      },
+      "exqalibur.exqalibur": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+        "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+      },
+      "exqalibur_binary": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/__init__.py",
+        "sha256": "6a6ac3b31ef4ebc06ef95c2fa0aed19516e9c72bbe4e59b05aea1f2055686690"
+      }
+    },
+    "native_thread_control": "NOT_ESTABLISHED: no unsupported keyword or vendor patch used; ps samples and environment limits do not prove one native worker",
+    "permanent_doc": "permanent_cx(M: typing.Annotated[numpy.typing.NDArray[numpy.complex128], \"[m, n]\", \"flags.c_contiguous\"], ptype: str = '') -> complex\n\nPermanent of a square complex matrix\n\n:param M: Square matrix of complex values\n:param ptype: Name of a permanent computation algorithm. Accepted values are ``\"glynn\"`` and ``\"ryser\"``.\n              By default, Glynn method is used only when using 1 or 2 threads. Ryser is otherwise used.\n:return: The permanent value\n\nSee also exqalibur.Config to control how many CPU threads you allow you program to use.\n\n",
+    "permanent_signature": "UNAVAILABLE: ValueError: no signature found for builtin <built-in method permanent_cx of pybind11_builtins.pybind11_detail_function_record_v1_system_libcpp_abi1 object at 0x106787fb0>",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "thread_named_exports": [],
+    "versions": {
+      "exqalibur": "1.4.2",
+      "numpy": "2.4.6",
+      "perceval-quandela": "1.3.0",
+      "pytest": "8.4.2"
+    }
+  },
+  "source_sha256": "a68f969ff3b943c5d2d3bd475652a260caf446469aa913cd4c476b347fa4be52",
+  "source_state": "8 distinct single photons, no loss, all occupations retained",
+  "status": "API_QUALIFICATION_PASS_NATIVE_THREADS_UNVERIFIED",
+  "thread_snapshot_after_import": {
+    "available": false,
+    "errno": 1,
+    "error": "[Errno 1] Operation not permitted: 'ps'",
+    "error_type": "PermissionError"
+  },
+  "thread_snapshot_after_work": {
+    "available": false,
+    "errno": 1,
+    "error": "[Errno 1] Operation not permitted: 'ps'",
+    "error_type": "PermissionError"
+  },
+  "thread_snapshot_before_import": {
+    "available": false,
+    "errno": 1,
+    "error": "[Errno 1] Operation not permitted: 'ps'",
+    "error_type": "PermissionError"
+  }
+}

@@ -1,0 +1,4 @@
+.......                                                                  [100%]
+- generated xml file: /Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_qualification/run_003/data/guard_junit.xml -
+7 passed in 0.03s
+{"status": "API_QUALIFICATION_PASS_NATIVE_THREADS_UNVERIFIED", "output": "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_qualification/run_003/data"}
