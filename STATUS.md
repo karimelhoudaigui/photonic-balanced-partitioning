@@ -4,8 +4,11 @@
 positive optimizer result before held-out replication/paper/hardware steps.
 P45-A (256 B draws) and P45-B (800 B draws, all collisions decoded) are complete
 DEV negatives, preserved with raw data and bounded manifests. P44 remains valid
-background, not the finish. The changed P46 hollow-transfer/PIT mechanism is
-being implemented/audited, with no P46 run or positive claim yet. Current owner,
+background, not the finish. P46 hollow-transfer/PIT is also a completed DEV
+negative: B total gain21 versus Gaussian32, with a graph-blind B setting chosen.
+P47 tests a mathematically directed graph map at prime photon counts; its
+preflight is authorized after independent static review, with no DEV outcome
+or positive claim yet. Current owner,
 evidence and numerical-slot state: research/P45_LIVE_STATE.md.
 
 Active discovery branch: research/p41-discovery, restarted from published

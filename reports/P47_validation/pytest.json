@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "tests/",
+    "-q"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 22.798309042002074,
+  "commit": "279477d74d26a56149d12f8cbc6492a4af306a0a",
+  "scope": "Integrated full tests after P45/P46/P47 code and continuous-phase oracle, no additional DEV pilot"
+}
