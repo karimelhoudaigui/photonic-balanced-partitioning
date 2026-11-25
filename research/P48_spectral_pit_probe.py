@@ -117,16 +117,23 @@ def build_network(v,encoder,residual_tolerance=3e-12):
     if eigenvalues.min() < -1e-10:
         raise NumericalInconclusive("Negative numerical B covariance")
     factor=vectors*np.sqrt(np.maximum(eigenvalues,0))[None,:]
-    # An exactly empty row has an exact deterministic count0. Do not magnify
-    # eigensolver leakage there into an order-one normalized Gaussian field.
-    empty_rows=mu==0
-    factor[empty_rows]=0
+    # Exact CF-deterministic rows have count0 (empty) or count1 (one-hot1).
+    # Do not magnify eigensolver leakage there into order-one correlations.
+    # mu==1 ALONE is insufficient: a spread row can have bosonic variance.
+    empty_rows=np.count_nonzero(probabilities,axis=1)==0
+    occupied_deterministic=(np.count_nonzero(probabilities,axis=1)==1)&np.any(probabilities==1,axis=1)
+    deterministic=empty_rows|occupied_deterministic
+    pre_mask_variances=np.sum(factor**2,axis=1)
+    factor[deterministic]=0
     effective=np.sum(factor**2,axis=1)
     return {"v":v,"u":u,"encoder":encoder,"source_ports":list(range(r)),
         "probabilities":probabilities,"mu":mu,"projection":projection,
         "cov":cov,"factor":factor,"variance":effective,
         "target_variance":np.diag(cov).copy(),
         "Gaussian_structurally_empty_rows":np.flatnonzero(empty_rows).tolist(),
+        "Gaussian_structurally_occupied_deterministic_rows":np.flatnonzero(occupied_deterministic).tolist(),
+        "Gaussian_deterministic_mask_pre_variance":pre_mask_variances.tolist(),
+        "Gaussian_deterministic_mask_removed_factor_L2":float(np.sqrt(pre_mask_variances[deterministic].sum())),
         "Gaussian_factor_covariance_residual":float(abs(factor@factor.T-cov).max()),
         "Gaussian_variance_residual":float(abs(effective-np.diag(cov)).max()),
         "source_orthogonality_residual":source_residual,"unitary_residual":residual,
@@ -420,6 +427,9 @@ def pack_network(context):
         "Gaussian_factor_covariance_residual":context["Gaussian_factor_covariance_residual"],
         "Gaussian_variance_residual":context["Gaussian_variance_residual"],
         "Gaussian_structurally_empty_rows":context["Gaussian_structurally_empty_rows"],
+        "Gaussian_structurally_occupied_deterministic_rows":context["Gaussian_structurally_occupied_deterministic_rows"],
+        "Gaussian_deterministic_mask_pre_variance":context["Gaussian_deterministic_mask_pre_variance"],
+        "Gaussian_deterministic_mask_removed_factor_L2":context["Gaussian_deterministic_mask_removed_factor_L2"],
         "source_orthogonality_residual":context["source_orthogonality_residual"],
         "unitary_residual":context["unitary_residual"],
         "projector_offdiagonal_frobenius_squared":context["projector_offdiagonal_frobenius_squared"],

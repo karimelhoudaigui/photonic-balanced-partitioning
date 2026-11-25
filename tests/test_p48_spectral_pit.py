@@ -278,3 +278,39 @@ def test_zero_intensity_assignment_and_carried_tie_priority():
     after=list(p48.preparation_candidates(relabeled,permutation[priority].tolist(),3))
     for (label,subset,_),(new_label,new_subset,_) in zip(before,after):
         assert label==new_label and sorted(permutation[subset].tolist())==new_subset
+
+
+def test_deterministic_gaussian_rows_defeat_injected_factor_leakage(monkeypatch):
+    # One exact occupied row, two fluctuating source splits, one empty row.
+    v=np.zeros((6,3),dtype=complex); v[0,0]=1
+    v[1:3,1]=1/math.sqrt(2); v[3:5,2]=1/math.sqrt(2)
+    original=np.linalg.eigh
+    def leaking_eigh(matrix):
+        values,vectors=original(matrix)
+        positive=int(np.argmax(values))
+        vectors[0,positive]+=1e-14
+        vectors[5,positive]+=1e-14
+        return values,vectors
+    monkeypatch.setattr(p48.np.linalg,"eigh",leaking_eigh)
+    context=p48.build_network(v,"mixed_fixture")
+    assert context["Gaussian_structurally_occupied_deterministic_rows"]==[0]
+    assert context["Gaussian_structurally_empty_rows"]==[5]
+    assert context["Gaussian_deterministic_mask_pre_variance"][0]>0
+    assert context["Gaussian_deterministic_mask_pre_variance"][5]>0
+    assert context["variance"][0]==context["variance"][5]==0
+    assert context["variance"].max()>.1
+    assert context["Gaussian_factor_covariance_residual"]<3e-12
+    seed=480086
+    expected=np.random.default_rng(p48.base.seed_for(seed,"PIT_jitter")).random(6)-.5
+    field,_,metadata=p48.make_field(context,[0,1,2],"gaussian_Bcov",seed,{})()
+    assert field[0]==expected[0] and field[5]==expected[5]
+    assert metadata["gaussian_raw"][0]==metadata["gaussian_raw"][5]==0
+
+
+def test_mu_one_spread_bosonic_rows_are_not_masked_as_deterministic():
+    v=np.asarray([[1,1,1,1],[1,-1,1,-1],[1,1,-1,-1],[1,-1,-1,1]],dtype=complex)/2
+    context=p48.build_network(v,"spread_fixture")
+    assert context["mu"].tolist()==[1.,1.,1.,1.]
+    assert context["Gaussian_structurally_occupied_deterministic_rows"]==[]
+    assert context["Gaussian_structurally_empty_rows"]==[]
+    assert context["variance"]==pytest.approx(np.full(4,1.5),abs=2e-12)

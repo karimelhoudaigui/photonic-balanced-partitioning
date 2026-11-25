@@ -145,8 +145,11 @@ repair describes numerical input error; it is not exact equality with the
 uncorrected sampler. Both raw/used mass and every repair are retained.
 
 Gaussian_Bcov samples its declared raw B covariance. Tiny negative eigenvalues
-are clipped only above the-1e-10 failure threshold. Exactly empty rows are
-zeroed in the factor to avoid amplifying numerical leakage. Phi divides by
+are clipped only above the-1e-10 failure threshold. Exactly deterministic
+CF rows (all-zero q, or a unique q=1 with the other entries zero) are zeroed
+in the factor to avoid amplifying numerical leakage into order-one normalized
+correlations. A row with mu=1 and spread q is NOT masked. The pre-mask variances,
+detected row lists and removed factor norm are saved. Phi divides by
 the ACTUAL factor variance; exactly zero variance receives independent uniform
 jitter. Target and factor residuals are separate. It need not match a photonic
 PIT bivariate copula. IID uses independent uniform fields. Matching these
@@ -181,13 +184,16 @@ happens to be an optimum; no exact solver or optimum is consulted.
 
 Source/helper/spec/contracts/tests are committed before any P48 experiment.
 Root/physics review exact hashes before CPU authorization. Planned preflight:
-24 integration cases plus26 helper cases. It independently enumerates small
+26 integration cases plus26 helper cases. It independently enumerates small
 Fock permanents/labeled particles, species4+1, covariance, all small phase
 assignments, source-basis versus vacuum rotations, carried labels/marks,
 zero-graph mu0/mu1, occupied/boundary/vacuum degeneracies, explicit repairs,
 PIT/Gaussian factor variance, decoder/rounding budgets, retained numerical
 failure, direct intensity roundings, labelled assignment optimum and one
-local Clifford call. No DEV outcome appears in those fixtures.
+local Clifford call. A mixed deterministic/fluctuating fixture injects factor
+leakage before the Gaussian mask; a mu1 spread-row fixture prevents overmasking.
+This defends a risk identified statically before execution, not an observed
+DEV failure. No DEV outcome appears in those fixtures.
 
 One unique main only after PASS and explicit coordinator slot. CPU60/wall90,
 one thread/worker, output32MiB, planned arrays256MiB. Runner enforces process
