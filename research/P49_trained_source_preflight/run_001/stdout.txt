@@ -1,0 +1,17 @@
+..........................................                               [100%]
+=============================== warnings summary ===============================
+tests/test_p49_trained_source.py::test_local_count_observation_and_separate_PIT_interface
+tests/test_p49_trained_source.py::test_local_count_observation_and_separate_PIT_interface
+tests/test_p49_trained_source.py::test_local_count_observation_and_separate_PIT_interface
+  /private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+    warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+
+tests/test_p49_trained_source.py::test_local_count_observation_and_separate_PIT_interface
+tests/test_p49_trained_source.py::test_local_count_observation_and_separate_PIT_interface
+tests/test_p49_trained_source.py::test_local_count_observation_and_separate_PIT_interface
+  /private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+    warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/encoding/research/P49_trained_source_preflight/run_001/junit.xml -
+42 passed, 6 warnings in 15.79s
