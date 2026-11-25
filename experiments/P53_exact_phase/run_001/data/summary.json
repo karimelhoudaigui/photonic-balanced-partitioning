@@ -1,0 +1,18 @@
+{
+  "status": "INCONCLUSIVE_BERNSTEIN_OR_SUPPORT",
+  "certified_degree": null,
+  "LP_fits": 20,
+  "source_probability_normalization_exact": true,
+  "rank_and_incident_identities_exact": true,
+  "all6435_source_patterns_retained": true,
+  "all71_control_vertices_retained": true,
+  "positive_optimizer_accepted": false,
+  "new_graph_or_photonic_or_MC_sample": false,
+  "not_full_law_tail_runtime_loss_or_arbitraryN_theorem": true,
+  "independent_review_required": true,
+  "CPU_seconds_inside_main": 0.975028,
+  "wall_seconds_inside_main": 0.9815666250069626,
+  "LP_provider_sha256": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+  "source_sha256": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692",
+  "spec_sha256": "24b3d9c5898709d61bd9f71ce49e497fa2691f073450cc4be8ff1df4fa5dd620"
+}
