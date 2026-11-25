@@ -345,15 +345,40 @@ checks the weighted-adjacency counterexample's rational table. No
 finite-strength/general-ansatz conclusion, novelty or positive claimed.
 Proof checkpoint: reports/P54_PROOF_CHECKPOINT.md.
 
-P53b prospectively fixes ONE new rational point x=1/4(theta=pi/3), at most
-one primal and one dual LP, exact point-membership/separation checks and a
-nonnegative graph interpretation ONLY against the fixedENDPOINT71 library.
-Carda0a6881/1dbb3f9 predates evaluation; implementation/review only authorized.
-No graph witness is a held-out optimizer result or a refutation of continuous
-reoptimized b4. Encoding separately proposes P55 neutral-count decoding with
-all attempts retained; its weak-order gain must survive the classical
-inclusion/rare-hop explanation before a new finite-coherence claim. No code,
-experiment, hardware compatibility or P55 positive exists yet.
+P53b carda0a6881/1dbb3f9 prospectively fixed ONE x=1/4(theta=pi/3), not a
+phase search. Sourcebb0ba2d and independent physicsbb1539a preceded20PASS
+qualificationfa3eb9a, then ONE main2.072363s/13 unchanged inputs. All71 vertices
+have (c04-c15)/2=0 but B has -767/327680: strict exact separation, original
+dataa2cf5d9/rootd0d98ad, certificatebd987439.... The independently written
+stdlib checker018641eb executed once/PASScc4c73b,71 vertices/28 coordinates,
+direct powers rather than Horner, same strict gap/shift/gates; posthoc and
+not blind, no new physical-source reconstruction. ROOT validates both v2
+manifests. Accepted scoped counterexample: theory/P53b_endpoint_mean_counterexample.md.
+The complete graph plus two edge perturbations is a simple posthoc witness,
+not a held-out optimizer result. Strong classical search is trivial at N8.
+
+P53c card28e0fc5 now fixes the SAME target and ALL35 b4 regroupings at pi/3,
+added to71 ->106 vertices. Exact Eisenstein arithmetic, factorials/probability
+convolution and uniform420 ties, then at most one primal/dual. The original
+P53b graph stays fixed in its separate diagnostic; new duals are only
+functionals for the106 hull. Implementation only authorized, no controls/LP
+evaluated; physics card review agrees. This mandatory falsifier addresses the
+endpoint-only restriction, not an all-continuous-b4 claim.
+
+P55 carde22d563 and independently frozen physics72c9bb99 propose a genuinely
+different decoder: uniformly choose ALL balanced subsets minimizing measured
+photon imbalance, with no rejected shot. Prototype4812e881 is96 lines of
+integer DP/unranking, resource guards before allocation. ONE targeted run
+3f8ed4ad passes29 items/1000 count vectors and every rank,0.31s pytest /
+0.553372s runner,6 unchanged inputs. ROOT reads all source/tests and validates
+its manifest. Integer RNG API is conditional on an unbiased arbitrary-size
+randbelow; no statistical RNG/physical sampler result is claimed. The weak
+improvement has a classical rare-hop/inclusion/D-retiming explanation.
+Encoding is designing, not executing, a small N20/full20 finite-coherence
+pilot with true full-count controls and strong from-scratch FAST. No new
+graph, pilot, hardware compatibility or P55 positive exists yet.
+Latest whole-suite822PASS predates P53b/P55 code; targeted20+29 PASS, next
+integrated full suite required after current implementation checkpoint.
 Numerical work is sequential; consult
 the current explicit worker-slot messages, not an old checkpoint sentence.
 

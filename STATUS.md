@@ -46,15 +46,21 @@ library. Integer/Fraction source and certificate code have separate ROOT,
 encoding and physics static reviews, followed by18 actual targeted tests PASS.
 ONE main completed1.746802s, all12 inputs unchanged:20 LP proposals solved,
 but internal Bernstein controls were not exactly certified at either degree.
-Outcome INCONCLUSIVE; neither curve nonmembership nor continuous replacement
-was established. See research/P53_exact_phase_main_receipt.md. Full regression
-suite now822 PASS; source unchanged by later raw/theory-only additions.
+Outcome INCONCLUSIVE; that run alone established neither curve nonmembership
+nor continuous replacement. The separately frozen P53b follow-up now gives
+an exact counterexample at x=1/4 to ENDPOINT71 replacement, independently
+rechecked in separate stdlib code: gap767/327680. This is a finite mean-hull
+counterexample, not an optimization advantage; same-phase b4 is still untested.
+See theory/P53b_endpoint_mean_counterexample.md. Last full regression822 PASS
+predates P53b/P55 additions; their targeted20 and29 tests PASS respectively.
 P54's proposed full-input weak graph hopping has a ROOT analytical falsification
 with an independently frozen reconstruction and exact-hash focused review;
-see reports/P54_PROOF_CHECKPOINT.md. P53b's single rational-point discriminator
-and P55's different neutral-count decoder are prospective follow-ups, not
-completed results. No such scoped obstruction completes the user's positive
-optimizer target.
+see reports/P54_PROOF_CHECKPOINT.md. P55's different neutral-count decoder is
+implemented and uniformly qualified on1000 small count vectors/all their ranks;
+no graph pilot or finite-coherence benefit yet. P53c now prepares ALL35 b4
+controls at the SAME pi/3 to challenge the new counterexample's limited scope.
+P55 pilot design remains prospective. No such scoped result completes the
+user's positive optimizer target.
 No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,

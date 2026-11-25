@@ -908,3 +908,32 @@ point certificates (carda0a6881/1dbb3f9), implementation only; no value opened.
 P55 neutral-count decoder is a distinct analytical proposal, not an experiment
 or an accepted gain. Github research checkpointa9a5897 CI succeeded in run
 45609474034; remote main remains2744395. Continue beyond these negatives.
+
+## 2026-11-25 — exact P53b counterexample; P55 decoder is operational
+
+P53b's sole predeclared x1/4 was not another favorable scan. Sourcebb0ba2d,
+ROOT/physicsbb1539a static reviews and20 syntheticPASSfa3eb9a preceded one
+2.072363s main,13 unchanged inputs, exactly two solved LP proposals. Data
+a2cf5d9 stores an exact dual (X04-X15)/2: all71 ENDPOINT controls have mean0,
+B has -767/327680. Nonnegative posthoc graph gives normalizedgap767/4587520.
+Independent stdlib checker018641eb/PASScc4c73b reconstructs the target with
+direct powers, checks all71/28 coordinates and graph/gates exactly. ROOT reads
+actual results and validates both manifests. This rejects the ENDPOINT71
+continuous replacement hypothesis; P53's earlier failed Bernstein search
+alone did not. Same-team/posthoc independence, no source rederivation or
+held-out optimizer replication. theory/P53b_endpoint_mean_counterexample.md.
+
+P53c next falsifier is frozen28e0fc5: all35 SAME-phase b4 controls at pi/3,
+retaining the original71 and fixed graph diagnostic. Exact Eisenstein ring,
+4-photon Fock probabilities and4+4 convolution;106-control membership/dual
+still unevaluated. Implementation only authorized, no silent old-library
+scope extension or paper update.
+
+P55 is a new all-attempt neutral photon-count decoder, not another ranked
+decoder. Carde22d563 and independent72c9bb99 derive uniform DP sampling and
+the favorable but classically reproduced leading drift.96-line prototype
+4812e881, one qualification3f8ed4ad:29PASS, all1000 N2/4/6 count vectors and
+all ranks, plus bigint/loss/vacuum/odd/resource cases,6 unchanged inputs.
+No physical graph pilot followed. A bounded finite-coherence N20 proposal
+is being designed with independently retuned D/inclusion/b4/phase/marginals
+and paid strong classical controls. The broad positive target remains OPEN.
