@@ -1,0 +1,355 @@
+{
+  "schema_version": 2,
+  "claim_id": "P50-MINIMAL-COUNT-FIELD-DEV",
+  "repository": {
+    "commit": "53102576e4aebf9ed633b9055f64715e7a479324",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P50_minimal_count_field_probe.py",
+    "--spec",
+    "research/P50_minimal_count_field_spec.json",
+    "--output",
+    "experiments/P50_minimal_count_field/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Does an independently trained all-count cheap balanced ranking show a DEV B mechanism beyond optimized D/b4, phase/sphere, covariance/independent final variances, independent B marginals, static/jitter nulls and two from-raw descent-first controls under prospectively measured B-ONLY classical wall-derived CPU? No accepted positive.",
+    "coefficient_domain": "Complex128/float64 passive isometries; integer graph/cut, exact Fraction equal-graph ALL-shot objective; Decimal80/Fraction independent single-mode B probabilities; observed CPU/wall clocks",
+    "conventions": "r13/17 distinct K25/50;full sourceCF;all collisions retained;eta1;no Cref/PIT/greedy/optimum/masks;max-anchored1e-12 buckets;sourceR gauges beforemix;actual masked F beforeH and final variance rows||HF||^2;independent marginal total not conditioned;model-specific32train+32fresh/case;B-only cost excludes other arms, all diagnostics, optical backend/counts and serialization;FAST no free features or result at time0",
+    "inputs": [
+      "Four NEW DEV graphs ER/RR N50/r13 seeds5005001/02 and N100/r17 seeds5010001/02;ER8/(N-1),RR8,weights1..5",
+      "Four Fourier/E/ERphi0/ERphi90 source bases andalpha0/1,beta0/.1;canonical exact all-shot policy selection",
+      "Ten independently owned/prepared arms,256 proposals each;two independent from-raw fast solvers per case"
+    ],
+    "bounds": {
+      "graphs": 4,
+      "maximum_modes": 100,
+      "maximum_photons": 17,
+      "training_proposals_per_arm": 128,
+      "evaluation_proposals_per_arm": 128,
+      "models": 10,
+      "total_primary_cuts": 2560,
+      "simulated_injected_photons_per_optical_arm": 3840,
+      "FAST_max_proposals_guard": 100000000,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted positive, novelty, independent physical replication, heldout, hardware feasibility or QPU gate",
+      "B-only wall CPU allowance is this prospective implementation envelope, not universal minimum or physical zero latency",
+      "Gaussian/PGF/float bucket guards are numerical, not interval or tail-relative guarantees",
+      "Independent B marginals match only input one-mode laws and not total count or final diffused marginals",
+      "Resource/numerical/eligible-initialization failures remain inconclusive without retry or enlarged cap"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Role-separated pinned PCG64/networkx and serial local exqalibur;continuous phase/sphere;fresh evaluation roles",
+    "seed": [
+      5005001,
+      5005002,
+      5010001,
+      5010002,
+      5020001,
+      5030001,
+      5040001,
+      5040002,
+      5050001
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T07:12:09.310942+00:00",
+    "runtime_seconds": 21.615873,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P50_minimal_count_field_probe.py",
+    "research/P50_minimal_count_field_spec.json",
+    "research/P50_minimal_count_field_contract.md",
+    "research/P50_minimal_count_field_execution_contract.json",
+    "research/P50_EXECUTION_CARD.md",
+    "research/P50_MINIMAL_COUNT_FIELD_CARD.md",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "research/P50_fast_from_scratch.py",
+    "tests/test_p50_minimal_count_field.py",
+    "tests/test_p50_fast_from_scratch.py",
+    "research/P49_trained_source_probe.py",
+    "research/P49_fast_classical.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P45_adaptive_probe.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P50_minimal_count_field_probe.py",
+      "sha256": "6d0229c923c80ea4b29aa2075641540ddf6e983248dbadb76af0e1513c05d8cf",
+      "sha256_after": "6d0229c923c80ea4b29aa2075641540ddf6e983248dbadb76af0e1513c05d8cf"
+    },
+    {
+      "path": "research/P50_minimal_count_field_spec.json",
+      "sha256": "5828c03c3a36855b5941bd8eb28771c49d84e6eb8321e570d936f44de0d07921",
+      "sha256_after": "5828c03c3a36855b5941bd8eb28771c49d84e6eb8321e570d936f44de0d07921"
+    },
+    {
+      "path": "research/P50_minimal_count_field_contract.md",
+      "sha256": "2b8e654713f25786276e3dca8d5a1afdbf0d72ae3bc1bb9ce93fe5de5fed3723",
+      "sha256_after": "2b8e654713f25786276e3dca8d5a1afdbf0d72ae3bc1bb9ce93fe5de5fed3723"
+    },
+    {
+      "path": "research/P50_minimal_count_field_execution_contract.json",
+      "sha256": "d83cfe8b00475ba536bed1499bee287c855a1cf0e4f9f2730afd67ea2d69d01a",
+      "sha256_after": "d83cfe8b00475ba536bed1499bee287c855a1cf0e4f9f2730afd67ea2d69d01a"
+    },
+    {
+      "path": "research/P50_EXECUTION_CARD.md",
+      "sha256": "c1616954b8a453530ddfc4481b2ce08f4b87a3c368f0784fb1c40efe69eff2bc",
+      "sha256_after": "c1616954b8a453530ddfc4481b2ce08f4b87a3c368f0784fb1c40efe69eff2bc"
+    },
+    {
+      "path": "research/P50_MINIMAL_COUNT_FIELD_CARD.md",
+      "sha256": "2e856b07b68a6ec3af2f4a29897cde9ff115969f9156cf5aab79ee35c65f6235",
+      "sha256_after": "2e856b07b68a6ec3af2f4a29897cde9ff115969f9156cf5aab79ee35c65f6235"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "research/P50_fast_from_scratch_contract.json",
+      "sha256": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a",
+      "sha256_after": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "tests/test_p50_minimal_count_field.py",
+      "sha256": "a4c6dce0cb3e213fd9530420486f37efd488e5ae544aa8decb36b23f8022f371",
+      "sha256_after": "a4c6dce0cb3e213fd9530420486f37efd488e5ae544aa8decb36b23f8022f371"
+    },
+    {
+      "path": "tests/test_p50_fast_from_scratch.py",
+      "sha256": "d70a3a37856312177c0c8c6f905a5504ff2cd776d70de2e08bf663a941381aa8",
+      "sha256_after": "d70a3a37856312177c0c8c6f905a5504ff2cd776d70de2e08bf663a941381aa8"
+    },
+    {
+      "path": "research/P49_trained_source_probe.py",
+      "sha256": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5",
+      "sha256_after": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5"
+    },
+    {
+      "path": "research/P49_fast_classical.py",
+      "sha256": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff",
+      "sha256_after": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff"
+    },
+    {
+      "path": "research/P48_spectral_pit_probe.py",
+      "sha256": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca",
+      "sha256_after": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca"
+    },
+    {
+      "path": "research/P48_coherent_marginals.py",
+      "sha256": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac",
+      "sha256_after": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac"
+    },
+    {
+      "path": "research/P45_adaptive_probe.py",
+      "sha256": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92",
+      "sha256_after": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P50_minimal_count_field/run_001",
+  "declared_results": [
+    "experiments/P50_minimal_count_field/run_001/data/summary.json",
+    "experiments/P50_minimal_count_field/run_001/data/raw.jsonl.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n50_ER_5005001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n50_RR_5005002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n100_ER_5010001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/context_n100_RR_5010002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n50_ER_5005001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n50_ER_5005001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n50_RR_5005002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n50_RR_5005002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n100_ER_5010001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n100_ER_5010001.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_random_n100_RR_5010002.json.gz",
+    "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n100_RR_5010002.json.gz"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/stdout.txt",
+      "sha256": "3278cf7a2475874c01612a02f9fb8d408b8b9454c6f4960146a04eec398431b8",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/stderr.txt",
+      "sha256": "11b242b5c7286e0cad59d54efcedf8909243946278ad382889870633c1ceec25",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/summary.json",
+      "sha256": "f55b64daa9e9eff7c821023433f9ee48c3ccaf33e0ec99e3189bc81bd457682b",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/raw.jsonl.gz",
+      "sha256": "c19f8cc9f890ece810dad0549c0ca8b3d7785ed6a41f210ef51d10b4f54dc77b",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/context_n50_ER_5005001.json.gz",
+      "sha256": "b67845774b0c13b141d6d263e8c3e4b72c508d7be1abbcb2a1583336f83ae577",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/context_n50_RR_5005002.json.gz",
+      "sha256": "bc88f4b76b0c28e9d65185940e1ea7d4a367bc0503b463f1ad44cc69138eef4a",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/context_n100_ER_5010001.json.gz",
+      "sha256": "8d62225247111411bea88c9968ba1b4810d9c1c01c6caad15cc420c525aba0b0",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/context_n100_RR_5010002.json.gz",
+      "sha256": "456cc5b27d5f3b735f8894833ab9e0722ea5c13230554be6e6b6a9b1abeab71d",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_random_n50_ER_5005001.json.gz",
+      "sha256": "ff93d81671d70f4f83868cb2be85e65670df2f40fc1de3d4aa912a162802c870",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n50_ER_5005001.json.gz",
+      "sha256": "83c9d29d04cf6a794533dd8a1990f0c8fd3187a5a4e3379a663ec4a4448978d1",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_random_n50_RR_5005002.json.gz",
+      "sha256": "4e636f9c406cb85c81e9f42be78ab682d349c928ba9da7362421c7ca93648848",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n50_RR_5005002.json.gz",
+      "sha256": "ce03c99af75dffad18db1bc1279e483f5c073e5333032ec788e7e76f6c649e8e",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_random_n100_ER_5010001.json.gz",
+      "sha256": "319044df3504cf9782f5fffc3338f52727ba7138fdd0ff568d3b0f22351876d8",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n100_ER_5010001.json.gz",
+      "sha256": "c387d588c757e425bcdddc4b23534897a9e827c0b220cda6a1aee0af75facf93",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_random_n100_RR_5010002.json.gz",
+      "sha256": "c2ccd05678ecd4286196ffc64a4cda0e6a89a55d611ecc2798c23d730d26adf2",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P50_minimal_count_field/run_001/data/fast_spectral_n100_RR_5010002.json.gz",
+      "sha256": "2df97e43268facbb409ccc73be110f231d05b91fcb92bb03c882bc433d9ea444",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
