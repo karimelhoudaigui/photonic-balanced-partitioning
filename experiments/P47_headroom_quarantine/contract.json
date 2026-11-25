@@ -1,0 +1,26 @@
+{
+  "claim_id": "P47_CLOSED_POSTHOC_HEADROOM_QUARANTINE",
+  "mathematics": {
+    "assertion_tested": "Post-hoc FLOAT64 MILP lower-bound/incumbent estimates on exactly the four CLOSED P47 graphs, compared only with archived observed costs; no partitions exported and no P48/training use.",
+    "coefficient_domain": "Integer graph data; binary vertices, continuous edge epigraphs; SciPy/HiGHS float64 solving, not exact or interval-certified bounds",
+    "conventions": "Undirected positive edges i<j counted once; sum x=N/2,x0=1; z>=plus/minus(xi-xj); min sum wij*z. Gap fields are to estimated solver lower bounds, not known distances from optimum.",
+    "inputs": ["Closed P47 contexts n26_ER_4702601,n26_RR_4702602,n34_ER_4703401,n34_RR_4703402", "Frozen summary and primary manifest copies pinned by exact SHA256; no P48 graph or primary raw changed"],
+    "bounds": {"cases": 4, "maximum_vertices": 34, "case_HiGHS_time_limit_seconds": 5, "global_cpu_seconds": 25, "global_wall_seconds": 40, "threads": 1, "maximum_new_output_bytes": 1048576},
+    "non_claims": ["No exact/interval optimality certificate", "No quantum advantage, new guide, positive acceptance or held-out result", "No solver partition, mask, assignment or partition hash exported", "No use of scalars for P48 or future training/selection", "A gap to an estimated lower bound is not a proved distance from optimum"]
+  },
+  "execution_artifacts": [
+    "experiments/P47_headroom_quarantine/solve.py",
+    "experiments/P47_headroom_quarantine/contract.json",
+    "research/P47_HEADROOM_POSTHOC_CONTRACT.md",
+    "experiments/P47_headroom_quarantine/inputs/primary_manifest.json",
+    "experiments/P47_headroom_quarantine/inputs/summary.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n26_ER_4702601.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n26_RR_4702602.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n34_ER_4703401.json",
+    "experiments/P47_headroom_quarantine/inputs/context_n34_RR_4703402.json"
+  ],
+  "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}, {"name": "scipy", "version": "1.17.1"}],
+  "randomness": {"used": true, "generator": "No instance or sampling RNG; HiGHS deterministic single-thread configuration with fixed solver random_seed", "seed": 47047},
+  "resource_note": "PREPARED, NOT EXECUTED. Explicit coordinator slot authorization after this preregistration commit is required. Runner CPU25/wall40/thread1/log1MiB, each of4 MILP calls5s; retain all partial/time-limited/failing cases, no automatic retry. No hard macOS affinity or memory cap assumed.",
+  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "experiments/P47_headroom_quarantine/solve.py", "--output", "experiments/P47_headroom_quarantine/run_001/data", "--execute-posthoc-p47-only"]
+}
