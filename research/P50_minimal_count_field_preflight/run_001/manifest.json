@@ -1,0 +1,273 @@
+{
+  "schema_version": 2,
+  "claim_id": "P50-PHYSICS-CALLER-RESOURCES-PREFLIGHT",
+  "repository": {
+    "commit": "c5805d72848f73ca3308f37482a529b2c35952e5",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p50_minimal_count_field.py",
+    "tests/test_p50_fast_from_scratch.py",
+    "--junitxml=research/P50_minimal_count_field_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite hand cases for Fock/covariance/PGF source laws, R/HOM/gauge/conjugation, monomial and phase/sphere exceptions, independent marginal count and variance caveats, max-anchored ties/relabeling/support/counterexample, all-shot Fraction/fresh-policy isolation, own-cost clocks/no-other-arm preparation, nullable eligible FAST; rerun independently prepared FAST21 tests. No DEV graph opened.",
+    "coefficient_domain": "Complex128/float64 passive isometries; integer graph/cut, exact Fraction equal-graph ALL-shot objective; Decimal80/Fraction independent single-mode B probabilities; observed CPU/wall clocks",
+    "conventions": "r13/17 distinct K25/50;full sourceCF;all collisions retained;eta1;no Cref/PIT/greedy/optimum/masks;max-anchored1e-12 buckets;sourceR gauges beforemix;actual masked F beforeH and final variance rows||HF||^2;independent marginal total not conditioned;model-specific32train+32fresh/case;B-only cost excludes other arms, all diagnostics, optical backend/counts and serialization;FAST no free features or result at time0",
+    "inputs": [
+      "Explicit hand-built N<=10 non-DEV graphs and r<=3 permanent enumeration (N<=6), r13/17 source rotation orthogonality only",
+      "Fixed synthetic clock/selection/caller fixtures and separately owned FAST21 finite tests"
+    ],
+    "bounds": {
+      "planned_primary_tests": 53,
+      "planned_FAST_tests": 21,
+      "planned_total_tests": 74,
+      "maximum_full_fock_modes": 6,
+      "maximum_full_fock_photons": 3,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted positive, novelty, independent physical replication, heldout, hardware feasibility or QPU gate",
+      "B-only wall CPU allowance is this prospective implementation envelope, not universal minimum or physical zero latency",
+      "Gaussian/PGF/float bucket guards are numerical, not interval or tail-relative guarantees",
+      "Independent B marginals match only input one-mode laws and not total count or final diffused marginals",
+      "Resource/numerical/eligible-initialization failures remain inconclusive without retry or enlarged cap"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Fixed finite fixture PCG64 seeds, fake clocks and exact enumerations;no DEV population;FAST seeds in frozen helper qualification contract",
+    "seed": [
+      500008,
+      500011,
+      500201,
+      500081
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T07:09:57.017735+00:00",
+    "runtime_seconds": 1.329261,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P50_minimal_count_field_probe.py",
+    "research/P50_minimal_count_field_spec.json",
+    "research/P50_minimal_count_field_contract.md",
+    "research/P50_minimal_count_field_execution_contract.json",
+    "research/P50_minimal_count_field_preflight_contract.json",
+    "research/P50_EXECUTION_CARD.md",
+    "research/P50_MINIMAL_COUNT_FIELD_CARD.md",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "research/P50_fast_from_scratch.py",
+    "tests/test_p50_minimal_count_field.py",
+    "tests/test_p50_fast_from_scratch.py",
+    "research/P49_trained_source_probe.py",
+    "research/P49_fast_classical.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P45_adaptive_probe.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P50_minimal_count_field_probe.py",
+      "sha256": "6d0229c923c80ea4b29aa2075641540ddf6e983248dbadb76af0e1513c05d8cf",
+      "sha256_after": "6d0229c923c80ea4b29aa2075641540ddf6e983248dbadb76af0e1513c05d8cf"
+    },
+    {
+      "path": "research/P50_minimal_count_field_spec.json",
+      "sha256": "5828c03c3a36855b5941bd8eb28771c49d84e6eb8321e570d936f44de0d07921",
+      "sha256_after": "5828c03c3a36855b5941bd8eb28771c49d84e6eb8321e570d936f44de0d07921"
+    },
+    {
+      "path": "research/P50_minimal_count_field_contract.md",
+      "sha256": "2b8e654713f25786276e3dca8d5a1afdbf0d72ae3bc1bb9ce93fe5de5fed3723",
+      "sha256_after": "2b8e654713f25786276e3dca8d5a1afdbf0d72ae3bc1bb9ce93fe5de5fed3723"
+    },
+    {
+      "path": "research/P50_minimal_count_field_execution_contract.json",
+      "sha256": "d83cfe8b00475ba536bed1499bee287c855a1cf0e4f9f2730afd67ea2d69d01a",
+      "sha256_after": "d83cfe8b00475ba536bed1499bee287c855a1cf0e4f9f2730afd67ea2d69d01a"
+    },
+    {
+      "path": "research/P50_minimal_count_field_preflight_contract.json",
+      "sha256": "8b7f18ecb5658c2ed8b2b195882fd88602494d8014140ee4dd424a797431f8ba",
+      "sha256_after": "8b7f18ecb5658c2ed8b2b195882fd88602494d8014140ee4dd424a797431f8ba"
+    },
+    {
+      "path": "research/P50_EXECUTION_CARD.md",
+      "sha256": "c1616954b8a453530ddfc4481b2ce08f4b87a3c368f0784fb1c40efe69eff2bc",
+      "sha256_after": "c1616954b8a453530ddfc4481b2ce08f4b87a3c368f0784fb1c40efe69eff2bc"
+    },
+    {
+      "path": "research/P50_MINIMAL_COUNT_FIELD_CARD.md",
+      "sha256": "2e856b07b68a6ec3af2f4a29897cde9ff115969f9156cf5aab79ee35c65f6235",
+      "sha256_after": "2e856b07b68a6ec3af2f4a29897cde9ff115969f9156cf5aab79ee35c65f6235"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "research/P50_fast_from_scratch_contract.json",
+      "sha256": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a",
+      "sha256_after": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "tests/test_p50_minimal_count_field.py",
+      "sha256": "a4c6dce0cb3e213fd9530420486f37efd488e5ae544aa8decb36b23f8022f371",
+      "sha256_after": "a4c6dce0cb3e213fd9530420486f37efd488e5ae544aa8decb36b23f8022f371"
+    },
+    {
+      "path": "tests/test_p50_fast_from_scratch.py",
+      "sha256": "d70a3a37856312177c0c8c6f905a5504ff2cd776d70de2e08bf663a941381aa8",
+      "sha256_after": "d70a3a37856312177c0c8c6f905a5504ff2cd776d70de2e08bf663a941381aa8"
+    },
+    {
+      "path": "research/P49_trained_source_probe.py",
+      "sha256": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5",
+      "sha256_after": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5"
+    },
+    {
+      "path": "research/P49_fast_classical.py",
+      "sha256": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff",
+      "sha256_after": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff"
+    },
+    {
+      "path": "research/P48_spectral_pit_probe.py",
+      "sha256": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca",
+      "sha256_after": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca"
+    },
+    {
+      "path": "research/P48_coherent_marginals.py",
+      "sha256": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac",
+      "sha256_after": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac"
+    },
+    {
+      "path": "research/P45_adaptive_probe.py",
+      "sha256": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92",
+      "sha256_after": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P50_minimal_count_field_preflight/run_001",
+  "declared_results": [
+    "research/P50_minimal_count_field_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P50_minimal_count_field_preflight/run_001/stdout.txt",
+      "sha256": "28e5737f5801d13cb1a34b72035583d7e2629a8529bf5c749a0bbd3fb8b4b2a6",
+      "kind": "log"
+    },
+    {
+      "path": "research/P50_minimal_count_field_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P50_minimal_count_field_preflight/run_001/junit.xml",
+      "sha256": "ca53304cdb0f8d55d8d7775b8fd574347286f2dac8c82c277bc034ad7d308336",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
