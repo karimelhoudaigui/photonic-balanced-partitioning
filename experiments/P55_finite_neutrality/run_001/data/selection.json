@@ -1,0 +1,78 @@
+{
+  "selected": {
+    "bosonic": 0,
+    "distinguishable": 3,
+    "species4": 2,
+    "continuous_phase": 2,
+    "independent_B_marginals": 0,
+    "inclusion_walk": 0
+  },
+  "losses": {
+    "bosonic": {
+      "0": "853/1760",
+      "1": "57/110",
+      "2": "931/1760"
+    },
+    "distinguishable": {
+      "0": "237/440",
+      "1": "113/220",
+      "2": "237/440",
+      "3": "401/880",
+      "4": "29/55",
+      "5": "447/880"
+    },
+    "species4": {
+      "0": "113/220",
+      "1": "427/880",
+      "2": "413/880",
+      "3": "217/440",
+      "4": "457/880",
+      "5": "227/440"
+    },
+    "continuous_phase": {
+      "0": "113/220",
+      "1": "479/880",
+      "2": "109/220"
+    },
+    "independent_B_marginals": {
+      "0": "893/1760",
+      "1": "497/880",
+      "2": "461/880"
+    },
+    "inclusion_walk": {
+      "0": "403/880",
+      "1": "47/88",
+      "2": "493/880",
+      "3": "47/88",
+      "4": "239/440",
+      "5": "449/880"
+    }
+  },
+  "selection_compute": {
+    "bosonic": {
+      "wall_seconds": 8.054199861362576e-05,
+      "cpu_seconds": 8.00000000005241e-05
+    },
+    "distinguishable": {
+      "wall_seconds": 5.8166973758488894e-05,
+      "cpu_seconds": 5.799999999922534e-05
+    },
+    "species4": {
+      "wall_seconds": 4.762498429045081e-05,
+      "cpu_seconds": 4.800000000138027e-05
+    },
+    "continuous_phase": {
+      "wall_seconds": 2.829195000231266e-05,
+      "cpu_seconds": 2.800000000036107e-05
+    },
+    "independent_B_marginals": {
+      "wall_seconds": 3.5208999179303646e-05,
+      "cpu_seconds": 3.499999999867498e-05
+    },
+    "inclusion_walk": {
+      "wall_seconds": 4.312500823289156e-05,
+      "cpu_seconds": 4.2999999999793204e-05
+    }
+  },
+  "frozen_before_fresh": true
+}
