@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "claim_id": "P59-FIXED-N6-EXACT-DECODER-RESPONSE",
+  "repository": {
+    "commit": "9dd58cfa0ced998dc312b70b85662b02b7948685",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P59_exact_fixed_response.py",
+    "--output",
+    "experiments/P59_fixed_response/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "For ONE predeclared N6 fixed-intensity family, exactly reconstruct ALL462 Fock occupation polynomials and spectra,ALL15 edge spectra and10 complementary-cut spectra; verify42 q-only complete marginal bins and83 q-only joint factorial moments,all-phase mass/parity/Gram/ties/response identities; report ALL center0 derivatives and separate zero-slope from full mean invariance.",
+    "coefficient_domain": "Python arbitrary integers in Z[xi],xi^2=xi-1,and exact fractions. Q monomial columns multiplied directly. Probability multiplies by prod(n!),divides by150^6. No float proof/complex128/LP/RNG.",
+    "conventions": "U[out,input],ports2a+i/2b+j;H2 UNNORMALIZED;only theta[b1,i1]=phi;LEFT real V block(0,2)=[[3,-4],[4,3]]/5. Full1^6source,idealeta1,ALL462 occupations inclzeros;uniformALL20 top3ties;10unoriented cutclasses represented by side containing0;positiveF2=alpha+beta*xi,r=d/sqrt3=-2beta. Center0 fixed before code/data;no favorable edge/graph orrescan.",
+    "inputs": [
+      "Q in Z[xi][zeta]with Laurent Gram150I and explicit q independent ofphi; formal analytic card9f5b7ea",
+      "Independent analytic precode fixture b7341f9/59dc56e:n420000 gives Qc0=(-35050,1000),Qc2=(175,-1000),pprime/sqrt3=-124/421875;verifyone720-term permanent/n!thencomparefullcreation",
+      "P56 full-square fullCF factorial-moment theorem through degree3;fixed-q input assumptions apply;no production module imported",
+      "N6 all20 feasible triples and10complementarycutclasses;crossingGram diagonal9/off5;directclass aggregation checkedagainstedgeinverse withfactor1/4"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_log_bytes": 4194304,
+      "maximum_scientific_output_bytes": 4194304,
+      "planned_logical_scientific_workspace_bytes": 67108864,
+      "maximum_failed_retries": 0,
+      "maximum_parallel_workers": 1,
+      "full_calibrations": 1,
+      "states": 462,
+      "source_coefficients_per_state": 3,
+      "parity_allowed_states": 236,
+      "parity_structural_zeros": 226,
+      "decoder_subsets_per_state": 20,
+      "edges": 15,
+      "cut_classes": 10,
+      "tie_LCM": 60,
+      "diagonal_bins": 42,
+      "joint_factorial_moments": 83,
+      "single_fixture_permanent_terms": 720,
+      "maximum_source_phase_degree": 2,
+      "maximum_probability_harmonic": 2,
+      "maximum_creation_occupation_phase_keys": 1386,
+      "coefficient_L1_strict_bound": 4398046511104,
+      "probability_numerator_strict_bound": "2^96",
+      "LP_calls": 0,
+      "random_draws": 0,
+      "graphs": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "This is an exact small device/decoder calibration,not optimization advantage,genuine-six-particle witness,novelty,runtime gainorhardware result;classical10-cut searchistrivial",
+      "Countfixture nonzero doesnot implynonzero decoded derivative;all15 rationalresponsesstillunknown beforemain",
+      "Zero center0slopes doNOT implyphaseblindness ifcosinesurvives;noalternatecenter,sign,mixer,globalphaseoptimizeroradaptivefallback",
+      "No conditional collisionfilter,knownsolution,Cstar,optimalmask,graphoutcomeortrainingselection",
+      "No blind/physical replication;independently specified fixtureandGram checksdo not replaceindependent full-law ormeanreplication",
+      "No all-classical orpartial-species separation;phase/spherefullcounts,retunedD/speciesandstrongfeasiblesearch remainessentiallater",
+      "Anyfirstfailure/time/resource/outputlimit staysfailureorinconclusive;preservepartials,noautomaticretry,precisionchangeorcapincrease"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic exact source columns/permanent/subsets/factorial moments;noRNGorAPI",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T14:44:19.463293+00:00",
+    "runtime_seconds": 0.849464,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P59_exact_fixed_response.py",
+    "research/P59_exact_fixed_response_spec.json",
+    "research/P59_exact_fixed_response_contract.md",
+    "research/P59_exact_fixed_response_execution_contract.json",
+    "research/P59_exact_fixed_response_guards_contract.json",
+    "tests/test_p59_exact_fixed_response.py",
+    "research/P59_N6_FIXED_RESPONSE_CARD.md",
+    "theory/P59_N6_fixed_intensity_derivation.md",
+    "theory/P59_adaptive_precode_derivation.md",
+    "theory/P56_full_square_third_moment_physics_check.md",
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P59_exact_fixed_response.py",
+      "sha256": "f1d79ac3940b9c02826d0150dcea8470e2ccc9e5f995615b0ead9aa765de0374",
+      "sha256_after": "f1d79ac3940b9c02826d0150dcea8470e2ccc9e5f995615b0ead9aa765de0374"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_spec.json",
+      "sha256": "2b0a0564ad4dfb747bae25441cc9ceaac0c8d6590232d31a765b867a6e3ef1e2",
+      "sha256_after": "2b0a0564ad4dfb747bae25441cc9ceaac0c8d6590232d31a765b867a6e3ef1e2"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_contract.md",
+      "sha256": "86cfd904b46710d34510c7cbd11eed643d16f287a8bb62d7b587e5c6e4890a37",
+      "sha256_after": "86cfd904b46710d34510c7cbd11eed643d16f287a8bb62d7b587e5c6e4890a37"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_execution_contract.json",
+      "sha256": "71ceff53aae136b403379fd5fa390ff1f1f06a6f7aeb710762cb483f1017e841",
+      "sha256_after": "71ceff53aae136b403379fd5fa390ff1f1f06a6f7aeb710762cb483f1017e841"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_guards_contract.json",
+      "sha256": "187cc0cea201efb69b165a1c670963553154788bf4d6c5fc029cd76530c8bbc3",
+      "sha256_after": "187cc0cea201efb69b165a1c670963553154788bf4d6c5fc029cd76530c8bbc3"
+    },
+    {
+      "path": "tests/test_p59_exact_fixed_response.py",
+      "sha256": "7f1da4d13df247082ee115b94232adadd898f2700de1d6efe781ba84a18433c6",
+      "sha256_after": "7f1da4d13df247082ee115b94232adadd898f2700de1d6efe781ba84a18433c6"
+    },
+    {
+      "path": "research/P59_N6_FIXED_RESPONSE_CARD.md",
+      "sha256": "a5e647172e144e285c9f42f7871c8c135d155a82c62a6eb6562f3f65a6d94de5",
+      "sha256_after": "a5e647172e144e285c9f42f7871c8c135d155a82c62a6eb6562f3f65a6d94de5"
+    },
+    {
+      "path": "theory/P59_N6_fixed_intensity_derivation.md",
+      "sha256": "ead03df0b5984d879fdcbabe5d595ebbe30026f81d4c1f0bc6712969e126996d",
+      "sha256_after": "ead03df0b5984d879fdcbabe5d595ebbe30026f81d4c1f0bc6712969e126996d"
+    },
+    {
+      "path": "theory/P59_adaptive_precode_derivation.md",
+      "sha256": "c2d5582e3a75fb9329390fc84434fb0cfc889fe1d01f49fcedbfe22db43a2540",
+      "sha256_after": "c2d5582e3a75fb9329390fc84434fb0cfc889fe1d01f49fcedbfe22db43a2540"
+    },
+    {
+      "path": "theory/P56_full_square_third_moment_physics_check.md",
+      "sha256": "751108224a197e2286dfcda90e95117d14c0a4db70ba537b9a4115fc7ae3d940",
+      "sha256_after": "751108224a197e2286dfcda90e95117d14c0a4db70ba537b9a4115fc7ae3d940"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P59_fixed_response/run_001",
+  "declared_results": [
+    "experiments/P59_fixed_response/run_001/data/raw.json.gz",
+    "experiments/P59_fixed_response/run_001/data/summary.json",
+    "experiments/P59_fixed_response/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P59_fixed_response/run_001/stdout.txt",
+      "sha256": "427307e395bde66983d7458686b86175459dd33c7cacbf453fdad02e9e5e8779",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P59_fixed_response/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P59_fixed_response/run_001/data/raw.json.gz",
+      "sha256": "47c352223f58b9a75fcdfe245cf2091d07377aaa870bbff723a7df3230826766",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P59_fixed_response/run_001/data/summary.json",
+      "sha256": "d682fafa8d3151871c740a73b6b8d0d343bcd3596975aa85d9b59d91690a4b67",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P59_fixed_response/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
