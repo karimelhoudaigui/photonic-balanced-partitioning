@@ -1,0 +1,12 @@
+{
+  "source": ".local/p66-dark-audit/research/P69_low_rank_transport_obstruction.md",
+  "destination": "research/P69_low_rank_transport_obstruction.md",
+  "sha256": "0dc37fe364e54e36d1ef9c9707c3609a6f04f5550a4804461d1bfb271d17e177",
+  "bytes": 18231,
+  "byte_identical": true,
+  "source_uncommitted_due_reported_index_timeout": true,
+  "index_preserved": true,
+  "root_review": "Full414lines read; input/output intertwiners, Gaussian identities, bounds, rank composition, Schur complement and symbolic exponential-H counterexample rederived",
+  "fresh_exact_hash_peer_review": "PENDING",
+  "numerical_run": false
+}
