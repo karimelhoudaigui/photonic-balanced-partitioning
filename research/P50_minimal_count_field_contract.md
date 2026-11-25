@@ -112,7 +112,7 @@ A conservative engineering projection is CPU<=45s/wall<=75s, not an observed
 benchmark or certificate; caps remain CPU60/wall90 with no automatic retry.
 
 Dense arrays: source frames/contexts up to100x100 complex128, covariance/factor
-100x100 float64 and sparse H. Even retaining all independent per-arm copies,
+100x100 float64 and dense H. Even retaining all independent per-arm copies,
 planned arrays<32MiB plus local backend/transient headroom within256MiB planned
 live arrays; this is not a hard Darwin resident-memory guarantee. Raw2560
 rows, compressed per-case contexts and compact FAST traces are projected
