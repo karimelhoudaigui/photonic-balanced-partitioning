@@ -1,0 +1,68 @@
+{
+  "claim_id": "P64-COMPLETE-STRUCTURED-SAMPLER-QUALIFICATION",
+  "binding_state": "CODE_ONLY_FROZEN_NOT_EXECUTED_REQUIRES_ROOT_REVIEW_AND_NUMERICAL_SLOT",
+  "mathematics": {
+    "assertion_tested": "Prospective synthetic exact-source/tritter and rounded conditional-state qualification: all462 F6 source rows including zeros; coherent and orthogonal suffix toys; full462-outcome N6 probabilities at phases0,pi/6,pi/3,-0.4 against independent dense-factorization/Ryser; extreme18-photon single-color sector without random draw; explicit mass/CDF/resource failure guards. No graph or optimizer.",
+    "coefficient_domain": "Source and tritter coefficients exact Python integers in Z[xi], xi^2=xi-1; source weights exact integers/Fractions. Conditional phases, amplitudes, masses and categorical CDFs binary64 approximate, without global certified TV bound.",
+    "conventions": "Ports a*d+i; positive Fourier; V on0,d is [[3,-4],[4,3]]/5; all single-photon inputs; d=6 target and d=2 qualification. M is sampled coarsely, latent rows discarded, all compatible terms restored coherently. Sum amplitudes within each suffix then squared masses across orthogonal suffixes. Full in/out Fock factorials and all collisions retained.",
+    "inputs": [
+      "Frozen P64 proof/card and code only; no primary data dependence",
+      "Independent six-mode dense factorization and Ryser formula in tests",
+      "Synthetic phase constants0,pi/6,pi/3,-0.4; no chosen graph or optimum",
+      "Python Random seeds6400001 for N6 reproducibility,6400002 for failure guards"
+    ],
+    "bounds": {
+      "target_modes_photons": 18,
+      "qualification_reference_modes_photons": 6,
+      "source_occupations": 462,
+      "source_support_upper_bound": 80,
+      "conditional_width_upper_bound": 6400,
+      "transition_cache_entry_upper_bound": 130340,
+      "full_N18_enumerations": 0,
+      "N18_random_draws": 0,
+      "graph_count": 0,
+      "training_steps": 0,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "logical_memory_plan_bytes": 268435456,
+      "max_new_output_bytes": 33554432,
+      "max_failed_retries": 0,
+      "mass_tolerance": 2e-10,
+      "N6_reference_absolute_tolerance": 2e-11,
+      "N6_reference_half_L1_tolerance": 2e-9
+    },
+    "non_claims": [
+      "No executed qualification, measured timing or actual source support cardinality at freeze",
+      "No certified exact floating sampler or global N18 TV bound",
+      "No independently blind replication, physical measurement, noise/loss or QPU validation",
+      "No optimization, classical cost advantage, growing-size efficiency or novelty claim",
+      "No source S^3 cache, known optimum, selected graph, heldout opening, retry or manuscript modification"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P64_structured_sampler.py",
+    "tests/test_p64_structured_sampler.py",
+    "research/P64_IMPLEMENTATION_CONTRACT.md",
+    "theory/P64_fixed_phase_complete_structured_sampler.md",
+    "research/P64_STRUCTURED_CLASSICAL_ADVERSE_CARD.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P64_qualification_contract.json"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "pytest", "version": "8.4.2"}
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Python Random MT19937 integer randrange and finite-bit random(); synthetic N6 reproducibility only",
+    "seed": [6400001, 6400002]
+  },
+  "resource_note": "Prospective only. ROOT full static review and separate numerical-worker authorization required. CPU60/wall90/thread1/log32MiB/scientific32MiB/logical256MiB; logical plan is not Darwin RSS enforcement. No separate native library imported. Preserve first failure, no retry/cap/phase/seed change.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-c",
+    "import os; os.environ[\"P64_QUALIFICATION_ARTIFACT\"]=\"research/P64_qualification/run_001/data\"; import pytest; raise SystemExit(pytest.main([\"-q\",\"tests/test_p64_structured_sampler.py\",\"--junitxml=research/P64_qualification/run_001/junit.xml\"]))"
+  ]
+}
