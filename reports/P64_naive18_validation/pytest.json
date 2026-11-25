@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-25T20:17:47.152535+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; raise SystemExit(pytest.main([\"tests/\",\"-q\"]))"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 42.58035887500046,
+  "commit": "6c51113a12b99ccedd081388d22fb00080bf4b1d",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "scope": "Full existing tests plus P64 deterministic Naive wrapper fixtures, no new native18 queries/random draw or DEV graph"
+}
