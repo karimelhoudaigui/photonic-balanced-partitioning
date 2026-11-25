@@ -1,0 +1,23 @@
+{
+  "design_contract": "research/P45_encoding_contract.md",
+  "cases": [
+    {"id":"p45b_dev16_er", "m":16, "family":"ER", "seed":4501601},
+    {"id":"p45b_dev16_rr", "m":16, "family":"RR", "seed":4501602},
+    {"id":"p45b_dev20_er", "m":20, "family":"ER", "seed":4502001},
+    {"id":"p45b_dev20_rr", "m":20, "family":"RR", "seed":4502002}
+  ],
+  "anchor_uniform_draws":4,
+  "theta_grid":[[0.7,0.0],[1.4,0.0],[2.1,0.0],[0.7,1.5707963267948966],[1.4,1.5707963267948966],[2.1,1.5707963267948966]],
+  "draws_per_theta":12,
+  "fresh_batches":2,
+  "fresh_draws":64,
+  "inclusion_event_cap":4096,
+  "resource_caps":{"cpu_seconds":60,"wall_seconds":90,"threads":1,"output_bytes":33554432,"planned_array_bytes":268435456},
+  "graph_definition":"P43 fixed helper: ER p=.35 or RR degree4; integer edge weights1..9, graph seed fixed above; fresh DEV graphs, no held-out",
+  "selection":"Global per-model independently maximize summed per-case mean max(0,Cfront-Csample)/max(1,Cfront); ties minimize summed raw mean cost/Cfront then grid index",
+  "sampling":"Ideal lossless. Clifford2017 B; independently routed D; four-phase coherent multinomial; source marginal multinomial; source Pólya alpha=K*mean_p; inclusion generator n_j(n_i+1)|H_ij|² at time t²",
+  "classical_controls":["uniform","two_swap","swap_descent","anneal","spectral_swap","gap_descent","gap_anneal","uniform_polya"],
+  "decoder_order":"Best of4 charged uniform anchors; independent fixed seeded random orders inside S0 and complement, interleaved; source remains1..1,0; frontend then scores exactlyK² physical one-hop stars/bars candidates",
+  "rng":"SHA256 seed_for(P45B,case,stage,model,index); PCG64; Perceval/exqalibur seeded separately per bosonic batch; all models share decoder ordering",
+  "scope":"One DEV screen, 4graphs. No C*, optimum masks, held-out outcomes, independent positive replication, QPU calls, manuscript changes or hardware-feasibility claim. Every future loss/preparation attempt remains charged."
+}
