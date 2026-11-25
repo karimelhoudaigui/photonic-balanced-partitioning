@@ -47,14 +47,15 @@ permanent implementation's internals.
 ## Qualification first
 
 After this source/contract/test/input commit, ROOT reviews and grants the tiny
-qualification slot. The single bounded child `--mode qualify` runs six
+qualification slot. The single bounded child `--mode qualify` runs seven
 administrative/analytic pytest guards (third-party plugin autoload disabled),
 then eleven checks: HOM CF zero, HOM bunching factorial, a complex 2x2
 orientation/amplitude pair at phi=.37, one identity-eight CF amplitude,
 vacuum, one known native complex 2x2 permanent, four independent scalar-unitary
 residuals. The sixth guard mocks denied/timed-out ps and unavailable platform
-metadata without executing ps. No production U8 permanent is computed during
-qualification.
+metadata without executing ps. The seventh checks JSON roundtrip of builtin
+records produced from simulated foreign float/bool-like scalars, without
+NumPy. No production U8 permanent is computed during qualification.
 
 Qualification writes actual Python/package versions, implementation/binary
 hashes, `permanent_cx` docstring/signature where available, thread-named exports,
@@ -71,7 +72,7 @@ does not itself authorize production.
 Qualification command, inside the Mathbox v2 bounded runner:
 
 ```
-/private/tmp/pbp-clean-venv-20261124/bin/python research/P52_naive_replication.py --mode qualify --output research/P52_naive_qualification/run_002/data
+/private/tmp/pbp-clean-venv-20261124/bin/python research/P52_naive_replication.py --mode qualify --output research/P52_naive_qualification/run_003/data
 ```
 
 ## Full finite check, separately authorized
@@ -109,6 +110,15 @@ the exact eleven files listed in each JSON execution contract (source, tests,
 this MD, both contracts and six reference files); the runner hashes them
 before and after. There is no undeclared project import.
 
+Before imports, an explicit `MPLCONFIGDIR` is preserved; otherwise the validator
+creates and uses the persistent writable worktree path
+`ROOT/.local/mplconfig` (here
+`/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/.local/mplconfig`).
+The actual path, whether set by the validator and whether preexisting are
+recorded. This cache/configuration setting changes no mathematics or vendor
+code and supplies no warm/cold performance claim; the same CPU/wall caps
+include initialization. Cache contents are not scientific inputs.
+
 Runner results: qualification `data/report.json` and `data/guard_junit.xml`;
 full `data/report.json`, `data/progress.json`, `data/occupations.npy` and four
 `data/replica_theta_i.npz`. Runner manifest/stdout/stderr are separate and
@@ -132,3 +142,17 @@ reference byte, resource cap or production path changes. `run_002` is fresh and
 requires a new source review/slot; this correction does not authorize a retry.
 The original source/contracts remain recoverable at d96009f and the unchanged
 failure record is validated against that historical input revision.
+
+## JSON-only correction after failed run_002
+
+`run_002` is preserved with receipt50991ab: six guards passed, but report
+serialization failed on a NumPy boolean scalar; the eleven check results/API
+metadata were not durable and are not reported PASS. ROOT authorized a pure
+stdlib `check_record` boundary that converts values to builtin complex-derived
+float coordinates, float residual and bool indicator, plus the seventh mock
+guard and the prospective run_003 path. Scalar fields elsewhere already use
+builtin primitives. Matrix/backend/vendor/source/phase/reference values and
+tolerances are unchanged. ROOT separately authorized the optional persistent
+Matplotlib cache setting above. Full production remains pending actual
+qualification/API-thread review. No corrected qualification is automatically
+run by this amendment.
