@@ -1,0 +1,27 @@
+{
+  "status": "EXACT_POINT_ENDPOINT71_SEPARATION_CERTIFIED",
+  "x_numerator": 1,
+  "x_denominator": 4,
+  "theta_label": "pi/3",
+  "LP_provider_calls": 2,
+  "native_LP_calls_upper_bound": 2,
+  "library_vertices": 71,
+  "source_and_library_hashes_verified": true,
+  "all_exact_incident_identities_verified": true,
+  "primal_exact_witness": false,
+  "dual_exact_witness": true,
+  "primal_solver_gate": true,
+  "dual_solver_gate": true,
+  "CPU_seconds_point_and_LPs": 0.03732099999999994,
+  "wall_seconds_point_and_LPs": 0.0446333329891786,
+  "source_sha256": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908",
+  "spec_sha256": "ee09935f4a42a99dfecba2e67dc30e222be043bf35db19196cd9288c3ce87fec",
+  "immutable_provider_sha256": {
+    "exact_provider": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692",
+    "LP_provider": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+  },
+  "positive_optimizer_accepted": false,
+  "independent_exact_review_required": true,
+  "not_continuous_curve_full_law_reoptimized_b4_or_hardware_claim": true,
+  "no_physical_MC_sample_graph_search_or_Cstar": true
+}

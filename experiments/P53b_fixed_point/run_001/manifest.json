@@ -1,0 +1,227 @@
+{
+  "schema_version": 2,
+  "claim_id": "P53B-ONE-FIXED-POINT-ENDPOINT71",
+  "repository": {
+    "commit": "fa3eb9a991ec8bb17860ad5609669257a21c0908",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P53b_fixed_point_discriminator.py",
+    "--spec",
+    "research/P53b_fixed_point_spec.json",
+    "--output",
+    "experiments/P53b_fixed_point/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "At the one predeclared rational x=1/4 only, seek exact membership in or a strictly separating rational dual against the fixed ENDPOINT71 edge-mean library; otherwise inconclusive. Any nonnegative graph is an explicitly posthoc witness for that fixed mean closure, never optimizer advantage.",
+    "coefficient_domain": "Pinned exact P53 canonical integer/Fraction proof data. Binary Fraction.from_float is used only for the proposed signed dual w, never for any physical target or library kernel. Numerical LP support/vector proposals are not proof.",
+    "conventions": "No new point evaluated before freeze. Exact fixed Horner; full71 labels/vertices retained; one qualified primal support LP then one dual LP, both native1s/thread1 fixed options. Primal support>1e-10 then positive fallback, exact29eq/RREF. Dual exact L1<=1/all71 strict inequalities and nonnegative graph shift using total16. Status0/successTrue plus witness required; both exact witnesses is inconsistency failure.",
+    "inputs": [
+      "P53 main bce6e2d sealed source SHA256 2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0 and fixed library cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "Immutable P53 exactification SHA256 aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692; immutable P52 LP provider56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+      "Predeclared x1/4, complete fixed35 b4 groupings at theta0 andpi/2 plus uniform; no graphs,Cstar,masks or samples"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "point_numerator": 1,
+      "point_denominator": 4,
+      "control_vertices": 71,
+      "edge_coordinates": 28,
+      "maximum_native_LP_calls": 2,
+      "LP_seconds_per_call": 1,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_arrays_bytes": 67108864,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No membership/nonmembership conclusion for every theta or continuously reoptimized b4",
+      "No full law/tail/loss/arbitrary-size/runtime theorem, accepted optimization advantage, heldout or QPU validation",
+      "No physical kernel reconstructed by rounding or limit_denominator",
+      "No automatic rerun,alternate phase/grid/solver/cap,scientific-goal completion or manuscript edit"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Only deterministic seeded HiGHS proposals; no physical/MC/RNG data generation",
+    "seed": 5201001
+  },
+  "run": {
+    "started_at": "2026-11-25T12:17:27.979058+00:00",
+    "runtime_seconds": 2.072363,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53b_fixed_point_spec.json",
+    "research/P53b_fixed_point_contract.md",
+    "research/P53b_fixed_point_execution_contract.json",
+    "research/P53_next_fixed_x_dual_proposal.md",
+    "tests/test_p53b_fixed_point.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P52_collective_phase_probe.py",
+    "research/P43_global_gain_probe.py",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P53b_fixed_point_discriminator.py",
+      "sha256": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908",
+      "sha256_after": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908"
+    },
+    {
+      "path": "research/P53b_fixed_point_spec.json",
+      "sha256": "ee09935f4a42a99dfecba2e67dc30e222be043bf35db19196cd9288c3ce87fec",
+      "sha256_after": "ee09935f4a42a99dfecba2e67dc30e222be043bf35db19196cd9288c3ce87fec"
+    },
+    {
+      "path": "research/P53b_fixed_point_contract.md",
+      "sha256": "2f8120b8dc97edcc2d700e7200b0917e8cd5369fe206c375d09cad4554855053",
+      "sha256_after": "2f8120b8dc97edcc2d700e7200b0917e8cd5369fe206c375d09cad4554855053"
+    },
+    {
+      "path": "research/P53b_fixed_point_execution_contract.json",
+      "sha256": "a7483fe07e1e7b93d793bad4b3d27fda19cdd182270046d807ccf6591ba971f1",
+      "sha256_after": "a7483fe07e1e7b93d793bad4b3d27fda19cdd182270046d807ccf6591ba971f1"
+    },
+    {
+      "path": "research/P53_next_fixed_x_dual_proposal.md",
+      "sha256": "a3c8684d30344e2246026c40343446fa9f2d8ba6ece6e43affe3e119d668acfa",
+      "sha256_after": "a3c8684d30344e2246026c40343446fa9f2d8ba6ece6e43affe3e119d668acfa"
+    },
+    {
+      "path": "tests/test_p53b_fixed_point.py",
+      "sha256": "ff5ff9b1723644e6f7838178f10321e5184fb74aaa540faa6b5521a2ddcf9c90",
+      "sha256_after": "ff5ff9b1723644e6f7838178f10321e5184fb74aaa540faa6b5521a2ddcf9c90"
+    },
+    {
+      "path": "research/P53_exact_continuous_phase.py",
+      "sha256": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692",
+      "sha256_after": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692"
+    },
+    {
+      "path": "research/P52_collective_phase_probe.py",
+      "sha256": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+      "sha256_after": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+      "sha256": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0",
+      "sha256_after": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+      "sha256": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "sha256_after": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P53b_fixed_point/run_001",
+  "declared_results": [
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+    "experiments/P53b_fixed_point/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P53b_fixed_point/run_001/stdout.txt",
+      "sha256": "72aa9e7f608fdc1bf8a71303d3af5acd10a8cc1314d8a15f9026cd5e8f125cc2",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+      "sha256": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/data/summary.json",
+      "sha256": "3d269a9015b679a419d0950b7014a5ea4c4313202affc79a126c5e0c00b87d8d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
