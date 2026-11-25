@@ -1217,3 +1217,39 @@ No numerical P71/P72 calculation has started. P70's restricted bosonic
 mechanism has a separate before-reading derivation17c3f5c; exact author
 comparison is underway. Its strong classical and higher-rank D vetoes
 remain decisive regardless of the restricted event separation.
+
+## 2026-11-25 — Linux regression fixed; P70–P73 independently reconciled
+
+The P66 portability failure is preserved: GitHub45707404987 gave1152PASS/
+1FAIL at a Mac absolute-path guard before native HOM physics. Minimal fix
+b272df1 keeps the experiment CLI contract strict and makes the native unit
+loader portable. The unchanged frozen HOM fixture and two new infrastructure
+regressions run the real native backend. Local1155PASS/42.24s pytest;
+GitHub3ed8441/run45709046742 is GREEN,1155PASS/16.09s plus archive and
+publication/manuscript checks. Historical P66 v1 data/source88a0573 remain
+untouched and validate against worker4925feb. Source v2fb3cf959 is not claimed
+to have produced that grid. ReviewSHAa0d802e8 and validation reports preserve
+the failed and successful checks, including Linux module-file-hash limits.
+
+ROOT has now read all author/independent/exact-review artifacts for P70,
+P71, P72 and P73. The four checkpoint reports link exact hashes and scopes.
+P70 is a real rank-one B>D event separation with a decisive classical
+whole-clique countercontrol, so not the requested optimizer win. P71 makes
+the rank obstruction stable to a bounded singular tail. P72 controls the
+tail of low-cross-rank static Hamiltonian evolution at finite normalized
+time. P73 changes to active complementary Gaussian sources: a favorable
+weak conditional cut tilt is classically reproduced, the next coherence
+term is cheap matching variance, and raw background/source costs are paid.
+No universal Gaussian no-go, matched total-cost win or novel priority follows.
+
+P74's nonlinear heralded-cost route and P75's Gaussian CF probability cap
+are separate static/code-preparation questions. The P75 four-mode cap is
+analytically resolved before any planned search: no numerical data exist
+for that canceled scope. A prospective six-mode falsifier is CODE ONLY,
+pending exact source/contract review; no main authorization. No numerical
+worker is active at this checkpoint. P76 investigates a weak-filter route
+and its classical replacement as a distinct static continuation.
+
+All old negative results, including E05b and P65, remain evidence. The
+positive optimum-blind optimizer/held-out/independent physical-replication
+objective remains OPEN. No paper/main revision or hardware/QPU call occurred.

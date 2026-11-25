@@ -1,49 +1,38 @@
 # Live positive-discovery continuation — 25-Nov-2026
 
-## Newest proof checkpoint: P66/P68/P69 accepted; positive goal OPEN
+## Current checkpoint: P70–P73 audited; positive objective still OPEN
 
-P65's B80 negative and independent9251-check replay remain unchanged.
-P66 author2bcf84b/SHA73b16001 has independent before-reading reconstruction
-eae1dda and exact-hash review7f0096c2. P68 currentSHA8a4bd9cf has independent
-review0c7fa52 and separate exact-clarification addendum30361da. P69 current
-SHA37e59633 has independent BEFORE-reading proofe5477a74/SHAfb4f7f82 and
-exact-hash review1e2e69d7/SHA5acd0216. ROOT read all raw proofs/reviews and
-accepts their scoped statements. Checkpoints: reports/P66_ROOT_PROOF_CHECKPOINT.md,
-P68_ROOT_PROOF_CHECKPOINT.md and P69_ROOT_PROOF_CHECKPOINT.md.
+P33/P37/E05b and the P65 DEV negative/replay are preserved. ROOT has read
+all author, before-reading independent and exact-hash reviews for P70/P71/
+P72/P73. The four new ROOT checkpoint reports and CLAIM-070–073 record the
+accepted scoped mathematics. P70's true restricted rank-one B>D transfer
+is dominated by a simple classical move. P71/P72 stabilize/extend the
+transport obstruction; P73's changed Gaussian source has a favorable weak
+conditional bias reproduced by a cheap feasible classical mixture. Neither
+a restricted event gap nor conditioned source samples meet CLAIM-042.
 
-P69 removes covariance/common-dark requirements: any realized NET passive
-unitary of cross rank below alpha*L (fixedalpha<1) has exponentially small
-raw transfer to either full-CF block from the specified L/L source. Its
-graph-search corollary needs the P66 four-clique bad warmstart/acceptance;
-the graphs have an elementary classical certificate. Marked histories
-are allowed if each net rank is bounded. A single Cayley transform inherits
-the Hamiltonian cross rank; generic exp(itH) does not (counterexample kept).
-No all-graphs/actual-P65-anneal, measured-cost or novelty conclusion.
+P66 historical v1source88a0573/mainrawdaf728d/receipt4925feb remain sealed.
+After the original1153-test tree, CI exposed a Mac-path unit-loader failure.
+Minimal correctionb272df1/sourcefb3cf959 keeps the scientific CLI guard but
+lets real native unit fixtures run on Linux. The frozen HOM test is unchanged.
+Separate local1155PASS and GitHub3ed8441/run45709046742 GREEN verify the fix,
+including archive and publication/manuscript checks. No main-grid rerun.
+Historical manifests validate against the matching frozen4925feb tree; raw
+root copies are byte-identical. Linux module-file-hash coverage remains a
+recorded limitation. reports/P66_CI_PORTABILITY_FIX.md links all evidence.
 
-P70 new explicit bright-transfer rule is frozen55b208d/SHA c6a8a9bb.
-It proposes a restricted B>D event separation, but classical whole-clique
-moves and unrestricted-D permutations already win. Independent derivation
-pending; no new optimizer positive or scientific run is claimed.
+P74's monitored nonlinear gate-cost screen is undergoing final ROOT
+reconciliation. P75 k2/k4 CF Gaussian caps are analytically resolved; no
+four-mode numerical execution occurred. P75b six-mode source/contracts are
+CODE ONLY, pending ROOT review/freeze/qualification and any further analytic
+resolution. P76 investigates weak-filter alternatives and classical controls.
+Numerical slot FREE at this snapshot, subject to later explicit authorization.
 
-P66 exact finite checker88a0573 qualified9PASS, independent source review
-SHA440afb11 and pre-main receipt sealeda5ea2b9. ONE main sealeddaf728d:
-4902assertionsPASS/32matrices/256B+256Dpoints/1988costs/7PGFpairs/32Naivepoints.
-Runner33.850853s/bodyCPU8.987306s,10unchangedinputs,v2PASS,zero retries.
-112exactBzeros/112Dzeros kept; all32nativepoints positive, maxabs2.44e-19,
-maxrelativeobserved7.09e-15,16relative-dominated+16absolute-dominated tests.
-No fullPNRlaw or optimizer inference. Full1153PASS atdaf728d; rootcode and
-package definitions identical, no unnecessary repeat. Both manifests validate,
-602oldfiles/paper unchanged. research/P66_EXACT_FINITE_RECEIPT.md and
-reports/P66_integration_validation/ preserve commands, hashes and limits.
-Numeric slot FREE after main/regression, subject to newer explicit messages.
-
-P71 approximate-cross-rank bound is frozenSHAc320f925 with an endpoint-complete
-CS proof, pending independent reconstruction/exact review. P72 investigates
-a rank-times-evolution-time obstruction for exp(itH), using Krylov polynomial
-rank and a controlled Taylor remainder. These are STATIC, no new run.
-Next: finishP70 independent exact-source/countercontrol check; accept only
-audited P71/P72 scope; investigate a substantively changed physical resource.
-Positive optimizer/held-out/physical replication still absent; paper/QPU CLOSED.
+Next: preserve/review P74; finish the six-mode analytic falsification and
+source review before any new calculation; pursue changed mechanisms under
+complete raw costs. Positive optimizer/held-out/independent physical sampling
+replication remain absent; paper/main/QPU gates CLOSED. Historical stage
+snapshots below are retained with their original evidence and limits.
 
 ## Latest checkpoint: P65 independently audited negative; P66 static analysis
 

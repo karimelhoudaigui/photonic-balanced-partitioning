@@ -1,25 +1,34 @@
 # Research status — 25 November 2026
 
-Latest checkpoint: P65's negative DEV pilot is independently replayed
-(9251 checks). Three subsequent theory steps are accepted after independent
-reconstruction and exact-hash audit: P66's connected warmstart obstruction,
-P68's joint-current covariance extension and P69's more general low-rank
-transport bound. Their source, target, initialization, raw-count and thermal
-hypotheses remain essential. None completes the positive optimizer goal.
-See reports/P66_ROOT_PROOF_CHECKPOINT.md, P68_ROOT_PROOF_CHECKPOINT.md and
-P69_ROOT_PROOF_CHECKPOINT.md. P70's explicit rank-one bosonic transfer has
-classical/higher-rank falsifiers; independent reconstruction is pending.
-P66's finite checker88a0573 passed nine tiny qualification tests and an
-independent exact-source review. ONE main at a5ea2b9/rawdaf728d completes
-4902 assertions,32matrices,256B+256D probabilities,1988cuts,7PGFpairs and32
-fixed native references. Max native absolute error2.44e-19;16 tolerance
-checks are relative-dominated and16 absolute-dominated. Full1153PASS;
-root Python/package tree matches that tested worker exactly. Both new
-manifests validate and602 old files/paper are unchanged. Receipt:
-research/P66_EXACT_FINITE_RECEIPT.md; reports/P66_integration_validation/.
-P71's approximate-rank extension and P72's finite-time Hamiltonian route
-are new static proof candidates under independent work. No numerical worker
-active at this snapshot.
+Latest checkpoint: independently derived/exact-source-reviewed P70–P73 are
+accepted at their stated scopes. P70 gives a restricted rank-one B>D transfer
+separation, but a simple classical move dominates it. P71/P72 extend the
+transport obstruction to approximate rank and finite normalized evolution
+time. P73's Gaussian pair source has a real weak cut bias reproduced by an
+explicit feasible classical sampler; its preparation and raw failures remain
+paid. Full sources, hashes, controls and limits: reports/P70_ROOT_MECHANISM_CHECKPOINT.md,
+P71_ROOT_PROOF_CHECKPOINT.md, P72_ROOT_PROOF_CHECKPOINT.md and
+P73_ROOT_SOURCE_CHECKPOINT.md. Earlier P33/P37/E05b/P65 results are preserved.
+None completes the positive optimizer goal, which remains OPEN.
+
+P66 source v1/88a0573 produced the sealed finite diagnostic (4902 assertions,
+32 matrices,256B+256D probabilities,1988 cuts,7 PGF pairs,32 native points).
+Its data/fixtures/contracts remain unchanged at worker4925feb. A later Linux
+unit-loader path failure was fixed in source v2/b272df1, independently reviewed,
+and separately verified: local1155PASS and GitHub3ed8441/run45709046742 GREEN
+(1155PASS plus archive/publication/manuscript checks). The experiment CLI guard
+remains strict. Validate historical manifests against their frozen input tree,
+not evolved source v2. reports/P66_CI_PORTABILITY_FIX.md and
+reports/P66_portability_validation/ retain the failed CI and successful fix.
+No P66 scientific main was repeated by that correction;602 historical files
+and paper bytes remain unchanged at the recorded verification.
+
+P74 examines a nonlinear heralded-cost resource screen. P75's four-mode
+Gaussian CF cap was resolved analytically before any proposed search; a new
+six-mode falsifier is only in prospective source/contract preparation. P76
+investigates weak filters and their classical replacement. No numerical worker
+is active at this snapshot. Positive optimizer, held-out replication, paper
+revision and QPU gates remain closed. Current work: research/P45_LIVE_STATE.md.
 
 Earlier continuation evidence: P55's new neutral-count mechanism completed
 480 observations on the two prospectively fixed DEV graphs and failed its
@@ -68,7 +77,7 @@ P66/P68/P69 proof acceptance is recorded in the newer checkpoint above.
 P66's finite main is now accepted at the stated grid/tolerance; it was not
 an optimization experiment. P63
 existing1044 and P64 existing1020 tests passed; later independent-checker
-regressions1052/1042 also pass. Latest combined executable tree1153PASS; all four
+regressions1052/1042 also pass. At that historical checkpoint the combined executable tree1153PASS; all four
 new P65 v2 manifests validate in addition to the previously checked seven,
 and602
 protected historical files verified. Paper bytes remain unchanged. New
