@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-11-25T23:09:30.382251+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; status=pytest.main([\"tests/\",\"-q\"]); assert xq.Config.compute_max_thread_count==1; raise SystemExit(status)"
+  ],
+  "commit": "716d8a205fc8ed025aa6e030c0eeddcd6d17e2bd",
+  "dirty_paths_at_launch": [
+    " M .DS_Store"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 44.22101950000069,
+  "timeout_seconds": 90,
+  "environment_threads": 1,
+  "native_config_requested_and_readback": 1,
+  "P75c_source_sha256": "ea9f8c6a071ab64678501c0f2091c878b4c75346735484a36681072611b6d9c8",
+  "scope": "Complete existing tests after P75c integration; tiny Gaussian fixtures <=2 only; no six-mode B/C main, RNG or P79 population rerun"
+}

@@ -1,38 +1,47 @@
-# Live positive-discovery continuation — 25-Nov-2026
+# Live positive-discovery continuation — 26-Nov-2026
 
-## Current checkpoint: P70–P73 audited; positive objective still OPEN
+## Current checkpoint: full-PNR construction accepted; positive goal OPEN
 
-P33/P37/E05b and the P65 DEV negative/replay are preserved. ROOT has read
-all author, before-reading independent and exact-hash reviews for P70/P71/
-P72/P73. The four new ROOT checkpoint reports and CLAIM-070–073 record the
-accepted scoped mathematics. P70's true restricted rank-one B>D transfer
-is dominated by a simple classical move. P71/P72 stabilize/extend the
-transport obstruction; P73's changed Gaussian source has a favorable weak
-conditional bias reproduced by a cheap feasible classical mixture. Neither
-a restricted event gap nor conditioned source samples meet CLAIM-042.
+P75's sharp k2/k4 bound, P77's exact matching countercontrol and P78's
+full raw PNR loop sampler have ROOT/independent exact-source acceptance.
+P78 covers only real nonnegative pair matrices and ideal arithmetic/random
+primitives; sparse matrices, vacuum and collisions are included. Its
+expected proposed steps<=m*nbar is not full measured time. Known loop
+machinery is attributed via the bounded Le Jan/Oh/Zhang check; no novelty
+label. Checkpoints: reports/P75_SMALL_CASE_ROOT_CHECKPOINT.md,
+P77_ROOT_COUNTERCONTROL_CHECKPOINT.md, P78_ROOT_SAMPLER_CHECKPOINT.md.
 
-P66 historical v1source88a0573/mainrawdaf728d/receipt4925feb remain sealed.
-After the original1153-test tree, CI exposed a Mac-path unit-loader failure.
-Minimal correctionb272df1/sourcefb3cf959 keeps the scientific CLI guard but
-lets real native unit fixtures run on Linux. The frozen HOM test is unchanged.
-Separate local1155PASS and GitHub3ed8441/run45709046742 GREEN verify the fix,
-including archive and publication/manuscript checks. No main-grid rerun.
-Historical manifests validate against the matching frozen4925feb tree; raw
-root copies are byte-identical. Linux module-file-hash coverage remains a
-recorded limitation. reports/P66_CI_PORTABILITY_FIX.md links all evidence.
+P75b(1033values/threezero-iterationstarts) and separate log-loss P75c
+(7145values,one24-iterationreturn/five1200budgets) both find no trigger.
+Their best is only the analytic1/64 baseline. No general k6 Gaussian proof
+or graph optimizer positive follows. All raw values/zeros/floor flags,
+prospective cards and source hashes are immutable and independently checked
+as recorded data, not physically resampled. No P75d is authorized.
 
-P74's monitored nonlinear gate-cost screen is undergoing final ROOT
-reconciliation. P75 k2/k4 CF Gaussian caps are analytically resolved; no
-four-mode numerical execution occurred. P75b six-mode source/contracts are
-CODE ONLY, pending ROOT review/freeze/qualification and any further analytic
-resolution. P76 investigates weak-filter alternatives and classical controls.
-Numerical slot FREE at this snapshot, subject to later explicit authorization.
+ROOT716d8a2 combined1175PASS/43.21s pytest/44.221019500s total/env+native1;
+C qual/main manifests valid at producer/root.602 old files/paper bytes match.
+Earlier GitHubee5850a/run45715830953 GREEN1164PASS14.22s;1175 CI is a future
+observation. P66 v1 producer/raws stay at4925feb; only its v2 portable loader
+and tests evolved. No repeated historical scientific main.
 
-Next: preserve/review P74; finish the six-mode analytic falsification and
-source review before any new calculation; pursue changed mechanisms under
-complete raw costs. Positive optimizer/held-out/independent physical sampling
-replication remain absent; paper/main/QPU gates CLOSED. Historical stage
-snapshots below are retained with their original evidence and limits.
+Active isolated work: P79CODEONLY602acc70 in .local/p79-even-loops, source
+and contracts969lines being independently reviewed; no import/test/RNG yet.
+It plans266 exact coefficients,105 Perceval probability targets/650 native
+amplitudes,120000 raw draws and272 fixed bins. Numerical slot FREE after
+root regression; qualification and main require separate ROOT decisions.
+P80 rational-resolvent sampler345lines2c9810/fcc01504 has a257line peer review
+1db790/a58616b8 pending ROOT full reconciliation. P80 finite-bit bridge
+155lines57b3ecc/5fa9ce94 is conditional on P78 optical law and the rational
+work bound; independent exact audit is underway. No implementation evidence
+or measured hardware result is claimed for those mathematical candidates.
+
+Next: ROOT/peer full P79 source/card review; bounded tiny qualification,
+inspect/seal it, then separately consider the declared main. Finish P80
+premise/error/bit-complexity audit. Preserve original producer branches on
+GitHub alongside integrated ROOT so manifest commits are recoverable.
+The positive optimum-blind optimizer/held-out/positive independent physical
+replication goal remains OPEN. Paper/main/QPU CLOSED. Historical dated
+snapshots below remain unchanged and do not supersede this checkpoint.
 
 ## Latest checkpoint: P65 independently audited negative; P66 static analysis
 

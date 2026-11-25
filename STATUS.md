@@ -1,34 +1,39 @@
-# Research status — 25 November 2026
+# Research status — 26 November 2026
 
-Latest checkpoint: independently derived/exact-source-reviewed P70–P73 are
-accepted at their stated scopes. P70 gives a restricted rank-one B>D transfer
-separation, but a simple classical move dominates it. P71/P72 extend the
-transport obstruction to approximate rank and finite normalized evolution
-time. P73's Gaussian pair source has a real weak cut bias reproduced by an
-explicit feasible classical sampler; its preparation and raw failures remain
-paid. Full sources, hashes, controls and limits: reports/P70_ROOT_MECHANISM_CHECKPOINT.md,
-P71_ROOT_PROOF_CHECKPOINT.md, P72_ROOT_PROOF_CHECKPOINT.md and
-P73_ROOT_SOURCE_CHECKPOINT.md. Earlier P33/P37/E05b/P65 results are preserved.
-None completes the positive optimizer goal, which remains OPEN.
+Latest checkpoint: P75 small-case Gaussian bounds, P77's exact positive-
+hafnian classical control and P78's complete raw PNR loop construction are
+accepted after independent reconstruction/exact-source audit. P78 retains
+vacuum, collisions and every number sector, with ideal expected transitions
+<=m times emitted mean photons. Its arithmetic/setup/random-primitive model
+and restriction to real nonnegative output pair matrices are essential.
+Known loop ingredients are attributed to Le Jan; novelty remains unresolved.
+See reports/P75_SMALL_CASE_ROOT_CHECKPOINT.md, P77_ROOT_COUNTERCONTROL_CHECKPOINT.md
+and P78_ROOT_SAMPLER_CHECKPOINT.md. P74/P76's gate/filter obstructions and
+all old P33/P37/E05b/P65 results remain preserved. None is the requested
+positive optimum-blind graph optimizer; CLAIM-042 remains OPEN.
 
-P66 source v1/88a0573 produced the sealed finite diagnostic (4902 assertions,
-32 matrices,256B+256D probabilities,1988 cuts,7 PGF pairs,32 native points).
-Its data/fixtures/contracts remain unchanged at worker4925feb. A later Linux
-unit-loader path failure was fixed in source v2/b272df1, independently reviewed,
-and separately verified: local1155PASS and GitHub3ed8441/run45709046742 GREEN
-(1155PASS plus archive/publication/manuscript checks). The experiment CLI guard
-remains strict. Validate historical manifests against their frozen input tree,
-not evolved source v2. reports/P66_CI_PORTABILITY_FIX.md and
-reports/P66_portability_validation/ retain the failed CI and successful fix.
-No P66 scientific main was repeated by that correction;602 historical files
-and paper bytes remain unchanged at the recorded verification.
+P75b's1033-evaluation no-hit is weak (three zero-iteration starts). A distinct
+log-objective P75c with fresh fixed seeds completed7145 evaluations: no hit,
+one24-iteration local return and five hard budgets. Both global bests are
+only the analytic1/64 reference. Their immutable raw files, prospective
+contracts, limitations and recorded consistency audits are retained. General
+complex Gaussian k6+ remains OPEN. reports/P75b_ROOT_FINITE_CHECKPOINT.md and
+P75c_ROOT_FINITE_CHECKPOINT.md link all evidence; no favorable retuning/rerun.
 
-P74 examines a nonlinear heralded-cost resource screen. P75's four-mode
-Gaussian CF cap was resolved analytically before any proposed search; a new
-six-mode falsifier is only in prospective source/contract preparation. P76
-investigates weak filters and their classical replacement. No numerical worker
-is active at this snapshot. Positive optimizer, held-out replication, paper
-revision and QPU gates remain closed. Current work: research/P45_LIVE_STATE.md.
+Integrated root716d8a2 passes1175 tests/43.21s pytest, with environment/native
+thread1. Both C manifests validate at producer/root,602 protected files and
+paper bytes are unchanged. Earlier GitHubee5850a is GREEN/1164PASS14.22s;
+current1175 source awaits its separately observed remote check. P66 historical
+v1 data still validate against frozen4925feb, while its evolved portable unit
+loader v2fb3cf959 is separately tested. No historical grid was regenerated.
+
+P79's five-file969-line validator is CODE ONLY: exact bunched coefficients,
+650 planned Perceval passive amplitudes and120000 planned raw draws. Full
+source/contract reviews precede any qualification or main. P80's rational
+setup and finite-bit bridge are separately frozen mathematical candidates
+under audit. No P79/P80 scientific execution yet; numerical slot FREE after
+root regression. Paper/main/QPU stay frozen. Current owners and continuation:
+research/P45_LIVE_STATE.md.
 
 Earlier continuation evidence: P55's new neutral-count mechanism completed
 480 observations on the two prospectively fixed DEV graphs and failed its

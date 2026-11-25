@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-25T23:12:23.723532+00:00",
+  "root_commit": "716d8a205fc8ed025aa6e030c0eeddcd6d17e2bd",
+  "P75c_qualification_manifest_valid": true,
+  "P75c_main_manifest_valid": true,
+  "validation_scope": "Both observed installed validate_manifest.py --root . runs completed after integration",
+  "archive": {
+    "status": "PASS",
+    "snapshot_sha256": "9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474",
+    "snapshot_base_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+    "historical_files_checked": 602,
+    "changed_or_missing": [],
+    "scope": "Pre-existing experiments/results/theory/research; active reports/manuscript/code may change"
+  },
+  "paper_diff_from_main_empty": true,
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "main_commit": "27443954fb7491a293399f0417d05185009f5c9a",
+  "native_config_and_environment_threads_in_full_suite": 1,
+  "new_QPU_calls": 0,
+  "scope": "Integration validation only; no B/C main or graph/QPU rerun"
+}

@@ -1302,3 +1302,47 @@ certificate, frozen851a0cc while independent reconstruction is underway.
 It does not assume the global P75 cap. No P76/P77 numerical experiment,
 held-out opening, paper/main revision or QPU call occurred. The original
 positive optimum-blind optimizer objective remains OPEN.
+
+## 2026-11-26 — audited full-PNR loop construction and preserved P75c no-hit
+
+P75c source51deeed/ea9f8c6a had765line ROOT review and independent199line
+reviewe490d226 before one tiny11PASS qualification, rawf343302. Separately
+authorized ONE main atclean f02e471, rawf082dd60 sealed BEFORE interpretation,
+receipt85da02a.7145 evaluations=baseline1+1144+five1200; no trigger/exact
+certificate, best only analytic1/64. One normal return has24 iterations;
+other budgets are not convergence. All43 zero/floor float rows retained.
+ROOT reconciled every recorded row and exact cached final point1102 without
+new physical probability/RNG computation. Both v2 manifests validate in
+producer and integrated ROOT; all12 inputs fixed. Main runner2.99137s,
+CPU2.529067s,22693852 scientific bytes; no retry or further P75 search.
+
+Root716d8a2 passes1175 tests/43.21s pytest/44.221019500s total, nativecfg1/
+env1.602 protected files unchanged; paper bytes still match main2744395,
+PDF271946c9. reports/P75c_integration_validation/ retains observed checks.
+Previous GitHubee5850a/run45715830953 is GREEN/1164PASS14.22s; newer1175
+source is locally checked, remote validation remains a subsequent observation.
+
+P75's sharp small-case Gaussian bounds have an independent232line exact
+auditc532655; general6 remains open. P77 current clarificationf6470ae/
+SHA2a05e676 is accepted with original independent199line f0abf682,
+exact111line d12c432 and separate34line addendum8cd425c. Its exact
+four-matching control and finite-strength/range screen count all rejections.
+
+P78 now proves an exact full raw PNR loop construction for nonnegative real
+pair matrices, including collisions, vacuum and all number sectors, in an
+explicit IDEAL real-arithmetic sampling model. Author183lines/118c8827,
+before-author independent360lines05b10613/e00cf6fd and exact227line
+reviewefd402ab/86ae24e2 were read by ROOT. Proposed transitions<=m*nbar;
+Perron/precision/setup/random bits and actual clocks remain separate costs.
+Three-primary-source check8798379 authenticates established Le Jan loop
+ingredients and an explicit doubled-kernel translation; no novelty claim.
+reports/P78_ROOT_SAMPLER_CHECKPOINT.md records exact limits and attribution.
+
+P79 is CODE ONLY finite validation with exact bunched coefficients,
+Perceval passive-sector amplitudes and declared raw count simulations;
+no P79 qualification or main yet. P80 studies rational setup without a
+Perron oracle and controlled finite-bit error; neither extension is accepted
+from a proposal. Numeric slot FREE after the root regression, subject to
+later explicit reservation. The positive optimum-blind optimizer target,
+held-out/independent positive replication, manuscript and hardware gates
+remain OPEN/CLOSED as before. No QPU call or paper/main mutation occurred.
