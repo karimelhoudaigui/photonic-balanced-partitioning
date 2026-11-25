@@ -102,10 +102,20 @@ written before its comparison assertions. A session fixture creates the data
 directory once with `exist_ok=False`; every artifact uses exclusive `x`
 creation. Existing directories/files cause failure, never overwriting.
 
-This provenance-only delta was prepared after candidatebff4a48 and before
-qualification. Sampler mathematics, phases, tolerances and seeds are unchanged;
-the scientific source file retains SHA256
+Provenance-only deltae151573 was prepared after candidatebff4a48 and before
+qualification, retaining scientific source SHA256
 `68055f83ead4f54303b90933ed5ebb5940a548a19cb72f496da374ad2e25780d`.
+A subsequent pre-qualification review identified one numerical convention
+gap: `sample()` normalizes the conditional probabilities by their `fsum`,
+while the small-law enumerator multiplied the unnormalized rounded masses.
+The separately committed minimal correction makes that enumerator multiply
+each branch by `p/fsum(probs)`, matching the sampler's normalized categorical
+kernel. State/project/source/tritter calculations, tolerances, phases and
+seeds remain unchanged. Archived laws describe this real-probability kernel
+of rounded masses, not the discrete finite-bit MT19937 quantile distribution.
+No prior freeze or raw evidence is rewritten; qualification has not run.
+The corrected source SHA256 is
+`af2b016b9ce5dd71919a8745d21c7e7f363a1588a089f697770a29d5b9353543`.
 
 ROOT review must precede this prospective command from the worktree root:
 
