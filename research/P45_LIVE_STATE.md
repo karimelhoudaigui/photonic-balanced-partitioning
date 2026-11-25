@@ -109,7 +109,7 @@ Author audit reconstructs147811 cuts and1536 decoders; this is not independent
 resampling. See research/P47_directed_pit_result.md. Integrated suite583 PASS,
 reports/P47_validation/; all602 historical scientific files still match.
 
-## Active changed bottleneck: P48-B
+## Completed changed bottleneck: P48-B
 
 P48 moves the occupied subspace over ALL output vertices: its projection Gram
 need not be diagonal on a separate new block. The first heat/Gaussian-frame
@@ -128,20 +128,67 @@ Seven controls include analytic continuous-phase and spherical-coherent
 multinomials; five strong feasible searches include direct coherent spectral
 rounding. All frontend discoveries/costs are shared before gain is measured.
 
-Active prospective contract: research/P48_SPECTRAL_BASIS_CLAIM_CARD.md,
-originale30f75c plus pre-code continuous-phase clarification. NEW DEV seeds
-4802601/02 and4803401/02 atN26/34,K13/17, four settings,256 proposals per arm.
-Encoding owns new code; adaptive owns new subunit-row coherent-marginal helper
-and exact fixtures; physics owns independent card/code audit. No P48 numerical
-outcome or held-out graph exists. Never normalize isometry row mass mu_i to1.
+Frozen card and all unexecuted source snapshots are preserved. Final source
+5e06e8f corrected a STATIC pre-run Gaussian zero-variance obligation: an exact
+occupied deterministic row also needs independent jitter, to avoid magnifying
+tiny factor leakage. Empty/occupied deterministic and mu1-spread cases are
+independently tested. Helper6c980d3 is unchanged;52 preflight tests passed
+b0231b6. Main completed23.364239s,11 unchanged inputs, all4 graphs and1792
+proposals (256 per7 arms), no numerical exclusions, retry or truncation.
 
-Root full-suite slot is released; only one numerical worker may run after
-coordinator grant. Physics may prepare a quarantined POST-HOC P47 headroom
-diagnosis, never P48 optima or partitions for training. Source/card freezes,
-resource limits, failure preservation and full positive gates remain.
+P48 also fails the positive gate. Total gains B7,D3,b4=11,Gaussian0,IID12,
+continuous phase13,sphere2. B minima168/46/312/56; one fixed anneal baseline
+166/39/301/56 equals or beats B on every graph at its declared score ceiling.
+Common Cref168/48/315/56; source347->315 on ER34 is PURE GREEDY, not photons,
+and73->56 on RR34 is signed spectral rounding. All264 direct preparation
+candidates were shared; none improved Cref further. All255 collisional B
+observations were retained. Raw SHA
+5e423f0f649e58aad5fb21ca5af36f89e6bfdd55d0710258db9b6e05450e5b77.
+Author audit reconstructs184080 cuts and1792 decoders plus88 frontend decoders;
+this is not independent physical resampling. Original finalaf9f6fd, report
+research/P48_spectral_pit_result.md, immutable experiments/P48_spectral_pit/.
+Integrated full suite635 PASS, reports/P48_validation/, before any P49 code.
 
-Do not rerun a rejected grid unchanged, publish a positive claim, modify the
-paper or use QPU credentials. No total-hardware-cost or novelty clearance is
+The quarantined P47 post-hoc MILP is also archived: sourceb394a0d/resultb9d252c,
+four OLD P47 graphs only, no optimum partitions exported or training use.
+Three float64 optimal statuses support saturation by classical controls;
+ER34 stopped at5s with dual297/incumbent351 and is unresolved. These are NOT
+exact optimality certificates and never feed any P48/P49 graph or parameter.
+
+## Active changed bottleneck: P49
+
+Prospective contract research/P49_TRAINED_SPECTRAL_SOURCE.md, root7b791bf with
+phase-convention correctiondc85fa5 BEFORE any P49 execution. New source
+V=E R mixes adjacent occupied spectral modes in two explicit Givens layers.
+R=I or pi/4 with phase0/pi2; Fourier without mixing is the fourth ablation.
+P and mu remain fixed within the spectral family; q and higher correlations
+can change. Source gauge is fixed BEFORE R. HOM itself is established physics;
+neither this mechanism nor a practical optimization benefit is proven new.
+
+Actual training loss now averages ALL FEASIBLE cuts divided by graph total
+weight, not the single-swap proxy or positive-tail gain. Models select separate
+policies on128 training proposals;128 fresh evaluation proposals use that
+frozen choice on the same DEV graphs. Sphere/IID bypass redundant R tuning.
+b4 groups are contiguous source-port blocks for this structured architecture.
+Fresh graph seeds4902601/02 and4903401/02; no P49 graph is opened yet.
+
+Encoding implements new P49 files on research/p49-encoding, importing immutable
+P48 functions. Adaptive owns an independent fast integer classical solver on
+research/p49-fast-classical: incremental swaps, vectorized full scans,
+multistarts and compact traces, CPU allowance excluding optical simulation.
+Its API card9765ff9 is frozen; source/tests/qualification still pending.
+Physics independently audits the Givens/gauge/null and source-code claims.
+No P49 numerical worker is authorized yet. Root's635-test slot is released.
+
+Acceptance plan research/P48_review_future_acceptance.md now includes efficient
+CPU controls, independent count implementation and reserved graph panels,
+program alpha spending, no reused opened panel and no confirmation launched by
+that document. Latest user order applies: after held-out AND independent
+simulation confirmation, update paper/TeX/PDF/GitHub as QPU PENDING, then prepare
+authorized hardware. No positive accepted result, held-out graph or QPU yet.
+
+Do not rerun a rejected grid unchanged, publish an unearned positive claim,
+modify the paper before confirmation, or use QPU credentials. No total-cost or novelty clearance is
 implied by a development observation. Keep all original worker refs; manifests
 name pre-run worker commits, not root cherry-picks. Existing602 historical
 scientific files and paper bytes must remain unchanged. No arbitrary global

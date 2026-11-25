@@ -1,0 +1,63 @@
+{
+  "validated_on_utc": "2026-11-25 05:29:20 UTC",
+  "scope": "Current integrated input/output hashes for completed P48; completed manifests do not establish physical or optimization interpretations.",
+  "manifests": [
+    {
+      "manifest": "experiments/P48_spectral_pit/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "d9c5b5",
+          "wall_time_seconds": 0.012277167,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "research/P48_spectral_pit_preflight/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "19896e",
+          "wall_time_seconds": 0.000011125,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "research/P48_spectral_pit_raw_audit/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "020608",
+          "wall_time_seconds": 0.011468292,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    },
+    {
+      "manifest": "research/P48_coherent_qualification/run_001/manifest.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "e29573",
+          "wall_time_seconds": 0.000007542,
+          "exit_code": 0,
+          "original_token_count": 23,
+          "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+        }
+      }
+    }
+  ],
+  "paper_comparison": {
+    "base_commit": "27443954fb7491a293399f0417d05185009f5c9a",
+    "exit_code": 0,
+    "pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f"
+  }
+}

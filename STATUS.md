@@ -8,9 +8,11 @@ background, not the finish. P46 hollow-transfer/PIT is also a completed DEV
 negative: B total gain21 versus Gaussian32, with a graph-blind B setting chosen.
 P47's directed graph map also fails the full gate: B gains22 versus D0, but
 one fixed annealing baseline equals or beats its best cuts on all four graphs.
-P48-B now tests a graph spectral occupied subspace, after an analytic classical
-explanation stopped its first random-basis variant before simulation. No
-positive accepted result or held-out graph exists. Integrated tests583 PASS.
+P48-B's spectral occupied subspace also fails: B gain7 versus phase13/IID12,
+and one annealing baseline equals or beats B on all four graphs. P49 now tests
+trained coherent mixing of spectral sources on the actual feasible-cut mean,
+with a new efficient classical CPU control. No accepted positive, held-out or
+P49 numerical result exists. Integrated P48 tests635 PASS.
 Current owner,
 evidence and numerical-slot state: research/P45_LIVE_STATE.md.
 
