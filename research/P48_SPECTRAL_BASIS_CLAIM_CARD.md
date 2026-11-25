@@ -105,3 +105,13 @@ need not preserve column-phase invariance of the nonpolynomial top-K rounding
 rule; it is used only for finite marginal fixtures. A zero graph may have a
 diagonal projector. No universal nonzero offdiagonal or lower bound on mu_i
 is imposed. No code or DEV outcome preceded this clarification.
+
+Pre-code preparation control, fixed before the implementation freeze: for EACH
+V also score/share top-K and bottom-K sets of mu and of EVERY column |V[:,a]|^2.
+Signed spectral-vector roundings do not generally cover those squares. Add one
+rectangular assignment maximizing the product of the K selected source-to-row
+intensities, using cost -log(max(q,1e-300)), and score its selected K output rows.
+These are graph/encoding-dependent CLASSICAL discoveries, charged to the shared
+frontend/Cref, never extra optical successes. Record the log-floor and matrix
+costs. This prevents a preparation/intensity bias from becoming a reported
+optimization benefit. No graph seed, parameter grid or sample budget changes.
