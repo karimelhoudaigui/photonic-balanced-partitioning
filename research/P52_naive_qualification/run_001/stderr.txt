@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_replication.py", line 315, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_replication.py", line 270, in main
+    "status": "INCOMPLETE", "thread_snapshot_before_import": thread_snapshot()}
+                                                             ^^^^^^^^^^^^^^^^^
+  File "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_replication.py", line 111, in thread_snapshot
+    completed = subprocess.run(
+                ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 1] Operation not permitted: 'ps'
