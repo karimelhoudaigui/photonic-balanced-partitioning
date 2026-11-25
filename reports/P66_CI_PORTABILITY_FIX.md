@@ -15,8 +15,11 @@ guard remains unchanged. The redundant guard inside the native point-loader
 is removed so unit fixtures can use the same pinned native physics on Linux.
 Exact numerical-package checks, native thread configuration/readbacks,
 actual interpreter path/hash, loaded-module observations and all physical
-assertions remain. The frozen HOM test is unchanged; no CI test is skipped
-or monkeypatched. No workflow/version change is needed.
+assertions remain. The frozen HOM test is unchanged; none of its physical
+assertions or backend calls is mocked or skipped. The two NEW regression
+tests monkeypatch only infrastructure constants, argv and a fail-if-called
+execution spy. Their native splitter test calls the real backend. No
+workflow/version change is needed.
 
 Two regression tests cover the boundary: an uncontracted experiment CLI
 fails before `run()` or output creation, whereas the portable loader executes
@@ -42,3 +45,28 @@ The post-fix source and tests need separate local/CI verification. No P66
 main grid, native reference population, DEV optimizer, held-out or QPU run
 is automatically repeated by this correction. Current-source qualification
 and any future scientific main require their own versioned contract/evidence.
+
+The loaded-module filter remains specific to `/pasqal/.venv/`. It can yield
+an empty module-file hash set under Linux; no CI package-file coverage is
+claimed from that set. Package versions, actual interpreter identity and
+native thread/readbacks still apply. This limitation is explicitly retained
+in the independent review rather than changing a frozen loader's provenance
+logic during a portability correction.
+
+## Post-fix verification
+
+Complete local suite atb272df1:1155PASS/42.24s pytest/43.366217583s total,
+environment/native thread1. The unchanged scientific source v1 and both
+historical manifests validate in the matching producer tree at4925feb;
+root raw outputs are byte-identical,602 protected files and paper unchanged.
+Reports: `reports/P66_portability_validation/`.
+
+GitHub3ed8441 run45709046742 succeeds:1155 tests in16.09s, archive/publication
+checks and manuscript compilation/verification all pass. This confirms the
+Linux issue is fixed without skipping the HOM physics. The initial failed
+run remains part of the record. Exact independent static review:
+`research/P66_CI_PORTABILITY_INDEPENDENT_REVIEW.md`, SHA256
+`a0d802e8977dc554fbd4edf7b458bf0673a34bf8eecdd9ea269dc45d7d773a34`.
+It read the pre-clarification report; the subsequent changes here only resolve
+its two prose/provenance qualifications. Source/test bytes remain those
+actually checked locally and by CI. No source main population was rerun.

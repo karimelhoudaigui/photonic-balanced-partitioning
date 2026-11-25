@@ -1,0 +1,40 @@
+{
+  "checked_utc": "2026-11-25T21:57:43.575038+00:00",
+  "current_source_sha256": "fb3cf959f022481d360c3371168e0b2f5b97e400b14a4324c43237a162677a9d",
+  "current_source_main_population_executed": false,
+  "historical_science_source_sha256": "4eb143aae8255636e70732c6ab8971fa71df62f15e98daa6e370fc02d247978f",
+  "frozen_manifests_validated_in_matching_tree": [
+    {
+      "path": "research/P66_exact_finite_preflight/run_001/manifest.json",
+      "validation_root": "/Users/karimelhoudaigui/Desktop/pasqal/.local/p66-finite-check",
+      "frozen_tree_commit": "4925febab4d09ddfbe67a82437529416a9847e53",
+      "manifest_sha256": "095dd788dd78ac7f959d8ff1c3f2db250dd2d68e945a51944b0f93e0542d6656",
+      "exit_code": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "root_scientific_outputs_byte_identical": true
+    },
+    {
+      "path": "research/P66_exact_finite_main/run_001/manifest.json",
+      "validation_root": "/Users/karimelhoudaigui/Desktop/pasqal/.local/p66-finite-check",
+      "frozen_tree_commit": "4925febab4d09ddfbe67a82437529416a9847e53",
+      "manifest_sha256": "2e9474d6d3642cc36566f5259bb9561baed08d1a0c615c50787bd8651f6157ee",
+      "exit_code": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "root_scientific_outputs_byte_identical": true
+    }
+  ],
+  "full_test_count": 1155,
+  "paper_diff_against_release": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "archive": {
+    "status": "PASS",
+    "snapshot_sha256": "9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474",
+    "snapshot_base_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+    "historical_files_checked": 602,
+    "changed_or_missing": [],
+    "scope": "Pre-existing experiments/results/theory/research; active reports/manuscript/code may change"
+  },
+  "CI_initial_failure": "45707404987:1152PASS1FAIL due Mac interpreter guard",
+  "CI_postfix_status": "PENDING",
+  "native_module_hash_note": "Existing /pasqal/.venv/ filter may yield empty Linux fixture module hash set; no Linux source-file coverage claimed"
+}

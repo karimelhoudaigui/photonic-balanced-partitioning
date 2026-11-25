@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-25T22:04:23.243863+00:00",
+  "tested_fix_commit": "b272df1980e8e040692e4f0e4e397b15898d18cb",
+  "local_tests": "1155PASS /42.24s pytest /43.366217583s total",
+  "CI_head": "3ed8441a710dd3142a62aa7c7bd6b5ed329e2392",
+  "CI_run": 45709046742,
+  "CI_job": 139538399806,
+  "CI_conclusion": "success",
+  "CI_test_log_summary": "1155 passed in 16.09s",
+  "CI_publication_build_and_verify": "success",
+  "CI_url": "https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45709046742",
+  "independent_review_sha256": "a0d802e8977dc554fbd4edf7b458bf0673a34bf8eecdd9ea269dc45d7d773a34",
+  "independent_review_copied_byte_identically": true,
+  "historical_science_source_kept_on_frozen_branch": true,
+  "science_main_rerun": false,
+  "positive_optimizer_accepted": false,
+  "QPU_calls": 0
+}
