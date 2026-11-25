@@ -1,5 +1,9 @@
 # Live positive-discovery continuation
 
+Archived earlier live-checkpoint prefix (historical, not current):
+[P45 live history before P79 acceptance](P45_LIVE_HISTORY_BEFORE_P79_ACCEPTANCE.md).
+Byte-exact prefix of29cc868, SHA256 1c27dfd77fd6b3f87278578317f8ed091643566b248db237bd2f009c7886c263.
+
 ## Current checkpoint: P79/P80/P81 audited; positive optimizer OPEN
 
 P79 has completed the sole prospectively frozen finite validation, not a
