@@ -1,0 +1,22 @@
+{
+  "scope": "author standard-library raw consistency check; not independent physical replication",
+  "raw_records": 11552,
+  "scored_records": 11544,
+  "case_model_groups": 56,
+  "each_group_new_scores": 200,
+  "bosonic_draws": 800,
+  "bosonic_collisions_by_stage": {
+    "development": 241,
+    "fresh_dev": 489
+  },
+  "all_decoders_costs_fronts_counts_and_selections_match": true,
+  "raw_sha256": "58b0d5db60597332c7de4029c3a99554816f67daafb4cd556852f5c6e3a43323",
+  "selected": {
+    "bosonic": 2,
+    "distinguishable": 2,
+    "phase_multinomial": 4,
+    "source_multinomial": 3,
+    "source_polya": 2,
+    "inclusion_walk": 5
+  }
+}

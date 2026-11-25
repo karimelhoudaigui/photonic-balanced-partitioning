@@ -1,0 +1,26 @@
+{
+  "git_revision": "92d542bbc3856312144ae01a570403e0ec42aa1f",
+  "argv": [
+    "research/P45_encoding_full_fock_probe.py",
+    "--spec",
+    "research/P45_encoding_spec.json",
+    "--output",
+    "experiments/P45_encoding/run_001/data"
+  ],
+  "closure_sha256": {
+    "/Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/encoding/research/P45_encoding_full_fock_probe.py": "2c6e71ba73b2e85b8dc6ad99cdb6b4c1cc49fb211fb8fd383e93aae1a9ff68c3",
+    "research/P45_encoding_spec.json": "5abaee7bed249798718f8b70cdfa58aace5eb90c36ea223da7763ed2b51d59f3",
+    "/Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/encoding/research/P43_global_gain_probe.py": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+    "/Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/encoding/research/P45_encoding_contract.md": "6ae50e604a46c5fbda3cfe3f39f98895ab3e572102425135acbcaf79250abcf4",
+    "/Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/encoding/research/P45_POSITIVE_TARGET.md": "ac44782c95a9adeed080dc80c01fd5f59c7e1cb8da1fd9f568ff5d8fce04d9a5"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "networkx": "3.6.1",
+    "perceval-quandela": "1.3.0",
+    "exqalibur": "1.4.2"
+  },
+  "simulation_only": true,
+  "held_out_graphs_opened": false
+}
