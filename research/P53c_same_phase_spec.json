@@ -1,0 +1,16 @@
+{
+  "x_numerator": 1,
+  "x_denominator": 4,
+  "theta_label": "pi/3",
+  "old_vertices": 71,
+  "new_vertices": 35,
+  "all_vertices": 106,
+  "maximum_LP_calls": 2,
+  "LP_seconds_per_call": 1,
+  "maximum_cpu_seconds": 20,
+  "maximum_wall_seconds": 30,
+  "maximum_threads": 1,
+  "maximum_planned_arrays_bytes": 67108864,
+  "maximum_new_output_bytes": 4194304,
+  "positive_optimizer_accepted": false
+}
