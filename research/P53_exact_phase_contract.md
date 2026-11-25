@@ -44,6 +44,13 @@ neither degree fully verifies, report INCONCLUSIVE, never outside-hull or a
 separating graph. Internal facet contact can obstruct every finite global
 Bernstein certificate even when the true curve is inside the hull.
 
+Prequalification clarification from ROOT/encoding: a status0/successTrue LP
+may report NO_VERIFIED_TOLERANCE_MATCH yet supply a useful support. Exact RREF
+is allowed to find DIFFERENT weights on that support; only exact signs,
+equations and polynomial verification certify it. The floating residual is
+not an extra gate. The new adversarial fixture has vertices0/1,target1/3,
+float weights1/2,1/2 and exact weights2/3,1/3. Program/provider/grid unchanged.
+
 Evidence files: exact_source.json.gz, exact_library.json.gz, certificate.json.gz
 and summary.json. Integers and canonical Fraction numerator/denominator pairs
 are JSON/GZIP, no pickle/object-array artifacts. Source proof inputs have no
@@ -63,12 +70,13 @@ under256MiB planned; output projected<16MiB under32MiB. Engineering projection
 CPU<=45s/wall<=70s is not an observed benchmark. Actual capsCPU60/wall90,
 one worker/native thread1, output32MiB; no hard Darwin memory/affinity promise.
 
-Seventeen targeted cases are planned: independent four/eight-column integer
+Eighteen targeted cases are planned: independent four/eight-column integer
 products and parity, exact Fock factorial/normalization/quartic fixture, all
 ties, Gaussian-integer controls, Chebyshev/Bernstein/elevation and internal
 face caveat, rational positive/negative/inconsistent/free-variable systems,
 support fallback, exact polynomial reconstruction/corruption and mocked solver
-gate. No true P53 hull fit or physical sample occurs in qualification.
+gate plus the solved-float-nonmatch/exact-certificate distinction. No true P53
+hull fit or physical sample occurs in qualification.
 
 Freeze all source/spec/contracts/tests before imports. Root+encoding arithmetic
 review and physics normalization review, targeted PASS and explicit exclusive

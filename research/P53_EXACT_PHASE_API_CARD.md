@@ -44,6 +44,11 @@ certify, one per degree12 control (13 additional). Maximum20 fits, each1s,
 native threads1; no other degree/cap/retry/solver. A failed/timed-out solver
 keeps any exact candidate separately but remains inconclusive at the run gate,
 as specified by ROOT. A solved LP is still NOT a proof without the verifier.
+Conversely a solved LP labelled NO_VERIFIED_TOLERANCE_MATCH can propose a valid
+support: RREF may find DIFFERENT exact weights. Accept only solver_fit_solved
+plus exact signs/equalities/polynomial verification, not its floating residual.
+An adversarial constant1/3 fixture uses float weights(.5,.5) and reconstructs
+the exact(2/3,1/3), preserving both vectors distinctly.
 
 Save all6435 exact source coefficients/probability polynomials, all70 fixed b4
 probability laws and normalized mean kernels, all attempted LP/support/exact
