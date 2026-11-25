@@ -1,0 +1,70 @@
+{
+  "claim_id": "P59-SMALL-EXACT-SYNTHETIC-GUARDS",
+  "mathematics": {
+    "assertion_tested": "16 small guards ONLY: Eisenstein ring/conjugation,integerrejection,formalGram/q/phaseplacement,HOMtwo-photonFocklaw,ONE720termPNRfixture,Fourierorientation,uniform/allbunch/tiesLCM60,10classGram/inverse,knownidentity/HOM factorialmoments,exactPGF,domainrejection,smalloccupationcoverage,exactJSON/curvature. NEVERcallcalibrate orsix-photon fullcreation.",
+    "coefficient_domain": "Python arbitrary integers in Z[xi],xi^2=xi-1,and exact fractions. No float proof/complex128/LP/RNG. KnownHOM law andprecodePNRfixtureprovidehandguards.",
+    "conventions": "SamefixedN6matrix/source/index/rotationasmain;onlysmallsyntheticguards. Six-photonworkrestrictedtoONEoccupationpermanent720monomials;fullsourcecreationonlythethree-outputHOM2fixture. NoALL462meanaggregationbeforemain.",
+    "inputs": [
+      "FrozenN6 source/spec/cardandindependentanalyticPNRfixture at420000 with slope/sqrt3=-124/421875",
+      "KnownHOMbalancedtwo-photonlaw(1/2,0,1/2),identity-sourcefactorialmoments,and10cutclasscrossingGram9/5",
+      "All13 source/convention artifactsarehash-pinnedbyv2runner;noarchivedrawdecoded,no productionmodule imported"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_log_bytes": 4194304,
+      "planned_logical_scientific_workspace_bytes": 67108864,
+      "planned_tests": 16,
+      "maximum_failed_retries": 0,
+      "maximum_parallel_workers": 1,
+      "full_six_photon_calibrations": 0,
+      "full_six_photon_creation_calls": 0,
+      "single_fixture_permanent_terms": 720,
+      "full_two_photon_outputs": 3,
+      "LP_calls": 0,
+      "random_draws": 0,
+      "graphs": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "Qualification isnotfull462source/meanproof,physicalreplication,all-classical separation,algorithmicadvantageorhardwareevidence",
+      "SinglePNRslopeisnotoneofthe15decodededgeslopesandcannotdecidethesmallscientificquestion",
+      "No fullcalibrate(),six-photoncreation,graph,draw,LP,alternatecenterorcircuit occursinqualification",
+      "Preservefirstfailure/logs/JUnitwithoutretry,precisionchangeorautomaticmainlaunch;mainrequiresseparateROOTauthorization"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P59_exact_fixed_response.py",
+    "research/P59_exact_fixed_response_spec.json",
+    "research/P59_exact_fixed_response_contract.md",
+    "research/P59_exact_fixed_response_execution_contract.json",
+    "research/P59_exact_fixed_response_guards_contract.json",
+    "tests/test_p59_exact_fixed_response.py",
+    "research/P59_N6_FIXED_RESPONSE_CARD.md",
+    "theory/P59_N6_fixed_intensity_derivation.md",
+    "theory/P59_adaptive_precode_derivation.md",
+    "theory/P56_full_square_third_moment_physics_check.md",
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "pytest", "version": "8.4.2"}
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic smallhandguards;noRNG/API/graphs/countdraws",
+    "seed": null
+  },
+  "resource_note": "CODEONLY untilROOTreview/explicitexclusivequalification slot. CPU20/wall30/thread1/log4MiB/logical64MiB,notDarwinRSSorCPUaffinityguarantee. This16itemqualificationandthefullmainareSEPARATEauthorizations. Preservefirstfailure/noretryandneverlaunchmainautomatically.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p59_exact_fixed_response.py",
+    "--junitxml=research/P59_exact_response_guards/run_001/junit.xml"
+  ]
+}

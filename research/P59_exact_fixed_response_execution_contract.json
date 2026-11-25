@@ -1,0 +1,90 @@
+{
+  "claim_id": "P59-FIXED-N6-EXACT-DECODER-RESPONSE",
+  "mathematics": {
+    "assertion_tested": "For ONE predeclared N6 fixed-intensity family, exactly reconstruct ALL462 Fock occupation polynomials and spectra,ALL15 edge spectra and10 complementary-cut spectra; verify42 q-only complete marginal bins and83 q-only joint factorial moments,all-phase mass/parity/Gram/ties/response identities; report ALL center0 derivatives and separate zero-slope from full mean invariance.",
+    "coefficient_domain": "Python arbitrary integers in Z[xi],xi^2=xi-1,and exact fractions. Q monomial columns multiplied directly. Probability multiplies by prod(n!),divides by150^6. No float proof/complex128/LP/RNG.",
+    "conventions": "U[out,input],ports2a+i/2b+j;H2 UNNORMALIZED;only theta[b1,i1]=phi;LEFT real V block(0,2)=[[3,-4],[4,3]]/5. Full1^6source,idealeta1,ALL462 occupations inclzeros;uniformALL20 top3ties;10unoriented cutclasses represented by side containing0;positiveF2=alpha+beta*xi,r=d/sqrt3=-2beta. Center0 fixed before code/data;no favorable edge/graph orrescan.",
+    "inputs": [
+      "Q in Z[xi][zeta]with Laurent Gram150I and explicit q independent ofphi; formal analytic card9f5b7ea",
+      "Independent analytic precode fixture b7341f9/59dc56e:n420000 gives Qc0=(-35050,1000),Qc2=(175,-1000),pprime/sqrt3=-124/421875;verifyone720-term permanent/n!thencomparefullcreation",
+      "P56 full-square fullCF factorial-moment theorem through degree3;fixed-q input assumptions apply;no production module imported",
+      "N6 all20 feasible triples and10complementarycutclasses;crossingGram diagonal9/off5;directclass aggregation checkedagainstedgeinverse withfactor1/4"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_log_bytes": 4194304,
+      "maximum_scientific_output_bytes": 4194304,
+      "planned_logical_scientific_workspace_bytes": 67108864,
+      "maximum_failed_retries": 0,
+      "maximum_parallel_workers": 1,
+      "full_calibrations": 1,
+      "states": 462,
+      "source_coefficients_per_state": 3,
+      "parity_allowed_states": 236,
+      "parity_structural_zeros": 226,
+      "decoder_subsets_per_state": 20,
+      "edges": 15,
+      "cut_classes": 10,
+      "tie_LCM": 60,
+      "diagonal_bins": 42,
+      "joint_factorial_moments": 83,
+      "single_fixture_permanent_terms": 720,
+      "maximum_source_phase_degree": 2,
+      "maximum_probability_harmonic": 2,
+      "maximum_creation_occupation_phase_keys": 1386,
+      "coefficient_L1_strict_bound": 4398046511104,
+      "probability_numerator_strict_bound": "2^96",
+      "LP_calls": 0,
+      "random_draws": 0,
+      "graphs": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "This is an exact small device/decoder calibration,not optimization advantage,genuine-six-particle witness,novelty,runtime gainorhardware result;classical10-cut searchistrivial",
+      "Countfixture nonzero doesnot implynonzero decoded derivative;all15 rationalresponsesstillunknown beforemain",
+      "Zero center0slopes doNOT implyphaseblindness ifcosinesurvives;noalternatecenter,sign,mixer,globalphaseoptimizeroradaptivefallback",
+      "No conditional collisionfilter,knownsolution,Cstar,optimalmask,graphoutcomeortrainingselection",
+      "No blind/physical replication;independently specified fixtureandGram checksdo not replaceindependent full-law ormeanreplication",
+      "No all-classical orpartial-species separation;phase/spherefullcounts,retunedD/speciesandstrongfeasiblesearch remainessentiallater",
+      "Anyfirstfailure/time/resource/outputlimit staysfailureorinconclusive;preservepartials,noautomaticretry,precisionchangeorcapincrease"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P59_exact_fixed_response.py",
+    "research/P59_exact_fixed_response_spec.json",
+    "research/P59_exact_fixed_response_contract.md",
+    "research/P59_exact_fixed_response_execution_contract.json",
+    "research/P59_exact_fixed_response_guards_contract.json",
+    "tests/test_p59_exact_fixed_response.py",
+    "research/P59_N6_FIXED_RESPONSE_CARD.md",
+    "theory/P59_N6_fixed_intensity_derivation.md",
+    "theory/P59_adaptive_precode_derivation.md",
+    "theory/P56_full_square_third_moment_physics_check.md",
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "pytest", "version": "8.4.2"}
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic exact source columns/permanent/subsets/factorial moments;noRNGorAPI",
+    "seed": null
+  },
+  "resource_note": "CODEONLY untilROOTreview/qualification/explicitexclusive mainslot. CPU20/wall30/thread1/log4MiB;scientific4MiB checkedinflatedandcompressed;logical64MiB estimate,notDarwinRSSorCPUaffinityguarantee. No simulator/imports beyondstdlib. Freshchilddata directory,theparentrun iscreatedbyv2runner. Allpartialfailurespreserved;noauthorauditorsecondmain.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P59_exact_fixed_response.py",
+    "--output",
+    "experiments/P59_fixed_response/run_001/data"
+  ],
+  "declared_results": [
+    "experiments/P59_fixed_response/run_001/data/raw.json.gz",
+    "experiments/P59_fixed_response/run_001/data/summary.json",
+    "experiments/P59_fixed_response/run_001/data/failure.json"
+  ]
+}
