@@ -222,3 +222,18 @@ and paid collision self-loops; its N20 first-veto code is being prepared
 from pre-data card022962e, not a demonstrated result. The section4 uniform
 collision-average theorem is accepted after independent exact-hash review,
 with all-input/absolute-error/paid-construction limits and novelty OPEN.
+
+## Frontier after the P79/P80/P81 checkpoint
+
+- Can a changed, physically available finite-Fock mechanism produce a
+  nonlocal graph-improving interference effect that survives independent D
+  reoptimization and strong feasible classical search with TOTAL costs?
+  P82 is a static design task, not an accepted result or launched benchmark.
+- Which non-gauge phase frustration escapes P78/P80 positivity, and does
+  it help an optimum-blind graph objective rather than merely exhibit an
+  interference zero? P83 is static; hardness/advantage do not follow.
+- Can a code-leaky/nonmonomial circuit retain a useful raw improvement
+  after all failure/preparation costs? P81 constrains low uniform leakage,
+  not arbitrary such circuits. No hardware capability is assumed.
+- P80 novelty and practical finite-bit implementation costs remain open;
+  P79's finite tests do not resolve those questions. CLAIM-042 remains OPEN.

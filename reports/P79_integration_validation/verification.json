@@ -1,0 +1,20 @@
+{
+  "archive_status": {
+    "status": "PASS",
+    "snapshot_sha256": "9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474",
+    "snapshot_base_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+    "historical_files_checked": 602,
+    "changed_or_missing": [],
+    "scope": "Pre-existing experiments/results/theory/research; active reports/manuscript/code may change"
+  },
+  "paper_diff_against_release": "",
+  "paper_status": "",
+  "pdf_sha256": {
+    "paper/main.pdf": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f"
+  },
+  "P79_main_and_qual_manifests": "valid matching ROOT inputs; separately observed validator status0",
+  "pytest": "1187 passed,6 warnings,43.89s",
+  "native_threads": 1,
+  "main_unchanged": "27443954fb7491a293399f0417d05185009f5c9a",
+  "QPU_calls": 0
+}

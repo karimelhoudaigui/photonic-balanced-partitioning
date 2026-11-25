@@ -68,3 +68,11 @@ raw count simulations; no P79 execution is authorized here. P80 investigates
 the explicit remaining Perron/finite-bit gap. These are subsequent checks,
 not hidden premises of this ideal theorem. Paper/main/QPU stay frozen and
 the requested positive optimum-blind optimizer objective remains OPEN.
+
+Subsequent checkpoint: P79's sole registered finite validation has passed,
+with raw data and ROOT consistency checks in
+`reports/P79_ROOT_FINITE_CHECKPOINT.md`. P80 separately closes rational
+setup and finite-bit approximation in its mathematical model; see
+`reports/P80_ROOT_FINITE_BIT_CHECKPOINT.md`. Neither changes this original
+ideal theorem, certifies the floating implementation's TV, or demonstrates
+a graph optimization benefit.

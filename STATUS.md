@@ -1,39 +1,46 @@
-# Research status — 26 November 2026
+# Research status — active discovery branch
 
-Latest checkpoint: P75 small-case Gaussian bounds, P77's exact positive-
-hafnian classical control and P78's complete raw PNR loop construction are
-accepted after independent reconstruction/exact-source audit. P78 retains
-vacuum, collisions and every number sector, with ideal expected transitions
-<=m times emitted mean photons. Its arithmetic/setup/random-primitive model
-and restriction to real nonnegative output pair matrices are essential.
-Known loop ingredients are attributed to Le Jan; novelty remains unresolved.
-See reports/P75_SMALL_CASE_ROOT_CHECKPOINT.md, P77_ROOT_COUNTERCONTROL_CHECKPOINT.md
-and P78_ROOT_SAMPLER_CHECKPOINT.md. P74/P76's gate/filter obstructions and
-all old P33/P37/E05b/P65 results remain preserved. None is the requested
-positive optimum-blind graph optimizer; CLAIM-042 remains OPEN.
+Latest audited checkpoint: P79's sole six-source finite raw-PNR validation
+passes, and P80's rational/finite-bit sampler and P81's dual-rail stability
+proofs are accepted in their precise scopes. These are classical simulation
+and physical obstruction results. **The positive optimum-blind photonic
+optimizer target CLAIM-042 remains OPEN.** No held-out positive replication
+or hardware confirmation exists; paper/main/QPU remain frozen.
 
-P75b's1033-evaluation no-hit is weak (three zero-iteration starts). A distinct
-log-objective P75c with fresh fixed seeds completed7145 evaluations: no hit,
-one24-iteration local return and five hard budgets. Both global bests are
-only the analytic1/64 reference. Their immutable raw files, prospective
-contracts, limitations and recorded consistency audits are retained. General
-complex Gaussian k6+ remains OPEN. reports/P75b_ROOT_FINITE_CHECKPOINT.md and
-P75c_ROOT_FINITE_CHECKPOINT.md link all evidence; no favorable retuning/rerun.
+P79 retains266 exact coefficients,650 Perceval passive amplitudes/105 raw
+probabilities,120000 draws and272 fixed bins. All declared comparisons pass;
+ROOT streams all121312 stored rows and verifies1781 module hashes. Vacuum,
+collisions, all zeros, tail records, rejected-work costs and warnings are
+kept. This is finite implementation evidence, not global-TV or finite-bit
+RNG certification. See reports/P79_ROOT_FINITE_CHECKPOINT.md.
 
-Integrated root716d8a2 passes1175 tests/43.21s pytest, with environment/native
-thread1. Both C manifests validate at producer/root,602 protected files and
-paper bytes are unchanged. Earlier GitHubee5850a is GREEN/1164PASS14.22s;
-current1175 source awaits its separately observed remote check. P66 historical
-v1 data still validate against frozen4925feb, while its evolved portable unit
-loader v2fb3cf959 is separately tested. No historical grid was regenerated.
+P80 removes the Perron oracle by a rational killed-walk construction and
+proves a separate flagged bounded-bit approximation with TV<=epsilon and
+worst-case polynomial cost in modes,input encoding,emitted mean photons,
+1/epsilon. No executable finite-bit implementation/throughput claim.
+P81 proves that small code leakage on the FULL uniform incoherent balanced
+basis ensemble makes a fixed passive dual-rail unitary close to local
+blocks/whole-pair permutation. Its dimension-dependent absolute-TV bound
+does not cover visited-only/coherent calibration, ancillas or heralds.
+See reports/P80_ROOT_FINITE_BIT_CHECKPOINT.md and
+reports/P81_ROOT_STABILITY_CHECKPOINT.md. Novelty remains unresolved.
 
-P79's five-file969-line validator is CODE ONLY: exact bunched coefficients,
-650 planned Perceval passive amplitudes and120000 planned raw draws. Full
-source/contract reviews precede any qualification or main. P80's rational
-setup and finite-bit bridge are separately frozen mathematical candidates
-under audit. No P79/P80 scientific execution yet; numerical slot FREE after
-root regression. Paper/main/QPU stay frozen. Current owners and continuation:
-research/P45_LIVE_STATE.md.
+The integrated executable tree atc360b36 passes1187 tests/43.89s pytest,
+with environment/native thread1,602 old scientific files and every paper/
+byte unchanged (PDF271946c9). Both P79 v2 manifests validate at ROOT and
+producer. Prior GitHub6346647 was observed GREEN/1175PASS12.12s from its
+actual job log. The newer1187 tree requires its own subsequent remote
+observation. P66 original v1 manifests stay bound to producer4925feb;
+its portable v2 loader and later source-bound experiments are separate.
+
+P75b/c no-hit searches remain finite negatives, not general k6+ Gaussian
+proofs. P75 small-case, P77/P78 and all validated P33/P37/E05b results are
+preserved. No P75 rerun was performed. Active static work now designs a
+hardware-compatible mechanism outside the accepted obstructions (P82),
+and examines the Gaussian positivity/gauge boundary (P83). Neither is an
+accepted optimizer or an authorized numerical main. One numerical worker
+maximum; it is FREE after the full root regression. Current ownership and
+continuation: research/P45_LIVE_STATE.md.
 
 Earlier continuation evidence: P55's new neutral-count mechanism completed
 480 observations on the two prospectively fixed DEV graphs and failed its

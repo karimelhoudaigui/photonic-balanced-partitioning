@@ -1,0 +1,112 @@
+{
+  "scope": "stored-row consistency only; no new science engine/RNG/CI quantiles",
+  "status": "PASS",
+  "raw_producer_commit": "1286ecf02730cef6aa7ba6938f5f05087f05300d",
+  "raw_seal_commit": "b8e8fea16d02c27082d55b2c1ed577193e804fc9",
+  "records_sha256": "44792b9dc1ad772a9c3651ed6a97c159940b842cf6abea4848ef22f484be1431",
+  "rows": {
+    "case_definition": 6,
+    "exact_point": 266,
+    "native_runtime": 1,
+    "native_decomposition": 6,
+    "native_amplitude": 650,
+    "native_point": 105,
+    "draw": 120000,
+    "descriptive_costs": 6,
+    "bin": 272
+  },
+  "total_rows": 121312,
+  "module_files_checked": 1781,
+  "module_hash_mismatches": [],
+  "zero_counts": {
+    "exact_zero": 132,
+    "source_coefficient_zero": 174,
+    "native_amplitude_literal_zero": 335,
+    "native_reference_zero": 46,
+    "native_probability_literal_zero": 44,
+    "bin_zero_observed": 154,
+    "bin_zero_reference": 132
+  },
+  "tolerance_branches": {
+    "REL_DOMINANT": 59,
+    "ABS_DOMINANT": 46
+  },
+  "maximum_recorded_absolute_error": 8.326672684688674e-17,
+  "maximum_error_tolerance_ratio": 1.3010553126008907e-08,
+  "maximum_unitarity_residual": 2.7755575615628914e-16,
+  "maximum_pair_reconstruction_residual": 1.1102230246251565e-16,
+  "by_case": {
+    "G1": {
+      "totals": {
+        "draws": 20000,
+        "photons": 2058,
+        "steps": 2058,
+        "loops": 984,
+        "accepted_loops": 984
+      },
+      "max_photons": 6,
+      "vacuum": 19040,
+      "tail_gt6": 0
+    },
+    "G2": {
+      "totals": {
+        "draws": 20000,
+        "photons": 22800,
+        "steps": 22800,
+        "loops": 8894,
+        "accepted_loops": 8894
+      },
+      "max_photons": 20,
+      "vacuum": 12844,
+      "tail_gt6": 373
+    },
+    "G3": {
+      "totals": {
+        "draws": 20000,
+        "photons": 12108,
+        "steps": 22294,
+        "loops": 8837,
+        "accepted_loops": 4873
+      },
+      "max_photons": 16,
+      "vacuum": 15684,
+      "tail_gt6": 128
+    },
+    "G4": {
+      "totals": {
+        "draws": 20000,
+        "photons": 6668,
+        "steps": 20248,
+        "loops": 8713,
+        "accepted_loops": 2871
+      },
+      "max_photons": 10,
+      "vacuum": 17328,
+      "tail_gt6": 25
+    },
+    "G5": {
+      "totals": {
+        "draws": 20000,
+        "photons": 17670,
+        "steps": 17670,
+        "loops": 7815,
+        "accepted_loops": 7815
+      },
+      "max_photons": 14,
+      "vacuum": 13505,
+      "tail_gt6": 114
+    },
+    "G6": {
+      "totals": {
+        "draws": 20000,
+        "photons": 6650,
+        "steps": 20072,
+        "loops": 8676,
+        "accepted_loops": 2877
+      },
+      "max_photons": 12,
+      "vacuum": 17320,
+      "tail_gt6": 20
+    }
+  }
+}

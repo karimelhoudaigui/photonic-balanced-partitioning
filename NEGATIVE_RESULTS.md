@@ -268,3 +268,20 @@ sampling likelihood, graph topology generation, actual clocks or unseen FAST
 moves. Full receipts: research/P65_STAGE1_MAIN_RECEIPT.md and
 research/P65_INDEPENDENT_RAW_AUDIT_RECEIPT.md. No held-out, hardware or
 manuscript work follows from this scoped rejection; positive target stays OPEN.
+
+## P80/P81 analytical scope restrictions, without a new optimizer benchmark
+
+P80 supplies constructive classical raw-count simulation for rational real
+nonnegative Gaussian pair matrices, closing rational setup and finite-bit
+accuracy in the stated polynomial-parameter model. This rejects relying
+on generic sampling-hardness rhetoric inside that class; it is not a
+measured runtime ordering or a rejection of every graph-dependent encoding.
+P81 shows that fixed passive dual-rail circuits with very small leakage
+on ALL uniform incoherent balanced basis inputs are close to local blocks
+and whole-pair permutations. Exact balanced feasibility leaves only
+monomial/global-complement actions. The bound is dimension dependent,
+and coherent/visited-only sources, ancillas and heralds are outside it.
+These are analytical obstructions, not failed numerical optimization
+runs. All evidence and limitations are in the P80/P81 ROOT checkpoints.
+P79's finite sampler validation PASSED; it must not be logged as either a
+photonic optimizer success or a failed quantum experiment. Positive goal OPEN.

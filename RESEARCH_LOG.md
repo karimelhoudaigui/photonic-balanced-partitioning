@@ -1,5 +1,8 @@
 # Research Log
 
+Latest continuation pointer: P79/P80/P81 checkpoint below and
+research/P45_LIVE_STATE.md. Earlier entries retain their historical state.
+
 ## 2026-11-20 - Physics Correction
 
 ### Issue Identified
@@ -1346,3 +1349,29 @@ from a proposal. Numeric slot FREE after the root regression, subject to
 later explicit reservation. The positive optimum-blind optimizer target,
 held-out/independent positive replication, manuscript and hardware gates
 remain OPEN/CLOSED as before. No QPU call or paper/main mutation occurred.
+
+## P79/P80/P81 audited continuation after battery interruption
+
+P79 sole main1286ecf/rawb8e8fea passes its registered finite population:
+266 exact coefficients,650 passive native amplitudes/105 points,120000
+raw draws,272 bins. Independent ROOT streaming consistency checks cover
+all121312 rows and1781 module hashes, not a second physical replication.
+Qualification and main manifests v2 valid at matching ROOT/producer.
+Receiptc2a22ed and reports/P79_ROOT_FINITE_CHECKPOINT.md preserve zeros,
+collisions/tails/rejections/warnings/caps and the absence of global-TV claims.
+
+P80 rational-resolvent/killed-loop source2c9810 and finite-bit bridge57b3ecc
+are accepted after full ROOT/257+246-line exact audits. P78 and the rational
+bound S<=m²*nbar discharge the bridge's explicit A/B dependencies. Finite-bit
+flagged approximation is proved mathematically, not implemented by P79.
+P81 before-other-author sources0a51544/13ce814 and exact reviewf915cf9
+establish full-balanced-average dual-rail leakage stability and its exact
+rigidity/N2 exception. Scope/quantifiers/cost and novelty limitations are
+retained in their ROOT checkpoints. No positive optimization result follows.
+
+Integrated code c360b36:1187PASS43.89s pytest/44.879216292s wrapper,
+env+native1.602 old files and all manuscript bytes unchanged. Prior GitHub
+6346647 GREEN1175PASS12.12s observed from actual job log. Positive target
+OPEN, paper/main/QPU frozen. P82 now designs a genuinely changed physical
+mechanism; P83 studies where positive-loop simulation stops. Both STATIC,
+no new numerical experiment authorized and no favorable rerun of old data.

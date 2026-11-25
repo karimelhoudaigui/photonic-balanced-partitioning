@@ -278,3 +278,19 @@ No further broad optimization sweep without a changed registered mechanism. No a
 - CONTINUE searching beyond these restrictions. CLAIM-042 stays OPEN; no
   held-out opening, paper revision, hardware freeze, QPU call or external
   handoff/message follows from proof acceptance alone.
+
+## P79 finite validation and P80/P81 proof disposition
+
+- ACCEPT P79 only for the entire registered six-source finite population,
+  with raw-first provenance and ROOT recorded-row consistency audit.
+  No finite-bin coverage is a global-TV or optimizer claim.
+- ACCEPT P80 rational setup and bounded-bit flagged approximation after
+  closing its explicitly named P78/rational-work dependencies. The floating
+  P79 implementation is not this algorithm. No measured cost/novelty claim.
+- ACCEPT P81 full-balanced-incoherent dual-rail calibration stability,
+  exact feasibility rigidity and N2 exception, after two separate derivations
+  and full exact-source audit. Do not substitute visited-only calibration,
+  coherent input, heralds or small per-mode collision rate.
+- KEEP P33/P37, E05b and every failed hypothesis/raw record unchanged.
+  Keep CLAIM-042 OPEN and manuscript/hardware gates CLOSED. Continue P82/P83
+  statically; any simulation requires its own reviewed prospective contract.

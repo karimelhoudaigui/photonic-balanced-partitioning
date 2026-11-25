@@ -2,7 +2,12 @@
 
 Current checkpoint: 2026-11-26. Allowed statuses: OPEN, PROVEN,
 NUMERICALLY_SUPPORTED, HARDWARE_SUPPORTED, REJECTED. Proof does not imply novelty.
-No claim is HARDWARE_SUPPORTED. The user-authorized rebuilt manuscript reports the evidence below; manuscript wording alone is not evidence. Submission readiness and full-composition novelty remain open; see reports/PUBLICATION_READINESS.md.
+No claim is HARDWARE_SUPPORTED. The delivered manuscript is pinned to release
+27443954fb7491a293399f0417d05185009f5c9a. Later discovery-branch claims below
+are not automatically incorporated into that manuscript; paper/ remains frozen
+under the positive-result gate. Manuscript wording alone is not evidence.
+Submission readiness and full-composition novelty remain open; see
+reports/PUBLICATION_READINESS.md.
 
 | ID | Exact statement / scope | Status | Evidence and limits |
 |---|---|---|---|
@@ -172,3 +177,10 @@ reports/P75c_ROOT_FINITE_CHECKPOINT.md preserves raw/counter/cache/floor
 limits. Neither P75b nor P75c proves CLAIM-075; no optimizer benchmark ran.
 The integrated executable tree now passes1175 tests; this quality check
 does not turn a no-hit local search into a universal theorem.
+
+| ID | Exact statement / scope | Status | Evidence and limits |
+|---|---|---|---|
+| CLAIM-079 | The frozen P79 implementation passes its six-source finite exact, passive-Perceval and raw-bin validation population. | NUMERICALLY_SUPPORTED | Source602acc70/SHA74cb27b1; 12-item qualification and separately authorized ONE main at1286ecf; rawb8e8fea, separate receiptc2a22ed. 266 exact coefficients,650 amplitudes/105 probabilities,120000 draws,272 bins all pass; ROOT streams all121312 stored rows and verifies1781 module hashes. reports/P79_ROOT_FINITE_CHECKPOINT.md. No global TV, finite-bit RNG, optimizer, novelty, native Gaussian sampler or hardware claim. |
+| CLAIM-080-RAT | Rational symmetric entrywise nonnegative Z with norm<1 admits a rational substochastic killed-walk construction of its full Gaussian raw PNR law in the ideal random-primitive model, with expected planned steps S<=m²*nbar and polynomial-bit rational setup. | PROVEN | Source2c9810/SHAfcc01504, exact review1db790/SHAa58616b8; ROOT full345+257-line reconciliation. v=(I-Z)^(-1)1 removes the Perron oracle, with death and all rejected work paid. reports/P80_ROOT_FINITE_BIT_CHECKPOINT.md. This note alone has ideal Poisson/logseries primitives; no measured cost or novelty claim. |
+| CLAIM-080-BIT | For rational symmetric entrywise nonnegative Z with norm<1 and rational0<epsilon<1, its full Gaussian raw PNR law has the stated flagged finite-bit approximation with TV<=epsilon and worst-case bit/time/memory cost polynomial in m,input encoding,nbar,1/epsilon. | PROVEN | Conditional source57b3ecc/SHA5fa9ce94, exact review41a572e/SHAe8459ea8; P78 and CLAIM-080-RAT discharge its A/B premises. All root/transition/Poisson tables and FLAG/overflow costs paid; total proved budget5epsilon/8. reports/P80_ROOT_FINITE_BIT_CHECKPOINT.md. No polylog-epsilon/exact Turing sampler, cheap rare conditioning, implementation/throughput, generic signed/complex source, optimizer or novelty claim. |
+| CLAIM-081 | For even N>=4 and fixed passive lossless U on2N dual rails, raw code leakage epsilon averaged over ALL uniform incoherent balanced code basis inputs implies proximity to whole-pair permutation/local U(2) blocks, squared Frobenius<=4N(N-1)²epsilon/(N-2), and full N-photon TV<=min(1,2N(N-1)sqrt(N*epsilon/(N-2))). | PROVEN | Before-other-author reconstructions0a51544/SHA7fe0b14f and13ce814/SHAb9261878, exact reviewf915cf9/SHA5abfd4c9, ROOT full358+178+286-line reconciliation. reports/P81_ROOT_STABILITY_CHECKPOINT.md. N2 exception explicit; exact balanced feasibility further forces monomial pair/global-complement action. Efficient local comparator only for known code basis/cheap diagonal mixtures; no visited-only/coherent calibration, ancilla/herald/loss extension, dimension-uniform error, equal-cost optimizer or novelty claim. |
