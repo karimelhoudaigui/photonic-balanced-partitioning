@@ -30,11 +30,13 @@ def norm(x):
 
 def matrix():
     roots = [(1, 0), (0, 1), (-1, 1), (-1, 0), (0, -1), (1, -1)]
+    signs = ((1, 1, 1, 1), (1, 1, -1, -1),
+             (1, -1, 1, -1), (1, -1, -1, 1))
     rows = []
     for r in range(8):
         row = []
         for j in range(8):
-            sign = (-1)**(((r % 4) & (j % 4)).bit_count() + (r >= 4 and j >= 4))
+            sign = signs[r % 4][j % 4] * (-1 if r >= 4 and j >= 4 else 1)
             value = roots[r % 4] if j >= 4 else roots[0]
             row.append(tuple(sign*x for x in value))
         rows.append(row)

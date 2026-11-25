@@ -19,7 +19,8 @@ unnormalized entry is
     q[r,j]=W[r mod4,j mod4] * xi**(r mod4 if j>=4 else0)
            * (-1 if r>=4 and j>=4 else1),
 
-where W is the unnormalized Sylvester4 sign matrix, U=q/sqrt(8).
+where W has rows(1,1,1,1),(1,1,-1,-1),(1,-1,1,-1),
+(1,-1,-1,1), in precisely the original P52 port order, U=q/sqrt(8).
 Independently multiply linear forms for each nonempty input group G:
 P_G(x)=prod_(j in G) sum_r q[r,j] x_r, in Z[xi]. If its occupation
 coefficient is a+b*xi, its exact weight is
