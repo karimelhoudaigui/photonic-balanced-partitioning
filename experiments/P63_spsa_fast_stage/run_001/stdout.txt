@@ -1,0 +1,1 @@
+{"status": "DEV_REJECTED_FIXED_FAST", "completed_B_shots": 80, "positive_accepted": false}
