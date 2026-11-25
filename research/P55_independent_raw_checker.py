@@ -102,6 +102,8 @@ def recipe(case):
     # Only fixed graph reconstruction uses these libraries; no optical helper.
     import networkx as nx
     import numpy as np
+    same(nx.__version__, '3.6.1', 'pinned graph version')
+    same(np.__version__, '2.4.6', 'pinned PCG64 version')
     master = 5502001 if case == CASES[0] else 5502002
     graph = (nx.gnp_random_graph(20, 4/19, seed=master) if master == 5502001
              else nx.random_regular_graph(4, 20, seed=master))
@@ -138,6 +140,9 @@ def audit(folder, pins):
     same(summary['raw_sha256'], pins[rawname], 'summary raw hash')
     same(summary['code_sha256'], CODE, 'primary source pin')
     same(summary['spec_sha256'], SPEC, 'spec pin')
+    same(summary['actual_QPU_calls'], 0, 'no actual QPU calls')
+    same(summary['actual_QPU_photons'], 0, 'no actual QPU photons')
+    same(summary['positive_accepted'], False, 'no positive acceptance')
     same(summary['failure'] if failure else None, failure, 'failure agreement')
     graphs, contexts, shots, rngs, online = {}, {}, defaultdict(list), {}, {}
     fresh_seen = failure_seen = False
@@ -244,6 +249,7 @@ def audit(folder, pins):
     same(summary['B_setup_CPU_split_available'], False, 'no fictional CPU split')
     same(summary['B_factory_prefix_WALL_is_charged'], True, 'paid prefix declaration')
     selection = load('selection.json'); selected, losses = {}, {}
+    same(selection['selection_compute'], summary['selection_compute'], 'selection clock consistency')
     for model in MODELS:
         ids, draws = policies(model); loss = {}
         for policy in ids:

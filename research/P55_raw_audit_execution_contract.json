@@ -1,0 +1,29 @@
+{
+  "claim_id": "P55-INDEPENDENT-RECORDED-DATA-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Independent sparse GF/inverse-rank, integer cut, fixed graph/seed, Fraction selection, paid-best, B-only clock and FAST-prefix verdict audit of every recorded completed or partial P55 observation; no production imports or new physical sampling",
+    "coefficient_domain": "Python arbitrary integers/Fraction, stdlib Random replay of private ranks, pinned NetworkX3.6.1/NumPy2.4.6 only for the two fixed graph/group recipes, observed float clocks with1e-8 comparison tolerance",
+    "conventions": "Plan6a5db45 and first checker3f6ebc6 precede main outcome read. Sealed primary8049fa37 copied byte-identically; only SHA256 hashing before freeze. Sparse prefix products and inverse rank differ from production dense DP/unranking. All six models, variable-M product, all collisions and saved failures retained. No rerunning source, optical backend, CTMC or phase sampler.",
+    "inputs": ["Six sealed P55 data outputs under experiments/P55_finite_neutrality/run_001/data, exact hashes in P55_raw_audit_pins.json", "Sibling primary manifest2d14cd05fe14a8ab3136e6063ac3bbe74e3cbbc156d02def9cae8b383248d5ed; final primary codef5563a86 and spec8b99380f pins checked from summary"],
+    "bounds": {"CPU_seconds": 20, "wall_seconds": 30, "threads": 1, "max_new_output_bytes": 4194304, "maximum_physical_draws": 0, "maximum_QPU_calls": 0, "planned_integrated_guards": 11, "maximum_recorded_shots": 480, "fixed_graphs_replayed": 2, "new_graphs": 0},
+    "non_claims": ["No fresh physical replication, blind hypothesis choice, heldout result, population inference, optimum, optimizer or advantage conclusion", "Stored timestamps, eligibility booleans and selection declaration cannot prove unrecorded work or physical latency; checker complements static source/runner review", "No execution before ROOT review and explicit exclusive worker slot; keep first failure and do not retry automatically"]
+  },
+  "execution_artifacts": [
+    "research/P55_independent_raw_checker.py",
+    "research/P55_RAW_AUDIT_PLAN.md",
+    "research/P55_RAW_AUDIT_CONTRACT.md",
+    "research/P55_raw_audit_pins.json",
+    "research/P55_raw_audit_execution_contract.json",
+    "experiments/P55_finite_neutrality/run_001/manifest.json",
+    "experiments/P55_finite_neutrality/run_001/data/raw.jsonl.gz",
+    "experiments/P55_finite_neutrality/run_001/data/context_n20_ER_5502001.json.gz",
+    "experiments/P55_finite_neutrality/run_001/data/context_n20_RR_5502002.json.gz",
+    "experiments/P55_finite_neutrality/run_001/data/selection.json",
+    "experiments/P55_finite_neutrality/run_001/data/failure.json",
+    "experiments/P55_finite_neutrality/run_001/data/summary.json"
+  ],
+  "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}, {"name": "networkx", "version": "3.6.1"}],
+  "randomness": {"used": true, "generator": "Only replay of pre-existing fixed NetworkX/PCG64 graph/group recipes and Python exact-rank streams; no new observation", "seed": [5502001, 5502002, 551010, 551011, 552000, 553000, 554000]},
+  "resource_note": "One worker, CPU20/wall30/envthread1/output4MiB; no new optical or native solve. Simple integer sparse dictionaries bounded by N20/M400 plus JSON snapshots; engineering projection, no hard RSS/affinity claim. Mathbox v2 exact12input closure, first failure preserved, fresh run_001 only after review/slot.",
+  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "research/P55_independent_raw_checker.py", "--input", "experiments/P55_finite_neutrality/run_001/data", "--pins", "research/P55_raw_audit_pins.json", "--output", "experiments/P55_independent_raw_audit/run_001/data"]
+}
