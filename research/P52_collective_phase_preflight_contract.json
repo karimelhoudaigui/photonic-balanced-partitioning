@@ -1,7 +1,7 @@
 {
   "claim_id": "P52-CREATION-TIES-STATISTICS-LP-PREFLIGHT",
   "mathematics": {
-    "assertion_tested": "Independent small direct-permanent complex amplitudes/outputfactorials/HOM/H4 ranked tables;complete compact8-photon support and monomial null;pre-data analytic U8 quartic witness and Walsh0crossing4/7;canonical/permutation source nulls;scalar species convolution/exact ties/crossrow invariants;non-production identityU MCfixture histogram/digests and epsilon/mixtureweight accounting;LPoptions/native threads/coefficients/warning/fakestatus handling. No production MC stream or unknown U8rank response is benchmarked.",
+    "assertion_tested": "Independent small direct-permanent complex amplitudes/outputfactorials/HOM/H4 ranked tables;complete compact8-photon support and monomial null;pre-data analytic U8 quartic witness and Walsh0crossing4/7;canonical/permutation source nulls;scalar species convolution/exact ties/crossrow invariants;non-production identityU MCfixture histogram/digests and epsilon/mixtureweight accounting;LPoptions/native threads/coefficients/warning/fakestatus handling. No production MC stream or unknown U8rank response is benchmarked. Six pre-data mocks require every timeout/failure (including successFalse) to remain inconclusive while preserving valid deterministic/MC candidate weights, residual and epsilon term separately.",
     "coefficient_domain": "Complex128/float64 creation recurrence and probability convolution;int16 occupations/int64 keys and MC counts;exact rational tie definitions evaluatedfloat64;float64 HiGHS convex candidates independently reconstructed",
     "conventions": "N=r8CF,U=sqrt(1/2)[[W,DW],[W,-DW]],WrealH4,theta0/pi4/pi2/3pi4;all6435 patterns retained,nopruning/postselection;all35unordered4+4 splits;top4tiesuniform;392not6435/TV confidence;theta3 duplicate physical law with independent MCseed;Walsh0edges4/7 doesnotimply uniform70;LPthreads1parallelFalse1s perfit,verified coefficients and MC epsilon*sumMCweights",
     "inputs": [
@@ -10,7 +10,7 @@
       "Toy28-coordinate LP with known convex weights and false-success/invalid-option mocks"
     ],
     "bounds": {
-      "planned_tests": 39,
+      "planned_tests": 45,
       "maximum_direct_permanent_photons": 4,
       "maximum_Fock_recurrence_photons": 8,
       "maximum_modes": 8,

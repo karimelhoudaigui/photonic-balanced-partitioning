@@ -316,9 +316,16 @@ def convex_fit(library,target,mc_start=None,epsilon=0.):
         verified=({"verified":False,"reason":"no_solver_candidate"} if result.x is None else
                   verify_coefficients(result.x[:columns],library,target,mc_start,epsilon))
         matched=verified["verified"] and verified["verified_Linfty_residual"]<=FIT_TOLERANCE
-        status=("MC_APPROXIMATE_MEAN_CANDIDATE" if mc_start is not None and verified["verified"] else
-                ("NUMERICAL_MEAN_MATCH" if matched else "NO_VERIFIED_TOLERANCE_MATCH"))
+        solved=int(result.status)==0 and bool(result.success)
+        if not solved:
+            status="INCONCLUSIVE_SOLVER_LIMIT" if int(result.status)==1 else "INCONCLUSIVE_SOLVER_FAILURE"
+        else:
+            status=("MC_APPROXIMATE_MEAN_CANDIDATE" if mc_start is not None and verified["verified"] else
+                    ("NUMERICAL_MEAN_MATCH" if matched else "NO_VERIFIED_TOLERANCE_MATCH"))
         return {"status":status,"solver_status":int(result.status),"solver_success":bool(result.success),
+                "solver_fit_solved":solved,"verified_candidate_available":bool(verified["verified"]),
+                "candidate_within_match_tolerance":bool(matched),
+                "candidate_is_only_feasible_upper_bound_if_solver_inconclusive":not solved,
                 "solver_message":str(result.message),"solver_objective":None if result.fun is None else float(result.fun),
                 "options":options,"native_options_readback":native,"warnings":messages,
                 "verification":verified,"wall_seconds":time.perf_counter()-started_wall,

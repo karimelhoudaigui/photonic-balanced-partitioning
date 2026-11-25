@@ -122,6 +122,11 @@ renormalized explicitly; save their L1 change and recompute residual afterward.
 A raw candidate outside the1e-9 simplex guard is invalid. Actual used weights
 must be nonnegative and sum1 within5e-13. Numerical mean match tolerance1e-9.
 Solver status alone never supplies a match or a separating certificate.
+If status is nonzero or success is false, the PRIMARY fit status is always
+INCONCLUSIVE_SOLVER_LIMIT/FAILURE, even when a candidate passes the independent
+coefficient checks. Preserve that candidate/residual/MC term as a feasible
+numerical upper-bound witness, never a solved fit/optimality conclusion. This
+conservative pre-data qualification changes no source, grid, effort or cap.
 
 The MC contribution is epsilon*SUM(used_lambda_MC), at mostepsilon, added to
 the reconstructed residual. The392 simultaneous event permits data-dependent

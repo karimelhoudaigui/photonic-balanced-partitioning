@@ -35,7 +35,8 @@
       "Finite convex edge-mean match is not full-law simulation/tail domination/separation/runtime advantage",
       "Hoeffding event covers392decodedcoordinates,not6435rawbins or TV<=epsilon;float/source errors separate,not intervals",
       "No outcome-driven alternative solver,extra MCdraws/seed,cap increase or automatic retry",
-      "Eightmodes/seventyfeasibleoutputs permit trivial classical exhaustive search;user discovery/hardwaregoal remainsOPEN"
+      "Eightmodes/seventyfeasibleoutputs permit trivial classical exhaustive search;user discovery/hardwaregoal remainsOPEN",
+      "Solver status!=0 or successFalse is inconclusive even with a verified feasible numerical candidate; that candidate is retained only as an upper-bound witness, not a solved fit."
     ]
   },
   "execution_artifacts": [
