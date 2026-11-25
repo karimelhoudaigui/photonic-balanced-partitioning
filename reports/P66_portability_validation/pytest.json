@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-25T21:55:28.039473+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; status=pytest.main([\"tests/\",\"-q\"]); assert xq.Config.compute_max_thread_count==1; raise SystemExit(status)"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 43.366217582999525,
+  "commit": "b272df1980e8e040692e4f0e4e397b15898d18cb",
+  "dirty_paths_at_launch": [
+    " M .DS_Store"
+  ],
+  "source_sha256": "fb3cf959f022481d360c3371168e0b2f5b97e400b14a4324c43237a162677a9d",
+  "frozen_HOM_fixture_sha256": "76025610183aa7d90843ce6e9446d55a49fbb251b8117397516fc09d0bdb2f1f",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "timeout_seconds": 90,
+  "scope": "Post-fix complete suite including portable native loader and strict CLI regression; original P66 main32grid NOT rerun"
+}
