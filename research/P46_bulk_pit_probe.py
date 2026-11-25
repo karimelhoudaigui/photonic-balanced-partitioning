@@ -71,14 +71,22 @@ def build_network(a, inside, outside, delta, zeta, transfer_p):
     eigenvalues, vectors = np.linalg.eigh(cov)
     if eigenvalues.min() < -1e-10:
         raise ArithmeticError("Negative B covariance")
+    factor = vectors*np.sqrt(np.maximum(eigenvalues, 0))[None, :]
+    target_variance = np.diag(cov).copy()
+    # Phi must use the variance of the ACTUAL sampled factor after clipping,
+    # not the target covariance diagonal before that numerical operation.
+    effective_variance = np.sum(factor**2, axis=1)
+    effective_covariance_residual = float(abs(factor@factor.T-cov).max())
     # Fixed diagnostics are recorded for EVERY graph, never used as filters.
     quartets = np.einsum("ia,jb,ja,ib->ijab", w, w, w.conj(), w.conj())
     distinct = ((np.arange(k)[:, None, None, None] != np.arange(k)[None, :, None, None])
                 & (np.arange(k)[None, None, :, None] != np.arange(k)[None, None, None, :]))
     off_quartets = quartets[distinct]
     return {"u":u, "v":v, "probabilities":probabilities, "mu":mu,
-            "cov":cov, "factor":vectors*np.sqrt(np.maximum(eigenvalues, 0))[None, :],
-            "variance":np.maximum(np.diag(cov), 0), "w":w,
+            "cov":cov, "factor":factor, "variance":effective_variance,
+            "target_variance":target_variance,
+            "Gaussian_factor_covariance_residual":effective_covariance_residual,
+            "Gaussian_variance_residual":float(abs(effective_variance-target_variance).max()), "w":w,
             "centered_delta_norm":norm, "polar_singular_min":float(singular.min()),
             "centered_stable_rank":float(np.linalg.norm(centered, "fro")**2/norm**2) if norm > 1e-12 else 0.,
             "W_minus_F_frobenius_squared":float(np.linalg.norm(w-fourier, "fro")**2),
@@ -232,7 +240,7 @@ def make_field(context, species_order, model, seed, tables):
             return u-.5, counts, {"pit_jitter":jitter.tolist()}
         if model == "gaussian_Bcov":
             raw = context["factor"]@noise_rng.normal(size=m)
-            positive = context["variance"] > 1e-14
+            positive = context["variance"] > 0
             u = jitter_rng.random(m)
             u[positive] = ndtr(raw[positive]/np.sqrt(context["variance"][positive]))
             return u-.5, None, {"gaussian_raw":raw.tolist()}
@@ -330,6 +338,10 @@ def prepare(case, spec, stream, output):
         saved_networks.append({"p":transfer_p, "zeta":zeta,
             "u_real":context["u"].real.tolist(), "u_imag":context["u"].imag.tolist(),
             "mu":context["mu"].tolist(), "covariance_B":context["cov"].tolist(),
+            "Gaussian_target_variance":context["target_variance"].tolist(),
+            "Gaussian_effective_factor_variance":context["variance"].tolist(),
+            "Gaussian_factor_covariance_residual":context["Gaussian_factor_covariance_residual"],
+            "Gaussian_variance_residual":context["Gaussian_variance_residual"],
             "marginal_pmfs":{model:table.tolist() for model, table in tables.items()},
             "pmf_computation_seconds":pmf_seconds, "phase_calibration":calibration,
             "unitary_residual":context["unitary_residual"],

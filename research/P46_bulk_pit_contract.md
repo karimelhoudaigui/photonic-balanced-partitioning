@@ -96,8 +96,10 @@ numerical tables give that statement only up to their unbounded numerical
 error. This is the randomized/checkerboard convention for discrete copulas.
 It need not match bivariate laws, preserve raw covariance or ensure uniform
 top-q seeds except under IID. Gaussian_Bcov uses the exact stated raw B
-covariance then Phi(raw/std), with independent uniform jitter at zero
-variance; it does not match the photonic PIT bivariate copula. IID uses
+covariance then Phi(raw/std), using the ACTUAL factor variance sum_j factor_ij^2
+after clipping tiny negative eigensystem roundoff, with independent uniform
+jitter at exactly zero variance. Target variance and covariance residuals are
+saved separately. It does not match the photonic PIT bivariate copula. IID uses
 independent exact uniform fields. Beating either alone is insufficient.
 
 The required strong conditional_phase control samples independent Bernoulli(p)

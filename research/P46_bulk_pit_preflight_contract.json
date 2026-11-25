@@ -1,7 +1,7 @@
 {
   "claim_id": "P46-BULK-PIT-INDEPENDENT-FINITE-PREFLIGHT",
   "mathematics": {
-    "assertion_tested": "Independent K3 full-Fock permanent and labeled-particle enumeration checks numerical B/D marginals, species2+1 convolution, Binomial transfer and covariance; carried-label covariance, PIT interval moments, conditional-phase accounting, decoder score units and finite matching accounting; immutable local Clifford sampler accepts a bulk unitary.",
+    "assertion_tested": "Independent K3 full-Fock permanent and labeled-particle enumeration checks numerical B/D marginals, species2+1 convolution, Binomial transfer and covariance; Gaussian PIT uses actual factor variance; carried-label covariance, PIT interval moments, conditional-phase accounting, decoder score units and finite matching accounting; immutable local Clifford sampler accepts a bulk unitary.",
     "coefficient_domain": "Independent explicit permutation sums in complex128 and labeled-particle finite sums; Decimal80 production marginal arithmetic; integer score accounting",
     "conventions": "All finite hand-sized inputs are fixed in tests; no development graph simulation, performance estimate or accepted positive result. Targeted preflight only; full repository tests remain required before integration.",
     "inputs": ["tests/test_p46_bulk_pit.py exact six-mode graph and fixed permutations", "K3 p=.25/.5, zeta=.25", "64 phase-calibration checks;12 conditional-phase samples;8 matching queries; one local3photon Clifford sample"],
@@ -10,7 +10,7 @@
   },
   "execution_artifacts": ["research/P46_bulk_pit_probe.py","research/P46_bulk_pit_spec.json","research/P46_bulk_pit_contract.md","research/P46_bulk_pit_execution_contract.json","research/P46_bulk_pit_preflight_contract.json","tests/test_p46_bulk_pit.py","research/P43_global_gain_probe.py","research/P45_adaptive_probe.py","pyproject.toml","requirements-research-lock.txt"],
   "software": [{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"},{"name":"networkx","version":"3.6.1"},{"name":"perceval-quandela","version":"1.3.0"},{"name":"exqalibur","version":"1.4.2"},{"name":"pytest","version":"8.4.2"}],
-  "randomness": {"used":true,"generator":"Role-separated PCG64 and serial local exqalibur; exact test constants and counts in immutable test source","seed":[460077,460078,460079,460080]},
+  "randomness": {"used":true,"generator":"Role-separated PCG64 and serial local exqalibur; exact test constants and counts in immutable test source","seed":[460077,460078,460079,460080,460081]},
   "resource_note": "Do not execute before coordinator grants the sole numerical slot. If any test fails, preserve its first failure and do not run the pilot until reviewed/fixed under a new source commit.",
-  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python","-m","pytest","-q","tests/test_p46_bulk_pit.py","--junitxml=research/P46_bulk_pit_preflight/run_001/junit.xml"]
+  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python","-m","pytest","-q","tests/test_p46_bulk_pit.py","--junitxml=research/P46_bulk_pit_preflight/run_002/junit.xml"]
 }
