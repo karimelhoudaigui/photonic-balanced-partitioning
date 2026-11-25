@@ -179,3 +179,18 @@ No further broad optimization sweep without a changed registered mechanism. No a
 - Preserve paper/ and all validated P33/P37/E05b material. No QPU, hardware
   circuit freeze or Laurent message without the latest positive-replication gate.
   Original optimizer target remains OPEN outside the theorem's declared class.
+
+## P53c/P53d/P55 continuation — 2026-11-25
+
+- ACCEPT the P53c fixed same-phase mean separation after complete independent
+  permanent reconstruction; retain the explicitly posthoc/trivial graph and
+  restricted control family. This is a mechanism discriminator, not advantage.
+- RETAIN the P53d all-classical-phase b4 candidate with independent checking
+  pending. Its scope excludes other species partitions and general search.
+- REJECT the frozen P55 finite-neutrality DEV pipeline after all480 completed
+  observations and its independently verified fixed classical veto. Keep raw
+  data and accounting; an isolated best-of-shot comparison does not pass the
+  prospective mean gate.
+- CONTINUE different graph encodings and multi-swap mechanisms, first checking
+  analytic symmetries and classical replacements. The user target is still
+  OPEN. Paper/, held-out populations and QPU remain behind the positive gate.

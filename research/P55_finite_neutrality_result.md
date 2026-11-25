@@ -158,3 +158,21 @@ loss model, QPU submission or manuscript change followed. PNR/full20-photon
 provider capability remains unverified. The worker was explicitly released.
 Any independent audit receipt and integrated full-suite result must be appended
 with their actual provenance before this draft status is changed.
+
+## Subsequent independent and integration checks
+
+The initial PENDING status above is superseded by the sealed independent
+recorded-data audit4352d25/rootd824232. Its separately prepared sparse-GF and
+inverse-rank implementation checks all480 observations/96batches, exact cuts,
+private-rank streams, Fraction policy selection, paid incumbents and B-only
+cost/FAST snapshot identities; all11 synthetic guards pass. The recomputed
+verdict remains DEV_REJECTED_FIXED_FAST. Read
+research/P55_INDEPENDENT_RAW_AUDIT_RECEIPT.md for the actual command,12-input
+closure, hashes and limits. It is not independent physical resampling,
+population inference or proof of unrecorded timing.
+
+ROOT subsequently runs the complete existing suite:956PASS/24.09s pytest at
+b1a1039, native maximum1 and one worker. All six newly integrated v2 manifests
+validate;602 historical scientific files and paper/ bytes remain unchanged.
+Receipts: reports/P55_validation/. No new physical draw, held-out graph or
+hardware call was used to perform these checks. The optimizer target is OPEN.

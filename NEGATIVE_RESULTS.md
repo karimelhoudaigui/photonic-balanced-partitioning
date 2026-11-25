@@ -184,3 +184,18 @@ mean/column transmission with the spectral norm, or reusing the identical cap
 for arbitrary internal states are invalid extensions. The prior DFT6 example
 physically violates eta^k under partial distinguishability at small eta. The
 corrected k! bound and declared CF source preserve those scope distinctions.
+
+## P55 finite-coherence neutral decoder — 2026-11-25
+
+The qualified all-count neutral decoder changes the weak-order direction, but
+its one frozen two-graph pilot still fails. All480 draws/96batches complete;
+the B paid minima39/38 lose to random-first AND separately budgeted
+spectral-first classical search11/22. The independently selected D and
+inclusion controls have lower observed fresh equal-graph means. The sample
+does not support population ranking or a claim about every possible lean
+implementation. The full cost envelope, raw counts, exact ranks, seed roles,
+failures(null), selections and FAST eligible traces are retained in
+experiments/P55_finite_neutrality/run_001/ and
+research/P55_finite_neutrality_result.md. Independent recorded-data audit
+4352d25 confirms all480 observations and the veto. No held-out graph was
+opened to rescue this pilot; no QPU or manuscript update follows from it.

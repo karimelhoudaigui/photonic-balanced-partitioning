@@ -1,5 +1,37 @@
 # Live positive-discovery continuation — 25-Nov-2026
 
+## Latest checkpoint: independent P53c/P55 checks; P53d candidate
+
+Supersedes stage-specific pending statements below. Integrated P55 primary
+8049fa37/root716d3af and report8ac10da/root2afccde: all480 observations complete,
+DEV_REJECTED_FIXED_FAST; B paid minima39/38 versus EACH fixed FAST11/22. D and
+inclusion have lower observed fresh global means. Independent sparse-GF,
+inverse-rank, exact-cut/Fraction and clock/FAST audit4352d25/rootd824232 checks
+all480/96 and confirms the verdict; it is not another physical sampler.
+See research/P55_INDEPENDENT_RAW_AUDIT_RECEIPT.md.
+
+P53c's independent direct-permanent source308edccd and ONE executionaa7d6f3/
+rootb9a9612 exactly reproduce all23,100 four-photon probabilities,35 complete
+convolved laws and the strict old-witness106-control gap. That scoped fixed
+mean claim is accepted. Same-team/posthoc, not optimizer replication.
+
+P53d ONE main312a22d/root006ce2f reports signed uniform lower bound57/32768
+against all35 b4(4+4) groupings at ALL real phases; all35 certificates use
+the triangle stage. The same old normalized graph bound is57/458752.
+Independent permanent-monomial/coefficient checking is being prepared;
+the all-phase claim remains a candidate. Other species partitions, arbitrary
+classical algorithms and useful optimization are unproved.
+
+Root full956PASS24.09s pytest/24.797035s total atb1a1039. All six newly
+integrated manifests validate at root;602 historical scientific files and
+all paper bytes unchanged: reports/P55_validation/verification.json.
+P56 flat graph-phase encoding and P57 sparse multi-swap proposals are new
+STATIC routes, no observations. P56 has an analytically identified C5
+mean-symmetry bottleneck; its scope must be stated pointwise in circuit
+parameters, not confused with equality of graph-dependent pipelines.
+The numerical slot is free at this checkpoint, subject to explicit later
+allocations. Positive target OPEN, held-out and hardware gates CLOSED.
+
 Objective: research/P45_POSITIVE_TARGET.md, positive optimizer ONLY before
 held-out/independent replication, paper update and later QPU stage. P44 is
 preserved background, not completion. Original source8f83f2b, root branch

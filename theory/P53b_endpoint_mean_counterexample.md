@@ -75,3 +75,14 @@ b4 controls at the SAME pi/3, retaining the old witness/graph unchanged for
 diagnosis. No such control is yet evaluated in this report. A new coherent
 mean response is not the user's required reproducible optimizer advantage.
 Paper/P33/P37/E05b remain unchanged; positive confirmation and QPU gates closed.
+
+## Subsequent evidence — 25 November 2026
+
+The preceding next-step paragraph describes the original checkpoint.
+P53c has since evaluated all35 SAME-phase b4 controls and retained the strict
+fixed witness. A separate complete permanent implementation verifies all70
+four-photon source laws,35 convolved controls and the original106-control
+gap; see research/P53c_INDEPENDENT_PERMANENT_RECEIPT.md. P53d's further
+all-classical-phase extension is a primary candidate pending independent
+checking. These developments change the restricted mean-hull scope, not the
+posthoc graph, classical-search limitations or the still-open optimizer goal.

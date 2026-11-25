@@ -179,3 +179,14 @@ reviewed by agreement. No paper or QPU gate has opened.
 6. What actual backend modes/input routing/native compilation/detection/filter/attempt-count semantics are available, and what calibration is needed? The local n4k2 dossier is prepared; actual device access and authorized credit cap are absent.
 
 The manuscript and local pipeline are concrete deliverables; the missing novelty/benefit/hardware evidence is not hidden by readiness flags. See reports/PUBLICATION_READINESS.md and QPU_READINESS.md.
+
+## Current discovery frontier — 2026-11-25
+
+P53c now independently verifies a restricted fixed mean separation; P53d's
+continuous b4-phase extension awaits independent checking. Neither answers
+the optimization question. P55's different finite neutral decoder fails its
+registered DEV gate and is preserved. Can a changed encoding use collective
+correlations for actual feasible search under the full classical cost gate?
+P56 examines a flat-phase encoder and its exact cyclic-symmetry bottleneck;
+P57 examines sparse multi-swap proposals. Both are static investigations,
+with no new accepted result, physical draw, held-out opening or QPU call.

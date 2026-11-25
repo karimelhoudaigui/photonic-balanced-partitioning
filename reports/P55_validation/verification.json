@@ -1,0 +1,63 @@
+{
+  "checked_utc": "2026-11-25T13:50:26.392251+00:00",
+  "inspection_head": "d824232f01f478c0549c2d5f1f893b54867208c9",
+  "manifests": [
+    {
+      "path": "experiments/P53c_independent_permanent/run_001/manifest.json",
+      "sha256": "5c640c6e30c74c63e02f4e0bf0c3bd151877e2142ee5a72954aac915406d56c9",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "research/P53d_all_phase_preflight/run_001/manifest.json",
+      "sha256": "594fe6960331ab302c4799d5786806777ec4895d1a88b3ca6d4ce236096d591b",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "experiments/P53d_all_b4_phases/run_001/manifest.json",
+      "sha256": "91923621989bfbb90a586a51968d20248c3366c1863fa8dc90a0b9d897ee5030",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "research/P55_finite_neutrality_preflight/run_001/manifest.json",
+      "sha256": "df35359b1f19348e264d0bfc387c63137c8c602238aab313ff1b7eebaa222309",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "experiments/P55_finite_neutrality/run_001/manifest.json",
+      "sha256": "2d14cd05fe14a8ab3136e6063ac3bbe74e3cbbc156d02def9cae8b383248d5ed",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "experiments/P55_independent_raw_audit/run_001/manifest.json",
+      "sha256": "9b814ebb05a0860225a6ad24ca089759b3a1afdec92f2e907a96a9584760a544",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    }
+  ],
+  "full_test_receipt": "reports/P55_validation/pytest.json",
+  "full_test_result": "956 PASS /24.09s pytest /24.797034875s total atb1a1039",
+  "historical_preservation": "reports/P55_validation/archive_preservation.json",
+  "paper_diff_against_main": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "accepted_positive_optimizer": false,
+  "P53c": "independent complete permanent check accepted for fixed106 control scope",
+  "P53d": "primary all-b4-phase candidate pending independent source and coefficient checking",
+  "P55": "complete480-shot DEV negative independently recorded-data audited; no physical replication"
+}

@@ -1,5 +1,21 @@
 # Research status — 25 November 2026
 
+Latest continuation checkpoint: P55's new neutral-count mechanism completed
+480 observations on the two prospectively fixed DEV graphs and failed its
+registered gate. Its paid B minima39/38 lose to EACH fixed classical search
+11/22; separately selected D and inclusion also have lower fresh global means.
+The independently coded sparse-GF/rank/cut/cost audit confirms all480 events
+and that veto: research/P55_INDEPENDENT_RAW_AUDIT_RECEIPT.md.
+This is a tested-pipeline negative, not a universal no-go.
+P53c's complete independent23,100-permanent reconstruction now verifies the
+fixed same-phase106-control gap. P53d additionally reports a uniform gap over
+all35 b4 groupings and all classical phases; independent checking is PENDING.
+Neither mean witness is an optimizer advantage. Full regression956PASS.
+P56/P57 investigate different encodings and proposals statically. The positive
+target remains OPEN; paper/ and main stay at the delivered release, with no
+QPU call or held-out opening. Historical checkpoint prose below retains its
+original stage-specific limits.
+
 25-Nov active branch research/p45-positive-discovery: the user requires a
 positive optimizer result before held-out replication/paper/hardware steps.
 P45-A (256 B draws) and P45-B (800 B draws, all collisions decoded) are complete

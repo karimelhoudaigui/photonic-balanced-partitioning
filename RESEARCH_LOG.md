@@ -937,3 +937,36 @@ all ranks, plus bigint/loss/vacuum/odd/resource cases,6 unchanged inputs.
 No physical graph pilot followed. A bounded finite-coherence N20 proposal
 is being designed with independently retuned D/inclusion/b4/phase/marginals
 and paid strong classical controls. The broad positive target remains OPEN.
+
+## 2026-11-25 — completed P55 finite pilot and independent checks
+
+The finite P55 proposal subsequently passed45 actual synthetic qualifications,
+including596 unique role seeds, exact mixed PGFs, retained direct-time CTMC
+failures and the paid immutable-factory prefix correction. Its ONE main,
+clean45d115a6, completed480 draws/96batches/18unchanged inputs in33.331807s.
+All attempts decode; no C*, known partition, opt mask or held-out graph is used.
+B paid39/38 loses to EACH separately costed fixed FAST11/22. Independently
+selected D and inclusion have lower fresh equal-graph means. Preserve the
+negative and finite-grid/zero-optical-latency-envelope limits; no broader
+impossibility is inferred. Primary8049fa37/root716d3af, report8ac10da/root2afccde.
+
+The independently prepared sparse-GF/inverse-rank checker c89e674 was fully
+read by ROOT before its exclusive run. It imports no production sampler,
+replays only fixed graph/group/rank recipes, and checks all480 events, all
+Fraction selections/paid incumbents/B-only clocks/FAST eligible snapshots.
+All11guards PASS; the verdict DEV_REJECTED_FIXED_FAST agrees. Unique audit
+4352d25/rootd824232, runner0.460269s,12unchanged inputs, validated v2 manifest.
+This is recorded-data independence, not new optical sampling or hidden-timing
+proof. research/P55_INDEPENDENT_RAW_AUDIT_RECEIPT.md gives actual provenance.
+
+P53c's complete separate direct-permanent engine now independently verifies
+all70 group laws/35 convolutions and the strict fixed106-control witness:
+aa7d6f3/rootb9a9612. P53d extends the SAME B/w/graph to all real b4 phases in
+one exact primary candidate312a22d/root006ce2f: all35 triangle certificates
+strict, signed bound57/32768, normalized graph57/458752. Independent exact
+coefficient reconstruction is still pending; no optimizer claim is inferred.
+
+Root full956PASS24.09s pytest, six new manifests v2PASS,602 historical files
+and paper bytes unchanged. Receipts reports/P55_validation/. P56/P57 continue
+with different encodings/multi-swap mechanisms, first checking symmetry and
+classical replacements. Main/paper remain unchanged; no QPU/held-out opening.
