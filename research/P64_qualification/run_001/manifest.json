@@ -1,0 +1,217 @@
+{
+  "schema_version": 2,
+  "claim_id": "P64-COMPLETE-STRUCTURED-SAMPLER-QUALIFICATION",
+  "repository": {
+    "commit": "677348b7d3988183971350d195cf056cd87251a5",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-c",
+    "import os; os.environ[\"P64_QUALIFICATION_ARTIFACT\"]=\"research/P64_qualification/run_001/data\"; import pytest; raise SystemExit(pytest.main([\"-q\",\"tests/test_p64_structured_sampler.py\",\"--junitxml=research/P64_qualification/run_001/junit.xml\"]))"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Prospective synthetic exact-source/tritter and rounded conditional-state qualification: all462 F6 source rows including zeros; coherent and orthogonal suffix toys; full462-outcome N6 normalized categorical-kernel probabilities at phases0,pi/6,pi/3,-0.4 against independent dense-factorization/Ryser, with complete actual/reference laws and maxabs/halfL1/norms archived in four separate files. Each branch uses p/fsum(probs), matching the real-probability normalized CDF kernel, distinct from the finite-bit MT19937 quantile law. Extreme18-photon single-color sector without random draw; explicit mass/CDF/resource failure guards. No graph or optimizer.",
+    "coefficient_domain": "Source and tritter coefficients exact Python integers in Z[xi], xi^2=xi-1; source weights exact integers/Fractions. Conditional phases, amplitudes, masses and categorical CDFs binary64 approximate, without global certified TV bound.",
+    "conventions": "Ports a*d+i; positive Fourier; V on0,d is [[3,-4],[4,3]]/5; all single-photon inputs; d=6 target and d=2 qualification. M is sampled coarsely, latent rows discarded, all compatible terms restored coherently. Sum amplitudes within each suffix then squared masses across orthogonal suffixes. Full in/out Fock factorials and all collisions retained.",
+    "inputs": [
+      "Frozen P64 proof/card and code only; no primary data dependence",
+      "Independent six-mode dense factorization and Ryser formula in tests",
+      "Synthetic phase constants0,pi/6,pi/3,-0.4; no chosen graph or optimum",
+      "Python Random seeds6400001 for N6 reproducibility,6400002 for failure guards"
+    ],
+    "bounds": {
+      "target_modes_photons": 18,
+      "qualification_reference_modes_photons": 6,
+      "source_occupations": 462,
+      "source_support_upper_bound": 80,
+      "conditional_width_upper_bound": 6400,
+      "transition_cache_entry_upper_bound": 130340,
+      "full_N18_enumerations": 0,
+      "N18_random_draws": 0,
+      "graph_count": 0,
+      "training_steps": 0,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "logical_memory_plan_bytes": 268435456,
+      "max_new_output_bytes": 33554432,
+      "max_failed_retries": 0,
+      "mass_tolerance": 2e-10,
+      "N6_reference_absolute_tolerance": 2e-11,
+      "N6_reference_half_L1_tolerance": 2e-09
+    },
+    "non_claims": [
+      "No executed qualification, measured timing or actual source support cardinality at freeze",
+      "No certified exact floating sampler or global N18 TV bound",
+      "No independently blind replication, physical measurement, noise/loss or QPU validation",
+      "No optimization, classical cost advantage, growing-size efficiency or novelty claim",
+      "No source S^3 cache, known optimum, selected graph, heldout opening, retry or manuscript modification"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python Random MT19937 integer randrange and finite-bit random(); synthetic N6 reproducibility only",
+    "seed": [
+      6400001,
+      6400002
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T19:50:45.083359+00:00",
+    "runtime_seconds": 0.793044,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P64_structured_sampler.py",
+    "tests/test_p64_structured_sampler.py",
+    "research/P64_IMPLEMENTATION_CONTRACT.md",
+    "theory/P64_fixed_phase_complete_structured_sampler.md",
+    "research/P64_STRUCTURED_CLASSICAL_ADVERSE_CARD.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P64_qualification_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P64_structured_sampler.py",
+      "sha256": "af2b016b9ce5dd71919a8745d21c7e7f363a1588a089f697770a29d5b9353543",
+      "sha256_after": "af2b016b9ce5dd71919a8745d21c7e7f363a1588a089f697770a29d5b9353543"
+    },
+    {
+      "path": "tests/test_p64_structured_sampler.py",
+      "sha256": "0c53c31dfa3276dc4d7fef0c7dff29636bdf7801b3ce95c5d7dfea978644993d",
+      "sha256_after": "0c53c31dfa3276dc4d7fef0c7dff29636bdf7801b3ce95c5d7dfea978644993d"
+    },
+    {
+      "path": "research/P64_IMPLEMENTATION_CONTRACT.md",
+      "sha256": "e79a24eeac96be25cc42df4fad77bc8df92144dc38c34016a71464b428d695b9",
+      "sha256_after": "e79a24eeac96be25cc42df4fad77bc8df92144dc38c34016a71464b428d695b9"
+    },
+    {
+      "path": "theory/P64_fixed_phase_complete_structured_sampler.md",
+      "sha256": "9e29d7818c709d4c6814ef8735ca3bb4e7a17bbfa932b270229d7c3dcf997b3c",
+      "sha256_after": "9e29d7818c709d4c6814ef8735ca3bb4e7a17bbfa932b270229d7c3dcf997b3c"
+    },
+    {
+      "path": "research/P64_STRUCTURED_CLASSICAL_ADVERSE_CARD.md",
+      "sha256": "e0c76faa385831526769db9f56c71df6cd2e5c2c6b86f78300c5d3cfcc007d27",
+      "sha256_after": "e0c76faa385831526769db9f56c71df6cd2e5c2c6b86f78300c5d3cfcc007d27"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P64_qualification_contract.json",
+      "sha256": "eb43a24900cc12d4766e72dd082fb24148f6a1ea3053b2994171216b11261860",
+      "sha256_after": "eb43a24900cc12d4766e72dd082fb24148f6a1ea3053b2994171216b11261860"
+    }
+  ],
+  "output_directory": "research/P64_qualification/run_001",
+  "declared_results": [
+    "research/P64_qualification/run_001/junit.xml",
+    "research/P64_qualification/run_001/data/source_table.json",
+    "research/P64_qualification/run_001/data/phase_0.json",
+    "research/P64_qualification/run_001/data/phase_1.json",
+    "research/P64_qualification/run_001/data/phase_2.json",
+    "research/P64_qualification/run_001/data/phase_3.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P64_qualification/run_001/stdout.txt",
+      "sha256": "f31853c4f74fc40eb2f235d8a5d2feb6bfcef99f690868bb54ee38a00ef31c2f",
+      "kind": "log"
+    },
+    {
+      "path": "research/P64_qualification/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P64_qualification/run_001/junit.xml",
+      "sha256": "1d358cff180abf903751a17f72f6595ca7bae345a4841b36e71830934cd89b39",
+      "kind": "result"
+    },
+    {
+      "path": "research/P64_qualification/run_001/data/source_table.json",
+      "sha256": "e02157b2990fa1eadef2d27cefe4f4817f6ff92a205ff67763d2365728492a75",
+      "kind": "result"
+    },
+    {
+      "path": "research/P64_qualification/run_001/data/phase_0.json",
+      "sha256": "520890b095ffec52c67094a7f252aebd0a258b69e8d6d9ad0c1e92cc768c8a9f",
+      "kind": "result"
+    },
+    {
+      "path": "research/P64_qualification/run_001/data/phase_1.json",
+      "sha256": "d3939a86924ddfd54cde6e0810debdad857b9f9997ee0c5473f05cfe83e46498",
+      "kind": "result"
+    },
+    {
+      "path": "research/P64_qualification/run_001/data/phase_2.json",
+      "sha256": "16c7455cbdcd163e7c9ebdee6c326f2b7fbd76943a88fc256a20d07e92d2f904",
+      "kind": "result"
+    },
+    {
+      "path": "research/P64_qualification/run_001/data/phase_3.json",
+      "sha256": "fdb143b550ef6f64f7598b3f9931964e00abfbafec41ae6be4e030be915434ba",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

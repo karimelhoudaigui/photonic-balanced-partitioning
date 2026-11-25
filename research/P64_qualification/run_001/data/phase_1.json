@@ -1,0 +1,6025 @@
+{
+  "status": "NORMALIZED_CATEGORICAL_KERNEL_NOT_FINITE_BIT_LAW_OR_GLOBAL_TV_CERTIFICATE",
+  "probability_convention": "Rounded conditional masses divided by their explicit fsum at every node; real-probability categorical kernel, distinct from finite-bit MT19937 quantile law",
+  "phase_index": 1,
+  "phase_label": "pi/6",
+  "binary64_phase": 0.5235987755982988,
+  "binary64_phase_hex": "0x1.0c152382d7365p-1",
+  "modes": 6,
+  "photons": 6,
+  "occupation_count": 462,
+  "max_absolute_error": 1.1796119636642288e-16,
+  "half_L1_error": 8.439175600742995e-16,
+  "actual_norm": 1.0,
+  "reference_norm": 1.0,
+  "reference_absolute_tolerance": 2e-11,
+  "small_law_TV_tolerance": 2e-09,
+  "rows": [
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ],
+      "actual_probability": 0.015432098765432098,
+      "reference_probability": 0.015432098765432101,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        5
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.888443034719113e-36,
+      "absolute_error": 5.888443034719113e-36
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        4
+      ],
+      "actual_probability": 0.007201646090534983,
+      "reference_probability": 0.007201646090534977,
+      "absolute_error": 6.071532165918825e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.092856247496863e-36,
+      "absolute_error": 3.092856247496863e-36
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        2
+      ],
+      "actual_probability": 0.007201646090534981,
+      "reference_probability": 0.007201646090534982,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.332226930931926e-37,
+      "absolute_error": 1.332226930931926e-37
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0
+      ],
+      "actual_probability": 0.0154320987654321,
+      "reference_probability": 0.015432098765432103,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        5
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2964417482412932e-33,
+      "absolute_error": 1.2964417482412932e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.416770246390116e-36,
+      "absolute_error": 3.416770246390116e-36
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        3
+      ],
+      "actual_probability": 0.0010288065843621396,
+      "reference_probability": 0.0010288065843621394,
+      "absolute_error": 2.168404344971009e-19
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        1,
+        3,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.582999059107347e-36,
+      "absolute_error": 1.582999059107347e-36
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        1,
+        4,
+        1
+      ],
+      "actual_probability": 0.00205761316872428,
+      "reference_probability": 0.00205761316872428,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        1,
+        5,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.473009419627556e-36,
+      "absolute_error": 7.473009419627556e-36
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.152317125718174e-33,
+      "absolute_error": 5.152317125718174e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.9904576284918994e-35,
+      "absolute_error": 2.9904576284918994e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "actual_probability": 0.00154320987654321,
+      "reference_probability": 0.0015432098765432124,
+      "absolute_error": 2.3852447794681098e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        2,
+        3,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3431982115396011e-35,
+      "absolute_error": 1.3431982115396011e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        0
+      ],
+      "actual_probability": 0.0010288065843621402,
+      "reference_probability": 0.0010288065843621398,
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        3
+      ],
+      "actual_probability": 0.0030864197530864187,
+      "reference_probability": 0.0030864197530864165,
+      "absolute_error": 2.168404344971009e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        3,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.082791434055064e-35,
+      "absolute_error": 6.082791434055064e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        3,
+        2,
+        1
+      ],
+      "actual_probability": 0.007201646090534983,
+      "reference_probability": 0.007201646090534979,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        3,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3583490276168657e-35,
+      "absolute_error": 1.3583490276168657e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.377277159696589e-33,
+      "absolute_error": 7.377277159696589e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        4,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.720739174001798e-37,
+      "absolute_error": 5.720739174001798e-37
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        4,
+        2,
+        0
+      ],
+      "actual_probability": 0.0010288065843621396,
+      "reference_probability": 0.0010288065843621398,
+      "absolute_error": 2.168404344971009e-19
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        5,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.4357810274838898e-33,
+      "absolute_error": 2.4357810274838898e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        5,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.5409947276379642e-35,
+      "absolute_error": 1.5409947276379642e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        0,
+        6,
+        0,
+        0
+      ],
+      "actual_probability": 0.015432098765432098,
+      "reference_probability": 0.015432098765432084,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        5
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0402027876716478e-33,
+      "absolute_error": 1.0402027876716478e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        4
+      ],
+      "actual_probability": 0.0010699588477366252,
+      "reference_probability": 0.0010699588477366276,
+      "absolute_error": 2.3852447794681098e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.0312542382209128e-35,
+      "absolute_error": 2.0312542382209128e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        0,
+        3,
+        2
+      ],
+      "actual_probability": 0.0005349794238683129,
+      "reference_probability": 0.0005349794238683133,
+      "absolute_error": 3.2526065174565133e-19
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        0,
+        4,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.4168625241911307e-35,
+      "absolute_error": 1.4168625241911307e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        0,
+        5,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.515780608847051e-33,
+      "absolute_error": 2.515780608847051e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.842806030885288e-35,
+      "absolute_error": 9.842806030885288e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        3
+      ],
+      "actual_probability": 0.014897119341563783,
+      "reference_probability": 0.014897119341563797,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.115751414778595e-35,
+      "absolute_error": 5.115751414778595e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        1,
+        3,
+        1
+      ],
+      "actual_probability": 0.006008230452674899,
+      "reference_probability": 0.006008230452674895,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        1,
+        4,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.4475359709921125e-34,
+      "absolute_error": 2.4475359709921125e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.1315630894910813e-35,
+      "absolute_error": 2.1315630894910813e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      "actual_probability": 0.0038271604938271606,
+      "reference_probability": 0.003827160493827158,
+      "absolute_error": 2.6020852139652106e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0833355937178202e-34,
+      "absolute_error": 1.0833355937178202e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "actual_probability": 0.005720164609053498,
+      "reference_probability": 0.005720164609053498,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        3,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.669773262444248e-34,
+      "absolute_error": 9.669773262444248e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        3,
+        1,
+        1
+      ],
+      "actual_probability": 0.0010699588477366252,
+      "reference_probability": 0.0010699588477366313,
+      "absolute_error": 6.071532165918825e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        3,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.2318719407612494e-35,
+      "absolute_error": 2.2318719407612494e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        4,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2063393225878642e-33,
+      "absolute_error": 1.2063393225878642e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        4,
+        1,
+        0
+      ],
+      "actual_probability": 0.014897119341563783,
+      "reference_probability": 0.01489711934156378,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.5439117153750543e-34,
+      "absolute_error": 3.5439117153750543e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        4
+      ],
+      "actual_probability": 0.006204115226337449,
+      "reference_probability": 0.0062041152263374475,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        0,
+        1,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.024708101613484e-35,
+      "absolute_error": 8.024708101613484e-35
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        0,
+        2,
+        2
+      ],
+      "actual_probability": 0.00047654320987654313,
+      "reference_probability": 0.00047654320987654524,
+      "absolute_error": 2.1141942363467336e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        0,
+        3,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.780878345863393e-34,
+      "absolute_error": 6.780878345863393e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        0,
+        4,
+        0
+      ],
+      "actual_probability": 0.008533333333333332,
+      "reference_probability": 0.008533333333333316,
+      "absolute_error": 1.5612511283791264e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        3
+      ],
+      "actual_probability": 0.0014337448559670783,
+      "reference_probability": 0.0014337448559670896,
+      "absolute_error": 1.1275702593849246e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.1344931078656061e-33,
+      "absolute_error": 1.1344931078656061e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "actual_probability": 0.0012197530864197536,
+      "reference_probability": 0.0012197530864197495,
+      "absolute_error": 4.119968255444917e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        1,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.4444474582904269e-34,
+      "absolute_error": 1.4444474582904269e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        2
+      ],
+      "actual_probability": 0.008832098765432098,
+      "reference_probability": 0.008832098765432126,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0833355937178202e-34,
+      "absolute_error": 1.0833355937178202e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        0
+      ],
+      "actual_probability": 0.00640246913580247,
+      "reference_probability": 0.006402469135802469,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        3,
+        0,
+        1
+      ],
+      "actual_probability": 0.006204115226337449,
+      "reference_probability": 0.0062041152263374545,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        3,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.867302452282899e-34,
+      "absolute_error": 8.867302452282899e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        2,
+        4,
+        0,
+        0
+      ],
+      "actual_probability": 0.0014337448559670783,
+      "reference_probability": 0.0014337448559670798,
+      "absolute_error": 1.5178830414797062e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.925929944387236e-34,
+      "absolute_error": 1.925929944387236e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.003816757201646091,
+      "reference_probability": 0.0038167572016460844,
+      "absolute_error": 6.5052130349130266e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.5802606433230555e-34,
+      "absolute_error": 6.5802606433230555e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.0016357530864197529,
+      "reference_probability": 0.0016357530864197463,
+      "absolute_error": 6.5052130349130266e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.6049416203226967e-33,
+      "absolute_error": 1.6049416203226967e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0010905020576131687,
+      "reference_probability": 0.0010905020576131793,
+      "absolute_error": 1.0625181290357943e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.2098832406453937e-34,
+      "absolute_error": 3.2098832406453937e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7112690026690753e-32,
+      "absolute_error": 1.7112690026690753e-32
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.0005452510288065845,
+      "reference_probability": 0.0005452510288065897,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        3,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.629649721936181e-34,
+      "absolute_error": 9.629649721936181e-34
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0018127986831275728,
+      "reference_probability": 0.0018127986831275814,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        4,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.0543252740130515e-33,
+      "absolute_error": 2.0543252740130515e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        4,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.00442368,
+      "reference_probability": 0.004423680000000002,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        4,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.002925611193415638,
+      "reference_probability": 0.0029256111934156527,
+      "absolute_error": 1.474514954580286e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        4,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.8055593228630336e-33,
+      "absolute_error": 1.8055593228630336e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        4,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.003362214979423868,
+      "reference_probability": 0.0033622149794238624,
+      "absolute_error": 5.637851296924623e-18
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.573840876841765e-33,
+      "absolute_error": 6.573840876841765e-33
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        5,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.011306325333333332,
+      "reference_probability": 0.011306325333333343,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        5,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.916456789157588e-32,
+      "absolute_error": 5.916456789157588e-32
+    },
+    {
+      "occupation": [
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.004334614818765433,
+      "reference_probability": 0.004334614818765426,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        5
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0373847358812763e-32,
+      "absolute_error": 1.0373847358812763e-32
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.579679851903125e-36,
+      "absolute_error": 5.579679851903125e-36
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        0,
+        2,
+        3
+      ],
+      "actual_probability": 0.0010288065843621398,
+      "reference_probability": 0.00102880658436214,
+      "absolute_error": 2.168404344971009e-19
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        0,
+        3,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0924260833641788e-35,
+      "absolute_error": 1.0924260833641788e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        0,
+        4,
+        1
+      ],
+      "actual_probability": 0.002057613168724279,
+      "reference_probability": 0.0020576131687242826,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        0,
+        5,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.62513230013492e-36,
+      "absolute_error": 5.62513230013492e-36
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        4
+      ],
+      "actual_probability": 0.01851851851851852,
+      "reference_probability": 0.018518518518518504,
+      "absolute_error": 1.734723475976807e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.658046141957944e-35,
+      "absolute_error": 5.658046141957944e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.473276515833913e-35,
+      "absolute_error": 5.473276515833913e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        1,
+        3,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.8180979292718058e-35,
+      "absolute_error": 1.8180979292718058e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        1,
+        4,
+        0
+      ],
+      "actual_probability": 0.01440329218106996,
+      "reference_probability": 0.01440329218106997,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.500356612236111e-33,
+      "absolute_error": 4.500356612236111e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.5046327690525283e-35,
+      "absolute_error": 1.5046327690525283e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.153853941816619e-33,
+      "absolute_error": 3.153853941816619e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        2,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5077212817542138e-36,
+      "absolute_error": 2.5077212817542138e-36
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        3,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.385961906381714e-33,
+      "absolute_error": 9.385961906381714e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        3,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.0154425635084276e-36,
+      "absolute_error": 5.0154425635084276e-36
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        3,
+        2,
+        0
+      ],
+      "actual_probability": 0.0010288065843621398,
+      "reference_probability": 0.0010288065843621383,
+      "absolute_error": 1.5178830414797062e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        4,
+        0,
+        1
+      ],
+      "actual_probability": 0.01851851851851852,
+      "reference_probability": 0.018518518518518504,
+      "absolute_error": 1.734723475976807e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        4,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3204719874237031e-35,
+      "absolute_error": 1.3204719874237031e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        0,
+        5,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.66060627144341e-33,
+      "absolute_error": 4.66060627144341e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.611210923527082e-34,
+      "absolute_error": 1.611210923527082e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        3
+      ],
+      "actual_probability": 0.002551440329218108,
+      "reference_probability": 0.002551440329218097,
+      "absolute_error": 1.0842021724855044e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.0092655381050566e-35,
+      "absolute_error": 3.0092655381050566e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        0,
+        3,
+        1
+      ],
+      "actual_probability": 0.011440329218106995,
+      "reference_probability": 0.011440329218106992,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        0,
+        4,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.024708101613482e-36,
+      "absolute_error": 8.024708101613482e-36
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.015442563508426e-34,
+      "absolute_error": 5.015442563508426e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3425689435863348e-33,
+      "absolute_error": 1.3425689435863348e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9560225997682861e-35,
+      "absolute_error": 1.9560225997682861e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        1,
+        3,
+        0
+      ],
+      "actual_probability": 0.0010699588477366259,
+      "reference_probability": 0.0010699588477366257,
+      "absolute_error": 2.168404344971009e-19
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        2,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.046300565911438e-34,
+      "absolute_error": 2.046300565911438e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.045423625625264e-34,
+      "absolute_error": 8.045423625625264e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.023150282955719e-34,
+      "absolute_error": 1.023150282955719e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        3,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.526252357964327e-34,
+      "absolute_error": 8.526252357964327e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        3,
+        1,
+        0
+      ],
+      "actual_probability": 0.002551440329218108,
+      "reference_probability": 0.0025514403292181058,
+      "absolute_error": 2.168404344971009e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        1,
+        4,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.173613559860972e-34,
+      "absolute_error": 1.173613559860972e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0058880658436214,
+      "reference_probability": 0.005888065843621413,
+      "absolute_error": 1.3010426069826053e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.046300565911438e-34,
+      "absolute_error": 2.046300565911438e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.012804938271604938,
+      "reference_probability": 0.01280493827160495,
+      "absolute_error": 1.214306433183765e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.577937477643332e-34,
+      "absolute_error": 2.577937477643332e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.451161790528105e-32,
+      "absolute_error": 1.451161790528105e-32
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.666684749742561e-34,
+      "absolute_error": 8.666684749742561e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0009530864197530863,
+      "reference_probability": 0.000953086419753089,
+      "absolute_error": 2.710505431213761e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7431599570028163e-32,
+      "absolute_error": 1.7431599570028163e-32
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7814851985581928e-33,
+      "absolute_error": 1.7814851985581928e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0058880658436214,
+      "reference_probability": 0.005888065843621393,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        3,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.054325274013052e-33,
+      "absolute_error": 2.054325274013052e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        3,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0010905020576131683,
+      "reference_probability": 0.0010905020576131759,
+      "absolute_error": 7.589415207398531e-18
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        3,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.419766481290786e-35,
+      "absolute_error": 6.419766481290786e-35
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        3,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.419766481290787e-34,
+      "absolute_error": 6.419766481290787e-34
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        3,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.007633514403292181,
+      "reference_probability": 0.007633514403292191,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        3,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.6049416203226967e-33,
+      "absolute_error": 1.6049416203226967e-33
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        4,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.006724429958847736,
+      "reference_probability": 0.006724429958847753,
+      "absolute_error": 1.6479873021779667e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        4,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.670622856216967e-32,
+      "absolute_error": 2.670622856216967e-32
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        4,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0036255973662551455,
+      "reference_probability": 0.003625597366255172,
+      "absolute_error": 2.6454533008646308e-17
+    },
+    {
+      "occupation": [
+        0,
+        1,
+        5,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.900250878462073e-32,
+      "absolute_error": 1.900250878462073e-32
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.4618299822981114e-33,
+      "absolute_error": 2.4618299822981114e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.818097929271805e-35,
+      "absolute_error": 1.818097929271805e-35
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "actual_probability": 0.0015432098765432094,
+      "reference_probability": 0.0015432098765432128,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        0,
+        3,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.9747382315804294e-35,
+      "absolute_error": 3.9747382315804294e-35
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        0,
+        4,
+        0
+      ],
+      "actual_probability": 0.00102880658436214,
+      "reference_probability": 0.0010288065843621394,
+      "absolute_error": 6.505213034913027e-19
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.220452301785937e-33,
+      "absolute_error": 9.220452301785937e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        1,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.018531076210113e-36,
+      "absolute_error": 6.018531076210113e-36
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        1,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.978225585649707e-35,
+      "absolute_error": 7.978225585649707e-35
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        1,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.4356704338042873e-35,
+      "absolute_error": 1.4356704338042873e-35
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "actual_probability": 0.013888888888888885,
+      "reference_probability": 0.013888888888888897,
+      "absolute_error": 1.214306433183765e-17
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.403954806578301e-36,
+      "absolute_error": 9.403954806578301e-36
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        2,
+        2,
+        0
+      ],
+      "actual_probability": 0.01080246913580247,
+      "reference_probability": 0.010802469135802465,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        3,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.380646029295421e-33,
+      "absolute_error": 6.380646029295421e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        3,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5327984945717553e-35,
+      "absolute_error": 2.5327984945717553e-35
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        0,
+        4,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.932844493790647e-34,
+      "absolute_error": 4.932844493790647e-34
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.204683242479854e-34,
+      "absolute_error": 7.204683242479854e-34
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.022345679012345677,
+      "reference_probability": 0.02234567901234567,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.7615819226313205e-34,
+      "absolute_error": 3.7615819226313205e-34
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.0030041152263374496,
+      "reference_probability": 0.0030041152263374526,
+      "absolute_error": 3.0357660829594124e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.24364520014806e-34,
+      "absolute_error": 5.24364520014806e-34
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3759688126916025e-33,
+      "absolute_error": 1.3759688126916025e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.5046327690525283e-35,
+      "absolute_error": 1.5046327690525283e-35
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.4907480242018646e-34,
+      "absolute_error": 3.4907480242018646e-34
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.0016049382716049375,
+      "reference_probability": 0.0016049382716049408,
+      "absolute_error": 3.2526065174565133e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        1,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.4105009431857303e-35,
+      "absolute_error": 3.4105009431857303e-35
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0021506172839506174,
+      "reference_probability": 0.0021506172839506235,
+      "absolute_error": 6.071532165918825e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.333342374871281e-34,
+      "absolute_error": 4.333342374871281e-34
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        2,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0006098765432098769,
+      "reference_probability": 0.0006098765432098752,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        2,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0937596827654095e-33,
+      "absolute_error": 1.0937596827654095e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.967611303553068e-33,
+      "absolute_error": 8.967611303553068e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.009306172839506173,
+      "reference_probability": 0.009306172839506181,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        3,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.7135921683487986e-33,
+      "absolute_error": 5.7135921683487986e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        3,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0005452510288065844,
+      "reference_probability": 0.0005452510288065823,
+      "absolute_error": 2.0599841277224584e-18
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        3,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3521633151218718e-33,
+      "absolute_error": 1.3521633151218718e-33
+    },
+    {
+      "occupation": [
+        0,
+        2,
+        4,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.001462805596707819,
+      "reference_probability": 0.0014628055967078179,
+      "absolute_error": 1.0842021724855044e-18
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0030864197530864187,
+      "reference_probability": 0.0030864197530864204,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2852071568990343e-35,
+      "absolute_error": 1.2852071568990343e-35
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.007201646090534983,
+      "reference_probability": 0.007201646090534985,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.4126829887215402e-35,
+      "absolute_error": 1.4126829887215402e-35
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.1446807255727326e-32,
+      "absolute_error": 1.1446807255727326e-32
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.3196421856226478e-35,
+      "absolute_error": 2.3196421856226478e-35
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0010288065843621396,
+      "reference_probability": 0.0010288065843621409,
+      "absolute_error": 1.3010426069826053e-18
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.520075332560953e-35,
+      "absolute_error": 6.520075332560953e-35
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.8306365356805754e-35,
+      "absolute_error": 1.8306365356805754e-35
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        0,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0030864197530864187,
+      "reference_probability": 0.0030864197530864174,
+      "absolute_error": 1.3010426069826053e-18
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        1,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.118839927480279e-34,
+      "absolute_error": 6.118839927480279e-34
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        1,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0010699588477366252,
+      "reference_probability": 0.0010699588477366287,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        1,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.9691419975969887e-34,
+      "absolute_error": 2.9691419975969887e-34
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        1,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.1809521681042045e-34,
+      "absolute_error": 5.1809521681042045e-34
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.014897119341563783,
+      "reference_probability": 0.014897119341563797,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        1,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.05287382713271e-35,
+      "absolute_error": 9.05287382713271e-35
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        2,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.006204115226337449,
+      "reference_probability": 0.0062041152263374475,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        2,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9138928822348156e-33,
+      "absolute_error": 1.9138928822348156e-33
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0014337448559670783,
+      "reference_probability": 0.0014337448559670902,
+      "absolute_error": 1.1926223897340549e-17
+    },
+    {
+      "occupation": [
+        0,
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.275735345462891e-33,
+      "absolute_error": 7.275735345462891e-33
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        0,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.148932582861331e-34,
+      "absolute_error": 6.148932582861331e-34
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        0,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.582999059107347e-35,
+      "absolute_error": 1.582999059107347e-35
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        0,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0010288065843621398,
+      "reference_probability": 0.001028806584362139,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        0,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.01851851851851852,
+      "reference_probability": 0.018518518518518517,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        0,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.150094165701193e-37,
+      "absolute_error": 8.150094165701193e-37
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        0,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.1444935273501266e-33,
+      "absolute_error": 2.1444935273501266e-33
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        1,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.1347438799937816e-34,
+      "absolute_error": 1.1347438799937816e-34
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        1,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.002551440329218108,
+      "reference_probability": 0.0025514403292181114,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        1,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.2168256130707247e-34,
+      "absolute_error": 2.2168256130707247e-34
+    },
+    {
+      "occupation": [
+        0,
+        4,
+        2,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0058880658436214,
+      "reference_probability": 0.005888065843621444,
+      "absolute_error": 4.423544863740858e-17
+    },
+    {
+      "occupation": [
+        0,
+        5,
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.972883787547954e-33,
+      "absolute_error": 8.972883787547954e-33
+    },
+    {
+      "occupation": [
+        0,
+        5,
+        0,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.243552922347046e-35,
+      "absolute_error": 7.243552922347046e-35
+    },
+    {
+      "occupation": [
+        0,
+        5,
+        0,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.3913630142808177e-33,
+      "absolute_error": 2.3913630142808177e-33
+    },
+    {
+      "occupation": [
+        0,
+        5,
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.359343429037945e-34,
+      "absolute_error": 3.359343429037945e-34
+    },
+    {
+      "occupation": [
+        0,
+        6,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.015432098765432098,
+      "reference_probability": 0.015432098765432079,
+      "absolute_error": 1.9081958235744878e-17
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.7126021104735326e-34,
+      "absolute_error": 2.7126021104735326e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        4
+      ],
+      "actual_probability": 0.003045267489711934,
+      "reference_probability": 0.0030452674897119385,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        0,
+        2,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.648549909350349e-35,
+      "absolute_error": 7.648549909350349e-35
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        0,
+        3,
+        2
+      ],
+      "actual_probability": 0.0015226337448559666,
+      "reference_probability": 0.0015226337448559703,
+      "absolute_error": 3.686287386450715e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        0,
+        4,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.024708101613482e-36,
+      "absolute_error": 8.024708101613482e-36
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2410179940354442e-34,
+      "absolute_error": 1.2410179940354442e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7228828868551993e-34,
+      "absolute_error": 1.7228828868551993e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        3
+      ],
+      "actual_probability": 0.0015637860082304527,
+      "reference_probability": 0.0015637860082304506,
+      "absolute_error": 2.168404344971009e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.4074124304840452e-34,
+      "absolute_error": 2.4074124304840452e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        1,
+        3,
+        1
+      ],
+      "actual_probability": 0.010452674897119346,
+      "reference_probability": 0.01045267489711934,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        1,
+        4,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9359608295142534e-34,
+      "absolute_error": 1.9359608295142534e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        2,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0562522038748747e-33,
+      "absolute_error": 1.0562522038748747e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        2,
+        1,
+        2
+      ],
+      "actual_probability": 0.020864197530864194,
+      "reference_probability": 0.020864197530864194,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.890056499420715e-35,
+      "absolute_error": 4.890056499420715e-35
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        2,
+        3,
+        0
+      ],
+      "actual_probability": 0.0025102880658436216,
+      "reference_probability": 0.002510288065843625,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.1259668555076417e-34,
+      "absolute_error": 1.1259668555076417e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        3,
+        1,
+        1
+      ],
+      "actual_probability": 0.003045267489711934,
+      "reference_probability": 0.003045267489711931,
+      "absolute_error": 3.0357660829594124e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        3,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7579126185097035e-34,
+      "absolute_error": 1.7579126185097035e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        4,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2162448216507933e-35,
+      "absolute_error": 1.2162448216507933e-35
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        4,
+        1,
+        0
+      ],
+      "actual_probability": 0.0015637860082304527,
+      "reference_probability": 0.001563786008230452,
+      "absolute_error": 6.505213034913027e-19
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3090305090756992e-34,
+      "absolute_error": 1.3090305090756992e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        4
+      ],
+      "actual_probability": 0.005040329218106997,
+      "reference_probability": 0.005040329218107005,
+      "absolute_error": 7.806255641895632e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.1876567990387952e-33,
+      "absolute_error": 1.1876567990387952e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        0,
+        2,
+        2
+      ],
+      "actual_probability": 0.0021333333333333326,
+      "reference_probability": 0.002133333333333337,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        0,
+        3,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.222237291452134e-35,
+      "absolute_error": 7.222237291452134e-35
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        0,
+        4,
+        0
+      ],
+      "actual_probability": 0.0014518518518518517,
+      "reference_probability": 0.001451851851851862,
+      "absolute_error": 1.0191500421363742e-17
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        3
+      ],
+      "actual_probability": 0.0007539094650205758,
+      "reference_probability": 0.0007539094650205719,
+      "absolute_error": 3.903127820947816e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.733336949948512e-33,
+      "absolute_error": 1.733336949948512e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "actual_probability": 0.017066666666666667,
+      "reference_probability": 0.017066666666666667,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        1,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5077212817542136e-34,
+      "absolute_error": 2.5077212817542136e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        2,
+        0,
+        2
+      ],
+      "actual_probability": 0.00628641975308642,
+      "reference_probability": 0.006286419753086429,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        2,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.4074124304840452e-34,
+      "absolute_error": 2.4074124304840452e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        2,
+        2,
+        0
+      ],
+      "actual_probability": 0.0021333333333333326,
+      "reference_probability": 0.002133333333333341,
+      "absolute_error": 8.239936510889834e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        3,
+        0,
+        1
+      ],
+      "actual_probability": 0.005040329218106997,
+      "reference_probability": 0.005040329218107006,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        3,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.1716073828355684e-33,
+      "absolute_error": 1.1716073828355684e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "actual_probability": 0.0007539094650205758,
+      "reference_probability": 0.0007539094650205703,
+      "absolute_error": 5.5294310796760726e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.345696425678021e-34,
+      "absolute_error": 8.345696425678021e-34
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.00019911111111111117,
+      "reference_probability": 0.00019911111111111602,
+      "absolute_error": 4.851804721872632e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.092601131822876e-33,
+      "absolute_error": 4.092601131822876e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 8.533333333333334e-05,
+      "reference_probability": 8.533333333333674e-05,
+      "absolute_error": 3.40168431617327e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5037089277034063e-33,
+      "absolute_error": 2.5037089277034063e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 5.6888888888888915e-05,
+      "reference_probability": 5.688888888889294e-05,
+      "absolute_error": 4.025100565352435e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.0074178554068125e-33,
+      "absolute_error": 5.0074178554068125e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.2740809054582996e-33,
+      "absolute_error": 3.2740809054582996e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 2.8444444444444454e-05,
+      "reference_probability": 2.8444444444445813e-05,
+      "absolute_error": 1.3586408473958977e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.365441207277735e-33,
+      "absolute_error": 4.365441207277735e-33
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        3,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.007009282633744857,
+      "reference_probability": 0.007009282633744808,
+      "absolute_error": 4.9439619065339e-17
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        3,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.8488927466117464e-32,
+      "absolute_error": 1.8488927466117464e-32
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        3,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0015052800000000001,
+      "reference_probability": 0.0015052799999999966,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        3,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.02173544823045268,
+      "reference_probability": 0.021735448230452675,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        3,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.1056834058633778e-32,
+      "absolute_error": 2.1056834058633778e-32
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        3,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 7.601251028806582e-05,
+      "reference_probability": 7.60125102880639e-05,
+      "absolute_error": 1.9244588561617704e-18
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        4,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.108650548026104e-32,
+      "absolute_error": 4.108650548026104e-32
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        4,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 7.969185185185185e-05,
+      "reference_probability": 7.96918518518627e-05,
+      "absolute_error": 1.0842021724855044e-17
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        4,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.573840876841767e-32,
+      "absolute_error": 6.573840876841767e-32
+    },
+    {
+      "occupation": [
+        1,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0004522530133333333,
+      "reference_probability": 0.0004522530133333551,
+      "absolute_error": 2.179246366695864e-17
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        4
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.541879477074784e-35,
+      "absolute_error": 9.541879477074784e-35
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        3
+      ],
+      "actual_probability": 0.01390946502057613,
+      "reference_probability": 0.013909465020576146,
+      "absolute_error": 1.5612511283791264e-17
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.6782463289134994e-34,
+      "absolute_error": 2.6782463289134994e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        0,
+        3,
+        1
+      ],
+      "actual_probability": 0.005020576131687243,
+      "reference_probability": 0.005020576131687248,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        0,
+        4,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.8306365356805762e-34,
+      "absolute_error": 1.8306365356805762e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.711823732814137e-34,
+      "absolute_error": 8.711823732814137e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.269024099196858e-35,
+      "absolute_error": 4.269024099196858e-35
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.708338984294551e-34,
+      "absolute_error": 2.708338984294551e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        1,
+        3,
+        0
+      ],
+      "actual_probability": 0.003045267489711934,
+      "reference_probability": 0.003045267489711932,
+      "absolute_error": 2.168404344971009e-18
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.4379752836054243e-34,
+      "absolute_error": 2.4379752836054243e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.0221258473232646e-33,
+      "absolute_error": 3.0221258473232646e-33
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.7083389842945504e-34,
+      "absolute_error": 2.7083389842945504e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        3,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0632738234637865e-34,
+      "absolute_error": 1.0632738234637865e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        3,
+        1,
+        0
+      ],
+      "actual_probability": 0.01390946502057613,
+      "reference_probability": 0.013909465020576125,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        0,
+        4,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9760843700223203e-34,
+      "absolute_error": 1.9760843700223203e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0041909465020576134,
+      "reference_probability": 0.004190946502057625,
+      "absolute_error": 1.1275702593849246e-17
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2037062152420226e-34,
+      "absolute_error": 1.2037062152420226e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.004266666666666667,
+      "reference_probability": 0.004266666666666659,
+      "absolute_error": 7.806255641895632e-18
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.2098832406453937e-34,
+      "absolute_error": 3.2098832406453937e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.747385958636585e-33,
+      "absolute_error": 2.747385958636585e-33
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2037062152420224e-33,
+      "absolute_error": 1.2037062152420224e-33
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.004266666666666667,
+      "reference_probability": 0.004266666666666667,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.8975708838925165e-32,
+      "absolute_error": 1.8975708838925165e-32
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.703719777548945e-34,
+      "absolute_error": 7.703719777548945e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        1,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0041909465020576134,
+      "reference_probability": 0.004190946502057622,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.85185988877447e-33,
+      "absolute_error": 3.85185988877447e-33
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 5.6888888888888874e-05,
+      "reference_probability": 5.688888888888979e-05,
+      "absolute_error": 9.147955830346444e-19
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        2,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.259272319258516e-34,
+      "absolute_error": 6.259272319258516e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        2,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.851859888774472e-34,
+      "absolute_error": 3.851859888774472e-34
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.00039822222222222223,
+      "reference_probability": 0.0003982222222222238,
+      "absolute_error": 1.5720931501039814e-18
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        2,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9259299443872362e-33,
+      "absolute_error": 1.9259299443872362e-33
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        3,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.00015202502057613218,
+      "reference_probability": 0.00015202502057613102,
+      "absolute_error": 1.1655173354219173e-18
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        3,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.6434602192104417e-32,
+      "absolute_error": 1.6434602192104417e-32
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        3,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.014018565267489715,
+      "reference_probability": 0.014018565267489631,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "occupation": [
+        1,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.573840876841767e-32,
+      "absolute_error": 6.573840876841767e-32
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.417443315611062e-34,
+      "absolute_error": 2.417443315611062e-34
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.002345679012345679,
+      "reference_probability": 0.002345679012345678,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.800940116117427e-34,
+      "absolute_error": 6.800940116117427e-34
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.005226337448559671,
+      "reference_probability": 0.00522633744855967,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.9658689292932736e-34,
+      "absolute_error": 5.9658689292932736e-34
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.557050777192843e-34,
+      "absolute_error": 6.557050777192843e-34
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.469478532207461e-34,
+      "absolute_error": 2.469478532207461e-34
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.81482486096809e-35,
+      "absolute_error": 4.81482486096809e-35
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.004567901234567901,
+      "reference_probability": 0.0045679012345679,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        0,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.582676086803795e-35,
+      "absolute_error": 8.582676086803795e-35
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.001130864197530864,
+      "reference_probability": 0.0011308641975308607,
+      "absolute_error": 3.2526065174565133e-18
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.018531076210112e-34,
+      "absolute_error": 6.018531076210112e-34
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        1,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.008533333333333334,
+      "reference_probability": 0.008533333333333339,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.3169594035482866e-33,
+      "absolute_error": 3.3169594035482866e-33
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.1425970631307995e-33,
+      "absolute_error": 2.1425970631307995e-33
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.007560493827160494,
+      "reference_probability": 0.00756049382716049,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5037089277034063e-33,
+      "absolute_error": 2.5037089277034063e-33
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 2.844444444444445e-05,
+      "reference_probability": 2.8444444444447358e-05,
+      "absolute_error": 2.9070170749767588e-18
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.8148248609680896e-33,
+      "absolute_error": 4.8148248609680896e-33
+    },
+    {
+      "occupation": [
+        1,
+        2,
+        3,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.010867724115226341,
+      "reference_probability": 0.010867724115226319,
+      "absolute_error": 2.2551405187698492e-17
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.65992693291926e-34,
+      "absolute_error": 5.65992693291926e-34
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        0,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.003045267489711934,
+      "reference_probability": 0.0030452674897119385,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        0,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.422854993992472e-35,
+      "absolute_error": 7.422854993992472e-35
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        0,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3654542379151692e-34,
+      "absolute_error": 1.3654542379151692e-34
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        0,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0015637860082304527,
+      "reference_probability": 0.001563786008230454,
+      "absolute_error": 1.3010426069826053e-18
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        0,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.6250033905767303e-34,
+      "absolute_error": 1.6250033905767303e-34
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        1,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.005040329218106997,
+      "reference_probability": 0.005040329218106981,
+      "absolute_error": 1.6479873021779667e-17
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        1,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.4267088537161175e-33,
+      "absolute_error": 5.4267088537161175e-33
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        1,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0007539094650205758,
+      "reference_probability": 0.0007539094650205728,
+      "absolute_error": 3.0357660829594124e-18
+    },
+    {
+      "occupation": [
+        1,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9644485432749803e-32,
+      "absolute_error": 1.9644485432749803e-32
+    },
+    {
+      "occupation": [
+        1,
+        4,
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.4518783443346745e-34,
+      "absolute_error": 3.4518783443346745e-34
+    },
+    {
+      "occupation": [
+        1,
+        4,
+        0,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.01390946502057613,
+      "reference_probability": 0.013909465020576129,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        1,
+        4,
+        0,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7854975526089995e-34,
+      "absolute_error": 1.7854975526089995e-34
+    },
+    {
+      "occupation": [
+        1,
+        4,
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0041909465020576134,
+      "reference_probability": 0.004190946502057633,
+      "absolute_error": 1.9949319973733282e-17
+    },
+    {
+      "occupation": [
+        1,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.231908572518422e-34,
+      "absolute_error": 8.231908572518422e-34
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "actual_probability": 0.005216460905349797,
+      "reference_probability": 0.005216460905349784,
+      "absolute_error": 1.3010426069826053e-17
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7989226776740167e-35,
+      "absolute_error": 1.7989226776740167e-35
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "actual_probability": 0.00047654320987654313,
+      "reference_probability": 0.00047654320987654356,
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        0,
+        3,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7052504715928652e-35,
+      "absolute_error": 1.7052504715928652e-35
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "actual_probability": 0.008533333333333332,
+      "reference_probability": 0.008533333333333329,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        3
+      ],
+      "actual_probability": 0.008100411522633747,
+      "reference_probability": 0.008100411522633742,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.115751414778595e-35,
+      "absolute_error": 5.115751414778595e-35
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      "actual_probability": 0.006404938271604941,
+      "reference_probability": 0.006404938271604935,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        1,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.356607962595322e-34,
+      "absolute_error": 2.356607962595322e-34
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        2
+      ],
+      "actual_probability": 0.00031358024691357985,
+      "reference_probability": 0.0003135802469135834,
+      "absolute_error": 3.5236570605778894e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.046300565911438e-34,
+      "absolute_error": 2.046300565911438e-34
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "actual_probability": 0.0038098765432098766,
+      "reference_probability": 0.0038098765432098775,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        3,
+        0,
+        1
+      ],
+      "actual_probability": 0.005216460905349797,
+      "reference_probability": 0.0052164609053497865,
+      "absolute_error": 1.0408340855860843e-17
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        3,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.516057104774582e-34,
+      "absolute_error": 1.516057104774582e-34
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "actual_probability": 0.008100411522633747,
+      "reference_probability": 0.008100411522633738,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0271626370065257e-33,
+      "absolute_error": 1.0271626370065257e-33
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.009756444444444443,
+      "reference_probability": 0.00975644444444444,
+      "absolute_error": 1.734723475976807e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.8518598887744726e-34,
+      "absolute_error": 3.8518598887744726e-34
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.004181333333333333,
+      "reference_probability": 0.00418133333333333,
+      "absolute_error": 2.6020852139652106e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.7408601137937746e-32,
+      "absolute_error": 1.7408601137937746e-32
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0027875555555555557,
+      "reference_probability": 0.002787555555555555,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.540743955509789e-33,
+      "absolute_error": 1.540743955509789e-33
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5037089277034063e-33,
+      "absolute_error": 2.5037089277034063e-33
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.0013937777777777779,
+      "reference_probability": 0.0013937777777777852,
+      "absolute_error": 7.37257477290143e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        1,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.456801509097168e-33,
+      "absolute_error": 5.456801509097168e-33
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0005422735802469138,
+      "reference_probability": 0.0005422735802468976,
+      "absolute_error": 1.6154612370034016e-17
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        2,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.162975822039156e-33,
+      "absolute_error": 6.162975822039156e-33
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.002030968888888889,
+      "reference_probability": 0.0020309688888888802,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        2,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0008893708641975295,
+      "reference_probability": 0.000889370864197536,
+      "absolute_error": 6.5052130349130266e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.933347799794049e-33,
+      "absolute_error": 6.933347799794049e-33
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.008949289876543209,
+      "reference_probability": 0.008949289876543216,
+      "absolute_error": 6.938893903907228e-18
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        3,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.6434602192104412e-32,
+      "absolute_error": 1.6434602192104412e-32
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.002676053333333333,
+      "reference_probability": 0.0026760533333332983,
+      "absolute_error": 3.469446951953614e-17
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        2,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.009372194133333333,
+      "reference_probability": 0.009372194133333215,
+      "absolute_error": 1.1796119636642288e-16
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.00020905349794238655,
+      "reference_probability": 0.00020905349794238826,
+      "absolute_error": 1.7076184216646695e-18
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.447456723828532e-33,
+      "absolute_error": 1.447456723828532e-33
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.007619753086419753,
+      "reference_probability": 0.007619753086419758,
+      "absolute_error": 4.336808689942018e-18
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.0864241064195054e-34,
+      "absolute_error": 2.0864241064195054e-34
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.093145521666159e-33,
+      "absolute_error": 3.093145521666159e-33
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5557084815154666e-33,
+      "absolute_error": 2.5557084815154666e-33
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0009530864197530861,
+      "reference_probability": 0.0009530864197530896,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.651125277804494e-33,
+      "absolute_error": 7.651125277804494e-33
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.8148248609680905e-34,
+      "absolute_error": 4.8148248609680905e-34
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        0,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.00020905349794238655,
+      "reference_probability": 0.00020905349794238574,
+      "absolute_error": 8.131516293641283e-19
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.2037062152420224e-33,
+      "absolute_error": 1.2037062152420224e-33
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0027875555555555553,
+      "reference_probability": 0.002787555555555563,
+      "absolute_error": 7.806255641895632e-18
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.046300565911438e-34,
+      "absolute_error": 2.046300565911438e-34
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9259299443872362e-33,
+      "absolute_error": 1.9259299443872362e-33
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.019512888888888892,
+      "reference_probability": 0.019512888888888892,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.824090399073144e-34,
+      "absolute_error": 7.824090399073144e-34
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.01789857975308642,
+      "reference_probability": 0.01789857975308652,
+      "absolute_error": 1.0061396160665481e-16
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        2,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.162975822039156e-33,
+      "absolute_error": 6.162975822039156e-33
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.001084547160493827,
+      "reference_probability": 0.0010845471604938135,
+      "absolute_error": 1.3444106938820255e-17
+    },
+    {
+      "occupation": [
+        2,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.2869204384208834e-32,
+      "absolute_error": 3.2869204384208834e-32
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.012150617283950619,
+      "reference_probability": 0.012150617283950631,
+      "absolute_error": 1.214306433183765e-17
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.6400497182672562e-33,
+      "absolute_error": 1.6400497182672562e-33
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0032024691358024694,
+      "reference_probability": 0.0032024691358024686,
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.664296139388056e-34,
+      "absolute_error": 8.664296139388056e-34
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.4004700580587137e-34,
+      "absolute_error": 3.4004700580587137e-34
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.007824691358024691,
+      "reference_probability": 0.007824691358024697,
+      "absolute_error": 5.204170427930421e-18
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.3701185994992317e-32,
+      "absolute_error": 1.3701185994992317e-32
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0013937777777777776,
+      "reference_probability": 0.0013937777777777796,
+      "absolute_error": 1.951563910473908e-18
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.629649721936181e-34,
+      "absolute_error": 9.629649721936181e-34
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.00044468543209876503,
+      "reference_probability": 0.0004446854320987684,
+      "absolute_error": 3.3610267347050637e-18
+    },
+    {
+      "occupation": [
+        2,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.005216460905349797,
+      "reference_probability": 0.005216460905349791,
+      "absolute_error": 6.071532165918825e-18
+    },
+    {
+      "occupation": [
+        2,
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.9722797019460748e-33,
+      "absolute_error": 1.9722797019460748e-33
+    },
+    {
+      "occupation": [
+        2,
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.008100411522633747,
+      "reference_probability": 0.008100411522633756,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        2,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.7234645591486564e-33,
+      "absolute_error": 3.7234645591486564e-33
+    },
+    {
+      "occupation": [
+        2,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.00020905349794238655,
+      "reference_probability": 0.000209053497942383,
+      "absolute_error": 3.550762114890027e-18
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.8300470571690216e-33,
+      "absolute_error": 2.8300470571690216e-33
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "actual_probability": 0.0006309794238683129,
+      "reference_probability": 0.0006309794238683147,
+      "absolute_error": 1.8431436932253575e-18
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5679065925163143e-34,
+      "absolute_error": 2.5679065925163143e-34
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "actual_probability": 0.0002704197530864197,
+      "reference_probability": 0.0002704197530864192,
+      "absolute_error": 4.87890977618477e-19
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.11266290207691e-33,
+      "absolute_error": 4.11266290207691e-33
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "actual_probability": 0.00018027983539094654,
+      "reference_probability": 0.00018027983539094857,
+      "absolute_error": 2.032879073410321e-18
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.9691419975969892e-33,
+      "absolute_error": 2.9691419975969892e-33
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 6.483964146103694e-33,
+      "absolute_error": 6.483964146103694e-33
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "actual_probability": 9.013991769547328e-05,
+      "reference_probability": 9.013991769547407e-05,
+      "absolute_error": 7.860465750519907e-19
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.423875456688419e-34,
+      "absolute_error": 3.423875456688419e-34
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0009656283127572017,
+      "reference_probability": 0.0009656283127571943,
+      "absolute_error": 7.37257477290143e-18
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 9.276562565465186e-33,
+      "absolute_error": 9.276562565465186e-33
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0015052800000000001,
+      "reference_probability": 0.0015052800000000116,
+      "absolute_error": 1.1492543028346347e-17
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0007363371193415636,
+      "reference_probability": 0.0007363371193415685,
+      "absolute_error": 4.87890977618477e-18
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.108650548026104e-33,
+      "absolute_error": 4.108650548026104e-33
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0002352223868312756,
+      "reference_probability": 0.00023522238683127382,
+      "absolute_error": 1.7889335846010823e-18
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 0.0,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.006608213333333334,
+      "reference_probability": 0.006608213333333412,
+      "absolute_error": 7.806255641895632e-17
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.864213939581212e-34,
+      "absolute_error": 7.864213939581212e-34
+    },
+    {
+      "occupation": [
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.00041145868641975303,
+      "reference_probability": 0.0004114586864197153,
+      "absolute_error": 3.7730235602495554e-17
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.0913603018194337e-33,
+      "absolute_error": 1.0913603018194337e-33
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.00018027983539094645,
+      "reference_probability": 0.00018027983539094567,
+      "absolute_error": 7.860465750519907e-19
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5077212817542135e-35,
+      "absolute_error": 2.5077212817542135e-35
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.135813185032629e-34,
+      "absolute_error": 5.135813185032629e-34
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0012619588477366258,
+      "reference_probability": 0.0012619588477366277,
+      "absolute_error": 1.951563910473908e-18
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.4283980420872002e-33,
+      "absolute_error": 1.4283980420872002e-33
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.00047044477366255116,
+      "reference_probability": 0.0004704447736625425,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.622231866529366e-33,
+      "absolute_error": 4.622231866529366e-33
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0019312566255144034,
+      "reference_probability": 0.0019312566255144123,
+      "absolute_error": 8.890457814381136e-18
+    },
+    {
+      "occupation": [
+        3,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.6434602192104412e-32,
+      "absolute_error": 1.6434602192104412e-32
+    },
+    {
+      "occupation": [
+        3,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 4.365441207277735e-33,
+      "absolute_error": 4.365441207277735e-33
+    },
+    {
+      "occupation": [
+        3,
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 9.013991769547327e-05,
+      "reference_probability": 9.013991769547186e-05,
+      "absolute_error": 1.4094628242311558e-18
+    },
+    {
+      "occupation": [
+        3,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.3753135980775903e-33,
+      "absolute_error": 2.3753135980775903e-33
+    },
+    {
+      "occupation": [
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0003681685596707819,
+      "reference_probability": 0.00036816855967078036,
+      "absolute_error": 1.5178830414797062e-18
+    },
+    {
+      "occupation": [
+        3,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.429225262089495e-33,
+      "absolute_error": 3.429225262089495e-33
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "actual_probability": 0.004587712263374484,
+      "reference_probability": 0.004587712263374481,
+      "absolute_error": 3.469446951953614e-18
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 7.141990210435998e-34,
+      "absolute_error": 7.141990210435998e-34
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "actual_probability": 0.00442368,
+      "reference_probability": 0.0044236799999999975,
+      "absolute_error": 2.6020852139652106e-18
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "actual_probability": 0.009721463045267489,
+      "reference_probability": 0.009721463045267489,
+      "absolute_error": 0.0
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 8.024708101613483e-34,
+      "absolute_error": 8.024708101613483e-34
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "actual_probability": 0.005381375473251028,
+      "reference_probability": 0.00538137547325103,
+      "absolute_error": 2.6020852139652106e-18
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 1.283953296258158e-32,
+      "absolute_error": 1.283953296258158e-32
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.014497611851851852,
+      "reference_probability": 0.01449761185185184,
+      "absolute_error": 1.214306433183765e-17
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.135813185032629e-34,
+      "absolute_error": 5.135813185032629e-34
+    },
+    {
+      "occupation": [
+        4,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.015598114133333334,
+      "reference_probability": 0.015598114133333278,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "occupation": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.010762750946502055,
+      "reference_probability": 0.010762750946502071,
+      "absolute_error": 1.5612511283791264e-17
+    },
+    {
+      "occupation": [
+        4,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 5.135813185032629e-34,
+      "absolute_error": 5.135813185032629e-34
+    },
+    {
+      "occupation": [
+        4,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.009175424526748969,
+      "reference_probability": 0.009175424526748953,
+      "absolute_error": 1.5612511283791264e-17
+    },
+    {
+      "occupation": [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.670622856216967e-32,
+      "absolute_error": 2.670622856216967e-32
+    },
+    {
+      "occupation": [
+        4,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0048607315226337445,
+      "reference_probability": 0.004860731522633736,
+      "absolute_error": 8.673617379884035e-18
+    },
+    {
+      "occupation": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.311115933264683e-34,
+      "absolute_error": 2.311115933264683e-34
+    },
+    {
+      "occupation": [
+        5,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "actual_probability": 0.0018691413333333329,
+      "reference_probability": 0.0018691413333333379,
+      "absolute_error": 4.9873299934333204e-18
+    },
+    {
+      "occupation": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 3.697785493223493e-33,
+      "absolute_error": 3.697785493223493e-33
+    },
+    {
+      "occupation": [
+        5,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.003663517013333333,
+      "reference_probability": 0.003663517013333339,
+      "absolute_error": 6.071532165918825e-18
+    },
+    {
+      "occupation": [
+        5,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.0,
+      "reference_probability": 2.5679065925163146e-33,
+      "absolute_error": 2.5679065925163146e-33
+    },
+    {
+      "occupation": [
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_probability": 0.00011846548543209875,
+      "reference_probability": 0.00011846548543209601,
+      "absolute_error": 2.7376104855258987e-18
+    }
+  ]
+}
