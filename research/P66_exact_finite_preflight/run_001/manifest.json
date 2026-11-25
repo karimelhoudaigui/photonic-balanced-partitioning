@@ -1,0 +1,218 @@
+{
+  "schema_version": 2,
+  "claim_id": "P66-EXACT-FINITE-TINY-QUALIFICATION",
+  "repository": {
+    "commit": "88a0573907b503fe2b624d13920430353d27e779",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-x",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_p66_exact_finite_check.py",
+    "--junitxml=research/P66_exact_finite_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Nine authored tiny fixture functions validate exact complex rational arithmetic, first-nonzero-pivot inverse, ordered products/adjoints, independent four-mode permutation-sum permanent reference, both normalized Fock factorials, d2 single-bright PGF, four-mode scalar cuts/dark projector, serialization/exclusive output and five fixed native two-mode/two-photon HOM probabilities. No P66 main-family graph or grid is generated.",
+    "coefficient_domain": "Exact Fraction pairs Q(i); binary64 only for five local native HOM point amplitudes",
+    "conventions": "UNEXECUTED prospective fixtures. Matrices have at most4modes, native2photons/2modes. No production helper imports, sampler, random seed/draw, graph generator, K4/K6 point, full Fock law or optimizer. Both JUnit properties are written before native tolerance assertions, including completed observations on a query exception.",
+    "inputs": [
+      "Hardcoded matrices of dimension at most4, two-mode normalized Fock counts and d2 PGF only",
+      "HOM queries: input11->output11/20/02 and input20->output20/11; five numerical probabilities, no samples",
+      "Persistent root .venv Python3.11.15; native packages checked before calls; loaded module paths/hashes archived in JUnit"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "workers": 1,
+      "max_new_log_bytes": 4194304,
+      "max_new_scientific_bytes": 29360128,
+      "max_combined_log_scientific_bytes": 33554432,
+      "planned_logical_workspace_bytes": 268435456,
+      "planned_pytest_items": 9,
+      "max_fixture_modes": 4,
+      "native_fixture_modes": 2,
+      "native_fixture_photons": 2,
+      "native_point_queries": 5,
+      "main_family_graphs": 0,
+      "native_random_draws": 0,
+      "optimizer_steps": 0,
+      "failed_retries": 0,
+      "absolute_tolerance": 1e-12,
+      "relative_tolerance": 1e-07
+    },
+    "non_claims": [
+      "Qualification does not test any P66 main-family matrix/probability or establish its universal theorem",
+      "No QPU, DEV panel, random graph/count, native K4/K6 query, calibration or automatic main authorization",
+      "Tolerance agreement does not certify relative accuracy for absolute-dominated points or native physical sampling",
+      "Logical256MiB is a workspace plan, not a hard Darwin RSS or native import footprint guarantee",
+      "First failure stops qualification; resource/output/import failure is retained as inconclusive with zero retries"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "All fixtures are literal deterministic tiny matrices/counts; no RNG, seed or draw",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T21:26:29.956446+00:00",
+    "runtime_seconds": 28.553662,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "theory/P66_independent_bright_dark_audit.md",
+    "research/P67_exact_covariance_symmetry_obstruction.md",
+    "research/P66_exact_finite_check.py",
+    "tests/test_p66_exact_finite_check.py",
+    "research/P66_EXACT_FINITE_CHECK_CONTRACT.md",
+    "research/P66_exact_finite_preflight_contract.json",
+    "research/P66_exact_finite_execution_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "theory/P66_independent_bright_dark_audit.md",
+      "sha256": "7cb9a101155df7b1e9c5c7a219c3877e74b6246195952356801d86cb6cb973a9",
+      "sha256_after": "7cb9a101155df7b1e9c5c7a219c3877e74b6246195952356801d86cb6cb973a9"
+    },
+    {
+      "path": "research/P67_exact_covariance_symmetry_obstruction.md",
+      "sha256": "63f891ca6b03790024bbade59d275e8f115dfccc1fa17c9632aa7ca878c25cf8",
+      "sha256_after": "63f891ca6b03790024bbade59d275e8f115dfccc1fa17c9632aa7ca878c25cf8"
+    },
+    {
+      "path": "research/P66_exact_finite_check.py",
+      "sha256": "4eb143aae8255636e70732c6ab8971fa71df62f15e98daa6e370fc02d247978f",
+      "sha256_after": "4eb143aae8255636e70732c6ab8971fa71df62f15e98daa6e370fc02d247978f"
+    },
+    {
+      "path": "tests/test_p66_exact_finite_check.py",
+      "sha256": "76025610183aa7d90843ce6e9446d55a49fbb251b8117397516fc09d0bdb2f1f",
+      "sha256_after": "76025610183aa7d90843ce6e9446d55a49fbb251b8117397516fc09d0bdb2f1f"
+    },
+    {
+      "path": "research/P66_EXACT_FINITE_CHECK_CONTRACT.md",
+      "sha256": "7fa64f384a919522e4b55d7881d4419594665c9d5aeba5b217bce5423c1d7293",
+      "sha256_after": "7fa64f384a919522e4b55d7881d4419594665c9d5aeba5b217bce5423c1d7293"
+    },
+    {
+      "path": "research/P66_exact_finite_preflight_contract.json",
+      "sha256": "b390ef541f477742d8c0ab76b3d6ccb637aee46173219736382d42161fd29ba1",
+      "sha256_after": "b390ef541f477742d8c0ab76b3d6ccb637aee46173219736382d42161fd29ba1"
+    },
+    {
+      "path": "research/P66_exact_finite_execution_contract.json",
+      "sha256": "db6c81db428c3df3f9859c484bf6a4ab8c3303603cd2fb9876a3df7fa9aefa90",
+      "sha256_after": "db6c81db428c3df3f9859c484bf6a4ab8c3303603cd2fb9876a3df7fa9aefa90"
+    }
+  ],
+  "output_directory": "research/P66_exact_finite_preflight/run_001",
+  "declared_results": [
+    "research/P66_exact_finite_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P66_exact_finite_preflight/run_001/stdout.txt",
+      "sha256": "1977a0f8b4e3985748a928dc7a5265f6f13374ee29253df9a3a8a381679ab3fa",
+      "kind": "log"
+    },
+    {
+      "path": "research/P66_exact_finite_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P66_exact_finite_preflight/run_001/junit.xml",
+      "sha256": "dae0a9d38bff13a776ea8fc3d5513efce0cbd2d6db09ba026ae9e700faba9dea",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
