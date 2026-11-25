@@ -1,0 +1,9 @@
+...........                                                              [100%]
+=============================== warnings summary ===============================
+tests/test_p75c_gaussian_cf_six.py::test_two_mode_probability_three_fifths
+  tests/test_p75c_gaussian_cf_six.py:37: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_two_mode_probability_three_fifths(record_property):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/karimelhoudaigui/Desktop/pasqal/.local/p75-gaussian-cf/research/P75c_gaussian_cf_preflight/run_001/junit.xml -
+11 passed, 1 warning in 0.40s
