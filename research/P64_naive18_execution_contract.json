@@ -1,0 +1,112 @@
+{
+  "claim_id": "P64-N18-FOURTEEN-FIXED-POINTS-NAIVE-CHECK",
+  "binding_state": "CODE_ONLY_NOT_EXECUTED",
+  "mathematics": {
+    "assertion_tested": "At14prospectively frozen N18 occupation/phase points, compare the corrected normalized P64 kernel against a separately reconstructed dense-matrix local Perceval Naive permanent18 probability. Archive both engines,errors,times,all counts,all phase values and two independently reconstructed matrices per phase before comparison assertions. Independently compare all462 exact F6 source coefficients/weights by12^3 paired-quadratic products without production import, against pinned sealed P64 source data. Verify the all18-port12 anchor18!/18^18. No random count/phase draw, graph or optimizer.",
+    "coefficient_domain": "Exact Python integer pairs in Z[xi] for independent F6; exact Fraction phase inputs and P(M); binary64 complex matrices/probabilities/conditioning; local native permanent_cx numeric reference; measured CPU/wall clocks",
+    "conventions": "Ideal lossless identical-photon source1^18,ports a*6+i,positive F3/F6,output V[[3,-4],[4,3]]/5 on0,6. EXACT2phase arrays: allzero and theta[b,i]=(5*(b-1)+i)/11 for b1/2,i1..5,all gauges0. Seven prospective complete occupations/left rotations in spec,phase-major order. P64 exact P(M) reachability before division,then audited conditional/project methods with normalized p/fsum(probs). Independent dense matrix builds F3/F6/phase/V without production entry/cache helpers. NaiveBackend.prob_amplitude calls local exqalibur.permanent_cx with both Fock factorials. No RNG or samples.",
+    "inputs": [
+      "Two exact prospective phase arrays and seven literal full count vectors in spec; no favorable selection or replacement",
+      "SHA-pinned P64 corrected source and sealed462-row exact source table/manifest from4ee15ab",
+      "Independent dense matrix factorization; independent paired-quadratic F6 source algebra"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_log_bytes": 33554432,
+      "max_scientific_output_bytes": 33554432,
+      "logical_memory_plan_bytes": 268435456,
+      "phase_arrays": 2,
+      "occupations": 7,
+      "deterministic_N18_points": 14,
+      "full_N18_enumerations": 0,
+      "native_random_draws": 0,
+      "graphs": 0,
+      "training_steps": 0,
+      "failed_retries": 0,
+      "source_polynomial_products": 1728,
+      "source_rows": 462,
+      "conditional_width_upper_bound": 6400,
+      "transition_entries_upper_bound": 130340,
+      "absolute_tolerance": 1e-12,
+      "relative_tolerance": 1e-7,
+      "matrix_tolerance": 5e-12,
+      "mass_tolerance": 2e-10
+    },
+    "non_claims": [
+      "Fourteen predetermined N18 point probabilities cannot establish the complete PNR law, a global total-variation bound, optimizer trajectory equality at finite precision, or an optimization/hardware/runtime advantage",
+      "Mixed tolerance is1e-12+1e-7*max(p64,pNaive). Both absolute and relative errors are archived; absolute-dominated points do not certify relative precision, including rare probabilities and zeros",
+      "No graph, optimum, seed search, random phase/count draw, native18 calibration, heldout opening, paper edit or QPU action",
+      "The independent exact F6 paired polynomial compares all462 coefficients/weights against previously sealed data; it is one component, not an independent physical fullN18 experiment",
+      "Native backend and rounded P64 are numerical engines, not interval proofs or literal discrete-PRNG-law certificates",
+      "CPU60/wall90/env/native1/log32MiB/scientific32MiB/logical256MiB,one worker,first failure retained and zero retries. Logical bytes are not hard Darwin RSS/affinity enforcement; no cap/occupation/angle/tolerance change after data"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P64_naive18_probability_check.py",
+    "research/P64_independent_F6_pair_source.py",
+    "research/P64_naive18_probability_spec.json",
+    "tests/test_p64_naive18_probability_check.py",
+    "research/P64_NAIVE18_POINT_COMPARISON_CONTRACT.md",
+    "research/P64_naive18_preflight_contract.json",
+    "research/P64_naive18_execution_contract.json",
+    "research/P64_structured_sampler.py",
+    "theory/P64_fixed_phase_complete_structured_sampler.md",
+    "research/P64_IMPLEMENTATION_CONTRACT.md",
+    "research/P64_qualification_contract.json",
+    "research/P64_qualification/run_001/data/source_table.json",
+    "research/P64_qualification/run_001/manifest.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "No random draw; only deterministic coefficients,phases,selected probabilities",
+    "seed": null
+  },
+  "resource_note": "CODE-ONLY. ROOT full-source/input/cost/projection review and a separately allocated exclusive numerical slot are prerequisites. No import,collection,qualification,probability query or main is authorized by this file. Bounded runner emits actual v2 input hashes/status/result hashes after a new authorized run. No native18 warmup/canary/calibration. Main14queries,not a complete18-mode PNR table. Source/cache/import/setup/eachquery timing is paid inside this complete diagnostic boundary,not an optimizer comparison. No hard native RSS guarantee.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P64_naive18_probability_check.py",
+    "--spec",
+    "research/P64_naive18_probability_spec.json",
+    "--output",
+    "experiments/P64_naive18_probability/run_001/data"
+  ],
+  "planned_results": [
+    "experiments/P64_naive18_probability/run_001/data/independent_source.json",
+    "experiments/P64_naive18_probability/run_001/data/matrices_theta_zero.json",
+    "experiments/P64_naive18_probability/run_001/data/matrices_theta_ten_rationals.json",
+    "experiments/P64_naive18_probability/run_001/data/points.jsonl",
+    "experiments/P64_naive18_probability/run_001/data/failure.json",
+    "experiments/P64_naive18_probability/run_001/data/summary.json"
+  ]
+}

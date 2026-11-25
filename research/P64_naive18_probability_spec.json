@@ -1,0 +1,498 @@
+{
+  "phase": "P64_NAIVE18_FIXED_POINT_CHECK",
+  "N": 18,
+  "d": 6,
+  "phase_arrays": [
+    {
+      "id": "theta_zero",
+      "exact": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "id": "theta_ten_rationals",
+      "exact": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/11",
+          "2/11",
+          "3/11",
+          "4/11",
+          "5/11"
+        ],
+        [
+          "0",
+          "6/11",
+          "7/11",
+          "8/11",
+          "9/11",
+          "10/11"
+        ]
+      ]
+    }
+  ],
+  "occupations": [
+    {
+      "id": "all18_port0",
+      "triples": [
+        [
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "counts": [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "CF_forbidden",
+      "triples": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "M666000",
+      "triples": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "counts": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "M444222_left_rotations",
+      "triples": [
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "counts": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "M822222_left_cycle",
+      "triples": [
+        [
+          3,
+          3,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "counts": [
+        3,
+        1,
+        1,
+        0,
+        1,
+        1,
+        3,
+        1,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "M660006",
+      "triples": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "counts": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "all18_port12_flat_anchor",
+      "triples": [
+        [
+          0,
+          0,
+          18
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "point_order": "phase_major_then_occupation_order",
+  "rotation_convention": "LEFT; after(3,3,2), colors1..5 use (i-1)%3 on(1,1,0)",
+  "points": 14,
+  "source": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "output_port_order": "a*6+i",
+  "absolute_tolerance": 1e-12,
+  "relative_tolerance": 1e-7,
+  "comparison": "abs_error<=absolute_tolerance+relative_tolerance*max(p64,pNaive)",
+  "matrix_tolerance": 5e-12,
+  "guard_mass_tolerance": 2e-10,
+  "independent_F6_products": 1728,
+  "primary_source_table": "research/P64_qualification/run_001/data/source_table.json",
+  "primary_source_sha256": "e02157b2990fa1eadef2d27cefe4f4817f6ff92a205ff67763d2365728492a75",
+  "primary_manifest": "research/P64_qualification/run_001/manifest.json",
+  "primary_manifest_sha256": "28e0bbcfcead8f1d84aa5a79b494464c246ab3b6f851e386777953c4b8a5fe01",
+  "P64_source_sha256": "af2b016b9ce5dd71919a8745d21c7e7f363a1588a089f697770a29d5b9353543",
+  "flat_anchor_probability": "18!/18^18",
+  "native_random_draws": 0,
+  "graphs": 0,
+  "optimum_used": false,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_log_bytes": 33554432,
+  "maximum_scientific_output_bytes": 33554432,
+  "planned_logical_workspace_bytes": 268435456,
+  "failed_retries": 0
+}
