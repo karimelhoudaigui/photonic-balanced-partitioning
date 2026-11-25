@@ -19,8 +19,11 @@ Let R=G_even G_odd, where the even layer acts on(0,1),(2,3),... and the odd
 layer on(1,2),(3,4),... . This product order is fixed. Use only R=I and
 R(pi/4,0),R(pi/4,pi/2). V=E R keeps projector P and row mean mu EXACTLY fixed,
 but changes q=|V|^2 and higher count correlations. An isolated pi/4 pair maps
-|1,1> to (exp(-i phi)|2,0>-exp(i phi)|0,2>)/sqrt(2), up to convention/global
-phase; the full overlapping layers are not assumed to factor into such pairs.
+|1,1> to (-exp(i phi)|2,0>+exp(-i phi)|0,2>)/sqrt(2), under U[output,input]
+and the normalized Fock convention. The full overlapping layers do not factor
+into such pairs. This sign convention was corrected after independent reading,
+before any P49 execution; the two declared phases0/pi2 and all policies stay
+unchanged (the earlier formula agrees at these two values up to global phase).
 This is established HOM physics, not a new theorem or a guaranteed cut gain.
 
 Four bases, in order: Fourier_blind without source mixing; spectral E; spectral
