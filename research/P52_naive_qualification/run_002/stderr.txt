@@ -1,0 +1,49 @@
+/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+  warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+  warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+  warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+  warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+/Users/karimelhoudaigui/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/matplotlib-t0slz02x because there was an issue with the default path (/Users/karimelhoudaigui/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/karimelhoudaigui/.cache/fontconfig
+	/Users/karimelhoudaigui/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+  warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+  warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_replication.py", line 329, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_replication.py", line 321, in main
+    write_json(output / "report.json", report)
+  File "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/research/P52_naive_replication.py", line 106, in write_json
+    path.write_text(json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
