@@ -1,0 +1,96 @@
+{
+  "claim_id": "P48-B-INDEPENDENT-INTEGRATION-PREFLIGHT",
+  "mathematics": {
+    "assertion_tested": "Twenty-two integration fixtures: independent Fock/labeled marginals and covariance, exact small phase assignments, species4+1, vacuum/source-basis rotations, carried spectral marks/labels, mu0/mu1, occupied/boundary/vacuum gap cases, explicit probability repairs, PIT/Gaussian factor variance, decoder/rounding budgets, retained numerical case local Clifford call and continuous phase/sphere production interfaces; rerun26 already independently qualified coherent helper fixtures.",
+    "coefficient_domain": "Complex128/float64 isometries and vacuum completion; exact Fraction representation/explicit tiny row-mass repairs; Decimal80 marginal arithmetic; integer graph cuts",
+    "conventions": "No DEV graph outcomes or optimization performance estimates. Every finite graph, root assignment and expected physics law is fixed in test sources. Root/physics static review must precede sole-slot execution. Full repository checks still required before integration.",
+    "inputs": [
+      "tests/test_p48_spectral_pit.py fixed six-mode graph,10-mode species fixture, deterministic spectral marks and permutations",
+      "Full Fock groups at most4 photons, phase roots4 at r3, source/vacuum boundary fixtures",
+      "tests/test_p48_coherent_marginals.py 24 exact Fraction references plus2 validation cases"
+    ],
+    "bounds": {
+      "maximum_full_fock_group_photons": 4,
+      "maximum_enumerated_modes": 10,
+      "maximum_phase_assignments": 64,
+      "maximum_decoder_modes": 34,
+      "planned_tests": 48,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No DEV experiment, optimization result or sampler-distribution certification from one sample",
+      "No general theorem from finite tests",
+      "No interval numerical certificate",
+      "No claim full repository suite has passed"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_spectral_pit_spec.json",
+    "research/P48_spectral_pit_contract.md",
+    "research/P48_spectral_pit_execution_contract.json",
+    "research/P48_spectral_pit_preflight_contract.json",
+    "tests/test_p48_spectral_pit.py",
+    "research/P48_coherent_marginals.py",
+    "tests/test_p48_coherent_marginals.py",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Fixed integration seeds and role-separated local PCG64/exqalibur; exact finite helper fixtures use no randomness",
+    "seed": [
+      480080,
+      480081,
+      480082,
+      480083,
+      480084,
+      480085
+    ]
+  },
+  "resource_note": "No execution until exact-hash root/physics review and sole numerical slot; preflight must PASS first. Bounded runner CPU60/wall90/thread1/log32MiB, script checks data cap32MiB per graph, arrays256MiB planned not Darwin hard memory. No automatic retry or output replacement.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p48_spectral_pit.py",
+    "tests/test_p48_coherent_marginals.py",
+    "--junitxml=research/P48_spectral_pit_preflight/run_001/junit.xml"
+  ]
+}
