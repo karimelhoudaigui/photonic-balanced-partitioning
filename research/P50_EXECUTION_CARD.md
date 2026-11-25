@@ -133,7 +133,8 @@ q_i, construct the known single-mode B PGF
 
     G_i(z)=sum_(h=0)^r h! e_h(q_i) (z-1)^h.
 
-Draw each n_i independently from these r+1 coefficients, then use the same
+Draw each n_i independently from the r+1 probabilities [z^t]G_i(z), AFTER
+expanding (z-1)^h (the h!e_h themselves are NOT probabilities), then use the same
 H(n-mu)+beta*zeta/topK. Tables/CDF setup and all source work belong ONLY to
 this classical arm; none enter B's cost. Import the existing Decimal80/Fraction
 row/PGF helper unchanged, save normalization/roundoff repairs, and test small
