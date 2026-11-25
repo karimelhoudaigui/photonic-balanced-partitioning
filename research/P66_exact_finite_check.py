@@ -257,7 +257,9 @@ def digest(path):
 
 def native_api():
     """Local point-amplitude backend only; no source, seed or sampler created."""
-    persistent_interpreter()
+    # main() enforces the experiment's contracted interpreter. Keep this
+    # loader usable by portable native-physics tests; package/thread guards
+    # and observed interpreter provenance still apply below.
     versions = {name: importlib.metadata.version(name) for name in
                 ("numpy", "scipy", "perceval-quandela", "exqalibur")}
     if versions != {"numpy": "2.4.6", "scipy": "1.17.1",
