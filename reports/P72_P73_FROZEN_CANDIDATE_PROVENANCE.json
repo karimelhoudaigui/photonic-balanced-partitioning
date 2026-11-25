@@ -1,0 +1,24 @@
+[
+  {
+    "source": ".local/p66-dark-audit/research/P72_low_rank_Hamiltonian_finite_time_transport.md",
+    "destination": "research/P72_low_rank_Hamiltonian_finite_time_transport.md",
+    "sha256": "f48f7cd39d67788635e8da60d84ebae7125a059f51a48079c49486bde035b76f",
+    "bytes": 13476,
+    "byte_identical": true,
+    "original_index_preserved": true,
+    "root_full_read": "PENDING",
+    "independent_derivation": "FROZEN_SEPARATELY_RECONCILIATION_PENDING",
+    "numerical_execution": false
+  },
+  {
+    "source": ".local/p66-dark-audit/research/P73_complementary_pair_source_route.md",
+    "destination": "research/P73_complementary_pair_source_route.md",
+    "sha256": "97392ff30ae1b25ad1399c8f08bbea064a16f13b86b62c21cc99bf484d1d33a0",
+    "bytes": 18429,
+    "byte_identical": true,
+    "original_index_preserved": true,
+    "root_full_read": "PENDING",
+    "independent_derivation": "FROZEN_SEPARATELY_RECONCILIATION_PENDING",
+    "numerical_execution": false
+  }
+]
