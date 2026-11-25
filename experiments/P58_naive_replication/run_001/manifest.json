@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "claim_id": "P58-COMPLETE-NAIVE-PERMANENT-REPLICATION",
+  "repository": {
+    "commit": "66d5dcf2a986595ac9d1b7fe0615dbaf4f6465de",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P58_naive_replication.py",
+    "--mode",
+    "full",
+    "--output",
+    "experiments/P58_naive_replication/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "All255 fixed-angle source laws/157183 native complex amplitudes corroborated against the exact ring archive, then all6435 hypergeometric tie scalars and127 exact base16 species means/minimum/status independently reconstructed",
+    "coefficient_domain": "Native complex128 permanent amplitudes with absolute tolerance5e-10, mass tolerance5e-10/matrix5e-12; exact Python integer/Fraction ties and convolutions after numerical source corroboration",
+    "conventions": "Posthoc known candidate, not blind. Independent trig/crossed-bit U[out,input], original Walsh ports, own multiset iterator and individual Fockinput masks; no archive/creation-DP imports, pruning, renormalization or phase alignment. All zeros/collisions retained. Exact source weights recomputed from archived coefficients and corroborated numerically, not interval-certified.",
+    "inputs": [
+      "Immutable primary cc58f9a source_laws0efca069...,tie52bb7247...,summary7f82c318...,manifestf03c242c...",
+      "Actual completed same-source qualification manifest/report must exist and be reviewed before ROOT authorizes main"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 16777216,
+      "planned_logical_workspace_bytes": 134217728,
+      "source_groups": 255,
+      "native_amplitudes": 157183,
+      "output_tie_scalars": 6435,
+      "species_means": 127,
+      "convolution_pairs": 11083116,
+      "new_physical_draws": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "No fresh optical shots, blind/heldout result, genuine-order8 certificate or arbitrary finer-species convexity",
+      "No scalable optimization, expected-cost advantage, source calibration, novelty or hardware conclusion",
+      "One full run only after qualification actual review and exclusive slot; preserve first failure without retry/change of source/precision/caps"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T14:22:07.439718+00:00",
+    "runtime_seconds": 7.702003,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 16777216,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P58_naive_replication.py",
+    "research/P58_NAIVE_REPLICATION_CARD.md",
+    "research/P58_naive_full_contract.json",
+    "experiments/P58_same_phase_species/run_001/manifest.json",
+    "experiments/P58_same_phase_species/run_001/data/source_laws.json.gz",
+    "experiments/P58_same_phase_species/run_001/data/tie_scalars.json.gz",
+    "experiments/P58_same_phase_species/run_001/data/summary.json",
+    "research/P58_naive_qualification/run_001/manifest.json",
+    "research/P58_naive_qualification/run_001/data/report.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P58_naive_replication.py",
+      "sha256": "7fe721b9dd27bdb7923558fe4e3e62b799b18570ed524959a9676b9521bd3479",
+      "sha256_after": "7fe721b9dd27bdb7923558fe4e3e62b799b18570ed524959a9676b9521bd3479"
+    },
+    {
+      "path": "research/P58_NAIVE_REPLICATION_CARD.md",
+      "sha256": "89c6f0c74fb84220bd0178da78e6cc5ab57e69f1d23fbd2ca62f8661b80cfe2f",
+      "sha256_after": "89c6f0c74fb84220bd0178da78e6cc5ab57e69f1d23fbd2ca62f8661b80cfe2f"
+    },
+    {
+      "path": "research/P58_naive_full_contract.json",
+      "sha256": "be6187971dcfc1b6ce8cb64bd00d24d6c564e3cd3f0021256b4b84ffd995344a",
+      "sha256_after": "be6187971dcfc1b6ce8cb64bd00d24d6c564e3cd3f0021256b4b84ffd995344a"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/manifest.json",
+      "sha256": "f03c242c81cf31a5a767a9e6cab5ac2c93a7c7466c8c45934277f0ffb80eb8a4",
+      "sha256_after": "f03c242c81cf31a5a767a9e6cab5ac2c93a7c7466c8c45934277f0ffb80eb8a4"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/data/source_laws.json.gz",
+      "sha256": "0efca069e2770942e15a9dbb2f583220043c9df5eaad6539dab353576f61c5fc",
+      "sha256_after": "0efca069e2770942e15a9dbb2f583220043c9df5eaad6539dab353576f61c5fc"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/data/tie_scalars.json.gz",
+      "sha256": "52bb72479eeead11f00f855ac1ba4c31732d59381c0539ad0cb69be2c5c61660",
+      "sha256_after": "52bb72479eeead11f00f855ac1ba4c31732d59381c0539ad0cb69be2c5c61660"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/data/summary.json",
+      "sha256": "7f82c318ec591e232d9c765ce82618635876fcc09170f1e815602491ce29f1fe",
+      "sha256_after": "7f82c318ec591e232d9c765ce82618635876fcc09170f1e815602491ce29f1fe"
+    },
+    {
+      "path": "research/P58_naive_qualification/run_001/manifest.json",
+      "sha256": "57b342ef9b808c9a19e3112e29d89dc178f46857eb9278d0bc237f537c9c3b27",
+      "sha256_after": "57b342ef9b808c9a19e3112e29d89dc178f46857eb9278d0bc237f537c9c3b27"
+    },
+    {
+      "path": "research/P58_naive_qualification/run_001/data/report.json",
+      "sha256": "d874117b10d30eff60f5bf33995698bb4415ec2b65aab9ee21ea67c8469fe05d",
+      "sha256_after": "d874117b10d30eff60f5bf33995698bb4415ec2b65aab9ee21ea67c8469fe05d"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P58_naive_replication/run_001",
+  "declared_results": [
+    "experiments/P58_naive_replication/run_001/data/native_amplitudes.jsonl.gz",
+    "experiments/P58_naive_replication/run_001/data/independent_ties_and_means.json",
+    "experiments/P58_naive_replication/run_001/data/report.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P58_naive_replication/run_001/stdout.txt",
+      "sha256": "2e226db1e1f9f7a5b92d047b1321e4149f54942d5e1e07468f34687f4060a7ca",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P58_naive_replication/run_001/stderr.txt",
+      "sha256": "f6b8d749925516cd93ff94e5a2a2dbbfa298d03e6f7e97babf6434cda66b3025",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P58_naive_replication/run_001/data/native_amplitudes.jsonl.gz",
+      "sha256": "1c3a2f113629ce7cddc4670b6089b4a1691ae30f39e266fbf5ba36a50b4017d4",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P58_naive_replication/run_001/data/independent_ties_and_means.json",
+      "sha256": "db25a5716798b51c3d2ce2a2d24e2e6731d1d0a2f90b7023017124e6dbec744c",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P58_naive_replication/run_001/data/report.json",
+      "sha256": "37d5476994571d45a20f3447426ba36cc2a77617c014f34250f2f0db886c886b",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

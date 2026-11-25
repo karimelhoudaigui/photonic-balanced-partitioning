@@ -1,0 +1,2379 @@
+{
+  "mode": "full",
+  "posthoc_not_blind": true,
+  "production_imported": false,
+  "physical_draws": 0,
+  "actual_QPU_calls": 0,
+  "positive_optimizer_accepted": false,
+  "genuine_order8_claimed": false,
+  "code_sha256": "7fe721b9dd27bdb7923558fe4e3e62b799b18570ed524959a9676b9521bd3479",
+  "stdlib_guards": 6,
+  "qualification_gate": {
+    "manifest_sha256": "57b342ef9b808c9a19e3112e29d89dc178f46857eb9278d0bc237f537c9c3b27",
+    "report_sha256": "d874117b10d30eff60f5bf33995698bb4415ec2b65aab9ee21ea67c8469fe05d"
+  },
+  "provenance": {
+    "versions": {
+      "numpy": "2.4.6",
+      "perceval-quandela": "1.3.0",
+      "exqalibur": "1.4.2"
+    },
+    "native": {
+      "interface": "exqalibur.Config.compute_max_thread_count",
+      "before": 0,
+      "requested": 1,
+      "configured_before_work": 1,
+      "interpretation": "documented native maximum only, not observed OS scheduling",
+      "readback_after_work": 1
+    },
+    "MPLCONFIGDIR": "/Users/karimelhoudaigui/Desktop/pasqal/.local/mplconfig",
+    "cache_note": "persistent config only; no warm/cold performance claim",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "engine_files": {
+      "NaiveBackend": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/backends/_naive.py",
+        "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+      },
+      "Unitary": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/components/unitary_components.py",
+        "sha256": "2f4bacd1d3d5c919b32eaaf28d1881a5f49be608ffca4be2ee53886a149786df"
+      },
+      "exqalibur": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/__init__.py",
+        "sha256": "6a6ac3b31ef4ebc06ef95c2fa0aed19516e9c72bbe4e59b05aea1f2055686690"
+      },
+      "exqalibur.exqalibur": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+        "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+      }
+    },
+    "backend": "local NaiveBackend.prob_amplitude -> exqalibur.permanent_cx; no pruning, mask, iterator or remote",
+    "Config_doc": "Exqalibur global configuration\n\nAll its members are statically accessed and there is no need to create an instance of this class.\n\nStatic properties:\n\n* ``compute_max_thread_count`` - Maximum number of CPU threads to use for parallel algorithms.\n\n    By default, `exqalibur` uses as many CPU cores as possible.\n\n    Current parallel algorithms are:\n\n    * CircuitOptimizer\n    * Clifford & Clifford sampling back-end\n    * Permanent computation\n    * Permanent estimate with Gurvits method\n    * Noisy Sampling Simulator\n* ``use_single_precision`` - Switch between single and double precision for algorithms which supports it (currently, only Clifford & Clifford back-end).\n    When `True` set the floating point precision to 32 bits (64 bits per complex value), 64 bits otherwise (128 bits per complex value)\n* ``unitary_check_precision`` - Precision to use when testing whether a matrix is unitary or not. It might be required to increase this value for larger matrices.\n    Default is the same value as in numpy (1e-6).\n\nUsage example:\n\n>>> import exqalibur as xq\n>>> xq.Config.unitary_check_precision = 1e-4\n",
+    "permanent_doc": "permanent_cx(M: typing.Annotated[numpy.typing.NDArray[numpy.complex128], \"[m, n]\", \"flags.c_contiguous\"], ptype: str = '') -> complex\n\nPermanent of a square complex matrix\n\n:param M: Square matrix of complex values\n:param ptype: Name of a permanent computation algorithm. Accepted values are ``\"glynn\"`` and ``\"ryser\"``.\n              By default, Glynn method is used only when using 1 or 2 threads. Ryser is otherwise used.\n:return: The permanent value\n\nSee also exqalibur.Config to control how many CPU threads you allow you program to use.\n\n"
+  },
+  "source_groups": 255,
+  "native_amplitudes": 157183,
+  "max_abs_amplitude_error": 1.8735013540549517e-16,
+  "matrix_alignment_error": 4.3297802811774664e-17,
+  "source_diagnostics": [
+    {
+      "input_mask": 1,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999998,
+      "max_abs_amplitude_error": 0.0,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 2,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999998,
+      "max_abs_amplitude_error": 0.0,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 3,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 4,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999998,
+      "max_abs_amplitude_error": 0.0,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 5,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 6,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 7,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 8,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999998,
+      "max_abs_amplitude_error": 0.0,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 9,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 10,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 11,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 12,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 13,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 14,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 2.7755575615628914e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 15,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 8.326672684688674e-17,
+      "exact_zero_states": 240,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 16,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999999,
+      "max_abs_amplitude_error": 4.3297802811774664e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 17,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 18,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 19,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 20,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 21,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 22,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 4.3885418357208765e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 23,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.292962984395611e-18
+    },
+    {
+      "input_mask": 24,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 25,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.928593550334434e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 26,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 27,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 4.291468873614597e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.2546344413855015e-18
+    },
+    {
+      "input_mask": 28,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 29,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 5.204170427930421e-18
+    },
+    {
+      "input_mask": 30,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.938893903907228e-18
+    },
+    {
+      "input_mask": 31,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.639458333479899e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 1.3877787807814457e-17
+    },
+    {
+      "input_mask": 32,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999999,
+      "max_abs_amplitude_error": 4.3297802811774664e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 33,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 34,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 35,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 36,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 37,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 38,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.928593550334434e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 39,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 5.978015442446414e-18
+    },
+    {
+      "input_mask": 40,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 41,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 4.3885418357208765e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 42,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 43,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.291468873614597e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 5.561744723312284e-18
+    },
+    {
+      "input_mask": 44,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 45,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.938893903907228e-18
+    },
+    {
+      "input_mask": 46,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 5.204170427930421e-18
+    },
+    {
+      "input_mask": 47,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.639458333479899e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 1.4304896245381992e-17
+    },
+    {
+      "input_mask": 48,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 1.1102230246251565e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 49,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 50,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 51,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 2.964296775167217e-17
+    },
+    {
+      "input_mask": 52,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 53,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.572454509297377e-17
+    },
+    {
+      "input_mask": 54,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.206335383118183e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.5835786313771142e-17
+    },
+    {
+      "input_mask": 55,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.1586656296963736e-17
+    },
+    {
+      "input_mask": 56,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 57,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.206335383118183e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.5835786313771142e-17
+    },
+    {
+      "input_mask": 58,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.572454509297377e-17
+    },
+    {
+      "input_mask": 59,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.6555932493466276e-17
+    },
+    {
+      "input_mask": 60,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 2.4532694666933986e-17
+    },
+    {
+      "input_mask": 61,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.050625845514493e-17
+    },
+    {
+      "input_mask": 62,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.0942475386676416e-17
+    },
+    {
+      "input_mask": 63,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.003707553108401e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.6683270569648305e-17
+    },
+    {
+      "input_mask": 64,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999999,
+      "max_abs_amplitude_error": 4.3297802811774664e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 65,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 66,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 67,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 68,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 69,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 70,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.594315114139762e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 71,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 4.6871246453807685e-18
+    },
+    {
+      "input_mask": 72,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 73,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 4.3885418357208765e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 74,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 75,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.291468873614597e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 5.561744723312284e-18
+    },
+    {
+      "input_mask": 76,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 77,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.938893903907228e-18
+    },
+    {
+      "input_mask": 78,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.2546344413855015e-18
+    },
+    {
+      "input_mask": 79,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.639458333479899e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 1.7562736622057744e-17
+    },
+    {
+      "input_mask": 80,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 1.1102230246251565e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 81,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 82,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 83,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.898059818321144e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.6024689053196368e-17
+    },
+    {
+      "input_mask": 84,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 85,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 7.07772847206801e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 3.508261114975577e-17
+    },
+    {
+      "input_mask": 86,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.069053483567753e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 2.437828644964546e-17
+    },
+    {
+      "input_mask": 87,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.178859759489111e-17
+    },
+    {
+      "input_mask": 88,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 89,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.069053483567753e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 2.2902193295146656e-17
+    },
+    {
+      "input_mask": 90,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 7.07772847206801e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 3.4737810535209724e-17
+    },
+    {
+      "input_mask": 91,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.800912535878896e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 5.016613723140046e-17
+    },
+    {
+      "input_mask": 92,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.898059818321144e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.6024689053196368e-17
+    },
+    {
+      "input_mask": 93,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.215694911018172e-17
+    },
+    {
+      "input_mask": 94,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.7872783375318934e-17
+    },
+    {
+      "input_mask": 95,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.0306980803327406e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.5202235272533397e-17
+    },
+    {
+      "input_mask": 96,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 1.1102230246251565e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 97,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 98,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 99,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.892955481736847e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.734723475976807e-17
+    },
+    {
+      "input_mask": 100,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 101,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.249821332214516e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.8683543625880677e-17
+    },
+    {
+      "input_mask": 102,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 8.80620390080162e-17,
+      "exact_zero_states": 200,
+      "max_zero_amplitude": 3.4694469519536136e-17
+    },
+    {
+      "input_mask": 103,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.7289313947785847e-17
+    },
+    {
+      "input_mask": 104,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 105,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 8.80620390080162e-17,
+      "exact_zero_states": 200,
+      "max_zero_amplitude": 3.122502256758253e-17
+    },
+    {
+      "input_mask": 106,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.249821332214516e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.530808498934191e-17
+    },
+    {
+      "input_mask": 107,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.7289313947785847e-17
+    },
+    {
+      "input_mask": 108,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.892955481736847e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.8683543625880677e-17
+    },
+    {
+      "input_mask": 109,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.9728110475366207e-17
+    },
+    {
+      "input_mask": 110,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.6018819561862228e-17
+    },
+    {
+      "input_mask": 111,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 6.059128614320848e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.3273757686693185e-17
+    },
+    {
+      "input_mask": 112,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 9.696041305209285e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 113,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 114,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 115,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.4444459513666498e-17
+    },
+    {
+      "input_mask": 116,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 117,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.6024689053196368e-17
+    },
+    {
+      "input_mask": 118,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.8161384259238843e-17
+    },
+    {
+      "input_mask": 119,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.585701844806364e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.3542348651503636e-17
+    },
+    {
+      "input_mask": 120,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 121,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.3933931346467366e-17
+    },
+    {
+      "input_mask": 122,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.6350018001060402e-17
+    },
+    {
+      "input_mask": 123,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.725463526658002e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.207440690997806e-17
+    },
+    {
+      "input_mask": 124,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.5326799766041375e-17
+    },
+    {
+      "input_mask": 125,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.655186706699458e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 2.7241695228262215e-17
+    },
+    {
+      "input_mask": 126,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.928593550334434e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.051009898029117e-17
+    },
+    {
+      "input_mask": 127,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999982,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 3.971595002292404e-17
+    },
+    {
+      "input_mask": 128,
+      "photons": 1,
+      "states": 8,
+      "native_mass": 0.9999999999999999,
+      "max_abs_amplitude_error": 4.3297802811774664e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 129,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 130,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 131,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 132,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 133,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 134,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 4.3885418357208765e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 135,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.292962984395611e-18
+    },
+    {
+      "input_mask": 136,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 6.938893903907228e-17,
+      "exact_zero_states": 6,
+      "max_zero_amplitude": 1.5308084989341912e-17
+    },
+    {
+      "input_mask": 137,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.594315114139762e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 138,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 139,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.291468873614597e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 5.204170427930421e-18
+    },
+    {
+      "input_mask": 140,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.887846720064156e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 141,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.2546344413855015e-18
+    },
+    {
+      "input_mask": 142,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 4.2417500660370354e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 6.938893903907228e-18
+    },
+    {
+      "input_mask": 143,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.639458333479899e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 1.2780715746399537e-17
+    },
+    {
+      "input_mask": 144,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 1.1102230246251565e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 145,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 146,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 147,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.892955481736847e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.8683543625880677e-17
+    },
+    {
+      "input_mask": 148,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 149,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.249821332214516e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.530808498934191e-17
+    },
+    {
+      "input_mask": 150,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 8.80620390080162e-17,
+      "exact_zero_states": 200,
+      "max_zero_amplitude": 3.122502256758253e-17
+    },
+    {
+      "input_mask": 151,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.7289313947785847e-17
+    },
+    {
+      "input_mask": 152,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 153,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 8.80620390080162e-17,
+      "exact_zero_states": 200,
+      "max_zero_amplitude": 3.4694469519536136e-17
+    },
+    {
+      "input_mask": 154,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.249821332214516e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.8683543625880677e-17
+    },
+    {
+      "input_mask": 155,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.7289313947785847e-17
+    },
+    {
+      "input_mask": 156,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.892955481736847e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.734723475976807e-17
+    },
+    {
+      "input_mask": 157,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.758057587157505e-17
+    },
+    {
+      "input_mask": 158,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.745588991072138e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.6460840941262472e-17
+    },
+    {
+      "input_mask": 159,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.1504358246226397e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.2113472136733107e-17
+    },
+    {
+      "input_mask": 160,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 1.1102230246251565e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 161,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 162,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 163,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.898059818321144e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.6024689053196368e-17
+    },
+    {
+      "input_mask": 164,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 165,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 7.07772847206801e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 3.4737810535209724e-17
+    },
+    {
+      "input_mask": 166,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.069053483567753e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 2.2902193295146656e-17
+    },
+    {
+      "input_mask": 167,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.29898587782901e-17
+    },
+    {
+      "input_mask": 168,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 6.736447455048117e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 169,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.069053483567753e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 2.437828644964546e-17
+    },
+    {
+      "input_mask": 170,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 7.07772847206801e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 3.508261114975577e-17
+    },
+    {
+      "input_mask": 171,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.800912535878896e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.9688978862182035e-17
+    },
+    {
+      "input_mask": 172,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.898059818321144e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.6024689053196368e-17
+    },
+    {
+      "input_mask": 173,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.146873707821583e-17
+    },
+    {
+      "input_mask": 174,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.927693860538684e-17
+    },
+    {
+      "input_mask": 175,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.553824967135427e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.4856384105339904e-17
+    },
+    {
+      "input_mask": 176,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 7.426779695859723e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 177,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.546139416680338e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 178,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.546139416680338e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.2628977532625829e-17
+    },
+    {
+      "input_mask": 179,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.4367971810257167e-17
+    },
+    {
+      "input_mask": 180,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.546139416680338e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.2628977532625829e-17
+    },
+    {
+      "input_mask": 181,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.5210806512405848e-17
+    },
+    {
+      "input_mask": 182,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.946804610530483e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.4026771764241826e-17
+    },
+    {
+      "input_mask": 183,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.660454958794434e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 2.5988477607758404e-17
+    },
+    {
+      "input_mask": 184,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.546139416680338e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.471961680016039e-17
+    },
+    {
+      "input_mask": 185,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.946804610530483e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.4102358013225363e-17
+    },
+    {
+      "input_mask": 186,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.5210806512405848e-17
+    },
+    {
+      "input_mask": 187,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.3861486999781826e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.75202397685825e-17
+    },
+    {
+      "input_mask": 188,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.8668437672493963e-17
+    },
+    {
+      "input_mask": 189,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.329408189419887e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 2.621087249042047e-17
+    },
+    {
+      "input_mask": 190,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.660454958794434e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 2.5687431990402965e-17
+    },
+    {
+      "input_mask": 191,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999984,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 2.8644045502917304e-17
+    },
+    {
+      "input_mask": 192,
+      "photons": 2,
+      "states": 36,
+      "native_mass": 0.9999999999999997,
+      "max_abs_amplitude_error": 1.1102230246251565e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 193,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 194,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 195,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 2.4532694666933986e-17
+    },
+    {
+      "input_mask": 196,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 197,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.572454509297377e-17
+    },
+    {
+      "input_mask": 198,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.206335383118183e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.5835786313771142e-17
+    },
+    {
+      "input_mask": 199,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.7063200296084936e-17
+    },
+    {
+      "input_mask": 200,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999996,
+      "max_abs_amplitude_error": 6.973502068242161e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 201,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 6.206335383118183e-17,
+      "exact_zero_states": 77,
+      "max_zero_amplitude": 1.5835786313771142e-17
+    },
+    {
+      "input_mask": 202,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 76,
+      "max_zero_amplitude": 1.572454509297377e-17
+    },
+    {
+      "input_mask": 203,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.093826424156699e-17
+    },
+    {
+      "input_mask": 204,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 184,
+      "max_zero_amplitude": 2.964296775167217e-17
+    },
+    {
+      "input_mask": 205,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.365804515451089e-17
+    },
+    {
+      "input_mask": 206,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 4.216157291386879e-17
+    },
+    {
+      "input_mask": 207,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 5.003707553108401e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.6683270569648305e-17
+    },
+    {
+      "input_mask": 208,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 9.856679861785191e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 209,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.471961680016039e-17
+    },
+    {
+      "input_mask": 210,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.2628977532625829e-17
+    },
+    {
+      "input_mask": 211,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 7.796612332912425e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.1538998052939454e-17
+    },
+    {
+      "input_mask": 212,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.2628977532625829e-17
+    },
+    {
+      "input_mask": 213,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 8.099505462106327e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.897417471692253e-17
+    },
+    {
+      "input_mask": 214,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.946804610530483e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 2.0175290510268652e-17
+    },
+    {
+      "input_mask": 215,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 5.39481542079512e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.2934263790413427e-17
+    },
+    {
+      "input_mask": 216,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999993,
+      "max_abs_amplitude_error": 5.118032330315746e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 217,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.946804610530483e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.7231198442351564e-17
+    },
+    {
+      "input_mask": 218,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 7.076311083754595e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.3690251641900998e-17
+    },
+    {
+      "input_mask": 219,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 5.594568614370727e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 2.9397077778140143e-17
+    },
+    {
+      "input_mask": 220,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 7.796612332912425e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.5394398258937524e-17
+    },
+    {
+      "input_mask": 221,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.82960306293119e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.177971776109112e-17
+    },
+    {
+      "input_mask": 222,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 5.4785294052171674e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 2.80209023042486e-17
+    },
+    {
+      "input_mask": 223,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999986,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 2.8202260870442996e-17
+    },
+    {
+      "input_mask": 224,
+      "photons": 3,
+      "states": 120,
+      "native_mass": 0.9999999999999994,
+      "max_abs_amplitude_error": 9.696041305209285e-17,
+      "exact_zero_states": 0,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 225,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.204170427930421e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 226,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.204170427930421e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 227,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 7.796612332912425e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.5442936699178228e-17
+    },
+    {
+      "input_mask": 228,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.204170427930421e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.7626321829404014e-17
+    },
+    {
+      "input_mask": 229,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.54374208395641e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.5733152759878103e-17
+    },
+    {
+      "input_mask": 230,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.138078244619834e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.5889265507099697e-17
+    },
+    {
+      "input_mask": 231,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 5.928593550334434e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.051009898029117e-17
+    },
+    {
+      "input_mask": 232,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.204170427930421e-17,
+      "exact_zero_states": 20,
+      "max_zero_amplitude": 1.5515838457795457e-17
+    },
+    {
+      "input_mask": 233,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.285829819150323e-17,
+      "exact_zero_states": 104,
+      "max_zero_amplitude": 1.8683543625880677e-17
+    },
+    {
+      "input_mask": 234,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.378359322781141e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 2.5105621567328407e-17
+    },
+    {
+      "input_mask": 235,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 5.458317823286686e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.619438627174663e-17
+    },
+    {
+      "input_mask": 236,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 7.796612332912425e-17,
+      "exact_zero_states": 56,
+      "max_zero_amplitude": 1.9203135537769794e-17
+    },
+    {
+      "input_mask": 237,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999988,
+      "max_abs_amplitude_error": 5.655186706699458e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.3446140425539674e-17
+    },
+    {
+      "input_mask": 238,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 5.777363325317933e-17,
+      "exact_zero_states": 178,
+      "max_zero_amplitude": 3.3542348651503636e-17
+    },
+    {
+      "input_mask": 239,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999982,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 3.040512210991252e-17
+    },
+    {
+      "input_mask": 240,
+      "photons": 4,
+      "states": 330,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 1.2397377374778503e-16,
+      "exact_zero_states": 240,
+      "max_zero_amplitude": 0.0
+    },
+    {
+      "input_mask": 241,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.551115123125783e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 1.846651506149527e-17
+    },
+    {
+      "input_mask": 242,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 5.721958498152797e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 1.862977792124166e-17
+    },
+    {
+      "input_mask": 243,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 7.244417918960238e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 4.006172263299092e-17
+    },
+    {
+      "input_mask": 244,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 1.7562736622057744e-17
+    },
+    {
+      "input_mask": 245,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 8.246781260660081e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.5645908039531107e-17
+    },
+    {
+      "input_mask": 246,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 9.000523778413571e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 1.877893248421449e-17
+    },
+    {
+      "input_mask": 247,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999982,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 1.3224915320509987e-17
+    },
+    {
+      "input_mask": 248,
+      "photons": 5,
+      "states": 792,
+      "native_mass": 0.9999999999999992,
+      "max_abs_amplitude_error": 6.397344083151129e-17,
+      "exact_zero_states": 224,
+      "max_zero_amplitude": 2.0629872709973566e-17
+    },
+    {
+      "input_mask": 249,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.999999999999999,
+      "max_abs_amplitude_error": 9.000523778413571e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 1.8302154796917192e-17
+    },
+    {
+      "input_mask": 250,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999991,
+      "max_abs_amplitude_error": 8.44865542934803e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 2.5645908039531107e-17
+    },
+    {
+      "input_mask": 251,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999982,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 1.1479670249565871e-17
+    },
+    {
+      "input_mask": 252,
+      "photons": 6,
+      "states": 1716,
+      "native_mass": 0.9999999999999989,
+      "max_abs_amplitude_error": 6.834017936133213e-17,
+      "exact_zero_states": 860,
+      "max_zero_amplitude": 4.6781282181946465e-17
+    },
+    {
+      "input_mask": 253,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999982,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 1.4838511879501972e-17
+    },
+    {
+      "input_mask": 254,
+      "photons": 7,
+      "states": 3432,
+      "native_mass": 0.9999999999999982,
+      "max_abs_amplitude_error": 1.8735013540549517e-16,
+      "exact_zero_states": 16,
+      "max_zero_amplitude": 9.491982073098621e-18
+    },
+    {
+      "input_mask": 255,
+      "photons": 8,
+      "states": 6435,
+      "native_mass": 0.9999999999999986,
+      "max_abs_amplitude_error": 7.95345256462443e-17,
+      "exact_zero_states": 5053,
+      "max_zero_amplitude": 3.13256154869906e-17
+    }
+  ],
+  "exact_tie_scalars": 6435,
+  "exact_control_means": 127,
+  "convolution_pairs": 11083116,
+  "minimum_gap": "649/327680",
+  "reference_decision_recomputed": "SAME_PHASE_ALL_BIPARTITIONS_SEPARATED",
+  "reference_hashes": {
+    "data/source_laws.json.gz": "0efca069e2770942e15a9dbb2f583220043c9df5eaad6539dab353576f61c5fc",
+    "data/tie_scalars.json.gz": "52bb72479eeead11f00f855ac1ba4c31732d59381c0539ad0cb69be2c5c61660",
+    "data/summary.json": "7f82c318ec591e232d9c765ce82618635876fcc09170f1e815602491ce29f1fe",
+    "manifest.json": "f03c242c81cf31a5a767a9e6cab5ac2c93a7c7466c8c45934277f0ffb80eb8a4"
+  },
+  "interpretation": "finite numerical amplitude corroboration plus independent exact tie/convolution arithmetic; not an interval certificate or new physical sampling",
+  "status": "PASS",
+  "cpu_seconds": 6.689109,
+  "wall_seconds": 7.374631250044331,
+  "peak_rss_raw": 212975616,
+  "rss_unit": "bytes"
+}
