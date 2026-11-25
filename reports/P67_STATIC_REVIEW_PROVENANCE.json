@@ -1,0 +1,24 @@
+{
+  "copied_byte_identically": true,
+  "reason": "Author reported git-index mmap Operation timed out; original worktree/index preserved, no reset or deletion",
+  "root_review": "All lines read; group-average projector, covariance-in-law counterexample, gauge/time-reversal, pair coefficients and retimed classical proxy rederived",
+  "scientific_calculation_executed": false,
+  "files": [
+    {
+      "path": "research/P67_exact_covariance_symmetry_obstruction.md",
+      "sha256": "63f891ca6b03790024bbade59d275e8f115dfccc1fa17c9632aa7ca878c25cf8",
+      "bytes": 7474,
+      "origin_worktree": ".local/p66-dark-audit",
+      "source_base_commit": "eae1ddabb215c9dfda05ea9bdcc286a6698ba0ad",
+      "original_file_uncommitted": true
+    },
+    {
+      "path": "research/P67_flux_proposal_static_rejection.md",
+      "sha256": "f0c3c3df89bbb0aeec11eeb7794bdce450518db85d27cd2ac3e2920ad71f9307",
+      "bytes": 10160,
+      "origin_worktree": ".local/p66-dark-audit",
+      "source_base_commit": "eae1ddabb215c9dfda05ea9bdcc286a6698ba0ad",
+      "original_file_uncommitted": true
+    }
+  ]
+}
