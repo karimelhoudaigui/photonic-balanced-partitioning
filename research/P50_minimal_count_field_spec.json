@@ -1,0 +1,1027 @@
+{
+  "phase": "P50_MINIMAL_COUNT_FIELD_DEV",
+  "positive_acceptance_allowed": false,
+  "ideal_transmission_eta": 1.0,
+  "cases": [
+    {
+      "id": "n50_ER_5005001",
+      "m": 50,
+      "k": 25,
+      "r": 13,
+      "family": "ER",
+      "seed": 5005001
+    },
+    {
+      "id": "n50_RR_5005002",
+      "m": 50,
+      "k": 25,
+      "r": 13,
+      "family": "RR",
+      "seed": 5005002
+    },
+    {
+      "id": "n100_ER_5010001",
+      "m": 100,
+      "k": 50,
+      "r": 17,
+      "family": "ER",
+      "seed": 5010001
+    },
+    {
+      "id": "n100_RR_5010002",
+      "m": 100,
+      "k": 50,
+      "r": 17,
+      "family": "RR",
+      "seed": 5010002
+    }
+  ],
+  "models": [
+    "bosonic",
+    "distinguishable",
+    "species4",
+    "continuous_phase",
+    "gaussian_Bcov",
+    "independent_final_variance",
+    "independent_B_marginals",
+    "spherical_coherent",
+    "static_preparation",
+    "pure_jitter"
+  ],
+  "bases": [
+    "Fourier_blind",
+    "spectral_E",
+    "spectral_R_phi0",
+    "spectral_R_phi90"
+  ],
+  "policy_grids": {
+    "bosonic": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 8,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 9,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 10,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 11,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 12,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 13,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 14,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 15,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      }
+    ],
+    "distinguishable": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 8,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 9,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 10,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 11,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 12,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 13,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 14,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 15,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      }
+    ],
+    "species4": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 8,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 9,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 10,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 11,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 12,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 13,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 14,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 15,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      }
+    ],
+    "continuous_phase": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 8,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 9,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 10,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 11,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 12,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 13,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 14,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 15,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      }
+    ],
+    "gaussian_Bcov": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 8,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 9,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 10,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 11,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 12,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 13,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 14,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 15,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      }
+    ],
+    "independent_final_variance": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 8,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 9,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 10,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 11,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 12,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 13,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 14,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 15,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      }
+    ],
+    "independent_B_marginals": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 8,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 9,
+        "basis": 2,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 10,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 11,
+        "basis": 2,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 12,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 13,
+        "basis": 3,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 2
+      },
+      {
+        "id": 14,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 2
+      },
+      {
+        "id": 15,
+        "basis": 3,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 2
+      }
+    ],
+    "spherical_coherent": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 4
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 4
+      }
+    ],
+    "static_preparation": [
+      {
+        "id": 0,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "basis": 0,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "basis": 0,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "basis": 1,
+        "alpha": 0,
+        "beta": 0.1,
+        "training_draws": 4
+      },
+      {
+        "id": 6,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.0,
+        "training_draws": 4
+      },
+      {
+        "id": 7,
+        "basis": 1,
+        "alpha": 1,
+        "beta": 0.1,
+        "training_draws": 4
+      }
+    ],
+    "pure_jitter": [
+      {
+        "id": 0,
+        "basis": null,
+        "alpha": null,
+        "beta": 0.0,
+        "training_draws": 16
+      },
+      {
+        "id": 1,
+        "basis": null,
+        "alpha": null,
+        "beta": 0.1,
+        "training_draws": 16
+      }
+    ]
+  },
+  "graph_ER_mean_degree": 8,
+  "graph_RR_degree": 8,
+  "graph_weight_low_inclusive": 1,
+  "graph_weight_high_inclusive": 5,
+  "graph_generation_convention": "pinned_networkx_seeded;sorted_edges;PCG64(seed_for(case_seed,weights));integers(1,6)",
+  "marker_coefficient": 0.001,
+  "gap_tolerance": 1e-12,
+  "residual_tolerance": 3e-12,
+  "covariance_PSD_tolerance": 1e-10,
+  "tie_width": 1e-12,
+  "tie_definition": "floor((y-max(y))/width+.5),descending_bucket_then_carried_rank",
+  "seed_namespaces": {
+    "training": 5020001,
+    "evaluation": 5030001,
+    "marks": 5040001,
+    "priority_and_Fourier_row_order": 5040002,
+    "FAST": 5050001
+  },
+  "training_trial": 0,
+  "evaluation_trials": [
+    0,
+    1
+  ],
+  "evaluation_draws_per_trial": 16,
+  "fast_initializations": [
+    "random",
+    "spectral"
+  ],
+  "fast_max_proposals": 100000000,
+  "b4_groups": "contiguous_source_ports_at_most4",
+  "coherent_phase_law": "continuous_uniform",
+  "independent_marginals_condition_total": false,
+  "maximum_planned_arrays_bytes": 268435456,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_new_output_bytes": 33554432,
+  "outcome_policy": "all_cases_all_cuts_retained;no_replacement_retry_cap_increase_or_positive_acceptance"
+}

@@ -1,0 +1,111 @@
+{
+  "claim_id": "P50-MINIMAL-COUNT-FIELD-DEV",
+  "mathematics": {
+    "assertion_tested": "Does an independently trained all-count cheap balanced ranking show a DEV B mechanism beyond optimized D/b4, phase/sphere, covariance/independent final variances, independent B marginals, static/jitter nulls and two from-raw descent-first controls under prospectively measured B-ONLY classical wall-derived CPU? No accepted positive.",
+    "coefficient_domain": "Complex128/float64 passive isometries; integer graph/cut, exact Fraction equal-graph ALL-shot objective; Decimal80/Fraction independent single-mode B probabilities; observed CPU/wall clocks",
+    "conventions": "r13/17 distinct K25/50;full sourceCF;all collisions retained;eta1;no Cref/PIT/greedy/optimum/masks;max-anchored1e-12 buckets;sourceR gauges beforemix;actual masked F beforeH and final variance rows||HF||^2;independent marginal total not conditioned;model-specific32train+32fresh/case;B-only cost excludes other arms, all diagnostics, optical backend/counts and serialization;FAST no free features or result at time0",
+    "inputs": [
+      "Four NEW DEV graphs ER/RR N50/r13 seeds5005001/02 and N100/r17 seeds5010001/02;ER8/(N-1),RR8,weights1..5",
+      "Four Fourier/E/ERphi0/ERphi90 source bases andalpha0/1,beta0/.1;canonical exact all-shot policy selection",
+      "Ten independently owned/prepared arms,256 proposals each;two independent from-raw fast solvers per case"
+    ],
+    "bounds": {
+      "graphs": 4,
+      "maximum_modes": 100,
+      "maximum_photons": 17,
+      "training_proposals_per_arm": 128,
+      "evaluation_proposals_per_arm": 128,
+      "models": 10,
+      "total_primary_cuts": 2560,
+      "simulated_injected_photons_per_optical_arm": 3840,
+      "FAST_max_proposals_guard": 100000000,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted positive, novelty, independent physical replication, heldout, hardware feasibility or QPU gate",
+      "B-only wall CPU allowance is this prospective implementation envelope, not universal minimum or physical zero latency",
+      "Gaussian/PGF/float bucket guards are numerical, not interval or tail-relative guarantees",
+      "Independent B marginals match only input one-mode laws and not total count or final diffused marginals",
+      "Resource/numerical/eligible-initialization failures remain inconclusive without retry or enlarged cap"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P50_minimal_count_field_probe.py",
+    "research/P50_minimal_count_field_spec.json",
+    "research/P50_minimal_count_field_contract.md",
+    "research/P50_minimal_count_field_execution_contract.json",
+    "research/P50_EXECUTION_CARD.md",
+    "research/P50_MINIMAL_COUNT_FIELD_CARD.md",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "research/P50_fast_from_scratch.py",
+    "tests/test_p50_minimal_count_field.py",
+    "tests/test_p50_fast_from_scratch.py",
+    "research/P49_trained_source_probe.py",
+    "research/P49_fast_classical.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P45_adaptive_probe.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Role-separated pinned PCG64/networkx and serial local exqalibur;continuous phase/sphere;fresh evaluation roles",
+    "seed": [
+      5005001,
+      5005002,
+      5010001,
+      5010002,
+      5020001,
+      5030001,
+      5040001,
+      5040002,
+      5050001
+    ]
+  },
+  "resource_note": "Design/source/contracts frozen before import. One exclusive numerical worker only after root/physics review and targeted PASS; CPU60/wall90/thread1/log32MiB,arrays planned256MiB/output32MiB,no hard Darwin memory/affinity or automatic retry. Engineering projection<=45CPU/75wall,not observed. P50 FAST independently qualified before main.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P50_minimal_count_field_probe.py",
+    "--spec",
+    "research/P50_minimal_count_field_spec.json",
+    "--output",
+    "experiments/P50_minimal_count_field/run_001/data"
+  ]
+}
