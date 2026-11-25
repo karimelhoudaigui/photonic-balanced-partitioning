@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "claim_id": "P65-INDEPENDENT-CHECKER-SYNTHETIC-FIXTURES",
+  "mathematics": {
+    "assertion_tested": "Nine authored independent checker fixtures for integer cuts/K10 packed padding, collision self-loops, required CF coins at probability1, rejected/current and changing-current chains, exact fitness ties, spectral Cayley weighted normalization, fixed-mode/failure gate and820metadata roles",
+    "coefficient_domain": "Exact integers/Fraction, small deterministic complex128 matrices, metadata hashes only",
+    "conventions": "UNEXECUTED code-only fixtures. No P65 data or production module/native backend imported; no DEV topology/start/physical count generated. Loading only this independent checker is deferred to a separately authorized qualification.",
+    "inputs": ["Nine small hardcoded fixture functions; no recorded primary outputs"],
+    "bounds": {
+      "CPU_seconds": 20, "wall_seconds": 30, "threads": 1,
+      "max_new_log_bytes": 4194304, "max_new_scientific_bytes": 4194304,
+      "planned_logical_workspace_bytes": 67108864,
+      "max_matrix_fixture_modes": 4, "metadata_roles": 820,
+      "native_draws": 0, "DEV_graphs_generated": 0, "failed_retries": 0
+    },
+    "non_claims": ["No data audit, physical sampling verification, optimizer result, main authorization or QPU call"]
+  },
+  "execution_artifacts": [
+    "AGENTS.md", "pyproject.toml", "requirements-research-lock.txt",
+    "research/P65_independent_raw_audit.py", "research/P65_independent_raw_audit_contract.md",
+    "research/P65_independent_raw_audit_execution_contract.json", "research/P65_independent_raw_audit_preflight_contract.json",
+    "tests/test_p65_independent_raw_audit.py"
+  ],
+  "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}, {"name": "pytest", "version": "8.4.2"}],
+  "randomness": {"used": false, "generator": "Deterministic tiny fixtures and metadata SHA256; no RNG draws in fixture suite", "seed": null},
+  "resource_note": "NOT EXECUTED. ROOT full code/contract review and separate exclusive numerical slot required. New v2 runner CPU20/wall30/thread1/log4MiB/scientific4MiB/logical64MiB; zero failed retries. Fixture PASS must not automatically start data audit or primary execution.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python", "-m", "pytest", "-q", "tests/test_p65_independent_raw_audit.py",
+    "--junitxml=research/P65_independent_raw_audit_preflight/run_001/junit.xml"
+  ],
+  "declared_results": ["research/P65_independent_raw_audit_preflight/run_001/junit.xml"]
+}
