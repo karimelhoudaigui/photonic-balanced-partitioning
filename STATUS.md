@@ -50,8 +50,11 @@ Outcome INCONCLUSIVE; neither curve nonmembership nor continuous replacement
 was established. See research/P53_exact_phase_main_receipt.md. Full regression
 suite now822 PASS; source unchanged by later raw/theory-only additions.
 P54's proposed full-input weak graph hopping has a ROOT analytical falsification
-awaiting separate reconstruction. No such scoped obstruction completes the
-user's positive optimizer target.
+with an independently frozen reconstruction and exact-hash focused review;
+see reports/P54_PROOF_CHECKPOINT.md. P53b's single rational-point discriminator
+and P55's different neutral-count decoder are prospective follow-ups, not
+completed results. No such scoped obstruction completes the user's positive
+optimizer target.
 No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,

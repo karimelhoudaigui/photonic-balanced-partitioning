@@ -897,3 +897,14 @@ reports/P53_validation/ records exact commands and checks. P54 ROOT proof
 mechanism: topK favors crossing weighted edges and increases expected cut,
 with a cheap classical mixture at that order. Separate reconstruction pending;
 not a general no-go, finite-angle result or completion of the positive target.
+
+P54 proof status update: physics froze43b35f9 before reading ROOT's proof,
+then focused exact-hash review91fb868 confirms PROVED_AS_WRITTEN. ROOT also
+rechecks the separate general-covariance N4 counterexample by hand. This
+supports the explicitly scoped local theorem only; novelty and a useful
+finite-strength mechanism remain OPEN. No executable experiment or paper edit.
+P53b now prospectively fixes x=1/4 and two bounded LP proposals with exact
+point certificates (carda0a6881/1dbb3f9), implementation only; no value opened.
+P55 neutral-count decoder is a distinct analytical proposal, not an experiment
+or an accepted gain. Github research checkpointa9a5897 CI succeeded in run
+45609474034; remote main remains2744395. Continue beyond these negatives.

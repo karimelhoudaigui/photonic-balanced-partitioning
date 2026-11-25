@@ -339,8 +339,21 @@ ROOT separately derived P54 weak full-input graph hopping: for real
 H_ij=sqrt(w_ij), U=exp(itH), all N photons and uniform topN/2 tie decoding,
 the leading decoded tilt is TOWARD higher cut, proportional to Var_uniform(C).
 Its enhanced bosonic rate also has an elementary classical rare-hop mixture.
-See theory/P54_full_input_small_hop_obstruction.md; separate reconstruction
-is pending, no finite-strength/general-ansatz conclusion or positive claimed.
+See theory/P54_full_input_small_hop_obstruction.md; separately frozen physics
+reconstruction43b35f9 and focused exact-hash review91fb868 PASS. ROOT manually
+checks the weighted-adjacency counterexample's rational table. No
+finite-strength/general-ansatz conclusion, novelty or positive claimed.
+Proof checkpoint: reports/P54_PROOF_CHECKPOINT.md.
+
+P53b prospectively fixes ONE new rational point x=1/4(theta=pi/3), at most
+one primal and one dual LP, exact point-membership/separation checks and a
+nonnegative graph interpretation ONLY against the fixedENDPOINT71 library.
+Carda0a6881/1dbb3f9 predates evaluation; implementation/review only authorized.
+No graph witness is a held-out optimizer result or a refutation of continuous
+reoptimized b4. Encoding separately proposes P55 neutral-count decoding with
+all attempts retained; its weak-order gain must survive the classical
+inclusion/rare-hop explanation before a new finite-coherence claim. No code,
+experiment, hardware compatibility or P55 positive exists yet.
 Numerical work is sequential; consult
 the current explicit worker-slot messages, not an old checkpoint sentence.
 
