@@ -1,0 +1,83 @@
+{
+  "phase": "P52_COLLECTIVE_PHASE_FINITE_DISCRIMINATOR",
+  "positive_acceptance_allowed": false,
+  "modes": 8,
+  "photons": 8,
+  "target_size": 4,
+  "theta_pi_multipliers": [
+    0.0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "input_occupation": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "ideal_eta": 1.0,
+  "W_rows": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  ],
+  "W_denominator": 2,
+  "U_definition": "sqrt(1/2)*[[W,DW],[W,-DW]];D_jj=exp(i*j*theta)",
+  "full_Fock_states": 6435,
+  "four_photon_states": 330,
+  "balanced_subsets": 70,
+  "edges": 28,
+  "unordered_b4_groupings": 35,
+  "phase_draws_per_theta": 262144,
+  "phase_batch_size": 4096,
+  "phase_seed_root": 5201001,
+  "phase_rng": "PCG64(seed_for(root,theta_index));batch_angles_then_eight_categorical_uniforms",
+  "confidence_failure": 0.01,
+  "simultaneous_phase_coordinates": 392,
+  "source_tolerance": 5e-11,
+  "null_tolerance": 5e-10,
+  "fit_tolerance": 1e-09,
+  "LP_seconds_per_fit": 1.0,
+  "LP_method": "highs-ds",
+  "LP_threads": 1,
+  "LP_parallel": false,
+  "LP_seed": 5201001,
+  "include_optional_MC_fits": true,
+  "deterministic_LP_vertices": 141,
+  "augmented_LP_vertices": 145,
+  "fit_count": 8,
+  "tie_rule": "exact_uniform_at_integer_fourth_count_cutoff;float64_rational_pushforward",
+  "theta3_is_duplicate_calibration": true,
+  "Walsh_theta0_uniform_edges_NOT_uniform_rank": true,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_planned_arrays_bytes": 268435456,
+  "maximum_new_output_bytes": 33554432
+}
