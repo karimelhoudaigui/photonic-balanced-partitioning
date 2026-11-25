@@ -1,0 +1,9770 @@
+[
+  {
+    "role": [
+      "n20_ER_6502001",
+      "graph"
+    ],
+    "seed": 6502001
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "weights"
+    ],
+    "seed": 2477802814
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "start",
+      "training",
+      0
+    ],
+    "seed": 1624898286
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "start",
+      "fresh",
+      0
+    ],
+    "seed": 3203385140
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "start",
+      "fresh",
+      1
+    ],
+    "seed": 2009095154
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "start",
+      "fresh",
+      2
+    ],
+    "seed": 697736796
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "start",
+      "fresh",
+      3
+    ],
+    "seed": 2384374170
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "start",
+      "fresh",
+      4
+    ],
+    "seed": 2895796148
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      0,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1424072280
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      0,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1416938421
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      0,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2381314448
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      0,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3148168790
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      1,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3779275509
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      1,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2882910297
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      1,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 4099997391
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      1,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3258748780
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      2,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1625282593
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      2,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2642528345
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      2,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3322954615
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      2,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2642114770
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      3,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2174704687
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      3,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 244336973
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      3,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3768944019
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      3,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3915238772
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      4,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1669895001
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      4,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 154777265
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      4,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 545312322
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      4,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1278810891
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      5,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3362064394
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      5,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3156552644
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      5,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2655507651
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      5,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2819767474
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      6,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1051079611
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      6,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3894656367
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      6,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3824999105
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      6,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3338186290
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      7,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1983904899
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      7,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 763192950
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      7,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 884946621
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "training",
+      7,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1099766464
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3224363335
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1016378463
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3121721752
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "count"
+    ],
+    "seed": 143807751
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 1595071262
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "count"
+    ],
+    "seed": 536385997
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 2086651477
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "count"
+    ],
+    "seed": 435541937
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 335819843
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "count"
+    ],
+    "seed": 2904784916
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 3230514401
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "count"
+    ],
+    "seed": 623030503
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 3028276920
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "count"
+    ],
+    "seed": 1971509682
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 1180077785
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "count"
+    ],
+    "seed": 3022367693
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 2978345162
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "count"
+    ],
+    "seed": 3516712641
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 3045425284
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "count"
+    ],
+    "seed": 2694241824
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 1224753163
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "count"
+    ],
+    "seed": 1589647010
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 4063881982
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "count"
+    ],
+    "seed": 623683048
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 1589209358
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "count"
+    ],
+    "seed": 2881457309
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 1509139993
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "count"
+    ],
+    "seed": 2109245497
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 3240946512
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "count"
+    ],
+    "seed": 4103345439
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 3087961024
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "count"
+    ],
+    "seed": 4105209899
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 2797772695
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "count"
+    ],
+    "seed": 708706356
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 2312034276
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "count"
+    ],
+    "seed": 2931483008
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 2325554084
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "count"
+    ],
+    "seed": 2143535194
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 530312196
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "count"
+    ],
+    "seed": 4055493435
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 384817601
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "count"
+    ],
+    "seed": 3637254292
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 1350964510
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "count"
+    ],
+    "seed": 2209745679
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 1200734935
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "count"
+    ],
+    "seed": 21683060
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 1716952996
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "count"
+    ],
+    "seed": 2412133935
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2243200122
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3774245638
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2260792261
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1550826976
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 592084306
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2647075450
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2970684078
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 4224885795
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3541722777
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 523917
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1764369888
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3013114547
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3226251147
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2800759215
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2366115243
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1721592452
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3682474955
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2010918824
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 4060485105
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 792493588
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2271096605
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 4148864117
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 382733686
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 398471299
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 4288391929
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3743062931
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2025599208
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 4030767271
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2679930101
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2634189865
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3478890216
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1626439511
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 519158119
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "count"
+    ],
+    "seed": 202827235
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1471628392
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3105090308
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 3258905635
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "count"
+    ],
+    "seed": 2383365185
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 392286143
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "count"
+    ],
+    "seed": 165987217
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 471301831
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "count"
+    ],
+    "seed": 3570766623
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 2563642567
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "count"
+    ],
+    "seed": 2831728311
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 2428457405
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "count"
+    ],
+    "seed": 418393986
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 2621154794
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "count"
+    ],
+    "seed": 1731996042
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 410083633
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "count"
+    ],
+    "seed": 3862385013
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 2789994751
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "count"
+    ],
+    "seed": 2690417834
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 3564492033
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "count"
+    ],
+    "seed": 3258550906
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 1993971986
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "count"
+    ],
+    "seed": 4146578129
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 2861660629
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "count"
+    ],
+    "seed": 1466820201
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 1762417519
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "count"
+    ],
+    "seed": 2306443157
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 752043109
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "count"
+    ],
+    "seed": 2102806054
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 2178448850
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "count"
+    ],
+    "seed": 797172607
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 1686082408
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "count"
+    ],
+    "seed": 4030168304
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 1722557343
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "count"
+    ],
+    "seed": 2466484278
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 634607055
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "count"
+    ],
+    "seed": 1680543862
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 2593011740
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "count"
+    ],
+    "seed": 3502127758
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 1245964768
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "count"
+    ],
+    "seed": 3667226866
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 3296644878
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "count"
+    ],
+    "seed": 3040229417
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 1997457478
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "count"
+    ],
+    "seed": 1817706419
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 3773246042
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "count"
+    ],
+    "seed": 3642236557
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      0,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1005981199
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      0,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3563241987
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      0,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1274522456
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      0,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3287393052
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      1,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1072877740
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      1,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1336124354
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      1,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 101539647
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      1,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3442012080
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      2,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 4263338154
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      2,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2397085105
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      2,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 783336926
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      2,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1629645469
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      3,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 230634714
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      3,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3985139646
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      3,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3180108489
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      3,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 595906250
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      4,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 834153447
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      4,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 361791588
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      4,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1797035903
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      4,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 935860244
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      5,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3602080589
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      5,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 613334633
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      5,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 4082236864
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      5,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1052192341
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      6,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2335112212
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      6,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3187060313
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      6,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 812347961
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      6,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3124550837
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      7,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1037843346
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      7,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1338338191
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      7,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1045401986
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "training",
+      7,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1814956041
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1532310755
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2453376845
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2916182417
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3355508822
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 3844147472
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "count"
+    ],
+    "seed": 2325979933
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 1384498116
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "count"
+    ],
+    "seed": 713260295
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 102829230
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "count"
+    ],
+    "seed": 895388099
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 79133332
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "count"
+    ],
+    "seed": 810927274
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 2273812143
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "count"
+    ],
+    "seed": 2477997178
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 3762809342
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "count"
+    ],
+    "seed": 1213305434
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 1088186596
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "count"
+    ],
+    "seed": 631315068
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 2481698924
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "count"
+    ],
+    "seed": 1047099561
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 2308211734
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "count"
+    ],
+    "seed": 1053239987
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 560071602
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "count"
+    ],
+    "seed": 2078674935
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 2385539203
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "count"
+    ],
+    "seed": 1249605672
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 2720125525
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "count"
+    ],
+    "seed": 1420375318
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 3652166642
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "count"
+    ],
+    "seed": 837159039
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 3198616467
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "count"
+    ],
+    "seed": 4058980667
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 252689852
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "count"
+    ],
+    "seed": 3012197763
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 2099958027
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "count"
+    ],
+    "seed": 295634069
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 2603768053
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "count"
+    ],
+    "seed": 1639799296
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 3361711400
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "count"
+    ],
+    "seed": 2294459035
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 3068955659
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "count"
+    ],
+    "seed": 711054704
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 1123077289
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "count"
+    ],
+    "seed": 3038626222
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 4194698733
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "count"
+    ],
+    "seed": 3803500511
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 1840652046
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "count"
+    ],
+    "seed": 2273147318
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1992481322
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "replacement"
+    ],
+    "seed": 2216686351
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 639321298
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "replacement"
+    ],
+    "seed": 4025686064
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 2967080991
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "replacement"
+    ],
+    "seed": 465656585
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 2152717952
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "replacement"
+    ],
+    "seed": 457894255
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 3002350197
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "replacement"
+    ],
+    "seed": 794776971
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 1801797294
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "replacement"
+    ],
+    "seed": 3461195434
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 3742377326
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "replacement"
+    ],
+    "seed": 619353763
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 3146012839
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "replacement"
+    ],
+    "seed": 1550790824
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 2566214232
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "replacement"
+    ],
+    "seed": 3096281647
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 2851258715
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "replacement"
+    ],
+    "seed": 4052321984
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 2350168001
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "replacement"
+    ],
+    "seed": 1728132529
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 1750582971
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "replacement"
+    ],
+    "seed": 2937230959
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 2863968013
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "replacement"
+    ],
+    "seed": 2807554184
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 1045203322
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "replacement"
+    ],
+    "seed": 536468955
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 3474252491
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "replacement"
+    ],
+    "seed": 126268010
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 449785465
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "replacement"
+    ],
+    "seed": 2323903366
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 3861918674
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "replacement"
+    ],
+    "seed": 1306999061
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 2680124544
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "replacement"
+    ],
+    "seed": 1898317607
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 3543757416
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "replacement"
+    ],
+    "seed": 1960392825
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 3021029863
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "replacement"
+    ],
+    "seed": 1655400537
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 1328322199
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "replacement"
+    ],
+    "seed": 1480110970
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 3613336097
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "replacement"
+    ],
+    "seed": 3652157760
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 854003478
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "replacement"
+    ],
+    "seed": 2010245403
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 3218739625
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "replacement"
+    ],
+    "seed": 519350531
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "coin"
+    ],
+    "seed": 2195712909
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "replacement"
+    ],
+    "seed": 2458797156
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "coin"
+    ],
+    "seed": 1646528756
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "replacement"
+    ],
+    "seed": 1642986027
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "coin"
+    ],
+    "seed": 1184163130
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "replacement"
+    ],
+    "seed": 4099593121
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "coin"
+    ],
+    "seed": 2243415034
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "replacement"
+    ],
+    "seed": 986413718
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "coin"
+    ],
+    "seed": 503730598
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "replacement"
+    ],
+    "seed": 869212131
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "coin"
+    ],
+    "seed": 3199862595
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "replacement"
+    ],
+    "seed": 3036263961
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "coin"
+    ],
+    "seed": 4117133585
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "replacement"
+    ],
+    "seed": 2791525920
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "coin"
+    ],
+    "seed": 2748294079
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "replacement"
+    ],
+    "seed": 3843128370
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "coin"
+    ],
+    "seed": 2001361875
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "replacement"
+    ],
+    "seed": 1774306615
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "coin"
+    ],
+    "seed": 2327555573
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "replacement"
+    ],
+    "seed": 1002849594
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "coin"
+    ],
+    "seed": 3672423581
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "replacement"
+    ],
+    "seed": 2667682544
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "coin"
+    ],
+    "seed": 1853349070
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "replacement"
+    ],
+    "seed": 3967509676
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "coin"
+    ],
+    "seed": 1160586417
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "replacement"
+    ],
+    "seed": 1658944036
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "coin"
+    ],
+    "seed": 2816698521
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "replacement"
+    ],
+    "seed": 1915217764
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "coin"
+    ],
+    "seed": 1417937946
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "replacement"
+    ],
+    "seed": 3895046774
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "coin"
+    ],
+    "seed": 1679900340
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "replacement"
+    ],
+    "seed": 1860060448
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 21958194
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "replacement"
+    ],
+    "seed": 1777359778
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2962123054
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "replacement"
+    ],
+    "seed": 4204016594
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 3973258955
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "replacement"
+    ],
+    "seed": 1321936507
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 3134233868
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "replacement"
+    ],
+    "seed": 636214064
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 2033005448
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "replacement"
+    ],
+    "seed": 2777377894
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 992468309
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "replacement"
+    ],
+    "seed": 758206997
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 333551864
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "replacement"
+    ],
+    "seed": 3331443094
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 1982553570
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "replacement"
+    ],
+    "seed": 2865715370
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 2654866566
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "replacement"
+    ],
+    "seed": 2983097363
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 1080604480
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "replacement"
+    ],
+    "seed": 3875334769
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 2759976144
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "replacement"
+    ],
+    "seed": 568426289
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 232092478
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "replacement"
+    ],
+    "seed": 296822007
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 3639933035
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "replacement"
+    ],
+    "seed": 4071927884
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 4037519283
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "replacement"
+    ],
+    "seed": 3467653395
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 3982441141
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "replacement"
+    ],
+    "seed": 303485577
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 3446328937
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "replacement"
+    ],
+    "seed": 3075549641
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 1052052118
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "replacement"
+    ],
+    "seed": 439286925
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 105861101
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "replacement"
+    ],
+    "seed": 3347493331
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 1788628417
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "replacement"
+    ],
+    "seed": 3638560688
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 230594805
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "replacement"
+    ],
+    "seed": 2597967922
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 1215124928
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "replacement"
+    ],
+    "seed": 3177008243
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 3375891793
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "replacement"
+    ],
+    "seed": 286323422
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 3602638281
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "replacement"
+    ],
+    "seed": 2203603702
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 1106293867
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "replacement"
+    ],
+    "seed": 1689873413
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "coin"
+    ],
+    "seed": 2106672557
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "replacement"
+    ],
+    "seed": 961643932
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "coin"
+    ],
+    "seed": 1773220847
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "replacement"
+    ],
+    "seed": 2914105105
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "coin"
+    ],
+    "seed": 4039727063
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "replacement"
+    ],
+    "seed": 2216385664
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "coin"
+    ],
+    "seed": 3211469103
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "replacement"
+    ],
+    "seed": 1226254363
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "coin"
+    ],
+    "seed": 1147289602
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "replacement"
+    ],
+    "seed": 299005608
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "coin"
+    ],
+    "seed": 441756104
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "replacement"
+    ],
+    "seed": 1501864048
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "coin"
+    ],
+    "seed": 2278166323
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "replacement"
+    ],
+    "seed": 1511474235
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "coin"
+    ],
+    "seed": 2820479980
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "replacement"
+    ],
+    "seed": 3443669822
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "coin"
+    ],
+    "seed": 454960247
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "replacement"
+    ],
+    "seed": 2781720119
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "coin"
+    ],
+    "seed": 4166268644
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "replacement"
+    ],
+    "seed": 2026074683
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "coin"
+    ],
+    "seed": 3722852559
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "replacement"
+    ],
+    "seed": 2023665089
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "coin"
+    ],
+    "seed": 2231253400
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "replacement"
+    ],
+    "seed": 3950707093
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "coin"
+    ],
+    "seed": 1118185430
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "replacement"
+    ],
+    "seed": 1524871147
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "coin"
+    ],
+    "seed": 1127784554
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "replacement"
+    ],
+    "seed": 3282725993
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "coin"
+    ],
+    "seed": 1312351780
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "replacement"
+    ],
+    "seed": 2534617595
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "coin"
+    ],
+    "seed": 2692491479
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "replacement"
+    ],
+    "seed": 811629380
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "FAST",
+      "random"
+    ],
+    "seed": 2346382697
+  },
+  {
+    "role": [
+      "n20_ER_6502001",
+      "FAST",
+      "spectral"
+    ],
+    "seed": 3860243630
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "graph"
+    ],
+    "seed": 6502002
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "weights"
+    ],
+    "seed": 582001642
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "start",
+      "training",
+      0
+    ],
+    "seed": 3807477794
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "start",
+      "fresh",
+      0
+    ],
+    "seed": 2259750544
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "start",
+      "fresh",
+      1
+    ],
+    "seed": 1396821583
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "start",
+      "fresh",
+      2
+    ],
+    "seed": 1157590741
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "start",
+      "fresh",
+      3
+    ],
+    "seed": 3790131661
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "start",
+      "fresh",
+      4
+    ],
+    "seed": 1277456294
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      0,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3281655349
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      0,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 271003197
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      0,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 4067528562
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      0,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1123702934
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      1,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 351844840
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      1,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1527895808
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      1,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1588124985
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      1,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3954700572
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      2,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2630683299
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      2,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1727301934
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      2,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 4251730631
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      2,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3957015768
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      3,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2031983415
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      3,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 820260396
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      3,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3061723189
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      3,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 632010292
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      4,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2634396857
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      4,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3226371257
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      4,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1084987286
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      4,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2928400071
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      5,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 986580593
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      5,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3898642693
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      5,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1176379567
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      5,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1807877332
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      6,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 116640539
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      6,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 700010538
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      6,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3269313178
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      6,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2872869651
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      7,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2674962968
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      7,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2789540376
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      7,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3525102804
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "training",
+      7,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3373121657
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2394256729
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1297925097
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3729614901
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2527460896
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 3717948106
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "count"
+    ],
+    "seed": 457521439
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 3527493311
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "count"
+    ],
+    "seed": 226668559
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 3947667388
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "count"
+    ],
+    "seed": 2185964453
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 165460945
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "count"
+    ],
+    "seed": 346128469
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 29905636
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "count"
+    ],
+    "seed": 588104800
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 2545467420
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "count"
+    ],
+    "seed": 1702902089
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 400587661
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "count"
+    ],
+    "seed": 1184154414
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 3699663043
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "count"
+    ],
+    "seed": 1142285431
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 3382291684
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "count"
+    ],
+    "seed": 373223366
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 957188244
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "count"
+    ],
+    "seed": 1080712176
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 2612107661
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "count"
+    ],
+    "seed": 3559812539
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 953233591
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "count"
+    ],
+    "seed": 3611118082
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 3485680269
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "count"
+    ],
+    "seed": 1878130974
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 520105290
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "count"
+    ],
+    "seed": 3379493471
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 2522037563
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "count"
+    ],
+    "seed": 2767364447
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 3299196729
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "count"
+    ],
+    "seed": 2270758130
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 760920565
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "count"
+    ],
+    "seed": 1991041437
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 4093132569
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "count"
+    ],
+    "seed": 3470778349
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 389398370
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "count"
+    ],
+    "seed": 3946624779
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 4180777871
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "count"
+    ],
+    "seed": 1065472458
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 4159119736
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "count"
+    ],
+    "seed": 3468206979
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 891876053
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "bosonic",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "count"
+    ],
+    "seed": 3473711025
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2007517669
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 346385254
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3061567557
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      0,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3770155538
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2853918852
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2363098525
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 683924603
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      1,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1935416693
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 4225557993
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2379785692
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3876853884
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      2,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1509618953
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3162839524
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3589955956
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1419227230
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      3,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2774023748
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1110271932
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1747675910
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 70718326
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      4,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2938584811
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3064007973
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3813237545
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1782151429
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      5,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 26358673
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3433183820
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 819648584
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2595833969
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      6,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1080586196
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 156673076
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3626918271
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 708951670
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "training",
+      7,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 371213490
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 907293225
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3641928666
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 250505078
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1658942937
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 2443686227
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "count"
+    ],
+    "seed": 3119341682
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 2095888285
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "count"
+    ],
+    "seed": 286928744
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 65686464
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "count"
+    ],
+    "seed": 4164870144
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 692818145
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "count"
+    ],
+    "seed": 3901375984
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 2013125424
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "count"
+    ],
+    "seed": 36330259
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 984350368
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "count"
+    ],
+    "seed": 1307851834
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 527374817
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "count"
+    ],
+    "seed": 1443992129
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 1529700193
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "count"
+    ],
+    "seed": 1542666842
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 2031772883
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "count"
+    ],
+    "seed": 3126734838
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 2369329674
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "count"
+    ],
+    "seed": 3516267315
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 2541336700
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "count"
+    ],
+    "seed": 3727800221
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 2813608062
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "count"
+    ],
+    "seed": 3503639942
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 883322213
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "count"
+    ],
+    "seed": 730613224
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 1441410265
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "count"
+    ],
+    "seed": 2944293680
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 3764995072
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "count"
+    ],
+    "seed": 3054340073
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 1283291744
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "count"
+    ],
+    "seed": 2177953989
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 1637509396
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "count"
+    ],
+    "seed": 1166117526
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 1982355494
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "count"
+    ],
+    "seed": 3571373257
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 943024743
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "count"
+    ],
+    "seed": 2568989777
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 3524888430
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "count"
+    ],
+    "seed": 2780134541
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 3219990438
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "count"
+    ],
+    "seed": 424025518
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 4121909033
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "distinguishable",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "count"
+    ],
+    "seed": 4036435637
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      0,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 425965824
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      0,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 82689108
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      0,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3501153616
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      0,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3186283259
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      1,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2148523903
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      1,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 4114623550
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      1,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2002555399
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      1,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 420589974
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      2,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3306744508
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      2,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1442860468
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      2,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3994804224
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      2,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3419041904
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      3,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 3621828759
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      3,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 3289250298
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      3,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 1222455717
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      3,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3898163460
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      4,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 4231430169
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      4,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1378525821
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      4,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2551651451
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      4,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 2073760176
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      5,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1591189770
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      5,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 1515024078
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      5,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 14478351
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      5,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 1493559286
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      6,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1369797997
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      6,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 290781107
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      6,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 3504372260
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      6,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 674175133
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      7,
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 4157893142
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      7,
+      0,
+      0,
+      "count"
+    ],
+    "seed": 40063927
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      7,
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 4184941034
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "training",
+      7,
+      0,
+      1,
+      "count"
+    ],
+    "seed": 822163016
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 1052932070
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      0,
+      "count"
+    ],
+    "seed": 2676065688
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 4189802813
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      1,
+      "count"
+    ],
+    "seed": 3764893739
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 696048289
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      2,
+      "count"
+    ],
+    "seed": 1189396822
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 2932615962
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      3,
+      "count"
+    ],
+    "seed": 1375681906
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 1573711176
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      4,
+      "count"
+    ],
+    "seed": 4137002313
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 485035983
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      5,
+      "count"
+    ],
+    "seed": 3092626284
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 3561188551
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      6,
+      "count"
+    ],
+    "seed": 1644423667
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 598947258
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      0,
+      7,
+      "count"
+    ],
+    "seed": 1518621864
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 3579273477
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      0,
+      "count"
+    ],
+    "seed": 2668487032
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 623361199
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      1,
+      "count"
+    ],
+    "seed": 522400661
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 3232964145
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      2,
+      "count"
+    ],
+    "seed": 600813828
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 260168496
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      3,
+      "count"
+    ],
+    "seed": 3131859923
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 3156353045
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      4,
+      "count"
+    ],
+    "seed": 3765653850
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 1434887629
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      5,
+      "count"
+    ],
+    "seed": 765783715
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 3529974820
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      6,
+      "count"
+    ],
+    "seed": 853639763
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 2084923099
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      1,
+      7,
+      "count"
+    ],
+    "seed": 361904765
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 3589035450
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      0,
+      "count"
+    ],
+    "seed": 1625921273
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 3584351138
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      1,
+      "count"
+    ],
+    "seed": 421024154
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 471953766
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      2,
+      "count"
+    ],
+    "seed": 1527267114
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 3473258844
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      3,
+      "count"
+    ],
+    "seed": 928136334
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 179112672
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      4,
+      "count"
+    ],
+    "seed": 3600798965
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 3820818443
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      5,
+      "count"
+    ],
+    "seed": 4149259837
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 3691787655
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      6,
+      "count"
+    ],
+    "seed": 1169186913
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 1990510788
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "species4",
+      "fresh",
+      "selected",
+      2,
+      7,
+      "count"
+    ],
+    "seed": 4226052522
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 2453402189
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "replacement"
+    ],
+    "seed": 1948024370
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 588218777
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "replacement"
+    ],
+    "seed": 3523429430
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 3136591787
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "replacement"
+    ],
+    "seed": 1955728222
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 3663041759
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "replacement"
+    ],
+    "seed": 1504439156
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 2197371040
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "replacement"
+    ],
+    "seed": 111956606
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 3952874215
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "replacement"
+    ],
+    "seed": 4178639279
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 577769965
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "replacement"
+    ],
+    "seed": 2554581815
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 2800034076
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "replacement"
+    ],
+    "seed": 1866622558
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 1065575241
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "replacement"
+    ],
+    "seed": 2219582448
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 910438142
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "replacement"
+    ],
+    "seed": 1914888052
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 763987678
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "replacement"
+    ],
+    "seed": 3962487498
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 4016511067
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "replacement"
+    ],
+    "seed": 551157387
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 3668848646
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "replacement"
+    ],
+    "seed": 3885000745
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 3053674857
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "replacement"
+    ],
+    "seed": 2628788594
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 2062925563
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "replacement"
+    ],
+    "seed": 2057475144
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 1675580680
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "replacement"
+    ],
+    "seed": 2623277
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 1197961671
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "replacement"
+    ],
+    "seed": 1176510448
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 2960342033
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "replacement"
+    ],
+    "seed": 2009708450
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 2103817831
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "replacement"
+    ],
+    "seed": 2223401691
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 209980309
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "replacement"
+    ],
+    "seed": 1389554005
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 3945038624
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "replacement"
+    ],
+    "seed": 2229921384
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 2650511117
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "replacement"
+    ],
+    "seed": 979138992
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 3293343684
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "replacement"
+    ],
+    "seed": 3893509742
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 1524640090
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "replacement"
+    ],
+    "seed": 727394159
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "coin"
+    ],
+    "seed": 2552112531
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "replacement"
+    ],
+    "seed": 1731420650
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "coin"
+    ],
+    "seed": 3677317469
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "replacement"
+    ],
+    "seed": 2912688156
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "coin"
+    ],
+    "seed": 3144275365
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "replacement"
+    ],
+    "seed": 1930062420
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "coin"
+    ],
+    "seed": 2093412275
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "replacement"
+    ],
+    "seed": 273735149
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "coin"
+    ],
+    "seed": 305804525
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "replacement"
+    ],
+    "seed": 2076930469
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "coin"
+    ],
+    "seed": 1801566619
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "replacement"
+    ],
+    "seed": 2346861956
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "coin"
+    ],
+    "seed": 1661125062
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "replacement"
+    ],
+    "seed": 925499473
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "coin"
+    ],
+    "seed": 1713879082
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "replacement"
+    ],
+    "seed": 4105271115
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "coin"
+    ],
+    "seed": 2313384840
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "replacement"
+    ],
+    "seed": 1149979614
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "coin"
+    ],
+    "seed": 2497173535
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "replacement"
+    ],
+    "seed": 3941218007
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "coin"
+    ],
+    "seed": 2569489140
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "replacement"
+    ],
+    "seed": 2359547723
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "coin"
+    ],
+    "seed": 4150446931
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "replacement"
+    ],
+    "seed": 3562270452
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "coin"
+    ],
+    "seed": 1853771162
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "replacement"
+    ],
+    "seed": 4194359113
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "coin"
+    ],
+    "seed": 119940974
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "replacement"
+    ],
+    "seed": 3168543626
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "coin"
+    ],
+    "seed": 1131455892
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "replacement"
+    ],
+    "seed": 2165317751
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "coin"
+    ],
+    "seed": 3290510993
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r2",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "replacement"
+    ],
+    "seed": 2958685128
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "coin"
+    ],
+    "seed": 785874288
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      0,
+      "replacement"
+    ],
+    "seed": 669354326
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "coin"
+    ],
+    "seed": 2661397364
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      1,
+      "replacement"
+    ],
+    "seed": 922586179
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "coin"
+    ],
+    "seed": 3719172809
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      2,
+      "replacement"
+    ],
+    "seed": 3926190156
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "coin"
+    ],
+    "seed": 472381409
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      3,
+      "replacement"
+    ],
+    "seed": 1666692806
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "coin"
+    ],
+    "seed": 3016942249
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      4,
+      "replacement"
+    ],
+    "seed": 2226572526
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "coin"
+    ],
+    "seed": 1334735610
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      5,
+      "replacement"
+    ],
+    "seed": 2304611633
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "coin"
+    ],
+    "seed": 206582175
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      6,
+      "replacement"
+    ],
+    "seed": 3469759025
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "coin"
+    ],
+    "seed": 574910165
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      0,
+      7,
+      "replacement"
+    ],
+    "seed": 1856832519
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "coin"
+    ],
+    "seed": 3511276736
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      0,
+      "replacement"
+    ],
+    "seed": 632654640
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "coin"
+    ],
+    "seed": 1338819761
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      1,
+      "replacement"
+    ],
+    "seed": 3556436259
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "coin"
+    ],
+    "seed": 397819909
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      2,
+      "replacement"
+    ],
+    "seed": 2888920364
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "coin"
+    ],
+    "seed": 425553451
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      3,
+      "replacement"
+    ],
+    "seed": 3596034532
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "coin"
+    ],
+    "seed": 2234396883
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      4,
+      "replacement"
+    ],
+    "seed": 1032031674
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "coin"
+    ],
+    "seed": 3583967232
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      5,
+      "replacement"
+    ],
+    "seed": 2738064001
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "coin"
+    ],
+    "seed": 1204777943
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      6,
+      "replacement"
+    ],
+    "seed": 3729504065
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "coin"
+    ],
+    "seed": 2619459198
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      1,
+      7,
+      "replacement"
+    ],
+    "seed": 3847280131
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "coin"
+    ],
+    "seed": 1348487273
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      0,
+      "replacement"
+    ],
+    "seed": 1114024188
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "coin"
+    ],
+    "seed": 259272438
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      1,
+      "replacement"
+    ],
+    "seed": 3077431846
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "coin"
+    ],
+    "seed": 722028291
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      2,
+      "replacement"
+    ],
+    "seed": 3472964908
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "coin"
+    ],
+    "seed": 1292779476
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      3,
+      "replacement"
+    ],
+    "seed": 1832480729
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "coin"
+    ],
+    "seed": 725433748
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      4,
+      "replacement"
+    ],
+    "seed": 3680739918
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "coin"
+    ],
+    "seed": 4196934960
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      5,
+      "replacement"
+    ],
+    "seed": 799828100
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "coin"
+    ],
+    "seed": 2267295749
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      6,
+      "replacement"
+    ],
+    "seed": 553217430
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "coin"
+    ],
+    "seed": 1086449989
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      2,
+      7,
+      "replacement"
+    ],
+    "seed": 3102577619
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "coin"
+    ],
+    "seed": 1068438406
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      0,
+      "replacement"
+    ],
+    "seed": 3119565806
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "coin"
+    ],
+    "seed": 881803746
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      1,
+      "replacement"
+    ],
+    "seed": 714296053
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "coin"
+    ],
+    "seed": 2504243006
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      2,
+      "replacement"
+    ],
+    "seed": 1052679939
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "coin"
+    ],
+    "seed": 3224418098
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      3,
+      "replacement"
+    ],
+    "seed": 2317471680
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "coin"
+    ],
+    "seed": 806889126
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      4,
+      "replacement"
+    ],
+    "seed": 3700857680
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "coin"
+    ],
+    "seed": 1591784420
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      5,
+      "replacement"
+    ],
+    "seed": 4232860240
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "coin"
+    ],
+    "seed": 3343536087
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      6,
+      "replacement"
+    ],
+    "seed": 1674653665
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "coin"
+    ],
+    "seed": 493448147
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      3,
+      7,
+      "replacement"
+    ],
+    "seed": 433910402
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "coin"
+    ],
+    "seed": 886212674
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      0,
+      "replacement"
+    ],
+    "seed": 2164345665
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "coin"
+    ],
+    "seed": 512087104
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      1,
+      "replacement"
+    ],
+    "seed": 1667775092
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "coin"
+    ],
+    "seed": 3707647398
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      2,
+      "replacement"
+    ],
+    "seed": 4095607942
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "coin"
+    ],
+    "seed": 3787715966
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      3,
+      "replacement"
+    ],
+    "seed": 3791771436
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "coin"
+    ],
+    "seed": 3894227547
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      4,
+      "replacement"
+    ],
+    "seed": 3619868719
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "coin"
+    ],
+    "seed": 3618848916
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      5,
+      "replacement"
+    ],
+    "seed": 2065260236
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "coin"
+    ],
+    "seed": 1839177765
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      6,
+      "replacement"
+    ],
+    "seed": 2623541569
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "coin"
+    ],
+    "seed": 549097918
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "r3",
+      "fresh",
+      "fixed",
+      4,
+      7,
+      "replacement"
+    ],
+    "seed": 2857295949
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "FAST",
+      "random"
+    ],
+    "seed": 276370092
+  },
+  {
+    "role": [
+      "n20_RR_6502002",
+      "FAST",
+      "spectral"
+    ],
+    "seed": 1234546738
+  }
+]
