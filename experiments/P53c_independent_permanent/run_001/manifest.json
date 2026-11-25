@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "claim_id": "P53C-INDEPENDENT-COMPLETE-K4-PERMANENT-REPLICATION",
+  "repository": {
+    "commit": "03f6cb1cb960e482a8734540b6d9f33915eacdda",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P53c_independent_permanent.py",
+    "--output",
+    "experiments/P53c_independent_permanent/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Independently rebuild all70x330 same-phase four-photon probabilities by24-term permanents in integer numerator basis1,i*sqrt3 over2; compare all group coefficients/probabilities and35x6435 independently convolved laws. Independently enumerate uniform TOP4 ties and verify the OLD fixed functional/normalized graph strictly separates all106 controls, or retain its nonstrict outcome.",
+    "coefficient_domain": "Python arbitrary integers and stdlib Fraction, no production/NumPy/SciPy/Perceval import, native LP, floating optical coefficient or random draw",
+    "conventions": "Posthoc, not blind: ROOT announced candidate/result. Independent matrix bit signs/base, full24 labelled permanent permutations and division Norm(per_num)/(256*prod n!), group denominator8^4; independent multiset count order/base9 convolution and exhaustive70-subset TOP4 ties. Old eight-photon target and71 kernels trusted from prior independent checkercc4c73b/pinned P53b certificate; new LP dual not used/audited. Fixed w=(X04-X15)/2 only, no replacement graph or optimization.",
+    "inputs": [
+      "P53b certificatebd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+      "P53c raw candidate408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065 copied byte-identically from61a4683"
+    ],
+    "bounds": {
+      "production_permanent_calls": 23100,
+      "terms_per_permanent": 24,
+      "production_permanent_terms": 554400,
+      "toy_permanent_calls": 3,
+      "maximum_convolution_pairs": 3811500,
+      "tie_candidate_pairs": 450450,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_scientific_data_bytes": 67108864,
+      "max_new_output_bytes": 4194304,
+      "max_inflated_input_bytes_per_file": 16777216,
+      "native_LP_calls": 0
+    },
+    "non_claims": [
+      "No independent reconstruction of the full8 quantum target or new ugly106 LP dual",
+      "No new phase/graph/sample/calibration or blind/heldout/optimizer/hardware/novelty result",
+      "No execution before exact freeze/ROOT review/exclusive slot; preserve first failure without automatic retry"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": []
+  },
+  "run": {
+    "started_at": "2026-11-25T13:14:22.720168+00:00",
+    "runtime_seconds": 1.125092,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P53c_independent_permanent.py",
+    "research/P53c_INDEPENDENT_PERMANENT_CARD.md",
+    "research/P53c_independent_permanent_contract.json",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+    "experiments/P53c_same_phase/run_001/data/certificate.json.gz"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P53c_independent_permanent.py",
+      "sha256": "7732244aa1c8a4251b701c628522e7decb895d0e5f228391a48394fa1696eab8",
+      "sha256_after": "7732244aa1c8a4251b701c628522e7decb895d0e5f228391a48394fa1696eab8"
+    },
+    {
+      "path": "research/P53c_INDEPENDENT_PERMANENT_CARD.md",
+      "sha256": "d07ab82c830313f6d3e478da04ed226678caf4a698b6339d6b7308c2f685eab8",
+      "sha256_after": "d07ab82c830313f6d3e478da04ed226678caf4a698b6339d6b7308c2f685eab8"
+    },
+    {
+      "path": "research/P53c_independent_permanent_contract.json",
+      "sha256": "48917b5c73f957fa107c4e04e1fdf2b6a04adad54d8007ce141289fe63da7651",
+      "sha256_after": "48917b5c73f957fa107c4e04e1fdf2b6a04adad54d8007ce141289fe63da7651"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+      "sha256": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+      "sha256_after": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe"
+    },
+    {
+      "path": "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+      "sha256": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065",
+      "sha256_after": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065"
+    }
+  ],
+  "output_directory": "experiments/P53c_independent_permanent/run_001",
+  "declared_results": [
+    "experiments/P53c_independent_permanent/run_001/data/replica.json.gz",
+    "experiments/P53c_independent_permanent/run_001/data/report.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P53c_independent_permanent/run_001/stdout.txt",
+      "sha256": "ff9e963996dea79ea0cab310e8bc25b93ef88346061f4920753490784c1a6913",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53c_independent_permanent/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53c_independent_permanent/run_001/data/replica.json.gz",
+      "sha256": "5a95e28294081ef34f32094fde49a7228971f62639e17c0cbef2761fe2e2be2b",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P53c_independent_permanent/run_001/data/report.json",
+      "sha256": "6f4539497c1bd254ca3d4af4883effa0b8b4ebe527b53435e6733e759a8a340f",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
