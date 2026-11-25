@@ -41,6 +41,12 @@ CPU/wall/overrun, initial/overall-late best, counters, initial-scan/initializati
 flags, and compact checkpoint times/cuts/packed masks. JSON and file writes are
 outside measured solve. No sampler/backend timing is inferred here.
 
+Before qualification, ROOT approved an accounting clarification: each complete
+best value/subset snapshot is prepared BEFORE the checkpoint clock, then cached
+online when admissible. Final trace-array export never searches/unpacks the
+best; its CPU/wall is reported separately, with total compute/overrun retained.
+The eligible result is an anytime RAM prefix, not a nanosecond hard-stop promise.
+
 Guard count includes the first cut, restart candidates and evaluated deltas;
 max_proposals>=1. If insufficient guard remains for a required full scan, stop
 explicitly rather than starting annealing before that scan. Any such early

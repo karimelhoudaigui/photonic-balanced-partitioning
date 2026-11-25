@@ -142,6 +142,7 @@ def solve_from_raw(adjacency, *, seed, initialization="random",
     stop_reason = None
     guard_blocked_scan = False
     first_scan_index = initial_descent_end_index = None
+    eligible_snapshot = overall_snapshot = None
 
     def remember():
         nonlocal best_cost, best_subset
@@ -149,10 +150,18 @@ def solve_from_raw(adjacency, *, seed, initialization="random",
             best_cost, best_subset = state.cost, state.inside.copy()
 
     def checkpoint(stage):
-        nonlocal stop_reason
-        packed = _pack(best_subset, n)
+        nonlocal stop_reason, eligible_snapshot, overall_snapshot
+        # Complete best value/subset is ready ONLINE, before this checkpoint's
+        # clock. End-of-run trace export must never reconstruct its winner.
+        snapshot = {"best_cut": int(best_cost), "best_subset": np.sort(best_subset),
+                    "checkpoint_index": len(times_cpu)}
+        packed = _pack(snapshot["best_subset"], n)
         now_cpu, now_wall = _clock()
         elapsed_cpu, elapsed_wall = now_cpu - cpu_start, now_wall - wall_start
+        snapshot.update(cpu_seconds=elapsed_cpu, wall_seconds=elapsed_wall)
+        overall_snapshot = snapshot
+        if elapsed_cpu <= cpu_budget_seconds:
+            eligible_snapshot = snapshot
         times_cpu.append(elapsed_cpu); times_wall.append(elapsed_wall)
         cuts.append(best_cost); masks.append(packed); work_trace.append(work); stages.append(stage)
         if elapsed_cpu >= cpu_budget_seconds:
@@ -250,17 +259,15 @@ def solve_from_raw(adjacency, *, seed, initialization="random",
             if stop_reason is None:
                 descend()
 
+    export_cpu_start, export_wall_start = _clock()
     trace = {"cpu_seconds": np.asarray(times_cpu, dtype=float),
              "wall_seconds": np.asarray(times_wall, dtype=float),
              "best_cut": np.asarray(cuts, dtype=np.int64),
              "best_subset_packbits_little": np.asarray(masks, dtype=np.uint8).reshape((-1, (n + 7) // 8)),
              "proposal_count": np.asarray(work_trace, dtype=np.int64), "stage": stages}
-    eligible = np.flatnonzero(trace["cpu_seconds"] <= cpu_budget_seconds)
-    eligible_index = int(eligible[-1]) if len(eligible) else None
-    eligible_subset = _unpack(trace["best_subset_packbits_little"][eligible_index], n) if eligible_index is not None else None
-    overall_subset = np.sort(best_subset) if best_subset is not None else None
     end_cpu, end_wall = _clock()
     compute_cpu, compute_wall = end_cpu - cpu_start, end_wall - wall_start
+    eligible_index = eligible_snapshot["checkpoint_index"] if eligible_snapshot is not None else None
     guard_stopped = guard_blocked_scan or stop_reason == "max_proposals"
     last_checkpoint_cpu = times_cpu[-1] if times_cpu else validation_cpu
     early_guard = guard_stopped and last_checkpoint_cpu < cpu_budget_seconds
@@ -268,28 +275,35 @@ def solve_from_raw(adjacency, *, seed, initialization="random",
     initial_descent_timely = initial_descent_end_index is not None and times_cpu[initial_descent_end_index] <= cpu_budget_seconds
     return {"algorithm": "P50_from_raw_descent_first_v1", "initialization": initialization,
             "n": n, "seed": int(seed), "cpu_budget_seconds": cpu_budget_seconds,
-            "max_proposals": max_proposals, "best_cut": int(cuts[eligible_index]) if eligible_index is not None else None,
-            "best_subset": eligible_subset, "has_eligible_result": eligible_index is not None,
+            "max_proposals": max_proposals, "best_cut": eligible_snapshot["best_cut"] if eligible_snapshot is not None else None,
+            "best_subset": eligible_snapshot["best_subset"] if eligible_snapshot is not None else None,
+            "has_eligible_result": eligible_index is not None,
             "comparison_acceptance_eligible": eligible_index is not None and not early_guard,
             "eligible_checkpoint_index": eligible_index,
-            "eligible_checkpoint_cpu_seconds": times_cpu[eligible_index] if eligible_index is not None else None,
-            "eligible_checkpoint_wall_seconds": times_wall[eligible_index] if eligible_index is not None else None,
+            "eligible_checkpoint_cpu_seconds": eligible_snapshot["cpu_seconds"] if eligible_snapshot is not None else None,
+            "eligible_checkpoint_wall_seconds": eligible_snapshot["wall_seconds"] if eligible_snapshot is not None else None,
+            "best_snapshot_cached_online": True, "comparison_is_anytime_prefix": True,
             "initial_cut": initial_cost, "initial_subset": initial_subset,
             "initialization_completed_before_deadline": bool(times_cpu and times_cpu[0] <= cpu_budget_seconds),
             "first_scan_completed_before_deadline": first_scan_timely,
             "initial_descent_completed_before_deadline": initial_descent_timely,
-            "overall_completed_best_cut": best_cost, "overall_completed_best_subset": overall_subset,
+            "overall_completed_best_cut": overall_snapshot["best_cut"] if overall_snapshot is not None else None,
+            "overall_completed_best_subset": overall_snapshot["best_subset"] if overall_snapshot is not None else None,
             "last_completed_checkpoint_index": len(times_cpu) - 1 if times_cpu else None,
             "stop_reason": stop_reason, "cap_hit": work >= max_proposals,
             "guard_blocked_full_scan": guard_blocked_scan, "early_cap_inconclusive": early_guard,
             "early_wall_inconclusive": False, "proposal_count": work, "counters": counters,
             "compute_cpu_seconds": compute_cpu, "compute_wall_seconds": compute_wall,
+            "online_search_cpu_seconds": export_cpu_start - cpu_start,
+            "online_search_wall_seconds": export_wall_start - wall_start,
+            "finalization_cpu_seconds": end_cpu - export_cpu_start,
+            "finalization_wall_seconds": end_wall - export_wall_start,
             "cpu_overrun_seconds": max(0., compute_cpu - cpu_budget_seconds),
             "validation_cpu_seconds": validation_cpu, "validation_wall_seconds": validation_wall,
             "initialization_details": details, "trace": trace,
             "free_incumbent_used": False, "external_features_used": False,
             "proposal_cap_is_cost_equivalent": False,
-            "timing_convention": "API entry: raw conversion/validation/own features/init/descent/search/compact traces; JSON+I/O excluded"}
+            "timing_convention": "API entry: raw prep/init/search/online best snapshots; final trace-array export timed separately, compute totals include export; JSON+I/O excluded; eligible best is an anytime RAM snapshot, not a nanosecond hard-return guarantee"}
 
 
 def json_safe_result(value):

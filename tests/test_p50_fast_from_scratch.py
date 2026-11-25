@@ -149,6 +149,21 @@ def test_late_first_scan_cannot_improve_eligible_initialization(monkeypatch):
     assert result["counters"]["anneal_proposals"] == 0
 
 
+def test_best_is_cached_online_without_postloop_subset_reconstruction(monkeypatch):
+    monkeypatch.setattr(fast, "_clock", TickClock())
+    def forbidden_reconstruction(*args, **kwargs):
+        raise AssertionError("online best must not be unpacked from exported traces")
+    monkeypatch.setattr(fast, "_unpack", forbidden_reconstruction)
+    result = fast.solve_from_raw(fixture(6), seed=1729,
+                                 cpu_budget_seconds=2.5, max_proposals=1000)
+    assert result["best_snapshot_cached_online"] and result["comparison_is_anytime_prefix"]
+    assert result["eligible_checkpoint_cpu_seconds"] == 2.
+    assert result["best_cut"] == result["initial_cut"] == direct_cut(fixture(6), result["best_subset"])
+    assert result["compute_cpu_seconds"] > result["cpu_budget_seconds"]
+    assert result["finalization_cpu_seconds"] == result["finalization_wall_seconds"] == 1.
+    assert result["compute_cpu_seconds"] == result["online_search_cpu_seconds"] + result["finalization_cpu_seconds"]
+
+
 def test_no_improvement_scan_still_records_timely_checkpoint(monkeypatch):
     monkeypatch.setattr(fast, "_clock", TickClock())
     result = fast.solve_from_raw(np.zeros((6, 6), dtype=np.int64), seed=1729,
