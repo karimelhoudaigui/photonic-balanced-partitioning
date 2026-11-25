@@ -1,0 +1,20 @@
+{
+  "schema_version":2,
+  "contract_only":true,
+  "binding_state":"CODE_ONLY_NOT_EXECUTED",
+  "claim_id":"P79-TINY-EVEN-LOOP-QUALIFICATION",
+  "mathematics":{
+    "assertion_tested":"Twelve literal tiny fixtures: scalar/rational even-loop coefficients and Gaussian factorials through two direct photons, Perron rows and rooted cycle weight, physical normalizer, determinant/poly cross terms, coherent signed inputs, CP endpoints, resource/exclusive/CLI behavior, two fixed HOM amplitudes with native readback1. No main cases(), production draw, random seed, RNG, Gaussian native sampler or main population.",
+    "coefficient_domain":"Exact Fraction real rational algebra; binary64 scalar logs/CP quantiles and fixed two-photon Perceval Naive amplitudes",
+    "conventions":"Physical and expanded hafnian matrices at most2; direct Gaussian/native total photons at most2. Trace-polynomial scalar coefficients through degree6 on<=2modes. Helpers portable, contracted persistent CLI strict before output; native_api frozenP66fb3 with actual thread readback1.",
+    "inputs":["Literal one/two-mode data only, no six registered source factories or stochastic calibration"],
+    "bounds":{"planned_pytest_items":12,"max_physical_modes":2,"max_expanded_hafnian_dimension":2,"max_direct_photons":2,"max_trace_polynomial_degree":6,"fixed_native_points":2,"CPU_seconds":60,"wall_seconds":90,"threads":1,"native_threads":1,"workers":1,"max_log_bytes":4194304,"max_record_bytes":31457280,"max_scientific_bytes":33554432,"max_combined_bytes":37748736,"planned_logical_workspace_bytes":268435456,"failed_retries":0,"production_draws":0,"QPU_calls":0},
+    "non_claims":["No unbounded-law proof, main authorization, finite-bit TV certificate, optimizer advantage or native Gaussian/QPU source", "Qualification scientific result size observed after completion, no invented hard RSS/affinity", "Any failure preserves raw prefix with zero retries; no missing datum is zero"]
+  },
+  "execution_artifacts":["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P78_nonnegative_Gaussian_even_loop_sampler.md","research/P66_exact_finite_check.py","research/P79_even_loop_validation.py","tests/test_p79_even_loop_validation.py","research/P79_FINITE_VALIDATION_CONTRACT.md","research/P79_even_loop_preflight_contract.json","research/P79_even_loop_execution_contract.json"],
+  "software":[{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"},{"name":"perceval-quandela","version":"1.3.0"},{"name":"exqalibur","version":"1.4.2"},{"name":"pytest","version":"8.4.2"}],
+  "randomness":{"used":false,"generator":"Literal fixtures only; no RNG evaluation","seed":null},
+  "planned_command":["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-m","pytest","-x","-q","-p","no:cacheprovider","tests/test_p79_even_loop_validation.py","--junitxml=research/P79_even_loop_preflight/run_001/junit.xml"],
+  "declared_results":["research/P79_even_loop_preflight/run_001/junit.xml"],
+  "resource_note":"CODE ONLY. ROOT complete source/fixtures/contracts and proof review plus explicit separate qualification authorization required. One worker/CPU60/wall90/env+native1/log4MiB/science32MiB/combined36MiB/logical256MiBPLAN, no hard RSS/affinity, zero retries. Twelve fixtures exactly; two actual fixed native HOM points, no native/main calibration. Ten exact input paths identical in main contract. No new dependencies/source installation/QPU/manuscript."
+}
