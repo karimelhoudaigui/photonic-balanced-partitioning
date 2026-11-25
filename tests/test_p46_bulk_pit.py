@@ -109,6 +109,21 @@ def test_label_covariance_and_swap_orientation():
     assert carried["cov"][np.ix_(perm,perm)] == pytest.approx(context["cov"], abs=3e-12)
 
 
+def test_gaussian_pit_uses_variance_of_the_actual_factor():
+    _,_,context = example_context()
+    effective = np.einsum("ij,ij->i",context["factor"],context["factor"])
+    assert context["variance"] == pytest.approx(effective, abs=1e-15)
+    assert context["target_variance"] == pytest.approx(np.diag(context["cov"]), abs=1e-15)
+    assert context["Gaussian_factor_covariance_residual"] < 1e-12
+    seed = 460081
+    draw = p46.make_field(context,context["inside"],"gaussian_Bcov",seed,{})
+    field,counts,extra = draw()
+    raw = np.asarray(extra["gaussian_raw"])
+    expected = p46.ndtr(raw/np.sqrt(effective))-.5
+    assert counts is None
+    assert field == pytest.approx(expected, abs=1e-15)
+
+
 def test_randomized_pit_intervals_and_uniform_moments():
     pmf = np.asarray([[.2,.3,.5],[1.,0.,0.]])
     assert p46.pit([1,0], pmf, np.asarray([.4,.7])) == pytest.approx([.32,.7])
