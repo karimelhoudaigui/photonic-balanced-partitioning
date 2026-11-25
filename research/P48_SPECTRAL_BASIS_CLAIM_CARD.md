@@ -104,9 +104,10 @@ baseline. An r+1-root grid integrates the multinomial count law exactly but
 need not preserve column-phase invariance of the nonpolynomial top-K rounding
 rule; it is used only for finite marginal fixtures. A zero graph may have a
 diagonal projector. No universal nonzero offdiagonal or lower bound on mu_i
-is imposed. No code or DEV outcome preceded this clarification.
+is imposed. No P48 numerical execution or DEV outcome preceded this clarification.
 
-Pre-code preparation control, fixed before the implementation freeze: for EACH
+Pre-execution preparation amendment (the unexecuted first source snapshot
+e87035a is preserved; a new source freeze must include this amendment): for EACH
 V also score/share top-K and bottom-K sets of mu and of EVERY column |V[:,a]|^2.
 Signed spectral-vector roundings do not generally cover those squares. Add one
 rectangular assignment maximizing the product of the K selected source-to-row
