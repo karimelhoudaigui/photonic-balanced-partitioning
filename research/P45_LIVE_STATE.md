@@ -226,9 +226,12 @@ Original datafb5a36e, rootdd73bc2; rawSHA256
 c19f8cc9f890ece810dad0549c0ca8b3d7785ed6a41f210ef51d10b4f54dc77b.
 Root751PASS22.01s, current main/preflight/FAST manifests valid,602 historical
 files and paper bytes unchanged: reports/P50_validation/.
-Adaptive prepares a separate POSTHOC consistency audit (learned negative sign
-before freezing audit), no new physical samples. Root numerical slot released.
-No new simulation authorized; no held-out or physical replication claimed.
+Adaptive's separate POSTHOC audit041a206 (learned negative sign before freezing
+audit72009e) completed1.579610s/1.287177CPU,53205checks/113groups/2560events,
+zero failure,17 unchanged inputs. Root validates audit manifest after integration.
+No new physical samples, redraws, graph generation or clock authenticity proof.
+Final P50 reportd0e9c7e is integrated. Root numerical slot released; no held-out
+or physical replication claimed.
 
 A separate cost-phase/Johnson interaction route has a favorable ideal sign,
 but its weak-mixing law has an exact cheap classical sine-swap control with
@@ -251,13 +254,30 @@ top2 ranking. It helps or hurts according to the graph. Root and physics
 decoded law: (1-sin²phi/4) uniform6 + (sin²phi/4) uniform4cross. b4 also exactly
 reproduces the entire four-photon block; no optimizer positive is inferred.
 See theory/P50_Hadamard4_ranked_cut_checkpoint.md and mixture addendum.
-P51 now tests analytically whether full flat Hadamard families fix ALL moments
-through order3, and how uniform losses bound a fixed-decoder collective effect
-when low-order moments agree. These are unproved prospective questions at
-this checkpoint, no P51 graph, code, experiment or claimed scalable mechanism.
+P51 physics8f371df now proves full square flat-Hadamard invariance of ALL joint
+factorial moments through total order3, with exact fourth-degree residual W2.
+The uniform-loss matched-moment lemma gives equal low-survivor sectors and
+TV<=Pr[Binom(r,eta)>b]. Exact eta^r scaling requires b=r-1, not just b3 when
+r>4. Roota0b819b independently reconstructs both proofs with exact hashes;
+root initially formulated the hypotheses, so this is same-team review, not
+external/blind correctness or novelty clearance. No B-vsD b3 claim or hardware
+calibration. No P51 graph/code/experiment or claimed scalable mechanism.
 Finite-strength real cost-phase interactions and global high-order extensions
 remain open with their classical/resource gates; do not tensor a small known
 classical block and call it an advantage. The original positive target is OPEN.
+
+## Active finite mechanism discriminator: P52
+
+ROOT6df6e1c/bec2097, research/P52_COLLECTIVE_PHASE_CARD.md, fixes a global
+eight-photon full-input flat phase family U8, four phase cells (fourth is an
+exact conjugation/permutation duplicate null), exact B6435-occupation laws,
+ALL35 b4 regroupings and continuous-phase Monte Carlo262144 draws/cell with
+simultaneous absolute Hoeffding bound. Exact uniform tie top4, no graph, no
+training, no C* or postselection, no optimizer/QPU positive allowed. The first
+question is whether graph-cut MEAN kernels already admit a classical convex
+replacement, not whether a toy finite law is hard. N8 feasible enumeration is
+trivial and explicitly blocks any runtime-advantage claim. Implementation only
+pending frozen source, independent reviews, projection, preflight and slot.
 
 Acceptance plan research/P48_review_future_acceptance.md now includes efficient
 CPU controls, independent count implementation and reserved graph panels,

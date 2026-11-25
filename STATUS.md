@@ -25,7 +25,12 @@ completed21.615873s, all2560 proposals/19 unchanged inputs; paid B203/217/353/40
 loses to EACH separately budgeted raw classical search on all four graphs.
 Static preparation has lower fresh mean (.362822 versus B .407748), but does
 not beat every B minimum. Full751 tests PASS. Raw data remain immutable; a
-separate post-hoc consistency audit is being prepared, not blind replication.
+separate post-hoc independent-code audit041a206 passes53205 checks/2560events,
+not blind or physical replication. See research/P50_minimal_count_field_result.md.
+P51 invariance/loss lemmas have a separate same-team proof reconstruction;
+P52 now investigates a global eight-photon phase family at fixed low moments.
+Its prospective card6df6e1c/bec2097 authorizes implementation/review only, no
+P52 numerical result or graph benchmark exists yet.
 No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,
