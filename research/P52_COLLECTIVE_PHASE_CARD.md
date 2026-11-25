@@ -124,3 +124,19 @@ physical direction or extra discovery. Require exact numerical B equality,
 mapped b4-set equality and correct canonical-b4 invariance fixtures. The two
 phase-MC histograms need not coincide; their finite errors must be treated
 with the prospective simultaneous confidence bound, including in any fit.
+
+## Pre-data analytic fixtures
+
+Physics review3063c35 and ROOT reconstruction give, K_j=(n_j-n_(j+4))^2
+-n_j-n_(j+4), E_B[K_0 K_1]=1/2+cos^2(theta). Use this as an independent
+full-DP source fixture before main. It is a fourth-order witness only; it
+does not establish the ranked-kernel implication.
+
+At theta0, U8 is a row-relabelled Walsh8. Its affine output-permutation group
+is2-transitive and is absorbed by input-column monomials. Consequently B AND
+continuous phase have each of their28 edge-crossing means EXACTLY4/7 with
+the stated equivariant uniform ties. This is an additional normalization/
+calibration null, not a new parameter/cell/draw. Their full70-subset laws need
+NOT be uniform: AGL(3,2) has distinct orbits on4-subsets. Never impose the
+stronger false uniform-rank null. Retain all calibration outcomes regardless
+of this check, flag any discrepancy without an outcome-driven retry.
