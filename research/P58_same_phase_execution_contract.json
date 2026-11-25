@@ -1,0 +1,17 @@
+{
+  "claim_id": "P58-SAME-PHASE-ALL-BIPARTITIONS-FALSIFIER",
+  "mathematics": {
+    "assertion_tested": "Independently reconstruct the fixed N8 pi/3 full-B signed mean and all127 unordered two-species means, then compare them exactly; no optimization or genuine-order8 conclusion",
+    "coefficient_domain": "Z[xi]/(xi^2-xi+1), Python arbitrary integers and Fraction; exact permanent-polynomial occupation weights",
+    "conventions": "One photon in every input, ideal full number-resolving readout, original fixed U=q/sqrt8, uniform-top4 ties, w=(X04-X15)/2. Nontrivial splits1+7/2+6/3+5/all35 4+4, same pi/3 only. Base9 occupation keys have no carries because total8. No production imports, float conversion, solver, sampling, new graph or optimum input.",
+    "inputs": ["P58 card frozen7aad3f7 before code/evaluation", "All constants and conventions explicit in source; full-B reconstructed value must equal previously independently certified -767/327680"],
+    "bounds": {"CPU_seconds": 20, "wall_seconds": 30, "threads": 1, "max_new_output_bytes": 8388608, "planned_logical_workspace_bytes": 67108864, "source_groups": 255, "total_stored_group_states": 157183, "control_bipartitions": 127, "output_occupations": 6435, "prospective_synthetic_guards": 7, "physical_draws": 0, "new_graphs": 0, "QPU_calls": 0},
+    "non_claims": ["No continuous control-phase extension or replacement by arbitrary classical models", "No monotonicity under distinguishability, finer-partition convexity or genuine-order8 witness assumed", "No useful graph optimization, optimal-solution discovery, matched total-cost advantage, population inference, novelty, heldout replication or hardware claim", "Keep first failure; no automatic retry, phase replacement, graph selection or increased bound; no hard RSS/affinity claim"]
+  },
+  "execution_artifacts": ["research/P58_SAME_PHASE_ALL_SPECIES_CARD.md", "research/P58_same_phase_species.py", "research/P58_same_phase_execution_contract.json", "pyproject.toml", "requirements-research-lock.txt"],
+  "software": [{"name": "Python", "version": "3.11.15"}],
+  "randomness": {"used": false, "generator": "none", "seed": null},
+  "resource_note": "One exclusive worker, stdlib only. Exact finite state enumeration/convolution, no optical sampler or native library. CPU20/wall30/envthread1/output8MiB, logical64MiB engineering projection. No numerical evaluation until full static review and explicit slot. Save every source occupation including exact zeros and every control, no favorable omission.",
+  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "research/P58_same_phase_species.py", "--output", "experiments/P58_same_phase_species/run_001/data"],
+  "declared_results": ["experiments/P58_same_phase_species/run_001/data/source_laws.json.gz", "experiments/P58_same_phase_species/run_001/data/tie_scalars.json.gz", "experiments/P58_same_phase_species/run_001/data/summary.json"]
+}
