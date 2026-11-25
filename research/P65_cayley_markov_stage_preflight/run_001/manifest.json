@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "claim_id": "P65-CAYLEY-MARKOV-SYNTHETIC-QUALIFICATION",
+  "repository": {
+    "commit": "da4d41800819f35dd8ea299395435ca0bdb8157b",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p65_cayley_markov_stage.py",
+    "--junitxml=research/P65_cayley_markov_stage_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Synthetic small weighted Cayley, source/index/unitarity/relabel and CF transition fixtures; mocked20-count ten-source trajectories proving fresh factory ownership, coins on every CF branch, collision self-loops and actual current scores, training reset/selection/Fraction and fresh-chain-best isolation, repeated independent starts retained, all-five-arm metadata seed uniqueness, paid compiler/prefix/diagnostic exclusion and FAST deadline/veto/first-failure evidence. Only true native source: two-photon HOM in four modes, eight draws maximum. No DEV graph/start or N20 native/canary/calibration.",
+    "coefficient_domain": "Exact integer graph/count/cut/Fraction fixtures; float64/complex128 small matrix and acceptance arithmetic; controlled clocks and mocked main-size counts; metadata-only SHA256 role seeds",
+    "conventions": "Current subset sourceK10, global symmetric Cayley built from weighted row sums, eight lex candidates, two current-state training steps each, three fresh8-step chain-bests, all collisions paid self-loops. Initial4/current40/proposal=n_CF per main case. Factory returned backend WALL only excluded, internal CPU subdivision unknown. Fixed FAST same-mode two-case negative veto, never positive acceptance.",
+    "inputs": [
+      "Frozen card/spec022962e and proof43dd873, independent design review18d344b and separate pre-data clarification",
+      "Smaller hardcoded weighted nonregular graphs/matrices; main-size state tests use fixed synthetic arrays/mocked compilers/factories only",
+      "Metadata for all5 arms/common-start aliases/FAST and fixed synthetic-native seed6599001; no true DEV start/RNG or graph generator"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_logical_workspace_bytes": 268435456,
+      "max_new_log_bytes": 33554432,
+      "max_new_scientific_bytes": 33554432,
+      "qualification_DEV_graphs": 0,
+      "qualification_DEV_starts": 0,
+      "qualification_real_N20_compilations": 0,
+      "qualification_real_ten_photon_draws": 0,
+      "qualification_native_modes": 4,
+      "qualification_native_photons_per_draw": 2,
+      "qualification_native_draws_maximum": 8,
+      "optional_model_draws": 0,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No executed qualification at freeze; no positive optimizer, population advantage, novelty or hardware validation",
+      "No real ten-photon/native N20 calibration, DEV graph/start or hidden warmup",
+      "Source/model tests are synthetic implementation qualification, not blind independent replication",
+      "No equal wall time or practical total-resource advantage from the favorable zero-optical-latency FAST envelope",
+      "No changed proof/card/spec, graph/seed replacement, retry, manuscript/QPU action or automatic main"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Metadata-only SHA256 role seeds; deterministic synthetic trajectory doubles; local Perceval/exqalibur HOM-only seed",
+    "seed": 6599001
+  },
+  "run": {
+    "started_at": "2026-11-25T20:40:28.151466+00:00",
+    "runtime_seconds": 28.415622,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P65_cayley_markov_stage.py",
+    "research/P65_cayley_markov_dev_spec.json",
+    "research/P65_CAYLEY_MARKOV_DEV_CARD.md",
+    "research/P65_PRE_DATA_AMENDMENT.md",
+    "research/P65_CARD_INDEPENDENT_PHYSICS_REVIEW.md",
+    "research/P65_cayley_markov_stage_contract.md",
+    "research/P65_cayley_markov_stage_preflight_contract.json",
+    "research/P65_cayley_markov_stage_execution_contract.json",
+    "theory/P65_collision_counted_photonic_markov_kernel.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "tests/test_p65_cayley_markov_stage.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "research/P65_cayley_markov_stage.py",
+      "sha256": "a115929779ea50ecd6987f8c63646e95bebc6cc739df3760e6ccbffba0961a4b",
+      "sha256_after": "a115929779ea50ecd6987f8c63646e95bebc6cc739df3760e6ccbffba0961a4b"
+    },
+    {
+      "path": "research/P65_cayley_markov_dev_spec.json",
+      "sha256": "6993da4efe018c80b7fd9021451fad301dd665b1c86c4eac8adab2b1904eeee4",
+      "sha256_after": "6993da4efe018c80b7fd9021451fad301dd665b1c86c4eac8adab2b1904eeee4"
+    },
+    {
+      "path": "research/P65_CAYLEY_MARKOV_DEV_CARD.md",
+      "sha256": "dbb74c1943c47d9446d0c89245b73fc24c6275e750982ac77c71972386c2a773",
+      "sha256_after": "dbb74c1943c47d9446d0c89245b73fc24c6275e750982ac77c71972386c2a773"
+    },
+    {
+      "path": "research/P65_PRE_DATA_AMENDMENT.md",
+      "sha256": "7bc4a60f189cfe1fa306f888ae7ac637db5cc1444ca5ebd2c66883955320a1ca",
+      "sha256_after": "7bc4a60f189cfe1fa306f888ae7ac637db5cc1444ca5ebd2c66883955320a1ca"
+    },
+    {
+      "path": "research/P65_CARD_INDEPENDENT_PHYSICS_REVIEW.md",
+      "sha256": "fe10c9f30c1fe7c5d9285674b51f4cf36a4ff154c28ebc6685b0b8c946d42503",
+      "sha256_after": "fe10c9f30c1fe7c5d9285674b51f4cf36a4ff154c28ebc6685b0b8c946d42503"
+    },
+    {
+      "path": "research/P65_cayley_markov_stage_contract.md",
+      "sha256": "45409f79ad03aabf82d93a94cf323467aae2207df18ce52e81b0d768d23e048c",
+      "sha256_after": "45409f79ad03aabf82d93a94cf323467aae2207df18ce52e81b0d768d23e048c"
+    },
+    {
+      "path": "research/P65_cayley_markov_stage_preflight_contract.json",
+      "sha256": "1e028b628efa6f3d9ba71b14e2295ad6cbf491e15a502980840923243a7acbb3",
+      "sha256_after": "1e028b628efa6f3d9ba71b14e2295ad6cbf491e15a502980840923243a7acbb3"
+    },
+    {
+      "path": "research/P65_cayley_markov_stage_execution_contract.json",
+      "sha256": "66ae8e5d3d08038cab35536f1d069088f429f9703b7708602455f45fd958ef91",
+      "sha256_after": "66ae8e5d3d08038cab35536f1d069088f429f9703b7708602455f45fd958ef91"
+    },
+    {
+      "path": "theory/P65_collision_counted_photonic_markov_kernel.md",
+      "sha256": "3ffb2be9e19b6d9acb49b6d376a7cbe1fc294940a24ee50313b840b3bf522271",
+      "sha256_after": "3ffb2be9e19b6d9acb49b6d376a7cbe1fc294940a24ee50313b840b3bf522271"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "research/P50_fast_from_scratch_contract.json",
+      "sha256": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a",
+      "sha256_after": "13e3f69d3073b5c5f42cc6a524e9566d9889b49d79f0b1708e65bce5d6fced5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "tests/test_p65_cayley_markov_stage.py",
+      "sha256": "531db1fca4424c329d215ae921897e28706b8c7d7768dbe703ad04061c2173de",
+      "sha256_after": "531db1fca4424c329d215ae921897e28706b8c7d7768dbe703ad04061c2173de"
+    }
+  ],
+  "output_directory": "research/P65_cayley_markov_stage_preflight/run_001",
+  "declared_results": [
+    "research/P65_cayley_markov_stage_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P65_cayley_markov_stage_preflight/run_001/stdout.txt",
+      "sha256": "187fca5210940db721e51439808e26019f3824c8cf05e2714c4cc6e79f4dcfae",
+      "kind": "log"
+    },
+    {
+      "path": "research/P65_cayley_markov_stage_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P65_cayley_markov_stage_preflight/run_001/junit.xml",
+      "sha256": "e25c0c8d30bb3026e52a7b4aeb83cee57a70d3d7958a32786afe6e9221469f5e",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
