@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "binding_status": "UNBOUND_CODE_ONLY_DO_NOT_EXECUTE",
+  "claim_id": "P65-INDEPENDENT-RECORDED-REPLAY",
+  "mathematics": {
+    "assertion_tested": "Hash-bound P65 records independently satisfy spectral Cayley matrices/weighted normalization, all current-source complete counts/collision self-loops/owned coins/cuts/chain resets and private/global bests, exact8fitness selection/three-chain-best statistics, complete199-component own-cost ledgers, all FAST masks/deadlines and same-fixed-mode/two-case stage gate. Failed prefixes remain inconclusive without forcing80.",
+    "coefficient_domain": "Python exact integer scalar cuts and Fractions; independent real eigendecomposition/complex128 spectral Cayley; recorded finite CPU/WALL clocks",
+    "conventions": "CODE ONLY, before any P65 primary data was opened. No production P43/P50/P65 import, topology/physical count/FAST proposal regeneration, permanent or full PNR law. PCG64 metadata/start/coin/canonical-edge-weight replay only. N20/K10, source is CURRENT state; valid collisions self-loop, CF always consumes coin including probability1. Recorded consistency is not independent physical replication or real-clock authentication.",
+    "inputs": [
+      "UNBOUND: actual immutable primary data/manifest paths and SHA256 are supplied only after freezing this checker",
+      "Supported original producerda4d41800819f35dd8ea299395435ca0bdb8157b sourceSHAa115929779ea50ecd6987f8c63646e95bebc6cc739df3760e6ccbffba0961a4b",
+      "Complete comparison requires80B/80factories/two cases/fourFAST/all12datafiles; first-failure may be shorter"
+    ],
+    "bounds": {
+      "CPU_seconds": 20, "wall_seconds": 30, "threads": 1,
+      "max_new_log_bytes": 4194304, "max_new_scientific_bytes": 4194304,
+      "planned_logical_workspace_bytes": 67108864,
+      "max_bound_input_bytes": 33554432, "max_raw_decompressed_bytes": 8388608,
+      "max_raw_line_characters": 1048576, "max_bound_files": 13,
+      "cases": 2, "modes": 20, "source_photons": 10,
+      "max_recorded_B_attempts": 80, "Cayley_matrices_per_case": 8,
+      "complete_paid_components_per_case": 199, "FAST_calls": 4,
+      "FAST_work_guard": 10000, "FAST_stored_checkpoint_guard": 20002,
+      "max_failure_examples": 32, "matrix_absolute_tolerance": 3e-12,
+      "clock_sum_absolute_tolerance_seconds": 1e-8, "failed_retries": 0
+    },
+    "non_claims": [
+      "No graph topology regeneration, independent physical counts, bosonic likelihood/permanent/PNR distribution or optimum verification",
+      "No authenticity of recorded clocks, online timing causality, actual hardware prices or unrecorded FAST trajectory",
+      "No iid24 fresh observations: each case metric uses3final own-chain-best values including starts",
+      "No positive acceptance, novel mechanism, fair-total-resource superiority, paper/QPU or automatic followup",
+      "Only a complete successful hash-bound80B/4FAST comparison can endorse recorded fixed-mode negative veto; partials remain inconclusive",
+      "Logical64MiB is planned, not hard Darwin RSS; resource/output failure is retained without retry"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md", "pyproject.toml", "requirements-research-lock.txt",
+    "research/P65_independent_raw_audit.py", "research/P65_independent_raw_audit_contract.md",
+    "research/P65_independent_raw_audit_execution_contract.json", "tests/test_p65_independent_raw_audit.py"
+  ],
+  "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}],
+  "randomness": {
+    "used": true,
+    "generator": "Deterministic PCG64 recipe replay using frozen SHA256 first4 little-endian start/count/coin/FAST/weight roots; no native count or new graph",
+    "seed": [6502001, 6502002, 65100000, 65200000, 65300000, 65400000, 65500000]
+  },
+  "resource_note": "UNBOUND CODE ONLY, not executed. Freeze before opening P65 outputs; ROOT later creates binding and NEW bound-contract copy appending exact metadata/data paths to execution_artifacts and repeated--input closure. No checker/scope/tolerance/cap change during binding. Separate exclusive v2 runner CPU20/wall30/thread1/log4MiB/scientific4MiB/logical64MiB; zero retries. Actual runtime manifest is generated only after ROOT authorization.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python", "research/P65_independent_raw_audit.py", "--root", ".",
+    "--binding", "research/P65_independent_raw_audit_input_binding.json",
+    "--output", "research/P65_independent_raw_audit/run_001/data/audit.json"
+  ],
+  "declared_results": ["research/P65_independent_raw_audit/run_001/data/audit.json"]
+}
