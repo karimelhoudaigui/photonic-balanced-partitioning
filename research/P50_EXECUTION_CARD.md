@@ -32,9 +32,15 @@ eigenvalue gaps are saved/guarded at1e-12. Preserve all occupations and losses
 (this pilot uses eta=1); r is distinct from target partition size K.
 
 H=I-alpha L/dmax, alpha0/1; beta0/.1; zeta_i iid Uniform[-1,1]. Output the
-top K of H(n-mu)+beta*zeta using a fixed carried priority. Use a prospective
-1e-12 absolute tie bucket (explicit deterministic definition, no outcome
-adaptation) and test its carried-relabeling behavior. mu=sum_a |V_ia|^2.
+top K of H(n-mu)+beta*zeta using a fixed carried priority. Prospective tie
+definition, clarified BEFORE implementation/data: set t=y-max(y), then bucket
+floor(t/1e-12+.5), descending bucket and carried priority. The max anchor makes
+the exact rule invariant under a common offset and safely ties nearly uniform
+fields whose range is <.5e-12. Fixed bin boundaries can still be sensitive to
+floating error; test both sides, do not assert tolerance gives universal exact
+relabeling across a boundary. mu=sum_a |V_ia|^2. The Fourier static alpha0/1
+cells are duplicate laws of pure jitter/ties, retained with the declared effort,
+not separate discoveries. No posterior graph/policy substitution follows.
 
 B, D, contiguous-source b4, continuous phase, Gaussian_Bcov, and independent
 final-variance Gaussian each train16 basis/alpha/beta policies x2 draws/graph.
