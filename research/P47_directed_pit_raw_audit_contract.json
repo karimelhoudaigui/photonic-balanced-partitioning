@@ -1,0 +1,15 @@
+{
+  "claim_id":"P47-POSTHOC-RAW-CONSISTENCY",
+  "mathematics":{
+    "assertion_tested":"Read-only consistency check of EVERY P47 raw row: independently recompute integer cuts and full decoder decisions, saved randomized count/Gaussian PIT, all gain totals, common incumbents, baseline informative-query counts and observed-time frontiers, physical routing proxy and declared output hashes. No new sampling.",
+    "coefficient_domain":"Integer adjacency/cuts, Python stdlib float/complex-independent intensity arithmetic and math.erfc; declared numerical tolerances only",
+    "conventions":"Post-hoc audit of the one already completed run, not a preregistered discovery or independent distribution replication. Every raw row inspected, no graph filter or score oracle beyond saved adjacency.",
+    "inputs":["P47 primary manifest and all six declared immutable results","Fixed complete raw JSONL stream, every primary and baseline query","Saved marginal tables, phase histograms and Gaussian actual factor variances"],
+    "bounds":{"maximum_modes":34,"maximum_photons":17,"maximum_raw_rows":200000,"cpu_seconds":20,"wall_seconds":90,"threads":1},
+    "non_claims":["No resampling, quantum advantage, new theorem or statistical gate","No interval accuracy or joint empirical-copula certificate","Informative score counts need not equal every repeated function invocation"]
+  },
+  "execution_artifacts":["research/P47_directed_pit_raw_audit.py","research/P47_directed_pit_raw_audit_contract.json","experiments/P47_directed_pit/run_001/manifest.json","experiments/P47_directed_pit/run_001/data/summary.json","experiments/P47_directed_pit/run_001/data/raw.jsonl.gz","experiments/P47_directed_pit/run_001/data/context_n26_ER_4702601.json","experiments/P47_directed_pit/run_001/data/context_n26_RR_4702602.json","experiments/P47_directed_pit/run_001/data/context_n34_ER_4703401.json","experiments/P47_directed_pit/run_001/data/context_n34_RR_4703402.json"],
+  "software":[{"name":"Python","version":"3.11.15"}],
+  "randomness":{"used":false,"generator":"","seed":null},
+  "planned_command":["/private/tmp/pbp-clean-venv-20261124/bin/python","research/P47_directed_pit_raw_audit.py","--output","research/P47_directed_pit_raw_audit/run_001/data"]
+}
