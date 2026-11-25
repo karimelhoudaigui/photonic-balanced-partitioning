@@ -1,0 +1,13 @@
+{
+  "source": ".local/p75-code-review/theory/P76_AUTHOR_EXACT_HASH_REVIEW.md",
+  "destination": "theory/P76_AUTHOR_EXACT_HASH_REVIEW.md",
+  "sha256": "29f7187733f720f6a32d296075c73f760d1d08afaf3c80d7e3b50964f7498500",
+  "bytes": 13284,
+  "byte_identical": true,
+  "original_commit": null,
+  "original_index_mapping_unavailable": true,
+  "index_preserved": true,
+  "prior_independent_central_freeze": "75e579f",
+  "root_complete_247_line_read": true,
+  "numerical_execution": false
+}
