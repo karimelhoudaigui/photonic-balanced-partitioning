@@ -1,0 +1,13 @@
+{
+  "source": ".local/p66-dark-audit/research/P68_current_covariance_rank_two_audit.md",
+  "destination": "research/P68_current_covariance_rank_two_audit.md",
+  "sha256": "0c587b01c3a37bac5b0ff94fb03546d451babb69695a35ff1d702af8e78f264b",
+  "bytes": 10830,
+  "byte_identical": true,
+  "source_uncommitted_due_reported_index_timeout": true,
+  "index_preserved": true,
+  "source_base_commit": "eae1ddabb215c9dfda05ea9bdcc286a6698ba0ad",
+  "root_review": "Full229lines read; paired S_L fixed spaces, source overlap, target tensor PGF and conditional hazards rederived",
+  "fresh_exact_hash_peer_review": "PENDING",
+  "numerical_run": false
+}
