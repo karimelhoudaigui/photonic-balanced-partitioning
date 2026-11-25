@@ -1,0 +1,16 @@
+{
+  "claim_id": "P53C-INDEPENDENT-COMPLETE-K4-PERMANENT-REPLICATION",
+  "mathematics": {
+    "assertion_tested": "Independently rebuild all70x330 same-phase four-photon probabilities by24-term permanents in integer numerator basis1,i*sqrt3 over2; compare all group coefficients/probabilities and35x6435 independently convolved laws. Independently enumerate uniform TOP4 ties and verify the OLD fixed functional/normalized graph strictly separates all106 controls, or retain its nonstrict outcome.",
+    "coefficient_domain": "Python arbitrary integers and stdlib Fraction, no production/NumPy/SciPy/Perceval import, native LP, floating optical coefficient or random draw",
+    "conventions": "Posthoc, not blind: ROOT announced candidate/result. Independent matrix bit signs/base, full24 labelled permanent permutations and division Norm(per_num)/(256*prod n!), group denominator8^4; independent multiset count order/base9 convolution and exhaustive70-subset TOP4 ties. Old eight-photon target and71 kernels trusted from prior independent checkercc4c73b/pinned P53b certificate; new LP dual not used/audited. Fixed w=(X04-X15)/2 only, no replacement graph or optimization.",
+    "inputs": ["P53b certificatebd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe", "P53c raw candidate408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065 copied byte-identically from61a4683"],
+    "bounds": {"production_permanent_calls": 23100, "terms_per_permanent": 24, "production_permanent_terms": 554400, "toy_permanent_calls": 3, "maximum_convolution_pairs": 3811500, "tie_candidate_pairs": 450450, "CPU_seconds": 20, "wall_seconds": 30, "threads": 1, "planned_scientific_data_bytes": 67108864, "max_new_output_bytes": 4194304, "max_inflated_input_bytes_per_file": 16777216, "native_LP_calls": 0},
+    "non_claims": ["No independent reconstruction of the full8 quantum target or new ugly106 LP dual", "No new phase/graph/sample/calibration or blind/heldout/optimizer/hardware/novelty result", "No execution before exact freeze/ROOT review/exclusive slot; preserve first failure without automatic retry"]
+  },
+  "execution_artifacts": ["research/P53c_independent_permanent.py", "research/P53c_INDEPENDENT_PERMANENT_CARD.md", "research/P53c_independent_permanent_contract.json", "experiments/P53b_fixed_point/run_001/data/certificate.json.gz", "experiments/P53c_same_phase/run_001/data/certificate.json.gz"],
+  "software": [{"name": "Python", "version": "3.11.15"}],
+  "randomness": {"used": false, "generator": "none", "seed": []},
+  "resource_note": "One stdlib worker CPU20/wall30/threadenv1/log4MiB/scientific4MiB; planned scientific tables<64MiB, not hard Darwin RSS/affinity. Engineering projection only, no pre-execution calibration. Full independent vectors and all35 margins archived, no favorable prefix. Source/card/contracts/5inputclosure freeze before execution.",
+  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "research/P53c_independent_permanent.py", "--output", "experiments/P53c_independent_permanent/run_001/data"]
+}
