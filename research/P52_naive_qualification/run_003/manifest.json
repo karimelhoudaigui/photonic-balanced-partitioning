@@ -1,0 +1,207 @@
+{
+  "schema_version": 2,
+  "claim_id": "P52-INDEPENDENT-NAIVE-API-QUALIFICATION",
+  "repository": {
+    "commit": "7745bf361ea92379aa00b45f4e87daad31f4cb9f",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P52_naive_replication.py",
+    "--mode",
+    "qualify",
+    "--output",
+    "research/P52_naive_qualification/run_003/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Seven administrative/analytic guards (including mocked EPERM/timeout optional observations and foreign-scalar JSON boundary) and eleven declared small API/normalization checks; actual native signature/doc/thread metadata before any full production permanent loop.",
+    "coefficient_domain": "complex128/float64 finite estimates, not interval certificates",
+    "conventions": "Local NaiveBackend normalized permanent amplitudes; source single photons, output factorial collisions retained; vacuum tested separately. No production U8 permanent, pruning, sampling or primary project import.",
+    "inputs": [
+      "Frozen six reference hashes checked without opening arrays",
+      "HOM, phi=.37 complex 2x2, identity8 single CF amplitude, vacuum, known complex permanent, four scalar-unitary residuals"
+    ],
+    "bounds": {
+      "pytest_guards": 7,
+      "small_numeric_checks": 11,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads_requested": 1,
+      "max_array_bytes": 67108864,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "Qualification does not authorize full run",
+      "No observed thread sample or environment setting proves native single threading",
+      "No optimization, graph, QPU, novelty or interval certification"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": []
+  },
+  "run": {
+    "started_at": "2026-11-25T08:45:50.266006+00:00",
+    "runtime_seconds": 18.162023,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P52_naive_replication.py",
+    "tests/test_p52_naive_replication.py",
+    "research/P52_naive_validation_contract.md",
+    "research/P52_naive_qualification_contract.json",
+    "research/P52_naive_full_contract.json",
+    "experiments/P52_collective_phase/run_001/manifest.json",
+    "experiments/P52_collective_phase/run_001/data/geometry.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_0.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_1.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_2.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_3.npz"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P52_naive_replication.py",
+      "sha256": "a68f969ff3b943c5d2d3bd475652a260caf446469aa913cd4c476b347fa4be52",
+      "sha256_after": "a68f969ff3b943c5d2d3bd475652a260caf446469aa913cd4c476b347fa4be52"
+    },
+    {
+      "path": "tests/test_p52_naive_replication.py",
+      "sha256": "aa74800b04e5a959cda58aa6595d4f72747931cfbf05dd9189a452496d07cd4c",
+      "sha256_after": "aa74800b04e5a959cda58aa6595d4f72747931cfbf05dd9189a452496d07cd4c"
+    },
+    {
+      "path": "research/P52_naive_validation_contract.md",
+      "sha256": "754bd421eb307c5b347585e98cb4e4773b80c0c9a76184edf362d6f0161887a0",
+      "sha256_after": "754bd421eb307c5b347585e98cb4e4773b80c0c9a76184edf362d6f0161887a0"
+    },
+    {
+      "path": "research/P52_naive_qualification_contract.json",
+      "sha256": "3beb25ca2ba2cf7e17406b627082f39ac0e1b3966a5742e9dfdc261550b077c3",
+      "sha256_after": "3beb25ca2ba2cf7e17406b627082f39ac0e1b3966a5742e9dfdc261550b077c3"
+    },
+    {
+      "path": "research/P52_naive_full_contract.json",
+      "sha256": "a3760bd36ab6706814fa0f12084cb66175d91b0e98c92ad828f7e4b803ef33df",
+      "sha256_after": "a3760bd36ab6706814fa0f12084cb66175d91b0e98c92ad828f7e4b803ef33df"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/manifest.json",
+      "sha256": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7",
+      "sha256_after": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/geometry.npz",
+      "sha256": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715",
+      "sha256_after": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_0.npz",
+      "sha256": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542",
+      "sha256_after": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_1.npz",
+      "sha256": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07",
+      "sha256_after": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_2.npz",
+      "sha256": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8",
+      "sha256_after": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_3.npz",
+      "sha256": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154",
+      "sha256_after": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154"
+    }
+  ],
+  "output_directory": "research/P52_naive_qualification/run_003",
+  "declared_results": [
+    "research/P52_naive_qualification/run_003/data/report.json",
+    "research/P52_naive_qualification/run_003/data/guard_junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P52_naive_qualification/run_003/stdout.txt",
+      "sha256": "2d1e39e91dd08afd18d3884d732d772bfdd3bf16730279e81e6cd6a06b9e5dfb",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_naive_qualification/run_003/stderr.txt",
+      "sha256": "dd65094b41d527e777b6c4728c984494495743689a154eacc5573936bd5102cb",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_naive_qualification/run_003/data/report.json",
+      "sha256": "66d4a2a16fc154f35e1b3d53631a6b20ae01e450d0e0d9af8454fc56b5feaf58",
+      "kind": "result"
+    },
+    {
+      "path": "research/P52_naive_qualification/run_003/data/guard_junit.xml",
+      "sha256": "3417ecbf044e483c661eaac33073c7d45b60828c00db0c452afadd0b08c26301",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
