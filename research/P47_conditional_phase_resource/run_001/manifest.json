@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "claim_id": "P47-CONTINUOUS-CONDITIONAL-PHASE-SYNTHETIC-RESOURCE",
+  "repository": {
+    "commit": "4d4195e8c4294de92dc03312bc048b6df6aaad41",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P47_conditional_phase_resource.py",
+    "--output",
+    "research/P47_conditional_phase_resource/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Unchanged oracle427d984 evaluated deterministically on N13/17 rows uniform, ramp1..N normalized, pointmass; p1/4 and1/2; compare Decimal80/120 PMF/CDF, probability laws/c0/active Binomial/mean. Uniform and pointmass also compared to independent exact Fraction formulas.",
+    "coefficient_domain": "Decimal80/120 oracle; Fraction exact univariate-power and pointmass-mixture references",
+    "conventions": "Continuous/l+1-root conditional-phase model, never P46 four-root law. No DEV graph or photon sampling. All12 synthetic cases retained, no favorable timing/input selection. Original oracle source must remain unchanged.",
+    "inputs": [
+      "N13,17; rows uniform, ramp, pointmass; p1/4,1/2; precisions80,120"
+    ],
+    "bounds": {
+      "cases": 12,
+      "oracle_evaluations": 24,
+      "maximum_N": 17,
+      "CPU_seconds": 15,
+      "wall_seconds": 25,
+      "threads": 1,
+      "max_new_output_bytes": 2097152
+    },
+    "non_claims": [
+      "No optimization result, new optical experiment or hardware gate",
+      "No interval certificate or general precision bound",
+      "Ramp has no independent exact high-N reference",
+      "Repeated benchmark timings do not imply end-to-end speedup",
+      "No change to frozen P47 or old P46"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Fully deterministic synthetic rational inputs",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T04:25:16.194056+00:00",
+    "runtime_seconds": 0.315399,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 25.0,
+    "max_output_bytes": 2097152,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 15,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P47_conditional_phase_resource.py",
+    "research/P47_conditional_phase_marginal.py",
+    "research/P47_conditional_phase_resource_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P47_conditional_phase_resource.py",
+      "sha256": "7d5ec854932ffc9e0e61529653c470ed2a3cb36b435bda6e71d4e15e0853237b",
+      "sha256_after": "7d5ec854932ffc9e0e61529653c470ed2a3cb36b435bda6e71d4e15e0853237b"
+    },
+    {
+      "path": "research/P47_conditional_phase_marginal.py",
+      "sha256": "263cfe954645f4a5de6edb5beedcaa4b8766d1a364d46f45d150639977c6efb0",
+      "sha256_after": "263cfe954645f4a5de6edb5beedcaa4b8766d1a364d46f45d150639977c6efb0"
+    },
+    {
+      "path": "research/P47_conditional_phase_resource_contract.json",
+      "sha256": "4bbff74ac188f9522655b85ca804c679ddb14ef3344d9f4b1dd84ed65c5daa44",
+      "sha256_after": "4bbff74ac188f9522655b85ca804c679ddb14ef3344d9f4b1dd84ed65c5daa44"
+    }
+  ],
+  "output_directory": "research/P47_conditional_phase_resource/run_001",
+  "declared_results": [
+    "research/P47_conditional_phase_resource/run_001/data/records.jsonl",
+    "research/P47_conditional_phase_resource/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P47_conditional_phase_resource/run_001/stdout.txt",
+      "sha256": "ff4376b05aabb79f794a790dc0b2971b37da6ff079982e805a806e39a096fee1",
+      "kind": "log"
+    },
+    {
+      "path": "research/P47_conditional_phase_resource/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P47_conditional_phase_resource/run_001/data/records.jsonl",
+      "sha256": "efb72e4e49664bcc0a364b8efab71384c945ce555de411a579d0207bd1359ddd",
+      "kind": "result"
+    },
+    {
+      "path": "research/P47_conditional_phase_resource/run_001/data/summary.json",
+      "sha256": "0a505b8ffbc109957710850701ac97b0531d3fb3c1bc53d39d68e9399d12bf16",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
