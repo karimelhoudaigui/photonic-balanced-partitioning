@@ -1,0 +1,245 @@
+{
+  "schema_version": 2,
+  "claim_id": "P53D-INDEPENDENT-CHECKER-SYNTHETIC-GUARDS",
+  "repository": {
+    "commit": "0b556e1337fa8b1f3622dbddceb631e1c36df8cb",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p53d_independent_check.py",
+    "--junitxml=research/P53d_independent_guards/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "13smallguardsonly: standaloneAST/noimports/@,independentoccupationcoverage,4handpermanent/Focknormalizations,integerphotonrejection,known70subsetties,BEFORE-castL1guard,2einsumvsindependentPythoncontraction/worst13fold,exactanchors/triangleandfloat/opaqueJSON/inflationguards. No archivedproofdecoded,nofull70or35replay.",
+    "coefficient_domain": "Python integer24-term monomial permanents divided EXACTLY by output factorial; all70-subset uniform-max decoder; pre-cast L1 guarded np.int64 TWO explicit einsums; Python-int anti-diagonal folds and exact Fraction triangles/anchors. Historical LP decimals opaque, never proof numbers.",
+    "conventions": "POSTHOC NONBLIND fixed N8 Bpi3,w=(X04-X15)/2,oldgraph. All70groups/330Fockstates,all6435decoderstates,all35spectra/105anchors. Independently enumerate output slots,never production creationDP/ties/@/imports. Only TRIANGLE stage replayed,no unused Bernstein or phase optimizer. Scope b4(4+4),not7+1/6+2/5+3,genuineorder8,allclassicalmodels,fulllaw/tails,algorithmicadvantageorhardware.",
+    "inputs": [
+      "PinnedP53d candidate44df171e/originalv2manifest91923621 at raw312a22d; all35producerdecisions usedtriangle",
+      "Pinned old exactP53 source/library,canonicalP53b w/normalizedgraph andP53c pi3anchors; sourcefiles hash-only,not imported; oldBpoint explicitly conditional on validated source",
+      "Permanents include ALL24 input assignments with repeated output rows then divide prod(n!); true per-species probability prod(n!)*|C|^2/4096 and no extra final-occupation factorial"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_new_output_bytes": 4194304,
+      "maximum_scientific_output_bytes": 4194304,
+      "planned_logical_scientific_workspace_bytes": 67108864,
+      "maximum_old_input_inflated_bytes": 16777216,
+      "maximum_candidate_inflated_bytes": 4194304,
+      "maximum_LP_calls": 0,
+      "random_draws": 0,
+      "maximum_harmonic": 12,
+      "per_column_L1_max_before_cast": 4096,
+      "first_integer_product_bound": 1720320,
+      "second_integer_product_bound": 7046430720,
+      "fold_bound": 91603599360,
+      "cosine_numerator_strict_bound": 274877906944,
+      "explicit_two_einsum_operations_estimate": 39502650,
+      "planned_tests": 13,
+      "hand_permanent_outputs": 4,
+      "guard_full_group_replay": 0,
+      "guard_archived_proof_decoding": 0
+    },
+    "non_claims": [
+      "No blind replication: author knows the candidate sign/bound and previously reviewed production; algorithmic reconstruction is independent,not its problem statement",
+      "No production module imports,full8photon permanent target rebuild,LP,RNG,phase search,Bernstein branch,new controlfamilyorcalibration",
+      "Old Bphysicalpoint is derivedfrompinnedpreviouslyvalidatedexactsource,not newly revalidated by this checker",
+      "No optimizerbenefit,full-law/tailclaim,otherarchitecture,7+1/6+2/5+3,genuineorder8,allclassicalmodels,heldout,QPUorpaperchange",
+      "Any first mismatch/time/resource/output failure stays CHECK_FAILED/inconclusive,with retained evidence and no automatic retry,newprecision,alternatealgorithmorcapincrease"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic synthetic guards;noRNG,archivephysicaldataorMC"
+  },
+  "run": {
+    "started_at": "2026-11-25T14:00:24.995320+00:00",
+    "runtime_seconds": 0.561937,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P53d_independent_check.py",
+    "research/P53d_independent_check_contract.md",
+    "research/P53d_independent_check_execution_contract.json",
+    "research/P53d_independent_guards_contract.json",
+    "tests/test_p53d_independent_check.py",
+    "experiments/P53d_all_b4_phases/run_001/data/certificate.json.gz",
+    "experiments/P53d_all_b4_phases/run_001/manifest.json",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+    "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+    "research/P53d_fixed_w_all_phase.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53c_same_phase_controls.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P53d_independent_check.py",
+      "sha256": "047ff5d95c947d159eca551e298fae07fb3db2acaf6f5c9807fca629d3bde5d2",
+      "sha256_after": "047ff5d95c947d159eca551e298fae07fb3db2acaf6f5c9807fca629d3bde5d2"
+    },
+    {
+      "path": "research/P53d_independent_check_contract.md",
+      "sha256": "019e1105a6a7e5769e01ece13ec9b81155767a6a1bc7cbafa7b869666e7419f2",
+      "sha256_after": "019e1105a6a7e5769e01ece13ec9b81155767a6a1bc7cbafa7b869666e7419f2"
+    },
+    {
+      "path": "research/P53d_independent_check_execution_contract.json",
+      "sha256": "c55b5c7254e0587b22068b69b0527f6751dfccd33ad65df062901120f1f0b0bb",
+      "sha256_after": "c55b5c7254e0587b22068b69b0527f6751dfccd33ad65df062901120f1f0b0bb"
+    },
+    {
+      "path": "research/P53d_independent_guards_contract.json",
+      "sha256": "a7e5d9de6c9b49f018b2895b4b1ff2d9bbc4352a891f10799bd0d174f2585a56",
+      "sha256_after": "a7e5d9de6c9b49f018b2895b4b1ff2d9bbc4352a891f10799bd0d174f2585a56"
+    },
+    {
+      "path": "tests/test_p53d_independent_check.py",
+      "sha256": "2da1f7699d81cee7c5a813b00685d1f24300995239b5f3ec28f4e31b7b7f876d",
+      "sha256_after": "2da1f7699d81cee7c5a813b00685d1f24300995239b5f3ec28f4e31b7b7f876d"
+    },
+    {
+      "path": "experiments/P53d_all_b4_phases/run_001/data/certificate.json.gz",
+      "sha256": "44df171ef03e6886900cbf105c555cb2e5de0a2a4944d47b3065b23d1e57cc6b",
+      "sha256_after": "44df171ef03e6886900cbf105c555cb2e5de0a2a4944d47b3065b23d1e57cc6b"
+    },
+    {
+      "path": "experiments/P53d_all_b4_phases/run_001/manifest.json",
+      "sha256": "91923621989bfbb90a586a51968d20248c3366c1863fa8dc90a0b9d897ee5030",
+      "sha256_after": "91923621989bfbb90a586a51968d20248c3366c1863fa8dc90a0b9d897ee5030"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+      "sha256": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0",
+      "sha256_after": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+      "sha256": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "sha256_after": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+      "sha256": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+      "sha256_after": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe"
+    },
+    {
+      "path": "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+      "sha256": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065",
+      "sha256_after": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065"
+    },
+    {
+      "path": "research/P53d_fixed_w_all_phase.py",
+      "sha256": "67789e2a2fee0549f94ab948476a6d27190fb3ef0a2a2ab66cd88709178402b5",
+      "sha256_after": "67789e2a2fee0549f94ab948476a6d27190fb3ef0a2a2ab66cd88709178402b5"
+    },
+    {
+      "path": "research/P53_exact_continuous_phase.py",
+      "sha256": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692",
+      "sha256_after": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692"
+    },
+    {
+      "path": "research/P53b_fixed_point_discriminator.py",
+      "sha256": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908",
+      "sha256_after": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908"
+    },
+    {
+      "path": "research/P53c_same_phase_controls.py",
+      "sha256": "737d6743f184661c4352d93c40410679bec5b5e739aa2cd964a63b919eaa53e2",
+      "sha256_after": "737d6743f184661c4352d93c40410679bec5b5e739aa2cd964a63b919eaa53e2"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P53d_independent_guards/run_001",
+  "declared_results": [
+    "research/P53d_independent_guards/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P53d_independent_guards/run_001/stdout.txt",
+      "sha256": "65dad48a46517c40f265c6f42b58621d8230939ed7db07ba330e2c12765a7b29",
+      "kind": "log"
+    },
+    {
+      "path": "research/P53d_independent_guards/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P53d_independent_guards/run_001/junit.xml",
+      "sha256": "883a5bb216d6baed8f758a54dea3ad0dd4231dedff389c93fe3c5e19cfc96c53",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
