@@ -108,12 +108,26 @@ def write_json(path, value):
 
 def thread_snapshot():
     """Observational process-thread listing; not a native-thread guarantee."""
-    completed = subprocess.run(
-        ["ps", "-M", "-p", str(os.getpid())], text=True, capture_output=True,
-        timeout=2, check=False,
-    )
-    return {"returncode": completed.returncode, "stdout": completed.stdout,
+    try:
+        completed = subprocess.run(
+            ["ps", "-M", "-p", str(os.getpid())], text=True, capture_output=True,
+            timeout=2, check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired) as error:
+        return {"available": False, "error_type": type(error).__name__,
+                "errno": getattr(error, "errno", None), "error": str(error)}
+    return {"available": completed.returncode == 0,
+            "returncode": completed.returncode, "stdout": completed.stdout,
             "stderr": completed.stderr}
+
+
+def platform_snapshot():
+    """Platform metadata is optional observability, never a physics precondition."""
+    try:
+        return platform.platform()
+    except OSError as error:
+        return {"available": False, "error_type": type(error).__name__,
+                "errno": error.errno, "error": str(error)}
 
 
 def load_backend():
@@ -149,7 +163,7 @@ def package_provenance(api):
     return {
         "versions": {name: importlib.metadata.version(name)
                      for name in ("numpy", "perceval-quandela", "exqalibur", "pytest")},
-        "python": sys.version, "platform": platform.platform(),
+        "python": sys.version, "platform": platform_snapshot(),
         "files": {key: {"path": value, "sha256": sha(value)} for key, value in paths.items()},
         "permanent_signature": signature,
         "permanent_doc": xq.permanent_cx.__doc__,
@@ -271,7 +285,7 @@ def main():
     exit_code = 1
     try:
         if args.mode == "qualify":
-            # Same bounded child: five guards plus eleven small analytic checks.
+            # Same bounded child: six guards plus eleven small analytic checks.
             os.environ["PYTEST_DISABLE_PLUGIN_AUTOLOAD"] = "1"
             import pytest
             guard_status = int(pytest.main([

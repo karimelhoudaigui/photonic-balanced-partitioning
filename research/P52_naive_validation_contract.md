@@ -47,26 +47,31 @@ permanent implementation's internals.
 ## Qualification first
 
 After this source/contract/test/input commit, ROOT reviews and grants the tiny
-qualification slot. The single bounded child `--mode qualify` runs five
+qualification slot. The single bounded child `--mode qualify` runs six
 administrative/analytic pytest guards (third-party plugin autoload disabled),
 then eleven checks: HOM CF zero, HOM bunching factorial, a complex 2x2
 orientation/amplitude pair at phi=.37, one identity-eight CF amplitude,
 vacuum, one known native complex 2x2 permanent, four independent scalar-unitary
-residuals. No production U8 permanent is computed during qualification.
+residuals. The sixth guard mocks denied/timed-out ps and unavailable platform
+metadata without executing ps. No production U8 permanent is computed during
+qualification.
 
 Qualification writes actual Python/package versions, implementation/binary
 hashes, `permanent_cx` docstring/signature where available, thread-named exports,
 six thread environment values and `ps -M` snapshots before import, after import
 and after work. No native thread keyword is guessed. These samples cannot
 establish a one-worker native permanent call; absent an exposed documented
-control the receipt explicitly remains `NATIVE_THREADS_UNVERIFIED`. ROOT must
+control the receipt explicitly remains `NATIVE_THREADS_UNVERIFIED`. An
+OSError/TimeoutExpired observing ps produces unavailable/type/errno/error
+metadata at all three call sites, and optional platform metadata tolerates
+OSError. These observations never infer one native worker. ROOT must
 review this actual limitation and approve any full run separately; an API PASS
 does not itself authorize production.
 
 Qualification command, inside the Mathbox v2 bounded runner:
 
 ```
-/private/tmp/pbp-clean-venv-20261124/bin/python research/P52_naive_replication.py --mode qualify --output research/P52_naive_qualification/run_001/data
+/private/tmp/pbp-clean-venv-20261124/bin/python research/P52_naive_replication.py --mode qualify --output research/P52_naive_qualification/run_002/data
 ```
 
 ## Full finite check, separately authorized
@@ -114,3 +119,16 @@ primary MC confidence/LP result, full-law classical replacement, performance,
 optimization, heldout generalization, novelty or QPU feasibility. Parent
 reports that the primary four mean kernels have classical matches; that
 negative result is preserved, not reclassified by a physics replication.
+
+## Observation-only correction after failed qualification
+
+`run_001` and its administrative-argument rejection are preserved in
+`research/P52_naive_qualification_run_001_review.md` at commit51712a5. The one
+actual child failed on sandbox-denied ps before pytest, NumPy or Perceval, so
+the original five guards and eleven checks were not executed. ROOT authorized
+only the observation robustness correction, a mock fixture and this prospective
+path/count update. No backend, vendor, scientific field/formula, threshold,
+reference byte, resource cap or production path changes. `run_002` is fresh and
+requires a new source review/slot; this correction does not authorize a retry.
+The original source/contracts remain recoverable at d96009f and the unchanged
+failure record is validated against that historical input revision.

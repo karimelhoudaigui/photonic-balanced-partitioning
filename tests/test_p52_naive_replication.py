@@ -53,3 +53,21 @@ def test_reference_pins_and_phase_grid():
     with pytest.raises(ValueError):
         probe.scalar_unitary(4)
     assert len(probe.PINNED) == 6
+
+
+def test_optional_observation_failure_is_nonblocking(monkeypatch):
+    # No real ps call: both denied process observation and timeout are optional.
+    for error in (PermissionError(1, "mock sandbox denial"),
+                  probe.subprocess.TimeoutExpired("ps", 2)):
+        def denied(*args, **kwargs):
+            raise error
+        monkeypatch.setattr(probe.subprocess, "run", denied)
+        result = probe.thread_snapshot()
+        assert result["available"] is False
+        assert result["error_type"] == type(error).__name__
+        assert result["errno"] == getattr(error, "errno", None)
+        assert result["error"] == str(error)
+    def denied_platform():
+        raise PermissionError(1, "mock metadata denial")
+    monkeypatch.setattr(probe.platform, "platform", denied_platform)
+    assert probe.platform_snapshot()["available"] is False
