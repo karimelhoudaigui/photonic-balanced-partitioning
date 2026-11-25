@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "claim_id": "P47-CONTINUOUS-CONDITIONAL-PHASE-MARGINAL-QUALIFICATION",
+  "repository": {
+    "commit": "427d984e2bd5a8ef376f9297376e619a5344c8b3",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p47_conditional_phase_marginal.py",
+    "--junitxml=research/P47_conditional_phase_qualification/run_001/data/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Decimal80 positive DP and binomial inversion match independent exact rational enumeration of all Bernoulli active sets, all l+1-root phase tuples and binomial counts for N<=3; p0/N0/l0, uniform/nonuniform/pointmass and input correction checks. No development optimization.",
+    "coefficient_domain": "Decimal80 production arithmetic; exact Fraction reference with cyclotomic norms of orders2,3,4",
+    "conventions": "Continuous independent phase control, equivalently l+1 roots when l inputs are active. THIS IS NOT the four-root P46 model for l>=4. c0=1; old Bernoulli marginals unaffected; input row-sum normalization <=1e-12 explicitly reported; no gross clipping allowed.",
+    "inputs": [
+      "Pure module P47_conditional_phase_marginal.py",
+      "Exact exhaustive fixture rows uniform N0..3, nonuniform amplitudes1/3,2/3,2/3 and pointmass",
+      "Transfer probabilities0,1/4,1/2,1"
+    ],
+    "bounds": {
+      "maximum_exhaustive_photons": 3,
+      "maximum_root_order": 4,
+      "CPU_seconds": 30,
+      "wall_seconds": 50,
+      "threads": 1,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No DEV graph or photon simulation",
+      "No P46 distribution change",
+      "No accepted optimizer result or QPU gate",
+      "No interval arithmetic certificate",
+      "High-N numerical performance requires separate observation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "All fixtures are exhaustive and deterministic",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T04:18:10.575759+00:00",
+    "runtime_seconds": 0.513359,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 50.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P47_conditional_phase_marginal.py",
+    "tests/test_p47_conditional_phase_marginal.py",
+    "research/P47_conditional_phase_marginal_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P47_conditional_phase_marginal.py",
+      "sha256": "263cfe954645f4a5de6edb5beedcaa4b8766d1a364d46f45d150639977c6efb0",
+      "sha256_after": "263cfe954645f4a5de6edb5beedcaa4b8766d1a364d46f45d150639977c6efb0"
+    },
+    {
+      "path": "tests/test_p47_conditional_phase_marginal.py",
+      "sha256": "9682e5ce354044620a8da91cecf4af93bdd4b9280460525953e11037dc964991",
+      "sha256_after": "9682e5ce354044620a8da91cecf4af93bdd4b9280460525953e11037dc964991"
+    },
+    {
+      "path": "research/P47_conditional_phase_marginal_contract.json",
+      "sha256": "e1bab431647620ef5440179fd7a8cda7868031aa866db238bee64a8ec939164a",
+      "sha256_after": "e1bab431647620ef5440179fd7a8cda7868031aa866db238bee64a8ec939164a"
+    }
+  ],
+  "output_directory": "research/P47_conditional_phase_qualification/run_001",
+  "declared_results": [
+    "research/P47_conditional_phase_qualification/run_001/data/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P47_conditional_phase_qualification/run_001/stdout.txt",
+      "sha256": "062c96f151ee8aa73882d0ee053192568d23c4ec8045ac6f28d37858ced7dbd9",
+      "kind": "log"
+    },
+    {
+      "path": "research/P47_conditional_phase_qualification/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P47_conditional_phase_qualification/run_001/data/junit.xml",
+      "sha256": "048ec4d545d7baaf04f681360dfe9694e562cd5a43d74b5c816acb8ce7209c99",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
