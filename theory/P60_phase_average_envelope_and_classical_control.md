@@ -177,3 +177,28 @@ classical replacement. Neither control is by itself a matched-cost theorem,
 an unknown-optimum discovery, a novelty claim or completion of the positive
 scientific objective. Source/caller audits and any numerical evaluation
 remain separate tasks, requiring their own freezes and authorization.
+
+### Raw P59 coefficient convention (normalization clarification)
+
+The 'stored row' formulas above use normalized Fock amplitudes C0_n,C2_n.
+They must not be applied to raw creation-polynomial coefficients without
+their common Fock/source normalization. Under the supplied P59 convention,
+write f_n=prod_i n_i!, D=150^6 and raw coefficients c0_n,c2_n. Then
+
+    C0_n=sqrt(f_n)/150^3 * c0_n,
+    C2_n=sqrt(f_n)/150^3 * c2_n,
+    q_n=f_n (|c0_n|^2+|c2_n|^2)/D,
+    H_n=f_n c2_n conjugate(c0_n)/D,
+    p_phi(n)=q_n+2 Re[H_n exp(2i phi)].
+
+Consequently the common f_n/D cancels in the likelihood ratio. At a
+positive-q row the rejection acceptance is
+
+    1/2 + Re[c2_n conjugate(c0_n) exp(2i phi)]
+                / (|c0_n|^2+|c2_n|^2).
+
+The q alias/cumulative table itself must STILL include f_n/D; cancellation
+only applies to the row's ratio. A zero denominator means q_n=p_phi(n)=0
+and is never sampled by an exact q sampler. These are algebraic conversion
+identities for the stated raw convention; the separate P59 source audit
+must verify that its actual coefficient construction has that convention.
