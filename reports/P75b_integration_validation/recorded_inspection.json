@@ -1,0 +1,49 @@
+{
+  "all_probabilities_below_registered_threshold": true,
+  "all_recorded_physical_flags_true": true,
+  "best_observed": {
+    "global_evaluation": 1,
+    "local_evaluation": 1,
+    "probability": 0.015625000000000003,
+    "start": "analytic_three_pair_baseline"
+  },
+  "body_cpu_seconds": 0.79351,
+  "body_wall_seconds": 1.0402827500001877,
+  "byte_sizes": {
+    "data/certificate.json": 5,
+    "data/evaluations.jsonl": 3272101,
+    "data/failure.json": 5,
+    "data/summary.json": 5228,
+    "manifest.json": 9738,
+    "stderr.txt": 0,
+    "stdout.txt": 0
+  },
+  "certificate_attempts": 0,
+  "counts": {
+    "7510001": 300,
+    "7510002": 44,
+    "7510003": 300,
+    "7510004": 300,
+    "7510005": 44,
+    "7510006": 44
+  },
+  "evaluation_rows": 1033,
+  "graph_optimizer_benchmark": false,
+  "inputs_unchanged": true,
+  "inspection": "stdlib recorded-row consistency only; no matrix/probability/RNG/reference recomputation",
+  "iteration_zero_starts": [
+    7510002,
+    7510005,
+    7510006
+  ],
+  "main_producer_commit": "00256fc2e4a69b9d80065af3dd5734518ac4d5ef",
+  "probability_recomputation": false,
+  "producer_root": ".local/p75-gaussian-cf",
+  "raw_seal_commit": "4a5254ce3e19f1681f4c1e6fd852fcc979d5d409",
+  "registered_input_count": 10,
+  "run_status": "completed",
+  "runner_wall_seconds": 1.227817,
+  "source_sha256": "b86f2c69d26a3cc53d914122fac2a04e005f61141e8a4f1de8f919fdc69c09bb",
+  "termination_rows": 6,
+  "universal_bound_proven": false
+}
