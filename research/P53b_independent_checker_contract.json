@@ -1,0 +1,16 @@
+{
+  "claim_id": "P53B-INDEPENDENT-STDLIB-EXACT-CERTIFICATE-CHECK",
+  "mathematics": {
+    "assertion_tested": "Recompute one exact target by direct sum coefficient_j*(1/4)^j, independent of production Horner; check all71 fixed kernels, exact primal29 equalities/nonnegativity, binary rational dual/L1/all71 strict margins, nonnegative graph shift/normalized gap and winning solver-status gates, with no simultaneous exact primal/dual.",
+    "coefficient_domain": "stdlib arbitrary integers and Fraction; no NumPy/SciPy/production imports or native calls",
+    "conventions": "Posthoc, not blind: ROOT disclosed the accepted dual result before code. Source and library are independently read from byte-pinned P53 algebraic artifacts; this does not independently reconstruct their optical source. All28 coordinates/all71 vertices checked. Synthetic corruption guards only, no fresh point/LP/graph or optimization.",
+    "inputs": ["P53 exact source2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0", "P53 exact librarycb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b", "P53b sealed certificatebd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe copied byte-identically froma2cf5d9"],
+    "bounds": {"CPU_seconds": 5, "wall_seconds": 10, "threads": 1, "max_new_output_bytes": 1048576, "max_inflated_input_bytes_per_file": 16777216, "native_LP_calls": 0, "photonic_samples": 0},
+    "non_claims": ["No new blind/physical source reconstruction or independent replication of optical probabilities", "No fresh target, LP, continuous-b4 optimization, heldout/algorithm advantage, novelty or hardware claim", "Implementation only until ROOT source review and exclusive slot; preserve failure without automatic retry"]
+  },
+  "execution_artifacts": ["research/P53b_independent_checker.py", "research/P53b_independent_checker_contract.json", "experiments/P53_exact_phase/run_001/data/exact_source.json.gz", "experiments/P53_exact_phase/run_001/data/exact_library.json.gz", "experiments/P53b_fixed_point/run_001/data/certificate.json.gz"],
+  "software": [{"name": "Python", "version": "3.11.15"}],
+  "randomness": {"used": false, "generator": "none", "seed": []},
+  "resource_note": "One stdlib child with CPU5/wall10/threadenv1/log1MiB, no scientific/native library import, no hard Darwin memory or affinity claim.98-line checker including synthetic corruption guards, assertions explicitly required. Source/contracts/5inputclosure freeze before execution.",
+  "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "research/P53b_independent_checker.py", "--output", "research/P53b_independent_check/run_001/data/check.json"]
+}
