@@ -61,5 +61,20 @@ including every policy rather than the unknown future selected one. Check
 all master/observation/exact-rank/continuous-phase subrole seeds plus group
 and FAST seeds for GLOBAL uniqueness (596 hashes). No graph/RNG/Perceval
 construction or draw is needed. Any collision is a pre-data qualification
-failure; it never authorizes changing a fixed seed. Primary source, graph
-seeds, model grids and scientific budgets remain byte-identical to e95bc0f.
+failure; it never authorizes changing a fixed seed. At that test-only delta,
+primary source remained byte-identical to e95bc0f. Graph seeds, model grids
+and scientific budgets remain unchanged throughout the correction below.
+
+Independent physics then identified a caller cost error BEFORE qualification:
+P43's optical factory creates a NumPy RNG and validates source ports BEFORE
+its internal setup_start. Timing the whole factory as excluded optical setup
+would incorrectly exclude that prefix. Use the immutable factory's RETURNED
+backend_seconds WALL directly; total caller setup minus that measured WALL
+charges the prefix and all other required classical setup. Record total
+factory WALL/CPU, but mark optical/classical CPU splits UNKNOWN (`None`),
+because the old helper provides no corresponding inner CPU clock. Do not
+estimate a CPU split or execute preparation twice. D remains fully classical.
+An additional prospective guard (45 tests total) mocks factory7=backend5+
+classical prefix2, plus caller setup2: required charged WALL is4, not2.
+No helper, physical law, seed, policy, shot count or cap is changed; the old
+primary revision remains in Git, and no qualification/main has run yet.
