@@ -129,3 +129,17 @@ def test_positive_harmonic_spectrum_derivative_curvature_and_corruption():
     assert result["curvature_upper"] == 1
     encoded = p.encoded(result); encoded["F2"][1]["numerator"] *= -1
     assert not p.math_equal(encoded, result)
+
+
+def test_verdict_and_announced_counts_are_compared_without_reading_a_full_table():
+    own = {"status": "TOY_STATUS", "Q_entries_a_b_zeta_degree": [], "q": [], "states": [],
+           "summary": {"edge_responses": [], "class_responses": []}, "diagonal_bins": [], "factorial_moments": []}
+    primary = {"Q_entries_a_b_zeta_degree": [], "q": [], "states": [], "diagonal_bins": [], "factorial_moments": [],
+               "summary": {"status": "TOY_STATUS", "states": 0, "diagonal_bins": 0, "joint_moments": 0,
+                           "edge_responses": [], "class_responses": []}}
+    assert "summary.status" not in p.compare(primary, own)["failures"]
+    for wrong in ("OTHER_STATUS", True):
+        primary["summary"]["status"] = wrong
+        assert "summary.status" in p.compare(primary, own)["failures"]
+    primary["summary"]["status"] = "TOY_STATUS"; primary["summary"]["states"] = 1
+    assert "summary.states" in p.compare(primary, own)["failures"]

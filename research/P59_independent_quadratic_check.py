@@ -279,6 +279,13 @@ def compare(primary, own):
         try: passed = math_equal(actual, expected)
         except (TypeError, ValueError, KeyError): passed = False
         if not passed: failures.append(label)
+    checks += 1
+    if type(primary["summary"].get("status")) is not str or primary["summary"]["status"] != own["status"]:
+        failures.append("summary.status")
+    for key, count in (("states", len(own["states"])), ("diagonal_bins", len(own["diagonal_bins"])),
+                       ("joint_moments", len(own["factorial_moments"]))):
+        if key in primary["summary"]:
+            check("summary."+key, primary["summary"][key], count)
     check("matrix", primary["Q_entries_a_b_zeta_degree"], own["Q_entries_a_b_zeta_degree"])
     check("q", primary["q"], own["q"])
     rows = {tuple(row["n"]): row for row in primary["states"]}

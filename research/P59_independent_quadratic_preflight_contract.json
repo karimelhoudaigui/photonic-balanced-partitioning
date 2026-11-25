@@ -2,7 +2,7 @@
   "claim_id": "P59-INDEPENDENT-SYMBOLIC-PREFLIGHT",
   "binding_state": "EXACT_SYMBOLIC_QUALIFICATION_ONLY_NOT_MAIN_AUTHORIZATION",
   "mathematics": {
-    "assertion_tested": "Twelve independent-engine symbolic guards only: field via1,i√3 basis, three12term factors, ONE analytic PNR coefficient/response, occupation/parity metadata, explicit Gram/q, four-mode SIX-subset toy hypergeometric reference, decoder60LCM, ten-class9/5Gram, q-only moments/PGF, canonical numeric rejection, winner completeness and harmonic sign/curvature corruption. No derive(), full15 slope table or actual primary raw decoded.",
+    "assertion_tested": "Thirteen independent-engine symbolic guards only: field via1,i√3 basis, three12term factors, ONE analytic PNR coefficient/response, occupation/parity metadata, explicit Gram/q, four-mode SIX-subset toy hypergeometric reference, decoder60LCM, ten-class9/5Gram, q-only moments/PGF, canonical numeric rejection, winner completeness, harmonic sign/curvature corruption and generic exact-string verdict/count checks. No derive(), full15 slope table or actual primary raw decoded.",
     "coefficient_domain": "Python arbitrary integer pairs in Z[xi], xi²=xi−1, explicit three12term paired factors, probability denominator150^6; exact Fraction throughout. No production/native import, complex128/float proof or RNG.",
     "conventions": "Code frozen blind to the full primary mean/outcome; known PNR fixture disclosed. Own occupation multisets,1728 triple products, all462 rows/c1 zeros, uniform top3 hypergeometric edge decoder, ten-class Gram inversion9/5. Primary20winner lists checked by cardinality/eligibility only, never used to build own decoder. All full math compared without importing primary code.",
     "inputs": [
@@ -31,7 +31,7 @@
       "max_primary_compressed_bytes": 4194304,
       "max_primary_inflated_bytes": 8388608,
       "maximum_failed_retries": 0,
-      "planned_tests": 12,
+      "planned_tests": 13,
       "qualification_complete_mean_tables": 0,
       "qualification_primary_data_inputs": 0
     },

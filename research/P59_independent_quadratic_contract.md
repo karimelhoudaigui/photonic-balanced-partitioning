@@ -48,12 +48,20 @@ post-seal hash-only completion, not an opportunity to select favorable rows.
 No template is permission to run. Targeted symbolic qualification and the
 full independent replication need distinct ROOT slots/approvals.
 
-Twelve qualification cases cover independent quadratic-field fixtures,
+ROOT requested a generic pre-data comparison guard after reviewing the
+frozen engine: compare the primary's exact STRING status to our independently
+derived status, plus announced population counts when present. The separate
+delta changes compare()/its symbolic test only, not coefficient_table(),
+derive(), physical parameters or response mathematics. Full slopes remain
+unread; no primary outcome is selected by this guard.
+
+Thirteen qualification cases cover independent quadratic-field fixtures,
 12-term factors, the SINGLE analytic PNR coefficient (targeted1728 expansion
 only), occupation/parity counts, matrix Gram/q, four-mode SIX-subset toy
 decoder reference, hypergeometric60 LCM, ten-class Gram, q moments/PGF,
-strict rational decoding, primary-winner semantic checks and positive-
-harmonic sign/curvature corruption. No derive() call/full mean table or
+strict rational decoding, primary-winner semantic checks, positive-
+harmonic sign/curvature corruption and generic verdict/count checks.
+No derive() call/full mean table or
 actual primary result is used in qualification.
 
 Main outputs: independent.json.gz (all independent math) and comparison.json.
