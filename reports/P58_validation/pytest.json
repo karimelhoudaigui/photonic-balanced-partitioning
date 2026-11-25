@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; raise SystemExit(pytest.main([\"tests/\",\"-q\"]))"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 26.285966416995507,
+  "commit": "ba0e0663bca6bf23724d7bdbbb9bf95f3677281f",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "scope": "Full regression including independent P53d checker guards; P58 exact experiment has seven integrated guards; no new physical experiment"
+}

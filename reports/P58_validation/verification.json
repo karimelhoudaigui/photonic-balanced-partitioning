@@ -1,0 +1,45 @@
+{
+  "checked_utc": "2026-11-25T14:16:36.660108+00:00",
+  "inspection_head": "ff774d72e55114ebcefa6af2b218e5985ac4fa02",
+  "manifests": [
+    {
+      "path": "research/P53d_independent_guards/run_001/manifest.json",
+      "sha256": "2ddbf5a5a9d9e18bb2baffc19fbc48e61f913c7ee92cdc440455944e6d484597",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "research/P53d_independent_check/run_001/manifest.json",
+      "sha256": "b988c3d201e419b411182cc38fa7ac8a94b189ce48e8bdcd2de9c1043ba08f23",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/manifest.json",
+      "sha256": "f03c242c81cf31a5a767a9e6cab5ac2c93a7c7466c8c45934277f0ffb80eb8a4",
+      "exit_code": 0,
+      "root_v2_validation": "PASS",
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    }
+  ],
+  "full_test_receipt": "reports/P58_validation/pytest.json",
+  "full_test_result": "969 PASS /25.46s pytest /26.285966417s total atba0e066",
+  "paper_diff_against_main": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "accepted_positive_optimizer": false,
+  "P53d": "restricted all-phase b4 mean theorem independently reconstructed",
+  "P58": "primary same-phase all127 bipartitions separated; independent engine/data replication pending",
+  "P56_P57": "static obstructions and corrected physical mechanism, no optimizer pilot",
+  "P59": "odd six-mode static proposal, no computed response yet",
+  "last_confirmed_remote_CI": {
+    "head": "35f7ab1352b2b947a1dd18a0867bde3b1b5ddd8c",
+    "conclusion": "success",
+    "url": "https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45627887943"
+  },
+  "remote_main_last_verified": "27443954fb7491a293399f0417d05185009f5c9a"
+}

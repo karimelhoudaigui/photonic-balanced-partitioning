@@ -2,6 +2,25 @@
 
 ## Latest checkpoint: independent P53c/P55 checks; P53d candidate
 
+Newer exact/replication checkpoint supersedes this heading's earlier candidate
+stage: P53d independent7611d76/root967bb07 verifies all35 continuous-phase
+triangle bounds57/32768 (old normalized graph57/458752). Extracted statement:
+theory/P53d_uniform_phase_b4_mean_separation.md. P58's sole exact runcc58f9a
+and independent native engine runa3ce1dc/receipta4bfa3e reproduce all255
+source laws/157183 amplitudes,6435 ties and127 SAME-phase mean controls,
+minimum gap649/327680. Source corroboration is floating; mean arithmetic exact.
+No arbitrary-finer-species or optimization conclusion follows.
+
+Full regression969PASS25.46s/26.285966total atba0e066; archived602 files and
+paper bytes preserved, reports/P58_validation/. P56/P57 have static symmetry
+and constructive classical-sampler obstructions; P57 peer indexing/arithmetic
+corrections are explicit and historical versions retained. ROOT review:
+reports/P56_P57_ROOT_PROOF_CHECKPOINT.md. P59's odd N6 fixed-q construction
+and independent precode fixture are frozen; implementation only authorized,
+all15 decoded responses still unknown. Its calibration is not a graph pilot.
+No numerical worker active at this checkpoint, subject to later slot messages.
+Positive optimizer target remains OPEN; no held-out graph, paper revision or QPU.
+
 Supersedes stage-specific pending statements below. Integrated P55 primary
 8049fa37/root716d3af and report8ac10da/root2afccde: all480 observations complete,
 DEV_REJECTED_FIXED_FAST; B paid minima39/38 versus EACH fixed FAST11/22. D and

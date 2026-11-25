@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-11-25T14:32:11.372459+00:00",
+  "inspection_head": "ebfeff348966140b6ea666583e790b56a7aa4460",
+  "manifests": [
+    {
+      "path": "research/P58_naive_qualification/run_001/manifest.json",
+      "sha256": "57b342ef9b808c9a19e3112e29d89dc178f46857eb9278d0bc237f537c9c3b27",
+      "exit_code": 0,
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "experiments/P58_naive_replication/run_001/manifest.json",
+      "sha256": "f319aaf27aaf8c6d1d9152add8cb14f07af95723775d76551502c12f527cf522",
+      "exit_code": 0,
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    }
+  ],
+  "full_regression": "969 PASS atba0e066; reports/P58_validation/pytest.json; no changed existing test or imported production source since then",
+  "independent_source_groups": 255,
+  "native_amplitudes": 157183,
+  "maximum_absolute_amplitude_error": 1.8735013540549517e-16,
+  "exact_tie_scalars": 6435,
+  "exact_control_means": 127,
+  "minimum_signed_gap": "649/327680",
+  "source_corroboration": "numerical not interval; exact archived weights then independent integer/Fraction ties/convolutions",
+  "accepted_positive_optimizer": false,
+  "paper_diff_against_main": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f"
+}

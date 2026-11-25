@@ -970,3 +970,47 @@ Root full956PASS24.09s pytest, six new manifests v2PASS,602 historical files
 and paper bytes unchanged. Receipts reports/P55_validation/. P56/P57 continue
 with different encodings/multi-swap mechanisms, first checking symmetry and
 classical replacements. Main/paper remain unchanged; no QPU/held-out opening.
+
+## 2026-11-25 — continuous control theorem; broader fixed-phase replication
+
+P53d's independent checker passed13 prospective guards, then its separately
+authorized replay7611d76/root967bb07 reconstructed23,100 permanent patterns,
+300300 Laurent entries,6435 direct decoder states,108900 matrix entries,
+35 spectra/triangles and105 anchors. It confirms the SAME fixed B/w/graph's
+strict57/32768 mean gap over all35 b4 groupings at EVERY real control phase;
+old normalized graph bound57/458752. Exact scoped statement is extracted in
+theory/P53d_uniform_phase_b4_mean_separation.md. No optimizer claim is inferred.
+
+P58 separately froze the SAME-angle ALL127 bipartition falsifier before code
+or evaluation. Its source/card/contract had ROOT/physics full static review.
+One clean isolated runcc58f9a/root89e882d,2.012950s,7 guards,5unchanged inputs,
+all255 exact source laws/157183 states and6435 tie scalars retained. All127
+1+7/2+6/3+5/4+4 controls have larger signed mean; minimum gap649/327680 at
+groups03/12/47/56. All raw data sealed before the receipt. No new graph/angle.
+
+Independent engine code db573dd/rootb6388c6 passed actual6+5 qualification
+66d5dcf/root49ca757 before ONE authorized full native check. Rawa3ce1dc/
+root7743372 sealed before analysisa4bfa3e/rootdb5f717: all157183 Naive permanent
+amplitudes agree (max1.873501354e-16), all6435 threshold-hypergeometric ties
+and127 base16 convolutions agree exactly. ChildCPU6.689109s/wall7.37463125s,
+runner7.702003s;11 unchanged inputs/v2PASS. Numerical source corroboration,
+posthoc/nonblind team, not exact interval source proof or physical randomness.
+Finer partitions/all phases remain outside this assertion. No advantage.
+
+P56 Diță C5 symmetry proves a38-dimensional mean projection, orbit bound,
+and a nonnegative graph counterexample. An antiunitary identity excludes its
+proposed N8 within-color U2 escape. P57's5-source collective cycle really
+responds, but an explicit O(L) parity sampler reproduces its FULL law; the
+graph example also loses to retimed D/direct permutation. ROOT caught and
+preserved separate MPS-phase indexing and reviewer gain-arithmetic errors.
+Final gain is(15-5cosPhi)/512; these corrections do not change its rejection.
+
+P59 now fixes a DIFFERENT odd N6 family, one real output mixer, one phase,
+q/marginals/moments<=3 invariant. Before code, the separate adaptive derivation
+and ROOT reconstruct a nonzero individual-PNR derivative -124sqrt3/421875.
+That is not a decoded-mean result: all15 responses require the full462-state
+aggregation and all20 ties. Cards/derivations9f5b7ea+b7341f9/59dc56e precede
+implementation; no graph, opt mask, calibration or sample has run yet.
+
+Root969PASS25.46s atba0e066 and manifest/archive/paper checks are recorded in
+reports/P58_validation/. No paper/main/Git release change or hardware call.

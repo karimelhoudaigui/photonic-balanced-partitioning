@@ -76,3 +76,15 @@ separate threshold-tie/exact-mean checker are being prepared without any
 authorized execution yet. That future check is posthoc/nonblind, not a fresh
 physical random experiment. P33/P37/E05b, paper/, main and all historical raw
 data remain unchanged. Positive optimizer target OPEN; QPU calls zero.
+
+## Independent replication subsequently completed
+
+The prospective checker above has now run after its separately reviewed
+6+5-check qualification. All255 source groups/157183 complex amplitudes
+agree with Perceval Naive (maximum absolute amplitude error1.8735e-16),
+and independently computed6435 threshold ties plus127 base16-convolved
+exact means reproduce the gap649/327680. Read
+research/P58_NAIVE_COMPLETE_REPLICATION_RECEIPT.md for the actual commands,
+hashes, source-engine versus exact-arithmetic limits and nonblind provenance.
+This supersedes the execution-pending sentence, without changing the frozen
+primary raw data or promoting the result to optimization/hardware benefit.

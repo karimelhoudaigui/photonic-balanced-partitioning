@@ -7,11 +7,16 @@ registered gate. Its paid B minima39/38 lose to EACH fixed classical search
 The independently coded sparse-GF/rank/cut/cost audit confirms all480 events
 and that veto: research/P55_INDEPENDENT_RAW_AUDIT_RECEIPT.md.
 This is a tested-pipeline negative, not a universal no-go.
-P53c's complete independent23,100-permanent reconstruction now verifies the
-fixed same-phase106-control gap. P53d additionally reports a uniform gap over
-all35 b4 groupings and all classical phases; independent checking is PENDING.
-Neither mean witness is an optimizer advantage. Full regression956PASS.
-P56/P57 investigate different encodings and proposals statically. The positive
+P53c's complete independent23,100-permanent reconstruction verifies the fixed
+same-phase106-control gap. P53d's separately qualified independent replay now
+confirms the uniform gap over all35 b4 groupings and all classical phases:
+theory/P53d_uniform_phase_b4_mean_separation.md. P58 also separates all127
+bipartitions at the SAME pi/3; independent Naive checks all157183 amplitudes
+and the second implementation reproduces all127 exact means. Numerical
+source corroboration is not interval certification. None is an optimizer
+advantage. Full regression969PASS plus separate P58 qualification/full checks.
+P56/P57 identify different symmetry/sampling bottlenecks; P59 investigates a
+different odd six-mode encoding before any computation. The positive
 target remains OPEN; paper/ and main stay at the delivered release, with no
 QPU call or held-out opening. Historical checkpoint prose below retains its
 original stage-specific limits.

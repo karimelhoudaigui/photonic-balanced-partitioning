@@ -14,7 +14,7 @@ are new is made. No external theorem is needed for the explicit derivation.
 
 ## Passive circuit and an unconditioned collective event
 
-Use L distinct single photons in the upper rail of L cells, lower rail vacuum.
+Use L>=2 distinct single photons in the upper rail of L cells, lower rail vacuum.
 Let C be a single cyclic permutation and Z=diag(z_j), |z_j|=1. Two layers of
 balanced real beamsplitters, with the phased cyclic route between them, give
 
@@ -154,7 +154,13 @@ Let p=q_(j-1), q=q_j. At cell j the local incoming Fock state is |1-q,p>.
 Let h_n(1-q,p) be its normalized two-mode balanced-splitter amplitude for
 the local PNR outcome n. It includes the HOM sqrt(2) normalization. Define
 
-    [A_j(n)]_(p,q) = z_j^q h_n(1-q,p)/sqrt(2),    p,q in{0,1}.
+    [A_j(n)]_(p,q) = z_j^p h_n(1-q,p)/sqrt(2),    p,q in{0,1}.
+
+Here C routes j to j+1 and Z is indexed by destination cell, so the phase
+belongs to the incoming routed photon p. Equivalently put z_(j+1)^q on an
+outgoing edge. The original5432b7d used z_j^q without that index shift;
+independent review identified the amplitude-convention correction. Flux,
+all Born probabilities and the negative conclusion are unchanged.
 
 Then the exact full output amplitude is Tr prod_j A_j(n_j). Each cell has
 only the six possible PNR patterns of at most two photons. The doubled
@@ -174,6 +180,17 @@ polynomial. Thus prefix probabilities and their exact conditional ratios
 have O(L)-bit numerators/denominators. No uncontrolled transcendental oracle
 or exponential precision is hidden in these diagnostic cases. Arbitrary
 phases require specified coefficient representation/precision separately.
+
+An independent route argument gives an even simpler complete classical
+sampler. Draw L fair route bits q. If q is nonconstant, sample each cell's
+fixed vacuum, fair single-photon rail or fair HOM-bunched rail. If q is
+constant (probability2^(1-L)), draw parity sigma with probability
+(1+sigma*cosPhi)/2, then draw L-1 fair output bits and fix the last to that
+parity. The collective conditional law is(1+sigma*cosPhi)/2^L, exactly
+reproducing(1) after multiplying the sector mass. At0/pi the entire sampler
+uses O(L) fair bits/work; for general phases specify cosPhi representation.
+An absolute cosine error delta causes total-variation error at most
+2^(-L)*delta. Decoder and adaptive-history costs still have to be paid.
 
 ## First missing implication for a different architecture
 

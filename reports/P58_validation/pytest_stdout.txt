@@ -1,0 +1,29 @@
+........................................................................ [  7%]
+........................................................................ [ 14%]
+........................................................................ [ 22%]
+........................................................................ [ 29%]
+........................................................................ [ 37%]
+........................................................................ [ 44%]
+........................................................................ [ 52%]
+........................................................................ [ 59%]
+........................................................................ [ 66%]
+........................................................................ [ 74%]
+........................................................................ [ 81%]
+........................................................................ [ 89%]
+........................................................................ [ 96%]
+.................................                                        [100%]
+=============================== warnings summary ===============================
+../../../../private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+../../../../private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+../../../../private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+  /private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+    warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+
+../../../../private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+../../../../private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+../../../../private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+  /private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+    warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+969 passed, 6 warnings in 25.46s
