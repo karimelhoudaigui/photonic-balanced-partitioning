@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "binding_state": "CODE_ONLY_NOT_EXECUTED",
+  "claim_id": "P75b-TINY-QUALIFICATION",
+  "mathematics": {
+    "assertion_tested": "Nine prospective fixtures in at most two modes check contraction mapping/domain, q11=144/625, exact complex Hermitian LDL/determinant, strict-PD rejection, exact witness algebra, fixed rounding, serialization/exclusive prefix, strict objective counter and guarded CLI. No six-mode matrix, baseline, RNG or optimization.",
+    "coefficient_domain": "Binary64 complex for fixed tiny NumPy checks; exact Fraction-pair Q(i) for witness/LDL algebra",
+    "conventions": "A qualification is not a six-mode countersearch or theorem. All observations are tiny deterministic fixtures; the numeric q11 diagnostics are archived in JUnit.",
+    "inputs": ["Literal n<=2 matrices/count-free Gaussian tests; no random generators or six-mode population"],
+    "bounds": {"CPU_seconds":30,"wall_seconds":60,"threads":1,"workers":1,"planned_pytest_items":9,"max_fixture_modes":2,"max_log_bytes":4194304,"max_scientific_bytes":8388608,"max_combined_bytes":12582912,"planned_logical_workspace_bytes":134217728,"failed_retries":0,"six_mode_evaluations":0,"Perceval_calls":0,"QPU_calls":0},
+    "non_claims": ["No six-mode theorem, counterexample, optimization advantage, QPU or automatic main authorization", "Logical memory is a plan, not a hard RSS/affinity cap", "An analytic resolution may cancel the main before any science execution"]
+  },
+  "execution_artifacts": ["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P73_complementary_pair_source_route.md","research/P66_exact_finite_check.py","research/P75b_gaussian_cf_six.py","tests/test_p75b_gaussian_cf_six.py","research/P75b_GAUSSIAN_CF_SIX_CONTRACT.md","research/P75b_gaussian_cf_preflight_contract.json","research/P75b_gaussian_cf_execution_contract.json"],
+  "software": [{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"scipy","version":"1.17.1"},{"name":"pytest","version":"8.4.2"}],
+  "randomness": {"used":false,"generator":"Literal tiny fixtures only; no RNG evaluated","seed":null},
+  "planned_command": ["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-m","pytest","-x","-q","-p","no:cacheprovider","tests/test_p75b_gaussian_cf_six.py","--junitxml=research/P75b_gaussian_cf_preflight/run_001/junit.xml"],
+  "declared_results": ["research/P75b_gaussian_cf_preflight/run_001/junit.xml"],
+  "resource_note": "CODE ONLY. No import/AST/test/native/RNG/evaluation authorized by this JSON. ROOT full static review/freeze/exclusive slot precedes one qualification and independently considered main. CPU30/wall60/envthreads1/log4MiB/science8MiB/logical128MiB/zero failed retries. JUnit actual bytes checked after qualification. Ten project files including original P66.C source are hashed by the runner; package pins are not full OS-library authentication. No original P66 science rerun. Four-mode search cancelled analytically before execution."
+}
