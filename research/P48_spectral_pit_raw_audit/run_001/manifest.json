@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "claim_id": "P48-POSTHOC-RAW-CONSISTENCY",
+  "repository": {
+    "commit": "95c2fa60813cb0e3d732ed2803b58a42db053ea4",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P48_spectral_pit_raw_audit.py",
+    "--output",
+    "research/P48_spectral_pit_raw_audit/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Inspect EVERY P48 raw row: independently recompute integer cuts and all primary/frontend decoder choices; reconstruct count/Gaussian PIT, common Cref and preparation intensity/signed-eigenvector candidates, labelled assignment feasibility/log cost; verify all gain/query/time frontiers and physical source/unitary/eigen/Gram/covariance/marginal diagnostics with stdlib only. No new sampling.",
+    "coefficient_domain": "Integer adjacency/cuts, Python stdlib float/complex-independent intensity arithmetic and math.erfc; declared numerical tolerances only",
+    "conventions": "Post-hoc audit of the one already completed run, not a preregistered discovery or independent distribution replication. Every raw row inspected, no graph filter or score oracle beyond saved adjacency.",
+    "inputs": [
+      "Primary manifest plus all six immutable P48 results",
+      "Every raw row; seven primary models and five feasible baselines",
+      "Saved source basis, source ports, marks/gaps, tables/repairs and preparation-candidate metadata"
+    ],
+    "bounds": {
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "maximum_raw_rows": 200000,
+      "cpu_seconds": 20,
+      "wall_seconds": 90,
+      "threads": 1
+    },
+    "non_claims": [
+      "No resampling, quantum advantage, new theorem or statistical gate",
+      "No interval accuracy or joint empirical-copula certificate",
+      "Informative score counts need not equal every repeated function invocation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T05:10:24.109765+00:00",
+    "runtime_seconds": 3.615725,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P48_spectral_pit_raw_audit.py",
+    "research/P48_spectral_pit_raw_audit_contract.json",
+    "experiments/P48_spectral_pit/run_001/manifest.json",
+    "experiments/P48_spectral_pit/run_001/data/summary.json",
+    "experiments/P48_spectral_pit/run_001/data/raw.jsonl.gz",
+    "experiments/P48_spectral_pit/run_001/data/context_n26_ER_4802601.json",
+    "experiments/P48_spectral_pit/run_001/data/context_n26_RR_4802602.json",
+    "experiments/P48_spectral_pit/run_001/data/context_n34_ER_4803401.json",
+    "experiments/P48_spectral_pit/run_001/data/context_n34_RR_4803402.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P48_spectral_pit_raw_audit.py",
+      "sha256": "faba88a4e37c3ad0ea9c86ce0f0862b103f0059c6f69405853559ad29905d143",
+      "sha256_after": "faba88a4e37c3ad0ea9c86ce0f0862b103f0059c6f69405853559ad29905d143"
+    },
+    {
+      "path": "research/P48_spectral_pit_raw_audit_contract.json",
+      "sha256": "9085fc4856b41fea9617359096805cf73964ccb388dd6fac03692e3bbdff245b",
+      "sha256_after": "9085fc4856b41fea9617359096805cf73964ccb388dd6fac03692e3bbdff245b"
+    },
+    {
+      "path": "experiments/P48_spectral_pit/run_001/manifest.json",
+      "sha256": "f3515554fb7fb2d87b9b4ff0970b828e96648e51cd50cbc2a5b02ec7d3e21c5b",
+      "sha256_after": "f3515554fb7fb2d87b9b4ff0970b828e96648e51cd50cbc2a5b02ec7d3e21c5b"
+    },
+    {
+      "path": "experiments/P48_spectral_pit/run_001/data/summary.json",
+      "sha256": "6cdb1e5c1cf8a05f549df6c770b052211c7846b87f27d78f4a10586ae242e5ea",
+      "sha256_after": "6cdb1e5c1cf8a05f549df6c770b052211c7846b87f27d78f4a10586ae242e5ea"
+    },
+    {
+      "path": "experiments/P48_spectral_pit/run_001/data/raw.jsonl.gz",
+      "sha256": "5e423f0f649e58aad5fb21ca5af36f89e6bfdd55d0710258db9b6e05450e5b77",
+      "sha256_after": "5e423f0f649e58aad5fb21ca5af36f89e6bfdd55d0710258db9b6e05450e5b77"
+    },
+    {
+      "path": "experiments/P48_spectral_pit/run_001/data/context_n26_ER_4802601.json",
+      "sha256": "f0431650399247c4dfa1cbb648804fc40a3365bda3e104a43d34fa0b13219518",
+      "sha256_after": "f0431650399247c4dfa1cbb648804fc40a3365bda3e104a43d34fa0b13219518"
+    },
+    {
+      "path": "experiments/P48_spectral_pit/run_001/data/context_n26_RR_4802602.json",
+      "sha256": "d1664a2cc32d532338f755d926ea8d75ef4bcaf62427c11d5f3334361d058622",
+      "sha256_after": "d1664a2cc32d532338f755d926ea8d75ef4bcaf62427c11d5f3334361d058622"
+    },
+    {
+      "path": "experiments/P48_spectral_pit/run_001/data/context_n34_ER_4803401.json",
+      "sha256": "7e8b332afa6eb7bfcc02797e02d7666f3599d8fbb7d71a37069630665bead5eb",
+      "sha256_after": "7e8b332afa6eb7bfcc02797e02d7666f3599d8fbb7d71a37069630665bead5eb"
+    },
+    {
+      "path": "experiments/P48_spectral_pit/run_001/data/context_n34_RR_4803402.json",
+      "sha256": "2f6b26755e4061a96990840008c136c62c89deea58f4be0cbf8538c827f0bf3a",
+      "sha256_after": "2f6b26755e4061a96990840008c136c62c89deea58f4be0cbf8538c827f0bf3a"
+    }
+  ],
+  "output_directory": "research/P48_spectral_pit_raw_audit/run_001",
+  "declared_results": [
+    "research/P48_spectral_pit_raw_audit/run_001/data/receipt.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P48_spectral_pit_raw_audit/run_001/stdout.txt",
+      "sha256": "a9766ae5afc3363071ff495e4eb75c82c75c65e41574ebd7a9092943d1dd0f02",
+      "kind": "log"
+    },
+    {
+      "path": "research/P48_spectral_pit_raw_audit/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P48_spectral_pit_raw_audit/run_001/data/receipt.json",
+      "sha256": "6b3cff6848d9bb8ca75d9c8d41d69fbc421bdb42b40be1cd8847dcb7a9868bda",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
