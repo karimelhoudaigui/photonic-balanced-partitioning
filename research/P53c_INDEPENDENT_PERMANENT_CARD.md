@@ -68,7 +68,7 @@ run before imports/guards/reconstruction. CPU20/wall30/threadenv1/log4MiB,
 scientific output4MiB; planned scientific tables<64MiB, no hard Darwin memory
 claim. All data are Python integers/Fractions; no native solver, random draw,
 graph optimization, calibration or hardware. Never retry/change phase/group/
-cap after an error. There are554400 direct4x4 permanent evaluations, plus
+cap after an error. There are23100 permanent evaluations /554400 terms, plus
 35*330² bounded integer convolution pairs and6435*70 finite tie candidates.
 
 Archive independent matrix numerators,70 complete group laws/permanents,
