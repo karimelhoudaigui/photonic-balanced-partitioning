@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "claim_id": "P75b-TINY-QUALIFICATION",
+  "repository": {
+    "commit": "5b2b52d3c12523f413f694fa250a40a8bf894747",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-x",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_p75b_gaussian_cf_six.py",
+    "--junitxml=research/P75b_gaussian_cf_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Nine prospective fixtures in at most two modes check contraction mapping/domain, q11=144/625, exact complex Hermitian LDL/determinant, strict-PD rejection, exact witness algebra, fixed rounding, serialization/exclusive prefix, strict objective counter and guarded CLI. No six-mode matrix, baseline, RNG or optimization.",
+    "coefficient_domain": "Binary64 complex for fixed tiny NumPy checks; exact Fraction-pair Q(i) for witness/LDL algebra",
+    "conventions": "A qualification is not a six-mode countersearch or theorem. All observations are tiny deterministic fixtures; the numeric q11 diagnostics are archived in JUnit.",
+    "inputs": [
+      "Literal n<=2 matrices/count-free Gaussian tests; no random generators or six-mode population"
+    ],
+    "bounds": {
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "threads": 1,
+      "workers": 1,
+      "planned_pytest_items": 9,
+      "max_fixture_modes": 2,
+      "max_log_bytes": 4194304,
+      "max_scientific_bytes": 8388608,
+      "max_combined_bytes": 12582912,
+      "planned_logical_workspace_bytes": 134217728,
+      "failed_retries": 0,
+      "six_mode_evaluations": 0,
+      "Perceval_calls": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "No six-mode theorem, counterexample, optimization advantage, QPU or automatic main authorization",
+      "Logical memory is a plan, not a hard RSS/affinity cap",
+      "An analytic resolution may cancel the main before any science execution"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Literal tiny fixtures only; no RNG evaluated",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T22:33:39.741089+00:00",
+    "runtime_seconds": 0.720704,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P73_complementary_pair_source_route.md",
+    "research/P66_exact_finite_check.py",
+    "research/P75b_gaussian_cf_six.py",
+    "tests/test_p75b_gaussian_cf_six.py",
+    "research/P75b_GAUSSIAN_CF_SIX_CONTRACT.md",
+    "research/P75b_gaussian_cf_preflight_contract.json",
+    "research/P75b_gaussian_cf_execution_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P73_complementary_pair_source_route.md",
+      "sha256": "97392ff30ae1b25ad1399c8f08bbea064a16f13b86b62c21cc99bf484d1d33a0",
+      "sha256_after": "97392ff30ae1b25ad1399c8f08bbea064a16f13b86b62c21cc99bf484d1d33a0"
+    },
+    {
+      "path": "research/P66_exact_finite_check.py",
+      "sha256": "fb3cf959f022481d360c3371168e0b2f5b97e400b14a4324c43237a162677a9d",
+      "sha256_after": "fb3cf959f022481d360c3371168e0b2f5b97e400b14a4324c43237a162677a9d"
+    },
+    {
+      "path": "research/P75b_gaussian_cf_six.py",
+      "sha256": "b86f2c69d26a3cc53d914122fac2a04e005f61141e8a4f1de8f919fdc69c09bb",
+      "sha256_after": "b86f2c69d26a3cc53d914122fac2a04e005f61141e8a4f1de8f919fdc69c09bb"
+    },
+    {
+      "path": "tests/test_p75b_gaussian_cf_six.py",
+      "sha256": "19e14762858c02e39448a48a17ba3ea74ce44af36cabf4a08a74b72e9893b40b",
+      "sha256_after": "19e14762858c02e39448a48a17ba3ea74ce44af36cabf4a08a74b72e9893b40b"
+    },
+    {
+      "path": "research/P75b_GAUSSIAN_CF_SIX_CONTRACT.md",
+      "sha256": "4e47b8fab3ad46fdc958e2a5f77bd5c3dfc0a1992d88fa74dfc2077cc975d188",
+      "sha256_after": "4e47b8fab3ad46fdc958e2a5f77bd5c3dfc0a1992d88fa74dfc2077cc975d188"
+    },
+    {
+      "path": "research/P75b_gaussian_cf_preflight_contract.json",
+      "sha256": "d6ba600b78aa0544e8159ea16dbc51e4b8d31108a08a0942bd4a59d7925b19fc",
+      "sha256_after": "d6ba600b78aa0544e8159ea16dbc51e4b8d31108a08a0942bd4a59d7925b19fc"
+    },
+    {
+      "path": "research/P75b_gaussian_cf_execution_contract.json",
+      "sha256": "a9992db697c46689ed524bebbf4203fed5dafb88428589cf5bd7ac59320bed9f",
+      "sha256_after": "a9992db697c46689ed524bebbf4203fed5dafb88428589cf5bd7ac59320bed9f"
+    }
+  ],
+  "output_directory": "research/P75b_gaussian_cf_preflight/run_001",
+  "declared_results": [
+    "research/P75b_gaussian_cf_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P75b_gaussian_cf_preflight/run_001/stdout.txt",
+      "sha256": "cd6b5cab3bee339b47a8507d58c0096cf921cc3980b74b1145ccbaa106be4b0f",
+      "kind": "log"
+    },
+    {
+      "path": "research/P75b_gaussian_cf_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P75b_gaussian_cf_preflight/run_001/junit.xml",
+      "sha256": "5996db050ca50919f7ccb639729b206c033f8bb062ed9645894cd26492aa7fc9",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
