@@ -136,4 +136,5 @@ The exact calibration, storage and phase control are paid resources.
 At N6 only10 unoriented feasible cuts exist; classical search is trivial.
 Physical phase-dependent correlations or a mean-descent rule do not imply
 optimization/resource advantage. Phase/sphere and independently reoptimized
-species controls remain necessary. Nothing here authorizes code, samples,+held-out tests, paper/QPU work or completion of the larger research goal.
+species controls remain necessary. Nothing here authorizes code, samples,
+held-out tests, paper/QPU work or completion of the larger research goal.
