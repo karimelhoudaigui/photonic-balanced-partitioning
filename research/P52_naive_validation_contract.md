@@ -47,7 +47,7 @@ permanent implementation's internals.
 ## Qualification first
 
 After this source/contract/test/input commit, ROOT reviews and grants the tiny
-qualification slot. The single bounded child `--mode qualify` runs seven
+qualification slot. The single bounded child `--mode qualify` runs eight
 administrative/analytic pytest guards (third-party plugin autoload disabled),
 then eleven checks: HOM CF zero, HOM bunching factorial, a complex 2x2
 orientation/amplitude pair at phi=.37, one identity-eight CF amplitude,
@@ -55,14 +55,23 @@ vacuum, one known native complex 2x2 permanent, four independent scalar-unitary
 residuals. The sixth guard mocks denied/timed-out ps and unavailable platform
 metadata without executing ps. The seventh checks JSON roundtrip of builtin
 records produced from simulated foreign float/bool-like scalars, without
-NumPy. No production U8 permanent is computed during qualification.
+NumPy. The eighth mocks the official native maximum setter/readback, strict
+JSON and a changed post-work maximum, without importing exqalibur. No
+production U8 permanent is computed during qualification.
 
 Qualification writes actual Python/package versions, implementation/binary
 hashes, `permanent_cx` docstring/signature where available, thread-named exports,
 six thread environment values and `ps -M` snapshots before import, after import
 and after work. No native thread keyword is guessed. These samples cannot
 establish a one-worker native permanent call; absent an exposed documented
-control the receipt explicitly remains `NATIVE_THREADS_UNVERIFIED`. An
+control run_003 remained `NATIVE_THREADS_UNVERIFIED`. The actual Config doc
+then revealed the official static `compute_max_thread_count` interface. For
+run_004 and future full validation, after imports but before any backend or
+permanent, the validator records its previous integer value, assigns1 and
+requires readback1. It reads back1 again after work before any PASS status.
+The requested value/interface/documentation are recorded; no precision or
+ptype override is applied. This configures the documented native maximum,
+without independently measuring native internals or OS scheduling. An
 OSError/TimeoutExpired observing ps produces unavailable/type/errno/error
 metadata at all three call sites, and optional platform metadata tolerates
 OSError. These observations never infer one native worker. ROOT must
@@ -72,7 +81,7 @@ does not itself authorize production.
 Qualification command, inside the Mathbox v2 bounded runner:
 
 ```
-/private/tmp/pbp-clean-venv-20261124/bin/python research/P52_naive_replication.py --mode qualify --output research/P52_naive_qualification/run_003/data
+/private/tmp/pbp-clean-venv-20261124/bin/python research/P52_naive_replication.py --mode qualify --output research/P52_naive_qualification/run_004/data
 ```
 
 ## Full finite check, separately authorized
@@ -156,3 +165,17 @@ tolerances are unchanged. ROOT separately authorized the optional persistent
 Matplotlib cache setting above. Full production remains pending actual
 qualification/API-thread review. No corrected qualification is automatically
 run by this amendment.
+
+## Official native maximum amendment before run_004
+
+Run_003 at68b8c83 preserves its actual7guards/11checks PASS conditional on
+unverified native threads. A separate authorized read-only Config metadata
+process (preregistered7286e9e, sealed1f6ec5d) documented the official static
+property; no setter ran in that probe. ROOT authorized this prospective setter,
+two readbacks and eighth mock guard. The actual maximum before/after and Config
+doc are saved in new reports. The permanent doc says its default may choose
+Glynn for1/2 threads, Ryser otherwise; the same eleven checks must therefore
+qualify this newly configured native path. No invented permanent keyword,
+vendor patch, floating precision, physical formula/reference or cap changes.
+Fresh run_004 requires source review/slot before execution. Full25,740 remains
+pending its actual qualification and separate approval.

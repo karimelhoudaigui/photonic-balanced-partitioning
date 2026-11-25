@@ -97,3 +97,19 @@ def test_check_record_json_converts_foreign_scalar_types():
         assert type(record["absolute_error"]) is float
         assert all(type(x) is float for x in record["observed"] + record["expected"])
         assert probe.json.loads(probe.json.dumps(record, allow_nan=False)) == record
+
+
+def test_native_thread_configuration_mock_readbacks_and_json():
+    class MockConfig:
+        compute_max_thread_count = 8
+
+    mock_api = type("MockAPI", (), {"Config": MockConfig})
+    record = probe.configure_native_threads(mock_api)
+    assert record["observed_before_configuration"] == 8
+    assert record["readback_after_configuration"] == 1
+    assert type(record["readback_after_configuration"]) is int
+    assert probe.native_thread_readback(mock_api) == 1
+    assert probe.json.loads(probe.json.dumps(record, allow_nan=False)) == record
+    MockConfig.compute_max_thread_count = 2
+    with pytest.raises(RuntimeError, match="expected one"):
+        probe.native_thread_readback(mock_api)

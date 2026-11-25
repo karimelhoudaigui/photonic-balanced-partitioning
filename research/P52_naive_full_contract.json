@@ -6,7 +6,7 @@
     "conventions": "8 distinct single photons, 8 modes, eta1; collisions/zeros retained. Scalar independent U[out,input], multiset-slot enumeration. No source import from primary; no probability iterator, pruning, phase fitting or law renormalization.",
     "inputs": ["Reference data commit762877a six byte-pinned files", "Four phases0/pi4/pi2/3pi4; all6435 occupations per phase"],
     "bounds": {"modes": 8, "photons": 8, "phases": 4, "occupations_per_phase": 6435, "permanent_calls": 25740, "absolute_amplitude_probability_tolerance": 5e-10, "matrix_unitarity_tolerance": 5e-12, "CPU_seconds": 20, "wall_seconds": 30, "threads_requested": 1, "max_array_bytes": 67108864, "max_new_output_bytes": 4194304},
-    "non_claims": ["Requires separate ROOT approval after actual qualification and native thread metadata", "No MC confidence/LP validation, classical full-law replacement, optimization, advantage, hardware, heldout or novelty claim", "Cap exhaustion, disagreement and incomplete coverage preserved; no fallback/retry"]
+    "non_claims": ["Requires separate ROOT approval after actual qualification and documented native maximum1 readbacks; OS scheduling/native implementation not independently measured", "No MC confidence/LP validation, classical full-law replacement, optimization, advantage, hardware, heldout or novelty claim", "Cap exhaustion, disagreement and incomplete coverage preserved; no fallback/retry"]
   },
   "execution_artifacts": [
     "research/P52_naive_replication.py", "tests/test_p52_naive_replication.py",
@@ -18,6 +18,6 @@
   ],
   "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}, {"name": "perceval-quandela", "version": "1.3.0"}, {"name": "exqalibur", "version": "1.4.2"}],
   "randomness": {"used": false, "generator": "none", "seed": []},
-  "resource_note": "Full production not authorized by implementation or API qualification alone. One sequential worker, CPU20/wall30, thread env1; native threading limitation must first be reviewed. Planned live arrays<4MiB, individual arrays<64MiB; process RSS separately measured. No hard Darwin memory/affinity assertion. Preserve explicit MPLCONFIGDIR; if absent set to this worktree ROOT/.local/mplconfig before imports, persistent writable cache recorded, no warm/cold performance claim.",
+  "resource_note": "Full production not authorized by implementation or API qualification alone. One sequential worker, CPU20/wall30, thread env1 plus documented Config.compute_max_thread_count=1/readback before and after work; native implementation/OS scheduling not independently measured. Planned live arrays<4MiB, individual arrays<64MiB; process RSS separately measured. No hard Darwin memory/affinity assertion. Preserve explicit MPLCONFIGDIR; if absent set to this worktree ROOT/.local/mplconfig before imports, persistent writable cache recorded, no warm/cold performance claim.",
   "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "research/P52_naive_replication.py", "--mode", "full", "--output", "experiments/P52_naive_validation/run_001/data"]
 }

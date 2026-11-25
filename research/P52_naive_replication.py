@@ -169,6 +169,23 @@ def make_backend(matrix, api):
     return backend
 
 
+def native_thread_readback(xq):
+    value = int(xq.Config.compute_max_thread_count)
+    if value != 1:
+        raise RuntimeError(f"native maximum CPU thread readback is {value}, expected one")
+    return value
+
+
+def configure_native_threads(xq):
+    before = int(xq.Config.compute_max_thread_count)
+    xq.Config.compute_max_thread_count = 1
+    after = native_thread_readback(xq)
+    return {"interface": "exqalibur.Config.compute_max_thread_count",
+            "observed_before_configuration": before, "requested_maximum": 1,
+            "readback_after_configuration": after, "Config_doc": xq.Config.__doc__,
+            "interpretation": "documented native maximum configured/read back; OS scheduling not measured; default permanent algorithm may select Glynn at one thread"}
+
+
 def package_provenance(api):
     np, xq, NaiveBackend, Unitary, FockState = api
     paths = {"NaiveBackend": inspect.getfile(NaiveBackend),
@@ -191,7 +208,7 @@ def package_provenance(api):
         "permanent_doc": xq.permanent_cx.__doc__,
         "thread_named_exports": [name for name in dir(xq) if "thread" in name.lower()],
         "thread_environment": {name: os.environ.get(name) for name in THREAD_VARIABLES},
-        "native_thread_control": "NOT_ESTABLISHED: no unsupported keyword or vendor patch used; ps samples and environment limits do not prove one native worker",
+        "native_thread_control": "DOCUMENTED_CONFIG_MAXIMUM_1: Config.compute_max_thread_count configured/read back before work; successful completion also requires readback after; no OS scheduling measurement or vendor patch",
         "backend": "local NaiveBackend.prob_amplitude; no masks/iterator/pruning/remote processor",
     }
 
@@ -305,7 +322,7 @@ def main():
     try:
         report["matplotlib_cache"] = configure_matplotlib_cache()
         if args.mode == "qualify":
-            # Same bounded child: seven guards plus eleven small analytic checks.
+            # Same bounded child: eight guards plus eleven small analytic checks.
             os.environ["PYTEST_DISABLE_PLUGIN_AUTOLOAD"] = "1"
             import pytest
             guard_status = int(pytest.main([
@@ -316,16 +333,19 @@ def main():
             if guard_status:
                 raise AssertionError("administrative guard qualification failed")
         api = load_backend()
+        report["native_thread_configuration"] = configure_native_threads(api[1])
         report["software"] = package_provenance(api)
         report["thread_snapshot_after_import"] = thread_snapshot()
         if args.mode == "qualify":
             report["checks"] = qualify(api)
             passed = all(item["pass"] for item in report["checks"])
-            report["status"] = "API_QUALIFICATION_PASS_NATIVE_THREADS_UNVERIFIED" if passed else "QUALIFICATION_FAIL"
+            status = "API_QUALIFICATION_PASS_NATIVE_MAXIMUM_1" if passed else "QUALIFICATION_FAIL"
         else:
             report["phases"] = full_replication(api, output)
             passed = len(report["phases"]) == 4 and all(item["pass"] for item in report["phases"])
-            report["status"] = "FINITE_FLOAT64_AGREEMENT" if passed else "DISAGREEMENT"
+            status = "FINITE_FLOAT64_AGREEMENT" if passed else "DISAGREEMENT"
+        report["native_thread_readback_after_work"] = native_thread_readback(api[1])
+        report["status"] = status
         exit_code = 0 if passed else 1
     except Exception as error:
         report["exception"] = {"type": type(error).__name__, "message": str(error)}
