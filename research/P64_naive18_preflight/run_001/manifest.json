@@ -1,0 +1,262 @@
+{
+  "schema_version": 2,
+  "claim_id": "P64-N18-POINT-WRAPPER-SMALL-QUALIFICATION",
+  "repository": {
+    "commit": "00fc464c83c4055e30c72cc16acde6e9ffcf30f1",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-c",
+    "import os; os.environ[\"P64_NAIVE18_QUAL_OUTPUT\"]=\"research/P64_naive18_preflight/run_001/data\"; import pytest; raise SystemExit(pytest.main([\"-q\",\"tests/test_p64_naive18_probability_check.py\",\"--junitxml=research/P64_naive18_preflight/run_001/junit.xml\"]))"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Prospective small qualification only: independent exact paired-quadratic F6 coefficients/weights compared with pinned sealed462-row data, two scalar/dense N18 architecture matrix identities WITHOUTnative18probabilityqueries, exact frozen14point metadata/C6 counts, mocked zero-M no-division and p/fsum(probs) at every step, zero rounded branch labeling, count/probability/thread/error/exclusive-file guards. Only true native calls are five fixed TWO-photon/TWO-mode HOM and bunched-input probabilities; no18-photon source/calibration/query/draw.",
+    "coefficient_domain": "Exact integer/Fraction and independent paired-polynomial fixtures; pure standard-library complex matrix arithmetic; mocked conditional states; deterministic native2photon permanent probabilities",
+    "conventions": "Ideal lossless identical-photon source1^18,ports a*6+i,positive F3/F6,output V[[3,-4],[4,3]]/5 on0,6. EXACT2phase arrays: allzero and theta[b,i]=(5*(b-1)+i)/11 for b1/2,i1..5,all gauges0. Seven prospective complete occupations/left rotations in spec,phase-major order. P64 exact P(M) reachability before division,then audited conditional/project methods with normalized p/fsum(probs). Independent dense matrix builds F3/F6/phase/V without production entry/cache helpers. NaiveBackend.prob_amplitude calls local exqalibur.permanent_cx with both Fock factorials. No RNG or samples.",
+    "inputs": [
+      "Hardcoded two-mode Hadamard and normalized two-photon Fock inputs(1,1)/(2,0)",
+      "No production sampler import in the exact F6 source component; sealed source data are plain SHA-pinned JSON inputs",
+      "N18 architecture calculations are matrices only; all wrapper-conditioning fixtures use explicit mockedd2states"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_log_bytes": 33554432,
+      "max_scientific_output_bytes": 33554432,
+      "logical_memory_plan_bytes": 268435456,
+      "phase_arrays": 2,
+      "occupations": 7,
+      "deterministic_N18_points": 14,
+      "full_N18_enumerations": 0,
+      "native_random_draws": 0,
+      "graphs": 0,
+      "training_steps": 0,
+      "failed_retries": 0,
+      "source_polynomial_products": 1728,
+      "source_rows": 462,
+      "conditional_width_upper_bound": 6400,
+      "transition_entries_upper_bound": 130340,
+      "absolute_tolerance": 1e-12,
+      "relative_tolerance": 1e-07,
+      "matrix_tolerance": 5e-12,
+      "mass_tolerance": 2e-10,
+      "native_N18_probability_queries": 0,
+      "native_fixture_photons": 2,
+      "native_fixture_modes": 2,
+      "native_fixture_probability_queries": 5,
+      "planned_pytest_items": 22
+    },
+    "non_claims": [
+      "Fourteen predetermined N18 point probabilities cannot establish the complete PNR law, a global total-variation bound, optimizer trajectory equality at finite precision, or an optimization/hardware/runtime advantage",
+      "Mixed tolerance is1e-12+1e-7*max(p64,pNaive). Both absolute and relative errors are archived; absolute-dominated points do not certify relative precision, including rare probabilities and zeros",
+      "No graph, optimum, seed search, random phase/count draw, native18 calibration, heldout opening, paper edit or QPU action",
+      "The independent exact F6 paired polynomial compares all462 coefficients/weights against previously sealed data; it is one component, not an independent physical fullN18 experiment",
+      "Native backend and rounded P64 are numerical engines, not interval proofs or literal discrete-PRNG-law certificates",
+      "CPU60/wall90/env/native1/log32MiB/scientific32MiB/logical256MiB,one worker,first failure retained and zero retries. Logical bytes are not hard Darwin RSS/affinity enforcement; no cap/occupation/angle/tolerance change after data"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "No RNG; all fixtures deterministic; mocked states and exact source algebra",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T20:14:29.978467+00:00",
+    "runtime_seconds": 27.667293,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P64_naive18_probability_check.py",
+    "research/P64_independent_F6_pair_source.py",
+    "research/P64_naive18_probability_spec.json",
+    "tests/test_p64_naive18_probability_check.py",
+    "research/P64_NAIVE18_POINT_COMPARISON_CONTRACT.md",
+    "research/P64_naive18_preflight_contract.json",
+    "research/P64_naive18_execution_contract.json",
+    "research/P64_structured_sampler.py",
+    "theory/P64_fixed_phase_complete_structured_sampler.md",
+    "research/P64_IMPLEMENTATION_CONTRACT.md",
+    "research/P64_qualification_contract.json",
+    "research/P64_qualification/run_001/data/source_table.json",
+    "research/P64_qualification/run_001/manifest.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "research/P64_naive18_probability_check.py",
+      "sha256": "7be088346bc22b0598628f3b3aabe93bca18ff71cc361eba8e444d6fc20532e6",
+      "sha256_after": "7be088346bc22b0598628f3b3aabe93bca18ff71cc361eba8e444d6fc20532e6"
+    },
+    {
+      "path": "research/P64_independent_F6_pair_source.py",
+      "sha256": "cfde2b240827bb9650674165692c9c82c1074e12dfcdfbbc0adc1921f3c9a1da",
+      "sha256_after": "cfde2b240827bb9650674165692c9c82c1074e12dfcdfbbc0adc1921f3c9a1da"
+    },
+    {
+      "path": "research/P64_naive18_probability_spec.json",
+      "sha256": "7ea3e4c03c51f783ec297cee8e2c56859b813982338c676eb1fc64c6836b3e47",
+      "sha256_after": "7ea3e4c03c51f783ec297cee8e2c56859b813982338c676eb1fc64c6836b3e47"
+    },
+    {
+      "path": "tests/test_p64_naive18_probability_check.py",
+      "sha256": "dd685d702315148aecd69d05f92c33cd6bbf00447f51e6a24c7a955d89a2a47c",
+      "sha256_after": "dd685d702315148aecd69d05f92c33cd6bbf00447f51e6a24c7a955d89a2a47c"
+    },
+    {
+      "path": "research/P64_NAIVE18_POINT_COMPARISON_CONTRACT.md",
+      "sha256": "1f07449aa97ef0fc301d9af4fab6330730081019640ff724852502863ede3802",
+      "sha256_after": "1f07449aa97ef0fc301d9af4fab6330730081019640ff724852502863ede3802"
+    },
+    {
+      "path": "research/P64_naive18_preflight_contract.json",
+      "sha256": "798f1c05b46470e27b39ae4d38dbf642d374d31c3f9021f1e88923f31ae3a5a0",
+      "sha256_after": "798f1c05b46470e27b39ae4d38dbf642d374d31c3f9021f1e88923f31ae3a5a0"
+    },
+    {
+      "path": "research/P64_naive18_execution_contract.json",
+      "sha256": "d256a4465c99a9b638e45c1ccfe76847e04c5be2dd37cdd9f743ff4028c0e8c5",
+      "sha256_after": "d256a4465c99a9b638e45c1ccfe76847e04c5be2dd37cdd9f743ff4028c0e8c5"
+    },
+    {
+      "path": "research/P64_structured_sampler.py",
+      "sha256": "af2b016b9ce5dd71919a8745d21c7e7f363a1588a089f697770a29d5b9353543",
+      "sha256_after": "af2b016b9ce5dd71919a8745d21c7e7f363a1588a089f697770a29d5b9353543"
+    },
+    {
+      "path": "theory/P64_fixed_phase_complete_structured_sampler.md",
+      "sha256": "9e29d7818c709d4c6814ef8735ca3bb4e7a17bbfa932b270229d7c3dcf997b3c",
+      "sha256_after": "9e29d7818c709d4c6814ef8735ca3bb4e7a17bbfa932b270229d7c3dcf997b3c"
+    },
+    {
+      "path": "research/P64_IMPLEMENTATION_CONTRACT.md",
+      "sha256": "e79a24eeac96be25cc42df4fad77bc8df92144dc38c34016a71464b428d695b9",
+      "sha256_after": "e79a24eeac96be25cc42df4fad77bc8df92144dc38c34016a71464b428d695b9"
+    },
+    {
+      "path": "research/P64_qualification_contract.json",
+      "sha256": "eb43a24900cc12d4766e72dd082fb24148f6a1ea3053b2994171216b11261860",
+      "sha256_after": "eb43a24900cc12d4766e72dd082fb24148f6a1ea3053b2994171216b11261860"
+    },
+    {
+      "path": "research/P64_qualification/run_001/data/source_table.json",
+      "sha256": "e02157b2990fa1eadef2d27cefe4f4817f6ff92a205ff67763d2365728492a75",
+      "sha256_after": "e02157b2990fa1eadef2d27cefe4f4817f6ff92a205ff67763d2365728492a75"
+    },
+    {
+      "path": "research/P64_qualification/run_001/manifest.json",
+      "sha256": "28e0bbcfcead8f1d84aa5a79b494464c246ab3b6f851e386777953c4b8a5fe01",
+      "sha256_after": "28e0bbcfcead8f1d84aa5a79b494464c246ab3b6f851e386777953c4b8a5fe01"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P64_naive18_preflight/run_001",
+  "declared_results": [
+    "research/P64_naive18_preflight/run_001/junit.xml",
+    "research/P64_naive18_preflight/run_001/data/independent_source.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P64_naive18_preflight/run_001/stdout.txt",
+      "sha256": "07ee32941e5a4d79ddbf5c5158e09ddf0547289db1113f15694850501214d8a6",
+      "kind": "log"
+    },
+    {
+      "path": "research/P64_naive18_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P64_naive18_preflight/run_001/junit.xml",
+      "sha256": "7ccc8eb36ae56f830d336d0eb08da22469438e97344fe516e79702a8efd53549",
+      "kind": "result"
+    },
+    {
+      "path": "research/P64_naive18_preflight/run_001/data/independent_source.json",
+      "sha256": "aeb27cd73c309322fc10a5256b58d2b528ab8f056b0c74316507d6644d6dd803",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
