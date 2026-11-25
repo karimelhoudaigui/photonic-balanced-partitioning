@@ -1,0 +1,1934 @@
+{
+  "status": "SAME_PHASE_ALL_BIPARTITIONS_SEPARATED",
+  "synthetic_guards": 7,
+  "controls": [
+    {
+      "input_group": [
+        0
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        1
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        2
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        3
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        4
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        5
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        6
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        7
+      ],
+      "mean": {
+        "numerator": -67,
+        "denominator": 327680
+      },
+      "gap_above_B": {
+        "numerator": 35,
+        "denominator": 16384
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3
+      ],
+      "mean": {
+        "numerator": -59,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 649,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        4
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        0,
+        5
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        0,
+        6
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        0,
+        7
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        1,
+        2
+      ],
+      "mean": {
+        "numerator": -59,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 649,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        1,
+        3
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        1,
+        4
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        1,
+        5
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        1,
+        6
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        1,
+        7
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        2,
+        3
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        2,
+        4
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        2,
+        5
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        2,
+        6
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        2,
+        7
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        3,
+        4
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        3,
+        5
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        3,
+        6
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        3,
+        7
+      ],
+      "mean": {
+        "numerator": 661,
+        "denominator": 5242880
+      },
+      "gap_above_B": {
+        "numerator": 12933,
+        "denominator": 5242880
+      }
+    },
+    {
+      "input_group": [
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": -59,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 649,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": -59,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 649,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 107,
+        "denominator": 163840
+      },
+      "gap_above_B": {
+        "numerator": 981,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        2
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        3
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        4
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        3
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        4
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        4
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        5
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        6
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        7
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        0,
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        0,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        0,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        2,
+        3
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        1,
+        2,
+        4
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        1,
+        2,
+        5
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        1,
+        2,
+        6
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        1,
+        2,
+        7
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        1,
+        3,
+        4
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        3,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        3,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        3,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        1,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        1,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        1,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        3,
+        4
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        3,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        3,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        3,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        2,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        2,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        2,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        3,
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        3,
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        3,
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        3,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": -3,
+        "denominator": 81920
+      },
+      "gap_above_B": {
+        "numerator": 151,
+        "denominator": 65536
+      }
+    },
+    {
+      "input_group": [
+        3,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        3,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 177,
+        "denominator": 655360
+      },
+      "gap_above_B": {
+        "numerator": 1711,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        4,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        4,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        4,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        5,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "gap_above_B": {
+        "numerator": 767,
+        "denominator": 327680
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": 493,
+        "denominator": 1310720
+      },
+      "gap_above_B": {
+        "numerator": 3561,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": 101,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 3573,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 101,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 3573,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 493,
+        "denominator": 1310720
+      },
+      "gap_above_B": {
+        "numerator": 3561,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": 101,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 3573,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": 493,
+        "denominator": 1310720
+      },
+      "gap_above_B": {
+        "numerator": 3561,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 493,
+        "denominator": 1310720
+      },
+      "gap_above_B": {
+        "numerator": 3561,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        2,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 101,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 3573,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "mean": {
+        "numerator": 161,
+        "denominator": 1310720
+      },
+      "gap_above_B": {
+        "numerator": 3229,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": 161,
+        "denominator": 1310720
+      },
+      "gap_above_B": {
+        "numerator": 3229,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        3,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": -23,
+        "denominator": 262144
+      },
+      "gap_above_B": {
+        "numerator": 2953,
+        "denominator": 1310720
+      }
+    },
+    {
+      "input_group": [
+        0,
+        4,
+        5,
+        6
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        4,
+        5,
+        7
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        4,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    },
+    {
+      "input_group": [
+        0,
+        5,
+        6,
+        7
+      ],
+      "mean": {
+        "numerator": 7,
+        "denominator": 131072
+      },
+      "gap_above_B": {
+        "numerator": 1569,
+        "denominator": 655360
+      }
+    }
+  ],
+  "source_groups": 255,
+  "B_mean": {
+    "numerator": -767,
+    "denominator": 327680
+  },
+  "minimum_gap": {
+    "numerator": 649,
+    "denominator": 327680
+  },
+  "minimizers": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "positive_optimizer_accepted": false,
+  "genuine_order8_witness_claimed": false,
+  "new_graphs": 0,
+  "physical_draws": 0,
+  "actual_QPU_calls": 0
+}

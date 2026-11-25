@@ -1,0 +1,166 @@
+{
+  "schema_version": 2,
+  "claim_id": "P58-SAME-PHASE-ALL-BIPARTITIONS-FALSIFIER",
+  "repository": {
+    "commit": "dc11f8ceba43140ce9e74329bb2e73c5913b0e24",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P58_same_phase_species.py",
+    "--output",
+    "experiments/P58_same_phase_species/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Independently reconstruct the fixed N8 pi/3 full-B signed mean and all127 unordered two-species means, then compare them exactly; no optimization or genuine-order8 conclusion",
+    "coefficient_domain": "Z[xi]/(xi^2-xi+1), Python arbitrary integers and Fraction; exact permanent-polynomial occupation weights",
+    "conventions": "One photon in every input, ideal full number-resolving readout, original fixed U=q/sqrt8, uniform-top4 ties, w=(X04-X15)/2. Nontrivial splits1+7/2+6/3+5/all35 4+4, same pi/3 only. Base9 occupation keys have no carries because total8. No production imports, float conversion, solver, sampling, new graph or optimum input.",
+    "inputs": [
+      "P58 card frozen7aad3f7 before code/evaluation",
+      "All constants and conventions explicit in source; full-B reconstructed value must equal previously independently certified -767/327680"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "max_new_output_bytes": 8388608,
+      "planned_logical_workspace_bytes": 67108864,
+      "source_groups": 255,
+      "total_stored_group_states": 157183,
+      "control_bipartitions": 127,
+      "output_occupations": 6435,
+      "prospective_synthetic_guards": 7,
+      "physical_draws": 0,
+      "new_graphs": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "No continuous control-phase extension or replacement by arbitrary classical models",
+      "No monotonicity under distinguishability, finer-partition convexity or genuine-order8 witness assumed",
+      "No useful graph optimization, optimal-solution discovery, matched total-cost advantage, population inference, novelty, heldout replication or hardware claim",
+      "Keep first failure; no automatic retry, phase replacement, graph selection or increased bound; no hard RSS/affinity claim"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T14:06:02.355231+00:00",
+    "runtime_seconds": 2.01295,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 8388608,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P58_SAME_PHASE_ALL_SPECIES_CARD.md",
+    "research/P58_same_phase_species.py",
+    "research/P58_same_phase_execution_contract.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P58_SAME_PHASE_ALL_SPECIES_CARD.md",
+      "sha256": "444ab38d58476e48987b71a0c63471279112a3dd308507698fbfed430fc57d4b",
+      "sha256_after": "444ab38d58476e48987b71a0c63471279112a3dd308507698fbfed430fc57d4b"
+    },
+    {
+      "path": "research/P58_same_phase_species.py",
+      "sha256": "9b7c5e8e0b7bdf8dd5580a754f1305bfc79abf58d05bd7fada39aa32ee026b96",
+      "sha256_after": "9b7c5e8e0b7bdf8dd5580a754f1305bfc79abf58d05bd7fada39aa32ee026b96"
+    },
+    {
+      "path": "research/P58_same_phase_execution_contract.json",
+      "sha256": "a872d40c39d39c6cd9132c516dcb95c8584eb16ee0b0ac8fba50a35b6364637f",
+      "sha256_after": "a872d40c39d39c6cd9132c516dcb95c8584eb16ee0b0ac8fba50a35b6364637f"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P58_same_phase_species/run_001",
+  "declared_results": [
+    "experiments/P58_same_phase_species/run_001/data/source_laws.json.gz",
+    "experiments/P58_same_phase_species/run_001/data/tie_scalars.json.gz",
+    "experiments/P58_same_phase_species/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P58_same_phase_species/run_001/stdout.txt",
+      "sha256": "4534dd98b4d73a6c142c481c2518aa485f9f6a8ad8c78e103471e1e430e96b02",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/data/source_laws.json.gz",
+      "sha256": "0efca069e2770942e15a9dbb2f583220043c9df5eaad6539dab353576f61c5fc",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/data/tie_scalars.json.gz",
+      "sha256": "52bb72479eeead11f00f855ac1ba4c31732d59381c0539ad0cb69be2c5c61660",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P58_same_phase_species/run_001/data/summary.json",
+      "sha256": "7f82c318ec591e232d9c765ce82618635876fcc09170f1e815602491ce29f1fe",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
