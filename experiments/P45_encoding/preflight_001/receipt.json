@@ -1,0 +1,8 @@
+{
+  "source_commit": "67745d6",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /private/tmp/pbp-clean-venv-20261124/bin/python -m pytest tests/test_p45_encoding_full_fock.py -q --junitxml=experiments/P45_encoding/preflight_001/pytest.xml",
+  "tool_exit_code": 0,
+  "tool_output": "...                                                                      [100%]\n- generated xml file: /Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/encoding/experiments/P45_encoding/preflight_001/pytest.xml -\n3 passed in 1.20s\n",
+  "scientific_pilot_executed": false,
+  "scope": "three deterministic decoder/frontend/covariance tests only; Clifford2017 implementation unchanged from separately validated P43"
+}
