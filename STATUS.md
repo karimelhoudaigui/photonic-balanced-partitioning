@@ -1,5 +1,13 @@
 # Research status — 24 November 2026
 
+25-Nov active branch research/p45-positive-discovery: the user requires a
+positive optimizer result before held-out replication/paper/hardware steps.
+P45-A (256 B draws) and P45-B (800 B draws, all collisions decoded) are complete
+DEV negatives, preserved with raw data and bounded manifests. P44 remains valid
+background, not the finish. The changed P46 hollow-transfer/PIT mechanism is
+being implemented/audited, with no P46 run or positive claim yet. Current owner,
+evidence and numerical-slot state: research/P45_LIVE_STATE.md.
+
 Active discovery branch: research/p41-discovery, restarted from published
 2744395. The current task is new optimum-blind mechanism research. P44 now
 provides an independently reconstructed/reviewed moment obstruction for general

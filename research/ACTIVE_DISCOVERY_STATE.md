@@ -1,5 +1,12 @@
 # Active discovery state — P41 to P44
 
+Current25-Nov continuation: [P45_LIVE_STATE.md](P45_LIVE_STATE.md).
+The user's newest target requires a POSITIVE result; the P44 scoped theorem
+below is not a stopping criterion. Two genuinely changed P45 pilots have run
+and remain negative against strong controls. P46 is a new unexecuted
+hollow-transfer/copula mechanism, not an unchanged larger sweep. The preserved
+24-Nov checkpoint follows; paper and QPU gates remain closed.
+
 Date:24-Nov-2026. Original validated release:2744395. Integration branch:
 research/p41-discovery. This is the live entry point; historical contracts,
 proofs, raw files and receipts retain their original status at their source.
