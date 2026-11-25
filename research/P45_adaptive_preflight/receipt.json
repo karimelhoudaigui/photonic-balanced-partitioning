@@ -1,0 +1,81 @@
+{
+  "scope": "four P45 small-reference tests only; no development graph or pilot",
+  "commit": "c20193ba400dd00c00c150f28e0c6943ea7d3112",
+  "source_clean_before_preflight": true,
+  "argv": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p45_adaptive_probe.py",
+    "--junitxml=research/P45_adaptive_preflight/junit.xml"
+  ],
+  "started_at": "2026-11-25T03:30:46.971424+00:00",
+  "wall_seconds": 1.1565139169688337,
+  "CPU_limit_seconds": 30,
+  "wall_limit_seconds": 50,
+  "threads": 1,
+  "status": "completed",
+  "exit_code": 0,
+  "inputs": [
+    {
+      "path": "research/P45_adaptive_probe.py",
+      "sha256_before": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92",
+      "sha256_after": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92"
+    },
+    {
+      "path": "research/P45_adaptive_contract.json",
+      "sha256_before": "5343d146b5747940f21dfeb1050217fdbd81ca335da459b22a2e029dd6afd6b2",
+      "sha256_after": "5343d146b5747940f21dfeb1050217fdbd81ca335da459b22a2e029dd6afd6b2"
+    },
+    {
+      "path": "research/P45_adaptive_execution_contract.json",
+      "sha256_before": "ba7333ef6365136ff71d2bda8732564cbacc409d7fec46b7c07e0d4038b71541",
+      "sha256_after": "ba7333ef6365136ff71d2bda8732564cbacc409d7fec46b7c07e0d4038b71541"
+    },
+    {
+      "path": "theory/P45_adaptive_completion_and_controls.md",
+      "sha256_before": "180ec8d502965652844ff3f67e734683cb65be061082c08d4eb09736214e95b2",
+      "sha256_after": "180ec8d502965652844ff3f67e734683cb65be061082c08d4eb09736214e95b2"
+    },
+    {
+      "path": "tests/test_p45_adaptive_probe.py",
+      "sha256_before": "5cb651c9a0d033b973a1adda009953059be347e9d2ab30890393bd76c58dc15e",
+      "sha256_after": "5cb651c9a0d033b973a1adda009953059be347e9d2ab30890393bd76c58dc15e"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256_before": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+      "sha256_before": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881",
+      "sha256_after": "ac31965e159e9624808c8e824226f390dc95fe790a957ca3469ba00a2a843881"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256_before": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256_before": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "research/P45_adaptive_preflight/junit.xml",
+      "sha256": "8f1af39c40569609f055b25aa1d86e7cacabf0a2059a55830ce44615e954b199"
+    },
+    {
+      "path": "research/P45_adaptive_preflight/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P45_adaptive_preflight/stdout.txt",
+      "sha256": "9dd121db0b8d92436a499e02fc229888edc1c8ca470f3dc65791209a83f307ec"
+    }
+  ]
+}
