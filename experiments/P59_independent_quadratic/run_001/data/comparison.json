@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXACT_INDEPENDENT_REPLICATION",
+  "checks": 2928,
+  "failure_count": 0,
+  "failures": [],
+  "physical_measurement_replication": false,
+  "positive_optimizer_accepted": false,
+  "independent_outcome": "NONZERO_FIXED_CENTER_EDGE_RESPONSE",
+  "CPU_seconds": 0.412559,
+  "wall_seconds": 0.4172840839601122,
+  "primary_sha256": "47c352223f58b9a75fcdfe245cf2091d07377aaa870bbff723a7df3230826766",
+  "independent_source_sha256": "16a5a7f854c5790e9362444810f23a4d15170a31b12d5510c4e11422188a1a0a"
+}
