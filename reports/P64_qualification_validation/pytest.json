@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-25T19:53:52.122008+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; raise SystemExit(pytest.main([\"tests/\",\"-q\"]))"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 26.143954417000714,
+  "commit": "4ee15ab0b626deb2b6b27486ade620fb4bbededc",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "scope": "Existing full regression plus P64 synthetic qualification; no DEV graph or native18 random draw"
+}
