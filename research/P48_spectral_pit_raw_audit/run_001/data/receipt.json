@@ -1,0 +1,236 @@
+{
+  "status": "PASS_READ_ONLY_RAW_CONSISTENCY",
+  "new_scientific_experiment": false,
+  "source_run": "experiments/P48_spectral_pit/run_001",
+  "primary_results_sha256_before_and_after": {
+    "experiments/P48_spectral_pit/run_001/data/summary.json": "6cdb1e5c1cf8a05f549df6c770b052211c7846b87f27d78f4a10586ae242e5ea",
+    "experiments/P48_spectral_pit/run_001/data/raw.jsonl.gz": "5e423f0f649e58aad5fb21ca5af36f89e6bfdd55d0710258db9b6e05450e5b77",
+    "experiments/P48_spectral_pit/run_001/data/context_n26_ER_4802601.json": "f0431650399247c4dfa1cbb648804fc40a3365bda3e104a43d34fa0b13219518",
+    "experiments/P48_spectral_pit/run_001/data/context_n26_RR_4802602.json": "d1664a2cc32d532338f755d926ea8d75ef4bcaf62427c11d5f3334361d058622",
+    "experiments/P48_spectral_pit/run_001/data/context_n34_ER_4803401.json": "7e8b332afa6eb7bfcc02797e02d7666f3599d8fbb7d71a37069630665bead5eb",
+    "experiments/P48_spectral_pit/run_001/data/context_n34_RR_4803402.json": "2f6b26755e4061a96990840008c136c62c89deea58f4be0cbf8538c827f0bf3a"
+  },
+  "all_inputs_unchanged": true,
+  "all_feasible_cuts_independently_recomputed": 184080,
+  "distinct_cut_cache_entries": 94411,
+  "stage_counts": {
+    "common_anchor": 6172,
+    "common_swap": 916,
+    "common_spectral_rounding": 128,
+    "common_preparation_rounding": 264,
+    "frontend_decoder": 88,
+    "development": 1792,
+    "classical_search": 174720
+  },
+  "sample_counts": {
+    "bosonic": 256,
+    "distinguishable": 256,
+    "species4": 256,
+    "gaussian_Bcov": 256,
+    "iid_uniform": 256,
+    "continuous_phase": 256,
+    "spherical_coherent": 256
+  },
+  "all_settings_total_gain": {
+    "bosonic": 7,
+    "distinguishable": 3,
+    "species4": 11,
+    "gaussian_Bcov": 0,
+    "iid_uniform": 12,
+    "continuous_phase": 13,
+    "spherical_coherent": 2
+  },
+  "positive_improvement_events": {
+    "bosonic": 3,
+    "distinguishable": 1,
+    "species4": 2,
+    "gaussian_Bcov": 0,
+    "iid_uniform": 3,
+    "continuous_phase": 5,
+    "spherical_coherent": 1
+  },
+  "collision_samples": {
+    "bosonic": 255,
+    "distinguishable": 250,
+    "species4": 254,
+    "continuous_phase": 256,
+    "spherical_coherent": 255
+  },
+  "saved_PIT_count_fields_reconstructed": 1280,
+  "saved_Gaussian_factor_PIT_fields_reconstructed": 256,
+  "full_decoders_independently_reconstructed": 1792,
+  "frontend_decoders_independently_reconstructed": 88,
+  "direct_preparation_candidates_verified": 264,
+  "signed_spectral_roundings_verified": 128,
+  "Cref_witnesses": {
+    "n26_ER_4802601": [
+      {
+        "stage": "common_anchor",
+        "label": null,
+        "encoder": null,
+        "column": null,
+        "direction": null
+      }
+    ],
+    "n26_RR_4802602": [
+      {
+        "stage": "common_spectral_rounding",
+        "label": null,
+        "encoder": null,
+        "column": 2,
+        "direction": "top"
+      },
+      {
+        "stage": "common_spectral_rounding",
+        "label": null,
+        "encoder": null,
+        "column": 2,
+        "direction": "bottom"
+      }
+    ],
+    "n34_ER_4803401": [
+      {
+        "stage": "frontend_decoder",
+        "label": "pure_greedy",
+        "encoder": null,
+        "column": null,
+        "direction": null
+      }
+    ],
+    "n34_RR_4803402": [
+      {
+        "stage": "common_spectral_rounding",
+        "label": null,
+        "encoder": null,
+        "column": 1,
+        "direction": "top"
+      },
+      {
+        "stage": "common_spectral_rounding",
+        "label": null,
+        "encoder": null,
+        "column": 1,
+        "direction": "bottom"
+      }
+    ]
+  },
+  "all_classical_query_counts_and_time_frontiers_match": true,
+  "common_incumbents_match": true,
+  "spectral_geometry_diagnostics": {
+    "n34_RR_4803402": {
+      "minimum_guarded_gap": 0.005284050981000238,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.461654571815366e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 8.499999999999996,
+          "Gaussian_variance_residual": 1.887379141862766e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_graph",
+          "independent_unitary_residual": 1.4432899320127035e-15,
+          "independent_source_eigen_residual": 2.1597307275911248e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 7.783981586025892,
+          "Gaussian_variance_residual": 2.220446049250313e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    },
+    "n34_ER_4803401": {
+      "minimum_guarded_gap": 0.0022352915752603675,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.4643285757328626e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 8.499999999999996,
+          "Gaussian_variance_residual": 9.992007221626409e-16,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_graph",
+          "independent_unitary_residual": 1.7763568394002505e-15,
+          "independent_source_eigen_residual": 4.163336342344337e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 5.253215209665042,
+          "Gaussian_variance_residual": 1.3322676295501878e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    },
+    "n26_RR_4802602": {
+      "minimum_guarded_gap": 0.004988357400836474,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.343059448660498e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 3.3306690738754696e-16,
+          "projector_offdiagonal_frobenius_squared": 6.500000000000002,
+          "Gaussian_variance_residual": 1.1102230246251565e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_graph",
+          "independent_unitary_residual": 1.2212453270876722e-15,
+          "independent_source_eigen_residual": 2.0164805155514776e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 5.950834595762144,
+          "Gaussian_variance_residual": 6.661338147750939e-16,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    },
+    "n26_ER_4802601": {
+      "minimum_guarded_gap": 0.013676193361816524,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.3616153865774184e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 3.3306690738754696e-16,
+          "projector_offdiagonal_frobenius_squared": 6.500000000000002,
+          "Gaussian_variance_residual": 8.881784197001252e-16,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_graph",
+          "independent_unitary_residual": 7.771561172376096e-16,
+          "independent_source_eigen_residual": 2.511960908377353e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 4.1388078365067225,
+          "Gaussian_variance_residual": 1.1102230246251565e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    }
+  },
+  "wall_seconds": 3.527141540951561,
+  "non_claims": [
+    "No resampling or independent distribution replication",
+    "No theorem or statistical positive acceptance",
+    "Score units count informative evaluations; known initial cuts can be recomputed inside measured wall time",
+    "No numerical interval or joint empirical-PIT certificate"
+  ]
+}
