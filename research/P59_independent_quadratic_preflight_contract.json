@@ -1,0 +1,79 @@
+{
+  "claim_id": "P59-INDEPENDENT-SYMBOLIC-PREFLIGHT",
+  "binding_state": "EXACT_SYMBOLIC_QUALIFICATION_ONLY_NOT_MAIN_AUTHORIZATION",
+  "mathematics": {
+    "assertion_tested": "Twelve independent-engine symbolic guards only: field via1,i√3 basis, three12term factors, ONE analytic PNR coefficient/response, occupation/parity metadata, explicit Gram/q, four-mode SIX-subset toy hypergeometric reference, decoder60LCM, ten-class9/5Gram, q-only moments/PGF, canonical numeric rejection, winner completeness and harmonic sign/curvature corruption. No derive(), full15 slope table or actual primary raw decoded.",
+    "coefficient_domain": "Python arbitrary integer pairs in Z[xi], xi²=xi−1, explicit three12term paired factors, probability denominator150^6; exact Fraction throughout. No production/native import, complex128/float proof or RNG.",
+    "conventions": "Code frozen blind to the full primary mean/outcome; known PNR fixture disclosed. Own occupation multisets,1728 triple products, all462 rows/c1 zeros, uniform top3 hypergeometric edge decoder, ten-class Gram inversion9/5. Primary20winner lists checked by cardinality/eligibility only, never used to build own decoder. All full math compared without importing primary code.",
+    "inputs": [
+      "Fixed matrix and prospective card9f5b7eab43448318269208113a7650120e04dbea, no graph/known optimum/mask",
+      "Independent analytic fixture PNR n(4,2,0,0,0,0), derivative/sqrt3=−124/421875 and own precode derivation b7341f9/59dc56e",
+      "Actual primary raw path+SHA256 are NOT bound at this freeze; ROOT may complete ONLY these data bindings/closure/argv after sealing, before execution"
+    ],
+    "bounds": {
+      "modes": 6,
+      "photons": 6,
+      "paired_factors": 3,
+      "terms_per_factor": 12,
+      "raw_products": 1728,
+      "occupations": 462,
+      "parity_allowed": 236,
+      "edges": 15,
+      "unoriented_classes": 10,
+      "diagonal_bins": 42,
+      "nonconstant_factorial_moments": 83,
+      "maximum_LP_calls": 0,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_arrays_bytes": 67108864,
+      "max_new_output_bytes": 4194304,
+      "max_primary_compressed_bytes": 4194304,
+      "max_primary_inflated_bytes": 8388608,
+      "maximum_failed_retries": 0,
+      "planned_tests": 12,
+      "qualification_complete_mean_tables": 0,
+      "qualification_primary_data_inputs": 0
+    },
+    "non_claims": [
+      "No independent physical measurement, graph training, optimizer advantage, heldout or hardware validation",
+      "No primary code/Native/backend import or outcome-dependent source/decoder change",
+      "No scientific use of narrative guard flags, no floating physical value normalized into proof",
+      "No retry,alternate matrix/phase/center/cap,manuscript/QPU change or completed research goal"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P59_independent_quadratic_check.py",
+    "research/P59_independent_quadratic_contract.md",
+    "research/P59_independent_quadratic_execution_TEMPLATE.json",
+    "tests/test_p59_independent_quadratic.py",
+    "theory/P59_adaptive_precode_derivation.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P59_independent_quadratic_preflight_contract.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic exact integer/rational construction and data comparison, no RNG/native/LP",
+    "seed": null
+  },
+  "resource_note": "Implementation authorized, execution NOT authorized. ROOT/independent static review then separate symbolic qualification and full-replication slots required. Final contract may bind ONLY primary path/hash/closure/argv after its raw seal. CPU20/wall30/thread1/log4MiB/scientific4MiB/logical64MiB; no hard Darwin memory promise. Preserve first failure, retries0.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p59_independent_quadratic.py",
+    "--junitxml=research/P59_independent_quadratic_preflight/run_001/junit.xml"
+  ]
+}
