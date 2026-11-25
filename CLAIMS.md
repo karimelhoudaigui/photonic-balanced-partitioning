@@ -146,3 +146,7 @@ exactly;14 prospectively fixed N18 probabilities also agree with local Naive,
 maxabs5.47e-20. ALL14 tolerance tests are absolute-dominated and CF zero/native
 residuals produce maxrelative1. research/P64_NAIVE18_POINT_RECEIPT.md states
 the finite assertion; this is no full N18 law, TV, runtime or optimizer claim.
+
+| ID | Exact statement / scope | Status | Evidence and limits |
+|---|---|---|---|
+| CLAIM-065 | The frozen current-source graph-Cayley/Metropolis P65 pipeline survives its registered B-only-cost FAST DEV gate. | REJECTED | Original source da4d418,39 qualification PASS, primary74ad849/rawa1a62cc: B82/79 loses to EACH fixed random/spectral FAST50/45 on both graphs, all prefixes eligible/no early guard. Independent checker0d7224f frozen before raw access,9 fixtures PASS, one hash-bound replay397e241 passes9251 checks/80counts/414FAST checkpoints without discrepancy. research/P65_STAGE1_MAIN_RECEIPT.md and P65_INDEPENDENT_RAW_AUDIT_RECEIPT.md. Optical latency assumed0; recorded data/cost consistency, not physical replication or authentic-clock proof. Optional controls unrun. CLAIM-042 remains OPEN. |

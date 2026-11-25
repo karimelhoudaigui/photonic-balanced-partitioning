@@ -1122,3 +1122,32 @@ Integration checkpoint:1096PASS/40.84s pytest after both new independent
 checkers, seven current v2 manifests validate and602 protected historical
 files/paper bytes are unchanged. reports/P63_P65_combined_validation/ retains
 observed commands and checks; P65 code/qualification/main are still pending.
+
+## 2026-11-25 — P65 negative independently audited; P66 static route
+
+P65 source da4d418 passed39 prospective qualification tests, then ONE B80
+main at clean74ad849 sealeda1a62cc before interpretation. All80 attempts,
+46CF/34collisions and800 modeled photons retained; B all-paid82/79 loses to
+EACH fixed random/spectral FAST50/45 in eligible own-cost prefixes. All8
+training fitnesses tie on each case; selected(t1/4,lambda0) is the frozen
+first-tie choice. Fresh local gains do not improve the paid global incumbent.
+No unchanged retuning or optional-control execution followed the veto.
+
+Independent checker0d7224f froze before author raw access; ROOT read all707
+lines/9 fixtures/contracts before qualification.9PASS, immutable13-artifact
+binding, one audit397e241:9251 checks/80counts/16matrices/398costcomponents/
+414FAST snapshots, zero discrepancies. Recorded evidence consistency only,
+not physical replication or true-clock certification. Receipts:
+research/P65_STAGE1_MAIN_RECEIPT.md and P65_INDEPENDENT_RAW_AUDIT_RECEIPT.md.
+Worker1092PASS; combined ROOT1144PASS/42.50s pytest/43.685357125s total.
+Four new v2 manifests validate at root;602 protected files/paper unchanged.
+reports/P65_integration_validation/ preserves observed commands and hashes.
+
+P66 changes to analytical falsification of a collective-move mechanism:
+bright/dark occupation conservation on a four-clique shared-warmstart family,
+including a connected weighted extension. Separate author/peer derivations
+are being frozen; ROOT has not accepted an exact-hash final proof yet.
+No numerical P66 run has occurred. A degree-based chiral extension has an
+immediate static falsifier on these regular graphs, not a failed simulation.
+The stronger positive target CLAIM-042 remains OPEN; paper/main stay frozen,
+held-out graphs unopened, no QPU call or hardware freeze.

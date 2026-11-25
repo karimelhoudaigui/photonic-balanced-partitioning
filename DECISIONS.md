@@ -243,3 +243,19 @@ No further broad optimization sweep without a changed registered mechanism. No a
 - CONTINUE changed P65 stateful global proposals with the fixed N20 card.
   Code only before review/qualification/main; repeated starts retained,
   weighted degree explicit. No P65 positive, paper or QPU action yet.
+
+## P65 recorded rejection and P66 mechanism audit — 2026-11-25
+
+- REJECT the frozen P65 B80 DEV pipeline: each fixed FAST50/45 beats B82/79
+  within its registered own-cost envelope, despite zero optical latency.
+  Retain all counts, tied training fitnesses, local gains and original clocks.
+- ACCEPT the independent recorded consistency audit at9251 checks, with its
+  explicit physical-likelihood/topology/clock limits. Optional D/species/r2/r3
+  remain unrun by the veto; do not count them as comparisons or rerun unchanged.
+- CONTINUE P66's precisely scoped occupation-invariant obstruction and the
+  search for a genuinely changed mechanism. Exact-hash proof acceptance and
+  bounded primary-source comparison are pending; no broad impossibility or
+  novelty claim is authorized by an agent's preliminary agreement.
+- PRESERVE the positive-result gate for held-out/physical replication, paper
+  revision and hardware work. Latest combined1144PASS and602 old files/paper
+  preservation do not satisfy that scientific goal.

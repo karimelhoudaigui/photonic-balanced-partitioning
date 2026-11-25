@@ -1,5 +1,35 @@
 # Live positive-discovery continuation — 25-Nov-2026
 
+## Latest checkpoint: P65 independently audited negative; P66 static analysis
+
+P65 source da4d418/qualification39PASS/main74ad849/rawa1a62cc has completed
+the prospectively fixed B80 pilot. All80attempts/800modeledphotons retained,
+46CF/34collisions. B paid82/79 loses to EACH fixed FAST50/45 in eligible
+own-cost prefixes, with no early guard. All8trainingfitnesses tie pergraph;
+selected(t1/4,lambda0) follows the first-tie rule. Local fresh ER gains0/1/11
+and RR0/0/0 never improve the common training-start paid incumbent.
+
+Independent checker0d7224f was frozen before its author read outputs.9fixtures
+PASS, later immutable binding, ONE audit397e241:9251 checks,80current-source
+transitions,16spectralmatrices,398costcomponents and414FAST checkpoints,
+zero discrepancies. Recorded consistency only; physical-count generation,
+topology and true-clock authentication remain outside this replay. Optional
+D/species/r2/r3 NOT_RUN_DUE_FAST_VETO. See P65_STAGE1_MAIN_RECEIPT.md and
+P65_INDEPENDENT_RAW_AUDIT_RECEIPT.md for commands/hashes/non-claims.
+
+ROOT combined1144PASS/42.50s pytest/43.685357125s total; four new P65 v2
+manifests validate;602 protected historical files and every paper byte match
+the release. reports/P65_integration_validation/. No numerical worker is
+active after this checkpoint, subject to subsequent explicit slot messages.
+
+P66's NEW static route studies bright/dark occupation barriers on a precise
+four-clique bad-warmstart family, including connected weighted graphs.
+Separate derivations and stronger symmetry hypotheses await final exact-hash
+ROOT acceptance. No P66 scientific computation yet. P67 degree-based chiral
+phases fail analytically to break that regular-family symmetry; no new pilot.
+Positive optimizer goal OPEN; held-out, manuscript and QPU gates CLOSED.
+Earlier stage-specific statements below are retained as historical records.
+
 ## Latest checkpoint: independent P53c/P55 checks; P53d candidate
 
 Newer exact/replication checkpoint supersedes this heading's earlier candidate

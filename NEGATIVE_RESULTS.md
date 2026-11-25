@@ -243,3 +243,28 @@ reconstructs7183 checks, all80 counts and365 FAST checkpoints with zero
 discrepancy, accepting the recorded fixed-mode veto. No new physical sample
 or actual-clock authentication is implied. Full scope and original hashes:
 research/P63_INDEPENDENT_RAW_AUDIT_RECEIPT.md. Original negatives unchanged.
+
+## P65 global stateful Cayley proposals: registered DEV veto — 2026-11-25
+
+One prospectively specified B80/FAST run, clean producer74ad849/rawa1a62cc,
+completes80/80 attempts (800 modeled injected photons),46 CF and34 collisions.
+Every collision is paid and self-loops. B's all-paid minima82/79 lose to EACH
+fixed random and spectral FAST50/45 on both graphs. No mode portfolio, free
+incumbent, early-cap exclusion, graph replacement or retuning was used.
+Own B classical WALL grants are10.625773ms and4.951975ms, with zero optical
+latency assumed and no simulation/IO/other-arm costs funding the controls.
+
+All eight two-step fitnesses tie on each case and select(t1/4,lambda0) by
+the frozen first-tie rule. The best all-paid cuts remain the training starts;
+fresh ER chains gain0,1,11 and RR chains gain0,0,0 from their OWN starts.
+Local improvements therefore occurred without the requested control advantage.
+Optional D/species4/r2/r3 are NOT_RUN_DUE_FAST_VETO, not failed or passed.
+
+Independent checker0d7224f was frozen before its author opened data. After9
+fixture PASS and immutable binding, ONE audit397e241 verifies9251 checks,
+all80 transitions,16 Cayley matrices,199 cost components per case and414 FAST
+checkpoints without discrepancy. This audits recorded evidence, not physical
+sampling likelihood, graph topology generation, actual clocks or unseen FAST
+moves. Full receipts: research/P65_STAGE1_MAIN_RECEIPT.md and
+research/P65_INDEPENDENT_RAW_AUDIT_RECEIPT.md. No held-out, hardware or
+manuscript work follows from this scoped rejection; positive target stays OPEN.

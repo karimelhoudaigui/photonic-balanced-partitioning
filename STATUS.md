@@ -35,11 +35,23 @@ All14 tolerances are absolute-dominated; no global N18 precision/runtime
 claim follows. P65's uniform collision-average theorem has focused exact-hash
 independent proof review; reports/P65_UNIFORM_COLLISION_PROOF_CHECKPOINT.md
 records its strict hypothesis and absolute-error/cost limits. The changed
-global Cayley--Metropolis B80/FAST pilot is being coded BEFORE data. P63
+global Cayley--Metropolis B80/FAST pilot has now failed its registered DEV
+gate: B82/79 versus EACH fixed random/spectral FAST50/45. All80 attempts,
+including34 collisions, are retained. A separately frozen independent replay
+passes9251 checks with zero discrepancies; all199 paid components per case
+and414 FAST checkpoints reconcile. All eight training fitnesses tie on each
+case; the first lexicographic setting was selected, not retuned afterward.
+Optional D/species/r2/r3 controls remain NOT_RUN_DUE_FAST_VETO. Full scope:
+research/P65_STAGE1_MAIN_RECEIPT.md and P65_INDEPENDENT_RAW_AUDIT_RECEIPT.md.
+P66 is a new STATIC bright/dark occupation obstruction under independent
+derivation; its connected-graph and symmetry extensions still await ROOT's
+exact-hash review. No numerical P66 experiment has run. P63
 existing1044 and P64 existing1020 tests passed; later independent-checker
-regressions1052/1042 also pass. Combined integration1096PASS, all seven new
-v2 manifests and602
-protected historical files verified. Paper bytes remain unchanged.
+regressions1052/1042 also pass. Latest combined integration1144PASS; all four
+new P65 v2 manifests validate in addition to the previously checked seven,
+and602
+protected historical files verified. Paper bytes remain unchanged. New
+integration evidence: reports/P65_integration_validation/.
 The battery interruption lost no sealed data. The positive
 target remains OPEN; paper/ and main stay at the delivered release, with no
 QPU call or held-out opening. Historical checkpoint prose below retains its
