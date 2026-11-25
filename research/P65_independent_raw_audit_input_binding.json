@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "primary_source_commit": "da4d41800819f35dd8ea299395435ca0bdb8157b",
+  "primary_source_sha256": "a115929779ea50ecd6987f8c63646e95bebc6cc739df3760e6ccbffba0961a4b",
+  "checker_source_sha256": "71ae8141c8a73fe23cd16d2a45d5c74ab2254a5b4d1e2b6bf56ca5206d875ef6",
+  "producer_commit": "74ad84931fc5058b3b846403d9b160b756ef6ed2",
+  "producer_manifest": "experiments/P65_cayley_markov_stage/run_001/manifest.json",
+  "data_directory": "experiments/P65_cayley_markov_stage/run_001/data",
+  "artifacts": [
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/manifest.json",
+      "sha256": "9f64c5488ec7e0f89498c05da8c9b4428980cbbf79f2597c878ea4dd1bcfb330"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/B_n20_ER_6502001.json",
+      "sha256": "e03e0b160641e53f1fdcc666ee2e9585fa0a2fee4b9b72c3950b15a230cfa8c5"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/B_n20_RR_6502002.json",
+      "sha256": "86b69dbb4b4da0ccd3fe3b509bc146c27103f60231fbdb1709f9b8df947a16cb"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_random.json",
+      "sha256": "e771d7976858fa57c416c460f3ba0e1021de11191e31527f5e73f162d84c269d"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_spectral.json",
+      "sha256": "60b1f847fd48aae12bc61775f125fdb419a3bac9582ed9dc5ae1681009c7a082"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_random.json",
+      "sha256": "c493c05512db629fd2cc891963486b365a9fecf7d45702636474069eac9e63ab"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_spectral.json",
+      "sha256": "e18db2cbb00060cc6687f0f966b3e4b7180049bbca43dcc4b0202610d5f737d3"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/context_n20_ER_6502001.json",
+      "sha256": "1559642b4cf8ea8c0cc0870e0abfaf6a7353e553968d8d5b4a4a0ea60bc0e8fb"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/context_n20_RR_6502002.json",
+      "sha256": "202f0215b66bf9e1effa6e2fd0abdad3628c1a7e9add42d4fa4020305a7d3e3e"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/failure.json",
+      "sha256": "a28394685657eec13bc361c913dcec75e9a9bd3e7916b3dfebf2dbbf4f1ccb27"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/raw.jsonl.gz",
+      "sha256": "9c0ad9c189b8f266b958ddb710252d0d35ca0b4fdc279111dd2fe3633a3f1a4c"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/seed_namespaces.json",
+      "sha256": "10551ca72db673c5eea7ce82c378e58e628ef8b2f62b7df277cc39532b0bbc40"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/summary.json",
+      "sha256": "3d082ab879a09c707ed5784f3a1baa6bc0ee6f16256d0c6f536e7423d25cf1ee"
+    }
+  ]
+}
