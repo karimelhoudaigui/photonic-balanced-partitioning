@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "binding_status": "UNBOUND_CODE_ONLY_DO_NOT_EXECUTE",
+  "claim_id": "P63-INDEPENDENT-RECORDED-CONSISTENCY",
+  "mathematics": {
+    "assertion_tested": "Hash-bound sealed P63 records independently satisfy their integer counts/ranks/mapping/cuts, C6 support, tensor-constructed U identities, shared-Delta Fraction SPSA, all-paid minima/fresh means/component-clock sums, every FAST best mask/cut/eligible prefix and the same-fixed-mode/two-case stage-one gate. Unsuccessful primary prefixes remain inconclusive without forcing80.",
+    "coefficient_domain": "Python exact integers/Fraction; independent complex128 tensor matrices; recorded nonnegative floating clocks, absolute tolerances only",
+    "conventions": "Checker designed from frozen8b20dca source/schema and templates while unique main ran, without opening P63 data/summary/manifest/FAST output; synthetic qualification46PASS was known. No P43/P50/P63 production import. Deterministic PCG64 role replay only, no graph/native observation/FAST-proposal redraw. This is recorded-data consistency, not physical replication or a new preregistered scientific trial.",
+    "inputs": [
+      "UNBOUND: ROOT must seal main and bind its exact existing data plus v2 manifest paths/hashes only AFTER freezing this checker",
+      "Producer original8b20dca7bbe476a2eed75433b31e5ca582809484/sourceSHA7f60cb437a9936323851d926ca18f16c7899b16a8d5353c69df88cf21a03d5d6; actual producing run commit supplied later by binding",
+      "Complete case expects12 data files,80 B requests/counts,16 completed batches,6 paired updates,4 separate FAST calls; failure prefix may be shorter"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_new_log_bytes": 4194304,
+      "maximum_new_scientific_bytes": 4194304,
+      "planned_logical_workspace_bytes": 67108864,
+      "maximum_bound_input_bytes": 33554432,
+      "maximum_raw_decompressed_bytes": 8388608,
+      "maximum_raw_line_characters": 1048576,
+      "maximum_bound_files": 13,
+      "cases": 2,
+      "maximum_B_counts": 80,
+      "maximum_FAST_calls": 4,
+      "maximum_FAST_checkpoints_per_call": 10000,
+      "maximum_failure_examples": 32,
+      "geometry_absolute_tolerance": 3e-12,
+      "clock_sum_absolute_tolerance_seconds": 1e-8,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No new graph, bosonic sample, physical replication, hypothesis test, hidden tuning, heldout, QPU or paper change",
+      "No timing authenticity, online causality or hardware runtime measurement; recorded timestamp/clock relations only",
+      "No bosonic likelihood/permanent or global sampler validation; U checks are absolute floating identities, not interval or relative-tail certificates",
+      "No regeneration of ER/RR topology or edge-order weight assignment, and no replay of unrecorded FAST proposals/deltas/RNG trajectory; only RR degree, weight range/PCG multiset, recorded best masks/prefixes and other role recipes",
+      "Only a fully completed manifest/80B/4FAST/full-input-closure comparison can yield accepted recorded fixed-mode veto; all positive_accepted fields remain false",
+      "Logical64MiB is planned workspace, not Darwin hard-RSS enforcement; resource/output failures are inconclusive and retained without retry"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P63_independent_raw_audit.py",
+    "research/P63_independent_raw_audit_contract.md",
+    "research/P63_independent_raw_audit_execution_contract.json",
+    "tests/test_p63_independent_raw_audit.py"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "numpy", "version": "2.4.6"}
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Deterministic NumPy PCG64 replay of frozen recorded weight/embedding/direction/priority recipes; SHA256 first4 little-endian role seeds, no new scientific sample",
+    "seed": [6301801, 6301802, 6318000, 6320000, 6330000, 6340000]
+  },
+  "resource_note": "CODE ONLY, UNBOUND, NOT EXECUTED. Create a new bound contract after ROOT freezes checker and seals primary, appending the exact binding/manifest/every-existing-data path to execution_artifacts and repeated--input arguments. No code/tolerance/seed/cap changes during binding. Separate exclusive ROOT-authorized v2 bounded run CPU20/wall30/thread1/log4MiB/scientific4MiB/logical64MiB; zero retries. Installed runner/validator generate actual manifests; this JSON is only a prospective contract scaffold.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P63_independent_raw_audit.py",
+    "--root", ".",
+    "--binding", "research/P63_independent_raw_audit_input_binding.json",
+    "--output", "research/P63_independent_raw_audit/run_001/data/audit.json"
+  ],
+  "declared_results": ["research/P63_independent_raw_audit/run_001/data/audit.json"]
+}
