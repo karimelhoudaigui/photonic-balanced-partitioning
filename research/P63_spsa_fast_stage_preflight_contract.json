@@ -1,0 +1,120 @@
+{
+  "claim_id": "P63-B-FAST-STAGE1-SYNTHETIC-PREFLIGHT",
+  "mathematics": {
+    "assertion_tested": "Synthetic matrix18 identities without18-photon draws; ten local generators/outside and color projectors, j-aligned identity, fixed q/Gram/C6; exact common-Delta all-four-shot SPSA, tie enumeration/carried mapping and scalar toy cuts; tiny two-photon HOM/native maximum1, exact bunched PNR normalization; mocked factory prefix/CPU-unknown/diagnostic exclusion, online FAST timestamp and same-fixed-mode veto, no-positive staging, first-failure persistence, metadata-only ALL7-arm seed uniqueness. Integration mocks may emulate B80 without any native18 draw or DEV graph.",
+    "coefficient_domain": "Independent integer/Fraction fixtures and float64/complex128 synthetic matrices; controlled clocks/interfaces; only true native source is2photons/2modes",
+    "conventions": "FullCF18,eta1,N18=3x6,K9; V[[3,-4],[4,3]]/5 on output0,6; ten exact rational phases b1/2,i1..5. Three paired SPSA steps with ONE shared Delta_t across signs, iid directions across steps/arms; four complete PNR cuts/sign, a=1/2,c=1/4; finalTheta3 only then2x8 fresh. Uniform fresh carried top9 priority permutation then fixed independent physical mapping. All40 own attempts/graph fund paid best. C6 sum_i iM_i=0 mod6, collision-free1^18 impossible; no postselection. B-only classical WALL funds each of two separate immutable raw-graph FAST calls minus actual adapter CPU; first timely scan and no early guard required to survive, eligible initialization can veto.",
+    "inputs": [
+      "Fixed nonrandom rational ten-phase vectors; synthetic18-mode matrices but zero18-photon/native DEV draws",
+      "Hardcoded weighted four-vertex adjacency and exact carried permutations/tie enumeration; an additional18-mode one-edge adjacency is used ONLY with mocked circuit/physics/factory/counts/priorities; no graph generator or true18-photon sampler",
+      "Prospective metadata hashes for all seven arm paths, plus fixed qualification-only seeds6399000/6399001; no DEV RNG construction for this metadata check"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "maximum_new_log_bytes": 33554432,
+      "maximum_new_scientific_bytes": 33554432,
+      "planned_logical_workspace_bytes": 268435456,
+      "graphs": 2,
+      "modes": 18,
+      "parameters": 10,
+      "B_draws": 80,
+      "B_simulated_injected_photons": 1440,
+      "native_B_batches": 16,
+      "maximum_unique_networks": 14,
+      "FAST_calls": 4,
+      "FAST_max_proposals_per_call": 10000,
+      "FAST_total_guarded_work": 40000,
+      "maximum_FAST_checkpoints_per_call": 10000,
+      "failed_retries": 0,
+      "optional_model_draws": 0,
+      "maximum_DEV_graphs_generated": 0,
+      "maximum_true_18_photon_draws": 0,
+      "maximum_true_phase_draws": 0,
+      "maximum_true_optical_photons": 2,
+      "maximum_true_optical_modes": 2,
+      "maximum_true_HOM_draws": 8,
+      "synthetic_matrix_modes": 18,
+      "planned_pytest_items": 46
+    },
+    "non_claims": [
+      "No accepted positive, N18 response proof, population inference, novelty, hardware runtime, independent physical replication, held-out opening, paper or QPU authorization",
+      "The only stage-one rejection is one fixed eligible FAST mode no worse than B all-paid minimum on both cases; surviving complete eligible FAST comparisons leaves all six optical/classical optional controls untested",
+      "Zero ideal optical latency is an explicitly favorable implementation envelope: simulator imports, setup/count generation, diagnostics, graph generation and evidence IO do not enlarge B-only classical WALL",
+      "Only immutable factory returned backend WALL is excluded from setup; its RNG/source-validation pre-clock prefix remains paid; internal CPU splits are unknown",
+      "Numerical Gram/q/C6 guards are absolute tolerances, not intervals, a worst-case relative-probability certificate, hardware timing, hard RSS enforcement or an advantage result",
+      "Any first failure, resource cap, missing case or invalid guard is retained and inconclusive with zero retries or replacements; early FAST guards prevent a favorable interpretation but cannot erase a valid fixed-mode veto"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P63_spsa_fast_stage.py",
+    "research/P63_spsa_fast_stage_spec.json",
+    "research/P63_STAGE1_PRE_DATA_AMENDMENT.md",
+    "research/P63_spsa_fast_stage_contract.md",
+    "research/P63_spsa_fast_stage_preflight_contract.json",
+    "research/P63_spsa_fast_stage_execution_contract.json",
+    "research/P63_EXTENSIVE_PHASE_ARCHITECTURE_CARD.md",
+    "theory/P63_extensive_phase_structural_checks.md",
+    "research/P63_INDEPENDENT_STATIC_PHYSICS_REVIEW.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "research/P55_PRE_DATA_AMENDMENT.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "tests/test_p63_spsa_fast_stage.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Metadata-only registered role hashes; exact deterministic fixture enumeration; fixed qualification-only smallHOM Perceval seed and mocked P50 virtual-clock PCG64 atN4. No trueN18 sample or DEV graph.",
+    "seed": [
+      6399000,
+      6399001
+    ]
+  },
+  "resource_note": "CODE-ONLY, NOT EXECUTED. Only after ROOT full source/contract review and exclusive numerical slot. One fresh synthetic qualification under v2 bounded runner CPU60/wall90/threads1/log32MiB/scientific32MiB/logical256MiB. No actual18-photon source/draw/canary, no graph generator/DEV opening, no phase-control draw or native18 calibration. A PASS is not independent physical replication and does not automatically authorize main. First failure retained; zero retries.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p63_spsa_fast_stage.py",
+    "--junitxml=research/P63_spsa_fast_stage_preflight/run_001/junit.xml"
+  ],
+  "declared_results": [
+    "research/P63_spsa_fast_stage_preflight/run_001/junit.xml"
+  ]
+}
