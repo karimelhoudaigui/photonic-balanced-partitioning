@@ -1,0 +1,217 @@
+{
+  "schema_version": 2,
+  "claim_id": "P52-CREATION-TIES-STATISTICS-LP-PREFLIGHT",
+  "repository": {
+    "commit": "8eabbc684a146e1700f29c1018e21083473e4b95",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p52_collective_phase.py",
+    "--junitxml=research/P52_collective_phase_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Independent small direct-permanent complex amplitudes/outputfactorials/HOM/H4 ranked tables;complete compact8-photon support and monomial null;pre-data analytic U8 quartic witness and Walsh0crossing4/7;canonical/permutation source nulls;scalar species convolution/exact ties/crossrow invariants;non-production identityU MCfixture histogram/digests and epsilon/mixtureweight accounting;LPoptions/native threads/coefficients/warning/fakestatus handling. No production MC stream or unknown U8rank response is benchmarked. Six pre-data mocks require every timeout/failure (including successFalse) to remain inconclusive while preserving valid deterministic/MC candidate weights, residual and epsilon term separately.",
+    "coefficient_domain": "Complex128/float64 creation recurrence and probability convolution;int16 occupations/int64 keys and MC counts;exact rational tie definitions evaluatedfloat64;float64 HiGHS convex candidates independently reconstructed",
+    "conventions": "N=r8CF,U=sqrt(1/2)[[W,DW],[W,-DW]],WrealH4,theta0/pi4/pi2/3pi4;all6435 patterns retained,nopruning/postselection;all35unordered4+4 splits;top4tiesuniform;392not6435/TV confidence;theta3 duplicate physical law with independent MCseed;Walsh0edges4/7 doesnotimply uniform70;LPthreads1parallelFalse1s perfit,verified coefficients and MC epsilon*sumMCweights",
+    "inputs": [
+      "Explicit unitary fixtures,HOM,m3/4 directpermanents and H4knownranklaw;CF8knownphysicalnulls/observables",
+      "Identity8 MC32samples/batch8 with seed520008 override,not U8phase family or productionstream",
+      "Toy28-coordinate LP with known convex weights and false-success/invalid-option mocks"
+    ],
+    "bounds": {
+      "planned_tests": 45,
+      "maximum_direct_permanent_photons": 4,
+      "maximum_Fock_recurrence_photons": 8,
+      "maximum_modes": 8,
+      "maximum_states": 6435,
+      "nonproduction_MC_draws": 32,
+      "LP_native_fits": 1,
+      "LP_seconds_per_fit": 1,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted optimizer positive,graph selection,C*,novelty,scalable theorem,physical sampling,heldout or QPU",
+      "Finite convex edge-mean match is not full-law simulation/tail domination/separation/runtime advantage",
+      "Hoeffding event covers392decodedcoordinates,not6435rawbins or TV<=epsilon;float/source errors separate,not intervals",
+      "No outcome-driven alternative solver,extra MCdraws/seed,cap increase or automatic retry",
+      "Eightmodes/seventyfeasibleoutputs permit trivial classical exhaustive search;user discovery/hardwaregoal remainsOPEN"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Deterministic analytic/unitaryfixtures;small identityU PCG64 seed520008,production seed_for overridden;no productioncalibration",
+    "seed": [
+      520008
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T08:05:45.914314+00:00",
+    "runtime_seconds": 1.312742,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P52_collective_phase_probe.py",
+    "research/P52_collective_phase_spec.json",
+    "research/P52_collective_phase_contract.md",
+    "research/P52_collective_phase_execution_contract.json",
+    "research/P52_collective_phase_preflight_contract.json",
+    "research/P52_COLLECTIVE_PHASE_CARD.md",
+    "theory/P52_card_physics_review.md",
+    "research/P52_resources_stat_review_card_6df6e1c.md",
+    "tests/test_p52_collective_phase.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P52_collective_phase_probe.py",
+      "sha256": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+      "sha256_after": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+    },
+    {
+      "path": "research/P52_collective_phase_spec.json",
+      "sha256": "ff5806223c7a66e7a165dac01a8bb1ef04a9d3ba980f5f1bcc1ea590901038d8",
+      "sha256_after": "ff5806223c7a66e7a165dac01a8bb1ef04a9d3ba980f5f1bcc1ea590901038d8"
+    },
+    {
+      "path": "research/P52_collective_phase_contract.md",
+      "sha256": "634c8dc7aab8d583bc65062706cae9a8592d1667cb35cfdad7db576c4b5c61d4",
+      "sha256_after": "634c8dc7aab8d583bc65062706cae9a8592d1667cb35cfdad7db576c4b5c61d4"
+    },
+    {
+      "path": "research/P52_collective_phase_execution_contract.json",
+      "sha256": "379ae2811802a576bb2234b44db99c1d8f48569ab9d4e2b0d39117c63dc28985",
+      "sha256_after": "379ae2811802a576bb2234b44db99c1d8f48569ab9d4e2b0d39117c63dc28985"
+    },
+    {
+      "path": "research/P52_collective_phase_preflight_contract.json",
+      "sha256": "a253ee5aab30b5868909805cfae863c1eac84cd921f138ef232e3eed807388c9",
+      "sha256_after": "a253ee5aab30b5868909805cfae863c1eac84cd921f138ef232e3eed807388c9"
+    },
+    {
+      "path": "research/P52_COLLECTIVE_PHASE_CARD.md",
+      "sha256": "51a10866aa6dbba5c13f0e786c730b4c03a98ca87b0c535d268494f5e91cea53",
+      "sha256_after": "51a10866aa6dbba5c13f0e786c730b4c03a98ca87b0c535d268494f5e91cea53"
+    },
+    {
+      "path": "theory/P52_card_physics_review.md",
+      "sha256": "d55e57e2d33767e277a1c16023c050eaa93e1e1ba6a09caf8d48b86a1fba944d",
+      "sha256_after": "d55e57e2d33767e277a1c16023c050eaa93e1e1ba6a09caf8d48b86a1fba944d"
+    },
+    {
+      "path": "research/P52_resources_stat_review_card_6df6e1c.md",
+      "sha256": "5c2f22015d18f2c138702b9744e70bafd4276ae97052d589645bef0f47930d87",
+      "sha256_after": "5c2f22015d18f2c138702b9744e70bafd4276ae97052d589645bef0f47930d87"
+    },
+    {
+      "path": "tests/test_p52_collective_phase.py",
+      "sha256": "3342f6c4839640a1d296553fd860269a1287601ed1009a4831f85c153cb6346a",
+      "sha256_after": "3342f6c4839640a1d296553fd860269a1287601ed1009a4831f85c153cb6346a"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P52_collective_phase_preflight/run_001",
+  "declared_results": [
+    "research/P52_collective_phase_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P52_collective_phase_preflight/run_001/stdout.txt",
+      "sha256": "b2b727bfd340117df3c1db705269279b3c220d5fd2f4cc1d6fa0798351e35c5d",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_collective_phase_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P52_collective_phase_preflight/run_001/junit.xml",
+      "sha256": "23536f5d73ba9e6c2cfea2093e5e1cdb7fbc0cc4322d199cca8058cb79082ad1",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
