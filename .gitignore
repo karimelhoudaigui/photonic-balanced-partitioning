@@ -62,6 +62,7 @@ qpu/authorization.local.json
 qpu/lucy-tgcc-*.local.json
 
 .local/
+/.research-cache/
 .qwen/worktrees/
 .qwen/debug/
 .qwen/tmp/
