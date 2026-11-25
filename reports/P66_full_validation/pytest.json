@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-25T21:33:55.004132+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; status=pytest.main([\"tests/\",\"-q\"]); assert xq.Config.compute_max_thread_count==1; raise SystemExit(status)"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 44.247098458001346,
+  "commit": "daf728d86986487a2b91bdeffe861ad0ad7ef8dd",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "timeout_seconds": 90,
+  "scope": "Complete existing suite plus nine P66 tiny fixtures; no repetition of P66 main32grid, new DEV optimizer or QPU call"
+}
