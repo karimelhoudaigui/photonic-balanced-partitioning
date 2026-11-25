@@ -94,6 +94,18 @@ failures, a retained phase response and reproducible N6-only draw paths.
 The seed6400001 is fixed for two identical twelve-draw N6 synthetic paths;
 seed6400002 is used only in failure guards. No optional scientific comparison
 is passed by these tests. `source_table.json` preserves all462 exact rows.
+Four separate fixed files `phase_0.json` through `phase_3.json` preserve every
+one of the462 occupations with both actual and independent-reference
+probabilities at the corresponding phase, plus maximum absolute error,
+half-L1 error, both total norms and the binary64 phase value/hex. Each law is
+written before its comparison assertions. A session fixture creates the data
+directory once with `exist_ok=False`; every artifact uses exclusive `x`
+creation. Existing directories/files cause failure, never overwriting.
+
+This provenance-only delta was prepared after candidatebff4a48 and before
+qualification. Sampler mathematics, phases, tolerances and seeds are unchanged;
+the scientific source file retains SHA256
+`68055f83ead4f54303b90933ed5ebb5940a548a19cb72f496da374ad2e25780d`.
 
 ROOT review must precede this prospective command from the worktree root:
 
@@ -110,6 +122,10 @@ ROOT review must precede this prospective command from the worktree root:
   --output research/P64_qualification/run_001 \
   --result research/P64_qualification/run_001/junit.xml \
   --result research/P64_qualification/run_001/data/source_table.json \
+  --result research/P64_qualification/run_001/data/phase_0.json \
+  --result research/P64_qualification/run_001/data/phase_1.json \
+  --result research/P64_qualification/run_001/data/phase_2.json \
+  --result research/P64_qualification/run_001/data/phase_3.json \
   --timeout 90 --max-output-bytes 33554432 --max-cpu-seconds 60 \
   --max-threads 1 -- /Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python \
   -c 'import os; os.environ["P64_QUALIFICATION_ARTIFACT"]="research/P64_qualification/run_001/data"; import pytest; raise SystemExit(pytest.main(["-q","tests/test_p64_structured_sampler.py","--junitxml=research/P64_qualification/run_001/junit.xml"]))'

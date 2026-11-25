@@ -19,6 +19,21 @@ sys.modules[SPEC.name] = subject
 SPEC.loader.exec_module(subject)
 
 
+@pytest.fixture(scope="session")
+def evidence_directory(tmp_path_factory):
+    requested = os.environ.get("P64_QUALIFICATION_ARTIFACT")
+    directory = (Path(requested) if requested else
+                 tmp_path_factory.getbasetemp() / "p64-evidence")
+    directory.mkdir(parents=True, exist_ok=False)
+    return directory
+
+
+def _write_exclusive(path, artifact):
+    with path.open("x", encoding="utf-8") as stream:
+        json.dump(artifact, stream, indent=2, allow_nan=False)
+        stream.write("\n")
+
+
 def _matmul(a, b):
     return [[sum(a[i][k] * b[k][j] for k in range(len(b)))
              for j in range(len(b[0]))] for i in range(len(a))]
@@ -154,14 +169,33 @@ def test_extreme_n18_sector_is_width_one_and_keeps_full_outputs():
     assert all(sum(x) == 0 for x in next(iter(suffix)))
 
 
-@pytest.mark.parametrize("phi", [0.0, math.pi / 6, math.pi / 3, -0.4])
-def test_all_462_small_probabilities_against_independent_ryser(phi):
+@pytest.mark.parametrize("phase_index,phi", enumerate([0.0, math.pi / 6, math.pi / 3, -0.4]))
+def test_all_462_small_probabilities_against_independent_ryser(phase_index, phi,
+                                                            evidence_directory):
     sampler = subject.StructuredSampler(2)
     actual = sampler.complete_small_law(_theta(2, phi))
     matrix = _independent_six_mode_matrix(phi)
     reference = {n: _ryser_reference(matrix, n) for n in actual}
     assert len(actual) == len(reference) == 462
     errors = [abs(actual[n] - reference[n]) for n in actual]
+    artifact = {
+        "status": "NUMERICAL_LAW_COMPARISON_NOT_GLOBAL_TV_CERTIFICATE",
+        "phase_index": phase_index,
+        "phase_label": ("0", "pi/6", "pi/3", "-0.4")[phase_index],
+        "binary64_phase": phi, "binary64_phase_hex": phi.hex(),
+        "modes": 6, "photons": 6, "occupation_count": len(actual),
+        "max_absolute_error": max(errors),
+        "half_L1_error": math.fsum(errors) / 2,
+        "actual_norm": math.fsum(actual.values()),
+        "reference_norm": math.fsum(reference.values()),
+        "reference_absolute_tolerance": subject.REFERENCE_ABSOLUTE_TOLERANCE,
+        "small_law_TV_tolerance": subject.SMALL_LAW_TV_TOLERANCE,
+        "rows": [{"occupation": n, "actual_probability": actual[n],
+                  "reference_probability": reference[n],
+                  "absolute_error": abs(actual[n] - reference[n])} for n in actual],
+    }
+    # Seal complete laws/diagnostics before applying the comparison assertions.
+    _write_exclusive(evidence_directory / f"phase_{phase_index}.json", artifact)
     assert max(errors) <= subject.REFERENCE_ABSOLUTE_TOLERANCE
     assert math.fsum(errors) / 2 <= subject.SMALL_LAW_TV_TOLERANCE
     assert math.fsum(reference.values()) == pytest.approx(1, abs=2e-11)
@@ -213,10 +247,7 @@ def test_bad_inputs_and_allocation_guards(monkeypatch):
         subject.TritterCache(6).column((1, 0, 0), False)
 
 
-def test_emit_complete_exact_source_evidence(tmp_path):
-    requested = os.environ.get("P64_QUALIFICATION_ARTIFACT")
-    directory = Path(requested) if requested else tmp_path / "source-evidence"
-    directory.mkdir(parents=True, exist_ok=False)
+def test_emit_complete_exact_source_evidence(evidence_directory):
     source = subject.FourierSource(6)
     artifact = {
         "status": "EXACT_SOURCE_TABLE_ONLY_NOT_OPTIMIZER_OR_TV_CERTIFICATE",
@@ -231,4 +262,4 @@ def test_emit_complete_exact_source_evidence(tmp_path):
         "randomness": "Python Random MT19937, synthetic N6 only, seeds6400001/6400002",
         "graphs": 0, "N18_random_draws": 0,
     }
-    (directory / "source_table.json").write_text(json.dumps(artifact, indent=2) + "\n")
+    _write_exclusive(evidence_directory / "source_table.json", artifact)
