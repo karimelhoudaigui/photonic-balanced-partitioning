@@ -155,7 +155,7 @@ Three float64 optimal statuses support saturation by classical controls;
 ER34 stopped at5s with dual297/incumbent351 and is unresolved. These are NOT
 exact optimality certificates and never feed any P48/P49 graph or parameter.
 
-## Active changed bottleneck: P49
+## Completed changed bottleneck: P49
 
 Prospective contract research/P49_TRAINED_SPECTRAL_SOURCE.md, root7b791bf with
 phase-convention correctiondc85fa5 BEFORE any P49 execution. New source
@@ -170,15 +170,50 @@ weight, not the single-swap proxy or positive-tail gain. Models select separate
 policies on128 training proposals;128 fresh evaluation proposals use that
 frozen choice on the same DEV graphs. Sphere/IID bypass redundant R tuning.
 b4 groups are contiguous source-port blocks for this structured architecture.
-Fresh graph seeds4902601/02 and4903401/02; no P49 graph is opened yet.
+Fresh graph seeds4902601/02 and4903401/02 are now OPEN DEV cases.
 
 Encoding implements new P49 files on research/p49-encoding, importing immutable
 P48 functions. Adaptive owns an independent fast integer classical solver on
 research/p49-fast-classical: incremental swaps, vectorized full scans,
 multistarts and compact traces, CPU allowance excluding optical simulation.
-Its API card9765ff9 is frozen; source/tests/qualification still pending.
-Physics independently audits the Givens/gauge/null and source-code claims.
-No P49 numerical worker is authorized yet. Root's635-test slot is released.
+FAST source0bc492e, qualification a46038f:15PASS after a preserved prelaunch
+schema refusal (no child execution); actual source is unchanged. Physics and
+independent caller reviews preceded the setup-cost-only fix3d6a1f2 and42PASS
+preflight32615d1. One main24.299721s, all1792 draws, CPU60/wall90/thread1,
+24,727,892 bytes below32MiB; no retry or dropped graph. Paid B173/54/365/72
+versus FAST158/49/359/63, with only deadline-eligible prefixes counted. Sphere
+also has lower fresh mean than B. The all-shot B>D contrast is not a positive.
+REJECT the tested hybrid, not all lean passive policies. The scope review
+d61b8c6 explicitly separates optional frontend/comparator overhead and the
+free Cref FAST initialization from intrinsic B cost; no retrospective rescue.
+Original data9074386, final report7f5536e, raw SHA256
+f890601b3237e329df883fddee8f8ca4a81ec9055d2539332ecfc11a736b6f26.
+Read research/P49_trained_source_result.md. Its stdlib read-only reconstruction
+checks184326 cuts and14207 FAST checkpoints; not independent physical sampling.
+Root full677PASS22.10s, four current manifests valid,602 historical files and
+every paper byte unchanged: reports/P49_validation/. No numerical worker active
+at this checkpoint; workers must obtain the exclusive slot before execution.
+
+## Active changed bottleneck: P50
+
+Root prospective card f9689d2, research/P50_EXECUTION_CARD.md, fixes fresh
+N50/r13 andN100/r17 four-case DEV population, nine independently tuned arms,
+32 training+32 fresh shots per graph/arm. Direct topK of H(n-mu)+beta*jitter
+replaces PIT/greedy; no Cref/anchor/Delta/search in B preprocessing. All counts
+and collisions remain useful inputs. r differs from target balanced size K.
+B-only classical cost grants CPU to independently initialized raw-graph
+descent-FIRST controls. Gaussian and independent-final-variance arms use the
+same actual factor; empty-row masks apply BEFORE diffusion. Preparation/static
+and pure-jitter controls prevent attributing rounded source means to photons.
+No P50 graph or numerical result exists yet. Encoding owns isolated primary
+files, adaptive a disjoint from-scratch FAST helper, physics static audits.
+Do not execute before frozen sources/projection/reviews and explicit slot.
+
+A separate cost-phase/Johnson interaction route has a favorable ideal sign,
+but its weak-mixing law has an exact cheap classical sine-swap control with
+TV remainder<=beta^2; finite strength and physical implementation remain open.
+See theory/P50_cost_phase_collective_mechanism_checkpoint.md. This does not
+establish equal-cost domination or an available photonic gate capability.
 
 Acceptance plan research/P48_review_future_acceptance.md now includes efficient
 CPU controls, independent count implementation and reserved graph panels,

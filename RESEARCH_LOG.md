@@ -775,3 +775,38 @@ Source audit identifies known moment/Cauchy–Binet/norm ingredients and leaves
 complete adaptive-application novelty OPEN. KEEP the scoped mathematical
 obstruction; positive unrestricted optimization target OPEN. Paper/P33/P37/E05b
 unchanged, zero QPU calls. Resume from research/ACTIVE_DISCOVERY_STATE.md.
+
+## 2026-11-25 — P45–P49 preserved, P50 changed decoder prospective
+
+Research continuation source8f83f2b on research/p45-positive-discovery preserves
+P33/P37/E05b and P44; the user's target is a POSITIVE optimizer result, not
+completion by obstruction. P45 full-Fock and cavity completions, P46 hollow
+transfer/PIT, P47 directed graph polar map and P48 spectral source all fail
+their declared DEV control gates. Full source/raw/manifests and scope are linked
+from research/P45_LIVE_STATE.md; no rejected grid is silently discarded.
+
+P49 QUESTION: can coherent spectral-source mixing, trained on ALL feasible
+cuts instead of a proxy, reveal a useful fresh gain? Root7b791bf/dc85fa5;
+pre-run source3d6a1f2 after independent setup-cost correction;42PASS preflight.
+One clean32615d1 main completed24.299721s,1792 draws, four new N26/34 DEV graphs,
+no optimum/optimal masks/postselection, all collisions decoded. Training and
+fresh evaluation are separated. B paid best173/54/365/72 loses to independently
+qualified FAST158/49/359/63 on all four; sphere fresh mean is also better than
+B. A B>D mean contrast survives but is insufficient. DECISION: REJECT this
+hybrid/budget. d61b8c6 limits the CPU veto to the shared-frontend pipeline;
+removing optional overhead would also remove the gifted Cref initialization.
+No retrospective cost change strengthens or rescues the result. Data9074386,
+result7f5536e; root integration d66c46a. Raw SHA256
+f890601b3237e329df883fddee8f8ca4a81ec9055d2539332ecfc11a736b6f26.
+Read-only consistency audit184326 cuts/14207 classical checkpoints is not
+independent distribution replication. Root677PASS, four current manifests
+validate,602 historical files/PDF unchanged. reports/P49_validation/.
+
+P50 ROOT card f9689d2 fixes a new all-count graph diffusion/topK decoder,
+four fresh N50/100 DEV graphs with13/17 photons, nine separately tuned models,
+B-only classical accounting and strong from-raw-graph descent-FIRST controls.
+No graph/data opened; implementation/review only at this checkpoint. A distinct
+ideal cost-phase/Johnson route yields a favorable sign but an exact weak-order
+classical control, not a validated photonic optimizer. All positive/novelty,
+held-out/independent replication and hardware gates remain OPEN/CLOSED as
+appropriate; no manuscript change, QPU call or Laurent message.

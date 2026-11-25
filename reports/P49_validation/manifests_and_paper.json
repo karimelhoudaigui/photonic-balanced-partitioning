@@ -1,0 +1,65 @@
+{
+  "validated_on_utc": "2026-11-25 06:39:59 UTC",
+  "manifests": [
+    {
+      "manifest": "experiments/P49_trained_source/run_001/manifest.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "47bced",
+        "wall_time_seconds": 0.005393958,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+      }
+    },
+    {
+      "manifest": "research/P49_trained_source_preflight/run_001/manifest.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "8ec739",
+        "wall_time_seconds": 0.000006667,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+      }
+    },
+    {
+      "manifest": "research/P49_trained_source_raw_audit/run_001/manifest.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "a95bdf",
+        "wall_time_seconds": 0.007197417,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+      }
+    },
+    {
+      "manifest": "research/P49_fast_classical_qualification/run_002/manifest.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "ba1f7d",
+        "wall_time_seconds": 0.000010833,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+      }
+    }
+  ],
+  "github_previous_checkpoint": {
+    "checked_utc": "2026-11-25 06:02:24 UTC",
+    "research_CI": [
+      {
+        "head": "d790f8abcdc0550cd3cc3f853973932129945261",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45553988125"
+      }
+    ],
+    "main_sha": "27443954fb7491a293399f0417d05185009f5c9a"
+  },
+  "paper_base": "27443954fb7491a293399f0417d05185009f5c9a",
+  "paper_diff_exit": 0,
+  "expected_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "scope": "P49 integrated input/output consistency, 677 full tests; P50 code not yet present. No positive, independent physical replication, heldout or QPU claim."
+}

@@ -1,4 +1,4 @@
-# Research status — 24 November 2026
+# Research status — 25 November 2026
 
 25-Nov active branch research/p45-positive-discovery: the user requires a
 positive optimizer result before held-out replication/paper/hardware steps.
@@ -9,14 +9,22 @@ negative: B total gain21 versus Gaussian32, with a graph-blind B setting chosen.
 P47's directed graph map also fails the full gate: B gains22 versus D0, but
 one fixed annealing baseline equals or beats its best cuts on all four graphs.
 P48-B's spectral occupied subspace also fails: B gain7 versus phase13/IID12,
-and one annealing baseline equals or beats B on all four graphs. P49 now tests
-trained coherent mixing of spectral sources on the actual feasible-cut mean,
-with a new efficient classical CPU control. No accepted positive, held-out or
-P49 numerical result exists. Integrated P48 tests635 PASS.
+and one annealing baseline equals or beats B on all four graphs. P49's actual
+feasible-mean training also fails the declared hybrid cost/control gate: paid
+B cuts173/54/365/72 versus efficient classical158/49/359/63, on all four DEV
+graphs. Its narrow B>D mean contrast is insufficient; sphere has a lower fresh
+mean. This veto covers the tested shared-frontend hybrid, not every lean B-only
+implementation. See research/P49_trained_source_result.md and its cost-scope
+review. Integrated full tests677 PASS; four completed P49 manifests validate.
+P50 now investigates a direct all-count diffusion/ranking decoder without
+Cref, greedy completion or marginal PIT, with from-scratch efficient classical
+controls and B-only cost accounting. Prospective ROOT card f9689d2 is frozen;
+implementation/review precede all new numerical work. No accepted positive,
+held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,
 evidence and numerical-slot state: research/P45_LIVE_STATE.md.
 
-Active discovery branch: research/p41-discovery, restarted from published
+Earlier discovery branch: research/p41-discovery, restarted from published
 2744395. The current task is new optimum-blind mechanism research. P44 now
 provides an independently reconstructed/reviewed moment obstruction for general
 nonuniform passive loss and click-contained candidate decoders: per-target

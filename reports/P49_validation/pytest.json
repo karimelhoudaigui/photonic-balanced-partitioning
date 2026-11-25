@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "tests/",
+    "-q"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 22.800178458041046,
+  "commit": "b13c601ff3b0a691ba8cd4d4be559fa614b98b62",
+  "scope": "Full existing/P48/FAST and P49 trained-source tests, no additional DEV run"
+}
