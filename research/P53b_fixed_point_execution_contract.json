@@ -1,0 +1,85 @@
+{
+  "claim_id": "P53B-ONE-FIXED-POINT-ENDPOINT71",
+  "mathematics": {
+    "assertion_tested": "At the one predeclared rational x=1/4 only, seek exact membership in or a strictly separating rational dual against the fixed ENDPOINT71 edge-mean library; otherwise inconclusive. Any nonnegative graph is an explicitly posthoc witness for that fixed mean closure, never optimizer advantage.",
+    "coefficient_domain": "Pinned exact P53 canonical integer/Fraction proof data. Binary Fraction.from_float is used only for the proposed signed dual w, never for any physical target or library kernel. Numerical LP support/vector proposals are not proof.",
+    "conventions": "No new point evaluated before freeze. Exact fixed Horner; full71 labels/vertices retained; one qualified primal support LP then one dual LP, both native1s/thread1 fixed options. Primal support>1e-10 then positive fallback, exact29eq/RREF. Dual exact L1<=1/all71 strict inequalities and nonnegative graph shift using total16. Status0/successTrue plus witness required; both exact witnesses is inconsistency failure.",
+    "inputs": [
+      "P53 main bce6e2d sealed source SHA256 2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0 and fixed library cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "Immutable P53 exactification SHA256 aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692; immutable P52 LP provider56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+      "Predeclared x1/4, complete fixed35 b4 groupings at theta0 andpi/2 plus uniform; no graphs,Cstar,masks or samples"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "point_numerator": 1,
+      "point_denominator": 4,
+      "control_vertices": 71,
+      "edge_coordinates": 28,
+      "maximum_native_LP_calls": 2,
+      "LP_seconds_per_call": 1,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_arrays_bytes": 67108864,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No membership/nonmembership conclusion for every theta or continuously reoptimized b4",
+      "No full law/tail/loss/arbitrary-size/runtime theorem, accepted optimization advantage, heldout or QPU validation",
+      "No physical kernel reconstructed by rounding or limit_denominator",
+      "No automatic rerun,alternate phase/grid/solver/cap,scientific-goal completion or manuscript edit"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53b_fixed_point_spec.json",
+    "research/P53b_fixed_point_contract.md",
+    "research/P53b_fixed_point_execution_contract.json",
+    "research/P53_next_fixed_x_dual_proposal.md",
+    "tests/test_p53b_fixed_point.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P52_collective_phase_probe.py",
+    "research/P43_global_gain_probe.py",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Only deterministic seeded HiGHS proposals; no physical/MC/RNG data generation",
+    "seed": 5201001
+  },
+  "resource_note": "Implementation only. Source and test freeze, ROOT/physics static review and explicit exclusive qualification then distinct main permission required. CPU20/wall30/thread1/log4MiB/scientific4MiB/planned64MiB scientific arrays; no hard Darwin memory promise. Exactly two native solves maximum, retain every failure without automatic retry.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P53b_fixed_point_discriminator.py",
+    "--spec",
+    "research/P53b_fixed_point_spec.json",
+    "--output",
+    "experiments/P53b_fixed_point/run_001/data"
+  ]
+}
