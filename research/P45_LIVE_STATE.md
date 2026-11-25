@@ -377,8 +377,35 @@ improvement has a classical rare-hop/inclusion/D-retiming explanation.
 Encoding is designing, not executing, a small N20/full20 finite-coherence
 pilot with true full-count controls and strong from-scratch FAST. No new
 graph, pilot, hardware compatibility or P55 positive exists yet.
-Latest whole-suite822PASS predates P53b/P55 code; targeted20+29 PASS, next
-integrated full suite required after current implementation checkpoint.
+P53c code c197ee7 passed full ROOT/physicsb3fa3292 reviews and18 targeted
+tests e8ccbaa. ONE main61a4683/rootfa2f261 completed1.4834s,15 unchanged
+inputs and both outcomes retained. Candidate separation106; old fixed graph
+minimum normalized gap2953/18350080 on35new, zero beating controls. Independent
+reconstruction is still pending; physics is preparing direct4x4 permanent
+group-law checks, separate convolution and fixed-w verification. Do not accept
+the candidate as a new physical result until that check passes.
+
+P53d static cardb2f3fe9/e0440e8 fixes the SAME B/w/graph and asks for the35
+b4 groupings at ALL real phases, including oldP52pi/4 and3pi/4. Integer
+Laurent contraction and per-column Parseval/Cauchy bounds precede int64;
+triangle then fixed Bernstein12global/24on8intervals, no LP. Implementation
+only authorized, no new polynomial/control evaluated. Bounds/sign failures
+are not automatically phase optima. No positive optimizer claim could follow.
+
+P55 finite pilot card2f3569b5 fixes N20 ERp4/19seed5502001/RR4seed5502002,
+six separately selected models,24train+16fresh pergraph/model:480draws/80B.
+Source preparation only. Physics's PRE-DATA corrections were sent to encoding:
+CTMC directtau, retained cap-state/no truncated decode; exact mixedPGF ramp
+i/210; full-source mu deficit/excess guards; perpolicy training cuts; explicit
+pergraph/FASTscreen; adapterCPU subtraction and first-scan eligibility for
+followup, paid init can veto. Amendment/source/spec/tests/contracts freeze
+must precede all imports, graph generation or draws. Candidate positives
+remain FOLLOWUP_ONLY, never automatic heldout/QPU/paper authorization.
+
+Latest integrated full suite889PASS25.02s at8c5a5ce, after P53b/P53c/P55decoder
+qualification. Six current manifests v2PASS,602 original scientific files
+and paper bytes unchanged: reports/P53c_validation/. Numeric worker is free
+at this checkpoint; later workers need their explicit per-run slot.
 Numerical work is sequential; consult
 the current explicit worker-slot messages, not an old checkpoint sentence.
 

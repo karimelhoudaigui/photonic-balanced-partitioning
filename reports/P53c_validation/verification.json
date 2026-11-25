@@ -1,0 +1,45 @@
+{
+  "checked_utc": "2026-11-25T12:57:24.604055+00:00",
+  "inspection_head": "8c5a5cecce1582ba6fd450444392a5998cf87087",
+  "manifests": [
+    {
+      "path": "research/P53b_fixed_point_preflight/run_001/manifest.json",
+      "sha256": "657aed0b71c6a5789495037de95ebeaf81612de8386e6a5e6b477d5b88586a94",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/manifest.json",
+      "sha256": "ad43f05ce2d1fe5615365d7d6e0a5fa4f4591d484335db8d1a0fd45f3728f36d",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "research/P53b_independent_check/run_001/manifest.json",
+      "sha256": "71f01f0480721cf38e399afe8392929cac08aa6578ea8073dfc57152d20b0720",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "research/P53c_same_phase_preflight/run_001/manifest.json",
+      "sha256": "0ba1d5b800f994455f8f7bc1a52daf8c9220f663704acb811fabeb7db85a5bba",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "experiments/P53c_same_phase/run_001/manifest.json",
+      "sha256": "e5f9c157faa87e051d149187e0756e4e361d6b2ea9010d05091973308b1cfd62",
+      "root_v2_validation": "PASS"
+    },
+    {
+      "path": "research/P55_neutrality_decoder_preflight/run_001/manifest.json",
+      "sha256": "f20b9c5e1a4f8bf84739680b358816224efe209d5733d7a0f3554d6d5a68905a",
+      "root_v2_validation": "PASS"
+    }
+  ],
+  "full_test_receipt": "reports/P53c_validation/pytest.json",
+  "full_test_result": "889 PASS /25.02s pytest /25.914043s total at8c5a5ce",
+  "historical_preservation": "reports/P53c_validation/archive_preservation.json",
+  "paper_diff_against_main": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "accepted_positive_optimizer": false,
+  "P53b": "fixed ENDPOINT71 counterexample independently exact checked",
+  "P53c": "candidate only until independent same-phase control reconstruction; no continuously reoptimized-b4 conclusion",
+  "P55": "decoder qualified29 tests; finite graph pilot implementation only"
+}

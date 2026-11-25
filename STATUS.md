@@ -51,15 +51,20 @@ nor continuous replacement. The separately frozen P53b follow-up now gives
 an exact counterexample at x=1/4 to ENDPOINT71 replacement, independently
 rechecked in separate stdlib code: gap767/327680. This is a finite mean-hull
 counterexample, not an optimization advantage; same-phase b4 is still untested.
-See theory/P53b_endpoint_mean_counterexample.md. Last full regression822 PASS
-predates P53b/P55 additions; their targeted20 and29 tests PASS respectively.
+See theory/P53b_endpoint_mean_counterexample.md. Full integrated regression
+now889 PASS at8c5a5ce, including targeted20/18 P53b/P53c and29 decoder cases.
 P54's proposed full-input weak graph hopping has a ROOT analytical falsification
 with an independently frozen reconstruction and exact-hash focused review;
 see reports/P54_PROOF_CHECKPOINT.md. P55's different neutral-count decoder is
 implemented and uniformly qualified on1000 small count vectors/all their ranks;
 no graph pilot or finite-coherence benefit yet. P53c now prepares ALL35 b4
 controls at the SAME pi/3 to challenge the new counterexample's limited scope.
-P55 pilot design remains prospective. No such scoped result completes the
+P53c's single bounded main retains a strict gap against106 in the program's
+exact verifier; even the FIXED old graph has normalized margin2953/18350080
+on all35 new controls. Independent physical-control checking is PENDING;
+no phase-retuned-b4 or optimizer conclusion is accepted from that candidate.
+P55 pilot source is being prepared under its frozen two-graph/80B-shot card.
+No such scoped result completes the
 user's positive optimizer target.
 No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
