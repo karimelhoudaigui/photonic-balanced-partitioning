@@ -29,10 +29,12 @@ are
     A_n(theta)=sqrt(product_i n_i!)*c_n(exp(i theta))/8^4,
     p_n(theta)=product_i n_i! /8^8 * c_n(x)c_n(x^-1).                (1)
 
-The output factorial multiplies (1) because c_n is the ordinary coefficient
-of z^n. This differs from a permanent with repeated rows, whose probability
-is divided by the output factorial: that permanent equals product_i n_i!
-times this ordinary coefficient. Input factorials are1 for this CF source.
+Here c_n is the UNNORMALIZED INTEGER numerator coefficient: the actual
+coefficient of z^n in F_x is c_n/8^4. The output factorial multiplies (1)
+because monomial creation on the vacuum has norm sqrt(product_i n_i!).
+Equivalently, the permanent of U with output rows repeated n_i times is
+product_i n_i! * c_n/8^4; its probability divides by the output factorial.
+Input factorials are1 for this CF source.
 
 ## Exact evenness and the six-degree real parameter
 
