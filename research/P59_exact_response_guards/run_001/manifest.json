@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "claim_id": "P59-SMALL-EXACT-SYNTHETIC-GUARDS",
+  "repository": {
+    "commit": "5c8bfcdd97dfc07bae1f9d97fca51fe243c99dc6",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p59_exact_fixed_response.py",
+    "--junitxml=research/P59_exact_response_guards/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "16 small guards ONLY: Eisenstein ring/conjugation,integerrejection,formalGram/q/phaseplacement,HOMtwo-photonFocklaw,ONE720termPNRfixture,Fourierorientation,uniform/allbunch/tiesLCM60,10classGram/inverse,knownidentity/HOM factorialmoments,exactPGF,domainrejection,smalloccupationcoverage,exactJSON/curvature. NEVERcallcalibrate orsix-photon fullcreation.",
+    "coefficient_domain": "Python arbitrary integers in Z[xi],xi^2=xi-1,and exact fractions. No float proof/complex128/LP/RNG. KnownHOM law andprecodePNRfixtureprovidehandguards.",
+    "conventions": "SamefixedN6matrix/source/index/rotationasmain;onlysmallsyntheticguards. Six-photonworkrestrictedtoONEoccupationpermanent720monomials;fullsourcecreationonlytwo-mode/two-photonHOMwiththreeFockoutcomes(2x2H2,notthreeopticalmodes). NoALL462meanaggregationbeforemain.",
+    "inputs": [
+      "FrozenN6 source/spec/cardandindependentanalyticPNRfixture at420000 with slope/sqrt3=-124/421875",
+      "KnownHOMbalancedtwo-photonlaw(1/2,0,1/2),identity-sourcefactorialmoments,and10cutclasscrossingGram9/5",
+      "All13 source/convention artifactsarehash-pinnedbyv2runner;noarchivedrawdecoded,no productionmodule imported"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_log_bytes": 4194304,
+      "planned_logical_scientific_workspace_bytes": 67108864,
+      "planned_tests": 16,
+      "maximum_failed_retries": 0,
+      "maximum_parallel_workers": 1,
+      "full_six_photon_calibrations": 0,
+      "full_six_photon_creation_calls": 0,
+      "single_fixture_permanent_terms": 720,
+      "HOM_optical_modes": 2,
+      "HOM_photons": 2,
+      "HOM_Fock_outcomes": 3,
+      "LP_calls": 0,
+      "random_draws": 0,
+      "graphs": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "Qualification isnotfull462source/meanproof,physicalreplication,all-classical separation,algorithmicadvantageorhardwareevidence",
+      "SinglePNRslopeisnotoneofthe15decodededgeslopesandcannotdecidethesmallscientificquestion",
+      "No fullcalibrate(),six-photoncreation,graph,draw,LP,alternatecenterorcircuit occursinqualification",
+      "Preservefirstfailure/logs/JUnitwithoutretry,precisionchangeorautomaticmainlaunch;mainrequiresseparateROOTauthorization"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic smallhandguards;noRNG/API/graphs/countdraws",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T14:41:44.992287+00:00",
+    "runtime_seconds": 0.433988,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P59_exact_fixed_response.py",
+    "research/P59_exact_fixed_response_spec.json",
+    "research/P59_exact_fixed_response_contract.md",
+    "research/P59_exact_fixed_response_execution_contract.json",
+    "research/P59_exact_fixed_response_guards_contract.json",
+    "tests/test_p59_exact_fixed_response.py",
+    "research/P59_N6_FIXED_RESPONSE_CARD.md",
+    "theory/P59_N6_fixed_intensity_derivation.md",
+    "theory/P59_adaptive_precode_derivation.md",
+    "theory/P56_full_square_third_moment_physics_check.md",
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P59_exact_fixed_response.py",
+      "sha256": "f1d79ac3940b9c02826d0150dcea8470e2ccc9e5f995615b0ead9aa765de0374",
+      "sha256_after": "f1d79ac3940b9c02826d0150dcea8470e2ccc9e5f995615b0ead9aa765de0374"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_spec.json",
+      "sha256": "2b0a0564ad4dfb747bae25441cc9ceaac0c8d6590232d31a765b867a6e3ef1e2",
+      "sha256_after": "2b0a0564ad4dfb747bae25441cc9ceaac0c8d6590232d31a765b867a6e3ef1e2"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_contract.md",
+      "sha256": "86cfd904b46710d34510c7cbd11eed643d16f287a8bb62d7b587e5c6e4890a37",
+      "sha256_after": "86cfd904b46710d34510c7cbd11eed643d16f287a8bb62d7b587e5c6e4890a37"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_execution_contract.json",
+      "sha256": "71ceff53aae136b403379fd5fa390ff1f1f06a6f7aeb710762cb483f1017e841",
+      "sha256_after": "71ceff53aae136b403379fd5fa390ff1f1f06a6f7aeb710762cb483f1017e841"
+    },
+    {
+      "path": "research/P59_exact_fixed_response_guards_contract.json",
+      "sha256": "187cc0cea201efb69b165a1c670963553154788bf4d6c5fc029cd76530c8bbc3",
+      "sha256_after": "187cc0cea201efb69b165a1c670963553154788bf4d6c5fc029cd76530c8bbc3"
+    },
+    {
+      "path": "tests/test_p59_exact_fixed_response.py",
+      "sha256": "7f1da4d13df247082ee115b94232adadd898f2700de1d6efe781ba84a18433c6",
+      "sha256_after": "7f1da4d13df247082ee115b94232adadd898f2700de1d6efe781ba84a18433c6"
+    },
+    {
+      "path": "research/P59_N6_FIXED_RESPONSE_CARD.md",
+      "sha256": "a5e647172e144e285c9f42f7871c8c135d155a82c62a6eb6562f3f65a6d94de5",
+      "sha256_after": "a5e647172e144e285c9f42f7871c8c135d155a82c62a6eb6562f3f65a6d94de5"
+    },
+    {
+      "path": "theory/P59_N6_fixed_intensity_derivation.md",
+      "sha256": "ead03df0b5984d879fdcbabe5d595ebbe30026f81d4c1f0bc6712969e126996d",
+      "sha256_after": "ead03df0b5984d879fdcbabe5d595ebbe30026f81d4c1f0bc6712969e126996d"
+    },
+    {
+      "path": "theory/P59_adaptive_precode_derivation.md",
+      "sha256": "c2d5582e3a75fb9329390fc84434fb0cfc889fe1d01f49fcedbfe22db43a2540",
+      "sha256_after": "c2d5582e3a75fb9329390fc84434fb0cfc889fe1d01f49fcedbfe22db43a2540"
+    },
+    {
+      "path": "theory/P56_full_square_third_moment_physics_check.md",
+      "sha256": "751108224a197e2286dfcda90e95117d14c0a4db70ba537b9a4115fc7ae3d940",
+      "sha256_after": "751108224a197e2286dfcda90e95117d14c0a4db70ba537b9a4115fc7ae3d940"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P59_exact_response_guards/run_001",
+  "declared_results": [
+    "research/P59_exact_response_guards/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P59_exact_response_guards/run_001/stdout.txt",
+      "sha256": "6715fae78e50c4dc26be4cd4daa6147c63ee0bf7f9ab035cc27c74f1b931266e",
+      "kind": "log"
+    },
+    {
+      "path": "research/P59_exact_response_guards/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P59_exact_response_guards/run_001/junit.xml",
+      "sha256": "84ef6bf252468b75c555edfaf002bfe42e8ff484f5824b782040f2d89c80ba60",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
