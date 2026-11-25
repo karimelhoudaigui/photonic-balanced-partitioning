@@ -1,6 +1,6 @@
 # Scientific claims registry
 
-Current checkpoint: 2026-11-24. Allowed statuses: OPEN, PROVEN,
+Current checkpoint: 2026-11-25. Allowed statuses: OPEN, PROVEN,
 NUMERICALLY_SUPPORTED, HARDWARE_SUPPORTED, REJECTED. Proof does not imply novelty.
 No claim is HARDWARE_SUPPORTED. The user-authorized rebuilt manuscript reports the evidence below; manuscript wording alone is not evidence. Submission readiness and full-composition novelty remain open; see reports/PUBLICATION_READINESS.md.
 
@@ -107,3 +107,21 @@ commands and data: reports/P42_DISCOVERY_CHECKPOINT.md. Proof does not imply nov
 | CLAIM-045 | Arbitrary internal states at fixed CF spatial inputs under common T obey the conservative k!*||T[:,A]||^(2k) moment cap. | PROVEN | Independent routing/purification Cauchy derivations in the P44 proof/review; product and correlated small cases retained. Does not give the identical dimension-uniform eta<=1/4 criterion, and excludes internal-dependent loss. |
 | CLAIM-046 | The tested P43 global-gain finite-angle echo supplies useful optimization benefit at its frozen budgets. | REJECTED |896 B attempts,zero improvements,373 CF/523 collisions; all4 graphs retained; classical anneal/spectral improve both20-mode anchors. Full raw reconstruction agrees. This rejects one family/budget, not every optical algorithm. |
 | CLAIM-047 | The complete P44 adaptive balanced-search application is globally novel. | OPEN | Known Cauchy–Binet/norm/thermal ingredients explicitly attributed. Exact source-directed comparison is bounded, not exhaustive novelty certification. |
+
+## Research continuation P45–P55 — manuscript unchanged
+
+The following entries record new research evidence, not new statements in the
+published/delivered manuscript. CLAIM-042 remains OPEN. No positive held-out
+optimizer replication or hardware claim has been accepted.
+
+| ID | Exact statement / scope | Status | Evidence and limits |
+|---|---|---|---|
+| CLAIM-048 | The frozen P45–P50 DEV pipelines supply the requested optimization benefit at their tested budgets. | REJECTED | Per-route raw data/manifests and research/P45_LIVE_STATE.md. In P50 each independently budgeted raw classical mode beats paid B on all4 graphs; a separate raw consistency audit is not blind physical replication. Rejection is scoped to tested families/cost contracts. |
+| CLAIM-049 | A passive unitary preserving the whole r-photon collision-free subspace, 2<=r<=N, is monomial; the stated continuous nonconstant balanced-cut phase shortcut is unavailable in that model. | PROVEN | theory/P50_passive_hard_core_cost_phase_obstruction.md and separate reconstruction/review. Fixed-input, r1, dualrail, heralding and isolated integer-phase exceptions are explicit; not a general optimizer no-go. |
+| CLAIM-050 | For a square flat unitary with one photon in every input, all joint factorial moments through total order3 are phase invariant. | PROVEN | theory/P51_Hadamard_low_order_invariance.md and ROOT reconstruction. Truncated columns and B-versus-D comparisons are different questions; novelty not established. |
+| CLAIM-051 | Equal factorial moments through b at fixed total r imply identical <=b survivor sectors under common uniform loss and TV<=Pr[Binom(r,eta)>b]. | PROVEN | theory/P51_uniform_loss_matched_moment_lemma.md and ROOT reconstruction. Exact eta^r scaling requires b=r-1. Nonuniform loss/random source totals excluded. |
+| CLAIM-052 | The specified H4 top2 phase response has an exact constant-size classical mixture. | PROVEN | theory/P50_Hadamard4_ranked_cut_checkpoint.md and rank_mixture_addendum.md. Physical phase sensitivity alone is not an optimization advantage or arbitrary-N replacement. |
+| CLAIM-053 | P52's four fixed circuits show a low-moment-invariant cut-mean response, numerically replaced by mixtures of regrouped b4 kernels/uniform70. | NUMERICALLY_SUPPORTED | Primary762877a, all4 mean fits verified; independent Perceval25,740-amplitude engine replication agrees. research/P52_collective_phase_result.md and P52_NAIVE_COMPLETE_REPLICATION_REVIEW.md. No full-law, continuous-phase, total-cost or optimizer conclusion. |
+| CLAIM-054 | Every continuous phase of the P52 family admits the fixed ENDPOINT71 convex mean replacement. | OPEN | P53's exact source/library construction passes18 targeted tests; degree6/12 sufficient certificate search is INCONCLUSIVE. Failed Bernstein controls prove neither curve nonmembership nor a quantum advantage. P53b single-point question is separately prospective. |
+| CLAIM-055 | For a fixed finite graph, full-CF input, real sqrt(weight) hopping and raw-count top-half ties, the bosonic leading cut drift is +4t² Var(C)/q with O_G(t⁴) remainder. | PROVEN | Root4d6826d, independently frozen43b35f9 and focused91fb868 review; reports/P54_PROOF_CHECKPOINT.md. Weak effect has a classical rare-hop replacement and retuned D control. Weighted A=w, finite strength, other inputs/decoders and equal-cost dominance excluded. |
+| CLAIM-056 | The proposed neutral-count decoder yields a useful finite-coherence optimizer advantage over independently retuned D and strong classical controls. | OPEN | research/P55_NEUTRAL_DEFECT_DECODER_CARD.md is a prospective definition/DP proof with a known classical weak-order explanation. Prototype qualification and any finite pilot remain separate gates. No positive or hardware compatibility inferred. |
