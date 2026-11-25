@@ -29,7 +29,8 @@ matrix Z=lambda W supply the full-count raw probability
 Every source cycle starts before preparation/readout. Vacuum, collisions,
 wrong number and invalid colors remain failures. No Pacc division appears.
 The only normalization used here is P73's internally proved one.
-Rescaling W by a and lambda by a preserves Z; a is not assumed1.
+The explicit rescaling W'=W/a and lambda'=a*lambda preserves Z;
+a is not assumed1.
 
 ## 2. An exact classical latent rejection proposal
 
@@ -56,7 +57,9 @@ Gaussian source, and does not assume independent photons in the optical
 model. If W has zeros the same sampling identity still holds for b>0;
 the finite-range certificate below needs a>0.
 
-Both conditional accepted laws are exactly f(S)/sum_T f(T). Squeezing
+When sum_T f(T)>0, both conditional accepted laws are exactly f(S)/sum_T f(T).
+This is automatic in the main strictly positive model; otherwise neither
+conditional law exists when that sum is zero. Squeezing
 lambda cancels there but remains in q_B and its source costs. The classical
 acceptance rate can be small: this construction is not declared a rapid
 or polynomial expected-time exact sampler for arbitrary W. Every latent
