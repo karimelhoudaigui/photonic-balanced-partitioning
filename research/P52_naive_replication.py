@@ -106,6 +106,28 @@ def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n")
 
 
+def check_record(name, observed, expected):
+    """Normalize scalar types at the JSON boundary, including foreign booleans."""
+    residual = abs(observed - expected)
+    actual, target = complex(observed), complex(expected)
+    return {"name": str(name), "observed": [actual.real, actual.imag],
+            "expected": [target.real, target.imag],
+            "absolute_error": float(residual), "pass": bool(residual <= ABS_TOL)}
+
+
+def configure_matplotlib_cache():
+    """Preserve explicit settings; otherwise use a writable persistent cache."""
+    if "MPLCONFIGDIR" in os.environ:
+        value = os.environ["MPLCONFIGDIR"]
+        return {"path": value, "set_by_validator": False, "preexisting": Path(value).exists()}
+    path = ROOT / ".local/mplconfig"
+    preexisting = path.exists()
+    path.mkdir(parents=True, exist_ok=True)
+    os.environ["MPLCONFIGDIR"] = str(path)
+    return {"path": str(path), "set_by_validator": True, "preexisting": preexisting,
+            "interpretation": "persistent configuration/cache only; no warm/cold performance claim"}
+
+
 def thread_snapshot():
     """Observational process-thread listing; not a native-thread guarantee."""
     try:
@@ -179,10 +201,7 @@ def qualify(api):
     checks = []
 
     def check(name, observed, expected):
-        residual = abs(observed - expected)
-        checks.append({"name": name, "observed": [complex(observed).real, complex(observed).imag],
-                       "expected": [complex(expected).real, complex(expected).imag],
-                       "absolute_error": float(residual), "pass": residual <= ABS_TOL})
+        checks.append(check_record(name, observed, expected))
 
     hom = np.array([[1, 1j], [1j, 1]], complex) / math.sqrt(2)
     backend = make_backend(hom, api)
@@ -284,8 +303,9 @@ def main():
               "status": "INCOMPLETE", "thread_snapshot_before_import": thread_snapshot()}
     exit_code = 1
     try:
+        report["matplotlib_cache"] = configure_matplotlib_cache()
         if args.mode == "qualify":
-            # Same bounded child: six guards plus eleven small analytic checks.
+            # Same bounded child: seven guards plus eleven small analytic checks.
             os.environ["PYTEST_DISABLE_PLUGIN_AUTOLOAD"] = "1"
             import pytest
             guard_status = int(pytest.main([

@@ -71,3 +71,29 @@ def test_optional_observation_failure_is_nonblocking(monkeypatch):
         raise PermissionError(1, "mock metadata denial")
     monkeypatch.setattr(probe.platform, "platform", denied_platform)
     assert probe.platform_snapshot()["available"] is False
+
+
+def test_check_record_json_converts_foreign_scalar_types():
+    class ForeignBoolean:
+        def __init__(self, value):
+            self.value = value
+
+        def __bool__(self):
+            return self.value
+
+    class ForeignFloat(float):
+        def __sub__(self, other):
+            return ForeignFloat(float(self) - float(other))
+
+        def __abs__(self):
+            return ForeignFloat(abs(float(self)))
+
+        def __le__(self, other):
+            return ForeignBoolean(float(self) <= float(other))
+
+    for value, expected_pass in ((.25, True), (.5, False)):
+        record = probe.check_record("foreign_scalar", ForeignFloat(value), .25)
+        assert type(record["pass"]) is bool and record["pass"] is expected_pass
+        assert type(record["absolute_error"]) is float
+        assert all(type(x) is float for x in record["observed"] + record["expected"])
+        assert probe.json.loads(probe.json.dumps(record, allow_nan=False)) == record

@@ -18,6 +18,6 @@
   ],
   "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}, {"name": "perceval-quandela", "version": "1.3.0"}, {"name": "exqalibur", "version": "1.4.2"}],
   "randomness": {"used": false, "generator": "none", "seed": []},
-  "resource_note": "Full production not authorized by implementation or API qualification alone. One sequential worker, CPU20/wall30, thread env1; native threading limitation must first be reviewed. Planned live arrays<4MiB, individual arrays<64MiB; process RSS separately measured. No hard Darwin memory/affinity assertion.",
+  "resource_note": "Full production not authorized by implementation or API qualification alone. One sequential worker, CPU20/wall30, thread env1; native threading limitation must first be reviewed. Planned live arrays<4MiB, individual arrays<64MiB; process RSS separately measured. No hard Darwin memory/affinity assertion. Preserve explicit MPLCONFIGDIR; if absent set to this worktree ROOT/.local/mplconfig before imports, persistent writable cache recorded, no warm/cold performance claim.",
   "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "research/P52_naive_replication.py", "--mode", "full", "--output", "experiments/P52_naive_validation/run_001/data"]
 }
