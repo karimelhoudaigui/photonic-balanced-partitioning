@@ -71,3 +71,30 @@ no hard Darwin memory promise, no automatic retry (maximum0). Primary gzip
 <=64KiB. Preserve every first failure, disagreement and source/data hash.
 PASS means exact within-team independent-code agreement, not a new physical
 measurement, optimization advantage, held-out success or QPU validation.
+
+## Sealed data binding completed without outcome access
+
+ROOT supplied primary commitea2e6a9. Its ENTIRE six-file run directory was
+extracted byte-identically using git archive into the isolated worktree and
+committed separately atd36a475. Only Git metadata and SHA256 were inspected;
+raw, summary, failure and logs were not decoded. The primary slope table and
+complete outcome remain unknown to this reviewer at this closure freeze.
+
+The resolved TEMPLATE and actual execution_contract.json now contain the
+same14 repeated inputs: the seven frozen source/provenance files, actual
+contract itself, and all six archived primary files. Qualification still
+has8 inputs, including the NOW-FINAL template; no later template edit is
+allowed to invalidate its future historical hash. The physical engine/tests
+remain those ofd5e3da9 (only compare() guards differ from original4073bcb).
+
+Pinned primary raw SHA256:
+47c352223f58b9a75fcdfe245cf2091d07377aaa870bbff723a7df3230826766.
+Primary summary SHA256:
+d682fafa8d3151871c740a73b6b8d0d343bcd3596975aa85d9b59d91690a4b67.
+Primary manifest SHA256:
+06a043715849213315e2705c469241726f05b9a3c3d799325d85972aa97b75e3.
+Failure.json is declared JSON null by ROOT and hash-pinned without opening;
+the other hashes and exact argv are in the final contract. This data-only
+binding does not authorize qualification or main; distinct ROOT approvals
+and exclusive slots are still required. No source/test/math was changed
+after the data archive arrived.

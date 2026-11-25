@@ -1,6 +1,6 @@
 {
   "claim_id": "P59-INDEPENDENT-EXACT-REPLICATION",
-  "binding_state": "TEMPLATE_NOT_EXECUTABLE_PRIMARY_RAW_AND_HASH_PENDING",
+  "binding_state": "BOUND_TO_SEALED_PRIMARY_BY_HASH_ONLY_NO_EXECUTION_AUTHORIZATION",
   "mathematics": {
     "assertion_tested": "Reconstruct the complete fixed P59 N6 source/decoder independently from THREE paired quadratic factors, not the primary six-column DP; compare every source coefficient/probability/kernel, all15 edge/all10 unoriented-class responses,42 diagonal bins and83 moments against a later SHA-pinned sealed primary raw. Preserve disagreements; no optimizer advantage.",
     "coefficient_domain": "Python arbitrary integer pairs in Z[xi], xi²=xi−1, explicit three12term paired factors, probability denominator150^6; exact Fraction throughout. No production/native import, complex128/float proof or RNG.",
@@ -48,7 +48,12 @@
     "pyproject.toml",
     "requirements-research-lock.txt",
     "research/P59_independent_quadratic_execution_contract.json",
-    "__PRIMARY_RAW_PATH_AFTER_SEAL__"
+    "experiments/P59_fixed_response/run_001/data/raw.json.gz",
+    "experiments/P59_fixed_response/run_001/data/summary.json",
+    "experiments/P59_fixed_response/run_001/data/failure.json",
+    "experiments/P59_fixed_response/run_001/manifest.json",
+    "experiments/P59_fixed_response/run_001/stdout.txt",
+    "experiments/P59_fixed_response/run_001/stderr.txt"
   ],
   "software": [
     {
@@ -70,10 +75,50 @@
     "/private/tmp/pbp-clean-venv-20261124/bin/python",
     "research/P59_independent_quadratic_check.py",
     "--primary",
-    "__PRIMARY_RAW_PATH_AFTER_SEAL__",
+    "experiments/P59_fixed_response/run_001/data/raw.json.gz",
     "--primary-sha256",
-    "__PRIMARY_SHA256_AFTER_SEAL__",
+    "47c352223f58b9a75fcdfe245cf2091d07377aaa870bbff723a7df3230826766",
     "--output",
     "experiments/P59_independent_quadratic/run_001/data"
-  ]
+  ],
+  "primary_data_binding": {
+    "source_engine_freeze_commit": "4073bcbf041a6f09fef0f21d3b36266b27eae83b",
+    "generic_verdict_guard_commit": "d5e3da9e04b97170ff29f12babcc5d4c7512f32f",
+    "primary_commit": "ea2e6a911e719da8e374ed0e0c9cd5c7f3eddb69",
+    "byte_identical_archive_import_commit": "d36a4751d6bc09ba2d4614dbc64950b102baf8a1",
+    "access_before_closure_freeze": "git archive, Git metadata and SHA256 only; no raw/summary/log payload decoded",
+    "artifacts": [
+      {
+        "role": "raw",
+        "path": "experiments/P59_fixed_response/run_001/data/raw.json.gz",
+        "sha256": "47c352223f58b9a75fcdfe245cf2091d07377aaa870bbff723a7df3230826766"
+      },
+      {
+        "role": "summary",
+        "path": "experiments/P59_fixed_response/run_001/data/summary.json",
+        "sha256": "d682fafa8d3151871c740a73b6b8d0d343bcd3596975aa85d9b59d91690a4b67"
+      },
+      {
+        "role": "failure",
+        "path": "experiments/P59_fixed_response/run_001/data/failure.json",
+        "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+        "semantics_from_ROOT": "JSON null; contents not decoded by replication author"
+      },
+      {
+        "role": "manifest",
+        "path": "experiments/P59_fixed_response/run_001/manifest.json",
+        "sha256": "06a043715849213315e2705c469241726f05b9a3c3d799325d85972aa97b75e3"
+      },
+      {
+        "role": "stdout",
+        "path": "experiments/P59_fixed_response/run_001/stdout.txt",
+        "sha256": "427307e395bde66983d7458686b86175459dd33c7cacbf453fdad02e9e5e8779"
+      },
+      {
+        "role": "stderr",
+        "path": "experiments/P59_fixed_response/run_001/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
 }
