@@ -1,0 +1,67 @@
+{
+  "status": "FOURTEEN_FIXED_POINTS_WITHIN_FROZEN_TOLERANCE",
+  "points": 14,
+  "source_check": {
+    "all_rows_equal": true,
+    "discrepancies": [],
+    "extra_primary_occupations": [],
+    "primary_occupations": 462,
+    "independent_occupations": 462
+  },
+  "structured_setup": {
+    "wall_seconds": 0.004518832998655853,
+    "cpu_seconds": 0.004486000000000004
+  },
+  "native_imports": {
+    "wall_seconds": 25.685743749998437,
+    "cpu_seconds": 1.789212
+  },
+  "native": {
+    "maximum_threads_before": 0,
+    "maximum_threads_configured": 1,
+    "environment_threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "perceval-quandela": "1.3.0",
+      "exqalibur": "1.4.2"
+    },
+    "Naive_backend_file": {
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_naive.py",
+      "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+    },
+    "backend": "local_NaiveBackend.prob_amplitude_exqalibur.permanent_cx_no_mask_iterator_sample_or_remote",
+    "maximum_threads_after": 1
+  },
+  "positive_accepted": false,
+  "optimizer_tested": false,
+  "full_N18_law_verified": false,
+  "global_TV_certified": false,
+  "native_random_draws": 0,
+  "graphs": 0,
+  "actual_QPU_calls": 0,
+  "max_absolute_error": 5.468656465710577e-20,
+  "max_relative_error": 1.0,
+  "absolute_dominated_points": 14,
+  "native_setup_by_phase": {
+    "theta_zero": {
+      "wall_seconds": 0.0030402920001506573,
+      "cpu_seconds": 0.0015259999999999163
+    },
+    "theta_ten_rationals": {
+      "wall_seconds": 0.00015883400010352489,
+      "cpu_seconds": 0.00015900000000002024
+    }
+  },
+  "runtime_optimizer_claim": false,
+  "cpu_seconds": 2.0770250000000003,
+  "wall_seconds": 25.976219542000763,
+  "source_sha256": "7be088346bc22b0598628f3b3aabe93bca18ff71cc361eba8e444d6fc20532e6",
+  "points_sha256": "db976fe53ba08248a47aa5c8d898fbbfdce02fc4cdd16b73b14c4aac99247f39"
+}
