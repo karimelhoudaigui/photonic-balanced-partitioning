@@ -128,3 +128,13 @@ All files are under `experiments/P59_fixed_response/run_001/`:
 Total68639bytes, including44601bytes of scientific result files. These bytes
 remain immutable; later independent review/replication receives separate
 identified receipts and does not rewrite this run or its predeclared scope.
+
+## Subsequent exact independent replication
+
+The pending statement at the top is superseded by
+research/P59_independent_quadratic_main_receipt.md: independently constructed
+three-factor/hypergeometric code matches2928 comparisons exactly, including
+all462 states,15 edges,ten classes,42 bins,83 moments and status. The engine
+froze without reading the complete primary response; its hypothesis/PNR
+fixture and broad team context were shared. This confirms the finite physical
+mean channel and does not establish optimization advantage or hardware value.

@@ -1014,3 +1014,45 @@ implementation; no graph, opt mask, calibration or sample has run yet.
 
 Root969PASS25.46s atba0e066 and manifest/archive/paper checks are recorded in
 reports/P58_validation/. No paper/main/Git release change or hardware call.
+
+## 2026-11-25 — battery recovery: P59 replicated, P62 accepted, P63 pending
+
+P59's predeclared six-mode response is now independently reconstructed in
+exact arithmetic:2928 checks, zero disagreements;12/15 edge slopes nonzero,
+all42 complete marginal bins and83 joint moments through degree3 unchanged.
+Primary ea2e6a9/rootcf1f30d; separate quadratic/hypergeometric replay3972641/
+rooteb203aa. Both raw runs were sealed before interpretation. This verifies
+a physical decoded response, not an optimization or classical-cost advantage.
+The extracted statement and its conditional optimum-blind descent rule are
+theory/P59_exact_decoded_response_checkpoint.md. The small finite law has
+the explicit P60 phase-average/rejection replacement, with costs unpaid until
+an actual implementation is measured. Full998PASS and four current v2
+manifests/archive/paper checks are retained in reports/P59_validation/.
+
+ACCEPT P62 at the exact reviewed proof SHA after before-reading independent
+reconstructionf301920 and focused audite312909. Mapping-averaged best-of-T
+dominance uses up to2^s paid classical candidates, not equal wall time or a
+selected fixed mapping. Scalar P61 has s3 and is analytically vetoed in that
+scope; its optimizer pilot was not run. The bounded three-primary-source
+literature check retains novelty OPEN and attributes elementary ingredients.
+
+P63 changes the premise to ten phase controls acting on15 of18 outputs.
+Static physics reviewb4bceeb/root6c9ab0d confirms the fixed-q/moment claims,
+species control and the need for SAME perturbation direction on paired SPSA
+signs. Stage1 implementation is being prepared before any DEV graph/draw:
+80 B attempts total, four independent from-scratch FAST calls, prospectively
+limited to10000 proposals each. A fixed FAST mode winning both eligible
+prefixes vetoes the route; missing eligibility is inconclusive, never positive.
+
+P64 supplies a different complete fixed-phase classical sampler: sample the
+joint conserved color totals, restore every compatible coherent source term,
+then condition sequentially through six tritters. The exact source support
+is at most80, and compatible width at most6400, not an exponential full-PNR
+table. ROOT read the complete derivation and checked its coherent suffix
+trace and counting bounds. This ideal-arithmetic construction is not a measured
+runtime/precision certificate, a growing-size efficiency theorem or novelty.
+
+The battery interruption lost no sealed result. Continue research from these
+artifacts; the positive optimizer objective remains OPEN. Original main,
+paper/ and602 protected historical scientific files remain preserved. No
+held-out graph, hardware circuit freeze, Laurent message or QPU call.

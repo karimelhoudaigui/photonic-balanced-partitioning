@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; raise SystemExit(pytest.main([\"tests/\",\"-q\"]))"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 27.131439374992624,
+  "commit": "61bd79a774bc68210bcd17362b5aabb3ba87532f",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "scope": "Full regression after P59 exact primary and independently constructed quadratic replication; no new graph or physical sample"
+}

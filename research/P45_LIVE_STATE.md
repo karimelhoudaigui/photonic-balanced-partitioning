@@ -473,3 +473,34 @@ implied by a development observation. Keep all original worker refs; manifests
 name pre-run worker commits, not root cherry-picks. Existing602 historical
 scientific files and paper bytes must remain unchanged. No arbitrary global
 attempt quota; successive new discriminators continue while executable.
+
+## Recovery checkpoint — 25-Nov-2026, after d81bf0d
+
+This paragraph supersedes only earlier live-stage descriptions above, not
+their historical observations. P59 is complete and independently exact:
+2928 matches,12/15 nonzero slopes with fixed q/marginals/moments<=3. Root
+full regression998PASS and four current manifests/preservation checks are in
+reports/P59_validation/. The physical mean response has no accepted optimizer
+benefit. theory/P59_exact_decoded_response_checkpoint.md extracts its scope.
+
+P62 is accepted at aff6cea's exact reviewed hash, after independent
+reconstructionf301920 and focused audite312909; reports/P62_PROOF_CHECKPOINT.md
+records the mapping-average and paid-score limitations. The bounded primary
+literature check is complete with novelty OPEN. Scalar P61 was not sampled.
+
+P63's changed18-mode/ten-phase architecture is statically reviewed. Its worker
+is preparing CODE ONLY for stage1: B80 total, four from-scratch FAST calls,
+10000 proposal guard per call. Same SPSA direction within each paired sign,
+independent counts/ties. No graph or B count opened at this checkpoint.
+Qualification and one explicitly authorized main must follow full source
+review; the numerical worker is currently free, not permanently reserved.
+
+P64 provides a coherent complete fixed-Theta classical construction with
+source support<=80 and width<=6400. Its ideal-arithmetic proof is read by ROOT;
+implementation/finite-precision/runtime are still pending. It must enter any
+positive claim's adverse comparisons, together with independently optimized
+D, species, full phase-average and strong feasible search controls.
+
+No battery loss affected sealed raw data. Positive optimizer OPEN, paper/main
+unchanged, no held-out opening, no QPU and no Laurent message. Preserve original
+worker refs because manifests identify them rather than root cherry-picks.

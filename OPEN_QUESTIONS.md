@@ -190,3 +190,14 @@ correlations for actual feasible search under the full classical cost gate?
 P56 examines a flat-phase encoder and its exact cyclic-symmetry bottleneck;
 P57 examines sparse multi-swap proposals. Both are static investigations,
 with no new accepted result, physical draw, held-out opening or QPU call.
+
+Subsequent checkpoint: P59 has answered the small decoded-mean channel
+question positively by exact independent reconstruction; this is not the
+optimizer objective. P62 proves the scoped random-embedding/local-output
+frontier obstruction, with novelty OPEN after bounded primary-source review.
+P63 changes to ten phases on15 outputs, keeping three outside outputs and
+six color totals fixed. Can its actually trained N18 cuts survive the paid
+FAST veto and all fixed-q/partial-species/phase-average/structured-sampler
+controls? P64's coherent fixed-M construction supplies a complete finite
+classical replacement, with implementation precision/cost still to qualify.
+No P63 graph or count has been opened yet; held-out/QPU gates remain closed.

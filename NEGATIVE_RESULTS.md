@@ -199,3 +199,15 @@ experiments/P55_finite_neutrality/run_001/ and
 research/P55_finite_neutrality_result.md. Independent recorded-data audit
 4352d25 confirms all480 observations and the veto. No held-out graph was
 opened to rescue this pilot; no QPU or manuscript update follows from it.
+
+## P61 scalar extension: analytical veto before a pilot — 2026-11-25
+
+The proposed single-phase N18 extension changes only output ports1,7,13.
+Under independent uniform physical embeddings, a paid classical frontier of
+at most8 feasible completions stochastically dominates decoded best-of-T
+costs; the independent P62 theorem states the exact hypotheses and scope.
+No scalar P61 graph/counterexample pilot was run, and no negative numerical
+measurement is fabricated. Equal wall time is not proved. P63 changes the
+controlled support to15 outputs, so that specific constant-size envelope
+does not settle it. P59's real six-mode mean response remains valid and
+has a small exact-law classical replacement; neither is an accepted optimizer.

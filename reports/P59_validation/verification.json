@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-11-25T15:21:49.250911+00:00",
+  "inspection_head": "682d3573c47ffe4261ae4c018d2132af8e5d8a8e",
+  "manifests": [
+    {
+      "path": "research/P59_exact_response_guards/run_001/manifest.json",
+      "sha256": "4192ca5217ad4248c91baa302c4c32686a0abcdaf0ada5714bf17a117840e800",
+      "exit_code": 0,
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "experiments/P59_fixed_response/run_001/manifest.json",
+      "sha256": "06a043715849213315e2705c469241726f05b9a3c3d799325d85972aa97b75e3",
+      "exit_code": 0,
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "research/P59_independent_quadratic_preflight/run_001/manifest.json",
+      "sha256": "884eb6f739aaa60e30ea75660150455e41509e6113b6b51a454fdc949e84146d",
+      "exit_code": 0,
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    },
+    {
+      "path": "experiments/P59_independent_quadratic/run_001/manifest.json",
+      "sha256": "7f379068759015f52122800741870c1c25adaff85acb4dd79164b4fd821fc12a",
+      "exit_code": 0,
+      "validator_stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "validator_stderr": ""
+    }
+  ],
+  "full_test_receipt": "reports/P59_validation/pytest.json",
+  "full_test_result": "998 PASS /26.23s pytest /27.131439375s total at61bd79a",
+  "independent_P59_status": "PASS_EXACT_INDEPENDENT_REPLICATION",
+  "independent_P59_checks": 2928,
+  "independent_P59_failure_count": 0,
+  "P59_optimizer_accepted": false,
+  "P62_proof": "theory/P62_random_embedding_local_control_obstruction.md",
+  "P62_proof_sha256": "138b8a79511ef127480cd23f4a8275e663039b644ab6068daf23a07d4559dd37",
+  "P62_exact_hash_audit": "research/P62_FOCUSED_INDEPENDENT_PROOF_REVIEW.md at e312909; same-team before-reading reconstructionf301920",
+  "P62_scope": "mapping-averaged decoded best costs; up to2^s paid classical scores, no equal-wall-time conclusion",
+  "P63": "static extensive-phase proposal only, no new graph/code/sample",
+  "accepted_positive_optimizer": false,
+  "paper_diff_against_main": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f"
+}

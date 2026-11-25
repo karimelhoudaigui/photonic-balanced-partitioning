@@ -14,9 +14,18 @@ theory/P53d_uniform_phase_b4_mean_separation.md. P58 also separates all127
 bipartitions at the SAME pi/3; independent Naive checks all157183 amplitudes
 and the second implementation reproduces all127 exact means. Numerical
 source corroboration is not interval certification. None is an optimizer
-advantage. Full regression969PASS plus separate P58 qualification/full checks.
-P56/P57 identify different symmetry/sampling bottlenecks; P59 investigates a
-different odd six-mode encoding before any computation. The positive
+advantage. P59 now has an exact independently reconstructed decoded response:
+12/15 slopes are nonzero, all42 marginal bins and83 low moments fixed,
+2928/2928 independent comparisons agree. This is a physical channel, with a
+finite classical replacement, not an optimizer win. Full regression998PASS.
+P62's random-embedding/local-control frontier theorem has independent
+reconstruction and exact-hash audit; reports/P62_PROOF_CHECKPOINT.md records
+its paid-score and mapping-average limits. Novelty remains OPEN after a
+bounded three-primary-source check. Scalar P61 was not run. P63 is a different
+18-mode/ten-phase proposal; stage-one B80/FAST source is being prepared after
+the paired-SPSA clarification. P64 supplies a structured full-law classical
+replacement to scrutinize, with finite-precision/runtime qualification pending.
+The battery interruption lost no sealed data. The positive
 target remains OPEN; paper/ and main stay at the delivered release, with no
 QPU call or held-out opening. Historical checkpoint prose below retains its
 original stage-specific limits.

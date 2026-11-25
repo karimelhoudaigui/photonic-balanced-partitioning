@@ -194,3 +194,23 @@ No further broad optimization sweep without a changed registered mechanism. No a
 - CONTINUE different graph encodings and multi-swap mechanisms, first checking
   analytic symmetries and classical replacements. The user target is still
   OPEN. Paper/, held-out populations and QPU remain behind the positive gate.
+
+## P59/P62/P63 recovery checkpoint — 2026-11-25
+
+- ACCEPT the exact P59 physical decoded-response assertion after the separately
+  frozen quadratic/hypergeometric engine matches2928 checks. Do not promote
+  this finite mean response or its conditional descent to optimizer advantage.
+- ACCEPT P62 only at its reviewed hash and stated fixed-outside-law/random-
+  embedding hypotheses, with up to2^s paid scores and no equal-wall-time claim.
+  Keep the bounded literature check's novelty OPEN. Do not run scalar P61
+  unchanged to circumvent its local-control obstruction.
+- CONTINUE the changed P63 extensive-control route. Freeze source, seeds,
+  paired SPSA directions and staged cost gates before graphs/draws. The first
+  scientific stage is80 B draws and four FAST calls, each capped10000 proposals;
+  truncated/ineligible prefixes cannot establish a positive result. Optional
+  optical controls remain required if that first veto does not reject.
+- RETAIN P64's complete coherent conditional construction as a strong classical
+  falsifier; actual executable precision and runtime remain unqualified. A
+  dephased latent-source sampler cannot substitute for its fixed-phase law.
+- PRESERVE all earlier negative runs, paper/main and the original user
+  .DS_Store. Keep held-out populations and hardware behind the positive gate.
