@@ -1,7 +1,7 @@
 {
   "claim_id": "P53-EXACT-ALGEBRA-PREFLIGHT",
   "mathematics": {
-    "assertion_tested": "Seventeen finite exact cases: independent four/eight-column integer DP and parity, Fock factorial/normalization/quartic, admissible420 ties, Gaussian-integer probability controls, exact Chebyshev/Bernstein/elevation and internal-face obstruction, rational RREF/support fallback/corruption, mocked successful/inconclusive solver gate. No true P53 hull fit or sample.",
+    "assertion_tested": "Eighteen finite exact cases: independent four/eight-column integer DP and parity, Fock factorial/normalization/quartic, admissible420 ties, Gaussian-integer probability controls, exact Chebyshev/Bernstein/elevation and internal-face obstruction, rational RREF/support fallback/corruption, mocked successful/inconclusive solver gate. Solved float NO_MATCH(.5,.5) must still allow DIFFERENT exact(2/3,1/3) weights for constant target1/3 on vertices0/1. No true P53 hull fit or sample.",
     "coefficient_domain": "Python arbitrary integers and Fraction proof data, Gaussian-integer source polynomials, exact420 tie weights; float64 only inside immutable qualified P52 LP support provider.",
     "conventions": "Post-P52 mathematical follow-up, no prediction/heldout claim. All6435 source rows,70 endpoint b4 occupation laws and71 fixed vertices retained. Probability multiplies prod n!/8^8. Degree6 then predeclared12 if6 fails;<=20 native fits1s. Support>1e-10 then allstrictpositive, exact first-nonzero RREF/free0/29equations, no source/target float rationalization. Timeout/failure gate inconclusive even if an exact witness is retained.",
     "inputs": [
@@ -25,7 +25,7 @@
       "threads": 1,
       "planned_arrays_bytes": 268435456,
       "max_new_output_bytes": 33554432,
-      "planned_tests": 17,
+      "planned_tests": 18,
       "maximum_qualification_native_LP_calls": 0
     },
     "non_claims": [

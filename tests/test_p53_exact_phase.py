@@ -177,3 +177,22 @@ def test_driver_uses_only_proposed_support_with_exact_verification_and_conservat
     assert result["certified"] is solved
     assert all(record["exactification"]["verified"] for record in records)
     with pytest.raises(ArithmeticError):p53.fit_degree(power,library,6,[{}]*20)
+
+
+def test_solved_float_nonmatch_can_propose_support_for_a_different_exact_certificate(monkeypatch):
+    def proposal(library,target):
+        return {"solver_fit_solved":True,"solver_status":0,"solver_success":True,
+                "status":"NO_VERIFIED_TOLERANCE_MATCH",
+                "verification":{"verified":True,"used_coefficients":[.5,.5],
+                                "verified_Linfty_residual":abs(.5-target[0])}}
+    monkeypatch.setattr(p53,"convex_fit",proposal)
+    library=[(Q(0),)*28,(Q(1),)*28];power=((Q(1,3),),)*28;records=[]
+    result=p53.fit_degree(power,library,6,records)
+    assert result["certified"] and result["exact_polynomial_identity"]
+    assert len(records)==7
+    for record in records:
+        assert record["float_proposal"]["status"]=="NO_VERIFIED_TOLERANCE_MATCH"
+        assert record["float_proposal"]["verification"]["used_coefficients"]==[.5,.5]
+        assert record["float_proposal"]["verification"]["verified_Linfty_residual"]>1e-9
+        assert record["exactification"]["weights"]==[Q(2,3),Q(1,3)]
+        assert record["run_gate_passed"] is True
