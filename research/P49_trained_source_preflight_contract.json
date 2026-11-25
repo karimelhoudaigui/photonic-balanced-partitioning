@@ -1,7 +1,7 @@
 {
   "claim_id": "P49-PHYSICS-CALLER-RESOURCE-PREFLIGHT",
   "mathematics": {
-    "assertion_tested": "27 new finite fixtures for source-unitary/HOM complex coherence, q-dependent recomputation and mask, gauge/relabel, exact ALL-shot/equal-graph Fraction loss/ties, fresh evaluation isolation, nonredundant allocations/contiguous groups, separated clocks, paid private incumbents and correct FAST deadline/rank/allowance; rerun15 independently qualified FAST tests.",
+    "assertion_tested": "27 new finite fixtures for source-unitary/HOM complex coherence, q-dependent recomputation and mask, gauge/relabel, exact ALL-shot/equal-graph Fraction loss/ties, fresh evaluation isolation, nonredundant allocations/contiguous groups, separated clocks, paid private incumbents and correct FAST deadline/rank/allowance; rerun15 independently qualified FAST tests. Explicit setup fixture verifies total7=backend5+classical2, with classical2 charged to FAST while count generation/backend/JSON are excluded.",
     "coefficient_domain": "Complex128/float64 passive matrices, immutable Decimal80/Fraction marginal helpers; integer cuts, exact Fraction objective/selection; observed wall/CPU deadlines",
     "conventions": "Four source bases and lambda0/1; model-specific nonredundant sphere/IID grids; contiguous b4; shared Cref frozen before training;128 train+128 fresh eval per arm; loss uses ALL balanced cuts/total weight, equal four-graph mean; no optimum/mask/filter/heldout/QPU. FAST gets CPU from measured B classical wall, optical latency0, only deadline-eligible prefix.",
     "inputs": [
@@ -77,7 +77,20 @@
     "seed": [
       490080,
       490081,
-      490082
+      490082,
+      490006,
+      490010,
+      491006,
+      491010,
+      492006,
+      492010,
+      493000,
+      493001,
+      494000,
+      495000,
+      495001,
+      496000,
+      497000
     ]
   },
   "resource_note": "One exclusive numerical worker after physics/caller review and PASS preflight. Actual runner CPU60/wall90/thread1/log32MiB; script output cap32MiB. Four marginal contexts/FAST projected within caps before outcomes. No imports/tests/DEV before source+contracts frozen and coordinator slot.",

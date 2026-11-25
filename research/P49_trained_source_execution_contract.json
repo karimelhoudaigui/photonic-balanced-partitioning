@@ -3,7 +3,7 @@
   "mathematics": {
     "assertion_tested": "Does independently training the exact all-shot equally graph-weighted feasible-cut mean over a fixed coherent source-mixing family produce useful fresh evaluation or paid-deployment outcomes beyond D/b4/Gaussian/phase/sphere/IID and strong feasible/FAST controls? Positive acceptance forbidden.",
     "coefficient_domain": "Complex128/float64 passive matrices, immutable Decimal80/Fraction marginal helpers; integer cuts, exact Fraction objective/selection; observed wall/CPU deadlines",
-    "conventions": "Four source bases and lambda0/1; model-specific nonredundant sphere/IID grids; contiguous b4; shared Cref frozen before training;128 train+128 fresh eval per arm; loss uses ALL balanced cuts/total weight, equal four-graph mean; no optimum/mask/filter/heldout/QPU. FAST gets CPU from measured B classical wall, optical latency0, only deadline-eligible prefix.",
+    "conventions": "Four source bases and lambda0/1; model-specific nonredundant sphere/IID grids; contiguous b4; shared Cref frozen before training;128 train+128 fresh eval per arm; loss uses ALL balanced cuts/total weight, equal four-graph mean; no optimum/mask/filter/heldout/QPU. FAST gets CPU from measured B classical wall, optical latency0, only deadline-eligible prefix. Observation setup is split into timed make_optical_sampler backend and total-minus-backend classical hashes/RNG/closures; the latter wall+CPU is recorded and wall included in FAST grant.",
     "inputs": [
       "Four NEW DEV weighted ER/RR graphs N26/34 with seeds4902601,4902602,4903401,4903402",
       "Fixed R=G_even@G_odd at theta0/pi4,phi0/pi2; gauge before mixing; recompute all q-dependent objects",

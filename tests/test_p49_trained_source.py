@@ -168,7 +168,7 @@ def test_fixed_policy_evaluation_has_two_fresh_namespaces_without_reselection(mo
     assert len(set(seeds))==3
 
 
-def test_generation_setup_and_JSON_do_not_enter_classical_post_clock(monkeypatch):
+def test_backend_counts_JSON_excluded_but_classical_setup_is_charged(monkeypatch):
     class FakeTime:
         now=0.
         def perf_counter(self):return self.now
@@ -179,7 +179,7 @@ def test_generation_setup_and_JSON_do_not_enter_classical_post_clock(monkeypatch
         clock.advance(7)
         def sample():clock.advance(5);return np.asarray([1,1,0,0]),{}
         def post(observation):clock.advance(2);return np.zeros(4),observation[0],{}
-        return sample,post
+        return sample,post,{"backend_setup_wall_seconds":5.,"backend_setup_cpu_seconds":5.}
     def complete(a,field,k,lam,priority,q):
         clock.advance(3)
         return {"cut":2,"subset":[0,1],"seed_vertices":[0],"completion":[],
@@ -191,6 +191,9 @@ def test_generation_setup_and_JSON_do_not_enter_classical_post_clock(monkeypatch
     common={"case_id":"fixture","Cref":4,"reference_subset":[0,2],"weight_denominator":4,"vertex_priority":[0,1,2,3]}
     row=p49.run_batch(np.zeros((4,4),dtype=np.int64),[{}],common,"bosonic",p49.policies("bosonic")[0],"training",0,2,Writer())
     assert row["observation_setup_wall_seconds"]==7
+    assert row["backend_setup_wall_seconds"]==5
+    assert row["classical_postprocessing_setup_wall_seconds"]==2
+    assert row["classical_postprocessing_setup_cpu_seconds"]==2
     assert row["observation_generation_wall_seconds"]==10
     assert row["classical_postprocessing_wall_seconds"]==10
     assert common["Cref"]==4 and clock.now==227
@@ -220,12 +223,14 @@ def test_FAST_uses_rank_vector_zero_optical_grant_and_admissible_prefix(monkeypa
     a=np.asarray([[0,1,0,0],[1,0,0,0],[0,0,0,1],[0,0,1,0]],dtype=np.int64)
     common={"case_id":"fixture","reference_subset":[0,2],"Cref":2,
             "classical_compute_wall_seconds":.01,"vertex_priority_by_vertex":[1,3,0,2]}
-    records=[{"classical_postprocessing_wall_seconds":.03,"observation_setup_wall_seconds":100.,
+    records=[{"classical_postprocessing_wall_seconds":.03,"classical_postprocessing_setup_wall_seconds":.004,
+              "observation_setup_wall_seconds":100.,
               "observation_generation_wall_seconds":1000.}]
     result=p49.fast_comparison(a,common,records,.001,{"fast_max_proposals":100000000})
     assert captured["vertex_priority"]==[1,3,0,2]
-    assert captured["cpu_budget_seconds"]<=.041 and captured["wall_budget_seconds"] is None
-    assert result["total_CPU_allowance_including_adapter"]==pytest.approx(.041)
+    assert captured["cpu_budget_seconds"]<=.045 and captured["wall_budget_seconds"] is None
+    assert result["total_CPU_allowance_including_adapter"]==pytest.approx(.045)
+    assert result["training_and_eval_classical_setup_wall_grant"]==.004
     assert result["eligible_best_cut"]==2
     assert result["comparison_acceptance_eligible"] is (not early_cap)
     assert result["optical_simulation_setup_or_count_seconds_granted"]==0
@@ -235,10 +240,11 @@ def test_FAST_uses_rank_vector_zero_optical_grant_and_admissible_prefix(monkeypa
 def test_local_count_observation_and_separate_PIT_interface():
     v=p49.p48.fourier_basis(4,2,[2,0,3,1]);context=p49.p48.build_network(v,"fixture")
     tables,_,_,_=p49.p48.all_marginals(context,[0,1]);context["tables"]=tables
-    sample,post=p49.observation_components(context,"bosonic",490081)
+    sample,post,setup=p49.observation_components(context,"bosonic",490081)
     observation=sample();field,counts,metadata=post(observation)
     assert counts.sum()==2 and len(counts)==4 and all(-.5<=x<=.5 for x in field)
     assert len(metadata["pit_jitter"])==4
+    assert setup["backend_setup_wall_seconds"]>=0 and setup["backend_setup_cpu_seconds"]>=0
 
 
 def test_gauge_fixed_spectral_mixing_is_covariant_with_carried_relabeling():

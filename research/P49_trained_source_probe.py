@@ -151,9 +151,11 @@ def observation_components(context,model,seed):
         raise ArithmeticError("RNG role collision")
     n=context["v"].shape[0] if context is not None else None
     jitter_rng=np.random.default_rng(seeds[0]); noise_rng=np.random.default_rng(seeds[1])
+    backend=ComputeMeter()
     if model in ("bosonic","distinguishable","species4"):
         r=context["v"].shape[1]
-        primitive,_=base.make_optical_sampler(context["u"],list(range(r)),model,seeds[2])
+        with backend.measure():
+            primitive,_=base.make_optical_sampler(context["u"],list(range(r)),model,seeds[2])
         sample=lambda:(primitive()[0],{})
     elif model in ("continuous_phase","spherical_coherent"):
         sample=p48.coherent_counts(context,model,seeds[3])
@@ -175,12 +177,14 @@ def observation_components(context,model,seed):
         jitter=jitter_rng.random(n)
         field=p48.pit(counts,context["tables"][model],jitter)-.5
         return field,counts,dict(metadata,pit_jitter=jitter)
-    return sample,postprocess
+    return sample,postprocess,{"backend_setup_wall_seconds":backend.wall,
+                               "backend_setup_cpu_seconds":backend.cpu}
 
 
 def observation_components_iid(n,seed):
     rng=np.random.default_rng(base.seed_for(seed,"raw_noise"))
-    return (lambda:(rng.random(n),{})),(lambda observation:(observation[0]-.5,None,{}))
+    return ((lambda:(rng.random(n),{})),(lambda observation:(observation[0]-.5,None,{})),
+            {"backend_setup_wall_seconds":0.,"backend_setup_cpu_seconds":0.})
 
 
 def prepare(case,spec,stream,output):
@@ -343,9 +347,15 @@ def run_batch(a,contexts,common,model,policy,stage,trial,draws,stream):
     setup=ComputeMeter(); generation=ComputeMeter(); post=ComputeMeter()
     with setup.measure():
         if model=="iid_uniform":
-            sample,process=observation_components_iid(n,seed)
+            sample,process,backend_setup=observation_components_iid(n,seed)
         else:
-            sample,process=observation_components(context,model,seed)
+            sample,process,backend_setup=observation_components(context,model,seed)
+    backend_wall=backend_setup["backend_setup_wall_seconds"]
+    backend_cpu=backend_setup["backend_setup_cpu_seconds"]
+    if backend_wall>setup.wall+1e-8 or backend_cpu>setup.cpu+1e-8:
+        raise ArithmeticError("Nested backend clock exceeds total observation setup")
+    classical_setup_wall=max(0.,setup.wall-backend_wall)
+    classical_setup_cpu=max(0.,setup.cpu-backend_cpu)
     cref=common["Cref"]; best=cref; best_subset=common["reference_subset"]
     denominator=common["weight_denominator"]; values=[]; units=0
     q=(k+1)//2; expected_units=sum(n-i for i in range(q,k))+1
@@ -378,6 +388,10 @@ def run_batch(a,contexts,common,model,policy,stage,trial,draws,stream):
         "exact_mean_normalized_cut":str(Fraction(sum(values),draws*denominator)),
         "best_cut":best,"best_subset":best_subset,"score_units":units,
         "observation_setup_wall_seconds":setup.wall,"observation_setup_cpu_seconds":setup.cpu,
+        "backend_setup_wall_seconds":backend_wall,"backend_setup_cpu_seconds":backend_cpu,
+        "classical_postprocessing_setup_wall_seconds":classical_setup_wall,
+        "classical_postprocessing_setup_cpu_seconds":classical_setup_cpu,
+        "setup_components_are_subtotals_not_extra_costs":True,
         "observation_generation_wall_seconds":generation.wall,"observation_generation_cpu_seconds":generation.cpu,
         "classical_postprocessing_wall_seconds":post.wall,"classical_postprocessing_cpu_seconds":post.cpu,
         "count_backend_setup_excluded_from_FAST_allowance":True,
@@ -412,7 +426,9 @@ def fast_comparison(a,common,b_records,selection_wall_share,spec):
     """CPU grant from measured B classical WALL; optical latency is set to0."""
     if a.dtype!=np.dtype("int64"):
         raise ValueError("FAST conversion must be paid in common preprocessing")
-    post=sum(row["classical_postprocessing_wall_seconds"] for row in b_records)
+    per_shot_post=sum(row["classical_postprocessing_wall_seconds"] for row in b_records)
+    classical_setup=sum(row["classical_postprocessing_setup_wall_seconds"] for row in b_records)
+    post=per_shot_post+classical_setup
     allowance=common["classical_compute_wall_seconds"]+post+selection_wall_share
     adapter_cpu=time.process_time(); adapter_wall=time.perf_counter()
     seed=base.seed_for(491400,common["case_id"])
@@ -430,6 +446,8 @@ def fast_comparison(a,common,b_records,selection_wall_share,spec):
         "comparison_acceptance_eligible":safe,"grant_convention":"CPU seconds granted from measured B classical WALL, optical setup/count latency=0",
         "common_classical_wall_grant":common["classical_compute_wall_seconds"],
         "training_and_eval_postprocessing_wall_grant":post,"global_B_selection_wall_share":selection_wall_share,
+        "training_and_eval_classical_setup_wall_grant":classical_setup,
+        "training_and_eval_PIT_decoder_wall_grant":per_shot_post,
         "total_CPU_allowance_including_adapter":allowance,"adapter_cpu_seconds":cpu_adapter,
         "adapter_wall_seconds":wall_adapter,"solver_CPU_allowance":remaining,
         "optical_simulation_setup_or_count_seconds_granted":0.,"audit_JSON_seconds_granted":0.,
@@ -561,13 +579,26 @@ def main():
             "evaluation_simulated_injected_photons":1920 if optical and population_complete else 0,
             "actual_QPU_photons":0,"informative_score_units":sum(row["score_units"] for row in arm),
             "observation_setup_wall_seconds":sum(row["observation_setup_wall_seconds"] for row in arm),
+            "observation_setup_cpu_seconds":sum(row["observation_setup_cpu_seconds"] for row in arm),
+            "backend_setup_wall_seconds":sum(row["backend_setup_wall_seconds"] for row in arm),
+            "backend_setup_cpu_seconds":sum(row["backend_setup_cpu_seconds"] for row in arm),
+            "classical_postprocessing_setup_wall_seconds":sum(row["classical_postprocessing_setup_wall_seconds"] for row in arm),
+            "classical_postprocessing_setup_cpu_seconds":sum(row["classical_postprocessing_setup_cpu_seconds"] for row in arm),
+            "setup_components_are_subtotals_not_extra_costs":True,
             "observation_generation_wall_seconds":sum(row["observation_generation_wall_seconds"] for row in arm),
+            "observation_generation_cpu_seconds":sum(row["observation_generation_cpu_seconds"] for row in arm),
             "classical_postprocessing_wall_seconds":sum(row["classical_postprocessing_wall_seconds"] for row in arm),
+            "classical_postprocessing_cpu_seconds":sum(row["classical_postprocessing_cpu_seconds"] for row in arm),
             "selection_wall_seconds":selection_times.get(model,{}).get("wall_seconds",0.),
+            "selection_cpu_seconds":selection_times.get(model,{}).get("cpu_seconds",0.),
             "paid_training_is_part_of_experimental_spending":True,
             "fresh_evaluation_only_policy_costs":{
                 key:sum(row[key] for row in arm if row["stage"]=="evaluation") for key in (
-                    "observation_setup_wall_seconds","observation_generation_wall_seconds","classical_postprocessing_wall_seconds")}}
+                    "observation_setup_wall_seconds","observation_setup_cpu_seconds",
+                    "backend_setup_wall_seconds","backend_setup_cpu_seconds",
+                    "classical_postprocessing_setup_wall_seconds","classical_postprocessing_setup_cpu_seconds",
+                    "observation_generation_wall_seconds","observation_generation_cpu_seconds",
+                    "classical_postprocessing_wall_seconds","classical_postprocessing_cpu_seconds")}}
         if population_complete:
             policy=policies(model)[selections[model]]
             deployable[model]={"selected_policy":policy,"training_repeated_for_fresh_evaluation":False,
