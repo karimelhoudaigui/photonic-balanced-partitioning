@@ -1,0 +1,14 @@
+{
+  "source": ".local/p75-code-review/theory/P76_independent_weak_filter_audit.md",
+  "destination": "theory/P76_independent_weak_filter_audit.md",
+  "sha256": "f1242c16ba8ac27019ac70a9eb11ef61b226d166963b04e3f26ede06589c1476",
+  "bytes": 15132,
+  "byte_identical": true,
+  "original_base": "10eee38701d9e0cf7f197cd556655b26cc08c277",
+  "original_commit": null,
+  "original_index_mapping_unavailable": true,
+  "index_preserved": true,
+  "author_read_before_freeze": false,
+  "root_complete_301_line_read": true,
+  "numerical_execution": false
+}
