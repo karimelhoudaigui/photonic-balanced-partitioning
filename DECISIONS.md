@@ -259,3 +259,22 @@ No further broad optimization sweep without a changed registered mechanism. No a
 - PRESERVE the positive-result gate for held-out/physical replication, paper
   revision and hardware work. Latest combined1144PASS and602 old files/paper
   preservation do not satisfy that scientific goal.
+
+## Accepted P66/P68/P69 proofs; P70 and finite validation — 2026-11-25
+
+- ACCEPT only the exact scopes in reports/P66_ROOT_PROOF_CHECKPOINT.md,
+  P68_ROOT_PROOF_CHECKPOINT.md and P69_ROOT_PROOF_CHECKPOINT.md after full ROOT
+  reads, independent before-reading derivations and exact-current-hash reviews.
+  Preserve original and clarified statements. Their easy classical graph
+  family, prescribed warmstarts and thermal limitations remain explicit.
+- RETAIN P67's analytical flux rejection and the explicit exp(itH) rank
+  counterexample. A false generalization is not repaired by hiding the example.
+- KEEP P70 as a new analytical candidate with decisive classical/unrestricted-D
+  falsifiers, pending independent reconstruction. No restricted B>D event
+  comparison may be promoted into the required optimizer advantage.
+- ACCEPT P66's nine tiny qualification tests at frozen88a0573. Main execution
+  remains separate and waits for independent static checker review; no cap,
+  point, seed, scope or retry amendment after starting.
+- CONTINUE searching beyond these restrictions. CLAIM-042 stays OPEN; no
+  held-out opening, paper revision, hardware freeze, QPU call or external
+  handoff/message follows from proof acceptance alone.

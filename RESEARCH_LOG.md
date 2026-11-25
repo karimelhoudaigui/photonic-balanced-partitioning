@@ -1151,3 +1151,69 @@ No numerical P66 run has occurred. A degree-based chiral extension has an
 immediate static falsifier on these regular graphs, not a failed simulation.
 The stronger positive target CLAIM-042 remains OPEN; paper/main stay frozen,
 held-out graphs unopened, no QPU call or hardware freeze.
+
+## 2026-11-25 — independently audited transport obstructions and new mechanism
+
+P66 author2bcf84b and independent before-reading proofeae1dda agree on
+the raw bright/dark barrier, including connected weighted graphs. A later
+exact-hash review7f0096c2 verifies all392authorlines. P67 also rejects the
+weak degree-flux route analytically: regular-family phase degeneration,
+odd-t cancellation and retimed-D/classical leading-pair controls. No pilot.
+
+P68 extends to joint graph/current covariance with rank-two bright spaces.
+Independent review0c7fa52 and separate source clarification/addendum30361da
+verify currentSHA8a4bd9cf. The L2 probability bound is vacuous. Random marked
+histories and covariance only in law remain excluded from this statement.
+
+P69 changes the invariant itself: INPUT and OUTPUT dark projectors differ
+and intertwine. Gaussian permanent/moment and PGF estimates yield a raw
+full-block transfer bound for ANY unitary of bounded optical cross rank,
+even arbitrarily marked/history-dependent ones. Independent428-line proof
+e5477a74 froze BEFORE author access;315-line exact review1e2e69d7 verifies
+currentSHA37e59633. The growing-rank and Cayley composition consequences
+are proved, with a symbolic counterexample to the generic exp(itH) shortcut.
+No numerical source or external theorem leaf is needed for these proofs.
+
+P70 is a different explicit bright-mode transfer proposal, frozen55b208d:
+candidate bosonic event enhancement versus all rank-one D, with immediate
+classical and higher-rank D falsifiers. Independent rederivation is pending.
+No positive optimizer acceptance or novelty follows. Boundaries/source hashes
+and audits: reports/P66_ROOT_PROOF_CHECKPOINT.md, P68_ROOT_PROOF_CHECKPOINT.md,
+P69_ROOT_PROOF_CHECKPOINT.md. Bounded primary-source comparisonP66 is adjacent
+only; a separate P69/P70 attribution check is in progress.
+
+P66 finite diagnostic88a0573 passed nine prospective tiny tests, including
+five local HOM amplitude points. Rawdcb3aba sealed first;9PASS/27.86s pytest/
+28.553662s runner,10 unchanged inputs, manifestv2valid, all observations
+in JUnit despite its retained compatibility warning. The main remains
+unexecuted until independent source review. No new graph optimizer, random
+count, held-out or QPU call occurred; manuscript/main remain frozen.
+
+## 2026-11-25 — P66 complete finite validation and 1153-test tree
+
+Independent full-source reviewSHA440afb11 finds no material blocker at
+source88a0573; it opened no outputs. Qualification9PASS and actual JUnit
+size527874bytes/logs1768bytes verified, then review/pre-main receipt sealed
+a5ea2b9. ONE main at that cleancommit sealed rawdaf728d before interpretation:
+PASS_FINITE_ASSERTION,4902assertions,32matrices,256B+256Dpoints,128unions,
+all1988cuts,7PGFpairs and32frozenNaiveBpoints. Runner33.850853s/bodyCPU8.987306s,
+10unchangedinputs/3results/v2PASS, withinoriginalCPU60/wall90/thread1 caps.
+No retry, sample, optimizer or hardware call.112exactzeros per model retained.
+Native maxabs2.439454888092385e-19/maxrelativeobserved7.09e-15;16relative-
+dominated and16absolute-dominated mixed tests, not a global/interval claim.
+
+Full existing1153PASS/43.15s pytest/44.247098458s total atdaf728d. ROOT's
+entire trackedPython/pinnedpackage tree is identical after integration;
+test globs touch no changed proof/report paths, so no redundant full rerun.
+Both new manifests validate atroot,602oldfiles/paper unchanged. Exact
+receipt and checks: research/P66_EXACT_FINITE_RECEIPT.md and
+reports/P66_integration_validation/. This verifies finite conventions;
+universal P66/P68/P69 claims remain proof-based and positive goalOPEN.
+
+P71 approximate-rank proofSHAc320f925 is frozen pending fresh audit. P72
+follows the genuinely changed exp(itH) route past P69's exact-rank
+counterexample, by bounding effective cross rank at finite normalized time.
+No numerical P71/P72 calculation has started. P70's restricted bosonic
+mechanism has a separate before-reading derivation17c3f5c; exact author
+comparison is underway. Its strong classical and higher-rank D vetoes
+remain decisive regardless of the restricted event separation.

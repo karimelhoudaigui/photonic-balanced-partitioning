@@ -1,0 +1,13 @@
+{
+  "source": ".local/p66-dark-audit/research/P71_approximate_cross_rank_transport.md",
+  "destination": "research/P71_approximate_cross_rank_transport.md",
+  "sha256": "c320f925b53f68738931da93ef28bb0a2f84f887988404153f974dae8b6cfe03",
+  "bytes": 13961,
+  "byte_identical": true,
+  "source_uncommitted_due_reported_index_timeout": true,
+  "index_preserved": true,
+  "root_review": "Full301lines read; endpoint-complete CS construction, truncation norm, symmetric-tensor/trace TV constants and conditional history bounds rederived",
+  "independent_before_reading_derivation": "PENDING",
+  "numerical_run": false,
+  "positive_optimizer_accepted": false
+}

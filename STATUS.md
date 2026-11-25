@@ -1,6 +1,27 @@
 # Research status — 25 November 2026
 
-Latest continuation checkpoint: P55's new neutral-count mechanism completed
+Latest checkpoint: P65's negative DEV pilot is independently replayed
+(9251 checks). Three subsequent theory steps are accepted after independent
+reconstruction and exact-hash audit: P66's connected warmstart obstruction,
+P68's joint-current covariance extension and P69's more general low-rank
+transport bound. Their source, target, initialization, raw-count and thermal
+hypotheses remain essential. None completes the positive optimizer goal.
+See reports/P66_ROOT_PROOF_CHECKPOINT.md, P68_ROOT_PROOF_CHECKPOINT.md and
+P69_ROOT_PROOF_CHECKPOINT.md. P70's explicit rank-one bosonic transfer has
+classical/higher-rank falsifiers; independent reconstruction is pending.
+P66's finite checker88a0573 passed nine tiny qualification tests and an
+independent exact-source review. ONE main at a5ea2b9/rawdaf728d completes
+4902 assertions,32matrices,256B+256D probabilities,1988cuts,7PGFpairs and32
+fixed native references. Max native absolute error2.44e-19;16 tolerance
+checks are relative-dominated and16 absolute-dominated. Full1153PASS;
+root Python/package tree matches that tested worker exactly. Both new
+manifests validate and602 old files/paper are unchanged. Receipt:
+research/P66_EXACT_FINITE_RECEIPT.md; reports/P66_integration_validation/.
+P71's approximate-rank extension and P72's finite-time Hamiltonian route
+are new static proof candidates under independent work. No numerical worker
+active at this snapshot.
+
+Earlier continuation evidence: P55's new neutral-count mechanism completed
 480 observations on the two prospectively fixed DEV graphs and failed its
 registered gate. Its paid B minima39/38 lose to EACH fixed classical search
 11/22; separately selected D and inclusion also have lower fresh global means.
@@ -43,11 +64,11 @@ and414 FAST checkpoints reconcile. All eight training fitnesses tie on each
 case; the first lexicographic setting was selected, not retuned afterward.
 Optional D/species/r2/r3 controls remain NOT_RUN_DUE_FAST_VETO. Full scope:
 research/P65_STAGE1_MAIN_RECEIPT.md and P65_INDEPENDENT_RAW_AUDIT_RECEIPT.md.
-P66 is a new STATIC bright/dark occupation obstruction under independent
-derivation; its connected-graph and symmetry extensions still await ROOT's
-exact-hash review. No numerical P66 experiment has run. P63
+P66/P68/P69 proof acceptance is recorded in the newer checkpoint above.
+P66's finite main is now accepted at the stated grid/tolerance; it was not
+an optimization experiment. P63
 existing1044 and P64 existing1020 tests passed; later independent-checker
-regressions1052/1042 also pass. Latest combined integration1144PASS; all four
+regressions1052/1042 also pass. Latest combined executable tree1153PASS; all four
 new P65 v2 manifests validate in addition to the previously checked seven,
 and602
 protected historical files verified. Paper bytes remain unchanged. New
