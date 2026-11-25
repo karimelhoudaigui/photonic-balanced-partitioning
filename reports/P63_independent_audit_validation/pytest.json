@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-25T20:06:45.083398+00:00",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-c",
+    "import exqalibur as xq; xq.Config.compute_max_thread_count=1; assert xq.Config.compute_max_thread_count==1; import pytest; raise SystemExit(pytest.main([\"tests/\",\"-q\"]))"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 41.58750837499974,
+  "commit": "5624ff677777e3f083c0db499a3a15d376cdf88a",
+  "threads_environment": 1,
+  "native_exqalibur_maximum_requested": 1,
+  "scope": "Full existing regression plus independent recorded-data auditor fixtures, no native18 draw or new DEV graph"
+}
