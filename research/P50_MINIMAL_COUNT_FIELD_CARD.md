@@ -58,7 +58,7 @@ and tested on uniform mu so floating-point ties cannot encode a hidden rule.
   descent FIRST, then incremental annealing/multistarts/perturbations; no free
   Cref. Do not rely only on FASTv1's initial8N anneal steps under tiny budgets.
 
-r1, monomial V, post-source column phases, conjugation, uniform-mu ties and
+r1, monomial V, column phases AFTER the full V, conjugation, uniform-mu ties and
 carried relabeling are required physics/decoder nulls. Gaussian reproducing a
 B effect would explain it by classical second moments; B>D alone is insufficient.
 
