@@ -3,18 +3,18 @@
   "mathematics": {
     "assertion_tested": "From-raw random and spectral feasible searches charge input/preparation/initialization, perform complete best-pair descent before annealing, preserve exact integer cached deltas/cuts and return only completed CPU-deadline eligible prefixes without a free incumbent.",
     "coefficient_domain": "Validated bounded int64 graph/cuts/deltas; independent Python integer edge sums; float64 spectral/temperature arithmetic; deterministic virtual clocks for deadline assertions",
-    "conventions": "Two separately budgeted initialization modes; no free Cref, priority or eigensystem; own RNG/features; actual API entry CPU includes conversion/validation/setup, compact trace and search. No eligible initialization yields null best fields, not a given-free partition. max_proposals is a guard, never a CPU-equivalent resource.",
+    "conventions": "Two separately budgeted initialization modes; no free Cref, priority or eigensystem; own RNG/features; actual API entry CPU includes conversion/validation/setup, online complete best snapshots and search. Eligible best is cached before trace-array export, never reconstructed postloop. Export CPU/wall is separate while total compute/overrun is retained; anytime RAM prefix, not a nanosecond hard-return guarantee. No eligible initialization yields null best fields, not a given-free partition. max_proposals is a guard, never a CPU-equivalent resource.",
     "inputs": [
       "Fixed small integer graph fixtures and independent scalar edge sums, not DEV graph generation",
       "Random and paid marked-spectral initializations, first complete cross-pair scan before annealing",
       "Synthetic clock/guard cases, exact packed trace reconstruction, fixed-seed fixed-work reproducibility"
     ],
-    "bounds": {"planned_pytest_cases": 20, "maximum_fixture_vertices": 10, "maximum_fixed_work_guard": 3000, "CPU_seconds": 30, "wall_seconds": 50, "threads": 1, "max_new_output_bytes": 4194304},
+    "bounds": {"planned_pytest_cases": 21, "maximum_fixture_vertices": 10, "maximum_fixed_work_guard": 3000, "CPU_seconds": 30, "wall_seconds": 50, "threads": 1, "max_new_output_bytes": 4194304},
     "non_claims": ["No DEV graph, optimizer positive, optimality or timing-speed claim", "No free best-of-modes portfolio or measured QPU cost", "No change to old FAST helper, raw results or paper"]
   },
   "execution_artifacts": ["research/P50_fast_from_scratch.py", "tests/test_p50_fast_from_scratch.py", "research/P50_fast_from_scratch_contract.json"],
   "software": [{"name": "Python", "version": "3.11.15"}, {"name": "numpy", "version": "2.4.6"}, {"name": "pytest", "version": "8.4.2"}],
   "randomness": {"used": true, "generator": "Own seeded PCG64 for fixture algorithms; fixture graphs fixed independently of any objective", "seed": [1729, 1730, 1731]},
-  "resource_note": "Implementation and20 independent planned cases are frozen together before qualification; AST/JSON parsing only performed before this source commit, no module imports. No numerical worker or pytest until explicit root review+grant. One bounded attempt CPU30/wall50/thread1/log4MiB, exactly3inputs, fresh output, preserve failure without automatic retry. Clock fixtures monkeypatch this module's _clock only, not pytest/runner clocks; no timing-speed assertions or DEV graphs.",
+  "resource_note": "Implementation and21 independent planned cases are frozen together before qualification; AST/JSON parsing only performed before this source commit, no module imports. No numerical worker or pytest until explicit root review+grant. One bounded attempt CPU30/wall50/thread1/log4MiB, exactly3inputs, fresh output, preserve failure without automatic retry. Clock fixtures monkeypatch this module's _clock only, not pytest/runner clocks; no timing-speed assertions or DEV graphs. Online-best/export accounting was corrected BEFORE qualification, with no RNG/proposal/seed change.",
   "planned_command": ["/private/tmp/pbp-clean-venv-20261124/bin/python", "-m", "pytest", "-q", "tests/test_p50_fast_from_scratch.py", "--junitxml=research/P50_fast_from_scratch_qualification/run_001/data/junit.xml"]
 }
