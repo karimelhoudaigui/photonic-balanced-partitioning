@@ -1,0 +1,37 @@
+{
+  "kind": "P49 fast classical bounded-run prelaunch failure",
+  "receipt_recorded_at_utc": "2026-11-25 05:26:10 UTC",
+  "source_commit": "0bc492e2442e9b5146fa52e275ed058dbfa9832e",
+  "source_clean": true,
+  "input_sha256": {
+    "research/P49_fast_classical.py": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff",
+    "tests/test_p49_fast_classical.py": "50bb0c50234934260ccd88cf065dd9752b959a7f447f81fda1a63c132f437621",
+    "research/P49_fast_classical_contract.json": "cc8d904f181ff8e663473258338569b40e91820bfdd665bf568ae23fc0dbb162"
+  },
+  "attempted_runner": "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/run_experiment.py",
+  "attempted_output": "research/P49_fast_classical_qualification/run_001",
+  "runner_argv": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/run_experiment.py",
+    "--root", "/Users/karimelhoudaigui/Desktop/pasqal/.local/p41-worktrees/adaptive",
+    "--contract", "research/P49_fast_classical_contract.json",
+    "--output", "research/P49_fast_classical_qualification/run_001",
+    "--input", "research/P49_fast_classical.py",
+    "--input", "tests/test_p49_fast_classical.py",
+    "--input", "research/P49_fast_classical_contract.json",
+    "--result", "research/P49_fast_classical_qualification/run_001/data/junit.xml",
+    "--timeout", "50", "--max-cpu-seconds", "30", "--max-threads", "1",
+    "--max-output-bytes", "4194304", "--",
+    "/private/tmp/pbp-clean-venv-20261124/bin/python", "-m", "pytest", "-q",
+    "tests/test_p49_fast_classical.py",
+    "--junitxml=research/P49_fast_classical_qualification/run_001/data/junit.xml"
+  ],
+  "limits": {"cpu_seconds": 30, "wall_seconds": 50, "threads": 1, "log_bytes": 4194304},
+  "exit_status": 2,
+  "observed_runner_wall_seconds": 0.042858209,
+  "stderr": "run-experiment: invalid contract: random runs need generator and seed\n",
+  "child_pytest_started": false,
+  "manifest_created": false,
+  "test_results": null,
+  "disposition": "Preserved without retry; numerical slot explicitly released to coordinator. Fix schema-required singular randomness.seed while retaining all existing seeds, source code and tests. Any subsequent run requires coordinator authorization."
+}
