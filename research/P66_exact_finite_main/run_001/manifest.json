@@ -1,0 +1,233 @@
+{
+  "schema_version": 2,
+  "claim_id": "P66-EXACT-FINITE-BRIGHT-DARK-DIAGNOSTIC",
+  "repository": {
+    "commit": "a5ea2b9c9232834e9d999ec02912c9ef190ced85",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P66_exact_finite_check.py",
+    "--output",
+    "research/P66_exact_finite_main/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "32 exact rational Cayley matrices satisfy both inverse identities, unitarity/symmetry, separate dark commutation and rank-at-most-one uniform cross blocks; all256 raw CF bosonic points and256 distinguishable points obey exact point and128union bounds; every1988balancedcut obeys the cost landscape; seven L2..8 single-bright PGFs have exact mass/positivity/mean/tail and source all-bright mass; all32 frozen native point probabilities agree with exact values in mixed tolerance.",
+    "coefficient_domain": "Q(i) as independent stdlib Fraction pairs; exact rational Gray-code Ryser permanents K4/K6; binary64 complex for32 local Naive reference points only",
+    "conventions": "L2/3,N4L,K2L,ports A1,A2,B1,B2 with L each,M3,h1,offset matchings; w0 or1/(2L). D=max weighted adjacency row sum+lambda*(N-1), H=(A+lambda*(J-I))/D, U=(I+i*t*H)*(I-i*t*H)^-1. Rows output/columns input. Every source and target CF: both Fock factorials1. Raw target events are never renormalized by CF probability. Zero/tiny points and repeated symmetry-related combinations are retained.",
+    "inputs": [
+      "t=[0,1/4,1,2] and lambda=[0,1/4], both L values and both graph families:32 exact matrices",
+      "For every matrix, all4bad whole-clique sources Ax union By and2good whole-block targets CA/CB:256 B+256 D points,128unions",
+      "All balanced subsets including complements:2*(70+924)=1988 exact scalar cuts",
+      "For L2..8,d2L: target PGF sum_m(d)_m/d^m*(z-1)^m and source PGF sum_m(L)_m/d^m*(z-1)^m",
+      "Native32 points only at t1,lambda1/4:2Lvalues*2families*4sources*2targets; no canary or calibration"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "workers": 1,
+      "max_new_log_bytes": 4194304,
+      "max_new_scientific_bytes": 29360128,
+      "max_combined_log_scientific_bytes": 33554432,
+      "max_records_bytes": 28311552,
+      "planned_logical_workspace_bytes": 268435456,
+      "max_inverse_dimension": 12,
+      "max_permanent_dimension": 6,
+      "max_bright_PGF_modes": 16,
+      "matrices": 32,
+      "bosonic_points": 256,
+      "distinguishable_points": 256,
+      "unions": 128,
+      "balanced_cuts": 1988,
+      "bright_PGF_pairs": 7,
+      "native_point_queries": 32,
+      "native_random_draws": 0,
+      "full_multimode_PNR_enumerations": 0,
+      "optimizer_steps": 0,
+      "QPU_calls": 0,
+      "failed_retries": 0,
+      "absolute_tolerance": 1e-12,
+      "relative_tolerance": 1e-07
+    },
+    "non_claims": [
+      "Finite grid consistency does not replace the universal proof or test P67's whole graph-covariant class",
+      "No positive optimizer result, B-versus-D ordering, novelty certificate, independent physical sampling or hardware/runtime advantage",
+      "32 predetermined native probabilities are a tolerance-conditional point reference, not a complete PNR law or global TV bound",
+      "Mixed tolerance is1e-12+1e-7*max(p_native,float(p_exact)); absolute-dominated points establish no relative accuracy",
+      "No random draw, seed, source selection, graph selection, DEV, optimizer, heldout, sampler, Processor or QPU",
+      "Output/resource/import failure and incomplete populations remain inconclusive; no missing row is zero and zero retries apply",
+      "Logical256MiB is planned workspace, not hard Darwin RSS/affinity or native import footprint enforcement",
+      "Observed loaded-module hashes and locked packages do not authenticate OS libraries, unloaded files or software installation provenance"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Entire finite domains and native points frozen before execution; exact deterministic arithmetic; no RNG/seed/draw",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T21:32:32.070275+00:00",
+    "runtime_seconds": 33.850853,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "theory/P66_independent_bright_dark_audit.md",
+    "research/P67_exact_covariance_symmetry_obstruction.md",
+    "research/P66_exact_finite_check.py",
+    "tests/test_p66_exact_finite_check.py",
+    "research/P66_EXACT_FINITE_CHECK_CONTRACT.md",
+    "research/P66_exact_finite_preflight_contract.json",
+    "research/P66_exact_finite_execution_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "theory/P66_independent_bright_dark_audit.md",
+      "sha256": "7cb9a101155df7b1e9c5c7a219c3877e74b6246195952356801d86cb6cb973a9",
+      "sha256_after": "7cb9a101155df7b1e9c5c7a219c3877e74b6246195952356801d86cb6cb973a9"
+    },
+    {
+      "path": "research/P67_exact_covariance_symmetry_obstruction.md",
+      "sha256": "63f891ca6b03790024bbade59d275e8f115dfccc1fa17c9632aa7ca878c25cf8",
+      "sha256_after": "63f891ca6b03790024bbade59d275e8f115dfccc1fa17c9632aa7ca878c25cf8"
+    },
+    {
+      "path": "research/P66_exact_finite_check.py",
+      "sha256": "4eb143aae8255636e70732c6ab8971fa71df62f15e98daa6e370fc02d247978f",
+      "sha256_after": "4eb143aae8255636e70732c6ab8971fa71df62f15e98daa6e370fc02d247978f"
+    },
+    {
+      "path": "tests/test_p66_exact_finite_check.py",
+      "sha256": "76025610183aa7d90843ce6e9446d55a49fbb251b8117397516fc09d0bdb2f1f",
+      "sha256_after": "76025610183aa7d90843ce6e9446d55a49fbb251b8117397516fc09d0bdb2f1f"
+    },
+    {
+      "path": "research/P66_EXACT_FINITE_CHECK_CONTRACT.md",
+      "sha256": "7fa64f384a919522e4b55d7881d4419594665c9d5aeba5b217bce5423c1d7293",
+      "sha256_after": "7fa64f384a919522e4b55d7881d4419594665c9d5aeba5b217bce5423c1d7293"
+    },
+    {
+      "path": "research/P66_exact_finite_preflight_contract.json",
+      "sha256": "b390ef541f477742d8c0ab76b3d6ccb637aee46173219736382d42161fd29ba1",
+      "sha256_after": "b390ef541f477742d8c0ab76b3d6ccb637aee46173219736382d42161fd29ba1"
+    },
+    {
+      "path": "research/P66_exact_finite_execution_contract.json",
+      "sha256": "db6c81db428c3df3f9859c484bf6a4ab8c3303603cd2fb9876a3df7fa9aefa90",
+      "sha256_after": "db6c81db428c3df3f9859c484bf6a4ab8c3303603cd2fb9876a3df7fa9aefa90"
+    }
+  ],
+  "output_directory": "research/P66_exact_finite_main/run_001",
+  "declared_results": [
+    "research/P66_exact_finite_main/run_001/data/records.jsonl",
+    "research/P66_exact_finite_main/run_001/data/failure.json",
+    "research/P66_exact_finite_main/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P66_exact_finite_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P66_exact_finite_main/run_001/stderr.txt",
+      "sha256": "4af74072a415437881ebf5d6979a113bf3a88cf03be8b8476c3ece74c0d2701a",
+      "kind": "log"
+    },
+    {
+      "path": "research/P66_exact_finite_main/run_001/data/records.jsonl",
+      "sha256": "976b7a4d2915857d60fddf96ff55b2390bc9fbdea5432eb9e87fdd30f66540c6",
+      "kind": "result"
+    },
+    {
+      "path": "research/P66_exact_finite_main/run_001/data/failure.json",
+      "sha256": "b33f53e45d9dc8514e712bb3bc2d86ab2b68d7bc6a1cb2bfeff4cbeec9955245",
+      "kind": "result"
+    },
+    {
+      "path": "research/P66_exact_finite_main/run_001/data/summary.json",
+      "sha256": "189d8e8a14a4290403073b9f6da162f69d5deba21ceb663b3667b046eefb98c6",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
