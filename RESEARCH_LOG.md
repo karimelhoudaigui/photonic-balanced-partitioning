@@ -1087,3 +1087,38 @@ A separately frozen N18 point/permanent cross-check is being designed, while
 P65 examines genuinely changed mechanisms and their adverse controls. No
 arbitrary algorithmic success is inferred from the source support or test
 count. Positive optimizer OPEN, paper/main preserved, hardware gate closed.
+
+## 2026-11-25 — independent audit, N18 cross-check, new P65 dynamics
+
+P63 checkerce69e3c froze without reading the outputs, passed8 fixtures, then
+bound the13 sealed files without code changes. ONE audit5624ff6/root43f33ef
+completes7183 checks, zero discrepancy, all80 counts/14matrices/6updates/
+365FAST checkpoints. Both fixed-mode vetoes are independently reconstructed.
+Limits: recorded consistency only, no new physical counts, likelihood or
+authentic clock measurement; topology/edge assignment not regenerated.
+Existing1052PASS. research/P63_INDEPENDENT_RAW_AUDIT_RECEIPT.md.
+
+P64 separate F6 paired-quadratic engine agrees on all462 signed coefficients
+and weights. After22 small guards, ONE clean N18 runbbd86a3 sealed6c51113
+checks14 fixed points against Naive: maxabs5.468657e-20. ALL14 tolerances are
+absolute-dominated; CF exact0/native1e-35 residuals yieldmaxrelative1. No
+global TV, N18 sampling, optimizer or throughput claim. Existing1042PASS.
+research/P64_NAIVE18_POINT_RECEIPT.md preserves every point and limitation.
+
+P65 changes to global Cayley--Metropolis proposals from the current subset,
+all collisions as paid self-loops. Its analytical barrier fixture already
+loses to an obvious classical two-swap. Section4's uniform-collision-average
+monomial theorem43dd873 has independent focused proof audit1cc5dfc; ROOT
+accepts only that exact scope, with novelty OPEN and no equal-cost assertion.
+reports/P65_UNIFORM_COLLISION_PROOF_CHECKPOINT.md gives acceptance/limits.
+
+P65 N20/K10 B80/FAST card022962e is fixed BEFORE data; code is being prepared.
+Independent card review clarifies repeated random subsets are retained and
+degrees mean weighted row sums. No P65 graph/start/kernel/canary/count has
+been evaluated. Positive optimizer OPEN; paper/main and602 old files preserved.
+
+
+Integration checkpoint:1096PASS/40.84s pytest after both new independent
+checkers, seven current v2 manifests validate and602 protected historical
+files/paper bytes are unchanged. reports/P63_P65_combined_validation/ retains
+observed commands and checks; P65 code/qualification/main are still pending.

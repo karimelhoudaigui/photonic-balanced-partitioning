@@ -235,3 +235,11 @@ as negatives or silently dropped after a positive. No retuning, replacement
 graph, unchanged wider sweep, held-out rescue, manuscript revision or QPU call
 followed. This rejects the specified finite pilot, not all extensive or global
 photonic architectures. P65 seeks a changed mechanism; the positive goal OPEN.
+
+
+P63 independent addendum, 25-Nov-2026: checker ce69e3c was frozen before
+raw access, then separately qualified and hash-bound. The unique audit5624ff6
+reconstructs7183 checks, all80 counts and365 FAST checkpoints with zero
+discrepancy, accepting the recorded fixed-mode veto. No new physical sample
+or actual-clock authentication is implied. Full scope and original hashes:
+research/P63_INDEPENDENT_RAW_AUDIT_RECEIPT.md. Original negatives unchanged.

@@ -525,3 +525,30 @@ P65 is a fresh static route portfolio in .local/p65-new-mechanism. It must
 change the mechanism past P62/P64 and specify its strongest classical null
 before any implementation/DEV graphs. Paper/main,602 protected files and
 all old data are preserved. Positive optimizer OPEN; no QPU or held-out run.
+
+## Current continuation — after de43b59, 25-Nov-2026
+
+P63 audit COMPLETE: checkerce69e3c,8fixturesPASS, binding8a9c564, raw5624ff6/
+root43f33ef7183PASS,80counts365FAST snapshots, zero mismatch. Recorded-data
+independence only. P64 F6+14point N18 check COMPLETE: source00fc464, qual22PASS
+bbd86a3, raw6c51113/root3d6f9ae; all462coefficients exactmatch,14pointswithin
+frozen tolerance/maxabs5.47e-20. ALL14 absolute-dominated; CF0/residual1e-35
+causesmaxrelative1. No global TV, native18 random draw or full-cost claim.
+Existing worker suites1052/1042PASS; next combined suite covers both checkers.
+
+P65 section4 proof43dd873/SHA3ffb... independently accepted by1cc5dfc.
+ROOT checkpoint reports/P65_UNIFORM_COLLISION_PROOF_CHECKPOINT.md retains
+uniform-input/absolute-error/cost/novelty limits. New global Cayley--Metropolis
+B80/FAST card/spec022962e is CODE-ONLY implementation underway in
+.local/p65-new-mechanism. Pre-data amendment retains repeated start subsets
+and defines degree as exact weighted row sum. No P65 DEV graph/start/count
+or native canary yet. One numerical worker; consult live slot messages.
+Positive optimizer OPEN, paper/main and602 protected old files preserved.
+
+
+Combined checkpoint:1096PASS/40.84s pytest, seven manifests v2PASS,602 old
+scientific files and paper bytes unchanged. Actual receipts are in
+reports/P63_P65_combined_validation/. P65 card/spec022962e and independent
+card review18d344b are integrated as ROOT f608a7f/b81268d; source/tests are
+being authored in the isolated P65 worktree, with no import/seed evaluation/
+graph/native10 draw yet. Preserve original worker refs for every manifest.

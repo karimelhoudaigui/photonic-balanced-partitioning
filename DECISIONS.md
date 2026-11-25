@@ -230,3 +230,16 @@ No further broad optimization sweep without a changed registered mechanism. No a
   and the cheapest adverse discriminator. P62/P64 do not imply impossibility
   for arbitrary global encodings. Positive goal OPEN; no held-out, paper,
   hardware freeze or QPU action follows from a rejected DEV pilot.
+
+## P63 independent acceptance and P65 continuation — 2026-11-25
+
+- ACCEPT P63's recorded negative after7183 independent checks agree; retain
+  its physical-sampling, graph-generation and real-clock limitations.
+- ACCEPT the finite P64 exact-source/14-point N18 comparison at its frozen
+  tolerance. No global TV, relative-tail certification or runtime advantage.
+- ACCEPT ONLY P65 section4 at its exact reviewed hash after independent
+  reconstruction. Uniform averaging over ALL inputs, paid construction and
+  absolute-error limits are essential; novelty remains OPEN.
+- CONTINUE changed P65 stateful global proposals with the fixed N20 card.
+  Code only before review/qualification/main; repeated starts retained,
+  weighted degree explicit. No P65 positive, paper or QPU action yet.

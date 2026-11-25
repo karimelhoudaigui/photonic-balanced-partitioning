@@ -211,3 +211,14 @@ N18 permanent checks, global precision and complete paid throughput are
 separate questions. A changed P65 architecture/mechanism must address the
 local-support and conserved-block obstructions before new DEV data. The
 independent recorded-data P63 audit is being authored before reading its data.
+
+
+Current continuation, 25-Nov-2026: the P63 recorded-data audit is COMPLETE
+(7183 matching checks), and the P64 independent F6/14-point N18 check is
+COMPLETE at its frozen absolute-dominated tolerance. Global N18 precision,
+full sampling costs and the positive optimizer remain OPEN. P65 now uses
+global graph-dependent Cayley--Metropolis proposals with current K10 input
+and paid collision self-loops; its N20 first-veto code is being prepared
+from pre-data card022962e, not a demonstrated result. The section4 uniform
+collision-average theorem is accepted after independent exact-hash review,
+with all-input/absolute-error/paid-construction limits and novelty OPEN.

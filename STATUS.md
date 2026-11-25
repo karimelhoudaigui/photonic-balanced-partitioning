@@ -24,14 +24,21 @@ its paid-score and mapping-average limits. Novelty remains OPEN after a
 bounded three-primary-source check. Scalar P61 was not run. P63 is a different
 18-mode/ten-phase mechanism: its registered stage1 completed B80 and four
 FAST calls. B paid81/60 loses to EACH fixed random/spectral FAST54/42, within
-its own classical-cost envelope; the separate recorded-data audit is pending.
+its own classical-cost envelope; independent recorded-data audit7183PASS
+reconstructs all80 observations and365 FAST checkpoints without discrepancies.
 All optional controls were skipped by the registered veto, not passed.
 P64's structured full-law construction passed its corrected22-test synthetic
 qualification: exact source support68, and4x462 N6 probabilities agree with
-the separate reference to1.22e-16. Global N18 precision/runtime remain open;
-a separately frozen sparse N18 check is being prepared. P65 examines changed
-mechanisms before any experiment. P63 existing1044 and P64 existing1020 tests
-pass; combined integration1066PASS, all three new v2 manifests and602
+the separate reference to1.22e-16. A separately frozen14-point N18 Naive
+check now agrees (maxabs5.47e-20), including a second exact F6 source engine.
+All14 tolerances are absolute-dominated; no global N18 precision/runtime
+claim follows. P65's uniform collision-average theorem has focused exact-hash
+independent proof review; reports/P65_UNIFORM_COLLISION_PROOF_CHECKPOINT.md
+records its strict hypothesis and absolute-error/cost limits. The changed
+global Cayley--Metropolis B80/FAST pilot is being coded BEFORE data. P63
+existing1044 and P64 existing1020 tests passed; later independent-checker
+regressions1052/1042 also pass. Combined integration1096PASS, all seven new
+v2 manifests and602
 protected historical files verified. Paper bytes remain unchanged.
 The battery interruption lost no sealed data. The positive
 target remains OPEN; paper/ and main stay at the delivered release, with no
