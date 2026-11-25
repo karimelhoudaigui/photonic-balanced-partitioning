@@ -38,6 +38,7 @@
   "randomness": {
     "used": true,
     "generator": "NumPy default_rng/PCG64, fixed-count trajectories independent of clock",
+    "seed": [490006, 490010, 491006, 491010, 492006, 492010, 493000, 493001, 494000, 495000, 495001, 496000, 497000],
     "seeds": [490006, 490010, 491006, 491010, 492006, 492010, 493000, 493001, 494000, 495000, 495001, 496000, 497000],
     "graph_population_selection": "N6/N10 predetermined fixture seeds; all balanced states retained, no favorable instance selection"
   },
