@@ -106,3 +106,21 @@ convolution index maps, not dense6435x6435 matrices or9^8 hist arrays. Project
 time/memory before running and preserve any bounded failure with no automatic
 retry. All commands, inputs and raw histograms must be sealed in a v2 manifest.
 Keep all P33/P37/E05b/P45–P50 data and paper bytes unchanged.
+
+## Pre-data symmetry clarification
+
+Independent physics review, before source freeze, proves D(pi)W=W P_sigma,
+sigma=(0 2)(1 3). Therefore U(theta+pi)=U(theta)diag(I,P_sigma): identical CF
+input permutation invariance gives B periodpi; conjugation gives even theta.
+B's FULL occupation law and both decoded kernels at3pi/4 equal those atpi/4.
+The b4 SET of all35 groupings has the same equivalence after permuting the
+second half of the input labels; a particular noncanonical grouping need not
+be pathwise unchanged. Continuous-phase laws have the same equivalence because
+their input phases are iid and conjugation symmetric.
+
+Keep all four declared cells, independent MC seeds, budgets and392-bound.
+The fourth cell is a symmetry/calibration null, not a fourth independent
+physical direction or extra discovery. Require exact numerical B equality,
+mapped b4-set equality and correct canonical-b4 invariance fixtures. The two
+phase-MC histograms need not coincide; their finite errors must be treated
+with the prospective simultaneous confidence bound, including in any fit.
