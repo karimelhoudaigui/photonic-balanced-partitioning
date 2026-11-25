@@ -1,0 +1,12 @@
+{
+  "source": ".local/p66-dark-audit/research/P74_heralded_graph_cost_resource_screen.md",
+  "destination": "research/P74_heralded_graph_cost_resource_screen.md",
+  "sha256": "0b4b4bbca399ab8c80d4b5f152b7eff1f3c8b50c344e3a2d2ab8ba5966cea12b",
+  "bytes": 19690,
+  "byte_identical": true,
+  "original_index_preserved": true,
+  "root_full_read": "COMPLETE_ALL_379_LINES",
+  "independent_derivation": "3a3016c449ef4e82a51b2af5b76e2cd0bd77ce6b",
+  "exact_review": "2a3b4f6eed3d4e2dc014905e964729f9cadfadec",
+  "numerical_execution": false
+}
