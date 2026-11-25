@@ -211,3 +211,27 @@ measurement is fabricated. Equal wall time is not proved. P63 changes the
 controlled support to15 outputs, so that specific constant-size envelope
 does not settle it. P59's real six-mode mean response remains valid and
 has a small exact-law classical replacement; neither is an accepted optimizer.
+
+## P63 extensive phases: the registered DEV gate failed — 2026-11-25
+
+The changed N18/ten-phase/15-active-output circuit completed all80 B attempts
+and all four separately costed FAST searches. B's all-paid minima81/60 on
+ER6301801/RR6301802 lose to random FAST54/42 AND spectral FAST54/42. Each
+fixed mode wins both graphs, without a free portfolio or B incumbent. Eligible
+online results are within the prospectively defined B-only classical WALL
+allowance minus adapter CPU; no early cap was hit. Optical latency was assumed
+zero, and imports/backend/diagnostics/IO did not fund classical search.
+
+The final iterate's fresh normalized means55/104 and633/1184 are retained,
+as are all training counts/cuts/updates. Every collision was decoded; no
+optimum or known partition was used. The primary run and raw data were sealed
+bf2034d before interpretation; v2 manifest completed with18 unchanged inputs.
+Source qualification46PASS and separate existing regression1044PASS. See
+research/P63_STAGE1_MAIN_RECEIPT.md for full costs/provenance. The independent
+recorded-data audit remains pending; no new physical replication is asserted.
+
+All optional models are NOT_RUN_DUE_FAST_VETO. They were not passed, measured
+as negatives or silently dropped after a positive. No retuning, replacement
+graph, unchanged wider sweep, held-out rescue, manuscript revision or QPU call
+followed. This rejects the specified finite pilot, not all extensive or global
+photonic architectures. P65 seeks a changed mechanism; the positive goal OPEN.

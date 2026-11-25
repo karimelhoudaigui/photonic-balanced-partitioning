@@ -1056,3 +1056,34 @@ The battery interruption lost no sealed result. Continue research from these
 artifacts; the positive optimizer objective remains OPEN. Original main,
 paper/ and602 protected historical scientific files remain preserved. No
 held-out graph, hardware circuit freeze, Laurent message or QPU call.
+
+## 2026-11-25 — P63 actually executed; fixed classical gate rejects it
+
+The frozen code8b20dca passed46 synthetic guards and separate adverse static
+review83996a9. ONE main on cleanfad8a05,19.495067s runner, completed80B and
+four independent FAST calls; raw sealedbf2034d before interpretation. B's
+all40-attempt/case best81/60 loses to EACH fixed random/spectral FAST54/42.
+All four online eligible prefixes are timely, with no early guard. Per-case
+B-only classical wall grants4.941689/2.982009ms excluded all simulator,
+import, diagnostics and evidence IO work; this is a favorable zero-optical-
+latency envelope, not hardware timing. All collisions retained, no C*/optimum.
+All six optional models are NOT_RUN_DUE_FAST_VETO, and no wider sweep or
+held-out rescue was performed. Primary interpretation is in
+research/P63_STAGE1_MAIN_RECEIPT.md; independently authored raw audit pending.
+The complete existing P63 regression passed1044 in25.26s pytest.
+
+P64's static independent reviewc59baf9 found a concrete small-law/CDF
+normalization coverage gap. It was corrected prospectively677348b BEFORE
+the first qualification; all old versions remain. ONE corrected qualification
+22PASS/.54s pytest/.793044s runner,8 unchanged inputs, exact462-row source
+table and4*462 candidate/reference probabilities sealed4ee15ab first. Source
+support68 strengthens the finite compatible-width bound to4624; the complete
+ideal law construction and rounded finite implementation remain distinct.
+Maximum N6 probability error1.2143e-16, no N18 random draw, no certified
+global N18 TV or throughput. Existing P64 regression1020PASS; ROOT is checking
+the combined integration. research/P64_QUALIFICATION_RECEIPT.md has scope.
+
+A separately frozen N18 point/permanent cross-check is being designed, while
+P65 examines genuinely changed mechanisms and their adverse controls. No
+arbitrary algorithmic success is inferred from the source support or test
+count. Positive optimizer OPEN, paper/main preserved, hardware gate closed.

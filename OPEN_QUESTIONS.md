@@ -201,3 +201,13 @@ FAST veto and all fixed-q/partial-species/phase-average/structured-sampler
 controls? P64's coherent fixed-M construction supplies a complete finite
 classical replacement, with implementation precision/cost still to qualify.
 No P63 graph or count has been opened yet; held-out/QPU gates remain closed.
+
+Later registered result: P63 did open exactly the two specified DEV graphs
+and all80 B attempts, then failed BOTH fixed FAST vetoes (81/60 vs54/42).
+That numerical question is answered negatively for the frozen pipeline;
+optional optical comparisons remain unrun rather than open favorable evidence.
+P64's small-law qualification passes with exact source support68; selected
+N18 permanent checks, global precision and complete paid throughput are
+separate questions. A changed P65 architecture/mechanism must address the
+local-support and conserved-block obstructions before new DEV data. The
+independent recorded-data P63 audit is being authored before reading its data.

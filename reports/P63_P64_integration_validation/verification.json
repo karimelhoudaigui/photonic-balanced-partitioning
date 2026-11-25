@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-11-25T19:57:04.502663+00:00",
+  "inspection_head": "fffc1bbe80512be6380813e3b702bc758ca76e58",
+  "manifests": [
+    {
+      "path": "research/P63_spsa_fast_stage_preflight/run_001/manifest.json",
+      "sha256": "04adc5b23047554ac45f83538a745c67e7d01e9e9cb1d62c6c132800f77a17c5",
+      "exit_code": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "path": "experiments/P63_spsa_fast_stage/run_001/manifest.json",
+      "sha256": "4f8ab807b789321e597e22fbe6164d3ac12799deb4d4a183a4cae63f5d373948",
+      "exit_code": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "path": "research/P64_qualification/run_001/manifest.json",
+      "sha256": "28e0bbcfcead8f1d84aa5a79b494464c246ab3b6f851e386777953c4b8a5fe01",
+      "exit_code": 0,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "snapshot_sha256": "9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474",
+    "snapshot_base_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+    "historical_files_checked": 602,
+    "changed_or_missing": [],
+    "scope": "Pre-existing experiments/results/theory/research; active reports/manuscript/code may change"
+  },
+  "full_tests": "1066 PASS /24.63s pytest /25.405682084s total",
+  "paper_diff_against_release": "",
+  "paper_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "positive_optimizer_accepted": false,
+  "P63_independent_raw_audit": "PENDING",
+  "P64_N18_point_check": "CODE_ONLY_PENDING",
+  "QPU_calls": 0
+}

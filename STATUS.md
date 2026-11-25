@@ -22,9 +22,17 @@ P62's random-embedding/local-control frontier theorem has independent
 reconstruction and exact-hash audit; reports/P62_PROOF_CHECKPOINT.md records
 its paid-score and mapping-average limits. Novelty remains OPEN after a
 bounded three-primary-source check. Scalar P61 was not run. P63 is a different
-18-mode/ten-phase proposal; stage-one B80/FAST source is being prepared after
-the paired-SPSA clarification. P64 supplies a structured full-law classical
-replacement to scrutinize, with finite-precision/runtime qualification pending.
+18-mode/ten-phase mechanism: its registered stage1 completed B80 and four
+FAST calls. B paid81/60 loses to EACH fixed random/spectral FAST54/42, within
+its own classical-cost envelope; the separate recorded-data audit is pending.
+All optional controls were skipped by the registered veto, not passed.
+P64's structured full-law construction passed its corrected22-test synthetic
+qualification: exact source support68, and4x462 N6 probabilities agree with
+the separate reference to1.22e-16. Global N18 precision/runtime remain open;
+a separately frozen sparse N18 check is being prepared. P65 examines changed
+mechanisms before any experiment. P63 existing1044 and P64 existing1020 tests
+pass; combined integration1066PASS, all three new v2 manifests and602
+protected historical files verified. Paper bytes remain unchanged.
 The battery interruption lost no sealed data. The positive
 target remains OPEN; paper/ and main stay at the delivered release, with no
 QPU call or held-out opening. Historical checkpoint prose below retains its

@@ -504,3 +504,24 @@ D, species, full phase-average and strong feasible search controls.
 No battery loss affected sealed raw data. Positive optimizer OPEN, paper/main
 unchanged, no held-out opening, no QPU and no Laurent message. Preserve original
 worker refs because manifests identify them rather than root cherry-picks.
+
+## New live point — after fffc1bb, 25-Nov-2026
+
+P63 has now executed its exact registered B80/FAST stage once. Source8b20dca,
+qualificationfad8a05, rawbf2034d, root668925a. B81/60 loses to EACH fixed
+FAST54/42; all online prefixes eligible/no early cap. Optional arms explicitly
+unrun by the veto. Independent checker is being authored before raw access;
+its qualification/main still pending. Full P63 existing1044PASS.
+
+P64 corrected qualification677348b/4ee15ab passes22 synthetic items, exact
+source support68 and4*462 N6 probability checks, with raw laws retained.
+All1020 existing P64 tests pass. Global N18 precision/complete costs remain
+open; a separate14-point N18 Naive comparison is CODE-ONLY preparation.
+ROOT's combined P63/P64 regression1066PASS, three new manifests v2PASS and
+602 protected historical files/paper bytes unchanged. Numerical work remains
+exclusive; consult the current slot messages before any execution.
+
+P65 is a fresh static route portfolio in .local/p65-new-mechanism. It must
+change the mechanism past P62/P64 and specify its strongest classical null
+before any implementation/DEV graphs. Paper/main,602 protected files and
+all old data are preserved. Positive optimizer OPEN; no QPU or held-out run.

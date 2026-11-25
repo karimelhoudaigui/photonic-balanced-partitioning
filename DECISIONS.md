@@ -214,3 +214,19 @@ No further broad optimization sweep without a changed registered mechanism. No a
   dephased latent-source sampler cannot substitute for its fixed-phase law.
 - PRESERVE all earlier negative runs, paper/main and the original user
   .DS_Store. Keep held-out populations and hardware behind the positive gate.
+
+## P63 primary veto and P64 qualification — 2026-11-25
+
+- REJECT the registered P63 finite DEV pipeline at its first gate: BOTH
+  fixed FAST modes54/42 beat B81/60 within eligible recorded budgets. Keep
+  independent raw auditing pending until its separate checker is executed.
+  Do not retune this B trajectory or mark optional arms tested/passed.
+- ACCEPT the finite P64 synthetic qualification only: exact source support68
+  and four complete N6 laws agreeing with the independent formula. Preserve
+  the pre-data CDF correction, every coefficient/zero and the precision limits.
+  A selected N18 permanent check is authorized for code/spec preparation,
+  not automatically for execution or global-TV certification.
+- CONTINUE genuinely changed P65 mechanisms, first by mathematical analysis
+  and the cheapest adverse discriminator. P62/P64 do not imply impossibility
+  for arbitrary global encodings. Positive goal OPEN; no held-out, paper,
+  hardware freeze or QPU action follows from a rejected DEV pilot.
