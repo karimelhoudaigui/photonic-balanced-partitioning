@@ -48,9 +48,12 @@ acceptance for every control. The target is the accepted-gain function
 Choose ONE registered elementary loop flux phi, not a favorable event.
 The first obligation is a NONZERO exact Fourier coefficient of this full
 function after all outcomes are included. The single-cycle audit supplies
-the concrete anchor K_G=-10 and gain5/256 versus15/256 on its rejected
+the corrected anchor K_G=-5 and gain5/256 versus10/256 on its rejected
 barrier example; it also shows why a tail probability or linear cut proxy
 is insufficient. That example is not evidence for this wider network.
+ROOT identified the reviewer's earlier C(4) arithmetic error before accepting
+commit36d3ad1; the correction is documented in the audit and preserved as a
+separate commit. The improvement probability and route rejection did not change.
 
 No graph-dependent phase rule is justified until a coefficient/sign is
 derived WITHOUT precomputing an improving move for free. A calculation

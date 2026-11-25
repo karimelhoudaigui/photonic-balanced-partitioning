@@ -15,6 +15,14 @@ stated ideal model; exact MPS AMPLITUDE identity NEEDS_LOCAL_INDEX_CORRECTION.
 The correction does not change any Born probability or rejection conclusion.
 No universal equal-cost no-go or positive optimizer is established.
 
+CORRECTION HISTORY: ROOT caught an arithmetic error in this review BEFORE
+acceptance of commit36d3ad1. The reviewer had incorrectly set C(4)=2,
+overstating the added accepted-gain calculation. The correct value is3,
+so the gains are2 and5, K_G=-5, and the accepted-gain difference is5/256.
+The source note's improvement probabilities, strict swap-minimum and
+rejection conclusion are unchanged. The original erroneous commit remains
+in history; this is a separate documented correction, with no numerical run.
+
 ## Assumptions and probability reconstruction
 
 Use L>=2, C:j->j+1, Z diagonal indexed by destination cell, occupied upper
@@ -74,7 +82,7 @@ strictly worse. Directly summing clique and attachment cuts yields
 
     C(h)=5-h+h*(5-h)/2=5+h-binomial(h,2).
 
-Only h4,5 improve, with costs2,0. The six improvement patterns give success
+Only h4,5 improve, with costs3,0 and gains2,5. The six improvement patterns give success
 (3-2*cosPhi)/256:1/256 at0,5/256 atpi, D/species3/256, difference1/64.
 Retiming to theta0 maps upper sources to outside B deterministically; the
 all-B+P partition has zero cut. The disconnected components and a paid
@@ -138,8 +146,9 @@ Let Delta_+(x)=[C_inc-C_G(x)]_+ and otherwise retain self-loops. Then
     K_G=sum_x (-1)^(number lower)*Delta_+(x).
 
 The proposal mean's quadratic cancellation does not force K_G=0. In the
-stated example K_G=-10 and E gain=(10-5*cosPhi)/256:5/256 at0,15/256 atpi.
-That is a real all-attempt accepted-cost difference5/128, but the exact
+stated example sum Delta_+=5*2+5=15 and K_G=-5*2+5=-5. Thus
+E gain=(30-10*cosPhi)/1024=(15-5*cosPhi)/512:5/256 at0,10/256 atpi.
+That is a real all-attempt accepted-cost difference5/256, but the exact
 classical sampler and deterministic five-swap defeat a search-advantage
 claim. Computing K_G by scoring all core moves must credit those moves to
 the classical incumbent. This is a useful physical mechanism equation,
