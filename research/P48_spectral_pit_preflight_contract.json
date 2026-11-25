@@ -1,7 +1,7 @@
 {
   "claim_id": "P48-B-INDEPENDENT-INTEGRATION-PREFLIGHT",
   "mathematics": {
-    "assertion_tested": "Twenty-four integration fixtures: independent Fock/labeled marginals and covariance, exact small phase assignments, species4+1, vacuum/source-basis rotations, carried spectral marks/labels, mu0/mu1, occupied/boundary/vacuum gap cases, explicit probability repairs, PIT/Gaussian factor variance, decoder/rounding budgets, retained numerical case local Clifford call and continuous phase/sphere production interfaces; rerun26 already independently qualified coherent helper fixtures.",
+    "assertion_tested": "Twenty-six integration fixtures: independent Fock/labeled marginals and covariance, exact small phase assignments, species4+1, vacuum/source-basis rotations, carried spectral marks/labels, mu0/mu1, occupied/boundary/vacuum gap cases, explicit probability repairs, PIT/Gaussian factor variance, decoder/rounding budgets, retained numerical case local Clifford call and continuous phase/sphere production interfaces; rerun26 already independently qualified coherent helper fixtures. A mixed deterministic/fluctuating Gaussian block injects factor leakage; spread mu1 rows are not overmasked.",
     "coefficient_domain": "Complex128/float64 isometries and vacuum completion; exact Fraction representation/explicit tiny row-mass repairs; Decimal80 marginal arithmetic; integer graph cuts",
     "conventions": "No DEV graph outcomes or optimization performance estimates. Every finite graph, root assignment and expected physics law is fixed in test sources. Root/physics static review must precede sole-slot execution. Full repository checks still required before integration.",
     "inputs": [
@@ -14,7 +14,7 @@
       "maximum_enumerated_modes": 10,
       "maximum_phase_assignments": 64,
       "maximum_decoder_modes": 34,
-      "planned_tests": 50,
+      "planned_tests": 52,
       "cpu_seconds": 60,
       "wall_seconds": 90,
       "threads": 1,
@@ -80,7 +80,8 @@
       480082,
       480083,
       480084,
-      480085
+      480085,
+      480086
     ]
   },
   "resource_note": "No execution until exact-hash root/physics review and sole numerical slot; preflight must PASS first. Bounded runner CPU60/wall90/thread1/log32MiB, script checks data cap32MiB per graph, arrays256MiB planned not Darwin hard memory. No automatic retry or output replacement.",
