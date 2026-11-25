@@ -1,0 +1,54 @@
+{
+  "claim_id": "P48-POSTHOC-RAW-CONSISTENCY",
+  "mathematics": {
+    "assertion_tested": "Inspect EVERY P48 raw row: independently recompute integer cuts and all primary/frontend decoder choices; reconstruct count/Gaussian PIT, common Cref and preparation intensity/signed-eigenvector candidates, labelled assignment feasibility/log cost; verify all gain/query/time frontiers and physical source/unitary/eigen/Gram/covariance/marginal diagnostics with stdlib only. No new sampling.",
+    "coefficient_domain": "Integer adjacency/cuts, Python stdlib float/complex-independent intensity arithmetic and math.erfc; declared numerical tolerances only",
+    "conventions": "Post-hoc audit of the one already completed run, not a preregistered discovery or independent distribution replication. Every raw row inspected, no graph filter or score oracle beyond saved adjacency.",
+    "inputs": [
+      "Primary manifest plus all six immutable P48 results",
+      "Every raw row; seven primary models and five feasible baselines",
+      "Saved source basis, source ports, marks/gaps, tables/repairs and preparation-candidate metadata"
+    ],
+    "bounds": {
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "maximum_raw_rows": 200000,
+      "cpu_seconds": 20,
+      "wall_seconds": 90,
+      "threads": 1
+    },
+    "non_claims": [
+      "No resampling, quantum advantage, new theorem or statistical gate",
+      "No interval accuracy or joint empirical-copula certificate",
+      "Informative score counts need not equal every repeated function invocation"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P48_spectral_pit_raw_audit.py",
+    "research/P48_spectral_pit_raw_audit_contract.json",
+    "experiments/P48_spectral_pit/run_001/manifest.json",
+    "experiments/P48_spectral_pit/run_001/data/summary.json",
+    "experiments/P48_spectral_pit/run_001/data/raw.jsonl.gz",
+    "experiments/P48_spectral_pit/run_001/data/context_n26_ER_4802601.json",
+    "experiments/P48_spectral_pit/run_001/data/context_n26_RR_4802602.json",
+    "experiments/P48_spectral_pit/run_001/data/context_n34_ER_4803401.json",
+    "experiments/P48_spectral_pit/run_001/data/context_n34_RR_4803402.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P48_spectral_pit_raw_audit.py",
+    "--output",
+    "research/P48_spectral_pit_raw_audit/run_001/data"
+  ]
+}
