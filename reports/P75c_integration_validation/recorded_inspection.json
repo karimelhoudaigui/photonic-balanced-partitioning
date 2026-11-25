@@ -1,0 +1,57 @@
+{
+  "all_recorded_flags_true": true,
+  "all_threshold_checks_pass": true,
+  "best_including_baseline": {
+    "global_evaluation": 1,
+    "local_evaluation": 1,
+    "probability": 0.015625000000000003,
+    "start": "analytic_three_pair_baseline"
+  },
+  "best_optimizer_record": {
+    "global_evaluation": 3543,
+    "probability": 0.010493384705812264,
+    "seed": 7511003
+  },
+  "body_cpu_seconds": 2.529067,
+  "body_wall_seconds": 2.7859197910001967,
+  "byte_sizes": {
+    "data/certificate.json": 5,
+    "data/evaluations.jsonl": 22690428,
+    "data/failure.json": 5,
+    "data/summary.json": 3414,
+    "manifest.json": 10434,
+    "stderr.txt": 0,
+    "stdout.txt": 0
+  },
+  "certificate_attempts": 0,
+  "counts": {
+    "7511001": 1144,
+    "7511002": 1200,
+    "7511003": 1200,
+    "7511004": 1200,
+    "7511005": 1200,
+    "7511006": 1200,
+    "analytic_three_pair_baseline": 1
+  },
+  "evaluations": 7145,
+  "final_cache_matches": [
+    1102
+  ],
+  "floor_flag_rows": {
+    "7511006": 43
+  },
+  "general_bound_proven": false,
+  "graph_optimizer_benchmark": false,
+  "input_count": 12,
+  "inputs_unchanged": true,
+  "inspection": "Streaming stdlib recorded-field consistency and scalar loss transform only; no matrix probability/RNG/optimizer/native recomputation",
+  "producer_commit": "f02e4713b7cba68bce67e449dcf1a1a518665b1f",
+  "raw_seal_commit": "f082dd60f187676393be88d66e3f93d56ddee79d",
+  "recorded_float_probability_zero_rows": {
+    "7511006": 43
+  },
+  "run_status": "completed",
+  "runner_wall_seconds": 2.99137,
+  "source_sha256": "ea9f8c6a071ab64678501c0f2091c878b4c75346735484a36681072611b6d9c8",
+  "terminations": 6
+}
