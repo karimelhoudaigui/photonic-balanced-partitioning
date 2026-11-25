@@ -19,9 +19,14 @@ review. Integrated full tests677 PASS; four completed P49 manifests validate.
 P50 now investigates a direct all-count diffusion/ranking decoder without
 Cref, greedy completion or marginal PIT, with from-scratch efficient classical
 controls and B-only cost accounting. Prospective ROOT card f9689d2 and pre-data
-clarifications/additional marginal control are frozen. Primary0fbe635 is under
-independent source review; from-raw FAST5f6cce8 has21PASS, receipt19044e1.
-No P50 graph opened or main run yet. No accepted positive,
+clarifications/additional marginal control preceded all data. Primary0fbe635
+passed independent source/caller review and74 preflight tests. The single run
+completed21.615873s, all2560 proposals/19 unchanged inputs; paid B203/217/353/403
+loses to EACH separately budgeted raw classical search on all four graphs.
+Static preparation has lower fresh mean (.362822 versus B .407748), but does
+not beat every B minimum. Full751 tests PASS. Raw data remain immutable; a
+separate post-hoc consistency audit is being prepared, not blind replication.
+No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,
 evidence and numerical-slot state: research/P45_LIVE_STATE.md.

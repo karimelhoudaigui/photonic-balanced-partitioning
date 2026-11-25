@@ -1,0 +1,73 @@
+{
+  "checked_utc": "2026-11-25 07:16:48 UTC",
+  "scope": "Completed P50 DEV/preflight/from-raw qualification input/output closure; 751 full tests at dd73bc2; no accepted positive/independent physical replication/heldout/QPU.",
+  "manifests": [
+    {
+      "manifest": "experiments/P50_minimal_count_field/run_001/manifest.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "e14463",
+        "wall_time_seconds": 0.007660625,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+      }
+    },
+    {
+      "manifest": "research/P50_minimal_count_field_preflight/run_001/manifest.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "93af9b",
+        "wall_time_seconds": 0.00000675,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+      }
+    },
+    {
+      "manifest": "research/P50_fast_from_scratch_qualification/run_001/manifest.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "917e2f",
+        "wall_time_seconds": 0.000015125,
+        "exit_code": 0,
+        "original_token_count": 23,
+        "output": "valid evidence record (run status: completed); mathematical interpretation requires review\n"
+      }
+    }
+  ],
+  "preservation": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "0fab3b",
+        "wall_time_seconds": 0.619076916,
+        "exit_code": 0,
+        "original_token_count": 85,
+        "output": "{\"status\": \"PASS\", \"snapshot_sha256\": \"9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474\", \"snapshot_base_commit\": \"6154b460e1c8b37cf2a7023fcbfff35d31a7220c\", \"historical_files_checked\": 602, \"changed_or_missing\": [], \"scope\": \"Pre-existing experiments/results/theory/research; active reports/manuscript/code may change\"}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "dfbc9a",
+        "wall_time_seconds": 0.014216584,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "abfe5e",
+        "wall_time_seconds": 0.000012875,
+        "exit_code": 0,
+        "original_token_count": 17,
+        "output": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f\n"
+      }
+    }
+  ],
+  "paper_base": "27443954fb7491a293399f0417d05185009f5c9a",
+  "raw_sha256": "c19f8cc9f890ece810dad0549c0ca8b3d7785ed6a41f210ef51d10b4f54dc77b"
+}

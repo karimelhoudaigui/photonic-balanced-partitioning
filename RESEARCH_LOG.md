@@ -810,3 +810,31 @@ ideal cost-phase/Johnson route yields a favorable sign but an exact weak-order
 classical control, not a validated photonic optimizer. All positive/novelty,
 held-out/independent replication and hardware gates remain OPEN/CLOSED as
 appropriate; no manuscript change, QPU call or Laurent message.
+
+## 2026-11-25 — P50 minimal-cost decoder also rejected
+
+Root card f9689d2 with PRE-DATA addenda fixes new sparse ER/RR N50/100 graphs,
+13/17photons,10 separately trained models and from-raw descent-FIRST controls.
+New independent B-marginal arm addresses a discrete-marginal confound BEFORE
+outcomes; its preparation never enters B's cost. No Cref, PIT, greedy decoder,
+optimum or postselection. Code0fbe635, independent physics2e83846/callerd6ce9fc,
+FAST21PASS19044e1, primary74PASS5310257; DOCONLY dense-H correction precedes run.
+ONE main clean5310257 completed21.615873s, all2560draws,19 unchanged inputs,
+14 regular results,18,687,071bytes, CPU60/wall90/thread1, no retry/exclusions.
+Datafb5a36e preserved before audit. B fresh mean.407747668 loses to static
+preparation.362821548; this mean comparison does not imply every static minimum
+beats B. EACH raw classical mode beats paid B203/217/353/403 on all four graphs:
+random138/181/254/297, spectral138/175/244/280, under B-only measured grants.
+No free Cref/features, only online completed deadline-admissible snapshots;
+trace export/total overrun explicit. DECISION: REJECT this lean pipeline/budget,
+not all passive sources/decoders. Root751PASS and preservation602/PDF PASS.
+Post-hoc independent-code consistency audit is in preparation, not blind or
+physical replication. RawSHA256c19f8cc9f890ece810dad0549c0ca8b3d7785ed6a41f210ef51d10b4f54dc77b.
+
+Separate exact analysis: no-leakage passive whole-CF evolution is monomial
+(root336a9f8, independent8ac8754); continuous nonconstant balanced cut oracle
+cannot use that shortcut, with isolated-pi and dualrail/conditional exceptions.
+H4 fourth-order rank response (b710d21) survives fixed low moments, but decoded
+law has an exact O(1) classical mixture (4c5b071), and b4 is exact. No positive
+goal achieved. P51 invariant/loss extension is analytical only and unresolved;
+no graph/experiment opened. Paper/P33/P37/E05b unchanged; QPU gate CLOSED.

@@ -194,7 +194,7 @@ Root full677PASS22.10s, four current manifests valid,602 historical files and
 every paper byte unchanged: reports/P49_validation/. No numerical worker active
 at this checkpoint; workers must obtain the exclusive slot before execution.
 
-## Active changed bottleneck: P50
+## Completed changed bottleneck: P50
 
 Root prospective card f9689d2, research/P50_EXECUTION_CARD.md, fixes fresh
 N50/r13 andN100/r17 four-case DEV population, ten independently tuned arms,
@@ -209,13 +209,26 @@ The pre-data addendum ded2cfb adds product-B-marginals to distinguish discrete
 one-mode shapes from collective effects; it does not conserve total count.
 Root02041c3 clarifies the new generator (old hard-coded graph helper unused).
 Primary0fbe635 is frozen, ROOT read full source/tests/contracts/projection;
-physics and caller reviews are being sealed. FAST5f6cce8 is independently
+independent physics2e83846 and callerd6ce9fc passed before execution. FAST5f6cce8 is independently
 reviewed,21PASS in bounded qualification19044e1, manifestvalid after integration.
 Its best subset is available online before deadline, with later trace export
-separately timed; no nanosecond hard-return guarantee. No P50 graph or main
-numerical result exists yet. Encoding owns isolated primary files, adaptive
-the disjoint from-scratch FAST helper, physics static audits. Do not execute
-before frozen sources/projection/reviews and explicit exclusive slot.
+separately timed; no nanosecond hard-return guarantee.74PASS preflight5310257
+preceded the ONE main on that clean source: completed21.615873s,6.595232CPU,
+18,687,071bytes, all2560draws/4cases/19inputs/14results complete, no retry.
+B selected graph-blind Fourier/alpha1/beta0; fresh normalized means B.407747668,
+D.414433450, phase.405768478, sphere.407206362, static preparation.362821548.
+Static wins the global mean but not all per-graph minima. Paid B203/217/353/403
+loses4/4 to EACH fixed from-raw FAST: random138/181/254/297 and spectral
+138/175/244/280, budgets16.117/2.912/9.485/5.416ms B-only wall-derivedCPU.
+All eligible initializations/first descents finish before deadline; no earlycap.
+REJECT this new decoder/source/budget; lean-cost accounting did not rescue it.
+Original datafb5a36e, rootdd73bc2; rawSHA256
+c19f8cc9f890ece810dad0549c0ca8b3d7785ed6a41f210ef51d10b4f54dc77b.
+Root751PASS22.01s, current main/preflight/FAST manifests valid,602 historical
+files and paper bytes unchanged: reports/P50_validation/.
+Adaptive prepares a separate POSTHOC consistency audit (learned negative sign
+before freezing audit), no new physical samples. Root numerical slot released.
+No new simulation authorized; no held-out or physical replication claimed.
 
 A separate cost-phase/Johnson interaction route has a favorable ideal sign,
 but its weak-mixing law has an exact cheap classical sine-swap control with
@@ -228,6 +241,23 @@ continuous exact nonconstant balanced cut phase therefore needs operations
 outside this deterministic all-CF model. Independent exact-hash review8ac8754
 finds proof correct, including fixed-input/r1/isolated-pi/dualrail exceptions.
 This is NOT a general photonic optimizer no-go or positive-target completion.
+
+## Active analytic continuation: P51 invariants and collective order
+
+Physics b710d21 derives an exact H4 family with Q/P/covariance/all one-mode
+laws/all moments through order3 fixed, yet an order4 change survives balanced
+top2 ranking. It helps or hurts according to the graph. Root and physics
+4c5b071 independently identify an exact O(1) classical replacement of that
+decoded law: (1-sin²phi/4) uniform6 + (sin²phi/4) uniform4cross. b4 also exactly
+reproduces the entire four-photon block; no optimizer positive is inferred.
+See theory/P50_Hadamard4_ranked_cut_checkpoint.md and mixture addendum.
+P51 now tests analytically whether full flat Hadamard families fix ALL moments
+through order3, and how uniform losses bound a fixed-decoder collective effect
+when low-order moments agree. These are unproved prospective questions at
+this checkpoint, no P51 graph, code, experiment or claimed scalable mechanism.
+Finite-strength real cost-phase interactions and global high-order extensions
+remain open with their classical/resource gates; do not tensor a small known
+classical block and call it an advantage. The original positive target is OPEN.
 
 Acceptance plan research/P48_review_future_acceptance.md now includes efficient
 CPU controls, independent count implementation and reserved graph panels,
