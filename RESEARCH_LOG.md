@@ -1253,3 +1253,13 @@ and its classical replacement as a distinct static continuation.
 All old negative results, including E05b and P65, remain evidence. The
 positive optimum-blind optimizer/held-out/independent physical-replication
 objective remains OPEN. No paper/main revision or hardware/QPU call occurred.
+
+P74 later reconciliation: source379lines/SHA0b4b4bbc copied byte-identically
+0b3c1f8; independent330line proof3a3016c and exact276line review2a3b4f6
+integrated48ea005/8e330e5. ROOT read all985 lines. The conditional raw-count
+screen is accepted, including protected deferred flags and a concrete
+postselection failure-reentry counterexample (two-block p1, not1/81).
+One primary Knill profile and six local source hashes support the static
+2/27 instrument statement; no numerical gate or hardware experiment ran.
+reports/P74_ROOT_RESOURCE_CHECKPOINT.md records exact limits and OPEN weak-
+phase/recovery/joint-block escapes. No equal-clock or all-QAOA result follows.
