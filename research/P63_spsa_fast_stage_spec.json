@@ -1,0 +1,167 @@
+{
+  "phase": "P63_B_FAST_STAGE1",
+  "positive_acceptance_allowed": false,
+  "d": 6,
+  "N": 18,
+  "K": 9,
+  "source": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "ideal_transmission_eta": 1,
+  "parameters": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "initial_theta": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "mixer_ports": [
+    0,
+    6
+  ],
+  "mixer_numerators": [
+    [
+      3,
+      -4
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "mixer_denominator": 5,
+  "cases": [
+    {
+      "id": "n18_ER_6301801",
+      "family": "ER",
+      "seed": 6301801
+    },
+    {
+      "id": "n18_RR_6301802",
+      "family": "RR",
+      "seed": 6301802
+    }
+  ],
+  "ER_p": "6/17",
+  "RR_degree": 6,
+  "weights": [
+    1,
+    5
+  ],
+  "arms_seed_frozen": [
+    "bosonic",
+    "j_aligned",
+    "continuous_phase",
+    "distinguishable",
+    "independent_B_marginals",
+    "uniform_subset",
+    "phase_average"
+  ],
+  "trained_arms": [
+    "bosonic",
+    "j_aligned",
+    "continuous_phase"
+  ],
+  "seed_namespaces": {
+    "embedding": 6318000,
+    "direction": 6320000,
+    "batch": 6330000,
+    "FAST": 6340000
+  },
+  "seed_recipe": "P43_SHA256_first4_little",
+  "steps": 3,
+  "a": "1/2",
+  "c": "1/4",
+  "training_draws_per_sign": 4,
+  "common_delta_across_signs": true,
+  "fresh_trials": 2,
+  "fresh_draws_per_trial": 8,
+  "flat_control_future_batches": 5,
+  "flat_control_future_draws_per_batch": 8,
+  "continuous_phase_law": "z_j=exp(i*phi_j)/sqrt(18),iidUniform[0,2pi);Multinomial(18,abs(Uz)^2)",
+  "PNR_law": "abs(per(W[z|x]))^2/(prod(z!)*prod(x!))",
+  "C6_support": "sum_i i*M_i == 0 mod6; P(1^18)=0; all collisions retained",
+  "numerical_tolerance": 3e-12,
+  "clock_tolerance_seconds": 1e-8,
+  "FAST_modes": [
+    "random",
+    "spectral"
+  ],
+  "FAST_max_proposals": 10000,
+  "planned_B_draws": 80,
+  "planned_B_photons": 1440,
+  "planned_native_batches": 16,
+  "max_unique_networks_per_case": 7,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_new_output_bytes": 33554432,
+  "output_reserve_bytes": 1048576,
+  "maximum_planned_workspace_bytes": 268435456,
+  "optional_models_executed": false,
+  "zero_failed_retries": true
+}

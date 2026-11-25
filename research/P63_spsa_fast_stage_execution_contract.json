@@ -1,0 +1,127 @@
+{
+  "claim_id": "P63-B-FAST-STAGE1-DEV-VETO",
+  "mathematics": {
+    "assertion_tested": "Can the fixed B ten-phase SPSA pilot survive one fixed paid from-raw FAST algorithm on both prospectively frozen DEV graphs? This stage executes only B80 and four independent FAST calls; no optional control, accepted positive or automatic followup.",
+    "coefficient_domain": "Complex128/float64 Fourier/circuit matrices; exact Python integer counts/cuts/mappings/seeds and Fraction losses/angles; measured CPU/WALL clocks",
+    "conventions": "FullCF18,eta1,N18=3x6,K9; V[[3,-4],[4,3]]/5 on output0,6; ten exact rational phases b1/2,i1..5. Three paired SPSA steps with ONE shared Delta_t across signs, iid directions across steps/arms; four complete PNR cuts/sign, a=1/2,c=1/4; finalTheta3 only then2x8 fresh. Uniform fresh carried top9 priority permutation then fixed independent physical mapping. All40 own attempts/graph fund paid best. C6 sum_i iM_i=0 mod6, collision-free1^18 impossible; no postselection. B-only classical WALL funds each of two separate immutable raw-graph FAST calls minus actual adapter CPU; first timely scan and no early guard required to survive, eligible initialization can veto.",
+    "inputs": [
+      "Unopened ER N18 seed6301801,p=6/17 and RR N18 seed6301802,degree6; sorted-edge PCG64 integer weights1..5",
+      "One independently seeded uniform physical embedding per case, carried for every stage; no C*, optimum mask or known partition",
+      "All seven model seed namespaces frozen before B data; only B is implemented/executed in stage1"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "maximum_new_log_bytes": 33554432,
+      "maximum_new_scientific_bytes": 33554432,
+      "planned_logical_workspace_bytes": 268435456,
+      "graphs": 2,
+      "modes": 18,
+      "parameters": 10,
+      "B_draws": 80,
+      "B_simulated_injected_photons": 1440,
+      "native_B_batches": 16,
+      "maximum_unique_networks": 14,
+      "FAST_calls": 4,
+      "FAST_max_proposals_per_call": 10000,
+      "FAST_total_guarded_work": 40000,
+      "maximum_FAST_checkpoints_per_call": 10000,
+      "failed_retries": 0,
+      "optional_model_draws": 0
+    },
+    "non_claims": [
+      "No accepted positive, N18 response proof, population inference, novelty, hardware runtime, independent physical replication, held-out opening, paper or QPU authorization",
+      "The only stage-one rejection is one fixed eligible FAST mode no worse than B all-paid minimum on both cases; surviving complete eligible FAST comparisons leaves all six optical/classical optional controls untested",
+      "Zero ideal optical latency is an explicitly favorable implementation envelope: simulator imports, setup/count generation, diagnostics, graph generation and evidence IO do not enlarge B-only classical WALL",
+      "Only immutable factory returned backend WALL is excluded from setup; its RNG/source-validation pre-clock prefix remains paid; internal CPU splits are unknown",
+      "Numerical Gram/q/C6 guards are absolute tolerances, not intervals, a worst-case relative-probability certificate, hardware timing, hard RSS enforcement or an advantage result",
+      "Any first failure, resource cap, missing case or invalid guard is retained and inconclusive with zero retries or replacements; early FAST guards prevent a favorable interpretation but cannot erase a valid fixed-mode veto"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P63_spsa_fast_stage.py",
+    "research/P63_spsa_fast_stage_spec.json",
+    "research/P63_STAGE1_PRE_DATA_AMENDMENT.md",
+    "research/P63_spsa_fast_stage_contract.md",
+    "research/P63_spsa_fast_stage_preflight_contract.json",
+    "research/P63_spsa_fast_stage_execution_contract.json",
+    "research/P63_EXTENSIVE_PHASE_ARCHITECTURE_CARD.md",
+    "theory/P63_extensive_phase_structural_checks.md",
+    "research/P63_INDEPENDENT_STATIC_PHYSICS_REVIEW.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "research/P55_PRE_DATA_AMENDMENT.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "tests/test_p63_spsa_fast_stage.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "P43 SHA256 first-four-byte little-endian role seeds; explicit PCG64 graph weights/embedding/directions/priorities, locally seeded Perceval/exqalibur B backend per batch; all later seven-arm master/subrole recipes frozen",
+    "seed": [
+      6301801,
+      6301802,
+      6318000,
+      6320000,
+      6330000,
+      6340000
+    ]
+  },
+  "resource_note": "CODE-ONLY, NOT EXECUTED. A separately reviewed/committed closure and exclusive bounded numerical slot are required. Runner emits v2 manifests; use CPU60/wall90,envthreads1,logs32MiB,declared scientific outputs32MiB,logical256MiB. On this Darwin workspace logical workspace is a prospective bound, not a hard RSS/affinity guarantee. Native documented Config maximum1 is set/read before any factory and after work. No native18 canary before main. FAST guard10k is prospective, not a price in optical shots; early cap => inconclusive unless eligible same-fixed-mode negative veto. No retry, enlargement, hidden warmup or automatic chained main.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P63_spsa_fast_stage.py",
+    "--spec",
+    "research/P63_spsa_fast_stage_spec.json",
+    "--output",
+    "experiments/P63_spsa_fast_stage/run_001/data"
+  ],
+  "declared_results": [
+    "experiments/P63_spsa_fast_stage/run_001/data/raw.jsonl.gz",
+    "experiments/P63_spsa_fast_stage/run_001/data/seed_namespaces.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/context_n18_ER_6301801.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/context_n18_RR_6301802.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/B_n18_ER_6301801.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/B_n18_RR_6301802.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_ER_6301801_random.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_ER_6301801_spectral.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_RR_6301802_random.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/FAST_n18_RR_6301802_spectral.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/failure.json",
+    "experiments/P63_spsa_fast_stage/run_001/data/summary.json"
+  ]
+}
