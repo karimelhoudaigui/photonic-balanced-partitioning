@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "claim_id": "P63-INDEPENDENT-AUDITOR-SYNTHETIC-FIXTURES",
+  "mathematics": {
+    "assertion_tested": "Small independent checker fixtures for scalar integer cuts, little-endian masks/padding, physical-rank-before-mapping, hand-calculable exact Fraction SPSA, deterministic18-mode tensor identities and same-fixed-mode/missing-eligibility gate semantics",
+    "coefficient_domain": "Exact Python integers/Fraction plus deterministic complex128 matrices at absolute3e-14 fixture tolerance",
+    "conventions": "CODE ONLY, NOT COLLECTED OR EXECUTED. No P63 data, primary helper import, DEV graph, native source, observation or FAST proposal is accessed. Only the independent checker is loaded; fixture PASS does not execute or authorize the sealed-data audit.",
+    "inputs": ["Eight prospectively authored test functions with hardcoded tiny fixtures; no recorded P63 results"],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "maximum_new_log_bytes": 4194304,
+      "maximum_new_scientific_bytes": 4194304,
+      "planned_logical_workspace_bytes": 67108864,
+      "maximum_graph_fixture_vertices": 4,
+      "synthetic_matrix_modes": 18,
+      "native_draws": 0,
+      "DEV_graphs_generated": 0,
+      "failed_retries": 0
+    },
+    "non_claims": ["No data audit, physical sampler validation, runtime advantage, positive, independent physical replication, main authorization or QPU call"]
+  },
+  "execution_artifacts": [
+    "AGENTS.md", "pyproject.toml", "requirements-research-lock.txt",
+    "research/P63_independent_raw_audit.py",
+    "research/P63_independent_raw_audit_contract.md",
+    "research/P63_independent_raw_audit_execution_contract.json",
+    "research/P63_independent_raw_audit_preflight_contract.json",
+    "tests/test_p63_independent_raw_audit.py"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "numpy", "version": "2.4.6"},
+    {"name": "pytest", "version": "8.4.2"}
+  ],
+  "randomness": {"used": false, "generator": "Deterministic fixtures; tests do not call checker PCG replay routines", "seed": null},
+  "resource_note": "NOT EXECUTED. ROOT full source/contract review and separate exclusive numerical authorization required. One fresh v2 bounded fixture run CPU20/wall30/thread1/log4MiB/scientific4MiB/logical64MiB, zero failed retries. Do not chain the recorded-data audit automatically.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python", "-m", "pytest", "-q",
+    "tests/test_p63_independent_raw_audit.py",
+    "--junitxml=research/P63_independent_raw_audit_preflight/run_001/junit.xml"
+  ],
+  "declared_results": ["research/P63_independent_raw_audit_preflight/run_001/junit.xml"]
+}
