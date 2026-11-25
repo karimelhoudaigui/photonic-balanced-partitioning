@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "claim_id": "P49-POSTHOC-RAW-SELECTION-DEADLINE-CONSISTENCY",
+  "repository": {
+    "commit": "90743867ba7e7b861ec90f9ac23fad8d1bc8e9b4",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P49_trained_source_raw_audit.py",
+    "--output",
+    "research/P49_trained_source_raw_audit/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Read-only inspect every P49 raw cut/decoder, fixed Cref/preparation candidate, count/Gaussian PIT, exact ALL-shot/equal-graph training means and selected policies, fresh evaluation roles/means, private paid incumbents, setup accounting and every FAST packed-subset/deadline-eligible checkpoint. Independently reconstruct source geometry and R product without any sampling.",
+    "coefficient_domain": "Integer cuts, Fraction means/ties, stdlib float/complex geometry and measured-clock consistency; no interval proof",
+    "conventions": "Post-hoc consistency audit of the one immutable completed P49 run, not independent distribution replication or a new optimization experiment. All rows/cases retained. Only eligible FAST prefixes, never late overall best.",
+    "inputs": [
+      "Primary manifest plus all ten declared P49 immutable results",
+      "Frozen P49 spec/grids and complete raw training/evaluation/legacy stream",
+      "Every FAST compact clock/cut/mask checkpoint and resource-grant ledger"
+    ],
+    "bounds": {
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "maximum_raw_rows": 200000,
+      "cpu_seconds": 20,
+      "wall_seconds": 90,
+      "threads": 1
+    },
+    "non_claims": [
+      "No new random samples, independent sampler replication, significance or quantum advantage",
+      "No numerical interval/relative-tail certificate or optimized hardware-price proof",
+      "Assignment checks include feasibility/logcost; solver optimality relies on qualified implementation, not brute force at N34"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T06:12:42.936226+00:00",
+    "runtime_seconds": 3.651062,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P49_trained_source_raw_audit.py",
+    "research/P49_trained_source_raw_audit_contract.json",
+    "experiments/P49_trained_source/run_001/manifest.json",
+    "research/P49_trained_source_spec.json",
+    "experiments/P49_trained_source/run_001/data/summary.json",
+    "experiments/P49_trained_source/run_001/data/raw.jsonl.gz",
+    "experiments/P49_trained_source/run_001/data/context_n26_ER_4902601.json",
+    "experiments/P49_trained_source/run_001/data/context_n26_RR_4902602.json",
+    "experiments/P49_trained_source/run_001/data/context_n34_ER_4903401.json",
+    "experiments/P49_trained_source/run_001/data/context_n34_RR_4903402.json",
+    "experiments/P49_trained_source/run_001/data/fast_n26_ER_4902601.json",
+    "experiments/P49_trained_source/run_001/data/fast_n26_RR_4902602.json",
+    "experiments/P49_trained_source/run_001/data/fast_n34_ER_4903401.json",
+    "experiments/P49_trained_source/run_001/data/fast_n34_RR_4903402.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P49_trained_source_raw_audit.py",
+      "sha256": "fde7663f2a016fac08e5bf55e4250448e25412b981c727bf710fed1e396f8cf9",
+      "sha256_after": "fde7663f2a016fac08e5bf55e4250448e25412b981c727bf710fed1e396f8cf9"
+    },
+    {
+      "path": "research/P49_trained_source_raw_audit_contract.json",
+      "sha256": "cd440d14ffeb12c1ef4d4b5071605f6f2aa4a1e2c60ab85a914f91c845c6efed",
+      "sha256_after": "cd440d14ffeb12c1ef4d4b5071605f6f2aa4a1e2c60ab85a914f91c845c6efed"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/manifest.json",
+      "sha256": "d829fd537e3e4d6bacb8836f82127a689cc9dbde6e86aff8f95eabea8c289d77",
+      "sha256_after": "d829fd537e3e4d6bacb8836f82127a689cc9dbde6e86aff8f95eabea8c289d77"
+    },
+    {
+      "path": "research/P49_trained_source_spec.json",
+      "sha256": "275bb9bcae40e0f4d7ba7ee8945c40435b617c89134f83e8e598ab7437387a42",
+      "sha256_after": "275bb9bcae40e0f4d7ba7ee8945c40435b617c89134f83e8e598ab7437387a42"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/summary.json",
+      "sha256": "61c96a19778294367c56c228c7c4a39da48a1bd8f525fc94381c1a0ace5e7103",
+      "sha256_after": "61c96a19778294367c56c228c7c4a39da48a1bd8f525fc94381c1a0ace5e7103"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/raw.jsonl.gz",
+      "sha256": "f890601b3237e329df883fddee8f8ca4a81ec9055d2539332ecfc11a736b6f26",
+      "sha256_after": "f890601b3237e329df883fddee8f8ca4a81ec9055d2539332ecfc11a736b6f26"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n26_ER_4902601.json",
+      "sha256": "0a6d3c67818ba53c4011ec0aa5b82e9653d3fe14207fe151b55511432f492c82",
+      "sha256_after": "0a6d3c67818ba53c4011ec0aa5b82e9653d3fe14207fe151b55511432f492c82"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n26_RR_4902602.json",
+      "sha256": "1d8ebd6e668a91c99ccda688eafed6e0457ae1525ad1beea4cac67d5198b4fd0",
+      "sha256_after": "1d8ebd6e668a91c99ccda688eafed6e0457ae1525ad1beea4cac67d5198b4fd0"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n34_ER_4903401.json",
+      "sha256": "e6aa549ea4fd9644107304844d527294b1f9f6a542105a1a86370df1de700aa9",
+      "sha256_after": "e6aa549ea4fd9644107304844d527294b1f9f6a542105a1a86370df1de700aa9"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n34_RR_4903402.json",
+      "sha256": "695410dbc07b26e21beade62e21ffa326b4224392e611c6a07bfec35653f77dc",
+      "sha256_after": "695410dbc07b26e21beade62e21ffa326b4224392e611c6a07bfec35653f77dc"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n26_ER_4902601.json",
+      "sha256": "5272a0a32124bcec3cf01b10a7756b5e5d5b10e28ccfd2028b8cbf7430adb8be",
+      "sha256_after": "5272a0a32124bcec3cf01b10a7756b5e5d5b10e28ccfd2028b8cbf7430adb8be"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n26_RR_4902602.json",
+      "sha256": "9c5e729ad38153ec05fcdaef004ecd35495be3edbd8ecf36473b0022eed35345",
+      "sha256_after": "9c5e729ad38153ec05fcdaef004ecd35495be3edbd8ecf36473b0022eed35345"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n34_ER_4903401.json",
+      "sha256": "220ad4c2738e7c6d66e52f02aaf234b965ad230292cad70a7c62b5df1a9dec8a",
+      "sha256_after": "220ad4c2738e7c6d66e52f02aaf234b965ad230292cad70a7c62b5df1a9dec8a"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n34_RR_4903402.json",
+      "sha256": "9d397c931e3985d80276d3554315067af877b004fde9ddafb6d017a783b34a2e",
+      "sha256_after": "9d397c931e3985d80276d3554315067af877b004fde9ddafb6d017a783b34a2e"
+    }
+  ],
+  "output_directory": "research/P49_trained_source_raw_audit/run_001",
+  "declared_results": [
+    "research/P49_trained_source_raw_audit/run_001/data/receipt.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P49_trained_source_raw_audit/run_001/stdout.txt",
+      "sha256": "31148b472431b04084ddc0bb6e682146794ecc2122fc158ada8b8bca6ac5adf9",
+      "kind": "log"
+    },
+    {
+      "path": "research/P49_trained_source_raw_audit/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P49_trained_source_raw_audit/run_001/data/receipt.json",
+      "sha256": "332723381180d60cdc185b9770677b5000f07a59bb2bc1347c459339e065f8b1",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

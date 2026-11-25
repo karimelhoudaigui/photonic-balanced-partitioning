@@ -1,0 +1,258 @@
+{
+  "status": "PASS_READ_ONLY_RAW_TRAIN_EVAL_FAST_CONSISTENCY",
+  "new_scientific_experiment": false,
+  "source_run": "experiments/P49_trained_source/run_001",
+  "result_hashes_before_and_after": {
+    "experiments/P49_trained_source/run_001/data/summary.json": "61c96a19778294367c56c228c7c4a39da48a1bd8f525fc94381c1a0ace5e7103",
+    "experiments/P49_trained_source/run_001/data/raw.jsonl.gz": "f890601b3237e329df883fddee8f8ca4a81ec9055d2539332ecfc11a736b6f26",
+    "experiments/P49_trained_source/run_001/data/context_n26_ER_4902601.json": "0a6d3c67818ba53c4011ec0aa5b82e9653d3fe14207fe151b55511432f492c82",
+    "experiments/P49_trained_source/run_001/data/context_n26_RR_4902602.json": "1d8ebd6e668a91c99ccda688eafed6e0457ae1525ad1beea4cac67d5198b4fd0",
+    "experiments/P49_trained_source/run_001/data/context_n34_ER_4903401.json": "e6aa549ea4fd9644107304844d527294b1f9f6a542105a1a86370df1de700aa9",
+    "experiments/P49_trained_source/run_001/data/context_n34_RR_4903402.json": "695410dbc07b26e21beade62e21ffa326b4224392e611c6a07bfec35653f77dc",
+    "experiments/P49_trained_source/run_001/data/fast_n26_ER_4902601.json": "5272a0a32124bcec3cf01b10a7756b5e5d5b10e28ccfd2028b8cbf7430adb8be",
+    "experiments/P49_trained_source/run_001/data/fast_n26_RR_4902602.json": "9c5e729ad38153ec05fcdaef004ecd35495be3edbd8ecf36473b0022eed35345",
+    "experiments/P49_trained_source/run_001/data/fast_n34_ER_4903401.json": "220ad4c2738e7c6d66e52f02aaf234b965ad230292cad70a7c62b5df1a9dec8a",
+    "experiments/P49_trained_source/run_001/data/fast_n34_RR_4903402.json": "9d397c931e3985d80276d3554315067af877b004fde9ddafb6d017a783b34a2e"
+  },
+  "all_inputs_unchanged": true,
+  "all_feasible_cuts_independently_recomputed": 184326,
+  "distinct_cut_cache_entries": 93595,
+  "stage_counts": {
+    "common_anchor": 6074,
+    "common_swap": 916,
+    "common_spectral_rounding": 128,
+    "common_preparation_rounding": 528,
+    "frontend_decoder": 168,
+    "training": 896,
+    "evaluation": 896,
+    "legacy_classical_search": 174720
+  },
+  "primary_decoders": 1792,
+  "frontend_decoders": 168,
+  "count_PIT_fields": 1280,
+  "Gaussian_PIT_fields": 256,
+  "preparation_candidates": 528,
+  "signed_roundings": 128,
+  "collision_samples": {
+    "bosonic": 255,
+    "distinguishable": 251,
+    "species4": 255,
+    "continuous_phase": 256,
+    "spherical_coherent": 255
+  },
+  "exact_all_shot_equal_graph_losses_and_selections_match": true,
+  "fresh_evaluation_roles_and_policies_match": true,
+  "private_paid_incumbents_match": true,
+  "classical_setup_accounted_and_optical_JSON_excluded": true,
+  "FAST_trace_points_checked": 14207,
+  "FAST_deadline_eligible_best": {
+    "n34_RR_4903402": 63,
+    "n34_ER_4903401": 359,
+    "n26_RR_4902602": 49,
+    "n26_ER_4902601": 158
+  },
+  "geometry": {
+    "n34_RR_4903402": {
+      "minimum_guarded_gap": 0.0051225718852047075,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.485407117830828e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 8.499999999999996,
+          "Gaussian_variance_residual": 7.771561172376096e-16,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_E",
+          "independent_unitary_residual": 1.1102230246251565e-15,
+          "independent_source_eigen_residual": 2.3471621781595564e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 7.627957373730299,
+          "Gaussian_variance_residual": 1.1102230246251565e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi0",
+          "independent_unitary_residual": 1.1102230246251565e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 7.627957373730298,
+          "Gaussian_variance_residual": 2.220446049250313e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi90",
+          "independent_unitary_residual": 1.1102287999000704e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 6.661338147750939e-16,
+          "projector_offdiagonal_frobenius_squared": 7.627957373730298,
+          "Gaussian_variance_residual": 2.6645352591003757e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    },
+    "n34_ER_4903401": {
+      "minimum_guarded_gap": 0.004709358523143414,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.4478707143534725e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 8.499999999999996,
+          "Gaussian_variance_residual": 1.4432899320127035e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_E",
+          "independent_unitary_residual": 2.220446049250313e-15,
+          "independent_source_eigen_residual": 3.191891195797325e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 5.939858548739998,
+          "Gaussian_variance_residual": 2.220446049250313e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi0",
+          "independent_unitary_residual": 1.5543122344752192e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 5.939858548739998,
+          "Gaussian_variance_residual": 1.7763568394002505e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi90",
+          "independent_unitary_residual": 1.5543150850553679e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 5.939858548739998,
+          "Gaussian_variance_residual": 3.552713678800501e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    },
+    "n26_RR_4902602": {
+      "minimum_guarded_gap": 0.008297566882998084,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.3684978315599555e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 3.3306690738754696e-16,
+          "projector_offdiagonal_frobenius_squared": 6.500000000000001,
+          "Gaussian_variance_residual": 7.771561172376096e-16,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_E",
+          "independent_unitary_residual": 1.5543122344752192e-15,
+          "independent_source_eigen_residual": 2.636779683484747e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 2.220446049250313e-16,
+          "projector_offdiagonal_frobenius_squared": 5.830462027584158,
+          "Gaussian_variance_residual": 1.1102230246251565e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi0",
+          "independent_unitary_residual": 1.6653345369377348e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 1.1102230246251565e-16,
+          "projector_offdiagonal_frobenius_squared": 5.830462027584158,
+          "Gaussian_variance_residual": 2.220446049250313e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi90",
+          "independent_unitary_residual": 9.57774380674897e-16,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 5.830462027584158,
+          "Gaussian_variance_residual": 9.992007221626409e-16,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    },
+    "n26_ER_4902601": {
+      "minimum_guarded_gap": 0.009439664832798372,
+      "encoders": [
+        {
+          "encoder": "Fourier_blind",
+          "independent_unitary_residual": 1.3571924829861478e-15,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 3.3306690738754696e-16,
+          "projector_offdiagonal_frobenius_squared": 6.500000000000001,
+          "Gaussian_variance_residual": 1.6653345369377348e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_E",
+          "independent_unitary_residual": 1.1102230246251565e-15,
+          "independent_source_eigen_residual": 2.2562247209423347e-16,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 4.1497498140778815,
+          "Gaussian_variance_residual": 1.2212453270876722e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi0",
+          "independent_unitary_residual": 6.661338147750939e-16,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 4.149749814077882,
+          "Gaussian_variance_residual": 1.3322676295501878e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        },
+        {
+          "encoder": "spectral_R_phi90",
+          "independent_unitary_residual": 4.441366233454951e-16,
+          "independent_source_eigen_residual": null,
+          "max_probability_row_repair_L1": 0.0,
+          "independent_covariance_residual": 4.440892098500626e-16,
+          "projector_offdiagonal_frobenius_squared": 4.149749814077882,
+          "Gaussian_variance_residual": 2.220446049250313e-15,
+          "Gaussian_empty_rows": [],
+          "Gaussian_occupied_deterministic_rows": []
+        }
+      ]
+    }
+  },
+  "wall_seconds": 3.5599028750439174,
+  "non_claims": [
+    "No new sampling or independent distribution replication",
+    "No statistical positive or interval certificate",
+    "Timing consistency does not certify optimized hardware price"
+  ]
+}
