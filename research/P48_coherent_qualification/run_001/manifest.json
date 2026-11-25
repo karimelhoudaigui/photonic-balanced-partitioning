@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "claim_id": "P48-COHERENT-SUBUNIT-MARGINALS-EXACT-QUALIFICATION",
+  "repository": {
+    "commit": "6c980d3f684ef32295eeb394272f6218fbbc2402",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p48_coherent_marginals.py",
+    "--junitxml=research/P48_coherent_qualification/run_001/data/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "New Decimal80 fixed-amplitude continuous/r+1-root phase and positive BetaBinomial-mixture spherical PMF/CDF helpers match24 independent exact rational fixtures for r<=3, plus subunit mass, mu1 non-pointmass and input validation checks.",
+    "coefficient_domain": "Decimal80 production; exact Fraction phase-root enumeration and direct beta integrals",
+    "conventions": "q sum mu<=1 retained with ZERO input normalization; photons=source dimension r; fixed phase differs from four-root at r>=4. Sphere r0 requiresmu0, r1 Bernoulli(mu), mu0/1 explicit. No graph or photon sample.",
+    "inputs": [
+      "12 exact phase fixtures with all(r+1)^r phase assignments",
+      "12 exact sphere fixtures with independent polynomial beta integrals",
+      "Vacuum/r1/mu0/mu1, nonuniform subunit row, pointmass row and rejected invalid inputs"
+    ],
+    "bounds": {
+      "maximum_fixture_r": 3,
+      "precision": 80,
+      "CPU_seconds": 30,
+      "wall_seconds": 50,
+      "threads": 1,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No DEV graph or optimizer result",
+      "No change to P47 oracle or P46/P47 control models",
+      "No interval/tail certificate",
+      "No new physics, novelty or QPU gate",
+      "No high-r resource benchmark"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Fully exhaustive exact fixtures",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T04:37:48.892035+00:00",
+    "runtime_seconds": 0.438374,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 50.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P48_coherent_marginals.py",
+    "tests/test_p48_coherent_marginals.py",
+    "research/P48_coherent_marginals_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P48_coherent_marginals.py",
+      "sha256": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac",
+      "sha256_after": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac"
+    },
+    {
+      "path": "tests/test_p48_coherent_marginals.py",
+      "sha256": "43fb78402527c607124ec58a44017bae53b1520c14296021e52910e95a14ff0c",
+      "sha256_after": "43fb78402527c607124ec58a44017bae53b1520c14296021e52910e95a14ff0c"
+    },
+    {
+      "path": "research/P48_coherent_marginals_contract.json",
+      "sha256": "a1d2a1327635d4eb6a8a72f64026713956153824bca6c766f6322e3195ff9105",
+      "sha256_after": "a1d2a1327635d4eb6a8a72f64026713956153824bca6c766f6322e3195ff9105"
+    }
+  ],
+  "output_directory": "research/P48_coherent_qualification/run_001",
+  "declared_results": [
+    "research/P48_coherent_qualification/run_001/data/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P48_coherent_qualification/run_001/stdout.txt",
+      "sha256": "6d42d2db60ee719d8a13186f61c9403045383b35dac0a269b4401af3e1df6bc2",
+      "kind": "log"
+    },
+    {
+      "path": "research/P48_coherent_qualification/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P48_coherent_qualification/run_001/data/junit.xml",
+      "sha256": "62b3c6269884a5a8be2e97f4d0fd56e3503716d97e77c9d17685200531ac98d9",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
