@@ -1,0 +1,15 @@
+{
+  "review_sha256": "440afb11f181e1b3a28ab0d8e6869e125a4425d1bf2435b003d42fe3c6bc12b3",
+  "byte_identical_copy": true,
+  "source_worktree_index_preserved": true,
+  "source_commit": "88a0573907b503fe2b624d13920430353d27e779",
+  "qualification_raw_commit": "dcb3aba",
+  "qualification_status": "completed",
+  "observed_qualification_JUnit_bytes": 527874,
+  "observed_qualification_log_bytes": 1768,
+  "science_plan_bytes": 29360128,
+  "log_cap_bytes": 4194304,
+  "combined_within_plan": true,
+  "note": "pytest JUnit has no in-process scientific byte guard; actual output is below the frozen plan; no source or cap was changed",
+  "main_launched_at_this_receipt": false
+}
