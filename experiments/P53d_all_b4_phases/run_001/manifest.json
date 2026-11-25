@@ -1,0 +1,263 @@
+{
+  "schema_version": 2,
+  "claim_id": "P53D-FIXED-W-ALL-B4-PHASES",
+  "repository": {
+    "commit": "7f99a087c645fdc7f169b328390973a61bece621",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P53d_fixed_w_all_phase.py",
+    "--spec",
+    "research/P53d_all_phase_spec.json",
+    "--output",
+    "experiments/P53d_all_b4_phases/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "For fixed N8 B at pi/3 and SAME saved w=(X04-X15)/2/graph, compute all35 b4(4+4) scalar mean margin harmonic spectra for every real classical phase; prove a uniform strict/weak lower bound by exact triangle/Bernstein ladder, falsify at fixed registered rational cosine nodes, or report inconclusive. No optimizer positive.",
+    "coefficient_domain": "Python real integer creation polynomials/Laurent autocorrelations, per-column L1 guards before int64@int64, proved partial-sum bounds, Python-int folds and exact Fraction Chebyshev/affine/Bernstein verification. No floating quantity is proof data.",
+    "conventions": "All70 group spectra and35 complementary groupings retained. All6435 tie scalars and330x330 M retained, not6435 full phase laws. Same B/w/old normalized graph. Exact anchors0/pi2 from P53 andpi3 from P53c. Triangle then Bernstein12global then24 on8 fixed x=j/8 intervals; zero bound weak, interior negative controls not phase optima. All9 predeclared node values saved; exact negative values are valid falsifiers. No adaptive split/search/LP/retry.",
+    "inputs": [
+      "ROOT-approved static card b2f3fe9/e0440e8, vocabulary limited to b4(4+4) in same architecture;7+1/6+2/5+3 not tested",
+      "Immutable P53/P53b/P53c source and exact data; P53c certificate SHA408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065; B fixedx1/4,w saved and checked explicitly",
+      "Real-integer source assignment, normalized four-photon Fock output factorial, exact420 tie weights and scalar denominator840*8^8"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "group_spectra": 70,
+      "groupings": 35,
+      "group_states": 330,
+      "output_tie_states": 6435,
+      "maximum_harmonic": 12,
+      "matrix_rows": 330,
+      "matrix_columns": 330,
+      "per_column_L1_bound": 4096,
+      "bilinear_bound": 7046430720,
+      "fold_bound": 91603599360,
+      "cosine_bound": 183207198720,
+      "planned_integer_operations_estimate": 39502650,
+      "maximum_LP_calls": 0,
+      "global_Bernstein_degree": 12,
+      "interval_Bernstein_degree": 24,
+      "fixed_intervals": 8,
+      "registered_nodes": 9,
+      "exact_anchors": 105,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_arrays_bytes": 67108864,
+      "max_new_output_bytes": 4194304
+    },
+    "non_claims": [
+      "No all-classical-models or genuine order8 indistinguishability claim;7+1/6+2/5+3 not tested",
+      "No graph optimization benefit, strong classical feasible search/runtime advantage, full law/tails, heldout or hardware validation",
+      "No alternate B phase/w/graph, floating proof, adaptive degree/interval/root/phase optimization or interpretation of negative Bernstein controls as a physical optimum",
+      "No manuscript/QPU/Cstar/known solution training, automatic retry/cap increase or accepted scientific-goal completion"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Exact deterministic integer/rational arithmetic only; no RNG,LP or physical/MC sample",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T13:33:08.521466+00:00",
+    "runtime_seconds": 1.647499,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P53d_fixed_w_all_phase.py",
+    "research/P53d_all_phase_spec.json",
+    "research/P53d_all_phase_contract.md",
+    "research/P53d_all_phase_execution_contract.json",
+    "research/P53d_FIXED_W_ALL_PHASE_CARD.md",
+    "tests/test_p53d_all_phase.py",
+    "research/P53c_same_phase_controls.py",
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P52_collective_phase_probe.py",
+    "research/P43_global_gain_probe.py",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+    "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P53d_fixed_w_all_phase.py",
+      "sha256": "67789e2a2fee0549f94ab948476a6d27190fb3ef0a2a2ab66cd88709178402b5",
+      "sha256_after": "67789e2a2fee0549f94ab948476a6d27190fb3ef0a2a2ab66cd88709178402b5"
+    },
+    {
+      "path": "research/P53d_all_phase_spec.json",
+      "sha256": "53f716f6646d2809042363dd22cf5bb3354b855ed5113ac6d2471a034dd3dc2c",
+      "sha256_after": "53f716f6646d2809042363dd22cf5bb3354b855ed5113ac6d2471a034dd3dc2c"
+    },
+    {
+      "path": "research/P53d_all_phase_contract.md",
+      "sha256": "8a70d102d029c58650d02b7c87e76b2642fbfc6a3be068ada50e57a9950346e1",
+      "sha256_after": "8a70d102d029c58650d02b7c87e76b2642fbfc6a3be068ada50e57a9950346e1"
+    },
+    {
+      "path": "research/P53d_all_phase_execution_contract.json",
+      "sha256": "26edf965baa3a97daeb5d67164667732195d56a37c9c8a8547ce21cd6834a4e0",
+      "sha256_after": "26edf965baa3a97daeb5d67164667732195d56a37c9c8a8547ce21cd6834a4e0"
+    },
+    {
+      "path": "research/P53d_FIXED_W_ALL_PHASE_CARD.md",
+      "sha256": "13a051f80af0a8f044c84dc52995f3e7d85c58cb7fe20e22e7376c1845e6d4ea",
+      "sha256_after": "13a051f80af0a8f044c84dc52995f3e7d85c58cb7fe20e22e7376c1845e6d4ea"
+    },
+    {
+      "path": "tests/test_p53d_all_phase.py",
+      "sha256": "4ba84b780c2829f9c4bb1f118e08b38248e1bb920f8c36d7ebab9fc3c89eafec",
+      "sha256_after": "4ba84b780c2829f9c4bb1f118e08b38248e1bb920f8c36d7ebab9fc3c89eafec"
+    },
+    {
+      "path": "research/P53c_same_phase_controls.py",
+      "sha256": "737d6743f184661c4352d93c40410679bec5b5e739aa2cd964a63b919eaa53e2",
+      "sha256_after": "737d6743f184661c4352d93c40410679bec5b5e739aa2cd964a63b919eaa53e2"
+    },
+    {
+      "path": "research/P53b_fixed_point_discriminator.py",
+      "sha256": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908",
+      "sha256_after": "66ed6abdb1005c961d9bb54fe70008241ef37fe56d8d548e48173d5e9c01c908"
+    },
+    {
+      "path": "research/P53_exact_continuous_phase.py",
+      "sha256": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692",
+      "sha256_after": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692"
+    },
+    {
+      "path": "research/P52_collective_phase_probe.py",
+      "sha256": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+      "sha256_after": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+      "sha256": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0",
+      "sha256_after": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0"
+    },
+    {
+      "path": "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+      "sha256": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+      "sha256_after": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b"
+    },
+    {
+      "path": "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+      "sha256": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe",
+      "sha256_after": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe"
+    },
+    {
+      "path": "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+      "sha256": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065",
+      "sha256_after": "408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P53d_all_b4_phases/run_001",
+  "declared_results": [
+    "experiments/P53d_all_b4_phases/run_001/data/certificate.json.gz",
+    "experiments/P53d_all_b4_phases/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P53d_all_b4_phases/run_001/stdout.txt",
+      "sha256": "1467b7be82cbf6bc5c4aa07e52328f1b65a17b9176ba48b1a5bb5bca50a1d0f5",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53d_all_b4_phases/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P53d_all_b4_phases/run_001/data/certificate.json.gz",
+      "sha256": "44df171ef03e6886900cbf105c555cb2e5de0a2a4944d47b3065b23d1e57cc6b",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P53d_all_b4_phases/run_001/data/summary.json",
+      "sha256": "9a12b92a4826efad02c4fb88c54c376f641e23709593498bc0be8080c93eb82f",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
