@@ -121,3 +121,35 @@ Owner: encoding implements primary new P50 files; adaptive owns disjoint FAST
 helper/tests; physics audits. All edits isolated in their existing worktrees.
 No simultaneous numerical workers. Unresolved goal remains a reproducible,
 novel, interference-dependent optimizer gain at matched TOTAL resources.
+
+## Pre-data addendum: distinguish discrete marginals from collective effects
+
+Independent physics review, BEFORE any P50 source freeze, graph or outcome,
+identified that B>Gaussian can reflect merely discrete one-mode marginal
+shapes. Add a TENTH classical arm, independent_B_marginals, to the same frozen
+population, training/evaluation roles and exact all-shot selection. It gets
+the full16-policy grid x2 training and32 fresh draws per graph. For each row
+q_i, construct the known single-mode B PGF
+
+    G_i(z)=sum_(h=0)^r h! e_h(q_i) (z-1)^h.
+
+Draw each n_i independently from these r+1 coefficients, then use the same
+H(n-mu)+beta*zeta/topK. Tables/CDF setup and all source work belong ONLY to
+this classical arm; none enter B's cost. Import the existing Decimal80/Fraction
+row/PGF helper unchanged, save normalization/roundoff repairs, and test small
+exact fixtures. O(N r^2) work and O(N r) storage are required, not full Fock
+enumeration. Guard support/probability validity before sampling.
+
+This arm matches input one-mode marginals numerically, not total count or
+post-diffusion marginals. Its sum(n) need NOT equal r. In particular its r1
+law consists of independent Bernoulli draws, unlike the one categorical photon;
+the physical r1-equality fixture explicitly excludes this arm. No conditioning
+on total count is introduced. This prospective refinement is motivated by a
+mathematical ambiguity, never a data ranking. The original nine-arm effort
+remains unchanged; arrays/output/CPU caps and the positive-acceptance ban remain.
+
+For the support-retention null at alpha0, an exact positive click/empty gap
+is sufficient only before quantization. The declared buckets require gap>
+1e-12 plus documented floating error to guarantee retention against priority.
+Fourier's gap .8 or1 safely meets that condition. This precision correction
+does not alter a grid or promise a generic diffusion improvement.
