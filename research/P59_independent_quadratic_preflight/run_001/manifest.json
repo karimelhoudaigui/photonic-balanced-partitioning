@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "claim_id": "P59-INDEPENDENT-SYMBOLIC-PREFLIGHT",
+  "repository": {
+    "commit": "0d742c45af6a35c2b83e206f8c1d01157283c4d5",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p59_independent_quadratic.py",
+    "--junitxml=research/P59_independent_quadratic_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Thirteen independent-engine symbolic guards only: field via1,i√3 basis, three12term factors, ONE analytic PNR coefficient/response, occupation/parity metadata, explicit Gram/q, four-mode SIX-subset toy hypergeometric reference, decoder60LCM, ten-class9/5Gram, q-only moments/PGF, canonical numeric rejection, winner completeness, harmonic sign/curvature corruption and generic exact-string verdict/count checks. No derive(), full15 slope table or actual primary raw decoded.",
+    "coefficient_domain": "Python arbitrary integer pairs in Z[xi], xi²=xi−1, explicit three12term paired factors, probability denominator150^6; exact Fraction throughout. No production/native import, complex128/float proof or RNG.",
+    "conventions": "Code frozen blind to the full primary mean/outcome; known PNR fixture disclosed. Own occupation multisets,1728 triple products, all462 rows/c1 zeros, uniform top3 hypergeometric edge decoder, ten-class Gram inversion9/5. Primary20winner lists checked by cardinality/eligibility only, never used to build own decoder. All full math compared without importing primary code.",
+    "inputs": [
+      "Fixed matrix and prospective card9f5b7eab43448318269208113a7650120e04dbea, no graph/known optimum/mask",
+      "Independent analytic fixture PNR n(4,2,0,0,0,0), derivative/sqrt3=−124/421875 and own precode derivation b7341f9/59dc56e",
+      "Actual primary raw path+SHA256 are NOT bound at this freeze; ROOT may complete ONLY these data bindings/closure/argv after sealing, before execution"
+    ],
+    "bounds": {
+      "modes": 6,
+      "photons": 6,
+      "paired_factors": 3,
+      "terms_per_factor": 12,
+      "raw_products": 1728,
+      "occupations": 462,
+      "parity_allowed": 236,
+      "edges": 15,
+      "unoriented_classes": 10,
+      "diagonal_bins": 42,
+      "nonconstant_factorial_moments": 83,
+      "maximum_LP_calls": 0,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_arrays_bytes": 67108864,
+      "max_new_output_bytes": 4194304,
+      "max_primary_compressed_bytes": 4194304,
+      "max_primary_inflated_bytes": 8388608,
+      "maximum_failed_retries": 0,
+      "planned_tests": 13,
+      "qualification_complete_mean_tables": 0,
+      "qualification_primary_data_inputs": 0
+    },
+    "non_claims": [
+      "No independent physical measurement, graph training, optimizer advantage, heldout or hardware validation",
+      "No primary code/Native/backend import or outcome-dependent source/decoder change",
+      "No scientific use of narrative guard flags, no floating physical value normalized into proof",
+      "No retry,alternate matrix/phase/center/cap,manuscript/QPU change or completed research goal"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic exact integer/rational construction and data comparison, no RNG/native/LP",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T15:06:30.283222+00:00",
+    "runtime_seconds": 0.436428,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P59_independent_quadratic_check.py",
+    "research/P59_independent_quadratic_contract.md",
+    "research/P59_independent_quadratic_execution_TEMPLATE.json",
+    "tests/test_p59_independent_quadratic.py",
+    "theory/P59_adaptive_precode_derivation.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P59_independent_quadratic_preflight_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P59_independent_quadratic_check.py",
+      "sha256": "16a5a7f854c5790e9362444810f23a4d15170a31b12d5510c4e11422188a1a0a",
+      "sha256_after": "16a5a7f854c5790e9362444810f23a4d15170a31b12d5510c4e11422188a1a0a"
+    },
+    {
+      "path": "research/P59_independent_quadratic_contract.md",
+      "sha256": "f218b0f10765b15e7ed566529f29e7d643f81f32cd04b8994fd6a36f462cebf7",
+      "sha256_after": "f218b0f10765b15e7ed566529f29e7d643f81f32cd04b8994fd6a36f462cebf7"
+    },
+    {
+      "path": "research/P59_independent_quadratic_execution_TEMPLATE.json",
+      "sha256": "9b3c1fa6c5c1ce4662220130242437dd0523580f00e9622562643c9eeb6e72e6",
+      "sha256_after": "9b3c1fa6c5c1ce4662220130242437dd0523580f00e9622562643c9eeb6e72e6"
+    },
+    {
+      "path": "tests/test_p59_independent_quadratic.py",
+      "sha256": "681719d7f4102f4fb635e48ac6e3f178df937743f94d0da73b7c74a5581b1252",
+      "sha256_after": "681719d7f4102f4fb635e48ac6e3f178df937743f94d0da73b7c74a5581b1252"
+    },
+    {
+      "path": "theory/P59_adaptive_precode_derivation.md",
+      "sha256": "c2d5582e3a75fb9329390fc84434fb0cfc889fe1d01f49fcedbfe22db43a2540",
+      "sha256_after": "c2d5582e3a75fb9329390fc84434fb0cfc889fe1d01f49fcedbfe22db43a2540"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P59_independent_quadratic_preflight_contract.json",
+      "sha256": "9412a672e59912b3917bac0e7eb04fe3311b498e1555a2846ac7f697c609fec0",
+      "sha256_after": "9412a672e59912b3917bac0e7eb04fe3311b498e1555a2846ac7f697c609fec0"
+    }
+  ],
+  "output_directory": "research/P59_independent_quadratic_preflight/run_001",
+  "declared_results": [
+    "research/P59_independent_quadratic_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P59_independent_quadratic_preflight/run_001/stdout.txt",
+      "sha256": "c9d70cc5d6acf06454bba266fd793dae5d72fda64186df4c91e6157ff6345eda",
+      "kind": "log"
+    },
+    {
+      "path": "research/P59_independent_quadratic_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P59_independent_quadratic_preflight/run_001/junit.xml",
+      "sha256": "148e4b5af9c7dd13c4c3d9a5d5464f4c7f05fee4397cc3f69289559ae23f3b6e",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
