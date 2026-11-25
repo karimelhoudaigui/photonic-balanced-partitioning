@@ -1,0 +1,103 @@
+{
+  "claim_id": "P49-TRAINED-SOURCE-FRESH-EVAL-DEV",
+  "mathematics": {
+    "assertion_tested": "Does independently training the exact all-shot equally graph-weighted feasible-cut mean over a fixed coherent source-mixing family produce useful fresh evaluation or paid-deployment outcomes beyond D/b4/Gaussian/phase/sphere/IID and strong feasible/FAST controls? Positive acceptance forbidden.",
+    "coefficient_domain": "Complex128/float64 passive matrices, immutable Decimal80/Fraction marginal helpers; integer cuts, exact Fraction objective/selection; observed wall/CPU deadlines",
+    "conventions": "Four source bases and lambda0/1; model-specific nonredundant sphere/IID grids; contiguous b4; shared Cref frozen before training;128 train+128 fresh eval per arm; loss uses ALL balanced cuts/total weight, equal four-graph mean; no optimum/mask/filter/heldout/QPU. FAST gets CPU from measured B classical wall, optical latency0, only deadline-eligible prefix.",
+    "inputs": [
+      "Four NEW DEV weighted ER/RR graphs N26/34 with seeds4902601,4902602,4903401,4903402",
+      "Fixed R=G_even@G_odd at theta0/pi4,phi0/pi2; gauge before mixing; recompute all q-dependent objects",
+      "128 training+128 fresh evaluation proposals per seven arms; source ports0..K-1; all raw counts/collisions",
+      "Five independent paid legacy searches and independently qualified FAST module with compact deadline trace"
+    ],
+    "bounds": {
+      "graphs": 4,
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "training_proposals_per_arm": 128,
+      "evaluation_proposals_per_arm": 128,
+      "simulated_photons_per_optical_arm": 3840,
+      "FAST_max_proposals_per_graph_guard": 100000000,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted positive, novelty, hardware compatibility, heldout or QPU gate",
+      "Legacy informative units are not matched CPU prices",
+      "Numeric PIT/timings are not interval, relative-tail or hardware latency guarantees",
+      "Early FAST cap/wall or incomplete numerical population bars accepting a gain",
+      "Failed/resource-limited runs preserved and inconclusive; no retry or increased cap"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P49_trained_source_probe.py",
+    "research/P49_trained_source_spec.json",
+    "research/P49_trained_source_contract.md",
+    "research/P49_trained_source_execution_contract.json",
+    "tests/test_p49_trained_source.py",
+    "research/P49_fast_classical.py",
+    "tests/test_p49_fast_classical.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Role-separated PCG64, seeded networkx, serial local exqalibur; separate training/evaluation seeds; continuous phase/spherical fields",
+    "seed": [
+      4902601,
+      4902602,
+      4903401,
+      4903402,
+      491010,
+      491020,
+      491030,
+      491040,
+      491100,
+      491200,
+      491300,
+      491400
+    ]
+  },
+  "resource_note": "One exclusive numerical worker after physics/caller review and PASS preflight. Actual runner CPU60/wall90/thread1/log32MiB; script output cap32MiB. Four marginal contexts/FAST projected within caps before outcomes. No imports/tests/DEV before source+contracts frozen and coordinator slot.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P49_trained_source_probe.py",
+    "--spec",
+    "research/P49_trained_source_spec.json",
+    "--output",
+    "experiments/P49_trained_source/run_001/data"
+  ]
+}
