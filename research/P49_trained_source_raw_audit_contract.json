@@ -1,0 +1,59 @@
+{
+  "claim_id": "P49-POSTHOC-RAW-SELECTION-DEADLINE-CONSISTENCY",
+  "mathematics": {
+    "assertion_tested": "Read-only inspect every P49 raw cut/decoder, fixed Cref/preparation candidate, count/Gaussian PIT, exact ALL-shot/equal-graph training means and selected policies, fresh evaluation roles/means, private paid incumbents, setup accounting and every FAST packed-subset/deadline-eligible checkpoint. Independently reconstruct source geometry and R product without any sampling.",
+    "coefficient_domain": "Integer cuts, Fraction means/ties, stdlib float/complex geometry and measured-clock consistency; no interval proof",
+    "conventions": "Post-hoc consistency audit of the one immutable completed P49 run, not independent distribution replication or a new optimization experiment. All rows/cases retained. Only eligible FAST prefixes, never late overall best.",
+    "inputs": [
+      "Primary manifest plus all ten declared P49 immutable results",
+      "Frozen P49 spec/grids and complete raw training/evaluation/legacy stream",
+      "Every FAST compact clock/cut/mask checkpoint and resource-grant ledger"
+    ],
+    "bounds": {
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "maximum_raw_rows": 200000,
+      "cpu_seconds": 20,
+      "wall_seconds": 90,
+      "threads": 1
+    },
+    "non_claims": [
+      "No new random samples, independent sampler replication, significance or quantum advantage",
+      "No numerical interval/relative-tail certificate or optimized hardware-price proof",
+      "Assignment checks include feasibility/logcost; solver optimality relies on qualified implementation, not brute force at N34"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P49_trained_source_raw_audit.py",
+    "research/P49_trained_source_raw_audit_contract.json",
+    "experiments/P49_trained_source/run_001/manifest.json",
+    "research/P49_trained_source_spec.json",
+    "experiments/P49_trained_source/run_001/data/summary.json",
+    "experiments/P49_trained_source/run_001/data/raw.jsonl.gz",
+    "experiments/P49_trained_source/run_001/data/context_n26_ER_4902601.json",
+    "experiments/P49_trained_source/run_001/data/context_n26_RR_4902602.json",
+    "experiments/P49_trained_source/run_001/data/context_n34_ER_4903401.json",
+    "experiments/P49_trained_source/run_001/data/context_n34_RR_4903402.json",
+    "experiments/P49_trained_source/run_001/data/fast_n26_ER_4902601.json",
+    "experiments/P49_trained_source/run_001/data/fast_n26_RR_4902602.json",
+    "experiments/P49_trained_source/run_001/data/fast_n34_ER_4903401.json",
+    "experiments/P49_trained_source/run_001/data/fast_n34_RR_4903402.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P49_trained_source_raw_audit.py",
+    "--output",
+    "research/P49_trained_source_raw_audit/run_001/data"
+  ]
+}

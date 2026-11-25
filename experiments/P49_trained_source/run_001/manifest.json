@@ -1,0 +1,293 @@
+{
+  "schema_version": 2,
+  "claim_id": "P49-TRAINED-SOURCE-FRESH-EVAL-DEV",
+  "repository": {
+    "commit": "32615d1b6589019eb4fdba9e66d97375cb672196",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P49_trained_source_probe.py",
+    "--spec",
+    "research/P49_trained_source_spec.json",
+    "--output",
+    "experiments/P49_trained_source/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Does independently training the exact all-shot equally graph-weighted feasible-cut mean over a fixed coherent source-mixing family produce useful fresh evaluation or paid-deployment outcomes beyond D/b4/Gaussian/phase/sphere/IID and strong feasible/FAST controls? Positive acceptance forbidden.",
+    "coefficient_domain": "Complex128/float64 passive matrices, immutable Decimal80/Fraction marginal helpers; integer cuts, exact Fraction objective/selection; observed wall/CPU deadlines",
+    "conventions": "Four source bases and lambda0/1; model-specific nonredundant sphere/IID grids; contiguous b4; shared Cref frozen before training;128 train+128 fresh eval per arm; loss uses ALL balanced cuts/total weight, equal four-graph mean; no optimum/mask/filter/heldout/QPU. FAST gets CPU from measured B classical wall, optical latency0, only deadline-eligible prefix. Observation setup is split into timed make_optical_sampler backend and total-minus-backend classical hashes/RNG/closures; the latter wall+CPU is recorded and wall included in FAST grant.",
+    "inputs": [
+      "Four NEW DEV weighted ER/RR graphs N26/34 with seeds4902601,4902602,4903401,4903402",
+      "Fixed R=G_even@G_odd at theta0/pi4,phi0/pi2; gauge before mixing; recompute all q-dependent objects",
+      "128 training+128 fresh evaluation proposals per seven arms; source ports0..K-1; all raw counts/collisions",
+      "Five independent paid legacy searches and independently qualified FAST module with compact deadline trace"
+    ],
+    "bounds": {
+      "graphs": 4,
+      "maximum_modes": 34,
+      "maximum_photons": 17,
+      "training_proposals_per_arm": 128,
+      "evaluation_proposals_per_arm": 128,
+      "simulated_photons_per_optical_arm": 3840,
+      "FAST_max_proposals_per_graph_guard": 100000000,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted positive, novelty, hardware compatibility, heldout or QPU gate",
+      "Legacy informative units are not matched CPU prices",
+      "Numeric PIT/timings are not interval, relative-tail or hardware latency guarantees",
+      "Early FAST cap/wall or incomplete numerical population bars accepting a gain",
+      "Failed/resource-limited runs preserved and inconclusive; no retry or increased cap"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Role-separated PCG64, seeded networkx, serial local exqalibur; separate training/evaluation seeds; continuous phase/spherical fields",
+    "seed": [
+      4902601,
+      4902602,
+      4903401,
+      4903402,
+      491010,
+      491020,
+      491030,
+      491040,
+      491100,
+      491200,
+      491300,
+      491400
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T06:01:06.161683+00:00",
+    "runtime_seconds": 24.299721,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P49_trained_source_probe.py",
+    "research/P49_trained_source_spec.json",
+    "research/P49_trained_source_contract.md",
+    "research/P49_trained_source_execution_contract.json",
+    "tests/test_p49_trained_source.py",
+    "research/P49_fast_classical.py",
+    "tests/test_p49_fast_classical.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P49_trained_source_probe.py",
+      "sha256": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5",
+      "sha256_after": "384057373739a90bbe6ec0f37726324b222ceeed2609bec57ae0dfebd700b7f5"
+    },
+    {
+      "path": "research/P49_trained_source_spec.json",
+      "sha256": "275bb9bcae40e0f4d7ba7ee8945c40435b617c89134f83e8e598ab7437387a42",
+      "sha256_after": "275bb9bcae40e0f4d7ba7ee8945c40435b617c89134f83e8e598ab7437387a42"
+    },
+    {
+      "path": "research/P49_trained_source_contract.md",
+      "sha256": "b68430fdf6d7d97a2f8dff6c73ee56c5b820fd1b260ad0975be23e6d1c24401d",
+      "sha256_after": "b68430fdf6d7d97a2f8dff6c73ee56c5b820fd1b260ad0975be23e6d1c24401d"
+    },
+    {
+      "path": "research/P49_trained_source_execution_contract.json",
+      "sha256": "ab145c57f48a8e197f116e593de94ee7681b9531a9ef4ba6d426617bfc99b363",
+      "sha256_after": "ab145c57f48a8e197f116e593de94ee7681b9531a9ef4ba6d426617bfc99b363"
+    },
+    {
+      "path": "tests/test_p49_trained_source.py",
+      "sha256": "1baeb2e478417e1cd1dcb9f456ee65c8a506e5a1401046b63fbb23dc691e03af",
+      "sha256_after": "1baeb2e478417e1cd1dcb9f456ee65c8a506e5a1401046b63fbb23dc691e03af"
+    },
+    {
+      "path": "research/P49_fast_classical.py",
+      "sha256": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff",
+      "sha256_after": "018fef36d67ce31f14e9ed3e2e200ac11605dbffe9ed3670284862f3c9ba3fff"
+    },
+    {
+      "path": "tests/test_p49_fast_classical.py",
+      "sha256": "50bb0c50234934260ccd88cf065dd9752b959a7f447f81fda1a63c132f437621",
+      "sha256_after": "50bb0c50234934260ccd88cf065dd9752b959a7f447f81fda1a63c132f437621"
+    },
+    {
+      "path": "research/P48_spectral_pit_probe.py",
+      "sha256": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca",
+      "sha256_after": "b123bec4f67feb8ffc2255e0a56bc1181748a80bb716fe92328954a6f4d538ca"
+    },
+    {
+      "path": "research/P48_coherent_marginals.py",
+      "sha256": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac",
+      "sha256_after": "a231a94578daf43993f62e393f1c58f90030a693ad2bf7722977ae65e181b2ac"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P45_adaptive_probe.py",
+      "sha256": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92",
+      "sha256_after": "bb00ca61e45794ecea2333e0aa1864edfaec43128c1efa98dd8384c3d6889f92"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P49_trained_source/run_001",
+  "declared_results": [
+    "experiments/P49_trained_source/run_001/data/summary.json",
+    "experiments/P49_trained_source/run_001/data/raw.jsonl.gz",
+    "experiments/P49_trained_source/run_001/data/context_n26_ER_4902601.json",
+    "experiments/P49_trained_source/run_001/data/context_n26_RR_4902602.json",
+    "experiments/P49_trained_source/run_001/data/context_n34_ER_4903401.json",
+    "experiments/P49_trained_source/run_001/data/context_n34_RR_4903402.json",
+    "experiments/P49_trained_source/run_001/data/fast_n26_ER_4902601.json",
+    "experiments/P49_trained_source/run_001/data/fast_n26_RR_4902602.json",
+    "experiments/P49_trained_source/run_001/data/fast_n34_ER_4903401.json",
+    "experiments/P49_trained_source/run_001/data/fast_n34_RR_4903402.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P49_trained_source/run_001/stdout.txt",
+      "sha256": "8ff770ecdfbbdca5d2c611c53e22639c3050024dde62b63dd07af4f0de315466",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/stderr.txt",
+      "sha256": "06dcb3bef43b50efc6cf53681daf3c72ac48035e9e755ad6950c2b4b9c69a9fc",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/summary.json",
+      "sha256": "61c96a19778294367c56c228c7c4a39da48a1bd8f525fc94381c1a0ace5e7103",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/raw.jsonl.gz",
+      "sha256": "f890601b3237e329df883fddee8f8ca4a81ec9055d2539332ecfc11a736b6f26",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n26_ER_4902601.json",
+      "sha256": "0a6d3c67818ba53c4011ec0aa5b82e9653d3fe14207fe151b55511432f492c82",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n26_RR_4902602.json",
+      "sha256": "1d8ebd6e668a91c99ccda688eafed6e0457ae1525ad1beea4cac67d5198b4fd0",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n34_ER_4903401.json",
+      "sha256": "e6aa549ea4fd9644107304844d527294b1f9f6a542105a1a86370df1de700aa9",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/context_n34_RR_4903402.json",
+      "sha256": "695410dbc07b26e21beade62e21ffa326b4224392e611c6a07bfec35653f77dc",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n26_ER_4902601.json",
+      "sha256": "5272a0a32124bcec3cf01b10a7756b5e5d5b10e28ccfd2028b8cbf7430adb8be",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n26_RR_4902602.json",
+      "sha256": "9c5e729ad38153ec05fcdaef004ecd35495be3edbd8ecf36473b0022eed35345",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n34_ER_4903401.json",
+      "sha256": "220ad4c2738e7c6d66e52f02aaf234b965ad230292cad70a7c62b5df1a9dec8a",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P49_trained_source/run_001/data/fast_n34_RR_4903402.json",
+      "sha256": "9d397c931e3985d80276d3554315067af877b004fde9ddafb6d017a783b34a2e",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
