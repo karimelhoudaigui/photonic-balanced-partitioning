@@ -179,7 +179,8 @@ def test_all_462_small_probabilities_against_independent_ryser(phase_index, phi,
     assert len(actual) == len(reference) == 462
     errors = [abs(actual[n] - reference[n]) for n in actual]
     artifact = {
-        "status": "NUMERICAL_LAW_COMPARISON_NOT_GLOBAL_TV_CERTIFICATE",
+        "status": "NORMALIZED_CATEGORICAL_KERNEL_NOT_FINITE_BIT_LAW_OR_GLOBAL_TV_CERTIFICATE",
+        "probability_convention": "Rounded conditional masses divided by their explicit fsum at every node; real-probability categorical kernel, distinct from finite-bit MT19937 quantile law",
         "phase_index": phase_index,
         "phase_label": ("0", "pi/6", "pi/3", "-0.4")[phase_index],
         "binary64_phase": phi, "binary64_phase_hex": phi.hex(),

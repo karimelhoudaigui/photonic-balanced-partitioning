@@ -367,11 +367,13 @@ class StructuredSampler:
                     law[counts] += float(mass) * probability
                     return
                 output, probs, suffixes, groups = self.local_distribution(current, color)
+                categorical_mass = math.fsum(probs)
                 for index, p in enumerate(probs):
                     if p == 0:
                         continue  # An exactly zero rounded branch, no threshold.
                     next_state = self.project(output, probs, suffixes, groups, index, color)
-                    descend(color + 1, next_state, prefix + [output[index]], probability * p)
+                    descend(color + 1, next_state, prefix + [output[index]],
+                            probability * (p / categorical_mass))
             descend(0, state, [], 1.0)
         require_mass(math.fsum(law.values()))
         return law
