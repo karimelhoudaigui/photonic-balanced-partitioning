@@ -1,0 +1,13 @@
+{
+  "source": ".local/p66-dark-audit/research/P70_rank_one_bosonic_transfer_and_classical_falsifier.md",
+  "destination": "research/P70_rank_one_bosonic_transfer_and_classical_falsifier.md",
+  "sha256": "c6a8a9bb5485c91b4c0800728444036626a44d70770c3b45e68e5daaf1a9e53e",
+  "bytes": 13143,
+  "byte_identical": true,
+  "source_uncommitted_due_reported_index_timeout": true,
+  "index_preserved": true,
+  "root_review": "Full260lines read; bright-swap Fock amplitude/permanent, arbitrary rank1 distinguishable conditional-fill bound and classical/higher-rank falsifiers rederived",
+  "independent_derivation": "PENDING",
+  "numerical_run": false,
+  "positive_optimizer_accepted": false
+}
