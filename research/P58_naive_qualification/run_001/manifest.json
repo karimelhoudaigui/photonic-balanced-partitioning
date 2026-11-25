@@ -1,0 +1,163 @@
+{
+  "schema_version": 2,
+  "claim_id": "P58-NAIVE-TINY-QUALIFICATION",
+  "repository": {
+    "commit": "db573dd7974bd4572f51180628e2596129192576",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P58_naive_replication.py",
+    "--mode",
+    "qualify",
+    "--output",
+    "research/P58_naive_qualification/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Six stdlib guards plus HOM CF/bunching, complex partial-input orientation, vacuum and independent eight-mode Gram; no P58 source amplitude or archived probability read",
+    "coefficient_domain": "Complex128 local PercevalNaive/exqalibur tiny permanents, stdlib exact hypergeometric Fraction guards",
+    "conventions": "U[out,input], original crossed-bit Walsh row order, one-thread official Config setter/readback before permanent work, no primary/helper import",
+    "inputs": [
+      "Standalone frozen replication source and card; no primary probability file is opened in qualify mode"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 16777216,
+      "planned_logical_workspace_bytes": 134217728,
+      "stdlib_guards": 6,
+      "physics_math_checks": 5,
+      "maximum_photons_native": 2,
+      "P58_source_probabilities": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "Qualification is not any P58 source reconstruction or physical sampling",
+      "No full run before separate ROOT review/authorization; no retry or vendor change",
+      "Absolute tolerances are not intervals, relative precision or hardware calibration"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T14:18:50.780013+00:00",
+    "runtime_seconds": 16.391465,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 16777216,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P58_naive_replication.py",
+    "research/P58_NAIVE_REPLICATION_CARD.md",
+    "research/P58_naive_qualification_contract.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P58_naive_replication.py",
+      "sha256": "7fe721b9dd27bdb7923558fe4e3e62b799b18570ed524959a9676b9521bd3479",
+      "sha256_after": "7fe721b9dd27bdb7923558fe4e3e62b799b18570ed524959a9676b9521bd3479"
+    },
+    {
+      "path": "research/P58_NAIVE_REPLICATION_CARD.md",
+      "sha256": "89c6f0c74fb84220bd0178da78e6cc5ab57e69f1d23fbd2ca62f8661b80cfe2f",
+      "sha256_after": "89c6f0c74fb84220bd0178da78e6cc5ab57e69f1d23fbd2ca62f8661b80cfe2f"
+    },
+    {
+      "path": "research/P58_naive_qualification_contract.json",
+      "sha256": "b02dc8073635eba5d004438b5e852b45fcebc52364771979e2ee23fe9ec0d286",
+      "sha256_after": "b02dc8073635eba5d004438b5e852b45fcebc52364771979e2ee23fe9ec0d286"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P58_naive_qualification/run_001",
+  "declared_results": [
+    "research/P58_naive_qualification/run_001/data/report.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P58_naive_qualification/run_001/stdout.txt",
+      "sha256": "a8c785eb478cf66d0f141c044c6d3e00649ae97fa378984aa0907e012a723a6f",
+      "kind": "log"
+    },
+    {
+      "path": "research/P58_naive_qualification/run_001/stderr.txt",
+      "sha256": "dd65094b41d527e777b6c4728c984494495743689a154eacc5573936bd5102cb",
+      "kind": "log"
+    },
+    {
+      "path": "research/P58_naive_qualification/run_001/data/report.json",
+      "sha256": "d874117b10d30eff60f5bf33995698bb4415ec2b65aab9ee21ea67c8469fe05d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

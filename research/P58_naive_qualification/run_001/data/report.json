@@ -1,0 +1,131 @@
+{
+  "mode": "qualify",
+  "posthoc_not_blind": true,
+  "production_imported": false,
+  "physical_draws": 0,
+  "actual_QPU_calls": 0,
+  "positive_optimizer_accepted": false,
+  "genuine_order8_claimed": false,
+  "code_sha256": "7fe721b9dd27bdb7923558fe4e3e62b799b18570ed524959a9676b9521bd3479",
+  "stdlib_guards": 6,
+  "provenance": {
+    "versions": {
+      "numpy": "2.4.6",
+      "perceval-quandela": "1.3.0",
+      "exqalibur": "1.4.2"
+    },
+    "native": {
+      "interface": "exqalibur.Config.compute_max_thread_count",
+      "before": 0,
+      "requested": 1,
+      "configured_before_work": 1,
+      "interpretation": "documented native maximum only, not observed OS scheduling",
+      "readback_after_work": 1
+    },
+    "MPLCONFIGDIR": "/Users/karimelhoudaigui/Desktop/pasqal/.local/mplconfig",
+    "cache_note": "persistent config only; no warm/cold performance claim",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "engine_files": {
+      "NaiveBackend": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/backends/_naive.py",
+        "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+      },
+      "Unitary": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/components/unitary_components.py",
+        "sha256": "2f4bacd1d3d5c919b32eaaf28d1881a5f49be608ffca4be2ee53886a149786df"
+      },
+      "exqalibur": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/__init__.py",
+        "sha256": "6a6ac3b31ef4ebc06ef95c2fa0aed19516e9c72bbe4e59b05aea1f2055686690"
+      },
+      "exqalibur.exqalibur": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+        "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+      }
+    },
+    "backend": "local NaiveBackend.prob_amplitude -> exqalibur.permanent_cx; no pruning, mask, iterator or remote",
+    "Config_doc": "Exqalibur global configuration\n\nAll its members are statically accessed and there is no need to create an instance of this class.\n\nStatic properties:\n\n* ``compute_max_thread_count`` - Maximum number of CPU threads to use for parallel algorithms.\n\n    By default, `exqalibur` uses as many CPU cores as possible.\n\n    Current parallel algorithms are:\n\n    * CircuitOptimizer\n    * Clifford & Clifford sampling back-end\n    * Permanent computation\n    * Permanent estimate with Gurvits method\n    * Noisy Sampling Simulator\n* ``use_single_precision`` - Switch between single and double precision for algorithms which supports it (currently, only Clifford & Clifford back-end).\n    When `True` set the floating point precision to 32 bits (64 bits per complex value), 64 bits otherwise (128 bits per complex value)\n* ``unitary_check_precision`` - Precision to use when testing whether a matrix is unitary or not. It might be required to increase this value for larger matrices.\n    Default is the same value as in numpy (1e-6).\n\nUsage example:\n\n>>> import exqalibur as xq\n>>> xq.Config.unitary_check_precision = 1e-4\n",
+    "permanent_doc": "permanent_cx(M: typing.Annotated[numpy.typing.NDArray[numpy.complex128], \"[m, n]\", \"flags.c_contiguous\"], ptype: str = '') -> complex\n\nPermanent of a square complex matrix\n\n:param M: Square matrix of complex values\n:param ptype: Name of a permanent computation algorithm. Accepted values are ``\"glynn\"`` and ``\"ryser\"``.\n              By default, Glynn method is used only when using 1 or 2 threads. Ryser is otherwise used.\n:return: The permanent value\n\nSee also exqalibur.Config to control how many CPU threads you allow you program to use.\n\n"
+  },
+  "physics_checks": [
+    {
+      "name": "HOM_CF",
+      "observed": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "absolute_error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "HOM_bunch",
+      "observed": [
+        0.0,
+        0.7071067811865474
+      ],
+      "expected": [
+        0.0,
+        0.7071067811865475
+      ],
+      "absolute_error": 1.1102230246251565e-16,
+      "pass": true
+    },
+    {
+      "name": "partial_source_complex_orientation",
+      "observed": [
+        0.7458618764848276,
+        -0.2892923455719696
+      ],
+      "expected": [
+        0.7458618764848276,
+        -0.2892923455719696
+      ],
+      "absolute_error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "vacuum",
+      "observed": [
+        1.0,
+        0.0
+      ],
+      "expected": [
+        1.0,
+        0.0
+      ],
+      "absolute_error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "eight_mode_Gram_only",
+      "observed": [
+        1.1103115366141498e-16,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "absolute_error": 1.1103115366141498e-16,
+      "pass": true
+    }
+  ],
+  "P58_source_probabilities_evaluated": 0,
+  "P58_reference_files_opened": false,
+  "status": "PASS",
+  "cpu_seconds": 1.248926,
+  "wall_seconds": 16.100211500015575,
+  "peak_rss_raw": 153993216,
+  "rss_unit": "bytes"
+}
