@@ -1,0 +1,120 @@
+{
+  "claim_id": "P55-FINITE-NEUTRALITY-DEV-VETO",
+  "mathematics": {
+    "assertion_tested": "Finite coherent multi-defect neutral decoding versus independently selected D/b4/full-count phase/B-product/inclusion controls, plus two fixed from-raw classical searches under measured B-only classical WALL-to-CPU allowance. All training+fresh scores are paid; this is an exploratory veto only.",
+    "coefficient_domain": "Complex128/float64 matrix functions; exact integer graph/cuts/photons/ranks and Fraction equal-graph policy selection; unchanged Decimal80 marginal transform; observed wall/CPU clocks",
+    "conventions": "FullCF N=r20,K10,eta1,H_ij=sqrt(w_ij)/normop,all counts to qualified exact neutral minimizer DP; independent Fraction policy means across two graphs, all THAT-policy cuts, freeze before fresh; B80/total480; D sqrt2t, b4 two input groupings, full-count continuous-phase multinomial, variable-M B-product PMFs, direct CTMC horizon_tau; raw_mu both sides3e-12/no deficit renormalization; one fixed FAST dominating both vetoes, paid-init prefix can refute, first scan required for followup; no accepted positive",
+    "inputs": [
+      "Two prospectively frozen unopened weighted ER/RR N20 graphs, seeds5502001/5502002, degree4 and integer weights1..5",
+      "Six independent model grids and fresh phase/count/rank namespaces fixed in spec; no optimum/mask/incumbent as source input"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "maximum_new_output_bytes": 33554432,
+      "planned_logical_workspace_bytes": 268435456,
+      "graphs": 2,
+      "models": 6,
+      "primary_batches": 96,
+      "total_draws": 480,
+      "B_draws": 80,
+      "B_injected_simulated_photons": 1600,
+      "per_model_training_draws": 48,
+      "per_model_fresh_draws": 32,
+      "maximum_total_count_product_model": 400,
+      "maximum_DP_cells": 92631,
+      "CTMC_event_cap_per_shot": 4096,
+      "FAST_calls": 4,
+      "FAST_max_proposals_guard": 100000000
+    },
+    "non_claims": [
+      "No accepted positive, population inference, novelty clearance, independent physical replication, held-out opening, hardware feasibility or QPU authorization",
+      "N20/two DEV graphs and finite control grids can veto this family or motivate a new design, never prove optimized or scalable advantage",
+      "Small-time gain is classical: D sqrt2 retiming and inclusion tau=tB^2 are mandatory known nulls; all-collision feasible output is not itself a benefit",
+      "Decimal80/float Gram, mass, PMF/CDF and clock guards are not intervals, relative precision guarantees, native RSS/OS thread measurements or hardware runtime",
+      "B-only classical WALL converted to FAST CPU excludes all optional control preparation/IO/simulationbackend and assumes zero optical latency; this is an implementation envelope, not a universal no-go",
+      "Missing/failing cases remain INCONCLUSIVE with first evidence and no retry, graph replacement, larger cap, precision change or truncated-chain decoding"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P55_finite_neutrality_probe.py",
+    "research/P55_finite_neutrality_spec.json",
+    "research/P55_finite_neutrality_contract.md",
+    "research/P55_finite_neutrality_execution_contract.json",
+    "research/P55_finite_neutrality_preflight_contract.json",
+    "research/P55_FINITE_DEV_PILOT_PROPOSAL.md",
+    "research/P55_PRE_DATA_AMENDMENT.md",
+    "research/P55_neutrality_decoder.py",
+    "research/P55_NEUTRAL_DEFECT_DECODER_CARD.md",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "research/P48_coherent_marginals.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P50_fast_from_scratch_contract.json",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "PCG64 graph/field/count/CTMC streams; Perceval/exqalibur local optical RNG reseeded per batch; independent Python Random.randrange for the single exact arbitrary-integer rank; all role seeds recorded",
+    "seed": [
+      5502001,
+      5502002,
+      551010,
+      551011,
+      552000,
+      553000,
+      554000
+    ]
+  },
+  "resource_note": "Static projection50CPU/~65wall,not N20 calibrated. One exclusive worker, CPU60/wall90/thread1/output32MiB/plannedlogical256MiB. Documented exqalibur maximum1 setter/readback before+after work,not OS scheduling. No full Fock distribution,exponential array,hardDarwinRSS/affinity,hiddenwarmup,retry or chained new experiment. Main waits for reviewed source and synthetic qualification PASS, then separate root authorization.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P55_finite_neutrality_probe.py",
+    "--spec",
+    "research/P55_finite_neutrality_spec.json",
+    "--output",
+    "experiments/P55_finite_neutrality/run_001/data"
+  ],
+  "declared_results": [
+    "experiments/P55_finite_neutrality/run_001/data/raw.jsonl.gz",
+    "experiments/P55_finite_neutrality/run_001/data/context_n20_ER_5502001.json.gz",
+    "experiments/P55_finite_neutrality/run_001/data/context_n20_RR_5502002.json.gz",
+    "experiments/P55_finite_neutrality/run_001/data/selection.json",
+    "experiments/P55_finite_neutrality/run_001/data/failure.json",
+    "experiments/P55_finite_neutrality/run_001/data/summary.json"
+  ]
+}

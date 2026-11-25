@@ -1,0 +1,298 @@
+{
+  "phase": "P55_FINITE_NEUTRALITY_DEV_VETO",
+  "positive_acceptance_allowed": false,
+  "ideal_transmission_eta": 1,
+  "cases": [
+    {
+      "id": "n20_ER_5502001",
+      "m": 20,
+      "k": 10,
+      "r": 20,
+      "family": "ER",
+      "seed": 5502001
+    },
+    {
+      "id": "n20_RR_5502002",
+      "m": 20,
+      "k": 10,
+      "r": 20,
+      "family": "RR",
+      "seed": 5502002
+    }
+  ],
+  "models": [
+    "bosonic",
+    "distinguishable",
+    "species4",
+    "continuous_phase",
+    "independent_B_marginals",
+    "inclusion_walk"
+  ],
+  "policy_grids": {
+    "bosonic": [
+      {
+        "id": 0,
+        "network": "1",
+        "t": 1.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      },
+      {
+        "id": 1,
+        "network": "2",
+        "t": 2.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      },
+      {
+        "id": 2,
+        "network": "4",
+        "t": 4.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      }
+    ],
+    "distinguishable": [
+      {
+        "id": 0,
+        "network": "1",
+        "t": 1.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "network": "sqrt2",
+        "t": 1.4142135623730951,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "network": "2",
+        "t": 2.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "network": "2sqrt2",
+        "t": 2.8284271247461903,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "network": "4",
+        "t": 4.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "network": "4sqrt2",
+        "t": 5.656854249492381,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 4
+      }
+    ],
+    "species4": [
+      {
+        "id": 0,
+        "network": "1",
+        "t": 1.0,
+        "group": 0,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "network": "1",
+        "t": 1.0,
+        "group": 1,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "network": "2",
+        "t": 2.0,
+        "group": 0,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "network": "2",
+        "t": 2.0,
+        "group": 1,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "network": "4",
+        "t": 4.0,
+        "group": 0,
+        "horizon_tau": null,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "network": "4",
+        "t": 4.0,
+        "group": 1,
+        "horizon_tau": null,
+        "training_draws": 4
+      }
+    ],
+    "continuous_phase": [
+      {
+        "id": 0,
+        "network": "1",
+        "t": 1.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      },
+      {
+        "id": 1,
+        "network": "2",
+        "t": 2.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      },
+      {
+        "id": 2,
+        "network": "4",
+        "t": 4.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      }
+    ],
+    "independent_B_marginals": [
+      {
+        "id": 0,
+        "network": "1",
+        "t": 1.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      },
+      {
+        "id": 1,
+        "network": "2",
+        "t": 2.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      },
+      {
+        "id": 2,
+        "network": "4",
+        "t": 4.0,
+        "group": null,
+        "horizon_tau": null,
+        "training_draws": 8
+      }
+    ],
+    "inclusion_walk": [
+      {
+        "id": 0,
+        "network": null,
+        "t": null,
+        "group": null,
+        "horizon_tau": 1,
+        "training_draws": 4
+      },
+      {
+        "id": 1,
+        "network": null,
+        "t": null,
+        "group": null,
+        "horizon_tau": 2,
+        "training_draws": 4
+      },
+      {
+        "id": 2,
+        "network": null,
+        "t": null,
+        "group": null,
+        "horizon_tau": 4,
+        "training_draws": 4
+      },
+      {
+        "id": 3,
+        "network": null,
+        "t": null,
+        "group": null,
+        "horizon_tau": 8,
+        "training_draws": 4
+      },
+      {
+        "id": 4,
+        "network": null,
+        "t": null,
+        "group": null,
+        "horizon_tau": 16,
+        "training_draws": 4
+      },
+      {
+        "id": 5,
+        "network": null,
+        "t": null,
+        "group": null,
+        "horizon_tau": 32,
+        "training_draws": 4
+      }
+    ]
+  },
+  "graph_mean_degree": 4,
+  "graph_RR_degree": 4,
+  "weight_low": 1,
+  "weight_high": 5,
+  "seed_namespaces": {
+    "group0": 551010,
+    "group1": 551011,
+    "training": 552000,
+    "evaluation": 553000,
+    "FAST": 554000
+  },
+  "training_batch_draws": 4,
+  "evaluation_trials": [
+    0,
+    1
+  ],
+  "evaluation_draws_per_trial": 8,
+  "numerical_tolerance": 3e-12,
+  "PGF_precision": 80,
+  "PGF_mixed_exact_row": "q_i=i/210,i=1..20",
+  "CTMC_horizon_convention": "direct_horizon_tau_never_squared",
+  "full_source_raw_mean_guard_both_sides": true,
+  "FAST_followup_requires_first_scan": true,
+  "FAST_veto_accepts_paid_initialization": true,
+  "CTMC_event_cap_per_shot": 4096,
+  "FAST_modes": [
+    "random",
+    "spectral"
+  ],
+  "FAST_max_proposals": 100000000,
+  "planned_total_draws": 480,
+  "planned_B_draws": 80,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_new_output_bytes": 33554432,
+  "maximum_planned_workspace_bytes": 268435456
+}
