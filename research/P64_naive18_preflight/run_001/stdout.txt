@@ -1,0 +1,17 @@
+......................                                                   [100%]
+=============================== warnings summary ===============================
+tests/test_p64_naive18_probability_check.py::test_ONLY_native_fixture_is_HOM2_and_bunched_input_factorials
+tests/test_p64_naive18_probability_check.py::test_ONLY_native_fixture_is_HOM2_and_bunched_input_factorials
+tests/test_p64_naive18_probability_check.py::test_ONLY_native_fixture_is_HOM2_and_bunched_input_factorials
+  /Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+    warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+
+tests/test_p64_naive18_probability_check.py::test_ONLY_native_fixture_is_HOM2_and_bunched_input_factorials
+tests/test_p64_naive18_probability_check.py::test_ONLY_native_fixture_is_HOM2_and_bunched_input_factorials
+tests/test_p64_naive18_probability_check.py::test_ONLY_native_fixture_is_HOM2_and_bunched_input_factorials
+  /Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+    warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/karimelhoudaigui/Desktop/pasqal/.local/p64-naive18/research/P64_naive18_preflight/run_001/junit.xml -
+22 passed, 6 warnings in 26.86s
