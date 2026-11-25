@@ -1,32 +1,98 @@
 {
-  "phase":"P48_B_FIXED_SPECTRAL_BASIS_DEV_VETO",
-  "positive_acceptance_allowed":false,
-  "ideal_transmission_eta":1.0,
-  "cases":[
-    {"id":"n26_ER_4802601","m":26,"k":13,"r":13,"family":"ER","seed":4802601},
-    {"id":"n26_RR_4802602","m":26,"k":13,"r":13,"family":"RR","seed":4802602},
-    {"id":"n34_ER_4803401","m":34,"k":17,"r":17,"family":"ER","seed":4803401},
-    {"id":"n34_RR_4803402","m":34,"k":17,"r":17,"family":"RR","seed":4803402}
+  "phase": "P48_B_FIXED_SPECTRAL_BASIS_DEV_VETO",
+  "positive_acceptance_allowed": false,
+  "ideal_transmission_eta": 1.0,
+  "cases": [
+    {
+      "id": "n26_ER_4802601",
+      "m": 26,
+      "k": 13,
+      "r": 13,
+      "family": "ER",
+      "seed": 4802601
+    },
+    {
+      "id": "n26_RR_4802602",
+      "m": 26,
+      "k": 13,
+      "r": 13,
+      "family": "RR",
+      "seed": 4802602
+    },
+    {
+      "id": "n34_ER_4803401",
+      "m": 34,
+      "k": 17,
+      "r": 17,
+      "family": "ER",
+      "seed": 4803401
+    },
+    {
+      "id": "n34_RR_4803402",
+      "m": 34,
+      "k": 17,
+      "r": 17,
+      "family": "RR",
+      "seed": 4803402
+    }
   ],
-  "encoders":["Fourier_blind","spectral_graph"],
-  "models":["bosonic","distinguishable","species4","gaussian_Bcov","iid_uniform","continuous_phase","spherical_coherent"],
-  "baseline_models":["anneal","spectral_swap","KL_collective","block_matching","spectral_coherent_rounding"],
-  "decoder_lambda":[0,1],
-  "decoder_q":"ceil(k/2)",
-  "trial_seeds":[0,1],
-  "draws_per_tuple":8,
-  "anchor_max_scans":8,
-  "marker_coefficient":0.001,
-  "gap_tolerance":1e-12,
-  "residual_tolerance":3e-12,
-  "coherent_phase_law":"continuous_uniform",
-  "coherent_rounding_best_swap_scans_per_round":2,
-  "seed_namespaces":{"anchor":481010,"marks":481020,"fourier_vertex_order":481030,"vertex_priority":481040,"species_source_ports":481050,"production":481100,"feasible_baselines":481200},
-  "maximum_planned_arrays_bytes":268435456,
-  "maximum_cpu_seconds":60,
-  "maximum_wall_seconds":90,
-  "maximum_threads":1,
-  "maximum_new_output_bytes":33554432,
-  "numerical_case_policy":"Retain graph, partial raw, marks, gaps and reason as INCONCLUSIVE; no redraw, replacement or accepted positive on a successful subpopulation",
-  "outcomes":"All cells, collisions, negative and failed outcomes retained; no automatic rerun"
+  "encoders": [
+    "Fourier_blind",
+    "spectral_graph"
+  ],
+  "models": [
+    "bosonic",
+    "distinguishable",
+    "species4",
+    "gaussian_Bcov",
+    "iid_uniform",
+    "continuous_phase",
+    "spherical_coherent"
+  ],
+  "baseline_models": [
+    "anneal",
+    "spectral_swap",
+    "KL_collective",
+    "block_matching",
+    "spectral_coherent_rounding"
+  ],
+  "decoder_lambda": [
+    0,
+    1
+  ],
+  "decoder_q": "ceil(k/2)",
+  "trial_seeds": [
+    0,
+    1
+  ],
+  "draws_per_tuple": 8,
+  "anchor_max_scans": 8,
+  "marker_coefficient": 0.001,
+  "gap_tolerance": 1e-12,
+  "residual_tolerance": 3e-12,
+  "coherent_phase_law": "continuous_uniform",
+  "coherent_rounding_best_swap_scans_per_round": 2,
+  "seed_namespaces": {
+    "anchor": 481010,
+    "marks": 481020,
+    "fourier_vertex_order": 481030,
+    "vertex_priority": 481040,
+    "species_source_ports": 481050,
+    "production": 481100,
+    "feasible_baselines": 481200
+  },
+  "maximum_planned_arrays_bytes": 268435456,
+  "maximum_cpu_seconds": 60,
+  "maximum_wall_seconds": 90,
+  "maximum_threads": 1,
+  "maximum_new_output_bytes": 33554432,
+  "numerical_case_policy": "Retain graph, partial raw, marks, gaps and reason as INCONCLUSIVE; no redraw, replacement or accepted positive on a successful subpopulation",
+  "outcomes": "All cells, collisions, negative and failed outcomes retained; no automatic rerun",
+  "preparation_discoveries": [
+    "signed_eigenvector_top_bottom",
+    "mu_top_bottom_each_V",
+    "q_column_top_bottom_each_V",
+    "labelled_max_product_rectangular_assignment_each_V"
+  ],
+  "assignment_probability_floor": 1e-300
 }

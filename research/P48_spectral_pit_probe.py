@@ -429,6 +429,41 @@ def pack_network(context):
         "all_pmf_seconds":context["all_pmf_seconds"],"network_seconds":context["network_seconds"]}
 
 
+def preparation_candidates(context,priority,k):
+    """Cheap intensity discoveries, including labelled max-product matching.
+
+    No graph-cut objective is read here. Every returned support is scored and
+    shared by the caller before any field/photon proposal. Matching maximizes
+    ONE labelled intensity product, not the permanent/sum D support mass.
+    """
+    probabilities=context["probabilities"]; n,r=probabilities.shape
+    if k!=r or sorted(priority)!=list(range(n)):
+        raise ValueError("P48 preparation contract requires r=K and carried priority")
+    rank={vertex:index for index,vertex in enumerate(priority)}
+    features=[("mu",None,context["mu"])]+[
+        ("source_column_intensity",column,probabilities[:,column]) for column in range(r)]
+    for label,column,values in features:
+        for direction in ("top","bottom"):
+            sign=-1 if direction=="top" else 1
+            ordered=sorted(range(n),key=lambda i:(sign*float(values[i]),rank[i]))
+            yield label,sorted(ordered[:k]),{"direction":direction,"source_port":column}
+    started=time.perf_counter()
+    # Reorder rows by a carried priority before deterministic tie handling.
+    ordered=probabilities[priority]
+    clipped=np.maximum(ordered,1e-300)
+    costs=-np.log(clipped)
+    rows,columns=linear_sum_assignment(costs)
+    selected=[priority[int(row)] for row in rows]
+    yield "labelled_max_product_assignment",sorted(selected),{
+        "assignment_source_ports":[int(column) for column in columns],
+        "assignment_output_vertices":selected,
+        "assignment_negative_log_product":float(costs[rows,columns].sum()),
+        "assignment_probability_floor":1e-300,
+        "assignment_floor_entries":int(np.count_nonzero(ordered<1e-300)),
+        "assignment_construction_seconds":time.perf_counter()-started,
+        "optimizes_exact_D_support_probability":False}
+
+
 def prepare(case,spec,stream,output):
     case_id,n,k,r=case["id"],case["m"],case["k"],case["r"]
     started=time.perf_counter(); a=base.make_graph(case)
@@ -492,6 +527,14 @@ def prepare(case,spec,stream,output):
         common["numerical_status"]="INCONCLUSIVE"
         common["numerical_error"]="Occupied/internal or boundary gap/residual guard"
     if common.get("numerical_status")!="INCONCLUSIVE":
+        preparation_started=time.perf_counter()
+        for index,context in enumerate(contexts):
+            for label,subset,metadata in preparation_candidates(context,priority,k):
+                value=base.cut(a,subset)
+                emit(stream,dict(stage="common_preparation_rounding",case=case_id,
+                    encoder=index,label=label,subset=subset,cut=value,**metadata))
+                candidates.append((value,subset)); units+=1; feasible+=1
+        common["direct_preparation_rounding_seconds"]=time.perf_counter()-preparation_started
         decoder_started=time.perf_counter()
         for label,q in (("zero",(k+1)//2),("pure_greedy",0)):
             result=adaptive.complete(a,np.zeros(n),k,0,priority,q)
@@ -537,6 +580,7 @@ def main():
             or spec["gap_tolerance"]!=1e-12 or spec["residual_tolerance"]!=3e-12
             or spec["coherent_phase_law"]!="continuous_uniform"
             or spec["coherent_rounding_best_swap_scans_per_round"]!=2
+            or spec["assignment_probability_floor"]!=1e-300
             or [(c["m"],c["k"],c["r"],c["family"],c["seed"]) for c in spec["cases"]]!=expected_cases):
         raise ValueError("Frozen P48-B population or physical convention changed")
     args.output.mkdir(parents=True,exist_ok=False)
@@ -653,5 +697,3 @@ def main():
 
 if __name__=="__main__":
     main()
-
-
