@@ -6,6 +6,14 @@ graph, opens no held-out outcome and changes no P48 code or qualified helper.
 
 ## 1. Freeze before opening held-out data
 
+Across candidates, reserve alpha_j=.05/[j(j+1)] for confirmation candidate j>=1;
+the entire program sums to.05. Split alpha_j equally between H1/H2, then among
+their declared comparisons. Record j, source/protocol hashes, seed commitments
+and allocated alpha in an append-only ledger BEFORE its first confirmation
+panel is generated/opened. A simple DEV attempt consumes no j. An opened panel
+is never confirmation data for a later candidate; failure does not refund alpha
+or silently reset it to.05. New candidates need fresh unopened panels.
+
 Commit the complete B/D/b4/Gaussian/IID/phase/sphere policies SEPARATELY:
 encoder, decoder lambda, precision/corrections, source groups, marks/order rules,
 frontend, stopping rules and all training costs. A size-dependent policy is
@@ -74,7 +82,7 @@ Report pooled and size-specific wins/losses/ties plus ALL cost differences.
 For each size, graphs are iid under the declared family mixture and independent
 randomness. With n=64, use simultaneous one-sided exact binomial bounds for
 P(win) and P(loss), retaining ties in n. For C=13 declared comparisons, allocate
-stage alpha=.025 over2*C*2 bounds (two sizes, two probabilities). Require
+stage alpha=alpha_j/2 over2*C*2 bounds (two sizes, two probabilities). Require
 lower(P(win))-upper(P(loss))>0 for EVERY comparator at BOTH sizes; the equally
 weighted pooled lower bound follows. Zero wins or all ties cannot pass.
 If the comparator list changes, freeze its new multiplicity budget beforehand.
@@ -97,7 +105,7 @@ without refitting the frozen policies. Separately reproduce a fixed H1 subset
 with fresh counts for implementation agreement. Raw counts/commands/seeds and
 software/precision provenance must be archived. Uncertified truncation or an
 unaffordable independent sampler makes this gate INCONCLUSIVE, not replicated.
-H2 receives its own alpha=.025 budget; no claims are selected between panels.
+H2 receives its sealed alpha_j/2 budget; no claims are selected between panels.
 
 ## 5. What may be claimed; hardware remains a separate gate
 
@@ -109,7 +117,10 @@ This is neither a speedup inferred from simulator timing nor a theorem against
 all classical algorithms. A spectral-encoding contribution additionally needs
 the graph-blind ablation; fewer collisions or better raw means are insufficient.
 
-Only then design a small hardware-compatible case. If r13/17 does not fit the
+After H2 passes, update paper/TeX/PDF and GitHub with ONLY the validated simulated
+results and explicitly mark hardware validation PENDING. Preserve all negatives;
+do not imply that simulation is QPU confirmation. Then design the authorized
+hardware stage. If r13/17 does not fit the
 actual platform, shrinking it is a NEW size-transfer experiment: independently
 confirm the mechanism and controls at that size before freezing the circuit.
 Do not load a known solution or substitute HOM alone for optimization validation.
@@ -118,13 +129,13 @@ charge physical attempts, calibration/training, compilation, failures and all
 classical work. Empty shots remain counted. Marginal PIT must use the declared
 loss/noise law or separately qualified calibration, never favorable postselection.
 Prepare Laurent's reproducible branch/commands only after these gates; any QPU
-job still needs its explicit authorization. Paper integration waits for the
-hardware result and preserves P33/P37/E05b and every subsequent negative.
+job still needs its explicit authorization. A later hardware result is a
+separate article update. For now the paper remains frozen: no positive exists.
 
 ## 6. Hash-reserved schedules — no graphs generated
 
 These public namespace commitments fix schedules, not secret blinding. Later
-seed expansion is SHA256(namespace|role|r|graph|marks|labels|batch|method), with
+seed expansion is SHA256(namespace|candidate_j|role|r|graph|marks|labels|batch|method), with
 full digests saved and backend seeds derived as uint32 little-endian. Seal the
 expanded ledger before generating inputs; no outcome-dependent seed changes.
 
