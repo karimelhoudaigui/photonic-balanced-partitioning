@@ -69,7 +69,7 @@ fallback is the rule, not a discarded event. M0, M1 and all-bunched counts give
 UNIFORM ALL K-subsets. Counts all1 do too. A single doublon/hole with N>=4
 has error0 exactly when their endpoints are on the SAME side.
 
-DP construction is O(N*K*M) integer additions, with full-table O(N*K*M)
+DP construction is O(N*K*(M+1)) integer additions, with full-table O(N*K*(M+1))
 integer storage for backwards unranking. Entries are at most C(N,K), with
 O(N) bits, so bit work/storage can carry another O(N) factor. This classically
 paid work, random-bit generation, validation and the final cut score cannot
