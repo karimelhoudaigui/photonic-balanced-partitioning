@@ -18,8 +18,10 @@ implementation. See research/P49_trained_source_result.md and its cost-scope
 review. Integrated full tests677 PASS; four completed P49 manifests validate.
 P50 now investigates a direct all-count diffusion/ranking decoder without
 Cref, greedy completion or marginal PIT, with from-scratch efficient classical
-controls and B-only cost accounting. Prospective ROOT card f9689d2 is frozen;
-implementation/review precede all new numerical work. No accepted positive,
+controls and B-only cost accounting. Prospective ROOT card f9689d2 and pre-data
+clarifications/additional marginal control are frozen. Primary0fbe635 is under
+independent source review; from-raw FAST5f6cce8 has21PASS, receipt19044e1.
+No P50 graph opened or main run yet. No accepted positive,
 held-out confirmation, independent physical-sampler replication or QPU yet.
 Current owner,
 evidence and numerical-slot state: research/P45_LIVE_STATE.md.

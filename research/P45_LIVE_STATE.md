@@ -197,7 +197,7 @@ at this checkpoint; workers must obtain the exclusive slot before execution.
 ## Active changed bottleneck: P50
 
 Root prospective card f9689d2, research/P50_EXECUTION_CARD.md, fixes fresh
-N50/r13 andN100/r17 four-case DEV population, nine independently tuned arms,
+N50/r13 andN100/r17 four-case DEV population, ten independently tuned arms,
 32 training+32 fresh shots per graph/arm. Direct topK of H(n-mu)+beta*jitter
 replaces PIT/greedy; no Cref/anchor/Delta/search in B preprocessing. All counts
 and collisions remain useful inputs. r differs from target balanced size K.
@@ -205,15 +205,29 @@ B-only classical cost grants CPU to independently initialized raw-graph
 descent-FIRST controls. Gaussian and independent-final-variance arms use the
 same actual factor; empty-row masks apply BEFORE diffusion. Preparation/static
 and pure-jitter controls prevent attributing rounded source means to photons.
-No P50 graph or numerical result exists yet. Encoding owns isolated primary
-files, adaptive a disjoint from-scratch FAST helper, physics static audits.
-Do not execute before frozen sources/projection/reviews and explicit slot.
+The pre-data addendum ded2cfb adds product-B-marginals to distinguish discrete
+one-mode shapes from collective effects; it does not conserve total count.
+Root02041c3 clarifies the new generator (old hard-coded graph helper unused).
+Primary0fbe635 is frozen, ROOT read full source/tests/contracts/projection;
+physics and caller reviews are being sealed. FAST5f6cce8 is independently
+reviewed,21PASS in bounded qualification19044e1, manifestvalid after integration.
+Its best subset is available online before deadline, with later trace export
+separately timed; no nanosecond hard-return guarantee. No P50 graph or main
+numerical result exists yet. Encoding owns isolated primary files, adaptive
+the disjoint from-scratch FAST helper, physics static audits. Do not execute
+before frozen sources/projection/reviews and explicit exclusive slot.
 
 A separate cost-phase/Johnson interaction route has a favorable ideal sign,
 but its weak-mixing law has an exact cheap classical sine-swap control with
 TV remainder<=beta^2; finite strength and physical implementation remain open.
 See theory/P50_cost_phase_collective_mechanism_checkpoint.md. This does not
 establish equal-cost domination or an available photonic gate capability.
+Root336a9f8 additionally proves a scoped no-leakage shortcut obstruction:
+passive U preserving the WHOLE r-CF subspace,2<=r<=N, must be monomial. A
+continuous exact nonconstant balanced cut phase therefore needs operations
+outside this deterministic all-CF model. Independent exact-hash review8ac8754
+finds proof correct, including fixed-input/r1/isolated-pi/dualrail exceptions.
+This is NOT a general photonic optimizer no-go or positive-target completion.
 
 Acceptance plan research/P48_review_future_acceptance.md now includes efficient
 CPU controls, independent count implementation and reserved graph panels,
