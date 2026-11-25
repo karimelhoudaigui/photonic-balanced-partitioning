@@ -1,0 +1,16 @@
+{
+  "claim_id":"P47-CONTINUOUS-CONDITIONAL-PHASE-SYNTHETIC-RESOURCE",
+  "mathematics":{
+    "assertion_tested":"Unchanged oracle427d984 evaluated deterministically on N13/17 rows uniform, ramp1..N normalized, pointmass; p1/4 and1/2; compare Decimal80/120 PMF/CDF, probability laws/c0/active Binomial/mean. Uniform and pointmass also compared to independent exact Fraction formulas.",
+    "coefficient_domain":"Decimal80/120 oracle; Fraction exact univariate-power and pointmass-mixture references",
+    "conventions":"Continuous/l+1-root conditional-phase model, never P46 four-root law. No DEV graph or photon sampling. All12 synthetic cases retained, no favorable timing/input selection. Original oracle source must remain unchanged.",
+    "inputs":["N13,17; rows uniform, ramp, pointmass; p1/4,1/2; precisions80,120"],
+    "bounds":{"cases":12,"oracle_evaluations":24,"maximum_N":17,"CPU_seconds":15,"wall_seconds":25,"threads":1,"max_new_output_bytes":2097152},
+    "non_claims":["No optimization result, new optical experiment or hardware gate","No interval certificate or general precision bound","Ramp has no independent exact high-N reference","Repeated benchmark timings do not imply end-to-end speedup","No change to frozen P47 or old P46"]
+  },
+  "execution_artifacts":["research/P47_conditional_phase_resource.py","research/P47_conditional_phase_marginal.py","research/P47_conditional_phase_resource_contract.json"],
+  "software":[{"name":"Python","version":"3.11.15"}],
+  "randomness":{"used":false,"generator":"Fully deterministic synthetic rational inputs","seed":null},
+  "resource_note":"Await coordinator numerical-slot grant after source/contract commit. Use bounded Mathbox runner CPU15/wall25/thread1/log2MiB. Preserve partial records and failures, no automatic retry.",
+  "planned_command":["/private/tmp/pbp-clean-venv-20261124/bin/python","research/P47_conditional_phase_resource.py","--output","research/P47_conditional_phase_resource/run_001/data"]
+}
