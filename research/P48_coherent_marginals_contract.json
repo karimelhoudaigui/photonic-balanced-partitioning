@@ -1,0 +1,16 @@
+{
+  "claim_id":"P48-COHERENT-SUBUNIT-MARGINALS-EXACT-QUALIFICATION",
+  "mathematics":{
+    "assertion_tested":"New Decimal80 fixed-amplitude continuous/r+1-root phase and positive BetaBinomial-mixture spherical PMF/CDF helpers match24 independent exact rational fixtures for r<=3, plus subunit mass, mu1 non-pointmass and input validation checks.",
+    "coefficient_domain":"Decimal80 production; exact Fraction phase-root enumeration and direct beta integrals",
+    "conventions":"q sum mu<=1 retained with ZERO input normalization; photons=source dimension r; fixed phase differs from four-root at r>=4. Sphere r0 requiresmu0, r1 Bernoulli(mu), mu0/1 explicit. No graph or photon sample.",
+    "inputs":["12 exact phase fixtures with all(r+1)^r phase assignments","12 exact sphere fixtures with independent polynomial beta integrals","Vacuum/r1/mu0/mu1, nonuniform subunit row, pointmass row and rejected invalid inputs"],
+    "bounds":{"maximum_fixture_r":3,"precision":80,"CPU_seconds":30,"wall_seconds":50,"threads":1,"max_new_output_bytes":4194304},
+    "non_claims":["No DEV graph or optimizer result","No change to P47 oracle or P46/P47 control models","No interval/tail certificate","No new physics, novelty or QPU gate","No high-r resource benchmark"]
+  },
+  "execution_artifacts":["research/P48_coherent_marginals.py","tests/test_p48_coherent_marginals.py","research/P48_coherent_marginals_contract.json"],
+  "software":[{"name":"Python","version":"3.11.15"},{"name":"pytest","version":"8.4.2"}],
+  "randomness":{"used":false,"generator":"Fully exhaustive exact fixtures","seed":null},
+  "resource_note":"Wait for coordinator numerical-slot grant after this code/contract commit. Bounded runner CPU30/wall50/thread1/log4MiB, preserve first failure without automatic retry.",
+  "planned_command":["/private/tmp/pbp-clean-venv-20261124/bin/python","-m","pytest","-q","tests/test_p48_coherent_marginals.py","--junitxml=research/P48_coherent_qualification/run_001/data/junit.xml"]
+}
