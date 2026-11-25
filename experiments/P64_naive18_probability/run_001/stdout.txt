@@ -1,0 +1,1 @@
+{"status": "FOURTEEN_FIXED_POINTS_WITHIN_FROZEN_TOLERANCE", "points": 14, "positive_accepted": false}
