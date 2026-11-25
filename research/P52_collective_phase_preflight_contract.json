@@ -1,0 +1,86 @@
+{
+  "claim_id": "P52-CREATION-TIES-STATISTICS-LP-PREFLIGHT",
+  "mathematics": {
+    "assertion_tested": "Independent small direct-permanent complex amplitudes/outputfactorials/HOM/H4 ranked tables;complete compact8-photon support and monomial null;pre-data analytic U8 quartic witness and Walsh0crossing4/7;canonical/permutation source nulls;scalar species convolution/exact ties/crossrow invariants;non-production identityU MCfixture histogram/digests and epsilon/mixtureweight accounting;LPoptions/native threads/coefficients/warning/fakestatus handling. No production MC stream or unknown U8rank response is benchmarked.",
+    "coefficient_domain": "Complex128/float64 creation recurrence and probability convolution;int16 occupations/int64 keys and MC counts;exact rational tie definitions evaluatedfloat64;float64 HiGHS convex candidates independently reconstructed",
+    "conventions": "N=r8CF,U=sqrt(1/2)[[W,DW],[W,-DW]],WrealH4,theta0/pi4/pi2/3pi4;all6435 patterns retained,nopruning/postselection;all35unordered4+4 splits;top4tiesuniform;392not6435/TV confidence;theta3 duplicate physical law with independent MCseed;Walsh0edges4/7 doesnotimply uniform70;LPthreads1parallelFalse1s perfit,verified coefficients and MC epsilon*sumMCweights",
+    "inputs": [
+      "Explicit unitary fixtures,HOM,m3/4 directpermanents and H4knownranklaw;CF8knownphysicalnulls/observables",
+      "Identity8 MC32samples/batch8 with seed520008 override,not U8phase family or productionstream",
+      "Toy28-coordinate LP with known convex weights and false-success/invalid-option mocks"
+    ],
+    "bounds": {
+      "planned_tests": 39,
+      "maximum_direct_permanent_photons": 4,
+      "maximum_Fock_recurrence_photons": 8,
+      "maximum_modes": 8,
+      "maximum_states": 6435,
+      "nonproduction_MC_draws": 32,
+      "LP_native_fits": 1,
+      "LP_seconds_per_fit": 1,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted optimizer positive,graph selection,C*,novelty,scalable theorem,physical sampling,heldout or QPU",
+      "Finite convex edge-mean match is not full-law simulation/tail domination/separation/runtime advantage",
+      "Hoeffding event covers392decodedcoordinates,not6435rawbins or TV<=epsilon;float/source errors separate,not intervals",
+      "No outcome-driven alternative solver,extra MCdraws/seed,cap increase or automatic retry",
+      "Eightmodes/seventyfeasibleoutputs permit trivial classical exhaustive search;user discovery/hardwaregoal remainsOPEN"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P52_collective_phase_probe.py",
+    "research/P52_collective_phase_spec.json",
+    "research/P52_collective_phase_contract.md",
+    "research/P52_collective_phase_execution_contract.json",
+    "research/P52_collective_phase_preflight_contract.json",
+    "research/P52_COLLECTIVE_PHASE_CARD.md",
+    "theory/P52_card_physics_review.md",
+    "research/P52_resources_stat_review_card_6df6e1c.md",
+    "tests/test_p52_collective_phase.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Deterministic analytic/unitaryfixtures;small identityU PCG64 seed520008,production seed_for overridden;no productioncalibration",
+    "seed": [
+      520008
+    ]
+  },
+  "resource_note": "Implementation only until exactsource+contracts reviewed, targetedPASS and exclusive slot. Engineering projection35CPU/65wall,arrays<64MiB+planned256MiBheadroom/output<24MiB;capsCPU60/wall90/thread1/log32MiB,not hardDarwinmemory/affinity.12declaredresults,freshparent/childpaths,no auto retry.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p52_collective_phase.py",
+    "--junitxml=research/P52_collective_phase_preflight/run_001/junit.xml"
+  ]
+}

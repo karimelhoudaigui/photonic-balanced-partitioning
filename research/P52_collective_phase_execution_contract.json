@@ -1,0 +1,92 @@
+{
+  "claim_id": "P52-COLLECTIVE-PHASE-FINITE-DISCRIMINATOR",
+  "mathematics": {
+    "assertion_tested": "For4 frozen U8(theta) cells, compute full6435 B laws, all35 b4 groupings and full tie-integrated70-subset/28-edge kernels, fixed-low-moment/symmetry/fourth-order checks,4x262144 continuous-phase calibration histograms and392-coordinate confidence; verify numerical convex mean replacements over all140 b4 kernels+uniform with optional4 MC vertices. No graph/search/accepted positive.",
+    "coefficient_domain": "Complex128/float64 creation recurrence and probability convolution;int16 occupations/int64 keys and MC counts;exact rational tie definitions evaluatedfloat64;float64 HiGHS convex candidates independently reconstructed",
+    "conventions": "N=r8CF,U=sqrt(1/2)[[W,DW],[W,-DW]],WrealH4,theta0/pi4/pi2/3pi4;all6435 patterns retained,nopruning/postselection;all35unordered4+4 splits;top4tiesuniform;392not6435/TV confidence;theta3 duplicate physical law with independent MCseed;Walsh0edges4/7 doesnotimply uniform70;LPthreads1parallelFalse1s perfit,verified coefficients and MC epsilon*sumMCweights",
+    "inputs": [
+      "Four phase indices0..3,full8CF source,compact levels0..8 and tie pushforward;no graphs/optima/masks/training",
+      "All70 distinct4-input groups,35unordered partitions,330^2 compact convolution reused;full140b4 laws",
+      "262144IID phase draws percell,batch4096,role root5201001;full6435 histograms and256batchdigests",
+      "Four deterministic141-vertex fits andfour optional145-vertex MC fits,all coefficients retained"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "full_states": 6435,
+      "group_states": 330,
+      "b4_splits": 35,
+      "phase_cells": 4,
+      "total_MC_draws": 1048576,
+      "MC_batch": 4096,
+      "subset_outputs": 70,
+      "crossing_outputs": 28,
+      "simultaneous_confidence_coordinates": 392,
+      "LP_fits": 8,
+      "LP_seconds_per_fit": 1,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted optimizer positive,graph selection,C*,novelty,scalable theorem,physical sampling,heldout or QPU",
+      "Finite convex edge-mean match is not full-law simulation/tail domination/separation/runtime advantage",
+      "Hoeffding event covers392decodedcoordinates,not6435rawbins or TV<=epsilon;float/source errors separate,not intervals",
+      "No outcome-driven alternative solver,extra MCdraws/seed,cap increase or automatic retry",
+      "Eightmodes/seventyfeasibleoutputs permit trivial classical exhaustive search;user discovery/hardwaregoal remainsOPEN"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P52_collective_phase_probe.py",
+    "research/P52_collective_phase_spec.json",
+    "research/P52_collective_phase_contract.md",
+    "research/P52_collective_phase_execution_contract.json",
+    "research/P52_COLLECTIVE_PHASE_CARD.md",
+    "theory/P52_card_physics_review.md",
+    "research/P52_resources_stat_review_card_6df6e1c.md",
+    "tests/test_p52_collective_phase.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Independent PCG64 pertheta seed_for(5201001,index);continuous angles then categorical draws in64fixed4096batches;no random ties or optimizer training",
+    "seed": [
+      5201001
+    ]
+  },
+  "resource_note": "Implementation only until exactsource+contracts reviewed, targetedPASS and exclusive slot. Engineering projection35CPU/65wall,arrays<64MiB+planned256MiBheadroom/output<24MiB;capsCPU60/wall90/thread1/log32MiB,not hardDarwinmemory/affinity.12declaredresults,freshparent/childpaths,no auto retry.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P52_collective_phase_probe.py",
+    "--spec",
+    "research/P52_collective_phase_spec.json",
+    "--output",
+    "experiments/P52_collective_phase/run_001/data"
+  ]
+}
