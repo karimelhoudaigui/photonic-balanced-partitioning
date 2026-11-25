@@ -1,0 +1,70 @@
+{
+  "status": "STRICT_UNIFORM_FIXED_W_B4_PHASE_GAP",
+  "uniform_lower_bound": {
+    "numerator": 57,
+    "denominator": 32768
+  },
+  "same_old_normalized_graph_lower_bound": {
+    "numerator": 57,
+    "denominator": 458752
+  },
+  "groupings": 35,
+  "group_spectra": 70,
+  "exact_anchors": 105,
+  "decision_statuses": [
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP",
+    "STRICT_UNIFORM_GAP"
+  ],
+  "LP_calls": 0,
+  "CPU_seconds_inside_main": 0.712688,
+  "wall_seconds_inside_main": 0.7164793330011889,
+  "source_sha256": "67789e2a2fee0549f94ab948476a6d27190fb3ef0a2a2ab66cd88709178402b5",
+  "spec_sha256": "53f716f6646d2809042363dd22cf5bb3354b855ed5113ac6d2471a034dd3dc2c",
+  "provider_sha256": {
+    "exact_provider": "aedbc561c900bcbed8f9eff3bbfa7d2fd47bd640502966d132898ea68f261692",
+    "LP_provider": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+  },
+  "positive_optimizer_accepted": false,
+  "independent_exact_review_required": true,
+  "not_optimizer_full_law_other_architecture_hardware_or_phase_optimum": true,
+  "control_family": "b4(4+4) only, same architecture, every real phase",
+  "untested_species_bipartitions": [
+    "7+1",
+    "6+2",
+    "5+3"
+  ],
+  "not_all_classical_models_or_genuine_order8_witness": true
+}
