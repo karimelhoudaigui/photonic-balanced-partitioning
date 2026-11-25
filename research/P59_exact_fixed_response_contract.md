@@ -67,8 +67,9 @@ independent replication. No LP, phase scan, graph, seed, API or QPU is used.
 `tests/test_p59_exact_fixed_response.py` contains16 SMALL synthetic items.
 It NEVER calls `calibrate`, `main`, or six-photon `creation_coefficients`.
 Only the single-occupation720-term permanent is evaluated for six photons.
-The only full source multiplication is the THREE-output two-photon HOM
-fixture. Other guards cover arithmetic, integer rejection, Gram/q/phase sign,
+The only full source multiplication is the two-mode/two-photon HOM fixture,
+with THREE Fock outcomes (2x2 H2, not three optical modes). Other guards cover
+arithmetic, integer rejection, Gram/q/phase sign,
 decoder ties, class Gram/inversion, moment targets and exact serialization.
 No graph, count draw or actual462-response aggregation occurs in qualification.
 

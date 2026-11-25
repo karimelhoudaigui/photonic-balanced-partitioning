@@ -3,7 +3,7 @@
   "mathematics": {
     "assertion_tested": "16 small guards ONLY: Eisenstein ring/conjugation,integerrejection,formalGram/q/phaseplacement,HOMtwo-photonFocklaw,ONE720termPNRfixture,Fourierorientation,uniform/allbunch/tiesLCM60,10classGram/inverse,knownidentity/HOM factorialmoments,exactPGF,domainrejection,smalloccupationcoverage,exactJSON/curvature. NEVERcallcalibrate orsix-photon fullcreation.",
     "coefficient_domain": "Python arbitrary integers in Z[xi],xi^2=xi-1,and exact fractions. No float proof/complex128/LP/RNG. KnownHOM law andprecodePNRfixtureprovidehandguards.",
-    "conventions": "SamefixedN6matrix/source/index/rotationasmain;onlysmallsyntheticguards. Six-photonworkrestrictedtoONEoccupationpermanent720monomials;fullsourcecreationonlythethree-outputHOM2fixture. NoALL462meanaggregationbeforemain.",
+    "conventions": "SamefixedN6matrix/source/index/rotationasmain;onlysmallsyntheticguards. Six-photonworkrestrictedtoONEoccupationpermanent720monomials;fullsourcecreationonlytwo-mode/two-photonHOMwiththreeFockoutcomes(2x2H2,notthreeopticalmodes). NoALL462meanaggregationbeforemain.",
     "inputs": [
       "FrozenN6 source/spec/cardandindependentanalyticPNRfixture at420000 with slope/sqrt3=-124/421875",
       "KnownHOMbalancedtwo-photonlaw(1/2,0,1/2),identity-sourcefactorialmoments,and10cutclasscrossingGram9/5",
@@ -21,7 +21,9 @@
       "full_six_photon_calibrations": 0,
       "full_six_photon_creation_calls": 0,
       "single_fixture_permanent_terms": 720,
-      "full_two_photon_outputs": 3,
+      "HOM_optical_modes": 2,
+      "HOM_photons": 2,
+      "HOM_Fock_outcomes": 3,
       "LP_calls": 0,
       "random_draws": 0,
       "graphs": 0,
