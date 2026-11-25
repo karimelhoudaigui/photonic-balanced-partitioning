@@ -1,0 +1,7069 @@
+{
+  "case": "n20_RR_6502002",
+  "selected_candidate": 0,
+  "selected_parameters": [
+    "1/4",
+    "0"
+  ],
+  "fitnesses": [
+    "79/185",
+    "79/185",
+    "79/185",
+    "79/185",
+    "79/185",
+    "79/185",
+    "79/185",
+    "79/185"
+  ],
+  "training": [
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 0,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 0,
+          "candidate": 0,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 3281655349,
+            "count": 271003197
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "proposal_cut": 79,
+          "coin": 0.4143830206847785,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.633300053072162e-05,
+            "cpu_seconds": 1.6000000000016e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00016679200052749366,
+            "cpu_seconds": 0.0001669999999998062
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 2.191700150433462e-05,
+            "factory_total_cpu": 0.0001669999999998062,
+            "factory_total_wall": 0.00016679200052749366,
+            "returned_backend_wall": 0.00014487499902315903,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001582080003572628,
+            "cpu_seconds": 0.00015900000000002024
+          },
+          "postprocessing": {
+            "wall_seconds": 7.791700045345351e-05,
+            "cpu_seconds": 7.700000000054885e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 0,
+          "candidate": 0,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 4067528562,
+            "count": 1123702934
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "proposal_cut": 79,
+          "coin": 0.814583703345417,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5624998923158273e-05,
+            "cpu_seconds": 1.6000000000016e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001376250002067536,
+            "cpu_seconds": 0.00013700000000005375
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.9375000192667358e-05,
+            "factory_total_cpu": 0.00013700000000005375,
+            "factory_total_wall": 0.0001376250002067536,
+            "returned_backend_wall": 0.00011825000001408625,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014712499978486449,
+            "cpu_seconds": 0.00014699999999967517
+          },
+          "postprocessing": {
+            "wall_seconds": 6.670900074823294e-05,
+            "cpu_seconds": 6.599999999989947e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 8.041999535635114e-06,
+        "cpu_seconds": 8.999999999925734e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 4.374998752609827e-06,
+          "cpu_seconds": 4.999999999810711e-06
+        },
+        {
+          "wall_seconds": 3.95800088881515e-06,
+          "cpu_seconds": 5.000000000254801e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.1249998098937795e-06,
+        "cpu_seconds": 2.000000000279556e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 5.292000423651189e-06,
+        "cpu_seconds": 4.999999999810711e-06
+      }
+    },
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 1,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 1,
+          "candidate": 1,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 351844840,
+            "count": 1527895808
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "proposal_cut": 79,
+          "coin": 0.17659167194693415,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4707999071106315e-05,
+            "cpu_seconds": 1.5000000000320313e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013249999938125256,
+            "cpu_seconds": 0.00013199999999979894
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8124999769497663e-05,
+            "factory_total_cpu": 0.00013199999999979894,
+            "factory_total_wall": 0.00013249999938125256,
+            "returned_backend_wall": 0.0001143749996117549,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001510420006525237,
+            "cpu_seconds": 0.00015100000000023428
+          },
+          "postprocessing": {
+            "wall_seconds": 6.533399937325157e-05,
+            "cpu_seconds": 6.699999999959516e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 1,
+          "candidate": 1,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 1588124985,
+            "count": 3954700572
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "proposal_cut": 79,
+          "coin": 0.4832227644919229,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4707999071106315e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013379200026975013,
+            "cpu_seconds": 0.0001340000000000785
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7250000382773578e-05,
+            "factory_total_cpu": 0.0001340000000000785,
+            "factory_total_wall": 0.00013379200026975013,
+            "returned_backend_wall": 0.00011654199988697655,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00015195900050457567,
+            "cpu_seconds": 0.00015199999999992997
+          },
+          "postprocessing": {
+            "wall_seconds": 6.983300045249052e-05,
+            "cpu_seconds": 7.00000000000145e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 1.5207999240374193e-05,
+        "cpu_seconds": 1.6000000000016e-05
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 3.4580007195472717e-06,
+          "cpu_seconds": 4.000000000115023e-06
+        },
+        {
+          "wall_seconds": 3.417000698391348e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.1249998098937795e-06,
+        "cpu_seconds": 2.000000000279556e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 4.792000254383311e-06,
+        "cpu_seconds": 4.000000000115023e-06
+      }
+    },
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 2,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 2,
+          "candidate": 2,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 2630683299,
+            "count": 1727301934
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.3916998796048574e-05,
+            "cpu_seconds": 1.3000000000040757e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001277090013900306,
+            "cpu_seconds": 0.00012699999999998823
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7584001398063265e-05,
+            "factory_total_cpu": 0.00012699999999998823,
+            "factory_total_wall": 0.0001277090013900306,
+            "returned_backend_wall": 0.00011012499999196734,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00013937499898020178,
+            "cpu_seconds": 0.000140000000000029
+          },
+          "postprocessing": {
+            "wall_seconds": 0.0002105410003423458,
+            "cpu_seconds": 0.0001879999999996329
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 2,
+          "candidate": 2,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 4251730631,
+            "count": 3957015768
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 2.095800118695479e-05,
+            "cpu_seconds": 2.1000000000270802e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.000277375000223401,
+            "cpu_seconds": 0.00022400000000022402
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 6.37499997537816e-05,
+            "factory_total_cpu": 0.00022400000000022402,
+            "factory_total_wall": 0.000277375000223401,
+            "returned_backend_wall": 0.0002136250004696194,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00015845900088606868,
+            "cpu_seconds": 0.00015900000000002024
+          },
+          "postprocessing": {
+            "wall_seconds": 6.0832999224658124e-05,
+            "cpu_seconds": 6.100000000008876e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 7.750000804662704e-06,
+        "cpu_seconds": 7.999999999785956e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 3.167000613757409e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 7.750000804662704e-06,
+          "cpu_seconds": 7.000000000090267e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.5000008463393897e-06,
+        "cpu_seconds": 2.9999999999752447e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 5.6249991757795215e-06,
+        "cpu_seconds": 5.999999999950489e-06
+      }
+    },
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 3,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 3,
+          "candidate": 3,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 2031983415,
+            "count": 820260396
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "proposal_cut": 79,
+          "coin": 0.5863220133494896,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.612499909242615e-05,
+            "cpu_seconds": 1.6000000000016e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00015441700088558719,
+            "cpu_seconds": 0.00015400000000020952
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 2.5833000108832493e-05,
+            "factory_total_cpu": 0.00015400000000020952,
+            "factory_total_wall": 0.00015441700088558719,
+            "returned_backend_wall": 0.0001285840007767547,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014420800107473042,
+            "cpu_seconds": 0.00014300000000000423
+          },
+          "postprocessing": {
+            "wall_seconds": 7.679099871893413e-05,
+            "cpu_seconds": 7.699999999966067e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 3,
+          "candidate": 3,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 3061723189,
+            "count": 632010292
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "proposal_cut": 79,
+          "coin": 0.42726368565886974,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5249999705702066e-05,
+            "cpu_seconds": 1.3999999999736445e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013795799895888194,
+            "cpu_seconds": 0.00013800000000019352
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 2.0416999177541584e-05,
+            "factory_total_cpu": 0.00013800000000019352,
+            "factory_total_wall": 0.00013795799895888194,
+            "returned_backend_wall": 0.00011754099978134036,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014099999862082768,
+            "cpu_seconds": 0.00014100000000016877
+          },
+          "postprocessing": {
+            "wall_seconds": 6.80839984852355e-05,
+            "cpu_seconds": 6.800000000017903e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 8.667000656714663e-06,
+        "cpu_seconds": 8.000000000230045e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 3.5840002965414897e-06,
+          "cpu_seconds": 4.999999999810711e-06
+        },
+        {
+          "wall_seconds": 3.6250003176974133e-06,
+          "cpu_seconds": 4.000000000115023e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.041999323409982e-06,
+        "cpu_seconds": 2.000000000279556e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 4.957999408361502e-06,
+        "cpu_seconds": 5.000000000254801e-06
+      }
+    },
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 4,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 4,
+          "candidate": 4,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 2634396857,
+            "count": 3226371257
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5499999790336005e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013741700058744755,
+            "cpu_seconds": 0.00013700000000005375
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.9375000192667358e-05,
+            "factory_total_cpu": 0.00013700000000005375,
+            "factory_total_wall": 0.00013741700058744755,
+            "returned_backend_wall": 0.00011804200039478019,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001421249999111751,
+            "cpu_seconds": 0.00014199999999986446
+          },
+          "postprocessing": {
+            "wall_seconds": 3.616600042732898e-05,
+            "cpu_seconds": 3.7000000000286803e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 4,
+          "candidate": 4,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 1084987286,
+            "count": 2928400071
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            3,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4749999536434188e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013116700029058848,
+            "cpu_seconds": 0.00013200000000024303
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.9375998817849904e-05,
+            "factory_total_cpu": 0.00013200000000024303,
+            "factory_total_wall": 0.00013116700029058848,
+            "returned_backend_wall": 0.00011179100147273857,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014445799934037495,
+            "cpu_seconds": 0.0001449999999998397
+          },
+          "postprocessing": {
+            "wall_seconds": 3.491700044833124e-05,
+            "cpu_seconds": 3.399999999986747e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 8.041000910452567e-06,
+        "cpu_seconds": 7.999999999785956e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 3.2079988159239292e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 3.4159984352299944e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.040998879238032e-06,
+        "cpu_seconds": 1.9999999998354667e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 4.709001586888917e-06,
+        "cpu_seconds": 5.999999999950489e-06
+      }
+    },
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 5,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 5,
+          "candidate": 5,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 986580593,
+            "count": 3898642693
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4208999346010387e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012945799971930683,
+            "cpu_seconds": 0.0001290000000002678
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8707998606259935e-05,
+            "factory_total_cpu": 0.0001290000000002678,
+            "factory_total_wall": 0.00012945799971930683,
+            "returned_backend_wall": 0.00011075000111304689,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001367090007988736,
+            "cpu_seconds": 0.00013700000000005375
+          },
+          "postprocessing": {
+            "wall_seconds": 3.3708000046317466e-05,
+            "cpu_seconds": 3.300000000017178e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 5,
+          "candidate": 5,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 1176379567,
+            "count": 1807877332
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4125000234344043e-05,
+            "cpu_seconds": 1.3000000000040757e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001320000010309741,
+            "cpu_seconds": 0.00013299999999993872
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8458002159604803e-05,
+            "factory_total_cpu": 0.00013299999999993872,
+            "factory_total_wall": 0.0001320000010309741,
+            "returned_backend_wall": 0.00011354199887136929,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014033300067239907,
+            "cpu_seconds": 0.00014099999999972468
+          },
+          "postprocessing": {
+            "wall_seconds": 3.4333001167397015e-05,
+            "cpu_seconds": 3.5999999999702936e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 7.750000804662704e-06,
+        "cpu_seconds": 7.000000000090267e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 3.0000010156072676e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 3.166000169585459e-06,
+          "cpu_seconds": 3.000000000419334e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.0000006770715117e-06,
+        "cpu_seconds": 1.000000000139778e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 4.4169992179377005e-06,
+        "cpu_seconds": 4.999999999810711e-06
+      }
+    },
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 6,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 6,
+          "candidate": 6,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 116640539,
+            "count": 700010538
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.3958000636193901e-05,
+            "cpu_seconds": 1.3999999999736445e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012645800052268896,
+            "cpu_seconds": 0.00012699999999998823
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8541000827099197e-05,
+            "factory_total_cpu": 0.00012699999999998823,
+            "factory_total_wall": 0.00012645800052268896,
+            "returned_backend_wall": 0.00010791699969558977,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001393330003338633,
+            "cpu_seconds": 0.000140000000000029
+          },
+          "postprocessing": {
+            "wall_seconds": 3.345900040585548e-05,
+            "cpu_seconds": 3.6000000000147026e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 6,
+          "candidate": 6,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 3269313178,
+            "count": 2872869651
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4250001186155714e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012583399984578136,
+            "cpu_seconds": 0.00012600000000029254
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8376000298303552e-05,
+            "factory_total_cpu": 0.00012600000000029254,
+            "factory_total_wall": 0.00012583399984578136,
+            "returned_backend_wall": 0.00010745799954747781,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.000136333999762428,
+            "cpu_seconds": 0.00013599999999991397
+          },
+          "postprocessing": {
+            "wall_seconds": 3.3708000046317466e-05,
+            "cpu_seconds": 3.300000000017178e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 7.58399983169511e-06,
+        "cpu_seconds": 7.000000000090267e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 2.958000550279394e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 3.2080006349133328e-06,
+          "cpu_seconds": 1.9999999998354667e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.0000006770715117e-06,
+        "cpu_seconds": 2.9999999999752447e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 4.37500057159923e-06,
+        "cpu_seconds": 4.000000000115023e-06
+      }
+    },
+    {
+      "stage": "training",
+      "chain": 0,
+      "candidate": 7,
+      "initial": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "initial_cut": 79,
+      "final": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        19
+      ],
+      "final_current_cut": 79,
+      "chain_best_cut": 79,
+      "gain_from_start": 0,
+      "current_cuts": [
+        79,
+        79
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 7,
+          "candidate": 7,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 2674962968,
+            "count": 2789540376
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.3749999197898433e-05,
+            "cpu_seconds": 1.2999999999596668e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012412499927449971,
+            "cpu_seconds": 0.000124000000000013
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8417000319459476e-05,
+            "factory_total_cpu": 0.000124000000000013,
+            "factory_total_wall": 0.00012412499927449971,
+            "returned_backend_wall": 0.00010570799895504024,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00013875000149710104,
+            "cpu_seconds": 0.0001390000000003333
+          },
+          "postprocessing": {
+            "wall_seconds": 3.308300074422732e-05,
+            "cpu_seconds": 3.1999999999587914e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "training",
+          "parameter_seed_label": 7,
+          "candidate": 7,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "seed_roles": {
+            "coin": 3525102804,
+            "count": 3373121657
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 79,
+          "current": [
+            0,
+            2,
+            6,
+            7,
+            8,
+            9,
+            11,
+            15,
+            17,
+            19
+          ],
+          "current_cut": 79,
+          "chain_best_cut": 79,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4540999472956173e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001241669997398276,
+            "cpu_seconds": 0.000124000000000013
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8332999388803728e-05,
+            "factory_total_cpu": 0.000124000000000013,
+            "factory_total_wall": 0.0001241669997398276,
+            "returned_backend_wall": 0.00010583400035102386,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00013541700172936544,
+            "cpu_seconds": 0.00013599999999991397
+          },
+          "postprocessing": {
+            "wall_seconds": 4.025000089313835e-05,
+            "cpu_seconds": 4.1999999999653426e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 7.541000741184689e-06,
+        "cpu_seconds": 8.000000000230045e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 2.791999577311799e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 3.291999746579677e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.0410006982274354e-06,
+        "cpu_seconds": 1.9999999998354667e-06
+      },
+      "fitness_compute": {
+        "wall_seconds": 4.416000592755154e-06,
+        "cpu_seconds": 4.000000000115023e-06
+      }
+    }
+  ],
+  "fresh": [
+    {
+      "stage": "fresh",
+      "chain": 0,
+      "candidate": 0,
+      "initial": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17
+      ],
+      "initial_cut": 91,
+      "final": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        16,
+        17
+      ],
+      "final_current_cut": 94,
+      "chain_best_cut": 91,
+      "gain_from_start": 0,
+      "current_cuts": [
+        91,
+        91,
+        91,
+        94,
+        94,
+        94,
+        94,
+        94
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 0,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "seed_roles": {
+            "coin": 2394256729,
+            "count": 1297925097
+          },
+          "beta": 0.10810810810810811,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "proposal_cut": 91,
+          "coin": 0.5759636032749521,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 91,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "current_cut": 91,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4250001186155714e-05,
+            "cpu_seconds": 1.3999999999736445e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013283400039654225,
+            "cpu_seconds": 0.00013299999999993872
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8041999283013865e-05,
+            "factory_total_cpu": 0.00013299999999993872,
+            "factory_total_wall": 0.00013283400039654225,
+            "returned_backend_wall": 0.00011479200111352839,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014216700037650298,
+            "cpu_seconds": 0.00014300000000000423
+          },
+          "postprocessing": {
+            "wall_seconds": 6.516699977510143e-05,
+            "cpu_seconds": 6.600000000034356e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 1,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "seed_roles": {
+            "coin": 3729614901,
+            "count": 2527460896
+          },
+          "beta": 0.15288795268898328,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 91,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "current_cut": 91,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4125000234344043e-05,
+            "cpu_seconds": 1.5000000000320313e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001229169993166579,
+            "cpu_seconds": 0.000124000000000013
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7292000848101452e-05,
+            "factory_total_cpu": 0.000124000000000013,
+            "factory_total_wall": 0.0001229169993166579,
+            "returned_backend_wall": 0.00010562499846855644,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014025000018591527,
+            "cpu_seconds": 0.00014100000000016877
+          },
+          "postprocessing": {
+            "wall_seconds": 3.883299905282911e-05,
+            "cpu_seconds": 3.900000000012227e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 2,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "seed_roles": {
+            "coin": 3717948106,
+            "count": 457521439
+          },
+          "beta": 0.21621621621621623,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "proposal_cut": 91,
+          "coin": 0.5799094618355402,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 91,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "current_cut": 91,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4125000234344043e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012191600035293959,
+            "cpu_seconds": 0.00012100000000003774
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7458000002079643e-05,
+            "factory_total_cpu": 0.00012100000000003774,
+            "factory_total_wall": 0.00012191600035293959,
+            "returned_backend_wall": 0.00010445800035085995,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00013458300054480787,
+            "cpu_seconds": 0.0001349999999997742
+          },
+          "postprocessing": {
+            "wall_seconds": 6.308299998636357e-05,
+            "cpu_seconds": 6.40000000005081e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 3,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            17
+          ],
+          "seed_roles": {
+            "coin": 3527493311,
+            "count": 226668559
+          },
+          "beta": 0.30577590537796656,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_cut": 94,
+          "coin": 0.36396426087310463,
+          "coin_seed_used": true,
+          "acceptance_probability": 0.39958542128905195,
+          "accepted": true,
+          "current_before_cut": 91,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "current_cut": 94,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 2.1290999939083122e-05,
+            "cpu_seconds": 2.0999999999826713e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012208299995108973,
+            "cpu_seconds": 0.00012200000000017752
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7540998669574037e-05,
+            "factory_total_cpu": 0.00012200000000017752,
+            "factory_total_wall": 0.00012208299995108973,
+            "returned_backend_wall": 0.0001045420012815157,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014675000056740828,
+            "cpu_seconds": 0.00014799999999981495
+          },
+          "postprocessing": {
+            "wall_seconds": 6.337499871733598e-05,
+            "cpu_seconds": 6.4000000000064e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 4,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "seed_roles": {
+            "coin": 3947667388,
+            "count": 2185964453
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_cut": 94,
+          "coin": 0.08473461141071881,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 94,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "current_cut": 94,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4082999769016169e-05,
+            "cpu_seconds": 1.3999999999736445e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001244590002897894,
+            "cpu_seconds": 0.00012599999999984846
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7042000763467513e-05,
+            "factory_total_cpu": 0.00012599999999984846,
+            "factory_total_wall": 0.0001244590002897894,
+            "returned_backend_wall": 0.00010741699952632189,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014908299999660812,
+            "cpu_seconds": 0.0001500000000000945
+          },
+          "postprocessing": {
+            "wall_seconds": 6.08750015089754e-05,
+            "cpu_seconds": 6.100000000008876e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 5,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "seed_roles": {
+            "coin": 165460945,
+            "count": 346128469
+          },
+          "beta": 0.6115518107559331,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_cut": 94,
+          "coin": 0.6700220207085409,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 94,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "current_cut": 94,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.424999936716631e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013116599984641653,
+            "cpu_seconds": 0.00012999999999996348
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7082998965634033e-05,
+            "factory_total_cpu": 0.00012999999999996348,
+            "factory_total_wall": 0.00013116599984641653,
+            "returned_backend_wall": 0.00011408300088078249,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014466700122284237,
+            "cpu_seconds": 0.0001449999999998397
+          },
+          "postprocessing": {
+            "wall_seconds": 6.512499930977356e-05,
+            "cpu_seconds": 6.4000000000064e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 6,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "seed_roles": {
+            "coin": 29905636,
+            "count": 588104800
+          },
+          "beta": 0.8648648648648649,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "proposal_cut": 94,
+          "coin": 0.02130991731817089,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 94,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "current_cut": 94,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4125000234344043e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012308299847063608,
+            "cpu_seconds": 0.0001230000000003173
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.6748997950344346e-05,
+            "factory_total_cpu": 0.0001230000000003173,
+            "factory_total_wall": 0.00012308299847063608,
+            "returned_backend_wall": 0.00010633400052029174,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014266700054577086,
+            "cpu_seconds": 0.00014300000000000423
+          },
+          "postprocessing": {
+            "wall_seconds": 6.104200110712554e-05,
+            "cpu_seconds": 6.099999999964467e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 0,
+          "step": 7,
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "seed_roles": {
+            "coin": 2545467420,
+            "count": 1702902089
+          },
+          "beta": 1.2231036215118662,
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 94,
+          "current": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "current_cut": 94,
+          "chain_best_cut": 91,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.3917000615037978e-05,
+            "cpu_seconds": 1.3000000000040757e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013312500050233211,
+            "cpu_seconds": 0.00013199999999979894
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7042000763467513e-05,
+            "factory_total_cpu": 0.00013199999999979894,
+            "factory_total_wall": 0.00013312500050233211,
+            "returned_backend_wall": 0.0001160829997388646,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001447079994250089,
+            "cpu_seconds": 0.000144000000000144
+          },
+          "postprocessing": {
+            "wall_seconds": 3.216700133634731e-05,
+            "cpu_seconds": 3.2000000000032e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 7.415999789373018e-06,
+        "cpu_seconds": 7.999999999785956e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 1.791999238776043e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 1.958000211743638e-06,
+          "cpu_seconds": 1.9999999998354667e-06
+        },
+        {
+          "wall_seconds": 1.5000005078036338e-06,
+          "cpu_seconds": 9.999999996956888e-07
+        },
+        {
+          "wall_seconds": 1.4159995771478862e-06,
+          "cpu_seconds": 1.9999999998354667e-06
+        },
+        {
+          "wall_seconds": 1.4590004866477102e-06,
+          "cpu_seconds": 1.9999999998354667e-06
+        },
+        {
+          "wall_seconds": 1.4170000213198364e-06,
+          "cpu_seconds": 1.9999999998354667e-06
+        },
+        {
+          "wall_seconds": 1.4159995771478862e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        },
+        {
+          "wall_seconds": 1.45800004247576e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.1249998098937795e-06,
+        "cpu_seconds": 3.000000000419334e-06
+      },
+      "start_compute": {
+        "wall_seconds": 4.987499960407149e-05,
+        "cpu_seconds": 5.000000000032756e-05
+      }
+    },
+    {
+      "stage": "fresh",
+      "chain": 1,
+      "candidate": 0,
+      "initial": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        18,
+        19
+      ],
+      "initial_cut": 90,
+      "final": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        18,
+        19
+      ],
+      "final_current_cut": 90,
+      "chain_best_cut": 90,
+      "gain_from_start": 0,
+      "current_cuts": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 0,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 400587661,
+            "count": 1184154414
+          },
+          "beta": 0.10810810810810811,
+          "counts": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.8250000721309334e-05,
+            "cpu_seconds": 1.8000000000295557e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00019529100063664373,
+            "cpu_seconds": 0.00019500000000016726
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 2.84569996438222e-05,
+            "factory_total_cpu": 0.00019500000000016726,
+            "factory_total_wall": 0.00019529100063664373,
+            "returned_backend_wall": 0.00016683400099282153,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00017337499957648106,
+            "cpu_seconds": 0.00017300000000020077
+          },
+          "postprocessing": {
+            "wall_seconds": 4.8042000344139524e-05,
+            "cpu_seconds": 4.7999999999603915e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 1,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 3699663043,
+            "count": 1142285431
+          },
+          "beta": 0.15288795268898328,
+          "counts": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "proposal_cut": 90,
+          "coin": 0.9600245484200055,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.7624999600229785e-05,
+            "cpu_seconds": 1.7999999999851468e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00015954199989209883,
+            "cpu_seconds": 0.0001610000000002998
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 3.2124999052030034e-05,
+            "factory_total_cpu": 0.0001610000000002998,
+            "factory_total_wall": 0.00015954199989209883,
+            "returned_backend_wall": 0.0001274170008400688,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00015483300012419932,
+            "cpu_seconds": 0.0001550000000003493
+          },
+          "postprocessing": {
+            "wall_seconds": 8.079100007307716e-05,
+            "cpu_seconds": 8.200000000035956e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 2,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 3382291684,
+            "count": 373223366
+          },
+          "beta": 0.21621621621621623,
+          "counts": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "proposal_cut": 90,
+          "coin": 0.5420329876412676,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.566700120747555e-05,
+            "cpu_seconds": 1.699999999971169e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00014658399959444068,
+            "cpu_seconds": 0.00014700000000011926
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 2.0041999960085377e-05,
+            "factory_total_cpu": 0.00014700000000011926,
+            "factory_total_wall": 0.00014658399959444068,
+            "returned_backend_wall": 0.0001265419996343553,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001503750008851057,
+            "cpu_seconds": 0.0001499999999996504
+          },
+          "postprocessing": {
+            "wall_seconds": 6.933300028322265e-05,
+            "cpu_seconds": 7.00000000000145e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 3,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 957188244,
+            "count": 1080712176
+          },
+          "beta": 0.30577590537796656,
+          "counts": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5125000572879799e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013245899936009664,
+            "cpu_seconds": 0.00013199999999979894
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8708999050431885e-05,
+            "factory_total_cpu": 0.00013199999999979894,
+            "factory_total_wall": 0.00013245899936009664,
+            "returned_backend_wall": 0.00011375000030966476,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014566699974238873,
+            "cpu_seconds": 0.00014599999999997948
+          },
+          "postprocessing": {
+            "wall_seconds": 3.4500000765547156e-05,
+            "cpu_seconds": 3.6000000000147026e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 4,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 2612107661,
+            "count": 3559812539
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "proposal_cut": 90,
+          "coin": 0.031004574979953348,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5083000107551925e-05,
+            "cpu_seconds": 1.5000000000320313e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013854200005880557,
+            "cpu_seconds": 0.0001389999999998892
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.874999907158781e-05,
+            "factory_total_cpu": 0.0001389999999998892,
+            "factory_total_wall": 0.00013854200005880557,
+            "returned_backend_wall": 0.00011979200098721776,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014033400111657102,
+            "cpu_seconds": 0.000140000000000029
+          },
+          "postprocessing": {
+            "wall_seconds": 7.62919989938382e-05,
+            "cpu_seconds": 7.700000000010476e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 5,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 953233591,
+            "count": 3611118082
+          },
+          "beta": 0.6115518107559331,
+          "counts": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5042000086396001e-05,
+            "cpu_seconds": 1.5000000000320313e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001392089998262236,
+            "cpu_seconds": 0.0001389999999998892
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7584001398063265e-05,
+            "factory_total_cpu": 0.0001389999999998892,
+            "factory_total_wall": 0.0001392089998262236,
+            "returned_backend_wall": 0.00012162499842816032,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001477090008847881,
+            "cpu_seconds": 0.00014799999999981495
+          },
+          "postprocessing": {
+            "wall_seconds": 3.716700121003669e-05,
+            "cpu_seconds": 3.7000000000286803e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 6,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 3485680269,
+            "count": 1878130974
+          },
+          "beta": 0.8648648648648649,
+          "counts": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "proposal_cut": 90,
+          "coin": 0.9045220445988549,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.491699913458433e-05,
+            "cpu_seconds": 1.6000000000016e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012791699919034727,
+            "cpu_seconds": 0.00012699999999998823
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.854199763329234e-05,
+            "factory_total_cpu": 0.00012699999999998823,
+            "factory_total_wall": 0.00012791699919034727,
+            "returned_backend_wall": 0.00010937500155705493,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014324999938253313,
+            "cpu_seconds": 0.00014300000000000423
+          },
+          "postprocessing": {
+            "wall_seconds": 6.983300045249052e-05,
+            "cpu_seconds": 7.000000000045858e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 1,
+          "step": 7,
+          "source": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "seed_roles": {
+            "coin": 520105290,
+            "count": 3379493471
+          },
+          "beta": 1.2231036215118662,
+          "counts": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 90,
+          "current": [
+            1,
+            2,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            18,
+            19
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5375000657513738e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012608299948624335,
+            "cpu_seconds": 0.00012699999999998823
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8291999367647804e-05,
+            "factory_total_cpu": 0.00012699999999998823,
+            "factory_total_wall": 0.00012608299948624335,
+            "returned_backend_wall": 0.00010779100011859555,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00015466600052604917,
+            "cpu_seconds": 0.00015499999999990521
+          },
+          "postprocessing": {
+            "wall_seconds": 3.362499955983367e-05,
+            "cpu_seconds": 3.399999999942338e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 8.999999408842996e-06,
+        "cpu_seconds": 8.999999999925734e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 1.7089987522922456e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        },
+        {
+          "wall_seconds": 1.6670001059537753e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 1.4999986888142303e-06,
+          "cpu_seconds": 9.999999996956888e-07
+        },
+        {
+          "wall_seconds": 1.4159995771478862e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        },
+        {
+          "wall_seconds": 1.4170000213198364e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        },
+        {
+          "wall_seconds": 1.3329990906640887e-06,
+          "cpu_seconds": 3.000000000419334e-06
+        },
+        {
+          "wall_seconds": 1.45800004247576e-06,
+          "cpu_seconds": 2.000000000279556e-06
+        },
+        {
+          "wall_seconds": 1.4590004866477102e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.415999915683642e-06,
+        "cpu_seconds": 2.9999999999752447e-06
+      },
+      "start_compute": {
+        "wall_seconds": 0.00010108400056196842,
+        "cpu_seconds": 0.00010099999999990672
+      }
+    },
+    {
+      "stage": "fresh",
+      "chain": 2,
+      "candidate": 0,
+      "initial": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        12,
+        16
+      ],
+      "initial_cut": 90,
+      "final": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        9,
+        10,
+        12,
+        13,
+        16
+      ],
+      "final_current_cut": 105,
+      "chain_best_cut": 90,
+      "gain_from_start": 0,
+      "current_cuts": [
+        90,
+        90,
+        105,
+        105,
+        105,
+        105,
+        105,
+        105
+      ],
+      "attempts": [
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 0,
+          "source": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            16
+          ],
+          "seed_roles": {
+            "coin": 2522037563,
+            "count": 2767364447
+          },
+          "beta": 0.10810810810810811,
+          "counts": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            16
+          ],
+          "proposal_cut": 90,
+          "coin": 0.7987859643069383,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 90,
+          "current": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            16
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.5249999705702066e-05,
+            "cpu_seconds": 1.6000000000016e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.0001421249999111751,
+            "cpu_seconds": 0.00014200000000030855
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.8374999854131602e-05,
+            "factory_total_cpu": 0.00014200000000030855,
+            "factory_total_wall": 0.0001421249999111751,
+            "returned_backend_wall": 0.0001237500000570435,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001439160005247686,
+            "cpu_seconds": 0.0001449999999998397
+          },
+          "postprocessing": {
+            "wall_seconds": 7.77080003899755e-05,
+            "cpu_seconds": 7.799999999980045e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 1,
+          "source": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            16
+          ],
+          "seed_roles": {
+            "coin": 3299196729,
+            "count": 2270758130
+          },
+          "beta": 0.15288795268898328,
+          "counts": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            16
+          ],
+          "proposal_cut": 90,
+          "coin": 0.743579705351162,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 90,
+          "current": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            16
+          ],
+          "current_cut": 90,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4541001291945577e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.000141041000460973,
+            "cpu_seconds": 0.00014199999999986446
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.754100048856344e-05,
+            "factory_total_cpu": 0.00014199999999986446,
+            "factory_total_wall": 0.000141041000460973,
+            "returned_backend_wall": 0.00012349999997240957,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014870800077915192,
+            "cpu_seconds": 0.00014899999999995472
+          },
+          "postprocessing": {
+            "wall_seconds": 6.750000102329068e-05,
+            "cpu_seconds": 6.799999999973494e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 2,
+          "source": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            16
+          ],
+          "seed_roles": {
+            "coin": 760920565,
+            "count": 1991041437
+          },
+          "beta": 0.21621621621621623,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "proposal_cut": 105,
+          "coin": 0.034942556529561575,
+          "coin_seed_used": true,
+          "acceptance_probability": 0.039037082813529744,
+          "accepted": true,
+          "current_before_cut": 90,
+          "current": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "current_cut": 105,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4708999515278265e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012550000064948108,
+            "cpu_seconds": 0.00012599999999984846
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.758399957907386e-05,
+            "factory_total_cpu": 0.00012599999999984846,
+            "factory_total_wall": 0.00012550000064948108,
+            "returned_backend_wall": 0.00010791600107040722,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014479200035566464,
+            "cpu_seconds": 0.0001450000000002838
+          },
+          "postprocessing": {
+            "wall_seconds": 6.512500112876296e-05,
+            "cpu_seconds": 6.40000000005081e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 3,
+          "source": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "seed_roles": {
+            "coin": 4093132569,
+            "count": 3470778349
+          },
+          "beta": 0.30577590537796656,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "proposal_cut": 105,
+          "coin": 0.06379346740923575,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 105,
+          "current": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "current_cut": 105,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4749999536434188e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012641700050153304,
+            "cpu_seconds": 0.00012600000000029254
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.695800165180117e-05,
+            "factory_total_cpu": 0.00012600000000029254,
+            "factory_total_wall": 0.00012641700050153304,
+            "returned_backend_wall": 0.00010945899884973187,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00015299999904527795,
+            "cpu_seconds": 0.00015299999999962566
+          },
+          "postprocessing": {
+            "wall_seconds": 6.475000009231735e-05,
+            "cpu_seconds": 6.599999999989947e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 4,
+          "source": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "seed_roles": {
+            "coin": 389398370,
+            "count": 3946624779
+          },
+          "beta": 0.43243243243243246,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "proposal_cut": 105,
+          "coin": 0.8902153877481611,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 105,
+          "current": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "current_cut": 105,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4582999938284047e-05,
+            "cpu_seconds": 1.4999999999876223e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013458299872581847,
+            "cpu_seconds": 0.00013500000000021828
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.679099841567222e-05,
+            "factory_total_cpu": 0.00013500000000021828,
+            "factory_total_wall": 0.00013458299872581847,
+            "returned_backend_wall": 0.00011779200031014625,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014683300105389208,
+            "cpu_seconds": 0.00014699999999967517
+          },
+          "postprocessing": {
+            "wall_seconds": 7.029199878161307e-05,
+            "cpu_seconds": 7.199999999984996e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 5,
+          "source": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "seed_roles": {
+            "coin": 4180777871,
+            "count": 1065472458
+          },
+          "beta": 0.6115518107559331,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "proposal_cut": 105,
+          "coin": 0.9486841645779563,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 105,
+          "current": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "current_cut": 105,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 2.2166999769979157e-05,
+            "cpu_seconds": 2.300000000010627e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00013120900075591635,
+            "cpu_seconds": 0.00013199999999979894
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7124999430961907e-05,
+            "factory_total_cpu": 0.00013199999999979894,
+            "factory_total_wall": 0.00013120900075591635,
+            "returned_backend_wall": 0.00011408400132495444,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.0001446249989385251,
+            "cpu_seconds": 0.0001450000000002838
+          },
+          "postprocessing": {
+            "wall_seconds": 6.187500002852175e-05,
+            "cpu_seconds": 6.100000000053285e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 6,
+          "source": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "seed_roles": {
+            "coin": 4159119736,
+            "count": 3468206979
+          },
+          "beta": 0.8648648648648649,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": true,
+          "proposal": null,
+          "proposal_cut": null,
+          "coin": null,
+          "coin_seed_used": false,
+          "acceptance_probability": null,
+          "accepted": false,
+          "current_before_cut": 105,
+          "current": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "current_cut": 105,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.449999945180025e-05,
+            "cpu_seconds": 1.4000000000180535e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012566700024763122,
+            "cpu_seconds": 0.00012600000000029254
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.700000029813964e-05,
+            "factory_total_cpu": 0.00012600000000029254,
+            "factory_total_wall": 0.00012566700024763122,
+            "returned_backend_wall": 0.00010866699994949158,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014270800056692678,
+            "cpu_seconds": 0.00014300000000000423
+          },
+          "postprocessing": {
+            "wall_seconds": 3.300000025774352e-05,
+            "cpu_seconds": 3.2000000000032e-05
+          }
+        },
+        {
+          "case": "n20_RR_6502002",
+          "arm": "bosonic",
+          "stage": "fresh",
+          "parameter_seed_label": "selected",
+          "candidate": 0,
+          "chain": 2,
+          "step": 7,
+          "source": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "seed_roles": {
+            "coin": 891876053,
+            "count": 3473711025
+          },
+          "beta": 1.2231036215118662,
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "fallback": false,
+          "collision": false,
+          "proposal": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "proposal_cut": 105,
+          "coin": 0.31940520610293055,
+          "coin_seed_used": true,
+          "acceptance_probability": 1.0,
+          "accepted": true,
+          "current_before_cut": 105,
+          "current": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            16
+          ],
+          "current_cut": 105,
+          "chain_best_cut": 90,
+          "all_paid_best_cut": 79,
+          "setup": {
+            "wall_seconds": 1.4584000382455997e-05,
+            "cpu_seconds": 1.5000000000320313e-05
+          },
+          "factory_total": {
+            "wall_seconds": 0.00012975000026926864,
+            "cpu_seconds": 0.00012999999999996348
+          },
+          "factory_accounting": {
+            "classical_prefix_wall": 1.7332999050267972e-05,
+            "factory_total_cpu": 0.00012999999999996348,
+            "factory_total_wall": 0.00012975000026926864,
+            "returned_backend_wall": 0.00011241700121900067,
+            "backend_cpu": null,
+            "classical_prefix_cpu": null,
+            "CPU_split_available": false
+          },
+          "excluded_count_generation": {
+            "wall_seconds": 0.00014666700008092448,
+            "cpu_seconds": 0.00014700000000011926
+          },
+          "postprocessing": {
+            "wall_seconds": 6.137399941508193e-05,
+            "cpu_seconds": 6.200000000022854e-05
+          }
+        }
+      ],
+      "reset_compute": {
+        "wall_seconds": 8.332999641424976e-06,
+        "cpu_seconds": 8.000000000230045e-06
+      },
+      "beta_compute": [
+        {
+          "wall_seconds": 1.4159995771478862e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        },
+        {
+          "wall_seconds": 1.3330009096534923e-06,
+          "cpu_seconds": 9.999999996956888e-07
+        },
+        {
+          "wall_seconds": 1.583999619469978e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        },
+        {
+          "wall_seconds": 1.333999534836039e-06,
+          "cpu_seconds": 2.9999999999752447e-06
+        },
+        {
+          "wall_seconds": 1.3329990906640887e-06,
+          "cpu_seconds": 9.999999996956888e-07
+        },
+        {
+          "wall_seconds": 1.333999534836039e-06,
+          "cpu_seconds": 9.999999996956888e-07
+        },
+        {
+          "wall_seconds": 1.3749995559919626e-06,
+          "cpu_seconds": 1.000000000139778e-06
+        },
+        {
+          "wall_seconds": 1.2500004231696948e-06,
+          "cpu_seconds": 9.999999996956888e-07
+        }
+      ],
+      "final_aggregation": {
+        "wall_seconds": 2.4169985408661887e-06,
+        "cpu_seconds": 2.9999999999752447e-06
+      },
+      "start_compute": {
+        "wall_seconds": 5.833300019730814e-05,
+        "cpu_seconds": 5.8999999999809205e-05
+      }
+    }
+  ],
+  "B_fresh_chain_best_normalized_mean": "271/555",
+  "B_paid_best": 79,
+  "B_paid_best_record": {
+    "cut": 79,
+    "subset": [
+      0,
+      2,
+      6,
+      7,
+      8,
+      9,
+      11,
+      15,
+      17,
+      19
+    ],
+    "label": [
+      "training_start"
+    ],
+    "score_kind": "initial"
+  },
+  "score_counts": {
+    "initial": 4,
+    "proposal": 23,
+    "current": 40
+  },
+  "FAST": {},
+  "training_start_compute": {
+    "wall_seconds": 6.833299994468689e-05,
+    "cpu_seconds": 6.899999999987472e-05
+  },
+  "selection_compute": {
+    "wall_seconds": 1.912500010803342e-05,
+    "cpu_seconds": 2.0000000000131024e-05
+  },
+  "paid_components": [
+    {
+      "label": [
+        "preparation"
+      ],
+      "wall_seconds": 4.533299943432212e-05,
+      "cpu_seconds": 4.500000000007276e-05
+    },
+    {
+      "label": [
+        "compilation"
+      ],
+      "wall_seconds": 0.0005485009987751255,
+      "cpu_seconds": 0.0005490000000007988
+    },
+    {
+      "label": [
+        "training_start"
+      ],
+      "wall_seconds": 6.833299994468689e-05,
+      "cpu_seconds": 6.899999999987472e-05
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        0,
+        0
+      ],
+      "wall_seconds": 8.041999535635114e-06,
+      "cpu_seconds": 8.999999999925734e-06
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 4.374998752609827e-06,
+      "cpu_seconds": 4.999999999810711e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 1.633300053072162e-05,
+      "cpu_seconds": 1.6000000000016e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 7.791700045345351e-05,
+      "cpu_seconds": 7.700000000054885e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        0,
+        0,
+        0
+      ],
+      "wall_seconds": 2.191700150433462e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        0,
+        0,
+        1
+      ],
+      "wall_seconds": 3.95800088881515e-06,
+      "cpu_seconds": 5.000000000254801e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        0,
+        0,
+        1
+      ],
+      "wall_seconds": 1.5624998923158273e-05,
+      "cpu_seconds": 1.6000000000016e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        0,
+        0,
+        1
+      ],
+      "wall_seconds": 6.670900074823294e-05,
+      "cpu_seconds": 6.599999999989947e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        0,
+        0,
+        1
+      ],
+      "wall_seconds": 1.9375000192667358e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        0,
+        0
+      ],
+      "wall_seconds": 2.1249998098937795e-06,
+      "cpu_seconds": 2.000000000279556e-06
+    },
+    {
+      "label": [
+        "fitness",
+        0
+      ],
+      "wall_seconds": 5.292000423651189e-06,
+      "cpu_seconds": 4.999999999810711e-06
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        1,
+        0
+      ],
+      "wall_seconds": 1.5207999240374193e-05,
+      "cpu_seconds": 1.6000000000016e-05
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        1,
+        0,
+        0
+      ],
+      "wall_seconds": 3.4580007195472717e-06,
+      "cpu_seconds": 4.000000000115023e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        1,
+        0,
+        0
+      ],
+      "wall_seconds": 1.4707999071106315e-05,
+      "cpu_seconds": 1.5000000000320313e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        1,
+        0,
+        0
+      ],
+      "wall_seconds": 6.533399937325157e-05,
+      "cpu_seconds": 6.699999999959516e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        1,
+        0,
+        0
+      ],
+      "wall_seconds": 1.8124999769497663e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        1,
+        0,
+        1
+      ],
+      "wall_seconds": 3.417000698391348e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        1,
+        0,
+        1
+      ],
+      "wall_seconds": 1.4707999071106315e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        1,
+        0,
+        1
+      ],
+      "wall_seconds": 6.983300045249052e-05,
+      "cpu_seconds": 7.00000000000145e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        1,
+        0,
+        1
+      ],
+      "wall_seconds": 1.7250000382773578e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        1,
+        0
+      ],
+      "wall_seconds": 2.1249998098937795e-06,
+      "cpu_seconds": 2.000000000279556e-06
+    },
+    {
+      "label": [
+        "fitness",
+        1
+      ],
+      "wall_seconds": 4.792000254383311e-06,
+      "cpu_seconds": 4.000000000115023e-06
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        2,
+        0
+      ],
+      "wall_seconds": 7.750000804662704e-06,
+      "cpu_seconds": 7.999999999785956e-06
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        2,
+        0,
+        0
+      ],
+      "wall_seconds": 3.167000613757409e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        2,
+        0,
+        0
+      ],
+      "wall_seconds": 1.3916998796048574e-05,
+      "cpu_seconds": 1.3000000000040757e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        2,
+        0,
+        0
+      ],
+      "wall_seconds": 0.0002105410003423458,
+      "cpu_seconds": 0.0001879999999996329
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        2,
+        0,
+        0
+      ],
+      "wall_seconds": 1.7584001398063265e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        2,
+        0,
+        1
+      ],
+      "wall_seconds": 7.750000804662704e-06,
+      "cpu_seconds": 7.000000000090267e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        2,
+        0,
+        1
+      ],
+      "wall_seconds": 2.095800118695479e-05,
+      "cpu_seconds": 2.1000000000270802e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        2,
+        0,
+        1
+      ],
+      "wall_seconds": 6.0832999224658124e-05,
+      "cpu_seconds": 6.100000000008876e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        2,
+        0,
+        1
+      ],
+      "wall_seconds": 6.37499997537816e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        2,
+        0
+      ],
+      "wall_seconds": 2.5000008463393897e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "fitness",
+        2
+      ],
+      "wall_seconds": 5.6249991757795215e-06,
+      "cpu_seconds": 5.999999999950489e-06
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        3,
+        0
+      ],
+      "wall_seconds": 8.667000656714663e-06,
+      "cpu_seconds": 8.000000000230045e-06
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        3,
+        0,
+        0
+      ],
+      "wall_seconds": 3.5840002965414897e-06,
+      "cpu_seconds": 4.999999999810711e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        3,
+        0,
+        0
+      ],
+      "wall_seconds": 1.612499909242615e-05,
+      "cpu_seconds": 1.6000000000016e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        3,
+        0,
+        0
+      ],
+      "wall_seconds": 7.679099871893413e-05,
+      "cpu_seconds": 7.699999999966067e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        3,
+        0,
+        0
+      ],
+      "wall_seconds": 2.5833000108832493e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        3,
+        0,
+        1
+      ],
+      "wall_seconds": 3.6250003176974133e-06,
+      "cpu_seconds": 4.000000000115023e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        3,
+        0,
+        1
+      ],
+      "wall_seconds": 1.5249999705702066e-05,
+      "cpu_seconds": 1.3999999999736445e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        3,
+        0,
+        1
+      ],
+      "wall_seconds": 6.80839984852355e-05,
+      "cpu_seconds": 6.800000000017903e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        3,
+        0,
+        1
+      ],
+      "wall_seconds": 2.0416999177541584e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        3,
+        0
+      ],
+      "wall_seconds": 2.041999323409982e-06,
+      "cpu_seconds": 2.000000000279556e-06
+    },
+    {
+      "label": [
+        "fitness",
+        3
+      ],
+      "wall_seconds": 4.957999408361502e-06,
+      "cpu_seconds": 5.000000000254801e-06
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        4,
+        0
+      ],
+      "wall_seconds": 8.041000910452567e-06,
+      "cpu_seconds": 7.999999999785956e-06
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        4,
+        0,
+        0
+      ],
+      "wall_seconds": 3.2079988159239292e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        4,
+        0,
+        0
+      ],
+      "wall_seconds": 1.5499999790336005e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        4,
+        0,
+        0
+      ],
+      "wall_seconds": 3.616600042732898e-05,
+      "cpu_seconds": 3.7000000000286803e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        4,
+        0,
+        0
+      ],
+      "wall_seconds": 1.9375000192667358e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        4,
+        0,
+        1
+      ],
+      "wall_seconds": 3.4159984352299944e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        4,
+        0,
+        1
+      ],
+      "wall_seconds": 1.4749999536434188e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        4,
+        0,
+        1
+      ],
+      "wall_seconds": 3.491700044833124e-05,
+      "cpu_seconds": 3.399999999986747e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        4,
+        0,
+        1
+      ],
+      "wall_seconds": 1.9375998817849904e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        4,
+        0
+      ],
+      "wall_seconds": 2.040998879238032e-06,
+      "cpu_seconds": 1.9999999998354667e-06
+    },
+    {
+      "label": [
+        "fitness",
+        4
+      ],
+      "wall_seconds": 4.709001586888917e-06,
+      "cpu_seconds": 5.999999999950489e-06
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        5,
+        0
+      ],
+      "wall_seconds": 7.750000804662704e-06,
+      "cpu_seconds": 7.000000000090267e-06
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        5,
+        0,
+        0
+      ],
+      "wall_seconds": 3.0000010156072676e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        5,
+        0,
+        0
+      ],
+      "wall_seconds": 1.4208999346010387e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        5,
+        0,
+        0
+      ],
+      "wall_seconds": 3.3708000046317466e-05,
+      "cpu_seconds": 3.300000000017178e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        5,
+        0,
+        0
+      ],
+      "wall_seconds": 1.8707998606259935e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        5,
+        0,
+        1
+      ],
+      "wall_seconds": 3.166000169585459e-06,
+      "cpu_seconds": 3.000000000419334e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        5,
+        0,
+        1
+      ],
+      "wall_seconds": 1.4125000234344043e-05,
+      "cpu_seconds": 1.3000000000040757e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        5,
+        0,
+        1
+      ],
+      "wall_seconds": 3.4333001167397015e-05,
+      "cpu_seconds": 3.5999999999702936e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        5,
+        0,
+        1
+      ],
+      "wall_seconds": 1.8458002159604803e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        5,
+        0
+      ],
+      "wall_seconds": 2.0000006770715117e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "fitness",
+        5
+      ],
+      "wall_seconds": 4.4169992179377005e-06,
+      "cpu_seconds": 4.999999999810711e-06
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        6,
+        0
+      ],
+      "wall_seconds": 7.58399983169511e-06,
+      "cpu_seconds": 7.000000000090267e-06
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        6,
+        0,
+        0
+      ],
+      "wall_seconds": 2.958000550279394e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        6,
+        0,
+        0
+      ],
+      "wall_seconds": 1.3958000636193901e-05,
+      "cpu_seconds": 1.3999999999736445e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        6,
+        0,
+        0
+      ],
+      "wall_seconds": 3.345900040585548e-05,
+      "cpu_seconds": 3.6000000000147026e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        6,
+        0,
+        0
+      ],
+      "wall_seconds": 1.8541000827099197e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        6,
+        0,
+        1
+      ],
+      "wall_seconds": 3.2080006349133328e-06,
+      "cpu_seconds": 1.9999999998354667e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        6,
+        0,
+        1
+      ],
+      "wall_seconds": 1.4250001186155714e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        6,
+        0,
+        1
+      ],
+      "wall_seconds": 3.3708000046317466e-05,
+      "cpu_seconds": 3.300000000017178e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        6,
+        0,
+        1
+      ],
+      "wall_seconds": 1.8376000298303552e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        6,
+        0
+      ],
+      "wall_seconds": 2.0000006770715117e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "fitness",
+        6
+      ],
+      "wall_seconds": 4.37500057159923e-06,
+      "cpu_seconds": 4.000000000115023e-06
+    },
+    {
+      "label": [
+        "chain_reset",
+        "training",
+        7,
+        0
+      ],
+      "wall_seconds": 7.541000741184689e-06,
+      "cpu_seconds": 8.000000000230045e-06
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        7,
+        0,
+        0
+      ],
+      "wall_seconds": 2.791999577311799e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        7,
+        0,
+        0
+      ],
+      "wall_seconds": 1.3749999197898433e-05,
+      "cpu_seconds": 1.2999999999596668e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        7,
+        0,
+        0
+      ],
+      "wall_seconds": 3.308300074422732e-05,
+      "cpu_seconds": 3.1999999999587914e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        7,
+        0,
+        0
+      ],
+      "wall_seconds": 1.8417000319459476e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "training",
+        7,
+        0,
+        1
+      ],
+      "wall_seconds": 3.291999746579677e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "training",
+        7,
+        0,
+        1
+      ],
+      "wall_seconds": 1.4540999472956173e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "training",
+        7,
+        0,
+        1
+      ],
+      "wall_seconds": 4.025000089313835e-05,
+      "cpu_seconds": 4.1999999999653426e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "training",
+        7,
+        0,
+        1
+      ],
+      "wall_seconds": 1.8332999388803728e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "training",
+        7,
+        0
+      ],
+      "wall_seconds": 2.0410006982274354e-06,
+      "cpu_seconds": 1.9999999998354667e-06
+    },
+    {
+      "label": [
+        "fitness",
+        7
+      ],
+      "wall_seconds": 4.416000592755154e-06,
+      "cpu_seconds": 4.000000000115023e-06
+    },
+    {
+      "label": [
+        "selection"
+      ],
+      "wall_seconds": 1.912500010803342e-05,
+      "cpu_seconds": 2.0000000000131024e-05
+    },
+    {
+      "label": [
+        "fresh_start",
+        0
+      ],
+      "wall_seconds": 4.987499960407149e-05,
+      "cpu_seconds": 5.000000000032756e-05
+    },
+    {
+      "label": [
+        "chain_reset",
+        "fresh",
+        "selected",
+        0
+      ],
+      "wall_seconds": 7.415999789373018e-06,
+      "cpu_seconds": 7.999999999785956e-06
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        0
+      ],
+      "wall_seconds": 1.791999238776043e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        0
+      ],
+      "wall_seconds": 1.4250001186155714e-05,
+      "cpu_seconds": 1.3999999999736445e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        0
+      ],
+      "wall_seconds": 6.516699977510143e-05,
+      "cpu_seconds": 6.600000000034356e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        0
+      ],
+      "wall_seconds": 1.8041999283013865e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        1
+      ],
+      "wall_seconds": 1.958000211743638e-06,
+      "cpu_seconds": 1.9999999998354667e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        1
+      ],
+      "wall_seconds": 1.4125000234344043e-05,
+      "cpu_seconds": 1.5000000000320313e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        1
+      ],
+      "wall_seconds": 3.883299905282911e-05,
+      "cpu_seconds": 3.900000000012227e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        1
+      ],
+      "wall_seconds": 1.7292000848101452e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        2
+      ],
+      "wall_seconds": 1.5000005078036338e-06,
+      "cpu_seconds": 9.999999996956888e-07
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        2
+      ],
+      "wall_seconds": 1.4125000234344043e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        2
+      ],
+      "wall_seconds": 6.308299998636357e-05,
+      "cpu_seconds": 6.40000000005081e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        2
+      ],
+      "wall_seconds": 1.7458000002079643e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        3
+      ],
+      "wall_seconds": 1.4159995771478862e-06,
+      "cpu_seconds": 1.9999999998354667e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        3
+      ],
+      "wall_seconds": 2.1290999939083122e-05,
+      "cpu_seconds": 2.0999999999826713e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        3
+      ],
+      "wall_seconds": 6.337499871733598e-05,
+      "cpu_seconds": 6.4000000000064e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        3
+      ],
+      "wall_seconds": 1.7540998669574037e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        4
+      ],
+      "wall_seconds": 1.4590004866477102e-06,
+      "cpu_seconds": 1.9999999998354667e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        4
+      ],
+      "wall_seconds": 1.4082999769016169e-05,
+      "cpu_seconds": 1.3999999999736445e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        4
+      ],
+      "wall_seconds": 6.08750015089754e-05,
+      "cpu_seconds": 6.100000000008876e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        4
+      ],
+      "wall_seconds": 1.7042000763467513e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        5
+      ],
+      "wall_seconds": 1.4170000213198364e-06,
+      "cpu_seconds": 1.9999999998354667e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        5
+      ],
+      "wall_seconds": 1.424999936716631e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        5
+      ],
+      "wall_seconds": 6.512499930977356e-05,
+      "cpu_seconds": 6.4000000000064e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        5
+      ],
+      "wall_seconds": 1.7082998965634033e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        6
+      ],
+      "wall_seconds": 1.4159995771478862e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        6
+      ],
+      "wall_seconds": 1.4125000234344043e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        6
+      ],
+      "wall_seconds": 6.104200110712554e-05,
+      "cpu_seconds": 6.099999999964467e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        6
+      ],
+      "wall_seconds": 1.6748997950344346e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        0,
+        7
+      ],
+      "wall_seconds": 1.45800004247576e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        0,
+        7
+      ],
+      "wall_seconds": 1.3917000615037978e-05,
+      "cpu_seconds": 1.3000000000040757e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        0,
+        7
+      ],
+      "wall_seconds": 3.216700133634731e-05,
+      "cpu_seconds": 3.2000000000032e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        0,
+        7
+      ],
+      "wall_seconds": 1.7042000763467513e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "fresh",
+        "selected",
+        0
+      ],
+      "wall_seconds": 2.1249998098937795e-06,
+      "cpu_seconds": 3.000000000419334e-06
+    },
+    {
+      "label": [
+        "fresh_start",
+        1
+      ],
+      "wall_seconds": 0.00010108400056196842,
+      "cpu_seconds": 0.00010099999999990672
+    },
+    {
+      "label": [
+        "chain_reset",
+        "fresh",
+        "selected",
+        1
+      ],
+      "wall_seconds": 8.999999408842996e-06,
+      "cpu_seconds": 8.999999999925734e-06
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        0
+      ],
+      "wall_seconds": 1.7089987522922456e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        0
+      ],
+      "wall_seconds": 1.8250000721309334e-05,
+      "cpu_seconds": 1.8000000000295557e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        0
+      ],
+      "wall_seconds": 4.8042000344139524e-05,
+      "cpu_seconds": 4.7999999999603915e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        0
+      ],
+      "wall_seconds": 2.84569996438222e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        1
+      ],
+      "wall_seconds": 1.6670001059537753e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        1
+      ],
+      "wall_seconds": 1.7624999600229785e-05,
+      "cpu_seconds": 1.7999999999851468e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        1
+      ],
+      "wall_seconds": 8.079100007307716e-05,
+      "cpu_seconds": 8.200000000035956e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        1
+      ],
+      "wall_seconds": 3.2124999052030034e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        2
+      ],
+      "wall_seconds": 1.4999986888142303e-06,
+      "cpu_seconds": 9.999999996956888e-07
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        2
+      ],
+      "wall_seconds": 1.566700120747555e-05,
+      "cpu_seconds": 1.699999999971169e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        2
+      ],
+      "wall_seconds": 6.933300028322265e-05,
+      "cpu_seconds": 7.00000000000145e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        2
+      ],
+      "wall_seconds": 2.0041999960085377e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        3
+      ],
+      "wall_seconds": 1.4159995771478862e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        3
+      ],
+      "wall_seconds": 1.5125000572879799e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        3
+      ],
+      "wall_seconds": 3.4500000765547156e-05,
+      "cpu_seconds": 3.6000000000147026e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        3
+      ],
+      "wall_seconds": 1.8708999050431885e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        4
+      ],
+      "wall_seconds": 1.4170000213198364e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        4
+      ],
+      "wall_seconds": 1.5083000107551925e-05,
+      "cpu_seconds": 1.5000000000320313e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        4
+      ],
+      "wall_seconds": 7.62919989938382e-05,
+      "cpu_seconds": 7.700000000010476e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        4
+      ],
+      "wall_seconds": 1.874999907158781e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        5
+      ],
+      "wall_seconds": 1.3329990906640887e-06,
+      "cpu_seconds": 3.000000000419334e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        5
+      ],
+      "wall_seconds": 1.5042000086396001e-05,
+      "cpu_seconds": 1.5000000000320313e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        5
+      ],
+      "wall_seconds": 3.716700121003669e-05,
+      "cpu_seconds": 3.7000000000286803e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        5
+      ],
+      "wall_seconds": 1.7584001398063265e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        6
+      ],
+      "wall_seconds": 1.45800004247576e-06,
+      "cpu_seconds": 2.000000000279556e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        6
+      ],
+      "wall_seconds": 1.491699913458433e-05,
+      "cpu_seconds": 1.6000000000016e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        6
+      ],
+      "wall_seconds": 6.983300045249052e-05,
+      "cpu_seconds": 7.000000000045858e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        6
+      ],
+      "wall_seconds": 1.854199763329234e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        1,
+        7
+      ],
+      "wall_seconds": 1.4590004866477102e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        1,
+        7
+      ],
+      "wall_seconds": 1.5375000657513738e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        1,
+        7
+      ],
+      "wall_seconds": 3.362499955983367e-05,
+      "cpu_seconds": 3.399999999942338e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        1,
+        7
+      ],
+      "wall_seconds": 1.8291999367647804e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "fresh",
+        "selected",
+        1
+      ],
+      "wall_seconds": 2.415999915683642e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "fresh_start",
+        2
+      ],
+      "wall_seconds": 5.833300019730814e-05,
+      "cpu_seconds": 5.8999999999809205e-05
+    },
+    {
+      "label": [
+        "chain_reset",
+        "fresh",
+        "selected",
+        2
+      ],
+      "wall_seconds": 8.332999641424976e-06,
+      "cpu_seconds": 8.000000000230045e-06
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        0
+      ],
+      "wall_seconds": 1.4159995771478862e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        0
+      ],
+      "wall_seconds": 1.5249999705702066e-05,
+      "cpu_seconds": 1.6000000000016e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        0
+      ],
+      "wall_seconds": 7.77080003899755e-05,
+      "cpu_seconds": 7.799999999980045e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        0
+      ],
+      "wall_seconds": 1.8374999854131602e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        1
+      ],
+      "wall_seconds": 1.3330009096534923e-06,
+      "cpu_seconds": 9.999999996956888e-07
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        1
+      ],
+      "wall_seconds": 1.4541001291945577e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        1
+      ],
+      "wall_seconds": 6.750000102329068e-05,
+      "cpu_seconds": 6.799999999973494e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        1
+      ],
+      "wall_seconds": 1.754100048856344e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        2
+      ],
+      "wall_seconds": 1.583999619469978e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        2
+      ],
+      "wall_seconds": 1.4708999515278265e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        2
+      ],
+      "wall_seconds": 6.512500112876296e-05,
+      "cpu_seconds": 6.40000000005081e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        2
+      ],
+      "wall_seconds": 1.758399957907386e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        3
+      ],
+      "wall_seconds": 1.333999534836039e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        3
+      ],
+      "wall_seconds": 1.4749999536434188e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        3
+      ],
+      "wall_seconds": 6.475000009231735e-05,
+      "cpu_seconds": 6.599999999989947e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        3
+      ],
+      "wall_seconds": 1.695800165180117e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        4
+      ],
+      "wall_seconds": 1.3329990906640887e-06,
+      "cpu_seconds": 9.999999996956888e-07
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        4
+      ],
+      "wall_seconds": 1.4582999938284047e-05,
+      "cpu_seconds": 1.4999999999876223e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        4
+      ],
+      "wall_seconds": 7.029199878161307e-05,
+      "cpu_seconds": 7.199999999984996e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        4
+      ],
+      "wall_seconds": 1.679099841567222e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        5
+      ],
+      "wall_seconds": 1.333999534836039e-06,
+      "cpu_seconds": 9.999999996956888e-07
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        5
+      ],
+      "wall_seconds": 2.2166999769979157e-05,
+      "cpu_seconds": 2.300000000010627e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        5
+      ],
+      "wall_seconds": 6.187500002852175e-05,
+      "cpu_seconds": 6.100000000053285e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        5
+      ],
+      "wall_seconds": 1.7124999430961907e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        6
+      ],
+      "wall_seconds": 1.3749995559919626e-06,
+      "cpu_seconds": 1.000000000139778e-06
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        6
+      ],
+      "wall_seconds": 1.449999945180025e-05,
+      "cpu_seconds": 1.4000000000180535e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        6
+      ],
+      "wall_seconds": 3.300000025774352e-05,
+      "cpu_seconds": 3.2000000000032e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        6
+      ],
+      "wall_seconds": 1.700000029813964e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "beta",
+        "fresh",
+        "selected",
+        2,
+        7
+      ],
+      "wall_seconds": 1.2500004231696948e-06,
+      "cpu_seconds": 9.999999996956888e-07
+    },
+    {
+      "label": [
+        "attempt_setup",
+        "fresh",
+        "selected",
+        2,
+        7
+      ],
+      "wall_seconds": 1.4584000382455997e-05,
+      "cpu_seconds": 1.5000000000320313e-05
+    },
+    {
+      "label": [
+        "attempt_postprocessing",
+        "fresh",
+        "selected",
+        2,
+        7
+      ],
+      "wall_seconds": 6.137399941508193e-05,
+      "cpu_seconds": 6.200000000022854e-05
+    },
+    {
+      "label": [
+        "factory_classical_prefix",
+        "fresh",
+        "selected",
+        2,
+        7
+      ],
+      "wall_seconds": 1.7332999050267972e-05,
+      "cpu_seconds": null
+    },
+    {
+      "label": [
+        "chain_final",
+        "fresh",
+        "selected",
+        2
+      ],
+      "wall_seconds": 2.4169985408661887e-06,
+      "cpu_seconds": 2.9999999999752447e-06
+    },
+    {
+      "label": [
+        "arm_final"
+      ],
+      "wall_seconds": 8.832999810692854e-06,
+      "cpu_seconds": 8.999999999925734e-06
+    },
+    {
+      "label": [
+        "global_aggregation_share"
+      ],
+      "wall_seconds": 6.229000064195134e-06,
+      "cpu_seconds": 6.500000000020378e-06
+    }
+  ],
+  "final_aggregation": {
+    "wall_seconds": 8.832999810692854e-06,
+    "cpu_seconds": 8.999999999925734e-06
+  },
+  "B_classical_wall": 0.004951974995492492,
+  "global_mean_aggregation_share": 6.229000064195134e-06
+}
