@@ -1,0 +1,291 @@
+{
+  "schema_version": 2,
+  "claim_id": "P65-INDEPENDENT-RECORDED-REPLAY",
+  "repository": {
+    "commit": "b2114d106f0e0d7e0aad34e9769444f8f02be1db",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P65_independent_raw_audit.py",
+    "--root",
+    ".",
+    "--binding",
+    "research/P65_independent_raw_audit_input_binding.json",
+    "--output",
+    "research/P65_independent_raw_audit/run_001/data/audit.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Hash-bound P65 records independently satisfy spectral Cayley matrices/weighted normalization, all current-source complete counts/collision self-loops/owned coins/cuts/chain resets and private/global bests, exact8fitness selection/three-chain-best statistics, complete199-component own-cost ledgers, all FAST masks/deadlines and same-fixed-mode/two-case stage gate. Failed prefixes remain inconclusive without forcing80.",
+    "coefficient_domain": "Python exact integer scalar cuts and Fractions; independent real eigendecomposition/complex128 spectral Cayley; recorded finite CPU/WALL clocks",
+    "conventions": "CODE ONLY, before any P65 primary data was opened. No production P43/P50/P65 import, topology/physical count/FAST proposal regeneration, permanent or full PNR law. PCG64 metadata/start/coin/canonical-edge-weight replay only. N20/K10, source is CURRENT state; valid collisions self-loop, CF always consumes coin including probability1. Recorded consistency is not independent physical replication or real-clock authentication.",
+    "inputs": [
+      "UNBOUND: actual immutable primary data/manifest paths and SHA256 are supplied only after freezing this checker",
+      "Supported original producerda4d41800819f35dd8ea299395435ca0bdb8157b sourceSHAa115929779ea50ecd6987f8c63646e95bebc6cc739df3760e6ccbffba0961a4b",
+      "Complete comparison requires80B/80factories/two cases/fourFAST/all12datafiles; first-failure may be shorter"
+    ],
+    "bounds": {
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "max_new_log_bytes": 4194304,
+      "max_new_scientific_bytes": 4194304,
+      "planned_logical_workspace_bytes": 67108864,
+      "max_bound_input_bytes": 33554432,
+      "max_raw_decompressed_bytes": 8388608,
+      "max_raw_line_characters": 1048576,
+      "max_bound_files": 13,
+      "cases": 2,
+      "modes": 20,
+      "source_photons": 10,
+      "max_recorded_B_attempts": 80,
+      "Cayley_matrices_per_case": 8,
+      "complete_paid_components_per_case": 199,
+      "FAST_calls": 4,
+      "FAST_work_guard": 10000,
+      "FAST_stored_checkpoint_guard": 20002,
+      "max_failure_examples": 32,
+      "matrix_absolute_tolerance": 3e-12,
+      "clock_sum_absolute_tolerance_seconds": 1e-08,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No graph topology regeneration, independent physical counts, bosonic likelihood/permanent/PNR distribution or optimum verification",
+      "No authenticity of recorded clocks, online timing causality, actual hardware prices or unrecorded FAST trajectory",
+      "No iid24 fresh observations: each case metric uses3final own-chain-best values including starts",
+      "No positive acceptance, novel mechanism, fair-total-resource superiority, paper/QPU or automatic followup",
+      "Only a complete successful hash-bound80B/4FAST comparison can endorse recorded fixed-mode negative veto; partials remain inconclusive",
+      "Logical64MiB is planned, not hard Darwin RSS; resource/output failure is retained without retry"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Deterministic PCG64 recipe replay using frozen SHA256 first4 little-endian start/count/coin/FAST/weight roots; no native count or new graph",
+    "seed": [
+      6502001,
+      6502002,
+      65100000,
+      65200000,
+      65300000,
+      65400000,
+      65500000
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T21:00:47.607532+00:00",
+    "runtime_seconds": 0.330294,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 20,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P65_independent_raw_audit.py",
+    "research/P65_independent_raw_audit_contract.md",
+    "research/P65_independent_raw_audit_execution_contract.json",
+    "tests/test_p65_independent_raw_audit.py",
+    "research/P65_independent_raw_audit_preflight_contract.json",
+    "research/P65_independent_raw_audit_bound_contract.json",
+    "research/P65_independent_raw_audit_input_binding.json",
+    "experiments/P65_cayley_markov_stage/run_001/manifest.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/B_n20_ER_6502001.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/B_n20_RR_6502002.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_random.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_spectral.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_random.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_spectral.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/context_n20_ER_6502001.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/context_n20_RR_6502002.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/failure.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/raw.jsonl.gz",
+    "experiments/P65_cayley_markov_stage/run_001/data/seed_namespaces.json",
+    "experiments/P65_cayley_markov_stage/run_001/data/summary.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P65_independent_raw_audit.py",
+      "sha256": "71ae8141c8a73fe23cd16d2a45d5c74ab2254a5b4d1e2b6bf56ca5206d875ef6",
+      "sha256_after": "71ae8141c8a73fe23cd16d2a45d5c74ab2254a5b4d1e2b6bf56ca5206d875ef6"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_contract.md",
+      "sha256": "8d4abe84cc8a4763849b2ac9795d19bf614afb624840ee8343abb3ea4652e8ce",
+      "sha256_after": "8d4abe84cc8a4763849b2ac9795d19bf614afb624840ee8343abb3ea4652e8ce"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_execution_contract.json",
+      "sha256": "8609facd845abe8580dc5e8b1109f6b9d218fc374951c700475401dd0b58d13a",
+      "sha256_after": "8609facd845abe8580dc5e8b1109f6b9d218fc374951c700475401dd0b58d13a"
+    },
+    {
+      "path": "tests/test_p65_independent_raw_audit.py",
+      "sha256": "9f67916b7410eee6bbd911e0d1f196b9a04f9914494357c2451bde5f64f66eda",
+      "sha256_after": "9f67916b7410eee6bbd911e0d1f196b9a04f9914494357c2451bde5f64f66eda"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_preflight_contract.json",
+      "sha256": "c890b9c3938fb4c1555ff602097e3dc25cadf0183aed509126023c212e2baf82",
+      "sha256_after": "c890b9c3938fb4c1555ff602097e3dc25cadf0183aed509126023c212e2baf82"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_bound_contract.json",
+      "sha256": "af6fc241e94845d1d71b1ea4825c529d38d1a8dce2a2b96cb3be4f6ff5e2b668",
+      "sha256_after": "af6fc241e94845d1d71b1ea4825c529d38d1a8dce2a2b96cb3be4f6ff5e2b668"
+    },
+    {
+      "path": "research/P65_independent_raw_audit_input_binding.json",
+      "sha256": "abf2e8ce8145e3b6e9d4f461fb25a035dbb048ef660c27a557548f313246a50b",
+      "sha256_after": "abf2e8ce8145e3b6e9d4f461fb25a035dbb048ef660c27a557548f313246a50b"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/manifest.json",
+      "sha256": "9f64c5488ec7e0f89498c05da8c9b4428980cbbf79f2597c878ea4dd1bcfb330",
+      "sha256_after": "9f64c5488ec7e0f89498c05da8c9b4428980cbbf79f2597c878ea4dd1bcfb330"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/B_n20_ER_6502001.json",
+      "sha256": "e03e0b160641e53f1fdcc666ee2e9585fa0a2fee4b9b72c3950b15a230cfa8c5",
+      "sha256_after": "e03e0b160641e53f1fdcc666ee2e9585fa0a2fee4b9b72c3950b15a230cfa8c5"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/B_n20_RR_6502002.json",
+      "sha256": "86b69dbb4b4da0ccd3fe3b509bc146c27103f60231fbdb1709f9b8df947a16cb",
+      "sha256_after": "86b69dbb4b4da0ccd3fe3b509bc146c27103f60231fbdb1709f9b8df947a16cb"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_random.json",
+      "sha256": "e771d7976858fa57c416c460f3ba0e1021de11191e31527f5e73f162d84c269d",
+      "sha256_after": "e771d7976858fa57c416c460f3ba0e1021de11191e31527f5e73f162d84c269d"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_ER_6502001_spectral.json",
+      "sha256": "60b1f847fd48aae12bc61775f125fdb419a3bac9582ed9dc5ae1681009c7a082",
+      "sha256_after": "60b1f847fd48aae12bc61775f125fdb419a3bac9582ed9dc5ae1681009c7a082"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_random.json",
+      "sha256": "c493c05512db629fd2cc891963486b365a9fecf7d45702636474069eac9e63ab",
+      "sha256_after": "c493c05512db629fd2cc891963486b365a9fecf7d45702636474069eac9e63ab"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/FAST_n20_RR_6502002_spectral.json",
+      "sha256": "e18db2cbb00060cc6687f0f966b3e4b7180049bbca43dcc4b0202610d5f737d3",
+      "sha256_after": "e18db2cbb00060cc6687f0f966b3e4b7180049bbca43dcc4b0202610d5f737d3"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/context_n20_ER_6502001.json",
+      "sha256": "1559642b4cf8ea8c0cc0870e0abfaf6a7353e553968d8d5b4a4a0ea60bc0e8fb",
+      "sha256_after": "1559642b4cf8ea8c0cc0870e0abfaf6a7353e553968d8d5b4a4a0ea60bc0e8fb"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/context_n20_RR_6502002.json",
+      "sha256": "202f0215b66bf9e1effa6e2fd0abdad3628c1a7e9add42d4fa4020305a7d3e3e",
+      "sha256_after": "202f0215b66bf9e1effa6e2fd0abdad3628c1a7e9add42d4fa4020305a7d3e3e"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/failure.json",
+      "sha256": "a28394685657eec13bc361c913dcec75e9a9bd3e7916b3dfebf2dbbf4f1ccb27",
+      "sha256_after": "a28394685657eec13bc361c913dcec75e9a9bd3e7916b3dfebf2dbbf4f1ccb27"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/raw.jsonl.gz",
+      "sha256": "9c0ad9c189b8f266b958ddb710252d0d35ca0b4fdc279111dd2fe3633a3f1a4c",
+      "sha256_after": "9c0ad9c189b8f266b958ddb710252d0d35ca0b4fdc279111dd2fe3633a3f1a4c"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/seed_namespaces.json",
+      "sha256": "10551ca72db673c5eea7ce82c378e58e628ef8b2f62b7df277cc39532b0bbc40",
+      "sha256_after": "10551ca72db673c5eea7ce82c378e58e628ef8b2f62b7df277cc39532b0bbc40"
+    },
+    {
+      "path": "experiments/P65_cayley_markov_stage/run_001/data/summary.json",
+      "sha256": "3d082ab879a09c707ed5784f3a1baa6bc0ee6f16256d0c6f536e7423d25cf1ee",
+      "sha256_after": "3d082ab879a09c707ed5784f3a1baa6bc0ee6f16256d0c6f536e7423d25cf1ee"
+    }
+  ],
+  "output_directory": "research/P65_independent_raw_audit/run_001",
+  "declared_results": [
+    "research/P65_independent_raw_audit/run_001/data/audit.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P65_independent_raw_audit/run_001/stdout.txt",
+      "sha256": "9eec99050febb2e1b70070d8aa8aacae83470435b220d029d01c68b887096efd",
+      "kind": "log"
+    },
+    {
+      "path": "research/P65_independent_raw_audit/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P65_independent_raw_audit/run_001/data/audit.json",
+      "sha256": "b2e52ba90dadd69af1202280c5c8d5b5d3b12f52a0704b35507be57941199d58",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
