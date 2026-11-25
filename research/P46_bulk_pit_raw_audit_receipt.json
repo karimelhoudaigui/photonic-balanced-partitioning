@@ -1,0 +1,56 @@
+{
+  "kind": "POSTHOC_READ_ONLY_RAW_CONSISTENCY_AUDIT",
+  "new_experiment": false,
+  "source_run": "experiments/P46_bulk_pit/run_001",
+  "raw_sha256": "de3ae25390ef9358467ae416414d48d548cdd975b50b041bcc01844b6dd8b2a5",
+  "summary_sha256": "7337f26fbe9e5fa3b4f330fe1576b47fe6aef952532aeb3f403553cd0fc4dabb",
+  "records": 119244,
+  "stage_counts": {
+    "common_anchor": 3740,
+    "common_swap": 680,
+    "frontend_decoder": 136,
+    "development": 1536,
+    "classical_search": 113152
+  },
+  "all_feasible_cuts_independently_recomputed": 119244,
+  "distinct_cut_cache_entries": 40888,
+  "sample_counts": {
+    "bosonic": 256,
+    "distinguishable": 256,
+    "species4": 256,
+    "gaussian_Bcov": 256,
+    "iid_uniform": 256,
+    "conditional_phase": 256
+  },
+  "all_settings_total_gain": {
+    "bosonic": 21,
+    "distinguishable": 14,
+    "species4": 20,
+    "gaussian_Bcov": 32,
+    "iid_uniform": 19,
+    "conditional_phase": 21
+  },
+  "positive_improvement_events": {
+    "bosonic": 7,
+    "distinguishable": 5,
+    "species4": 5,
+    "gaussian_Bcov": 8,
+    "iid_uniform": 8,
+    "conditional_phase": 6
+  },
+  "collision_samples": {
+    "bosonic": 159,
+    "distinguishable": 133,
+    "species4": 150,
+    "conditional_phase": 159
+  },
+  "PIT_fields_reconstructed_from_saved_tables": true,
+  "all_baseline_query_counts_match": true,
+  "raw_unchanged": true,
+  "wall_seconds": 1.469864292,
+  "non_claims": [
+    "Read-only consistency audit, not independent sampler replication or proof",
+    "No certified numerical/phase calibration error bound beyond original scope",
+    "No statistical positive acceptance"
+  ]
+}
