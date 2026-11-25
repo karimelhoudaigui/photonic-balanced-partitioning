@@ -1,0 +1,266 @@
+{
+  "amplitude_probability_absolute_tolerance": 5e-10,
+  "independence": "scalar U and multiset enumeration independently implemented; archival geometry used only for tuple alignment; no primary project import",
+  "input_hashes_after": {
+    "experiments/P52_collective_phase/run_001/data/geometry.npz": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715",
+    "experiments/P52_collective_phase/run_001/data/theta_0.npz": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542",
+    "experiments/P52_collective_phase/run_001/data/theta_1.npz": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07",
+    "experiments/P52_collective_phase/run_001/data/theta_2.npz": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8",
+    "experiments/P52_collective_phase/run_001/data/theta_3.npz": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154",
+    "experiments/P52_collective_phase/run_001/manifest.json": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7"
+  },
+  "input_hashes_before": {
+    "experiments/P52_collective_phase/run_001/data/geometry.npz": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715",
+    "experiments/P52_collective_phase/run_001/data/theta_0.npz": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542",
+    "experiments/P52_collective_phase/run_001/data/theta_1.npz": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07",
+    "experiments/P52_collective_phase/run_001/data/theta_2.npz": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8",
+    "experiments/P52_collective_phase/run_001/data/theta_3.npz": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154",
+    "experiments/P52_collective_phase/run_001/manifest.json": "d580e0c0473a763257d6e8fecb3be5a7e27b0596d573c6af49b4bb738d7fe1b7"
+  },
+  "matplotlib_cache": {
+    "interpretation": "persistent configuration/cache only; no warm/cold performance claim",
+    "path": "/Users/karimelhoudaigui/Desktop/pasqal/.local/p42-replication/.local/mplconfig",
+    "preexisting": true,
+    "set_by_validator": true
+  },
+  "matrix_tolerance": 5e-12,
+  "mode": "full",
+  "native_thread_configuration": {
+    "Config_doc": "Exqalibur global configuration\n\nAll its members are statically accessed and there is no need to create an instance of this class.\n\nStatic properties:\n\n* ``compute_max_thread_count`` - Maximum number of CPU threads to use for parallel algorithms.\n\n    By default, `exqalibur` uses as many CPU cores as possible.\n\n    Current parallel algorithms are:\n\n    * CircuitOptimizer\n    * Clifford & Clifford sampling back-end\n    * Permanent computation\n    * Permanent estimate with Gurvits method\n    * Noisy Sampling Simulator\n* ``use_single_precision`` - Switch between single and double precision for algorithms which supports it (currently, only Clifford & Clifford back-end).\n    When `True` set the floating point precision to 32 bits (64 bits per complex value), 64 bits otherwise (128 bits per complex value)\n* ``unitary_check_precision`` - Precision to use when testing whether a matrix is unitary or not. It might be required to increase this value for larger matrices.\n    Default is the same value as in numpy (1e-6).\n\nUsage example:\n\n>>> import exqalibur as xq\n>>> xq.Config.unitary_check_precision = 1e-4\n",
+    "interface": "exqalibur.Config.compute_max_thread_count",
+    "interpretation": "documented native maximum configured/read back; OS scheduling not measured; default permanent algorithm may select Glynn at one thread",
+    "observed_before_configuration": 0,
+    "readback_after_configuration": 1,
+    "requested_maximum": 1
+  },
+  "native_thread_readback_after_work": 1,
+  "outputs": {
+    "occupations.npy": {
+      "bytes": 103088,
+      "sha256": "0416e283b63e6823b89f6c012e66d06b1f7006aa6e835ac4716f91bd1654b7dc"
+    },
+    "progress.json": {
+      "bytes": 3145,
+      "sha256": "3adab32fdd96add3d046403b25057a9c1b29d0a103f2aeea865ba2a6e244a76f"
+    },
+    "replica_theta_0.npz": {
+      "bytes": 312494,
+      "sha256": "e2dcda88321127e750e654b0a6979f5c277b6f4f5ae3e17976a0c2143e691302"
+    },
+    "replica_theta_1.npz": {
+      "bytes": 312494,
+      "sha256": "1ac88429954b6ef028d28c19f5aa360148f0f8dd7dd05de05ed3089a5071cb1d"
+    },
+    "replica_theta_2.npz": {
+      "bytes": 312494,
+      "sha256": "b03ce0747788f9ae02ebc11e476234954da130be9cead790e55ec0bf22daf3c4"
+    },
+    "replica_theta_3.npz": {
+      "bytes": 312494,
+      "sha256": "f613395c0e930d8d85d8581d4ccfb46d0f7f25b068a6989e41b5a5e245be7719"
+    }
+  },
+  "phases": [
+    {
+      "TV_numerical": 2.8734745702654885e-16,
+      "matrix_absolute_error": 0.0,
+      "max_amplitude_absolute_error": 5.551115123125783e-17,
+      "max_probability_absolute_error": 9.540979117872439e-18,
+      "pass": true,
+      "permanent_calls": 6435,
+      "phase_index": 0,
+      "probability_sum": 0.9999999999999983,
+      "reference_probability_sum": 0.9999999999999988,
+      "theta_radians": 0.0,
+      "unitarity_absolute_error": 1.1102230246251565e-16,
+      "worst_amplitude_occupation": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "worst_probability_occupation": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "TV_numerical": 2.9053907717180305e-16,
+      "matrix_absolute_error": 2.7755575615628914e-17,
+      "max_amplitude_absolute_error": 9.812001025258123e-17,
+      "max_probability_absolute_error": 7.15573433840433e-18,
+      "pass": true,
+      "permanent_calls": 6435,
+      "phase_index": 1,
+      "probability_sum": 0.9999999999999987,
+      "reference_probability_sum": 0.9999999999999988,
+      "theta_radians": 0.7853981633974483,
+      "unitarity_absolute_error": 1.1102230246251565e-16,
+      "worst_amplitude_occupation": [
+        0,
+        6,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "worst_probability_occupation": [
+        0,
+        6,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "TV_numerical": 2.7668839441830073e-16,
+      "matrix_absolute_error": 6.162975822039155e-33,
+      "max_amplitude_absolute_error": 8.439797369737068e-17,
+      "max_probability_absolute_error": 9.540979117872439e-18,
+      "pass": true,
+      "permanent_calls": 6435,
+      "phase_index": 2,
+      "probability_sum": 0.9999999999999986,
+      "reference_probability_sum": 0.9999999999999988,
+      "theta_radians": 1.5707963267948966,
+      "unitarity_absolute_error": 1.1102230246251565e-16,
+      "worst_amplitude_occupation": [
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        0,
+        1
+      ],
+      "worst_probability_occupation": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "TV_numerical": 2.798562976410318e-16,
+      "matrix_absolute_error": 2.7755575615628914e-17,
+      "max_amplitude_absolute_error": 7.253204108099275e-17,
+      "max_probability_absolute_error": 6.071532165918825e-18,
+      "pass": true,
+      "permanent_calls": 6435,
+      "phase_index": 3,
+      "probability_sum": 0.9999999999999987,
+      "reference_probability_sum": 0.9999999999999987,
+      "theta_radians": 2.356194490192345,
+      "unitarity_absolute_error": 1.1102230246251565e-16,
+      "worst_amplitude_occupation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "worst_probability_occupation": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0
+      ]
+    }
+  ],
+  "reference_data_commit": "762877a65125e5411e10906ccdb7f64ff280d840",
+  "resources": {
+    "max_rss_native_units": 170737664,
+    "process_cpu_seconds": 1.841588,
+    "rss_unit": "bytes on Darwin; KiB on Linux",
+    "wall_seconds": 2.5954772499972023
+  },
+  "software": {
+    "backend": "local NaiveBackend.prob_amplitude; no masks/iterator/pruning/remote processor",
+    "files": {
+      "NaiveBackend": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/backends/_naive.py",
+        "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+      },
+      "Unitary": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/perceval/components/unitary_components.py",
+        "sha256": "2f4bacd1d3d5c919b32eaaf28d1881a5f49be608ffca4be2ee53886a149786df"
+      },
+      "exqalibur.exqalibur": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+        "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+      },
+      "exqalibur_binary": {
+        "path": "/private/tmp/pbp-clean-venv-20261124/lib/python3.11/site-packages/exqalibur/__init__.py",
+        "sha256": "6a6ac3b31ef4ebc06ef95c2fa0aed19516e9c72bbe4e59b05aea1f2055686690"
+      }
+    },
+    "native_thread_control": "DOCUMENTED_CONFIG_MAXIMUM_1: Config.compute_max_thread_count configured/read back before work; successful completion also requires readback after; no OS scheduling measurement or vendor patch",
+    "permanent_doc": "permanent_cx(M: typing.Annotated[numpy.typing.NDArray[numpy.complex128], \"[m, n]\", \"flags.c_contiguous\"], ptype: str = '') -> complex\n\nPermanent of a square complex matrix\n\n:param M: Square matrix of complex values\n:param ptype: Name of a permanent computation algorithm. Accepted values are ``\"glynn\"`` and ``\"ryser\"``.\n              By default, Glynn method is used only when using 1 or 2 threads. Ryser is otherwise used.\n:return: The permanent value\n\nSee also exqalibur.Config to control how many CPU threads you allow you program to use.\n\n",
+    "permanent_signature": "UNAVAILABLE: ValueError: no signature found for builtin <built-in method permanent_cx of pybind11_builtins.pybind11_detail_function_record_v1_system_libcpp_abi1 object at 0x105ec3c30>",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "thread_named_exports": [],
+    "versions": {
+      "exqalibur": "1.4.2",
+      "numpy": "2.4.6",
+      "perceval-quandela": "1.3.0",
+      "pytest": "8.4.2"
+    }
+  },
+  "source_sha256": "2d590822218df9300457923d6fc9f619d15666eae522b96b91aafebd88b5a55e",
+  "source_state": "8 distinct single photons, no loss, all occupations retained",
+  "status": "FINITE_FLOAT64_AGREEMENT",
+  "thread_snapshot_after_import": {
+    "available": false,
+    "errno": 1,
+    "error": "[Errno 1] Operation not permitted: 'ps'",
+    "error_type": "PermissionError"
+  },
+  "thread_snapshot_after_work": {
+    "available": false,
+    "errno": 1,
+    "error": "[Errno 1] Operation not permitted: 'ps'",
+    "error_type": "PermissionError"
+  },
+  "thread_snapshot_before_import": {
+    "available": false,
+    "errno": 1,
+    "error": "[Errno 1] Operation not permitted: 'ps'",
+    "error_type": "PermissionError"
+  }
+}
