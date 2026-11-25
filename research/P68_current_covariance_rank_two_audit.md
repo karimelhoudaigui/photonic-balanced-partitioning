@@ -32,9 +32,10 @@ unitary output, count every collision as a paid self-loop, and update only
 by a collision-free Metropolis proposal. Zero temperature accepts every
 non-uphill move and rejects every uphill move. The incumbent initially has
 the current cost; no external candidate, restart or different decoder is
-inserted. The same two whole-block targets are the only strict improvements
-from B, and every other balanced subset is uphill by at least g, as proved
-in the independent P66 audit.
+inserted. The two whole-block targets G={CA,CB} are the only strict
+improvements from B. Every balanced subset outside B union G is uphill
+from B by at least g, as proved in the independent P66 audit. The other
+members of B have equal cost.
 
 Let U(A,S) be an arbitrary deterministic one-particle unitary satisfying
 EXACT JOINT permutation covariance
