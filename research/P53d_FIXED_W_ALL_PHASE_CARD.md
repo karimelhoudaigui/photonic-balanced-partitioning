@@ -1,4 +1,4 @@
-# P53d — fixed witness against every classical phase (STATIC proposal)
+# P53d — fixed witness against every b4(4+4) phase (STATIC proposal)
 
 Question: for the SAME B source at theta=pi/3 and saved witness
 w=(X04-X15)/2, is g_G(phi)=E[b4(G),phi](w)-E[B,pi/3](w) strictly positive
@@ -74,7 +74,9 @@ Outcomes: STRICT_UNIFORM_GAP, NONNEGATIVE_WITHOUT_STRICT_BOUND, an explicit
 negative/zero registered endpoint witness, or INCONCLUSIVE. A failed finite
 certificate is not phase nonmembership or evidence of optimizer benefit.
 Any accepted statement concerns this fixed N8 witness/architecture against
-phase-retuned b4 ONLY; other controls and feasible graph search remain open.
+phase-retuned b4(4+4) ONLY; other controls and feasible graph search remain open.
+The7+1,6+2,5+3 species bipartitions are NOT tested. This cannot be called all
+classical models or a witness of genuine order8 indistinguishability.
 
 Only after ROOT approval: freeze source/spec/tests/contracts, qualified exact
 references for the scalar contraction and polynomial transforms, independent

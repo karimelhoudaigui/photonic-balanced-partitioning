@@ -1,0 +1,18 @@
+{
+  "B_theta": "pi/3",
+  "x_numerator": 1,
+  "x_denominator": 4,
+  "w": "(X04-X15)/2",
+  "groupings": 35,
+  "maximum_harmonic": 12,
+  "global_Bernstein_degree": 12,
+  "interval_Bernstein_degree": 24,
+  "interval_count": 8,
+  "maximum_LP_calls": 0,
+  "maximum_cpu_seconds": 20,
+  "maximum_wall_seconds": 30,
+  "maximum_threads": 1,
+  "maximum_planned_arrays_bytes": 67108864,
+  "maximum_new_output_bytes": 4194304,
+  "positive_optimizer_accepted": false
+}

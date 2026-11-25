@@ -1,0 +1,106 @@
+{
+  "claim_id": "P53D-INTEGER-AND-POLYNOMIAL-PREFLIGHT",
+  "mathematics": {
+    "assertion_tested": "Twenty-two finite exact/synthetic fixtures: independent Python-int contraction and worst13-fold bounds; guard before dtype/float rejection; known ties; one real group spectrum and12 selected coefficients from independent assignments; Parseval/Fock; synthetic anchors; affine/Bernstein inverse/corruption; triangle/global/fixed8 strict,weak,negative and true-positive-polynomial/inconclusive controls; aggregate scopes/spec. No real B/full70/full35/physical artifact decoding or LP.",
+    "coefficient_domain": "Python real integer creation polynomials/Laurent autocorrelations, per-column L1 guards before int64@int64, proved partial-sum bounds, Python-int folds and exact Fraction Chebyshev/affine/Bernstein verification. No floating quantity is proof data.",
+    "conventions": "All70 group spectra and35 complementary groupings retained. All6435 tie scalars and330x330 M retained, not6435 full phase laws. Same B/w/old normalized graph. Exact anchors0/pi2 from P53 andpi3 from P53c. Triangle then Bernstein12global then24 on8 fixed x=j/8 intervals; zero bound weak, interior negative controls not phase optima. All9 predeclared node values saved; exact negative values are valid falsifiers. No adaptive split/search/LP/retry.",
+    "inputs": [
+      "ROOT-approved static card b2f3fe9/e0440e8, vocabulary limited to b4(4+4) in same architecture;7+1/6+2/5+3 not tested",
+      "Immutable P53/P53b/P53c source and exact data; P53c certificate SHA408140f0a1a3865e374256d2a1e797961adcf6742cd8b1d234c2c7b4b2cbc065; B fixedx1/4,w saved and checked explicitly",
+      "Real-integer source assignment, normalized four-photon Fock output factorial, exact420 tie weights and scalar denominator840*8^8"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "group_spectra": 70,
+      "groupings": 35,
+      "group_states": 330,
+      "output_tie_states": 6435,
+      "maximum_harmonic": 12,
+      "matrix_rows": 330,
+      "matrix_columns": 330,
+      "per_column_L1_bound": 4096,
+      "bilinear_bound": 7046430720,
+      "fold_bound": 91603599360,
+      "cosine_bound": 183207198720,
+      "planned_integer_operations_estimate": 39502650,
+      "maximum_LP_calls": 0,
+      "global_Bernstein_degree": 12,
+      "interval_Bernstein_degree": 24,
+      "fixed_intervals": 8,
+      "registered_nodes": 9,
+      "exact_anchors": 105,
+      "CPU_seconds": 20,
+      "wall_seconds": 30,
+      "threads": 1,
+      "planned_arrays_bytes": 67108864,
+      "max_new_output_bytes": 4194304,
+      "planned_tests": 22,
+      "qualification_group_spectra": 1,
+      "qualification_full_groupings": 0,
+      "qualification_LP_calls": 0
+    },
+    "non_claims": [
+      "No all-classical-models or genuine order8 indistinguishability claim;7+1/6+2/5+3 not tested",
+      "No graph optimization benefit, strong classical feasible search/runtime advantage, full law/tails, heldout or hardware validation",
+      "No alternate B phase/w/graph, floating proof, adaptive degree/interval/root/phase optimization or interpretation of negative Bernstein controls as a physical optimum",
+      "No manuscript/QPU/Cstar/known solution training, automatic retry/cap increase or accepted scientific-goal completion"
+    ]
+  },
+  "execution_artifacts": [
+    "research/P53d_fixed_w_all_phase.py",
+    "research/P53d_all_phase_spec.json",
+    "research/P53d_all_phase_contract.md",
+    "research/P53d_all_phase_execution_contract.json",
+    "research/P53d_FIXED_W_ALL_PHASE_CARD.md",
+    "tests/test_p53d_all_phase.py",
+    "research/P53c_same_phase_controls.py",
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P52_collective_phase_probe.py",
+    "research/P43_global_gain_probe.py",
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz",
+    "experiments/P53c_same_phase/run_001/data/certificate.json.gz",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P53d_all_phase_preflight_contract.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Exact deterministic integer/rational arithmetic only; no RNG,LP or physical/MC sample",
+    "seed": null
+  },
+  "resource_note": "Implementation freeze before imports. ROOT/physics static review then explicit exclusive qualification and distinct main gate. P55 experiment has numerical priority. CPU20/wall30/thread1/log4MiB/scientific4MiB/planned64MiB scientific data, no hard Darwin memory guarantee. Preserve first failure, no automatic retry.",
+  "planned_command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p53d_all_phase.py",
+    "--junitxml=research/P53d_all_phase_preflight/run_001/junit.xml"
+  ]
+}
