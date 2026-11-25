@@ -99,3 +99,23 @@ and decide whether the still-unexecuted P75b main is scientifically warranted.
 A static analytic resolution may cancel it. This tiny PASS establishes neither
 a counterexample nor a universal Gaussian bound, photonic optimization
 advantage, QPU readiness or a manuscript update.
+
+## Independent source review and ROOT verification provenance
+
+Before launch, ROOT explicitly authorized only this tiny qualification after
+reporting its full read of all five prospective files and the complete
+243-line independent source/certificate review. That review is committed at
+`10eee38701d9e0cf7f197cd556655b26cc08c277`, file
+`research/P75b_INDEPENDENT_SOURCE_REVIEW.md`, SHA256
+`e1edae1005b35dc2c9a2b6828e7b6541af1faa3476d68588e8943ddf5c034af8`.
+The reviewer reported no material static blocker and separately proved the
+exact-certificate implication; it did not run code or prove the six-mode
+conjecture. This receipt pins the decision provenance rather than implying
+that the author independently read that entire review before execution.
+
+After raw commit aa16e2d, ROOT separately reported full manifest, all nine
+JUnit items/property and stdout inspection, plus its own matching-tree v2
+validation. ROOT confirmed completion, all ten inputs unchanged and observed
+byte budgets. Main execution was still expressly deferred pending a separate
+ROOT read/decision on this receipt. No additional qualification or scientific
+case followed that verification.
