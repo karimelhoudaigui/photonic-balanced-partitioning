@@ -48,7 +48,11 @@ class Meter:
             self.cpu += time.process_time() - cpu
 
     def record(self):
-        return {"wall_seconds": self.wall, "cpu_seconds": self.cpu}
+        record = {"wall_seconds": self.wall, "cpu_seconds": self.cpu}
+        if hasattr(self, "factory_total"):
+            record.update(factory_total=self.factory_total, CPU_split_available=False,
+                          backend_wall_source="immutable_factory_reported_backend_seconds")
+        return record
 
 
 class RetainedFailure(RuntimeError):
@@ -274,8 +278,15 @@ def observation_components(arm, policy, seed, backend):
     if model in ("bosonic", "species4", "distinguishable"):
         source = arm["groupings"][policy["group"]] if model == "species4" else list(range(n))
         if model in ("bosonic", "species4"):
-            with backend.measure():
-                primitive, _ = base.make_optical_sampler(context["u"], source, model, roles["observation"])
+            factory = Meter()
+            with factory.measure():
+                primitive, backend_seconds = base.make_optical_sampler(context["u"], source, model, roles["observation"])
+            if not math.isfinite(backend_seconds) or backend_seconds < 0 or backend_seconds > factory.wall + 1e-8:
+                raise RetainedFailure("Invalid immutable factory backend WALL", {"factory": factory.record(), "backend_seconds": backend_seconds})
+            # The immutable helper starts its WALL clock AFTER RNG/source validation.
+            # Its pre-clock prefix remains CLASSICAL; CPU has no matching inner clock.
+            backend.wall, backend.cpu = backend_seconds, None
+            backend.factory_total = factory.record()
         else:
             primitive, _ = base.make_optical_sampler(context["u"], source, model, roles["observation"])
         def draw():
@@ -311,9 +322,15 @@ def decode_observation(a, counts, rank_rng, model):
 
 
 def classical_setup(total, backend):
-    if any(backend[key] > total[key] + 1e-8 for key in ("wall_seconds", "cpu_seconds")):
+    if backend["wall_seconds"] > total["wall_seconds"] + 1e-8:
         raise RetainedFailure("Nested backend clock exceeds total setup")
-    return {key: max(0., total[key] - backend[key]) for key in ("wall_seconds", "cpu_seconds")}
+    wall = max(0., total["wall_seconds"] - backend["wall_seconds"])
+    if backend["cpu_seconds"] is None:
+        return {"wall_seconds": wall, "cpu_seconds": None, "CPU_split_available": False,
+                "scope": "total setup CPU observed separately; factory CPU cannot be split honestly"}
+    if backend["cpu_seconds"] > total["cpu_seconds"] + 1e-8:
+        raise RetainedFailure("Nested backend CPU exceeds total setup")
+    return {"wall_seconds": wall, "cpu_seconds": max(0., total["cpu_seconds"] - backend["cpu_seconds"])}
 
 
 def run_batch(arm, policy, stage, trial, draws, stream):
@@ -542,7 +559,8 @@ def main():
                    spec_sha256=hashlib.sha256(args.spec.read_bytes()).hexdigest(),
                    simulation_time_is_QPU_time=False, B_cost_excludes_other_models=True,
                    actual_QPU_calls=0, actual_QPU_photons=0, heldout_opened=False,
-                   optimum_used=False, source_from_previous_solution=False)
+                   optimum_used=False, source_from_previous_solution=False,
+                   B_setup_CPU_split_available=False, B_factory_prefix_WALL_is_charged=True)
     save_json(args.output/"summary.json", summary)
     check_output(args.output)
     print(json.dumps({"status": summary["status"], "completed_shots": summary["completed_shots"], "positive_accepted": False}))

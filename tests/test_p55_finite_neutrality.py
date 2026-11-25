@@ -1,5 +1,6 @@
 """P55 synthetic preflight only; unopened DEV graph seeds never used here."""
 from fractions import Fraction
+from contextlib import nullcontext
 import importlib.util
 import io
 import json
@@ -259,6 +260,25 @@ def test_setup_clock_subtraction_and_B_only_allowance_exclude_backend_controls_a
              "other_model": 3000, "serialization": 4000}]
     assert p55.B_allowance(arm, rows, .002) == pytest.approx(.045)
     with pytest.raises(ValueError): p55.B_allowance(arm, [{**rows[0], "model": "continuous_phase"}], 0.)
+
+
+def test_immutable_factory_preclock_RNG_validation_prefix_is_paid_and_CPU_split_is_unknown(monkeypatch):
+    arm = p55.prepare_arm(graph(), case(), "bosonic")
+    backend = p55.Meter()
+    class FactoryMeter:
+        wall, cpu = 7., 4.
+        def measure(self): return nullcontext()
+        def record(self): return {"wall_seconds": self.wall, "cpu_seconds": self.cpu}
+    monkeypatch.setattr(p55, "Meter", FactoryMeter)
+    monkeypatch.setattr(p55.base, "make_optical_sampler", lambda *args:
+                        ((lambda: (np.ones(4, dtype=np.int64), False)), 5.))
+    p55.observation_components(arm, p55.policies("bosonic")[0], 550023, backend)
+    assert backend.wall == 5. and backend.cpu is None
+    assert backend.record()["factory_total"] == {"wall_seconds": 7., "cpu_seconds": 4.}
+    # Two seconds inside the factory precede its timer; two more are caller setup.
+    charged = p55.classical_setup({"wall_seconds": 9., "cpu_seconds": 6.}, backend.record())
+    assert charged["wall_seconds"] == 4. and charged["cpu_seconds"] is None
+    assert not charged["CPU_split_available"]
 
 
 def training_rows(model, cases, winner):

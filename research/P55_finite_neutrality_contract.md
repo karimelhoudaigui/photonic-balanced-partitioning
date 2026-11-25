@@ -44,8 +44,12 @@ Every arm separately pays its own required preparation; no cross-model context
 cache or candidate is reused. B's eigensolve, normalization, three spectral
 exponentials, both Gram/row-mass guards, own seed hashes/RNG setup, count
 validation, DP construction, exact rank, every cut and aggregates/selection
-are bracketed. Only local optical backend setup is subtracted from total
-constructor setup. B's raw count generation and cold optical imports are
+are bracketed. Only the immutable factory's RETURNED optical backend WALL
+is subtracted from total constructor WALL: the factory's RNG/source-validation
+prefix precedes that internal clock and stays paid. Total constructor and
+factory CPU are observed, but their optical/classical CPU splits are marked
+UNKNOWN (`None`), never estimated or claimed as separately measured. B's raw
+count generation and cold optical imports are
 recorded separately. Count controls, extra descriptive diagnostics, recording,
 compression and audit contribute ZERO B allowance. Selection receives only
 its own arm's training batches, not a list enlarged by optional controls.
@@ -93,3 +97,6 @@ The44th prospective fixture verifies GLOBAL uniqueness of596 seed hashes
 before data:72 training batches,108 possible evaluation batches over ALL
 policies, observation/rank/phase roles, group and FAST seeds. This strengthens
 the primary's within-batch role check without changing any source/seed/grid.
+The45th fixture additionally checks the immutable factory's pre-clock prefix:
+factory7=backend5+classical2, plus caller2, must charge WALL4. This pre-data
+caller correction changes no physics or old helper and adds no API calibration.

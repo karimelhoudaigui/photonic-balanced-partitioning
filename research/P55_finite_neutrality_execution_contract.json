@@ -33,7 +33,7 @@
       "N20/two DEV graphs and finite control grids can veto this family or motivate a new design, never prove optimized or scalable advantage",
       "Small-time gain is classical: D sqrt2 retiming and inclusion tau=tB^2 are mandatory known nulls; all-collision feasible output is not itself a benefit",
       "Decimal80/float Gram, mass, PMF/CDF and clock guards are not intervals, relative precision guarantees, native RSS/OS thread measurements or hardware runtime",
-      "B-only classical WALL converted to FAST CPU excludes all optional control preparation/IO/simulationbackend and assumes zero optical latency; this is an implementation envelope, not a universal no-go",
+      "B-only classical WALL converted to FAST CPU excludes all optional control preparation/IO/simulationbackend and assumes zero optical latency; this is an implementation envelope, not a universal no-go. The immutable factory pre-clock RNG/source prefix stays paid; only returned backend WALL is excluded, while CPU splits are unavailable rather than estimated",
       "Missing/failing cases remain INCONCLUSIVE with first evidence and no retry, graph replacement, larger cap, precision change or truncated-chain decoding"
     ]
   },
