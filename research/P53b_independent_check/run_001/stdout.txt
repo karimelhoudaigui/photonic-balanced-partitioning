@@ -1,0 +1,21 @@
+{
+  "checker": "PASS",
+  "production_status": "EXACT_POINT_ENDPOINT71_SEPARATION_CERTIFIED",
+  "primal_exact": false,
+  "dual_exact": true,
+  "strict_gap": "767/327680",
+  "vertices_checked": 71,
+  "coordinates_checked": 28,
+  "inputs": {
+    "experiments/P53_exact_phase/run_001/data/exact_source.json.gz": "2a593abba088327ccb8b54f5f14bab6f8edcf5fc42128de6c31f394bf454d7a0",
+    "experiments/P53_exact_phase/run_001/data/exact_library.json.gz": "cb210de13928e365b8983c2a17b882623a346975b522293fd549b6980871963b",
+    "experiments/P53b_fixed_point/run_001/data/certificate.json.gz": "bd9874399ffed241b045f09a5a4f155d7d60263e7314a55e1bfd2358c9022dbe"
+  },
+  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "source_sha256": "1ffc267914f4489d2dac6f602c4aff7328543b9934f874d554703cb97b6450ac",
+  "method": "direct sum powers at1/4; no production import",
+  "posthoc_not_blind": true,
+  "CPU_seconds": 0.09299299999999999,
+  "wall_seconds": 0.09305054199649021
+}
+
