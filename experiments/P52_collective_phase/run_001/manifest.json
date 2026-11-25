@@ -1,0 +1,285 @@
+{
+  "schema_version": 2,
+  "claim_id": "P52-COLLECTIVE-PHASE-FINITE-DISCRIMINATOR",
+  "repository": {
+    "commit": "2e57ccdf780626c15bd344fb326b2350a2359d73",
+    "dirty": false
+  },
+  "command": [
+    "/private/tmp/pbp-clean-venv-20261124/bin/python",
+    "research/P52_collective_phase_probe.py",
+    "--spec",
+    "research/P52_collective_phase_spec.json",
+    "--output",
+    "experiments/P52_collective_phase/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "For4 frozen U8(theta) cells, compute full6435 B laws, all35 b4 groupings and full tie-integrated70-subset/28-edge kernels, fixed-low-moment/symmetry/fourth-order checks,4x262144 continuous-phase calibration histograms and392-coordinate confidence; verify numerical convex mean replacements over all140 b4 kernels+uniform with optional4 MC vertices. No graph/search/accepted positive.",
+    "coefficient_domain": "Complex128/float64 creation recurrence and probability convolution;int16 occupations/int64 keys and MC counts;exact rational tie definitions evaluatedfloat64;float64 HiGHS convex candidates independently reconstructed",
+    "conventions": "N=r8CF,U=sqrt(1/2)[[W,DW],[W,-DW]],WrealH4,theta0/pi4/pi2/3pi4;all6435 patterns retained,nopruning/postselection;all35unordered4+4 splits;top4tiesuniform;392not6435/TV confidence;theta3 duplicate physical law with independent MCseed;Walsh0edges4/7 doesnotimply uniform70;LPthreads1parallelFalse1s perfit,verified coefficients and MC epsilon*sumMCweights",
+    "inputs": [
+      "Four phase indices0..3,full8CF source,compact levels0..8 and tie pushforward;no graphs/optima/masks/training",
+      "All70 distinct4-input groups,35unordered partitions,330^2 compact convolution reused;full140b4 laws",
+      "262144IID phase draws percell,batch4096,role root5201001;full6435 histograms and256batchdigests",
+      "Four deterministic141-vertex fits andfour optional145-vertex MC fits,all coefficients retained"
+    ],
+    "bounds": {
+      "modes": 8,
+      "photons": 8,
+      "full_states": 6435,
+      "group_states": 330,
+      "b4_splits": 35,
+      "phase_cells": 4,
+      "total_MC_draws": 1048576,
+      "MC_batch": 4096,
+      "subset_outputs": 70,
+      "crossing_outputs": 28,
+      "simultaneous_confidence_coordinates": 392,
+      "LP_fits": 8,
+      "LP_seconds_per_fit": 1,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "planned_arrays_bytes": 268435456,
+      "max_new_output_bytes": 33554432
+    },
+    "non_claims": [
+      "No accepted optimizer positive,graph selection,C*,novelty,scalable theorem,physical sampling,heldout or QPU",
+      "Finite convex edge-mean match is not full-law simulation/tail domination/separation/runtime advantage",
+      "Hoeffding event covers392decodedcoordinates,not6435rawbins or TV<=epsilon;float/source errors separate,not intervals",
+      "No outcome-driven alternative solver,extra MCdraws/seed,cap increase or automatic retry",
+      "Eightmodes/seventyfeasibleoutputs permit trivial classical exhaustive search;user discovery/hardwaregoal remainsOPEN",
+      "Solver status!=0 or successFalse is inconclusive even with a verified feasible numerical candidate; that candidate is retained only as an upper-bound witness, not a solved fit."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Independent PCG64 pertheta seed_for(5201001,index);continuous angles then categorical draws in64fixed4096batches;no random ties or optimizer training",
+    "seed": [
+      5201001
+    ]
+  },
+  "run": {
+    "started_at": "2026-11-25T08:08:09.738679+00:00",
+    "runtime_seconds": 2.107155,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 33554432,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/P52_collective_phase_probe.py",
+    "research/P52_collective_phase_spec.json",
+    "research/P52_collective_phase_contract.md",
+    "research/P52_collective_phase_execution_contract.json",
+    "research/P52_COLLECTIVE_PHASE_CARD.md",
+    "theory/P52_card_physics_review.md",
+    "research/P52_resources_stat_review_card_6df6e1c.md",
+    "tests/test_p52_collective_phase.py",
+    "research/P43_global_gain_probe.py",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/P52_collective_phase_probe.py",
+      "sha256": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242",
+      "sha256_after": "56a71f048973cae7d4922d9da7d3952943c52f5a11597fc46bbb1a2bab84d242"
+    },
+    {
+      "path": "research/P52_collective_phase_spec.json",
+      "sha256": "ff5806223c7a66e7a165dac01a8bb1ef04a9d3ba980f5f1bcc1ea590901038d8",
+      "sha256_after": "ff5806223c7a66e7a165dac01a8bb1ef04a9d3ba980f5f1bcc1ea590901038d8"
+    },
+    {
+      "path": "research/P52_collective_phase_contract.md",
+      "sha256": "634c8dc7aab8d583bc65062706cae9a8592d1667cb35cfdad7db576c4b5c61d4",
+      "sha256_after": "634c8dc7aab8d583bc65062706cae9a8592d1667cb35cfdad7db576c4b5c61d4"
+    },
+    {
+      "path": "research/P52_collective_phase_execution_contract.json",
+      "sha256": "379ae2811802a576bb2234b44db99c1d8f48569ab9d4e2b0d39117c63dc28985",
+      "sha256_after": "379ae2811802a576bb2234b44db99c1d8f48569ab9d4e2b0d39117c63dc28985"
+    },
+    {
+      "path": "research/P52_COLLECTIVE_PHASE_CARD.md",
+      "sha256": "51a10866aa6dbba5c13f0e786c730b4c03a98ca87b0c535d268494f5e91cea53",
+      "sha256_after": "51a10866aa6dbba5c13f0e786c730b4c03a98ca87b0c535d268494f5e91cea53"
+    },
+    {
+      "path": "theory/P52_card_physics_review.md",
+      "sha256": "d55e57e2d33767e277a1c16023c050eaa93e1e1ba6a09caf8d48b86a1fba944d",
+      "sha256_after": "d55e57e2d33767e277a1c16023c050eaa93e1e1ba6a09caf8d48b86a1fba944d"
+    },
+    {
+      "path": "research/P52_resources_stat_review_card_6df6e1c.md",
+      "sha256": "5c2f22015d18f2c138702b9744e70bafd4276ae97052d589645bef0f47930d87",
+      "sha256_after": "5c2f22015d18f2c138702b9744e70bafd4276ae97052d589645bef0f47930d87"
+    },
+    {
+      "path": "tests/test_p52_collective_phase.py",
+      "sha256": "3342f6c4839640a1d296553fd860269a1287601ed1009a4831f85c153cb6346a",
+      "sha256_after": "3342f6c4839640a1d296553fd860269a1287601ed1009a4831f85c153cb6346a"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P52_collective_phase/run_001",
+  "declared_results": [
+    "experiments/P52_collective_phase/run_001/data/geometry.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_0.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_1.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_2.npz",
+    "experiments/P52_collective_phase/run_001/data/theta_3.npz",
+    "experiments/P52_collective_phase/run_001/data/phase_theta_0.npz",
+    "experiments/P52_collective_phase/run_001/data/phase_theta_1.npz",
+    "experiments/P52_collective_phase/run_001/data/phase_theta_2.npz",
+    "experiments/P52_collective_phase/run_001/data/phase_theta_3.npz",
+    "experiments/P52_collective_phase/run_001/data/phase_batches.jsonl.gz",
+    "experiments/P52_collective_phase/run_001/data/closure.json",
+    "experiments/P52_collective_phase/run_001/data/summary.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P52_collective_phase/run_001/stdout.txt",
+      "sha256": "1d0440391a41882b60d841d7e5fb85cfb15919f04905d93a94e368b61b388e8f",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/geometry.npz",
+      "sha256": "379a53775b2b1b15ceb299692404a0a6afbec5ac62a7aff2c8efabae1ae1c715",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_0.npz",
+      "sha256": "405b805d09495775d2f49c71426c163ba49a00b188cb938cac99c804b906a542",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_1.npz",
+      "sha256": "48cafbcb659f51e6d4c155c03bfa4ed27f6914f5f64ee1bae873108c2a8e3c07",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_2.npz",
+      "sha256": "0617ada35f36fd968e1b7c91ca2110f9188465d2e9bc3d47d93ca7bb05d7a9d8",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/theta_3.npz",
+      "sha256": "d9faf7085a9a1eab44fddb8681d586a24a98e5c80de92e83a28e9024044e6154",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/phase_theta_0.npz",
+      "sha256": "c66658f16503ae5ba0a441be96196ca8526044529a4065223f1ee5921cad4743",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/phase_theta_1.npz",
+      "sha256": "d0a0016ea073edd7e6e56c779213b255528c9303d37a5899294672f7882066f4",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/phase_theta_2.npz",
+      "sha256": "b58169dac8eecc3a5ecd8ca96f64cc97cca7bce744e17dfc08e6970fe91e3e96",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/phase_theta_3.npz",
+      "sha256": "cccde48db5025c6a124c23a2f5238647b835dbf111c391628af35e55c465f1da",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/phase_batches.jsonl.gz",
+      "sha256": "429832b27a4dc2e480aed5743598bec09b3d7a02c2a791b03fb9d5c1ef02218a",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/closure.json",
+      "sha256": "6d8df12e3e1c523dece8b368a6d63c0b3b282acd7544da766a3093abb8f22bb1",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P52_collective_phase/run_001/data/summary.json",
+      "sha256": "0804c89c2cca3e12a7c11050fd82759198fcaf622a907b6fc32e3c3ad915cbc9",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
