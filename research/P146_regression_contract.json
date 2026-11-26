@@ -1,0 +1,431 @@
+{
+  "claim_id": "P146-INTEGRATION-REGRESSION",
+  "mathematics": {
+    "assertion_tested": "Existing full integration suite after P146 standalone instrument qualification; no P146 optimizer or new graph campaign",
+    "coefficient_domain": "As declared by existing tests; exact and floating tests remain distinct",
+    "conventions": "Pinned complete project HEAD and observed source hashes; source-closure list excludes data/text transitive inputs, which remain identified by the clean Git source revision",
+    "inputs": [
+      "All existing tests/ with fixed inherited Hypothesis seed; the P146 scientific diagnostic is not rerun by this suite"
+    ],
+    "bounds": {
+      "expected_tests": 1569,
+      "cpu_seconds": 120,
+      "wall_seconds": 180,
+      "workers": 1,
+      "threads": 1,
+      "retries": 0,
+      "logs_bytes": 4194304
+    },
+    "non_claims": [
+      "No new DEV sample, independence, hardware test, matched-cost advantage or external novelty assessment"
+    ]
+  },
+  "execution_artifacts": [
+    ".qwen/support/run_experiment.py",
+    ".qwen/support/validate_manifest.py",
+    "AGENTS.md",
+    "paper/figures/generate_figures.py",
+    "pyproject.toml",
+    "qpu/check_backend.py",
+    "qpu/check_environment.py",
+    "qpu/offline_pilot_20261124_v1/reproduce.py",
+    "qpu/run_qpu.py",
+    "qpu/smoke_test.py",
+    "reports/P79_integration_validation/inspect_recorded.py",
+    "reports/P82a_integration_validation/inspect_qualification.py",
+    "reports/P82a_integration_validation/prepare_audit_binding.py",
+    "reports/P82a_integration_validation/prepare_audit_binding_v2.py",
+    "reports/P82a_integration_validation/run_full_suite.py",
+    "reports/P90a_integration_validation/inspect_qualification.py",
+    "reports/P90a_integration_validation/prepare_recorded_audit.py",
+    "reports/P90a_integration_validation/run_full_suite.py",
+    "reports/P90a_integration_validation/run_full_suite_with_checker.py",
+    "reports/P96_validation_review/audit_recorded.py",
+    "reports/P96_validation_review/run_full_suite.py",
+    "reports/P96_validation_review/run_full_suite_v2.py",
+    "reports/lucy_tgcc_2026-11-24/validate_delivery.py",
+    "requirements-research-lock.txt",
+    "research/P107_symbolic_filter_validation.py",
+    "research/P110_native_filter_replication.py",
+    "research/P113_independent_mean_certificate.py",
+    "research/P130_few_loss_validation.py",
+    "research/P131_phase_multinomial.py",
+    "research/P131_phase_multinomial_validation.py",
+    "research/P134_rational_frame_discriminator.py",
+    "research/P141_finite_magnetic_screen.py",
+    "research/P141_recorded_consistency_reader.py",
+    "research/P141_recorded_consistency_reader_v2.py",
+    "research/P145_collective_lns_probe.py",
+    "research/P145_exact_triad_fixture.py",
+    "research/P145_run_declared_screen.py",
+    "research/P146_full_instrument_check.py",
+    "research/P41_adaptive_probe.py",
+    "research/P41_encoding_probe.py",
+    "research/P42_loss_spectrum_probe.py",
+    "research/P43_adaptive_raw_audit.py",
+    "research/P43_global_gain_probe.py",
+    "research/P45_adaptive_probe.py",
+    "research/P45_adaptive_raw_audit.py",
+    "research/P45_encoding_author_raw_check.py",
+    "research/P45_encoding_full_fock_probe.py",
+    "research/P46_bulk_pit_probe.py",
+    "research/P47_conditional_phase_marginal.py",
+    "research/P47_conditional_phase_resource.py",
+    "research/P47_directed_pit_probe.py",
+    "research/P47_directed_pit_raw_audit.py",
+    "research/P48_coherent_marginals.py",
+    "research/P48_spectral_pit_probe.py",
+    "research/P48_spectral_pit_raw_audit.py",
+    "research/P49_fast_classical.py",
+    "research/P49_trained_source_probe.py",
+    "research/P49_trained_source_raw_audit.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_minimal_count_field_probe.py",
+    "research/P50_minimal_count_field_raw_audit.py",
+    "research/P52_collective_phase_probe.py",
+    "research/P52_config_api_metadata.py",
+    "research/P52_naive_replication.py",
+    "research/P53_exact_continuous_phase.py",
+    "research/P53b_fixed_point_discriminator.py",
+    "research/P53b_independent_checker.py",
+    "research/P53c_independent_permanent.py",
+    "research/P53c_same_phase_controls.py",
+    "research/P53d_fixed_w_all_phase.py",
+    "research/P53d_independent_check.py",
+    "research/P55_finite_neutrality_probe.py",
+    "research/P55_independent_raw_checker.py",
+    "research/P55_neutrality_decoder.py",
+    "research/P58_naive_replication.py",
+    "research/P58_same_phase_species.py",
+    "research/P59_exact_fixed_response.py",
+    "research/P59_independent_quadratic_check.py",
+    "research/P63_independent_raw_audit.py",
+    "research/P63_spsa_fast_stage.py",
+    "research/P64_independent_F6_pair_source.py",
+    "research/P64_naive18_probability_check.py",
+    "research/P64_structured_sampler.py",
+    "research/P65_cayley_markov_stage.py",
+    "research/P65_independent_raw_audit.py",
+    "research/P66_exact_finite_check.py",
+    "research/P75b_gaussian_cf_six.py",
+    "research/P75c_gaussian_cf_six.py",
+    "research/P79_even_loop_validation.py",
+    "research/P82a_independent_raw_audit.py",
+    "research/P82a_split_scatter_veto.py",
+    "research/P90a_independent_raw_audit.py",
+    "research/P90a_source_bound_nonflat_veto.py",
+    "research/P96_column_loss_validation.py",
+    "research/P98_hierarchy_validation.py",
+    "results/qwen_cycles/20261121T004103Z-supervised-replication/supervised_recovery.py",
+    "results/qwen_cycles/20261121T005428Z-native-tool-isolation/supervised_probe.py",
+    "results/validated/_recovery_2026-11-24_preliminary/executed_script_snapshot.py",
+    "results/validated/recovery_2026-11-24/test_fixture_initial.py",
+    "scripts/audit_density_cycle.py",
+    "scripts/audit_qwen_cycle.py",
+    "scripts/audit_qwen_n4.py",
+    "scripts/audit_qwen_workflow.py",
+    "scripts/build_publication.py",
+    "scripts/check_archive_preservation.py",
+    "scripts/clean_build.py",
+    "scripts/package_collaboration.py",
+    "scripts/plot_density_cycle.py",
+    "scripts/plot_loss_source.py",
+    "scripts/qwen_density_job.py",
+    "scripts/qwen_n4_probe.py",
+    "scripts/reconcile_experiments.py",
+    "scripts/replay_sharpness_pilot.py",
+    "scripts/research_actions_mcp.py",
+    "scripts/retain_qwen_research_run.py",
+    "scripts/run_research_cycle.py",
+    "scripts/verify_manuscript.py",
+    "src/photonic_balanced_partitioning/__init__.py",
+    "src/photonic_balanced_partitioning/classical/__init__.py",
+    "src/photonic_balanced_partitioning/classical/baselines.py",
+    "src/photonic_balanced_partitioning/cli.py",
+    "src/photonic_balanced_partitioning/hardware/__init__.py",
+    "src/photonic_balanced_partitioning/hardware/__main__.py",
+    "src/photonic_balanced_partitioning/hardware/lucy_tgcc.py",
+    "src/photonic_balanced_partitioning/hardware/offline.py",
+    "src/photonic_balanced_partitioning/noise/__init__.py",
+    "src/photonic_balanced_partitioning/noise/physical.py",
+    "src/photonic_balanced_partitioning/optimization/__init__.py",
+    "src/photonic_balanced_partitioning/optimization/objectives.py",
+    "src/photonic_balanced_partitioning/photonic/__init__.py",
+    "src/photonic_balanced_partitioning/photonic/collision_aware.py",
+    "src/photonic_balanced_partitioning/photonic/comparison.py",
+    "src/photonic_balanced_partitioning/photonic/cvar_fixed_photon.py",
+    "src/photonic_balanced_partitioning/photonic/density_certificate.py",
+    "src/photonic_balanced_partitioning/photonic/fixed_photon_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/mesh.py",
+    "src/photonic_balanced_partitioning/photonic/objectives.py",
+    "src/photonic_balanced_partitioning/photonic/occupation_objective.py",
+    "src/photonic_balanced_partitioning/photonic/optical_penalty.py",
+    "src/photonic_balanced_partitioning/photonic/penalty_obliq.py",
+    "src/photonic_balanced_partitioning/photonic/structured_search.py",
+    "src/photonic_balanced_partitioning/photonic/threshold_budget.py",
+    "src/photonic_balanced_partitioning/photonic/threshold_marginals.py",
+    "src/photonic_balanced_partitioning/problems/min_bisection.py",
+    "tests/test_anti_oracle_training.py",
+    "tests/test_audit_regressions.py",
+    "tests/test_bisection_integrity.py",
+    "tests/test_bosonic_permanent_normalization.py",
+    "tests/test_cardinality_conditioned_on_cf.py",
+    "tests/test_collision_free_probability.py",
+    "tests/test_collision_states.py",
+    "tests/test_density_certificate.py",
+    "tests/test_fixed_photon.py",
+    "tests/test_fixed_photon_number.py",
+    "tests/test_fock_dimension.py",
+    "tests/test_hardware_offline.py",
+    "tests/test_hom.py",
+    "tests/test_hong_ou_mandel.py",
+    "tests/test_lucy_tgcc.py",
+    "tests/test_manuscript_build.py",
+    "tests/test_mesh_comparison.py",
+    "tests/test_min_bisection.py",
+    "tests/test_noise_physical.py",
+    "tests/test_objectives.py",
+    "tests/test_occupation_objective.py",
+    "tests/test_optical_penalty.py",
+    "tests/test_p145_collective_lns.py",
+    "tests/test_p145_screen_driver.py",
+    "tests/test_p41_adaptive_proxy.py",
+    "tests/test_p42_loss_spectrum.py",
+    "tests/test_p43_global_gain_probe.py",
+    "tests/test_p45_adaptive_probe.py",
+    "tests/test_p45_encoding_full_fock.py",
+    "tests/test_p46_bulk_pit.py",
+    "tests/test_p47_conditional_phase_marginal.py",
+    "tests/test_p47_directed_pit.py",
+    "tests/test_p48_coherent_marginals.py",
+    "tests/test_p48_spectral_pit.py",
+    "tests/test_p49_fast_classical.py",
+    "tests/test_p49_trained_source.py",
+    "tests/test_p50_fast_from_scratch.py",
+    "tests/test_p50_minimal_count_field.py",
+    "tests/test_p52_collective_phase.py",
+    "tests/test_p52_naive_replication.py",
+    "tests/test_p53_exact_phase.py",
+    "tests/test_p53b_fixed_point.py",
+    "tests/test_p53c_same_phase.py",
+    "tests/test_p53d_all_phase.py",
+    "tests/test_p53d_independent_check.py",
+    "tests/test_p55_finite_neutrality.py",
+    "tests/test_p55_neutrality_decoder.py",
+    "tests/test_p59_exact_fixed_response.py",
+    "tests/test_p59_independent_quadratic.py",
+    "tests/test_p63_independent_raw_audit.py",
+    "tests/test_p63_spsa_fast_stage.py",
+    "tests/test_p64_naive18_probability_check.py",
+    "tests/test_p64_structured_sampler.py",
+    "tests/test_p65_cayley_markov_stage.py",
+    "tests/test_p65_independent_raw_audit.py",
+    "tests/test_p66_cli_portability.py",
+    "tests/test_p66_exact_finite_check.py",
+    "tests/test_p75b_gaussian_cf_six.py",
+    "tests/test_p75c_gaussian_cf_six.py",
+    "tests/test_p79_even_loop_validation.py",
+    "tests/test_p82a_independent_raw_audit.py",
+    "tests/test_p82a_split_scatter_veto.py",
+    "tests/test_p90a_independent_raw_audit.py",
+    "tests/test_p90a_source_bound_nonflat_veto.py",
+    "tests/test_p96_column_loss_validation.py",
+    "tests/test_penalty.py",
+    "tests/test_perceval_cross_validation.py",
+    "tests/test_permanent_normalization.py",
+    "tests/test_phase2_classical.py",
+    "tests/test_publication_artifacts.py",
+    "tests/test_qpu_gate.py",
+    "tests/test_qwen_infrastructure.py",
+    "tests/test_qwen_workflow_evidence.py",
+    "tests/test_reconciled_evidence.py",
+    "tests/test_research_actions_mcp.py",
+    "tests/test_sharpness_pilot.py",
+    "tests/test_sharpness_replay.py",
+    "tests/test_structured_search.py",
+    "tests/test_threshold_budget.py",
+    "tests/test_threshold_marginals.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.3"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "drawsvg",
+      "version": "2.5.1"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.68.0"
+    },
+    {
+      "name": "hypothesis",
+      "version": "6.141.1"
+    },
+    {
+      "name": "idna",
+      "version": "3.20"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1"
+    },
+    {
+      "name": "latexcodec",
+      "version": "3.0.1"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.2"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "multipledispatch",
+      "version": "1.0.0"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.14.8"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.34.1"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3"
+    },
+    {
+      "name": "pypdf",
+      "version": "6.4.0"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "sortedcontainers",
+      "version": "2.4.0"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tabulate",
+      "version": "0.10.0"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Deterministic pre-existing test fixtures and their recorded seeds, not a new graph experiment",
+    "seed": {
+      "hypothesis": 1459999,
+      "PYTHONHASHSEED": 0,
+      "other_test_streams": "Literal per-fixture seeds in the input-hashed existing test sources; no new global NumPy generator"
+    }
+  },
+  "run_authorized": true,
+  "planned_command": [
+    ".venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "tests/",
+    "--hypothesis-seed=1459999",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-o",
+    "junit_family=legacy",
+    "--junitxml=research/P146_regression/run_001/junit.xml"
+  ],
+  "declared_results": [
+    "research/P146_regression/run_001/junit.xml"
+  ],
+  "authorization_note": "ROOT authorizes ONE full existing-suite integration check after the reviewed P146 diagnostic completed once and rawd8caa93 was sealed. No scientific rerun, QPU or paper edit. Unchanged existing fixture seeds and Hypothesis1459999; one worker/thread."
+}
