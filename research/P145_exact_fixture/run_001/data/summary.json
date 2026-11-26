@@ -1,0 +1,73 @@
+{
+  "status": "FINITE_EXACT_POLYNOMIAL_CHECK_PASS",
+  "current_cut": 9,
+  "one_swap_neighbors": 36,
+  "minimum_one_swap_delta": 1,
+  "full_fock_bins": 56,
+  "profile_count": 5,
+  "raw_records": 280,
+  "polynomial_basis": "monomial coefficients p^0..p^3",
+  "gain_polynomials": {
+    "B": [
+      "0/1",
+      "0/1",
+      "2/1",
+      "1/1"
+    ],
+    "D": [
+      "0/1",
+      "0/1",
+      "4/1",
+      "-2/1"
+    ],
+    "P12": [
+      "0/1",
+      "0/1",
+      "10/3",
+      "-7/3"
+    ],
+    "P13": [
+      "0/1",
+      "0/1",
+      "10/3",
+      "-7/3"
+    ],
+    "P23": [
+      "0/1",
+      "0/1",
+      "10/3",
+      "-7/3"
+    ]
+  },
+  "I3_polynomial": [
+    "0/1",
+    "0/1",
+    "0/1",
+    "4/1"
+  ],
+  "restricted_family_maxima": {
+    "B": {
+      "gain": "3/1",
+      "p": "1/1"
+    },
+    "D": {
+      "gain": "2/1",
+      "p": "1/1"
+    },
+    "P12": {
+      "gain": "4000/3969",
+      "p": "20/21"
+    },
+    "P13": {
+      "gain": "4000/3969",
+      "p": "20/21"
+    },
+    "P23": {
+      "gain": "4000/3969",
+      "p": "20/21"
+    }
+  },
+  "classical_whole_block_move_gain": 9,
+  "optimizer_advantage": false,
+  "scope": "Constructed mechanism diagnostic only; no novelty, learned policy, random-graph, timing or hardware claim"
+}

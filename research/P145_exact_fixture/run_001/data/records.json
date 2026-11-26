@@ -1,0 +1,3922 @@
+[
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 9
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "1/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      2,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "B",
+    "occupation": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 9
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "1/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      2,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "D",
+    "occupation": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 9
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "1/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      2,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P12",
+    "occupation": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 9
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "1/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      2,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P13",
+    "occupation": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 9
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    "outside_count": 3,
+    "probability_basis_coefficient": "2/27",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "1/9",
+    "raw_gain": 2
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "outside_count": 2,
+    "probability_basis_coefficient": "2/9",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "1/3",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "1/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      2,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      2,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "outside_count": 1,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  },
+  {
+    "profile": "P23",
+    "occupation": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outside_count": 0,
+    "probability_basis_coefficient": "0/1",
+    "raw_gain": 0
+  }
+]

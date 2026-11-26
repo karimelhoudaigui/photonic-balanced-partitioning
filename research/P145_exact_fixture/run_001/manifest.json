@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "claim_id": "P145-EXACT-TRIAD-FIXTURE",
+  "repository": {
+    "commit": "dd41d63b3e92c653d68760e08aa1fe6f8511684b",
+    "dirty": false
+  },
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "research/P145_exact_triad_fixture.py",
+    "--output",
+    "research/P145_exact_fixture/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Complete exact 56-bin, five-profile polynomial law and graph gain identities for the designed twelve-vertex tritter diagnostic; this is not an optimization-advantage benchmark",
+    "coefficient_domain": "Q for polynomial coefficients and Q(omega), omega^2+omega+1=0, for phase sums",
+    "conventions": "Distinct three-photon input0,1,2; output factorial n!; all invalid outcomes zero utility; no postselection; graph cut counts each undirected edge once",
+    "inputs": [
+      "The declared twelve-vertex graph and current six-set in P145_EXPERIMENT_CARD.md",
+      "Three-photon/six-mode symbolic tritter-transfer family, p in [0,1]",
+      "Five internal-species profiles B,D,P12,P13,P23"
+    ],
+    "bounds": {
+      "occupations": 56,
+      "profiles": 5,
+      "raw_records": 280,
+      "one_swap_neighbors": 36,
+      "residual_candidates": 20,
+      "polynomial_degree": 3,
+      "cpu_seconds": 10,
+      "wall_seconds": 20,
+      "worker_count": 1,
+      "threads": 1,
+      "log_bytes": 1048576,
+      "scientific_json_bytes_plan": 1048576,
+      "retries": 0
+    },
+    "non_claims": [
+      "No random-graph optimization advantage, novelty, hardware result or scalable speedup",
+      "The constructed diagnostic deliberately has an easy classical improving move",
+      "Polynomial checks support a finite declared family; the universal formula needs the separate written derivation",
+      "Restricted-family retuned dominance does not cover stronger classical or distinguishable circuits"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T22:35:53.210639+00:00",
+    "runtime_seconds": 0.076448,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 20.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 10,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P145_EXPERIMENT_CARD.md",
+    "research/P145_exact_triad_fixture.py",
+    "research/P145_TRIAD_LNS_ANALYSIS.md",
+    "research/P145_EXACT_FIXTURE_INDEPENDENT_REVIEW.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "research/P145_EXPERIMENT_CARD.md",
+      "sha256": "3161275a6b4487380f30c18234fcf3cd038446aadd9fe64831a51fa81eaa8bf3",
+      "sha256_after": "3161275a6b4487380f30c18234fcf3cd038446aadd9fe64831a51fa81eaa8bf3"
+    },
+    {
+      "path": "research/P145_exact_triad_fixture.py",
+      "sha256": "77189d7d145bcb8ef4fbd77cb790ad1ca333f52f5deab03c517c174fcb3817da",
+      "sha256_after": "77189d7d145bcb8ef4fbd77cb790ad1ca333f52f5deab03c517c174fcb3817da"
+    },
+    {
+      "path": "research/P145_TRIAD_LNS_ANALYSIS.md",
+      "sha256": "0092b6031449ad2fec82c509c2b4d43c6b1d795c9c3163a35dfabf79216a0b75",
+      "sha256_after": "0092b6031449ad2fec82c509c2b4d43c6b1d795c9c3163a35dfabf79216a0b75"
+    },
+    {
+      "path": "research/P145_EXACT_FIXTURE_INDEPENDENT_REVIEW.md",
+      "sha256": "e7fc46a4725a3e401e6438f842f9c01f1a2af68e6589386228c4ab4edde062f5",
+      "sha256_after": "e7fc46a4725a3e401e6438f842f9c01f1a2af68e6589386228c4ab4edde062f5"
+    }
+  ],
+  "output_directory": "research/P145_exact_fixture/run_001",
+  "declared_results": [
+    "research/P145_exact_fixture/run_001/data/records.json",
+    "research/P145_exact_fixture/run_001/data/graph_checks.json",
+    "research/P145_exact_fixture/run_001/data/summary.json",
+    "research/P145_exact_fixture/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P145_exact_fixture/run_001/stdout.txt",
+      "sha256": "28ed76203f5fb0dfd6c964db544753b3b1b4eb1e3c8f0f7923c783d90ec2d533",
+      "kind": "log"
+    },
+    {
+      "path": "research/P145_exact_fixture/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P145_exact_fixture/run_001/data/records.json",
+      "sha256": "a0f22bbd635529dea9c6d6557d167a4d895b04911202b6661094705a77e94fcb",
+      "kind": "result"
+    },
+    {
+      "path": "research/P145_exact_fixture/run_001/data/graph_checks.json",
+      "sha256": "43f1eb60c2f0dfb032f200cbed2c9e996ed40a24aa33e3cc7eb6e994617f4796",
+      "kind": "result"
+    },
+    {
+      "path": "research/P145_exact_fixture/run_001/data/summary.json",
+      "sha256": "80a6dcc8eba7814c94e54bb835b0ded2edaf2a67be5aef0fb6b0a5e08cbf184a",
+      "kind": "result"
+    },
+    {
+      "path": "research/P145_exact_fixture/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
