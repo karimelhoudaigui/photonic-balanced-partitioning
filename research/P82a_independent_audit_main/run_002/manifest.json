@@ -1,0 +1,447 @@
+{
+  "schema_version": 2,
+  "claim_id": "P82a-INDEPENDENT-SEALED-RECORDED-DATA-AUDIT",
+  "repository": {
+    "commit": "45d3dce3b39a699a6ca3cf7eac79faae9a5223ff",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P82a_independent_raw_audit.py",
+    "--binding",
+    "research/P82a_independent_audit_dataset_binding_v2.json",
+    "--output",
+    "research/P82a_independent_audit_main/run_002/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Independent recorded-data reconstruction of the exact frozen P82a finite protocol after B raw seal: registered graph and role/mark replay, exact mask/cut/descent/current reset/96-attempt photon and decoder audit, independent F4 features with archived rounded H, typed paid WALL ledger and conservative dual-clock prefix witnesses, same fixed-mode two-anchor negative gate and failure precedence.",
+    "coefficient_domain": "Exact integer/Fraction classical checks; pinned PCG64/NetworkX only for registered postseal input/mark reconstruction; fixed binary64 compiler residual rules. No Born probability or native computation.",
+    "conventions": "Main cannot launch until ROOT binds opaque actual project-relative dataset/manifest/input hashes and authorizes after checker qualification. No primary function import, Clifford/Naive/P50 solver replay or behavior/tolerance retune.",
+    "inputs": [
+      "Opaque sealed primary manifest/results and qualified checker input hashes; actual repeated input closure below",
+      "Known producer freeze94f80 source7e1a/spec8598, corrected clock addendum and implementation binding",
+      "Frozen independent checker and its reviewed qualification"
+    ],
+    "bounds": {
+      "registered_attempts": 96,
+      "modeled_injected_photons_if_complete": 768,
+      "raw_bytes": 33554432,
+      "output_bytes": 524288,
+      "log_bytes": 4194304,
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "threads": 1,
+      "workers": 1,
+      "logical_bytes_PLAN": 268435456,
+      "native_calls": 0,
+      "optimizer_replays": 0,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No complete Born-law/distribution/TV certificate from96 adaptive observations",
+      "No physical replication, new optimization evidence, equal-resource advantage or positive verdict",
+      "Prefix failure is not a negative physics result or an accepted veto"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "POST-SEAL replay of fixed original PCG64 classical roles only; no new draws or native sampling",
+    "seed": "Original sealed registered role tuples, never evaluated by qualification"
+  },
+  "run": {
+    "started_at": "2026-11-26T02:10:50.294514+00:00",
+    "runtime_seconds": 1.321817,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P82a_independent_raw_audit.py",
+    "tests/test_p82a_independent_raw_audit.py",
+    "research/P82a_independent_audit_spec.json",
+    "research/P82a_independent_audit_preflight_contract.json",
+    "research/P82a_independent_audit_main_TEMPLATE.json",
+    "research/P82a_INDEPENDENT_AUDIT_BINDING.md",
+    "research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+    "research/P82_ZERO_LOADING_INDEPENDENT_NULL.md",
+    "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+    "research/P82a_DEV_VETO_CONTRACT.md",
+    "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+    "research/P82a_CLOCK_ADDENDUM_REVIEW.md",
+    "research/P82a_split_scatter_veto.py",
+    "tests/test_p82a_split_scatter_veto.py",
+    "research/P82a_execution_spec.json",
+    "research/P82a_split_scatter_preflight_contract.json",
+    "research/P82a_split_scatter_execution_contract.json",
+    "research/P82a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P82a_independent_audit_dataset_binding_v2.json",
+    "research/P82a_independent_audit_execution_contract_v2.json",
+    "experiments/P82a_dev_veto/run_001/manifest.json",
+    "research/P82a_independent_audit_preflight/run_003/manifest.json",
+    "research/P82a_INDEPENDENT_AUDIT_QUALIFICATION_RUN003_RECEIPT.md",
+    "research/P82a_CHECKER_INDEPENDENT_SOURCE_REVIEW.md",
+    "research/P82a_CHECKER_PATH_CORRECTION_REVIEW.md",
+    "research/P82a_CHECKER_V2_TIMEOUT_DELTA_REVIEW.md",
+    "research/P82a_independent_audit_preflight/run_001/prelaunch_rejection.json",
+    "research/P82a_independent_audit_main/run_001/manifest.json",
+    "research/P82a_independent_audit_main/run_001/data/audit_summary.json",
+    "research/P82a_independent_audit_main/run_001/data/audit_failure.json",
+    "reports/P82a_ROOT_RECORDED_AUDIT_ATTEMPT1.md",
+    "reports/P82a_integration_validation/prepare_audit_binding_v2.py",
+    "experiments/P82a_dev_veto/run_001/stdout.txt",
+    "experiments/P82a_dev_veto/run_001/stderr.txt",
+    "experiments/P82a_dev_veto/run_001/data/metadata.json",
+    "experiments/P82a_dev_veto/run_001/data/graphs.json",
+    "experiments/P82a_dev_veto/run_001/data/B_ER.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/B_RR.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/paid_ledger.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/controls.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/summary.json",
+    "experiments/P82a_dev_veto/run_001/data/failure.json",
+    "research/P82a_independent_audit_preflight/run_003/stdout.txt",
+    "research/P82a_independent_audit_preflight/run_003/stderr.txt",
+    "research/P82a_independent_audit_preflight/run_003/junit.xml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P82a_independent_raw_audit.py",
+      "sha256": "56a3bb2a686203a4e3752687f7e42170d65a5ccfe5987989fbff333fb39afcfd",
+      "sha256_after": "56a3bb2a686203a4e3752687f7e42170d65a5ccfe5987989fbff333fb39afcfd"
+    },
+    {
+      "path": "tests/test_p82a_independent_raw_audit.py",
+      "sha256": "38383d9e304e26dc3a1f01e7a8d47ab915ed8cc3d1ec3e600b69caa0909d92b4",
+      "sha256_after": "38383d9e304e26dc3a1f01e7a8d47ab915ed8cc3d1ec3e600b69caa0909d92b4"
+    },
+    {
+      "path": "research/P82a_independent_audit_spec.json",
+      "sha256": "222e9cd9681eb893655dc08671ad794048dcd174a8896a5b3b9ce69745696499",
+      "sha256_after": "222e9cd9681eb893655dc08671ad794048dcd174a8896a5b3b9ce69745696499"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight_contract.json",
+      "sha256": "b32aab4db39ab45b0b3c9235dac2ec6bf1689fa9bb2ce1d684c58b240e82a785",
+      "sha256_after": "b32aab4db39ab45b0b3c9235dac2ec6bf1689fa9bb2ce1d684c58b240e82a785"
+    },
+    {
+      "path": "research/P82a_independent_audit_main_TEMPLATE.json",
+      "sha256": "14ddd37b03825146923dc7ef484da972a8238620fd5138be772c529de62563c6",
+      "sha256_after": "14ddd37b03825146923dc7ef484da972a8238620fd5138be772c529de62563c6"
+    },
+    {
+      "path": "research/P82a_INDEPENDENT_AUDIT_BINDING.md",
+      "sha256": "931a66f706be8aada402b40c596e601c05e1039f8a2f3834790055806d521db5",
+      "sha256_after": "931a66f706be8aada402b40c596e601c05e1039f8a2f3834790055806d521db5"
+    },
+    {
+      "path": "research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+      "sha256": "b3b8d4e83acaf4ac6430bc8967be021e41520fe25c70cf9c3a2a2ca10eaa4119",
+      "sha256_after": "b3b8d4e83acaf4ac6430bc8967be021e41520fe25c70cf9c3a2a2ca10eaa4119"
+    },
+    {
+      "path": "research/P82_ZERO_LOADING_INDEPENDENT_NULL.md",
+      "sha256": "bc5943faa105dd76a41645376b52cc62f69fcf6d7e40fc303e57b48437885c4a",
+      "sha256_after": "bc5943faa105dd76a41645376b52cc62f69fcf6d7e40fc303e57b48437885c4a"
+    },
+    {
+      "path": "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+      "sha256": "c008f60143a1c4b0e81dcec1ba7a07c28d89244b10d4d69695070d27b0916723",
+      "sha256_after": "c008f60143a1c4b0e81dcec1ba7a07c28d89244b10d4d69695070d27b0916723"
+    },
+    {
+      "path": "research/P82a_DEV_VETO_CONTRACT.md",
+      "sha256": "d5e994d970f278bb9c51fa8a806555dce4047e82c8342f676fe267b75dbe71b9",
+      "sha256_after": "d5e994d970f278bb9c51fa8a806555dce4047e82c8342f676fe267b75dbe71b9"
+    },
+    {
+      "path": "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+      "sha256": "1b548885d05fe6a42487c77b12ac00292ebd8bd379c4074e6ce3a49ceb93a8d4",
+      "sha256_after": "1b548885d05fe6a42487c77b12ac00292ebd8bd379c4074e6ce3a49ceb93a8d4"
+    },
+    {
+      "path": "research/P82a_CLOCK_ADDENDUM_REVIEW.md",
+      "sha256": "edeba00f839368b0c9ca6ef5f7a01befaa1a98527808d906c008f93218d77271",
+      "sha256_after": "edeba00f839368b0c9ca6ef5f7a01befaa1a98527808d906c008f93218d77271"
+    },
+    {
+      "path": "research/P82a_split_scatter_veto.py",
+      "sha256": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc",
+      "sha256_after": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc"
+    },
+    {
+      "path": "tests/test_p82a_split_scatter_veto.py",
+      "sha256": "e70b74c2915632cf62677c80f40ebeea8e67c669116660096426101542794861",
+      "sha256_after": "e70b74c2915632cf62677c80f40ebeea8e67c669116660096426101542794861"
+    },
+    {
+      "path": "research/P82a_execution_spec.json",
+      "sha256": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838",
+      "sha256_after": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838"
+    },
+    {
+      "path": "research/P82a_split_scatter_preflight_contract.json",
+      "sha256": "209696de0b0170ff4099cdfd77b6acdaec3c4f78e04e86631047008c13517c0d",
+      "sha256_after": "209696de0b0170ff4099cdfd77b6acdaec3c4f78e04e86631047008c13517c0d"
+    },
+    {
+      "path": "research/P82a_split_scatter_execution_contract.json",
+      "sha256": "dca509b4fee65b652227fb395cfc982b4426a9c8ae0da05de75f825493cc5f20",
+      "sha256_after": "dca509b4fee65b652227fb395cfc982b4426a9c8ae0da05de75f825493cc5f20"
+    },
+    {
+      "path": "research/P82a_IMPLEMENTATION_POPULATION.md",
+      "sha256": "9080adee7e67189731cdbcbd297c0b419748337025135f85cf7406bee5c1a4ba",
+      "sha256_after": "9080adee7e67189731cdbcbd297c0b419748337025135f85cf7406bee5c1a4ba"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "research/P82a_independent_audit_dataset_binding_v2.json",
+      "sha256": "2ff637e912dbd5db274678c2b03e45b7eb88992074a91cff258c5a11812e41e2",
+      "sha256_after": "2ff637e912dbd5db274678c2b03e45b7eb88992074a91cff258c5a11812e41e2"
+    },
+    {
+      "path": "research/P82a_independent_audit_execution_contract_v2.json",
+      "sha256": "8472a3a98b40f4ca2ea896adef85d056a8532807532ab3e3a694b89ff8fca17a",
+      "sha256_after": "8472a3a98b40f4ca2ea896adef85d056a8532807532ab3e3a694b89ff8fca17a"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/manifest.json",
+      "sha256": "2fe4cc045e74eb3983c210c2ee7476d466b5963ffe9f9fee73cf0400268d9e4e",
+      "sha256_after": "2fe4cc045e74eb3983c210c2ee7476d466b5963ffe9f9fee73cf0400268d9e4e"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight/run_003/manifest.json",
+      "sha256": "943411e77a1e30984ad889442748e85b91bed672b62f11ad548da9c0dae72869",
+      "sha256_after": "943411e77a1e30984ad889442748e85b91bed672b62f11ad548da9c0dae72869"
+    },
+    {
+      "path": "research/P82a_INDEPENDENT_AUDIT_QUALIFICATION_RUN003_RECEIPT.md",
+      "sha256": "eeb35b87c65869783e31bff06f7d91a73100a39e2112e7fea00efb5944b22264",
+      "sha256_after": "eeb35b87c65869783e31bff06f7d91a73100a39e2112e7fea00efb5944b22264"
+    },
+    {
+      "path": "research/P82a_CHECKER_INDEPENDENT_SOURCE_REVIEW.md",
+      "sha256": "ccdfde1026c135fe854d2250c201a78da63f6e41893ef843fb2c009d13a5b8df",
+      "sha256_after": "ccdfde1026c135fe854d2250c201a78da63f6e41893ef843fb2c009d13a5b8df"
+    },
+    {
+      "path": "research/P82a_CHECKER_PATH_CORRECTION_REVIEW.md",
+      "sha256": "049b4873af484144b901e3f86405308f07dbd33512c7f5e5c3c302ee8f7cc04d",
+      "sha256_after": "049b4873af484144b901e3f86405308f07dbd33512c7f5e5c3c302ee8f7cc04d"
+    },
+    {
+      "path": "research/P82a_CHECKER_V2_TIMEOUT_DELTA_REVIEW.md",
+      "sha256": "a48bcd3c8e970bdb5f01346d30f33ac0e052199d3d7e54713ffc124908e01b3c",
+      "sha256_after": "a48bcd3c8e970bdb5f01346d30f33ac0e052199d3d7e54713ffc124908e01b3c"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight/run_001/prelaunch_rejection.json",
+      "sha256": "7370eaf805e6e5eacfc242ca8763ddb808d24f27e8108147bcbd4baa4332aa61",
+      "sha256_after": "7370eaf805e6e5eacfc242ca8763ddb808d24f27e8108147bcbd4baa4332aa61"
+    },
+    {
+      "path": "research/P82a_independent_audit_main/run_001/manifest.json",
+      "sha256": "9dd984285b4d9b2546d76521a2d6c15ca89e02534f5c50fe2d63126ff9b06191",
+      "sha256_after": "9dd984285b4d9b2546d76521a2d6c15ca89e02534f5c50fe2d63126ff9b06191"
+    },
+    {
+      "path": "research/P82a_independent_audit_main/run_001/data/audit_summary.json",
+      "sha256": "535191aaf353a4cf36817721d8eed857184e875ce95fb2d347d9eed7859cff09",
+      "sha256_after": "535191aaf353a4cf36817721d8eed857184e875ce95fb2d347d9eed7859cff09"
+    },
+    {
+      "path": "research/P82a_independent_audit_main/run_001/data/audit_failure.json",
+      "sha256": "9e6a8566282031551714252b4945bad0985b71cba85fc32102670ee4e9feea41",
+      "sha256_after": "9e6a8566282031551714252b4945bad0985b71cba85fc32102670ee4e9feea41"
+    },
+    {
+      "path": "reports/P82a_ROOT_RECORDED_AUDIT_ATTEMPT1.md",
+      "sha256": "6d92cca27e5c06356db0cca59a13a8b080dc95d18b14751a7205460f77999cbd",
+      "sha256_after": "6d92cca27e5c06356db0cca59a13a8b080dc95d18b14751a7205460f77999cbd"
+    },
+    {
+      "path": "reports/P82a_integration_validation/prepare_audit_binding_v2.py",
+      "sha256": "3818800d4c995042ac027c738d61cefa8da28535b78bae3576fc2fe2c5eeaad7",
+      "sha256_after": "3818800d4c995042ac027c738d61cefa8da28535b78bae3576fc2fe2c5eeaad7"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/stderr.txt",
+      "sha256": "69c9d26f8c323c387de2072b75c0600baa427e0c7e9dac04c40b4da56b5945c0",
+      "sha256_after": "69c9d26f8c323c387de2072b75c0600baa427e0c7e9dac04c40b4da56b5945c0"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/metadata.json",
+      "sha256": "759937f271bdc2e8f6816a738fdf7d5981d7d200d31dc4f426c0bc6aba50e35b",
+      "sha256_after": "759937f271bdc2e8f6816a738fdf7d5981d7d200d31dc4f426c0bc6aba50e35b"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/graphs.json",
+      "sha256": "28e64b8684c7c85ed2005fae6870ca017785f74f0b732dc6c91d8a1dd7626e8d",
+      "sha256_after": "28e64b8684c7c85ed2005fae6870ca017785f74f0b732dc6c91d8a1dd7626e8d"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/B_ER.jsonl",
+      "sha256": "a3bd4357ed2509dd201f6e3bba628d85b96f0839285ca32b9a98b2dcda987a2f",
+      "sha256_after": "a3bd4357ed2509dd201f6e3bba628d85b96f0839285ca32b9a98b2dcda987a2f"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/B_RR.jsonl",
+      "sha256": "2798618a796db8571a8377ac0f027b74af8d715f107810e31228c90de749a9cf",
+      "sha256_after": "2798618a796db8571a8377ac0f027b74af8d715f107810e31228c90de749a9cf"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/paid_ledger.jsonl",
+      "sha256": "a887e9629194198300c2d0ed66ba678bd1e95053eef1efcf3a5f1fd4d6921044",
+      "sha256_after": "a887e9629194198300c2d0ed66ba678bd1e95053eef1efcf3a5f1fd4d6921044"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/controls.jsonl",
+      "sha256": "b0b9d448e4cab86454a137a61b63a4326d936b0c332e56a70edfa884161bc611",
+      "sha256_after": "b0b9d448e4cab86454a137a61b63a4326d936b0c332e56a70edfa884161bc611"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/summary.json",
+      "sha256": "79e917c92b31b026c818f836d313dbb7c526e805a6cb718a73b1a3f6cede9a8c",
+      "sha256_after": "79e917c92b31b026c818f836d313dbb7c526e805a6cb718a73b1a3f6cede9a8c"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/failure.json",
+      "sha256": "b24b6f7f3627ec4fec61d369b7ad9a35c8918c6da5f7f9390fd97cd5ed29a643",
+      "sha256_after": "b24b6f7f3627ec4fec61d369b7ad9a35c8918c6da5f7f9390fd97cd5ed29a643"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight/run_003/stdout.txt",
+      "sha256": "00e458a9726046e89f804230113f5ceef97266d2b7fd2fa44b18d010d28237e1",
+      "sha256_after": "00e458a9726046e89f804230113f5ceef97266d2b7fd2fa44b18d010d28237e1"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight/run_003/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight/run_003/junit.xml",
+      "sha256": "91b0f3986d9f018f57ebfa6cf3045d8cf834b37048824a114ad46d8ac9b50cc4",
+      "sha256_after": "91b0f3986d9f018f57ebfa6cf3045d8cf834b37048824a114ad46d8ac9b50cc4"
+    }
+  ],
+  "output_directory": "research/P82a_independent_audit_main/run_002",
+  "declared_results": [
+    "research/P82a_independent_audit_main/run_002/data/audit_summary.json",
+    "research/P82a_independent_audit_main/run_002/data/audit_failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P82a_independent_audit_main/run_002/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P82a_independent_audit_main/run_002/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P82a_independent_audit_main/run_002/data/audit_summary.json",
+      "sha256": "da4e5aab5e7dad751e3b52ce80355f679fff0485eaa19311fb08b1f97f604bc9",
+      "kind": "result"
+    },
+    {
+      "path": "research/P82a_independent_audit_main/run_002/data/audit_failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
