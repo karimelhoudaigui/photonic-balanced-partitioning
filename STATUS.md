@@ -34,8 +34,17 @@ ordering follows, not all-start or equal-time optimizer domination. P100's
 lifted chiral alternative passes its independent model audit, with a
 classical cubic mirror and a policy-specific loss limit; PNR loss-holding is
 a shared correction, not a gain. P101's independent weak/strong/detector audit
-passes; its remaining all-strength sign motivates P107 CODE ONLY and P110
-prospective native replication, neither executed. P106 preserves a favorable
+passes. P107's sole symbolic run completes9612 records with both registered
+rectangular certificates INCONCLUSIVE; P112 proves that direct origin-box
+refinement/elevation cannot fix that method. P110 independently passes all330
+native amplitudes aggregated to70 marginals at its fixed point. P113's blind
+Ryser/void/2110 implementation independently agrees on all3658 exact
+comparisons. P114's different, independently audited analytic certificate
+then proves a strict positive RAW B-minus-D mean cut for every square point
+except(0,0),(1,1): this fixed graph/filter/decoder family is worse than D
+at all finite positive strengths. This is a scoped obstruction, not a
+universal no-go or a positive optimizer. See reports/P114_ROOT_SIGN_CHECKPOINT.md.
+P106 preserves a favorable
 fixed-T raw mean contrast but a legal rescaled D defeats that fixed B point.
 P109 proves the admissible-scale comparison in its exact nonadaptive scope.
 P104's full-K-orFAIL reduction is accepted but its binary complexity remains

@@ -1,5 +1,23 @@
 # Negative Results Log
 
+## 26-Nov-2026: exact all-strength magnetic-filter counterexample
+
+P107 completes its full population but both registered rectangular sign
+certificates are INCONCLUSIVE. P112 independently proves that its origin
+xy term prevents any finite direct subdivision/elevation from fixing that
+specific certificate. Preserve those failed coefficients and the raw99f2d98.
+This is not evidence that the physical function is negative.
+
+Changed analytic method P114, independently audited and tied to the means
+by blind P113 exact reconstruction, proves E_B[C]>E_D[C] for the fixed P101
+graph and its two all-output decoders at every finite positive strength.
+Its square theorem has only two zero corners. Separate P110 native check
+agrees on all70 signal bins at its fixed point. This closes that remaining
+all-strength sign question; it does not reject all graph-dependent photonic
+encodings or establish a universal no-go. P106's different favorable same-T
+contrast remains preserved. See reports/P114_ROOT_SIGN_CHECKPOINT.md and
+research/P113_INDEPENDENT_MEAN_RECEIPT.md. CLAIM-042 remains OPEN.
+
 Current disposition (2026-11-24): the tested bosonic optimization benefit is not demonstrated. Read reports/NUMERICAL_RECONCILIATION.md and the recovery section below. Early entries are historical working notes, not automatically verified evidence. In particular Entry2 is explicitly withdrawn: fixed photon number does NOT imply collision-free output; HOM and full-Fock validation refute it. Its original text is preserved to expose the earlier error, not endorse it.
 
 Format:

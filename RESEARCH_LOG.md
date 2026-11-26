@@ -1742,3 +1742,37 @@ Qualified ROOTf4f1e4c/originalrefs pushed atomically; actual GitHub run458258984
 job139929823711 succeeds1559tests21.42s and602historical-file preservation.
 Remote main27443954 and all paper bytes unchanged. Later pure documents
 await a subsequent exact-ref push. CLAIM-042 remains OPEN throughout.
+
+## P107/P110/P112/P113/P114: exact replication and a changed sign certificate
+
+P107 sole3.290595s main has original raw99f2d98 before interpretation,
+ENGINE_PASS/9612 complete rows,18 unchanged hashes/v2PASS. Both registered
+square certificates remain INCONCLUSIVE. P112535dd43/independentb845380
+proves that the origin negative xy coefficient prevents every finite direct
+rectangular refinement/elevation; this is a certificate limitation, not
+negative physical cost. No unchanged refinement run was attempted.
+
+P110 independent source0171e462 froze blind, full692 ROOT/145 peer reads.
+One330-amplitude/70-marginal native run at(1/2,1/4), raw0e5adc6 before
+reading, completes17.290509s with maxerror1.11e-16 and21 unchanged hashes/
+v2PASS. Cache warnings retained; no native canary or amplitude oracle.
+P113 independent source7267e6a4 froze blind, full381 ROOT/146 peer reads.
+First runner refused missing coefficient_domain before child/output creation;
+exact refusal retained, only descriptive active-contract metadata corrected.
+Sole child rawac82cd0 before reading completes0.852233s: all3658 exact
+comparisons/7555 rows PASS,24 unchanged hashes/v2PASS. It reconstructs means
+and certificates via Ryser/void/2110 and independent two-step basis conversion,
+not the entire raw70-bin coefficient law. Separate receipts preserve scope.
+
+ROOT P114137-line manual proofb61b6a9 and independent135-line reviewf52bef0
+fully read. u=(x-y)^2,v=xy exposes exact diagonal factors and a positive
+off-diagonal remainder; u<=(1-v)^2 supplies elementary global bounds.
+The two raw mean contrasts are strictly positive except square corners
+(0,0),(1,1). Independent P113 closes the coefficient-identification leaf.
+Thus this fixed graph/filter/decoder fails at EVERY finite positive strength,
+including the former b1 gap. This is a scoped obstruction, not universal
+photonic impossibility, priority clearance or a positive optimizer. Original
+P107 INCONCLUSIVE result and P106's favorable different contrast preserved.
+P115 flux/weight extension awaits separate review; P116 investigates a
+changed measurement-interaction mechanism. CLAIM-042 OPEN, no held-out/QPU
+or paper/main change. reports/P114_ROOT_SIGN_CHECKPOINT.md.

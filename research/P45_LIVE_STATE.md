@@ -4,7 +4,7 @@ Earlier checkpoints are preserved byte-for-byte in
 [P45_LIVE_HISTORY_BEFORE_P90a.md](P45_LIVE_HISTORY_BEFORE_P90a.md), including
 the prior P79 history pointer. Historical pending statuses are not current.
 
-## Current: P96/P98 finite checks accepted; P99 scoped obstruction and changed routes
+## Current: P114 all-strength scoped obstruction; different interaction route open
 
 **CLAIM-042 OPEN. No reproducible positive optimizer result, held-out
 confirmation or real QPU validation exists. paper/, main and QPU stay frozen.**
@@ -221,12 +221,33 @@ adaptive/all-family/total-wall claim. ../reports/P109_ROOT_SCALE_CONTROL_CHECKPO
 
 P101source69e4a6fe/113l and independent19fcb2af/166l fully read/accepted.
 Explicit8totalmodes/4CF source and two all-output PNR/threshold decoders:
-weak counterexample and strong simple-ground replacement, b1UNKNOWN.
-../reports/P101_ROOT_FINITE_FILTER_CHECKPOINT.md.
-P107 pure exact bivariate/full70-bin sign computation is being written in
-P66's isolated tree, CODE ONLY. It needs full ROOT/peer code review and
-separate authority; no import or execution is authorized yet. No new DEV
-optimizer or held-out positive exists. One numerical worker remains FREE.
+weak counterexample and strong simple-ground replacement remain valid;
+the former b1/all-strength sign gap is now closed by the separate P114 proof.
+The old bound predata checkpoint remains unchanged as historical phase evidence.
+
+P107 sole exact main raw99f2d98 precedes reading: ENGINE_PASS,9612 records,
+18 unchanged inputs/v2PASS, BOTH registered rectangular signs INCONCLUSIVE.
+P112 source535dd43/independentb845380 proves the origin xy obstruction to
+every further finite direct rectangular refinement/elevation. It is an
+obstruction to that certificate, not a negative function value.
+P110 fixed-point native replication raw0e5adc6 passes330 full outputs/70
+marginals; maximum error1.11e-16,21 unchanged inputs/v2PASS. Source frozen
+blind0171e462, no extra native canary. Cache warnings retained.
+P113 source7267e6a4 frozen blind, sole rawac82cd0 before reading:3658 exact
+comparisons/7555 records PASS,24 unchanged inputs/v2PASS. One prelaunch
+missing-metadata refusal is preserved; it started no scientific child.
+Neither replication is a positive optimizer or a full330-amplitude oracle.
+
+P114 sourceb61b6a9/137l and independentf52bef0/135l fully read at ROOT.
+Using u=(x-y)^2,v=xy and u<=(1-v)^2 proves the two explicit rational
+lower bounds and strict E_B[C]>E_D[C] everywhere on the square except
+(0,0),(1,1). Independent P113 closes the physical mean identification.
+The original P101 finite-strength curve is therefore worse for B at EVERY
+finite positive strength, without deleting the old INCONCLUSIVE run.
+../reports/P114_ROOT_SIGN_CHECKPOINT.md records exact scope/dependencies.
+P115 uniform-flux/weight extension is separately under review; P116 explores
+a changed measurement-interaction resource. No general no-go, novelty,
+matched-wall win, optimizer DEV or held-out positive. Numerical worker FREE.
 
 Last confirmed pushed ROOTf4f1e4cb7d12dec1cebd3d90ce19794e1091f355 includes
 qualified P98 code/raw and original source refs. Actual GitHub run45825898488
