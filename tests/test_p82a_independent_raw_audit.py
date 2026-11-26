@@ -278,3 +278,25 @@ def test_synthetic_jsonl_partial_and_exclusive_output(tmp_path):
     assert json.loads((output / "audit_failure.json").read_text()) is None
     with pytest.raises(FileExistsError):
         audit.output_pair(output, {}, None)
+
+
+def test_runner_timeout_exact_numeric_90_preserves_other_strict_caps():
+    run = {"timeout_seconds": 90.0, "max_output_bytes": 4194304,
+           "resource_limits": {"cpu_seconds": 60, "max_threads": 1}}
+    assert audit.producer_limits_checked(run) is None
+    run["timeout_seconds"] = 90
+    assert audit.producer_limits_checked(run) is None
+    for bad in (90.000001, float("nan"), "90.0", True):
+        malformed = deepcopy(run)
+        malformed["timeout_seconds"] = bad
+        with pytest.raises(audit.AuditIssue):
+            audit.producer_limits_checked(malformed)
+    for field, bad in (("max_output_bytes", 4194304.0),
+                       ("cpu_seconds", 60.0), ("max_threads", 1.0)):
+        malformed = deepcopy(run)
+        if field == "max_output_bytes":
+            malformed[field] = bad
+        else:
+            malformed["resource_limits"][field] = bad
+        with pytest.raises(audit.AuditIssue):
+            audit.producer_limits_checked(malformed)
