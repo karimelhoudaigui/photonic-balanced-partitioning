@@ -1,5 +1,8 @@
 # P145 float engine — independent prequalification source review
 
+Final STATIC verdict: ACCEPT corrected freeze 7ba7142f below, within the
+finite floating-engine scope. The original static blocker remains preserved.
+
 26-Nov-2026. Non-author STATIC review, parent 6c5a63b2f0f70fe18774c7ebe7f0e4b75091ae99.
 FULL 183+114=297 lines read at 1f1b0500e0d6e676f8ec24dec278210b64ec8b80:
 research/P145_collective_lns_probe.py, SHA256
@@ -90,3 +93,26 @@ selection, score accounting and crediting the complete supplied gain table
 remain driver obligations. Source alone authorizes no DEV or QPU experiment.
 Await the corrected freeze/full delta review before any static acceptance
 of native qualification; keep this first failure finding independently dated.
+
+## Separate corrective freeze, before any qualification
+
+Initial 92-line review frozen at c47b0df; its blocker was STATIC, not an
+executed test/backend failure. FULL 119 corrective test lines and COMPLETE
+diff read at 7ba7142f06534f001c9549608268644bf25b283b, parent 1f1b0500.
+Test SHA256 585c8ebb58a07eeed6c479ed89ed85596e17f3c495d0af9b87c697ec686397bb.
+Core 183 lines/hash are unchanged, so corrected closure is 302 lines.
+
+The correction imports isfinite, records model/native amplitude components
+and both errors, and computes an explicit finite flag for ALL these scalars.
+It appends the point BEFORE asserting that flag; nonfinite diagnostics become
+repr strings instead of invented numerical values. finally serializes with
+allow_nan=False. An additional all-finite condition precedes the final maxima.
+Thus a later NaN cannot be ignored and accepted by max; its offending point
+and completed prefix remain available for the ordinary finite-guard failure.
+No physics formula, tolerances, populations, source/tag definition or native
+fixture changed. The original source/test freeze remains in Git.
+
+STATIC ACCEPT of this correction; NO execution or runtime PASS by this reviewer.
+Qualification still requires ONE separately authorized bounded run, eight
+passes/zero skips, 56 finite native points, exact pins and thread observations.
+Interpretation follows raw sealing; no DEV/main/rerun authority is inherited.
