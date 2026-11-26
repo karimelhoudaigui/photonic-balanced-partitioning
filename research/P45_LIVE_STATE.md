@@ -36,17 +36,24 @@ Rootc360b36 executable tree:1187PASS43.89s pytest/44.879216292s wrapper,
 env+native1,602 historical files unchanged, paper bytes match main2744395,
 PDF271946c9. Logs and checks: reports/P79_integration_validation/.
 Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
-The new code still needs its own observed remote result, without treating
-an earlier green CI as the later tree. P66 v1 raw producers stay4925feb.
+GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
+run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
 
-Numerical worker FREE. No new experiment authorized. Static tasks:
-P82 hardware-compatible escape design in .local/p65-independent-audit
-(owner p62_literature_resume); P83 phase/gauge boundary in
-.local/p66-dark-barrier (owner p63_physics_resume). P81 exact reviewer done
-in .local/p81-exact-review. P79 producer is clean atc2a22ed in
-.local/p79-even-loops. Before any new import/AST/test/RNG/main, freeze full
-prospective source/contracts, perform independent source review, and
-separately inspect one tiny qualification before main authorization.
+Numerical worker FREE. No new experiment authorized. P84/P86 now accepted
+at exact scopes after full ROOT/source-peer reads; see their ROOT checkpoints.
+P85 primary prior-art report is checked, and P78/P80 broad novelty remains
+unclaimed. P87 ROOT candidate6436860 is under before-author reconstruction
+in .local/p66-dark-barrier (p63_physics_resume), no acceptance yet.
+P82 designf7cb5d9 (145lines) is frozen; ROOT read it completely and verified
+its low-order formulas. P82a K8/n16 DEV card is being written in
+.local/p65-independent-audit (p62_literature_resume), before any code/import/
+AST/test/RNG. Independent design audit in .local/p84-cost-phase
+(p66_dark_audit) also checks uniform-loading nulls and finite native API text.
+P81/P83/P84/P86 exact reviewer .local/p81-exact-review currently idle.
+No P82a card/implementation/qualification/main is approved automatically.
+Before any new execution, freeze full source/contracts, independently review,
+then separately authorize/inspect tiny qualification before a main decision.
+P79 producer remains clean atc2a22ed in .local/p79-even-loops.
 
 P75b/c no-hit, P77/P78 scoped classical controls and all P33/P37/E05b negatives
 remain preserved. Positive optimizer CLAIM-042 OPEN; novelty unresolved.

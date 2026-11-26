@@ -123,3 +123,10 @@ inputs, later coherent mode mixing and generic finite-Fock passive
 circuits are outside the positive-loop premise. Known loop ingredients
 were attributed in P78; P80 originality remains unresolved. The requested
 positive optimum-blind optimizer goal stays OPEN; paper/main/QPU stay frozen.
+
+Subsequent bounded primary check: P85 authenticates the same pure raw-PNR
+class in Quesada–Arrazola(2020), where approximate classical simulation was
+already proposed. Its estimator/precision guarantees are distinct from this
+proved contract; no first broad nonnegative-GBS simulation attribution is
+justified. See reports/P85_ROOT_ATTRIBUTION_CHECKPOINT.md and the original
+versioned source links. The present exact theorem/TV proof is unchanged.

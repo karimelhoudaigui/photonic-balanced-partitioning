@@ -1375,3 +1375,36 @@ env+native1.602 old files and all manuscript bytes unchanged. Prior GitHub
 OPEN, paper/main/QPU frozen. P82 now designs a genuinely changed physical
 mechanism; P83 studies where positive-loop simulation stops. Both STATIC,
 no new numerical experiment authorized and no favorable rerun of old data.
+
+## P83 phase boundary and remote P79 verification
+
+Accepted source d1749a1/ec6a88bc and exact review48939d6/3313e1a8 after
+ROOT full338+294-line reconstruction. Gauge-congruence leaves complete
+counts invariant; all-even-WALK support criterion includes odd-cycle
+compatibility/loops. SignedC4 has log coefficient1111=-2t4 and no positive
+compound-Poisson representation, not arbitrary classical hardness or an
+optimization advantage. No numerical P83/P82 job ran. GitHub9572bc6 is
+observed GREEN1187PASS18.53s/602 archived files from actual job logs.
+P82 static design remains active; P84 cost-phase obstruction is under
+independent reconstruction. Paper/main/QPU and positive-result gate unchanged.
+
+## P84/P85/P86 and prospective P82a
+
+P84 exactsourcea47e275/cdb0892f, independent5706815/e2098c99 and exact
+review2b015e6/de627da7 accepted after ROOT full303+275+259-line audit.
+P86 ROOTdaf49c6/a8074fd2, independent36ff604/cf156f61 and exactreview
+93139b4/88b3df74 accepted after171+256+299-line read. These obstruct a
+specified all-balanced-basis passive cost-phase oracle, not every graph
+optimizer. P87 sharper first-order candidate is frozen but pending audit.
+
+P85 two-primary check2c45237/02150f2d identifies direct2020 raw nonnegative
+GBS overlap; no first broad dequantization claim. ROOT separately checked
+its physical thermal cofactor counterexample and actual primary PDF sign
+step, while pure nonnegative marginal closure survives by Schur identity.
+P78/P80 exact internal proofs and priority limitations are preserved.
+
+P82's145-line physical designf7cb5d9/c008f601 is frozen. Uniform-loading
+r2 mean cancels; nonuniform−q0E phase term survives but has a polynomial
+classical control. Higher-order basin improvement is OPEN. A separately
+frozen K8/n16 card and independent audit must precede any code or canary.
+Numerical slot FREE, no new simulation/main, paper/main/QPU untouched.

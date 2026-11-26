@@ -294,3 +294,24 @@ No further broad optimization sweep without a changed registered mechanism. No a
 - KEEP P33/P37, E05b and every failed hypothesis/raw record unchanged.
   Keep CLAIM-042 OPEN and manuscript/hardware gates CLOSED. Continue P82/P83
   statically; any simulation requires its own reviewed prospective contract.
+
+## P83 exact source accepted, without an optimizer inference
+
+Accept only the exact gauge reduction and signed-source compound-Poisson
+falsifier in reports/P83_ROOT_PHASE_CHECKPOINT.md. Preserve its elementary
+fixed-dimension nature, complete-event/vacuum accounting and absence of
+hardness or available hardware claims. Continue P82's changed finite-Fock
+mechanism analysis before any numerical contract; keep all prior negatives.
+
+## P84/P86 oracle bounds, attribution and next experiment boundary
+
+Accept only the exact P84/P86 oracle scopes in their ROOT checkpoints.
+Keep phase-sensitive all-basis norms, fixed dimension and resource models
+explicit. P87 sharp extension is pending, not automatically accepted.
+Accept P85's exact target translation and internal counterexample checks;
+reject any first broad nonnegative-GBS dequantization attribution. Preserve
+prior literature records and all independent-source provenance.
+Keep P82 as a changed but UNPROVEN optimizer. Nonzero low-order phase
+response is not a win. Require independently reviewed K8/n16 DEV card,
+complete source freeze, tiny qualification and separate main authorization.
+The positive-result gate, paper and QPU remain closed.

@@ -25,20 +25,44 @@ does not cover visited-only/coherent calibration, ancillas or heralds.
 See reports/P80_ROOT_FINITE_BIT_CHECKPOINT.md and
 reports/P81_ROOT_STABILITY_CHECKPOINT.md. Novelty remains unresolved.
 
+P83 is also accepted after full338+294-line source/review reads: diagonal
+phase gauges preserve the entire count law, while an explicit signed
+four-cycle has a negative log-PGF coefficient and defeats a universal
+positive compound-Poisson extension. This is a boundary, not classical
+hardness, novelty or graph optimization benefit. See
+reports/P83_ROOT_PHASE_CHECKPOINT.md. P82's static finite-Fock mechanism
+and P84's cost-phase representability analysis remain separate tasks.
+
+P84's exact all-basis passive cost-phase obstruction is accepted after
+303+275+259 lines of derivation/review. P86 adds an accepted quantitative
+phase-sensitive error floor (171+256+299 lines), excluding o(angle) error
+for fixed nonconstant cost in that architecture. Both rely on P81 and
+leave general sampling optimizers open. P87 proposes a sharp first-order
+extension, still under independent reconstruction/review. Checkpoints:
+reports/P84_ROOT_COST_PHASE_CHECKPOINT.md and
+reports/P86_ROOT_APPROXIMATE_ORACLE_CHECKPOINT.md.
+
+P85 authenticates direct2020 nonnegative raw-GBS approximate-simulation
+prior art. No first broad classical-simulation attribution is justified;
+P78/P80's particular loop/bit guarantees still have unresolved priority.
+Its exact thermal inverse-sign counterexample does not erase the pure
+subclass overlap. reports/P85_ROOT_ATTRIBUTION_CHECKPOINT.md.
+
 The integrated executable tree atc360b36 passes1187 tests/43.89s pytest,
 with environment/native thread1,602 old scientific files and every paper/
 byte unchanged (PDF271946c9). Both P79 v2 manifests validate at ROOT and
 producer. Prior GitHub6346647 was observed GREEN/1175PASS12.12s from its
-actual job log. The newer1187 tree requires its own subsequent remote
-observation. P66 original v1 manifests stay bound to producer4925feb;
+actual job log. GitHub9572bc6 is now observed GREEN/1187PASS18.53s from the actual
+job log; the602-file preservation check also passed. P66 original v1 manifests stay bound to producer4925feb;
 its portable v2 loader and later source-bound experiments are separate.
 
 P75b/c no-hit searches remain finite negatives, not general k6+ Gaussian
 proofs. P75 small-case, P77/P78 and all validated P33/P37/E05b results are
 preserved. No P75 rerun was performed. Active static work now designs a
 hardware-compatible mechanism outside the accepted obstructions (P82),
-and examines the Gaussian positivity/gauge boundary (P83). Neither is an
-accepted optimizer or an authorized numerical main. One numerical worker
+P82a now specifies a K8/n16 prospective DEV veto; no implementation or
+scientific execution is authorized yet. An independent P82 design audit
+checks its strongest nulls. No accepted optimizer or numerical main follows. One numerical worker
 maximum; it is FREE after the full root regression. Current ownership and
 continuation: research/P45_LIVE_STATE.md.
 

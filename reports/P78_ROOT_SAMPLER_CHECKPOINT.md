@@ -76,3 +76,9 @@ setup and finite-bit approximation in its mathematical model; see
 `reports/P80_ROOT_FINITE_BIT_CHECKPOINT.md`. Neither changes this original
 ideal theorem, certifies the floating implementation's TV, or demonstrates
 a graph optimization benefit.
+
+P85's later two-primary-source addendum identifies direct2020 pure-GBS
+approximate-simulation overlap. The earlier bounded three-source check
+was not exhaustive. Preserve both records; no first general classical
+simulation claim follows from P78. Exact law/finite-bit proof versus
+estimator guarantees are distinguished in the P85 ROOT checkpoint.
