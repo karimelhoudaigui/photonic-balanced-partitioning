@@ -1,9 +1,11 @@
 # Research Log
 
-Latest continuation: P82a recorded audit complete; P90a source-aware/nonflat
-implementation CODE ONLY. Current evidence:
+Latest continuation: P90a source-aware/nonflat DEV screen independently
+audited NO_POSITIVE_SIGNAL; P94 changed mechanisms under analytical review.
+Current evidence:
 reports/P82a_ROOT_FINAL_CHECKPOINT.md,
 reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md and
+research/P90a_INDEPENDENT_RECORDED_AUDIT_RECEIPT.md and
 research/P45_LIVE_STATE.md. Earlier entries retain their historical state.
 
 ## 2026-11-20 - Physics Correction
@@ -1504,3 +1506,35 @@ checker is CODEONLY authoring beforeBdata; primaryDEVmain remainsunautorized.
 P93 conditional surrogate source159+independentreview130 accepted, noactual
 smallresidual/sampler/optimizerobstruction inferred; P90aH unchanged.
 CLAIM-042OPEN, paper/main/QPU/held-out frozen, negative evidence unchanged.
+
+
+## P90a changed source-aware/nonflat DEV cycle: independently audited negative
+
+Base source82d7b63, actual clean mainb2f9af31, original raw seald3962d5 before
+interpretation, separate receipt8bf3296b. Fixed ER9002401/RR9002402,
+root90026001, n24/K12,96 attempts and1152 modeled photons. Full collision/
+repair records retained. B111/28 loses to EACH fixed FAST random/spectral
+104/27, with adequate first scans, normal returns and no early guard.
+Both B best discoveries first occur in classical compiler_M. Decision:
+REJECT this frozen pilot as NO_POSITIVE_SIGNAL; no unchanged B/guard rerun.
+
+The independent pre-B checker60995930 qualified29PASS and its62-input opaque
+binding received separate metadata review3cbdbc65 and ROOT authorization48270f7.
+ONE replay completed4.952918s, raw seal0c9a8f1 BEFORE reading, separate
+receipt7b1c3fd: FINITE_RECORDED_DATA_AUDIT_PASSED,29478 cuts/96 counts/7790
+FAST checkpoints agree.62 input hashes unchanged; official v2PASS.
+Clock arithmetic is checked, not timing authenticity or independent physics.
+D/Tier2/fresh seeds/labels/held-outs/physical replication remain NOT_RUN.
+The favorable-to-B grants are not matched total resource measurements.
+
+Integrated1548 local testsPASS; GitHub535b778 actual1548PASS14.94s and602-file
+archivePASS. reports/P90a_ROOT_FINAL_CHECKPOINT.md holds exact provenance.
+P33/P37/E05b/main/paper bytes preserved; positive target remains OPEN.
+P94 now investigates changed parity/code, collective-block and dissipative
+mechanisms. Mathematical/prior-art audit precedes any new pilot. No QPU.
+
+Administrative continuation: a fresh full checkout failed for disk space and
+Git rolled it back. Only our completed clean fixtures checkout was removed,
+after verifying its integrated bytes and preserving original Git refs. An
+existing clean isolated checkout was reused for P94. No original raw data,
+model, manuscript or user .DS_Store was deleted or silently changed.

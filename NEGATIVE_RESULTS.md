@@ -285,3 +285,29 @@ These are analytical obstructions, not failed numerical optimization
 runs. All evidence and limitations are in the P80/P81 ROOT checkpoints.
 P79's finite sampler validation PASSED; it must not be logged as either a
 photonic optimizer success or a failed quantum experiment. Positive goal OPEN.
+
+
+## P90a source-aware/nonflat mechanism: eligible finite DEV veto
+
+The sole frozen n24/K12 screen completes96/96 attempts,1152 modeled photons
+and29478 scored candidates. Original clean executionb2f9af31, raw seald3962d5
+before interpretation, separate primary receipt8bf3296b. Bbest111/28 loses
+to EACH fixed FAST random/spectral104/27. All4 controls return normally
+with adequate first scans and no early guard. The best B discoveries occur
+in classical compiler_M, not the optical samples.
+
+The independently authored checker was frozen/qualified before B. After
+separate binding review and ROOT authorization, its ONE replay raw0c9a8f1
+was sealed before interpretation. Separate receipt7b1c3fd confirms every
+29478 scored cut,96 raw count records and7790 FAST checkpoints, with62
+unchanged input hashes and official v2PASS. This is recorded consistency,
+not Born-law certification, independent physical replication or timing
+authentication. Source/guard/graph/seed retuning is not part of this result.
+
+Verdict NO_POSITIVE_SIGNAL rejects this fixed pilot. It does not refute all
+source-aware encodings or prove a universal classical no-go. D/Tier2 and
+later gates are NOT_RUN because this first-stage candidate already loses.
+Favorable-to-B clock proxies do not establish matched total costs.
+research/P90a_INDEPENDENT_RECORDED_AUDIT_RECEIPT.md and
+reports/P90a_ROOT_FINAL_CHECKPOINT.md preserve all exact scopes.
+The positive goal remains OPEN; paper/main/QPU stay frozen.

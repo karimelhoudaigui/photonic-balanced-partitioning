@@ -1,17 +1,22 @@
 # Research status — active discovery branch
 
-Current continuation: P82a's independent recorded-data audit is complete,
-with no discrepancy in96countrecords/7014cuts/912FAST checkpoints. Its primary
-verdict remains INCONCLUSIVE_FAST_ELIGIBILITY and no advantage is demonstrated.
-The integrated local suite now passes1519 tests after P90a's separate
-283-item/254-tiny-probability qualification. Its source-aware/nonflat
-implementation is qualified only in that tiny/scripted scope; no DEV main
-is authorized while the independent predata checker is authored CODE ONLY.
+Current continuation: P90a's sole96-attempt DEV main and independent
+recorded-data audit are complete. B reaches111/28 versus EACH separately
+paid FAST random/spectral104/27, with no early guard: NO_POSITIVE_SIGNAL.
+The independent frozen checker agrees on all29478 scored candidates and
+7790 FAST checkpoints; raw audit0c9a8f1 precedes separate receipt7b1c3fd.
+This validates recorded consistency, not Born probabilities or independent
+physical replication. See research/P90a_INDEPENDENT_RECORDED_AUDIT_RECEIPT.md.
+The integrated local suite passes1548 tests; GitHub535b778 also passes1548
+in14.94s and preserves602 historical files. P94's different parity/code,
+collective-block and dissipative-filter routes are under mathematical review;
+no positive pilot is justified yet. P82a's earlier finite audit remains valid
+with its original INCONCLUSIVE_FAST_ELIGIBILITY, not a quantum advantage.
 P91's conditional spectral-loss
 replacement and P92's calibration counterexample are accepted in their exact
 scopes. See reports/P82a_ROOT_FINAL_CHECKPOINT.md,
 reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md,
-reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md and research/P45_LIVE_STATE.md.
+reports/P90a_ROOT_FINAL_CHECKPOINT.md and research/P45_LIVE_STATE.md.
 
 Historical P79 checkpoint: P79's sole six-source finite raw-PNR validation
 passes, and P80's rational/finite-bit sampler and P81's dual-rail stability
