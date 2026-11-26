@@ -1,0 +1,27 @@
+{
+  "schema": "P82a.checker-qualification.prelaunch-rejection.v1",
+  "record_kind": "RAW_LAUNCH_REJECTION_NOT_A_RUNNER_MANIFEST",
+  "source_commit": "34c9513072d385373805215dba6679ffb5686ab9",
+  "contract_path": "research/P82a_independent_audit_preflight_contract.json",
+  "contract_sha256": "c048b2f3e926d512e67fcbef8e0d0518f5b851a3d0364f4751d65fa42f6ec660",
+  "runner": "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/run_experiment.py",
+  "interpreter": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+  "runner_interpreter_flags": ["-B"],
+  "root": "/Users/karimelhoudaigui/Desktop/pasqal/.local/p66-dark-barrier",
+  "runner_output": "research/P82a_independent_audit_preflight/run_001/runner",
+  "declared_results": ["research/P82a_independent_audit_preflight/run_001/junit.xml"],
+  "inputs": ["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P82a_independent_raw_audit.py","tests/test_p82a_independent_raw_audit.py","research/P82a_independent_audit_spec.json","research/P82a_independent_audit_preflight_contract.json","research/P82a_independent_audit_main_TEMPLATE.json","research/P82a_INDEPENDENT_AUDIT_BINDING.md","research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md","research/P82_ZERO_LOADING_INDEPENDENT_NULL.md"],
+  "requested_limits": {"timeout_seconds":60,"max_cpu_seconds":30,"max_threads":1,"max_output_bytes":4194304},
+  "environment_requested": {"OMP_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","MKL_NUM_THREADS":"1","VECLIB_MAXIMUM_THREADS":"1","NUMEXPR_NUM_THREADS":"1","BLIS_NUM_THREADS":"1"},
+  "child_argv": ["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-m","pytest","-q","-p","no:cacheprovider","tests/test_p82a_independent_raw_audit.py","--junitxml=research/P82a_independent_audit_preflight/run_001/junit.xml"],
+  "observed_tool_result": {
+    "exit_code": 2,
+    "tool_wall_time_seconds": 0.032416833,
+    "combined_output": "run-experiment: declared result must be inside the fresh output directory: research/P82a_independent_audit_preflight/run_001/junit.xml\n"
+  },
+  "child_launched": false,
+  "pytest_results_available": false,
+  "runner_v2_manifest_available": false,
+  "retry_performed": false,
+  "B_data_accessed": false
+}
