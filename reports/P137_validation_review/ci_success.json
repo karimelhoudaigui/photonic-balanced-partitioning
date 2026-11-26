@@ -1,0 +1,27 @@
+{
+  "observed_date_europe_paris": "2026-11-26",
+  "repository": "karimelhoudaigui/photonic-balanced-partitioning",
+  "head_sha": "7c8600784e4747743a49614ec4c3c98891b79c32",
+  "run_id": 45867225451,
+  "job_id": 140073055949,
+  "url": "https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45867225451",
+  "job_status": "completed",
+  "job_conclusion": "success",
+  "actual_job_logs_read": true,
+  "pytest": {"passed": 1559, "seconds": 17.03},
+  "archive": {
+    "status": "PASS",
+    "historical_files_checked": 602,
+    "changed_or_missing": [],
+    "snapshot_sha256": "9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474"
+  },
+  "publication_generated_outputs": {"status": "CHECK_PASS", "outputs": 7},
+  "existing_manuscript_remote_build": {
+    "status": "PASS",
+    "pdf_pages": 16,
+    "pdf_sha256": "6bb265b2fa5ed9cdcadd72f9a776c2639a5f371e47a19991db5983d51798e45c",
+    "failures": []
+  },
+  "local_frozen_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "scope": "Actual CI evidence at this exact head, not mathematical review, a new manuscript, optimizer replication or QPU validation. Remote rebuilt PDF differs from the preserved local PDF; it is not substituted."
+}

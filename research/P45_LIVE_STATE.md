@@ -343,13 +343,13 @@ fresh/held-out contexts and independent replication before any QPU step.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 
-Last confirmed pushed ROOT90c5cccd50a3990abf7c33211f7dc3a440a8a730 includes
-qualified P130/P131 code/raw and accepted theory through P133/P134 design.
-Original source/review refs79f39dea/aedae480/c9cbb758 were pushed atomically.
-Actual GitHub run45858417790/job140042768741 succeeds1559PASS17.53s,
+Last confirmed pushed ROOT7c8600784e4747743a49614ec4c3c98891b79c32 includes
+qualified P134 code/raw/negative receipt and accepted P136/P137 theory.
+Original source/review refs0122a9ae/da18f736/c4433893 were pushed atomically.
+Actual GitHub run45867225451/job140073055949 succeeds1559PASS17.03s,
 602-file preservation and existing manuscript build/reference checks. Remote
 main remains27443954; local paper bytes match that base, including PDF hash
-above. Receipt ../reports/P131_validation_review/ci_success.json. Later
+above. Receipt ../reports/P137_validation_review/ci_success.json. Later
 metadata/source-only commits are not silently covered by that CI revision.
 
 ## New scoped theory
