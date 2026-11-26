@@ -133,8 +133,8 @@ the existing system temporary directory. They are not test failures or native
 sampler fallback observations. Stderr is empty; no warning was suppressed.
 
 ROOT confirms one exact runner launch, no prelaunch rejection and no rerun:
-the first qualification completed successfully. Two subsequent administrative
-metadata-formatting reads raised KeyError('bytes'); ROOT replaced that lookup
+the first qualification completed successfully. One subsequent administrative
+metadata-formatting read raised KeyError('bytes'); ROOT replaced that lookup
 with stat().st_size. They wrote no data and did not affect qualification or
 validation. Earlier Git sandbox/slot issues were authoring administration;
 the old P82 wrapper/type failures are not P90a qualification failures.
