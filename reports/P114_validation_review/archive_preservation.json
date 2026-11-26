@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "snapshot_sha256": "9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474",
+  "snapshot_base_commit": "6154b460e1c8b37cf2a7023fcbfff35d31a7220c",
+  "historical_files_checked": 602,
+  "changed_or_missing": [],
+  "scope": "Pre-existing experiments/results/theory/research; active reports/manuscript/code may change"
+}
