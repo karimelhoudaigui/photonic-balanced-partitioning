@@ -1,0 +1,277 @@
+{
+  "schema_version": 2,
+  "claim_id": "P82A-SPLIT-SCATTER-DETERMINISTIC-QUALIFICATION",
+  "repository": {
+    "commit": "94f80b94f75317524c202ce9ef5bf932d78ddc5e",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_p82a_split_scatter_veto.py::test_qualification_executing_interpreter_and_installed_provenance",
+    "tests/test_p82a_split_scatter_veto.py::test_profile_exact_probabilities_and_nonuniform_range",
+    "tests/test_p82a_split_scatter_veto.py::test_eta_zero_is_analytic_graph_independent",
+    "tests/test_p82a_split_scatter_veto.py::test_small_receiver_independent_unitarity_and_phase_update",
+    "tests/test_p82a_split_scatter_veto.py::test_decoder_keeps_collisions_and_deterministic_extremes",
+    "tests/test_p82a_split_scatter_veto.py::test_decoder_uniform_repair_and_d_law_exact",
+    "tests/test_p82a_split_scatter_veto.py::test_decoder_preserves_port_and_vertex_count_mappings",
+    "tests/test_p82a_split_scatter_veto.py::test_eta_zero_all_r_combinatorial_null",
+    "tests/test_p82a_split_scatter_veto.py::test_exact_r2_mean_difference_independent_fraction",
+    "tests/test_p82a_split_scatter_veto.py::test_flat_r2_uniform_loading_cancels_and_marginals_are_phase_blind",
+    "tests/test_p82a_split_scatter_veto.py::test_decoder_rejects_malformed_counts_without_retry",
+    "tests/test_p82a_split_scatter_veto.py::test_all_swap_candidates_match_independent_scalar_cuts",
+    "tests/test_p82a_split_scatter_veto.py::test_packbits_little_round_trip_padding_and_balance_guards",
+    "tests/test_p82a_split_scatter_veto.py::test_quench_returns_best_scored_and_couples_complements",
+    "tests/test_p82a_split_scatter_veto.py::test_quench_best_is_not_last_and_cap_is_not_optimality",
+    "tests/test_p82a_split_scatter_veto.py::test_duration_difference_has_unknown_endpoints_and_cpu",
+    "tests/test_p82a_split_scatter_veto.py::test_duration_difference_rejects_inconsistent_reported_wall",
+    "tests/test_p82a_split_scatter_veto.py::test_dual_clock_uses_last_timely_cached_record",
+    "tests/test_p82a_split_scatter_veto.py::test_dual_clock_no_wall_timely_candidate_and_adapter_subtraction",
+    "tests/test_p82a_split_scatter_veto.py::test_dual_clock_trace_guards",
+    "tests/test_p82a_split_scatter_veto.py::test_conservative_call_boundary_binding_preserves_direct_and_rejects_late",
+    "tests/test_p82a_split_scatter_veto.py::test_scientific_cap_retains_partial_stream_and_failure_reserve",
+    "tests/test_p82a_split_scatter_veto.py::test_scripted_96_attempts_raw_counts_current_refresh_and_tier1_veto",
+    "tests/test_p82a_split_scatter_veto.py::test_scripted_native_fallback_is_first_failure_with_partial_raw",
+    "tests/test_p82a_split_scatter_veto.py::test_scripted_control_exception_overrides_any_partial_veto",
+    "tests/test_p82a_split_scatter_veto.py::test_scripted_mixed_fast_winners_are_not_free_portfolio_veto",
+    "tests/test_p82a_split_scatter_veto.py::test_native_183_deterministic_amplitudes_and_properties",
+    "--junitxml=research/P82a_dev_veto_preflight/run_001/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Qualify source/decoder/compiler/paid-clock implementation using hardcoded small exact fixtures, 183 deterministic native Naive amplitude observations, and scripted full96-attempt hooks with mocked compiler/sampler/scorer/clocks. No DEV graph, DEV RNG, real K8 source/matrix, stochastic native sample or optimizer outcome is part of qualification.",
+    "coefficient_domain": "Exact Fraction/integer fixtures and scripted deterministic hooks; float64/complex128 deterministic Naive amplitudes at absolute tolerance2e-12 and relative tolerance0",
+    "conventions": "3 two-mode/two-photon HOM outputs plus3 fixed phases times6 removed input pairs times10 receiver occupations in the K4,r2 fixture. Native observations, including zeros/tiny values and exception repr, are recorded in JUnit properties before assertions. The exact prequench r2 mean difference is phase0 minus phasepi=-8/225. Scripted clocks verify direct dual-clock caches, conservative call-boundary Delta binding, and DURATION_DIFF records without observing real timing.",
+    "inputs": [
+      "Frozen145-line design,147-line card and69-line clock addendum; immutable P43/P50 helpers and P50 API card",
+      "Hardcoded tiny HOM/r2/D-decoder/eta0 fixtures only; fixed scripted data for main-size workflow hooks",
+      "Installed backend file identities/version metadata and actual executing interpreter/native provenance; no interpreter-specific absolute-path qualification guard"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "environment_threads": 1,
+      "native_threads": 1,
+      "max_runner_stdout_stderr_bytes": 4194304,
+      "max_scientific_uncompressed_bytes": 33554432,
+      "reserved_failure_summary_bytes": 1048576,
+      "planned_logical_workspace_bytes": 268435456,
+      "hard_RSS_limit_claimed": false,
+      "workers": 1,
+      "failed_retries": 0,
+      "optional_calibration_runs": 0,
+      "native_Naive_amplitude_queries": 183,
+      "native_HOM_queries": 3,
+      "native_r2_queries": 180,
+      "native_stochastic_draws": 0,
+      "qualification_DEV_graphs": 0,
+      "qualification_DEV_starts": 0,
+      "qualification_new_PCG_generators": 0,
+      "qualification_real_K8_compilations": 0,
+      "qualification_real_eight_photon_sources": 0,
+      "qualification_test_items": 27
+    },
+    "non_claims": [
+      "No qualification has been executed at source freeze; a PASS does not authorize main",
+      "No DEV result, graph-selection evidence, classical superiority, physical count validation, advantage, novelty or QPU validation",
+      "Mocked main-size hooks establish control-flow/accounting fixtures only; they do not reproduce a physical/simulated K8 trajectory",
+      "Native Naive amplitudes are deterministic tiny implementation checks, not random sampling or timing calibration",
+      "No equal total CPU/WALL or hardware resource comparison follows from the favorable zero-optics screen"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "None: exact/hardcoded inputs, deterministic Naive amplitudes and scripted hooks; neither RNG creation nor seed-hash evaluation is permitted in qualification",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T01:11:23.553679+00:00",
+    "runtime_seconds": 29.445581,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+    "research/P82a_DEV_VETO_CONTRACT.md",
+    "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+    "research/P82a_split_scatter_veto.py",
+    "tests/test_p82a_split_scatter_veto.py",
+    "research/P82a_execution_spec.json",
+    "research/P82a_split_scatter_preflight_contract.json",
+    "research/P82a_split_scatter_execution_contract.json",
+    "research/P82a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+      "sha256": "c008f60143a1c4b0e81dcec1ba7a07c28d89244b10d4d69695070d27b0916723",
+      "sha256_after": "c008f60143a1c4b0e81dcec1ba7a07c28d89244b10d4d69695070d27b0916723"
+    },
+    {
+      "path": "research/P82a_DEV_VETO_CONTRACT.md",
+      "sha256": "d5e994d970f278bb9c51fa8a806555dce4047e82c8342f676fe267b75dbe71b9",
+      "sha256_after": "d5e994d970f278bb9c51fa8a806555dce4047e82c8342f676fe267b75dbe71b9"
+    },
+    {
+      "path": "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+      "sha256": "1b548885d05fe6a42487c77b12ac00292ebd8bd379c4074e6ce3a49ceb93a8d4",
+      "sha256_after": "1b548885d05fe6a42487c77b12ac00292ebd8bd379c4074e6ce3a49ceb93a8d4"
+    },
+    {
+      "path": "research/P82a_split_scatter_veto.py",
+      "sha256": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc",
+      "sha256_after": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc"
+    },
+    {
+      "path": "tests/test_p82a_split_scatter_veto.py",
+      "sha256": "e70b74c2915632cf62677c80f40ebeea8e67c669116660096426101542794861",
+      "sha256_after": "e70b74c2915632cf62677c80f40ebeea8e67c669116660096426101542794861"
+    },
+    {
+      "path": "research/P82a_execution_spec.json",
+      "sha256": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838",
+      "sha256_after": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838"
+    },
+    {
+      "path": "research/P82a_split_scatter_preflight_contract.json",
+      "sha256": "209696de0b0170ff4099cdfd77b6acdaec3c4f78e04e86631047008c13517c0d",
+      "sha256_after": "209696de0b0170ff4099cdfd77b6acdaec3c4f78e04e86631047008c13517c0d"
+    },
+    {
+      "path": "research/P82a_split_scatter_execution_contract.json",
+      "sha256": "dca509b4fee65b652227fb395cfc982b4426a9c8ae0da05de75f825493cc5f20",
+      "sha256_after": "dca509b4fee65b652227fb395cfc982b4426a9c8ae0da05de75f825493cc5f20"
+    },
+    {
+      "path": "research/P82a_IMPLEMENTATION_POPULATION.md",
+      "sha256": "9080adee7e67189731cdbcbd297c0b419748337025135f85cf7406bee5c1a4ba",
+      "sha256_after": "9080adee7e67189731cdbcbd297c0b419748337025135f85cf7406bee5c1a4ba"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "research/P82a_dev_veto_preflight/run_001",
+  "declared_results": [
+    "research/P82a_dev_veto_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P82a_dev_veto_preflight/run_001/stdout.txt",
+      "sha256": "038be61c64033bbd551a8e660d808d62e3feb26286243e9d95aaffd8198f8529",
+      "kind": "log"
+    },
+    {
+      "path": "research/P82a_dev_veto_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P82a_dev_veto_preflight/run_001/junit.xml",
+      "sha256": "b46f164eb7b2b668e474c781157d6bd393011dc9d6e30a003779d6384901ad64",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
