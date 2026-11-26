@@ -1,0 +1,203 @@
+{
+  "claim_id": "P82A-SPLIT-SCATTER-ZERO-OPTICS-DEV-VETO",
+  "binding_state": "CODE_ONLY_NOT_EXECUTED_SEPARATE_ROOT_REVIEW_AND_AUTHORIZATION_REQUIRED",
+  "contract_format": "Prospective run_experiment.py contract producing a schema_version=2 manifest; this JSON is not itself an execution manifest",
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+    "research/P82a_DEV_VETO_CONTRACT.md",
+    "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+    "research/P82a_split_scatter_veto.py",
+    "tests/test_p82a_split_scatter_veto.py",
+    "research/P82a_execution_spec.json",
+    "research/P82a_split_scatter_preflight_contract.json",
+    "research/P82a_split_scatter_execution_contract.json",
+    "research/P82a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "external_artifacts": [
+    {
+      "role": "serial_sampling_backend",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_clifford2017.py",
+      "sha256": "8dad1b8f389f346bde1b902f21d74e1466eabb258aeb0e92f827ff745d27329b"
+    },
+    {
+      "role": "deterministic_qualification_backend",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_naive.py",
+      "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+    },
+    {
+      "role": "backend_circuit_and_input_convention",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_abstract_backends.py",
+      "sha256": "53f7c4db865c2e643b9ab461da0c71b2fbb9dc1a450ad917936ca0f4e25538f1"
+    },
+    {
+      "role": "native_seed_bridge",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/_random.py",
+      "sha256": "d56c9fc42986ee3e16f3d1110962044b3a91dcb7023315ca7db8a5aa21a2cea4"
+    },
+    {
+      "role": "seed_bridge_export",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/__init__.py",
+      "sha256": "e450aeca15789cbaddfd81eed4b30f0e6c6c8165169541febc5ad45605e5daab"
+    },
+    {
+      "role": "native_extension",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+      "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+    },
+    {
+      "role": "perceval_distribution_metadata",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval_quandela-1.3.0.dist-info/METADATA",
+      "sha256": "371e95278e5085e75159d8d7a08bc81aee017510380a910b021a9c84ebd444a0"
+    },
+    {
+      "role": "exqalibur_distribution_metadata",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/exqalibur-1.4.2.dist-info/METADATA",
+      "sha256": "09edb827ad23596de8b3c8f224d7a07b13d2fab3978b4b7bd4a7250033099150"
+    },
+    {
+      "role": "persistent_virtual_environment_metadata",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/pyvenv.cfg",
+      "sha256": "0b8b1221cc5276cffcdf62b9ad222d1939da2d3b90c626712a9dbcaad94617cf"
+    },
+    {
+      "role": "physical_interpreter_binary",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "sha256": "831807be3d255aae0708810462ce0cde2467235f7daaa86e93d0ddc58b1a4101"
+    }
+  ],
+  "external_binding_note": "The v2 runner hashes only execution_artifacts using exact repeated --input paths. These external absolute paths are supplemental metadata, not runner-bound inputs. Main CLI independently checks literal external SHA pins before scientific imports and records actual provenance. Portable qualification uses its executing interpreter, checks critical installed .py hashes and versions and archives discovered native/interpreter provenance without a Mac absolute-path guard.",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    }
+  ],
+  "runner_limits": {
+    "timeout_seconds": 90,
+    "max_output_bytes": 4194304,
+    "max_cpu_seconds": 60,
+    "max_threads": 1,
+    "max_memory_bytes": null,
+    "max_cores": null
+  },
+  "resource_note": "CODE ONLY. No imports, AST/bytecode compilation, test collection, test run, seed evaluation, graph generation, native call, calibration or main occurred during authoring. The first separately authorized attempt alone is retained: CPU60/wall90/env1/native1, stdout+stderr4MiB, scientific uncompressed32MiB with1MiB reserve, logical256MiB and zero failed retries. No hard RSS or actual QPU wall-time claim. Runner timeout/resource/output failure takes precedence over a favorable scientific summary.",
+  "mathematics": {
+    "assertion_tested": "Run the frozen unplanted ER/RR K8/n16 DEV screen once: exactly48 B raw attempts per anchor, with all96 outcomes retained and768 modeled injected source photons. Compare each fixed classical mode against B using its own entire B paid-classical WALL grant and dual CPU+WALL timely precomputed witnesses. An eligible fixed same mode strictly beating B on both anchors rejects this candidate; no possible result is accepted as positive advantage.",
+    "coefficient_domain": "Integer weighted graph/count/cut data; float64/complex128 passive split-scatter compilation; native Clifford2017 conditional-r sampling; exact recorded integer masks with little-endian packing; actual observed CPU/WALL clocks and explicitly derived duration differences",
+    "conventions": "Compile graph/marks-dependent W before R; rho1 eta1/2, two phase sweeps and fixed odds/probability profile; analytic eta0 branch preserves initial phases with exact zero J,H. All r=0..8 outcomes/collisions/zeros/repair are retained, no retry/fallback. Q uses complement canonicalization and BEST SCORED candidate and credits every scored64-neighbor candidate. Direct paid spans are disjoint; factory outer minus returned setup WALL is only DURATION_DIFF with CPU/endpoints unknown. For binding classical witnesses, Delta_C/W=observed_outer_total_C/W-direct_adapter_C/W-helper_reported_compute_C/W is finite nonnegative without clipping, with provenance references and unknown interval endpoints. Direct results are preserved separately; the final witness requires direct_adapter_CPU+Delta_CPU+checkpoint_CPU<=G and the corresponding WALL inequality, choosing latest qualifying chronological preclock cache, never latebest reconstruction. G is unchanged and helper CPUbudget remains max0(G-directadapterCPU). Tier1 four fixed FAST calls precede conditional Tier2; no best-of-mode portfolio.",
+    "inputs": [
+      "ExactlyER8201601:gnp_random_graph(16,0.4,seed8201601) andRR8201602:random_regular_graph(4,16,seed8201602), unplanted and unfiltered; canonical minmax sorted edges then privatePCG weights1..5",
+      "Root seed82026001 and literal compact-ASCII role recipes in frozen spec; no old DEV/heldout/optimum masks or C*",
+      "Frozen design/card/clock addendum and literal execution spec; actual immutable P43 serial factory and P50 FAST from raw API",
+      "Complete project file closure in execution_artifacts; external installed-file/interpreter pins independently checked by main CLI before scientific imports"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "environment_threads": 1,
+      "native_threads": 1,
+      "max_runner_stdout_stderr_bytes": 4194304,
+      "max_scientific_uncompressed_bytes": 33554432,
+      "reserved_failure_summary_bytes": 1048576,
+      "planned_logical_workspace_bytes": 268435456,
+      "hard_RSS_limit_claimed": false,
+      "workers": 1,
+      "failed_retries": 0,
+      "optional_calibration_runs": 0,
+      "graphs": 2,
+      "n": 16,
+      "K": 8,
+      "chains_per_graph": 3,
+      "attempts_per_chain": 16,
+      "raw_B_attempts_per_graph": 48,
+      "raw_B_attempts_total": 96,
+      "modeled_source_photons_total": 768,
+      "Tier1_fixed_FAST_calls": 4,
+      "FAST_work_guard_per_call": 10000,
+      "Tier2_fixed_modes": 4,
+      "Tier2_maximum_calls": 8,
+      "custom_work_guard_per_call": 10000,
+      "quench_neighbor_scan_cap": 1,
+      "warmstart_neighbor_scan_cap": 2,
+      "neighbors_per_scan": 64,
+      "positive_acceptances_possible": 0
+    },
+    "non_claims": [
+      "DEV-only negative screen with optical latency assumed zero for the favorable B classical-cost grant; not actual QPU time or matched total hardware resources",
+      "All classical and native simulation/import/setup/sample clocks are archived separately; excluded simulation costs are not treated as physical pulse times",
+      "Passing this screen remains inconclusive and requires independently reoptimized D/species, relabel/fresh-seed tests and complete resource accounting",
+      "No physical count authenticity, universal theorem, optimum certificate, novelty, heldout conclusion or optimizer advantage",
+      "No graph/seed/profile replacement, retry, canary, hidden portfolio, adaptive budget increase, code change, dependency change, QPU or manuscript action"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Private numpy.random.Generator(PCG64) roles from literal compact-ASCII JSON SHA256 recipes; native serial Clifford seed independently recorded via Perceval/exqalibur bridge; new Generators are not reset by Perceval global seeding",
+    "seed": 82026001
+  },
+  "allowed_scientific_statuses": [
+    "DEV_REJECTED_FIXED_FAST",
+    "DEV_REJECTED_FIXED_CLASSICAL",
+    "INCONCLUSIVE_FAST_ELIGIBILITY",
+    "INCONCLUSIVE_CONTROL_ELIGIBILITY",
+    "STAGE1_REOPTIMIZED_D_SPECIES_REQUIRED",
+    "INCONCLUSIVE_FIRST_FAILURE",
+    "INCONCLUSIVE_RESOURCE_FAILURE"
+  ],
+  "positive_accepted": false,
+  "first_failure_note": "Preserve exception repr/context and every emitted complete raw record. Pending controls are NOT_RUN with null outcome fields, never fabricated zero. A resource/first failure is inconclusive even if a previous partial prefix appeared to veto. Accepted FAST negative requires all96 B attempts and all4 normal Tier1 calls.",
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P82a_split_scatter_veto.py",
+    "--spec",
+    "research/P82a_execution_spec.json",
+    "--output",
+    "experiments/P82a_dev_veto/run_001/data"
+  ],
+  "runner_output_directory": "experiments/P82a_dev_veto/run_001",
+  "declared_results": [
+    "experiments/P82a_dev_veto/run_001/data/metadata.json",
+    "experiments/P82a_dev_veto/run_001/data/graphs.json",
+    "experiments/P82a_dev_veto/run_001/data/B_ER.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/B_RR.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/paid_ledger.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/controls.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/summary.json",
+    "experiments/P82a_dev_veto/run_001/data/failure.json"
+  ],
+  "qualification_requirement": {
+    "pytest_item_count": 27,
+    "native_amplitude_queries": 183,
+    "qualification_pass_does_not_authorize_main": true
+  }
+}
