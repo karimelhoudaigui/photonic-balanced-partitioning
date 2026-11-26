@@ -1,0 +1,91 @@
+{
+  "status": "RECORDED_SCALAR_AUDIT_PASS",
+  "rows": 567,
+  "kind_counts": {
+    "provenance": 1,
+    "exact_case_start": 13,
+    "exact_raw": 167,
+    "exact_audit": 13,
+    "native_provenance": 1,
+    "halmos_unitary_check": 5,
+    "native_setup": 5,
+    "native_attempt": 159,
+    "native_raw": 159,
+    "native_marginal": 28,
+    "halmos_root_operand": 8,
+    "halmos_root_spectrum": 8
+  },
+  "exact_cases": {
+    "V0": {
+      "bins": 1,
+      "tv": "0",
+      "bound24": "0"
+    },
+    "U1": {
+      "bins": 2,
+      "tv": "0",
+      "bound24": "0"
+    },
+    "H2": {
+      "bins": 6,
+      "tv": "0",
+      "bound24": "0"
+    },
+    "D3": {
+      "bins": 20,
+      "tv": "1/1024",
+      "bound24": "3/512"
+    },
+    "R3a": {
+      "bins": 4,
+      "tv": "3/512",
+      "bound24": "3/512"
+    },
+    "R3b": {
+      "bins": 4,
+      "tv": "3/32768",
+      "bound24": "3/32768"
+    },
+    "S3": {
+      "bins": 10,
+      "tv": "1/1024",
+      "bound24": "15/4096"
+    },
+    "B4": {
+      "bins": 15,
+      "tv": "75/512",
+      "bound24": "3/16"
+    },
+    "D4": {
+      "bins": 70,
+      "tv": "249/65536",
+      "bound24": "3/128"
+    },
+    "Z4": {
+      "bins": 15,
+      "tv": "0",
+      "bound24": "0"
+    },
+    "R4": {
+      "bins": 5,
+      "tv": "171/8192",
+      "bound24": "3/128"
+    },
+    "C3": {
+      "bins": 10,
+      "tv": "0",
+      "bound24": "0"
+    }
+  },
+  "exact_bins_including_outside": 167,
+  "native_points": 159,
+  "native_marginal_bins": 28,
+  "max_amplitude_DP_error": 1.5959455978986625e-16,
+  "max_probability_DP_error": 2.220446049250313e-16,
+  "max_unconditional_marginal_error": 1.4432899320127035e-15,
+  "max_unitarity_Gram_error": 1.4432899320127035e-15,
+  "native_calls": 0,
+  "optimizer_replays": 0,
+  "independent_physical_replication": false,
+  "scope": "Postseal independent scalar/Fraction/pair-expansion/subset-DP recorded arithmetic; no source import or native replay"
+}

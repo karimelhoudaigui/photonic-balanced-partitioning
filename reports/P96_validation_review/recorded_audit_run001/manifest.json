@@ -1,0 +1,373 @@
+{
+  "schema_version": 2,
+  "claim_id": "P96-POSTSEAL-RECORDED-SCALAR-AUDIT",
+  "repository": {
+    "commit": "d1a38750ece539a41938ebbcf84b9836e00b31b3",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "reports/P96_validation_review/audit_recorded.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Stream all P96 raw records; independently reconstruct exact first/pair moments by removed-input amplitudes, q positivity and TV bounds; exhaustive occupation coverage; scalar unitarity and subset-DP amplitudes/probabilities for all159 recorded native states and28 unconditional marginals. No source import/native replay/optimizer.",
+    "coefficient_domain": "Fraction rational real moments; Python complex/binary64 subset-DP permanent and scalar Gram; absolute1e-11 native and1e-14 T-block checks",
+    "conventions": "PNR vacuum/collisions/loss preserved; distinct CF input factor1 and repeated-output factorial normalization; X4 physical outside domain not theorem failure",
+    "inputs": [
+      "Six original P96 raw files sealed240c7e5,35 original bound inputs, audit source and this contract"
+    ],
+    "bounds": {
+      "CPU_seconds": 10,
+      "wall_seconds": 30,
+      "threads": 1,
+      "workers": 1,
+      "native_calls": 0,
+      "optimizer_replays": 0,
+      "exact_signal_bins": 167,
+      "native_points": 159,
+      "native_marginal_bins": 28
+    },
+    "non_claims": [
+      "No new optical/Born sampling, independent device replication, interval proof, global theorem or optimizer advantage"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic recorded-data arithmetic only",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T11:55:36.658895+00:00",
+    "runtime_seconds": 0.077969,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 10,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P96_column_loss_validation.py",
+    "tests/test_p96_column_loss_validation.py",
+    "research/P96_column_loss_validation_contract.json",
+    "research/P96_column_loss_validation_preflight_contract.json",
+    "research/P96_VALIDATION_POPULATION.md",
+    "research/P96_COLUMN_LOSS_CLASSICAL_SURROGATE.md",
+    "research/P96_INDEPENDENT_SURROGATE_REVIEW.md",
+    "research/P96_BOUNDED_SURROGATE_PRIOR_ART.md",
+    "reports/P96_ROOT_THEORY_CHECKPOINT.md",
+    "research/P96_INDEPENDENT_VALIDATION_CODE_REVIEW.md",
+    "research/P96_INDEPENDENT_VALIDATION_CODE_ADDENDUM.md",
+    "reports/P96_ROOT_PRE_DATA_CODE_REVIEW.md",
+    "reports/P96_ROOT_PRE_DATA_CODE_ADDENDUM.md",
+    "reports/P96_validation_review/predata_metadata_v2.json",
+    "reports/P96_ROOT_QUALIFICATION_AUTHORIZATION.md",
+    "research/P96_column_loss_preflight/run_001/manifest.json",
+    "research/P96_column_loss_preflight/run_001/stdout.txt",
+    "research/P96_column_loss_preflight/run_001/stderr.txt",
+    "research/P96_column_loss_preflight/run_001/junit.xml",
+    "research/P96_PURE_QUALIFICATION_RECEIPT.md",
+    "reports/P96_validation_review/qualification_inspection.json",
+    "reports/P96_ROOT_FULL_SUITE_AUTHORIZATION.md",
+    "reports/P96_ROOT_FULL_SUITE_CORRECTION.md",
+    "reports/P96_validation_review/full_suite_first_failure.json",
+    "reports/P96_validation_review/run_full_suite_v2.py",
+    "reports/P96_validation_review/local_suite_run002/stdout.txt",
+    "reports/P96_validation_review/local_suite_run002/stderr.txt",
+    "reports/P96_validation_review/local_suite_run002/execution.json",
+    "research/P96_FULL_INTEGRATION_RECEIPT.md",
+    "reports/P96_ROOT_MAIN_AUTHORIZATION.md",
+    "research/P96_column_loss_main_binding.json",
+    "reports/P96_validation_review/main_binding_inspection.json",
+    "research/P96_column_loss_main/run_001/manifest.json",
+    "research/P96_column_loss_main/run_001/stdout.txt",
+    "research/P96_column_loss_main/run_001/stderr.txt",
+    "research/P96_column_loss_main/run_001/data/records.jsonl",
+    "research/P96_column_loss_main/run_001/data/summary.json",
+    "research/P96_column_loss_main/run_001/data/failure.json",
+    "reports/P96_validation_review/audit_recorded.py",
+    "reports/P96_validation_review/recorded_audit_contract.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P96_column_loss_validation.py",
+      "sha256": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223",
+      "sha256_after": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223"
+    },
+    {
+      "path": "tests/test_p96_column_loss_validation.py",
+      "sha256": "a5b7d94dcf9b202fc30309e57e63227700a1c65c5964140e4334535560a45c1a",
+      "sha256_after": "a5b7d94dcf9b202fc30309e57e63227700a1c65c5964140e4334535560a45c1a"
+    },
+    {
+      "path": "research/P96_column_loss_validation_contract.json",
+      "sha256": "a1d17209cc1c032b35f92cf0d93773fe735f0a567d9d901aa26a1240c3becb7d",
+      "sha256_after": "a1d17209cc1c032b35f92cf0d93773fe735f0a567d9d901aa26a1240c3becb7d"
+    },
+    {
+      "path": "research/P96_column_loss_validation_preflight_contract.json",
+      "sha256": "d8fcba7e1794416ceda6b0e7bf1885f5d914a867143b233ad873669611dba629",
+      "sha256_after": "d8fcba7e1794416ceda6b0e7bf1885f5d914a867143b233ad873669611dba629"
+    },
+    {
+      "path": "research/P96_VALIDATION_POPULATION.md",
+      "sha256": "1642dda4dec65926d35aa84131655a4f9b9e31e86f607563d7ff694d715697d5",
+      "sha256_after": "1642dda4dec65926d35aa84131655a4f9b9e31e86f607563d7ff694d715697d5"
+    },
+    {
+      "path": "research/P96_COLUMN_LOSS_CLASSICAL_SURROGATE.md",
+      "sha256": "b378ebd6bb0bb6f981e9fe395938e3a43aec7775f761b81cda7b394f6dc1e94e",
+      "sha256_after": "b378ebd6bb0bb6f981e9fe395938e3a43aec7775f761b81cda7b394f6dc1e94e"
+    },
+    {
+      "path": "research/P96_INDEPENDENT_SURROGATE_REVIEW.md",
+      "sha256": "a64783dee2b4903b475a8b1ea554640b4c320d9da81cf854871f219725e29d7f",
+      "sha256_after": "a64783dee2b4903b475a8b1ea554640b4c320d9da81cf854871f219725e29d7f"
+    },
+    {
+      "path": "research/P96_BOUNDED_SURROGATE_PRIOR_ART.md",
+      "sha256": "c77d5f15332fdd408f073c7e5a9c98b2914079d92678b2625aa92073a9fe8eeb",
+      "sha256_after": "c77d5f15332fdd408f073c7e5a9c98b2914079d92678b2625aa92073a9fe8eeb"
+    },
+    {
+      "path": "reports/P96_ROOT_THEORY_CHECKPOINT.md",
+      "sha256": "fb0af32943a6fc682b80166bae138865658d68c6a506ae3b4d6223d6d66f8561",
+      "sha256_after": "fb0af32943a6fc682b80166bae138865658d68c6a506ae3b4d6223d6d66f8561"
+    },
+    {
+      "path": "research/P96_INDEPENDENT_VALIDATION_CODE_REVIEW.md",
+      "sha256": "3bd85b48ae620e00c34f0c750113383f77cebe4a001ca86524ecf883e070441c",
+      "sha256_after": "3bd85b48ae620e00c34f0c750113383f77cebe4a001ca86524ecf883e070441c"
+    },
+    {
+      "path": "research/P96_INDEPENDENT_VALIDATION_CODE_ADDENDUM.md",
+      "sha256": "985964a3cde8decb7014f8ba4d870febff2cbe7fea7d0f241ba7ee97da48e324",
+      "sha256_after": "985964a3cde8decb7014f8ba4d870febff2cbe7fea7d0f241ba7ee97da48e324"
+    },
+    {
+      "path": "reports/P96_ROOT_PRE_DATA_CODE_REVIEW.md",
+      "sha256": "84222b60cc7dcde0677850f579a43f478ade5a10dc46ece0df41c234609f2990",
+      "sha256_after": "84222b60cc7dcde0677850f579a43f478ade5a10dc46ece0df41c234609f2990"
+    },
+    {
+      "path": "reports/P96_ROOT_PRE_DATA_CODE_ADDENDUM.md",
+      "sha256": "2e15170c8cd3bbb666255d7ca6beb01a6ab8c833467dfa219edcbe2bb78e9675",
+      "sha256_after": "2e15170c8cd3bbb666255d7ca6beb01a6ab8c833467dfa219edcbe2bb78e9675"
+    },
+    {
+      "path": "reports/P96_validation_review/predata_metadata_v2.json",
+      "sha256": "b6dc569c2b687afd05c89f22ae6e7cb0740cd0aff5ed34f3f1a594904e135524",
+      "sha256_after": "b6dc569c2b687afd05c89f22ae6e7cb0740cd0aff5ed34f3f1a594904e135524"
+    },
+    {
+      "path": "reports/P96_ROOT_QUALIFICATION_AUTHORIZATION.md",
+      "sha256": "c53830e63af5da4cd854c4aea553d140d60a697fba870bfbc8144851595904c2",
+      "sha256_after": "c53830e63af5da4cd854c4aea553d140d60a697fba870bfbc8144851595904c2"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/manifest.json",
+      "sha256": "73a5236a8b00e92244b3990c9a67b4aa2fe43325dcd576cb4cd7d784427a455f",
+      "sha256_after": "73a5236a8b00e92244b3990c9a67b4aa2fe43325dcd576cb4cd7d784427a455f"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/stdout.txt",
+      "sha256": "bf33e9a030ea23efc7ace785a81ef7a06c366ca04c19c2b9d73ce32857d469c8",
+      "sha256_after": "bf33e9a030ea23efc7ace785a81ef7a06c366ca04c19c2b9d73ce32857d469c8"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/junit.xml",
+      "sha256": "c6d83e89931531f28ce9f123b8834fa56a75bb99790958f25c470e5947a37621",
+      "sha256_after": "c6d83e89931531f28ce9f123b8834fa56a75bb99790958f25c470e5947a37621"
+    },
+    {
+      "path": "research/P96_PURE_QUALIFICATION_RECEIPT.md",
+      "sha256": "5cabc5a95af351841d06db59e3911509ba99b6edf52dfdc2251925e6315644a1",
+      "sha256_after": "5cabc5a95af351841d06db59e3911509ba99b6edf52dfdc2251925e6315644a1"
+    },
+    {
+      "path": "reports/P96_validation_review/qualification_inspection.json",
+      "sha256": "73441c80dcdebdfeb0e006b3ebdcf2c17dbc7eb02bb3cf7c8afcb55bc94dfc02",
+      "sha256_after": "73441c80dcdebdfeb0e006b3ebdcf2c17dbc7eb02bb3cf7c8afcb55bc94dfc02"
+    },
+    {
+      "path": "reports/P96_ROOT_FULL_SUITE_AUTHORIZATION.md",
+      "sha256": "956b3ba714d8f94f6627c6c4e905fac891e71827fea0cda8f2ad6598061d1cb6",
+      "sha256_after": "956b3ba714d8f94f6627c6c4e905fac891e71827fea0cda8f2ad6598061d1cb6"
+    },
+    {
+      "path": "reports/P96_ROOT_FULL_SUITE_CORRECTION.md",
+      "sha256": "d2488dcfca5fdb7ecc7a1119aeb5fded2dff4be174eade2cf9688249ac3adf13",
+      "sha256_after": "d2488dcfca5fdb7ecc7a1119aeb5fded2dff4be174eade2cf9688249ac3adf13"
+    },
+    {
+      "path": "reports/P96_validation_review/full_suite_first_failure.json",
+      "sha256": "1bdb079e70cb0ed3fc21542811fb3012c99851619bef158201fee49ac6e9614f",
+      "sha256_after": "1bdb079e70cb0ed3fc21542811fb3012c99851619bef158201fee49ac6e9614f"
+    },
+    {
+      "path": "reports/P96_validation_review/run_full_suite_v2.py",
+      "sha256": "0b13919c41c2042c9797045587d5faa91a34a323a16e1bc287f7307b7997c04a",
+      "sha256_after": "0b13919c41c2042c9797045587d5faa91a34a323a16e1bc287f7307b7997c04a"
+    },
+    {
+      "path": "reports/P96_validation_review/local_suite_run002/stdout.txt",
+      "sha256": "70eb545a1decce262ec4d87bc92b98190bcfbb1dfd7e9b74f0b9c86c2d2cdfef",
+      "sha256_after": "70eb545a1decce262ec4d87bc92b98190bcfbb1dfd7e9b74f0b9c86c2d2cdfef"
+    },
+    {
+      "path": "reports/P96_validation_review/local_suite_run002/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/P96_validation_review/local_suite_run002/execution.json",
+      "sha256": "2e7fa7c7ed29218fce8aca419bd45120b0e62d849263036d074930507794a63d",
+      "sha256_after": "2e7fa7c7ed29218fce8aca419bd45120b0e62d849263036d074930507794a63d"
+    },
+    {
+      "path": "research/P96_FULL_INTEGRATION_RECEIPT.md",
+      "sha256": "6abe406b2a2386403a1ac3a7c2eda36dfd9ebce305c98a715622e7839d1a9ac6",
+      "sha256_after": "6abe406b2a2386403a1ac3a7c2eda36dfd9ebce305c98a715622e7839d1a9ac6"
+    },
+    {
+      "path": "reports/P96_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "fd47b9cb230da6a879673bf361c908bc1e64bde2f9ca2b268a4de372a4b95324",
+      "sha256_after": "fd47b9cb230da6a879673bf361c908bc1e64bde2f9ca2b268a4de372a4b95324"
+    },
+    {
+      "path": "research/P96_column_loss_main_binding.json",
+      "sha256": "4925b92b60d4d941909788362f427d743507077175d78770c9ef1d8d96debab9",
+      "sha256_after": "4925b92b60d4d941909788362f427d743507077175d78770c9ef1d8d96debab9"
+    },
+    {
+      "path": "reports/P96_validation_review/main_binding_inspection.json",
+      "sha256": "183ceebba4230186c3a514f4be0d3742bf953348ad2e9947206cc66f87b21fc5",
+      "sha256_after": "183ceebba4230186c3a514f4be0d3742bf953348ad2e9947206cc66f87b21fc5"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/manifest.json",
+      "sha256": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d",
+      "sha256_after": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stderr.txt",
+      "sha256": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13",
+      "sha256_after": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/records.jsonl",
+      "sha256": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc",
+      "sha256_after": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/summary.json",
+      "sha256": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07",
+      "sha256_after": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/failure.json",
+      "sha256": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707",
+      "sha256_after": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707"
+    },
+    {
+      "path": "reports/P96_validation_review/audit_recorded.py",
+      "sha256": "460313744c7f46bffe625edd5652c7084e562af50a906f22cbeaf4f979483f93",
+      "sha256_after": "460313744c7f46bffe625edd5652c7084e562af50a906f22cbeaf4f979483f93"
+    },
+    {
+      "path": "reports/P96_validation_review/recorded_audit_contract.json",
+      "sha256": "6f13f854fc0e43f1e5fe7ecf8f150cf13c2f749208676b24031bce9f778a18c7",
+      "sha256_after": "6f13f854fc0e43f1e5fe7ecf8f150cf13c2f749208676b24031bce9f778a18c7"
+    }
+  ],
+  "output_directory": "reports/P96_validation_review/recorded_audit_run001",
+  "declared_results": [
+    "reports/P96_validation_review/recorded_audit_run001/data/inspection.json"
+  ],
+  "outputs": [
+    {
+      "path": "reports/P96_validation_review/recorded_audit_run001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "reports/P96_validation_review/recorded_audit_run001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "reports/P96_validation_review/recorded_audit_run001/data/inspection.json",
+      "sha256": "208c419880d9705cef49660a534b802f03c06328a4300edaf85c833ff363607a",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
