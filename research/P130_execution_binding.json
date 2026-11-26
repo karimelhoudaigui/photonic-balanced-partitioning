@@ -1,0 +1,348 @@
+{
+  "claim_id": "P130-EXACT-FEW-LOSS-IDENTITY-QUALIFICATION",
+  "target_manifest_schema_version": 2,
+  "contract_only": false,
+  "binding_state": "ROOT_AUTHORIZED",
+  "run_authorized": true,
+  "mathematics": {
+    "assertion_tested": "Independently evaluate P126 r0=2 finite identities against exact original P96 and P107 full signal laws:14 nonnegative rational contractions,39 sectors,327 top states,14 coarseFAIL values,59 moments and1468 principal determinants of L/I-L.",
+    "inputs": [
+      "P126 original194be199 source and accepted ROOTcheckpoint61da758; full-source/reference schema read as text only",
+      "Eleven nonnegative P96 catalog cases; H2/S3 excluded solely for signed input; X4 retained while preserving its legacy invalid-surrogate result",
+      "P107 three prescribed grid B laws at x=y=0,1/2,1; no producer helper import or polynomial reevaluation",
+      "Actual original six-blob descriptors for BOTH reference seals, including records/summary/failure and opaque manifest/stdout/stderr; ROOT verifies byte equality to original Git blobs before binding",
+      "Actual static source/population/TEMPLATE/AGENTS/locks/theory/checkpoint/source-schema/reference-metadata inputs below, plus optional frozen review metadata and active binding self-input"
+    ],
+    "coefficient_domain": "Exact rational Fraction for all matrix entries, subset-DP permanents, pivoted determinants, amplitudes, probabilities, moments and reference values; no binary floating scientific arithmetic, native package, FPRAS or sampling.",
+    "conventions": "Known CF K source, vacuum environment,r0=2; normalized output n! divisor; lost-source CF compression per(H_complements),no extra r!. ALL L/I-L principal minors including empty determinant1. q_P126 is not the old P96 degree-two surrogate. All zeros/negative signed environment values and mismatches retained.",
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "workers": 1,
+      "threads": 1,
+      "FSIZE_bytes": 4194304,
+      "scientific_combined_bytes": 4194304,
+      "final_results_bytes": 65536,
+      "log_bytes": 4194304,
+      "cases": 14,
+      "case_sectors": 39,
+      "full_reference_bins": 361,
+      "top_state_comparisons": 327,
+      "FAIL_comparisons": 14,
+      "principal_minor_rows": 1468,
+      "moment_rows": 59,
+      "algebra_hands": 4,
+      "records_nominal": 2328,
+      "permanent_size_max": 4,
+      "determinant_size_max": 6,
+      "photons_max": 4,
+      "signal_modes_max": 4,
+      "failed_retries": 0,
+      "native_calls": 0,
+      "RNG_draws": 0,
+      "FPRAS_calls": 0
+    },
+    "non_claims": [
+      "No executed result at freeze",
+      "No approximate sampler/FPRAS implementation or general theorem validation from finite cases",
+      "No practical runtime, matched resource, optimizer, hardware, novelty, manuscript or QPU claim"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "reports/P126_ROOT_FEW_LOSS_CHECKPOINT.md",
+    "reports/P130_ROOT_CODE_REVIEW.md",
+    "reports/P130_ROOT_MAIN_AUTHORIZATION.md",
+    "reports/P130_validation_review/reference_blob_bindings.json",
+    "requirements-research-lock.txt",
+    "research/P107_symbolic_filter_main/run_001/data/failure.json",
+    "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+    "research/P107_symbolic_filter_main/run_001/data/summary.json",
+    "research/P107_symbolic_filter_main/run_001/manifest.json",
+    "research/P107_symbolic_filter_main/run_001/stderr.txt",
+    "research/P107_symbolic_filter_main/run_001/stdout.txt",
+    "research/P107_symbolic_filter_validation.py",
+    "research/P126_FEW_LOSS_POSITIVE_SAMPLER_ROUTE.md",
+    "research/P130_INDEPENDENT_FEW_LOSS_CODE_REVIEW.md",
+    "research/P130_contract_TEMPLATE.json",
+    "research/P130_few_loss_validation.py",
+    "research/P130_population.md",
+    "research/P96_column_loss_main/run_001/data/failure.json",
+    "research/P96_column_loss_main/run_001/data/records.jsonl",
+    "research/P96_column_loss_main/run_001/data/summary.json",
+    "research/P96_column_loss_main/run_001/manifest.json",
+    "research/P96_column_loss_main/run_001/stderr.txt",
+    "research/P96_column_loss_main/run_001/stdout.txt",
+    "research/P96_column_loss_validation.py",
+    "research/P130_execution_binding.json"
+  ],
+  "reference_seals": {
+    "P96": "240c7e5518fbcd69d8f22bbe5e8ead3c1bbbc9c1",
+    "P107": "99f2d98d93f13c7fc088218bfb06ff39af4c40e9"
+  },
+  "reference_roles": {
+    "P96": {
+      "records": "research/P96_column_loss_main/run_001/data/records.jsonl",
+      "summary": "research/P96_column_loss_main/run_001/data/summary.json",
+      "failure": "research/P96_column_loss_main/run_001/data/failure.json"
+    },
+    "P107": {
+      "records": "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+      "summary": "research/P107_symbolic_filter_main/run_001/data/summary.json",
+      "failure": "research/P107_symbolic_filter_main/run_001/data/failure.json"
+    }
+  },
+  "reference_suffixes": [
+    "manifest.json",
+    "stdout.txt",
+    "stderr.txt",
+    "data/records.jsonl",
+    "data/summary.json",
+    "data/failure.json"
+  ],
+  "future_active_binding": "research/P130_execution_binding.json",
+  "binding_schema": "ROOT creates a DISTINCT active v2 binding with ROOT_AUTHORIZED/run_authorized=true,source_sha256,actual artifacts[path,sha256,bytes],artifacts_reference EXACT12 descriptor copies also in artifacts,exact reference_seals/reference_roles. execution_artifacts is every unique actual descriptor plus binding itself,without selfhash. Extra frozen research/reports MD or JSON review metadata may be bound. Original source/static bytes remain unchanged; no authorization inherited from TEMPLATE.",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "None; fixed exact enumerations",
+    "seed": null
+  },
+  "planned_inherited_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P130_few_loss_validation.py",
+    "--binding",
+    "research/P130_execution_binding.json"
+  ],
+  "runner_output_directory": "research/P130_few_loss_main/run_001",
+  "declared_results": [
+    "research/P130_few_loss_main/run_001/data/records.jsonl",
+    "research/P130_few_loss_main/run_001/data/summary.json",
+    "research/P130_few_loss_main/run_001/data/failure.json"
+  ],
+  "runner_binding": {
+    "fresh_parent_required": true,
+    "timeout": 90,
+    "max_cpu_seconds": 60,
+    "max_threads": 1,
+    "max_output_bytes": 4194304,
+    "max_memory_bytes": null,
+    "max_cores": null
+  },
+  "resource_note": "Source enforces CPU/FSIZE and scientific aggregate4MiB with64KiB final reserve; final summary/failure jointly<=64KiB. ROOT separately enforces wall/logs, full parent freshness, exact original reference blobs and manifest/exit/artifact completeness; no RSS/affinity claim.",
+  "authorization": "ONE run under reports/P130_ROOT_MAIN_AUTHORIZATION.md; original template unchanged, no retry.",
+  "optimizer_advantage": false,
+  "source_sha256": "d31ef94833837bb1f8131453a26a8e97d23878bfc5310fa5e761473d15ee1548",
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "bytes": 1154
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "bytes": 1072
+    },
+    {
+      "path": "reports/P126_ROOT_FEW_LOSS_CHECKPOINT.md",
+      "sha256": "fbad470a16a9a115009099b1a2c5f077e29f29d90b920a580e696c12a954f109",
+      "bytes": 2849
+    },
+    {
+      "path": "reports/P130_ROOT_CODE_REVIEW.md",
+      "sha256": "d97b9f46909e8b20fb41642414ab8861180243f38d28b609ed3ce159c40d9da9",
+      "bytes": 3560
+    },
+    {
+      "path": "reports/P130_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "9026ad84f69b2dc23b016b510ef65cdfb95e2269b41b15aa7a22a70d8eded263",
+      "bytes": 2133
+    },
+    {
+      "path": "reports/P130_validation_review/reference_blob_bindings.json",
+      "sha256": "87297e014aa2e89a08fef2e9e8c1f6b4dfcfdfa77bc6933fa4e9521140bc0ba4",
+      "bytes": 4644
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "bytes": 633
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "bytes": 5
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+      "sha256": "b28ca55e337201240da88149d24ebabb8a5174481bd2821448e34c7f9d57b7b6",
+      "bytes": 1476889
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/summary.json",
+      "sha256": "04722bf8236d6ea949f3bb4df41b805a3e8c7c9cb43d43b3a0e871192508ee77",
+      "bytes": 638
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/manifest.json",
+      "sha256": "eac9d7a9587a9ee13d4bcb1bb3150541449d99fa34a39484da05313e6972d605",
+      "bytes": 11129
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P107_symbolic_filter_validation.py",
+      "sha256": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc",
+      "bytes": 20997
+    },
+    {
+      "path": "research/P126_FEW_LOSS_POSITIVE_SAMPLER_ROUTE.md",
+      "sha256": "7dd13002498e0e582be85e7a7b8636cdac97425409b964cb1db10b70720f4736",
+      "bytes": 12548
+    },
+    {
+      "path": "research/P130_INDEPENDENT_FEW_LOSS_CODE_REVIEW.md",
+      "sha256": "53ab0bae53b229cd52971118d1effc80af58d0b729c6a2ba56413e0d2cde8bbe",
+      "bytes": 9774
+    },
+    {
+      "path": "research/P130_contract_TEMPLATE.json",
+      "sha256": "0884e794de5a5808dc15f1d98500c450dd24245206bc70780d7b62fed2fa86e2",
+      "bytes": 5887
+    },
+    {
+      "path": "research/P130_few_loss_validation.py",
+      "sha256": "d31ef94833837bb1f8131453a26a8e97d23878bfc5310fa5e761473d15ee1548",
+      "bytes": 20503
+    },
+    {
+      "path": "research/P130_population.md",
+      "sha256": "59d78121c1b44ef57628dc46d488d27394c849e9b407f13bb3a3a70344d3b0e4",
+      "bytes": 4813
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/failure.json",
+      "sha256": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707",
+      "bytes": 25
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/records.jsonl",
+      "sha256": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc",
+      "bytes": 190476
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/summary.json",
+      "sha256": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07",
+      "bytes": 10321
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/manifest.json",
+      "sha256": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d",
+      "bytes": 18052
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stderr.txt",
+      "sha256": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13",
+      "bytes": 2445
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P96_column_loss_validation.py",
+      "sha256": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223",
+      "bytes": 19219
+    }
+  ],
+  "artifacts_reference": [
+    {
+      "path": "research/P96_column_loss_main/run_001/manifest.json",
+      "sha256": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d",
+      "bytes": 18052
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stderr.txt",
+      "sha256": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13",
+      "bytes": 2445
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/records.jsonl",
+      "sha256": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc",
+      "bytes": 190476
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/summary.json",
+      "sha256": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07",
+      "bytes": 10321
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/failure.json",
+      "sha256": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707",
+      "bytes": 25
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/manifest.json",
+      "sha256": "eac9d7a9587a9ee13d4bcb1bb3150541449d99fa34a39484da05313e6972d605",
+      "bytes": 11129
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+      "sha256": "b28ca55e337201240da88149d24ebabb8a5174481bd2821448e34c7f9d57b7b6",
+      "bytes": 1476889
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/summary.json",
+      "sha256": "04722bf8236d6ea949f3bb4df41b805a3e8c7c9cb43d43b3a0e871192508ee77",
+      "bytes": 638
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "bytes": 5
+    }
+  ],
+  "frozen_code_commit": "5527fa8695101b712a1902031cd78b0efddec093",
+  "peer_review_commit": "c8b99b374ce20cc1f6f16c700c07de5dbdfb9899"
+}
