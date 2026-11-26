@@ -39,8 +39,8 @@ Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
 GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
 run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
 
-Numerical worker reserved to P62 for ONE P82a PRIMARY MAIN after accepted
-qualification and predata checker freeze. P87 is ACCEPTED after full ROOT168+peer308+exact344
+Numerical worker reserved to P63 for ONE checker synthetic qualification;
+primary main has finished and released its slot. P87 is ACCEPTED after full ROOT168+peer308+exact344
 reads, sources6436860/17ba1d4 and auditb77c8c0. Its sharp fixed-N oracle
 limitR/2 matches identity; this is not a generic sampling-optimizer no-go.
 P82 eta0 decoded null is also accepted with exact independent153e807,
@@ -68,17 +68,25 @@ No DEV graph/PCG/8phsample/P43/P50actual call. Checkpoint:
 reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md. Source+qualraw/receipt now
 integratedROOT. CIhead9ba543c is observedGREEN:1214PASS19.57s in actual
 job logs, run45734622442/job139624733249;602historicalfilesunchanged.
-Main96B/768 modeled photons now separately AUTHORIZED in clean producer
-39b61bb9, exact15inputs/8results/CPU60wall90/native+env1/0retry. ROOTgate:
-reports/P82a_ROOT_MAIN_AUTHORIZATION.md. Raw commitBEFOREinterpretation,
-separate receipt; no result claimed until observed/independently audited.
+Main96B/768 modeled photons finished once in clean producer39b61bb9.
+RAW561410b3 sealedBEFOREinterpretation (ROOTdebd823),11outputs9247l,
+runnercompleted29.354166s/exit0/no missingresults/v2validalsoROOT.
+PROVISIONAL summaryINCONCLUSIVE_FAST_ELIGIBILITY: Bbest46/22; EACH
+FAST_RANDOM/SPECTRAL matches46/22 at timelyCPU+WALL prefixes, but all4
+hit10kguard early soeligiblefalse. No strictfixedwinner; Tier2/Dspecies
+explicitNOT_RUN. No positive, formalveto or rerun/guardretune claimed.
+ROOT read compact status/control/case fields and logs; first oversized
+summary rendering was truncated and doesNOTcountasfullsummaryread.
+Separate producerreceipt pending; independentstoreddata audit pending.
 
 Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
 data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old
 clock blockers are discharged above. CheckerCODE ONLY now frozen34c95130,
-sixfiles1638l/sourceSHAf595fcae, corrected94f80b94 schema. ROOT read191
-MD/spec/template lines; P66 performs full STATIC review without Bdata.
-Checkerqual/auditmain remain separately unauthorized.
+sixfiles1638l/sourceSHAf595fcae, corrected94f80b94 schema. ROOT FULLREAD
+1638l; exactreviewaa544082/ccdfde10144l FULLREAD, no blocker. P63nowhas
+ONEcheckerqual auth21synthetic/11localinputs/CPU30wall60/env1/0retry,
+rawsealBEFOREinterpretation+separatereceipt. Author/reviewer stillblindto
+Bdata throughthisqualification. Datasetbinding/auditmainNOTAUTHORIZED.
 DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
 Compilation-before-R is source-bound, not a separately timed raw endpoint;
 custom control audit covers cuts/cache lineage/clocks, not policy replay.
