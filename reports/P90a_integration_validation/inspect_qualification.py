@@ -15,6 +15,10 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def exact_integer(value, expected):
+    assert type(value) is int and value == expected
+
+
 def add(a, b):
     return a[0]+b[0], a[1]+b[1]
 
@@ -82,13 +86,29 @@ def inspect(root, raw_seal):
     manifest = json.loads((run/"manifest.json").read_text())
     contract = json.loads((root/"research/P90a_preflight_contract.json").read_text())
     spec = json.loads((root/"research/P90a_execution_spec.json").read_text())
+    exact_integer(manifest["schema_version"], 2)
+    assert manifest["claim_id"] == contract["claim_id"]
     assert manifest["repository"] == {"commit": "82d7b63d35f2f0495df6ed9c0d86999b649c44ff", "dirty": False}
     assert manifest["run"]["status"] == "completed" and manifest["run"]["exit_status"] == 0
     assert not manifest["run"]["missing_results"] and not manifest["run"]["invalid_results"]
     assert all(row["passed"] for row in manifest["checks"])
     assert manifest["execution_artifacts"] == contract["execution_artifacts"]
     assert manifest["command"] == contract["planned_command"]
+    limits = manifest["run"]["resource_limits"]
+    timeout = manifest["run"]["timeout_seconds"]
+    assert type(timeout) in (int, float) and math.isfinite(timeout) and timeout == 90
+    exact_integer(manifest["run"]["max_output_bytes"], 4194304)
+    exact_integer(limits["cpu_seconds"], 60)
+    exact_integer(limits["max_threads"], 1)
+    assert limits["memory_bytes"] is None and limits["max_cores"] is None
+    assert manifest["output_directory"] == str(run.relative_to(root))
+    assert manifest["declared_results"] == contract["declared_results"] == [str((run/"junit.xml").relative_to(root))]
     assert len(manifest["input_artifacts"]) == 18
+    input_paths = [row["path"] for row in manifest["input_artifacts"]]
+    assert len(set(input_paths)) == 18 and set(input_paths) == set(contract["execution_artifacts"])
+    output_paths = [row["path"] for row in manifest["outputs"]]
+    assert len(output_paths) == 3 and set(output_paths) == {
+        str((run/name).relative_to(root)) for name in ("stdout.txt", "stderr.txt", "junit.xml")}
     for row in manifest["input_artifacts"]:
         assert sha(root/row["path"]) == row["sha256"] == row["sha256_after"]
     paths = [row["path"] for row in manifest["outputs"]]+[str((run/"manifest.json").relative_to(root))]
@@ -108,6 +128,8 @@ def inspect(root, raw_seal):
     assert [row.attrib["name"] for row in cases] == declared
     observations, probability_errors, amplitude_errors, zero_count, native_zero_count = [], [], [], 0, 0
     first_provenance = None
+    expected_environment = {name: "1" for name in spec["thread_environment"]}
+    assert len(expected_environment) == 6
     for case in cases:
         props = {p.attrib["name"]: p.attrib["value"] for p in case.findall("./properties/property")}
         if "p90a_native_observation" not in props:
@@ -117,15 +139,18 @@ def inspect(root, raw_seal):
         assert Fraction(row["expected_probability_exact"]) == expected
         amplitude = complex(*row["amplitude"])
         assert all(math.isfinite(v) for v in (amplitude.real, amplitude.imag, row["probability"]))
-        assert row["error_repr"] is None and row["native_calls_planned"] == 1
+        assert row["error_repr"] is None
+        exact_integer(row["native_calls_planned"], 1)
         assert abs(complex(*row["expected_amplitude"])-expected_amplitude) <= 2e-12
         assert row["probability"] == abs(amplitude)**2
         probability_errors.append(abs(row["probability"]-float(expected)))
         amplitude_errors.append(abs(amplitude-expected_amplitude))
         assert probability_errors[-1] <= 2e-12 and amplitude_errors[-1] <= 2e-12
         assert row["abs_tolerance"] == 2e-12 and row["relative_tolerance"] == 0
-        assert row["native_configured"] == row["native_after_imports"] == row["native_after"] == 1
-        assert set(row["environment_after"].values()) == {"1"}
+        for field in ("native_configured", "native_after_imports", "native_after"):
+            exact_integer(row[field], 1)
+        for field in ("environment_before", "environment_configured", "environment_after"):
+            assert row[field] == expected_environment
         assert row["provenance"]["versions"] == {key: value for key, value in spec["software"].items()
                                                    if key not in ("Python", "networkx")}
         assert row["provenance"]["spec_sha256"] == sha(root/"research/P90a_execution_spec.json")
@@ -155,7 +180,8 @@ def inspect(root, raw_seal):
     assert len(teardown) == 1
     final = json.loads(teardown[0].attrib["value"])
     assert final["native_readback"] == {"value": 1, "error_repr": None}
-    assert set(final["environment"].values()) == {"1"} and final["setup_error_repr"] is None
+    exact_integer(final["native_readback"]["value"], 1)
+    assert final["environment"] == expected_environment and final["setup_error_repr"] is None
     return {"status": "PASS", "inspector_sha256": sha(__file__), "raw_seal_commit": raw_seal,
         "manifest_sha256": sha(run/"manifest.json"), "JUnit_sha256": sha(run/"junit.xml"),
         "passed_items": 283, "independently_recomputed_amplitudes_and_probabilities": 254,
