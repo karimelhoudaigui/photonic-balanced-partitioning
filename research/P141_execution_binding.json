@@ -1,0 +1,334 @@
+{
+  "claim_id": "P141-FINITE-MAGNETIC-INCUMBENT-SCREEN",
+  "target_manifest_schema_version": 2,
+  "contract_only": false,
+  "binding_state": "ROOT_AUTHORIZED",
+  "run_authorized": true,
+  "mathematics": {
+    "assertion_tested": "Two fixed fresh DEV n24 graphs, r8/k4 incumbent-null rational magnetic reflection; all34 grid+2 hand contexts, all70 signal-CF subsets and15 source profiles, 14 independently grid-retuned proper controls; exact raw CF/collision/dump; auxiliary signed C4 at two bestB only; one prescribed complete1365-bin normalization. Derived P134 engine, not independent replication.",
+    "inputs": [
+      "Frozen142-line P141 card deb8d9ae and ROOT CODE ONLY authorization586b80a, original P138/P133, unchanged frozen P134 source",
+      "Fresh DEV topology seeds1411001/1411002, weight MT1412001/1412002, mark MT1413001/1413002; no pre-execution preview",
+      "Grid0 shared kappa0, then alpha outer0/1, rho middle1/i, kappa inner1/2,1,2,4; first-index ties",
+      "Actual12 STATIC source/docs/environment project descriptors, optional frozen review metadata and separate active binding; exact11 current external roles; zero prior raw inputs"
+    ],
+    "coefficient_domain": "Exact Q(i) with two Fraction coordinates for F/frameGram/Q. Context D is LCM of T/U denominators ONLY. Store D*T,D*U,D*dump,D^2*G as Gaussian integer decimal-string pairs; amplitudes have denominator D^l, Gram permanents D^(2l), CF/profile/C4 D^8; fullPNR retains additional occupation factorial. Independent DP/Ryser and convolution/color-buckets operate on integer numerators with exact signed delta=first-second. No float optical arithmetic, NumPy/SciPy/Perceval or producer imports. Pinned NetworkX topology uses its ordinary literal0.4 convention.",
+    "conventions": "Four CF photons LAST4 of12 ports; 8signal+4dump. F=(I+i*kappa*H)E, H Hermitian row-normalized full-graph direct/two-hop magnetic encoding, E embeds currentR. T=2FQ,Ddump=(I-FdaggerF)Q; columns[T;-Ddump]. Shared null is lossless currentR with hR=0 for ALL profiles. All70 balanced lifts/full frontier and preprocessing credited to every control; imbalanced S0/singletons only helpers. ANYdump PNR classification first. All failed raw records hold current; no CF/survival normalization.",
+    "bounds": {
+      "CPU_seconds": 180,
+      "wall_seconds": 240,
+      "workers": 1,
+      "threads": 1,
+      "FSIZE_bytes": 50331648,
+      "scientific_combined_bytes": 50331648,
+      "record_bytes": 49283072,
+      "final_results_combined_bytes": 1048576,
+      "log_bytes": 4194304,
+      "science_plus_log_bytes": 54525952,
+      "runner_metadata_allowance_bytes": 1048576,
+      "logical_memory_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "failed_retries": 0,
+      "graph_contexts": 2,
+      "used_MT_streams": 6,
+      "grid_points_per_graph": 17,
+      "matrix_contexts": 36,
+      "source_profiles": 15,
+      "proper_profiles": 14,
+      "receiver_CF_sets": 70,
+      "record_rows_nominal": 58443,
+      "subpermanent_rows": 17820,
+      "Gram_permanent_rows": 540,
+      "CF_profile_comparisons": 37800,
+      "selected_four_cycle_rows": 140,
+      "profile_totals": 540,
+      "full_PNR_points": 1365,
+      "whole_cut_calls": 160,
+      "incremental_cost_formulas": 140,
+      "field_checks": 16,
+      "two_hop_pair_sums": 56,
+      "two_hop_products": 1344,
+      "registered_tasks": 45,
+      "context_D_less_than_power2": 124,
+      "permanent_max_size": 4,
+      "inverse_max_size": 4,
+      "photon_max": 4,
+      "full_modes": 12,
+      "photon_RNG_draws": 0,
+      "native_calls": 0,
+      "FPRAS_calls": 0
+    },
+    "non_claims": [
+      "No execution authorized by this inactive TEMPLATE or code-only document",
+      "No optimizer advantage: complete70-state frontier already paid/credited",
+      "No continuously reoptimized group dominance, full-family obstruction, relabeling robustness, held-out or independently replicated result",
+      "No independent native validation, actual loss/PNR/feedforward/calibration certificate, practical timing or novelty/QPU/manuscript claim",
+      "Auxiliary selected C4/J4 sign is not a causal graph-utility certificate"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P141_finite_magnetic_screen.py",
+    "research/P141_POPULATION.md",
+    "research/P141_contract_TEMPLATE.json",
+    "research/P133_RATIONAL_RECEIVER_REFLECTION.md",
+    "research/P134_rational_frame_discriminator.py",
+    "research/P138_INCUMBENT_MAGNETIC_RECEIVER_ROUTE.md",
+    "research/P141_FINITE_MAGNETIC_SCREEN_CARD.md",
+    "research/P141_INDEPENDENT_CARD_REVIEW.md",
+    "reports/P141_ROOT_CODE_ONLY_AUTHORIZATION.md",
+    "reports/P141_ROOT_CODE_REVIEW.md",
+    "research/P141_INDEPENDENT_FROZEN_CODE_REVIEW.md",
+    "reports/P141_ROOT_MAIN_AUTHORIZATION.md",
+    "reports/P141_validation_review/external_pins.json",
+    "research/P141_execution_binding.json"
+  ],
+  "future_active_binding": "research/P141_execution_binding.json",
+  "external_artifact_roles": [
+    "python_binary",
+    "pyvenv_cfg",
+    "random_py",
+    "random_native",
+    "nx_metadata",
+    "nx_init",
+    "nx_random_graphs",
+    "nx_graph",
+    "nx_decorators",
+    "nx_misc",
+    "nx_backends"
+  ],
+  "binding_schema": "Distinct ROOT_AUTHORIZED/run_authorized=true active binding supplies source_sha256,artifacts[path,sha256,bytes],external_artifacts[role,path,sha256,bytes],execution_artifacts. Exactly11 distinct canonical physical external paths/roles; current SHA/bytes checked before explicit scientific imports. All12 STATIC inputs plus optional frozen research/reports MD/JSON notes; execution_artifacts exactly every local descriptor plus binding, no binding selfhash. Original six pinned source/design/review/authority hashes checked, binding and all artifacts rehashed after completion. ROOT owns fresh entire run parent and manifest-v2 closure including its distinct actual execution contract. No authority inherited.",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "CPython random.Random MT19937 through pinned NetworkX3.6.1 core factories; backend=networkx and empty effective algos/generators/classes priorities",
+    "seed": {
+      "topology": [
+        1411001,
+        1411002
+      ],
+      "weights": [
+        1412001,
+        1412002
+      ],
+      "marks": [
+        1413001,
+        1413002
+      ]
+    },
+    "graph_only": true,
+    "photon_RNG_draws": 0,
+    "native_draws": 0
+  },
+  "planned_inherited_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "NETWORKX_BACKEND_PRIORITY": "",
+    "NETWORKX_BACKEND_PRIORITY_ALGOS": "",
+    "NETWORKX_BACKEND_PRIORITY_GENERATORS": "",
+    "NETWORKX_BACKEND_PRIORITY_CLASSES": "",
+    "NETWORKX_AUTOMATIC_BACKENDS": ""
+  },
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P141_finite_magnetic_screen.py",
+    "--binding",
+    "research/P141_execution_binding.json"
+  ],
+  "runner_output_directory": "research/P141_finite_magnetic_main/run_001",
+  "declared_results": [
+    "research/P141_finite_magnetic_main/run_001/data/records.jsonl",
+    "research/P141_finite_magnetic_main/run_001/data/summary.json",
+    "research/P141_finite_magnetic_main/run_001/data/failure.json"
+  ],
+  "runner_binding": {
+    "fresh_parent_required": true,
+    "timeout": 240,
+    "max_cpu_seconds": 180,
+    "max_threads": 1,
+    "max_output_bytes": 4194304,
+    "max_memory_bytes": null,
+    "max_cores": null
+  },
+  "allowed_signal_statuses": [
+    "NOT_ACCEPTED_ENGINE_FAILURE",
+    "NO_SIGNAL",
+    "FOLLOWUP"
+  ],
+  "engine_statuses": [
+    "INCONCLUSIVE_FIRST_FAILURE",
+    "EXACT_GRID_ENGINE_PASS"
+  ],
+  "resource_note": "CPU/FSIZE and aggregate47MiB-record+joint1MiB-final caps in source; outer wall240/log4MiB/fresh-parent/manifest/raw-before-reading are ROOT-owned. Runner metadata separate from science/logs, 1MiB allowance for free-space check only. Logical256MiB is not hardRSS/AS/affinity. Hard kills may leave incomplete prefixes; no rescue/retry/precision/seed change or passing prefix.",
+  "authorization": "ONE local child authorized by committed reports/P141_ROOT_MAIN_AUTHORIZATION.md after full ROOT and non-author frozen-source reviews; original seeds/caps/population unchanged; zero retries; raw sealing before interpretation; no QPU or paper authority.",
+  "positive_accepted": false,
+  "optimizer_advantage": false,
+  "source_sha256": "8e70d23519d95db529374a960a1ffcaeb9f68e6ac28e73a3e00e36f2e4a54e4b",
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "bytes": 1154
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "bytes": 1072
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "bytes": 633
+    },
+    {
+      "path": "research/P141_finite_magnetic_screen.py",
+      "sha256": "8e70d23519d95db529374a960a1ffcaeb9f68e6ac28e73a3e00e36f2e4a54e4b",
+      "bytes": 41499
+    },
+    {
+      "path": "research/P141_POPULATION.md",
+      "sha256": "57ba5a6e088ca351b39063a9e28efd6b385411c56ae4365c7f1b4258a656d100",
+      "bytes": 9695
+    },
+    {
+      "path": "research/P141_contract_TEMPLATE.json",
+      "sha256": "5f0045043dd603cba5ba43062df6feb96184d490e0557f7c626ce2f3ed11f3bb",
+      "bytes": 7469
+    },
+    {
+      "path": "research/P133_RATIONAL_RECEIVER_REFLECTION.md",
+      "sha256": "56720652d4dbf7c2053ff5599fcfa1bbb1f88e632a3256ee8b9ece5c9735c98d",
+      "bytes": 5300
+    },
+    {
+      "path": "research/P134_rational_frame_discriminator.py",
+      "sha256": "0f9dce56cecac9d7701953577adce1d5bf0c6cc2807083eca45c3ba47f1856f3",
+      "bytes": 34099
+    },
+    {
+      "path": "research/P138_INCUMBENT_MAGNETIC_RECEIVER_ROUTE.md",
+      "sha256": "b40d8491906aa772e0662b22dcc97d60d1439df06b8ec1bd8b79fcd43acc7460",
+      "bytes": 8247
+    },
+    {
+      "path": "research/P141_FINITE_MAGNETIC_SCREEN_CARD.md",
+      "sha256": "4daa33822164d1298202b5a15e0dd86a5ec68abc626606f5a292fa62936033cd",
+      "bytes": 9061
+    },
+    {
+      "path": "research/P141_INDEPENDENT_CARD_REVIEW.md",
+      "sha256": "1a1750d4b26d48c6c4464a51cd8982158e88c181c04d483e471ef5846bf3957d",
+      "bytes": 6841
+    },
+    {
+      "path": "reports/P141_ROOT_CODE_ONLY_AUTHORIZATION.md",
+      "sha256": "82a57ccb6062c3a0b280c6fa858ff5d0c4a4325af27364d996b93330faca8274",
+      "bytes": 3936
+    },
+    {
+      "path": "reports/P141_ROOT_CODE_REVIEW.md",
+      "sha256": "cfc53c6ea106458aa623c788c84fea2e73967155b15ec59b4086ba6fe38f96a7",
+      "bytes": 5000
+    },
+    {
+      "path": "research/P141_INDEPENDENT_FROZEN_CODE_REVIEW.md",
+      "sha256": "bbcfdce9d17ccb0f142278a62adbb2001ae7a2a04bf28125d077a9fdbe4683e1",
+      "bytes": 8908
+    },
+    {
+      "path": "reports/P141_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "f3fb57ca6707cebed41560fe1c1d9d09ea4033b88559cfb791694254227c140e",
+      "bytes": 3011
+    },
+    {
+      "path": "reports/P141_validation_review/external_pins.json",
+      "sha256": "4b4c463639fd84ee2c2af4220ff3a6607b64c967945dc6950b2b2fab7ed5c203",
+      "bytes": 3629
+    }
+  ],
+  "external_artifacts": [
+    {
+      "role": "python_binary",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "sha256": "831807be3d255aae0708810462ce0cde2467235f7daaa86e93d0ddc58b1a4101",
+      "bytes": 52448
+    },
+    {
+      "role": "pyvenv_cfg",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/pyvenv.cfg",
+      "sha256": "0b8b1221cc5276cffcdf62b9ad222d1939da2d3b90c626712a9dbcaad94617cf",
+      "bytes": 315
+    },
+    {
+      "role": "random_py",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/random.py",
+      "sha256": "b931a2d452db89ab9e1f79d59b66ce194dbd6748049cfe44699726da52b9c956",
+      "bytes": 32162
+    },
+    {
+      "role": "random_native",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload/_random.cpython-311-darwin.so",
+      "sha256": "350743784269c4329d85299af549a75534a8d26951fe043b4386a8102389d3fb",
+      "bytes": 53808
+    },
+    {
+      "role": "nx_metadata",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx-3.6.1.dist-info/METADATA",
+      "sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+      "bytes": 6783
+    },
+    {
+      "role": "nx_init",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/__init__.py",
+      "sha256": "39537c0bec78e0b81e25629c6fbeeff96c1f315ec462a89e69f92841d9409791",
+      "bytes": 1625
+    },
+    {
+      "role": "nx_random_graphs",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/generators/random_graphs.py",
+      "sha256": "588278bfc3d23691de3dc952090dc870b5b0722a592760a7f69371e977a7044a",
+      "bytes": 51669
+    },
+    {
+      "role": "nx_graph",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/classes/graph.py",
+      "sha256": "6d8e71ed6407a10c52668c3de4e500994f1465a615d19590be1ac4163480b746",
+      "bytes": 72337
+    },
+    {
+      "role": "nx_decorators",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/utils/decorators.py",
+      "sha256": "ad1800670ea097138160dea7e6491b43b452e37107dde55b27917dd7eba4d083",
+      "bytes": 44713
+    },
+    {
+      "role": "nx_misc",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/utils/misc.py",
+      "sha256": "ce27c1c7028cde6b10b26315839bc0303a3ce193c1c94ff212283454f4b489e9",
+      "bytes": 22844
+    },
+    {
+      "role": "nx_backends",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/utils/backends.py",
+      "sha256": "2035cd26305639f72a3e6dc09f2e7e91fc14f616531f7dd1d7a82bdef67ac271",
+      "bytes": 96862
+    }
+  ]
+}
