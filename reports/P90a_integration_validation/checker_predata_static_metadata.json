@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "producer_commit": "944f9bc7fadea36ff17373b29ca2c5369ccb5267",
+  "project_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P90a_independent_raw_audit.py",
+      "sha256": "609959307bbddfb08ac70b71e714e81df962c2c0d615b56aed20a970cf46a62a"
+    },
+    {
+      "path": "tests/test_p90a_independent_raw_audit.py",
+      "sha256": "dcc2a352a004885fa12fd5740552ba103f4f6bb9f3ead76491bdacefab1a0cfd"
+    },
+    {
+      "path": "research/P90a_independent_audit_spec.json",
+      "sha256": "a80869d6a9638280c62130c85f367e99d6f0b30e407e8c4cd837d3a4cd5f6de2"
+    },
+    {
+      "path": "research/P90a_independent_audit_preflight_contract.json",
+      "sha256": "5896474eb0802b3a0ce5859d00d4a68712bbfec6c137c132c7e275ff86b64601"
+    },
+    {
+      "path": "research/P90a_independent_audit_main_TEMPLATE.json",
+      "sha256": "ae2ccdb3dfc080c6308be7b6f76681fda449b3ddef46c94f99f5d0e0f00abb66"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_AUDIT_BINDING.md",
+      "sha256": "bd639cb6f33448ca52530d60eacaa6d13839cc928bcf05d77ca69641c33f1bbc"
+    }
+  ],
+  "planned_unparameterized_functions": [
+    "test_scalar_integer_cuts_and_noncubic_weighted_graph",
+    "test_strict_types_do_not_accept_float_cuts_or_boolean_masks",
+    "test_mask_packing_padding_balance_canonical_complement",
+    "test_full_neighbor_order_keeps_duplicate_complements_and_first_tie",
+    "test_score_batch_independent_cuts_every_row_sequence_credit",
+    "test_missing_or_wrong_nonbest_batch_neighbor_is_detected",
+    "test_taylor40_zero_scalar_and_complex_hermitian_pauli",
+    "test_taylor_rejects_unbounded_normalized_matrix_and_bad_d",
+    "test_compiler_transpose_shared_normalizer_closed_two_by_two",
+    "test_compiler_wrong_sign_or_source_label_transport_fails",
+    "test_decode_collision_uniform_fill_and_full_source_identity",
+    "test_decode_loss_float_counts_and_bad_mapping_fail",
+    "test_typed_factory_residual_unknown_cpu_and_no_double_pay",
+    "test_paid_clock_scope_rejects_IO_and_overlap",
+    "test_control_gap_subtracts_reported_cpu_wall_without_clipping",
+    "test_all_trace_rows_checked_and_latest_dual_timely_not_cpu_only",
+    "test_late_wrong_trace_cut_is_still_audit_failure",
+    "test_trace_nonmonotone_or_static_checkpoint_bound_rejected",
+    "test_full_panel_requires_all_four_and_strict_comparisons",
+    "test_complete_scripted_tiny_case_all_score_credit_reset_Q_and_photons",
+    "test_scripted_case_wrong_current_or_lost_nonoptical_credit_rejected",
+    "test_partial_case_is_explicit_inconclusive_not_full_pass",
+    "test_exact_numeric_runner_wall_90_accepts_float_but_nothing_nearby",
+    "test_parser_rejects_duplicate_keys_nonfinite_truncated_or_oversized",
+    "test_project_path_rejects_absolute_parent_and_symlink",
+    "test_wrong_postseal_token_and_unbound_state_fail_before_any_replay",
+    "test_manifest_strict_result_child_and_exact_input_order",
+    "test_scripted_full_control_return_header_gap_trace_and_witness_lineage",
+    "test_first_failure_precedence_and_unreported_failure_never_become_panel_pass"
+  ],
+  "fresh_output_parents": true,
+  "main_static_input_paths": 25,
+  "scope": "Only stdlib file/JSON/regex/hash inspection; no source/test import/AST/collection/roles/RNG/DEV/native or numerical algorithm executed"
+}
