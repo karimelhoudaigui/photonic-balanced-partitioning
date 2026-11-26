@@ -1,0 +1,113 @@
+{
+  "method": "Nonexecuting text/JSON/stat/streamed SHA256 only; no source import, AST, collection, RNG, matrix construction or scientific evaluation",
+  "source_original_commit": "ac67650ceaa2bf7639ed72ef6fddb28a02067749",
+  "static_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "bytes": 1154
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "bytes": 1072
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "bytes": 633
+    },
+    {
+      "path": "research/P96_column_loss_validation.py",
+      "sha256": "3a9e92668bd573b8397a457eaa46923246c2d26a4a83685362a764f477291fe0",
+      "bytes": 17675
+    },
+    {
+      "path": "tests/test_p96_column_loss_validation.py",
+      "sha256": "148770d282d3365677d3748c5e250f8f96531051726aab23d633edf09e32c3b8",
+      "bytes": 4731
+    },
+    {
+      "path": "research/P96_column_loss_validation_contract.json",
+      "sha256": "2eb61afd03906e6eb022134680c973620a09b15e691196c8e8948150316d1845",
+      "bytes": 9627
+    },
+    {
+      "path": "research/P96_column_loss_validation_preflight_contract.json",
+      "sha256": "1aaa6119f65c565d8404b45f035aca912307df51f8f67099d88158902fd179b7",
+      "bytes": 4482
+    },
+    {
+      "path": "research/P96_VALIDATION_POPULATION.md",
+      "sha256": "efce85ea663c22a05fc9065e1d50e3cffed67a5e1632354921510ceeb6e008e2",
+      "bytes": 6787
+    }
+  ],
+  "external_pins_matched": [
+    {
+      "role": "naive_backend",
+      "module": "perceval.backends._naive",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_naive.py",
+      "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+    },
+    {
+      "role": "backend_conventions",
+      "module": "perceval.backends._abstract_backends",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_abstract_backends.py",
+      "sha256": "53f7c4db865c2e643b9ab461da0c71b2fbb9dc1a450ad917936ca0f4e25538f1"
+    },
+    {
+      "role": "native_extension",
+      "module": "exqalibur.exqalibur",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+      "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+    },
+    {
+      "role": "linalg_python",
+      "module": "numpy.linalg._linalg",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/numpy/linalg/_linalg.py",
+      "sha256": "e47d0e2aed21361291cd6651999a59e6479ba5866abb8eabb1dbea5b0d1618ac"
+    },
+    {
+      "role": "linalg_native",
+      "module": "numpy.linalg._umath_linalg",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/numpy/linalg/_umath_linalg.cpython-311-darwin.so",
+      "sha256": "baec46cf85c469c2a4ec12f05440b8b2e3e36d34531d9ee9cf113e6235f19de5"
+    },
+    {
+      "role": "array_native",
+      "module": "numpy._core._multiarray_umath",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so",
+      "sha256": "2a5f2e415c5e582109b015eafd0da1ce887b3e3006969369fe2e5e5b27720acd"
+    },
+    {
+      "role": "physical_interpreter",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "sha256": "831807be3d255aae0708810462ce0cde2467235f7daaa86e93d0ddc58b1a4101"
+    },
+    {
+      "role": "virtual_environment_metadata",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/pyvenv.cfg",
+      "sha256": "0b8b1221cc5276cffcdf62b9ad222d1939da2d3b90c626712a9dbcaad94617cf"
+    }
+  ],
+  "pure_test_names": [
+    "test_vacuum",
+    "test_unary_attenuation",
+    "test_scaled_hom_factorial_and_zero",
+    "test_nonorthogonal_two_input_hand_table",
+    "test_three_input_rank_one_hand_table",
+    "test_smaller_rank_one_independent_table",
+    "test_physical_outside_domain_is_preserved",
+    "test_boundary_rank_one_four_input_table",
+    "test_registered_population_counts_and_iterator"
+  ],
+  "planned_signal_bins": 167,
+  "planned_native_points": 159,
+  "planned_native_marginal_bins": 28,
+  "planned_counts_method": "hand reconstruction, not run",
+  "fresh_outputs": true,
+  "active_binding_exists": false,
+  "proof_sha256": "b378ebd6bb0bb6f981e9fe395938e3a43aec7775f761b81cda7b394f6dc1e94e",
+  "administrative_reader_correction": "An earlier metadata-only regex was overescaped and failed before creating any receipt. Corrected text scanner; no scientific import or run occurred."
+}
