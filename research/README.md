@@ -1,6 +1,6 @@
 # Recherche — points d'entrée
 
-État au 26 novembre 2026 : **l'avantage d'optimisation reproductible reste à démontrer**.
+État au 27 novembre 2026 : **l'avantage d'optimisation reproductible reste à démontrer**.
 Le manuscrit est conservé dans [paper/](../paper/README.md). Aucun résultat QPU
 réel n'est disponible. L'historique scientifique complet reste dans
 [RESEARCH_LOG.md](../RESEARCH_LOG.md) ; les décisions actuelles sont dans
@@ -8,7 +8,8 @@ réel n'est disponible. L'historique scientifique complet reste dans
 
 | À consulter | Documents |
 | --- | --- |
-| Dernier essai : P141, absence de supériorité sur le meilleur contrôle de la grille | [Compte rendu](P141_FINITE_MAGNETIC_RECEIPT.md), [protocole](P141_FINITE_MAGNETIC_SCREEN_CARD.md), [données brutes](P141_finite_magnetic_main/run_001/) |
+| Dernière recherche : P145, propositions locales et interférence collective | **[Résultats, preuves et reproduction](P145_RESEARCH_RECEIPT.md)** ; [données exactes](P145_exact_fixture/run_001/), [pilote sur graphes](P145_declared_screen/run_001/) |
+| Essai précédent : P141, absence de supériorité sur le meilleur contrôle de la grille | [Compte rendu](P141_FINITE_MAGNETIC_RECEIPT.md), [protocole](P141_FINITE_MAGNETIC_SCREEN_CARD.md), [données brutes](P141_finite_magnetic_main/run_001/) |
 | P141 : contrôle des données enregistrées | [Relecture indépendante du lecteur corrigé](P141_RECORDED_READER_V2_INDEPENDENT_REVIEW.md), [sortie du contrôle](../reports/P141_validation_review/recorded_consistency_v2.json) ; le premier contrôle en échec est conservé à côté |
 | Bornes récentes, avec hypothèses et limites | [P137](../reports/P137_ROOT_WEAK_REFLECTION_CHECKPOINT.md), [P139](../reports/P139_ROOT_ANALYTIC_OBSTRUCTION_CHECKPOINT.md), [P143](../reports/P143_ROOT_FINITE_INSTRUMENT_CHECKPOINT.md) |
 | Dernier essai précédent : P134, absence de signal strict sur la grille | [Compte rendu](P134_RATIONAL_FRAME_RECEIPT.md) |

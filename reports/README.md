@@ -3,6 +3,7 @@
 | Besoin | Rapport |
 | --- | --- |
 | État scientifique courant | [Index de recherche](../research/README.md), [état détaillé](../research/P45_LIVE_STATE.md) |
+| P145 : interférence collective et voisinages locaux | [Compte rendu et données](../research/P145_RESEARCH_RECEIPT.md), [relecture des blocs enregistrés](../research/P145_RECORDED_SUPPORT_SCOPE_REVIEW.md) |
 | Dernier essai P141 et ses limites | [Compte rendu complet](../research/P141_FINITE_MAGNETIC_RECEIPT.md), [contrôle des données enregistrées](P141_validation_review/recorded_consistency_v2.json) |
 | Obstructions récentes et hypothèses exactes | [P137](P137_ROOT_WEAK_REFLECTION_CHECKPOINT.md), [P139](P139_ROOT_ANALYTIC_OBSTRUCTION_CHECKPOINT.md), [P143](P143_ROOT_FINITE_INSTRUMENT_CHECKPOINT.md) |
 | Article livré et relectures | [Évaluation scientifique](PUBLICATION_READINESS.md), [synthèse finale](manuscript_review_2026-11-24/v3/report.md) |

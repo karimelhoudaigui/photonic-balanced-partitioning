@@ -2020,3 +2020,40 @@ across-attempt algorithms. P144115l/three exact primary works plus ROOT spot
 checks establish known ingredients; composite priority stays UNVERIFIED.
 See ROOT checkpoints P142/P143 and source-scopeP144. No paper/main/QPU edit.
 CLAIM-042 and the reproducible-positive/full-cost/hardware objective remain OPEN.
+
+
+## P145 — collective local proposals tested; useful optimization remains open
+
+26–27-Nov-2026, base2fdf942. The five-primary-source audit authenticates the
+proposed MCMC, local-block and triad antecedents, including the20-Nov PRR
+acceptance; no broad framework novelty is claimed. An independently derived
+12-vertex strict one-swap trap gives I3=4p^3 and restricted B/D/pair maxima
+3/2/4000over3969, but a classical or monomial-D move gains9. ONE exact run
+0.076448s/exit0 checks280 rational coefficients/56bins/36swaps; raw575307e
+precedes interpretation. The147/186/188-line source chronology and actual
+predata robustness corrections are preserved in Git; no failed execution is
+inferred from a static review. See research/P145_RESEARCH_RECEIPT.md.
+
+ONE qualification27.084153s/exit0, rawb906808 before reading, gives10PASS/0skip
+and56finite Perceval Naive points; max probability/amplitude errors4.16334e-17/
+8.33390e-17. ONE prospective main1.350231s/exit0, rawf18c147 before reading,
+completes160 contexts/67200 raw probabilities. All four selected blocks lack
+a three-source component; three have no improving candidate and the sole
+RR gain4 target changes conserved component counts. Independent support
+review565bf42 proves J=I3=0 throughout these fixed Hamiltonian families,
+not merely at the grid. This is structural ineligibility, not rejection of
+all genuine collective utility. No graph/seed/grid rescue or held-out follows.
+
+The B-only21-atom mirror needs no20-candidate cost table; a same-policy
+call-indexed adaptive transcript inherits it under known-rational/controlled-
+precision and conditional-history hypotheses. Separate scope review preserves
+the source-type restriction. A growing two-layer route has a supplied-width
+tensor sampler and a conditional full-lightcone collision bound, both manually
+reconstructed by a non-author. Known tensor methods, weak constants, unverified
+priority and hardware limits are explicit. No new optimizer is established.
+
+Before integration the harness contract was rejected before pytest due to a
+missing seed field; that preflight is retained. ONE subsequently authorized
+suite24.058943s/exit0 gives1569PASS/0skip (pytest22.71s,6warnings), rawcc2e809
+before reading, all37 package pins matched. All602 historical files and the
+16-page paper remain unchanged. CLAIM-042 OPEN; no device call or paper edit.

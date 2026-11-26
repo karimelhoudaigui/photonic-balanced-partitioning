@@ -257,3 +257,21 @@ with all-input/absolute-error/paid-construction limits and novelty OPEN.
   follows from rank(V0-I)<=2; no change to the frozen P90a experiment follows.
 
 All novelty claims require further source checks. CLAIM-042 remains OPEN.
+
+
+## P145 continuation — a resource escaping the established mirrors
+
+Find an explicit, paid graph-to-circuit rule with growing coherent support,
+a useful all-attempt gain sign beyond independently retuned D/proper groups
+and strong classical feasible search, and a non-negligible valid proposal rate.
+It must escape any applicable fixed-kernel/tensor mirror without relying on
+unverified sampling hardness or P33 certificate failure. The fixed tiny-block
+PLNS phase does not supply this mechanism.
+
+For two coherent tritter layers, large components or loops alone do not
+suffice: supplied width controls a classical sampler, and balanced unique-
+path mixing has the stated conditional asymptotic collision obstruction.
+Nonflat gates/parallel paths/growing depth or a changed all-shot repair
+decoder remain untried continuations requiring an explicit utility mechanism
+and resource discriminator before another numerical campaign. No QPU gate.
+See research/P145_RESEARCH_RECEIPT.md and its reviewed growing-route source.

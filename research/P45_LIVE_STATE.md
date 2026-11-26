@@ -8,6 +8,15 @@ Historical pending statuses are not current. Start with [the research index](REA
 
 ## Current: scoped obstructions and stronger controls; new mechanisms open
 
+P145 local-neighborhood phase is now recorded in
+[its research receipt](P145_RESEARCH_RECEIPT.md). The exact constructed I3
+contrast is positive but beaten by classical routing; all four prospective
+blocks lack three-source connected support, so their zeros do not reject the
+general collective mechanism. Fixed measured3/6 kernels have a scoped classical
+transcript mirror; growing coherent layers face reviewed width/collision filters.
+Qualification10PASS/56finite native points and integration1569PASS are separate
+from an optimizer replication. No held-out, QPU or manuscript gate is opened.
+
 **CLAIM-042 OPEN. No reproducible positive optimizer result, held-out
 confirmation or real QPU validation exists. paper/, main and QPU stay frozen.**
 P33, P37, E05b and every historical failure/raw result remain preserved.

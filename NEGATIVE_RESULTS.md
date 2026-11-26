@@ -542,3 +542,28 @@ the independent review and P108. The probability reduction/stability is valid;
 this is not a disproved theorem or a failed experiment. Full raw partial-loss
 simulation is excluded. reports/P104_ROOT_CONDITIONAL_CHECKPOINT.md.
 
+
+
+## P145 — positive triad witness is insufficient; declared blocks are ineligible
+
+The constructed exact three-photon fixture has positive I3 and beats the
+independently p-retuned D/pair controls in its RESTRICTED Fourier family.
+It still loses3 versus9 to a simple classical/monomial-D move and prepares
+a forced known target at its endpoint. Preserve this real physical contrast
+without promoting it to an optimum-blind algorithm or novelty claim.
+
+The prospective2graph/4block/160context screen completes once, with all80
+validation cut costs credited classically. Three blocks have no improving
+output; RR/near has one gain4 target forbidden by conserved component counts.
+No block combines all three occupied sources. The independent support proof
+therefore gives I3pointwise0 and a matching proper profile for every parameter,
+not a negative general test of genuine three-photon graph utility. No favorable
+block/seed replacement or mixer rescue was performed.
+
+Fixed measured6mode/3photon PLNS also has a classical same-history kernel
+mirror without enumerating candidate graph scores. Growing coherent support
+alone need not help: bounded tensor width is simulable under its representation
+premises, and the stated two-layer strongly mixed family has a collision-rate
+obstruction. These scoped failures leave nonflat/deeper/changed-decoder
+mechanisms open. Source and independent-review limits are preserved in
+research/P145_RESEARCH_RECEIPT.md. No QPU or new manuscript result is claimed.

@@ -4,9 +4,11 @@ This repository studies collision-aware photonic graph bisection, sufficient cla
 
 Current discovery work on `research/p45-positive-discovery` starts at the
 [research index](research/README.md) and [live state](research/P45_LIVE_STATE.md).
-The latest P141 finite magnetic screen does not beat the best control on its
-grid. Its favorable ER bosonic/distinguishable contrast is preserved.
-P137/P139/P143 establish obstructions under their stated local assumptions.
+The latest [P145 investigation](research/P145_RESEARCH_RECEIPT.md) tests collective
+three-photon local proposals and establishes scoped classical-mirror, support
+and growing-layer filters. Its positive constructed interference contrast is
+beaten by stronger classical controls. P141's favorable ER bosonic/distinguishable
+contrast remains preserved. P137/P139/P143 retain their stated local assumptions.
 The optimization-advantage objective remains open. These results are not yet
 integrated into the frozen article; no positive replication or QPU gate is claimed.
 
@@ -72,11 +74,12 @@ Historical manifests refer to their recorded source commits or frozen snapshots,
 
 The original algorithmic goal remains open. Tests, PDF compilation, local circuit export and novelty are different standards of evidence.
 
-Recorded research validation: **1559 tests passed**, with 602 historical scientific
-files unchanged and a successful existing-manuscript build, at the exact CI
-revision recorded in [the P141 receipt](reports/P141_validation_review/ci_success.json).
-That receipt identifies its source commit; it is not a moving-HEAD claim or
-independent optimization/hardware replication.
+Recorded local research validation: **1569 tests passed**, with 602 historical
+scientific files unchanged and the existing16-page manuscript verified.
+[P145's receipt](research/P145_RESEARCH_RECEIPT.md) identifies the raw source
+revisions and the separate56-point Perceval qualification. The earlier
+[P141 CI receipt](reports/P141_validation_review/ci_success.json) remains tied
+to its own revision, not a moving-HEAD or independent optimization/hardware claim.
 
 The 24-Nov delivery had 505 local tests, including 21 mocked Lucy adapter checks;
 [its receipts](reports/LUCY_TGCC_DELIVERY.md) and the separately extracted

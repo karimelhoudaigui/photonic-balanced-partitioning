@@ -1,5 +1,19 @@
 # Research status — active discovery branch
 
+Latest 27-Nov-2026: P145's collective-neighborhood investigation is complete as
+a scoped phase, not an optimizer success. A constructed exact triad contrast
+survives restricted p-retuning but loses to a classical gain9 versus B3. The
+prospective two-graph screen completes160 contexts; its four selected blocks
+are structurally ineligible for genuine three-source interference, and the
+only improving support is unreachable. Independent support algebra explains
+all zero utilities for every parameter, not only the sampled grid. Fixed
+measured3/6 kernels have a classical history mirror under explicit source/bit
+premises; a growing two-layer route has reviewed width/collision filters.
+See [P145 research receipt](research/P145_RESEARCH_RECEIPT.md).
+Qualification10PASS/0skip/56finite Perceval points; integration1569PASS/0skip.
+P33/P37/E05b, P130–144 and paper unchanged. CLAIM-042 remains OPEN;
+no novelty clearance, held-out positive, matched-time win or QPU gate.
+
 Latest26-Nov-2026: P141's sole new finite magnetic screen is COMPLETE and
 NO_SIGNAL, raw737321d sealed before interpretation.58443 rows/45 tasks,
 exact engine and officialv2PASS. ER bestB .0436159 exceeds D .0399271, but
