@@ -1,6 +1,13 @@
 {
   "schema": "P82a.independent-recorded-audit.v1",
   "state": "CODE_ONLY_NOT_EXECUTED",
+  "code_revision": "v2-post-seal-administrative-timeout-type-correction",
+  "administrative_correction": {
+    "historical_source_sha256": "f595fcaea18dee10b7c89982c2ef700cadca417ec8b2ff63557e95b0e9ba9529",
+    "failed_audit_raw_commit_reported_by_ROOT": "b4aa0f3",
+    "scope": "Producer timeout accepts finite numeric value EXACT90 seconds as int or float, without epsilon. Strings/bools/NaN/different values rejected. Other strict integer checks unchanged.",
+    "B_science_unread": true
+  },
   "producer_source_freeze": "94f80b94f75317524c202ce9ef5bf932d78ddc5e",
   "producer_source_sha256": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc",
   "producer_spec_sha256": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838",
@@ -14,7 +21,7 @@
   "case_ids": ["ER8201601", "RR8201602"],
   "population": {"n":16,"K":8,"chains":3,"steps":16,"attempts":96,"completed_modeled_photons":768,"histogram_bins":9},
   "qualification": {
-    "pytest_functions":21,
+    "pytest_functions":22,
     "fixtures":"Hardcoded synthetic graphs, literal recorded candidates, Fraction F4 features, scripted rounded fields/counts/clocks and temporary JSON files only",
     "main_role_hashes":0,"PCG_constructions":0,"DEV_graphs":0,"native_calls":0,"optimizer_replays":0,
     "F4_fixture":"Synthetic one-edge matrix, not a main anchor; exact A01=(-1+i)/6 and J01=5/18",
@@ -26,6 +33,7 @@
     "relative_tolerance":0,
     "runtime_Gram_flatness_occupied_frame_absolute_tolerance":3e-12,
     "clock_tolerance":0,
+    "producer_timeout_representation": "finite int or float with exact numeric value90; log/CPU/thread caps remain strict integers",
     "no_H_zero_tolerance":true
   },
   "resources":{"CPU_seconds":30,"wall_seconds":60,"workers":1,"environment_threads":1,"native_backend_required":false,"logical_bytes_PLAN":268435456,"raw_scientific_bytes":33554432,"single_JSON_or_line_bytes":4194304,"B_rows_per_case":5000,"ledger_rows":2000,"control_rows_per_call":20005,"checkpoints_per_control":10001,"work_per_control":10000,"output_bytes":524288,"log_bytes":4194304,"retries":0},

@@ -142,3 +142,36 @@ All11 qualification inputs, 21 synthetic tests, source/tests/spec,
 semantics, tolerances, CPU30/wall60/env1/log4MiB and zero retries remain
 unchanged. No new attempt is executed by this correction. Run_002 needs
 its distinct ROOT review/authorization; this is not an automatic retry.
+
+## V2 administrative correction after sealed audit failure
+
+ROOT reported one audit main on the original f595 source under d156aa5,
+with raw b4aa0f3 sealed before interpretation. Only its audit_failure.json
+and audit manifest.run provenance were read here: failure at
+manifest/wall-cap, scalar type mismatch, detail repr '90.0'; audit run
+status failed/exit1, runtime0.158351s, no missing/invalid declared results.
+No B scientific record, producer manifest, graph, seed or control value
+was opened. The failure occurred before MainReplay; ROOT reports only
+opaque input-hash checks had been performed. Original source and failed
+raw remain historical evidence.
+
+The narrow code change extracts producer_limits_checked(run). It accepts
+finite numeric timeout EXACT90 seconds as int90 or float90.0, with zero
+epsilon. Booleans, strings, NaN and values such as90.000001 are rejected.
+Strict integer semantics for cuts, masks, log cap, CPU cap and thread cap
+are unchanged. No bound, tolerance, comparison, control or decision policy
+is retuned. Primary source/data remain untouched.
+
+One new synthetic regression tests those valid/invalid representations,
+bringing the prospective batch to22. Spec metadata labels this v2 change
+as post-seal administrative, not a new predata scientific freeze.
+Qualification now targets fresh run_003/JUnit under unchanged11 inputs,
+CPU30/wall60/env1/log4MiB and zero automatic retries. It is NOT executed
+by this correction. Source/test imports, AST, collection, tests and RNG
+remain unauthorized until a separate ROOT qualification decision.
+
+Main TEMPLATE changes ONLY planned output/runner/result paths to fresh
+audit main run_002, preserving failed run_001. No opaque dataset binding
+or active audit main is created here. ROOT versions any later root copy
+and binding separately after review and qualification. The earlier
+21-test qualification and the prelaunch rejection remain unchanged.

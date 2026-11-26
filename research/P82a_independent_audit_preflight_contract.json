@@ -4,18 +4,18 @@
   "binding_state":"CODE_ONLY_NOT_EXECUTED",
   "claim_id":"P82a-INDEPENDENT-RECORDED-AUDIT-TINY-QUAL",
   "mathematics":{
-    "assertion_tested":"Twenty-one synthetic-only checker tests: independent scalar cuts/canonical masks/all-neighbor Q-best, exact rational F4 features, archived-rounded H semantics and analytic eta0, full counts/repair/deterministic branches, typed factory references/unknown CPU, conservative call gaps, dual-clock existing-prefix selection, custom cached-best lineage, fixed-mode witnesses, malformed JSON, postseal guard and exclusive prefix files.",
+    "assertion_tested":"Twenty-two synthetic-only checker tests: all original21 fixtures plus one administrative v2 timeout regression accepting exact finite numeric90.0/90 while rejecting different/NaN/string/bool values and preserving strict integer log/CPU/thread caps.",
     "coefficient_domain":"Exact Python integers/Fraction, binary64 scalar complex arithmetic at fixed3e-12 absolute residual; exact clocks comparisons",
     "conventions":"No main role hashes, RNG, DEV graph or native/solver call. Helpers portable to executing interpreter; only hardcoded synthetic fixtures.",
     "inputs":["Synthetic graphs/records/clocks, no B outputs or registered main seeds"],
-    "bounds":{"pytest_functions":21,"native_calls":0,"optimizer_replays":0,"PCG_constructions":0,"DEV_graphs":0,"CPU_seconds":30,"wall_seconds":60,"threads":1,"workers":1,"log_bytes":4194304,"logical_bytes_PLAN":268435456,"failed_retries":0},
+    "bounds":{"pytest_functions":22,"native_calls":0,"optimizer_replays":0,"PCG_constructions":0,"DEV_graphs":0,"CPU_seconds":30,"wall_seconds":60,"threads":1,"workers":1,"log_bytes":4194304,"logical_bytes_PLAN":268435456,"failed_retries":0},
     "non_claims":["Qualification is not main authorization, data audit or Born/TV/physical certificate","No hard RSS/affinity or timing benchmark claim"]
   },
   "execution_artifacts":["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P82a_independent_raw_audit.py","tests/test_p82a_independent_raw_audit.py","research/P82a_independent_audit_spec.json","research/P82a_independent_audit_preflight_contract.json","research/P82a_independent_audit_main_TEMPLATE.json","research/P82a_INDEPENDENT_AUDIT_BINDING.md","research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md","research/P82_ZERO_LOADING_INDEPENDENT_NULL.md"],
   "software":[{"name":"Python","version":"3.11.15"},{"name":"pytest","version":"8.4.2"}],
   "randomness":{"used":false,"generator":"Hardcoded scripted fixtures only","seed":null},
-  "planned_command":["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-m","pytest","-q","-p","no:cacheprovider","tests/test_p82a_independent_raw_audit.py","--junitxml=research/P82a_independent_audit_preflight/run_002/junit.xml"],
-  "runner_output_directory":"research/P82a_independent_audit_preflight/run_002",
-  "declared_results":["research/P82a_independent_audit_preflight/run_002/junit.xml"],
+  "planned_command":["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-m","pytest","-q","-p","no:cacheprovider","tests/test_p82a_independent_raw_audit.py","--junitxml=research/P82a_independent_audit_preflight/run_003/junit.xml"],
+  "runner_output_directory":"research/P82a_independent_audit_preflight/run_003",
+  "declared_results":["research/P82a_independent_audit_preflight/run_003/junit.xml"],
   "resource_note":"NOT EXECUTED. Separate ROOT source review and qualification authorization required. CPU30/wall60/env1/one worker/log4MiB/logical256MiB PLAN/zero retries. Qualification contains no production dataset, role hashing, numerical import, RNG, native call or optimizer replay."
 }

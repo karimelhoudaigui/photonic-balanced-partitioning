@@ -957,6 +957,15 @@ def control_blocks(path):
         yield block
 
 
+def producer_limits_checked(run):
+    """Runner argparse serializes timeout as float; compare its EXACT value."""
+    wall = number(run["timeout_seconds"], "manifest/wall-cap")
+    same(wall, 90.0, "manifest/wall-cap")
+    same(run["max_output_bytes"], 4194304, "manifest/log-cap")
+    same(run["resource_limits"]["cpu_seconds"], 60, "manifest/CPU-cap")
+    same(run["resource_limits"]["max_threads"], 1, "manifest/thread-cap")
+
+
 def verify_closure(root, binding):
     paths, records_by_path, total_raw = {}, {}, 0
     for record in binding["artifacts"]:
@@ -978,10 +987,7 @@ def verify_closure(root, binding):
         same(records_by_path[relative]["sha256"], expected, "binding/primary-pin")
     manifest = load_json(paths["producer_manifest"])
     same(manifest["schema_version"], 2, "manifest/version")
-    same(manifest["run"]["timeout_seconds"], 90, "manifest/wall-cap")
-    same(manifest["run"]["max_output_bytes"], 4194304, "manifest/log-cap")
-    same(manifest["run"]["resource_limits"]["cpu_seconds"], 60, "manifest/CPU-cap")
-    same(manifest["run"]["resource_limits"]["max_threads"], 1, "manifest/thread-cap")
+    producer_limits_checked(manifest["run"])
     same(manifest["repository"]["commit"], binding["producer_execution_commit"], "manifest/commit")
     source_rows = {row["path"]: row for row in manifest["input_artifacts"]}
     for row in manifest["input_artifacts"]:
