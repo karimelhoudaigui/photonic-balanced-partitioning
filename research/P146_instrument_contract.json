@@ -1,0 +1,60 @@
+{
+  "claim_id": "P146-FULL-MEDIATOR-INSTRUMENT",
+  "mathematics": {
+    "assertion_tested": "Complete finite eight-mode lossy mediator instrument, distinguishable product-Kraus control, known weighted-resource endpoint purge, capped RUS identities and 432 local Perceval amplitudes. No optimizer experiment.",
+    "coefficient_domain": "Exact Q(i) for optical/purge/resource identities; float64 for dyadic angles and native cross-check, absolute tolerance1e-12",
+    "conventions": "Memory basis00,01,10,11; occupied columns2x,1+2y; output occupation factorial; first4 output modes detected, final4 environment traced; eta=s^2, tau=eta^2; all collisions/losses retained",
+    "inputs": [
+      "z=1,i,(3+4i)/5 and survival/loss amplitudes(1,0),(399/401,40/401),(112/113,15/113)",
+      "Fixed five-data-qubit weighted cycle/chord purge fixture, one ancilla, all loss/environment/Z records",
+      "CapsR=4,8, phasesm=1,2,4, degreeDelta3; dyadic sign historiesm=1..8",
+      "Perceval Naive local8mode2photon amplitudes for4 logical inputs,36 outputs,3 transmissions,z=i"
+    ],
+    "bounds": {
+      "settings": 9,
+      "bosonic_outputs_per_setting": 36,
+      "distinguishable_label_outputs_per_setting": 64,
+      "native_amplitudes": 432,
+      "worker_count": 1,
+      "threads": 1,
+      "wall_seconds": 120,
+      "cpu_seconds": 90,
+      "log_bytes": 1048576,
+      "scientific_output_bytes": 3145728,
+      "retries": 0
+    },
+    "non_claims": [
+      "No optimization advantage, training, held-out graph, independent optimizer replication or hardware call",
+      "No claim of new RUS/weighted-graph/angle-doubling ingredients or global novelty clearance",
+      "Purge is valid only for known offline diagonal resources, not arbitrary unknown computational states",
+      "Memory/emission/control availability and actual loss parameters on Lucy remain unverified",
+      "Finite computations do not prove the universal drift theorem or a matched-total-cost benefit"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P146_EXPERIMENT_CARD.md",
+    "research/P146_A_INTERACTION_ROUTE.md",
+    "research/P146_full_instrument_check.py",
+    "research/P146_A_INDEPENDENT_AUDIT.md",
+    "research/P146_INSTRUMENT_SOURCE_REVIEW.md"
+  ],
+  "software": [
+    {"name": "Python", "version": "3.11.15"},
+    {"name": "numpy", "version": "2.4.6"},
+    {"name": "perceval-quandela", "version": "1.3.0"},
+    {"name": "exqalibur", "version": "1.4.2"}
+  ],
+  "randomness": {"used": false, "generator": "", "seed": null},
+  "run_authorized": false,
+  "authorization_note": "CODE ONLY pending non-author source review, independent mathematical review and ROOT execution authorization; user authorizes continued bounded local research, not hardware.",
+  "source_sha256": "6653116e8aa39b7bde7db8c7bf1642ba3b8777bd07808713a7c34b91c93ee567",
+  "planned_command": [".venv/bin/python", "-B", "research/P146_full_instrument_check.py", "--output", "research/P146_full_instrument/run_001/data"],
+  "declared_results": [
+    "research/P146_full_instrument/run_001/data/records.json",
+    "research/P146_full_instrument/run_001/data/checks.json",
+    "research/P146_full_instrument/run_001/data/failure.json"
+  ]
+}
