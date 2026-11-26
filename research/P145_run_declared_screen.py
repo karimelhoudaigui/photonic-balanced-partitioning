@@ -14,7 +14,7 @@ def cut(edges, selected):
     return sum(w for i, j, w in edges if (i in selected) != (j in selected))
 
 
-def descend(edges, marks, budget=20000):
+def descend(edges, marks, budget=20000, on_scan=None):
     current = set(marks[:12])
     value = cut(edges, current)
     queries, trace = 1, []
@@ -32,6 +32,8 @@ def descend(edges, marks, budget=20000):
         # Enumeration follows transported public ranks; first tie is fixed.
         best = min(neighbors, key=lambda row: row['cut'])
         trace.append({'current': sorted(current), 'cut': value, 'queries': queries, 'neighbors': neighbors})
+        if on_scan is not None:
+            on_scan(trace[-1])
         if best['delta'] >= 0:
             return current, value, queries, trace, neighbors
         current = (current - {best['remove']}) | {best['add']}
@@ -75,6 +77,17 @@ def execute(output):
     records, graphs = [], []
     failure = None
     summary = {'status': 'NOT_COMPLETED', 'optimizer_advantage': False}
+    streams = {name: (output / name).open('x', buffering=1)
+               for name in ('records.jsonl', 'graph_events.jsonl')}
+    raw_bytes = 0
+    def append(name, record):
+        nonlocal raw_bytes
+        line = json.dumps(record, separators=(',', ':'), allow_nan=False) + '\n'
+        if raw_bytes + len(line.encode()) > 7 * 1024 * 1024:
+            raise RuntimeError('Scientific raw cap exceeded; preserve prefix, no retry')
+        streams[name].write(line)
+        streams[name].flush()
+        raw_bytes += len(line.encode())
     try:
         if not __debug__:
             raise RuntimeError('Optimized Python is refused')
@@ -92,9 +105,11 @@ def execute(output):
             edges = [(i, j, weights.randint(1, 5)) for i, j in sorted((min(i, j), max(i, j)) for i, j in g.edges)]
             marks = list(range(24))
             random.Random(1453000 + graph_index).shuffle(marks)
-            current, value, queries, trace, neighbors = descend(edges, marks)
+            append('graph_events.jsonl', {'kind': 'graph_setup', 'graph': name, 'edges': edges, 'marks': marks})
+            current, value, queries, trace, neighbors = descend(edges, marks, on_scan=lambda scan:
+                append('graph_events.jsonl', {'kind': 'descent_scan', 'graph': name, **scan}))
             graph_row = {'name': name, 'edges': edges, 'marks': marks, 'current': sorted(current),
-                         'cut': value, 'descent_queries': queries, 'descent_trace': trace,
+                         'cut': value, 'descent_queries': queries, 'descent_iterations': len(trace),
                          'one_swap_minimum_certified': neighbors is not None}
             graphs.append(graph_row)
             if neighbors is None:
@@ -113,20 +128,27 @@ def execute(output):
                     original_formula = sum((sum(a[i]) + h[i]) for i in source)
                     original_formula -= 2 * sum(a[i][j] for i, j in combinations(source, 2))
                     candidates.append({'support': support, 'cut': score, 'gain': max(0, value - score)})
+                    append('graph_events.jsonl', {'kind': 'candidate_check', 'graph': name, 'rule': rule,
+                        'block': block, 'support': support, 'cut': score, 'current_cut': value,
+                        'formula': delta_formula, 'current_formula': original_formula})
                     assert score - value == delta_formula - original_formula
                     gains[support] = max(0, value - score)
+                append('graph_events.jsonl', {'kind': 'block_setup', 'graph': name, 'rule': rule,
+                    'block': block, 'A': a, 'h': h, 'current_cut': value, 'credited_candidates': candidates})
                 contexts = []
                 for grid_index, (alpha, beta, t) in enumerate(product((-1, 1), (0, 1), (0., .5, 1., 2., 4.))):
                     u = engine.unitary_from_features(a, h, alpha, beta, t)
+                    append('graph_events.jsonl', {'kind': 'matrix_context', 'graph': name, 'rule': rule,
+                        'grid_index': grid_index, 'alpha': alpha, 'beta': beta, 't': t,
+                        'U_complex_pairs': [[[z.real, z.imag] for z in row] for row in u]})
                     diagnostic = engine.density_diagnostics(u, source, value)
                     for eta in (1., .8):
                         result = engine.same_circuit_scores(u, source, gains, eta)
                         mirror = engine.feasible_mirror_kernel(result['laws']['B'])
                         mirror_score = sum(mirror[support] * gain for support, gain in gains.items())
-                        assert abs(mirror_score - result['scores']['B']) < 1e-9
                         if eta == 1.:
                             contexts.append(result)
-                        records.append({'graph': name, 'block_rule': rule, 'block': block, 'A': a, 'h': h,
+                        record = {'graph': name, 'block_rule': rule, 'block': block, 'A': a, 'h': h,
                             'current_cut': value, 'candidate_costs_credited_to_all_controls': candidates,
                             'grid_index': grid_index, 'alpha': alpha, 'beta': beta, 't': t, 'eta': eta,
                             'scores': result['scores'], 'hazards': result['hazards'],
@@ -134,7 +156,13 @@ def execute(output):
                             'I3_numeric_sign': result['I3_numeric_sign'], 'full_laws': laws_json(result['laws']),
                             'U_complex_pairs': [[[z.real, z.imag] for z in row] for row in u],
                             'mirror_score': mirror_score, 'P33_diagnostic': diagnostic,
-                            'P33_diagnostic_applies_to': 'LOSSLESS_SAME_U_ONLY_NOT_A_DEVICE_CERTIFICATE'})
+                            'P33_diagnostic_applies_to': 'LOSSLESS_SAME_U_ONLY_NOT_A_DEVICE_CERTIFICATE'}
+                        append('records.jsonl', record)
+                        records.append(record)
+                        assert abs(mirror_score - result['scores']['B']) < 1e-9
+                        if eta != 1.:
+                            for arm in engine.ARMS:
+                                assert abs(result['scores'][arm] - eta ** 3 * contexts[-1]['scores'][arm]) < 1e-9 * (1 + value)
                 envelope = engine.validation_envelopes(contexts)
                 b_index = envelope['B']['grid_index']
                 selected = contexts[b_index]
@@ -143,23 +171,34 @@ def execute(output):
                     'improving_candidates': sum(gain > 0 for gain in gains.values()),
                     'classical_exact_block_gain': max(gains.values()), 'validation_cut_queries': 20,
                     'envelope_eta1': envelope, 'selected_same_circuit_I3': selected['same_circuit_I3'],
-                    'strict_floating_group_survivor': envelope['B']['score'] > best_control + 1e-9,
+                    'strict_floating_group_survivor': envelope['B']['score'] > best_control + 1e-9 * (1 + value),
                     'exact_law_mirror_matches_B': True, 'optimizer_advantage': False})
         completed = sum(len(g.get('block_summaries', [])) for g in graphs)
+        if completed == 4:
+            assert len(records) == 160
+            assert len({(r['graph'], r['block_rule'], r['grid_index'], r['eta']) for r in records}) == 160
+            for graph in ('ER', 'RR'):
+                for rule in ('public', 'paid_near_barrier'):
+                    assert sum(r['graph'] == graph and r['block_rule'] == rule for r in records) == 40
         summary = {'status': 'FINITE_FLOAT_SCREEN_COMPLETED' if completed == 4 else 'INCONCLUSIVE_DESCENT_BUDGET',
                    'graphs': graphs, 'contexts': len(records), 'modeled_optical_trials': 0,
-                   'all_positive_I3_contexts': sum(r['same_circuit_I3'] > 1e-9 for r in records),
+                   'all_positive_I3_contexts': sum(r['I3_numeric_sign'] == 'POSITIVE' for r in records),
                    'optimizer_advantage': False,
                    'semantics': 'Finite exhaustive floating model screen, not interval-certified signs or sampled training',
                    'scope': 'All20 residual costs credited classically; exact-law mirror preserves the same proposal utility'}
     except Exception as exc:
         failure = {'type': type(exc).__name__, 'message': str(exc), 'traceback': traceback.format_exc()}
-        summary = {'status': 'FAILED', 'completed_contexts': len(records), 'optimizer_advantage': False}
+        summary = {'status': 'FAILED', 'graphs': graphs, 'completed_contexts': len(records), 'optimizer_advantage': False}
         raise
     finally:
-        (output / 'records.json').write_text(json.dumps(records, separators=(',', ':'), allow_nan=False) + '\n')
-        (output / 'summary.json').write_text(json.dumps(summary, indent=2, allow_nan=False) + '\n')
-        (output / 'failure.json').write_text(json.dumps(failure, indent=2) + '\n')
+        for stream in streams.values():
+            stream.close()
+        payload = json.dumps(summary, indent=2, allow_nan=False) + '\n'
+        failure_payload = json.dumps(failure, indent=2) + '\n'
+        if len(payload.encode()) + len(failure_payload.encode()) > 1024 * 1024:
+            raise RuntimeError('Final-result reserve exceeded; raw JSONL prefix retained')
+        (output / 'summary.json').write_text(payload)
+        (output / 'failure.json').write_text(failure_payload)
 
 
 if __name__ == '__main__':
