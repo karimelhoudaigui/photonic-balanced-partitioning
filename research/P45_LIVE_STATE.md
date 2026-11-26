@@ -90,9 +90,12 @@ sixfiles1638l/sourceSHAf595fcae, corrected94f80b94 schema. ROOT FULLREAD
 Firstcheckerqual wrapper REJECTED PRELAUNCH: declaredJUnit siblingof
 runneroutput violatesMathboxinside-output rule; no child/import/test/RNG.
 Rejectionebee1a04/7370eaf8 archivedROOT5b54362, no fakev2manifest.
-P63CODEONLY fix pending: qualpathsrun_002parent+JUnitinside, mainTEMPLATE
-runnerparentrun_001,MDcorrigendum. Sourcef595/tests7dc/spec6fdunchanged;
-no behavior/tol/seed change. ROOT+P66reviewdelta before newqualauth.
+Binding-only fixa7e423b28 frozen: qualpathsrun_002parent+JUnitinside,
+mainTEMPLATErunnerparentrun_001,MDcorrigendum. Sourcef595/tests7dc/spec6fd
+unchanged; no behavior/tol/seed change. ROOTfull30+/4-delta +P66exact
+0a6eb71/049b4873(61l)read closespathdefect. ROOTnowdistinctlyauthONE
+qualrun_002,21synthetic/11inputs/CPU30wall60/env1/0autoretry/raw-first.
+No corrected qualification outcome yet. Rejection001remainsintact.
 Author/reviewer stillblindtoBdata. Datasetbinding/auditmainNOTAUTHORIZED.
 DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
 Compilation-before-R is source-bound, not a separately timed raw endpoint;
