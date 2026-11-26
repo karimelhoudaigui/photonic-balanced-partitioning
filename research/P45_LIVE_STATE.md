@@ -39,7 +39,8 @@ Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
 GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
 run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
 
-Numerical worker FREE. P87 is ACCEPTED after full ROOT168+peer308+exact344
+Numerical worker reserved to P62 for ONE P82a deterministic qualification,
+not DEV/main. P87 is ACCEPTED after full ROOT168+peer308+exact344
 reads, sources6436860/17ba1d4 and auditb77c8c0. Its sharp fixed-N oracle
 limitR/2 matches identity; this is not a generic sampling-optimizer no-go.
 P82 eta0 decoded null is also accepted with exact independent153e807,
@@ -54,13 +55,16 @@ no same-CPU/hard-API-return/QPU-cost claim. Card files remain immutable.
 
 P82a CODE ONLY is frozen at892ea965 in .local/p65-independent-audit:
 source1328/tests961/spec74/precontract243/maincontract203/population215,
-3024 lines FULLY read by ROOT. No import/AST/py_compile/collection/RNG/
-graph/native/benchmark has run. P66 and P81 independently read the same
-freeze. The pending predata clarification is an explicit REPORTED_DURATION
-ledger record/id/reference for factory timing (scalars already retained;
-not a numerical grant error). Resolve and review BEFORE one tinyqual.
-No unqualified code may be pushed to CI. Main96B/768 modeled photons still
-requires separate post-qualification authorization and raw-first receipt.
+3024 lines FULLY read by ROOT. P66 and P81 independently read the same
+freeze (5f9bb4c/5dab0f1). Corrective94f80b94 changes only3files121+/9-;
+ROOT read the full delta, independent0411f495/f39f1a4c102-line review
+closes R1/R2 typed factory/P50 operand references. Parameters unchanged.
+ROOT now authorizes ONE fixed27-node/183-Naive qualification at94f80,
+capsCPU60wall90/env+native1/0retry, raw commit BEFORE interpretation and
+separate receipt. No DEV graphs/seeds or 8-photon native sample inqual.
+No qualification result is yet claimed. No unqualified push to CI.
+Main96B/768 modeled photons remains separately unauthorized and awaits
+sealed qualification inspection plus the independent checker predatafreeze.
 
 Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
 data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old

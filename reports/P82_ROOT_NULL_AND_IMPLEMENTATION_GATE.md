@@ -95,3 +95,19 @@ Its compile-before-R finding will be source-bound; the raw combined
 compile/split span cannot establish distinct internal timestamps. Custom
 control inspection verifies scored masks, cached prefixes and clocks;
 it will not claim independent replay of unrecorded policy marks.
+
+The correction is now frozen at94f80b94f75317524c202ce9ef5bf932d78ddc5e.
+ROOT read all121+/9- delta lines; independent review0411f495, SHA256
+f39f1a4c74f622fd98ee248ebedda8bbb81979895cf4c47a67967d24882585f8,
+was read completely (102lines). It closes both factory and P50 typed
+reported-operand reservations. Source7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc,
+tests e70b74c2915632cf62677c80f40ebeea8e67c669116660096426101542794861.
+No graph/seed/profile/clock formula/guard/tolerance/population changed.
+
+On this evidence ROOT authorizes ONE qualification using the exact frozen
+27-node/183-Naive command,15 runner-bound project inputs and one JUnit
+result. CPU60/WALL90, one numerical worker, environment/native1,4MiB logs,
+32MiB scientific bytes/1MiB reserve, logical256MiB/no hard RSS,0retry.
+P62 owns that slot. Seal raw output in Git BEFORE interpretation, then
+write a separate receipt. Main remains unauthorized until ROOT inspects
+those artifacts and the independent recorded checker is frozen predata.
