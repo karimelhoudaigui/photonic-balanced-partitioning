@@ -1,0 +1,81 @@
+{
+  "observed_on": "2026-11-26",
+  "Python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "networkx_version_metadata": "3.6.1",
+  "method": "Fresh filesystem rehash of all eleven critical descriptors inherited from P134; identical bytes verified. Metadata only: P141/P134 scientific code, random, NetworkX and graph factories were NOT imported, parsed as AST or evaluated. No execution authority follows.",
+  "external_artifacts": [
+    {
+      "role": "python_binary",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "sha256": "831807be3d255aae0708810462ce0cde2467235f7daaa86e93d0ddc58b1a4101",
+      "bytes": 52448
+    },
+    {
+      "role": "pyvenv_cfg",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/pyvenv.cfg",
+      "sha256": "0b8b1221cc5276cffcdf62b9ad222d1939da2d3b90c626712a9dbcaad94617cf",
+      "bytes": 315
+    },
+    {
+      "role": "random_py",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/random.py",
+      "sha256": "b931a2d452db89ab9e1f79d59b66ce194dbd6748049cfe44699726da52b9c956",
+      "bytes": 32162
+    },
+    {
+      "role": "random_native",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload/_random.cpython-311-darwin.so",
+      "sha256": "350743784269c4329d85299af549a75534a8d26951fe043b4386a8102389d3fb",
+      "bytes": 53808
+    },
+    {
+      "role": "nx_metadata",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx-3.6.1.dist-info/METADATA",
+      "sha256": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+      "bytes": 6783
+    },
+    {
+      "role": "nx_init",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/__init__.py",
+      "sha256": "39537c0bec78e0b81e25629c6fbeeff96c1f315ec462a89e69f92841d9409791",
+      "bytes": 1625
+    },
+    {
+      "role": "nx_random_graphs",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/generators/random_graphs.py",
+      "sha256": "588278bfc3d23691de3dc952090dc870b5b0722a592760a7f69371e977a7044a",
+      "bytes": 51669
+    },
+    {
+      "role": "nx_graph",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/classes/graph.py",
+      "sha256": "6d8e71ed6407a10c52668c3de4e500994f1465a615d19590be1ac4163480b746",
+      "bytes": 72337
+    },
+    {
+      "role": "nx_decorators",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/utils/decorators.py",
+      "sha256": "ad1800670ea097138160dea7e6491b43b452e37107dde55b27917dd7eba4d083",
+      "bytes": 44713
+    },
+    {
+      "role": "nx_misc",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/utils/misc.py",
+      "sha256": "ce27c1c7028cde6b10b26315839bc0303a3ce193c1c94ff212283454f4b489e9",
+      "bytes": 22844
+    },
+    {
+      "role": "nx_backends",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/networkx/utils/backends.py",
+      "sha256": "2035cd26305639f72a3e6dc09f2e7e91fc14f616531f7dd1d7a82bdef67ac271",
+      "bytes": 96862
+    }
+  ],
+  "available_networkx_backend_entrypoints": [
+    {
+      "name": "nx_loopback",
+      "value": "networkx.classes.tests.dispatch_interface:backend_interface"
+    }
+  ],
+  "source_pin_report": "reports/P134_validation_review/external_pins.json"
+}
