@@ -1589,3 +1589,25 @@ K12*.02 error.04224 is not Lucy calibration;96-trial union bound vacuous.
 The real-rational/small159-native-point validation remains CODE ONLY, needing
 full source review, qualification and separate execution authority. No run
 or numerical success is asserted. reports/P96_ROOT_THEORY_CHECKPOINT.md.
+
+
+## P96 predata code review checkpoint; no execution
+
+Originalac67650/550l integrated97eb7c0; ROOT full source/tests/contracts/
+population reviewe925879. IndependentP62 fullread finds nominal mathematics
+coherent, but failure provenance can omit rejected nonfinite amplitudes,
+actual drifting thread values, and rejected construction spectra/U/Gram.
+This is a static review finding, not a failed experiment or false positive.
+A code-only guard correction and two pure diagnostic tests (9->11) are being
+frozen before any qualification;167/159/28 physical population, tolerances
+and caps unchanged. No import/AST/collection/native/runner/QPU occurred.
+
+P97 analytical card457e49c +35e1cf9 is read fully at ROOT. The corrected
+complement statement assumes unweighted simple graphs. Variance bounds hold
+for the stated estimator but fixed coefficient1 need not reduce variance.
+After crediting the low-sector feasible frontier, I2h=0 for the direct
+improvement statistic, so this CV leaves that rare-event estimator unchanged.
+This rejects an automatic benefit, not every tail policy or other CV.
+No new optimizer pilot is justified; goal OPEN and paper/main/QPU frozen.
+Latest confirmed remote ROOTed7d24f includes P95/P96 theory+original refs;
+unqualified local code is not pushed to CI.

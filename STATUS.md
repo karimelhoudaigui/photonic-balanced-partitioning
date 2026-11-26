@@ -16,6 +16,10 @@ remainder are independently audited, with no favorable optimization sign
 and finite-strength search still open. P96's positive column-budget surrogate
 is independently proved in its exact trace/CF/passive-vacuum model, with
 combined priority unverified; its small exact/native validation is CODE ONLY.
+Both code readers found coherent nominal physics, but rejected-value
+diagnostics need a predata correction before any qualification. No P96 test
+or native execution has occurred. P97's factorial-residual estimator does
+not supply an optimization mechanism beyond the already paid low frontier.
 No positive optimizer pilot is justified yet. P82a's earlier finite audit remains valid
 with its original INCONCLUSIVE_FAST_ELIGIBILITY, not a quantum advantage.
 P91's conditional spectral-loss

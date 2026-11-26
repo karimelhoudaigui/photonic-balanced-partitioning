@@ -133,12 +133,30 @@ Primary check8b5e9120/124lines authenticates known moment inversion/lossy
 simulation ingredients; exact combined priority remains UNVERIFIED.
 See ../reports/P96_ROOT_THEORY_CHECKPOINT.md. No public mean is a calibration
 and the hypothetical12*.02 example is not a measured bound.
-The small rational-PNR/159-native-point validation is CODE ONLY in isolated
-P94 author checkout; no import, collection, native test or run yet. Separate
-full source review and ROOT execution authorization are still required.
+The rational-PNR/159-native-point validation is CODE ONLY. Original five-file
+freezeac67650 (550lines) is integrated97eb7c0; ROOT read all source/tests/
+contracts/population and froze reviewe925879. P62's independent full read
+found a predata FAILURE-DIAGNOSTIC gap: nonfinite amplitude serialization,
+thread assertions and construction guards can lose actual rejected values.
+Nominal physics is coherent and no false PASS is identified, but the raw
+failure promise needs correction BEFORE qualification. Author is fixing only
+those guards in the isolated checkout; prospective pure tests9->11, physical
+167 exact rows/159 native points/28 marginals and all tolerances/caps unchanged.
+NO import, AST, collection, qualification, native run or active binding exists.
+Read exact new source/diff and independent addendum before separately
+authorizing qualification; never treat original9-test plan as an execution.
+Main needs its later bound proof/qualification receipt and ROOT authorization.
 No changed-route optimization pilot is yet justified. Last confirmed remote
-ROOT10c01c5 plus original producer/reviewer refs are saved on GitHub; newer
-P95/P96 records will be pushed after their own integration checks.
+ROOTed7d24f plus original producer/reviewer theory refs are saved on GitHub.
+Local unqualified P96 code and later records are NOT pushed to CI yet.
+
+P97card457e49c, complement-hypothesis correction35e1cf9 (151lines), is fully
+read by ROOT: factorial interpolation isolates N>=3 residuals, but does not
+automatically reduce variance or prove interference. After crediting the
+low-sector frontier, the same interpolant is identically0 for actual strict
+improvement, so that proposed direct-progress CV is rejected. Other CVs and
+tail search remain OPEN. Shared ROOT/P66 derivation is not a fresh independent
+audit or novelty certificate. No P97 numerical pilot is justified.
 
 ## New scoped theory
 
