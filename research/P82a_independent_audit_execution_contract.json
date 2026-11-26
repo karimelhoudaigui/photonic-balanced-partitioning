@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "contract_only": true,
+  "binding_state": "POST_SEAL_INPUTS_PREPARED_CHECKER_GUARD_STILL_CLOSED",
+  "claim_id": "P82a-INDEPENDENT-SEALED-RECORDED-DATA-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Independent recorded-data reconstruction of the exact frozen P82a finite protocol after B raw seal: registered graph and role/mark replay, exact mask/cut/descent/current reset/96-attempt photon and decoder audit, independent F4 features with archived rounded H, typed paid WALL ledger and conservative dual-clock prefix witnesses, same fixed-mode two-anchor negative gate and failure precedence.",
+    "coefficient_domain": "Exact integer/Fraction classical checks; pinned PCG64/NetworkX only for registered postseal input/mark reconstruction; fixed binary64 compiler residual rules. No Born probability or native computation.",
+    "conventions": "Main cannot launch until ROOT binds opaque actual project-relative dataset/manifest/input hashes and authorizes after checker qualification. No primary function import, Clifford/Naive/P50 solver replay or behavior/tolerance retune.",
+    "inputs": [
+      "Opaque sealed primary manifest/results and qualified checker input hashes; actual repeated input closure below",
+      "Known producer freeze94f80 source7e1a/spec8598, corrected clock addendum and implementation binding",
+      "Frozen independent checker and its reviewed qualification"
+    ],
+    "bounds": {
+      "registered_attempts": 96,
+      "modeled_injected_photons_if_complete": 768,
+      "raw_bytes": 33554432,
+      "output_bytes": 524288,
+      "log_bytes": 4194304,
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "threads": 1,
+      "workers": 1,
+      "logical_bytes_PLAN": 268435456,
+      "native_calls": 0,
+      "optimizer_replays": 0,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No complete Born-law/distribution/TV certificate from96 adaptive observations",
+      "No physical replication, new optimization evidence, equal-resource advantage or positive verdict",
+      "Prefix failure is not a negative physics result or an accepted veto"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P82a_independent_raw_audit.py",
+    "tests/test_p82a_independent_raw_audit.py",
+    "research/P82a_independent_audit_spec.json",
+    "research/P82a_independent_audit_preflight_contract.json",
+    "research/P82a_independent_audit_main_TEMPLATE.json",
+    "research/P82a_INDEPENDENT_AUDIT_BINDING.md",
+    "research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+    "research/P82_ZERO_LOADING_INDEPENDENT_NULL.md",
+    "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+    "research/P82a_DEV_VETO_CONTRACT.md",
+    "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+    "research/P82a_CLOCK_ADDENDUM_REVIEW.md",
+    "research/P82a_split_scatter_veto.py",
+    "tests/test_p82a_split_scatter_veto.py",
+    "research/P82a_execution_spec.json",
+    "research/P82a_split_scatter_preflight_contract.json",
+    "research/P82a_split_scatter_execution_contract.json",
+    "research/P82a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P82a_independent_audit_dataset_binding.json",
+    "research/P82a_independent_audit_execution_contract.json",
+    "experiments/P82a_dev_veto/run_001/manifest.json",
+    "research/P82a_independent_audit_preflight/run_002/manifest.json",
+    "research/P82a_INDEPENDENT_AUDIT_QUALIFICATION_RECEIPT.md",
+    "research/P82a_CHECKER_INDEPENDENT_SOURCE_REVIEW.md",
+    "research/P82a_CHECKER_PATH_CORRECTION_REVIEW.md",
+    "research/P82a_independent_audit_preflight/run_001/prelaunch_rejection.json",
+    "reports/P82a_integration_validation/prepare_audit_binding.py",
+    "experiments/P82a_dev_veto/run_001/stdout.txt",
+    "experiments/P82a_dev_veto/run_001/stderr.txt",
+    "experiments/P82a_dev_veto/run_001/data/metadata.json",
+    "experiments/P82a_dev_veto/run_001/data/graphs.json",
+    "experiments/P82a_dev_veto/run_001/data/B_ER.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/B_RR.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/paid_ledger.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/controls.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/summary.json",
+    "experiments/P82a_dev_veto/run_001/data/failure.json",
+    "research/P82a_independent_audit_preflight/run_002/stdout.txt",
+    "research/P82a_independent_audit_preflight/run_002/stderr.txt",
+    "research/P82a_independent_audit_preflight/run_002/junit.xml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "POST-SEAL replay of fixed original PCG64 classical roles only; no new draws or native sampling",
+    "seed": "Original sealed registered role tuples, never evaluated by qualification"
+  },
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P82a_independent_raw_audit.py",
+    "--binding",
+    "research/P82a_independent_audit_dataset_binding.json",
+    "--output",
+    "research/P82a_independent_audit_main/run_001/data"
+  ],
+  "runner_output_directory": "research/P82a_independent_audit_main/run_001",
+  "declared_results": [
+    "research/P82a_independent_audit_main/run_001/data/audit_summary.json",
+    "research/P82a_independent_audit_main/run_001/data/audit_failure.json"
+  ],
+  "opaque_binding_fields_only_later": [
+    "Producer execution commit",
+    "Dataset directory and existing declared-result paths",
+    "Producer manifest path",
+    "Opaque SHA256/bytes and exact repeated --input closure",
+    "b_raw_sealed/audit_authorized flags and binding-state transition"
+  ],
+  "resource_note": "Prepared opaque postseal binding only. The separate dataset binding remains unauthorized until ROOT review. CPU30/wall60/env1/no native backend/log4MiB/output512KiB/raw32MiB/logical256MiB PLAN/zero automatic retries. No behavior, tolerance or scientific setting changed."
+}
