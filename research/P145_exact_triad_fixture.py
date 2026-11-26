@@ -96,9 +96,9 @@ def compute(evidence):
         value = cut(set(support) | {6, 7, 8})
         r = sum(i >= 3 for i in support)
         delta = value - current_cost
-        assert delta == 3 * r - 2 * r * r
         gains[support] = max(0, -delta)
         candidates.append({"support": support, "replacements": r, "cut": value, "gain": gains[support]})
+        assert delta == 3 * r - 2 * r * r
     all_occ = list(occupations())
     assert len(all_occ) == 56 and len(candidates) == 20
     records = evidence['records']
@@ -165,6 +165,8 @@ def execute(output):
     failure = None
     summary = {'status': 'NOT_COMPLETED'}
     try:
+        if not __debug__:
+            raise RuntimeError('Optimized Python is refused: exact checks require assertions')
         summary = compute(evidence)
         print(summary['status'])
     except Exception as exc:
