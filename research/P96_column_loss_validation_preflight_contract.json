@@ -1,0 +1,24 @@
+{
+  "claim_id": "P96-COLUMN-LOSS-PURE-QUALIFICATION",
+  "target_manifest_schema_version": 2,
+  "contract_only": true,
+  "binding_state": "FROZEN_CODE_ONLY_SEPARATE_ROOT_AUTHORIZATION_REQUIRED",
+  "mathematics": {
+    "assertion_tested": "Exactly9 unparameterized pure tests: literal vacuum/unary/scaled-HOM/nonorthogonal-K2 raw PNR tables; two independently hand-tabulated K3 rank-one laws and sharp factor24; physical trace1 negative-q counter preserved outside domain; trace1/2 K4 rank-one total-count table; complete planned population/iterator cardinalities. No native, graph or stochastic execution in qualification.",
+    "coefficient_domain": "Strict real rational Fraction/permutation-polynomial arithmetic plus builtin combinatorial integer counts. No NumPy/SciPy/Perceval/exqalibur imports by this source/tests population.",
+    "conventions": "All declared zero bins retained; no source/domain gate is weakened for the outside-domain table. JUnit record_property stores observed exact p/q fractions and scope. No native-bearing source function is called.",
+    "inputs": ["The8 project-relative static files below already exist after this freeze. Theory is contextual and is bound separately for main after ROOT integration, not guessed as a missing qualification input."],
+    "bounds": {"CPU_seconds":30,"wall_seconds":60,"threads":1,"workers":1,"planned_pytest_items":9,"native_calls":0,"RNG_calls":0,"graph_calls":0,"max_log_bytes":4194304,"max_scientific_bytes":524288,"per_file_RLIMIT_FSIZE":524288,"logical_workspace_bytes_PLAN":268435456,"hard_RSS_claim":false,"failed_retries":0},
+    "non_claims": ["Qualification PASS is not main execution, universal theorem verification or QPU/optimizer validation.","Preflight XML has its OWN512KiB hard/soft FSIZE set before importing pytest; main's8MiB resource settings are not implicitly applied to this different command.","Static source/tests/contracts must remain byte unchanged after qualification. A separate active main binding carries actual theory, authorization and qualification evidence."]
+  },
+  "execution_artifacts": ["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P96_column_loss_validation.py","tests/test_p96_column_loss_validation.py","research/P96_column_loss_validation_contract.json","research/P96_column_loss_validation_preflight_contract.json","research/P96_VALIDATION_POPULATION.md"],
+  "software": [{"name":"Python","version":"3.11.15"},{"name":"pytest","version":"8.4.2"}],
+  "randomness": {"used":false,"generator":"No random draw, seed, native state or graph","seed":null},
+  "planned_inherited_environment": {"PYTEST_DISABLE_PLUGIN_AUTOLOAD":"1","PYTEST_ADDOPTS":"","PYTEST_PLUGINS":"","PYTHONDONTWRITEBYTECODE":"1","OMP_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","MKL_NUM_THREADS":"1","VECLIB_MAXIMUM_THREADS":"1","NUMEXPR_NUM_THREADS":"1","BLIS_NUM_THREADS":"1"},
+  "planned_command": ["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-I","-B","-c","import os,resource,runpy,sys;os.environ.update({key:'1' for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS')});resource.setrlimit(resource.RLIMIT_FSIZE,(524288,524288));sys.argv=['pytest','-q','-p','no:cacheprovider','-o','junit_family=legacy','tests/test_p96_column_loss_validation.py','--junitxml=research/P96_column_loss_preflight/run_001/junit.xml'];runpy.run_module('pytest',run_name='__main__')"],
+  "runner_output_directory": "research/P96_column_loss_preflight/run_001",
+  "declared_results": ["research/P96_column_loss_preflight/run_001/junit.xml"],
+  "runner_binding": {"fresh_parent_required":true,"timeout":60,"max_cpu_seconds":30,"max_threads":1,"max_output_bytes":4194304,"max_memory_bytes":null,"max_cores":null,"input_policy":"Exactly8 existing relative regular static inputs, each a repeated runner --input; no external/native or missing theory input","result_policy":"Sole JUnit strictly under fresh parent; manifest/stdout/stderr runner-owned. Raw seal precedes reading."},
+  "resource_note": "No import/AST/collection/execution occurred while authoring. ROOT and independent static review precede any qualification. The planned command is not authorization. One qualification/zero retries; failure preserves raw prefix and requires a distinct reviewed action, not tuning caps or population. Main has a separate contract/binding and FSIZE8MiB before native imports.",
+  "positive_accepted": false
+}
