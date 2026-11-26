@@ -1879,3 +1879,32 @@ P96/P107 laws. No source evaluation, RNG/native call or numerical run has yet
 occurred for either. A separate P132 portfolio must address actual changed
 mechanisms rather than mistake a stronger classical null for the user goal.
 CLAIM-042 OPEN. All validated/negative raw results and paper/main preserved.
+
+## P130/P131 completed; P132/P133 reviewed; P134 remains CODE ONLY
+
+26-Nov-2026. P130 original raw358fa5a precedes its separate receipt0affd22:
+ONE0.276674s main exactly matches327 top probabilities/59 moments/39 sector
+totals/14 FAIL, with1468 PSD minors and2328 rows. All439 comparison rows
+agree;27 inputs unchanged/officialv2PASS. Signed loss coherences and zero
+sectors remain. It executes no FPRAS/approximate sampler/native/RNG.
+research/P130_FEW_LOSS_IDENTITY_RECEIPT.md.
+
+P131 original raw43b5913 precedes separate receiptbc3b6d4: ONE8.782879s main,
+all15 cases/29011 phase contexts/307 outputs/300 PGFs/12 literal hands/
+29727 checks PASS,29754 rows,29 unchanged inputs/officialv2PASS. No actual
+random provider was used/certified; precision and structural tau are separate.
+Production is bounded K<=7/M<=8, numerical tests K<=4. It is a stronger
+classical null, not a positive optimizer or speed benchmark.
+research/P131_PHASE_CONTROL_RECEIPT.md.
+
+ROOT FULL read P132247+peer166, P13393+peer107 and cost critique96. P132's
+three changed mechanisms retain open useful-utility/control/hardware bridges.
+P133 rational reflection removes an inverse-root engineering bottleneck but
+stays static passive; its nongauge-positive hand has zero graph utility.
+The known prototype and full15-candidate frontier remain classically credited.
+P134128-line prospective card and ROOT checkpoint9ef2b3d authorize CODE ONLY,
+not graph draws or execution. Its future fixed-grid four-source witness can
+only support FOLLOW-UP. ROOT prospectively allocates CPU120/wall180 before
+any P134 science, preserving the card's earlier60/90 proposal. No rescue,
+new result, held-out or hardware gate is inferred from these design notes.
+reports/P133_P134_ROOT_DESIGN_CHECKPOINT.md. CLAIM-042 OPEN; paper/main intact.

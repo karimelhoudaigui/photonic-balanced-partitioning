@@ -1,5 +1,19 @@
 # Negative Results Log
 
+## 26-Nov-2026: exact classical-control qualifications completed
+
+P130 passes the finite signed-loss/PSD identities and P131 passes the entire
+bounded finite-phase qualification; original raw358fa5a/43b5913 precedes the
+separate receipts. Neither is an optimization win or a universal no-go.
+P131's structural approximation error remains even on a diagonal circuit
+with B=D; a contrast against it alone is not an interference witness.
+P132's changed mechanisms and P133's rational engineering remain open at
+the useful-signal/control/cost bridge. P133's hand has zero graph utility.
+P134's proposed15-state pool is classically solved once its15 costs are
+scored/credited, even if a future finite-grid optical witness is found.
+All prototype endpoints and proper-group controls are mandatory; no paid
+classical search is hidden in initialization. No positive/held-out/QPU claim.
+
 ## 26-Nov-2026: fixed few-loss and finite-phase controls accepted in scope
 
 P126 extends P123's source-dependent existence result to a FIXED number of
