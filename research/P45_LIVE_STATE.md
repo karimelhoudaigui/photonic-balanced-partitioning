@@ -327,8 +327,13 @@ to equal the corresponding proper-species law. Full-operator perturbations
 give TV<=min(1,2Kdelta), not signal-only/rare conditioning. The recorded RR
 support yields B=D throughout its fixed beta/kappa family. See
 ../reports/P136_ROOT_COMPONENT_CHECKPOINT.md. Connectedness alone is not gain.
-P137's explicit weak-reflection candidate and general-K addendum are under
-independent proof review; no numerical claim. P138 is a MANUAL changed
+P137's130+83-line weak-reflection source/addendum and112+86-line independent
+reviews now pass full ROOT review. For K>=2, dense direct-coupling floor d
+and incumbent R, admitted D(ceil(sqrt(K))*kappa) dominates every off-R CF
+target inside the explicit supplied window. No sparse/all-strength/adaptive,
+matched-time or novelty claim. ../reports/P137_ROOT_WEAK_REFLECTION_CHECKPOINT.md.
+P139 investigates a broader sparse analytic obstruction; it is PENDING.
+P138 is a MANUAL changed
 incumbent-aligned finite-strength design. Neither has execution authority.
 P135's62-line ideal shared-phase CF/hold formula and62-line independent
 review are preregistered for a conditional later control; no code/run and
