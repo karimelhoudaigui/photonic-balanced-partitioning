@@ -39,8 +39,8 @@ Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
 GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
 run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
 
-Numerical worker FREE after ONE P82a deterministic qualification,
-not DEV/main. P87 is ACCEPTED after full ROOT168+peer308+exact344
+Numerical worker reserved to P62 for ONE P82a PRIMARY MAIN after accepted
+qualification and predata checker freeze. P87 is ACCEPTED after full ROOT168+peer308+exact344
 reads, sources6436860/17ba1d4 and auditb77c8c0. Its sharp fixed-N oracle
 limitR/2 matches identity; this is not a generic sampling-optimizer no-go.
 P82 eta0 decoded null is also accepted with exact independent153e807,
@@ -68,18 +68,22 @@ No DEV graph/PCG/8phsample/P43/P50actual call. Checkpoint:
 reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md. Source+qualraw/receipt now
 integratedROOT. CIhead9ba543c is observedGREEN:1214PASS19.57s in actual
 job logs, run45734622442/job139624733249;602historicalfilesunchanged.
-Main96B/768 modeled photons remains separately unauthorized and awaits
-the independent checker's complete predatafreeze (source/tests/contracts).
+Main96B/768 modeled photons now separately AUTHORIZED in clean producer
+39b61bb9, exact15inputs/8results/CPU60wall90/native+env1/0retry. ROOTgate:
+reports/P82a_ROOT_MAIN_AUTHORIZATION.md. Raw commitBEFOREinterpretation,
+separate receipt; no result claimed until observed/independently audited.
 
 Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
 data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old
-clock blockers are discharged above. CheckerCODE ONLY is now commissioned
-against corrected94f80b94, with separate source/tests/contracts/review/tinyqual.
+clock blockers are discharged above. CheckerCODE ONLY now frozen34c95130,
+sixfiles1638l/sourceSHAf595fcae, corrected94f80b94 schema. ROOT read191
+MD/spec/template lines; P66 performs full STATIC review without Bdata.
+Checkerqual/auditmain remain separately unauthorized.
 DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
 Compilation-before-R is source-bound, not a separately timed raw endpoint;
 custom control audit covers cuts/cache lineage/clocks, not policy replay.
-No native physics replay or distribution proof. P66 is free after P89
-exact audit; P81 prepares a STATIC source-aware/nonflat escape design.
+No native physics replay or distribution proof. P81 prepared STATIC
+P90 source-aware/nonflat design c52afab/b3c0b04c, not yet ROOT fullyread.
 
 P89 ideal all-eta source-removal product law/raw mean is ACCEPTED:
 sourcef775f682/e99a1e32, exactaudit68baaeb8/eef75599, ROOTfull215+149reads
