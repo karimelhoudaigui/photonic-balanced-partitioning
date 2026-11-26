@@ -300,8 +300,16 @@ raw358fa5a is sealed BEFORE reading. All2328 rows and439 exact comparisons
 pass:327 state probabilities/59 moments/39 totals/14 FAIL,1468 PSD minors,
 27 unchanged inputs and officialv2PASS. Signed environment entries, zero
 sectors and negative legacy q remain. No FPRAS/sampler/native/RNG run.
-research/P130_FEW_LOSS_IDENTITY_RECEIPT.md. P131 is separately CODE ONLY
-pending its peer/authority; P132's changed mechanism bridges remain OPEN.
+research/P130_FEW_LOSS_IDENTITY_RECEIPT.md. P131's FULL983+152-line reviews
+precede8d3714d authority/binding9f623642 and ONE8.782879s main, exit0.
+Raw43b5913 is sealed BEFORE reading:29754 rows/29727 checks PASS, all15 cases,
+29011 contexts/307 outputs/300 input PGFs/12 hands;29 unchanged inputs and
+officialv2PASS. Production K<=7/M<=8, finite tests K<=4, no actual random
+provider used/certified. Structural tau is separate from finite precision.
+research/P131_PHASE_CONTROL_RECEIPT.md. P132's changed mechanism bridges
+remain OPEN. P133 rational-reflection engineering and its independent
+93+107-line proof review remove an inverse-root compilation bottleneck;
+they do not prove useful four-input optimization or a new physical class.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 

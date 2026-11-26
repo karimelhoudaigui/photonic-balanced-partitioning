@@ -1,0 +1,402 @@
+{
+  "original_raw_seal": "43b5913",
+  "interpretation_after_raw_seal": true,
+  "run": {
+    "started_at": "2026-11-26T16:17:15.558092+00:00",
+    "runtime_seconds": 8.782879,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 180.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 120,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "rows_read": 29754,
+  "kind_counts": {
+    "binding_observation": 1,
+    "input_observation": 28,
+    "reference_blob": 12,
+    "provenance": 1,
+    "literal_boundary": 7,
+    "repeated_input_hand": 1,
+    "literal_rejection": 3,
+    "invalid_bit_return": 1,
+    "reference_completion": 2,
+    "case_operands": 15,
+    "case_profile": 15,
+    "input_pgf": 300,
+    "context": 29011,
+    "output_bin": 307,
+    "case_result": 15,
+    "mean": 31,
+    "complex_spectrum_identity": 2,
+    "fourier_gram": 2
+  },
+  "scientific_failure_rows": [],
+  "input_count": 29,
+  "unchanged_inputs": true,
+  "case_results": [
+    {
+      "TV_B_finite": "0",
+      "TV_B_ideal": "0",
+      "TV_finite_ideal": "0",
+      "birthday_bound": "0",
+      "case": "V0",
+      "contexts": 1,
+      "epsilon": "1/1024",
+      "eta": "0",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "0"
+    },
+    {
+      "TV_B_finite": "0",
+      "TV_B_ideal": "0",
+      "TV_finite_ideal": "0",
+      "birthday_bound": "0",
+      "case": "U1",
+      "contexts": 2,
+      "epsilon": "1/1024",
+      "eta": "1/4",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "0"
+    },
+    {
+      "TV_B_finite": "1/256",
+      "TV_B_ideal": "1/256",
+      "TV_finite_ideal": "0",
+      "birthday_bound": "1/128",
+      "case": "H2",
+      "contexts": 16,
+      "epsilon": "1/1024",
+      "eta": "1/8",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "1/128"
+    },
+    {
+      "TV_B_finite": "17616255091/4398046511104",
+      "TV_B_ideal": "71/18432",
+      "TV_finite_ideal": "707834881/4398046511104",
+      "birthday_bound": "1/256",
+      "case": "D3",
+      "contexts": 64,
+      "epsilon": "1/1024",
+      "eta": "1/16",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "71/18432"
+    },
+    {
+      "TV_B_finite": "25449179985/4398046511104",
+      "TV_B_ideal": "73/12288",
+      "TV_finite_ideal": "6666296845/39582418599936",
+      "birthday_bound": "9/256",
+      "case": "R3a",
+      "contexts": 64,
+      "epsilon": "1/1024",
+      "eta": "3/16",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "69/2048"
+    },
+    {
+      "TV_B_finite": "1246534353/4398046511104",
+      "TV_B_ideal": "361/786432",
+      "TV_finite_ideal": "7098650509/39582418599936",
+      "birthday_bound": "9/4096",
+      "case": "R3b",
+      "contexts": 64,
+      "epsilon": "1/1024",
+      "eta": "3/64",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "285/131072"
+    },
+    {
+      "TV_B_finite": "28451345387/17592186044416",
+      "TV_B_ideal": "1489/884736",
+      "TV_finite_ideal": "265512672431/1899956092796928",
+      "birthday_bound": "1/64",
+      "case": "S3",
+      "contexts": 64,
+      "epsilon": "1/1024",
+      "eta": "1/8",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "35/2304"
+    },
+    {
+      "TV_B_finite": "38541290715744035/2305843009213693952",
+      "TV_B_ideal": "2215/131072",
+      "TV_finite_ideal": "902383456323363/4611686018427387904",
+      "birthday_bound": "3/8",
+      "case": "B4",
+      "contexts": 4096,
+      "epsilon": "1/1024",
+      "eta": "1/2",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "157/512"
+    },
+    {
+      "TV_B_finite": "13664411845963855/2305843009213693952",
+      "TV_B_ideal": "12029/2097152",
+      "TV_finite_ideal": "463913094512725/2305843009213693952",
+      "birthday_bound": "3/512",
+      "case": "D4",
+      "contexts": 4096,
+      "epsilon": "1/1024",
+      "eta": "1/16",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "12029/2097152"
+    },
+    {
+      "TV_B_finite": "0",
+      "TV_B_ideal": "0",
+      "TV_finite_ideal": "0",
+      "birthday_bound": "0",
+      "case": "Z4",
+      "contexts": 4096,
+      "epsilon": "1/1024",
+      "eta": "0",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "0"
+    },
+    {
+      "TV_B_finite": "7472441596771677/1152921504606846976",
+      "TV_B_ideal": "7001/1048576",
+      "TV_finite_ideal": "1044617319768739/4611686018427387904",
+      "birthday_bound": "3/32",
+      "case": "R4",
+      "contexts": 4096,
+      "epsilon": "1/1024",
+      "eta": "1/4",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "701/8192"
+    },
+    {
+      "TV_B_finite": "61156687417/1099511627776",
+      "TV_B_ideal": "1/18",
+      "TV_finite_ideal": "1258352641/14843406974976",
+      "birthday_bound": "1/16",
+      "case": "C3",
+      "contexts": 64,
+      "epsilon": "1/1024",
+      "eta": "1/4",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "17/288"
+    },
+    {
+      "TV_B_finite": "61025350118553053/576460752303423488",
+      "TV_B_ideal": "217/2048",
+      "TV_finite_ideal": "674964590856739/4611686018427387904",
+      "birthday_bound": "1",
+      "case": "X4",
+      "contexts": 4096,
+      "epsilon": "1/1024",
+      "eta": "1",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": false,
+      "tau": "29/32"
+    },
+    {
+      "TV_B_finite": "3287818061721137011/36893488147419103232",
+      "TV_B_ideal": "1568599547871/17592186044416",
+      "TV_finite_ideal": "3693925280779341/36893488147419103232",
+      "birthday_bound": "1",
+      "case": "G4",
+      "contexts": 4096,
+      "epsilon": "1/1024",
+      "eta": "1",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": false,
+      "tau": "29/32"
+    },
+    {
+      "TV_B_finite": "61010433363511401/147573952589676412928",
+      "TV_B_ideal": "733902463930095/1152921504606846976",
+      "TV_finite_ideal": "34533019611156983/147573952589676412928",
+      "birthday_bound": "3/512",
+      "case": "G4atten",
+      "contexts": 4096,
+      "epsilon": "1/1024",
+      "eta": "1/16",
+      "kind": "case_result",
+      "masses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "strict_P129": true,
+      "tau": "12029/2097152"
+    }
+  ],
+  "maximum_finite_ideal_TV": "34533019611156983/147573952589676412928",
+  "summary": {
+    "NOT_RUN": [],
+    "PARTIAL_CASE": null,
+    "RNG_draws": 0,
+    "active_binding_observed_sha256": "9f623642b5d93676a9ccbfd1f9363ad6beb629c29909f4e460a3e4781a0e99da",
+    "bins": 307,
+    "case": "G4atten",
+    "checks": 29727,
+    "completed": [
+      "V0",
+      "U1",
+      "H2",
+      "D3",
+      "R3a",
+      "R3b",
+      "S3",
+      "B4",
+      "D4",
+      "Z4",
+      "R4",
+      "C3",
+      "X4",
+      "G4",
+      "G4atten"
+    ],
+    "context": [
+      7,
+      7,
+      7,
+      7
+    ],
+    "contexts": 29011,
+    "hand_groups": 12,
+    "input_occupation": [
+      4,
+      0,
+      0,
+      0
+    ],
+    "input_pgfs": 300,
+    "native_calls": 0,
+    "phase": "COMPLETE",
+    "positive_accepted": false,
+    "random_bit_source": "NONE: exhaustive contexts and literal boundary vectors only",
+    "records": 29754,
+    "runtime": {
+      "cpu": 8.273138999999999,
+      "wall": 8.649090582999634
+    },
+    "scientific_failures": 0,
+    "status": "FINITE_VALIDATION_PASS"
+  },
+  "outputs": [
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/data/failure.json",
+      "bytes": 50,
+      "sha256": "a504ff4b6de581b5a6fd5bdbe27f95684f0fd01644bb9b02b5be2c0357a4c94c"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/data/records.jsonl",
+      "bytes": 2646157,
+      "sha256": "b128a3a774b781a2ced9d123838c691f91e707815f218036a449556b0638556c"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/data/summary.json",
+      "bytes": 667,
+      "sha256": "e76c3161facb2d720f8e3ee221f999e067352f8e46b4863c6787606b0f06359b"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/manifest.json",
+      "bytes": 15662,
+      "sha256": "0137e6a1698970172ec12818e97cc93befa7872d1b7fd65c163380158a554be8"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "ROOT read all sealed rows and checked case counts/recorded exact comparisons; no extra sampler/RNG/native/physics/optimizer replay."
+}

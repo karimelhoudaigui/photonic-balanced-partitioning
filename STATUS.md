@@ -73,8 +73,12 @@ or optimizer benefit is proved. P128 is a separate ideal coherent control.
 P130's sole bounded exact qualification now PASSES all327 top probabilities,
 39 sectors/59 moments/14 FAIL and1468 L/I-L minors, with zero mismatches;
 raw358fa5a precedes interpretation,27 inputs unchanged/official v2PASS.
-It runs no FPRAS or approximate sampler. P131 remains reviewed-code work
-pending its separate peer gate/authority. P132 specifies three changed
+It runs no FPRAS or approximate sampler. P131's sole8.782879s main also
+PASSES15 cases/29011 contexts/307 bins/300 PGFs and29727 exact checks,
+raw43b5913 before reading,29 unchanged inputs/official v2PASS. Production
+K<=7/M<=8 is numerically tested here only toK4; actual fair RNG is assumed,
+not supplied/certified. Its precision error and structural tau stay separate.
+P132 specifies three changed
 mechanisms with open useful-signal/control bridges, not a positive pilot.
 See reports/P126_ROOT_FEW_LOSS_CHECKPOINT.md and
 reports/P129_ROOT_PHASE_CONTROL_CHECKPOINT.md.
