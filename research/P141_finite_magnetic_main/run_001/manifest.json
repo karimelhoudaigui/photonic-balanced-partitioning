@@ -1,0 +1,291 @@
+{
+  "schema_version": 2,
+  "claim_id": "P141-FINITE-MAGNETIC-INCUMBENT-SCREEN",
+  "repository": {
+    "commit": "38dc0b7ae57f29eedface5ef89637279123518e7",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P141_finite_magnetic_screen.py",
+    "--binding",
+    "research/P141_execution_binding.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Two fixed fresh DEV n24 graphs, r8/k4 incumbent-null rational magnetic reflection; all34 grid+2 hand contexts, all70 signal-CF subsets and15 source profiles, 14 independently grid-retuned proper controls; exact raw CF/collision/dump; auxiliary signed C4 at two bestB only; one prescribed complete1365-bin normalization. Derived P134 engine, not independent replication.",
+    "inputs": [
+      "Frozen142-line P141 card deb8d9ae and ROOT CODE ONLY authorization586b80a, original P138/P133, unchanged frozen P134 source",
+      "Fresh DEV topology seeds1411001/1411002, weight MT1412001/1412002, mark MT1413001/1413002; no pre-execution preview",
+      "Grid0 shared kappa0, then alpha outer0/1, rho middle1/i, kappa inner1/2,1,2,4; first-index ties",
+      "Actual12 STATIC source/docs/environment project descriptors, optional frozen review metadata and separate active binding; exact11 current external roles; zero prior raw inputs"
+    ],
+    "coefficient_domain": "Exact Q(i) with two Fraction coordinates for F/frameGram/Q. Context D is LCM of T/U denominators ONLY. Store D*T,D*U,D*dump,D^2*G as Gaussian integer decimal-string pairs; amplitudes have denominator D^l, Gram permanents D^(2l), CF/profile/C4 D^8; fullPNR retains additional occupation factorial. Independent DP/Ryser and convolution/color-buckets operate on integer numerators with exact signed delta=first-second. No float optical arithmetic, NumPy/SciPy/Perceval or producer imports. Pinned NetworkX topology uses its ordinary literal0.4 convention.",
+    "conventions": "Four CF photons LAST4 of12 ports; 8signal+4dump. F=(I+i*kappa*H)E, H Hermitian row-normalized full-graph direct/two-hop magnetic encoding, E embeds currentR. T=2FQ,Ddump=(I-FdaggerF)Q; columns[T;-Ddump]. Shared null is lossless currentR with hR=0 for ALL profiles. All70 balanced lifts/full frontier and preprocessing credited to every control; imbalanced S0/singletons only helpers. ANYdump PNR classification first. All failed raw records hold current; no CF/survival normalization.",
+    "bounds": {
+      "CPU_seconds": 180,
+      "wall_seconds": 240,
+      "workers": 1,
+      "threads": 1,
+      "FSIZE_bytes": 50331648,
+      "scientific_combined_bytes": 50331648,
+      "record_bytes": 49283072,
+      "final_results_combined_bytes": 1048576,
+      "log_bytes": 4194304,
+      "science_plus_log_bytes": 54525952,
+      "runner_metadata_allowance_bytes": 1048576,
+      "logical_memory_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "failed_retries": 0,
+      "graph_contexts": 2,
+      "used_MT_streams": 6,
+      "grid_points_per_graph": 17,
+      "matrix_contexts": 36,
+      "source_profiles": 15,
+      "proper_profiles": 14,
+      "receiver_CF_sets": 70,
+      "record_rows_nominal": 58443,
+      "subpermanent_rows": 17820,
+      "Gram_permanent_rows": 540,
+      "CF_profile_comparisons": 37800,
+      "selected_four_cycle_rows": 140,
+      "profile_totals": 540,
+      "full_PNR_points": 1365,
+      "whole_cut_calls": 160,
+      "incremental_cost_formulas": 140,
+      "field_checks": 16,
+      "two_hop_pair_sums": 56,
+      "two_hop_products": 1344,
+      "registered_tasks": 45,
+      "context_D_less_than_power2": 124,
+      "permanent_max_size": 4,
+      "inverse_max_size": 4,
+      "photon_max": 4,
+      "full_modes": 12,
+      "photon_RNG_draws": 0,
+      "native_calls": 0,
+      "FPRAS_calls": 0
+    },
+    "non_claims": [
+      "No execution authorized by this inactive TEMPLATE or code-only document",
+      "No optimizer advantage: complete70-state frontier already paid/credited",
+      "No continuously reoptimized group dominance, full-family obstruction, relabeling robustness, held-out or independently replicated result",
+      "No independent native validation, actual loss/PNR/feedforward/calibration certificate, practical timing or novelty/QPU/manuscript claim",
+      "Auxiliary selected C4/J4 sign is not a causal graph-utility certificate"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "CPython random.Random MT19937 through pinned NetworkX3.6.1 core factories; backend=networkx and empty effective algos/generators/classes priorities",
+    "seed": {
+      "topology": [
+        1411001,
+        1411002
+      ],
+      "weights": [
+        1412001,
+        1412002
+      ],
+      "marks": [
+        1413001,
+        1413002
+      ]
+    },
+    "graph_only": true,
+    "photon_RNG_draws": 0,
+    "native_draws": 0
+  },
+  "run": {
+    "started_at": "2026-11-26T18:04:31.806787+00:00",
+    "runtime_seconds": 30.059362,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 240.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 180,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P141_finite_magnetic_screen.py",
+    "research/P141_POPULATION.md",
+    "research/P141_contract_TEMPLATE.json",
+    "research/P133_RATIONAL_RECEIVER_REFLECTION.md",
+    "research/P134_rational_frame_discriminator.py",
+    "research/P138_INCUMBENT_MAGNETIC_RECEIVER_ROUTE.md",
+    "research/P141_FINITE_MAGNETIC_SCREEN_CARD.md",
+    "research/P141_INDEPENDENT_CARD_REVIEW.md",
+    "reports/P141_ROOT_CODE_ONLY_AUTHORIZATION.md",
+    "reports/P141_ROOT_CODE_REVIEW.md",
+    "research/P141_INDEPENDENT_FROZEN_CODE_REVIEW.md",
+    "reports/P141_ROOT_MAIN_AUTHORIZATION.md",
+    "reports/P141_validation_review/external_pins.json",
+    "research/P141_execution_binding.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P141_finite_magnetic_screen.py",
+      "sha256": "8e70d23519d95db529374a960a1ffcaeb9f68e6ac28e73a3e00e36f2e4a54e4b",
+      "sha256_after": "8e70d23519d95db529374a960a1ffcaeb9f68e6ac28e73a3e00e36f2e4a54e4b"
+    },
+    {
+      "path": "research/P141_POPULATION.md",
+      "sha256": "57ba5a6e088ca351b39063a9e28efd6b385411c56ae4365c7f1b4258a656d100",
+      "sha256_after": "57ba5a6e088ca351b39063a9e28efd6b385411c56ae4365c7f1b4258a656d100"
+    },
+    {
+      "path": "research/P141_contract_TEMPLATE.json",
+      "sha256": "5f0045043dd603cba5ba43062df6feb96184d490e0557f7c626ce2f3ed11f3bb",
+      "sha256_after": "5f0045043dd603cba5ba43062df6feb96184d490e0557f7c626ce2f3ed11f3bb"
+    },
+    {
+      "path": "research/P133_RATIONAL_RECEIVER_REFLECTION.md",
+      "sha256": "56720652d4dbf7c2053ff5599fcfa1bbb1f88e632a3256ee8b9ece5c9735c98d",
+      "sha256_after": "56720652d4dbf7c2053ff5599fcfa1bbb1f88e632a3256ee8b9ece5c9735c98d"
+    },
+    {
+      "path": "research/P134_rational_frame_discriminator.py",
+      "sha256": "0f9dce56cecac9d7701953577adce1d5bf0c6cc2807083eca45c3ba47f1856f3",
+      "sha256_after": "0f9dce56cecac9d7701953577adce1d5bf0c6cc2807083eca45c3ba47f1856f3"
+    },
+    {
+      "path": "research/P138_INCUMBENT_MAGNETIC_RECEIVER_ROUTE.md",
+      "sha256": "b40d8491906aa772e0662b22dcc97d60d1439df06b8ec1bd8b79fcd43acc7460",
+      "sha256_after": "b40d8491906aa772e0662b22dcc97d60d1439df06b8ec1bd8b79fcd43acc7460"
+    },
+    {
+      "path": "research/P141_FINITE_MAGNETIC_SCREEN_CARD.md",
+      "sha256": "4daa33822164d1298202b5a15e0dd86a5ec68abc626606f5a292fa62936033cd",
+      "sha256_after": "4daa33822164d1298202b5a15e0dd86a5ec68abc626606f5a292fa62936033cd"
+    },
+    {
+      "path": "research/P141_INDEPENDENT_CARD_REVIEW.md",
+      "sha256": "1a1750d4b26d48c6c4464a51cd8982158e88c181c04d483e471ef5846bf3957d",
+      "sha256_after": "1a1750d4b26d48c6c4464a51cd8982158e88c181c04d483e471ef5846bf3957d"
+    },
+    {
+      "path": "reports/P141_ROOT_CODE_ONLY_AUTHORIZATION.md",
+      "sha256": "82a57ccb6062c3a0b280c6fa858ff5d0c4a4325af27364d996b93330faca8274",
+      "sha256_after": "82a57ccb6062c3a0b280c6fa858ff5d0c4a4325af27364d996b93330faca8274"
+    },
+    {
+      "path": "reports/P141_ROOT_CODE_REVIEW.md",
+      "sha256": "cfc53c6ea106458aa623c788c84fea2e73967155b15ec59b4086ba6fe38f96a7",
+      "sha256_after": "cfc53c6ea106458aa623c788c84fea2e73967155b15ec59b4086ba6fe38f96a7"
+    },
+    {
+      "path": "research/P141_INDEPENDENT_FROZEN_CODE_REVIEW.md",
+      "sha256": "bbcfdce9d17ccb0f142278a62adbb2001ae7a2a04bf28125d077a9fdbe4683e1",
+      "sha256_after": "bbcfdce9d17ccb0f142278a62adbb2001ae7a2a04bf28125d077a9fdbe4683e1"
+    },
+    {
+      "path": "reports/P141_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "f3fb57ca6707cebed41560fe1c1d9d09ea4033b88559cfb791694254227c140e",
+      "sha256_after": "f3fb57ca6707cebed41560fe1c1d9d09ea4033b88559cfb791694254227c140e"
+    },
+    {
+      "path": "reports/P141_validation_review/external_pins.json",
+      "sha256": "4b4c463639fd84ee2c2af4220ff3a6607b64c967945dc6950b2b2fab7ed5c203",
+      "sha256_after": "4b4c463639fd84ee2c2af4220ff3a6607b64c967945dc6950b2b2fab7ed5c203"
+    },
+    {
+      "path": "research/P141_execution_binding.json",
+      "sha256": "1d59d75740e7ae3596ac0a51b5cb077e6e7eafc97380c6651e35fc89c8bcecef",
+      "sha256_after": "1d59d75740e7ae3596ac0a51b5cb077e6e7eafc97380c6651e35fc89c8bcecef"
+    }
+  ],
+  "output_directory": "research/P141_finite_magnetic_main/run_001",
+  "declared_results": [
+    "research/P141_finite_magnetic_main/run_001/data/records.jsonl",
+    "research/P141_finite_magnetic_main/run_001/data/summary.json",
+    "research/P141_finite_magnetic_main/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P141_finite_magnetic_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P141_finite_magnetic_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P141_finite_magnetic_main/run_001/data/records.jsonl",
+      "sha256": "faf9d55fd28d7b5442763e3dbcb4ed54edf4a006ec9516eb665df2541329933c",
+      "kind": "result"
+    },
+    {
+      "path": "research/P141_finite_magnetic_main/run_001/data/summary.json",
+      "sha256": "b0244e358baf777f7a51fc5f602a8e59f5261854122fb8e93f1d1fc90432b93e",
+      "kind": "result"
+    },
+    {
+      "path": "research/P141_finite_magnetic_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
