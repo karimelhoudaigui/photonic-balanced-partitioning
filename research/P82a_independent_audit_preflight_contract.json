@@ -14,8 +14,8 @@
   "execution_artifacts":["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P82a_independent_raw_audit.py","tests/test_p82a_independent_raw_audit.py","research/P82a_independent_audit_spec.json","research/P82a_independent_audit_preflight_contract.json","research/P82a_independent_audit_main_TEMPLATE.json","research/P82a_INDEPENDENT_AUDIT_BINDING.md","research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md","research/P82_ZERO_LOADING_INDEPENDENT_NULL.md"],
   "software":[{"name":"Python","version":"3.11.15"},{"name":"pytest","version":"8.4.2"}],
   "randomness":{"used":false,"generator":"Hardcoded scripted fixtures only","seed":null},
-  "planned_command":["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-m","pytest","-q","-p","no:cacheprovider","tests/test_p82a_independent_raw_audit.py","--junitxml=research/P82a_independent_audit_preflight/run_001/junit.xml"],
-  "runner_output_directory":"research/P82a_independent_audit_preflight/run_001/runner",
-  "declared_results":["research/P82a_independent_audit_preflight/run_001/junit.xml"],
+  "planned_command":["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-m","pytest","-q","-p","no:cacheprovider","tests/test_p82a_independent_raw_audit.py","--junitxml=research/P82a_independent_audit_preflight/run_002/junit.xml"],
+  "runner_output_directory":"research/P82a_independent_audit_preflight/run_002",
+  "declared_results":["research/P82a_independent_audit_preflight/run_002/junit.xml"],
   "resource_note":"NOT EXECUTED. Separate ROOT source review and qualification authorization required. CPU30/wall60/env1/one worker/log4MiB/logical256MiB PLAN/zero retries. Qualification contains no production dataset, role hashing, numerical import, RNG, native call or optimizer replay."
 }

@@ -116,3 +116,29 @@ not a positive optimization result. ROOT source review and separate
 tiny qualification authorization precede any execution. Recorded-data
 main additionally needs sealed B raw and explicit postseal authorization.
 No original data or source is modified by this code-only freeze.
+
+## Prelaunch binding correction, 26 November 2026
+
+The originally authorized qualification launch on source freeze34c95130
+was rejected by the installed runner BEFORE pytest or its child started.
+Observed exit2, tool wall0.032416833s; no tests/results/warnings or v2
+manifest were produced. The raw rejection is preserved separately at
+commit ebee1a041d8a9c564fb8c9a012ea7753045f2026:
+research/P82a_independent_audit_preflight/run_001/prelaunch_rejection.json,
+2268 bytes, SHA2567370eaf805e6e5eacfc242ca8763ddb808d24f27e8108147bcbd4baa4332aa61.
+The run_001 directory contains that archive; run_001/runner and its
+declared sibling junit.xml do not exist. No B data were accessed.
+
+The installed run_experiment.py checks path.relative_to(output) at
+lines188-191 and requires a result FILE below that output at line193.
+The original output directory ended in /runner, while JUnit was its
+sibling. Original contract bytes remain in Git and the rejection record.
+
+ROOT separately authorized this binding-only correction: qualification
+now declares fresh run_002 as the runner output and run_002/junit.xml
+in both argv and declared results. The main TEMPLATE output directory
+is its run_001 parent, with its already-declared data children unchanged.
+All11 qualification inputs, 21 synthetic tests, source/tests/spec,
+semantics, tolerances, CPU30/wall60/env1/log4MiB and zero retries remain
+unchanged. No new attempt is executed by this correction. Run_002 needs
+its distinct ROOT review/authorization; this is not an automatic retry.
