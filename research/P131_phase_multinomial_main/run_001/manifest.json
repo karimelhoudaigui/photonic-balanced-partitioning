@@ -1,0 +1,327 @@
+{
+  "schema_version": 2,
+  "claim_id": "P131-BOUNDED-FINITE-PHASE-MULTINOMIAL-EXACT-QUALIFICATION",
+  "repository": {
+    "commit": "8d3714d29ca2791422c695bf1dcebbcbaefaf872",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P131_phase_multinomial_validation.py",
+    "--binding",
+    "research/P131_phase_multinomial_execution_binding.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact deterministic qualification of bounded P129 control on all13 original P96 matrices plus complex P107 x=1/2,y=1/4 and its amplitude attenuation1/4. Enumerate all29011 finite phase contexts, all307 reference bins and300 repeated-input PGFs. Compare finite/ideal TV<=epsilon1/1024, reference/ideal TV<=tau, reference/finite TV<=tau+epsilon; preserve all zeros, signs, losses and collisions. Twelve literal hand groups use fixed callback vectors only.",
+    "coefficient_domain": "Exact Python Fraction/Gaussian-rational arithmetic, integer-isqrt inward roots for M<=8, exact integer multinomial accumulators, sparse complex polynomial labeled-column subset DP. No NumPy/SymPy/Perceval/native/RNG.",
+    "conventions": "Rows are observed signal modes, columns known distinct CF source modes. K categorical trials share the same random finite phase context; loss is the final CDF category. Production supports0<=K<=7 only; qualification K<=4. Both repeated-input Fock factorial and mixture factorial retained. Endpoint eta1 cases are separately justified diagnostics, not silent expansion of the strict P129 header.",
+    "inputs": [
+      "Frozen P129 proof6bee40d85ea941818959e4641cabffa009bbf480 SHA515d2c2ac9b2e4763d17d591691ff8aa71e004fd77400b0d8364e2d5092870b8",
+      "P96 corrected source0eabdadc70c2b7085c40b22183320e8655d00e1d; six opaque originals at240c7e5518fbcd69d8f22bbe5e8ead3c1bbbc9c1",
+      "P107 source6d9c16cde14ff25d51593c75607c712dcd7e9326; six opaque originals at99f2d98d93f13c7fc088218bfb06ff39af4c40e9",
+      "All raw blob/hash/size descriptors must be observed and filled by ROOT AFTER code freeze; no payload authoring/selection or producer import"
+    ],
+    "bounds": {
+      "production_K_max": 7,
+      "production_M_max": 8,
+      "qualification_K_max": 4,
+      "signal_modes_max": 4,
+      "cases": 15,
+      "phase_contexts": 29011,
+      "reference_output_bins": 307,
+      "input_occupation_PGFs": 300,
+      "literal_hand_groups": 12,
+      "epsilon": "1/1024",
+      "CPU_seconds": 120,
+      "wall_seconds": 180,
+      "workers": 1,
+      "threads": 1,
+      "native_calls": 0,
+      "RNG_draws": 0,
+      "FSIZE_bytes": 8388608,
+      "scientific_combined_bytes": 8388608,
+      "summary_bytes": 65536,
+      "failure_bytes": 65536,
+      "reserve_bytes": 131072,
+      "log_bytes": 4194304,
+      "logical_memory_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No generic-M implementation; K>=8 is unsupported before bit reads.",
+      "No executed result at freeze, universal bosonic simulation theorem from finite cases, FPRAS for probabilities, optimizer or quantum advantage, matched photon/runtime budget, hardware certificate, QPU or novelty.",
+      "Ideal law means are exact; rounded finite-bit means are approximate. Approximation error includes structural tau and precision epsilon.",
+      "Production accepts caller-owned fair-bit callbacks; qualifier enumerates contexts and literal vectors without any random bit provider.",
+      "Ordinary comparison failures accumulate with all observations retained; infrastructure exceptions stop the first prefix. No retry, fallback law, calibration or precision rescue.",
+      "Resource caps are prospective; a hard kill may omit final files and remains inconclusive. Logical memory is a plan, not hard RSS enforcement."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "None: exhaustive phase contexts and fixed literal boundary blocks only",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T16:17:15.558092+00:00",
+    "runtime_seconds": 8.782879,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 180.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 120,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "reports/P130_validation_review/reference_blob_bindings.json",
+    "reports/P131_ROOT_CODE_REVIEW.md",
+    "reports/P131_ROOT_MAIN_AUTHORIZATION.md",
+    "reports/P131_validation_review/external_pins.json",
+    "reports/P131_validation_review/reference_schema_binding.json",
+    "requirements-research-lock.txt",
+    "research/P107_symbolic_filter_main/run_001/data/failure.json",
+    "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+    "research/P107_symbolic_filter_main/run_001/data/summary.json",
+    "research/P107_symbolic_filter_main/run_001/manifest.json",
+    "research/P107_symbolic_filter_main/run_001/stderr.txt",
+    "research/P107_symbolic_filter_main/run_001/stdout.txt",
+    "research/P107_symbolic_filter_validation.py",
+    "research/P129_FINITE_PHASE_MULTINOMIAL_REPLACEMENT.md",
+    "research/P131_INDEPENDENT_PHASE_CONTROL_REVIEW.md",
+    "research/P131_PHASE_MULTINOMIAL_POPULATION.md",
+    "research/P131_phase_multinomial.py",
+    "research/P131_phase_multinomial_contract_TEMPLATE.json",
+    "research/P131_phase_multinomial_validation.py",
+    "research/P96_column_loss_main/run_001/data/failure.json",
+    "research/P96_column_loss_main/run_001/data/records.jsonl",
+    "research/P96_column_loss_main/run_001/data/summary.json",
+    "research/P96_column_loss_main/run_001/manifest.json",
+    "research/P96_column_loss_main/run_001/stderr.txt",
+    "research/P96_column_loss_main/run_001/stdout.txt",
+    "research/P96_column_loss_validation.py",
+    "research/P131_phase_multinomial_execution_binding.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "reports/P130_validation_review/reference_blob_bindings.json",
+      "sha256": "87297e014aa2e89a08fef2e9e8c1f6b4dfcfdfa77bc6933fa4e9521140bc0ba4",
+      "sha256_after": "87297e014aa2e89a08fef2e9e8c1f6b4dfcfdfa77bc6933fa4e9521140bc0ba4"
+    },
+    {
+      "path": "reports/P131_ROOT_CODE_REVIEW.md",
+      "sha256": "4bc0d62fe1c4f7ec94a5c1a2f9ee0f72c541497367802ff266b8d3f98fad1f41",
+      "sha256_after": "4bc0d62fe1c4f7ec94a5c1a2f9ee0f72c541497367802ff266b8d3f98fad1f41"
+    },
+    {
+      "path": "reports/P131_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "6718229a0aea7543de082ed6cb23aa8b1e5837d63de5391f09aa6afe5f195e47",
+      "sha256_after": "6718229a0aea7543de082ed6cb23aa8b1e5837d63de5391f09aa6afe5f195e47"
+    },
+    {
+      "path": "reports/P131_validation_review/external_pins.json",
+      "sha256": "7254efa4ae99ac41b4898e5cb9dc58f17c05565267cc659dded3b5a11bc20eb8",
+      "sha256_after": "7254efa4ae99ac41b4898e5cb9dc58f17c05565267cc659dded3b5a11bc20eb8"
+    },
+    {
+      "path": "reports/P131_validation_review/reference_schema_binding.json",
+      "sha256": "879ea8204da6813ac6114401f27ad211f800a4f010992673a977b2f66d5e84fd",
+      "sha256_after": "879ea8204da6813ac6114401f27ad211f800a4f010992673a977b2f66d5e84fd"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "sha256_after": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+      "sha256": "b28ca55e337201240da88149d24ebabb8a5174481bd2821448e34c7f9d57b7b6",
+      "sha256_after": "b28ca55e337201240da88149d24ebabb8a5174481bd2821448e34c7f9d57b7b6"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/summary.json",
+      "sha256": "04722bf8236d6ea949f3bb4df41b805a3e8c7c9cb43d43b3a0e871192508ee77",
+      "sha256_after": "04722bf8236d6ea949f3bb4df41b805a3e8c7c9cb43d43b3a0e871192508ee77"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/manifest.json",
+      "sha256": "eac9d7a9587a9ee13d4bcb1bb3150541449d99fa34a39484da05313e6972d605",
+      "sha256_after": "eac9d7a9587a9ee13d4bcb1bb3150541449d99fa34a39484da05313e6972d605"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P107_symbolic_filter_validation.py",
+      "sha256": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc",
+      "sha256_after": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc"
+    },
+    {
+      "path": "research/P129_FINITE_PHASE_MULTINOMIAL_REPLACEMENT.md",
+      "sha256": "515d2c2ac9b2e4763d17d591691ff8aa71e004fd77400b0d8364e2d5092870b8",
+      "sha256_after": "515d2c2ac9b2e4763d17d591691ff8aa71e004fd77400b0d8364e2d5092870b8"
+    },
+    {
+      "path": "research/P131_INDEPENDENT_PHASE_CONTROL_REVIEW.md",
+      "sha256": "02f1b06d6fb986306cf86604fe8a6bc14f3cb4db177e6e723f0b27c6be06be1f",
+      "sha256_after": "02f1b06d6fb986306cf86604fe8a6bc14f3cb4db177e6e723f0b27c6be06be1f"
+    },
+    {
+      "path": "research/P131_PHASE_MULTINOMIAL_POPULATION.md",
+      "sha256": "bbc77a334bf7127e660e81ea4e5021fefcb9c3a50d013ed6eee5ee4c6b50cccc",
+      "sha256_after": "bbc77a334bf7127e660e81ea4e5021fefcb9c3a50d013ed6eee5ee4c6b50cccc"
+    },
+    {
+      "path": "research/P131_phase_multinomial.py",
+      "sha256": "bdf3e490e90330b67c7ca8089068abf5be5674ea71daff3dd5ea436b30e5042f",
+      "sha256_after": "bdf3e490e90330b67c7ca8089068abf5be5674ea71daff3dd5ea436b30e5042f"
+    },
+    {
+      "path": "research/P131_phase_multinomial_contract_TEMPLATE.json",
+      "sha256": "fabbaf20fcd92d14ea8f9ac089cd534efec2db7a9f220ace1eb6712ccd05385b",
+      "sha256_after": "fabbaf20fcd92d14ea8f9ac089cd534efec2db7a9f220ace1eb6712ccd05385b"
+    },
+    {
+      "path": "research/P131_phase_multinomial_validation.py",
+      "sha256": "5009194e358d3013d33ac47d3bff2ec31abb24a92d82961d91bcae88b6b07ff9",
+      "sha256_after": "5009194e358d3013d33ac47d3bff2ec31abb24a92d82961d91bcae88b6b07ff9"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/failure.json",
+      "sha256": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707",
+      "sha256_after": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/records.jsonl",
+      "sha256": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc",
+      "sha256_after": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/summary.json",
+      "sha256": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07",
+      "sha256_after": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/manifest.json",
+      "sha256": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d",
+      "sha256_after": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stderr.txt",
+      "sha256": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13",
+      "sha256_after": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13"
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P96_column_loss_validation.py",
+      "sha256": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223",
+      "sha256_after": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223"
+    },
+    {
+      "path": "research/P131_phase_multinomial_execution_binding.json",
+      "sha256": "9f623642b5d93676a9ccbfd1f9363ad6beb629c29909f4e460a3e4781a0e99da",
+      "sha256_after": "9f623642b5d93676a9ccbfd1f9363ad6beb629c29909f4e460a3e4781a0e99da"
+    }
+  ],
+  "output_directory": "research/P131_phase_multinomial_main/run_001",
+  "declared_results": [
+    "research/P131_phase_multinomial_main/run_001/data/records.jsonl",
+    "research/P131_phase_multinomial_main/run_001/data/summary.json",
+    "research/P131_phase_multinomial_main/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/data/records.jsonl",
+      "sha256": "b128a3a774b781a2ced9d123838c691f91e707815f218036a449556b0638556c",
+      "kind": "result"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/data/summary.json",
+      "sha256": "e76c3161facb2d720f8e3ee221f999e067352f8e46b4863c6787606b0f06359b",
+      "kind": "result"
+    },
+    {
+      "path": "research/P131_phase_multinomial_main/run_001/data/failure.json",
+      "sha256": "a504ff4b6de581b5a6fd5bdbe27f95684f0fd01644bb9b02b5be2c0357a4c94c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
