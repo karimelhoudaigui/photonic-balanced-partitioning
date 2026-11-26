@@ -1,0 +1,52 @@
+{
+  "claim_id": "P145-EXACT-TRIAD-FIXTURE",
+  "mathematics": {
+    "assertion_tested": "Complete exact 56-bin, five-profile polynomial law and graph gain identities for the designed twelve-vertex tritter diagnostic; this is not an optimization-advantage benchmark",
+    "coefficient_domain": "Q for polynomial coefficients and Q(omega), omega^2+omega+1=0, for phase sums",
+    "conventions": "Distinct three-photon input0,1,2; output factorial n!; all invalid outcomes zero utility; no postselection; graph cut counts each undirected edge once",
+    "inputs": [
+      "The declared twelve-vertex graph and current six-set in P145_EXPERIMENT_CARD.md",
+      "Three-photon/six-mode symbolic tritter-transfer family, p in [0,1]",
+      "Five internal-species profiles B,D,P12,P13,P23"
+    ],
+    "bounds": {
+      "occupations": 56,
+      "profiles": 5,
+      "raw_records": 280,
+      "one_swap_neighbors": 36,
+      "residual_candidates": 20,
+      "polynomial_degree": 3,
+      "cpu_seconds": 10,
+      "wall_seconds": 20,
+      "worker_count": 1,
+      "threads": 1,
+      "log_bytes": 1048576,
+      "scientific_json_bytes_plan": 1048576,
+      "retries": 0
+    },
+    "non_claims": [
+      "No random-graph optimization advantage, novelty, hardware result or scalable speedup",
+      "The constructed diagnostic deliberately has an easy classical improving move",
+      "Polynomial checks support a finite declared family; the universal formula needs the separate written derivation",
+      "Restricted-family retuned dominance does not cover stronger classical or distinguishable circuits"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P145_EXPERIMENT_CARD.md",
+    "research/P145_exact_triad_fixture.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run_authorized": false,
+  "authorization_note": "ROOT will authorize only after non-author source/claim review and a committed freeze; this pending contract is not execution evidence"
+}
