@@ -15,7 +15,7 @@
   "software":[{"name":"Python","version":"3.11.15"},{"name":"numpy","version":"2.4.6"},{"name":"networkx","version":"3.6.1"}],
   "randomness":{"used":true,"generator":"POST-SEAL replay of fixed original PCG64 classical roles only; no new draws or native sampling","seed":"Original sealed registered role tuples, never evaluated by qualification"},
   "planned_command":["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","research/P82a_independent_raw_audit.py","--binding","research/P82a_independent_audit_dataset_binding.json","--output","research/P82a_independent_audit_main/run_001/data"],
-  "runner_output_directory":"research/P82a_independent_audit_main/run_001/runner",
+  "runner_output_directory":"research/P82a_independent_audit_main/run_001",
   "declared_results":["research/P82a_independent_audit_main/run_001/data/audit_summary.json","research/P82a_independent_audit_main/run_001/data/audit_failure.json"],
   "opaque_binding_fields_only_later":["Producer execution commit","Dataset directory and existing declared-result paths","Producer manifest path","Opaque SHA256/bytes and exact repeated --input closure","b_raw_sealed/audit_authorized flags and binding-state transition"],
   "resource_note":"UNBOUND TEMPLATE, NOT EXECUTABLE OR AUTHORIZATION. Future final contract adds only actual sealed-input closure, preserving this frozen checker behavior and numerical rules. CPU30/wall60/env1/no native backend/log4MiB/output512KiB/raw32MiB/logical256MiB PLAN, zero retries. No absolute or symlink runner input files."
