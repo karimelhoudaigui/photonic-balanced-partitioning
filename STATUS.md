@@ -50,6 +50,15 @@ corollary supplies same-setting cost-CDF and independent fixed-budget-minimum
 order; it excludes adaptive policies, additional hardware losses and wall time.
 P106 preserves a favorable
 fixed-T raw mean contrast but a legal rescaled D defeats that fixed B point.
+Changed P116 catalysis has a valid exact weak interaction, but a one-edge
+success-only extension loses to uniform-code bypass and the specified sign
+feedback is exactly static at the level of terminal counts (P122). Its frozen
+all-Fock specification has a logical/mode mixer typing ambiguity. P118
+independently rejects only canonical strict no-return walks up to10 modes;
+its deeper soft-return regime stays open. P121 supplies only a sufficient
+strength/gate-count no-recovery screen. These are no positive optimizer or
+universal no-go. P108's finite-bit bridge is being resumed through P123--125;
+P104 remains conditional until review, with no new sampler run.
 P109 proves the admissible-scale comparison in its exact nonadaptive scope.
 P104's full-K-orFAIL reduction is accepted but its binary complexity remains
 CONDITIONAL; P108 records that missing bridge. P103/P105 retain the new primary

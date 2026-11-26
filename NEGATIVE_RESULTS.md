@@ -1,5 +1,28 @@
 # Negative Results Log
 
+## 26-Nov-2026: changed interaction and edge-memory routes
+
+P116's catalytic/X branch is a REAL mathematical interaction, with explicit
+h(gamma)->1. Preserve that favorable result. Its single-edge/equal-X
+success-only proposals are nevertheless pointwise dominated by the same-code
+uniform bypass. The new all-record +/-theta controller has an EXACT static
+joint-count mirror (P122, independent review), since its prefix is real and
+the two mixers are conjugates. Its printed logical/mode mixer identification
+is ambiguous; no corrected simulation or adaptive advantage is claimed.
+Different non-conjugate recovery policies remain open. Root checkpoint:
+reports/P116_ROOT_INTERACTION_CHECKPOINT.md. P120 retains exact counterexamples
+to replacing a fully tagged catalyst instrument by a scalar pure filter.
+
+P118 proves that the strict simple-graph vertex-local edge-memory class is
+monomial at<=10 modes, so its entire CF counting law equals D/classical
+routing. Twelve modes are sharp to admit a nonmonomial coin, not a useful
+optimizer. The changed soft-return theorem controls only shallow measured
+count laws; deeper walks are not rejected. reports/P118_ROOT_WALK_CHECKPOINT.md.
+P121 is a sufficient no-recovery strength/count instantiation of existing
+P74; weak gates, recovered flags and joint compilation stay open. No
+universal no-go or measured cost advantage follows. No simulation was run
+for a mechanism already falsified by these exact arguments.
+
 ## 26-Nov-2026: exact all-strength magnetic-filter counterexample
 
 P107 completes its full population but both registered rectangular sign

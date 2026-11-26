@@ -1793,3 +1793,38 @@ fixed-N or preplanned-setting minima inherit D's order; adaptive policies
 do not. Four ideal injected photons per attempt is a deterministic ledger,
 not matched wall time. Extra photonwise loss is not a uniform fallback.
 reports/P117_ROOT_BINARY_CHECKPOINT.md. No new numeric run or QPU.
+
+## P116/P118/P120/P121/P122: substantive changed routes and exact falsification
+
+P116fbe08686/315l and independentcd0b20b7/203l fully read. Two-helper
+catalysis plus a rail flip gives an exact graph-edge filter with phase-free
+h(gamma)->1; the former CZ-sector1/9 veto cannot be generalized. Its actual
+herald success and weak-refinement cost are derived, not invented simulations.
+One-edge/equal-X accepted proposals lose pointwise to the uniform-code bypass.
+P120196c585/136l independently derives a tagged CP-mixture counterexample;
+ROOT full read/manual audit agrees. A scalar D Kraus shortcut gives wrong
+coherences even when its two basis probabilities match.
+
+ROOTP1223c7d7ac/111l and the independent combined review prove the specific
+P116 +/-theta controller has exactly static+theta terminal-count law for
+both arms. The physical instruments can differ, and failures may be useful,
+but that sign choice supplies no observable adaptive escape. P116 also
+conflates logical tensor and one-particle direct-sum mixers; original source
+is preserved and no executable repair assumed. Different magnitudes/complex
+prefixes/multistage recovery remain changed OPEN routes.
+
+P1181111db21/154l,a43e5ef2/122l and independent9d208e73/168l fully read.
+Strict canonical no-return coins force monomial full-law equality at<=10
+arc modes,12 sharp. Soft2x2 C4 coins yield the scoped quadratic raw-COUNT
+TV bound under a common count kernel; later coherent mixing, rare
+conditioning and L*epsilon of order1 are not rejected. P121f132d13e/150l
+and independent1d79edb5/132l fully read: gamma>=log64/63 gives h<13/32;
+stipulatedL>=5,g>=L-1 no-recovery chains lose to uniform SAME paired code.
+This instantiates P74, not an intrinsic graph gate-count or wall-time bound.
+All negative/favorable components remain recorded. No new native/DEV run.
+
+Resume P108's conditional finite-bit obligation after the finite physics
+discriminator, via changed P123 constructive Gram/matching route, independent
+P124 exact-source check and blind P125 probability derivation. Old P104/P108
+remain unchanged/conditional until full review. No implementation or new
+sampling result. CLAIM-042 OPEN; paper/main/QPU stay frozen.

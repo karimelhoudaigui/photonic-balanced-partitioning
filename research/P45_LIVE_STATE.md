@@ -254,6 +254,33 @@ P116 explores a changed measurement-interaction resource; P118 examines
 strict no-return quantum walks. No general no-go, novelty,
 matched-wall win, optimizer DEV or held-out positive. Numerical worker FREE.
 
+The changed-route audits are now complete in their stated scopes. P116's
+exact catalytic/X branch is valid and has h(gamma)->1, but its one-edge
+accepted proposals lose to uniform-code bypass and its specified +/-theta
+feedback has an exact STATIC terminal-count mirror (P122). Logical versus
+mode mixer typing is unresolved in the frozen full instrument; no code/run
+may silently fix it. The original315-line source and203-line independent
+review are preserved. P120's exact tagged-catalyst counterexamples prevent
+an incorrect scalar D filter. ../reports/P116_ROOT_INTERACTION_CHECKPOINT.md.
+
+P118 strict154+soft122 source lines and168-line non-author audit pass:
+canonical strict vertex-local edge memory is monomial at<=10 modes,
+with12 modes sharp for a nonmonomial coin. Soft C4 returns obey only the
+scoped quadratic raw-COUNT TV bound; L*epsilon of order1 stays OPEN.
+../reports/P118_ROOT_WALK_CHECKPOINT.md. P121150+132 source/audit lines
+instantiate P74: sufficiently strong catalytic gates and stipulated g>=L-1,
+L>=5 make successful proposals dominated by uniform on the SAME paired code.
+All-record recovery/weak angles/joint compilation remain outside it.
+../reports/P121_ROOT_STRENGTH_CHECKPOINT.md. No numerical trial was invented.
+
+P108's deferred finite-bit obligation is now RESUMED through a changed
+constructive matching route P123, independently authenticated source audit
+P124, and a blind separate latent-sampler derivation P125. P104's binary
+claim remains CONDITIONAL until these sources/proofs receive full review.
+No active sampler implementation or new scientific run is authorized.
+Soft/deep walks and changed non-conjugate measurement recovery also remain
+OPEN; these scoped obstructions do not exhaust all photonic optimization.
+
 Last confirmed pushed ROOTf4f1e4cb7d12dec1cebd3d90ce19794e1091f355 includes
 qualified P98 code/raw and original source refs. Actual GitHub run45825898488
 job139929823711 succeeds1559PASS21.42s plus602-file preservation. Remote main
