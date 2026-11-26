@@ -1,9 +1,9 @@
 {
   "schema": "P82a.independent-recorded-audit-binding.v1",
-  "binding_state": "SEALED_POST_B_RAW_REVIEW_PENDING",
+  "binding_state": "SEALED_POST_B_RAW_AUTHORIZED",
   "required_state_after_ROOT_authorization": "SEALED_POST_B_RAW_AUTHORIZED",
   "b_raw_sealed": true,
-  "audit_authorized": false,
+  "audit_authorized": true,
   "producer_source_freeze": "94f80b94f75317524c202ce9ef5bf932d78ddc5e",
   "producer_source_sha256": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc",
   "producer_spec_sha256": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838",
