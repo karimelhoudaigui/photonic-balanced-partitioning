@@ -65,12 +65,16 @@ preserved. No P75 rerun was performed. Active static work now designs a
 hardware-compatible mechanism outside the accepted obstructions (P82),
 P82a now has an independently reviewed K8/n16 prospective DEV veto,
 corrected BEFORE data for dual CPU/WALL prefix eligibility and honest
-factory-duration accounting. CODE ONLY is frozen at892ea965; ROOT has read
-all3024 lines of source/tests/spec/two contracts/population. Static audits
-are checking that freeze, including explicit reported-duration provenance.
-No import/AST/test/RNG/qualification/main has run. P82 eta0 has an independently reconstructed exact
+factory-duration accounting. Source94f80b94 closes the reported-duration
+reservations after full ROOT and independent source reads. Its unique
+deterministic qualification passed27 items/183 amplitudes; ROOT separately
+recomputed all183 stored probabilities. Integrated CI passes1214 tests,
+with602 historical files unchanged. No DEV/main has run; the independent
+recorded checker is being frozen before data. P82 eta0 has an independently reconstructed exact
 decoded-law null. The higher-order nonuniform optimization gain is OPEN.
-See reports/P82_ROOT_NULL_AND_IMPLEMENTATION_GATE.md. No new main ran. One numerical worker
+P89 now proves the ideal raw source-removal factorisation for all eta;
+it is not a quench/trajectory no-go. See reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md
+and reports/P89_ROOT_REMOVAL_CHECKPOINT.md. No new main ran. One numerical worker
 maximum; it is FREE after the full root regression. Current ownership and
 continuation: research/P45_LIVE_STATE.md.
 

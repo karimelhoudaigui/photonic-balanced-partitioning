@@ -1436,3 +1436,18 @@ same source. Factory timing needs an explicit typed reported-duration
 reference before qualification, although scalar operands are retained.
 P63 is preparing its independent recorded-data checker CODE ONLY. No
 scientific execution, import/AST/RNG/graph/native has occurred.
+
+P82a unique qualification94f80b94 now completed: raw8e6ba066 sealed
+beforeinterpretation, receipt39b61bb9;27PASS/183Naive observations,
+65zero refs/nativezeros, maxabs2.22e-16. ROOT frozenstdlibinspector6d5f823
+independentlyrecalculatesall183; v2manifestvalid. IntegratedCI9ba543c
+observedGREEN1214PASS19.57s/602historicalfilesunchanged. NoDEVmain yet;
+independentchecker must freeze before those data. NumericalworkerFREE.
+
+P89 sourcef775f682/e99a1e32 and exactaudit68baaeb8/eef75599 accepted
+afterROOTfull215+149lines and own handreconstruction. The current ideal
+source-blind rawkernel has uniform removals independentofY at fixedr,
+forallη; exactrawcostmean isolatesinducedT/crossmarginals. No quench/
+trajectory/generalclassicalsimulation/optimizeradvantage conclusion.
+Source-awarecoupling/loading escapesarebeingdesignedSTATIConly; P82
+frozen pilot, paper/main/QPU and all negative evidence remain unchanged.

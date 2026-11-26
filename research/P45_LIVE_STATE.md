@@ -74,17 +74,23 @@ the independent checker's complete predatafreeze (source/tests/contracts).
 Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
 data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old
 clock blockers are discharged above. CheckerCODE ONLY is now commissioned
-against892ea965, with separate source/tests/contracts/review/tinyqual.
+against corrected94f80b94, with separate source/tests/contracts/review/tinyqual.
 DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
 Compilation-before-R is source-bound, not a separately timed raw endpoint;
 custom control audit covers cuts/cache lineage/clocks, not policy replay.
-No native physics replay or distribution proof. P81 and P66 exact-source
-reviews are active in their isolated worktrees.
+No native physics replay or distribution proof. P66 is free after P89
+exact audit; P81 prepares a STATIC source-aware/nonflat escape design.
 
-No new scientific main/qualification since P79/root1187PASS. No held-out
-opening, paper/main/QPU/messages. Next actionable priority is source/schema
-freeze -> ROOT+P66fullstaticreview -> tinyqual -> raw-first inspection ->
-separatemaindecision, with independent checker pre-data as above.
+P89 ideal all-eta source-removal product law/raw mean is ACCEPTED:
+sourcef775f682/e99a1e32, exactaudit68baaeb8/eef75599, ROOTfull215+149reads
+and handchecks. No quench/trajectory no-go or efficient mu sampler follows.
+reports/P89_ROOT_REMOVAL_CHECKPOINT.md. New source-aware designs must expose
+their classical features and exact r2 null rather than count them as gain.
+
+No new DEV/main since P79. No held-out opening, paper/main/QPU/messages.
+Next: checkercompletepredatafreeze -> separate ONEprimarymain authorization
+with checkersourcereviewSTATIC inparallel -> Brawseal -> checkerqual ->
+auditmainbinding/independentrecordedchecks. No simultaneous numerical jobs.
 P79 producer remains clean atc2a22ed in .local/p79-even-loops.
 
 P75b/c no-hit, P77/P78 scoped classical controls and all P33/P37/E05b negatives
