@@ -1,0 +1,16 @@
+{
+  "qualified_head": "f4f1e4cb7d12dec1cebd3d90ce19794e1091f355",
+  "run_id": 45825898488,
+  "job_id": 139929823711,
+  "conclusion": "success",
+  "url": "https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45825898488",
+  "tests_passed": 1559,
+  "pytest_seconds": 21.42,
+  "archive_files_passed": 602,
+  "remote_main": "27443954fb7491a293399f0417d05185009f5c9a",
+  "observed_actual_job_log_lines": [
+    "2026-11-26T13:07:30.6888240Z 1559 passed in 21.42s",
+    "2026-11-26T13:07:31.2219035Z {\"status\": \"PASS\", \"snapshot_sha256\": \"9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474\", \"snapshot_base_commit\": \"6154b460e1c8b37cf2a7023fcbfff35d31a7220c\", \"historical_files_checked\": 602, \"changed_or_missing\": [], \"scope\": \"Pre-existing experiments/results/theory/research; active reports/manuscript/code may change\"}"
+  ],
+  "scope": "Existing suite and preservation pass; P98 scientific arithmetic has its separate sole frozen run/receipt. No optimizer, novelty or QPU success is implied."
+}
