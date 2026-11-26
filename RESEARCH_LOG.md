@@ -1854,3 +1854,28 @@ extension via small environment-Gram compression/rejection; P127 checks its
 closest primary sources independently. P128 studies a separate certified-
 spectral coherent-state replacement. These remain OPEN, with no new run,
 paper/main edit or QPU gate. CLAIM-042 OPEN.
+
+## P126/P129: reviewed stronger classical nulls, exact code work next
+
+26-Nov-2026. P126231-line source194be199 and173-line independent25b19a0f
+fully read at ROOT. For FIXED r0, positive rational contractions admit the
+stated additive raw-TV top signal PNR/aggregateFAIL construction using P123's
+named finite-bit primitive. Exact lost-Gram coherences, rare-sector lower
+selection and bounded Rayleigh rejection survive review. No implemented
+FPRAS/sampler, measured speed, growing-r0 or relative rare-event claim.
+P127's199-line primary comparison has no global novelty clearance.
+See reports/P126_ROOT_FEW_LOSS_CHECKPOINT.md at61da758.
+
+P129190-line source6bee40d8 and169-line non-authorf5d1d519 also fully read.
+The COMMON-phase correlated classical multinomial control gives full raw
+count TV<=tau(K,eta)+epsilon under supplied spectral intensity/encoded-T
+hypotheses. Ideal one-body means match; finite rounding only approximates
+them. Its separable construction is known, additional corollary priority
+unverified. This is not the original D control or a practical cost theorem.
+See reports/P129_ROOT_PHASE_CONTROL_CHECKPOINT.md.
+
+New P130/P131 code-only work targets exact validation against already sealed
+P96/P107 laws. No source evaluation, RNG/native call or numerical run has yet
+occurred for either. A separate P132 portfolio must address actual changed
+mechanisms rather than mistake a stronger classical null for the user goal.
+CLAIM-042 OPEN. All validated/negative raw results and paper/main preserved.

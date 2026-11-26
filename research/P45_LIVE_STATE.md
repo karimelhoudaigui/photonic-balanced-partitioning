@@ -4,7 +4,7 @@ Earlier checkpoints are preserved byte-for-byte in
 [P45_LIVE_HISTORY_BEFORE_P90a.md](P45_LIVE_HISTORY_BEFORE_P90a.md), including
 the prior P79 history pointer. Historical pending statuses are not current.
 
-## Current: P114 all-strength scoped obstruction; different interaction route open
+## Current: scoped obstructions and stronger controls; new mechanisms open
 
 **CLAIM-042 OPEN. No reproducible positive optimizer result, held-out
 confirmation or real QPU validation exists. paper/, main and QPU stay frozen.**
@@ -283,8 +283,18 @@ a weighted-real oracle and1/Z cost. This is a mathematical epsilon-approximate
 full-K/aggregateFAIL existence theorem, not an implemented sampler/benchmark.
 Original P104 conditional audit and P108 cooling sketch stay unchanged; that
 sketch is not proved. ../reports/P123_ROOT_FINITE_BIT_CHECKPOINT.md fixes scope.
-P126 few-loss extension/P127 prior check and P128 spectral-coherent replacement
-are separate OPEN work. No new scientific run is authorized by these notes.
+P126 fixed-few-loss extension now passes231+173-line full source/non-author
+review. It constructs top-loss PNR sampling with a fixed r0 and additive raw
+error, using P123's named finite-bit primitive. Growing loss count/relative
+rare-sector error/practical cost are excluded. P127's seven-source comparison
+gives no global novelty clearance. ../reports/P126_ROOT_FEW_LOSS_CHECKPOINT.md.
+P129's finite-phase COMMON-z multinomial classical control passes190+169-line
+review, with spectral tau and finite-bit epsilon bounds for full raw counts.
+The separable mechanism is known; ideal means match but rounded means need
+not. It is a stronger null, not a positive optimizer or a runtime benchmark.
+../reports/P129_ROOT_PHASE_CONTROL_CHECKPOINT.md. P128's separate coherent
+ideal control is not silently promoted to an implemented finite-bit sampler.
+P130/P131 are NEW CODE ONLY exact qualifications; no new run authorized yet.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 

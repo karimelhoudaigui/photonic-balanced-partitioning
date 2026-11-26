@@ -62,8 +62,17 @@ universal no-go. P123's alternative finite-bit bridge now passes full
 interface and independent P125 probability identity. P104's target bit
 obligation is resolved using that named theorem; its old conditional audit
 and P108 cooling sketch are preserved, not retroactively proved. No sampler
-is implemented or benchmarked. P126 few-loss extension/P127 prior check
-and P128 spectral-coherent replacement remain separate OPEN investigations.
+is implemented or benchmarked. P126's fixed-number-lost extension now passes
+full231-line source/173-line independent review; it uses P123's named counting
+primitive and covers top signal PNR sectors plus coarse FAIL, not a growing
+number lost. P127's seven-source check does not clear global novelty. P129's
+finite-phase correlated classical control passes190+169-line review: full raw
+counts have TV<=tau(K,eta)+epsilon with a spectral certificate and encoded
+complex contraction. Its principal separable construction is known; no speed
+or optimizer benefit is proved. P128 is a separate ideal coherent control.
+P130/P131 are prospective exact validation/code work, with no new run yet.
+See reports/P126_ROOT_FEW_LOSS_CHECKPOINT.md and
+reports/P129_ROOT_PHASE_CONTROL_CHECKPOINT.md.
 P109 proves the admissible-scale comparison in its exact nonadaptive scope.
 P104's full-K-orFAIL reduction and alternative P123 finite-bit bridge are
 accepted in their exact source-dependent scope; full partial-loss records

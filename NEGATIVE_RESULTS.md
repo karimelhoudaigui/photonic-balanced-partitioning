@@ -1,5 +1,19 @@
 # Negative Results Log
 
+## 26-Nov-2026: fixed few-loss and finite-phase controls accepted in scope
+
+P126 extends P123's source-dependent existence result to a FIXED number of
+lost photons, preserving signed environmental coherences and all top-sector
+collisions. Complete231+173-line review passes; growing lost number and
+practical runtime remain outside it. P129's complete190+169-line review
+accepts a correlated classical phase-multinomial raw-count control, with
+spectral structural error tau plus finite-bit epsilon. Column-mean loss
+cannot replace that spectral certificate. Its main construction is known.
+These are scoped classical nulls, not universal no-go or optimizer results.
+No new numerical run/sampler benchmark is implied. Prospective P130/P131
+qualifications and genuinely changed mechanisms remain open. See ROOT
+checkpoints P126/P129; the older conditional stages below stay historical.
+
 ## 26-Nov-2026: implementation gap resolved by an alternative proof
 
 P123's278-line construction and196-line independent review close the
