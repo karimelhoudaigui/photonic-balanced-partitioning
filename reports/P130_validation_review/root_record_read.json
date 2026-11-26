@@ -1,0 +1,134 @@
+{
+  "original_raw_seal": "358fa5a",
+  "interpretation_after_raw_seal": true,
+  "run": {
+    "started_at": "2026-11-26T16:06:04.288928+00:00",
+    "runtime_seconds": 0.276674,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "rows_read": 2328,
+  "kind_counts": {
+    "provenance": 1,
+    "algebra_hand": 4,
+    "reference_completion": 2,
+    "reference_bin": 361,
+    "case_context": 14,
+    "moment": 59,
+    "sector_context": 39,
+    "principal_minor": 1468,
+    "state_comparison": 327,
+    "sector_totals": 39,
+    "FAIL": 14
+  },
+  "comparison_rows": 439,
+  "false_comparisons": [],
+  "input_count": 27,
+  "unchanged_inputs": true,
+  "negative_environment_entries": 204,
+  "zero_probability_top_states": 169,
+  "X4_three_survivors": [
+    {
+      "Rayleigh": "0",
+      "a": [
+        "3/4",
+        "3/4",
+        "3/4",
+        "3/4"
+      ],
+      "a_norm_squared": "9/4",
+      "case": "X4",
+      "kind": "state_comparison",
+      "lost": 1,
+      "match": true,
+      "n_factorial": 6,
+      "numerator": "0",
+      "p": "0",
+      "q_P126": "3/8",
+      "reference": "0",
+      "signal": [
+        3
+      ]
+    }
+  ],
+  "summary": {
+    "FPRAS_calls": 0,
+    "RNG_draws": 0,
+    "completed": [
+      "hands",
+      "references",
+      "V0",
+      "U1",
+      "D3",
+      "R3a",
+      "R3b",
+      "B4",
+      "D4",
+      "Z4",
+      "R4",
+      "C3",
+      "X4",
+      "F0",
+      "Fhalf",
+      "F1"
+    ],
+    "counts": {
+      "FAIL": 14,
+      "cases": 14,
+      "moments": 59,
+      "principal_minors": 1468,
+      "reference_bins": 361,
+      "sectors": 39,
+      "top_states": 327
+    },
+    "mismatches": 0,
+    "native_calls": 0,
+    "optimizer_advantage": false,
+    "records": 2328,
+    "sampler_claim": false,
+    "status": "EXACT_QUALIFICATION_PASS"
+  },
+  "outputs": [
+    {
+      "path": "research/P130_few_loss_main/run_001/data/failure.json",
+      "bytes": 5,
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "path": "research/P130_few_loss_main/run_001/data/records.jsonl",
+      "bytes": 304711,
+      "sha256": "8a4793a8119ed91134b822ca2348961695773c42ce7bff84949d6ebb741fd2c3"
+    },
+    {
+      "path": "research/P130_few_loss_main/run_001/data/summary.json",
+      "bytes": 442,
+      "sha256": "8f876e344784bcceb69acda24828b04fbbe2000c64915c37827ef051025acab4"
+    },
+    {
+      "path": "research/P130_few_loss_main/run_001/manifest.json",
+      "bytes": 13967,
+      "sha256": "5910dd5daba5aa10a0bfd78585f616d4d0f67509f81fff25cfd9a936ed4b0106"
+    },
+    {
+      "path": "research/P130_few_loss_main/run_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P130_few_loss_main/run_001/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "ROOT read all sealed rows and checked recorded fields/completeness; no additional FPRAS/sampler/native/optimizer execution or independent physics replay."
+}

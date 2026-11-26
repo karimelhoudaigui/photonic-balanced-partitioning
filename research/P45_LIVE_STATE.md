@@ -294,7 +294,14 @@ The separable mechanism is known; ideal means match but rounded means need
 not. It is a stronger null, not a positive optimizer or a runtime benchmark.
 ../reports/P129_ROOT_PHASE_CONTROL_CHECKPOINT.md. P128's separate coherent
 ideal control is not silently promoted to an implemented finite-bit sampler.
-P130/P131 are NEW CODE ONLY exact qualifications; no new run authorized yet.
+P130 source5527fa86/391l and peerc8b99b37/157l passed FULL ROOT review.
+Separate authority338b0fb/binding97c80880 precedes ONE0.276674s/exit0 main;
+raw358fa5a is sealed BEFORE reading. All2328 rows and439 exact comparisons
+pass:327 state probabilities/59 moments/39 totals/14 FAIL,1468 PSD minors,
+27 unchanged inputs and officialv2PASS. Signed environment entries, zero
+sectors and negative legacy q remain. No FPRAS/sampler/native/RNG run.
+research/P130_FEW_LOSS_IDENTITY_RECEIPT.md. P131 is separately CODE ONLY
+pending its peer/authority; P132's changed mechanism bridges remain OPEN.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 

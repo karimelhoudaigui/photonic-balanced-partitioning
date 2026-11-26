@@ -70,7 +70,12 @@ finite-phase correlated classical control passes190+169-line review: full raw
 counts have TV<=tau(K,eta)+epsilon with a spectral certificate and encoded
 complex contraction. Its principal separable construction is known; no speed
 or optimizer benefit is proved. P128 is a separate ideal coherent control.
-P130/P131 are prospective exact validation/code work, with no new run yet.
+P130's sole bounded exact qualification now PASSES all327 top probabilities,
+39 sectors/59 moments/14 FAIL and1468 L/I-L minors, with zero mismatches;
+raw358fa5a precedes interpretation,27 inputs unchanged/official v2PASS.
+It runs no FPRAS or approximate sampler. P131 remains reviewed-code work
+pending its separate peer gate/authority. P132 specifies three changed
+mechanisms with open useful-signal/control bridges, not a positive pilot.
 See reports/P126_ROOT_FEW_LOSS_CHECKPOINT.md and
 reports/P129_ROOT_PHASE_CONTROL_CHECKPOINT.md.
 P109 proves the admissible-scale comparison in its exact nonadaptive scope.
