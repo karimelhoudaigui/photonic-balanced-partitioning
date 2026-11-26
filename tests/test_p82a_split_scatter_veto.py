@@ -578,12 +578,19 @@ def test_quench_best_is_not_last_and_cap_is_not_optimality():
 
 
 def test_duration_difference_has_unknown_endpoints_and_cpu():
-    outer = {"id": "factory0", "kind": "OBSERVED_SPAN", "wall_seconds": 0.5,
+    outer = {"id": "factory0", "case": "case0", "kind": "OBSERVED_SPAN", "wall_seconds": 0.5,
              "cpu_seconds": 0.3, "start_wall": 4.0, "end_wall": 4.5,
              "start_cpu": 2.0, "end_cpu": 2.3}
-    result = p.duration_difference(outer, 0.2, "difference0")
+    reported = {"id": "reported0", "case": "case0", "kind": "REPORTED_DURATION", "paid": False,
+                "label": "P43_backend_setup_reported", "wall_seconds": 0.2,
+                "cpu_seconds": None, "start_cpu": None, "end_cpu": None,
+                "start_wall": None, "end_wall": None,
+                "helper_source_path": "research/P43_global_gain_probe.py",
+                "helper_source_sha256": p.P43_SHA256}
+    result = p.duration_difference(outer, reported, "difference0")
     assert result["kind"] == "DURATION_DIFF"
     assert result["outer_ref"] == "factory0"
+    assert result["reported_ref"] == "reported0"
     assert result["wall_seconds"] == pytest.approx(0.3, abs=1e-15)
     assert result["reported_setup_wall_seconds"] == 0.2
     assert result["cpu_seconds"] is None
@@ -591,15 +598,28 @@ def test_duration_difference_has_unknown_endpoints_and_cpu():
                ("start_wall", "end_wall", "start_cpu", "end_cpu"))
     assert "formula" in result
     assert outer["cpu_seconds"] == 0.3
+    assert reported["paid"] is False
+    assert reported["wall_seconds"] == 0.2
 
 
 def test_duration_difference_rejects_inconsistent_reported_wall():
-    outer = {"id": "factory0", "kind": "OBSERVED_SPAN", "wall_seconds": 0.5,
+    outer = {"id": "factory0", "case": "case0", "kind": "OBSERVED_SPAN", "wall_seconds": 0.5,
              "cpu_seconds": 0.3, "start_wall": 4.0, "end_wall": 4.5,
              "start_cpu": 2.0, "end_cpu": 2.3}
     for reported in (-0.1, 0.6, float("nan"), float("inf")):
         with pytest.raises(p.RetainedFailure):
-            p.duration_difference(outer, reported, "bad")
+            p.duration_difference(outer, {"id": "reported0", "case": "case0",
+                "kind": "REPORTED_DURATION", "paid": False, "wall_seconds": reported,
+                "cpu_seconds": None, "start_cpu": None, "end_cpu": None,
+                "start_wall": None, "end_wall": None}, "bad")
+    for altered in ({"kind": "OBSERVED_SPAN"}, {"paid": True}, {"case": "other"},
+                    {"cpu_seconds": 0.1}, {"start_wall": 4.0}, {"id": None}):
+        reported = {"id": "reported0", "case": "case0", "kind": "REPORTED_DURATION",
+                    "paid": False, "wall_seconds": 0.2, "cpu_seconds": None,
+                    "start_cpu": None, "end_cpu": None, "start_wall": None, "end_wall": None}
+        reported.update(altered)
+        with pytest.raises(p.RetainedFailure):
+            p.duration_difference(outer, reported, "bad_typed_link")
 
 
 def test_conservative_call_boundary_binding_preserves_direct_and_rejects_late():
@@ -639,6 +659,26 @@ def test_conservative_call_boundary_binding_preserves_direct_and_rejects_late():
     assert residual["outer_ref"] and residual["direct_adapter_ref"] and residual["reported_ref"]
     assert all(residual[key] is None for key in
                ("start_cpu", "end_cpu", "start_wall", "end_wall"))
+    header = next(row for row in writer.records["controls.jsonl"]
+                  if row["type"] == "control_header")
+    report = header["reported_compute_duration"]
+    assert residual["reported_ref"] == report["id"]
+    assert residual["outer_ref"] == header["observed_outer"]["id"]
+    assert residual["direct_adapter_ref"] == header["observed_direct_adapter"]["id"]
+    assert report["kind"] == "REPORTED_DURATION" and report["paid"] is False
+    assert report["case"] == spec["cases"][0]["id"] and report["mode"] == "FAST_RANDOM"
+    assert report["label"] == "P50_compute_reported"
+    assert report["helper_source_path"] == "research/P50_fast_from_scratch.py"
+    assert report["helper_source_sha256"] == p.P50_SHA256
+    assert report["cpu_seconds"] == report["wall_seconds"] == 0.00005
+    assert all(report[key] is None for key in
+               ("start_cpu", "end_cpu", "start_wall", "end_wall"))
+    assert residual["cpu_seconds"] == (
+        header["observed_outer"]["cpu_seconds"]
+        - header["observed_direct_adapter"]["cpu_seconds"] - report["cpu_seconds"])
+    assert residual["wall_seconds"] == (
+        header["observed_outer"]["wall_seconds"]
+        - header["observed_direct_adapter"]["wall_seconds"] - report["wall_seconds"])
     checkpoints = [row for row in writer.records["controls.jsonl"]
                    if row["type"] == "checkpoint"]
     assert checkpoints and all(row["direct_dual_timely"] and not row["dual_timely"]
@@ -822,6 +862,32 @@ def test_scripted_96_attempts_raw_counts_current_refresh_and_tier1_veto():
     derived = [row for row in ledger if row["kind"] == "DURATION_DIFF"]
     assert derived and all(row["paid"] and row["cpu_seconds"] is None for row in derived)
     assert all(row["start_wall"] is None and row["end_wall"] is None for row in derived)
+    identified = [row for row in ledger if "id" in row]
+    assert len({row["id"] for row in identified}) == len(identified)
+    by_id = {row["id"]: row for row in identified}
+    reported = [row for row in ledger if row["kind"] == "REPORTED_DURATION"]
+    assert len(reported) == len(derived) == deps.sample_count
+    assert all(row["paid"] is False and row["label"] == "P43_backend_setup_reported"
+               and row["helper_source_path"] == "research/P43_global_gain_probe.py"
+               and row["helper_source_sha256"] == p.P43_SHA256 for row in reported)
+    assert all(row[key] is None for row in reported for key in
+               ("cpu_seconds", "start_cpu", "end_cpu", "start_wall", "end_wall"))
+    for difference in derived:
+        outer = by_id[difference["outer_ref"]]
+        report = by_id[difference["reported_ref"]]
+        assert outer["kind"] == "OBSERVED_SPAN" and outer["paid"] is False
+        assert report["kind"] == "REPORTED_DURATION" and report["paid"] is False
+        assert report["outer_ref"] == outer["id"]
+        assert difference["case"] == outer["case"] == report["case"]
+        assert difference["reported_setup_wall_seconds"] == report["wall_seconds"]
+        assert difference["wall_seconds"] == pytest.approx(
+            outer["wall_seconds"] - report["wall_seconds"], abs=1e-15, rel=0)
+    for stream in ("B_ER.jsonl", "B_RR.jsonl"):
+        for factory in (row for row in writer.records[stream] if row["type"] == "factory_report"):
+            difference = by_id[factory["duration_difference_ref"]]
+            assert factory["outer_ref"] == difference["outer_ref"]
+            assert factory["reported_ref"] == difference["reported_ref"]
+            assert factory["backend_setup_wall"] == by_id[factory["reported_ref"]]["wall_seconds"]
     assert all(not row["paid"] for row in ledger
                if row.get("label") in ("factory_total", "serial_native_sample"))
 
