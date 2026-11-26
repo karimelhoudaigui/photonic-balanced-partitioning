@@ -1,0 +1,741 @@
+........................................................................ [  4%]
+........................................................................ [  9%]
+........................................................................ [ 13%]
+........................................................................ [ 18%]
+........................................................................ [ 23%]
+........................................................................ [ 27%]
+........................................................................ [ 32%]
+........................................................................ [ 36%]
+........................................................................ [ 41%]
+........................................................................ [ 46%]
+........................................................................ [ 50%]
+........................................................................ [ 55%]
+........................................................................ [ 60%]
+........................................................................ [ 64%]
+........................................................................ [ 69%]
+........................................................................ [ 73%]
+........................................................................ [ 78%]
+........................................................................ [ 83%]
+........................................................................ [ 87%]
+........................................................................ [ 92%]
+.........E.EEEEEEEEEEEEEEEEE............................................ [ 96%]
+...............................................                          [100%]
+==================================== ERRORS ====================================
+_______ ERROR at setup of test_counts_and_seven_method_table_are_derived _______
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[scripts/build_publication.py] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/validated_numbers.tex] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/table_graphs.tex] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/table_e05b.tex] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/table_losses.tex] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[paper/figures/fig_e05b.pdf] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[paper/figures/fig_density.pdf] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[paper/figures/fig_loss_source.pdf] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/summary.json] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/benchmark.csv] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/campaigns.json] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/source_hashes.json] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[experiments/P37_loss_source/run/data/raw.json] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[results/P33_density_supervised/20261122T014822Z/primary/data/raw.json] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/P40_sharpness_pilot_2026-11-24/raw.jsonl] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_ ERROR at setup of test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/P40_sharpness_pilot_2026-11-24/summary.json] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+_______ ERROR at setup of test_pdf_metadata_and_build_are_deterministic ________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x10ada0f90>, _basetemp=PosixPath...0/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope='module')
+    def published_copy(tmp_path_factory):
+        root=tmp_path_factory.mktemp('publication-copy');archive=archive_root()
+        for logical in (*m.INPUTS,m.GENERATOR):
+>           source=m.resolve(ROOT,archive,logical);target=root/logical;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_publication_artifacts.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:262: in copyfile
+    _fastcopy_fcopyfile(fsrc, fdst, posix._COPYFILE_DATA)
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:104: in _fastcopy_fcopyfile
+    raise err from None
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fsrc = <_io.BufferedReader name='/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+fdst = <_io.BufferedWriter name='/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'>
+flags = 8
+
+    def _fastcopy_fcopyfile(fsrc, fdst, flags):
+        """Copy a regular file content or metadata by using high-performance
+        fcopyfile(3) syscall (macOS).
+        """
+        try:
+            infd = fsrc.fileno()
+            outfd = fdst.fileno()
+        except Exception as err:
+            raise _GiveupOnFastCopy(err)  # not a regular file
+    
+        try:
+>           posix._fcopyfile(infd, outfd, flags)
+E           OSError: [Errno 27] File too large: '/Users/karimelhoudaigui/Desktop/pasqal/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json' -> '/private/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/pytest-of-karimelhoudaigui/pytest-29/publication-copy0/results/P33_density_supervised/20261122T014822Z/primary/data/raw.json'
+
+/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py:97: OSError
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+  /Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+    warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+  /Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+    warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR tests/test_publication_artifacts.py::test_counts_and_seven_method_table_are_derived
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[scripts/build_publication.py]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/validated_numbers.tex]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/table_graphs.tex]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/table_e05b.tex]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[paper/tables/table_losses.tex]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[paper/figures/fig_e05b.pdf]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[paper/figures/fig_density.pdf]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[paper/figures/fig_loss_source.pdf]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/summary.json]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/benchmark.csv]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/campaigns.json]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/recovery_2026-11-24/source_hashes.json]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[experiments/P37_loss_source/run/data/raw.json]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[results/P33_density_supervised/20261122T014822Z/primary/data/raw.json]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/P40_sharpness_pilot_2026-11-24/raw.jsonl]
+ERROR tests/test_publication_artifacts.py::test_check_detects_changed_generator_inputs_tables_and_figures[results/validated/P40_sharpness_pilot_2026-11-24/summary.json]
+ERROR tests/test_publication_artifacts.py::test_pdf_metadata_and_build_are_deterministic
+1541 passed, 6 warnings, 18 errors in 41.25s
