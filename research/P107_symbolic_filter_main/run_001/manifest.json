@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "claim_id": "P107-EXACT-P101-FINITE-FILTER-SQUARE-DISCRIMINATOR",
+  "repository": {
+    "commit": "b7ada39ba01a206d7deae1499ddebad5b463ae59",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P107_symbolic_filter_validation.py",
+    "--binding",
+    "research/P107_symbolic_filter_execution_binding.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact symbolic P101 family, complete 4-photon lossy signal laws B/D on70 occupations, independent B factorial-moment reconstruction, both full decoder means, all25 rational grid points and all21 boxes per decoder at Bernstein degree(8,8). ENGINE_PASS is independent of sign certificate.",
+    "inputs": [
+      "P101 source69e4a6fe434a677acfc5a7e616471990b16db86b SHA65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c",
+      "F_jr=(-i)^(jr)/2;T=Fdiag(1,x,xy,y)Fdagger;4 known CF inputs; signal PNR including all losses/collisions",
+      "Graph scaled weights2 on{0,2}/{1,3},1 otherwise;cut=sum crossing scaled weights/2; PNR independent uniform24 tie permutations and threshold uniform-subset decoder",
+      "Five literal physical fixtures, four decoder hands, three Bernstein hands, identity/rank-one target endpoints; no graph/seed selection or optimizer training",
+      "Actual8 static regular files below must be bound after ROOT integration; no raw-data input is required"
+    ],
+    "coefficient_domain": "Gaussian INTEGER pairs in sparse polynomial(x,y,z), common target denominator16^4=65536; Fraction for means/evaluations/Bernstein. No float/complex-float/SymPy/NumPy/Perceval.",
+    "conventions": "All70*81 coefficients include zero/negative real values and imaginary diagnostics. Complete raw normalization; independent output factorial division. Whole-level Bernstein nonnegativity is a sufficient square certificate; a negative grid point refutes the square only, not the actual beta curve.",
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "workers": 1,
+      "threads": 1,
+      "FSIZE_bytes": 4194304,
+      "scientific_combined_bytes": 4194304,
+      "reserve_bytes": 65536,
+      "log_bytes": 4194304,
+      "photons_max": 4,
+      "signal_modes_max": 4,
+      "degree_x_max": 8,
+      "degree_y_max": 8,
+      "signal_degree_max": 4,
+      "permutations_max": 24,
+      "coefficient_rows": 5670,
+      "grid_pairs": 25,
+      "boxes": 42,
+      "Bernstein_rows": 3402,
+      "registered_tasks": 78,
+      "records_nominal": 9612,
+      "failed_retries": 0,
+      "RNG_draws": 0,
+      "native_calls": 0,
+      "hard_RSS_claim": false
+    },
+    "non_claims": [
+      "No executed result at freeze",
+      "No general graph/finite-filter no-go or optimizer benefit",
+      "No mean-to-best-of-T/first-hitting/setup-free transfer",
+      "No hardware/PNR access, novelty, held-out, manuscript or QPU gate"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "None; exhaustive finite permutations/subsets/grid/boxes",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T13:55:24.818497+00:00",
+    "runtime_seconds": 3.290595,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P107_symbolic_filter_validation.py",
+    "research/P107_SYMBOLIC_FILTER_POPULATION.md",
+    "research/P107_symbolic_filter_contract_TEMPLATE.json",
+    "research/P101_FINITE_FILTER_ALL_OUTPUT_CARD.md",
+    "research/P98_FACTORIAL_SURROGATE_HIERARCHY.md",
+    "reports/P107_ROOT_PRE_DATA_CODE_REVIEW.md",
+    "research/P107_INDEPENDENT_SYMBOLIC_CODE_REVIEW.md",
+    "research/P101_INDEPENDENT_FINITE_FILTER_REVIEW.md",
+    "reports/P101_ROOT_FINITE_FILTER_CHECKPOINT.md",
+    "research/P107_DECODER_IDENTITIES_REVIEW.md",
+    "research/P107_PRE_DATA_DEGENERATE_PREDICTION.md",
+    "research/P107_INDEPENDENT_CORNER_REVIEW.md",
+    "reports/P107_validation_review/predata_static_binding.json",
+    "reports/P107_ROOT_MAIN_AUTHORIZATION.md",
+    "research/P107_symbolic_filter_execution_binding.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P107_symbolic_filter_validation.py",
+      "sha256": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc",
+      "sha256_after": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc"
+    },
+    {
+      "path": "research/P107_SYMBOLIC_FILTER_POPULATION.md",
+      "sha256": "051d24038066d7cac3ef34f6f835703793c0d7e93b085cf20fa03d99ac14636b",
+      "sha256_after": "051d24038066d7cac3ef34f6f835703793c0d7e93b085cf20fa03d99ac14636b"
+    },
+    {
+      "path": "research/P107_symbolic_filter_contract_TEMPLATE.json",
+      "sha256": "d150e2042c5f8a02b09baab4da8426fd92348eb66525a2d7bf1a90ddb734e8ed",
+      "sha256_after": "d150e2042c5f8a02b09baab4da8426fd92348eb66525a2d7bf1a90ddb734e8ed"
+    },
+    {
+      "path": "research/P101_FINITE_FILTER_ALL_OUTPUT_CARD.md",
+      "sha256": "65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c",
+      "sha256_after": "65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c"
+    },
+    {
+      "path": "research/P98_FACTORIAL_SURROGATE_HIERARCHY.md",
+      "sha256": "918d721f33a691351aa0ab2b4618f3fde0101341de87b719d2ecdfea23038c8d",
+      "sha256_after": "918d721f33a691351aa0ab2b4618f3fde0101341de87b719d2ecdfea23038c8d"
+    },
+    {
+      "path": "reports/P107_ROOT_PRE_DATA_CODE_REVIEW.md",
+      "sha256": "b5dfa8f5edebedb0511c3521bd6a9e639f8744b87fe7807256185b8ed82b6d79",
+      "sha256_after": "b5dfa8f5edebedb0511c3521bd6a9e639f8744b87fe7807256185b8ed82b6d79"
+    },
+    {
+      "path": "research/P107_INDEPENDENT_SYMBOLIC_CODE_REVIEW.md",
+      "sha256": "8a40cce87e2abd9ba082afce16df7cb0ec5f429f01a107f4699263808e94f5fc",
+      "sha256_after": "8a40cce87e2abd9ba082afce16df7cb0ec5f429f01a107f4699263808e94f5fc"
+    },
+    {
+      "path": "research/P101_INDEPENDENT_FINITE_FILTER_REVIEW.md",
+      "sha256": "d61068fb4bb7fc55f21af976bb2103b0922697ff931568aba2f11960b962b505",
+      "sha256_after": "d61068fb4bb7fc55f21af976bb2103b0922697ff931568aba2f11960b962b505"
+    },
+    {
+      "path": "reports/P101_ROOT_FINITE_FILTER_CHECKPOINT.md",
+      "sha256": "ec73a3c06d3975244b2adf14e4b4a6118e65c60998ac54b815ea47e8aece343b",
+      "sha256_after": "ec73a3c06d3975244b2adf14e4b4a6118e65c60998ac54b815ea47e8aece343b"
+    },
+    {
+      "path": "research/P107_DECODER_IDENTITIES_REVIEW.md",
+      "sha256": "9dca56e56c724b67493199f637094dfa59f17e2d12b1d01d93493735fbded9f9",
+      "sha256_after": "9dca56e56c724b67493199f637094dfa59f17e2d12b1d01d93493735fbded9f9"
+    },
+    {
+      "path": "research/P107_PRE_DATA_DEGENERATE_PREDICTION.md",
+      "sha256": "565d9fb4e904d7bcf0342c99f3661d835349dafaeffbd352efdf53de1a4e0153",
+      "sha256_after": "565d9fb4e904d7bcf0342c99f3661d835349dafaeffbd352efdf53de1a4e0153"
+    },
+    {
+      "path": "research/P107_INDEPENDENT_CORNER_REVIEW.md",
+      "sha256": "5282367c133d30849bce06342a2753f86959807d606c566c93f55674772dd857",
+      "sha256_after": "5282367c133d30849bce06342a2753f86959807d606c566c93f55674772dd857"
+    },
+    {
+      "path": "reports/P107_validation_review/predata_static_binding.json",
+      "sha256": "7df0d7ace6430d8748b219be0fbbdcc9069ce60d40571ccba0c792275118097d",
+      "sha256_after": "7df0d7ace6430d8748b219be0fbbdcc9069ce60d40571ccba0c792275118097d"
+    },
+    {
+      "path": "reports/P107_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "1222c2bac649d708e0821cbe15d0d434c3b734ef4cb20a00e938e4b8bc2f2dbc",
+      "sha256_after": "1222c2bac649d708e0821cbe15d0d434c3b734ef4cb20a00e938e4b8bc2f2dbc"
+    },
+    {
+      "path": "research/P107_symbolic_filter_execution_binding.json",
+      "sha256": "18fb6567283b6e142eb8c7b7fe018dbaee17983fe5d84cf6c252371179016b6f",
+      "sha256_after": "18fb6567283b6e142eb8c7b7fe018dbaee17983fe5d84cf6c252371179016b6f"
+    }
+  ],
+  "output_directory": "research/P107_symbolic_filter_main/run_001",
+  "declared_results": [
+    "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+    "research/P107_symbolic_filter_main/run_001/data/summary.json",
+    "research/P107_symbolic_filter_main/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+      "sha256": "b28ca55e337201240da88149d24ebabb8a5174481bd2821448e34c7f9d57b7b6",
+      "kind": "result"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/summary.json",
+      "sha256": "04722bf8236d6ea949f3bb4df41b805a3e8c7c9cb43d43b3a0e871192508ee77",
+      "kind": "result"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
