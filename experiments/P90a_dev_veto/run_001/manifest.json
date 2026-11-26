@@ -1,0 +1,320 @@
+{
+  "schema_version": 2,
+  "claim_id": "P90a-SOURCE-BOUND-NONFLAT-96B-FOUR-FAST-FIRST-DEV-VETO",
+  "repository": {
+    "commit": "b2f9af31af86c83d8aef8841891c4d37832c69e5",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P90a_source_bound_nonflat_veto.py",
+    "--spec",
+    "research/P90a_execution_spec.json",
+    "--output",
+    "experiments/P90a_dev_veto/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Does the prospectively frozen optimum-blind source-bound nonflat B mechanism survive its first strict gate against each of four independent from-raw FAST controls on the two fixed fresh DEV cases? Only96 B attempts,1152 modeled injected photons and4 normally returning FAST calls are in this screen. Every status has positive_accepted=false; no other control or positive research conclusion is executed.",
+    "coefficient_domain": "Exact nonnegative symmetric integer graph/count/cut/mask arithmetic; float64/complex128 H/eigvalsh/expm and finite absolute Gram guards; recorded CPU/WALL clock operands with explicit unknown CPU/endpoints for reported P43 setup and null endpoints for P50 reports.",
+    "conventions": "n24/K12; root90026001; p1/2,t1;3 resets times16 steps per case; warmstart at most2 complete best-swap scans, proposal Q at most1. M target rows/source columns is the transpose of inside-major exact delta; all144 candidate cut/mask arrays, first-min and global/own-chain credit exist before the owning end clock. Compiler candidates cannot replace CURRENT. V is fixed before sigma/tau/R. Keep allr0..12, collision outcomes, null/monomial/flat compilers and repeated states. r0 makes no native sample but still charges12 photons. New immutable P43 factory per r>=1, one serial sample, no fallback. Decode only complete lossless counts, uniformly complete collisions and strictly improve CURRENT only after Q.",
+    "inputs": [
+      "ER9002401: NetworkX3.6.1 gnp_random_graph(24,0.4,seed=9002401); RR9002402: random_regular_graph(4,24,seed=9002402). No filters/redraws/old adjacency/known optimum. Canonical sorted minmax edges get independent own GEN/weights PCG64 integer weights1..5.",
+      "P90a literal spec fixes all role tuples and the pregraph seed-collision check. SHA256 seed derivation occurs only in a separately authorized main, never during code authoring or qualification. No collision rehash.",
+      "Unchanged P90 design/exact review/bounded primary-literature note and P90a card/independent review; frozen18-file project execution closure and18 separately checked installed critical source/native/package/interpreter pins.",
+      "Each FAST_RANDOM ER/RR then FAST_SPECTRAL ER/RR call receives its own whole case G and fresh raw setup/priority/control seed. No B incumbent, priority, matrix, cache, candidate or optical sample is supplied."
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "workers": 1,
+      "environment_threads": 1,
+      "native_threads": 1,
+      "max_new_log_bytes": 4194304,
+      "max_new_scientific_bytes": 33554432,
+      "reserved_final_bytes": 1048576,
+      "single_JSON_or_line_bytes": 4194304,
+      "logical_workspace_bytes_PLAN": 268435456,
+      "one_control_workspace_bytes_PLAN": 67108864,
+      "hard_RSS_claim": false,
+      "failed_retries": 0,
+      "cases": 2,
+      "vertices": 24,
+      "photons_per_B_attempt": 12,
+      "B_attempts": 96,
+      "modeled_injected_B_photons": 1152,
+      "resets_per_case": 3,
+      "steps_per_reset": 16,
+      "warmstart_complete_scans_maximum": 2,
+      "proposal_Q_complete_scans_maximum": 1,
+      "candidates_per_complete_scan_or_compiler": 144,
+      "FAST_normal_calls": 4,
+      "FAST_work_guard_per_call": 1000000,
+      "FAST_exported_trace_cap_per_call": 40000,
+      "FAST_static_checkpoint_bound_per_call": 31254,
+      "guard_absolute": 3e-12,
+      "guard_relative": 0,
+      "optional_control_calls": 0,
+      "heldout_or_replication_calls": 0,
+      "QPU_calls": 0
+    },
+    "non_claims": [
+      "No executed result or measured runtime at freeze; no positive acceptance, significance, optimizer/quantum advantage, novelty, hardware readiness, PNR/account access, loss-model validity or manuscript gate.",
+      "Zero ideal optical latency and excluded simulator/import/graph-generation/audit IO favor B; G is disjoint paid classical WALL, not complete B CPU or matched total hardware/optical resources.",
+      "Compiler-only discoveries receive all-paid credit and remain distinguishable from raw/Q/accepted optical moves; no favorable omission, collision conditioning or invented preclock witness is allowed.",
+      "FOUR adequate normal FAST returns are necessary. Partial appealing outputs, a CPU-only checkpoint, a late reconstructed best, clipping of negative clock gaps or an early work/trace guard cannot establish eligibility.",
+      "Reoptimized D, species<=3/exact low-r, intensity/routing/bunching/repair, compiler-only/full-feature high-order feasible/frontier, paid reoptimized projection-DPP, relabelings/fresh seeds/heldouts/replication remain NOT_RUN and mandatory later.",
+      "The256MiB total/64MiB one-control allowances and80-byte trace estimate are logical plans, not native allocation/RSS or timing guarantees. No graph, seed, budget, limit or first failure is replaced after outcomes."
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Literal compact ASCII JSON [P90a,90026001,caseID,arm,chain,step,role,index], comma/colon separators, unused=-1/index0; SHA256 first8 bytes LE for own explicit PCG64, native1+first4 bytes LE modulo(2^32-1). GEN weights/B priority/reset_start/portS/portT/split/native/repair/control namespaces fixed in spec; test all potential PCG seeds and96 native seeds for collisions before graphs, fail without rehash. These seeds/digests are not evaluated at authoring or qualification.",
+    "seed": 90026001
+  },
+  "run": {
+    "started_at": "2026-11-26T03:38:50.232741+00:00",
+    "runtime_seconds": 28.385608,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P90_SOURCE_AWARE_NONFLAT_DESIGN.md",
+    "research/P90_SOURCE_AWARE_NONFLAT_EXACT_REVIEW.md",
+    "research/P90_BOUNDED_PRIMARY_LITERATURE_CHECK.md",
+    "research/P90a_DEV_VETO_CONTRACT.md",
+    "research/P90a_INDEPENDENT_CARD_REVIEW.md",
+    "research/P90a_IMPLEMENTATION_API.md",
+    "research/P90a_source_bound_nonflat_veto.py",
+    "tests/test_p90a_source_bound_nonflat_veto.py",
+    "research/P90a_execution_spec.json",
+    "research/P90a_preflight_contract.json",
+    "research/P90a_execution_contract.json",
+    "research/P90a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P90_SOURCE_AWARE_NONFLAT_DESIGN.md",
+      "sha256": "b3c0b04c486f3368a0cbbc7e2030d8225d015f182cbfb00e0a9b63e0a0b2f173",
+      "sha256_after": "b3c0b04c486f3368a0cbbc7e2030d8225d015f182cbfb00e0a9b63e0a0b2f173"
+    },
+    {
+      "path": "research/P90_SOURCE_AWARE_NONFLAT_EXACT_REVIEW.md",
+      "sha256": "ad2a473b7b37da806b7e327e07ca6273278dbbffd0f6cf5d271a99865589f4d5",
+      "sha256_after": "ad2a473b7b37da806b7e327e07ca6273278dbbffd0f6cf5d271a99865589f4d5"
+    },
+    {
+      "path": "research/P90_BOUNDED_PRIMARY_LITERATURE_CHECK.md",
+      "sha256": "fa1c2be4a2b148450653207befe4cd4647dfef10f1147b0d1b03ce978a94e831",
+      "sha256_after": "fa1c2be4a2b148450653207befe4cd4647dfef10f1147b0d1b03ce978a94e831"
+    },
+    {
+      "path": "research/P90a_DEV_VETO_CONTRACT.md",
+      "sha256": "dfdcabfd93cf1a1e0d06fb370ad295123c1726247857820acab9f5d08d04c660",
+      "sha256_after": "dfdcabfd93cf1a1e0d06fb370ad295123c1726247857820acab9f5d08d04c660"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_CARD_REVIEW.md",
+      "sha256": "2372e0c2d8709ac722959166cc91767e059379d348949b27a4e3b20a8ef9e58e",
+      "sha256_after": "2372e0c2d8709ac722959166cc91767e059379d348949b27a4e3b20a8ef9e58e"
+    },
+    {
+      "path": "research/P90a_IMPLEMENTATION_API.md",
+      "sha256": "8c153fc538dd8b789239e25f814126e2e37c9a422778bed1bbd45b60a9645ca5",
+      "sha256_after": "8c153fc538dd8b789239e25f814126e2e37c9a422778bed1bbd45b60a9645ca5"
+    },
+    {
+      "path": "research/P90a_source_bound_nonflat_veto.py",
+      "sha256": "95fa65c6c04a0d48bb29c5d38b4bb1cac1cfdc22170191ee49a280f2995098e1",
+      "sha256_after": "95fa65c6c04a0d48bb29c5d38b4bb1cac1cfdc22170191ee49a280f2995098e1"
+    },
+    {
+      "path": "tests/test_p90a_source_bound_nonflat_veto.py",
+      "sha256": "9fba751e5bc2970e77e63a1d45a751c4a3e788f64b2f718fb7b26d8fee6dc9ec",
+      "sha256_after": "9fba751e5bc2970e77e63a1d45a751c4a3e788f64b2f718fb7b26d8fee6dc9ec"
+    },
+    {
+      "path": "research/P90a_execution_spec.json",
+      "sha256": "87dda967c662b0507c364d216f2c1a937d6a83e8616b536b7a0330bd90be0e7f",
+      "sha256_after": "87dda967c662b0507c364d216f2c1a937d6a83e8616b536b7a0330bd90be0e7f"
+    },
+    {
+      "path": "research/P90a_preflight_contract.json",
+      "sha256": "16e8ee28db9a26215fb22a12df8dcb3941ac957bc2c76ce1606ee1e0d3bfdfd7",
+      "sha256_after": "16e8ee28db9a26215fb22a12df8dcb3941ac957bc2c76ce1606ee1e0d3bfdfd7"
+    },
+    {
+      "path": "research/P90a_execution_contract.json",
+      "sha256": "0ed33b3d86e25eaa2e946506c52dcc510c89b633eabb61d68da7ed4e2d58b707",
+      "sha256_after": "0ed33b3d86e25eaa2e946506c52dcc510c89b633eabb61d68da7ed4e2d58b707"
+    },
+    {
+      "path": "research/P90a_IMPLEMENTATION_POPULATION.md",
+      "sha256": "54e69aad02836d0e3f6c48de9b3cbbabd3f66117a20b9e3391ae92a0455b1e9f",
+      "sha256_after": "54e69aad02836d0e3f6c48de9b3cbbabd3f66117a20b9e3391ae92a0455b1e9f"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    }
+  ],
+  "output_directory": "experiments/P90a_dev_veto/run_001",
+  "declared_results": [
+    "experiments/P90a_dev_veto/run_001/data/metadata.json",
+    "experiments/P90a_dev_veto/run_001/data/graphs.json",
+    "experiments/P90a_dev_veto/run_001/data/B_ER.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/B_RR.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/paid_ledger.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/controls.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/summary.json",
+    "experiments/P90a_dev_veto/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P90a_dev_veto/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/stderr.txt",
+      "sha256": "666a17af8984773c4b71bf66bd201198498939298b4b71ba15a0b009384b4778",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/metadata.json",
+      "sha256": "8ad07f047d572a33999e2aaf2a8e6fa863539e34279edd6e4417410e3f3307a9",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/graphs.json",
+      "sha256": "8319a1b9af1db3fa8469a38d96ffc553ad9e6ec88385791b6def5c57480d521e",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/B_ER.jsonl",
+      "sha256": "c9ff122d5eff1ff462deb378eb4562ce3341ac2b6e4f0fc78490e61e7bcd7544",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/B_RR.jsonl",
+      "sha256": "f21396f733ba2a6244aa0adf6b7b6811dcccec5126d8bbc01d9223fe912762b9",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/paid_ledger.jsonl",
+      "sha256": "fa2115adba90fc282c0cc817bcb641826834d61395d37a892379d51e9d4d8c51",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/controls.jsonl",
+      "sha256": "4bc4debb49a444c1c041ac06c6d1251090a07892543b1a3cfa7c6c23cee4a45d",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/summary.json",
+      "sha256": "4134a6221863db6621701227cf177ed8481766eedba7370c421219b6c4d1b8d4",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/failure.json",
+      "sha256": "b24b6f7f3627ec4fec61d369b7ad9a35c8918c6da5f7f9390fd97cd5ed29a643",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
