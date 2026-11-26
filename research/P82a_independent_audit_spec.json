@@ -1,0 +1,51 @@
+{
+  "schema": "P82a.independent-recorded-audit.v1",
+  "state": "CODE_ONLY_NOT_EXECUTED",
+  "producer_source_freeze": "94f80b94f75317524c202ce9ef5bf932d78ddc5e",
+  "producer_source_sha256": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc",
+  "producer_spec_sha256": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838",
+  "clock_authorities": {
+    "addendum_sha256": "1b548885d05fe6a42487c77b12ac00292ebd8bd379c4074e6ce3a49ceb93a8d4",
+    "review_sha256": "edeba00f839368b0c9ca6ef5f7a01befaa1a98527808d906c008f93218d77271",
+    "binding_MD_sha256": "9080adee7e67189731cdbcbd297c0b419748337025135f85cf7406bee5c1a4ba",
+    "rule": "G remains paid B WALL; both adapter+whole-derived-call-gap+checkpoint CPU and WALL must be <=G; endpoints of aggregate gaps UNKNOWN; factory allocated CPU UNKNOWN"
+  },
+  "finite_assertion": "Audit the sealed 96-attempt recorded protocol, independent graph/cut/mask/descent/mark/compiler/decoder reconstruction, all existing control prefix masks/cuts/two clocks and original negative-only decision. No optimizer or native replay.",
+  "case_ids": ["ER8201601", "RR8201602"],
+  "population": {"n":16,"K":8,"chains":3,"steps":16,"attempts":96,"completed_modeled_photons":768,"histogram_bins":9},
+  "qualification": {
+    "pytest_functions":21,
+    "fixtures":"Hardcoded synthetic graphs, literal recorded candidates, Fraction F4 features, scripted rounded fields/counts/clocks and temporary JSON files only",
+    "main_role_hashes":0,"PCG_constructions":0,"DEV_graphs":0,"native_calls":0,"optimizer_replays":0,
+    "F4_fixture":"Synthetic one-edge matrix, not a main anchor; exact A01=(-1+i)/6 and J01=5/18",
+    "H_semantics":"Exact equality of H reconstructed from archived rounded J and previous archived phasors in increasing-s order. Exact zero keeps the phase. Nonzero atan2 phasor residual <=3e-12."
+  },
+  "numerical_rules": {
+    "exact":"All graph cuts, subset masks, Fraction features, role encodings, seeds, integer split coins, r/counts and all policy/status decisions",
+    "feature_A_J_W_and_phasor_absolute_tolerance":3e-12,
+    "relative_tolerance":0,
+    "runtime_Gram_flatness_occupied_frame_absolute_tolerance":3e-12,
+    "clock_tolerance":0,
+    "no_H_zero_tolerance":true
+  },
+  "resources":{"CPU_seconds":30,"wall_seconds":60,"workers":1,"environment_threads":1,"native_backend_required":false,"logical_bytes_PLAN":268435456,"raw_scientific_bytes":33554432,"single_JSON_or_line_bytes":4194304,"B_rows_per_case":5000,"ledger_rows":2000,"control_rows_per_call":20005,"checkpoints_per_control":10001,"work_per_control":10000,"output_bytes":524288,"log_bytes":4194304,"retries":0},
+  "main_binding": {
+    "schema":"P82a.independent-recorded-audit-binding.v1",
+    "binding_state":"TEMPLATE_UNBOUND_NO_EXECUTION",
+    "required_state_after_ROOT_authorization":"SEALED_POST_B_RAW_AUTHORIZED",
+    "b_raw_sealed":false,
+    "audit_authorized":false,
+    "producer_source_freeze":"94f80b94f75317524c202ce9ef5bf932d78ddc5e",
+    "producer_source_sha256":"7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc",
+    "producer_spec_sha256":"8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838",
+    "checker_source_sha256":null,
+    "producer_execution_commit":null,
+    "dataset_directory":null,
+    "artifacts":[],
+    "artifact_record_fields":["name","path","sha256","bytes"],
+    "rules":"ROOT may later add only opaque actual paths/hashes/byte sizes/execution commit and authorization flags. All paths project-relative regular non-symlink files. Include producer manifest, every available declared scientific result, frozen producer input closure, exact clock review and frozen checker inputs. No behavior or tolerance changes."
+  },
+  "outputs":["audit_summary.json","audit_failure.json"],
+  "coverage_limits":["Compiler-before-R and evidence-IO exclusion are source-bound, no internal endpoints invented","Custom control policy not replayed; audit actual masks/cuts/work/cache lineage/clocks","No Clifford/Naive/P50 solver replay","No distribution inference from 96 adaptive draws","No Born-law/TV/physical replication/advantage claim"],
+  "positive_accepted":false
+}
