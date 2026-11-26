@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "claim_id": "P96-COLUMN-LOSS-PURE-QUALIFICATION",
+  "repository": {
+    "commit": "16d43ab7b5e9a0da71aeb90af55422711439190e",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-I",
+    "-B",
+    "-c",
+    "import os,resource,runpy,sys;os.environ.update({key:'1' for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS')});resource.setrlimit(resource.RLIMIT_FSIZE,(524288,524288));sys.argv=['pytest','-q','-p','no:cacheprovider','-o','junit_family=legacy','tests/test_p96_column_loss_validation.py','--junitxml=research/P96_column_loss_preflight/run_001/junit.xml'];runpy.run_module('pytest',run_name='__main__')"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exactly11 unparameterized pure tests: the original9 vacuum/unary/scaled-HOM/nonorthogonal-K2/raw rank-one/outside-domain/boundary/population fixtures, plus strict clean/Evidence JSON retention of NaN/Inf diagnostics and actual thread-drift observations using a FAKE object. No native, graph or stochastic execution in qualification; physical populations167/159/28 remain unchanged.",
+    "coefficient_domain": "Strict real rational Fraction/permutation-polynomial arithmetic plus builtin combinatorial integer counts. Two diagnostic fixtures use synthetic builtin float NaN/Inf and a fake configuration, not photon observations. No NumPy/SciPy/Perceval/exqalibur imports by this source/tests population.",
+    "conventions": "All declared zero bins retained; no source/domain gate is weakened for the outside-domain table. JUnit record_property stores observed exact p/q fractions and scope. Diagnostic fixtures create synthetic JSON files in pytest temporary directories and store observations in JUnit; they are not photon data. threads() reads a fake object only; no native module/backend is imported or called. Bare JSON NaN/Infinity is rejected; diagnostic objects are not numeric PASS values.",
+    "inputs": [
+      "The8 project-relative static files below already exist after this freeze. Theory is contextual and is bound separately for main after ROOT integration, not guessed as a missing qualification input."
+    ],
+    "bounds": {
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "threads": 1,
+      "workers": 1,
+      "planned_pytest_items": 11,
+      "native_calls": 0,
+      "RNG_calls": 0,
+      "graph_calls": 0,
+      "max_log_bytes": 4194304,
+      "max_scientific_bytes": 524288,
+      "per_file_RLIMIT_FSIZE": 524288,
+      "logical_workspace_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "Qualification PASS is not main execution, universal theorem verification or QPU/optimizer validation.",
+      "Preflight XML has its OWN512KiB hard/soft FSIZE set before importing pytest; main's8MiB resource settings are not implicitly applied to this different command.",
+      "Static source/tests/contracts must remain byte unchanged after qualification. A separate active main binding carries actual theory, authorization and qualification evidence."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "No random draw, seed, native state or graph",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T04:50:53.037697+00:00",
+    "runtime_seconds": 0.493662,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P96_column_loss_validation.py",
+    "tests/test_p96_column_loss_validation.py",
+    "research/P96_column_loss_validation_contract.json",
+    "research/P96_column_loss_validation_preflight_contract.json",
+    "research/P96_VALIDATION_POPULATION.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P96_column_loss_validation.py",
+      "sha256": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223",
+      "sha256_after": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223"
+    },
+    {
+      "path": "tests/test_p96_column_loss_validation.py",
+      "sha256": "a5b7d94dcf9b202fc30309e57e63227700a1c65c5964140e4334535560a45c1a",
+      "sha256_after": "a5b7d94dcf9b202fc30309e57e63227700a1c65c5964140e4334535560a45c1a"
+    },
+    {
+      "path": "research/P96_column_loss_validation_contract.json",
+      "sha256": "a1d17209cc1c032b35f92cf0d93773fe735f0a567d9d901aa26a1240c3becb7d",
+      "sha256_after": "a1d17209cc1c032b35f92cf0d93773fe735f0a567d9d901aa26a1240c3becb7d"
+    },
+    {
+      "path": "research/P96_column_loss_validation_preflight_contract.json",
+      "sha256": "d8fcba7e1794416ceda6b0e7bf1885f5d914a867143b233ad873669611dba629",
+      "sha256_after": "d8fcba7e1794416ceda6b0e7bf1885f5d914a867143b233ad873669611dba629"
+    },
+    {
+      "path": "research/P96_VALIDATION_POPULATION.md",
+      "sha256": "1642dda4dec65926d35aa84131655a4f9b9e31e86f607563d7ff694d715697d5",
+      "sha256_after": "1642dda4dec65926d35aa84131655a4f9b9e31e86f607563d7ff694d715697d5"
+    }
+  ],
+  "output_directory": "research/P96_column_loss_preflight/run_001",
+  "declared_results": [
+    "research/P96_column_loss_preflight/run_001/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P96_column_loss_preflight/run_001/stdout.txt",
+      "sha256": "bf33e9a030ea23efc7ace785a81ef7a06c366ca04c19c2b9d73ce32857d469c8",
+      "kind": "log"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/junit.xml",
+      "sha256": "c6d83e89931531f28ce9f123b8834fa56a75bb99790958f25c470e5947a37621",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
