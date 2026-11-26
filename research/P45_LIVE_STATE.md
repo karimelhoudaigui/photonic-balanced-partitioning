@@ -66,7 +66,8 @@ v2validatorPASS. ROOT's frozen6d5f823 stdlib inspector recalculatedall183
 probabilities,maxabs2.22e-16,65zero refs/all65native0,external10pinsmatch.
 No DEV graph/PCG/8phsample/P43/P50actual call. Checkpoint:
 reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md. Source+qualraw/receipt now
-integratedROOT, no full-suite claim for this new executable tree yet.
+integratedROOT. CIhead9ba543c is observedGREEN:1214PASS19.57s in actual
+job logs, run45734622442/job139624733249;602historicalfilesunchanged.
 Main96B/768 modeled photons remains separately unauthorized and awaits
 the independent checker's complete predatafreeze (source/tests/contracts).
 

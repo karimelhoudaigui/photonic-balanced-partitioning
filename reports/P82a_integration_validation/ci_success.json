@@ -1,0 +1,12 @@
+{
+  "repository": "karimelhoudaigui/photonic-balanced-partitioning",
+  "head_sha": "9ba543c59aeecdd661044780c111e61e759e6419",
+  "run_id": 45734622442,
+  "job_id": 139624733249,
+  "conclusion": "success",
+  "observed_actual_job_log_result": "1214 passed in 19.57s",
+  "observed_historical_files_checked": 602,
+  "observed_changed_or_missing": [],
+  "inspection": "ROOT inspected GitHub run/job metadata and actual decoded test logs",
+  "scope": "Complete integrated existing suite plus27 P82a fixtures on CI; no DEV main, independent raw audit or QPU result"
+}

@@ -40,3 +40,13 @@ No positive optimization, independent DEV replication or QPU result
 follows. Main remains separately gated on the independent checker's
 complete predata source/tests/spec/contracts freeze. Paper/main and
 all earlier validated results remain preserved; CLAIM-042 stays OPEN.
+
+## Integrated suite observed on CI
+
+After qualified-source integration, GitHub head9ba543c59aeecdd661044780c111e61e759e6419,
+run45734622442/job139624733249, completes successfully. ROOT inspected
+the actual job logs:1214PASS in19.57s, including the27 new fixtures.
+The preservation check reports602 historical files and no changed or
+missing file. This is CI integration validation, separate from the
+single prospectively registered local qualification. It opens no DEV
+graph or main trajectory. [Recorded CI receipt](P82a_integration_validation/ci_success.json).
