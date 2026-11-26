@@ -20,6 +20,12 @@ amplitudes**:
 - At each of three phases `0`, `pi/2`, `pi`, all six removed input pairs and all
   ten two-photon occupations of four receiving modes: 180 observations.
 
+Qualification is ONE fixed 27-node pytest batch without `-x` or another
+fail-fast option. It preserves the first errors while the remaining registered
+deterministic items run within the unchanged caps; this is not a retry or a
+second qualification. Any failed qualification stops the path to main. Main
+requires a separate authorization and stops at its first failure without retry.
+
 Every observation, including exact/tiny zeros and exception representations, is
 recorded as a JUnit property before the native assertions. The native absolute
 tolerance is `2e-12`, with relative tolerance zero. There is no native eight-photon
@@ -120,6 +126,14 @@ unknown/null. The observed outer CPU remains a separate observation. Returned
 setup WALL must lie between zero and observed outer WALL: failure is preserved,
 with no clipping. r0 records `NOT_CALLED`, never invented factory timestamps.
 
+Each returned P43 setup duration has its own unique, case-labeled ledger record
+of kind `REPORTED_DURATION`, with `paid=false`, the reported WALL value, the
+immutable helper source path/SHA256, and null CPU/start/end fields. The paid
+`DURATION_DIFF` references both that record through `reported_ref` and its
+observed outer span through `outer_ref`; the B `factory_report` points to both
+operands and the difference. The reported record is never added to G separately,
+so this typed provenance link leaves G's definition unchanged.
+
 A direct control result tests BOTH adapter_CPU+checkpoint_CPU<=G and
 adapter_WALL+checkpoint_WALL<=G. The binding witness uses the additional
 conservative call-boundary correction below. Immutable P50's complete snapshot and packed mask
@@ -143,6 +157,13 @@ UNKNOWN/null: the difference includes entry, return and any postfix overhead,
 and is not an observed prefix interval. Its CPU value is a duration difference,
 not a newly observed CPU interval. This is separate from B's factory duration
 difference, whose allocated CPU remains unknown.
+
+For P50 the `control_header` contains an identified `REPORTED_DURATION` operand
+for the helper's returned compute CPU and WALL values, with immutable helper
+path/SHA256 and null interval endpoints. The difference's `reported_ref` resolves
+to that operand's ID, while `outer_ref` and `direct_adapter_ref` resolve to the
+identified observed operands in the same header. These are provenance operands,
+not additional charged intervals or new allowances.
 
 Keep `G_case` unchanged. The helper CPU budget remains
 `max(0, G_case - direct_adapter_CPU)`. Preserve the direct dual-clock result and

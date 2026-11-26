@@ -437,9 +437,17 @@ def decode_counts(source_order, target_order, removed_ports, y, chooser):
             "h": len(support), "repair": repair, "repair_rng_used": used}
 
 
-def duration_difference(outer_record, reported_wall, event_id):
+def duration_difference(outer_record, reported_record, event_id):
+    if (outer_record.get("kind") != "OBSERVED_SPAN" or not outer_record.get("id")
+            or not outer_record.get("case")
+            or reported_record.get("kind") != "REPORTED_DURATION"
+            or reported_record.get("paid") is not False or not reported_record.get("id")
+            or reported_record.get("case") != outer_record.get("case")
+            or any(reported_record.get(key) is not None for key in
+                   ("cpu_seconds", "start_cpu", "end_cpu", "start_wall", "end_wall"))):
+        raise RetainedFailure("invalid typed reported factory duration", {"reported": reported_record})
     outer = finite(outer_record["wall_seconds"], "factory outer WALL")
-    reported = finite(reported_wall, "factory reported WALL")
+    reported = finite(reported_record["wall_seconds"], "factory reported WALL")
     if not 0 <= reported <= outer:
         raise RetainedFailure("invalid nested factory duration", {
             "outer": outer_record, "reported_wall": reported})
@@ -447,7 +455,8 @@ def duration_difference(outer_record, reported_wall, event_id):
             "label": "factory_prefix_plus_return_residual",
             "wall_seconds": outer-reported, "cpu_seconds": None,
             "start_cpu": None, "end_cpu": None, "start_wall": None, "end_wall": None,
-            "outer_ref": outer_record["id"], "reported_setup_wall_seconds": reported,
+            "outer_ref": outer_record["id"], "reported_ref": reported_record["id"],
+            "reported_setup_wall_seconds": reported,
             "formula": "factory_outer_wall - setup_reported_wall"}
 
 
@@ -586,7 +595,15 @@ class Ledger:
             self.pending.append(event)
 
     def factory_residual(self, outer, reported):
-        event = duration_difference(outer, reported, self.identifier())
+        reported_record = {"id": self.identifier(), "case": self.case_id,
+            "kind": "REPORTED_DURATION", "paid": False, "label": "P43_backend_setup_reported",
+            "wall_seconds": finite(reported, "factory reported WALL"), "cpu_seconds": None,
+            "start_cpu": None, "end_cpu": None, "start_wall": None, "end_wall": None,
+            "helper_source_path": "research/P43_global_gain_probe.py",
+            "helper_source_sha256": P43_SHA256, "outer_ref": outer["id"]}
+        self.records.append(reported_record)
+        self.pending.append(reported_record)
+        event = duration_difference(outer, reported_record, self.identifier())
         event.update(case=self.case_id, paid=True)
         self.records.append(event)
         self.pending.append(event)
@@ -717,6 +734,7 @@ def run_b_case(raw_graph, case, spec, deps, writer, progress):
                 residual = ledger.factory_residual(outer, backend_setup)
                 writer.append(stream, {"type": "factory_report", "chain": chain, "step": step,
                                        "outer_ref": outer["id"], "backend_setup_wall": backend_setup,
+                                       "reported_ref": residual["reported_ref"],
                                        "duration_difference_ref": residual["id"]})
                 ledger.flush()
                 with ledger.span("serial_native_sample", paid=False, chain=chain, step=step):
@@ -797,9 +815,15 @@ def run_fast_control(raw_graph, case, mode, grant, spec, deps, writer):
     outer_cpu, outer_wall = end[0]-start[0], end[1]-start[1]
     overhead = call_boundary_difference(outer_cpu, outer_wall, ac, aw,
         result["compute_cpu_seconds"], result["compute_wall_seconds"])
+    reported_compute = {"id": case["id"]+"/"+mode+"/reported_compute",
+        "case": case["id"], "mode": mode, "kind": "REPORTED_DURATION", "paid": False,
+        "label": "P50_compute_reported", "cpu_seconds": result["compute_cpu_seconds"],
+        "wall_seconds": result["compute_wall_seconds"], "start_cpu": None, "end_cpu": None,
+        "start_wall": None, "end_wall": None,
+        "helper_source_path": "research/P50_fast_from_scratch.py", "helper_source_sha256": P50_SHA256}
     overhead.update(outer_ref=case["id"]+"/"+mode+"/outer",
                     direct_adapter_ref=case["id"]+"/"+mode+"/adapter",
-                    reported_ref="P50.compute_cpu_seconds/compute_wall_seconds")
+                    reported_ref=reported_compute["id"])
     charged_ac, charged_aw = ac+overhead["cpu_seconds"], aw+overhead["wall_seconds"]
     direct_selected = select_dual_checkpoint(trace, ac, aw, grant, len(raw_graph))
     selected = select_dual_checkpoint(trace, charged_ac, charged_aw, grant, len(raw_graph))
@@ -814,6 +838,7 @@ def run_fast_control(raw_graph, case, mode, grant, spec, deps, writer):
               "adapter_cpu": ac, "adapter_wall": aw, "solver_cpu_budget": budget,
               "call_boundary_difference": overhead, "witness_charged_adapter_cpu": charged_ac,
               "witness_charged_adapter_wall": charged_aw,
+              "reported_compute_duration": reported_compute,
               "adapter_start": start, "solver_boundary": boundary,
               "call_end": end, "actual_total_cpu": end[0]-start[0], "actual_total_wall": end[1]-start[1],
               "observed_outer": {"id": overhead["outer_ref"], "kind": "OBSERVED_SPAN",
