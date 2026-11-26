@@ -39,8 +39,9 @@ Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
 GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
 run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
 
-Numerical worker reserved to P63 for ONE checker synthetic qualification;
-primary main has finished and released its slot. P87 is ACCEPTED after full ROOT168+peer308+exact344
+Numerical worker FREE after the first recorded checker audit failed on
+an administrative timeout type check. No new B main is allowed.
+P87 is ACCEPTED after full ROOT168+peer308+exact344
 reads, sources6436860/17ba1d4 and auditb77c8c0. Its sharp fixed-N oracle
 limitR/2 matches identity; this is not a generic sampling-optimizer no-go.
 P82 eta0 decoded null is also accepted with exact independent153e807,
@@ -95,8 +96,20 @@ mainTEMPLATErunnerparentrun_001,MDcorrigendum. Sourcef595/tests7dc/spec6fd
 unchanged; no behavior/tol/seed change. ROOTfull30+/4-delta +P66exact
 0a6eb71/049b4873(61l)read closespathdefect. ROOTnowdistinctlyauthONE
 qualrun_002,21synthetic/11inputs/CPU30wall60/env1/0autoretry/raw-first.
-No corrected qualification outcome yet. Rejection001remainsintact.
-Author/reviewer stillblindtoBdata. Datasetbinding/auditmainNOTAUTHORIZED.
+CorrectedQUAL002 accepted21PASS/no warnings/runner.610468s,raw75a4697
+beforeinterpretation,receipt696b400137lFULLREAD,v2PASSoriginal+ROOT.
+AllfilesintegratedROOT1e9c01f. Rejection001remainsintact.
+After metadatareview713b5e6f(87lFULLREAD), ROOTopaque46inputbinding was
+authorizedd156aa5 and ONErecordedaudit001 executed. RAWb4aa0f3sealed
+BEFOREread: FAILEDexit1/.158351s atmanifest/wall-cap 90.0vsstrictint90,
+BEFOREMainReplay/no graph/mark/cut/RNG/native.46hashesunchanged,v2validFAILED.
+reports/P82a_ROOT_RECORDED_AUDIT_ATTEMPT1.md preservescause/limits;
+branchresearch/p82a-audit-v1-evidence@b4aa0f3 keeps alloldinputsvalid.
+P63administrativefixa965e08 CODEONLY+82/-13 sixfiles nowfrozen,ROOTfulldiff
+read,source56a3bb2a/tests38383d9e/spec222e9cd9. WallnumericEXACT90/90.0,
+othercaps/cuts/masksstrict;1newfixture=>22, qualfresh003/mainTEMPLATEfresh002.
+P62 performs independentDELTAreview. NOqual003/replay/main002authyet.
+Author stillblindtoBscience; onlyfailedcapsmetadataopened. Primarydatauntouched.
 DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
 Compilation-before-R is source-bound, not a separately timed raw endpoint;
 custom control audit covers cuts/cache lineage/clocks, not policy replay.
