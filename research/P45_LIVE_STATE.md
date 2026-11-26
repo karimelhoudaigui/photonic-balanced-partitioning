@@ -347,21 +347,35 @@ conditional routing genuinely escapes every static passive fixed-source
 count mirror, but a HOM-pair group and classical bit reproduce its graph law.
 See ../reports/P140_ROOT_NONSTATIC_CHECKPOINT.md. No optimizer benefit.
 
-ACTIVE next: P141 SOURCE AUTHORING in isolated .local/p84-cost-phase, branch
-research/p84-cost-phase.142-line carddeb8d9ae and111-line review6cd435df were
-FULL read; ROOT CODE ONLY authority586b80a is distinct and committed. P66
-authors only source/population/inactive TEMPLATE; P62 is non-author FULL
-frozen-code reviewer, and ROOT must also read the full exact freeze. NO
-P141 graph draw/import/AST/test/matrix evaluation/run has been authorized.
-Prospective one worker,CPU180/wall240,science48MiB47+1/log4MiB,zero retries;
-58443 rows/45 tasks/2 DEV graphs/34+2 matrices. Common D clears T/U only;
-F/frameGram/inverse require their own exact denominators. All70 candidates
-are classically credited, so a survivor is FOLLOW-UP only.11 critical pins
-were freshly rehashed metadata-only. A distinct active binding and ROOT
-MAIN authority must precede any numerical work. Numerical worker is FREE.
-P142 internal-triad utility and P143 finite-instrument weak-limit routes
-are MANUAL ONLY pending candidates, blind to any P141 output. They do not
-block P141's full source review or supply its execution authority.
+P141 SOLE MAIN IS COMPLETE; do NOT run it again.780-line freeze52288d1c and
+144-line non-author review9df31ff7 were FULL read by ROOT. Separate MAIN
+authorityed6634e and committed active binding38dc0b7 (SHA256 1d59d75740e7ae3596ac0a51b5cb077e6e7eafc97380c6651e35fc89c8bcecef)
+precede ONE30.059362s/exit0 main. ORIGINAL raw737321d is sealed BEFORE
+interpretation; official manifest-v2 validation PASSES.58443 rows/45 tasks
+complete, no FAILED/NOT_RUN. ENGINE_PASS, registered NO_SIGNAL.
+ER bestB .0436159055462 > retunedD .0399270676206, but proper0001 gives
+.0462737826349; preserve that local favorable B/D contrast, not an advantage.
+RR bestB2.89446869354 < retunedD3.06904811950. Both full70-state classical
+frontiers are credited (h6/27); ER optimum is at grid boundarykappa4.
+Selected J4 is negative on both graphs; no all-grid/all-strength sign theorem.
+Records13,988,539 bytes, within original48MiB science cap. No seed/cap/grid
+rescue, native/Q/P135 follow-up or held-out opening. Paper/main/QPU frozen.
+ROOT full streamed recorded consistency interpretation/SEPARATE receipt
+is PENDING. P66 authors a small post-seal reader in its isolated worktree;
+P94 is non-author reviewer, ROOT also reads before a distinct bounded
+interpretation authorization. It is not independent physical/optimizer
+replication. Numerical worker is FREE; this status is not run authority.
+P143103-line source82682862 and103-line non-author83d06aee now pass FULL
+ROOT review: a common tag-blind finite instrument with analytic deterministic
+D null has a local retuned-D utility obstruction. All helpers/tags and the
+finite raw alphabet are essential; no efficient-sampler or total-cost claim.
+See ../reports/P143_ROOT_FINITE_INSTRUMENT_CHECKPOINT.md. P142131+92 lines
+now pass FULL ROOT review for scope identities; the useful graph sign remains
+INCOMPLETE, no pilot follows. See ../reports/P142_ROOT_TRIAD_SCOPE_CHECKPOINT.md.
+P144's three-source primary note and ROOT source spot-check authenticate
+known permutation/factorial/adaptive-branch antecedents; no global novelty
+clearance. Both source/review routes stayed blind to P141 outputs and
+supply no experiment/hardware/manuscript authority.
 P135's62-line ideal shared-phase CF/hold formula and62-line independent
 review are preregistered for a conditional later control; no code/run and
 no change to P134's9441-row first screen. A proper-group survivor still
