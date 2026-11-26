@@ -1939,3 +1939,43 @@ reports/P136_ROOT_COMPONENT_CHECKPOINT.md. Root acceptance0d6b787.
 P137 now studies reoptimized D in the weak-reflection regime; P138 changes
 the mechanism to an incumbent-aligned magnetic hybrid. Neither is yet a
 positive optimizer. CLAIM-042 OPEN; all historical raw data/paper/main intact.
+
+## P137 explicit obstruction accepted; P138 finite bridge still incomplete
+
+26-Nov-2026. P137130-line sourcec24a5b8d and83-line general-K addendumda18f736,
+plus112-line independent1e942caa and86-line independent0122a9ae, FULL read at
+ROOT. The direct-coupling floor allows an explicit weak window depending on
+K and supplied d: D(ceil(sqrt(K))*kappa) dominates B(kappa) off R for K>=2.
+The supplied d, admitted retuning, h(R)=0/common holds and raw denominators
+are load-bearing. No measured time, calibrated loss, sparse/all-strength
+or universal optimizer no-go is inferred. Root acceptance7c86007 and
+reports/P137_ROOT_WEAK_REFLECTION_CHECKPOINT.md. That exact GitHub head
+passes1559 tests17.03s/602 historical files unchanged and existing manuscript
+build; actual job logs read, reports/P137_validation_review/ci_success.json.
+
+P138137-line source71b14647 and98-line independent5cbe4517 FULL read at ROOT.
+Its incumbent-aligned Hermitian two-hop magnetic reflection has exact dump
+bound4*kappa^4/(2+kappa^2)^2 and useful single-four-cycle term O(kappa^5),
+without a favorable sign. Its connected-source hand has a sign-changing
+return term but improvement identically zero. Algebra accepted, optimization
+bridge INCOMPLETE. A new finite-strength P141 screen is prospective; no
+graph draw, source execution or numerical population exists yet. P139's
+general analytic obstruction and P140's changed feedback witness remain
+separate review tasks. Neither counts as a positive optimizer/QPU gate.
+
+## P139 closes the sparse weak-limit escape in its analytic scope
+
+26-Nov-2026.119-line source35d84e49/76-line addendum58c333d4 and96/74-line
+non-author reviews79765362/f7c9b7c5 FULL read at ROOT. For every fixed finite
+analytic signal curve from the current injection, positive D valuations and
+K! Cauchy give a local retuned-D obstruction without a dense floor. Zero
+germs and their radii are retained. No explicit or dimension-uniform window
+is supplied. The full-count/internal-state addendum needs a FULL analytic
+isometry, distinct monomial endpoint and a decoder common across settings
+with h(n0)=0. A signal-analytic contraction need not have an analytic full
+dilation; the reviewer supplies a counterexample, and P138's explicit full
+reflection meets the stronger premise. Mathematical review is accepted;
+this is not numerical/optimizer replication, priority or an all-strength,
+adaptive, calibrated-hardware or measured-total-cost no-go. See
+reports/P139_ROOT_ANALYTIC_OBSTRUCTION_CHECKPOINT.md. P141's prospective
+finite-strength screen targets the remaining gap; no new graph was drawn.

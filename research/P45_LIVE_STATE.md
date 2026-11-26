@@ -332,9 +332,36 @@ reviews now pass full ROOT review. For K>=2, dense direct-coupling floor d
 and incumbent R, admitted D(ceil(sqrt(K))*kappa) dominates every off-R CF
 target inside the explicit supplied window. No sparse/all-strength/adaptive,
 matched-time or novelty claim. ../reports/P137_ROOT_WEAK_REFLECTION_CHECKPOINT.md.
-P139 investigates a broader sparse analytic obstruction; it is PENDING.
+P139119+76 source/addendum lines and96+74 independent review lines now pass
+FULL ROOT review: finite analytic curves from the current injection have a
+local window dominated by admitted retuned D, even with sparse couplings.
+The full-count/internal extension separately needs FULL analyticity and a
+monomial endpoint; common repairs need h(n0)=0. No explicit/uniform radius,
+finite-strength, adaptive or total-cost conclusion follows. See
+../reports/P139_ROOT_ANALYTIC_OBSTRUCTION_CHECKPOINT.md.
 P138 is a MANUAL changed
 incumbent-aligned finite-strength design. Neither has execution authority.
+Its137+98-line source/review now pass ROOT algebraic review, with useful
+finite-strength sign INCOMPLETE. P140117+97 lines also pass ROOT review:
+conditional routing genuinely escapes every static passive fixed-source
+count mirror, but a HOM-pair group and classical bit reproduce its graph law.
+See ../reports/P140_ROOT_NONSTATIC_CHECKPOINT.md. No optimizer benefit.
+
+ACTIVE next: P141 SOURCE AUTHORING in isolated .local/p84-cost-phase, branch
+research/p84-cost-phase.142-line carddeb8d9ae and111-line review6cd435df were
+FULL read; ROOT CODE ONLY authority586b80a is distinct and committed. P66
+authors only source/population/inactive TEMPLATE; P62 is non-author FULL
+frozen-code reviewer, and ROOT must also read the full exact freeze. NO
+P141 graph draw/import/AST/test/matrix evaluation/run has been authorized.
+Prospective one worker,CPU180/wall240,science48MiB47+1/log4MiB,zero retries;
+58443 rows/45 tasks/2 DEV graphs/34+2 matrices. Common D clears T/U only;
+F/frameGram/inverse require their own exact denominators. All70 candidates
+are classically credited, so a survivor is FOLLOW-UP only.11 critical pins
+were freshly rehashed metadata-only. A distinct active binding and ROOT
+MAIN authority must precede any numerical work. Numerical worker is FREE.
+P142 internal-triad utility and P143 finite-instrument weak-limit routes
+are MANUAL ONLY pending candidates, blind to any P141 output. They do not
+block P141's full source review or supply its execution authority.
 P135's62-line ideal shared-phase CF/hold formula and62-line independent
 review are preregistered for a conditional later control; no code/run and
 no change to P134's9441-row first screen. A proper-group survivor still

@@ -12,9 +12,14 @@ P136's109-line source and114-line independent audit prove a full spatial-law
 component obstruction for the rational reflection. ROOT applies it to the
 recorded RR support: B=D throughout that fixed beta/kappa family, not just
 the grid. A connected support is necessary for a strict proper-group win,
-not sufficient for useful optimization. P137's more general weak-reflection
-proof remains under review; P138 designs a genuinely changed, incumbent-
-aligned mechanism. CLAIM-042 remains OPEN; paper/main/QPU remain frozen.
+not sufficient for useful optimization. P137's explicit general-K weak-
+reflection window now passes full independent and ROOT review; its dense
+floor and current-incumbent assumptions are essential. P139's broader sparse
+analytic theorem and its separately scoped full-count/internal-state extension
+now pass independent and ROOT review; the local window is not explicit or
+uniform, and finite strength remains open. P138's changed incumbent-aligned mechanism
+has reviewed algebra and a zero-utility counterexample, with no finite-
+strength gain yet. CLAIM-042 remains OPEN; paper/main/QPU remain frozen.
 
 Current continuation: P90a's sole96-attempt DEV main and independent
 recorded-data audit are complete. B reaches111/28 versus EACH separately

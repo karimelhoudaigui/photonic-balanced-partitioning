@@ -1,5 +1,31 @@
 # Negative Results Log
 
+## 26-Nov-2026: sparse analytic weak-limit escape also obstructed
+
+P139's119+76-line source/addendum and96+74-line independent reviews pass
+full ROOT reconstruction. A fixed analytic transfer from the incumbent,
+finite pool and admitted retuning c=ceil(sqrt(K!+1)) yield local raw dominance
+by D, even for sparse H. The window exists but is not explicit or uniform.
+Under stronger FULL analytic/monomial premises this extends to all spatial
+counts and physical internal states, with strictly common repair and h(n0)=0.
+It does not reject finite-strength P141, adaptive policies, arbitrary noisy
+hardware or all photonic optimization. No new run or global priority claim.
+See reports/P139_ROOT_ANALYTIC_OBSTRUCTION_CHECKPOINT.md.
+
+## 26-Nov-2026: explicit weak-reflection window obstructed
+
+P137130-line sourcec24a5b8d and83-line general-K addendumda18f736 pass full
+ROOT and112+86-line non-author review1e942caa/0122a9ae. For K>=2, a supplied
+dense direct floor d>0, current prototype R and common invalid holds, admitted
+D(c*kappa), c=ceil(sqrt(K)), strictly beats B(kappa) at every alternative CF
+target in the explicit window. All attempts/collisions/dumps remain charged.
+This is not sparse/all-strength/adaptive or measured-total-cost domination.
+No new numerical experiment or first-priority claim follows. P138's reviewed
+magnetic-loop hand changes a zero-utility return coefficient while every
+actual improvement stays zero; a phase signature alone remains insufficient.
+See reports/P137_ROOT_WEAK_REFLECTION_CHECKPOINT.md and
+research/P138_INDEPENDENT_MAGNETIC_ROUTE_REVIEW.md. Finite strength stays open.
+
 ## 26-Nov-2026: four-source rational-frame grid rejected
 
 P134 ran ONCE under separate authority12a4aee, raw633defe sealed before
