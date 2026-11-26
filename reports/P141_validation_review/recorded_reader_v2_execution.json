@@ -1,0 +1,26 @@
+{
+  "scope": "SEPARATE_V2_POST_SEAL_DESCRIPTIVE_READ_V1_FAILURE_PRESERVED",
+  "authority_commit": "d7ce98d",
+  "original_source_commit": "afbbddb9c7e1c5ff38d5b9fb854963d07b86cb29",
+  "v1_failure_seal": "9efe143cdf3b35d555c1c309f7075f98bbc2991b",
+  "raw_origin_commit": "737321d98f3b979b29e0fb82c622f3f81662938b",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "/Users/karimelhoudaigui/Desktop/pasqal/research/P141_recorded_consistency_reader_v2.py",
+    "--root-authorized-recorded-read"
+  ],
+  "started_at_utc": "2026-11-26T18:39:10.177650+00:00",
+  "runtime_seconds": 0.959733,
+  "exit_status": 0,
+  "timeout": false,
+  "wall_limit_seconds": 30,
+  "child_CPU_limit_seconds": 20,
+  "processed_file_limit_bytes": 1048576,
+  "source_sha256_before": "c8a455ec784d546d551e28e57c3fc4e05f7501963baad5b5ffba79bcb74e74dd",
+  "source_sha256_after": "c8a455ec784d546d551e28e57c3fc4e05f7501963baad5b5ffba79bcb74e74dd",
+  "source_unchanged": true,
+  "stdout_bytes": 0,
+  "stderr_bytes": 0,
+  "processed_output_present": true
+}
