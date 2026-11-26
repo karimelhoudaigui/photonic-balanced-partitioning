@@ -143,6 +143,8 @@ def digest(path):
 def clean(value):
     if isinstance(value, F):
         return str(value)
+    if isinstance(value, float) and not math.isfinite(value):
+        return {"nonfinite_float_repr": repr(value)}
     if isinstance(value, (list, tuple)):
         return [clean(x) for x in value]
     if isinstance(value, dict):
@@ -174,8 +176,10 @@ class Evidence:
 def threads(xq):
     observed = {key: os.environ.get(key) for key in THREADS}
     value = int(xq.Config.compute_max_thread_count)
-    insist(value == 1 and set(observed.values()) == {"1"}, "native/environment thread readback")
-    return {"native": value, "environment": observed}
+    snapshot = {"native": value, "environment": observed}
+    insist(value == 1 and set(observed.values()) == {"1"},
+           {"reason": "native/environment thread readback", "observed": snapshot})
+    return snapshot
 
 
 def native_stack(provenance, spec):
@@ -203,14 +207,24 @@ def native_case(name, t, law, stack, writer, guard, state):
     np, pcvl, backend_type, xq = stack
     m, k = len(t), len(t[0])
     array = np.array([[float(x) for x in row] for row in t])
-    def root(matrix):
+    def root(matrix, bank):
+        writer.emit({"kind": "halmos_root_operand", "case": name, "bank": bank, "operand": matrix.tolist()})
+        insist(bool(np.isfinite(matrix).all()), "finite Halmos square-root operand; diagnostics already emitted")
         values, vectors = np.linalg.eigh(matrix)
-        insist(float(values.min()) >= 0, "positive Halmos square-root operand; no clipping")
+        writer.emit({"kind": "halmos_root_spectrum", "case": name, "bank": bank,
+                     "eigenvalues": values.tolist(), "eigenvectors": vectors.tolist()})
+        insist(bool(np.isfinite(values).all()) and bool(np.isfinite(vectors).all())
+               and float(values.min()) >= 0, "finite positive Halmos square-root operand; no clipping")
         return (vectors*np.sqrt(values))@vectors.T
-    u = np.eye(m) if k == 0 else np.block([[array, root(np.eye(m)-array@array.T)],
-                                                         [root(np.eye(k)-array.T@array), -array.T]])
-    residual = max(float(np.max(np.abs(u.T@u-np.eye(m+k)))), float(np.max(np.abs(u@u.T-np.eye(m+k)))))
-    insist(residual <= TOL, "Halmos unitarity absolute tolerance")
+    u = np.eye(m) if k == 0 else np.block([[array, root(np.eye(m)-array@array.T, "signal")],
+                                                         [root(np.eye(k)-array.T@array, "environment"), -array.T]])
+    gram_input, gram_output = u.T@u, u@u.T
+    residuals = [float(np.max(np.abs(gram-np.eye(m+k)))) for gram in (gram_input, gram_output)]
+    residual = max(residuals)
+    writer.emit({"kind": "halmos_unitary_check", "case": name, "U": u.tolist(), "gram_input": gram_input.tolist(),
+                 "gram_output": gram_output.tolist(), "residuals": residuals, "unitarity_residual": residual})
+    insist(all(math.isfinite(x) and x <= TOL for x in residuals)
+           and bool(np.isfinite(u).all()), "finite Halmos unitarity absolute tolerance")
     backend = backend_type()
     backend.set_circuit(pcvl.Circuit(m+k).add(0, pcvl.Unitary(pcvl.Matrix(u))))
     backend.set_input_state(pcvl.BasicState([1]*k+[0]*m))
@@ -224,15 +238,21 @@ def native_case(name, t, law, stack, writer, guard, state):
         writer.emit({"kind": "native_attempt", "case": name, "counts": full, "threads_before": before})
         state["native_calls_attempted"] += 1
         state["last_native_after"] = None
+        state["last_native_return_repr"] = state["last_native_probability_repr"] = None
         try:
-            amplitude = complex(backend.prob_amplitude(pcvl.BasicState(list(full))))
+            raw_amplitude = backend.prob_amplitude(pcvl.BasicState(list(full)))
+            state["last_native_return_repr"] = repr(raw_amplitude)
             state["native_calls"] += 1
+            amplitude = complex(raw_amplitude)
         finally:
             state["last_native_after"] = threads(xq)
         probability = abs(amplitude)**2
+        state["last_native_probability_repr"] = repr(probability)
         writer.emit({"kind": "native_raw", "case": name, "counts": full, "signal": full[:m], "loss": sum(full[m:]),
                      "amplitude": [amplitude.real, amplitude.imag], "probability": probability,
                      "threads_before": before, "threads_after": state["last_native_after"]})
+        insist(all(math.isfinite(x) for x in (amplitude.real, amplitude.imag, probability)),
+               "finite native amplitude components and probability required; diagnostics already emitted")
         marginal[full[:m]] += probability
         count += 1
     errors = []
