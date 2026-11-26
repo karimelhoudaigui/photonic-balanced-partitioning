@@ -1483,3 +1483,24 @@ replacement and P92 every-column calibration counterexample accepted with
 independent hand reviews; novelty, calibrated Lucy and measured costs OPEN.
 P93 rank-two initializer surrogate awaits independent exact-source review.
 Paper/main/QPU/held-out remain frozen, CLAIM-042OPEN, all negatives retained.
+
+## P90a qualification complete before any DEV data
+
+The changed source-aware/nonflat compiler is frozen82d7b63,7files3851lines,
+source95fa65c6. ROOTfullread and independent174-line reviewe7ce3474 precede
+separateauthorizatione9e1150. The sole qualification's raw929f752 was sealed
+BEFORE reading; ROOTcopy5ab76ae is later. Separate159-line receipt82d74145
++b2f9af31 has SHAd43f6d8b.283PASS/6warnings28.34s pytest,29.103454s runner,
+CPU60/WALL90/env1/native1,18input hashes unchanged, v2validproducerANDROOT.
+IndependentROOT integer-DP inspector5a0de0d reproduces254amplitudes/probabilities,
+181zeros,maxprobabilityerror2.220446049250313e-16,allcaps/paths/actualpins/readbacks.
+JUnit1,530,960B,rawtotal1,546,437B; initialnativeconfig0 retained beforeconfigured1.
+All native work max4receiver modes/4photons; the96-attempt/controlworkflow is
+SCRIPTED, not actualB/FAST data. No DEV/productionrolehash/PCG/P43/P50 call.
+Full integratedsuite1519PASS44.61s,wall45.633968s,env/native1,rawlogsb0d90be
+before reading. IntegrationCPU120/WALL180 differs from scientificcaps.
+See reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md. IndependentP63 recorded
+checker is CODEONLY authoring beforeBdata; primaryDEVmain remainsunautorized.
+P93 conditional surrogate source159+independentreview130 accepted, noactual
+smallresidual/sampler/optimizerobstruction inferred; P90aH unchanged.
+CLAIM-042OPEN, paper/main/QPU/held-out frozen, negative evidence unchanged.

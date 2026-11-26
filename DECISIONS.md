@@ -348,3 +348,15 @@ BEFORE imports/AST/collection/RNG/native, then separate qualification and main
 authorizations. Every compiler-discovered candidate must be scored and paid.
 One numerical worker, isolated writer branches, no automatic retries.
 CLAIM-042OPEN; paper/main/QPU and held-out data remain frozen.
+
+## Accept P90a tiny qualification; keep the DEV gate separate
+
+ACCEPT the one hash-bound283-item qualification and ROOT independent254-point
+DP inspection, raw929f752 sealed before interpretation, receipt82d74145+b2f9af31.
+Officialv2valid both trees; full integrated1519PASS. No rerun or altered input.
+Scope is tiny4-mode/4-photon deterministic physics and scripted bookkeeping;
+no K12/DEV/optimizer benefit or hardware inference. Before primary96B data,
+freeze the independent checker and complete its exact-source review. Qualify
+that checker on tiny/scripted inputs only under separate ROOT authorization;
+primary main still needs another distinct authorization. Keep all downstream
+controls/held-out/physical-replication/total-cost gates, paper/main and QPU closed.
