@@ -124,11 +124,15 @@ one-replacement frontier; from a strict one-swap minimum the first possible
 improvement is order>=beta^4. No useful graph sign or timed advantage follows.
 Finite-strength search remains OPEN. See ../reports/P95_ROOT_FILTER_CHECKPOINT.md.
 
-P96source6f4e7fb9/169lines is fully read at ROOT and under independent proof
-and primary-source review. It constructs a positive classical0/1/2-photon
+P96source6f4e7fb9/169lines and independent proof40d2e6a5/157lines are fully
+read and accepted by ROOT. It constructs a positive classical0/1/2-photon
 law from exact first/second moments under certified trace transmission<=1/2,
-with proposed exact TV expression and bound24e3(c)<=4mu^3. No public mean
-is a calibration and the hypothetical12*.02 example is not a measured bound.
+with exact TV=E[(N-1)^2;N>=3]<=24e3(c)<=4mu^3. Coefficient24 is attained
+exactly by K3;4 is sharp only in the stated ordered asymptotic sense.
+Primary check8b5e9120/124lines authenticates known moment inversion/lossy
+simulation ingredients; exact combined priority remains UNVERIFIED.
+See ../reports/P96_ROOT_THEORY_CHECKPOINT.md. No public mean is a calibration
+and the hypothetical12*.02 example is not a measured bound.
 The small rational-PNR/159-native-point validation is CODE ONLY in isolated
 P94 author checkout; no import, collection, native test or run yet. Separate
 full source review and ROOT execution authorization are still required.

@@ -1570,3 +1570,22 @@ No favorable optimization sign or measured cost ordering follows. KEEP the
 scoped derivation; finite-strength route OPEN, not globally ruled out.
 No experiment ran; paper/main/QPU unchanged. P96 proceeds independently.
 reports/P95_ROOT_FILTER_CHECKPOINT.md.
+
+
+## P96 certified-column low-count surrogate: independently proved
+
+Known CF inputs, passive vacuum channel, explicit T and trace mu<=1/2:
+construct positive normalized correlated classical q supported0/1/2 photons
+from exact first/second factorial moments. Exact TV=E[(N-1)^2;N>=3]
+<=24e3(c)<=4mu³;24 attained exactly by a K3 rank-one physical channel,
+4 sharp only via stated sequential limits. Complex T/repeated outputs and
+all raw loss/collision/vacuum branches are covered analytically.
+
+Source6f4e7fb9/169l, independent proof40d2e6a5/157l, primary-source
+check8b5e9120/124l, all fully read at ROOT. Known moment-inversion and lossy
+simulation ingredients are attributed; exact composition priority UNVERIFIED.
+No finite-bit implementation/cost or photonic optimizer claim. Hypothetical
+K12*.02 error.04224 is not Lucy calibration;96-trial union bound vacuous.
+The real-rational/small159-native-point validation remains CODE ONLY, needing
+full source review, qualification and separate execution authority. No run
+or numerical success is asserted. reports/P96_ROOT_THEORY_CHECKPOINT.md.

@@ -14,8 +14,9 @@ support theorem defeat its proposed expressivity advantage. Direct prior art
 is authenticated; no novelty is claimed. P95's filter expansion and bounded
 remainder are independently audited, with no favorable optimization sign
 and finite-strength search still open. P96's positive column-budget surrogate
-is under proof/source review and its small exact/native validation is CODE
-ONLY; no positive pilot is justified yet. P82a's earlier finite audit remains valid
+is independently proved in its exact trace/CF/passive-vacuum model, with
+combined priority unverified; its small exact/native validation is CODE ONLY.
+No positive optimizer pilot is justified yet. P82a's earlier finite audit remains valid
 with its original INCONCLUSIVE_FAST_ELIGIBILITY, not a quantum advantage.
 P91's conditional spectral-loss
 replacement and P92's calibration counterexample are accepted in their exact
