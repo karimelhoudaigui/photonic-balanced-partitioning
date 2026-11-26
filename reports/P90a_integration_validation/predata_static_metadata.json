@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "producer_commit": "82d7b63d35f2f0495df6ed9c0d86999b649c44ff",
+  "project_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P90_SOURCE_AWARE_NONFLAT_DESIGN.md",
+      "sha256": "b3c0b04c486f3368a0cbbc7e2030d8225d015f182cbfb00e0a9b63e0a0b2f173"
+    },
+    {
+      "path": "research/P90_SOURCE_AWARE_NONFLAT_EXACT_REVIEW.md",
+      "sha256": "ad2a473b7b37da806b7e327e07ca6273278dbbffd0f6cf5d271a99865589f4d5"
+    },
+    {
+      "path": "research/P90_BOUNDED_PRIMARY_LITERATURE_CHECK.md",
+      "sha256": "fa1c2be4a2b148450653207befe4cd4647dfef10f1147b0d1b03ce978a94e831"
+    },
+    {
+      "path": "research/P90a_DEV_VETO_CONTRACT.md",
+      "sha256": "dfdcabfd93cf1a1e0d06fb370ad295123c1726247857820acab9f5d08d04c660"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_CARD_REVIEW.md",
+      "sha256": "2372e0c2d8709ac722959166cc91767e059379d348949b27a4e3b20a8ef9e58e"
+    },
+    {
+      "path": "research/P90a_IMPLEMENTATION_API.md",
+      "sha256": "8c153fc538dd8b789239e25f814126e2e37c9a422778bed1bbd45b60a9645ca5"
+    },
+    {
+      "path": "research/P90a_source_bound_nonflat_veto.py",
+      "sha256": "95fa65c6c04a0d48bb29c5d38b4bb1cac1cfdc22170191ee49a280f2995098e1"
+    },
+    {
+      "path": "tests/test_p90a_source_bound_nonflat_veto.py",
+      "sha256": "9fba751e5bc2970e77e63a1d45a751c4a3e788f64b2f718fb7b26d8fee6dc9ec"
+    },
+    {
+      "path": "research/P90a_execution_spec.json",
+      "sha256": "87dda967c662b0507c364d216f2c1a937d6a83e8616b536b7a0330bd90be0e7f"
+    },
+    {
+      "path": "research/P90a_preflight_contract.json",
+      "sha256": "16e8ee28db9a26215fb22a12df8dcb3941ac957bc2c76ce1606ee1e0d3bfdfd7"
+    },
+    {
+      "path": "research/P90a_execution_contract.json",
+      "sha256": "0ed33b3d86e25eaa2e946506c52dcc510c89b633eabb61d68da7ed4e2d58b707"
+    },
+    {
+      "path": "research/P90a_IMPLEMENTATION_POPULATION.md",
+      "sha256": "54e69aad02836d0e3f6c48de9b3cbbabd3f66117a20b9e3391ae92a0455b1e9f"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    }
+  ],
+  "critical_external_pins_checked": 18,
+  "immutable_inputs_checked": 8,
+  "statically_compared_node_names": 283,
+  "planned_native_items": 254,
+  "planned_functions": 30,
+  "fresh_output_parents": true,
+  "scope": "Only stdlib file/JSON/regex/hash checks; no scientific import/AST/collection or execution of source/test/generator/seed/RNG/native code"
+}
