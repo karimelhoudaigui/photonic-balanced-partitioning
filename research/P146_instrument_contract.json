@@ -48,8 +48,8 @@
     {"name": "exqalibur", "version": "1.4.2"}
   ],
   "randomness": {"used": false, "generator": "", "seed": null},
-  "run_authorized": false,
-  "authorization_note": "CODE ONLY pending non-author source review, independent mathematical review and ROOT execution authorization; user authorizes continued bounded local research, not hardware.",
+  "run_authorized": true,
+  "authorization_note": "ROOT authorizes ONE bounded local run on source6653116e8 after full source read, independent mathematical reviewb32edea (integratedce87c5c) and non-author implementation review37b30f6 (integrated46f7138). Two diagnostic deficiencies were corrected before the first run, without changing scientific predicates. No optimizer campaign, retry, account access, QPU or paper edit is authorized. The user authorizes continued local research.",
   "source_sha256": "6653116e8aa39b7bde7db8c7bf1642ba3b8777bd07808713a7c34b91c93ee567",
   "planned_command": [".venv/bin/python", "-B", "research/P146_full_instrument_check.py", "--output", "research/P146_full_instrument/run_001/data"],
   "declared_results": [
