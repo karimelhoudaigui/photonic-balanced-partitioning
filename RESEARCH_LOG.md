@@ -1644,3 +1644,40 @@ A bounded exact-only hierarchy/negative-coefficient experiment is CODE ONLY,
 including one explicit16-source rank-one algebraic law. No native16-photon
 calculation, optimizer, graph, RNG or QPU is authorized by that design.
 Reports P96_ROOT_FINITE_CHECKPOINT.md and P98_ROOT_HIERARCHY_CHECKPOINT.md.
+
+
+## P98 finite hierarchy and P99 scoped weak-passive obstruction
+
+P98 source52070f1a/179lines plus passive contract/population fully reviewed
+at ROOT235lines and independently80lines. Predata metadata adds descriptive
+mathematics.inputs in separate authorized binding9fbdaeb only. The sole run
+finishes0.136543s/exit0; six raw files sealed4c4b1cb BEFORE interpretation.
+All25 input hashes unchanged, officialv2PASS.14 cases,184 moments,68 pairs,
+1054 dense coefficients,1321 records; R16 negative coefficients/repair and
+physical X4 mu1 outside-domain retained. Separate receiptb4536af and report
+P98_ROOT_FINITE_CHECKPOINT.md. Finite rational consistency, not optimizer gain,
+categorical sampling execution or independent physical replication.
+
+P99 sourcea8e80a10/198l, non-author proof2ff020a0/173l, bounded primary
+attribution49a7b0c5/135l fully read at ROOT. For fixed real dense H with fresh
+orientation, K2..12 and admitted2t, an explicit weak interval gives D(2t)
+off-diagonal dominance over B(t). Common fixed finite-temperature Metropolis
+orders forms/Rayleigh and stationary-outside hitting means, not every-start
+or best-of-T quality, annealing or total wall cost. Explicit counterexamples
+protect those exclusions. KEEP scoped obstruction, change architecture;
+reports/P99_ROOT_WEAK_PASSIVE_CHECKPOINT.md. No priority or broad no-go claim.
+
+## P102 mission continuation: primary-literature transfers and new portfolio
+
+User26-Nov mission read in full from attachment4ed38ab8: preserve foundations,
+research-first new mechanism, deep neighboring sources, strong D/classical/
+fresh-graph/relabel/resource/independent gates before QPU and article. The
+target is durably fixed in research/P102_MISSION_TARGET.md, not silently
+replaced by passing tests. P100 complex inverse-sign lift frozenf7d3ba9/203l
+has exact stationary/cubic/loss-memory analysis but no positive signal;
+independent audit pending. Its cubic term already has a polynomial classical
+mirror. P101 finite magnetic/all-output route is being derived separately.
+ROOT P104 transfers authenticated nonnegative matching/counting results into
+a coarse full-K-or-FAIL transcript; candidate proof awaiting independent audit.
+The distinction from retained partial-loss counts is explicit. No new DEV,
+held-out opening, hardware preparation, paper/main edit or QPU call. Goal OPEN.

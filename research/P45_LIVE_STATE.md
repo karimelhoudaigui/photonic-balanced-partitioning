@@ -4,7 +4,7 @@ Earlier checkpoints are preserved byte-for-byte in
 [P45_LIVE_HISTORY_BEFORE_P90a.md](P45_LIVE_HISTORY_BEFORE_P90a.md), including
 the prior P79 history pointer. Historical pending statuses are not current.
 
-## Current: P96 finite validation accepted; P98 hierarchy and changed routes
+## Current: P96/P98 finite checks accepted; P99 scoped obstruction and changed routes
 
 **CLAIM-042 OPEN. No reproducible positive optimizer result, held-out
 confirmation or real QPU validation exists. paper/, main and QPU stay frozen.**
@@ -174,11 +174,33 @@ need quasi-polynomial work. Exact Q(i)/encoded rational epsilon/ideal-bit
 costs are proved; uncertain physical transfer requires a RAW-LAW xi certificate.
 No public mean, relative rare-event guarantee or matched-time no-go follows.
 Exact combined priority stays UNVERIFIED. See ../reports/P98_ROOT_HIERARCHY_CHECKPOINT.md.
-The higher-degree exact-only validation is CODE ONLY in P66's isolated tree:
-13 fixed P96 cases/all degrees plus one explicit16-source rank-one law to
-force negative coefficients/repair. Planned68 case-degree pairs/1054 dense
-coefficients; no native16-photon simulation, graph, RNG or QPU. Freeze/review/
-separate authorization still required; no execution yet.
+The higher-degree exact-only validation now completed ONCE after full235-line
+ROOT and80-line peer review. Binding9fbdaeb includes actual original Git blob
+checks and the missing descriptive mathematics.inputs array. Raw4c4b1cb is
+sealed BEFORE interpretation. Exit0/0.136543s, all25 inputs unchanged and
+officialv2PASS. All14 fixed cases/184 moments/68 pairs/1054 dense coefficients
+are retained (1321 records), including negative R16 coefficients and physical
+X4 mu1 outside the geometric regime. No RNG/native/graph/optimizer or16-photon
+permanent. Separate receiptb4536af; ../reports/P98_ROOT_FINITE_CHECKPOINT.md.
+This is finite arithmetic consistency, not a full independent sampler or gain.
+
+P99sourcea8e80a10/198l, independent audit2ff020a0/173l and bounded attribution
+49a7b0c5/135l are fully read at ROOT. In the exact fixed real dense H, fresh
+orientation, CF/self-loop model with K2..12 and admitted t/2t, an explicit
+weak window gives D(2t) off-diagonal domination. Common finite-temperature
+Metropolis yields Dirichlet/Rayleigh and stationary-outside mean-hitting order,
+NOT every-start, annealing, finite-horizon or equal-wall-time superiority.
+Priority UNVERIFIED; ../reports/P99_ROOT_WEAK_PASSIVE_CHECKPOINT.md.
+
+P100sourcef7d3ba9/203l is frozen THEORY ONLY. It changes to an inverse-sign
+complex-H lift, deriving stationarity without permanent proposal ratios;
+the cubic current already has a polynomial classical mirror, and frequent
+failure flips suppress incoming-sign memory. Independent exact-source audit
+and bounded prior-art check pending. No DEV run or positive result.
+P101 is a separate manual finite-filter/all-output decoder route in its
+isolated tree, not authorization for another numerical pilot. One numerical
+worker remains FREE. Last confirmed pushed ROOT remains874cbe1; later local
+P98 code/data and P99 documents await the next qualified exact-ref push.
 
 ## New scoped theory
 

@@ -24,8 +24,15 @@ surrogate now has its finite validation; combined priority stays unverified.
 P98's whole-law hierarchy is independently proved for explicit CF/passive-
 vacuum T with a certified fixed trace gap below1/2; fixed-error dimension cost
 is polynomial, inverse-polynomial/transcript error generally quasi-polynomial.
-It supplies no matched-wall-time no-go or actual Lucy certificate. Its bounded
-higher-degree validation is CODE ONLY. P97's factorial-residual estimator does
+It supplies no matched-wall-time no-go or actual Lucy certificate. Its sole
+bounded exact validation now PASSES68 case-degree pairs/1054 coefficients/
+184 moments, raw4c4b1cb before reading and officialv2PASS/25 unchanged inputs.
+P99's independently audited fixed real weak-passive comparison shows that
+an admissible doubled-parameter D control has larger off-diagonal proposals
+inside an explicit small window; only stationary-outside mean-hitting/form
+ordering follows, not all-start or equal-time optimizer domination. P100's
+lifted chiral alternative is frozen THEORY ONLY, pending independent review;
+no optimizer pilot or positive signal. P97's factorial-residual estimator does
 not supply an optimization mechanism beyond the already paid low frontier.
 No positive optimizer pilot is justified yet. P82a's earlier finite audit remains valid
 with its original INCONCLUSIVE_FAST_ELIGIBILITY, not a quantum advantage.
@@ -34,7 +41,8 @@ replacement and P92's calibration counterexample are accepted in their exact
 scopes. See reports/P82a_ROOT_FINAL_CHECKPOINT.md,
 reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md,
 reports/P90a_ROOT_FINAL_CHECKPOINT.md, reports/P96_ROOT_FINITE_CHECKPOINT.md,
-reports/P98_ROOT_HIERARCHY_CHECKPOINT.md and research/P45_LIVE_STATE.md.
+reports/P98_ROOT_HIERARCHY_CHECKPOINT.md, reports/P98_ROOT_FINITE_CHECKPOINT.md,
+reports/P99_ROOT_WEAK_PASSIVE_CHECKPOINT.md and research/P45_LIVE_STATE.md.
 
 Historical P79 checkpoint: P79's sole six-source finite raw-PNR validation
 passes, and P80's rational/finite-bit sampler and P81's dual-rail stability
