@@ -1,0 +1,25 @@
+{
+  "scope": "POST_SEAL_DESCRIPTIVE_READ_NOT_NEW_PHYSICS_OR_OPTIMIZER_REPLICATION",
+  "authority_commit": "2481e0d",
+  "original_source_commit": "edd472a2cd7d7912e1e63269f0afdaeeed416eda",
+  "raw_origin_commit": "737321d98f3b979b29e0fb82c622f3f81662938b",
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "/Users/karimelhoudaigui/Desktop/pasqal/research/P141_recorded_consistency_reader.py",
+    "--root-authorized-recorded-read"
+  ],
+  "started_at_utc": "2026-11-26T18:32:45.189599+00:00",
+  "runtime_seconds": 0.932594,
+  "exit_status": 1,
+  "timeout": false,
+  "wall_limit_seconds": 30,
+  "child_CPU_limit_seconds": 20,
+  "processed_file_limit_bytes": 1048576,
+  "source_sha256_before": "01d5150144c6c6a558b08425c6ef2529c8b1643c0156e7778552a033bdbb61f7",
+  "source_sha256_after": "01d5150144c6c6a558b08425c6ef2529c8b1643c0156e7778552a033bdbb61f7",
+  "source_unchanged": true,
+  "stdout_bytes": 0,
+  "stderr_bytes": 0,
+  "processed_output_present": true
+}

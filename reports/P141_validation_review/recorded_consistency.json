@@ -1,0 +1,42 @@
+{
+  "independent_optimizer_replication": false,
+  "independent_physical_replication": false,
+  "last_row": 58443,
+  "optimizer_advantage": false,
+  "provenance": "POST_SEAL_OUTCOMES_KNOWN_RECORDED_CONSISTENCY_PRIMARY_AUTHOR",
+  "raw_before": {
+    "data/failure.json": {
+      "bytes": 5,
+      "git_blob_sha1": "19765bd501b636fce433540d9e6735f51d66151d",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    "data/records.jsonl": {
+      "bytes": 13988539,
+      "git_blob_sha1": "e31de02a572b5349307ad9aad656b018211540c4",
+      "sha256": "faf9d55fd28d7b5442763e3dbcb4ed54edf4a006ec9516eb665df2541329933c"
+    },
+    "data/summary.json": {
+      "bytes": 14508,
+      "git_blob_sha1": "fa0ebdeed596f760a400f6583eee1b0b9d0737e0",
+      "sha256": "b0244e358baf777f7a51fc5f602a8e59f5261854122fb8e93f1d1fc90432b93e"
+    },
+    "manifest.json": {
+      "bytes": 12542,
+      "git_blob_sha1": "2081b4cccc5e410ba1c5fc0bc944ee2a57cd4c97",
+      "sha256": "acfb116e8f93a382aa582f2ebfd5955b891c1868bdd40037a6b5b4a3966189b7"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.txt": {
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "raw_origin_commit": "737321d98f3b979b29e0fb82c622f3f81662938b",
+  "status": "RECORDED_CONSISTENCY_FAIL",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/karimelhoudaigui/Desktop/pasqal/research/P141_recorded_consistency_reader.py\", line 181, in main\n    try: audit(report)\n         ^^^^^^^^^^^^^\n  File \"/Users/karimelhoudaigui/Desktop/pasqal/research/P141_recorded_consistency_reader.py\", line 158, in audit\n    need({c: d for c, d in decisions.items()} == {d[\"case\"]: d for d in summary[\"decisions\"]} and summary[\"signal_status\"] == (\"FOLLOWUP\" if all(d[\"strict_grid\"] for d in decisions.values()) else \"NO_SIGNAL\"), \"summary decision consistency\")\n  File \"/Users/karimelhoudaigui/Desktop/pasqal/research/P141_recorded_consistency_reader.py\", line 38, in need\n    if not value: raise ValueError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: summary decision consistency\n"
+}
