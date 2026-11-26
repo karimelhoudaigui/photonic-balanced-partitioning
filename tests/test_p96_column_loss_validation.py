@@ -1,9 +1,11 @@
-"""Nine pure exact fixtures. No NumPy, Perceval, native API, graph or RNG."""
+"""Eleven pure fixtures. No NumPy, Perceval, native API, graph or RNG."""
 from fractions import Fraction as F
 import importlib.util
 import json
 import math
 from pathlib import Path
+from types import SimpleNamespace
+import pytest
 
 _PATH = Path(__file__).resolve().parents[1]/"research/P96_column_loss_validation.py"
 _SPEC = importlib.util.spec_from_file_location("p96_pure_fixtures", _PATH)
@@ -98,3 +100,35 @@ def test_registered_population_counts_and_iterator(record_property):
     assert sum(math.comb(m+2*k-1, k) for _, m, k, _, native in shapes if native) == 159
     assert len(list(p96.occupations(4, 6))) == 126
     record_property("p96_population", json.dumps(shapes))
+
+
+def test_strict_json_retains_nonfinite_diagnostics(tmp_path, record_property):
+    row = {"amplitude": [float("nan"), float("inf")], "probability": float("-inf"),
+           "finite": 0.25, "exact": F(1, 3)}
+    expected = {"amplitude": [{"nonfinite_float_repr": "nan"}, {"nonfinite_float_repr": "inf"}],
+                "probability": {"nonfinite_float_repr": "-inf"}, "finite": 0.25, "exact": "1/3"}
+    assert p96.clean(row) == expected
+    output = tmp_path/"synthetic_diagnostics"
+    writer = p96.Evidence(output)
+    writer.emit(row)
+    writer.finish({"status": "SYNTHETIC_DIAGNOSTIC_ONLY"}, {"raw": float("nan")})
+    def reject_constant(value):
+        raise AssertionError("nonstandard JSON constant: "+value)
+    observed = json.loads((output/"records.jsonl").read_text(), parse_constant=reject_constant)
+    assert observed == expected
+    assert json.loads((output/"summary.json").read_text(), parse_constant=reject_constant)["status"] == "SYNTHETIC_DIAGNOSTIC_ONLY"
+    assert json.loads((output/"failure.json").read_text(), parse_constant=reject_constant) == {"raw": {"nonfinite_float_repr": "nan"}}
+    record_property("p96_nonfinite_diagnostics", json.dumps(observed, allow_nan=False))
+
+
+def test_thread_drift_keeps_actual_observations(monkeypatch, record_property):
+    environment = {key: "1" for key in p96.THREADS}
+    environment["OMP_NUM_THREADS"] = "7"
+    for key, value in environment.items():
+        monkeypatch.setenv(key, value)
+    fake = SimpleNamespace(Config=SimpleNamespace(compute_max_thread_count=3))
+    with pytest.raises(AssertionError) as error:
+        p96.threads(fake)
+    observed = error.value.args[0]["observed"]
+    assert observed == {"native": 3, "environment": environment}
+    record_property("p96_fake_thread_drift", json.dumps({"fake_only": True, "observed": observed}))
