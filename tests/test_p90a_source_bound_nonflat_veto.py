@@ -300,7 +300,7 @@ def _native_provenance(np, scipy, pcvl, xq):
 
 
 @pytest.fixture(scope="module")
-def native_stack():
+def native_stack(record_testsuite_property):
     """Only deterministic Naive is constructed; setup errors become evidence."""
     stack = SimpleNamespace(error=None, provenance=None)
     stack.environment_before = {name: os.environ.get(name) for name in THREAD_ENV}
@@ -327,6 +327,12 @@ def native_stack():
     stack.environment_end = {name: os.environ.get(name) for name in THREAD_ENV}
     if hasattr(stack, "xq"):
         stack.native_end = _read_native_thread(stack)
+    final = {"environment": stack.environment_end,
+             "native_readback": getattr(stack, "native_end", {"value": None, "error_repr": "native import unavailable"}),
+             "setup_error_repr": repr(stack.error) if stack.error else None}
+    record_testsuite_property("p90a_native_teardown_readback", json.dumps(final, sort_keys=True))
+    assert all(value == "1" for value in final["environment"].values())
+    assert final["native_readback"] == {"value": 1, "error_repr": None}
 
 
 @pytest.mark.parametrize("family,removed,counts", NATIVE_POINTS, ids=NATIVE_IDS)
@@ -721,7 +727,7 @@ assert callable(module.run_workflow)
 assert callable(module.compile_feature)
 assert not any(name in sys.modules for name in ('numpy','scipy','networkx','perceval','exqalibur'))
 '''
-    result = subprocess.run([sys.executable, "-I", "-c", script, str(SOURCE)],
+    result = subprocess.run([sys.executable, "-I", "-B", "-c", script, str(SOURCE)],
                             capture_output=True, text=True, check=False)
     record_property("p90a_portable_import", json.dumps({
         "interpreter": sys.executable, "returncode": result.returncode,
@@ -993,6 +999,9 @@ def test_evidence_writer_exclusive_eight_files_reserve_and_retained_prefix(targe
         writer.append("B_ER", {"oversized": "x" * 7000})
     writer.finish({"status": "INCONCLUSIVE_RESOURCE_FAILURE", "positive_accepted": False},
                   {"type": "ResourceFailure", "first_failure": "fixture capacity"})
+    assert writer.finish_attempted is True
+    with pytest.raises(target.AuditFailure, match="no retry"):
+        writer.finish({"status": "unused"}, {"status": "unused"})
     writer.close()
     assert {path.name for path in output.iterdir()} == {
         "metadata.json", "graphs.json", "B_ER.jsonl", "B_RR.jsonl",
