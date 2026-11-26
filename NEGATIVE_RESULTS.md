@@ -311,3 +311,23 @@ Favorable-to-B clock proxies do not establish matched total costs.
 research/P90a_INDEPENDENT_RECORDED_AUDIT_RECEIPT.md and
 reports/P90a_ROOT_FINAL_CHECKPOINT.md preserve all exact scopes.
 The positive goal remains OPEN; paper/main/QPU stay frozen.
+
+
+## P94 parity expressivity and large-graph latent amplification: analytical rejection
+
+A four-photon parity witness beats reoptimized D in a restricted mode model,
+but an independently reoptimized HOM pair reaches a better value. More
+generally every supported lossless parity point (m>=K) is preparable with
+groups<=2, so full-B and those controls have equal global attainable minima
+for any fixed parity cost. This does NOT find that minimum or efficiently
+sample its weights. Raw mean costs also have a bounded classical signed
+oracle from established characteristic/Gurvits ingredients; it is not a
+best-candidate/quenched-output sampler. A large underlying graph alone does
+not enlarge a fixed finite Walsh/block latent frontier.
+
+Sourceb2b15069 and independent exact proof10d189d1 are accepted by ROOT;
+primary checke3b1e6e prevents a new-identity/framework novelty claim.
+No photonic optimization experiment was run or failed here. The rejected
+claims are expressivity, same-mesh witness and graph-size amplification as
+sufficient advantage mechanisms, not all possible coded search dynamics.
+reports/P94_ROOT_PARITY_CHECKPOINT.md. Positive target remains OPEN.

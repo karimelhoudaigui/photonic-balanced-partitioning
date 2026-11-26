@@ -1538,3 +1538,20 @@ Git rolled it back. Only our completed clean fixtures checkout was removed,
 after verifying its integrated bytes and preserving original Git refs. An
 existing clean isolated checkout was reused for P94. No original raw data,
 model, manuscript or user .DS_Store was deleted or silently changed.
+
+
+## P94 changed decoder: audited scoped obstruction, not a positive pilot
+
+Balanced paired Walsh spins make every count (even vacuum) a feasible code
+partition. Exact raw parity means have a bounded signed classical permanent
+oracle, and every ideal lossless parity support point is deterministically
+preparable with at most HOM pairs. Thus the proposed expressivity witness
+fails the independently reoptimized group2 control. Coarse block amplification
+also retains a finite paid classical latent frontier. Efficient sampling of
+mixture weights, quenched endpoints and fully costed adaptive search remain open.
+
+Sourceb2b15069/120l, independent proof10d189d1/151l, primary checke3b1e6e/124l
+all fully read by ROOT. Known Gurvits/binned-characteristic/parity-feedback
+ingredients are attributed, not claimed new. No numerical test or pilot ran.
+reports/P94_ROOT_PARITY_CHECKPOINT.md. P95 filter and P96 column-budget
+surrogate continue mathematically before any new DEV run. CLAIM-042 OPEN.

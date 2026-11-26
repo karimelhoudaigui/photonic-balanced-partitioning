@@ -8,9 +8,12 @@ The independent frozen checker agrees on all29478 scored candidates and
 This validates recorded consistency, not Born probabilities or independent
 physical replication. See research/P90a_INDEPENDENT_RECORDED_AUDIT_RECEIPT.md.
 The integrated local suite passes1548 tests; GitHub535b778 also passes1548
-in14.94s and preserves602 historical files. P94's different parity/code,
-collective-block and dissipative-filter routes are under mathematical review;
-no positive pilot is justified yet. P82a's earlier finite audit remains valid
+in14.94s and preserves602 historical files. P94's parity/code identities
+are now independently audited: a strong classical mean oracle and HOM-pair
+support theorem defeat its proposed expressivity advantage. Direct prior art
+is authenticated; no novelty is claimed. P95's dissipative filter and P96's
+column-budget surrogate are analytical continuations; no positive pilot is
+justified yet. P82a's earlier finite audit remains valid
 with its original INCONCLUSIVE_FAST_ELIGIBILITY, not a quantum advantage.
 P91's conditional spectral-loss
 replacement and P92's calibration counterexample are accepted in their exact
