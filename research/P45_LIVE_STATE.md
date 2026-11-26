@@ -62,16 +62,18 @@ proxy, conservative dual CPU/WALL prefixes, prospective1e6work/40000trace
 caps. This proxy is NOT matched total resource cost. First-stage statuses
 can only be inconclusive, no signal, or follow-up required; positive=false.
 
-Primary authorp62_literature_resume in .local/p65-independent-audit has
-frozen API/specbaf02f8a. Two child worktrees .local/p90a-fixtures-code and
-.local/p90a-contracts-code are reserved BEFORE their file writes. Shared
-branch writing is forbidden. Parent authors implementation; children can
-write only their isolated assigned files. ONE numerical worker maximum;
-no imports/AST/py_compile/collection/seed/graph/native before complete source,
-tests, closure and contracts freeze, ROOTfullread and independent review.
-254-tiny-Naive qualification needs separate authorization after those gates.
-No DEVgraph/nativeK12canary or main is currently authorized. Independent
-recorded checker must itself freeze before any primary main data.
+Complete clean producer82d7b63d now freezes7files/3851lines, source1254/tests1592,
+283planneditems/254tinyNaivepoints. Parent and two children wrote only their
+isolated assigned branches before integration; originals/corrections retained.
+ROOT and independentP66 read the entire exact freeze; reviewe7ce3474/174lines
+finds no material blocker. All18project/18criticalexternal pins match and all
+283 literal node names agree by nonexecuting metadata checks.
+ROOT now authorizes ONE tiny/scripted qualification under the exact contract:
+reports/P90a_ROOT_QUALIFICATION_AUTHORIZATION.md. Numerical slot ROOT-owned;
+no production seed/PCG/DEV graph/realK12matrix/stochastic source/P43/P50 call.
+Raw records must be sealed before interpretation and independently inspected.
+No main is authorized. P63 authors the independent recorded checker CODE ONLY
+in .local/p66-dark-barrier, before any B data; no imports/AST/tests there.
 
 After successful qualification, ROOT must still audit integration tests,
 freeze/bind independent checker and separately authorize one bounded main.
