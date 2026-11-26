@@ -367,3 +367,31 @@ Shared ROOT/P66 derivation in457e49c with35e1cf9 explicit unweighted-graph
 complement restriction; full151l read at ROOT, no experiment or pilot.
 The graph optimizer goal remains OPEN; P96's successful classical-surrogate
 validation and P98's theorem do not become positive quantum benchmarks.
+# Continued discovery: scoped controls, not erasure of physical positives
+
+P100's independently audited chiral lift changes the architecture, but its
+cubic current has a polynomial classical mirror. Its loss-memory washout is
+specific to flipping every nonmove; true PNR loss holding avoids that washout
+while retaining the1/eta^K cost, and helps D/classical too. No optimizer gain.
+See reports/P100_ROOT_CHIRAL_CHECKPOINT.md. Existing negatives remain below.
+
+P101's connected magnetic-filter example has raw B-minus-D cut coefficients
++b²/12 (PNR),+b²/9 (threshold); both unfavorable for0<b<1/1024. Its strong
+simple-ground limit is a classical raw signal mixture; on this example both
+decoded means tend to8/3 versus the paid3-candidate frontier2. Finiteb1/all-b
+sign remains UNKNOWN. These are scoped endpoint results, not every finite
+filter's failure. reports/P101_ROOT_FINITE_FILTER_CHECKPOINT.md.
+
+P106's exact rank counterexample does NOT mean every B/D contrast is negative:
+the SAME-T raw mean is strictly favorable to B. Preserve that real effect.
+The proposed gamma1/3 operating point nevertheless loses to an admissible
+same-family Dgamma2/3 control and to the six-pair classical frontier. This
+does not reject every scale-retuned B family or a different residual policy.
+reports/P106_ROOT_ASSIGNMENT_CHECKPOINT.md. P109 generalizes only the supplied
+admissible-scale/common-hold/fixed-source comparison; no total-clock theorem.
+
+P104's finite-bit sentence has an unresolved proof obligation, preserved in
+the independent review and P108. The probability reduction/stability is valid;
+this is not a disproved theorem or a failed experiment. Full raw partial-loss
+simulation is excluded. reports/P104_ROOT_CONDITIONAL_CHECKPOINT.md.
+

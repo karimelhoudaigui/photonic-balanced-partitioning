@@ -192,15 +192,46 @@ Metropolis yields Dirichlet/Rayleigh and stationary-outside mean-hitting order,
 NOT every-start, annealing, finite-horizon or equal-wall-time superiority.
 Priority UNVERIFIED; ../reports/P99_ROOT_WEAK_PASSIVE_CHECKPOINT.md.
 
-P100sourcef7d3ba9/203l is frozen THEORY ONLY. It changes to an inverse-sign
-complex-H lift, deriving stationarity without permanent proposal ratios;
-the cubic current already has a polynomial classical mirror, and frequent
-failure flips suppress incoming-sign memory. Independent exact-source audit
-and bounded prior-art check pending. No DEV run or positive result.
-P101 is a separate manual finite-filter/all-output decoder route in its
-isolated tree, not authorization for another numerical pilot. One numerical
-worker remains FREE. Last confirmed pushed ROOT remains874cbe1; later local
-P98 code/data and P99 documents await the next qualified exact-ref push.
+P100sourcef7d3ba9/203l, independent5b029efc/179l and primary attribution
+ccb2b032/114l are fully read/accepted at ROOT. Its cubic current has a
+polynomial classical mirror. Failure-flip memory washout is POLICY-SPECIFIC;
+true PNR loss-holding gives(1-q)I+qL1 and keeps the lossless embedded memory,
+with waiting cost1/q, shared by D/classical. No optimization advantage.
+../reports/P100_ROOT_CHIRAL_CHECKPOINT.md.
+
+P102 freezes the new user discovery target, preserving the actual positive
+goal and all gates. P103/P105 authenticate neighboring sources and six-
+question cards for transport, arc walks, coarsening, repulsion and heralds.
+They are transfers with explicit missing bridges, not novelty certificates.
+P104candidate79913dc138l and independente7f5a11c162l are fully read: coarse
+full-K-orFAIL probability/stability reduction passes, binary polynomial
+complexity CONDITIONAL on finite-bit primitives. Padding must map nonzero
+added-row output toFAIL. P108 records the deferred precision obligation;
+no full-loss-PNR no-go follows. ../reports/P104_ROOT_CONDITIONAL_CHECKPOINT.md.
+
+P106source96486bb126l and independentcd95b1a128l fully read: exact positive
+same-T B/D raw mean effect exists but an admissible independently rescaled
+D beats the fixed B point. The six-pair classical frontier and group2 control
+also remain. Universal monotone ranking is refuted, not all favorable B means
+or jointly tuned families. ../reports/P106_ROOT_ASSIGNMENT_CHECKPOINT.md.
+P109b8bf287113l and independent90965893125l fully read/accepted: supplied
+admissible cT with c^(2K)>=K! dominates full-K probabilities, common-hold
+improvement and fixed-incumbent IIDbest-ofT. No unavoidable-loss inversion,
+adaptive/all-family/total-wall claim. ../reports/P109_ROOT_SCALE_CONTROL_CHECKPOINT.md.
+
+P101source69e4a6fe/113l and independent19fcb2af/166l fully read/accepted.
+Explicit8totalmodes/4CF source and two all-output PNR/threshold decoders:
+weak counterexample and strong simple-ground replacement, b1UNKNOWN.
+../reports/P101_ROOT_FINITE_FILTER_CHECKPOINT.md.
+P107 pure exact bivariate/full70-bin sign computation is being written in
+P66's isolated tree, CODE ONLY. It needs full ROOT/peer code review and
+separate authority; no import or execution is authorized yet. No new DEV
+optimizer or held-out positive exists. One numerical worker remains FREE.
+
+Last confirmed pushed ROOTf4f1e4cb7d12dec1cebd3d90ce19794e1091f355 includes
+qualified P98 code/raw and original source refs. Actual GitHub run45825898488
+job139929823711 succeeds1559PASS21.42s plus602-file preservation. Remote main
+still27443954. Later P100/P101/P104/P105/P106/P109 docs await the next push.
 
 ## New scoped theory
 

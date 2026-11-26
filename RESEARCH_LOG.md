@@ -1681,3 +1681,64 @@ ROOT P104 transfers authenticated nonnegative matching/counting results into
 a coarse full-K-or-FAIL transcript; candidate proof awaiting independent audit.
 The distinction from retained partial-loss counts is explicit. No new DEV,
 held-out opening, hardware preparation, paper/main edit or QPU call. Goal OPEN.
+
+## P100/P103/P105: authenticated mechanism portfolio, no optimizer gain
+
+P100 sourcef7d3ba9, independent5b029efc and primaryccb2b032 all fully read at
+ROOT. Inverse-sign lift, cubic pair current/classical mirror and all-failure-
+flip renewal pass. PNR loss-holding instead gives(1-q)I+qL1, shared by controls;
+its existence prevents an intrinsic-loss no-go claim. The classical switching
+framework is known; exact optical priority unverified. P103 records10primary
+source records at different explicit extraction depths, not10new theorems.
+P1054058cec/174l adds5primary sources and4six-question transfers: no-return
+arc coin, weighted residual coarsening, measured-ancilla interaction and
+entangled-copy determinants. Mode/source/preprocessing/hardware bridges are
+explicitly unproved where missing. No favorable pilot is selected or run.
+
+## P104: preserve the independent finite-bit reservation
+
+Source79913dc138l and independente7f5a11c162l fully read. Gram success mass,
+probability coupling and2Kzeta stability pass for FULL-K-orFAIL observations.
+The claim of polynomial binary/coin/output cost remains CONDITIONAL on an
+explicit primitive bridge. Zero-row approximate occupations must map toFAIL.
+P108 records one deferred rational-cooling route, not an accepted lemma.
+No whole-loss-PNR sampler, measured CPU win or complete no-go is claimed.
+reports/P104_ROOT_CONDITIONAL_CHECKPOINT.md controls the live interpretation.
+
+## P101/P106/P109: scoped obstructions with a preserved positive contrast
+
+P101 source69e4a6fe113l and independent19fcb2af166l fully read. The graph-
+energy/gauge/spectrum and two all-output decoder identities pass. Connected
+counterexample gives+b²/12/+b²/9 raw B-D mean cut, provably worse near0;
+commuting strong-filter replacement has TV<=4sqrt2 exp(-bDelta/2) to explicit
+classical signal law. Neither endpoint fixes b1/all-b sign. Three paid cuts
+solve n4, so this architecture is not an optimizer-advantage pilot.
+
+P106 source96486bb126l and independentcd95b1a128l fully read. A fixed8vertex
+counterexample refutes automatic monotone receiving-pair rankings. Crucially
+the full six-pair RAW mean is favorable to SAME-T B: negative exact contrast
+-8gamma4(e^-6+6e^-5+2e^-4). Preserve it rather than calling every statistic
+negative. Legal Dgamma2/3 nevertheless beats the fixed Bgamma1/3 improvement
+by>=8, independently checked; six paid classical scores solve its local pool.
+B could retune too, so no entire-family or equal-clock rejection follows.
+P109sourceb8bf287113l and independent90965893125l generalize the SUPPLIED
+admissible-scale/full-K/common-hold/fixed-incumbent IIDbest-ofT comparison.
+No unavoidable external-loss inversion or adaptive-trajectory result.
+ROOT checkpoints P101_ROOT_FINITE_FILTER_CHECKPOINT.md,
+P106_ROOT_ASSIGNMENT_CHECKPOINT.md and P109_ROOT_SCALE_CONTROL_CHECKPOINT.md.
+
+## P107/P110: next bounded exact discriminator, not yet executed
+
+P107's polynomial PGF/moment/Bernstein engine is being authored CODE ONLY
+on its isolated branch. It will compare all70raw signal bins, both decoders
+and the full parameter square before claiming any all-b sign. Needs full
+ROOT/peer source review and separate one-run authority. P110card16174e28/137l
+prospectively fixes ONE algebraic point(1/2,1/4),330native8-mode4CF amplitudes
+and70marginals; its code awaits P107freeze/schema and all6raw original seals.
+This is an independent local-physics check, not a QPU/positive-optimizer gate.
+No raw has been produced/opened and the one numerical worker remains FREE.
+
+Qualified ROOTf4f1e4c/originalrefs pushed atomically; actual GitHub run45825898488,
+job139929823711 succeeds1559tests21.42s and602historical-file preservation.
+Remote main27443954 and all paper bytes unchanged. Later pure documents
+await a subsequent exact-ref push. CLAIM-042 remains OPEN throughout.

@@ -31,8 +31,17 @@ P99's independently audited fixed real weak-passive comparison shows that
 an admissible doubled-parameter D control has larger off-diagonal proposals
 inside an explicit small window; only stationary-outside mean-hitting/form
 ordering follows, not all-start or equal-time optimizer domination. P100's
-lifted chiral alternative is frozen THEORY ONLY, pending independent review;
-no optimizer pilot or positive signal. P97's factorial-residual estimator does
+lifted chiral alternative passes its independent model audit, with a
+classical cubic mirror and a policy-specific loss limit; PNR loss-holding is
+a shared correction, not a gain. P101's independent weak/strong/detector audit
+passes; its remaining all-strength sign motivates P107 CODE ONLY and P110
+prospective native replication, neither executed. P106 preserves a favorable
+fixed-T raw mean contrast but a legal rescaled D defeats that fixed B point.
+P109 proves the admissible-scale comparison in its exact nonadaptive scope.
+P104's full-K-orFAIL reduction is accepted but its binary complexity remains
+CONDITIONAL; P108 records that missing bridge. P103/P105 retain the new primary
+literature/competing mechanisms, with no novelty or optimizer clearance.
+P97's factorial-residual estimator does
 not supply an optimization mechanism beyond the already paid low frontier.
 No positive optimizer pilot is justified yet. P82a's earlier finite audit remains valid
 with its original INCONCLUSIVE_FAST_ELIGIBILITY, not a quantum advantage.
