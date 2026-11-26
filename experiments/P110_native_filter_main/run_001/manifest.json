@@ -1,0 +1,293 @@
+{
+  "schema_version": 2,
+  "claim_id": "P110-P107-FIXED-POINT-NATIVE-REPLICATION",
+  "repository": {
+    "commit": "1fd397336a3245c5674984f5f7cc1cfa5540c30e",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P110_native_filter_replication.py",
+    "--binding",
+    "research/P110_native_filter_execution_binding.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "One fixed algebraic-extension point x=1/2,y=1/4. Independently form F_jr=(-i)^(jr)/2,T=F diag(1,1/2,1/8,1/4)Fdagger,E=F diag(0,sqrt(3)/2,sqrt(63)/8,sqrt(15)/4)Fdagger,U=[[T,E],[E,-T]]. Validate matrix invariants, query all330 deterministic Naive 8-port occupations totaling4 from input11110000, retain every complex amplitude/zero/loss/collision, aggregate all70 signal tuples of totals0..4, compare every bin to independently Fraction-evaluated P107 B coefficient records. This is not a point on P101's physical b curve.",
+    "coefficient_domain": "P107 opaque Gaussian-integer coefficient numerators/common65536 evaluated with fractions.Fraction at the single rational point. Independent scalar stdlib complex Fourier sums and displayed math.sqrt constants for the 8-mode dilation. Binary64 Perceval/Exqalibur Naive amplitudes; no eigensolver, polynomial generator, permanent reference oracle or stochastic sample.",
+    "conventions": "Rows are output ports,columns input ports;signal0..3,dump4..7. Native amplitudes already have Fock output factorial normalization. Lexicographic stars-and-bars full output order; signal order by total0..4 then lexicographic tuple. No clipping, renormalization, survival conditioning, repaired zeros or probability cutoff. Source/imports P107/P96 production modules are forbidden. Matrix and amplitude/configuration diagnostics precede rejection.",
+    "inputs": [
+      "Frozen P110 card16174e28b9008877de615d08b66f7f333a0286ed/SHAe97d7e7fc8a1a34441042bc5b32595c0e464ffa91c053e7760e8007ca38a6f7c; P10169e4a6fe434a677acfc5a7e616471990b16db86b/SHA65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c",
+      "P107 source/schema6d9c16cde14ff25d51593c75607c712dcd7e9326; all70 occupations times81 powersi,j0..8,denominator65536,B/D/B_minus_D/B_moment integer Gaussian pairs. Actual source/population/TEMPLATE hashes are hard-pinned in P110 source.",
+      "Six future ROOT-sealed raw files selected by explicit roles manifest/stdout/stderr/records/summary/failure. No raw contents were opened while authoring. Actual SHA256,size,original seal commit and Git blob identities are supplied only in a separate active binding; no placeholder hash is executable.",
+      "Manifest must be completed schema2 with strict integer exit_status0 and P107 claim identity; summary ENGINE_PASS and full9612 records,5670 coefficient records,empty FAILED_TASK/NOT_RUN, failure null. Source independently requires every coefficient key exactly in the frozen order and exact normalized nonnegative70-bin evaluated law."
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "workers": 1,
+      "threads": 1,
+      "native_threads_readback": 1,
+      "native_calls_max": 330,
+      "native_calls_nominal": 330,
+      "full_PNR_outputs": 330,
+      "signal_marginals": 70,
+      "coefficient_rows_input": 5670,
+      "total_records_input": 9612,
+      "photons": 4,
+      "dilated_modes": 8,
+      "signal_modes": 4,
+      "abs_tolerance": 2e-12,
+      "relative_tolerance": 1e-10,
+      "FSIZE_bytes": 8388608,
+      "scientific_combined_bytes": 8388608,
+      "reserve_bytes": 65536,
+      "log_bytes": 4194304,
+      "failed_retries": 0,
+      "stochastic_samples": 0,
+      "RNG_calls": 0,
+      "QPU_calls": 0,
+      "hard_RSS_claim": false
+    },
+    "tolerance_rule": "For every observed/reference complex matrix entry or real probability/mass: finite observed and abs(observed-reference)<=2e-12+1e-10*abs(reference). Matrices include Hermiticity,T_colGram,T2+E2,TE commutation,U_colGram/U_rowGram. Every signal marginal is checked; both full and marginal probability sums are checked against1. No fitted or relative-to-maximum threshold.",
+    "non_claims": [
+      "This TEMPLATE is not an active binding, execution authorization or observed evidence.",
+      "A finite PASS is conditional on the named native implementation and tolerance, not a universal Born-law proof or independent amplitude oracle.",
+      "No b1 or all-finite-strength sign, graph optimizer performance, novelty, positive replication, hardware access, matched clock or optical resource claim follows.",
+      "NumPy only supplies array interoperability; critical pins do not authenticate every transitive dependency or OS thread/RSS behavior.",
+      "FSIZE is per regular file. Source combined8MiB applies to records/summary/failure; runner separately enforces combined4MiB stdout/stderr. External-library caches are not implicitly bounded by that writer.",
+      "First failure retains the raw prefix and remaining native outputs NOT_RUN; hard interruption can leave missing final files and is inconclusive. Warnings/stderr remain evidence; no retry or calibration is authorized.",
+      "The six producer files remain opaque before implementation freeze and ROOT blob/hash binding. Their sign certificates and grid mean results do not change this point, tolerance or native population."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "No explicit random primitive,seed,stochastic sample or sampled decoder; exhaustive deterministic amplitudes only",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T14:07:40.852872+00:00",
+    "runtime_seconds": 17.290509,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P110_P107_NATIVE_REPLICATION_CARD.md",
+    "research/P110_native_filter_replication.py",
+    "research/P110_native_filter_replication_contract_TEMPLATE.json",
+    "research/P101_FINITE_FILTER_ALL_OUTPUT_CARD.md",
+    "research/P107_symbolic_filter_validation.py",
+    "research/P107_SYMBOLIC_FILTER_POPULATION.md",
+    "research/P107_symbolic_filter_contract_TEMPLATE.json",
+    "research/P107_symbolic_filter_main/run_001/manifest.json",
+    "research/P107_symbolic_filter_main/run_001/stdout.txt",
+    "research/P107_symbolic_filter_main/run_001/stderr.txt",
+    "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+    "research/P107_symbolic_filter_main/run_001/data/summary.json",
+    "research/P107_symbolic_filter_main/run_001/data/failure.json",
+    "reports/P110_ROOT_PRE_DATA_CODE_REVIEW.md",
+    "research/P110_INDEPENDENT_NATIVE_CODE_REVIEW.md",
+    "reports/P110_validation_review/predata_static_binding.json",
+    "reports/P110_ROOT_MAIN_AUTHORIZATION.md",
+    "research/P110_native_filter_execution_binding.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P110_P107_NATIVE_REPLICATION_CARD.md",
+      "sha256": "e97d7e7fc8a1a34441042bc5b32595c0e464ffa91c053e7760e8007ca38a6f7c",
+      "sha256_after": "e97d7e7fc8a1a34441042bc5b32595c0e464ffa91c053e7760e8007ca38a6f7c"
+    },
+    {
+      "path": "research/P110_native_filter_replication.py",
+      "sha256": "5b76892356df6ad51b3eae1933b110dde1625f34bca04e22785ffe5054a58253",
+      "sha256_after": "5b76892356df6ad51b3eae1933b110dde1625f34bca04e22785ffe5054a58253"
+    },
+    {
+      "path": "research/P110_native_filter_replication_contract_TEMPLATE.json",
+      "sha256": "9f90fff586e89d5647663e26630e1d7e9d8850fa5b14f11121721134f04cbe7c",
+      "sha256_after": "9f90fff586e89d5647663e26630e1d7e9d8850fa5b14f11121721134f04cbe7c"
+    },
+    {
+      "path": "research/P101_FINITE_FILTER_ALL_OUTPUT_CARD.md",
+      "sha256": "65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c",
+      "sha256_after": "65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c"
+    },
+    {
+      "path": "research/P107_symbolic_filter_validation.py",
+      "sha256": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc",
+      "sha256_after": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc"
+    },
+    {
+      "path": "research/P107_SYMBOLIC_FILTER_POPULATION.md",
+      "sha256": "051d24038066d7cac3ef34f6f835703793c0d7e93b085cf20fa03d99ac14636b",
+      "sha256_after": "051d24038066d7cac3ef34f6f835703793c0d7e93b085cf20fa03d99ac14636b"
+    },
+    {
+      "path": "research/P107_symbolic_filter_contract_TEMPLATE.json",
+      "sha256": "d150e2042c5f8a02b09baab4da8426fd92348eb66525a2d7bf1a90ddb734e8ed",
+      "sha256_after": "d150e2042c5f8a02b09baab4da8426fd92348eb66525a2d7bf1a90ddb734e8ed"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/manifest.json",
+      "sha256": "eac9d7a9587a9ee13d4bcb1bb3150541449d99fa34a39484da05313e6972d605",
+      "sha256_after": "eac9d7a9587a9ee13d4bcb1bb3150541449d99fa34a39484da05313e6972d605"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/records.jsonl",
+      "sha256": "b28ca55e337201240da88149d24ebabb8a5174481bd2821448e34c7f9d57b7b6",
+      "sha256_after": "b28ca55e337201240da88149d24ebabb8a5174481bd2821448e34c7f9d57b7b6"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/summary.json",
+      "sha256": "04722bf8236d6ea949f3bb4df41b805a3e8c7c9cb43d43b3a0e871192508ee77",
+      "sha256_after": "04722bf8236d6ea949f3bb4df41b805a3e8c7c9cb43d43b3a0e871192508ee77"
+    },
+    {
+      "path": "research/P107_symbolic_filter_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "sha256_after": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "path": "reports/P110_ROOT_PRE_DATA_CODE_REVIEW.md",
+      "sha256": "7d6396f52076c536e875975dc998220e2708592ab28f859a319f1a75fc986908",
+      "sha256_after": "7d6396f52076c536e875975dc998220e2708592ab28f859a319f1a75fc986908"
+    },
+    {
+      "path": "research/P110_INDEPENDENT_NATIVE_CODE_REVIEW.md",
+      "sha256": "2d48c8f9f5ff162892c6f04ea3bb54d0e21162d0eae1d8d2ed512f8d1b87e5da",
+      "sha256_after": "2d48c8f9f5ff162892c6f04ea3bb54d0e21162d0eae1d8d2ed512f8d1b87e5da"
+    },
+    {
+      "path": "reports/P110_validation_review/predata_static_binding.json",
+      "sha256": "ad95778b9e2c0053b5f78631a1da47b148017a66eb7b9ece7ad5aba627191a13",
+      "sha256_after": "ad95778b9e2c0053b5f78631a1da47b148017a66eb7b9ece7ad5aba627191a13"
+    },
+    {
+      "path": "reports/P110_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "61fb4c986b9e1f78af980985581c0034754bc827aafea5d873a4ae34bf173b0d",
+      "sha256_after": "61fb4c986b9e1f78af980985581c0034754bc827aafea5d873a4ae34bf173b0d"
+    },
+    {
+      "path": "research/P110_native_filter_execution_binding.json",
+      "sha256": "13f1035236e288a7d0e96fbd801fe3b3fe8ec3aaa40e4d9b9745a09312a2c189",
+      "sha256_after": "13f1035236e288a7d0e96fbd801fe3b3fe8ec3aaa40e4d9b9745a09312a2c189"
+    }
+  ],
+  "output_directory": "experiments/P110_native_filter_main/run_001",
+  "declared_results": [
+    "experiments/P110_native_filter_main/run_001/data/records.jsonl",
+    "experiments/P110_native_filter_main/run_001/data/summary.json",
+    "experiments/P110_native_filter_main/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P110_native_filter_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P110_native_filter_main/run_001/stderr.txt",
+      "sha256": "b84694400ad1f00982db48a1503ed650f35241bcc8471d6f2a83735195e4c53c",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P110_native_filter_main/run_001/data/records.jsonl",
+      "sha256": "26c95d3942d8227093674a8c07e5f158bff02933eb0c34a0092b817dd2204213",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P110_native_filter_main/run_001/data/summary.json",
+      "sha256": "9fdbc865740cf76ea3533ac61c960d0c42a4ffdd7191134adac61cbfd274502c",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P110_native_filter_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
