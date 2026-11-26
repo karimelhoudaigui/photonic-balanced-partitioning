@@ -1,0 +1,10 @@
+{
+  "observed_at_utc": "2026-11-26T23:00:11.280019+00:00",
+  "phase": "runner contract validation before pytest child",
+  "runner_exit_code": 2,
+  "observed_stderr": "run-experiment: invalid contract: random runs need generator and seed",
+  "pytest_child_started": false,
+  "output_directory_created": false,
+  "original_contract_commit": "a1dd615",
+  "correction": "Explicit reproducibility controls for the integration harness; no DEV data, sources, thresholds or scientific seeds changed"
+}

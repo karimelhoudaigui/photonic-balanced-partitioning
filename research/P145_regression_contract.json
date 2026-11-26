@@ -402,7 +402,11 @@
   "randomness": {
     "used": true,
     "generator": "Deterministic pre-existing test fixtures and their recorded seeds, not a new graph experiment",
-    "seed": null
+    "seed": {
+      "hypothesis": 1459999,
+      "PYTHONHASHSEED": 0,
+      "other_test_streams": "Literal per-fixture seeds in the input-hashed existing test sources; no new global NumPy generator"
+    }
   },
   "run_authorized": true,
   "planned_command": [
@@ -411,6 +415,7 @@
     "-m",
     "pytest",
     "tests/",
+    "--hypothesis-seed=1459999",
     "-q",
     "-p",
     "no:cacheprovider",
@@ -420,5 +425,6 @@
   ],
   "declared_results": [
     "research/P145_regression/run_001/junit.xml"
-  ]
+  ],
+  "authorization_note": "ONE integration suite after preflight-only schema rejection; no test child existed for the rejected contract. P145 DEV/qualification/exact scientific runs remain completed once and unchanged."
 }
