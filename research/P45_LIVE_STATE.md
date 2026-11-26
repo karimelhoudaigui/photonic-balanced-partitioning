@@ -1,183 +1,100 @@
 # Live positive-discovery continuation
 
-Archived earlier live-checkpoint prefix (historical, not current):
-[P45 live history before P79 acceptance](P45_LIVE_HISTORY_BEFORE_P79_ACCEPTANCE.md).
-Byte-exact prefix of29cc868, SHA256 1c27dfd77fd6b3f87278578317f8ed091643566b248db237bd2f009c7886c263.
+Earlier checkpoints are preserved byte-for-byte in
+[P45_LIVE_HISTORY_BEFORE_P90a.md](P45_LIVE_HISTORY_BEFORE_P90a.md), including
+the prior P79 history pointer. Historical pending statuses are not current.
 
-## Current checkpoint: P87 accepted; P82a CODE ONLY; positive optimizer OPEN
+## Current: P82a recorded audit complete; P90a implementation CODE ONLY
 
-P79 has completed the sole prospectively frozen finite validation, not a
-graph optimization benchmark. Source602acc70/SHA74cb27b1 and all969lines
-were reviewed before the12-item qualification; raw3cb02636 and receipt1286ecf
-precede separate main authorization. Main rawb8e8fea was sealed BEFORE
-interpretation; receiptc2a22ed. All266 exact/650 amplitudes/105 native raw
-points/120000 draws/272 bins pass. ROOT independently checks all121312
-stored rows, full histograms/cost totals and1781 module hashes. Both v2
-manifests validate against unchanged inputs. No rerun, new seed or case.
-reports/P79_ROOT_FINITE_CHECKPOINT.md links evidence and explicit limits.
+**CLAIM-042 OPEN. No reproducible positive optimizer result, held-out
+confirmation or real QPU validation exists. paper/, main and QPU stay frozen.**
+P33, P37, E05b and every historical failure/raw result remain preserved.
+Original delivered main27443954fb7491a293399f0417d05185009f5c9a and PDF
+271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f
+remain the manuscript reference, not a new positive discovery.
 
-P80 rational source2c9810/SHAfcc01504 and finite-bit source57b3ecc/SHA5fa9ce94
-have257/246-line exact audits and full ROOT reads. The latter's A/B premises
-are now discharged by accepted P78/rational work bounds. Rational nonnegative
-Gaussian raw counts have a flagged bounded-bit approximation with TV<=epsilon
-and worst-case polynomial-parameter cost; P79 floating RNG is a different
-implementation. No cheap rare conditioning/throughput/novelty claim.
-reports/P80_ROOT_FINITE_BIT_CHECKPOINT.md records the composition.
+## P82a closed finite cycle
 
-P81 independently frozen sources0a51544/13ce814 (358+178lines) and exact
-reviewf915cf9 (286lines) prove stability for full balanced INCOHERENT
-calibration on fixed lossless passive2N-rail nets,N>=4. Small code leakage
-implies local-block/pair-permutation proximity with absolute TV coefficient
-orderN²sqrt(epsilon). Exact feasibility adds monomial/global complement.
-Visited-only/coherent/ancilla/herald extensions are not proved. ROOT accepted
-all exact sources; reports/P81_ROOT_STABILITY_CHECKPOINT.md.
+Primary source94f80b94 passed its unique27-item/183-probability qualification.
+The sole primary96-attempt/768-modeled-photon DEV main has raw seal561410b3
+BEFORE interpretation; ROOTdebd823 is its later copy. Bbest46/22; EACH
+FAST random/spectral control ties46/22. All four early work guards make the
+registered result INCONCLUSIVE_FAST_ELIGIBILITY, not positive or a strict
+eligible veto. Both best values first occur in classical quench neighbors.
+D/Tier2 remain NOT_RUN. No unchanged B rerun or retroactive guard adjustment.
 
-Rootc360b36 executable tree:1187PASS43.89s pytest/44.879216292s wrapper,
-env+native1,602 historical files unchanged, paper bytes match main2744395,
-PDF271946c9. Logs and checks: reports/P79_integration_validation/.
-Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
-GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
-run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
+Independent recorded checker34c95130 was frozen before B outcomes.
+Its prelaunch qualification path failure and first audit90.0/integer failure
+remain preserved. Administrative correctiona965e08d leaves scientific logic
+unchanged; sourceSHA56a3bb2a, freshqualification00322PASS, rawb3260916 and
+separate receipt8b132778. The original failed input closure remains on
+research/p82a-audit-v1-evidence@b4aa0f3.
 
-Numerical worker FREE after the first recorded checker audit failed on
-an administrative timeout type check. No new B main is allowed.
-P87 is ACCEPTED after full ROOT168+peer308+exact344
-reads, sources6436860/17ba1d4 and auditb77c8c0. Its sharp fixed-N oracle
-limitR/2 matches identity; this is not a generic sampling-optimizer no-go.
-P82 eta0 decoded null is also accepted with exact independent153e807,
-sourcebc5943fa; actual eta>0 main gain remains OPEN.
+Separately authorized51-input audit002 rawb7a19df was sealed BEFORE reading.
+FINITE_RECORDED_DATA_AUDIT_PASSED, runnerexit0/1.321817s,51hashes unchanged,
+v2manifestPASS. All96countrecords,7014scalarcuts/masks and912FASTcheckpoints
+agree, including repairs, typed costs, prefixes and the inconclusive verdict.
+Separate143-line receipt302ae135+07438069 distinguishes original raw seal
+from ROOT integration. This is recorded consistency, not independent native
+physics/optimizer replication or clock authenticity. See
+[ROOT final checkpoint](../reports/P82a_ROOT_FINAL_CHECKPOINT.md).
 
-P82a protocol: designf7cb5d9; card4a90c0d/d5e994d9 (147lines), original
-review7e84262/74d061b3 (246), corrective addendum43218ab/1b548885 (69),
-exact correction review6aa5a2c/edeba00f (180). ROOTreadall, M1/M2 closed
-PRE-CODE: BOTH classical CPU and WALL prefix limits, plus honest factory
-DURATION_DIFF with unknown internal CPU/endpoints. Full grants per fixedmode,
-no same-CPU/hard-API-return/QPU-cost claim. Card files remain immutable.
+Integrated complete local suite1236PASS/6warnings/44.09s pytest, launcher
+45.070909s, environment/native1. Logs sealed26d18f3 before interpretation.
+Warnings are Perceval temporary-storage fallback. Numerical worker is FREE;
+P90a is not authorized to execute by that fact.
 
-P82a CODE ONLY is frozen at892ea965 in .local/p65-independent-audit:
-source1328/tests961/spec74/precontract243/maincontract203/population215,
-3024 lines FULLY read by ROOT. P66 and P81 independently read the same
-freeze (5f9bb4c/5dab0f1). Corrective94f80b94 changes only3files121+/9-;
-ROOT read the full delta, independent0411f495/f39f1a4c102-line review
-closes R1/R2 typed factory/P50 operand references. Parameters unchanged.
-ONE fixed27-node/183-Naive qualification at94f80 is now ACCEPTED:
-raw8e6ba066 sealedBEFOREinterpretation, separate176-line receipt39b61bb9.
-Runner29.445581s/pytest28.46s,27PASS/8warnings/0errors;15inputsunchanged,
-v2validatorPASS. ROOT's frozen6d5f823 stdlib inspector recalculatedall183
-probabilities,maxabs2.22e-16,65zero refs/all65native0,external10pinsmatch.
-No DEV graph/PCG/8phsample/P43/P50actual call. Checkpoint:
-reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md. Source+qualraw/receipt now
-integratedROOT. CIhead9ba543c is observedGREEN:1214PASS19.57s in actual
-job logs, run45734622442/job139624733249;602historicalfilesunchanged.
-Main96B/768 modeled photons finished once in clean producer39b61bb9.
-RAW561410b3 sealedBEFOREinterpretation (ROOTdebd823),11outputs9247l,
-runnercompleted29.354166s/exit0/no missingresults/v2validalsoROOT.
-PROVISIONAL summaryINCONCLUSIVE_FAST_ELIGIBILITY: Bbest46/22; EACH
-FAST_RANDOM/SPECTRAL matches46/22 at timelyCPU+WALL prefixes, but all4
-hit10kguard early soeligiblefalse. No strictfixedwinner; Tier2/Dspecies
-explicitNOT_RUN. No positive, formalveto or rerun/guardretune claimed.
-ROOT read compact status/control/case fields and logs; first oversized
-summary rendering was truncated and doesNOTcountasfullsummaryread.
-Separate producerreceipt5bdab752/149d013d240l FULLREAD+integratedROOTb584105;
-fullraw2,542,073B/science2,525,942B,64bunchedrepairs/7014paidscoredstates.
-BothbestfirstdiscoveredbyclassicalQneighbors, notrawopticalproposals.
-Independentstoreddata audit pending; source/resultdata nevermodified.
+## P90a changed source-aware mechanism: implementation only
 
-Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
-data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old
-clock blockers are discharged above. CheckerCODE ONLY now frozen34c95130,
-sixfiles1638l/sourceSHAf595fcae, corrected94f80b94 schema. ROOT FULLREAD
-1638l; exactreviewaa544082/ccdfde10144l FULLREAD, no blocker. P63nowhas
-Firstcheckerqual wrapper REJECTED PRELAUNCH: declaredJUnit siblingof
-runneroutput violatesMathboxinside-output rule; no child/import/test/RNG.
-Rejectionebee1a04/7370eaf8 archivedROOT5b54362, no fakev2manifest.
-Binding-only fixa7e423b28 frozen: qualpathsrun_002parent+JUnitinside,
-mainTEMPLATErunnerparentrun_001,MDcorrigendum. Sourcef595/tests7dc/spec6fd
-unchanged; no behavior/tol/seed change. ROOTfull30+/4-delta +P66exact
-0a6eb71/049b4873(61l)read closespathdefect. ROOTnowdistinctlyauthONE
-qualrun_002,21synthetic/11inputs/CPU30wall60/env1/0autoretry/raw-first.
-CorrectedQUAL002 accepted21PASS/no warnings/runner.610468s,raw75a4697
-beforeinterpretation,receipt696b400137lFULLREAD,v2PASSoriginal+ROOT.
-AllfilesintegratedROOT1e9c01f. Rejection001remainsintact.
-After metadatareview713b5e6f(87lFULLREAD), ROOTopaque46inputbinding was
-authorizedd156aa5 and ONErecordedaudit001 executed. RAWb4aa0f3sealed
-BEFOREread: FAILEDexit1/.158351s atmanifest/wall-cap 90.0vsstrictint90,
-BEFOREMainReplay/no graph/mark/cut/RNG/native.46hashesunchanged,v2validFAILED.
-reports/P82a_ROOT_RECORDED_AUDIT_ATTEMPT1.md preservescause/limits;
-branchresearch/p82a-audit-v1-evidence@b4aa0f3 keeps alloldinputsvalid.
-P63administrativefixa965e08 CODEONLY+82/-13 sixfiles nowfrozen,ROOTfulldiff
-read,source56a3bb2a/tests38383d9e/spec222e9cd9. WallnumericEXACT90/90.0,
-othercaps/cuts/masksstrict;1newfixture=>22, qualfresh003/mainTEMPLATEfresh002.
-P62 performs independentDELTAreview. NOqual003/replay/main002authyet.
-Author stillblindtoBscience; onlyfailedcapsmetadataopened. Primarydatauntouched.
-DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
-Compilation-before-R is source-bound, not a separately timed raw endpoint;
-custom control audit covers cuts/cache lineage/clocks, not policy replay.
-No native physics replay or distribution proof. P81 prepared STATIC
-P90 source-aware/nonflat design c52afab/b3c0b04c, not yet ROOT fullyread.
+P89's ideal source-blind removal/receiver product-law theorem remains accepted.
+P90sourcec52afab21 and exact review1412c9a3 establish a way to escape that
+product restriction by retaining actual source labels in a nonflat graph
+compiler before removals are drawn. The exactK4toy mean gain-5/192 is fully
+reproduced by a two-photon-group control, so it is a negative advantage fixture.
+The bounded3-primary-source literature check gives NO novelty clearance.
 
-P89 ideal all-eta source-removal product law/raw mean is ACCEPTED:
-sourcef775f682/e99a1e32, exactaudit68baaeb8/eef75599, ROOTfull215+149reads
-and handchecks. No quench/trajectory no-go or efficient mu sampler follows.
-reports/P89_ROOT_REMOVAL_CHECKPOINT.md. New source-aware designs must expose
-their classical features and exact r2 null rather than count them as gain.
+P90a prospective card14d8dbdd/180lines and independent review20986ff4/143lines
+are accepted for CODE ONLY. Fresh n24/K12, ER9002401/RR9002402, root90026001,
+p1/2, exact uncentered H, angle1,96attempts/1152modeledphotons. All144
+compiler costs/masks per proposal must be scored and credited before clocks.
+Four FAST modes each get full separately measured B-side favorable clock
+proxy, conservative dual CPU/WALL prefixes, prospective1e6work/40000trace
+caps. This proxy is NOT matched total resource cost. First-stage statuses
+can only be inconclusive, no signal, or follow-up required; positive=false.
 
-No new DEV/main since P79. No held-out opening, paper/main/QPU/messages.
-Next: checkercompletepredatafreeze -> separate ONEprimarymain authorization
-with checkersourcereviewSTATIC inparallel -> Brawseal -> checkerqual ->
-auditmainbinding/independentrecordedchecks. No simultaneous numerical jobs.
-P79 producer remains clean atc2a22ed in .local/p79-even-loops.
+Primary authorp62_literature_resume in .local/p65-independent-audit has
+frozen API/specbaf02f8a. Two child worktrees .local/p90a-fixtures-code and
+.local/p90a-contracts-code are reserved BEFORE their file writes. Shared
+branch writing is forbidden. Parent authors implementation; children can
+write only their isolated assigned files. ONE numerical worker maximum;
+no imports/AST/py_compile/collection/seed/graph/native before complete source,
+tests, closure and contracts freeze, ROOTfullread and independent review.
+254-tiny-Naive qualification needs separate authorization after those gates.
+No DEVgraph/nativeK12canary or main is currently authorized. Independent
+recorded checker must itself freeze before any primary main data.
 
-P75b/c no-hit, P77/P78 scoped classical controls and all P33/P37/E05b negatives
-remain preserved. Positive optimizer CLAIM-042 OPEN; novelty unresolved.
-No held-out opening, paper/main edit, QPU, message to Laurent or paid endpoint.
-Preserve original producer refs on GitHub because manifests pin original
-commits rather than ROOT cherry-picks. User .DS_Store remains untouched.
+After successful qualification, ROOT must still audit integration tests,
+freeze/bind independent checker and separately authorize one bounded main.
+No automatic retries. Even a first-stage survivor still needs independent
+reoptimized D, grouped low-order/intensity/routing/repair controls, strong
+full-feature classical search, fresh seeds/labels, held-out graphs,
+independent physical replication and TOTAL-cost comparison before QPU.
 
-## New live point — after fffc1bb, 25-Nov-2026
+## New scoped theory
 
-P63 has now executed its exact registered B80/FAST stage once. Source8b20dca,
-qualificationfad8a05, rawbf2034d, root668925a. B81/60 loses to EACH fixed
-FAST54/42; all online prefixes eligible/no early cap. Optional arms explicitly
-unrun by the veto. Independent checker is being authored before raw access;
-its qualification/main still pending. Full P63 existing1044PASS.
+P90/P91/P92 ROOT scope:
+[theory checkpoint](../reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md).
+P91 uniform-loss sector replacement is accepted only under certified spectral
+transmission and known CF/passive-vacuum hypotheses, not public mean loss.
+P92 independently reviewed physical counterexample proves even ALL individual
+input efficiencies do not provide that spectral certificate. Neither is a
+Lucy calibration, measured classical runtime win or new optimizer advantage.
+P93 low-rank initializer surrogate4b13a641 is read at ROOT; independent review
+pending. No graph residual, efficient sampler or P90a change is authorized.
+P79/P80/P81/P83/P84/P85/P86/P87 accepted scopes and novelty limits persist.
 
-P64 corrected qualification677348b/4ee15ab passes22 synthetic items, exact
-source support68 and4*462 N6 probability checks, with raw laws retained.
-All1020 existing P64 tests pass. Global N18 precision/complete costs remain
-open; a separate14-point N18 Naive comparison is CODE-ONLY preparation.
-ROOT's combined P63/P64 regression1066PASS, three new manifests v2PASS and
-602 protected historical files/paper bytes unchanged. Numerical work remains
-exclusive; consult the current slot messages before any execution.
-
-P65 is a fresh static route portfolio in .local/p65-new-mechanism. It must
-change the mechanism past P62/P64 and specify its strongest classical null
-before any implementation/DEV graphs. Paper/main,602 protected files and
-all old data are preserved. Positive optimizer OPEN; no QPU or held-out run.
-
-## Current continuation — after de43b59, 25-Nov-2026
-
-P63 audit COMPLETE: checkerce69e3c,8fixturesPASS, binding8a9c564, raw5624ff6/
-root43f33ef7183PASS,80counts365FAST snapshots, zero mismatch. Recorded-data
-independence only. P64 F6+14point N18 check COMPLETE: source00fc464, qual22PASS
-bbd86a3, raw6c51113/root3d6f9ae; all462coefficients exactmatch,14pointswithin
-frozen tolerance/maxabs5.47e-20. ALL14 absolute-dominated; CF0/residual1e-35
-causesmaxrelative1. No global TV, native18 random draw or full-cost claim.
-Existing worker suites1052/1042PASS; next combined suite covers both checkers.
-
-P65 section4 proof43dd873/SHA3ffb... independently accepted by1cc5dfc.
-ROOT checkpoint reports/P65_UNIFORM_COLLISION_PROOF_CHECKPOINT.md retains
-uniform-input/absolute-error/cost/novelty limits. New global Cayley--Metropolis
-B80/FAST card/spec022962e is CODE-ONLY implementation underway in
-.local/p65-new-mechanism. Pre-data amendment retains repeated start subsets
-and defines degree as exact weighted row sum. No P65 DEV graph/start/count
-or native canary yet. One numerical worker; consult live slot messages.
-Positive optimizer OPEN, paper/main and602 protected old files preserved.
-
-
-Combined checkpoint:1096PASS/40.84s pytest, seven manifests v2PASS,602 old
-scientific files and paper bytes unchanged. Actual receipts are in
-reports/P63_P65_combined_validation/. P65 card/spec022962e and independent
-card review18d344b are integrated as ROOT f608a7f/b81268d; source/tests are
-being authored in the isolated P65 worktree, with no import/seed evaluation/
-graph/native10 draw yet. Preserve original worker refs for every manifest.
+No held-out opening, paper/main edit, hardware preparation, QPU submission,
+paid endpoint or Laurent message. Credentials never enter Git. Preserve
+original producer refs because manifests cite them, not cherry-picked copies.
+User .DS_Store remains untouched. Continue P90a implementation and adversarial
+source review; an installation or consistent audit is not scientific success.

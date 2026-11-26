@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "base_commit": "27443954fb7491a293399f0417d05185009f5c9a",
+  "tracked_paper_files_checked": 24,
+  "changed_or_missing": [],
+  "additional_tracked_paper_files": [],
+  "main_ref": "27443954fb7491a293399f0417d05185009f5c9a",
+  "scope": "Tracked manuscript bytes vs delivered release; no build or QPU call"
+}

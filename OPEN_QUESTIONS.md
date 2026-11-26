@@ -237,3 +237,23 @@ with all-input/absolute-error/paid-construction limits and novelty OPEN.
   not arbitrary such circuits. No hardware capability is assumed.
 - P80 novelty and practical finite-bit implementation costs remain open;
   P79's finite tests do not resolve those questions. CLAIM-042 remains OPEN.
+
+## Current frontier: source-aware P90a and spectral-loss calibration
+
+- Does the frozen source-aware/nonflat P90a compiler produce a signal beyond
+  every compiler/quench discovery and strong classical search? Only CODE ONLY
+  implementation is authorized. P82a completed its finite recorded audit but
+  remains inconclusive, not a positive result or generic no-go.
+- Can any first-stage survivor beat independently reoptimized D, grouped low-r
+  and intensity/routing/repair controls, full graph-feature classical search
+  and determinantal proposals at matched TOTAL costs, then fresh labels/seeds,
+  held-out graphs and independent physical replication? These gates are unrun.
+- Can an actual permitted hardware family provide a certified occupied-input
+  spectral transmission bound? P91 is conditional and P92 proves that even
+  every column's individual efficiency is insufficient. No Lucy certificate
+  or real hardware experiment has been obtained.
+- Is P93's low-rank initializer residual actually small for any declared graph
+  family, and is that structured FULL-count law cheaply sampleable? Neither
+  follows from rank(V0-I)<=2; no change to the frozen P90a experiment follows.
+
+All novelty claims require further source checks. CLAIM-042 remains OPEN.

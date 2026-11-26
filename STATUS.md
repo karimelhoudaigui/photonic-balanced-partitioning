@@ -1,6 +1,16 @@
 # Research status — active discovery branch
 
-Latest audited checkpoint: P79's sole six-source finite raw-PNR validation
+Current continuation: P82a's independent recorded-data audit is complete,
+with no discrepancy in96countrecords/7014cuts/912FAST checkpoints. Its primary
+verdict remains INCONCLUSIVE_FAST_ELIGIBILITY and no advantage is demonstrated.
+The integrated local suite passes1236 tests. P90a is a genuinely changed
+source-aware/nonflat mechanism currently in CODE ONLY implementation; no new
+qualification or DEV main is authorized. P91's conditional spectral-loss
+replacement and P92's calibration counterexample are accepted in their exact
+scopes. See reports/P82a_ROOT_FINAL_CHECKPOINT.md,
+reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md and research/P45_LIVE_STATE.md.
+
+Historical P79 checkpoint: P79's sole six-source finite raw-PNR validation
 passes, and P80's rational/finite-bit sampler and P81's dual-rail stability
 proofs are accepted in their precise scopes. These are classical simulation
 and physical obstruction results. **The positive optimum-blind photonic
@@ -73,14 +83,17 @@ with602 historical files unchanged. The sole DEV main has now completed
 96 attempts/768 modeled photons. Its provisional status is inconclusive:
 B and EACH FAST mode reach46/22, while all four controls hit their work
 guard early; Tier2/D remain NOT_RUN. No advantage is observed. The
-independent recorded checker was frozen before those data and awaits
-qualification after a preserved prelaunch output-path rejection.
+independent recorded checker was frozen before those data. Its path and
+timeout-type failures remain preserved; after the separately reviewed
+administrative correction, fresh22-fixture qualification and51-input
+recorded audit002 pass. This is consistency, not native physics replication.
 P82 eta0 has an independently reconstructed exact
 decoded-law null. The higher-order nonuniform optimization gain is OPEN.
 P89 now proves the ideal raw source-removal factorisation for all eta;
 it is not a quench/trajectory no-go. See reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md
 and reports/P89_ROOT_REMOVAL_CHECKPOINT.md. The main receipt is
-research/P82a_PRIMARY_MAIN_RECEIPT.md; independent audit is pending.
+research/P82a_PRIMARY_MAIN_RECEIPT.md; the completed audit is linked in
+reports/P82a_ROOT_FINAL_CHECKPOINT.md.
 One numerical worker maximum. Current ownership and
 continuation: research/P45_LIVE_STATE.md.
 

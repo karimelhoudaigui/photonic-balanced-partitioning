@@ -1,6 +1,9 @@
 # Research Log
 
-Latest continuation pointer: P79/P80/P81 checkpoint below and
+Latest continuation: P82a recorded audit complete; P90a source-aware/nonflat
+implementation CODE ONLY. Current evidence:
+reports/P82a_ROOT_FINAL_CHECKPOINT.md,
+reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md and
 research/P45_LIVE_STATE.md. Earlier entries retain their historical state.
 
 ## 2026-11-20 - Physics Correction
@@ -1451,3 +1454,32 @@ forallη; exactrawcostmean isolatesinducedT/crossmarginals. No quench/
 trajectory/generalclassicalsimulation/optimizeradvantage conclusion.
 Source-awarecoupling/loading escapesarebeingdesignedSTATIConly; P82
 frozen pilot, paper/main/QPU and all negative evidence remain unchanged.
+
+## P82a recorded audit complete; changed P90a implementation
+
+The sole primary96-attempt main remains inconclusive: B46/22 and each fixed
+FAST mode46/22, with all four early work guards. No optimizer advantage,
+strict eligible veto, D/Tier2 result or unchanged B rerun is claimed. Original
+raw seal561410b3 precedes interpretation; ROOTdebd823 is a later integration.
+
+Independent predata checker34c95130 has two preserved administrative failures:
+prelaunch output nesting, then valid90.0 rejected by a strict integer check.
+The separately revieweda965e08d correction changes only that timeout type,
+not scientific logic. Freshqualification00322PASS precedes separately
+authorized51-input audit002. Rawb7a19df before reading, separate143-line
+receipt302ae135+07438069: FINITE_RECORDED_DATA_AUDIT_PASSED,96counts,7014cuts
+and912FAST checkpoints agree. No native physics or optimizer was replayed.
+Old input closure preserved on research/p82a-audit-v1-evidence@b4aa0f3.
+Frozen launcher2f858e6 executes complete1236PASS/44.09s local tests; logs
+26d18f3 sealed before interpretation. See reports/P82a_ROOT_FINAL_CHECKPOINT.md.
+
+P90 source-labelled nonflat mechanism and exact review accepted scoped:
+itsK4toy raw-mean response is real but two-photon groups reproduce its whole
+law. P90a prospective n24/K12 card14d8dbdd and exactreview20986ff4 are now
+CODE ONLY commissioning, with isolated parent/source and children/tests/contracts.
+No import/AST/collection/seed/graph/native until whole freeze and exact-source
+reviews; no qualification/main authorized. P91 conditional spectral-loss
+replacement and P92 every-column calibration counterexample accepted with
+independent hand reviews; novelty, calibrated Lucy and measured costs OPEN.
+P93 rank-two initializer surrogate awaits independent exact-source review.
+Paper/main/QPU/held-out remain frozen, CLAIM-042OPEN, all negatives retained.

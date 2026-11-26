@@ -1,6 +1,10 @@
 # Active discovery state — P41 to P44
 
-Current25-Nov continuation: [P45_LIVE_STATE.md](P45_LIVE_STATE.md).
+Current continuation: [P45_LIVE_STATE.md](P45_LIVE_STATE.md). P82a's
+recorded audit is complete but its primary verdict remains inconclusive,
+without an advantage. P90a is a changed source-aware/nonflat mechanism in
+CODE ONLY implementation. P91/P92 are scoped theoretical results, not a
+positive optimizer. The remaining prose is the historical P41-P44 checkpoint.
 The user's newest target requires a POSITIVE result; the P44 scoped theorem
 below is not a stopping criterion. Two genuinely changed P45 pilots have run
 and remain negative against strong controls. P46 is a new unexecuted

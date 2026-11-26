@@ -328,3 +328,23 @@ independent exact-source reads. Commission primary CODEONLY, not import,
 qualification or main. Freeze/review all source+bindings first. No push
 of unqualified code to CI. Independent raw checker must freeze BEFORE
 B data, with no pre-main DEV seed/graph replay. Paper/main/QPU stay frozen.
+
+## P82a finite recorded consistency accepted; P90a CODE ONLY
+
+ACCEPT the51-input corrected independent audit002, rawb7a19df, solely for
+recorded-data consistency of96counts/7014scalarcuts/912FAST checkpoints.
+KEEP primaryINCONCLUSIVE_FAST_ELIGIBILITY, D/Tier2NOT_RUN and all preserved
+wrapper/type failures. Do not increase P82a guards or rerun unchanged B.
+Preserve original producer raw561410b3 separately from ROOTdebd823 copy.
+Full local1236PASS does not change the scientific verdict.
+
+ACCEPT P90 exact repaired-law identities and P91/P92 conditional mathematical
+statements only in reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md. NO novelty,
+Lucy calibration, equal-total-cost or positive optimizer inference. P90toy
+is reproduced by a two-photon-group control. P93 independent review pending.
+COMMISSION P90a implementation CODE ONLY under card14d8dbdd/review20986ff4:
+complete source/test/contract freeze, full ROOT and independent source read
+BEFORE imports/AST/collection/RNG/native, then separate qualification and main
+authorizations. Every compiler-discovered candidate must be scored and paid.
+One numerical worker, isolated writer branches, no automatic retries.
+CLAIM-042OPEN; paper/main/QPU and held-out data remain frozen.
