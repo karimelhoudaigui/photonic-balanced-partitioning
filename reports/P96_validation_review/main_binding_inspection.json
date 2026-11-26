@@ -1,0 +1,15 @@
+{
+  "method": "Root metadata-only binding review; all scientific clone fields equal static contract; no source import/AST/RNG/matrix/native computation",
+  "binding_sha256": "4925b92b60d4d941909788362f427d743507077175d78770c9ef1d8d96debab9",
+  "static_contract_sha256": "a1d17209cc1c032b35f92cf0d93773fe735f0a567d9d901aa26a1240c3becb7d",
+  "static8_qualified_hashes_unchanged": true,
+  "input_count": 35,
+  "unique_inputs": true,
+  "all_paths_regular_without_symlinks": true,
+  "fresh_output": true,
+  "proof_sha256": "b378ebd6bb0bb6f981e9fe395938e3a43aec7775f761b81cda7b394f6dc1e94e",
+  "qual_completed_items": 11,
+  "integration_completed_passed": 1559,
+  "critical_external_pins_matched": 8,
+  "no_circular_hash": "binding declares inspection path but not its hash; inspection hashes binding; runner hashes both actual files before/after"
+}

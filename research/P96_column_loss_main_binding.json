@@ -1,0 +1,254 @@
+{
+  "protocol_id": "P96_COLUMN_LOSS_FINITE_V1",
+  "claim_id": "P96-COLUMN-BUDGET-TWO-PHOTON-SURROGATE-FINITE-VALIDATION",
+  "target_manifest_schema_version": 2,
+  "contract_only": false,
+  "binding_state": "SEALED_ROOT_AUTHORIZED",
+  "mathematics": {
+    "assertion_tested": "Twelve literal real-rational occupied-input matrices with K<=4,m<=4 and trace(T^tT)<=1/2: retain all162 signal occupations of totals0..K; compare exact permutation/dictionary PGF P with positive normalized q supported on0/1/2 photons, verify both first/two-photon factorial moments, exact TV=weighted high-sector tail, tail<=2/3 factorial3<=24e3(c)<=4mu^3. Separately preserve one physical trace1 counterexample with five exact bins and q1=-1/2 as EXPECTED_OUTSIDE_DOMAIN. After all exact gates, compare five Halmos dilations using all159 deterministic Perceval Naive full-K amplitudes and28 independently aggregated signal bins, including every zero.",
+    "coefficient_domain": "Exact fractions.Fraction real rational dictionary polynomials/permutation permanent K<=4; binary64 real symmetric square roots/eigendecomposition and complex native amplitudes only in five designated cases.",
+    "conventions": "Observed rows j, occupied-input columns i; CF input occupies firstK columns of U=[[T,sqrt(I_m-TT^t)],[sqrt(I_K-T^tT),-T^t]], total m+K modes. Complete full-K native output occupations include environment counts, with signals firstm; compare unconditional marginals without survival/CF normalization. q2 diagonal g2jj/2, distinct pairs listed once. No clipping or RNG. X4 is outside the trace hypothesis, not a counterexample to the theorem.",
+    "inputs": [
+      "Literal factory sequence V0,U1,H2,D3,R3a,R3b,S3,B4,D4,Z4,R4,C3,X4; details and hand tables in P96_VALIDATION_POPULATION.md.",
+      "Exact PGF per(I+T^t(diag(z)-I)T) is computed independently of the lambda/g2 q construction.",
+      "No graph, optimizer, C*, optimal mask, QPU resource or random seed is used."
+    ],
+    "bounds": {
+      "valid_cases": 12,
+      "outside_domain_cases": 1,
+      "exact_valid_bins": 162,
+      "exact_outside_bins": 5,
+      "exact_total_bins": 167,
+      "native_cases": 5,
+      "native_calls": 159,
+      "native_marginal_bins": 28,
+      "max_signal_modes": 4,
+      "max_photons": 4,
+      "max_dilated_modes": 6,
+      "absolute_probability_tolerance": 1e-11,
+      "relative_probability_tolerance": 0,
+      "absolute_unitarity_tolerance": 1e-11,
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "native_threads": 1,
+      "workers": 1,
+      "max_log_bytes": 4194304,
+      "max_scientific_bytes": 8388608,
+      "per_file_RLIMIT_FSIZE": 8388608,
+      "reserved_final_bytes": 131072,
+      "logical_workspace_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "failed_retries": 0,
+      "QPU_calls": 0,
+      "native_stochastic_samples": 0
+    },
+    "non_claims": [
+      "A finite PASS does not prove the general P96 theorem, finite-bit sampling, a universal Born law or novelty.",
+      "No optimization benefit, positive graph replication, equal-wall-time ordering, actual Lucy column/spectral certificate or hardware gate follows.",
+      "Critical external pins and loaded identities are not an authentication of every transitive library.",
+      "FSIZE is per regular file. Aggregate8MiB is enforced for this program's three scientific result files, not arbitrary external-library temporary caches; logs have the separate bounded-runner4MiB cap.",
+      "Logical workspace is a plan, not hard RSS/affinity enforcement. First failure stops; any prefix remains raw evidence and unrun stages are not passes.",
+      "Nonfinite floats are JSON diagnostic objects with nonfinite_float_repr, never valid numeric observations. Native raw rows precede explicit finite rejection; raw native-return repr survives post-call thread failures. Root operands/spectra/U/Gram values precede their rejection checks."
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P96_column_loss_validation.py",
+    "tests/test_p96_column_loss_validation.py",
+    "research/P96_column_loss_validation_contract.json",
+    "research/P96_column_loss_validation_preflight_contract.json",
+    "research/P96_VALIDATION_POPULATION.md",
+    "research/P96_COLUMN_LOSS_CLASSICAL_SURROGATE.md",
+    "research/P96_INDEPENDENT_SURROGATE_REVIEW.md",
+    "research/P96_BOUNDED_SURROGATE_PRIOR_ART.md",
+    "reports/P96_ROOT_THEORY_CHECKPOINT.md",
+    "research/P96_INDEPENDENT_VALIDATION_CODE_REVIEW.md",
+    "research/P96_INDEPENDENT_VALIDATION_CODE_ADDENDUM.md",
+    "reports/P96_ROOT_PRE_DATA_CODE_REVIEW.md",
+    "reports/P96_ROOT_PRE_DATA_CODE_ADDENDUM.md",
+    "reports/P96_validation_review/predata_metadata_v2.json",
+    "reports/P96_ROOT_QUALIFICATION_AUTHORIZATION.md",
+    "research/P96_column_loss_preflight/run_001/manifest.json",
+    "research/P96_column_loss_preflight/run_001/stdout.txt",
+    "research/P96_column_loss_preflight/run_001/stderr.txt",
+    "research/P96_column_loss_preflight/run_001/junit.xml",
+    "research/P96_PURE_QUALIFICATION_RECEIPT.md",
+    "reports/P96_validation_review/qualification_inspection.json",
+    "reports/P96_ROOT_FULL_SUITE_AUTHORIZATION.md",
+    "reports/P96_ROOT_FULL_SUITE_CORRECTION.md",
+    "reports/P96_validation_review/full_suite_first_failure.json",
+    "reports/P96_validation_review/run_full_suite_v2.py",
+    "reports/P96_validation_review/local_suite_run002/stdout.txt",
+    "reports/P96_validation_review/local_suite_run002/stderr.txt",
+    "reports/P96_validation_review/local_suite_run002/execution.json",
+    "research/P96_FULL_INTEGRATION_RECEIPT.md",
+    "reports/P96_ROOT_MAIN_AUTHORIZATION.md",
+    "research/P96_column_loss_main_binding.json",
+    "reports/P96_validation_review/main_binding_inspection.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "No stochastic primitive; deterministic exact enumeration and159 prob_amplitude calls only",
+    "seed": null
+  },
+  "external_artifacts": [
+    {
+      "role": "naive_backend",
+      "module": "perceval.backends._naive",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_naive.py",
+      "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+    },
+    {
+      "role": "backend_conventions",
+      "module": "perceval.backends._abstract_backends",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/backends/_abstract_backends.py",
+      "sha256": "53f7c4db865c2e643b9ab461da0c71b2fbb9dc1a450ad917936ca0f4e25538f1"
+    },
+    {
+      "role": "native_extension",
+      "module": "exqalibur.exqalibur",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+      "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+    },
+    {
+      "role": "linalg_python",
+      "module": "numpy.linalg._linalg",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/numpy/linalg/_linalg.py",
+      "sha256": "e47d0e2aed21361291cd6651999a59e6479ba5866abb8eabb1dbea5b0d1618ac"
+    },
+    {
+      "role": "linalg_native",
+      "module": "numpy.linalg._umath_linalg",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/numpy/linalg/_umath_linalg.cpython-311-darwin.so",
+      "sha256": "baec46cf85c469c2a4ec12f05440b8b2e3e36d34531d9ee9cf113e6235f19de5"
+    },
+    {
+      "role": "array_native",
+      "module": "numpy._core._multiarray_umath",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so",
+      "sha256": "2a5f2e415c5e582109b015eafd0da1ce887b3e3006969369fe2e5e5b27720acd"
+    },
+    {
+      "role": "physical_interpreter",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "sha256": "831807be3d255aae0708810462ce0cde2467235f7daaa86e93d0ddc58b1a4101"
+    },
+    {
+      "role": "virtual_environment_metadata",
+      "path": "/Users/karimelhoudaigui/Desktop/pasqal/.venv/pyvenv.cfg",
+      "sha256": "0b8b1221cc5276cffcdf62b9ad222d1939da2d3b90c626712a9dbcaad94617cf"
+    }
+  ],
+  "theory_reference_only": {
+    "path": "research/P96_COLUMN_LOSS_CLASSICAL_SURROGATE.md",
+    "original_commit": "6f4e7fb90e284a8e358c55886ddd2032d45811f9",
+    "sha256": "b378ebd6bb0bb6f981e9fe395938e3a43aec7775f761b81cda7b394f6dc1e94e",
+    "local_binding": false,
+    "note": "The exact169-line source was read in the separate producer worktree. It is not an existing input of this isolated code checkout. ROOT must integrate actual proof bytes and bind them in the separate active main contract; do not mutate this static contract after qualification."
+  },
+  "planned_binding_path": "research/P96_column_loss_main_binding.json",
+  "future_binding_requirements": {
+    "binding_state": "SEALED_ROOT_AUTHORIZED",
+    "static_contract_path": "research/P96_column_loss_validation_contract.json",
+    "static_contract_sha256_requirement": "Actual observed SHA256 after freeze; no invented or placeholder hash may be executed",
+    "frozen_static_inputs": "Object mapping all8 qualified static artifact paths to observed sha256, checked by source",
+    "theory_binding": "Object with bound=true,path,sha256; actual existing theory path must be among execution_artifacts",
+    "execution_artifacts": "All8 static inputs plus this future binding itself, integrated proof and ROOT-selected review/qualification/auth evidence, exactly matching repeated runner --input arguments",
+    "note": "A separate future binding may also be the bounded runner's v2 active contract by carrying the mathematics/software/randomness/planned_command fields. It must not alter the frozen scientific population, limits or static contract. No active binding is created or authorized by these instructions."
+  },
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P96_column_loss_validation.py",
+    "--contract",
+    "research/P96_column_loss_validation_contract.json",
+    "--binding",
+    "research/P96_column_loss_main_binding.json",
+    "--output",
+    "research/P96_column_loss_main/run_001/data"
+  ],
+  "runner_output_directory": "research/P96_column_loss_main/run_001",
+  "declared_results": [
+    "research/P96_column_loss_main/run_001/data/records.jsonl",
+    "research/P96_column_loss_main/run_001/data/summary.json",
+    "research/P96_column_loss_main/run_001/data/failure.json"
+  ],
+  "runner_binding": {
+    "fresh_parent_required": true,
+    "timeout": 90,
+    "max_cpu_seconds": 60,
+    "max_threads": 1,
+    "max_output_bytes": 4194304,
+    "max_memory_bytes": null,
+    "max_cores": null,
+    "input_policy": "Actual future active binding lists every existing project-relative regular input; source checks frozen static hashes and theory hash before native imports and all input hashes after execution",
+    "result_policy": "Only the three declared files strictly inside fresh parent/data; no overwrite or resume. Raw directory including logs/manifest must be sealed before reading outcomes."
+  },
+  "resource_note": "ACTIVE separate ROOT authorization of one finite main. Static contract/source/tests/qualified8 unchanged. See authorization_document; no paper or QPU gate.",
+  "positive_accepted": false,
+  "static_contract_path": "research/P96_column_loss_validation_contract.json",
+  "static_contract_sha256": "a1d17209cc1c032b35f92cf0d93773fe735f0a567d9d901aa26a1240c3becb7d",
+  "frozen_static_inputs": {
+    "AGENTS.md": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+    "pyproject.toml": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+    "requirements-research-lock.txt": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+    "research/P96_column_loss_validation.py": "ee3592ef608b0b7ad19ba81babcdc369bf4da50e319f3f00baf868074d83c223",
+    "tests/test_p96_column_loss_validation.py": "a5b7d94dcf9b202fc30309e57e63227700a1c65c5964140e4334535560a45c1a",
+    "research/P96_column_loss_validation_contract.json": "a1d17209cc1c032b35f92cf0d93773fe735f0a567d9d901aa26a1240c3becb7d",
+    "research/P96_column_loss_validation_preflight_contract.json": "d8fcba7e1794416ceda6b0e7bf1885f5d914a867143b233ad873669611dba629",
+    "research/P96_VALIDATION_POPULATION.md": "1642dda4dec65926d35aa84131655a4f9b9e31e86f607563d7ff694d715697d5"
+  },
+  "theory_binding": {
+    "bound": true,
+    "path": "research/P96_COLUMN_LOSS_CLASSICAL_SURROGATE.md",
+    "sha256": "b378ebd6bb0bb6f981e9fe395938e3a43aec7775f761b81cda7b394f6dc1e94e"
+  },
+  "source_original_freeze": "0eabdadc70c2b7085c40b22183320e8655d00e1d",
+  "qualification_binding": {
+    "manifest_path": "research/P96_column_loss_preflight/run_001/manifest.json",
+    "manifest_sha256": "73a5236a8b00e92244b3990c9a67b4aa2fe43325dcd576cb4cd7d784427a455f",
+    "raw_seal": "bd41d80",
+    "execution_commit": "16d43ab7b5e9a0da71aeb90af55422711439190e",
+    "observed_items": 11
+  },
+  "full_integration_binding": {
+    "raw_seal": "98c71a6",
+    "execution_commit": "613c19a629aa30d3740872fa02d693a9ce3532ad",
+    "observed_passed": 1559
+  },
+  "authorization_document": "reports/P96_ROOT_MAIN_AUTHORIZATION.md",
+  "planned_inherited_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  }
+}
