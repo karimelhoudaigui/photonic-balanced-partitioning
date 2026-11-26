@@ -1,0 +1,27 @@
+{
+  "claim_id": "P98-EXACT-SEALED-LAW-FACTORIAL-HIERARCHY",
+  "target_manifest_schema_version": 2,
+  "contract_only": true,
+  "binding_state": "UNBOUND_CODE_ONLY_NO_EXECUTION_AUTHORIZATION",
+  "mathematics": {
+    "assertion_tested": "Finite exact hierarchy:13 sealed P96 cases/all degrees plus R16 closed PGF,68 case-degree pairs,1054 dense coefficient rows; independent factorial formula(D) for K<=4; signed l1 identity/bounds, positive repair, degree selection and predeclared negative coefficients.",
+    "coefficient_domain": "Real Fraction exact arithmetic; no float, scientific package, native call or random draw.",
+    "conventions": "All raw zeros and negative q coefficients retained. Pointmass N3 is a separate hand diagnostic. R16 uses17 count states and17 degrees, never a16-photon permanent/dilation/full-output expansion.",
+    "bounds": {"CPU_seconds":30,"wall_seconds":60,"workers":1,"threads":1,"log_bytes":4194304,"scientific_combined_bytes":4194304,"FSIZE_bytes":4194304,"final_report_reserve":65536,"input_records_bytes":8388608,"failed_retries":0,"native_calls":0,"RNG_draws":0,"hard_RSS_claim":false},
+    "non_claims": ["No new physical/native validation or full theorem proof by finite cases","No optimizer, novelty, hardware, matched-time or QPU conclusion","No categorical RNG or finite-bit sampling execution"]
+  },
+  "execution_artifacts": ["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P98_hierarchy_validation.py","research/P98_hierarchy_contract_TEMPLATE.json","research/P98_HIERARCHY_VALIDATION_POPULATION.md","research/P98_FACTORIAL_SURROGATE_HIERARCHY.md","research/P96_INDEPENDENT_SURROGATE_REVIEW.md"],
+  "opaque_producer_paths_for_future_ROOT_binding": ["research/P96_column_loss_main/run_001/manifest.json","research/P96_column_loss_main/run_001/stdout.txt","research/P96_column_loss_main/run_001/stderr.txt","research/P96_column_loss_main/run_001/data/records.jsonl","research/P96_column_loss_main/run_001/data/summary.json","research/P96_column_loss_main/run_001/data/failure.json"],
+  "future_binding": "research/P98_hierarchy_execution_binding.json",
+  "binding_schema": "ROOT creates a separate active v2 contract:binding_state=SEALED_ROOT_AUTHORIZED,raw_sealed=true,producer_raw_seal_commit full40hex,source_sha256,input_records,artifacts[path/sha256/bytes]. execution_artifacts is the exact unique descriptor paths plus binding itself; descriptor list excludes binding selfhash. All8 static+6 producer files required; extra provenance permitted. ROOT verifies actual Git seal blobs before authorization; no guessed hashes or copied raw directory.",
+  "software": [{"name":"Python","version":"3.11.15"}],
+  "randomness": {"used":false,"generator":"None; fixed rational cases and exhaustive finite arithmetic","seed":null},
+  "planned_inherited_environment": {"PYTHONDONTWRITEBYTECODE":"1","OMP_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","MKL_NUM_THREADS":"1","VECLIB_MAXIMUM_THREADS":"1","NUMEXPR_NUM_THREADS":"1","BLIS_NUM_THREADS":"1"},
+  "planned_command": ["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","research/P98_hierarchy_validation.py","--binding","research/P98_hierarchy_execution_binding.json"],
+  "runner_output_directory": "research/P98_hierarchy_main/run_001",
+  "declared_results": ["research/P98_hierarchy_main/run_001/data/records.jsonl","research/P98_hierarchy_main/run_001/data/summary.json","research/P98_hierarchy_main/run_001/data/failure.json"],
+  "runner_binding": {"fresh_parent_required":true,"timeout":60,"max_cpu_seconds":30,"max_threads":1,"max_output_bytes":4194304,"max_memory_bytes":null,"max_cores":null},
+  "resource_note": "FSIZE/CPU set before main scientific work; combined output/reserve enforced by source. Runner log cap is separate. No hard RSS/affinity claim. Producer archive stays read-only; only exact_case_start/exact_raw payloads parsed.",
+  "authorization": "CODE ONLY. ROOT plus P94 must read frozen source/cards before any import/AST/collection/test/arithmetic/runner; execution requires separate explicit ROOT authorization and actual postseal binding.",
+  "positive_optimization": false
+}
