@@ -1,0 +1,244 @@
+{
+  "claim_id": "P98-EXACT-SEALED-LAW-FACTORIAL-HIERARCHY",
+  "target_manifest_schema_version": 2,
+  "contract_only": false,
+  "binding_state": "SEALED_ROOT_AUTHORIZED",
+  "mathematics": {
+    "assertion_tested": "Finite exact hierarchy:13 sealed P96 cases/all degrees plus R16 closed PGF,68 case-degree pairs,1054 dense coefficient rows; independent factorial formula(D) for K<=4; signed l1 identity/bounds, positive repair, degree selection and predeclared negative coefficients.",
+    "coefficient_domain": "Real Fraction exact arithmetic; no float, scientific package, native call or random draw.",
+    "conventions": "All raw zeros and negative q coefficients retained. Pointmass N3 is a separate hand diagnostic. R16 uses17 count states and17 degrees, never a16-photon permanent/dilation/full-output expansion.",
+    "bounds": {
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "workers": 1,
+      "threads": 1,
+      "log_bytes": 4194304,
+      "scientific_combined_bytes": 4194304,
+      "FSIZE_bytes": 4194304,
+      "final_report_reserve": 65536,
+      "input_records_bytes": 8388608,
+      "failed_retries": 0,
+      "native_calls": 0,
+      "RNG_draws": 0,
+      "hard_RSS_claim": false
+    },
+    "non_claims": [
+      "No new physical/native validation or full theorem proof by finite cases",
+      "No optimizer, novelty, hardware, matched-time or QPU conclusion",
+      "No categorical RNG or finite-bit sampling execution"
+    ],
+    "inputs": [
+      "Thirteen fixed sealed P96 real-rational T/raw laws, complete occupations of totals0..K, with every degree0..K.",
+      "One literal R16 rank-one row T_1i=1/8 and its registered17-coefficient closed PGF; all17 degrees.",
+      "Separate formal pointmass N3 diagnostic; no graphs, optimum masks, RNG or native replay."
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P98_hierarchy_validation.py",
+    "research/P98_hierarchy_contract_TEMPLATE.json",
+    "research/P98_HIERARCHY_VALIDATION_POPULATION.md",
+    "research/P98_FACTORIAL_SURROGATE_HIERARCHY.md",
+    "research/P96_INDEPENDENT_SURROGATE_REVIEW.md",
+    "research/P96_column_loss_main/run_001/manifest.json",
+    "research/P96_column_loss_main/run_001/stdout.txt",
+    "research/P96_column_loss_main/run_001/stderr.txt",
+    "research/P96_column_loss_main/run_001/data/records.jsonl",
+    "research/P96_column_loss_main/run_001/data/summary.json",
+    "research/P96_column_loss_main/run_001/data/failure.json",
+    "research/P98_INDEPENDENT_HIERARCHY_REVIEW.md",
+    "research/P98_BOUNDED_HIERARCHY_PRIOR_ART.md",
+    "reports/P98_ROOT_HIERARCHY_CHECKPOINT.md",
+    "reports/P98_ROOT_PRE_DATA_CODE_REVIEW.md",
+    "research/P98_INDEPENDENT_VALIDATION_CODE_REVIEW.md",
+    "reports/P98_validation_review/predata_binding_metadata.json",
+    "reports/P98_ROOT_MAIN_AUTHORIZATION.md",
+    "research/P96_FINITE_VALIDATION_RECEIPT.md",
+    "reports/P96_validation_review/recorded_audit_run001/data/inspection.json",
+    "reports/P96_validation_review/ci_qualified_success.json",
+    "research/P98_hierarchy_execution_binding.json"
+  ],
+  "opaque_producer_paths_for_future_ROOT_binding": [
+    "research/P96_column_loss_main/run_001/manifest.json",
+    "research/P96_column_loss_main/run_001/stdout.txt",
+    "research/P96_column_loss_main/run_001/stderr.txt",
+    "research/P96_column_loss_main/run_001/data/records.jsonl",
+    "research/P96_column_loss_main/run_001/data/summary.json",
+    "research/P96_column_loss_main/run_001/data/failure.json"
+  ],
+  "future_binding": "research/P98_hierarchy_execution_binding.json",
+  "binding_schema": "ROOT creates a separate active v2 contract:binding_state=SEALED_ROOT_AUTHORIZED,raw_sealed=true,producer_raw_seal_commit full40hex,source_sha256,input_records,artifacts[path/sha256/bytes]. execution_artifacts is the exact unique descriptor paths plus binding itself; descriptor list excludes binding selfhash. All8 static+6 producer files required; extra provenance permitted. ROOT verifies actual Git seal blobs before authorization; no guessed hashes or copied raw directory.",
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "None; fixed rational cases and exhaustive finite arithmetic",
+    "seed": null
+  },
+  "planned_inherited_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P98_hierarchy_validation.py",
+    "--binding",
+    "research/P98_hierarchy_execution_binding.json"
+  ],
+  "runner_output_directory": "research/P98_hierarchy_main/run_001",
+  "declared_results": [
+    "research/P98_hierarchy_main/run_001/data/records.jsonl",
+    "research/P98_hierarchy_main/run_001/data/summary.json",
+    "research/P98_hierarchy_main/run_001/data/failure.json"
+  ],
+  "runner_binding": {
+    "fresh_parent_required": true,
+    "timeout": 60,
+    "max_cpu_seconds": 30,
+    "max_threads": 1,
+    "max_output_bytes": 4194304,
+    "max_memory_bytes": null,
+    "max_cores": null
+  },
+  "resource_note": "FSIZE/CPU set before main scientific work; combined output/reserve enforced by source. Runner log cap is separate. No hard RSS/affinity claim. Producer archive stays read-only; only exact_case_start/exact_raw payloads parsed.",
+  "authorization": "ROOT one-run authorization: reports/P98_ROOT_MAIN_AUTHORIZATION.md; source and all scientific choices frozen.",
+  "positive_optimization": false,
+  "raw_sealed": true,
+  "producer_raw_seal_commit": "240c7e5518fbcd69d8f22bbe5e8ead3c1bbbc9c1",
+  "source_sha256": "52070f1a2ce7a92e9d32c299638aacdbae7037f6f2b95685a2697c2b56bd77ef",
+  "input_records": "research/P96_column_loss_main/run_001/data/records.jsonl",
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "bytes": 1154
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "bytes": 1072
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "bytes": 633
+    },
+    {
+      "path": "research/P98_hierarchy_validation.py",
+      "sha256": "52070f1a2ce7a92e9d32c299638aacdbae7037f6f2b95685a2697c2b56bd77ef",
+      "bytes": 11040
+    },
+    {
+      "path": "research/P98_hierarchy_contract_TEMPLATE.json",
+      "sha256": "dd1bafbc6ccbba296143106bd2ce0077a42c91365f485e1d8f4d5f1d934f8fa1",
+      "bytes": 4132
+    },
+    {
+      "path": "research/P98_HIERARCHY_VALIDATION_POPULATION.md",
+      "sha256": "d2a1ef81fadb4af8c103374c1962967858b12ace33e939bcec8fd9852b46519d",
+      "bytes": 3877
+    },
+    {
+      "path": "research/P98_FACTORIAL_SURROGATE_HIERARCHY.md",
+      "sha256": "918d721f33a691351aa0ab2b4618f3fde0101341de87b719d2ecdfea23038c8d",
+      "bytes": 9787
+    },
+    {
+      "path": "research/P96_INDEPENDENT_SURROGATE_REVIEW.md",
+      "sha256": "a64783dee2b4903b475a8b1ea554640b4c320d9da81cf854871f219725e29d7f",
+      "bytes": 9636
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/manifest.json",
+      "sha256": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d",
+      "bytes": 18052
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stderr.txt",
+      "sha256": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13",
+      "bytes": 2445
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/records.jsonl",
+      "sha256": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc",
+      "bytes": 190476
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/summary.json",
+      "sha256": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07",
+      "bytes": 10321
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/failure.json",
+      "sha256": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707",
+      "bytes": 25
+    },
+    {
+      "path": "research/P98_INDEPENDENT_HIERARCHY_REVIEW.md",
+      "sha256": "fca8b01fbcb0d2893c0a1292ed87ef391a58ddedc5538aaeffc3b3b326c09025",
+      "bytes": 13832
+    },
+    {
+      "path": "research/P98_BOUNDED_HIERARCHY_PRIOR_ART.md",
+      "sha256": "143575c784688703a2ea6f5122898807d72dae264ea5fc92c43e2c728c0e1359",
+      "bytes": 9079
+    },
+    {
+      "path": "reports/P98_ROOT_HIERARCHY_CHECKPOINT.md",
+      "sha256": "641e1dba62b441864a0f4c4fc66aeede054005840bc68370d72b300630e20e7b",
+      "bytes": 4505
+    },
+    {
+      "path": "reports/P98_ROOT_PRE_DATA_CODE_REVIEW.md",
+      "sha256": "bd045fea30db667ddff1163e9ecd5acb7d234a7cfacfe6fc72e217203542e2ff",
+      "bytes": 2983
+    },
+    {
+      "path": "research/P98_INDEPENDENT_VALIDATION_CODE_REVIEW.md",
+      "sha256": "0e1fd389f87b8ebe99e511575f7a148e29fba225fd8f00a90ae31d7c30b4d1ac",
+      "bytes": 12223
+    },
+    {
+      "path": "reports/P98_validation_review/predata_binding_metadata.json",
+      "sha256": "71626e3b9819a978cf9b5a2ec27d2f5637f8d866834e94d3870c9bc3deedbe55",
+      "bytes": 3044
+    },
+    {
+      "path": "reports/P98_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "0bbd4ea2c91424b0fd73b4403bc84a8ad2f826e7fb9e48433dea23ede5c38de3",
+      "bytes": 2615
+    },
+    {
+      "path": "research/P96_FINITE_VALIDATION_RECEIPT.md",
+      "sha256": "b035b03c046dd4a68e095169370f86894708ff4d7ef9445c402c2c9235106145",
+      "bytes": 5196
+    },
+    {
+      "path": "reports/P96_validation_review/recorded_audit_run001/data/inspection.json",
+      "sha256": "208c419880d9705cef49660a534b802f03c06328a4300edaf85c833ff363607a",
+      "bytes": 1924
+    },
+    {
+      "path": "reports/P96_validation_review/ci_qualified_success.json",
+      "sha256": "7c76ec309cc7bc4349590b4a7aa5e1f3f05fcae6b1644a8ba36e7d1d10a191f6",
+      "bytes": 1002
+    }
+  ]
+}
