@@ -315,3 +315,16 @@ Keep P82 as a changed but UNPROVEN optimizer. Nonzero low-order phase
 response is not a win. Require independently reviewed K8/n16 DEV card,
 complete source freeze, tiny qualification and separate main authorization.
 The positive-result gate, paper and QPU remain closed.
+
+## P87 accepted and P82a code preparation only
+
+Accept P87 only in its sharp fixed-dimension coherent-oracle metric;
+identity matches first order, without finite-angle/all-optimizer/novelty
+inference. Accept P82's eta0 decoded-law null with independent marks and
+analyticzero branch; keep nonuniform high-order optimizer gain OPEN.
+Preserve original P82a card and its material-defect review. Accept the
+separately frozen dual-clock/DURATION_DIFF correction after full ROOT and
+independent exact-source reads. Commission primary CODEONLY, not import,
+qualification or main. Freeze/review all source+bindings first. No push
+of unqualified code to CI. Independent raw checker must freeze BEFORE
+B data, with no pre-main DEV seed/graph replay. Paper/main/QPU stay frozen.

@@ -1408,3 +1408,31 @@ r2 mean cancels; nonuniform−q0E phase term survives but has a polynomial
 classical control. Higher-order basin improvement is OPEN. A separately
 frozen K8/n16 card and independent audit must precede any code or canary.
 Numerical slot FREE, no new simulation/main, paper/main/QPU untouched.
+
+## P87 sharp obstruction accepted; P82a pre-data clock defects corrected
+
+P87 ROOT6436860/f4934640, independently frozen17ba1d4/c23638c0 and exact
+reviewb77c8c0/22cfcb7f accepted after ROOT full168+308+344-line audit.
+The optimized passive all-balanced coherent phase error at fixedN has
+limitR/2, the same as identity. Scope/cost/observability/novelty limits
+are retained; it is not a general optimizer no-go.
+
+P82 exact eta0 null source153e807/bc5943fa and designaudit ae900ed/59b478c0
+have full ROOT reads. Complete decoded law becomes flatD afterindependent
+portmarks; counts/costs neednotmatch. AnalyticJ/H0 preventsroundoff→arg
+falseeffects. Nonuniform high-order gain remainsOPEN.
+
+P82a147line4a90c0d card had M1 WALL/CPU and M2 fabricatedspan issues,
+recorded by246line7e84262 review. Separate69line43218ab correction and
+180line6aa5a2c exactreview nowcloseboth PRE-DATA; ROOTreadall. Keeporiginal
+artifacts and semantics. CODEONLY commissioned; primarysource/spec/tests/
+contracts notyetfrozen, no import/AST/pytest/RNG/graph/native allowed.
+Independent306line raw-audit plan1f8f0ce frozenbeforedataset exists; checker
+awaits exactschema and separatecommission. No newmain/qual/heldout/QPU.
+
+P82a next predata checkpoint: six-file code freeze892ea965 now exists;
+ROOT read the entire3024-line population. P66/P81 independently read that
+same source. Factory timing needs an explicit typed reported-duration
+reference before qualification, although scalar operands are retained.
+P63 is preparing its independent recorded-data checker CODE ONLY. No
+scientific execution, import/AST/RNG/graph/native has occurred.

@@ -37,10 +37,13 @@ P84's exact all-basis passive cost-phase obstruction is accepted after
 303+275+259 lines of derivation/review. P86 adds an accepted quantitative
 phase-sensitive error floor (171+256+299 lines), excluding o(angle) error
 for fixed nonconstant cost in that architecture. Both rely on P81 and
-leave general sampling optimizers open. P87 proposes a sharp first-order
-extension, still under independent reconstruction/review. Checkpoints:
+leave general sampling optimizers open. P87 now has full ROOT/peer acceptance: at fixedN, the best passive
+coherent cost-phase error has the same first-order coefficient R/2 as
+identity, in the specified common-phase metric. No general optimizer
+conclusion or novelty certificate follows. Checkpoints:
 reports/P84_ROOT_COST_PHASE_CHECKPOINT.md and
-reports/P86_ROOT_APPROXIMATE_ORACLE_CHECKPOINT.md.
+reports/P86_ROOT_APPROXIMATE_ORACLE_CHECKPOINT.md and
+reports/P87_ROOT_FIRST_ORDER_CHECKPOINT.md.
 
 P85 authenticates direct2020 nonnegative raw-GBS approximate-simulation
 prior art. No first broad classical-simulation attribution is justified;
@@ -60,9 +63,14 @@ P75b/c no-hit searches remain finite negatives, not general k6+ Gaussian
 proofs. P75 small-case, P77/P78 and all validated P33/P37/E05b results are
 preserved. No P75 rerun was performed. Active static work now designs a
 hardware-compatible mechanism outside the accepted obstructions (P82),
-P82a now specifies a K8/n16 prospective DEV veto; no implementation or
-scientific execution is authorized yet. An independent P82 design audit
-checks its strongest nulls. No accepted optimizer or numerical main follows. One numerical worker
+P82a now has an independently reviewed K8/n16 prospective DEV veto,
+corrected BEFORE data for dual CPU/WALL prefix eligibility and honest
+factory-duration accounting. CODE ONLY is frozen at892ea965; ROOT has read
+all3024 lines of source/tests/spec/two contracts/population. Static audits
+are checking that freeze, including explicit reported-duration provenance.
+No import/AST/test/RNG/qualification/main has run. P82 eta0 has an independently reconstructed exact
+decoded-law null. The higher-order nonuniform optimization gain is OPEN.
+See reports/P82_ROOT_NULL_AND_IMPLEMENTATION_GATE.md. No new main ran. One numerical worker
 maximum; it is FREE after the full root regression. Current ownership and
 continuation: research/P45_LIVE_STATE.md.
 

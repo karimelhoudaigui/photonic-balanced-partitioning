@@ -4,7 +4,7 @@ Archived earlier live-checkpoint prefix (historical, not current):
 [P45 live history before P79 acceptance](P45_LIVE_HISTORY_BEFORE_P79_ACCEPTANCE.md).
 Byte-exact prefix of29cc868, SHA256 1c27dfd77fd6b3f87278578317f8ed091643566b248db237bd2f009c7886c263.
 
-## Current checkpoint: P79/P80/P81 audited; positive optimizer OPEN
+## Current checkpoint: P87 accepted; P82a CODE ONLY; positive optimizer OPEN
 
 P79 has completed the sole prospectively frozen finite validation, not a
 graph optimization benchmark. Source602acc70/SHA74cb27b1 and all969lines
@@ -39,20 +39,43 @@ Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
 GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
 run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
 
-Numerical worker FREE. No new experiment authorized. P84/P86 now accepted
-at exact scopes after full ROOT/source-peer reads; see their ROOT checkpoints.
-P85 primary prior-art report is checked, and P78/P80 broad novelty remains
-unclaimed. P87 ROOT candidate6436860 is under before-author reconstruction
-in .local/p66-dark-barrier (p63_physics_resume), no acceptance yet.
-P82 designf7cb5d9 (145lines) is frozen; ROOT read it completely and verified
-its low-order formulas. P82a K8/n16 DEV card is being written in
-.local/p65-independent-audit (p62_literature_resume), before any code/import/
-AST/test/RNG. Independent design audit in .local/p84-cost-phase
-(p66_dark_audit) also checks uniform-loading nulls and finite native API text.
-P81/P83/P84/P86 exact reviewer .local/p81-exact-review currently idle.
-No P82a card/implementation/qualification/main is approved automatically.
-Before any new execution, freeze full source/contracts, independently review,
-then separately authorize/inspect tiny qualification before a main decision.
+Numerical worker FREE. P87 is ACCEPTED after full ROOT168+peer308+exact344
+reads, sources6436860/17ba1d4 and auditb77c8c0. Its sharp fixed-N oracle
+limitR/2 matches identity; this is not a generic sampling-optimizer no-go.
+P82 eta0 decoded null is also accepted with exact independent153e807,
+sourcebc5943fa; actual eta>0 main gain remains OPEN.
+
+P82a protocol: designf7cb5d9; card4a90c0d/d5e994d9 (147lines), original
+review7e84262/74d061b3 (246), corrective addendum43218ab/1b548885 (69),
+exact correction review6aa5a2c/edeba00f (180). ROOTreadall, M1/M2 closed
+PRE-CODE: BOTH classical CPU and WALL prefix limits, plus honest factory
+DURATION_DIFF with unknown internal CPU/endpoints. Full grants per fixedmode,
+no same-CPU/hard-API-return/QPU-cost claim. Card files remain immutable.
+
+P82a CODE ONLY is frozen at892ea965 in .local/p65-independent-audit:
+source1328/tests961/spec74/precontract243/maincontract203/population215,
+3024 lines FULLY read by ROOT. No import/AST/py_compile/collection/RNG/
+graph/native/benchmark has run. P66 and P81 independently read the same
+freeze. The pending predata clarification is an explicit REPORTED_DURATION
+ledger record/id/reference for factory timing (scalars already retained;
+not a numerical grant error). Resolve and review BEFORE one tinyqual.
+No unqualified code may be pushed to CI. Main96B/768 modeled photons still
+requires separate post-qualification authorization and raw-first receipt.
+
+Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
+data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old
+clock blockers are discharged above. CheckerCODE ONLY is now commissioned
+against892ea965, with separate source/tests/contracts/review/tinyqual.
+DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
+Compilation-before-R is source-bound, not a separately timed raw endpoint;
+custom control audit covers cuts/cache lineage/clocks, not policy replay.
+No native physics replay or distribution proof. P81 and P66 exact-source
+reviews are active in their isolated worktrees.
+
+No new scientific main/qualification since P79/root1187PASS. No held-out
+opening, paper/main/QPU/messages. Next actionable priority is source/schema
+freeze -> ROOT+P66fullstaticreview -> tinyqual -> raw-first inspection ->
+separatemaindecision, with independent checker pre-data as above.
 P79 producer remains clean atc2a22ed in .local/p79-even-loops.
 
 P75b/c no-hit, P77/P78 scoped classical controls and all P33/P37/E05b negatives
