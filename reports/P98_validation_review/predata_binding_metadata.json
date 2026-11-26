@@ -1,0 +1,82 @@
+{
+  "method": "Metadata-only file/Git blob inspection; no source import/AST/scientific evaluation",
+  "code_original_commit": "afefa4cb8074e8681b5f7eed17532b67a828f216",
+  "producer_raw_original_seal": "240c7e5518fbcd69d8f22bbe5e8ead3c1bbbc9c1",
+  "static8_match_original_blobs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "bytes": 1154
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "bytes": 1072
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "bytes": 633
+    },
+    {
+      "path": "research/P98_hierarchy_validation.py",
+      "sha256": "52070f1a2ce7a92e9d32c299638aacdbae7037f6f2b95685a2697c2b56bd77ef",
+      "bytes": 11040
+    },
+    {
+      "path": "research/P98_hierarchy_contract_TEMPLATE.json",
+      "sha256": "dd1bafbc6ccbba296143106bd2ce0077a42c91365f485e1d8f4d5f1d934f8fa1",
+      "bytes": 4132
+    },
+    {
+      "path": "research/P98_HIERARCHY_VALIDATION_POPULATION.md",
+      "sha256": "d2a1ef81fadb4af8c103374c1962967858b12ace33e939bcec8fd9852b46519d",
+      "bytes": 3877
+    },
+    {
+      "path": "research/P98_FACTORIAL_SURROGATE_HIERARCHY.md",
+      "sha256": "918d721f33a691351aa0ab2b4618f3fde0101341de87b719d2ecdfea23038c8d",
+      "bytes": 9787
+    },
+    {
+      "path": "research/P96_INDEPENDENT_SURROGATE_REVIEW.md",
+      "sha256": "a64783dee2b4903b475a8b1ea554640b4c320d9da81cf854871f219725e29d7f",
+      "bytes": 9636
+    }
+  ],
+  "producer6_match_original_raw_blobs": [
+    {
+      "path": "research/P96_column_loss_main/run_001/manifest.json",
+      "sha256": "3dff9621785e8dd6655b3c51869a4f05d7e3501efd36ce0c8c3007fb47b3bd1d",
+      "bytes": 18052
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/stderr.txt",
+      "sha256": "03836903c5c8104ed06cd4d199ed67e9cca233f3539c04f44a088a971285df13",
+      "bytes": 2445
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/records.jsonl",
+      "sha256": "6048976b7efbe184380cf6f2f35f3a481c4cf524a4485559b02115377a6e00cc",
+      "bytes": 190476
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/summary.json",
+      "sha256": "057834dbed60494e34dd7bbc11794cb6aa14ad780ceb5f26ad9ff68b3354fa07",
+      "bytes": 10321
+    },
+    {
+      "path": "research/P96_column_loss_main/run_001/data/failure.json",
+      "sha256": "7c4b3267000d31ffc33195801231be5c75f765c64f6349e6daff954f82807707",
+      "bytes": 25
+    }
+  ],
+  "active_binding_not_yet_created": true,
+  "output_fresh": true,
+  "v2_metadata_completion_required": "Add explicit mathematics.inputs descriptive array to active binding; preserve every existing mathematical field and frozen TEMPLATE."
+}
