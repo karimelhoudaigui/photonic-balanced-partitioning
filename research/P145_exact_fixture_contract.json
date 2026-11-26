@@ -34,7 +34,9 @@
   "execution_artifacts": [
     "AGENTS.md",
     "research/P145_EXPERIMENT_CARD.md",
-    "research/P145_exact_triad_fixture.py"
+    "research/P145_exact_triad_fixture.py",
+    "research/P145_TRIAD_LNS_ANALYSIS.md",
+    "research/P145_EXACT_FIXTURE_INDEPENDENT_REVIEW.md"
   ],
   "software": [
     {
@@ -47,6 +49,20 @@
     "generator": "",
     "seed": null
   },
-  "run_authorized": false,
-  "authorization_note": "ROOT will authorize only after non-author source/claim review and a committed freeze; this pending contract is not execution evidence"
+  "run_authorized": true,
+  "authorization_note": "ROOT authorizes ONE bounded exact diagnostic after full source read and non-author review6e1a7615, original source188 lines/SHA77189d7; graph screen remains CODE ONLY. No retries, graph data, QPU or paper edits.",
+  "source_sha256": "77189d7d145bcb8ef4fbd77cb790ad1ca333f52f5deab03c517c174fcb3817da",
+  "planned_command": [
+    ".venv/bin/python",
+    "-B",
+    "research/P145_exact_triad_fixture.py",
+    "--output",
+    "research/P145_exact_fixture/run_001/data"
+  ],
+  "declared_results": [
+    "research/P145_exact_fixture/run_001/data/records.json",
+    "research/P145_exact_fixture/run_001/data/graph_checks.json",
+    "research/P145_exact_fixture/run_001/data/summary.json",
+    "research/P145_exact_fixture/run_001/data/failure.json"
+  ]
 }
