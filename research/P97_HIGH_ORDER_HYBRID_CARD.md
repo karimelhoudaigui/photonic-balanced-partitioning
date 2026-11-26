@@ -126,8 +126,8 @@ preselected partition as a quantum discovery would be a false positive.
 
 For any fixed balanced spin decoder, linearity gives
 R_C(n)=-(1/2)sum_edges w_uv R_(s_u s_v)(n), since I2 preserves constants.
-No graph sign follows from the norm/variance bounds. For a graph and its
-unweighted complement under the SAME decoder/T, balanced cuts sum to the
+No graph sign follows from the norm/variance bounds. For an unweighted simple
+graph and its complement under the SAME decoder/T, balanced cuts sum to the
 constant |V_graph|^2/4, so their residuals are pointwise negatives.
 This forbids a universal favorable-sign inference from residualization alone;
 it is no obstruction to every graph-dependent compiler or adaptive decoder.
