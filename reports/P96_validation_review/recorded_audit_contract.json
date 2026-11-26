@@ -1,0 +1,91 @@
+{
+  "claim_id": "P96-POSTSEAL-RECORDED-SCALAR-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Stream all P96 raw records; independently reconstruct exact first/pair moments by removed-input amplitudes, q positivity and TV bounds; exhaustive occupation coverage; scalar unitarity and subset-DP amplitudes/probabilities for all159 recorded native states and28 unconditional marginals. No source import/native replay/optimizer.",
+    "coefficient_domain": "Fraction rational real moments; Python complex/binary64 subset-DP permanent and scalar Gram; absolute1e-11 native and1e-14 T-block checks",
+    "conventions": "PNR vacuum/collisions/loss preserved; distinct CF input factor1 and repeated-output factorial normalization; X4 physical outside domain not theorem failure",
+    "inputs": [
+      "Six original P96 raw files sealed240c7e5,35 original bound inputs, audit source and this contract"
+    ],
+    "bounds": {
+      "CPU_seconds": 10,
+      "wall_seconds": 30,
+      "threads": 1,
+      "workers": 1,
+      "native_calls": 0,
+      "optimizer_replays": 0,
+      "exact_signal_bins": 167,
+      "native_points": 159,
+      "native_marginal_bins": 28
+    },
+    "non_claims": [
+      "No new optical/Born sampling, independent device replication, interval proof, global theorem or optimizer advantage"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P96_column_loss_validation.py",
+    "tests/test_p96_column_loss_validation.py",
+    "research/P96_column_loss_validation_contract.json",
+    "research/P96_column_loss_validation_preflight_contract.json",
+    "research/P96_VALIDATION_POPULATION.md",
+    "research/P96_COLUMN_LOSS_CLASSICAL_SURROGATE.md",
+    "research/P96_INDEPENDENT_SURROGATE_REVIEW.md",
+    "research/P96_BOUNDED_SURROGATE_PRIOR_ART.md",
+    "reports/P96_ROOT_THEORY_CHECKPOINT.md",
+    "research/P96_INDEPENDENT_VALIDATION_CODE_REVIEW.md",
+    "research/P96_INDEPENDENT_VALIDATION_CODE_ADDENDUM.md",
+    "reports/P96_ROOT_PRE_DATA_CODE_REVIEW.md",
+    "reports/P96_ROOT_PRE_DATA_CODE_ADDENDUM.md",
+    "reports/P96_validation_review/predata_metadata_v2.json",
+    "reports/P96_ROOT_QUALIFICATION_AUTHORIZATION.md",
+    "research/P96_column_loss_preflight/run_001/manifest.json",
+    "research/P96_column_loss_preflight/run_001/stdout.txt",
+    "research/P96_column_loss_preflight/run_001/stderr.txt",
+    "research/P96_column_loss_preflight/run_001/junit.xml",
+    "research/P96_PURE_QUALIFICATION_RECEIPT.md",
+    "reports/P96_validation_review/qualification_inspection.json",
+    "reports/P96_ROOT_FULL_SUITE_AUTHORIZATION.md",
+    "reports/P96_ROOT_FULL_SUITE_CORRECTION.md",
+    "reports/P96_validation_review/full_suite_first_failure.json",
+    "reports/P96_validation_review/run_full_suite_v2.py",
+    "reports/P96_validation_review/local_suite_run002/stdout.txt",
+    "reports/P96_validation_review/local_suite_run002/stderr.txt",
+    "reports/P96_validation_review/local_suite_run002/execution.json",
+    "research/P96_FULL_INTEGRATION_RECEIPT.md",
+    "reports/P96_ROOT_MAIN_AUTHORIZATION.md",
+    "research/P96_column_loss_main_binding.json",
+    "reports/P96_validation_review/main_binding_inspection.json",
+    "research/P96_column_loss_main/run_001/manifest.json",
+    "research/P96_column_loss_main/run_001/stdout.txt",
+    "research/P96_column_loss_main/run_001/stderr.txt",
+    "research/P96_column_loss_main/run_001/data/records.jsonl",
+    "research/P96_column_loss_main/run_001/data/summary.json",
+    "research/P96_column_loss_main/run_001/data/failure.json",
+    "reports/P96_validation_review/audit_recorded.py",
+    "reports/P96_validation_review/recorded_audit_contract.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "Deterministic recorded-data arithmetic only",
+    "seed": null
+  },
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "reports/P96_validation_review/audit_recorded.py"
+  ],
+  "runner_output_directory": "reports/P96_validation_review/recorded_audit_run001",
+  "declared_results": [
+    "reports/P96_validation_review/recorded_audit_run001/data/inspection.json"
+  ],
+  "root_authorization": "ROOT authorizes exactly one postseal read-only scalar audit, after full source review and original native raw seal; preserve all outputs before interpretation. CPU10/wall30/env1/log4MiB; zero retries."
+}
