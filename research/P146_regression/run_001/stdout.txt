@@ -1,0 +1,38 @@
+........................................................................ [  4%]
+........................................................................ [  9%]
+........................................................................ [ 13%]
+........................................................................ [ 18%]
+........................................................................ [ 22%]
+........................................................................ [ 27%]
+........................................................................ [ 32%]
+........................................................................ [ 36%]
+........................................................................ [ 41%]
+........................................................................ [ 45%]
+........................................................................ [ 50%]
+........................................................................ [ 55%]
+........................................................................ [ 59%]
+........................................................................ [ 64%]
+........................................................................ [ 68%]
+........................................................................ [ 73%]
+........................................................................ [ 78%]
+........................................................................ [ 82%]
+........................................................................ [ 87%]
+........................................................................ [ 91%]
+........................................................................ [ 96%]
+.........................................................                [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71
+  /Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+    warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73
+  /Users/karimelhoudaigui/Desktop/pasqal/.venv/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+    warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/karimelhoudaigui/Desktop/pasqal/research/P146_regression/run_001/junit.xml -
+1569 passed, 6 warnings in 30.90s
