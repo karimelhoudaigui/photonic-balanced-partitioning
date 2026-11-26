@@ -37,12 +37,14 @@ runner/validator call, role digest or RNG has been performed by this freeze.
 Child argv, from the reviewed project root, is fixed as:
 
 ```text
-/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python -B -m pytest -q -p no:cacheprovider -o junit_family=legacy tests/test_p90a_source_bound_nonflat_veto.py --junitxml=research/P90a_dev_veto_preflight/run_001/junit.xml
+/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python -B -c "import resource,runpy,sys;resource.setrlimit(resource.RLIMIT_FSIZE,(33554432,33554432));sys.argv=['pytest','-q','-p','no:cacheprovider','-o','junit_family=legacy','tests/test_p90a_source_bound_nonflat_veto.py','--junitxml=research/P90a_dev_veto_preflight/run_001/junit.xml'];runpy.run_module('pytest',run_name='__main__')"
 ```
 
 `junit_family=legacy` is chosen before data so `record_property` observations
 have a compatible JUnit representation. Bytecode writing and pytest cache are
-disabled. The inherited `PYTEST_DISABLE_PLUGIN_AUTOLOAD=1` closes implicit
+disabled (`-B` is also explicit in the isolated `-I` import fixture), with
+`PYTHONDONTWRITEBYTECODE=1` inherited before launching either process.
+The inherited `PYTEST_DISABLE_PLUGIN_AUTOLOAD=1` closes implicit
 third-party plugin loading; `PYTEST_ADDOPTS` and `PYTEST_PLUGINS` are empty so
 inherited options cannot change the population. The six thread variables are1 before
 scientific imports. No `-k`, outcome filter, maxfail, retry, selected-sector
@@ -58,12 +60,21 @@ No unsupported Darwin affinity or hard
 RSS/address-space limit is requested. The256MiB total and64MiB one-control
 allowances are logical plans only. Zero automatic retries.
 
-Both slots have scientific32MiB, final reserve1MiB and single JSON/line4MiB
-obligations. The main EvidenceWriter must enforce them. The predata checker
-must separately verify bounded qualification JUnit/property serialization:
-Mathbox's4MiB combined log cap does not cap JUnit. A cap declaration is not
-evidence of enforcement. Native threads are set/read back at1, with actual
-readbacks after imports, per native item and final teardown.
+The main EvidenceWriter enforces scientific32MiB, final reserve1MiB and single
+JSON/line4MiB. Qualification has ONE declared scientific file, JUnit XML:
+the literal stdlib launcher sets hard and soft `RLIMIT_FSIZE=33554432` before
+importing pytest and assigns the exact frozen pytest argv. A size-limit signal
+or truncated XML is preserved as first qualification failure, without retry.
+This is a per-file JUnit cap; it does not bound aggregate temporary files.
+The production reserve/single-JSON limits are not claimed for XML. Mathbox's
+separate4MiB combined log cap does not cap JUnit. The predata checker must verify
+this mechanism statically; no enforcement has been executed at freeze. Native
+threads are read back after imports, per point, in the last test and in module
+teardown. Teardown records a JUnit suite property BEFORE its final assertions.
+
+The original contracts producer commit826f7c05 is preserved. This separate
+predata correction binds the actual JUnit cap and bytecode options; all283 node
+IDs,254 native observations, scientific parameters, seeds and allowances remain.
 
 ## Exact tiny scientific population
 
@@ -406,7 +417,7 @@ tests/test_p90a_source_bound_nonflat_veto.py::test_native_final_configuration_re
 Main child argv is fixed as:
 
 ```text
-/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python research/P90a_source_bound_nonflat_veto.py --spec research/P90a_execution_spec.json --output experiments/P90a_dev_veto/run_001/data
+/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python -B research/P90a_source_bound_nonflat_veto.py --spec research/P90a_execution_spec.json --output experiments/P90a_dev_veto/run_001/data
 ```
 
 Runner parent `experiments/P90a_dev_veto/run_001` must be fresh. Source creates

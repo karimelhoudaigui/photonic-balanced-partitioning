@@ -132,8 +132,14 @@
     "positive_accepted": false,
     "all_other_controls": "NOT_RUN"
   },
+  "planned_inherited_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1", "NUMEXPR_NUM_THREADS": "1", "BLIS_NUM_THREADS": "1"
+  },
   "planned_command": [
     "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
     "research/P90a_source_bound_nonflat_veto.py",
     "--spec", "research/P90a_execution_spec.json",
     "--output", "experiments/P90a_dev_veto/run_001/data"

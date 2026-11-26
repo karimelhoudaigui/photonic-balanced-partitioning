@@ -20,8 +20,9 @@
       "native_threads": 1,
       "max_new_log_bytes": 4194304,
       "max_new_scientific_bytes": 33554432,
-      "reserved_final_bytes": 1048576,
-      "single_JSON_or_line_bytes": 4194304,
+      "reserved_final_bytes_PRODUCTION_ONLY": 1048576,
+      "single_JSON_or_line_bytes_PRODUCTION_ONLY": 4194304,
+      "qualification_scientific_cap_scope": "The sole declared scientific result is JUnit XML. A literal stdlib launcher sets hard and soft RLIMIT_FSIZE=33554432 before importing pytest; this bounds that file, not aggregate pytest temporary files. Production EvidenceWriter reserve/single-JSON limits do not apply to XML.",
       "logical_workspace_bytes_PLAN": 268435456,
       "one_control_workspace_bytes_PLAN": 67108864,
       "hard_RSS_claim": false,
@@ -114,6 +115,7 @@
     "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
     "PYTEST_ADDOPTS": "",
     "PYTEST_PLUGINS": "",
+    "PYTHONDONTWRITEBYTECODE": "1",
     "OMP_NUM_THREADS": "1",
     "OPENBLAS_NUM_THREADS": "1",
     "MKL_NUM_THREADS": "1",
@@ -123,10 +125,8 @@
   },
   "planned_command": [
     "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
-    "-B", "-m", "pytest", "-q",
-    "-p", "no:cacheprovider", "-o", "junit_family=legacy",
-    "tests/test_p90a_source_bound_nonflat_veto.py",
-    "--junitxml=research/P90a_dev_veto_preflight/run_001/junit.xml"
+    "-B", "-c",
+    "import resource,runpy,sys;resource.setrlimit(resource.RLIMIT_FSIZE,(33554432,33554432));sys.argv=['pytest','-q','-p','no:cacheprovider','-o','junit_family=legacy','tests/test_p90a_source_bound_nonflat_veto.py','--junitxml=research/P90a_dev_veto_preflight/run_001/junit.xml'];runpy.run_module('pytest',run_name='__main__')"
   ],
   "declared_results": ["research/P90a_dev_veto_preflight/run_001/junit.xml"],
   "runner_binding": {
@@ -145,10 +145,10 @@
   },
   "pre_data_obligations": [
     "Independent checker reviews exact source, tests, API/spec, both contracts, node inventory, all18 project inputs and18 external pins before import/AST/collection/native/test execution.",
-    "Checker verifies all planned IDs and bounded deterministic254-call population statically, JUnit legacy property serialization and scientific32MiB/final1MiB/single4MiB obligations; Mathbox max-output-bytes bounds combined logs only, not JUnit.",
+    "Checker verifies all planned IDs and bounded deterministic254-call population statically, JUnit legacy property serialization and the launcher's pre-pytest hard/soft RLIMIT_FSIZE32MiB for the sole declared JUnit file. Mathbox max-output-bytes bounds combined logs only. Final1MiB reserve/single4MiB JSON limits belong only to the production EvidenceWriter; neither is claimed for XML or aggregate temporary files.",
     "Set all six thread_environment variables to1 before scientific imports; set native configuration to1 and archive readbacks after imports, each native point and final teardown. Portable fixture provenance is preserved even when an assertion fails.",
     "ROOT must separately authorize this one qualification slot. Seal/hash JUnit and runner outputs and independently review every item and raw property before considering a separately authorized main. A passing qualification never authorizes main."
   ],
-  "resource_note": "CODE ONLY; nothing was imported, collected, queried or run to author this contract. One prospective qualification slot CPU60/WALL90/env1/native1/workers1/log4MiB/scientific32MiB/reserve1MiB/single4MiB/logical256MiB PLAN, zero retries. The static predata checker must verify actual result-cap mechanisms; this declaration alone does not enforce them.",
+  "resource_note": "CODE ONLY; nothing was imported, collected, queried or run to author this contract. One prospective qualification slot CPU60/WALL90/env1/native1/workers1/log4MiB/JUnit32MiB enforced by pre-pytest RLIMIT_FSIZE/logical256MiB PLAN, zero retries. Reserve1MiB/singleJSON4MiB are production-only. The static predata checker must verify the exact launcher; this declaration alone is not an execution or compliance observation.",
   "positive_accepted": false
 }
