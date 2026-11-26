@@ -165,12 +165,17 @@ In particular fixed-input flat r2 repaired one-vertex marginals remain
 receiver compiler reads Gcross but still ignores sigma, the same proof
 gives R independent of Y and uniformly distributed at fixed r. Only
 the restriction `mu=mu_(G[T],r)` fails: mu may now depend on the whole
-graph. For example keep the same K4 nonuniform profile and select
-phases 0 or pi by a cross-edge bit, using a fixed graph on T. The
-known exact raw r2 receiving one-edge mean differs by `-8/225`, so
-the two receiving laws differ although G[T] is unchanged. This is
-source-blind but cross-informed. Formula (2), including (3), still
-holds; a changed receiver alone does not restore source steering.
+graph. For example keep the same K4 nonuniform profile and one fixed
+edge on T. On one prespecified target ordering, select phases 0 or pi
+by a cross-edge bit; on all other target orderings use phase0 in both
+graphs. The exact raw r2 receiving one-edge mean difference on the
+marked ordering is `-8/225`. Averaging uniform target marks gives
+`-8/(225*24)=-1/675`, not zero. Thus the two receiving laws differ
+although G[T] is unchanged. This is source-blind but cross-informed.
+Formula (2), including (3), still holds; a changed receiver alone does
+not restore source steering. A port-phase rule independent of target
+labels/graph could instead wash out under uniform target marks, which
+is why this counterexample specifies the marked branch explicitly.
 
 Allowing the splitter profile itself to depend on sigma/source features
 can instead break even marginal uniform removal. That is a different,
