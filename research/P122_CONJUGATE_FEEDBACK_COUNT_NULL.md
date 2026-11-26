@@ -62,9 +62,20 @@ The product mixer on the data rails satisfies
     M_theta=exp(-i theta X) tensor exp(-i theta X),
     M_(-theta)=conjugate(M_theta).                       (3)
 
-Equivalently its one-particle data matrix has two disjoint2x2 blocks with
+Under the intended physical reading, the one-particle data matrix V_theta
+has two disjoint2x2 blocks with
 cos(theta) on the diagonal and -i sin(theta) off diagonal. This also defines
 the mixer on ALL retained Fock sectors, not only the dual-rail code.
+
+Typing caveat: P116 uses the same M symbol for a logical tensor-product
+matrix and a one-particle matrix. They are not the same operator. Precisely,
+V_theta=exp(-i theta X) directsum exp(-i theta X), and its second
+quantization restricts to the stated logical M_theta on the code. The
+ambiguous frozen source must not be executed as if this distinction were
+resolved. Under a literal numerical reading that inserts the4x4 logical
+tensor matrix as a one-particle matrix, one gets a DIFFERENT device; its
+negative-angle matrix is still its conjugate, so the count-null lemma holds
+there too. This proof does not silently repair P116's full instrument.
 
 P116 chooses theta on f=(1,1,0,0) and -theta on every other flag. Equations
 (1)--(3) therefore prove that its all-record adaptive count law is EXACTLY
