@@ -1,5 +1,26 @@
 # Negative Results Log
 
+## 26-Nov-2026: changed incumbent magnetic screen rejected, local ER gain retained
+
+P141780 frozen lines52288d1c and144-line non-author review9df31ff7 FULL read
+before separate authorityed6634e/binding38dc0b7. ONE30.059362s main completes
+58443 rows/45 tasks, raw737321d before reading,17 unchanged inputs/11 pins,
+officialv2PASS. Registered NO_SIGNAL. ER B .0436159055462 > retunedD
+.0399270676206, a genuine local RAW contrast that is NOT deleted. Nevertheless
+a single-pair control0112 gives .0444609443399 and triple0001 .0462737826349.
+RR B2.89446869354 < D3.06904811950. The credited classical frontiers are6/27.
+Only one/two replacements improve ER, so its contrast supplies no high-order
+escape example. BestB selectedJ4 is negative on both graphs, not an all-grid
+theorem. ER's kappa4 boundary prevents a continuous-family conclusion.
+
+All data/caps/seeds remain; no main rerun, held-out/native/Q/QPU gate follows.
+The descriptive reader's actual0.932594s V1 FAIL9efe143 is kept: it included
+JSONL kind in a summary equality. All scientific fields agree. A separate
+V2afbbddb9, fresh output, new authorityd7ce98d and ONE0.959733s read pass
+recorded consistency; output seal7e33852 precedes reading. Only schema/provenance
+changed, no criterion/data rescue. It is primary-author post-seal verification,
+NOT independent physics/optimizer replication. research/P141_FINITE_MAGNETIC_RECEIPT.md.
+
 ## 26-Nov-2026: sparse analytic weak-limit escape also obstructed
 
 P139's119+76-line source/addendum and96+74-line independent reviews pass

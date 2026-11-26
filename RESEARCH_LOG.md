@@ -1979,3 +1979,44 @@ this is not numerical/optimizer replication, priority or an all-strength,
 adaptive, calibrated-hardware or measured-total-cost no-go. See
 reports/P139_ROOT_ANALYTIC_OBSTRUCTION_CHECKPOINT.md. P141's prospective
 finite-strength screen targets the remaining gap; no new graph was drawn.
+
+## P141 changed finite-strength mechanism: sole run negative, full raw preserved
+
+26-Nov-2026. Complete780-line code freeze52288d1c/144-line non-author review
+9df31ff7 FULL read before MAIN authorityed6634e, actual binding38dc0b7/SHA
+1d59d75740e7ae3596ac0a51b5cb077e6e7eafc97380c6651e35fc89c8bcecef.
+ONE30.059362s/exit0 main; original raw737321d sealed BEFORE interpretation.
+All58443 rows/45 tasks,160 whole cuts/140 formulas/16 fields/56 two-hop sums,
+all15 independently retuned profiles and1365 full PNR states complete;17
+project inputs/11 external pins unchanged, officialv2PASS. No main retry.
+
+NO_SIGNAL. Preserve ER B .0436159055462 > D .0399270676206, but single-pair
+0112 .0444609443399 and triple0001 .0462737826349 beat full B. RR bestB
+2.89446869354 < D3.06904811950. Both70-state frontiers already credited6/27.
+ER boundarykappa4 and auxiliary negative selectedJ4 on both graphs give no
+continuous-family theorem. Expost q grouping finds ER only3one/2two improving
+replacements; its contrast does not exemplify a high-order barrier escape.
+Source/copied engine is not independent physical/native replication. The
+registered failure does not open Q/P135/native, held-out or hardware gates.
+
+The post-seal primary-author reader was separately frozen/reviewed. Static
+field-domain coverage was corrected before FIRST read. That actual V1 read
+FAILED0.932594s at the full-summary equality after58443 rows; failure/logs
+sealed9efe143 before inspection. ROOT verifies the ONLY difference is kind,
+not scientific values. Original reader/failure immutable. Separate V2afbbddb9
+191l and69l non-author reviewd873c0a1 preserve all math/RAW/caps, strip only
+kind, use fresh output/provenance and NEW authorityd7ce98d. ONE0.959733s/exit0
+read, output seal7e33852 before interpretation: RECORDED_CONSISTENCY_PASS,
+140 cuts/540 totals/30 maxima/1365 PNR/17+11 descriptors and six raw files
+unchanged. Independent physics/optimizer replication flags remain false.
+Full separate receipt research/P141_FINITE_MAGNETIC_RECEIPT.md. Actual GitHub
+b289f8b CI1559PASS19.97s/602 unchanged historical files/existing paper build.
+
+P142131+92 source/review and P143103+103 source/review FULL read at ROOT.
+The triad identities constrain moments/CF rate/conjugation but leave useful
+graph sign incomplete; no new pilot. The common-spatial-effect weak theorem
+covers fixed finite tag-blind instruments, not finite-strength/all-cost or
+across-attempt algorithms. P144115l/three exact primary works plus ROOT spot
+checks establish known ingredients; composite priority stays UNVERIFIED.
+See ROOT checkpoints P142/P143 and source-scopeP144. No paper/main/QPU edit.
+CLAIM-042 and the reproducible-positive/full-cost/hardware objective remain OPEN.

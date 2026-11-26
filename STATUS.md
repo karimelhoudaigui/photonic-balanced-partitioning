@@ -1,5 +1,20 @@
 # Research status — active discovery branch
 
+Latest26-Nov-2026: P141's sole new finite magnetic screen is COMPLETE and
+NO_SIGNAL, raw737321d sealed before interpretation.58443 rows/45 tasks,
+exact engine and officialv2PASS. ER bestB .0436159 exceeds D .0399271, but
+one coherent pair .0444609 and a triple .0462738 already exceed full B.
+RR bestB2.89447 loses to D3.06905. All70 candidates/frontier are credited
+classically. No all-strength or optimizer-positive conclusion follows.
+The first descriptive reader really failed on a kind-wrapper mismatch;
+failure9efe143 is preserved. A separately reviewed/schema-only V2 now passes
+all recorded consistency, including140 cuts/30 maxima/1365 PNR/17+11 pins,
+with the six raw files unchanged; this is NOT independent physical replication.
+See research/P141_FINITE_MAGNETIC_RECEIPT.md. P143's independently reviewed
+finite-instrument weak-window obstruction and P142's triad scope identities
+are accepted under their explicit hypotheses; historical priority is unverified.
+CLAIM-042 remains OPEN. No held-out positive, QPU gate or manuscript revision.
+
 26-Nov-2026 update: P134's sole four-photon discriminator is complete and
 negative in its registered grid. Original raw633defe precedes interpretation;
 9441 rows/8131 exact comparison checks pass,17 project inputs and11 external

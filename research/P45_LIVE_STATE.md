@@ -360,11 +360,26 @@ frontiers are credited (h6/27); ER optimum is at grid boundarykappa4.
 Selected J4 is negative on both graphs; no all-grid/all-strength sign theorem.
 Records13,988,539 bytes, within original48MiB science cap. No seed/cap/grid
 rescue, native/Q/P135 follow-up or held-out opening. Paper/main/QPU frozen.
-ROOT full streamed recorded consistency interpretation/SEPARATE receipt
-is PENDING. P66 authors a small post-seal reader in its isolated worktree;
-P94 is non-author reviewer, ROOT also reads before a distinct bounded
-interpretation authorization. It is not independent physical/optimizer
-replication. Numerical worker is FREE; this status is not run authority.
+ROOT's direct streamed read covered all58443 records/56387 stored comparison
+records, all deltas zero. Formal descriptive reader finaledd472a2 was fully
+reviewed and authorized2481e0d, then ran ONCE0.932594s/exit1. Its FAILURE,
+metadata/logs are sealed9efe143 before interpretation. It reached58443 rows
+then compared JSONL graph_decision including wrapper key kind against the
+summary without kind. ROOT confirms the two cases differ ONLY by that key,
+not any scientific field. No main/data change or rerun follows this reader bug.
+First report reports/P141_validation_review/recorded_consistency.json remains
+IMMUTABLE and FAIL. Separate V2afbbddb9/191l and69l reviewd873c0a1 were FULL
+reconciled/read by ROOT, then NEW authorityd7ce98d precedes ONE0.959733s/exit0
+read. Its processed output/logs/metadata are sealed7e33852 BEFORE reading:
+RECORDED_CONSISTENCY_PASS. All58443 rows,140 cuts/540 totals/30 maxima/
+1365 PNR/17+11 descriptors and six raw files before/after agree. Only wrapper
+kind/provenance/output path changed; no scientific criterion was relaxed.
+Primary-author post-seal read is NOT independent physical/optimizer replication.
+Complete SEPARATE receipt P141_FINITE_MAGNETIC_RECEIPT.md is now present.
+P141 cycle is CLOSED_NEGATIVE in its registered grid. No main/reader rerun,
+conditional native/Q/P135, held-out or QPU authority. Numerical worker FREE.
+The program target remains OPEN; only a genuinely changed, costed mechanism
+with a new falsifiable contract can justify another scientific cycle.
 P143103-line source82682862 and103-line non-author83d06aee now pass FULL
 ROOT review: a common tag-blind finite instrument with analytic deterministic
 D null has a local retuned-D utility obstruction. All helpers/tags and the
@@ -384,14 +399,17 @@ fresh/held-out contexts and independent replication before any QPU step.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 
-Last confirmed pushed ROOT165d8a0f937d4b819d66743e2337be663edca296 includes
-accepted P139/P140 and the prospective P141 card/CODE-ONLY authority.
-Original source/review refsf7c9b7c5/cc615f5d/6cd435df were pushed atomically.
-Actual GitHub run45870519777/job140084414781 succeeds1559PASS22.46s,
+Last CI checkpoint with a stored job-log receipt is ROOTb289f8b15686b96ea87466b66a32914e0135da13; it includes
+reviewed P141 source/binding/SEALED sole raw and accepted P142/P143/P144 scopes.
+Original source/review refs811a1054/9a4453f6/52288d1c were pushed atomically.
+Actual GitHub run45874888857/job140099351083 succeeds1559PASS19.97s,
 602-file preservation and existing manuscript build/reference checks. Remote
 main remains27443954; local paper bytes match that base, including PDF hash
-above. Receipt ../reports/P139_validation_review/ci_success.json. Later
-metadata/source-only commits are not silently covered by that CI revision.
+above. Receipt ../reports/P141_validation_review/ci_success.json. Later
+reader/correction/receipt commits are not silently covered by that stored CI
+revision. The publication branch is research/p45-positive-discovery; query
+its remote head/Actions for the latest pushed revision and CI, rather than
+mistaking this intentionally pinned receipt for a moving HEAD claim.
 
 ## New scoped theory
 
