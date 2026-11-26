@@ -1,0 +1,298 @@
+{
+  "schema_version": 2,
+  "claim_id": "P134-RATIONAL-RECEIVER-FINITE-GRID-DISCRIMINATOR",
+  "repository": {
+    "commit": "12a4aee162ce704734f095ed5439a30d93c6b6a5",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P134_rational_frame_discriminator.py",
+    "--binding",
+    "research/P134_execution_binding.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact rational P133 receiver instrument: two fixed DEV n24 contexts, r6/k4, 2x4 grid, all15 receiver CF sets and all15 source profiles, including14 independently grid-retuned proper groups; raw CF/collision/dump and four-cycle utility; two hands and one fixed full715-bin B normalization.",
+    "inputs": [
+      "Original P133 f0930074 and P134 card c9cbb758 kept unchanged",
+      "ROOT checkpoint9ef2b3d prospectively supersedes proposed CPU60/wall90 with CPU120/wall180 before all science",
+      "ER/RR topology seeds1341001/2, integer weights1342001/2, independent marks1343001/2; no pre-execution draw",
+      "Beta outer0,1/2 and kappa inner0,1/2,1,2;15 proper-plus-B profiles and all15 receiver four-subsets",
+      "Actual static project/source/population/TEMPLATE/checkpoint SHA/byte closure and actual external interpreter/random/NetworkX descriptors in a distinct active binding; no old raw-data input"
+    ],
+    "coefficient_domain": "Exact Q(i), represented by two Fraction coordinates; all physical matrices, inverses, DP/Ryser permanents, species convolution/path buckets, factorial normalization, costs/probabilities/four-cycles/envelopes are rational/integer. NetworkX graph generation uses its pinned ordinary topology RNG convention, including fixed literal0.4; edge weights and all subsequent scientific arithmetic are exact. No Python complex, NumPy/SciPy/Perceval scientific arithmetic.",
+    "conventions": "Four CF photons in LAST4 of10 modes. T=2F(I+FdaggerF)^-1; occupied columns[T;-D]. For profiles, disjoint CF receiver allocation among species equals labeled-path/color buckets. All-signal product of block-Gram permanents, collision=all-signal-CF, dump=1-all-signal. FullPNR classification ANYdump first. All rejected records hold the SAME incumbent. S0 size8 is ONLY an imbalanced algebra helper, never a feasible candidate. All15 twelve-vertex lifts/prototype costs credited. Four-cycle relative composition sigma o rho^-1, no clipping or double-transposition relabeling.",
+    "bounds": {
+      "CPU_seconds": 120,
+      "wall_seconds": 180,
+      "workers": 1,
+      "threads": 1,
+      "FSIZE_bytes": 16777216,
+      "scientific_combined_bytes": 16777216,
+      "record_bytes": 15728640,
+      "final_results_combined_bytes": 1048576,
+      "log_bytes": 4194304,
+      "science_plus_log_bytes": 20971520,
+      "logical_memory_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "failed_retries": 0,
+      "graph_contexts": 2,
+      "used_MT_streams": 6,
+      "grid_points_per_graph": 8,
+      "matrix_contexts": 18,
+      "source_profiles": 15,
+      "proper_profiles": 14,
+      "receiver_CF_sets": 15,
+      "record_rows_nominal": 9441,
+      "subpermanent_rows": 3780,
+      "Gram_permanent_rows": 270,
+      "CF_profile_comparisons": 4050,
+      "four_cycle_rows": 270,
+      "profile_totals": 270,
+      "full_PNR_points": 715,
+      "whole_cut_calls": 34,
+      "incremental_cost_formulas": 30,
+      "registered_tasks": 25,
+      "permanent_max_size": 4,
+      "inverse_max_size": 4,
+      "photon_max": 4,
+      "full_modes": 10,
+      "photon_RNG_draws": 0,
+      "native_calls": 0,
+      "FPRAS_calls": 0
+    },
+    "non_claims": [
+      "No evaluation at code freeze or authority inherited from this TEMPLATE",
+      "No optimizer advantage: all15 candidates already scored and frontier credited",
+      "No continuous retuning/global-family theorem, held-out or independent replication, practical timing or device calibration",
+      "No photon sampling/FPRAS/native/QPU/manuscript work; four-cycle sign or finite-grid envelope alone does not establish unique causality or goal completion"
+    ]
+  },
+  "randomness": {
+    "graph_only": true,
+    "generator": "CPython random.Random MT19937 through pinned NetworkX/Python conventions; explicit backend=networkx on both factories and empty algos/generators/classes backend priorities required before draws (ROOT prefreeze reproducibility clarification)",
+    "topology_seeds": [
+      1341001,
+      1341002
+    ],
+    "weight_seeds": [
+      1342001,
+      1342002
+    ],
+    "mark_seeds": [
+      1343001,
+      1343002
+    ],
+    "photon_RNG_draws": 0,
+    "native_draws": 0,
+    "used": true,
+    "seed": {
+      "topology": [
+        1341001,
+        1341002
+      ],
+      "weights": [
+        1342001,
+        1342002
+      ],
+      "marks": [
+        1343001,
+        1343002
+      ]
+    }
+  },
+  "run": {
+    "started_at": "2026-11-26T16:51:28.056302+00:00",
+    "runtime_seconds": 6.411867,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 180.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 120,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "reports/P133_P134_ROOT_DESIGN_CHECKPOINT.md",
+    "reports/P134_ROOT_CODE_REVIEW.md",
+    "reports/P134_ROOT_MAIN_AUTHORIZATION.md",
+    "reports/P134_validation_review/external_pins.json",
+    "requirements-research-lock.txt",
+    "research/P133_ADVERSARIAL_COST_ASSESSMENT.md",
+    "research/P133_INDEPENDENT_REFLECTION_REVIEW.md",
+    "research/P133_RATIONAL_RECEIVER_REFLECTION.md",
+    "research/P134_FIRST_DISCRIMINATOR_DESIGN.md",
+    "research/P134_INDEPENDENT_DESIGN_REVIEW.md",
+    "research/P134_INDEPENDENT_SOURCE_REVIEW.md",
+    "research/P134_POPULATION.md",
+    "research/P134_contract_TEMPLATE.json",
+    "research/P134_rational_frame_discriminator.py",
+    "research/P134_execution_binding.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "reports/P133_P134_ROOT_DESIGN_CHECKPOINT.md",
+      "sha256": "540ec8c38e04e925daf94a8932a42c768bc8c115542ee558011efbacf96e9728",
+      "sha256_after": "540ec8c38e04e925daf94a8932a42c768bc8c115542ee558011efbacf96e9728"
+    },
+    {
+      "path": "reports/P134_ROOT_CODE_REVIEW.md",
+      "sha256": "86403d0d248a3306e91f9057b5903241c18dbe7281c7463df57a29301827e0fc",
+      "sha256_after": "86403d0d248a3306e91f9057b5903241c18dbe7281c7463df57a29301827e0fc"
+    },
+    {
+      "path": "reports/P134_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "66599a3674d8297e2b2a9f1c37cfcb2dab5e2b507f171e409f34be7971f5cf0e",
+      "sha256_after": "66599a3674d8297e2b2a9f1c37cfcb2dab5e2b507f171e409f34be7971f5cf0e"
+    },
+    {
+      "path": "reports/P134_validation_review/external_pins.json",
+      "sha256": "20889c1f14bf33be8878781857417075dd1b5435a5744b46203af0a23f8f1260",
+      "sha256_after": "20889c1f14bf33be8878781857417075dd1b5435a5744b46203af0a23f8f1260"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P133_ADVERSARIAL_COST_ASSESSMENT.md",
+      "sha256": "c11a10282dde0e9e41bb0a8529fc353cf996739dc89145f062d02843ee5e3cd1",
+      "sha256_after": "c11a10282dde0e9e41bb0a8529fc353cf996739dc89145f062d02843ee5e3cd1"
+    },
+    {
+      "path": "research/P133_INDEPENDENT_REFLECTION_REVIEW.md",
+      "sha256": "8fa000b07d38e44a13cbbe5e19778db7d1f905b5d57c55d8ee6856251e287b7d",
+      "sha256_after": "8fa000b07d38e44a13cbbe5e19778db7d1f905b5d57c55d8ee6856251e287b7d"
+    },
+    {
+      "path": "research/P133_RATIONAL_RECEIVER_REFLECTION.md",
+      "sha256": "56720652d4dbf7c2053ff5599fcfa1bbb1f88e632a3256ee8b9ece5c9735c98d",
+      "sha256_after": "56720652d4dbf7c2053ff5599fcfa1bbb1f88e632a3256ee8b9ece5c9735c98d"
+    },
+    {
+      "path": "research/P134_FIRST_DISCRIMINATOR_DESIGN.md",
+      "sha256": "318244b4cf840efd137671469e1c519fac09321779905276a7125d9ecbc23541",
+      "sha256_after": "318244b4cf840efd137671469e1c519fac09321779905276a7125d9ecbc23541"
+    },
+    {
+      "path": "research/P134_INDEPENDENT_DESIGN_REVIEW.md",
+      "sha256": "424bdab479dbcb00c44650b3b73e0b6a660211f4f0aded37bd04fb9141f539c3",
+      "sha256_after": "424bdab479dbcb00c44650b3b73e0b6a660211f4f0aded37bd04fb9141f539c3"
+    },
+    {
+      "path": "research/P134_INDEPENDENT_SOURCE_REVIEW.md",
+      "sha256": "e759ce08976e3ec80b6bc7e41861080f732d808a5705a87624b74c2c191a03a7",
+      "sha256_after": "e759ce08976e3ec80b6bc7e41861080f732d808a5705a87624b74c2c191a03a7"
+    },
+    {
+      "path": "research/P134_POPULATION.md",
+      "sha256": "182499dfc7170a4c048ce219ca3f0a66c12326cdbc5a8c9833d38da17eb6dda8",
+      "sha256_after": "182499dfc7170a4c048ce219ca3f0a66c12326cdbc5a8c9833d38da17eb6dda8"
+    },
+    {
+      "path": "research/P134_contract_TEMPLATE.json",
+      "sha256": "fa588fa6815d5d3989e90efdeb59b040c060983aa63aa0eb3613ac3f842e02ce",
+      "sha256_after": "fa588fa6815d5d3989e90efdeb59b040c060983aa63aa0eb3613ac3f842e02ce"
+    },
+    {
+      "path": "research/P134_rational_frame_discriminator.py",
+      "sha256": "0f9dce56cecac9d7701953577adce1d5bf0c6cc2807083eca45c3ba47f1856f3",
+      "sha256_after": "0f9dce56cecac9d7701953577adce1d5bf0c6cc2807083eca45c3ba47f1856f3"
+    },
+    {
+      "path": "research/P134_execution_binding.json",
+      "sha256": "8b4f5df4b9daaa4217ce680a99337988863edbbc3cf11e1688a44f5b9ff7d3bd",
+      "sha256_after": "8b4f5df4b9daaa4217ce680a99337988863edbbc3cf11e1688a44f5b9ff7d3bd"
+    }
+  ],
+  "output_directory": "research/P134_rational_frame_main/run_001",
+  "declared_results": [
+    "research/P134_rational_frame_main/run_001/data/records.jsonl",
+    "research/P134_rational_frame_main/run_001/data/summary.json",
+    "research/P134_rational_frame_main/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P134_rational_frame_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P134_rational_frame_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P134_rational_frame_main/run_001/data/records.jsonl",
+      "sha256": "25f557295066a5b81007221a51e4b68417bc04953478cdee6e409a020d5ec7d3",
+      "kind": "result"
+    },
+    {
+      "path": "research/P134_rational_frame_main/run_001/data/summary.json",
+      "sha256": "749b040fe8d77082134984c88bde8d75c5c638e53d2035bfd30242c6eb862b4d",
+      "kind": "result"
+    },
+    {
+      "path": "research/P134_rational_frame_main/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
