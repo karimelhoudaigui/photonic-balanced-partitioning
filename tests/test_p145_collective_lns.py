@@ -7,7 +7,7 @@ import importlib.util
 from importlib import metadata
 from itertools import combinations
 import json
-from math import comb, factorial, fsum, pi, sqrt
+from math import comb, factorial, fsum, isfinite, pi, sqrt
 from pathlib import Path
 import sys
 import pytest
@@ -107,8 +107,13 @@ def test_independent_perceval_literal_dft6_all56(probe, record_property):
             reference = complex(backend.prob_amplitude(pcvl.BasicState(n))); rows = [j for j, count in enumerate(n) for unused in range(count)]; divisor = 1
             for count in n: divisor *= factorial(count)
             amplitude = probe.permanent_dp(tuple(tuple(u[j][a] for a in (0, 1, 2)) for j in rows))/sqrt(divisor)
-            raw.append({"n": n, "ours": actual[n], "reference_real": reference.real, "reference_imag": reference.imag, "prob_error": abs(actual[n]-abs(reference)**2), "amp_error": abs(amplitude-reference)})
+            values = {"ours": actual[n], "reference_real": reference.real, "reference_imag": reference.imag,
+                      "amplitude_real": amplitude.real, "amplitude_imag": amplitude.imag,
+                      "prob_error": abs(actual[n]-abs(reference)**2), "amp_error": abs(amplitude-reference)}
+            finite = all(isfinite(value) for value in values.values())
+            raw.append({"n": n, "finite": finite, **{key: value if isfinite(value) else repr(value) for key, value in values.items()}})
+            assert finite, "Nonfinite native/model amplitude or error; offending point preserved in P145_native_raw"
             assert int(xq.Config.compute_max_thread_count) == 1
     finally:
-        record_property("P145_native_raw", json.dumps(raw)); record_property("P145_native_points", len(raw)); record_property("P145_native_threads", int(xq.Config.compute_max_thread_count))
-    assert len(raw) == 56 and max(r["prob_error"] for r in raw) < 1e-10 and max(r["amp_error"] for r in raw) < 1e-10
+        record_property("P145_native_raw", json.dumps(raw, allow_nan=False)); record_property("P145_native_points", len(raw)); record_property("P145_native_threads", int(xq.Config.compute_max_thread_count))
+    assert len(raw) == 56 and all(r["finite"] for r in raw) and max(r["prob_error"] for r in raw) < 1e-10 and max(r["amp_error"] for r in raw) < 1e-10
