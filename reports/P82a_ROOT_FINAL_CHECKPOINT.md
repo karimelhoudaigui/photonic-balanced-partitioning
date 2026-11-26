@@ -87,6 +87,15 @@ or real QPU call was made. Logs:
 These limits and fixture repetitions are separate from scientific main
 resource budgets. No hard RSS or measured hardware-latency claim is made.
 
+GitHub head1161cc25105a7f89a133ff6d8d89b045a0473c7c is separately observed
+GREEN from actual job logs: run45743052582/job139652466063 records
+1236PASS20.04s and602 historical scientific files unchanged. Receipt:
+[ci_final_success.json](P82a_integration_validation/ci_final_success.json).
+ROOT also compares all24 tracked manuscript files with delivered main2744395:
+no changed/missing/additional tracked paper files; main remains2744395.
+The local preservation receipts are next to the integration logs. New P90a
+implementation remains unqualified and was excluded from this push and CI.
+
 The next mechanism is P90a's prospective source-aware/nonflat compiler,
 not a retroactive repair of this experiment. All prior negatives remain
 valid in their original scopes and every raw output remains unchanged.
