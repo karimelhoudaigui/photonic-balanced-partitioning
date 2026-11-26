@@ -1,7 +1,9 @@
 # Research Log
 
-Latest continuation: P90a source-aware/nonflat DEV screen independently
-audited NO_POSITIVE_SIGNAL; P94 changed mechanisms under analytical review.
+Latest continuation: P90a independently audited NO_POSITIVE_SIGNAL; P96
+independently reviewed classical theorem plus exact/native finite validation
+PASS; P98 whole-law hierarchy proved under a certified trace gap. Positive
+graph optimization target remains OPEN; higher-degree experiment CODE ONLY.
 Current evidence:
 reports/P82a_ROOT_FINAL_CHECKPOINT.md,
 reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md and
@@ -1611,3 +1613,34 @@ This rejects an automatic benefit, not every tail policy or other CV.
 No new optimizer pilot is justified; goal OPEN and paper/main/QPU frozen.
 Latest confirmed remote ROOTed7d24f includes P95/P96 theory+original refs;
 unqualified local code is not pushed to CI.
+
+
+## P96 completed finite validation and P98 accepted hierarchy
+
+P96 main originalsource0eabdad, executionad8fd53, raw240c7e5 BEFORE reading:
+FINITE_VALIDATION_PASS,12valid+1outside-domain case,167 exact bins,
+159 deterministic full-PNR Perceval amplitudes/28 unconditional marginals.
+Initial nativeconfig0 is preserved;configured/import/final and all159 before/
+after readbacks1. Main35 inputs unchanged, officialv2PASS. No RNG/graph/QPU.
+Independent scalar checker d1a3875 executes once on sealed raw, audit ea84490
+BEFORE reading,43 inputs unchanged/v2PASS. All567 records and159 amplitudes
+checked by independent pair-moment/subset-DP/scalar-Gram arithmetic; max
+probabilitydifference2.22e-16,marginal/Gram1.4433e-15. Separate receipt2c1d712.
+The11 pure qualification and corrected1559 full tests are separately receipted.
+First integration FSIZE4MiB fixture-copy failure remains preserved; only its
+wrapper changed to32MiB for existing17MiB P33 data, no scientific cap change.
+
+P98 source8a01023f160l, independent audit77811d2a97l and bounded primary
+check9cad69d5140l fully read/accepted at ROOT. Signed factorial truncation
+plus proved positive repair yields whole-lawTV<=2^s(s+1)!e_(s+1)<=mu(2mu)^s.
+Fixed certified rho<1/2 and fixed epsilon give polynomial dimension work;
+inversepoly accuracy/polynomial transcripts generally quasi-polynomial.
+Exact rational/fair-bit construction is stated with encoded rational epsilon;
+a changed physical T requires a raw-law xi certificate. No actual Lucy
+certificate, PRNG implementation, measured speed or optimizer result follows.
+Established inversion/lossy-correlation ingredients are attributed; exact
+combined priority remains UNVERIFIED, not newly discovered by failed search.
+A bounded exact-only hierarchy/negative-coefficient experiment is CODE ONLY,
+including one explicit16-source rank-one algebraic law. No native16-photon
+calculation, optimizer, graph, RNG or QPU is authorized by that design.
+Reports P96_ROOT_FINITE_CHECKPOINT.md and P98_ROOT_HIERARCHY_CHECKPOINT.md.

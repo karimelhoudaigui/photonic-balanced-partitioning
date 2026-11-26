@@ -4,7 +4,7 @@ Earlier checkpoints are preserved byte-for-byte in
 [P45_LIVE_HISTORY_BEFORE_P90a.md](P45_LIVE_HISTORY_BEFORE_P90a.md), including
 the prior P79 history pointer. Historical pending statuses are not current.
 
-## Current: P90a independently audited negative; P94 changed-route analysis
+## Current: P96 finite validation accepted; P98 hierarchy and changed routes
 
 **CLAIM-042 OPEN. No reproducible positive optimizer result, held-out
 confirmation or real QPU validation exists. paper/, main and QPU stay frozen.**
@@ -133,22 +133,28 @@ Primary check8b5e9120/124lines authenticates known moment inversion/lossy
 simulation ingredients; exact combined priority remains UNVERIFIED.
 See ../reports/P96_ROOT_THEORY_CHECKPOINT.md. No public mean is a calibration
 and the hypothetical12*.02 example is not a measured bound.
-The rational-PNR/159-native-point validation is CODE ONLY. Original five-file
-freezeac67650 (550lines) is integrated97eb7c0; ROOT read all source/tests/
-contracts/population and froze reviewe925879. P62's independent full read
-found a predata FAILURE-DIAGNOSTIC gap: nonfinite amplitude serialization,
-thread assertions and construction guards can lose actual rejected values.
-Nominal physics is coherent and no false PASS is identified, but the raw
-failure promise needs correction BEFORE qualification. Author is fixing only
-those guards in the isolated checkout; prospective pure tests9->11, physical
-167 exact rows/159 native points/28 marginals and all tolerances/caps unchanged.
-NO import, AST, collection, qualification, native run or active binding exists.
-Read exact new source/diff and independent addendum before separately
-authorizing qualification; never treat original9-test plan as an execution.
-Main needs its later bound proof/qualification receipt and ROOT authorization.
-No changed-route optimization pilot is yet justified. Last confirmed remote
-ROOTed7d24f plus original producer/reviewer theory refs are saved on GitHub.
-Local unqualified P96 code and later records are NOT pushed to CI yet.
+The original codeac67650/550lines and its E1 diagnostic limitation remain
+preserved. Predata correction0eabdad fixed rejected-value retention without
+changing167/159/28, physical matrices/tolerances/caps; both full/delta reviews
+were read. ONE pure11PASS rawbd41d80 BEFORE reading; separate receipt.
+Full suite first failed in18 publication fixture setups because ROOT's4MiB
+regular-file cap blocked existing17MiB P33 copies. Rawfae05f1 is retained;
+only a separate integration wrapper uses32MiB. Corrected1559PASS44.61s,
+raw98c71a6 BEFORE reading. Main's scientific8MiB/CPU60/WALL90 never changed.
+
+Active35-input bindingSHA4925b92b was separately authorizedad8fd53. ONE main
+completed26.798858s/exit0:12valid+1physical outside-domain case,167 exact bins,
+159 deterministic Naive amplitudes and28 unconditional marginals, all zeros/
+losses/collisions retained. Raw240c7e5 BEFORE reading. A different ROOT scalar
+auditor d1a3875 then checked all567 records, pair moments, full occupation
+coverage and subset-DP Fock amplitudes,0.077969s/exit0, raw ea84490 BEFORE
+reading.35/43 input hashes unchanged, both officialv2PASS. Max probability
+discrepancy2.22e-16, marginal/Gram1.4433e-15. No native/optimizer replay.
+Separate receipt2c1d712 and ../reports/P96_ROOT_FINITE_CHECKPOINT.md accepted.
+The theorem is not inferred from real fixtures; no physical replication,
+categorical RNG sampler, hardware certificate, novelty or graph advantage.
+Numerical worker FREE. Last confirmed remote ROOTed7d24f plus original theory
+refs is saved; current qualified code/data are ready for the next GitHub push.
 
 P97card457e49c, complement-hypothesis correction35e1cf9 (151lines), is fully
 read by ROOT: factorial interpolation isolates N>=3 residuals, but does not
@@ -157,6 +163,22 @@ low-sector frontier, the same interpolant is identically0 for actual strict
 improvement, so that proposed direct-progress CV is rejected. Other CVs and
 tail search remain OPEN. Shared ROOT/P66 derivation is not a fresh independent
 audit or novelty certificate. No P97 numerical pilot is justified.
+
+P98source8a01023f/160lines, independent audit77811d2a/97lines and bounded
+primary-check9cad69d5/140lines are fully read/accepted at ROOT. Signed
+factorial truncation plus positive repair gives whole-law
+TV<=2^s(s+1)!e_(s+1)(c)<=mu(2mu)^s under the stated CF/passive model.
+Known explicit T and certified mu<=rho<1/2 yield constant-error polynomial
+dimension cost; inverse-polynomial error/polynomial transcripts generally
+need quasi-polynomial work. Exact Q(i)/encoded rational epsilon/ideal-bit
+costs are proved; uncertain physical transfer requires a RAW-LAW xi certificate.
+No public mean, relative rare-event guarantee or matched-time no-go follows.
+Exact combined priority stays UNVERIFIED. See ../reports/P98_ROOT_HIERARCHY_CHECKPOINT.md.
+The higher-degree exact-only validation is CODE ONLY in P66's isolated tree:
+13 fixed P96 cases/all degrees plus one explicit16-source rank-one law to
+force negative coefficients/repair. Planned68 case-degree pairs/1054 dense
+coefficients; no native16-photon simulation, graph, RNG or QPU. Freeze/review/
+separate authorization still required; no execution yet.
 
 ## New scoped theory
 

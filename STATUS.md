@@ -7,18 +7,25 @@ The independent frozen checker agrees on all29478 scored candidates and
 7790 FAST checkpoints; raw audit0c9a8f1 precedes separate receipt7b1c3fd.
 This validates recorded consistency, not Born probabilities or independent
 physical replication. See research/P90a_INDEPENDENT_RECORDED_AUDIT_RECEIPT.md.
-The integrated local suite passes1548 tests; GitHub535b778 also passes1548
-in14.94s and preserves602 historical files. P94's parity/code identities
+The integrated local suite now passes1559 tests/44.61s after P96's11 pure
+fixtures. The first integration-only file-cap error is preserved and fixed;
+no scientific cap or input changed. P96's sole main passes167 exact bins,
+159 full-PNR Perceval amplitudes and28 unconditional marginals, raw240c7e5
+before reading. A separately frozen scalar auditor checks all567 records
+and159 amplitudes by subset DP, raw ea84490 before reading: PASS. Both v2
+manifests validate; this is finite physics/arithmetic evidence, not a positive
+graph optimizer or independent hardware replication. P94's parity/code identities
 are now independently audited: a strong classical mean oracle and HOM-pair
 support theorem defeat its proposed expressivity advantage. Direct prior art
 is authenticated; no novelty is claimed. P95's filter expansion and bounded
 remainder are independently audited, with no favorable optimization sign
-and finite-strength search still open. P96's positive column-budget surrogate
-is independently proved in its exact trace/CF/passive-vacuum model, with
-combined priority unverified; its small exact/native validation is CODE ONLY.
-Both code readers found coherent nominal physics, but rejected-value
-diagnostics need a predata correction before any qualification. No P96 test
-or native execution has occurred. P97's factorial-residual estimator does
+and finite-strength search still open. P96's independently proved classical
+surrogate now has its finite validation; combined priority stays unverified.
+P98's whole-law hierarchy is independently proved for explicit CF/passive-
+vacuum T with a certified fixed trace gap below1/2; fixed-error dimension cost
+is polynomial, inverse-polynomial/transcript error generally quasi-polynomial.
+It supplies no matched-wall-time no-go or actual Lucy certificate. Its bounded
+higher-degree validation is CODE ONLY. P97's factorial-residual estimator does
 not supply an optimization mechanism beyond the already paid low frontier.
 No positive optimizer pilot is justified yet. P82a's earlier finite audit remains valid
 with its original INCONCLUSIVE_FAST_ELIGIBILITY, not a quantum advantage.
@@ -26,7 +33,8 @@ P91's conditional spectral-loss
 replacement and P92's calibration counterexample are accepted in their exact
 scopes. See reports/P82a_ROOT_FINAL_CHECKPOINT.md,
 reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md,
-reports/P90a_ROOT_FINAL_CHECKPOINT.md and research/P45_LIVE_STATE.md.
+reports/P90a_ROOT_FINAL_CHECKPOINT.md, reports/P96_ROOT_FINITE_CHECKPOINT.md,
+reports/P98_ROOT_HIERARCHY_CHECKPOINT.md and research/P45_LIVE_STATE.md.
 
 Historical P79 checkpoint: P79's sole six-source finite raw-PNR validation
 passes, and P80's rational/finite-bit sampler and P81's dual-rail stability

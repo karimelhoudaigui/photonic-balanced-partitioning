@@ -348,3 +348,22 @@ Nonlinear decoders/quenches can change that premise and require paid endpoints.
 Sourcef145aca1, independent proof6e2da25e, ROOT acceptance in
 reports/P95_ROOT_FILTER_CHECKPOINT.md. No experiment ran, and finite-strength
 filters remain open at the nontrivial optimization/cost implication.
+
+
+## P97 direct-progress control-variate shortcut: exact analytical veto
+
+After paying/crediting all0/1/2-sector decoded feasible candidates, let b be
+their best known cost and h=1_(f<b) or(b-f)_+. Every low-sector h is zero,
+hence its own factorial interpolantI2h is identically zero and residual=h.
+That particular CV does not reduce variance for actual improvement beyond
+the paid frontier. It does not rule out all other CVs or a better tail policy.
+
+For raw cost estimation, coefficient1 can even increase variance: K3 rank-one
+alpha1/6 has Var(f)=65F²/324 and Var(residual)=35F²/81 for the displayed
+bounded artificial statistic. A diagonal no-interference channel can also
+produce a residual; a preselected favorable tail partition is immediately
+found by a classical control and cannot count as quantum discovery.
+Shared ROOT/P66 derivation in457e49c with35e1cf9 explicit unweighted-graph
+complement restriction; full151l read at ROOT, no experiment or pilot.
+The graph optimizer goal remains OPEN; P96's successful classical-surrogate
+validation and P98's theorem do not become positive quantum benchmarks.
