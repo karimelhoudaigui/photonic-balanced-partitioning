@@ -313,13 +313,13 @@ they do not prove useful four-input optimization or a new physical class.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 
-Last confirmed pushed ROOT4f5d14bad7fc05c07d920082f2e622f09670cbee includes
-qualified P107/P110/P113 code/raw and accepted theory through P126/P129.
-Original source/review refs6bee40d8/f5d1d519/194be199 were pushed atomically.
-Actual GitHub run45852151637/job140021005525 succeeds1559PASS14.68s,
+Last confirmed pushed ROOT90c5cccd50a3990abf7c33211f7dc3a440a8a730 includes
+qualified P130/P131 code/raw and accepted theory through P133/P134 design.
+Original source/review refs79f39dea/aedae480/c9cbb758 were pushed atomically.
+Actual GitHub run45858417790/job140042768741 succeeds1559PASS17.53s,
 602-file preservation and existing manuscript build/reference checks. Remote
 main remains27443954; local paper bytes match that base, including PDF hash
-above. Receipt ../reports/P129_validation_review/ci_success.json. Later
+above. Receipt ../reports/P131_validation_review/ci_success.json. Later
 metadata/source-only commits are not silently covered by that CI revision.
 
 ## New scoped theory
