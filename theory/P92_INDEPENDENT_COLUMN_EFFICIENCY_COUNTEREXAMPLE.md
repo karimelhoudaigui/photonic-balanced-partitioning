@@ -74,7 +74,7 @@ their lower index,
 
     1_(n>=4) >= binom(n,4)-4 binom(n,5).                  (2)
 
-For n<=3 both sides vanish. At n4 the right side is 1; at n5 it is
+For n<=3 both sides vanish. At n=4 the right side is 1; at n=5 it is
 `5-4=1`. For n>=6 it equals `binom(n,4)(21-4n)/5`, which is negative.
 Thus (2) is a pointwise inequality on the entire raw count alphabet.
 
