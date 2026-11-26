@@ -1,0 +1,21 @@
+{
+  "observed_on": "2026-11-26",
+  "repo": "karimelhoudaigui/photonic-balanced-partitioning",
+  "head_commit": "4f5d14bad7fc05c07d920082f2e622f09670cbee",
+  "run_id": 45852151637,
+  "job_id": 140021005525,
+  "conclusion": "success",
+  "run_url": "https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45852151637",
+  "observed_tests": "1559 passed in 14.68s",
+  "historical_files_checked": 602,
+  "changed_or_missing": [],
+  "remote_main_confirmed": "27443954fb7491a293399f0417d05185009f5c9a",
+  "local_manuscript_pdf_sha256": "271946c9043d26c0e00a964591e9a47541d5816c399e7a52a62032630650243f",
+  "job_log_safe_excerpts": [
+    "2026-11-26T15:45:51.2590241Z 1559 passed in 14.68s",
+    "2026-11-26T15:45:52.2617770Z {\"status\": \"PASS\", \"snapshot_sha256\": \"9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474\", \"snapshot_base_commit\": \"6154b460e1c8b37cf2a7023fcbfff35d31a7220c\", \"historical_files_checked\": 602, \"changed_or_missing\": [], \"scope\": \"Pre-existing experiments/results/theory/research; active reports/manuscript/code may change\"}",
+    "2026-11-26T15:45:52.4796994Z {\"status\": \"CHECK_PASS\", \"outputs\": 7, \"counts\": {\"CalibrationCellCount\": 45, \"ErunCount\": 756, \"SourceBracketCount\": 36, \"SourceProbabilityCount\": 1610}}",
+    "2026-11-26T15:47:00.0681188Z {\"status\": \"PASS\", \"pdf_sha256\": \"d648a42d4aa5d7ff28fc7da5c2ae069c9d32e617a1d20da0934daa1029322df0\", \"pdf_pages\": 16, \"pdf_extracted_characters\": 48972, \"log_sha256\": \"81b399b4b93251348be7f72e0bc947a5a64ebd65b82de4a96748b957bf8dbb0b\", \"bibliography_keys_cited\": [\"aaronson2013\", \"arkhipov2012\", \"bouland2023\", \"deshpande2018\", \"etingof2006\", \"heurtel2023\", \"hom1987\", \"ivanov2020\", \"jiang2019\", \"monbroussou2026\", \"ranjan2025\", \"rioul2023\", \"shchesnovich2021\", \"tichy2015\"], \"overfull_box_points\": [], \"failures\": [], \"scope\": \"Build and reference checks, not mathematical correctness or publication readiness\"}"
+  ],
+  "scope": "Actual completed job and logs read. CI builds a remote checkout; local frozen paper bytes remain unchanged. Prospective P130/P131 source/run work is not covered."
+}
