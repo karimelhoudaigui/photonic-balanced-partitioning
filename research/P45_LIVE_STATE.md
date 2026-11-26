@@ -245,8 +245,13 @@ lower bounds and strict E_B[C]>E_D[C] everywhere on the square except
 The original P101 finite-strength curve is therefore worse for B at EVERY
 finite positive strength, without deleting the old INCONCLUSIVE run.
 ../reports/P114_ROOT_SIGN_CHECKPOINT.md records exact scope/dependencies.
-P115 uniform-flux/weight extension is separately under review; P116 explores
-a changed measurement-interaction resource. No general no-go, novelty,
+P115 uniform-flux/weight extension now passes independent154+122-line review;
+all uniform complement-C4 fluxes and0<a<=1 inherit the strict same-setting
+mean order. P117's binary costs extend that order to fixed independent-attempt
+minima with the explicit4N ideal-photon ledger. Extra noise/attenuation,
+adaptive policies and clocks remain excluded. See ROOT checkpoints P115/P117.
+P116 explores a changed measurement-interaction resource; P118 examines
+strict no-return quantum walks. No general no-go, novelty,
 matched-wall win, optimizer DEV or held-out positive. Numerical worker FREE.
 
 Last confirmed pushed ROOTf4f1e4cb7d12dec1cebd3d90ce19794e1091f355 includes

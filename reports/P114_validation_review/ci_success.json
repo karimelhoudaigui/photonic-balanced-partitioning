@@ -1,0 +1,18 @@
+{
+  "observed_on": "2026-11-26",
+  "repo": "karimelhoudaigui/photonic-balanced-partitioning",
+  "head_commit": "e7285bfa47eb2218e6fc204326a1a5aa432664a4",
+  "run_id": 45838206511,
+  "job_id": 139972593208,
+  "conclusion": "success",
+  "run_url": "https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45838206511",
+  "observed_tests": "1559 passed in 17.95s",
+  "historical_files_checked": 602,
+  "changed_or_missing": [],
+  "remote_main_confirmed": "27443954fb7491a293399f0417d05185009f5c9a",
+  "job_log_safe_excerpts": [
+    "2026-11-26T14:22:37.9417896Z 1559 passed in 17.95s",
+    "2026-11-26T14:22:38.8497630Z {\\\"status\\\": \\\"PASS\\\", \\\"snapshot_sha256\\\": \\\"9c814a1ab5e11ddf171b65e78e5971820d5de7b79dcf5bbbf48fd8505f00b474\\\", \\\"snapshot_base_commit\\\": \\\"6154b460e1c8b37cf2a7023fcbfff35d31a7220c\\\", \\\"historical_files_checked\\\": 602, \\\"changed_or_missing\\\": [], \\\"scope\\\": \\\"Pre-existing experiments/results/theory/research; active reports/manuscript/code may change\\\"}"
+  ],
+  "scope": "Actual completed workflow and job log read; all numerical code at this head qualified. Subsequent P115/P117 checkpoint edits are pure documentation, not new numerical runs or test claims."
+}

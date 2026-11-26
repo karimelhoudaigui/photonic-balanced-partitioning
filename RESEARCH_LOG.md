@@ -1776,3 +1776,20 @@ P107 INCONCLUSIVE result and P106's favorable different contrast preserved.
 P115 flux/weight extension awaits separate review; P116 investigates a
 changed measurement-interaction mechanism. CLAIM-042 OPEN, no held-out/QPU
 or paper/main change. reports/P114_ROOT_SIGN_CHECKPOINT.md.
+
+## P115/P117: flux-family and fixed-budget consequences
+
+P11521cbfc25/154l and non-authorb65712f3/122l fully read at ROOT.
+Same-label gauge/conjugation and exact gap addition place EVERY uniform
+complement-C4 flux in the P114 square. For graph cycleweights1-a,
+diagonalweights1,0<a<=1, C_a=2a C_.5+4-8a transfers strict raw mean
+ordering at every finite beta>0. The rank2 fluxendpoint is retained; a0,
+nonuniform weights, arbitrary hardware loss and real-spin energy identity
+are not silently generalized. reports/P115_ROOT_FLUX_CHECKPOINT.md.
+
+P117d65e4e7a/114l independently derived and fully reviewed at ROOT:
+binary costs make the mean gap a complete cost-CDF ordering. Independent
+fixed-N or preplanned-setting minima inherit D's order; adaptive policies
+do not. Four ideal injected photons per attempt is a deterministic ledger,
+not matched wall time. Extra photonwise loss is not a uniform fallback.
+reports/P117_ROOT_BINARY_CHECKPOINT.md. No new numeric run or QPU.

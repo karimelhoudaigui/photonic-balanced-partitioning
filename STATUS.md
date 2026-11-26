@@ -44,6 +44,10 @@ then proves a strict positive RAW B-minus-D mean cut for every square point
 except(0,0),(1,1): this fixed graph/filter/decoder family is worse than D
 at all finite positive strengths. This is a scoped obstruction, not a
 universal no-go or a positive optimizer. See reports/P114_ROOT_SIGN_CHECKPOINT.md.
+P115's independently reviewed reduction extends it to all uniform complement-
+C4 fluxes and graph cycleweights1-a/diagonals1,0<a<=1. P117's binary-cost
+corollary supplies same-setting cost-CDF and independent fixed-budget-minimum
+order; it excludes adaptive policies, additional hardware losses and wall time.
 P106 preserves a favorable
 fixed-T raw mean contrast but a legal rescaled D defeats that fixed B point.
 P109 proves the admissible-scale comparison in its exact nonadaptive scope.
