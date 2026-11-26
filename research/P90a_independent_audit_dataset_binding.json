@@ -1,7 +1,7 @@
 {
-  "binding_state": "SEALED_POST_B_PENDING_ROOT_AUTHORIZATION",
+  "binding_state": "SEALED_POST_B_RAW_AUTHORIZED",
   "b_raw_sealed": true,
-  "audit_authorized": false,
+  "audit_authorized": true,
   "producer_source_freeze": "82d7b63d35f2f0495df6ed9c0d86999b649c44ff",
   "producer_execution_commit": "b2f9af31af86c83d8aef8841891c4d37832c69e5",
   "producer_raw_seal_commit": "d3962d5b846a9905d061d8eb28cf2d0876b0ba00",
