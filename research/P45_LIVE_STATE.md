@@ -204,10 +204,12 @@ goal and all gates. P103/P105 authenticate neighboring sources and six-
 question cards for transport, arc walks, coarsening, repulsion and heralds.
 They are transfers with explicit missing bridges, not novelty certificates.
 P104candidate79913dc138l and independente7f5a11c162l are fully read: coarse
-full-K-orFAIL probability/stability reduction passes, binary polynomial
-complexity CONDITIONAL on finite-bit primitives. Padding must map nonzero
-added-row output toFAIL. P108 records the deferred precision obligation;
-no full-loss-PNR no-go follows. ../reports/P104_ROOT_CONDITIONAL_CHECKPOINT.md.
+full-K-orFAIL probability/stability reduction passes. The historical audit
+kept binary complexity CONDITIONAL; alternative P123 now closes that target
+gap as recorded below. Padding must map nonzero added-row output toFAIL;
+P123 avoids padding. P108's different cooling sketch stays unproved. No
+full-loss-PNR no-go follows. The original conditional phase checkpoint
+../reports/P104_ROOT_CONDITIONAL_CHECKPOINT.md stays unchanged.
 
 P106source96486bb126l and independentcd95b1a128l fully read: exact positive
 same-T B/D raw mean effect exists but an admissible independently rescaled
@@ -273,11 +275,16 @@ L>=5 make successful proposals dominated by uniform on the SAME paired code.
 All-record recovery/weak angles/joint compilation remain outside it.
 ../reports/P121_ROOT_STRENGTH_CHECKPOINT.md. No numerical trial was invented.
 
-P108's deferred finite-bit obligation is now RESUMED through a changed
-constructive matching route P123, independently authenticated source audit
-P124, and a blind separate latent-sampler derivation P125. P104's binary
-claim remains CONDITIONAL until these sources/proofs receive full review.
-No active sampler implementation or new scientific run is authorized.
+P108's TARGET finite-bit obligation is now resolved by ALTERNATIVE P123:
+bfef3aa3/278l and independent43ada0fe/196l fully read, source auditP124/150l
+and blind latent derivationP125/197l also read. The named0/1 finite-bit theorem
+2609.20717v2/Section8.4 is explicit; binary gadgets and full composition avoid
+a weighted-real oracle and1/Z cost. This is a mathematical epsilon-approximate
+full-K/aggregateFAIL existence theorem, not an implemented sampler/benchmark.
+Original P104 conditional audit and P108 cooling sketch stay unchanged; that
+sketch is not proved. ../reports/P123_ROOT_FINITE_BIT_CHECKPOINT.md fixes scope.
+P126 few-loss extension/P127 prior check and P128 spectral-coherent replacement
+are separate OPEN work. No new scientific run is authorized by these notes.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 

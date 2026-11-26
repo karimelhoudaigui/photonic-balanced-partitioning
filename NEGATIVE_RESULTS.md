@@ -1,5 +1,17 @@
 # Negative Results Log
 
+## 26-Nov-2026: implementation gap resolved by an alternative proof
+
+P123's278-line construction and196-line independent review close the
+P104/P108 TARGET finite-bit obligation using a pinned0/1 counting theorem,
+binary gadgets and an explicit error/random-bit budget. The original
+conditional audit and incomplete cooling sketch remain preserved; that
+sketch is not proved. This is no executed sampler or measured speed claim.
+It supplies a full-K/aggregateFAIL classical null with physical success
+mass, not a full partial-loss-count simulator. See
+reports/P123_ROOT_FINITE_BIT_CHECKPOINT.md. Further few-loss and spectral
+replacement routes and the positive optimizer target remain OPEN.
+
 ## 26-Nov-2026: changed interaction and edge-memory routes
 
 P116's catalytic/X branch is a REAL mathematical interaction, with explicit

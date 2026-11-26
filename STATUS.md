@@ -57,11 +57,17 @@ all-Fock specification has a logical/mode mixer typing ambiguity. P118
 independently rejects only canonical strict no-return walks up to10 modes;
 its deeper soft-return regime stays open. P121 supplies only a sufficient
 strength/gate-count no-recovery screen. These are no positive optimizer or
-universal no-go. P108's finite-bit bridge is being resumed through P123--125;
-P104 remains conditional until review, with no new sampler run.
+universal no-go. P123's alternative finite-bit bridge now passes full
+278-line source/196-line independent review, with P124's pinned0/1 source
+interface and independent P125 probability identity. P104's target bit
+obligation is resolved using that named theorem; its old conditional audit
+and P108 cooling sketch are preserved, not retroactively proved. No sampler
+is implemented or benchmarked. P126 few-loss extension/P127 prior check
+and P128 spectral-coherent replacement remain separate OPEN investigations.
 P109 proves the admissible-scale comparison in its exact nonadaptive scope.
-P104's full-K-orFAIL reduction is accepted but its binary complexity remains
-CONDITIONAL; P108 records that missing bridge. P103/P105 retain the new primary
+P104's full-K-orFAIL reduction and alternative P123 finite-bit bridge are
+accepted in their exact source-dependent scope; full partial-loss records
+remain outside it. P103/P105 retain the new primary
 literature/competing mechanisms, with no novelty or optimizer clearance.
 P97's factorial-residual estimator does
 not supply an optimization mechanism beyond the already paid low frontier.

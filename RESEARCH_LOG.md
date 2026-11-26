@@ -1828,3 +1828,29 @@ discriminator, via changed P123 constructive Gram/matching route, independent
 P124 exact-source check and blind P125 probability derivation. Old P104/P108
 remain unchanged/conditional until full review. No implementation or new
 sampling result. CLAIM-042 OPEN; paper/main/QPU stay frozen.
+
+## P123/P124/P125: close the finite-bit target through a different construction
+
+P123bfef3aa3/278l and non-author43ada0fe/196l FULL read; P1245b68c2d7/150l
+and independent P125ec5a8356/197l FULL read. P124 separates old JSV arithmetic
+statements from pinned2609.20717v2 Theorem1/Section8.4's finite-bit0/1
+primitive; ROOT independently read the exact interface/version. No full
+62-page external proof re-refereed and no external artifact SHA invented.
+
+Binary DAG/self-loop gadgets prove EXACT per(H_M)=per(M) at polynomial
+encoded size, including diagonal/zero/nonprincipal-minor cases. Weighted
+matching and independent mode draws give per(A_n)^2/n!, all collisions kept;
+P125 derived that law blind to P123. Medians, legal fallback, bounded rational
+coins and raw Z/FAIL coupling give TV<=17epsilon/30<epsilon without1/Z cost.
+Full input/output/internal/outer-bit caps use the named0/1 primitive and the
+explicit reduction. No scientific program, RNG or sampler benchmark ran.
+
+The P104 theorem is accepted in this SOURCE-DEPENDENT full-K/aggregateFAIL
+scope. P108's TARGET gap is closed via an alternative, not its old cooling
+sketch; old conditional evidence stays unchanged. No full loss-PNR, measured
+speed, general phases, novelty or optimizer-positive conclusion follows.
+reports/P123_ROOT_FINITE_BIT_CHECKPOINT.md. P126 now tests a fixed-number-lost
+extension via small environment-Gram compression/rejection; P127 checks its
+closest primary sources independently. P128 studies a separate certified-
+spectral coherent-state replacement. These remain OPEN, with no new run,
+paper/main edit or QPU gate. CLAIM-042 OPEN.
