@@ -1,0 +1,91 @@
+{
+  "claim_id": "P145-HAND-AND-NATIVE-QUALIFICATION",
+  "mathematics": {
+    "assertion_tested": "Ten hand/implementation tests; no DEV graph generation or training. Require10PASS,0SKIP and all56 finite independently calculated Perceval Naive amplitudes/probabilities at literalDFT6",
+    "coefficient_domain": "Float64/complex128 with declared tolerances; exact integer boundary identities; no interval sign proof",
+    "conventions": "CF inputs, repeated-output factorials, all84 raw N<=3 bins, uniform independent input loss, five source profiles, same-circuit three-cycle identity, separately retuned envelopes,21-category classical mirror",
+    "inputs": [
+      "HOM, vacuum, literal F3/F6, identity, diagonal-phase Hamiltonian and tiny positive-row hand",
+      "Explicit24-vertex hand edge list for boundary-field and transported-label tests; NOT the two prospective DEV graphs"
+    ],
+    "bounds": {
+      "tests": 10,
+      "native_points": 56,
+      "DEV_graphs": 0,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "workers": 1,
+      "retries": 0,
+      "max_logs_bytes": 4194304,
+      "scientific_output_bytes_plan": 1048576
+    },
+    "non_claims": [
+      "No native validation of every distinguishable profile or DEV graph",
+      "No optimizer advantage, held-out validation, source novelty or QPU call",
+      "No exact/interval certification from floating tests"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P145_EXPERIMENT_CARD.md",
+    "research/P145_collective_lns_probe.py",
+    "research/P145_run_declared_screen.py",
+    "tests/test_p145_collective_lns.py",
+    "tests/test_p145_screen_driver.py",
+    "research/P145_FLOAT_ENGINE_INDEPENDENT_REVIEW.md",
+    "research/P145_SCREEN_DRIVER_REVIEW.md"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "pytest",
+      "version": "8.4.2"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.0"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run_authorized": true,
+  "authorization_note": "ROOT authorizes ONE10-test qualification after independent core review136350e5(corrected7ba7142f), driver review54d9ca93 and separate P62 hand label/field reconstruction. Freeze source6af77f, tests585c8ebb, driver2f137099, driver-tests940ce6fe. No DEV authorization or retries inherited.",
+  "declared_results": [
+    "research/P145_qualification/run_001/junit.xml"
+  ],
+  "planned_command": [
+    ".venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "tests/test_p145_collective_lns.py",
+    "tests/test_p145_screen_driver.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-o",
+    "junit_family=legacy",
+    "--junitxml=research/P145_qualification/run_001/junit.xml"
+  ]
+}
