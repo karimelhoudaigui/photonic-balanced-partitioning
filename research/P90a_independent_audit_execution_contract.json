@@ -1,0 +1,169 @@
+{
+  "claim_id": "P90a-INDEPENDENT-SEALED-RECORDED-DATA-AUDIT",
+  "target_manifest_schema_version": 2,
+  "contract_only": true,
+  "binding_state": "SEALED_CONTRACT_REQUIRES_SEPARATE_ROOT_AUTHORIZATION",
+  "expected_producer_execution_commit": "b2f9af31af86c83d8aef8841891c4d37832c69e5",
+  "producer_source_freeze_and_qualification_commit": "82d7b63d35f2f0495df6ed9c0d86999b649c44ff",
+  "mathematics": {
+    "assertion_tested": "Independent finite recorded-data reconstruction of the exact frozen P90a protocol after primary B raw seal and checker qualification: every scalar/144-row batch, labeled M/H/Taylor-V/transport, all full counts/repair/current/scored bests, typed G and every4-FAST checkpoint, corrected dual-clock eligibility and fixed panel/failure status.",
+    "coefficient_domain": "Exact integer/Fraction classical arithmetic, scalar-complex Taylor40 and fixed absolute floating comparisons; independent NumPy.linalg.eigh check of d; postseal NumPyPCG64/NetworkX reconstruction of declared classical input/marks only.",
+    "conventions": "Never import/call the producer/P43/P50/SciPy exponential or native optical modules. Preserve all96 attempts,1152 modeled source photons,13 cardinality bins, every candidate/checkpoint/collision/zero and all NOT_RUN later controls. Source-bound compilation-before-R and preclock materialization are not newly observed timing endpoints.",
+    "inputs": [
+      "25 static project inputs below become available in the assembled ROOT tree. They are not all local qualification inputs.",
+      "ONLY after primary raw sealing may ROOT add opaque actual manifest/data/qualification/log paths, hashes and byte counts, exact repeated input closure and authorization flags. No behavior/tolerance/scientific bound change."
+    ],
+    "bounds": {
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "threads": 1,
+      "workers": 1,
+      "raw_bytes": 33554432,
+      "single_object_or_line_bytes": 4194304,
+      "output_bytes": 524288,
+      "log_bytes": 4194304,
+      "logical_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "native_optical_calls": 0,
+      "optimizer_replays": 0,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No Born law/TV/global distribution certificate from96 observations",
+      "No optical or independent device replication, optimizer replay, clock authenticity or interval certificate",
+      "No optimum/matched-total-resource/positive advantage conclusion or novelty/hardware/paper gate"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P90_SOURCE_AWARE_NONFLAT_DESIGN.md",
+    "research/P90_SOURCE_AWARE_NONFLAT_EXACT_REVIEW.md",
+    "research/P90_BOUNDED_PRIMARY_LITERATURE_CHECK.md",
+    "research/P90a_DEV_VETO_CONTRACT.md",
+    "research/P90a_INDEPENDENT_CARD_REVIEW.md",
+    "research/P90a_IMPLEMENTATION_API.md",
+    "research/P90a_source_bound_nonflat_veto.py",
+    "tests/test_p90a_source_bound_nonflat_veto.py",
+    "research/P90a_execution_spec.json",
+    "research/P90a_preflight_contract.json",
+    "research/P90a_execution_contract.json",
+    "research/P90a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P90a_independent_raw_audit.py",
+    "tests/test_p90a_independent_raw_audit.py",
+    "research/P90a_independent_audit_spec.json",
+    "research/P90a_independent_audit_preflight_contract.json",
+    "research/P90a_independent_audit_main_TEMPLATE.json",
+    "research/P90a_INDEPENDENT_AUDIT_BINDING.md",
+    "research/P90a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+    "experiments/P90a_dev_veto/run_001/manifest.json",
+    "experiments/P90a_dev_veto/run_001/stdout.txt",
+    "experiments/P90a_dev_veto/run_001/stderr.txt",
+    "experiments/P90a_dev_veto/run_001/data/metadata.json",
+    "experiments/P90a_dev_veto/run_001/data/graphs.json",
+    "experiments/P90a_dev_veto/run_001/data/B_ER.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/B_RR.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/paid_ledger.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/controls.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/summary.json",
+    "experiments/P90a_dev_veto/run_001/data/failure.json",
+    "research/P90a_dev_veto_preflight/run_001/manifest.json",
+    "research/P90a_dev_veto_preflight/run_001/stdout.txt",
+    "research/P90a_dev_veto_preflight/run_001/stderr.txt",
+    "research/P90a_dev_veto_preflight/run_001/junit.xml",
+    "research/P90a_independent_audit_preflight/run_001/manifest.json",
+    "research/P90a_independent_audit_preflight/run_001/stdout.txt",
+    "research/P90a_independent_audit_preflight/run_001/stderr.txt",
+    "research/P90a_independent_audit_preflight/run_001/junit.xml",
+    "research/P90a_PRIMARY_MAIN_RECEIPT.md",
+    "research/P90a_QUALIFICATION_RECEIPT.md",
+    "research/P90a_INDEPENDENT_AUDIT_QUALIFICATION_RECEIPT.md",
+    "research/P90a_INDEPENDENT_CODE_REVIEW.md",
+    "research/P90a_CHECKER_INDEPENDENT_SOURCE_REVIEW.md",
+    "reports/P90a_ROOT_MAIN_AUTHORIZATION.md",
+    "reports/P90a_ROOT_QUALIFICATION_AUTHORIZATION.md",
+    "reports/P90a_CHECKER_ROOT_QUALIFICATION_AUTHORIZATION.md",
+    "reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md",
+    "reports/P90a_CHECKER_ROOT_QUALIFICATION_CHECKPOINT.md",
+    "reports/P90a_ROOT_PRE_DATA_SOURCE_REVIEW.md",
+    "reports/P90a_CHECKER_ROOT_PRE_DATA_REVIEW.md",
+    "reports/P90a_integration_validation/recorded_qualification_inspection.json",
+    "reports/P90a_integration_validation/checker_recorded_qualification_inspection.json",
+    "reports/P90a_integration_validation/checker_metadata_reader_failure.json",
+    "reports/P90a_integration_validation/prepare_recorded_audit.py",
+    "research/P90a_independent_audit_execution_contract.json",
+    "research/P90a_independent_audit_dataset_binding.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Postseal replay of original declared PCG64 classical graph/mark streams only; no new optical draw or optimizer RNG replay",
+    "seed": "Literal original roles, not evaluated by code authoring or qualification"
+  },
+  "planned_inherited_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "planned_command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P90a_independent_raw_audit.py",
+    "--binding",
+    "research/P90a_independent_audit_dataset_binding.json",
+    "--output",
+    "research/P90a_independent_audit_main/run_001/data"
+  ],
+  "runner_output_directory": "research/P90a_independent_audit_main/run_001",
+  "declared_results": [
+    "research/P90a_independent_audit_main/run_001/data/audit_summary.json",
+    "research/P90a_independent_audit_main/run_001/data/audit_failure.json"
+  ],
+  "runner_binding": {
+    "fresh_parent_required": true,
+    "timeout": 60,
+    "max_cpu_seconds": 30,
+    "max_threads": 1,
+    "max_output_bytes": 4194304,
+    "max_memory_bytes": null,
+    "max_cores": null,
+    "input_policy": "All static plus opaque sealed artifacts, each once as relative regular --input; no symlinks/external absolute runner input",
+    "result_policy": "Two JSON files strictly under fresh output parent/data; source creates data exclusively"
+  },
+  "opaque_binding_fields_only_later": [
+    "producer_execution_commit",
+    "producer_manifest",
+    "producer_qualification_manifest",
+    "checker_qualification_manifest",
+    "dataset_directory",
+    "checker_source_sha256",
+    "artifacts[name/path/sha256/bytes]",
+    "audit_output_directory",
+    "binding_state/b_raw_sealed/audit_authorized",
+    "actual execution contract and exact repeated input closure"
+  ],
+  "resource_note": "TEMPLATE ONLY: no dataset binding or active audit contract exists here. A frozen checker is required before B data; ROOT+other reviewer inspect source, then separately authorize tiny qualification, raw seal/receipt, and only later a hash-bound postseal main. No automatic retry or qualification-to-main transition.",
+  "positive_accepted": false,
+  "producer_raw_seal_commit": "d3962d5b846a9905d061d8eb28cf2d0876b0ba00"
+}
