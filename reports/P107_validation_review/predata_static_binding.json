@@ -1,0 +1,60 @@
+{
+  "source_original_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+  "p101_original_commit": "69e4a6fe434a677acfc5a7e616471990b16db86b",
+  "static_files_verified": [
+    {
+      "path": "AGENTS.md",
+      "origin_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+      "bytes": 1154,
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "origin_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+      "bytes": 1072,
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "origin_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+      "bytes": 633,
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P107_symbolic_filter_validation.py",
+      "origin_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+      "bytes": 20997,
+      "sha256": "4e0973ebfe8a250dbf012719087dcb0b7390932acd3ddab4e7055b3808cb2bbc"
+    },
+    {
+      "path": "research/P107_SYMBOLIC_FILTER_POPULATION.md",
+      "origin_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+      "bytes": 7519,
+      "sha256": "051d24038066d7cac3ef34f6f835703793c0d7e93b085cf20fa03d99ac14636b"
+    },
+    {
+      "path": "research/P107_symbolic_filter_contract_TEMPLATE.json",
+      "origin_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+      "bytes": 5308,
+      "sha256": "d150e2042c5f8a02b09baab4da8426fd92348eb66525a2d7bf1a90ddb734e8ed"
+    },
+    {
+      "path": "research/P101_FINITE_FILTER_ALL_OUTPUT_CARD.md",
+      "origin_commit": "69e4a6fe434a677acfc5a7e616471990b16db86b",
+      "bytes": 16498,
+      "sha256": "65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c"
+    },
+    {
+      "path": "research/P98_FACTORIAL_SURROGATE_HIERARCHY.md",
+      "origin_commit": "6d9c16cde14ff25d51593c75607c712dcd7e9326",
+      "bytes": 9787,
+      "sha256": "918d721f33a691351aa0ab2b4618f3fde0101341de87b719d2ecdfea23038c8d"
+    }
+  ],
+  "template_mathematics_inputs_present": true,
+  "source_imported": false,
+  "AST_parsed": false,
+  "scientific_evaluation": false,
+  "output_directory": "fresh",
+  "Python": "3.11.15"
+}
