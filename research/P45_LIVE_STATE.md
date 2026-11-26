@@ -72,10 +72,15 @@ That ONE tiny/scripted qualification completed: originalraw929f752 BEFORE
 interpretation, separate receipt82d74145+b2f9af31;283PASS/254Naive/181zeros,
 maxprobabilityerror2.22e-16. ROOTindependentDP+officialv2PASSproducerANDROOT.
 Integratedfullsuite1519PASS44.61s/native+env1, rawlogsb0d90be before reading.
-Numerical worker now FREE, but no main is authorized. No production seed/PCG/
-DEVgraph/realK12matrix/stochasticsource/P43/P50call occurred. See
-reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md. P63 authors the independent recorded checker CODE ONLY
-in .local/p66-dark-barrier, before any B data; no imports/AST/tests there.
+The independent checker is now frozen944f9bc7/source60995930, FULL ROOT+peer
+reviews1864/171lines, and qualified29PASS: originalrawf6f3c8b BEFORE reading,
+separate receiptd1b570ec. Officialv2PASSproducerANDROOT; all9inputs unchanged.
+Combined1548PASS44.78s, sealedlogbd92049, env/native1. No B data yet.
+ROOT now separately authorizes ONE primary96-attempt DEV main from clean
+b2f9af31 under reports/P90a_ROOT_MAIN_AUTHORIZATION.md. ROOT owns the numerical
+slot. No other main, retry, optional control, held-out or QPU is authorized.
+All output must be sealed BEFORE interpretation. Independent recorded audit
+needs its later opaque binding, metadata review and separate authorization.
 
 After successful qualification, ROOT must still audit integration tests,
 freeze/bind independent checker and separately authorize one bounded main.
