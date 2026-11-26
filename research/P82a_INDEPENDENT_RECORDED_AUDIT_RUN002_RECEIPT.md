@@ -14,7 +14,9 @@ the sealed outputs under separate postseal authorization.
 - Primary source freeze: 94f80b94f75317524c202ce9ef5bf932d78ddc5e;
   source SHA256 7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc.
 - Primary execution: 39b61bb9289cab7439ca15a4aa79d265b068f6f9;
-  primary raw seal: debd8235217a8ebe42aa62734d339ab1bd4ea004.
+  original producer raw seal BEFORE interpretation:
+  561410b385c29d52231b5e0cbe9938fa813c1739;
+  ROOT integration copy AFTER reading: debd8235217a8ebe42aa62734d339ab1bd4ea004.
 - Original pre-B checker freeze: 34c9513072d385373805215dba6679ffb5686ab9,
   source f595fcaea18dee10b7c89982c2ef700cadca417ec8b2ff63557e95b0e9ba9529.
 - Current administrative version: a965e08dbbade4a6ea45d785b0b6fa37af3c8e3a;
