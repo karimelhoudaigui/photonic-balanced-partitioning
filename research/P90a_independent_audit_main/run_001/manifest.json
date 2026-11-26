@@ -1,0 +1,512 @@
+{
+  "schema_version": 2,
+  "claim_id": "P90a-INDEPENDENT-SEALED-RECORDED-DATA-AUDIT",
+  "repository": {
+    "commit": "48270f7038e02ff591176e6b68ee790afd6e6a57",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P90a_independent_raw_audit.py",
+    "--binding",
+    "research/P90a_independent_audit_dataset_binding.json",
+    "--output",
+    "research/P90a_independent_audit_main/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Independent finite recorded-data reconstruction of the exact frozen P90a protocol after primary B raw seal and checker qualification: every scalar/144-row batch, labeled M/H/Taylor-V/transport, all full counts/repair/current/scored bests, typed G and every4-FAST checkpoint, corrected dual-clock eligibility and fixed panel/failure status.",
+    "coefficient_domain": "Exact integer/Fraction classical arithmetic, scalar-complex Taylor40 and fixed absolute floating comparisons; independent NumPy.linalg.eigh check of d; postseal NumPyPCG64/NetworkX reconstruction of declared classical input/marks only.",
+    "conventions": "Never import/call the producer/P43/P50/SciPy exponential or native optical modules. Preserve all96 attempts,1152 modeled source photons,13 cardinality bins, every candidate/checkpoint/collision/zero and all NOT_RUN later controls. Source-bound compilation-before-R and preclock materialization are not newly observed timing endpoints.",
+    "inputs": [
+      "25 static project inputs below become available in the assembled ROOT tree. They are not all local qualification inputs.",
+      "ONLY after primary raw sealing may ROOT add opaque actual manifest/data/qualification/log paths, hashes and byte counts, exact repeated input closure and authorization flags. No behavior/tolerance/scientific bound change."
+    ],
+    "bounds": {
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "threads": 1,
+      "workers": 1,
+      "raw_bytes": 33554432,
+      "single_object_or_line_bytes": 4194304,
+      "output_bytes": 524288,
+      "log_bytes": 4194304,
+      "logical_bytes_PLAN": 268435456,
+      "hard_RSS_claim": false,
+      "native_optical_calls": 0,
+      "optimizer_replays": 0,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "No Born law/TV/global distribution certificate from96 observations",
+      "No optical or independent device replication, optimizer replay, clock authenticity or interval certificate",
+      "No optimum/matched-total-resource/positive advantage conclusion or novelty/hardware/paper gate"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Postseal replay of original declared PCG64 classical graph/mark streams only; no new optical draw or optimizer RNG replay",
+    "seed": "Literal original roles, not evaluated by code authoring or qualification"
+  },
+  "run": {
+    "started_at": "2026-11-26T04:03:16.458846+00:00",
+    "runtime_seconds": 4.952918,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P90_SOURCE_AWARE_NONFLAT_DESIGN.md",
+    "research/P90_SOURCE_AWARE_NONFLAT_EXACT_REVIEW.md",
+    "research/P90_BOUNDED_PRIMARY_LITERATURE_CHECK.md",
+    "research/P90a_DEV_VETO_CONTRACT.md",
+    "research/P90a_INDEPENDENT_CARD_REVIEW.md",
+    "research/P90a_IMPLEMENTATION_API.md",
+    "research/P90a_source_bound_nonflat_veto.py",
+    "tests/test_p90a_source_bound_nonflat_veto.py",
+    "research/P90a_execution_spec.json",
+    "research/P90a_preflight_contract.json",
+    "research/P90a_execution_contract.json",
+    "research/P90a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "research/P90a_independent_raw_audit.py",
+    "tests/test_p90a_independent_raw_audit.py",
+    "research/P90a_independent_audit_spec.json",
+    "research/P90a_independent_audit_preflight_contract.json",
+    "research/P90a_independent_audit_main_TEMPLATE.json",
+    "research/P90a_INDEPENDENT_AUDIT_BINDING.md",
+    "research/P90a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+    "experiments/P90a_dev_veto/run_001/manifest.json",
+    "experiments/P90a_dev_veto/run_001/stdout.txt",
+    "experiments/P90a_dev_veto/run_001/stderr.txt",
+    "experiments/P90a_dev_veto/run_001/data/metadata.json",
+    "experiments/P90a_dev_veto/run_001/data/graphs.json",
+    "experiments/P90a_dev_veto/run_001/data/B_ER.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/B_RR.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/paid_ledger.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/controls.jsonl",
+    "experiments/P90a_dev_veto/run_001/data/summary.json",
+    "experiments/P90a_dev_veto/run_001/data/failure.json",
+    "research/P90a_dev_veto_preflight/run_001/manifest.json",
+    "research/P90a_dev_veto_preflight/run_001/stdout.txt",
+    "research/P90a_dev_veto_preflight/run_001/stderr.txt",
+    "research/P90a_dev_veto_preflight/run_001/junit.xml",
+    "research/P90a_independent_audit_preflight/run_001/manifest.json",
+    "research/P90a_independent_audit_preflight/run_001/stdout.txt",
+    "research/P90a_independent_audit_preflight/run_001/stderr.txt",
+    "research/P90a_independent_audit_preflight/run_001/junit.xml",
+    "research/P90a_PRIMARY_MAIN_RECEIPT.md",
+    "research/P90a_QUALIFICATION_RECEIPT.md",
+    "research/P90a_INDEPENDENT_AUDIT_QUALIFICATION_RECEIPT.md",
+    "research/P90a_INDEPENDENT_CODE_REVIEW.md",
+    "research/P90a_CHECKER_INDEPENDENT_SOURCE_REVIEW.md",
+    "reports/P90a_ROOT_MAIN_AUTHORIZATION.md",
+    "reports/P90a_ROOT_QUALIFICATION_AUTHORIZATION.md",
+    "reports/P90a_CHECKER_ROOT_QUALIFICATION_AUTHORIZATION.md",
+    "reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md",
+    "reports/P90a_CHECKER_ROOT_QUALIFICATION_CHECKPOINT.md",
+    "reports/P90a_ROOT_PRE_DATA_SOURCE_REVIEW.md",
+    "reports/P90a_CHECKER_ROOT_PRE_DATA_REVIEW.md",
+    "reports/P90a_integration_validation/recorded_qualification_inspection.json",
+    "reports/P90a_integration_validation/checker_recorded_qualification_inspection.json",
+    "reports/P90a_integration_validation/checker_metadata_reader_failure.json",
+    "reports/P90a_integration_validation/prepare_recorded_audit.py",
+    "research/P90a_independent_audit_execution_contract.json",
+    "research/P90a_independent_audit_dataset_binding.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P90_SOURCE_AWARE_NONFLAT_DESIGN.md",
+      "sha256": "b3c0b04c486f3368a0cbbc7e2030d8225d015f182cbfb00e0a9b63e0a0b2f173",
+      "sha256_after": "b3c0b04c486f3368a0cbbc7e2030d8225d015f182cbfb00e0a9b63e0a0b2f173"
+    },
+    {
+      "path": "research/P90_SOURCE_AWARE_NONFLAT_EXACT_REVIEW.md",
+      "sha256": "ad2a473b7b37da806b7e327e07ca6273278dbbffd0f6cf5d271a99865589f4d5",
+      "sha256_after": "ad2a473b7b37da806b7e327e07ca6273278dbbffd0f6cf5d271a99865589f4d5"
+    },
+    {
+      "path": "research/P90_BOUNDED_PRIMARY_LITERATURE_CHECK.md",
+      "sha256": "fa1c2be4a2b148450653207befe4cd4647dfef10f1147b0d1b03ce978a94e831",
+      "sha256_after": "fa1c2be4a2b148450653207befe4cd4647dfef10f1147b0d1b03ce978a94e831"
+    },
+    {
+      "path": "research/P90a_DEV_VETO_CONTRACT.md",
+      "sha256": "dfdcabfd93cf1a1e0d06fb370ad295123c1726247857820acab9f5d08d04c660",
+      "sha256_after": "dfdcabfd93cf1a1e0d06fb370ad295123c1726247857820acab9f5d08d04c660"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_CARD_REVIEW.md",
+      "sha256": "2372e0c2d8709ac722959166cc91767e059379d348949b27a4e3b20a8ef9e58e",
+      "sha256_after": "2372e0c2d8709ac722959166cc91767e059379d348949b27a4e3b20a8ef9e58e"
+    },
+    {
+      "path": "research/P90a_IMPLEMENTATION_API.md",
+      "sha256": "8c153fc538dd8b789239e25f814126e2e37c9a422778bed1bbd45b60a9645ca5",
+      "sha256_after": "8c153fc538dd8b789239e25f814126e2e37c9a422778bed1bbd45b60a9645ca5"
+    },
+    {
+      "path": "research/P90a_source_bound_nonflat_veto.py",
+      "sha256": "95fa65c6c04a0d48bb29c5d38b4bb1cac1cfdc22170191ee49a280f2995098e1",
+      "sha256_after": "95fa65c6c04a0d48bb29c5d38b4bb1cac1cfdc22170191ee49a280f2995098e1"
+    },
+    {
+      "path": "tests/test_p90a_source_bound_nonflat_veto.py",
+      "sha256": "9fba751e5bc2970e77e63a1d45a751c4a3e788f64b2f718fb7b26d8fee6dc9ec",
+      "sha256_after": "9fba751e5bc2970e77e63a1d45a751c4a3e788f64b2f718fb7b26d8fee6dc9ec"
+    },
+    {
+      "path": "research/P90a_execution_spec.json",
+      "sha256": "87dda967c662b0507c364d216f2c1a937d6a83e8616b536b7a0330bd90be0e7f",
+      "sha256_after": "87dda967c662b0507c364d216f2c1a937d6a83e8616b536b7a0330bd90be0e7f"
+    },
+    {
+      "path": "research/P90a_preflight_contract.json",
+      "sha256": "16e8ee28db9a26215fb22a12df8dcb3941ac957bc2c76ce1606ee1e0d3bfdfd7",
+      "sha256_after": "16e8ee28db9a26215fb22a12df8dcb3941ac957bc2c76ce1606ee1e0d3bfdfd7"
+    },
+    {
+      "path": "research/P90a_execution_contract.json",
+      "sha256": "0ed33b3d86e25eaa2e946506c52dcc510c89b633eabb61d68da7ed4e2d58b707",
+      "sha256_after": "0ed33b3d86e25eaa2e946506c52dcc510c89b633eabb61d68da7ed4e2d58b707"
+    },
+    {
+      "path": "research/P90a_IMPLEMENTATION_POPULATION.md",
+      "sha256": "54e69aad02836d0e3f6c48de9b3cbbabd3f66117a20b9e3391ae92a0455b1e9f",
+      "sha256_after": "54e69aad02836d0e3f6c48de9b3cbbabd3f66117a20b9e3391ae92a0455b1e9f"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "research/P90a_independent_raw_audit.py",
+      "sha256": "609959307bbddfb08ac70b71e714e81df962c2c0d615b56aed20a970cf46a62a",
+      "sha256_after": "609959307bbddfb08ac70b71e714e81df962c2c0d615b56aed20a970cf46a62a"
+    },
+    {
+      "path": "tests/test_p90a_independent_raw_audit.py",
+      "sha256": "dcc2a352a004885fa12fd5740552ba103f4f6bb9f3ead76491bdacefab1a0cfd",
+      "sha256_after": "dcc2a352a004885fa12fd5740552ba103f4f6bb9f3ead76491bdacefab1a0cfd"
+    },
+    {
+      "path": "research/P90a_independent_audit_spec.json",
+      "sha256": "a80869d6a9638280c62130c85f367e99d6f0b30e407e8c4cd837d3a4cd5f6de2",
+      "sha256_after": "a80869d6a9638280c62130c85f367e99d6f0b30e407e8c4cd837d3a4cd5f6de2"
+    },
+    {
+      "path": "research/P90a_independent_audit_preflight_contract.json",
+      "sha256": "5896474eb0802b3a0ce5859d00d4a68712bbfec6c137c132c7e275ff86b64601",
+      "sha256_after": "5896474eb0802b3a0ce5859d00d4a68712bbfec6c137c132c7e275ff86b64601"
+    },
+    {
+      "path": "research/P90a_independent_audit_main_TEMPLATE.json",
+      "sha256": "ae2ccdb3dfc080c6308be7b6f76681fda449b3ddef46c94f99f5d0e0f00abb66",
+      "sha256_after": "ae2ccdb3dfc080c6308be7b6f76681fda449b3ddef46c94f99f5d0e0f00abb66"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_AUDIT_BINDING.md",
+      "sha256": "bd639cb6f33448ca52530d60eacaa6d13839cc928bcf05d77ca69641c33f1bbc",
+      "sha256_after": "bd639cb6f33448ca52530d60eacaa6d13839cc928bcf05d77ca69641c33f1bbc"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+      "sha256": "856b473814db08463fb8f5d65d292484b6894fb3e07eb7ee747b17534b94ebf9",
+      "sha256_after": "856b473814db08463fb8f5d65d292484b6894fb3e07eb7ee747b17534b94ebf9"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/manifest.json",
+      "sha256": "a8b459fb9e214c1d0e06053376c54e06bf99d00f889baad60bdb57172667a9d6",
+      "sha256_after": "a8b459fb9e214c1d0e06053376c54e06bf99d00f889baad60bdb57172667a9d6"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/stderr.txt",
+      "sha256": "666a17af8984773c4b71bf66bd201198498939298b4b71ba15a0b009384b4778",
+      "sha256_after": "666a17af8984773c4b71bf66bd201198498939298b4b71ba15a0b009384b4778"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/metadata.json",
+      "sha256": "8ad07f047d572a33999e2aaf2a8e6fa863539e34279edd6e4417410e3f3307a9",
+      "sha256_after": "8ad07f047d572a33999e2aaf2a8e6fa863539e34279edd6e4417410e3f3307a9"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/graphs.json",
+      "sha256": "8319a1b9af1db3fa8469a38d96ffc553ad9e6ec88385791b6def5c57480d521e",
+      "sha256_after": "8319a1b9af1db3fa8469a38d96ffc553ad9e6ec88385791b6def5c57480d521e"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/B_ER.jsonl",
+      "sha256": "c9ff122d5eff1ff462deb378eb4562ce3341ac2b6e4f0fc78490e61e7bcd7544",
+      "sha256_after": "c9ff122d5eff1ff462deb378eb4562ce3341ac2b6e4f0fc78490e61e7bcd7544"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/B_RR.jsonl",
+      "sha256": "f21396f733ba2a6244aa0adf6b7b6811dcccec5126d8bbc01d9223fe912762b9",
+      "sha256_after": "f21396f733ba2a6244aa0adf6b7b6811dcccec5126d8bbc01d9223fe912762b9"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/paid_ledger.jsonl",
+      "sha256": "fa2115adba90fc282c0cc817bcb641826834d61395d37a892379d51e9d4d8c51",
+      "sha256_after": "fa2115adba90fc282c0cc817bcb641826834d61395d37a892379d51e9d4d8c51"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/controls.jsonl",
+      "sha256": "4bc4debb49a444c1c041ac06c6d1251090a07892543b1a3cfa7c6c23cee4a45d",
+      "sha256_after": "4bc4debb49a444c1c041ac06c6d1251090a07892543b1a3cfa7c6c23cee4a45d"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/summary.json",
+      "sha256": "4134a6221863db6621701227cf177ed8481766eedba7370c421219b6c4d1b8d4",
+      "sha256_after": "4134a6221863db6621701227cf177ed8481766eedba7370c421219b6c4d1b8d4"
+    },
+    {
+      "path": "experiments/P90a_dev_veto/run_001/data/failure.json",
+      "sha256": "b24b6f7f3627ec4fec61d369b7ad9a35c8918c6da5f7f9390fd97cd5ed29a643",
+      "sha256_after": "b24b6f7f3627ec4fec61d369b7ad9a35c8918c6da5f7f9390fd97cd5ed29a643"
+    },
+    {
+      "path": "research/P90a_dev_veto_preflight/run_001/manifest.json",
+      "sha256": "dc914575db7e5a0f7baf380d31c68c5576f4f04bf30bc2733cecc696aea93189",
+      "sha256_after": "dc914575db7e5a0f7baf380d31c68c5576f4f04bf30bc2733cecc696aea93189"
+    },
+    {
+      "path": "research/P90a_dev_veto_preflight/run_001/stdout.txt",
+      "sha256": "06b2981cfce74e05a4b33605ed2be28fc9d371b44a2f328a555d8b8d5bbcf791",
+      "sha256_after": "06b2981cfce74e05a4b33605ed2be28fc9d371b44a2f328a555d8b8d5bbcf791"
+    },
+    {
+      "path": "research/P90a_dev_veto_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P90a_dev_veto_preflight/run_001/junit.xml",
+      "sha256": "933f2cb1485bab72643f74b1f4fed1879e696f370054e52ff5440977b60f84be",
+      "sha256_after": "933f2cb1485bab72643f74b1f4fed1879e696f370054e52ff5440977b60f84be"
+    },
+    {
+      "path": "research/P90a_independent_audit_preflight/run_001/manifest.json",
+      "sha256": "d8f3e69ad2543dfcb6a7083fde2acdf4e45cdd0060e15d675d6607f890b38a21",
+      "sha256_after": "d8f3e69ad2543dfcb6a7083fde2acdf4e45cdd0060e15d675d6607f890b38a21"
+    },
+    {
+      "path": "research/P90a_independent_audit_preflight/run_001/stdout.txt",
+      "sha256": "7fccf899f0db45921389a0d322e1bfc157c92a02965c7e92e3d17c6427ded6be",
+      "sha256_after": "7fccf899f0db45921389a0d322e1bfc157c92a02965c7e92e3d17c6427ded6be"
+    },
+    {
+      "path": "research/P90a_independent_audit_preflight/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P90a_independent_audit_preflight/run_001/junit.xml",
+      "sha256": "ec8b5a9152d038c0bb3086e0b8a50df94ff09de07f57c63c09fef2d62812e713",
+      "sha256_after": "ec8b5a9152d038c0bb3086e0b8a50df94ff09de07f57c63c09fef2d62812e713"
+    },
+    {
+      "path": "research/P90a_PRIMARY_MAIN_RECEIPT.md",
+      "sha256": "b1213dad856a2840bb3f5b9636065ae8b235eec91d126ee9dc961a9e40a5ce6f",
+      "sha256_after": "b1213dad856a2840bb3f5b9636065ae8b235eec91d126ee9dc961a9e40a5ce6f"
+    },
+    {
+      "path": "research/P90a_QUALIFICATION_RECEIPT.md",
+      "sha256": "d43f6d8bcb520a623601105f7ae08e8d6252d22b5da694da877788cdf9a9d15c",
+      "sha256_after": "d43f6d8bcb520a623601105f7ae08e8d6252d22b5da694da877788cdf9a9d15c"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_AUDIT_QUALIFICATION_RECEIPT.md",
+      "sha256": "fbc9db456ea0af7312723366d22a82319341305ad462cfccf0f89870cadb3897",
+      "sha256_after": "fbc9db456ea0af7312723366d22a82319341305ad462cfccf0f89870cadb3897"
+    },
+    {
+      "path": "research/P90a_INDEPENDENT_CODE_REVIEW.md",
+      "sha256": "6e1d3e6d2a492b05e14ea587bd1a3cd850c2ec92a2e6bc3ee75167585b227111",
+      "sha256_after": "6e1d3e6d2a492b05e14ea587bd1a3cd850c2ec92a2e6bc3ee75167585b227111"
+    },
+    {
+      "path": "research/P90a_CHECKER_INDEPENDENT_SOURCE_REVIEW.md",
+      "sha256": "2f155f2b7ac40c040fbef33f0a88a8529e7add501773ae55aa89199ebcdaa856",
+      "sha256_after": "2f155f2b7ac40c040fbef33f0a88a8529e7add501773ae55aa89199ebcdaa856"
+    },
+    {
+      "path": "reports/P90a_ROOT_MAIN_AUTHORIZATION.md",
+      "sha256": "b4578508407227bf092491c478ba3ddc7e13706a134aa819b8a8237cc1fef8fc",
+      "sha256_after": "b4578508407227bf092491c478ba3ddc7e13706a134aa819b8a8237cc1fef8fc"
+    },
+    {
+      "path": "reports/P90a_ROOT_QUALIFICATION_AUTHORIZATION.md",
+      "sha256": "3e96b6eab1924022803e53e1f11cfb8aadb7c2fc968cdf95d4f65eb84d2954db",
+      "sha256_after": "3e96b6eab1924022803e53e1f11cfb8aadb7c2fc968cdf95d4f65eb84d2954db"
+    },
+    {
+      "path": "reports/P90a_CHECKER_ROOT_QUALIFICATION_AUTHORIZATION.md",
+      "sha256": "a87d72a8b9fa51da97796042f69dcb628ab250ccd4c3edcf7d3d74d8473b9765",
+      "sha256_after": "a87d72a8b9fa51da97796042f69dcb628ab250ccd4c3edcf7d3d74d8473b9765"
+    },
+    {
+      "path": "reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md",
+      "sha256": "f8a84b93d6d04c78fe333d23812a9cb4b3417981960294d2dbb8d3e4f5f591ee",
+      "sha256_after": "f8a84b93d6d04c78fe333d23812a9cb4b3417981960294d2dbb8d3e4f5f591ee"
+    },
+    {
+      "path": "reports/P90a_CHECKER_ROOT_QUALIFICATION_CHECKPOINT.md",
+      "sha256": "9631e8d75e1ef33c9430f620835a38b02c1be001925b4577a4a4db9d0a172c1e",
+      "sha256_after": "9631e8d75e1ef33c9430f620835a38b02c1be001925b4577a4a4db9d0a172c1e"
+    },
+    {
+      "path": "reports/P90a_ROOT_PRE_DATA_SOURCE_REVIEW.md",
+      "sha256": "579f4d2b1dcbc8ce53783381728a5d28643d6ba36279ce91e66fc3f4a6df0229",
+      "sha256_after": "579f4d2b1dcbc8ce53783381728a5d28643d6ba36279ce91e66fc3f4a6df0229"
+    },
+    {
+      "path": "reports/P90a_CHECKER_ROOT_PRE_DATA_REVIEW.md",
+      "sha256": "148e5efc1c3015934ed9e72e41b0b3556ac90006488837b960eea7fb9796ec6c",
+      "sha256_after": "148e5efc1c3015934ed9e72e41b0b3556ac90006488837b960eea7fb9796ec6c"
+    },
+    {
+      "path": "reports/P90a_integration_validation/recorded_qualification_inspection.json",
+      "sha256": "b7f0278a8304afb8aa99a9139f27590a30b3e6a68d9598af8838ec774624fdb7",
+      "sha256_after": "b7f0278a8304afb8aa99a9139f27590a30b3e6a68d9598af8838ec774624fdb7"
+    },
+    {
+      "path": "reports/P90a_integration_validation/checker_recorded_qualification_inspection.json",
+      "sha256": "faea5ea9e2ba8c78a10d572ff9c318bc4c39167700c4c586f0acd1ba7bad371e",
+      "sha256_after": "faea5ea9e2ba8c78a10d572ff9c318bc4c39167700c4c586f0acd1ba7bad371e"
+    },
+    {
+      "path": "reports/P90a_integration_validation/checker_metadata_reader_failure.json",
+      "sha256": "59543437baa0bb70851dc5c1046e6d1c986cee59eaa757ac50bb0e697c98bdd2",
+      "sha256_after": "59543437baa0bb70851dc5c1046e6d1c986cee59eaa757ac50bb0e697c98bdd2"
+    },
+    {
+      "path": "reports/P90a_integration_validation/prepare_recorded_audit.py",
+      "sha256": "aea4474ea0803c56477b48d7bf6a442fb2e0ffee8b649d3515eca4f0ab20dd4e",
+      "sha256_after": "aea4474ea0803c56477b48d7bf6a442fb2e0ffee8b649d3515eca4f0ab20dd4e"
+    },
+    {
+      "path": "research/P90a_independent_audit_execution_contract.json",
+      "sha256": "c6b31ea10f2a0375058e7fe86097ad8b070fd3e50d4c279065c823f03ee52f69",
+      "sha256_after": "c6b31ea10f2a0375058e7fe86097ad8b070fd3e50d4c279065c823f03ee52f69"
+    },
+    {
+      "path": "research/P90a_independent_audit_dataset_binding.json",
+      "sha256": "09d4b867f7fdc59abe1740272991e3303157da699a9fd26f54b7b2675156cfb1",
+      "sha256_after": "09d4b867f7fdc59abe1740272991e3303157da699a9fd26f54b7b2675156cfb1"
+    }
+  ],
+  "output_directory": "research/P90a_independent_audit_main/run_001",
+  "declared_results": [
+    "research/P90a_independent_audit_main/run_001/data/audit_summary.json",
+    "research/P90a_independent_audit_main/run_001/data/audit_failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P90a_independent_audit_main/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P90a_independent_audit_main/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P90a_independent_audit_main/run_001/data/audit_summary.json",
+      "sha256": "86d5555ed748924b65d47684f660d8fed4d8bf77b261d9714fadd454345741c8",
+      "kind": "result"
+    },
+    {
+      "path": "research/P90a_independent_audit_main/run_001/data/audit_failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
