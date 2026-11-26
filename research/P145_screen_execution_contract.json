@@ -1,0 +1,104 @@
+{
+  "claim_id": "P145-DECLARED-FINITE-GRAPH-SCREEN",
+  "mathematics": {
+    "assertion_tested": "Complete prospective2graph,2block-rule,20setting,5source-profile,2transmission finite model screen; determine useful three-cycle contrasts and own-grid group envelopes, with mandatory classical exact-law mirror and crediting of all20candidate costs",
+    "coefficient_domain": "Integer graph cuts and fields; float64/complex128 unitary and Fock probabilities, not interval sign certification",
+    "conventions": "H=alpha*A_block+beta*diag(h), SCALE=1 (no normalization); source=(0,1,2), outside fixed, CFfull3 only, invalid/loss hold with zero gain. Greedy minimum delta first public tie. No C*, mask or known solution in compiler. Grid duplicates and zero-gain blocks retained. No photon RNG or finite-shot training. All80validation cut costs credited to classical controls.",
+    "inputs": [
+      "ER24,p=.25,topology1451001; RR24,degree4,topology1451002; NetworkX3.6.1 explicit networkx backend",
+      "WeightsPythonMT1452001/2, sorted edges, randint1..5; public marksPythonMT1453001/2",
+      "Paid best one-swap descent to nonnegative-minimum delta; cap20000queries EACH graph",
+      "Blocks: first3current+first3outside in marks; greedy3disjoint smallest(delta,rankremove,rankadd) then ordered by marks",
+      "alpha{-1,1},beta{0,1},t{0,.5,1,2,4}; loss eta=1,.8; each arm its own20setting grid max (not global continuous reoptimization)"
+    ],
+    "bounds": {
+      "graphs": 2,
+      "blocks_per_graph": 2,
+      "settings_per_block": 20,
+      "profiles": 5,
+      "transmissions": 2,
+      "contexts": 160,
+      "raw_probability_bins_per_context": 420,
+      "raw_probability_records": 67200,
+      "maximum_cut_queries_including_validation": 39826,
+      "native_calls": 0,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "workers": 1,
+      "retries": 0,
+      "logs_bytes": 4194304,
+      "raw_jsonl_bytes": 7340032,
+      "final_json_bytes": 1048576,
+      "scientific_combined_bytes": 8388608
+    },
+    "non_claims": [
+      "Cannot declare optimization advantage: all20candidates already credited and exact-law classical sampler matches B without20cut queries",
+      "No matched total wall-cost experiment, representative graph population, held-out result, independent optimizer replication or QPU claim",
+      "No exact/interval sign proof from float output; P33 diagnostics are not measured certificates",
+      "No native reproduction of these DEV laws; native qualification was a separate literalDFT6 B fixture"
+    ]
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P145_EXPERIMENT_CARD.md",
+    "research/P145_collective_lns_probe.py",
+    "research/P145_run_declared_screen.py",
+    "tests/test_p145_collective_lns.py",
+    "tests/test_p145_screen_driver.py",
+    "research/P145_FLOAT_ENGINE_INDEPENDENT_REVIEW.md",
+    "research/P145_SCREEN_DRIVER_REVIEW.md",
+    "research/P145_qualification_contract.json",
+    "research/P145_qualification/run_001/manifest.json",
+    "research/P145_qualification/run_001/junit.xml"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.11.15"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random MT19937; NetworkX3.6.1 explicit core factories; no optical RNG",
+    "seed": {
+      "topology": [
+        1451001,
+        1451002
+      ],
+      "weights": [
+        1452001,
+        1452002
+      ],
+      "marks": [
+        1453001,
+        1453002
+      ]
+    }
+  },
+  "run_authorized": true,
+  "authorization_note": "ROOT authorizes ONE prospective main after qualifier sealedb906808,10PASS0skip56finite Perceval points, and FULL207-line driver/core reviews. Input source hashes: driver2f137099,engine6af77fad. No rescue/retry/seed/grid change or QPU authority follows.",
+  "planned_command": [
+    ".venv/bin/python",
+    "-B",
+    "research/P145_run_declared_screen.py",
+    "--output",
+    "research/P145_declared_screen/run_001/data"
+  ],
+  "declared_results": [
+    "research/P145_declared_screen/run_001/data/records.jsonl",
+    "research/P145_declared_screen/run_001/data/graph_events.jsonl",
+    "research/P145_declared_screen/run_001/data/summary.json",
+    "research/P145_declared_screen/run_001/data/failure.json"
+  ]
+}
