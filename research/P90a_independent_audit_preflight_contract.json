@@ -1,0 +1,24 @@
+{
+  "claim_id": "P90a-INDEPENDENT-RECORDED-AUDITOR-TINY-QUALIFICATION",
+  "target_manifest_schema_version": 2,
+  "contract_only": true,
+  "binding_state": "FROZEN_CODE_ONLY_SEPARATE_ROOT_AUTHORIZATION_REQUIRED",
+  "mathematics": {
+    "assertion_tested": "Qualify the independent recorded-data checker with exactly29 unparameterized hardcoded tiny/scripted tests, without production roles/graphs/PCG/native or producer/helper imports.",
+    "coefficient_domain": "Strict builtin integers/Fraction and scalar binary64 complex arithmetic; scripted clock operands and records; tiny2x2 closed-form exponential; no SciPy or NumPy execution in this population.",
+    "conventions": "A literal weighted n4 adjacency verifies every unordered-edge cut and all four swap positions including duplicates. A fully scripted one-chain/one-attempt case distinguishes reset/current/Q/all-scored/compiler credit and source photons. Other fixtures cover independent Taylor40, actual rounded transport, full counts/repair, unknown factory CPU, conservative dual-clock prefixes/all rows, strict panel/failure precedence, malformed/partial records and closure authorization.",
+    "inputs": ["Only the9 project-relative files listed below exist locally and are used. Primary files, prospective B paths, role streams and external/native artifacts are not qualification inputs."],
+    "bounds": {"CPU_seconds":30,"wall_seconds":60,"threads":1,"workers":1,"planned_pytest_items":29,"planned_functions":29,"native_calls":0,"DEV_graphs":0,"production_role_digests":0,"PCG_constructions":0,"optimizer_replays":0,"max_log_bytes":4194304,"max_scientific_bytes":524288,"logical_bytes_PLAN":268435456,"hard_RSS_claim":false,"failed_retries":0},
+    "non_claims": ["A contract is not execution evidence.","Passing qualification does not authorize main, prove a Born law or establish benefit.","JUnit is the sole scientific result; hard/soft RLIMIT_FSIZE512KiB is a per-file limit, not an aggregate temporary-file guarantee."]
+  },
+  "execution_artifacts": ["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P90a_independent_raw_audit.py","tests/test_p90a_independent_raw_audit.py","research/P90a_independent_audit_spec.json","research/P90a_independent_audit_preflight_contract.json","research/P90a_independent_audit_main_TEMPLATE.json","research/P90a_INDEPENDENT_AUDIT_BINDING.md"],
+  "software": [{"name":"Python","version":"3.11.15"},{"name":"pytest","version":"8.4.2"}],
+  "randomness": {"used":false,"generator":"Hardcoded synthetic values only; production seed/RNG helpers remain uncalled","seed":null},
+  "planned_inherited_environment": {"PYTEST_DISABLE_PLUGIN_AUTOLOAD":"1","PYTEST_ADDOPTS":"","PYTEST_PLUGINS":"","PYTHONDONTWRITEBYTECODE":"1","OMP_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","MKL_NUM_THREADS":"1","VECLIB_MAXIMUM_THREADS":"1","NUMEXPR_NUM_THREADS":"1","BLIS_NUM_THREADS":"1"},
+  "planned_command": ["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","-c","import resource,runpy,sys;resource.setrlimit(resource.RLIMIT_FSIZE,(524288,524288));sys.argv=['pytest','-q','-p','no:cacheprovider','-o','junit_family=legacy','tests/test_p90a_independent_raw_audit.py','--junitxml=research/P90a_independent_audit_preflight/run_001/junit.xml'];runpy.run_module('pytest',run_name='__main__')"],
+  "runner_output_directory": "research/P90a_independent_audit_preflight/run_001",
+  "declared_results": ["research/P90a_independent_audit_preflight/run_001/junit.xml"],
+  "runner_binding": {"fresh_parent_required":true,"timeout":60,"max_cpu_seconds":30,"max_threads":1,"max_output_bytes":4194304,"max_memory_bytes":null,"max_cores":null,"input_policy":"Exactly9 repeated project-relative regular inputs; no absolute/symlink/external input","result_policy":"Sole JUnit is strictly inside the fresh runner parent; manifest/stdout/stderr are runner-owned"},
+  "resource_note": "Prospective only. Full checker source/tests/spec/contracts/MD require ROOT+independent static review before any import/AST/collection/test. One distinct qualification authorization, raw seal before reading, separate receipt, zero automatic retries. Main remains unbound and separately authorized.",
+  "positive_accepted": false
+}
