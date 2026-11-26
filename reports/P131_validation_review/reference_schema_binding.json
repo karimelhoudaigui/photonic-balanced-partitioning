@@ -1,0 +1,35 @@
+{
+  "PASS": true,
+  "groups": [
+    {
+      "group": "P96",
+      "manifest_path": "research/P96_column_loss_main/run_001/manifest.json",
+      "original_seal": "240c7e5518fbcd69d8f22bbe5e8ead3c1bbbc9c1",
+      "schema_version": 2,
+      "claim_id": "P96-COLUMN-BUDGET-TWO-PHOTON-SURROGATE-FINITE-VALIDATION",
+      "source_rows": 1,
+      "source_before_after_present": true,
+      "source_before_after_match_actual": true,
+      "output_rows": 5,
+      "outputs_match_exact_five_paths": true,
+      "declared_results": 3,
+      "three_result_paths_match": true,
+      "scope": "Schema/source/paths only; no scientific outcomes emitted."
+    },
+    {
+      "group": "P107",
+      "manifest_path": "research/P107_symbolic_filter_main/run_001/manifest.json",
+      "original_seal": "99f2d98d93f13c7fc088218bfb06ff39af4c40e9",
+      "schema_version": 2,
+      "claim_id": "P107-EXACT-P101-FINITE-FILTER-SQUARE-DISCRIMINATOR",
+      "source_rows": 1,
+      "source_before_after_present": true,
+      "source_before_after_match_actual": true,
+      "output_rows": 5,
+      "outputs_match_exact_five_paths": true,
+      "declared_results": 3,
+      "three_result_paths_match": true,
+      "scope": "Schema/source/paths only; no scientific outcomes emitted."
+    }
+  ]
+}
