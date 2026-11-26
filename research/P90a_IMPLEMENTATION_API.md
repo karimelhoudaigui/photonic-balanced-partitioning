@@ -35,8 +35,8 @@ NativeDependencies construction or a separately authorized tiny fixture.
 - exact_swap_batch(graph,mask,rank,base_cut,degree=None): materializes every exact
   delta+base cut and canonical mask; degree/ell cached only within this actual batch.
 - m_matrix(batch): M[a,i]=cuts[i*k+a]-base_cut, target rows/source columns.
-- compile_feature(batch,np_module,expm): M,H,eigenvalues,d,V, v_gram_error,
-  nonflat_max,ipr_sum in Compiled dataclass; no marks/R argument.
+- compile_feature(batch,np_module,expm): source_order,target_order,M,H,eigenvalues,
+  d,V,v_gram_error,nonflat_max,ipr_sum in Compiled dataclass; no marks/R argument.
 - transport_feature(compiled,source_ports,target_ports): Routed(W,w_gram_error,
   frame_gram_error), mapping batch.inside/outside source/target labels to W.
   Pure complex/list guards are allowed; no matrix repair.
@@ -105,6 +105,9 @@ compiler candidates never replace current directly.
 
 Control header records raw adapter/outer clock operands and identified P50
 REPORTED_DURATION(cpu+wall,null endpoints,source pin), conservative derived gaps.
+Returned clock operands and the complete cached trace are archived BEFORE gap/
+trace validation; failure keeps those raw operands. Partial compiler contexts and
+guard-observed matrices are retained. A failed finalization is never retried.
 One control_trace record stores complete column arrays cpu_seconds,wall_seconds,
 best_cut,mask_hex,proposal_count,stage_code. Stage dictionary in metadata/spec is
 [initialization,initial_scan,descent_scan,anneal_setup,anneal,uniform_restart,
@@ -132,6 +135,10 @@ identities; only main CLI enforces workstation-specific binary/path pins.
 
 The literal spec supplies18 project execution input paths and18 external pins.
 Runner binds only project inputs; source main verifies external hashes BEFORE
-scientific imports and records actual identity. Caps60CPU/90WALL/env1/native1,
+scientific imports, then verifies actually loaded critical module identities and
+retains actual interpreter hash and CURRENT environment/native readbacks.
+Caps60CPU/90WALL/env1/native1,
 log4MiB/science32MiB/reserve1MiB/logical256MiB plan/0retry. Results are strict
 children of fresh runner parents. No qualification or main is started by a freeze.
+The separate predata argv correction uses stdlib RLIMIT_FSIZE32MiB before pytest
+for the sole JUnit file. Reserve1MiB/singleJSON4MiB apply to production, not XML.
