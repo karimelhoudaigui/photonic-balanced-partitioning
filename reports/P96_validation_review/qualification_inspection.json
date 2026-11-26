@@ -1,0 +1,64 @@
+{
+  "scope": "postseal stdlib XML/manifest metadata inspection; all11 full XML observations read at ROOT; not new qualification/physics run",
+  "raw_seal_commit": "bd41d80",
+  "source_original_freeze": "0eabdadc70c2b7085c40b22183320e8655d00e1d",
+  "manifest_repository": {
+    "commit": "16d43ab7b5e9a0da71aeb90af55422711439190e",
+    "dirty": true
+  },
+  "run": {
+    "started_at": "2026-11-26T04:50:53.037697+00:00",
+    "runtime_seconds": 0.493662,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "test_names": [
+    "test_vacuum",
+    "test_unary_attenuation",
+    "test_scaled_hom_factorial_and_zero",
+    "test_nonorthogonal_two_input_hand_table",
+    "test_three_input_rank_one_hand_table",
+    "test_smaller_rank_one_independent_table",
+    "test_physical_outside_domain_is_preserved",
+    "test_boundary_rank_one_four_input_table",
+    "test_registered_population_counts_and_iterator",
+    "test_strict_json_retains_nonfinite_diagnostics",
+    "test_thread_drift_keeps_actual_observations"
+  ],
+  "input_count": 8,
+  "input_hashes_unchanged": true,
+  "official_v2_root_validation": "PASS",
+  "raw_artifacts": [
+    {
+      "path": "research/P96_column_loss_preflight/run_001/junit.xml",
+      "bytes": 9118,
+      "sha256": "c6d83e89931531f28ce9f123b8834fa56a75bb99790958f25c470e5947a37621"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/manifest.json",
+      "bytes": 7824,
+      "sha256": "73a5236a8b00e92244b3990c9a67b4aa2fe43325dcd576cb4cd7d784427a455f"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/P96_column_loss_preflight/run_001/stdout.txt",
+      "bytes": 215,
+      "sha256": "bf33e9a030ea23efc7ace785a81ef7a06c366ca04c19c2b9d73ce32857d469c8"
+    }
+  ],
+  "administrative_orchestration_note": "The qualification command completed before returning a session_id. Storing its absent undefined ID raised an orchestration serialization error; no rerun occurred. Raw4 files were sealed before interpretation."
+}
