@@ -41,7 +41,8 @@
       "No independent recomputation of the entire occupation law",
       "No optimizer, hardware, gate, novelty, held-out or manuscript claim",
       "No sign inherited unless all exact comparisons and completeness checks pass"
-    ]
+    ],
+    "coefficient_domain": "Exact fractions.Fraction rational real/imaginary bivariate polynomials of bidegree at most(8,8); independent Ryser permanents size<=4, exact affine expansion and Bernstein basis conversion. No float/native/RNG."
   },
   "execution_artifacts": [
     "AGENTS.md",
@@ -66,6 +67,7 @@
     "research/P113_INDEPENDENT_MEAN_CODE_REVIEW.md",
     "research/P113_ROOT_PRE_DATA_BINDINGS.md",
     "research/P113_ROOT_MAIN_AUTHORIZATION.md",
+    "research/P113_ADMINISTRATIVE_CONTRACT_CORRECTION.md",
     "research/P113_execution_binding.json"
   ],
   "reference_seal_commit": "99f2d98d93f13c7fc088218bfb06ff39af4c40e9",
@@ -238,6 +240,11 @@
       "path": "research/P113_ROOT_MAIN_AUTHORIZATION.md",
       "bytes": 2116,
       "sha256": "9d63bdace7f5d98a1fd73a0d34ecc7f94add55bc296bc8c18166315405c31b72"
+    },
+    {
+      "path": "research/P113_ADMINISTRATIVE_CONTRACT_CORRECTION.md",
+      "bytes": 1327,
+      "sha256": "c445216feea4ea062685390f3a4ad27a7c3c9e2db902816aaaedf9b8ed106c50"
     }
   ],
   "artifacts_reference": [
