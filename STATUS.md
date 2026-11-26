@@ -3,12 +3,15 @@
 Current continuation: P82a's independent recorded-data audit is complete,
 with no discrepancy in96countrecords/7014cuts/912FAST checkpoints. Its primary
 verdict remains INCONCLUSIVE_FAST_ELIGIBILITY and no advantage is demonstrated.
-The integrated local suite passes1236 tests. P90a is a genuinely changed
-source-aware/nonflat mechanism currently in CODE ONLY implementation; no new
-qualification or DEV main is authorized. P91's conditional spectral-loss
+The integrated local suite now passes1519 tests after P90a's separate
+283-item/254-tiny-probability qualification. Its source-aware/nonflat
+implementation is qualified only in that tiny/scripted scope; no DEV main
+is authorized while the independent predata checker is authored CODE ONLY.
+P91's conditional spectral-loss
 replacement and P92's calibration counterexample are accepted in their exact
 scopes. See reports/P82a_ROOT_FINAL_CHECKPOINT.md,
-reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md and research/P45_LIVE_STATE.md.
+reports/P90_P91_P92_ROOT_THEORY_CHECKPOINT.md,
+reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md and research/P45_LIVE_STATE.md.
 
 Historical P79 checkpoint: P79's sole six-source finite raw-PNR validation
 passes, and P80's rational/finite-bit sampler and P81's dual-rail stability

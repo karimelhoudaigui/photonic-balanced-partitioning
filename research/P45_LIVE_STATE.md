@@ -68,11 +68,13 @@ isolated assigned branches before integration; originals/corrections retained.
 ROOT and independentP66 read the entire exact freeze; reviewe7ce3474/174lines
 finds no material blocker. All18project/18criticalexternal pins match and all
 283 literal node names agree by nonexecuting metadata checks.
-ROOT now authorizes ONE tiny/scripted qualification under the exact contract:
-reports/P90a_ROOT_QUALIFICATION_AUTHORIZATION.md. Numerical slot ROOT-owned;
-no production seed/PCG/DEV graph/realK12matrix/stochastic source/P43/P50 call.
-Raw records must be sealed before interpretation and independently inspected.
-No main is authorized. P63 authors the independent recorded checker CODE ONLY
+That ONE tiny/scripted qualification completed: originalraw929f752 BEFORE
+interpretation, separate receipt82d74145+b2f9af31;283PASS/254Naive/181zeros,
+maxprobabilityerror2.22e-16. ROOTindependentDP+officialv2PASSproducerANDROOT.
+Integratedfullsuite1519PASS44.61s/native+env1, rawlogsb0d90be before reading.
+Numerical worker now FREE, but no main is authorized. No production seed/PCG/
+DEVgraph/realK12matrix/stochasticsource/P43/P50call occurred. See
+reports/P90a_ROOT_QUALIFICATION_CHECKPOINT.md. P63 authors the independent recorded checker CODE ONLY
 in .local/p66-dark-barrier, before any B data; no imports/AST/tests there.
 
 After successful qualification, ROOT must still audit integration tests,
