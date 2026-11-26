@@ -77,16 +77,23 @@ hit10kguard early soeligiblefalse. No strictfixedwinner; Tier2/Dspecies
 explicitNOT_RUN. No positive, formalveto or rerun/guardretune claimed.
 ROOT read compact status/control/case fields and logs; first oversized
 summary rendering was truncated and doesNOTcountasfullsummaryread.
-Separate producerreceipt pending; independentstoreddata audit pending.
+Separate producerreceipt5bdab752/149d013d240l FULLREAD+integratedROOTb584105;
+fullraw2,542,073B/science2,525,942B,64bunchedrepairs/7014paidscoredstates.
+BothbestfirstdiscoveredbyclassicalQneighbors, notrawopticalproposals.
+Independentstoreddata audit pending; source/resultdata nevermodified.
 
 Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
 data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old
 clock blockers are discharged above. CheckerCODE ONLY now frozen34c95130,
 sixfiles1638l/sourceSHAf595fcae, corrected94f80b94 schema. ROOT FULLREAD
 1638l; exactreviewaa544082/ccdfde10144l FULLREAD, no blocker. P63nowhas
-ONEcheckerqual auth21synthetic/11localinputs/CPU30wall60/env1/0retry,
-rawsealBEFOREinterpretation+separatereceipt. Author/reviewer stillblindto
-Bdata throughthisqualification. Datasetbinding/auditmainNOTAUTHORIZED.
+Firstcheckerqual wrapper REJECTED PRELAUNCH: declaredJUnit siblingof
+runneroutput violatesMathboxinside-output rule; no child/import/test/RNG.
+Rejectionebee1a04/7370eaf8 archivedROOT5b54362, no fakev2manifest.
+P63CODEONLY fix pending: qualpathsrun_002parent+JUnitinside, mainTEMPLATE
+runnerparentrun_001,MDcorrigendum. Sourcef595/tests7dc/spec6fdunchanged;
+no behavior/tol/seed change. ROOT+P66reviewdelta before newqualauth.
+Author/reviewer stillblindtoBdata. Datasetbinding/auditmainNOTAUTHORIZED.
 DEV seed/graph/mark replay only AFTER B rawseal and later audit-main auth.
 Compilation-before-R is source-bound, not a separately timed raw endpoint;
 custom control audit covers cuts/cache lineage/clocks, not policy replay.

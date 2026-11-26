@@ -69,13 +69,19 @@ factory-duration accounting. Source94f80b94 closes the reported-duration
 reservations after full ROOT and independent source reads. Its unique
 deterministic qualification passed27 items/183 amplitudes; ROOT separately
 recomputed all183 stored probabilities. Integrated CI passes1214 tests,
-with602 historical files unchanged. No DEV/main has run; the independent
-recorded checker is being frozen before data. P82 eta0 has an independently reconstructed exact
+with602 historical files unchanged. The sole DEV main has now completed
+96 attempts/768 modeled photons. Its provisional status is inconclusive:
+B and EACH FAST mode reach46/22, while all four controls hit their work
+guard early; Tier2/D remain NOT_RUN. No advantage is observed. The
+independent recorded checker was frozen before those data and awaits
+qualification after a preserved prelaunch output-path rejection.
+P82 eta0 has an independently reconstructed exact
 decoded-law null. The higher-order nonuniform optimization gain is OPEN.
 P89 now proves the ideal raw source-removal factorisation for all eta;
 it is not a quench/trajectory no-go. See reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md
-and reports/P89_ROOT_REMOVAL_CHECKPOINT.md. No new main ran. One numerical worker
-maximum; it is FREE after the full root regression. Current ownership and
+and reports/P89_ROOT_REMOVAL_CHECKPOINT.md. The main receipt is
+research/P82a_PRIMARY_MAIN_RECEIPT.md; independent audit is pending.
+One numerical worker maximum. Current ownership and
 continuation: research/P45_LIVE_STATE.md.
 
 Earlier continuation evidence: P55's new neutral-count mechanism completed
