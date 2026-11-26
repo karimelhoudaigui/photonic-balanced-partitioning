@@ -1,0 +1,36 @@
+{
+  "Python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "external_artifacts": [
+    {
+      "role": "physical_interpreter",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/bin/python3.11",
+      "sha256": "831807be3d255aae0708810462ce0cde2467235f7daaa86e93d0ddc58b1a4101",
+      "bytes": 52448
+    },
+    {
+      "role": "stdlib_fractions",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/fractions.py",
+      "sha256": "d52a647a86a32e1905d38fe7a19cf200291f598dc4ed51273ac27f38723fb559",
+      "bytes": 28677
+    },
+    {
+      "role": "stdlib_math",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload/math.cpython-311-darwin.so",
+      "sha256": "bf8a978ce04cd9c2a8e81a0e57d69f26c65d39426fe3768174879779147422ae",
+      "bytes": 93704
+    },
+    {
+      "role": "stdlib_dataclasses",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/dataclasses.py",
+      "sha256": "77a41ea9eb35d959781087b72ef5b452218b57b9d8f2d28688d45a40ca7f8a09",
+      "bytes": 58472
+    },
+    {
+      "role": "stdlib_resource",
+      "path": "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload/resource.cpython-311-darwin.so",
+      "sha256": "a0824ea378cdd3bb673125e95e9141fffd73f3117d1ed06fbf078b189d0f3f6c",
+      "bytes": 52480
+    }
+  ],
+  "scope": "Observed metadata pins only; no P131 source import or mathematical evaluation."
+}
