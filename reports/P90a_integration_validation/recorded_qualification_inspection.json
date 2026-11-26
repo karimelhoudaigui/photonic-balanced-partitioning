@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "inspector_sha256": "1b8e522a905bc99357d67ae49cda74f4b6a5cd3f28d94988c0f0ff70384826d0",
+  "raw_seal_commit": "929f7521b7b9890467be06be9799762c2739410f",
+  "manifest_sha256": "dc914575db7e5a0f7baf380d31c68c5576f4f04bf30bc2733cecc696aea93189",
+  "JUnit_sha256": "933f2cb1485bab72643f74b1f4fed1879e696f370054e52ff5440977b60f84be",
+  "passed_items": 283,
+  "independently_recomputed_amplitudes_and_probabilities": 254,
+  "zero_reference_points": 181,
+  "literal_native_zero_points": 181,
+  "max_absolute_amplitude_error": 1.1102230246251565e-16,
+  "max_absolute_probability_error": 2.220446049250313e-16,
+  "input_hashes_checked": 18,
+  "external_pins_checked": 18,
+  "native_configuration": 1,
+  "scope": "Sealed tiny deterministic records only; no scientific imports, native calls, RNG, DEV graph, main, TV or optimizer/hardware validation"
+}
