@@ -1,0 +1,251 @@
+{
+  "schema_version": 2,
+  "claim_id": "P145-DECLARED-FINITE-GRAPH-SCREEN",
+  "repository": {
+    "commit": "f6b1c13ce9758f31b58280e5410f928f5ee12ab3",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "research/P145_run_declared_screen.py",
+    "--output",
+    "research/P145_declared_screen/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Complete prospective2graph,2block-rule,20setting,5source-profile,2transmission finite model screen; determine useful three-cycle contrasts and own-grid group envelopes, with mandatory classical exact-law mirror and crediting of all20candidate costs",
+    "coefficient_domain": "Integer graph cuts and fields; float64/complex128 unitary and Fock probabilities, not interval sign certification",
+    "conventions": "H=alpha*A_block+beta*diag(h), SCALE=1 (no normalization); source=(0,1,2), outside fixed, CFfull3 only, invalid/loss hold with zero gain. Greedy minimum delta first public tie. No C*, mask or known solution in compiler. Grid duplicates and zero-gain blocks retained. No photon RNG or finite-shot training. All80validation cut costs credited to classical controls.",
+    "inputs": [
+      "ER24,p=.25,topology1451001; RR24,degree4,topology1451002; NetworkX3.6.1 explicit networkx backend",
+      "WeightsPythonMT1452001/2, sorted edges, randint1..5; public marksPythonMT1453001/2",
+      "Paid best one-swap descent to nonnegative-minimum delta; cap20000queries EACH graph",
+      "Blocks: first3current+first3outside in marks; greedy3disjoint smallest(delta,rankremove,rankadd) then ordered by marks",
+      "alpha{-1,1},beta{0,1},t{0,.5,1,2,4}; loss eta=1,.8; each arm its own20setting grid max (not global continuous reoptimization)"
+    ],
+    "bounds": {
+      "graphs": 2,
+      "blocks_per_graph": 2,
+      "settings_per_block": 20,
+      "profiles": 5,
+      "transmissions": 2,
+      "contexts": 160,
+      "raw_probability_bins_per_context": 420,
+      "raw_probability_records": 67200,
+      "maximum_cut_queries_including_validation": 39826,
+      "native_calls": 0,
+      "cpu_seconds": 60,
+      "wall_seconds": 90,
+      "threads": 1,
+      "workers": 1,
+      "retries": 0,
+      "logs_bytes": 4194304,
+      "raw_jsonl_bytes": 7340032,
+      "final_json_bytes": 1048576,
+      "scientific_combined_bytes": 8388608
+    },
+    "non_claims": [
+      "Cannot declare optimization advantage: all20candidates already credited and exact-law classical sampler matches B without20cut queries",
+      "No matched total wall-cost experiment, representative graph population, held-out result, independent optimizer replication or QPU claim",
+      "No exact/interval sign proof from float output; P33 diagnostics are not measured certificates",
+      "No native reproduction of these DEV laws; native qualification was a separate literalDFT6 B fixture"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Python random.Random MT19937; NetworkX3.6.1 explicit core factories; no optical RNG",
+    "seed": {
+      "topology": [
+        1451001,
+        1451002
+      ],
+      "weights": [
+        1452001,
+        1452002
+      ],
+      "marks": [
+        1453001,
+        1453002
+      ]
+    }
+  },
+  "run": {
+    "started_at": "2026-11-26T22:52:26.790522+00:00",
+    "runtime_seconds": 1.350231,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P145_EXPERIMENT_CARD.md",
+    "research/P145_collective_lns_probe.py",
+    "research/P145_run_declared_screen.py",
+    "tests/test_p145_collective_lns.py",
+    "tests/test_p145_screen_driver.py",
+    "research/P145_FLOAT_ENGINE_INDEPENDENT_REVIEW.md",
+    "research/P145_SCREEN_DRIVER_REVIEW.md",
+    "research/P145_qualification_contract.json",
+    "research/P145_qualification/run_001/manifest.json",
+    "research/P145_qualification/run_001/junit.xml"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P145_EXPERIMENT_CARD.md",
+      "sha256": "3161275a6b4487380f30c18234fcf3cd038446aadd9fe64831a51fa81eaa8bf3",
+      "sha256_after": "3161275a6b4487380f30c18234fcf3cd038446aadd9fe64831a51fa81eaa8bf3"
+    },
+    {
+      "path": "research/P145_collective_lns_probe.py",
+      "sha256": "6af77fadb703120130545779abba5c87618c1331c657e55dab66a95cb75c42bb",
+      "sha256_after": "6af77fadb703120130545779abba5c87618c1331c657e55dab66a95cb75c42bb"
+    },
+    {
+      "path": "research/P145_run_declared_screen.py",
+      "sha256": "2f13709967ddbadae635d38bba55b934f89bbce45bb14042b658197520010b83",
+      "sha256_after": "2f13709967ddbadae635d38bba55b934f89bbce45bb14042b658197520010b83"
+    },
+    {
+      "path": "tests/test_p145_collective_lns.py",
+      "sha256": "585c8ebb58a07eeed6c479ed89ed85596e17f3c495d0af9b87c697ec686397bb",
+      "sha256_after": "585c8ebb58a07eeed6c479ed89ed85596e17f3c495d0af9b87c697ec686397bb"
+    },
+    {
+      "path": "tests/test_p145_screen_driver.py",
+      "sha256": "940ce6fe5c6adcd903f8befbf7eb501de2405cc8b5ba54f1fd0c882295cdfba0",
+      "sha256_after": "940ce6fe5c6adcd903f8befbf7eb501de2405cc8b5ba54f1fd0c882295cdfba0"
+    },
+    {
+      "path": "research/P145_FLOAT_ENGINE_INDEPENDENT_REVIEW.md",
+      "sha256": "40956869f25a07a52de8a5d541e5a2f43a33a67220d38e3695f79b674e056931",
+      "sha256_after": "40956869f25a07a52de8a5d541e5a2f43a33a67220d38e3695f79b674e056931"
+    },
+    {
+      "path": "research/P145_SCREEN_DRIVER_REVIEW.md",
+      "sha256": "616fc71bcced88dacde1b3535e08f8c8344adabab946190aeab911e87bfd9923",
+      "sha256_after": "616fc71bcced88dacde1b3535e08f8c8344adabab946190aeab911e87bfd9923"
+    },
+    {
+      "path": "research/P145_qualification_contract.json",
+      "sha256": "ea02b950832a5de8502171ada8adcd23526f11d196a0b7e25ca832fa63a53a82",
+      "sha256_after": "ea02b950832a5de8502171ada8adcd23526f11d196a0b7e25ca832fa63a53a82"
+    },
+    {
+      "path": "research/P145_qualification/run_001/manifest.json",
+      "sha256": "343155e738cd88d6e28161a269b18385b317ad8b67cda0be9828c51be8cb74a6",
+      "sha256_after": "343155e738cd88d6e28161a269b18385b317ad8b67cda0be9828c51be8cb74a6"
+    },
+    {
+      "path": "research/P145_qualification/run_001/junit.xml",
+      "sha256": "39196f1668bb3ce519851483df332aba4327b081b4a402e2760682b77c4e1a73",
+      "sha256_after": "39196f1668bb3ce519851483df332aba4327b081b4a402e2760682b77c4e1a73"
+    }
+  ],
+  "output_directory": "research/P145_declared_screen/run_001",
+  "declared_results": [
+    "research/P145_declared_screen/run_001/data/records.jsonl",
+    "research/P145_declared_screen/run_001/data/graph_events.jsonl",
+    "research/P145_declared_screen/run_001/data/summary.json",
+    "research/P145_declared_screen/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/P145_declared_screen/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P145_declared_screen/run_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P145_declared_screen/run_001/data/records.jsonl",
+      "sha256": "95dd21c8c963ba7e13b92cef5ac1f9f6ffc6e61a22df8b44a915611029ac317a",
+      "kind": "result"
+    },
+    {
+      "path": "research/P145_declared_screen/run_001/data/graph_events.jsonl",
+      "sha256": "26e5cc6a07615eb9986f5d70653f57bb0bc3364873e6e6e2543c45f6d8eb937e",
+      "kind": "result"
+    },
+    {
+      "path": "research/P145_declared_screen/run_001/data/summary.json",
+      "sha256": "65536cb9c047c26ad8c85236bf45e20feb01cb7b2088469a85b2ca2de8b7043a",
+      "kind": "result"
+    },
+    {
+      "path": "research/P145_declared_screen/run_001/data/failure.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
