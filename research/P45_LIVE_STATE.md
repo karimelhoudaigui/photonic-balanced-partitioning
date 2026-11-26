@@ -39,7 +39,7 @@ Prior GitHub6346647 observedGREEN1175PASS12.12s (run45720132104).
 GitHub9572bc6 is now separately observed GREEN1187PASS18.53s,
 run45724159459/job139589633825; actual job logs also verify602 old files. P66 v1 raw producers stay4925feb.
 
-Numerical worker reserved to P62 for ONE P82a deterministic qualification,
+Numerical worker FREE after ONE P82a deterministic qualification,
 not DEV/main. P87 is ACCEPTED after full ROOT168+peer308+exact344
 reads, sources6436860/17ba1d4 and auditb77c8c0. Its sharp fixed-N oracle
 limitR/2 matches identity; this is not a generic sampling-optimizer no-go.
@@ -59,12 +59,16 @@ source1328/tests961/spec74/precontract243/maincontract203/population215,
 freeze (5f9bb4c/5dab0f1). Corrective94f80b94 changes only3files121+/9-;
 ROOT read the full delta, independent0411f495/f39f1a4c102-line review
 closes R1/R2 typed factory/P50 operand references. Parameters unchanged.
-ROOT now authorizes ONE fixed27-node/183-Naive qualification at94f80,
-capsCPU60wall90/env+native1/0retry, raw commit BEFORE interpretation and
-separate receipt. No DEV graphs/seeds or 8-photon native sample inqual.
-No qualification result is yet claimed. No unqualified push to CI.
+ONE fixed27-node/183-Naive qualification at94f80 is now ACCEPTED:
+raw8e6ba066 sealedBEFOREinterpretation, separate176-line receipt39b61bb9.
+Runner29.445581s/pytest28.46s,27PASS/8warnings/0errors;15inputsunchanged,
+v2validatorPASS. ROOT's frozen6d5f823 stdlib inspector recalculatedall183
+probabilities,maxabs2.22e-16,65zero refs/all65native0,external10pinsmatch.
+No DEV graph/PCG/8phsample/P43/P50actual call. Checkpoint:
+reports/P82a_ROOT_QUALIFICATION_CHECKPOINT.md. Source+qualraw/receipt now
+integratedROOT, no full-suite claim for this new executable tree yet.
 Main96B/768 modeled photons remains separately unauthorized and awaits
-sealed qualification inspection plus the independent checker predatafreeze.
+the independent checker's complete predatafreeze (source/tests/contracts).
 
 Independent recorded audit PLAN1f8f0ce/b3b8d4e8 (306lines) is frozen before
 data in .local/p66-dark-barrier (p63_physics_resume). ROOTreadall; its old

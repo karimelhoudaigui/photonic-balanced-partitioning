@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "inspector_sha256": "b77360a4b61c8fdea1bf28f26ea1c135b8ab049a15a3e97f162bd7ab9146688d",
+  "raw_seal_commit": "8e6ba06645954a0113b8d473eaf4648c7dbf4221",
+  "manifest_sha256": "1c068598e1327bc3d4988b8be9f90b3ab878e6802048f0edccb447a08d831b0b",
+  "JUnit_sha256": "b46f164eb7b2b668e474c781157d6bd393011dc9d6e30a003779d6384901ad64",
+  "passed_nodes": 27,
+  "independently_recomputed_probabilities": 183,
+  "max_absolute_probability_error": 2.220446049250313e-16,
+  "zero_reference_points": 65,
+  "literal_native_zero_points": 65,
+  "input_hashes_checked": 15,
+  "external_pins_checked": 10,
+  "observed_native_configuration": 1,
+  "runner_wall_seconds": 29.445581,
+  "scope": "Recorded deterministic qualification only; no new native calls, RNG, DEV data, optimizer or hardware validation"
+}
