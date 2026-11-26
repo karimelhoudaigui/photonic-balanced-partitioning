@@ -115,12 +115,26 @@ whole-law sampling or excludes all search dynamics. P62's source check
 e3b1e6e confirms known characteristic/permanent/Gurvits and parity-feedback
 ingredients; there is no new-identity or broad novelty claim. See
 ../reports/P94_ROOT_PARITY_CHECKPOINT.md.
-The filter remains OPEN with no proved unconditional improvement statistic;
-P95 now derives its first B/D/group-sensitive orders before any experiment.
-P96 separately derives a positive classical low-count approximation using
-a certified column/trace transmission budget instead of an invalid spectral
-inference. No public mean is a calibration and no numerical bound is observed.
-No changed-route numerical pilot is yet justified.
+P95sourcef145aca1 and independent review6e2da25e are fully read and accepted
+by ROOT. At small filter strength, first B-D derivative0, quadratic pair
+stencil and full cubic flux terms have explicit remainders. Same-channel
+group2-mixture equality is false; flux can still be a two-source effect.
+With collision/loss self-loops, the cubic effect only explores the paid
+one-replacement frontier; from a strict one-swap minimum the first possible
+improvement is order>=beta^4. No useful graph sign or timed advantage follows.
+Finite-strength search remains OPEN. See ../reports/P95_ROOT_FILTER_CHECKPOINT.md.
+
+P96source6f4e7fb9/169lines is fully read at ROOT and under independent proof
+and primary-source review. It constructs a positive classical0/1/2-photon
+law from exact first/second moments under certified trace transmission<=1/2,
+with proposed exact TV expression and bound24e3(c)<=4mu^3. No public mean
+is a calibration and the hypothetical12*.02 example is not a measured bound.
+The small rational-PNR/159-native-point validation is CODE ONLY in isolated
+P94 author checkout; no import, collection, native test or run yet. Separate
+full source review and ROOT execution authorization are still required.
+No changed-route optimization pilot is yet justified. Last confirmed remote
+ROOT10c01c5 plus original producer/reviewer refs are saved on GitHub; newer
+P95/P96 records will be pushed after their own integration checks.
 
 ## New scoped theory
 

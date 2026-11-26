@@ -331,3 +331,20 @@ No photonic optimization experiment was run or failed here. The rejected
 claims are expressivity, same-mesh witness and graph-size amplification as
 sufficient advantage mechanisms, not all possible coded search dynamics.
 reports/P94_ROOT_PARITY_CHECKPOINT.md. Positive target remains OPEN.
+
+
+## P95 weak filtering: rejected mechanistic shortcuts, no numerical pilot
+
+A quadratic B-D coefficient has no universally favorable graph-cost sign.
+It consists of explicit loss/bunch/exchange frontier terms. Cubic flux does
+not imply genuine three-source interference: an empty third mode can provide
+a two-source propagation loop. Conversely one convex group2 mixture at a
+fixed channel cannot generally reproduce all overlapping pair contributions.
+These are analytical discriminators, not an optimization advantage.
+
+Under the precise collision/loss-self-loop, direct vertex encoding and strict
+one-swap-minimum assumptions, no improving signal occurs before order beta4.
+Nonlinear decoders/quenches can change that premise and require paid endpoints.
+Sourcef145aca1, independent proof6e2da25e, ROOT acceptance in
+reports/P95_ROOT_FILTER_CHECKPOINT.md. No experiment ran, and finite-strength
+filters remain open at the nontrivial optimization/cost implication.

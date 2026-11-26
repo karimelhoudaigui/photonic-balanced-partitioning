@@ -1555,3 +1555,18 @@ all fully read by ROOT. Known Gurvits/binned-characteristic/parity-feedback
 ingredients are attributed, not claimed new. No numerical test or pilot ran.
 reports/P94_ROOT_PARITY_CHECKPOINT.md. P95 filter and P96 column-budget
 surrogate continue mathematically before any new DEV run. CLAIM-042 OPEN.
+
+
+## P95 dissipative-filter discriminator, analytical checkpoint
+
+Sourcef145aca1/128l and independent proof6e2da25e/167l fully read at ROOT.
+Exact raw-PNR+total-loss PGF yields vanishing first B-D derivative, a complete
+quadratic pair stencil, full cubic pair/cycle terms, and a hard CPTP remainder.
+A same-channel group2-mixture claim fails on the triangle; cubic magnetic flux
+can already use only two occupied sources through an empty third mode.
+For collision/loss self-loops and strict one-swap minima, improvement first
+becomes possible at order>=beta4, with explicit paid fixed-r CF frontiers.
+No favorable optimization sign or measured cost ordering follows. KEEP the
+scoped derivation; finite-strength route OPEN, not globally ruled out.
+No experiment ran; paper/main/QPU unchanged. P96 proceeds independently.
+reports/P95_ROOT_FILTER_CHECKPOINT.md.
