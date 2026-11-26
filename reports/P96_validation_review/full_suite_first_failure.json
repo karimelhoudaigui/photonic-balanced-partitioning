@@ -1,0 +1,21 @@
+{
+  "failed_full_suite_raw_seal": "fae05f1",
+  "failed_execution_commit": "ea7364d204973f8f8ba88961ea2b50d4fdc3f3b8",
+  "actual_summary": "1541 passed,6 warnings,18 setup errors in41.25s",
+  "cause": "ROOT-added4MiB per-regular-file FSIZE also applied to copying existing17MiB P33 fixture; Errno27 File too large",
+  "observed_existing_sizes": [
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/primary/data/raw.json",
+      "bytes": 17163136
+    },
+    {
+      "path": "results/P33_density_supervised/20261122T014822Z/replication/data/raw.json",
+      "bytes": 17164374
+    },
+    {
+      "path": "experiments/P37_loss_source/run/data/raw.json",
+      "bytes": 961985
+    }
+  ],
+  "correction": "New integration helper/output002 only;32MiB per regular file fits observed fixture and retains CPU120/wall180/env+native1. No scientific P96 source/contract/population/tolerance/cap changes. No main rerun; native main not yet run."
+}
