@@ -1,0 +1,29 @@
+{
+  "claim_id": "P107-EXACT-P101-FINITE-FILTER-SQUARE-DISCRIMINATOR",
+  "target_manifest_schema_version": 2,
+  "contract_only": true,
+  "binding_state": "UNBOUND_CODE_ONLY_NO_EXECUTION_AUTHORIZATION",
+  "run_authorized": false,
+  "mathematics": {
+    "assertion_tested": "Exact symbolic P101 family, complete 4-photon lossy signal laws B/D on70 occupations, independent B factorial-moment reconstruction, both full decoder means, all25 rational grid points and all21 boxes per decoder at Bernstein degree(8,8). ENGINE_PASS is independent of sign certificate.",
+    "inputs": ["P101 source69e4a6fe434a677acfc5a7e616471990b16db86b SHA65e4199fb468d02eec4155072a60b8d7818ee0d57ef6205e83c2da51bc60027c","F_jr=(-i)^(jr)/2;T=Fdiag(1,x,xy,y)Fdagger;4 known CF inputs; signal PNR including all losses/collisions","Graph scaled weights2 on{0,2}/{1,3},1 otherwise;cut=sum crossing scaled weights/2; PNR independent uniform24 tie permutations and threshold uniform-subset decoder","Five literal physical fixtures, four decoder hands, three Bernstein hands, identity/rank-one target endpoints; no graph/seed selection or optimizer training","Actual8 static regular files below must be bound after ROOT integration; no raw-data input is required"],
+    "coefficient_domain": "Gaussian INTEGER pairs in sparse polynomial(x,y,z), common target denominator16^4=65536; Fraction for means/evaluations/Bernstein. No float/complex-float/SymPy/NumPy/Perceval.",
+    "conventions": "All70*81 coefficients include zero/negative real values and imaginary diagnostics. Complete raw normalization; independent output factorial division. Whole-level Bernstein nonnegativity is a sufficient square certificate; a negative grid point refutes the square only, not the actual beta curve.",
+    "bounds": {"CPU_seconds":60,"wall_seconds":90,"workers":1,"threads":1,"FSIZE_bytes":4194304,"scientific_combined_bytes":4194304,"reserve_bytes":65536,"log_bytes":4194304,"photons_max":4,"signal_modes_max":4,"degree_x_max":8,"degree_y_max":8,"signal_degree_max":4,"permutations_max":24,"coefficient_rows":5670,"grid_pairs":25,"boxes":42,"Bernstein_rows":3402,"registered_tasks":78,"records_nominal":9612,"failed_retries":0,"RNG_draws":0,"native_calls":0,"hard_RSS_claim":false},
+    "non_claims": ["No executed result at freeze","No general graph/finite-filter no-go or optimizer benefit","No mean-to-best-of-T/first-hitting/setup-free transfer","No hardware/PNR access, novelty, held-out, manuscript or QPU gate"]
+  },
+  "execution_artifacts": ["AGENTS.md","pyproject.toml","requirements-research-lock.txt","research/P107_symbolic_filter_validation.py","research/P107_SYMBOLIC_FILTER_POPULATION.md","research/P107_symbolic_filter_contract_TEMPLATE.json","research/P101_FINITE_FILTER_ALL_OUTPUT_CARD.md","research/P98_FACTORIAL_SURROGATE_HIERARCHY.md"],
+  "future_active_binding": "research/P107_symbolic_filter_execution_binding.json",
+  "binding_schema": "ROOT creates a separate active v2 contract with binding_state=ROOT_AUTHORIZED,run_authorized=true,source_sha256 and artifacts[path/sha256/bytes]. execution_artifacts contains each actual descriptor path once plus binding itself; descriptor table excludes selfhash. All8 static inputs required; extra review provenance permitted. P101 actual source bytes must match the frozen SHA. No guessed SHA, moving-source substitution or authorization inherited from this TEMPLATE.",
+  "coefficient_record_schema": {"kind":"coefficient","occupation":"4 nonnegative integer counts;total0..4","powers":"[i,j],each0..8","denominator":65536,"B":"[real_integer,imag_integer] numerator","D":"same","B_minus_D":"same","B_moment":"independent-alternative B numerator;coefficients divided by denominator"},
+  "software": [{"name":"Python","version":"3.11.15"}],
+  "randomness": {"used":false,"generator":"None; exhaustive finite permutations/subsets/grid/boxes","seed":null},
+  "planned_inherited_environment": {"PYTHONDONTWRITEBYTECODE":"1","OMP_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","MKL_NUM_THREADS":"1","VECLIB_MAXIMUM_THREADS":"1","NUMEXPR_NUM_THREADS":"1","BLIS_NUM_THREADS":"1"},
+  "planned_command": ["/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python","-B","research/P107_symbolic_filter_validation.py","--binding","research/P107_symbolic_filter_execution_binding.json"],
+  "runner_output_directory": "research/P107_symbolic_filter_main/run_001",
+  "declared_results": ["research/P107_symbolic_filter_main/run_001/data/records.jsonl","research/P107_symbolic_filter_main/run_001/data/summary.json","research/P107_symbolic_filter_main/run_001/data/failure.json"],
+  "runner_binding": {"fresh_parent_required":true,"timeout":90,"max_cpu_seconds":60,"max_threads":1,"max_output_bytes":4194304,"max_memory_bytes":null,"max_cores":null},
+  "resource_note": "Main sets hard/soft CPU/FSIZE before scientific work. Source enforces science aggregate4MiB with64KiB reserve; outer runner separately caps logs. Missing final files after a hard interrupt remain a resource-inconclusive prefix. No arbitrary RSS/affinity claim.",
+  "authorization": "CODE ONLY until FULL ROOT and independent P94 source/cards review, then separate explicit ROOT authorization. No import, AST, collection, tests, scientific evaluation, native call or runner is authorized by this file.",
+  "optimizer_advantage": false
+}
