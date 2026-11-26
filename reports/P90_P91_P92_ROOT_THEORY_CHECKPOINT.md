@@ -94,8 +94,20 @@ partition. Its scalar law has an elementary O(k²)-arithmetic generating
 polynomial expansion. It is no hard sampler or hardware model. No claim
 of novelty or real-device performance follows.
 
-P93's159-line low-rank initializer surrogate `4b13a641` has been read at
-ROOT; independent exact-source review remains pending. Its shared-normalizer
-Duhamel envelope does not establish small residuals on any actual graph,
-an efficient full-Fock sampler or a change to the frozen P90a compiler.
+P93's159-line low-rank initializer surrogate `4b13a641` and independently
+frozen130-line exact-source review `c1addf22` have now been read at ROOT.
+The review SHA256 is
+`2e8bb7f390dcb13fa1692d0b0a6a270f20790038a29cb6b83548782b314035ce`.
+ACCEPT the stated conditional decomposition/stability bound: H=H0+E,
+rank(H0)<=2, shared d=max(1,||H||op), rank(exp(-iH0/d)-I)<=2,
+and raw TV<=E[min(1,r*delta)]<=min(1,K*delta/2) for the same split/marks,
+with delta bounding the one-particle unitary distance. The common observed
+history composition is also valid under its reset/policy restrictions.
+ROOT separately checked signs, Duhamel order, CF Fock normalization,
+the disjoint-R mixture and first-mismatch argument by hand. The physical
+source-to-receiver block still has rank K; P69 cannot be substituted.
+This envelope does not establish small residuals on any actual graph,
+an efficient full-Fock sampler, an optimizer obstruction or a change to
+the frozen P90a compiler. Review:
+[P93_INDEPENDENT_SURROGATE_REVIEW.md](../research/P93_INDEPENDENT_SURROGATE_REVIEW.md).
 No new numerical calculation, graph or experiment was run for this checkpoint.

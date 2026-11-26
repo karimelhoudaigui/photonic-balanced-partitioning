@@ -89,8 +89,9 @@ transmission and known CF/passive-vacuum hypotheses, not public mean loss.
 P92 independently reviewed physical counterexample proves even ALL individual
 input efficiencies do not provide that spectral certificate. Neither is a
 Lucy calibration, measured classical runtime win or new optimizer advantage.
-P93 low-rank initializer surrogate4b13a641 is read at ROOT; independent review
-pending. No graph residual, efficient sampler or P90a change is authorized.
+P93 low-rank initializer surrogate4b13a641 and independent exact-source
+reviewc1addf22 are fully read and accepted under their conditional bounds.
+No graph residual, efficient sampler or P90a change is established.
 P79/P80/P81/P83/P84/P85/P86/P87 accepted scopes and novelty limits persist.
 
 No held-out opening, paper/main edit, hardware preparation, QPU submission,
