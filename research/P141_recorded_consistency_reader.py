@@ -80,7 +80,7 @@ def audit(report):
             elif kind == "graph_context":
                 graphs[row["case"]] = row; need(row["case"] in cases and len(set(row["S"])) == 12 and len(set(row["S0"])) == 8 and cut(row, row["S"]) == row["current_cost"] and cut(row, row["S0"]) == row["baseline_helper_cost"], "recorded current/helper cut")
             elif kind == "field_check":
-                g = graphs[row["case"]]; need(row["delta"] == 0 and row["helper_cut"] == cut(g, g["S0"]+[row["vertex"]]) and row["edge_sum_field"]-row["delta"] == row["helper_cut"]-row["baseline_helper_cut"], "field first-minus-delta reconstruction")
+                g = graphs[row["case"]]; need(row["vertex"] in g["B_pool"] and row["baseline_helper_cut"] == g["baseline_helper_cost"] and row["delta"] == 0 and row["helper_cut"] == cut(g, g["S0"]+[row["vertex"]]) and row["edge_sum_field"]-row["delta"] == row["helper_cut"]-row["baseline_helper_cut"], "field first-minus-delta reconstruction")
             elif kind == "candidate_cost":
                 g = graphs[row["case"]]; y = tuple(row["Y"]); need(y in target and set(row["lifted"]) == set(g["S0"])|{g["B_pool"][j] for j in y}, "recorded lift")
                 need(row["delta"] == 0 and row["formula"]-row["delta"] == row["whole_cut"] == cut(g, row["lifted"]) and row["h"] == max(0, g["current_cost"]-row["whole_cut"]), "140 recorded costs against edges")
