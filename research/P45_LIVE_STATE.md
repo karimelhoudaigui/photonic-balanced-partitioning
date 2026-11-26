@@ -310,6 +310,22 @@ research/P131_PHASE_CONTROL_RECEIPT.md. P132's changed mechanism bridges
 remain OPEN. P133 rational-reflection engineering and its independent
 93+107-line proof review remove an inverse-root compilation bottleneck;
 they do not prove useful four-input optimization or a new physical class.
+The active next step is P134 SOURCE AUTHORING in the isolated reused worktree
+.local/p84-cost-phase, on research/p84-cost-phase. Original designc9cbb758,
+ROOT CODE ONLY decision9ef2b3d and independent115-line card reviewddca309e
+are accepted for authoring. No frozen implementation, graph draw, matrix
+evaluation or run is yet qualified/authorized. P94 is the planned non-author
+FULL code reviewer; ROOT must independently read final source/population/
+TEMPLATE and issue DISTINCT authority after actual binding. Prospective
+CPU120/wall180, one worker, science16MiB/final1MiB reserve/log4MiB. Do not
+execute a mutable draft, reset seeds or turn a finite-grid witness into an
+optimizer result. Actual11 external critical pins are metadata-only in
+../reports/P134_validation_review/external_pins.json. Numerical worker FREE.
+P135's62-line ideal shared-phase CF/hold formula and62-line independent
+review are preregistered for a conditional later control; no code/run and
+no change to P134's9441-row first screen. A proper-group survivor still
+needs that classical correlation control, exact-law mirror, full-cost policy,
+fresh/held-out contexts and independent replication before any QPU step.
 Soft/deep walks and changed non-conjugate measurement recovery also remain
 OPEN; these scoped obstructions do not exhaust all photonic optimization.
 
