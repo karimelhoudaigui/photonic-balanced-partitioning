@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "reader_interpreter": "project .venv Python3.11.15",
+  "raw_seal_commit": "f6f3c8b7961e527259557278e64536e10ee74801",
+  "producer_execution_commit": "944f9bc7fadea36ff17373b29ca2c5369ccb5267",
+  "manifest_sha256": "d8f3e69ad2543dfcb6a7083fde2acdf4e45cdd0060e15d675d6607f890b38a21",
+  "JUnit_sha256": "ec8b5a9152d038c0bb3086e0b8a50df94ff09de07f57c63c09fef2d62812e713",
+  "passed_items": 29,
+  "input_hashes_checked": 9,
+  "runner_wall_seconds": 0.504861,
+  "JUnit_bytes": 6074,
+  "scope": "Recorded synthetic qualification only; exact29 names/caps/paths/hash closure/Git raw seal. No scientific imports/native calls/DEV or main replay."
+}

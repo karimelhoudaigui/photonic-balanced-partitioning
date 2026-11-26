@@ -1,0 +1,13 @@
+{
+  "scope": "One post-seal ROOT metadata/XML inspection attempt; not a qualification or scientific experiment",
+  "interpreter": "system python3: Homebrew Python3.14.6",
+  "failure": "ImportError loading pyexpat: Symbol not found _XML_SetAllocTrackerActivationThreshold; system libexpat.1.dylib did not provide the expected symbol",
+  "affected_step": "ElementTree.parse of the already sealed checker JUnit",
+  "scientific_inputs_changed": false,
+  "raw_outputs_changed": false,
+  "inspection_output_written_by_failed_attempt": false,
+  "resolution": "Read the same sealed XML using the frozen project .venv Python3.11.15",
+  "qualification_launches": 1,
+  "qualification_reruns": 0,
+  "system_installations_or_configuration_changes": 0
+}
