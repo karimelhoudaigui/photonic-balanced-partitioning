@@ -1,0 +1,301 @@
+{
+  "schema_version": 2,
+  "claim_id": "P82A-SPLIT-SCATTER-ZERO-OPTICS-DEV-VETO",
+  "repository": {
+    "commit": "39b61bb9289cab7439ca15a4aa79d265b068f6f9",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "research/P82a_split_scatter_veto.py",
+    "--spec",
+    "research/P82a_execution_spec.json",
+    "--output",
+    "experiments/P82a_dev_veto/run_001/data"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.0"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Run the frozen unplanted ER/RR K8/n16 DEV screen once: exactly48 B raw attempts per anchor, with all96 outcomes retained and768 modeled injected source photons. Compare each fixed classical mode against B using its own entire B paid-classical WALL grant and dual CPU+WALL timely precomputed witnesses. An eligible fixed same mode strictly beating B on both anchors rejects this candidate; no possible result is accepted as positive advantage.",
+    "coefficient_domain": "Integer weighted graph/count/cut data; float64/complex128 passive split-scatter compilation; native Clifford2017 conditional-r sampling; exact recorded integer masks with little-endian packing; actual observed CPU/WALL clocks and explicitly derived duration differences",
+    "conventions": "Compile graph/marks-dependent W before R; rho1 eta1/2, two phase sweeps and fixed odds/probability profile; analytic eta0 branch preserves initial phases with exact zero J,H. All r=0..8 outcomes/collisions/zeros/repair are retained, no retry/fallback. Q uses complement canonicalization and BEST SCORED candidate and credits every scored64-neighbor candidate. Direct paid spans are disjoint; factory outer minus returned setup WALL is only DURATION_DIFF with CPU/endpoints unknown. For binding classical witnesses, Delta_C/W=observed_outer_total_C/W-direct_adapter_C/W-helper_reported_compute_C/W is finite nonnegative without clipping, with provenance references and unknown interval endpoints. Direct results are preserved separately; the final witness requires direct_adapter_CPU+Delta_CPU+checkpoint_CPU<=G and the corresponding WALL inequality, choosing latest qualifying chronological preclock cache, never latebest reconstruction. G is unchanged and helper CPUbudget remains max0(G-directadapterCPU). Tier1 four fixed FAST calls precede conditional Tier2; no best-of-mode portfolio.",
+    "inputs": [
+      "ExactlyER8201601:gnp_random_graph(16,0.4,seed8201601) andRR8201602:random_regular_graph(4,16,seed8201602), unplanted and unfiltered; canonical minmax sorted edges then privatePCG weights1..5",
+      "Root seed82026001 and literal compact-ASCII role recipes in frozen spec; no old DEV/heldout/optimum masks or C*",
+      "Frozen design/card/clock addendum and literal execution spec; actual immutable P43 serial factory and P50 FAST from raw API",
+      "Complete project file closure in execution_artifacts; external installed-file/interpreter pins independently checked by main CLI before scientific imports"
+    ],
+    "bounds": {
+      "CPU_seconds": 60,
+      "wall_seconds": 90,
+      "environment_threads": 1,
+      "native_threads": 1,
+      "max_runner_stdout_stderr_bytes": 4194304,
+      "max_scientific_uncompressed_bytes": 33554432,
+      "reserved_failure_summary_bytes": 1048576,
+      "planned_logical_workspace_bytes": 268435456,
+      "hard_RSS_limit_claimed": false,
+      "workers": 1,
+      "failed_retries": 0,
+      "optional_calibration_runs": 0,
+      "graphs": 2,
+      "n": 16,
+      "K": 8,
+      "chains_per_graph": 3,
+      "attempts_per_chain": 16,
+      "raw_B_attempts_per_graph": 48,
+      "raw_B_attempts_total": 96,
+      "modeled_source_photons_total": 768,
+      "Tier1_fixed_FAST_calls": 4,
+      "FAST_work_guard_per_call": 10000,
+      "Tier2_fixed_modes": 4,
+      "Tier2_maximum_calls": 8,
+      "custom_work_guard_per_call": 10000,
+      "quench_neighbor_scan_cap": 1,
+      "warmstart_neighbor_scan_cap": 2,
+      "neighbors_per_scan": 64,
+      "positive_acceptances_possible": 0
+    },
+    "non_claims": [
+      "DEV-only negative screen with optical latency assumed zero for the favorable B classical-cost grant; not actual QPU time or matched total hardware resources",
+      "All classical and native simulation/import/setup/sample clocks are archived separately; excluded simulation costs are not treated as physical pulse times",
+      "Passing this screen remains inconclusive and requires independently reoptimized D/species, relabel/fresh-seed tests and complete resource accounting",
+      "No physical count authenticity, universal theorem, optimum certificate, novelty, heldout conclusion or optimizer advantage",
+      "No graph/seed/profile replacement, retry, canary, hidden portfolio, adaptive budget increase, code change, dependency change, QPU or manuscript action"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "Private numpy.random.Generator(PCG64) roles from literal compact-ASCII JSON SHA256 recipes; native serial Clifford seed independently recorded via Perceval/exqalibur bridge; new Generators are not reset by Perceval global seeding",
+    "seed": 82026001
+  },
+  "run": {
+    "started_at": "2026-11-26T01:26:43.152264+00:00",
+    "runtime_seconds": 29.354166,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 90.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 60,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+    "research/P82a_DEV_VETO_CONTRACT.md",
+    "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+    "research/P82a_split_scatter_veto.py",
+    "tests/test_p82a_split_scatter_veto.py",
+    "research/P82a_execution_spec.json",
+    "research/P82a_split_scatter_preflight_contract.json",
+    "research/P82a_split_scatter_execution_contract.json",
+    "research/P82a_IMPLEMENTATION_POPULATION.md",
+    "research/P43_global_gain_probe.py",
+    "research/P50_fast_from_scratch.py",
+    "research/P50_FAST_FROM_RAW_API_CARD.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "research/P82_HARDWARE_COMPATIBLE_ESCAPE_DESIGN.md",
+      "sha256": "c008f60143a1c4b0e81dcec1ba7a07c28d89244b10d4d69695070d27b0916723",
+      "sha256_after": "c008f60143a1c4b0e81dcec1ba7a07c28d89244b10d4d69695070d27b0916723"
+    },
+    {
+      "path": "research/P82a_DEV_VETO_CONTRACT.md",
+      "sha256": "d5e994d970f278bb9c51fa8a806555dce4047e82c8342f676fe267b75dbe71b9",
+      "sha256_after": "d5e994d970f278bb9c51fa8a806555dce4047e82c8342f676fe267b75dbe71b9"
+    },
+    {
+      "path": "research/P82a_PREEXEC_CLOCK_ADDENDUM.md",
+      "sha256": "1b548885d05fe6a42487c77b12ac00292ebd8bd379c4074e6ce3a49ceb93a8d4",
+      "sha256_after": "1b548885d05fe6a42487c77b12ac00292ebd8bd379c4074e6ce3a49ceb93a8d4"
+    },
+    {
+      "path": "research/P82a_split_scatter_veto.py",
+      "sha256": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc",
+      "sha256_after": "7e1a0d037f5fe0a6af036c1b2a92e765981c93e8d473535984e6f07ea7acfbbc"
+    },
+    {
+      "path": "tests/test_p82a_split_scatter_veto.py",
+      "sha256": "e70b74c2915632cf62677c80f40ebeea8e67c669116660096426101542794861",
+      "sha256_after": "e70b74c2915632cf62677c80f40ebeea8e67c669116660096426101542794861"
+    },
+    {
+      "path": "research/P82a_execution_spec.json",
+      "sha256": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838",
+      "sha256_after": "8598bd4220d1caadb20aed68601e92b4bba85db787bfe71b83efb6376151c838"
+    },
+    {
+      "path": "research/P82a_split_scatter_preflight_contract.json",
+      "sha256": "209696de0b0170ff4099cdfd77b6acdaec3c4f78e04e86631047008c13517c0d",
+      "sha256_after": "209696de0b0170ff4099cdfd77b6acdaec3c4f78e04e86631047008c13517c0d"
+    },
+    {
+      "path": "research/P82a_split_scatter_execution_contract.json",
+      "sha256": "dca509b4fee65b652227fb395cfc982b4426a9c8ae0da05de75f825493cc5f20",
+      "sha256_after": "dca509b4fee65b652227fb395cfc982b4426a9c8ae0da05de75f825493cc5f20"
+    },
+    {
+      "path": "research/P82a_IMPLEMENTATION_POPULATION.md",
+      "sha256": "9080adee7e67189731cdbcbd297c0b419748337025135f85cf7406bee5c1a4ba",
+      "sha256_after": "9080adee7e67189731cdbcbd297c0b419748337025135f85cf7406bee5c1a4ba"
+    },
+    {
+      "path": "research/P43_global_gain_probe.py",
+      "sha256": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777",
+      "sha256_after": "b0507d36f56f3fedd92448043ec17fa7fcabf46c6efeaed40d23b61fc075f777"
+    },
+    {
+      "path": "research/P50_fast_from_scratch.py",
+      "sha256": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86",
+      "sha256_after": "6def5c0fe7c9fa41212e0584e151a654a2e606e7c090431530143523af100e86"
+    },
+    {
+      "path": "research/P50_FAST_FROM_RAW_API_CARD.md",
+      "sha256": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91",
+      "sha256_after": "3a73269e3a98f853a2a7d0695f77e9efa06f65ad0914daf932ea1715c162ad91"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    }
+  ],
+  "output_directory": "experiments/P82a_dev_veto/run_001",
+  "declared_results": [
+    "experiments/P82a_dev_veto/run_001/data/metadata.json",
+    "experiments/P82a_dev_veto/run_001/data/graphs.json",
+    "experiments/P82a_dev_veto/run_001/data/B_ER.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/B_RR.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/paid_ledger.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/controls.jsonl",
+    "experiments/P82a_dev_veto/run_001/data/summary.json",
+    "experiments/P82a_dev_veto/run_001/data/failure.json"
+  ],
+  "outputs": [
+    {
+      "path": "experiments/P82a_dev_veto/run_001/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/stderr.txt",
+      "sha256": "69c9d26f8c323c387de2072b75c0600baa427e0c7e9dac04c40b4da56b5945c0",
+      "kind": "log"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/metadata.json",
+      "sha256": "759937f271bdc2e8f6816a738fdf7d5981d7d200d31dc4f426c0bc6aba50e35b",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/graphs.json",
+      "sha256": "28e64b8684c7c85ed2005fae6870ca017785f74f0b732dc6c91d8a1dd7626e8d",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/B_ER.jsonl",
+      "sha256": "a3bd4357ed2509dd201f6e3bba628d85b96f0839285ca32b9a98b2dcda987a2f",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/B_RR.jsonl",
+      "sha256": "2798618a796db8571a8377ac0f027b74af8d715f107810e31228c90de749a9cf",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/paid_ledger.jsonl",
+      "sha256": "a887e9629194198300c2d0ed66ba678bd1e95053eef1efcf3a5f1fd4d6921044",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/controls.jsonl",
+      "sha256": "b0b9d448e4cab86454a137a61b63a4326d936b0c332e56a70edfa884161bc611",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/summary.json",
+      "sha256": "79e917c92b31b026c818f836d313dbb7c526e805a6cb718a73b1a3f6cede9a8c",
+      "kind": "result"
+    },
+    {
+      "path": "experiments/P82a_dev_veto/run_001/data/failure.json",
+      "sha256": "b24b6f7f3627ec4fec61d369b7ad9a35c8918c6da5f7f9390fd97cd5ed29a643",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
