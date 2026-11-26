@@ -1,0 +1,195 @@
+{
+  "schema_version": 2,
+  "claim_id": "P82a-INDEPENDENT-RECORDED-AUDIT-TINY-QUAL",
+  "repository": {
+    "commit": "a7e423b28f75f9a5a87068be667c8bf6f1eadd96",
+    "dirty": false
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Desktop/pasqal/.venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_p82a_independent_raw_audit.py",
+    "--junitxml=research/P82a_independent_audit_preflight/run_002/junit.xml"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "Python",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Twenty-one synthetic-only checker tests: independent scalar cuts/canonical masks/all-neighbor Q-best, exact rational F4 features, archived-rounded H semantics and analytic eta0, full counts/repair/deterministic branches, typed factory references/unknown CPU, conservative call gaps, dual-clock existing-prefix selection, custom cached-best lineage, fixed-mode witnesses, malformed JSON, postseal guard and exclusive prefix files.",
+    "coefficient_domain": "Exact Python integers/Fraction, binary64 scalar complex arithmetic at fixed3e-12 absolute residual; exact clocks comparisons",
+    "conventions": "No main role hashes, RNG, DEV graph or native/solver call. Helpers portable to executing interpreter; only hardcoded synthetic fixtures.",
+    "inputs": [
+      "Synthetic graphs/records/clocks, no B outputs or registered main seeds"
+    ],
+    "bounds": {
+      "pytest_functions": 21,
+      "native_calls": 0,
+      "optimizer_replays": 0,
+      "PCG_constructions": 0,
+      "DEV_graphs": 0,
+      "CPU_seconds": 30,
+      "wall_seconds": 60,
+      "threads": 1,
+      "workers": 1,
+      "log_bytes": 4194304,
+      "logical_bytes_PLAN": 268435456,
+      "failed_retries": 0
+    },
+    "non_claims": [
+      "Qualification is not main authorization, data audit or Born/TV/physical certificate",
+      "No hard RSS/affinity or timing benchmark claim"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Hardcoded scripted fixtures only",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-26T01:37:07.063102+00:00",
+    "runtime_seconds": 0.610468,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "AGENTS.md",
+    "pyproject.toml",
+    "requirements-research-lock.txt",
+    "research/P82a_independent_raw_audit.py",
+    "tests/test_p82a_independent_raw_audit.py",
+    "research/P82a_independent_audit_spec.json",
+    "research/P82a_independent_audit_preflight_contract.json",
+    "research/P82a_independent_audit_main_TEMPLATE.json",
+    "research/P82a_INDEPENDENT_AUDIT_BINDING.md",
+    "research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+    "research/P82_ZERO_LOADING_INDEPENDENT_NULL.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a",
+      "sha256_after": "6c4c409cdf9d05330bc46b9f607b7034e16bcaf51086b712a80d03ccd8e78e5a"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4",
+      "sha256_after": "7d53e37a5ec3e59346cce1f8a4bb3319445c11647fa330ef7bf9547a82c3ebc4"
+    },
+    {
+      "path": "requirements-research-lock.txt",
+      "sha256": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1",
+      "sha256_after": "3dcf2b0f35d6cc610243408ff2520f0b26a8545048f9b6c8ca45662f0f898ac1"
+    },
+    {
+      "path": "research/P82a_independent_raw_audit.py",
+      "sha256": "f595fcaea18dee10b7c89982c2ef700cadca417ec8b2ff63557e95b0e9ba9529",
+      "sha256_after": "f595fcaea18dee10b7c89982c2ef700cadca417ec8b2ff63557e95b0e9ba9529"
+    },
+    {
+      "path": "tests/test_p82a_independent_raw_audit.py",
+      "sha256": "7dc3dfabbe78d9e515098d6eb91cc0446cbe588ed92e0ab103c2fce4b59b84c6",
+      "sha256_after": "7dc3dfabbe78d9e515098d6eb91cc0446cbe588ed92e0ab103c2fce4b59b84c6"
+    },
+    {
+      "path": "research/P82a_independent_audit_spec.json",
+      "sha256": "6fd8c3639aa8bc2c4db407b15d3124d4289a585e507992ab6f07a45be9db8fc9",
+      "sha256_after": "6fd8c3639aa8bc2c4db407b15d3124d4289a585e507992ab6f07a45be9db8fc9"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight_contract.json",
+      "sha256": "99d5a8bbd5678342c1316a1a87a2b804b939b5673a1a00e66e7e6309c94e8ecc",
+      "sha256_after": "99d5a8bbd5678342c1316a1a87a2b804b939b5673a1a00e66e7e6309c94e8ecc"
+    },
+    {
+      "path": "research/P82a_independent_audit_main_TEMPLATE.json",
+      "sha256": "c11b0c803e4d4f50697b8f6bbb51c8d8360466d659356bd6adac8b84c202ff6a",
+      "sha256_after": "c11b0c803e4d4f50697b8f6bbb51c8d8360466d659356bd6adac8b84c202ff6a"
+    },
+    {
+      "path": "research/P82a_INDEPENDENT_AUDIT_BINDING.md",
+      "sha256": "301d5722b232c9f276471f33f12446de206faf382622b88bde6dcde168f5538b",
+      "sha256_after": "301d5722b232c9f276471f33f12446de206faf382622b88bde6dcde168f5538b"
+    },
+    {
+      "path": "research/P82a_INDEPENDENT_RAW_AUDIT_PLAN.md",
+      "sha256": "b3b8d4e83acaf4ac6430bc8967be021e41520fe25c70cf9c3a2a2ca10eaa4119",
+      "sha256_after": "b3b8d4e83acaf4ac6430bc8967be021e41520fe25c70cf9c3a2a2ca10eaa4119"
+    },
+    {
+      "path": "research/P82_ZERO_LOADING_INDEPENDENT_NULL.md",
+      "sha256": "bc5943faa105dd76a41645376b52cc62f69fcf6d7e40fc303e57b48437885c4a",
+      "sha256_after": "bc5943faa105dd76a41645376b52cc62f69fcf6d7e40fc303e57b48437885c4a"
+    }
+  ],
+  "output_directory": "research/P82a_independent_audit_preflight/run_002",
+  "declared_results": [
+    "research/P82a_independent_audit_preflight/run_002/junit.xml"
+  ],
+  "outputs": [
+    {
+      "path": "research/P82a_independent_audit_preflight/run_002/stdout.txt",
+      "sha256": "9ac228254367b631450efb7312ccc2c4446081c73a5e896b615e9793ef4ef704",
+      "kind": "log"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight/run_002/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/P82a_independent_audit_preflight/run_002/junit.xml",
+      "sha256": "949d725c03db5eb8f0abd00ff25b8dd38827192bf0f27f6c03fc3dc83bc3ba00",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}
