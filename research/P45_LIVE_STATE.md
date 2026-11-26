@@ -310,17 +310,26 @@ research/P131_PHASE_CONTROL_RECEIPT.md. P132's changed mechanism bridges
 remain OPEN. P133 rational-reflection engineering and its independent
 93+107-line proof review remove an inverse-root compilation bottleneck;
 they do not prove useful four-input optimization or a new physical class.
-The active next step is P134 SOURCE AUTHORING in the isolated reused worktree
-.local/p84-cost-phase, on research/p84-cost-phase. Original designc9cbb758,
-ROOT CODE ONLY decision9ef2b3d and independent115-line card reviewddca309e
-are accepted for authoring. No frozen implementation, graph draw, matrix
-evaluation or run is yet qualified/authorized. P94 is the planned non-author
-FULL code reviewer; ROOT must independently read final source/population/
-TEMPLATE and issue DISTINCT authority after actual binding. Prospective
-CPU120/wall180, one worker, science16MiB/final1MiB reserve/log4MiB. Do not
-execute a mutable draft, reset seeds or turn a finite-grid witness into an
-optimizer result. Actual11 external critical pins are metadata-only in
-../reports/P134_validation_review/external_pins.json. Numerical worker FREE.
+P134 is COMPLETE, not CODE ONLY. FULL677-line freezec4433893 and152-line
+non-author2cee874b preceded authority12a4aee/binding8b4f5df4. ONE6.411867s
+main exits0; original raw633defe precedes interpretation.9441 rows/8131 exact
+comparisons,17 unchanged project inputs/11 unchanged external pins, official
+v2PASS. ER Bbest1 is the known prototype, below retuned D1.02150982497 and
+proper0102 at1.02152219233; credited frontier16. RR all0/frontier10. All
+six positive-kappa ER J4 values are negative. Verdict NO_STRICT_GRID_SIGNAL;
+no continuous-family, matched-time or optimizer-positive conclusion.
+Separate receipt P134_RATIONAL_FRAME_RECEIPT.md and root recorded read are
+committed0d6b787. No source/grid/seed/cap rescue or native replication follows.
+Numerical worker FREE; P135's conditional execution gate FAILED.
+P136109-line sourceb80a4655 and114-line auditde6fd020 pass full ROOT review:
+SOURCE-containing spatial F-support components force full spatial B law
+to equal the corresponding proper-species law. Full-operator perturbations
+give TV<=min(1,2Kdelta), not signal-only/rare conditioning. The recorded RR
+support yields B=D throughout its fixed beta/kappa family. See
+../reports/P136_ROOT_COMPONENT_CHECKPOINT.md. Connectedness alone is not gain.
+P137's explicit weak-reflection candidate and general-K addendum are under
+independent proof review; no numerical claim. P138 is a MANUAL changed
+incumbent-aligned finite-strength design. Neither has execution authority.
 P135's62-line ideal shared-phase CF/hold formula and62-line independent
 review are preregistered for a conditional later control; no code/run and
 no change to P134's9441-row first screen. A proper-group survivor still

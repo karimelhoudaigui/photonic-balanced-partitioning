@@ -1908,3 +1908,34 @@ only support FOLLOW-UP. ROOT prospectively allocates CPU120/wall180 before
 any P134 science, preserving the card's earlier60/90 proposal. No rescue,
 new result, held-out or hardware gate is inferred from these design notes.
 reports/P133_P134_ROOT_DESIGN_CHECKPOINT.md. CLAIM-042 OPEN; paper/main intact.
+
+## P134 sole main negative; P136 component obstruction independently accepted
+
+26-Nov-2026. Frozen677-line P134 source/population/TEMPLATE c4433893 and
+152-line non-author source review2cee874b were FULL read at ROOT before
+separate authority12a4aee. Active binding8b4f5df4 includes17 project inputs
+and11 external critical pins; the inactive TEMPLATE's missing v2 randomness
+used/seed metadata was completed BEFORE launch, without changing science.
+ONE main completes6.411867s/exit0; original raw633defe is sealed BEFORE
+reading. All9441 rows/8131 comparisons pass, including full715-bin PNR,
+with all input hashes unchanged and officialv2PASS. This engine evidence
+does not turn NO_STRICT_GRID_SIGNAL into a positive result.
+
+ER Bbest1 is the known, credited prototype, versus independently retuned
+D1.02150982497 and proper group0102 at1.02152219233; credited frontier16.
+All six positive-kappa ER J4 values are negative. RR all arms0/frontier10;
+actual F support splits sources and the only reachable CF sets improve0.
+No native replication, P135 conditional run, seed/grid rescue or held-out
+opening follows. Separate receipt research/P134_RATIONAL_FRAME_RECEIPT.md.
+
+P136109-line sourceb80a4655 and114-line non-author auditde6fd020 were FULL
+read and manually reconstructed at ROOT. Spatial bipartite F components
+give actual full-U mode blocks and equality of B with the component-species
+law, including resolved dumps/collisions. A full-operator delta certificate
+gives raw-count TV<=min(1,2Kdelta), not a signal-only or rare-conditioned
+bound. Applied to the recorded RR support, equality holds throughout the
+fixed beta/kappa family, not merely its grid. Scope and limitations are in
+reports/P136_ROOT_COMPONENT_CHECKPOINT.md. Root acceptance0d6b787.
+P137 now studies reoptimized D in the weak-reflection regime; P138 changes
+the mechanism to an incumbent-aligned magnetic hybrid. Neither is yet a
+positive optimizer. CLAIM-042 OPEN; all historical raw data/paper/main intact.

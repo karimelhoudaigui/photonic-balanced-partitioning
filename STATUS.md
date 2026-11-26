@@ -1,5 +1,21 @@
 # Research status — active discovery branch
 
+26-Nov-2026 update: P134's sole four-photon discriminator is complete and
+negative in its registered grid. Original raw633defe precedes interpretation;
+9441 rows/8131 exact comparison checks pass,17 project inputs and11 external
+pins are unchanged, and the official v2 manifest validates. On ER1341001 the
+best B improvement is1 (the already credited prototype), below independently
+retuned D1.02150982497 and proper group0102 at1.02152219233. On RR1341002 all
+arms give0 despite a credited improvement frontier10. This is no continuous
+family or matched-time no-go. See research/P134_RATIONAL_FRAME_RECEIPT.md.
+P136's109-line source and114-line independent audit prove a full spatial-law
+component obstruction for the rational reflection. ROOT applies it to the
+recorded RR support: B=D throughout that fixed beta/kappa family, not just
+the grid. A connected support is necessary for a strict proper-group win,
+not sufficient for useful optimization. P137's more general weak-reflection
+proof remains under review; P138 designs a genuinely changed, incumbent-
+aligned mechanism. CLAIM-042 remains OPEN; paper/main/QPU remain frozen.
+
 Current continuation: P90a's sole96-attempt DEV main and independent
 recorded-data audit are complete. B reaches111/28 versus EACH separately
 paid FAST random/spectral104/27, with no early guard: NO_POSITIVE_SIGNAL.

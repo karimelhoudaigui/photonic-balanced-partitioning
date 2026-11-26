@@ -1,5 +1,24 @@
 # Negative Results Log
 
+## 26-Nov-2026: four-source rational-frame grid rejected
+
+P134 ran ONCE under separate authority12a4aee, raw633defe sealed before
+reading. Engine PASS:9441 rows/8131 exact comparisons, full715-bin PNR
+normalization, all17 project/11 external pins unchanged and officialv2PASS.
+Scientifically NO_STRICT_GRID_SIGNAL. ER best B1 is the known prototype,
+below separately retuned D1.02150982497 and proper0102 group1.02152219233;
+the credited15-state classical frontier has improvement16. Preserve the
+tiny favorable pair-group versus D contrast; it is no algorithmic advantage.
+The useful single-four-cycle coefficient is negative at all six positive-
+kappa ER grid points. RR has zero utility for every arm despite frontier10.
+P136 independently proves that its disconnected spatial F/source support
+makes B=D for the entire specified beta/kappa family. Both reachable CF
+sets have zero improvement. This is no universal photonic obstruction.
+No native/optimizer replication or P135 conditional numerical follow-up is
+justified by this failed gate. No seed, graph, cap or grid is rescued.
+See research/P134_RATIONAL_FRAME_RECEIPT.md and
+reports/P136_ROOT_COMPONENT_CHECKPOINT.md. All earlier failures remain.
+
 ## 26-Nov-2026: exact classical-control qualifications completed
 
 P130 passes the finite signed-loss/PSD identities and P131 passes the entire
