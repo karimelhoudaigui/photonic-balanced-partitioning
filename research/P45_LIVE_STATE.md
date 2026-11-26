@@ -1,8 +1,10 @@
 # Live positive-discovery continuation
 
-Earlier checkpoints are preserved byte-for-byte in
-[P45_LIVE_HISTORY_BEFORE_P90a.md](P45_LIVE_HISTORY_BEFORE_P90a.md), including
-the prior P79 history pointer. Historical pending statuses are not current.
+Earlier narrative checkpoints are preserved in the immutable Git versions
+[before P90a](https://github.com/karimelhoudaigui/photonic-balanced-partitioning/blob/b614d5259587fb5ab9897738206bca0d007715ae/research/P45_LIVE_HISTORY_BEFORE_P90a.md)
+and [before P79 acceptance](https://github.com/karimelhoudaigui/photonic-balanced-partitioning/blob/b614d5259587fb5ab9897738206bca0d007715ae/research/P45_LIVE_HISTORY_BEFORE_P79_ACCEPTANCE.md).
+Their working-tree snapshots were retired during repository cleanup.
+Historical pending statuses are not current. Start with [the research index](README.md).
 
 ## Current: scoped obstructions and stronger controls; new mechanisms open
 

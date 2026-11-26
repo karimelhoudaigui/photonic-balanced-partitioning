@@ -2,11 +2,13 @@
 
 This repository studies collision-aware photonic graph bisection, sufficient classical-replacement certificates and physical resource accounting. The tested generic bosonic optimizer **has not demonstrated the sought benefit** over distinguishable and serious classical controls. No QPU measurement is reported.
 
-New discovery work on research/p41-discovery is indexed in
-[ACTIVE_DISCOVERY_STATE](research/ACTIVE_DISCOVERY_STATE.md): P44 gives a scoped
-nonuniform-loss optimization obstruction; the changed P43 finite-angle mechanism
-has a preserved negative pilot on16/20 modes. This research is not yet integrated
-into the frozen article. No positive optimizer replication or QPU gate is claimed.
+Current discovery work on `research/p45-positive-discovery` starts at the
+[research index](research/README.md) and [live state](research/P45_LIVE_STATE.md).
+The latest P141 finite magnetic screen does not beat the best control on its
+grid. Its favorable ER bosonic/distinguishable contrast is preserved.
+P137/P139/P143 establish obstructions under their stated local assumptions.
+The optimization-advantage objective remains open. These results are not yet
+integrated into the frozen article; no positive replication or QPU gate is claimed.
 
 Start with the [rebuilt article PDF](paper/main.pdf), [scientific overview](docs/SCIENTIFIC_OVERVIEW.md), [integrity audit](reports/SCIENTIFIC_INTEGRITY_AUDIT.md) and [publication assessment](reports/PUBLICATION_READINESS.md). The single primary thesis is the density-qualified certificate, supported by a loss/source theorem and an honest negative benchmark. Originality of the full certificate composition remains unresolved.
 
@@ -17,6 +19,7 @@ Start with the [rebuilt article PDF](paper/main.pdf), [scientific overview](docs
 | **Dernier article PDF** | **[paper/main.pdf](paper/main.pdf)** — 16 pages, version du 24 novembre 2026 |
 | **Sources LaTeX complètes** | **[paper/main.tex](paper/main.tex)** et [guide de construction](paper/README.md) |
 | Résultats, preuves et reproductions | [Catalogue des résultats](results/README.md), [état scientifique](STATUS.md) |
+| **Recherche récente et rapports** | **[Recherche](research/README.md)**, **[rapports](reports/README.md)** et [état courant détaillé](research/P45_LIVE_STATE.md) |
 | **Laurent : accès Lucy via TGCC** | **[docs/LUCY_TGCC.md](docs/LUCY_TGCC.md)** — environnement, plan local, specs, lancement autorisé et analyse |
 | Contrat scientifique et counts | [Dossier technique détaillé](docs/LAURENT_HANDOFF.md) |
 | Archives PDF, LaTeX et dossier Lucy | [Téléchargements et empreintes](deliverables/README.md) |
@@ -69,6 +72,14 @@ Historical manifests refer to their recorded source commits or frozen snapshots,
 
 The original algorithmic goal remains open. Tests, PDF compilation, local circuit export and novelty are different standards of evidence.
 
-Current delivery validation: **505 tests pass in the pinned Python venv**, including21 Lucy adapter tests with a mock transport; [commands and receipts](reports/LUCY_TGCC_DELIVERY.md). The [portable P40 replay](docs/P40_REPRODUCTION.md) also reproduces all45 physical-model cells. The [original recovery report](reports/RECOVERY_EXECUTION_REPORT.md) preserves the earlier484-test snapshot and its scientific/hardware limitations.
+Recorded research validation: **1559 tests passed**, with 602 historical scientific
+files unchanged and a successful existing-manuscript build, at the exact CI
+revision recorded in [the P141 receipt](reports/P141_validation_review/ci_success.json).
+That receipt identifies its source commit; it is not a moving-HEAD claim or
+independent optimization/hardware replication.
 
-[GitHub Linux verification](https://github.com/karimelhoudaigui/photonic-balanced-partitioning/actions/runs/45400833067) passed tests, archive checks and a fresh TeX/PDF build of the delivery commit. The separately extracted Laurent v2 packet passed46 local tests. No QPU client was used by either validation.
+The 24-Nov delivery had 505 local tests, including 21 mocked Lucy adapter checks;
+[its receipts](reports/LUCY_TGCC_DELIVERY.md) and the separately extracted
+Laurent v2 packet's 46-test validation remain available. The
+[portable P40 replay](docs/P40_REPRODUCTION.md) covers 45 physical-model cells.
+No QPU measurement is reported.
