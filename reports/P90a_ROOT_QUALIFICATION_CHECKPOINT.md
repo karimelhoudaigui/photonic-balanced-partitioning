@@ -50,6 +50,15 @@ caps, separate from scientific CPU60/WALL90; no hard RSS claim.
 These repeated deterministic fixtures are not a new scientific main or
 independent physical optimization replication.
 
+GitHub head8b384e5ba40f8758759cb7921a6a93fb71f8039b is separately observed
+GREEN from actual logs: run45747795613/job139667967339,1519PASS16.96s and
+602 historical scientific files unchanged. The qualified original producer
+branch is also preserved atb2f9af31; unqualified independent-checker code
+was explicitly excluded from every push. Receipt:
+[ci_success.json](P90a_integration_validation/ci_success.json).
+Local preservation checks confirm all24 tracked paper files and main2744395
+unchanged; no additional tracked manuscript file or new build was created.
+
 The P90a DEV main is still NOT AUTHORIZED. Its independent recorded checker
 is being written CODE ONLY in another worktree, with no B data access or
 execution. That checker must freeze before any primary main data. ROOT must
