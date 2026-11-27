@@ -1,7 +1,13 @@
 # Open scientific questions — current continuation contract
 
-Live discovery state: research/ACTIVE_DISCOVERY_STATE.md, acceptance contract
-research/P41_DISCOVERY_CONTRACT.md, restart2744395. P44's spectral click-moment
+Current state: [research/P45_LIVE_STATE.md](research/P45_LIVE_STATE.md).
+P146's [receipt](research/P146_RESEARCH_RECEIPT.md) records the conditional
+weighted-resource result and missing noncommuting optimizer bridge. The useful
+full-cost advantage, independent held-out replication and hardware gates remain
+unfulfilled. The checkpoints below preserve their historical scopes.
+
+Acceptance contract: research/P41_DISCOVERY_CONTRACT.md, restart2744395.
+P44's spectral click-moment
 obstruction is proved for the specified CF source/passive-loss/click-contained
 decoder and guaranteed-cost model. Calibrating its spectral transmission and
 cost premises is unresolved; no Lucy verdict follows. Complete novelty is OPEN.
