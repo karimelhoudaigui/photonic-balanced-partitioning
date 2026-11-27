@@ -8,6 +8,16 @@ Historical pending statuses are not current. Start with [the research index](REA
 
 ## Current: scoped obstructions and stronger controls; new mechanisms open
 
+P146 investigates retained-memory effective interactions, collision-tolerant
+decoding and logical digital computation; see [the receipt](P146_RESEARCH_RECEIPT.md).
+The reviewed weighted offline-resource repair/drift result has one complete
+lossy-instrument qualification, including432 native amplitudes. It does not
+repair arbitrary algorithmic data or establish Lucy memory access. Collision
+majority has a decisive classical veto. One-layer mean evaluation has a reviewed
+polynomial classical formula; repair after RX fails. The missing implication
+is a complete noncommuting optimum-blind optimizer beating full-cost controls.
+No parameter/graph campaign, held-out, paper or hardware gate follows.
+
 P145 local-neighborhood phase is now recorded in
 [its research receipt](P145_RESEARCH_RECEIPT.md). The exact constructed I3
 contrast is positive but beaten by classical routing; all four prospective

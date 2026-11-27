@@ -1,5 +1,16 @@
 # Research status — active discovery branch
 
+27-Nov-2026 continuation: P146 changes the physical model to retained-memory
+measurement-induced weighted interactions. A non-author-reviewed conditional
+local-repair/drift theorem avoids global restarting during OFFLINE known
+resource preparation. ONE complete lossy-instrument run passes exact branch/
+purge/capped-work checks and432 finite Perceval amplitudes; this is no optimizer
+or verified Lucy memory interface. Collision-majority loses to direct classical
+crossover. A separately reviewed polynomial one-layer cut-mean formula and
+two-qubit purge failure after RX expose the missing noncommuting-algorithm bridge.
+See [P146 research receipt](research/P146_RESEARCH_RECEIPT.md). All historical
+results and paper unchanged; CLAIM-042 remains OPEN. Hardware/held-out gates stay closed.
+
 Latest 27-Nov-2026: P145's collective-neighborhood investigation is complete as
 a scoped phase, not an optimizer success. A constructed exact triad contrast
 survives restricted p-retuning but loses to a classical gain9 versus B3. The

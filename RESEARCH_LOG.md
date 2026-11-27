@@ -2057,3 +2057,34 @@ missing seed field; that preflight is retained. ONE subsequently authorized
 suite24.058943s/exit0 gives1569PASS/0skip (pytest22.71s,6warnings), rawcc2e809
 before reading, all37 package pins matched. All602 historical files and the
 16-page paper remain unchanged. CLAIM-042 OPEN; no device call or paper edit.
+
+## P146 — retained-memory interactions and a conditional resource result
+
+27-Nov-2026, basefbefdb4. Three isolated branches examine changed physical
+premises rather than retune P145. RUS/weighted-resource/angle-doubling ingredients
+are authenticated prior art. A dyadic non-Clifford ancilla compiler and OFFLINE
+known-weighted-resource endpoint purge have a non-author reconstructed drift
+bound: S_min-2(Delta-1)*(1-S_min)>0 implies expected edge macros<=g/delta.
+All memories/emission/readout/reset/PNR/rotations/storage are additional resources.
+No arbitrary unknown-state repair or actual Lucy memory interface is inferred.
+
+ONE complete instrument qualification, source6653116e8/clean4064e17,
+18.665072s/exit0, rawd8caa93 BEFORE interpretation: nine8-mode dilations,
+324B/576D fine branches,832 weighted-purge cases,18 capped-work contexts and
+432 finite local Perceval amplitudes (maxerror5.551115123125783e-17). Exact
+and floating checks remain distinct; original sources and all losses/zeros
+retained. All8 input hashes/currentv2 valid. No graph/optimizer campaign.
+
+The collision-majority construction has useful I3=16/27, but direct classical
+majority or Dmonomial gain2 beatsB10/9. Its single-mutant-library version cannot
+escape a one-bit local minimum. The independently reviewed single-cost-layer
+mean has an explicit polynomial classical formula; purge after RX fails on
+two qubits. MBQC is a known possible logical bridge, not an instantiated
+all-branch algorithm. Original discovery goal CLAIM-042 remains OPEN.
+
+ONE existing integration suite32.261137s/exit0, rawcb5353e before reading,
+1569PASS/0skip,6 temp-storage warnings;224inputhashes/currentv2 valid. The
+602-file archive and7-output publication checks pass. PaperPDF271946c9,
+P33/P37/E05b and earlier raw/negative results unchanged. No QPU/account call,
+held-out positive, manuscript edit or novelty clearance. Full scope and
+next missing implication: research/P146_RESEARCH_RECEIPT.md.

@@ -360,3 +360,18 @@ freeze the independent checker and complete its exact-source review. Qualify
 that checker on tiny/scripted inputs only under separate ROOT authorization;
 primary main still needs another distinct authorization. Keep all downstream
 controls/held-out/physical-replication/total-cost gates, paper/main and QPU closed.
+
+## P146 — accept the conditional resource theorem, keep the optimizer gate closed
+
+Accept only the reviewed full mediator instrument, dyadic phase compiler and
+known offline weighted-resource purge/drift scope in research/P146_RESEARCH_RECEIPT.md.
+The single bounded qualification rawd8caa93 and existing-suite rawcb5353e are
+complete, with no retry. Preserve every loss/timeout and the negative drift cases.
+Reject collision-majority and single-mutant libraries as optimizer routes in
+their stated scopes. A useful single-layer mean is classically evaluable; later
+noncommuting data invalidate the simple purge invariant. Require a complete
+all-branch resource-to-computation contract and strongest paid controls before
+an optimizer campaign. Retained-memory group2 is quantum and reproduces B;
+retyping it does not satisfy the old proper-group superiority condition.
+No generic QAOA/MBQC novelty, full-cost advantage or Lucy memory interface is
+established. CLAIM-042 stays OPEN; paper/main/held-out/QPU remain frozen.
