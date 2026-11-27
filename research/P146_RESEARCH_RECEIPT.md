@@ -131,8 +131,10 @@ The [formula and bridge analysis](P146_ALGORITHM_BRIDGE_VETO.md), independently
 [reconstructed here](P146_ALGORITHM_BRIDGE_REVIEW.md), prevent treating a
 single-layer mean improvement as the desired discovery.
 
-The purge invariant also FAILS after noncommuting data mixing, already on two
-qubits. Multiple alternating layers therefore cannot inherit its recovery rule.
+After noncommuting data mixing, deleting one site already breaks the invariant
+on two qubits. Adding an unused third endpoint yields the corresponding
+counterexample to the macro's two-endpoint purge, as the independent review
+specifies. Multiple alternating layers cannot inherit that recovery rule.
 Known MBQC can move computation to measurements on an offline prepared resource,
 but the whole graph, measurement/feed-forward pattern, byproducts, precision,
 computation-time losses and total physical costs must be instantiated. Neither
